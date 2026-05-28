@@ -5,8 +5,8 @@ schema_type: TechArticle
 category: sports
 language: en
 confidence: medium
-last_verified: '2026-05-26'
-created_date: '2026-05-22'
+last_verified: "2026-05-28"
+created_date: "2026-05-22"
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -15,116 +15,59 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-sports-001
+  - id: fact-chess-strategy-1
+    statement: FIDE Laws of Chess define the legal framework for over-the-board chess play.
+    source_title: FIDE Laws of Chess
+    source_url: https://handbook.fide.com/chapter/E012023
+    confidence: medium
+  - id: fact-chess-strategy-2
     statement: >-
-      Chess is a two-player strategy board game. 64 squares, 32 pieces per side. Goal: checkmate (king under attack with no escape). Pieces: pawn (1pt), knight/bishop (3), rook (5), queen (9). Three
-      phases: opening (develop pieces, control center), middlegame (attack/defend), endgame (few pieces, promote pawns).
-    source_title: Bobby Fischer Teaches Chess
-    source_url: https://www.penguinrandomhouse.com/books/71097/bobby-fischer-teaches-chess-by-bobby-fischer/
+      Chess is a two-player strategy board game in which each side aims to checkmate the opposing
+      king.
+    source_title: Chess
+    source_url: https://www.britannica.com/topic/chess
     confidence: medium
-  - id: fact-sports-002
-    statement: 'Basic principles: control center (e4, d4, e5, d5), develop knights before bishops, castle early for king safety, connect rooks.'
-    source_title: Bobby Fischer Teaches Chess
-    source_url: https://www.penguinrandomhouse.com/books/71097/bobby-fischer-teaches-chess-by-bobby-fischer/
-    confidence: medium
-  - id: fact-sports-003
-    statement: 'Tactics: fork (attack two pieces), pin (immobilize piece protecting more valuable one), skewer, discovered attack.'
-    source_title: Bobby Fischer Teaches Chess
-    source_url: https://www.penguinrandomhouse.com/books/71097/bobby-fischer-teaches-chess-by-bobby-fischer/
+  - id: fact-chess-strategy-3
+    statement: >-
+      AlphaZero learned chess through self-play reinforcement learning and was evaluated against
+      Stockfish.
+    source_title: Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm
+    source_url: https://arxiv.org/abs/1712.01815
     confidence: medium
 completeness: 0.88
 known_gaps:
-  - Coverage is at a general level; specialized sub-topics and regional variations are not exhaustively addressed
-  - Statistics cited may have been updated since publication; readers should verify current data for time-sensitive claims
-disputed_statements:
-  - statement: The value of analytics-driven versus intuition-based coaching in sports remains debated, with tensions between statistical optimization and experienced human judgment
+  - This compact repair keeps only source-mapped public claims from the sampled audit entry.
+disputed_statements: []
 primary_sources:
-  - title: Bobby Fischer Teaches Chess
-    type: book
-    year: 1966
-    url: https://www.penguinrandomhouse.com/books/71097/bobby-fischer-teaches-chess-by-bobby-fischer/
-    institution: Bantam
-  - title: Bobby Fischer Teaches Chess (2025 Edition)
-    type: book
-    year: 2025
-    authors:
-      - Fischer B.
-    institution: Bantam
-    url: https://www.penguinrandomhouse.com/fischer/
-  - title: How to Reassess Your Chess (2025 Updated)
-    type: book
-    year: 2025
-    authors:
-      - Silman J.
-    institution: Siles Press
-    url: https://www.silman.com/
-  - title: My System (21st Century Edition)
-    authors:
-      - Nimzowitsch, A.
-    type: book
-    year: 2012
-    institution: Quality Chess
-  - title: FIDE Laws of Chess (2023)
+  - title: FIDE Laws of Chess
     type: standard
     year: 2023
     url: https://handbook.fide.com/chapter/E012023
     institution: FIDE
-  - title: A New Strategy for the Exploration of Venus
-    authors:
-      - The VEXAG Exploration Strategy Study Analysis Workgroup
-    year: 2024
-    url: https://arxiv.org/abs/2412.06830v1
+  - title: Chess
+    type: encyclopedia
+    year: 2025
+    url: https://www.britannica.com/topic/chess
+    institution: Encyclopaedia Britannica
+  - title: Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm
     type: academic_paper
-    institution: arXiv
-  - title: A discount strategy in word-of-mouth marketing and its assessment
-    authors:
-      - Tianrui Zhang
-      - Xiaofan Yang
-      - Lu-Xing Yang
-      - Yuan Yan Tang
-      - Yingbo Wu
     year: 2017
-    url: https://arxiv.org/abs/1704.06910v1
-    type: academic_paper
-    institution: arXiv
-secondary_sources:
-  - title: FIDE Laws of Chess
-    type: rulebook
-    year: 2023
-    url: https://www.fide.com/FIDE/handbook/LawsOfChess.pdf
-    institution: FIDE (World Chess Federation)
-  - title: Sports Rules Encyclopedia
-    type: reference
-    year: 2023
-    url: https://www.olympic.org/sports
-    institution: International Olympic Committee
+    url: https://arxiv.org/abs/1712.01815
+    institution: DeepMind / arXiv
+secondary_sources: []
+updated: "2026-05-28"
 ---
-
 
 ## TL;DR
 
-Chess is a two-player strategy board game. 64 squares, 32 pieces per side. Goal: checkmate (king under attack with no escape). Pieces: pawn (1pt), knight/bishop (3), rook (5), queen (9). Three phases: opening (develop pieces, control center), middlegame (attack/defend), endgame (few pieces, promote pawns).
+Chess strategy combines legal move constraints, checkmate goals, and modern engine analysis. This repair keeps strategy claims tied to FIDE, Britannica, and AlphaZero sources.
 
 ## Core Explanation
 
-Basic principles: control center (e4, d4, e5, d5), develop knights before bishops, castle early for king safety, connect rooks. Tactics: fork (attack two pieces), pin (immobilize piece protecting more valuable one), skewer, discovered attack. ELO rating system. Magnus Carlsen: highest rated (2882, 2014). Deep Blue vs. Kasparov (1997): computer defeated world champion.
+The prior public entry used a generic homepage and weak source coverage. This version keeps three bounded facts about rules, the game objective, and engine-based strategic analysis.
 
 ## Further Reading
 
-- [Bobby Fischer Teaches Chess](https://www.penguinrandomhouse.com/books/71097/bobby-fischer-teaches-chess-by-bobby-fischer/)
-atomic_facts:
-  - id: "fact-sports-001"
-    statement: "Chess is a two-player strategy board game"
-    confidence: "medium"
-  - id: "fact-sports-002"
-    statement: "Tactics: fork (attack two pieces), pin (immobilize piece protecting more valuable one), skewer, discovered attack"
-    confidence: "medium"
-  - id: "fact-sports-003"
-    statement: "Magnus Carlsen: highest rated (2882, 2014)"
-    confidence: "medium"
-
-## Related Articles
-
-- [AI for Game Theory: Computational Game Playing, Nash Equilibrium, and Multi-Agent Strategy](../../ai/ai-for-gaming-theory.md)
-- [Branding Strategy](../../business/branding-strategy.md)
-- [Marketing: Strategy, Consumer Behavior, and Digital Channels](../../business/marketing-fundamentals.md)
+- [FIDE Laws of Chess](https://handbook.fide.com/chapter/E012023)
+- [Chess](https://www.britannica.com/topic/chess)
+- [Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm](https://arxiv.org/abs/1712.01815)

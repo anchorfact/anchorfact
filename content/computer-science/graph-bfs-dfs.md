@@ -4,9 +4,9 @@ title: Graph & BFS/DFS
 schema_type: TechArticle
 category: computer-science
 language: en
-confidence: high
-last_verified: '2026-05-25'
-created_date: '2026-05-22'
+confidence: low
+last_verified: "2026-05-28"
+created_date: "2026-05-22"
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -15,106 +15,55 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-computer-science-001
-    statement: A graph G=(V,E) models networks. BFS (queue) finds shortest paths in unweighted graphs. DFS (stack/recursion) detects cycles, performs topological sort on DAGs. Both are O(V+E).
-    source_title: ACM Digital Library
-    source_url: https://dl.acm.org/
-    confidence: medium
-  - id: fact-computer-science-001
-    statement: A graph G=(V,E) models networks. BFS (queue) finds shortest paths in unweighted graphs. DFS (stack/recursion) detects cycles, performs topological sort on DAGs. Both are O(V+E).
-    source_title: ACM Digital Library
-    source_url: https://dl.acm.org/
-    confidence: medium
+  - id: fact-graph-bfs-dfs-1
+    statement: Breadth-first search explores graph vertices by increasing distance from a source vertex.
+    source_title: Breadth-first search
+    source_url: https://cp-algorithms.com/graph/breadth-first-search.html
+    confidence: low
+  - id: fact-graph-bfs-dfs-2
+    statement: Depth-first search explores a graph by following a branch before backtracking.
+    source_title: Depth First Search
+    source_url: https://cp-algorithms.com/graph/depth-first-search.html
+    confidence: low
+  - id: fact-graph-bfs-dfs-3
+    statement: NetworkX provides traversal routines for breadth-first and depth-first graph search.
+    source_title: Traversal
+    source_url: https://networkx.org/documentation/stable/reference/algorithms/traversal.html
+    confidence: low
 completeness: 0.88
 known_gaps:
-  - Sources reconstructed during quality audit; primary source details were corrupted during batch generation
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
+  - This compact repair keeps only source-mapped public claims from the sampled audit entry.
+disputed_statements: []
 primary_sources:
-  - title: ACM Digital Library
-    type: repository
-    year: 2026
-    url: https://dl.acm.org/
-    institution: ACM
-  - title: Algorithms (5th Edition, 2025)
-    type: book
+  - title: Breadth-first search
+    type: course_material
     year: 2025
-    authors:
-      - Sedgewick R.
-      - Wayne K.
-    institution: Addison-Wesley
-    url: https://algs4.cs.princeton.edu/
-  - title: 'Graph Algorithms: BFS, DFS, and Parallel Processing (2025 Survey)'
-    type: survey_paper
+    url: https://cp-algorithms.com/graph/breadth-first-search.html
+    institution: CP-Algorithms
+  - title: Depth First Search
+    type: course_material
     year: 2025
-    authors:
-      - multiple
-    institution: ACM Computing Surveys
-    url: https://doi.org/10.1145/acmcs.2025.graphalgo
-  - title: Introduction to Algorithms (4th Edition) — Chapter 20-22
-    authors:
-      - Cormen, T.H.
-      - Leiserson, C.E.
-      - Rivest, R.L.
-      - Stein, C.
-    type: book
-    year: 2022
-    institution: MIT Press
-  - title: Algorithm Design
-    authors:
-      - Kleinberg, J.
-      - Tardos, E.
-    type: book
-    year: 2005
-    institution: Pearson
-secondary_sources:
-  - title: ACM Digital Library
-    type: repository
-    year: 2026
-    url: https://dl.acm.org/
-    institution: ACM
-  - title: The C Programming Language (K&R, 2nd Ed)
-    type: textbook
-    year: 1988
-    url: https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html
-    institution: Prentice Hall
-  - title: Structure and Interpretation of Computer Programs (SICP)
-    type: textbook
-    year: 1996
-    url: https://mitpress.mit.edu/sites/default/files/sicp/
-    institution: MIT Press
-  - title: 'Graph Traversal Algorithms: From BFS/DFS to Learned Graph Navigation (2025)'
-    type: article
+    url: https://cp-algorithms.com/graph/depth-first-search.html
+    institution: CP-Algorithms
+  - title: Traversal
+    type: course_material
     year: 2025
-    authors:
-      - multiple
-    institution: ACM Computing Surveys
-    url: https://doi.org/10.1145/acmcs.2025.traversal
-  - title: 'Parallel Graph Processing: BFS, DFS, and Beyond on Modern Hardware (2025)'
-    type: article
-    year: 2025
-    authors:
-      - multiple
-    institution: IEEE TPDS
-    url: https://doi.org/10.1109/tpds.2025.graph
+    url: https://networkx.org/documentation/stable/reference/algorithms/traversal.html
+    institution: NetworkX
+secondary_sources: []
+updated: "2026-05-28"
 ---
 
 ## TL;DR
 
-A graph G=(V,E) models networks. BFS (queue) finds shortest paths in unweighted graphs. DFS (stack/recursion) detects cycles, performs topological sort on DAGs. Both are O(V+E).
+Graph BFS and DFS are traversal algorithms for exploring vertices and edges in different orders. This repair maps each graph algorithm claim to course or library documentation.
 
 ## Core Explanation
 
-Adjacency list: O(V+E) space, good for sparse graphs. Adjacency matrix: O(V²) space, good for dense. BFS uses queue, level-order traversal — finds shortest path in unweighted graphs. DFS uses stack (or recursion call stack), can be used for maze solving, cycle detection (back edges), strongly connected components.
+The previous entry had low source coverage. The repaired version focuses on BFS order, DFS order, and traversal availability in NetworkX.
 
 ## Further Reading
 
-- [Algorithms (4th Edition)](undefined)
-
-## Related Articles
-
-- [AI for Complex Networks: Graph Learning, Resilience, and Network Science](../../ai/ai-for-complex-networks.md)
-- [AI for Fraud Detection: Graph Neural Networks, Anti-Money Laundering, and Financial Crime](../../ai/ai-for-fraud-detection.md)
-- [Graph Neural Networks: Message Passing, Applications, and Frontiers](../../ai/graph-neural-networks-message-passing-applications-and-frontiers.md)
+- [Breadth-first search](https://cp-algorithms.com/graph/breadth-first-search.html)
+- [Depth First Search](https://cp-algorithms.com/graph/depth-first-search.html)
+- [Traversal](https://networkx.org/documentation/stable/reference/algorithms/traversal.html)

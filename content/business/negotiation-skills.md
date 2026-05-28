@@ -4,8 +4,8 @@ title: Negotiation Skills
 schema_type: TechArticle
 category: business
 language: en
-confidence: high
-last_verified: "2026-05-24"
+confidence: low
+last_verified: "2026-05-28"
 created_date: "2026-05-22"
 generation_method: ai_structured
 ai_models:
@@ -15,83 +15,57 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-business-01
-    statement: "Harvard Negotiation Project : separate people from the problem, focus on interests , invent options for mutual gain, insist on objective criteria"
-    source_title: Getting to Yes (Fisher, Ury, Patton)
-    source_url: https://www.penguinrandomhouse.com/books/324551/getting-to-yes-by-roger-fisher-and-william-ury/
-    confidence: high
-  - id: fact-business-02
-    statement: "Anchoring: first number thrown out heavily influences outcome"
-    source_title: Getting to Yes (Fisher, Ury, Patton)
-    source_url: https://www.penguinrandomhouse.com/books/324551/getting-to-yes-by-roger-fisher-and-william-ury/
-    confidence: high
+  - id: fact-negotiation-skills-1
+    statement: A BATNA is the best alternative available if a negotiated agreement is not reached.
+    source_title: What is a BATNA?
+    source_url: https://www.pon.harvard.edu/daily/batna/translate-your-batna-to-the-current-deal/
+    confidence: low
+  - id: fact-negotiation-skills-2
+    statement: Interest-based negotiation focuses on underlying interests instead of fixed positions.
+    source_title: What is Interest-Based Bargaining?
+    source_url: https://www.pon.harvard.edu/daily/negotiation-skills-daily/what-is-interest-based-bargaining/
+    confidence: low
+  - id: fact-negotiation-skills-3
+    statement: ZOPA describes the range in which parties can reach a mutually acceptable agreement.
+    source_title: What is the Zone of Possible Agreement?
+    source_url: >-
+      https://www.pon.harvard.edu/daily/negotiation-skills-daily/what-is-the-zone-of-possible-agreement/
+    confidence: low
 completeness: 0.88
 known_gaps:
-  - Statistics and data cited are from 1981 and earlier; more recent data may have become available since publication
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
+  - This compact repair keeps only source-mapped public claims from the sampled audit entry.
 primary_sources:
-  - title: Getting to Yes (Fisher, Ury, Patton)
-    type: book
-    year: 1981
-    url: https://www.penguinrandomhouse.com/books/324551/getting-to-yes-by-roger-fisher-and-william-ury/
-    institution: Penguin
-  - title: "Getting to Yes: Negotiating Agreement Without Giving In (2025 Updated)"
-    type: book
+  - title: What is a BATNA?
+    type: blog_post
     year: 2025
-    authors:
-      - Fisher R.
-      - Ury W.
-      - Patton B.
-    institution: Penguin
-    url: https://www.penguinrandomhouse.com/getting-to-yes/
-  - title: Never Split the Difference (2025 Edition)
-    type: book
+    url: https://www.pon.harvard.edu/daily/batna/translate-your-batna-to-the-current-deal/
+    institution: Harvard Program on Negotiation
+  - title: What is Interest-Based Bargaining?
+    type: blog_post
     year: 2025
-    authors:
-      - Voss C.
-    institution: Harper Business
-    url: https://www.harpercollins.com/never-split-the-difference/
-  - title: Getting to Yes (2025 Updated)
-    type: book
+    url: https://www.pon.harvard.edu/daily/negotiation-skills-daily/what-is-interest-based-bargaining/
+    institution: Harvard Program on Negotiation
+  - title: What is the Zone of Possible Agreement?
+    type: blog_post
     year: 2025
-    authors:
-      - Fisher R.
-      - Ury W.
-    institution: Penguin
-    url: https://www.penguinrandomhouse.com/getting-to-yes/
-  - title: Never Split the Difference (2025)
-    type: book
-    year: 2025
-    authors:
-      - Voss C.
-    institution: Harper Business
-    url: https://www.harpercollins.com/never-split/
-secondary_sources:
-  - title: "Getting to Yes: Negotiating Agreement Without Giving In"
-    type: book
-    year: 1981
-    url: https://www.penguinrandomhouse.com/books/324551/getting-to-yes-by-roger-fisher-and-william-ury/
-    institution: Roger Fisher & William Ury, Penguin
-  - title: Principles of Economics (N. Gregory Mankiw)
-    type: textbook
-    year: 2020
-    url: https://www.cengage.com/c/principles-of-economics-9e-mankiw/9780357038314/
-    institution: Cengage Learning
+    url: >-
+      https://www.pon.harvard.edu/daily/negotiation-skills-daily/what-is-the-zone-of-possible-agreement/
+    institution: Harvard Program on Negotiation
+secondary_sources: []
+disputed_statements: []
+updated: "2026-05-28"
 ---
+
 ## TL;DR
 
-Negotiation is a dialogue to reach agreement. Harvard Negotiation Project (Fisher & Ury): separate people from the problem, focus on interests (not positions), invent options for mutual gain, insist on objective criteria. BATNA (Best Alternative to Negotiated Agreement) — your power comes from ability to walk away.
+Negotiation skills center on alternatives, interests, and agreement zones rather than positional bargaining alone. This repair maps claims to Harvard negotiation sources.
 
 ## Core Explanation
 
-BATNA: always know your walk-away option before negotiating. Anchoring: first number thrown out heavily influences outcome. Win-win vs. win-lose: most negotiations aren't zero-sum — look for integrative potential. Active listening: understand their interests. Silence is powerful — let the other side speak. 'Never split the difference' (Chris Voss): calibrated questions.
+The sampled article had low verified coverage. This version keeps three bounded claims about BATNA, interests, and zone of possible agreement.
 
 ## Further Reading
 
-- [Getting to Yes (Fisher, Ury, Patton)](https://www.penguinrandomhouse.com/books/324551/getting-to-yes-by-roger-fisher-and-william-ury/)
-
-## Related Articles
-
-- [Negotiation Skills: BATNA, Anchoring, and Integrative Bargaining](../../self-improvement/negotiation-skills-batna-anchoring-and-integrative-bargaining.md)
-- [Networking Skills](../networking-skills.md)
-- [Communication Skills](../../self-improvement/communication-skills.md)
+- [What is a BATNA?](https://www.pon.harvard.edu/daily/batna/translate-your-batna-to-the-current-deal/)
+- [What is Interest-Based Bargaining?](https://www.pon.harvard.edu/daily/negotiation-skills-daily/what-is-interest-based-bargaining/)
+- [What is the Zone of Possible Agreement?](https://www.pon.harvard.edu/daily/negotiation-skills-daily/what-is-the-zone-of-possible-agreement/)

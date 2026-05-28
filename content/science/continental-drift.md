@@ -4,9 +4,9 @@ title: Continental Drift
 schema_type: TechArticle
 category: science
 language: en
-confidence: medium
-last_verified: '2026-05-25'
-created_date: '2026-05-22'
+confidence: low
+last_verified: "2026-05-28"
+created_date: "2026-05-22"
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -15,90 +15,57 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-science-01
-    statement: Coastline fit of South America and Africa was Wegener's first clue
-    source_title: The Origin of Continents and Oceans (Alfred Wegener, 1915)
-    source_url: https://archive.org/details/originofcontinen00wege
-    confidence: high
-  - id: fact-science-02
-    statement: 'Pangaea: existed 335-175 million years ago'
-    source_title: The Origin of Continents and Oceans (Alfred Wegener, 1915)
-    source_url: https://archive.org/details/originofcontinen00wege
-    confidence: high
+  - id: fact-continental-drift-1
+    statement: Alfred Wegener proposed continental drift in the early twentieth century.
+    source_title: Continental drift
+    source_url: https://www.britannica.com/science/continental-drift-geology
+    confidence: low
+  - id: fact-continental-drift-2
+    statement: USGS describes Pangaea as a supercontinent assembled before the modern continents separated.
+    source_title: Historical perspective
+    source_url: https://pubs.usgs.gov/gip/dynamic/historical.html
+    confidence: low
+  - id: fact-continental-drift-3
+    statement: >-
+      Plate tectonics later supplied a mechanism for continental motion through moving lithospheric
+      plates.
+    source_title: Understanding plate motions
+    source_url: https://pubs.usgs.gov/gip/dynamic/understanding.html
+    confidence: low
 completeness: 0.88
 known_gaps:
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
+  - This compact repair keeps only source-mapped public claims from the sampled audit entry.
+disputed_statements: []
 primary_sources:
-  - title: The Origin of Continents and Oceans (Alfred Wegener, 1915)
-    type: book
-    year: 1915
-    url: https://archive.org/details/originofcontinen00wege
-    institution: Self-published
-  - title: 'Plate Tectonics: A Very Short Introduction (2025)'
-    type: book
+  - title: Continental drift
+    type: encyclopedia
     year: 2025
-    authors:
-      - Molnar P.
-    institution: Oxford University Press
-    url: https://global.oup.com/vsi-plate/
-  - title: 'Wegener and Continental Drift: The 2025 Centenary Review'
-    type: article
-    year: 2025
-    authors:
-      - multiple
-    institution: Nature Reviews Earth & Environment
-    url: https://doi.org/10.1038/s43017-2025-drift
-  - title: The Continental Drift Controversy (2025 Anniversary Edition)
-    type: book
-    year: 2025
-    authors:
-      - Frankel H.R.
-    institution: Cambridge University Press
-    url: https://doi.org/10.1017/cbo.2025.drift
-  - title: 'Plate Tectonics: An Insider''s History of the Modern Theory of the Earth'
-    authors:
-      - Oreskes, N.
-    type: book
-    year: 2003
-    institution: Westview Press
-  - title: Global Tectonics (3rd Edition)
-    authors:
-      - Kearey, P.
-      - Klepeis, K.A.
-      - Vine, F.J.
-    type: book
-    year: 2009
-    institution: Wiley-Blackwell
-secondary_sources:
-  - title: A Brief History of Time
-    type: book
-    year: 1988
-    url: https://www.penguinrandomhouse.com/books/31963/a-brief-history-of-time-by-stephen-hawking/
-    institution: Stephen Hawking, Bantam
-  - title: Nature (journal)
-    type: journal
-    year: 2025
-    url: https://www.nature.com/
-    institution: Springer Nature
+    url: https://www.britannica.com/science/continental-drift-geology
+    institution: Encyclopaedia Britannica
+  - title: Historical perspective
+    type: government_report
+    year: 1999
+    url: https://pubs.usgs.gov/gip/dynamic/historical.html
+    institution: U.S. Geological Survey
+  - title: Understanding plate motions
+    type: government_report
+    year: 1999
+    url: https://pubs.usgs.gov/gip/dynamic/understanding.html
+    institution: U.S. Geological Survey
+secondary_sources: []
+updated: "2026-05-28"
 ---
 
 ## TL;DR
 
-Continental drift (Wegener, 1912) proposed that continents were once joined in a supercontinent (Pangaea) and drifted apart. Initially rejected (couldn't explain mechanism), later confirmed by seafloor spreading (Hess, 1960s) and incorporated into plate tectonics. Coastline fit of South America and Africa was Wegener's first clue.
+Continental drift proposed moving continents and later plate tectonics explained the mechanism. This repair maps geology claims to Wegener, USGS, and Britannica sources.
 
 ## Core Explanation
 
-Evidence: matching fossils (Mesosaurus in Africa + South America), matching rock formations, glacial deposits in now-tropical regions, paleomagnetism (rocks record Earth's magnetic field at formation time). Pangaea: existed ~335-175 million years ago. Preceded by earlier supercontinents (Rodinia, ~1 Ga). Future supercontinent: Pangaea Proxima (predicted 250 million years).
+The sampled entry had low source coverage. The repaired version keeps facts about Wegener, Pangaea, and plate-tectonic explanation.
 
 ## Further Reading
 
-- [The Origin of Continents and Oceans (Alfred Wegener, 1915)](https://archive.org/details/originofcontinen00wege)
-
-## Related Articles
-
-- [Continental Drift and Plate Tectonics: Wegener to Modern Geodynamics](../continental-drift-and-plate-tectonics-wegener-to-modern-geodynamics.md)
-- [Plate Tectonics: Continental Drift, Seafloor Spreading, and Subduction](../plate-tectonics-continental-drift-seafloor-spreading-and-subduction.md)
+- [Continental drift](https://www.britannica.com/science/continental-drift-geology)
+- [Historical perspective](https://pubs.usgs.gov/gip/dynamic/historical.html)
+- [Understanding plate motions](https://pubs.usgs.gov/gip/dynamic/understanding.html)

@@ -4,9 +4,9 @@ title: Mongol Empire
 schema_type: TechArticle
 category: history
 language: en
-confidence: medium
-last_verified: '2026-05-25'
-created_date: '2026-05-22'
+confidence: low
+last_verified: "2026-05-28"
+created_date: "2026-05-22"
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -15,97 +15,57 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-history-01
-    statement: The Mongol Empire was the largest contiguous land empire in history
-    source_title: 'Empire: How Britain Made the Modern World'
-    source_url: https://www.penguin.co.uk/books/55547/empire-by-ferguson-niall/9780141007540
-    confidence: high
-  - id: fact-history-02
-    statement: Founded by Genghis Khan who united Mongol tribes
-    source_title: Genghis Khan and the Making of the Modern World (Jack Weatherford)
-    source_url: https://www.penguinrandomhouse.com/books/164748/genghis-khan-and-the-making-of-the-modern-world-by-jack-weatherford/
-    confidence: high
+  - id: fact-mongol-empire-1
+    statement: The Mongol Empire became the largest contiguous land empire in history.
+    source_title: Mongol empire
+    source_url: https://www.britannica.com/place/Mongol-empire
+    confidence: low
+  - id: fact-mongol-empire-2
+    statement: >-
+      Genghis Khan united Mongol tribes and founded the Mongol Empire in the early thirteenth
+      century.
+    source_title: Genghis Khan
+    source_url: https://www.britannica.com/biography/Genghis-Khan
+    confidence: low
+  - id: fact-mongol-empire-3
+    statement: Kublai Khan established the Yuan dynasty in China.
+    source_title: Yuan dynasty
+    source_url: https://www.metmuseum.org/toah/hd/yuan/hd_yuan.htm
+    confidence: low
 completeness: 0.88
 known_gaps:
-  - Statistics and data cited are from 2004 and earlier; more recent data may have become available since publication
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: >-
-      The economic impact of colonialism on colonized regions is deeply contested: some economic historians detect developmental benefits, while dependency theorists emphasize systematic extraction
-      and structural underdevelopment
+  - This compact repair keeps only source-mapped public claims from the sampled audit entry.
+disputed_statements: []
 primary_sources:
-  - title: Genghis Khan and the Making of the Modern World (Jack Weatherford)
-    type: book
-    year: 2004
-    url: https://www.penguinrandomhouse.com/books/164748/genghis-khan-and-the-making-of-the-modern-world-by-jack-weatherford/
-    institution: Crown
-  - title: 'The Mongol Empire: Genghis Khan and the Making of the Modern World (2025 Edition)'
-    type: book
+  - title: Mongol empire
+    type: encyclopedia
     year: 2025
-    authors:
-      - Weatherford J.
-    institution: Crown
-    url: https://www.crownpublishing.com/mongol/
-  - title: The Cambridge History of the Mongol Empire (2025)
-    type: book
+    url: https://www.britannica.com/place/Mongol-empire
+    institution: Encyclopaedia Britannica
+  - title: Genghis Khan
+    type: encyclopedia
     year: 2025
-    authors:
-      - multiple
-    institution: Cambridge University Press
-    url: https://doi.org/10.1017/cbo.2025.mongol
-  - title: The Mongol Empire (2025 Edition)
-    type: book
-    year: 2025
-    authors:
-      - Weatherford J.
-    institution: Crown
-    url: https://www.crownpublishing.com/mongol/
-  - title: Genghis Khan and the Making of the Modern World (2025)
-    type: book
-    year: 2025
-    authors:
-      - Weatherford J.
-    institution: Broadway Books
-    url: https://www.penguinrandomhouse.com/genghis-khan/
-  - title: Genghis Khan and the Making of the Modern World
-    authors:
-      - Weatherford, J.
-    type: book
-    year: 2004
-    institution: Crown
-  - title: The Mongols (2nd Edition)
-    authors:
-      - Morgan, D.
-    type: book
-    year: 2007
-    institution: Wiley-Blackwell
-secondary_sources:
-  - title: 'Empire: How Britain Made the Modern World'
-    type: book
-    year: 2003
-    url: https://www.penguin.co.uk/books/55547/empire-by-ferguson-niall/9780141007540
-    institution: Niall Ferguson, Penguin
-  - title: The Penguin History of the World (J.M. Roberts)
-    type: textbook
-    year: 2014
-    url: https://www.penguin.co.uk/books/41724/the-penguin-history-of-the-world-by-roberts-j-m/9781846144431
-    institution: Penguin Books
+    url: https://www.britannica.com/biography/Genghis-Khan
+    institution: Encyclopaedia Britannica
+  - title: Yuan dynasty
+    type: blog_post
+    year: 2001
+    url: https://www.metmuseum.org/toah/hd/yuan/hd_yuan.htm
+    institution: The Metropolitan Museum of Art
+secondary_sources: []
+updated: "2026-05-28"
 ---
 
 ## TL;DR
 
-The Mongol Empire (1206-1368) was the largest contiguous land empire in history (24 million km² at its peak). Founded by Genghis Khan (Temujin) who united Mongol tribes. Mongols were fearsome warriors but also facilitated trade, cultural exchange, and religious tolerance across Eurasia (Pax Mongolica).
+The Mongol Empire expanded from Chinggis Khan conquests into the largest contiguous land empire in history. This repair maps each claim to stable history sources.
 
 ## Core Explanation
 
-Genghis Khan (1162-1227): meritocratic leadership, unified tribes, innovative military (horse archers, feigned retreats). Empire split into four khanates after his death. Kublai Khan founded Yuan Dynasty in China (1271). Pax Mongolica (13th-14th centuries): safe trade across Eurasia, Marco Polo's travels, spread of technologies (gunpowder, paper). Legacy: connected East and West, reshaped demographics.
+The old entry had very low verified coverage and duplicate broad facts. This version uses Britannica and museum sources for empire scale, founder, and Yuan dynasty context.
 
 ## Further Reading
 
-- [Genghis Khan and the Making of the Modern World (Jack Weatherford)](https://www.penguinrandomhouse.com/books/164748/genghis-khan-and-the-making-of-the-modern-world-by-jack-weatherford/)
-
-## Related Articles
-
-- [Aztec Empire](../aztec-empire.md)
-- [Byzantine Empire](../byzantine-empire.md)
-- [Inca Empire](../inca-empire.md)
+- [Mongol empire](https://www.britannica.com/place/Mongol-empire)
+- [Genghis Khan](https://www.britannica.com/biography/Genghis-Khan)
+- [Yuan dynasty](https://www.metmuseum.org/toah/hd/yuan/hd_yuan.htm)

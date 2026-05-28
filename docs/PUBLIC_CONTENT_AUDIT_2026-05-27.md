@@ -1,8 +1,8 @@
 # AnchorFact Public Content Audit - 2026-05-28
 
-Generated: 2026-05-28T02:03:07.011Z
+Generated: 2026-05-28T02:09:11.455Z
 
-Snapshot: 555 public / 445 draft / 1520 claims.
+Snapshot: 555 public / 445 draft / 1527 claims.
 
 ## Summary
 
@@ -23,22 +23,22 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 
 | # | bucket | slug | confidence | coverage | claims | checks | recommendation |
 |---:|---|---|---|---:|---:|---|---|
-| 1 | low_verified_coverage | `sports/chess-strategy` | medium | 3/7 (42.9%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
-| 2 | low_verified_coverage | `history/mongol-empire` | low | 1/7 (14.3%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 3 | low_verified_coverage | `history/ottoman-empire` | low | 1/6 (16.7%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 4 | low_verified_coverage | `science/cell-structure` | low | 1/6 (16.7%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 5 | low_verified_coverage | `science/continental-drift` | low | 1/6 (16.7%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 6 | low_verified_coverage | `science/quantum-mechanics` | low | 1/6 (16.7%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 7 | low_verified_coverage | `business/negotiation-skills` | low | 1/5 (20.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 8 | low_verified_coverage | `computer-science/graph-bfs-dfs` | low | 1/5 (20.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 1 | low_verified_coverage | `computer-science/infrastructure-as-code-iac` | low | 1/5 (20.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 2 | low_verified_coverage | `computer-science/linked-list` | low | 1/5 (20.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 3 | low_verified_coverage | `history/colonialism` | low | 1/5 (20.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 4 | low_verified_coverage | `ai/ai-blockchain` | medium | 1/4 (25.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 5 | low_verified_coverage | `ai/ai-for-smart-homes` | medium | 1/4 (25.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 6 | low_verified_coverage | `ai/ai-in-education` | medium | 1/4 (25.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 7 | low_verified_coverage | `ai/mechanistic-interpretability` | medium | 1/4 (25.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 8 | low_verified_coverage | `computer-science/docker` | low | 1/4 (25.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
 | 9 | high_confidence | `ai/gpt-models` | high | 4/4 (100.0%) | 6 | source=pass; claim=pass; summary=pass | keep_public |
 | 10 | high_confidence | `ai/agentic-ai` | high | 2/2 (100.0%) | 3 | source=pass; claim=pass; summary=pass | keep_public |
 | 11 | high_confidence | `ai/ai-in-healthcare` | high | 3/3 (100.0%) | 3 | source=pass; claim=pass; summary=pass | keep_public |
 | 12 | high_confidence | `ai/ai-red-teaming-and-safety` | high | 3/3 (100.0%) | 3 | source=pass; claim=pass; summary=pass | keep_public |
-| 13 | medium_capped_claims | `ai/neural-architecture-search` | medium | 1/2 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
-| 14 | medium_capped_claims | `ai/neural-rendering` | medium | 1/2 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
-| 15 | medium_capped_claims | `ai/neurosymbolic-ai` | medium | 1/2 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
-| 16 | medium_capped_claims | `ai/nlp-advanced-techniques` | medium | 2/2 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
+| 13 | medium_capped_claims | `ai/object-detection` | medium | 1/2 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
+| 14 | medium_capped_claims | `ai/open-source-ai-movement` | medium | 1/2 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
+| 15 | medium_capped_claims | `ai/representation-learning` | medium | 2/2 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
+| 16 | medium_capped_claims | `ai/self-supervised-learning` | medium | 1/2 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
 | 17 | low_confidence_public | `arts/film-genres` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 | 18 | low_confidence_public | `arts/world-literature` | low | 2/2 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 | 19 | low_confidence_public | `history/age-of-exploration` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
@@ -46,115 +46,25 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 
 ## Article Findings
 
-### 1. Chess Strategy
+### 1. Infrastructure as Code (IaC)
 
-- canonical slug: `sports/chess-strategy`
-- canonical URL: https://anchorfact.org/sports/chess-strategy/
-- bucket: `low_verified_coverage`
-- confidence: `medium` (verified_sources, score 0.72)
-- verified source coverage: 3/7 (42.9%)
-- claims: 3 total, 0 capped, 0 missing evidence
-- quality reasons: generic_source_homepage, partial_source_verification, low_verified_coverage
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_source_homepage
-- recommendation: `repair_sources`
-
-### 2. Mongol Empire
-
-- canonical slug: `history/mongol-empire`
-- canonical URL: https://anchorfact.org/history/mongol-empire/
+- canonical slug: `computer-science/infrastructure-as-code-iac`
+- canonical URL: https://anchorfact.org/computer-science/infrastructure-as-code-iac/
 - bucket: `low_verified_coverage`
 - confidence: `low` (verified_sources, score 0.475)
-- verified source coverage: 1/7 (14.3%)
-- claims: 2 total, 2 capped, 0 missing evidence
-- quality reasons: partial_source_verification, low_verified_coverage
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: none
-- recommendation: `repair_sources`
-
-### 3. Ottoman Empire
-
-- canonical slug: `history/ottoman-empire`
-- canonical URL: https://anchorfact.org/history/ottoman-empire/
-- bucket: `low_verified_coverage`
-- confidence: `low` (verified_sources, score 0.475)
-- verified source coverage: 1/6 (16.7%)
-- claims: 2 total, 2 capped, 0 missing evidence
-- quality reasons: partial_source_verification, low_verified_coverage
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: none
-- recommendation: `repair_sources`
-
-### 4. Cell Structure
-
-- canonical slug: `science/cell-structure`
-- canonical URL: https://anchorfact.org/science/cell-structure/
-- bucket: `low_verified_coverage`
-- confidence: `low` (verified_sources, score 0.475)
-- verified source coverage: 1/6 (16.7%)
-- claims: 2 total, 2 capped, 0 missing evidence
-- quality reasons: generic_source_homepage, partial_source_verification, low_verified_coverage
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement, generic_source_homepage
-- recommendation: `repair_sources`
-
-### 5. Continental Drift
-
-- canonical slug: `science/continental-drift`
-- canonical URL: https://anchorfact.org/science/continental-drift/
-- bucket: `low_verified_coverage`
-- confidence: `low` (verified_sources, score 0.475)
-- verified source coverage: 1/6 (16.7%)
-- claims: 2 total, 2 capped, 0 missing evidence
-- quality reasons: generic_source_homepage, partial_source_verification, low_verified_coverage
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement, generic_source_homepage
-- recommendation: `repair_sources`
-
-### 6. Quantum Mechanics
-
-- canonical slug: `science/quantum-mechanics`
-- canonical URL: https://anchorfact.org/science/quantum-mechanics/
-- bucket: `low_verified_coverage`
-- confidence: `low` (verified_sources, score 0.475)
-- verified source coverage: 1/6 (16.7%)
-- claims: 2 total, 2 capped, 0 missing evidence
-- quality reasons: generic_source_homepage, partial_source_verification, low_verified_coverage
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_source_homepage
-- recommendation: `repair_sources`
-
-### 7. Negotiation Skills
-
-- canonical slug: `business/negotiation-skills`
-- canonical URL: https://anchorfact.org/business/negotiation-skills/
-- bucket: `low_verified_coverage`
-- confidence: `low` (verified_sources, score 0.495)
 - verified source coverage: 1/5 (20.0%)
 - claims: 2 total, 2 capped, 0 missing evidence
 - quality reasons: partial_source_verification, low_verified_coverage
 - source-title match: `weak`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
-- hygiene flags: none
+- hygiene flags: generic_dispute_statement
 - recommendation: `repair_sources`
 
-### 8. Graph & BFS/DFS
+### 2. Linked List
 
-- canonical slug: `computer-science/graph-bfs-dfs`
-- canonical URL: https://anchorfact.org/computer-science/graph-bfs-dfs/
+- canonical slug: `computer-science/linked-list`
+- canonical URL: https://anchorfact.org/computer-science/linked-list/
 - bucket: `low_verified_coverage`
 - confidence: `low` (verified_sources, score 0.475)
 - verified source coverage: 1/5 (20.0%)
@@ -164,6 +74,96 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
 - hygiene flags: duplicate_sources, generic_dispute_statement, generic_source_homepage
+- recommendation: `repair_sources`
+
+### 3. Colonialism
+
+- canonical slug: `history/colonialism`
+- canonical URL: https://anchorfact.org/history/colonialism/
+- bucket: `low_verified_coverage`
+- confidence: `low` (verified_sources, score 0.475)
+- verified source coverage: 1/5 (20.0%)
+- claims: 2 total, 2 capped, 0 missing evidence
+- quality reasons: partial_source_verification, low_verified_coverage
+- source-title match: `weak`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: none
+- recommendation: `repair_sources`
+
+### 4. AI and Blockchain: Decentralized Intelligence, Smart Contracts, and Crypto-Economic Systems
+
+- canonical slug: `ai/ai-blockchain`
+- canonical URL: https://anchorfact.org/ai/ai-blockchain/
+- bucket: `low_verified_coverage`
+- confidence: `medium` (verified_sources, score 0.74)
+- verified source coverage: 1/4 (25.0%)
+- claims: 2 total, 2 capped, 0 missing evidence
+- quality reasons: generic_source_homepage, partial_source_verification, low_verified_coverage
+- source-title match: `weak`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: generic_source_homepage
+- recommendation: `repair_sources`
+
+### 5. AI for Smart Homes: Ambient Intelligence, Energy Optimization, and Predictive Home Automation
+
+- canonical slug: `ai/ai-for-smart-homes`
+- canonical URL: https://anchorfact.org/ai/ai-for-smart-homes/
+- bucket: `low_verified_coverage`
+- confidence: `medium` (verified_sources, score 0.89)
+- verified source coverage: 1/4 (25.0%)
+- claims: 2 total, 2 capped, 0 missing evidence
+- quality reasons: partial_source_verification, low_verified_coverage, high_confidence_evidence_gap
+- source-title match: `weak`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: none
+- recommendation: `repair_sources`
+
+### 6. AI in Education: Personalized Learning and Intelligent Tutoring Systems
+
+- canonical slug: `ai/ai-in-education`
+- canonical URL: https://anchorfact.org/ai/ai-in-education/
+- bucket: `low_verified_coverage`
+- confidence: `medium` (verified_sources, score 0.705)
+- verified source coverage: 1/4 (25.0%)
+- claims: 2 total, 2 capped, 0 missing evidence
+- quality reasons: partial_source_verification, low_verified_coverage
+- source-title match: `weak`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: none
+- recommendation: `repair_sources`
+
+### 7. Mechanistic Interpretability: Reverse-Engineering Neural Network Circuits and Features
+
+- canonical slug: `ai/mechanistic-interpretability`
+- canonical URL: https://anchorfact.org/ai/mechanistic-interpretability/
+- bucket: `low_verified_coverage`
+- confidence: `medium` (verified_sources, score 0.89)
+- verified source coverage: 1/4 (25.0%)
+- claims: 2 total, 2 capped, 0 missing evidence
+- quality reasons: partial_source_verification, low_verified_coverage, high_confidence_evidence_gap
+- source-title match: `weak`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: none
+- recommendation: `repair_sources`
+
+### 8. Docker
+
+- canonical slug: `computer-science/docker`
+- canonical URL: https://anchorfact.org/computer-science/docker/
+- bucket: `low_verified_coverage`
+- confidence: `low` (verified_sources, score 0.475)
+- verified source coverage: 1/4 (25.0%)
+- claims: 2 total, 2 capped, 0 missing evidence
+- quality reasons: generic_source_homepage, partial_source_verification, low_verified_coverage
+- source-title match: `weak`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: generic_dispute_statement, generic_source_homepage
 - recommendation: `repair_sources`
 
 ### 9. GPT (Generative Pre-trained Transformer) Model Family
@@ -226,12 +226,12 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 13. Neural Architecture Search: Automated Design of Deep Neural Networks
+### 13. Object Detection: YOLO, R-CNN, and DETR
 
-- canonical slug: `ai/neural-architecture-search`
-- canonical URL: https://anchorfact.org/ai/neural-architecture-search/
+- canonical slug: `ai/object-detection`
+- canonical URL: https://anchorfact.org/ai/object-detection/
 - bucket: `medium_capped_claims`
-- confidence: `medium` (verified_sources, score 0.74)
+- confidence: `medium` (verified_sources, score 0.67)
 - verified source coverage: 1/2 (50.0%)
 - claims: 3 total, 3 capped, 0 missing evidence
 - quality reasons: partial_source_verification
@@ -241,27 +241,12 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `repair_sources`
 
-### 14. Neural Rendering: NeRF, View Synthesis, and Implicit Scene Representations
+### 14. The Open-Source AI Movement: Llama, DeepSeek, and Democratization
 
-- canonical slug: `ai/neural-rendering`
-- canonical URL: https://anchorfact.org/ai/neural-rendering/
+- canonical slug: `ai/open-source-ai-movement`
+- canonical URL: https://anchorfact.org/ai/open-source-ai-movement/
 - bucket: `medium_capped_claims`
-- confidence: `medium` (verified_sources, score 0.73)
-- verified source coverage: 1/2 (50.0%)
-- claims: 3 total, 3 capped, 0 missing evidence
-- quality reasons: claim_evidence_weak, partial_source_verification
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: claim_evidence_weak, duplicate_sources
-- recommendation: `repair_sources`
-
-### 15. Neuro-Symbolic AI: Bridging Learning and Reasoning
-
-- canonical slug: `ai/neurosymbolic-ai`
-- canonical URL: https://anchorfact.org/ai/neurosymbolic-ai/
-- bucket: `medium_capped_claims`
-- confidence: `medium` (verified_sources, score 0.73)
+- confidence: `medium` (verified_sources, score 0.71)
 - verified source coverage: 1/2 (50.0%)
 - claims: 3 total, 3 capped, 0 missing evidence
 - quality reasons: claim_evidence_weak, partial_source_verification
@@ -271,12 +256,12 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: claim_evidence_weak
 - recommendation: `repair_sources`
 
-### 16. Advanced NLP: Tokenization, Embeddings, and Decoding
+### 15. Representation Learning: Autoencoders, VAEs, and MAEs
 
-- canonical slug: `ai/nlp-advanced-techniques`
-- canonical URL: https://anchorfact.org/ai/nlp-advanced-techniques/
+- canonical slug: `ai/representation-learning`
+- canonical URL: https://anchorfact.org/ai/representation-learning/
 - bucket: `medium_capped_claims`
-- confidence: `medium` (verified_sources, score 0.72)
+- confidence: `medium` (verified_sources, score 0.74)
 - verified source coverage: 2/2 (100.0%)
 - claims: 3 total, 3 capped, 0 missing evidence
 - quality reasons: claim_evidence_weak
@@ -284,6 +269,21 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
 - hygiene flags: claim_evidence_weak
+- recommendation: `repair_sources`
+
+### 16. Self-Supervised Learning: Learning Without Labels
+
+- canonical slug: `ai/self-supervised-learning`
+- canonical URL: https://anchorfact.org/ai/self-supervised-learning/
+- bucket: `medium_capped_claims`
+- confidence: `medium` (verified_sources, score 0.67)
+- verified source coverage: 1/2 (50.0%)
+- claims: 3 total, 3 capped, 0 missing evidence
+- quality reasons: claim_evidence_weak, partial_source_verification
+- source-title match: `weak`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: claim_evidence_weak, duplicate_sources
 - recommendation: `repair_sources`
 
 ### 17. Film Genres

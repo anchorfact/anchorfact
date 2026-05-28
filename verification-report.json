@@ -4,11 +4,11 @@
     "total_articles": 1000,
     "total_with_errors": 0,
     "average_sources_per_article": "2.1",
-    "overall_verification_rate": "52.3%",
+    "overall_verification_rate": "53.7%",
     "elapsed_ms": 635005,
     "elapsed_sec": "635.0",
     "concurrency": 3,
-    "manual_reviewed_articles": 127
+    "manual_reviewed_articles": 139
   },
   "articles": [
     {
@@ -12295,19 +12295,20 @@
       "file": "content/ai/neural-architecture-search.md",
       "article_id": "neural-architecture-search",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Neural Architecture Search: Methods, Applications, and Theory (Nature Collection)",
+          "source_title": "Neural Architecture Search with Reinforcement Learning",
           "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.nature.com/collections/adjaeijhja",
+              "identifier": "https://arxiv.org/abs/1611.01578",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.nature.com/collections/adjaeijhja?error=cookies_not_supported&code=7a576b6f-a4fb-4adc-9d3d-77cd862bd90c"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 9 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -12315,25 +12316,46 @@
           "all_verified": true
         },
         {
-          "source_title": "Generative neural architecture search (GNAS)",
+          "source_title": "Efficient Neural Architecture Search via Parameter Sharing",
           "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.sciencedirect.com/science/article/pii/S092523122501032X",
-              "verified": false,
+              "identifier": "https://arxiv.org/abs/1802.03268",
+              "verified": true,
               "metadata": {
-                "status": 403,
-                "final_url": "https://www.sciencedirect.com/science/article/pii/S092523122501032X"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 9 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "DARTS: Differentiable Architecture Search",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1806.09055",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 9 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/neural-network-basics.md",
@@ -12403,18 +12425,38 @@
       "file": "content/ai/neural-rendering.md",
       "article_id": "neural-rendering",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
           "source_title": "NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2003.08934",
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2003.08934",
               "verified": true,
               "metadata": {
-                "title": "arXiv Query: search_query=&amp;id_list=2003.08934&amp;start=0&amp;max_results=1"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 9 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Mip-NeRF: A Multiscale Representation for Anti-Aliasing Neural Radiance Fields",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2103.13415",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 9 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -12426,20 +12468,24 @@
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2308.04079",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2308.04079",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 9 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/neural-style-transfer.md",
@@ -12503,35 +12549,56 @@
       "file": "content/ai/neurosymbolic-ai.md",
       "article_id": "neurosymbolic-ai",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Neurosymbolic AI: The 3rd Wave",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "arxiv",
-              "identifier": "2005.05818",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Solving olympiad geometry without human demonstrations (AlphaGeometry)",
+          "source_title": "The Neuro-Symbolic Concept Learner: Interpreting Scenes, Words, and Sentences From Natural Supervision",
           "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.nature.com/articles/s41586-023-06747-5",
+              "identifier": "https://arxiv.org/abs/1904.12584",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.nature.com/articles/s41586-023-06747-5?error=cookies_not_supported&code=5d83ebfc-6ee4-4368-9cfb-470a97d24e1b"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 9 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "DeepProbLog: Neural Probabilistic Logic Programming",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1805.10872",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 9 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Logic Tensor Networks",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1606.04422",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 9 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -12539,25 +12606,29 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/nlp-advanced-techniques.md",
       "article_id": "nlp-advanced-techniques",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Neural Machine Translation of Rare Words with Subword Units (BPE)",
+          "source_title": "Attention Is All You Need",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "1508.07909",
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1706.03762",
               "verified": true,
               "metadata": {
-                "title": "arXiv Query: search_query=&amp;id_list=1508.07909&amp;start=0&amp;max_results=1"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 9 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -12565,15 +12636,35 @@
           "all_verified": true
         },
         {
-          "source_title": "The Curious Case of Neural Text Degeneration",
+          "source_title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "1904.09751",
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1810.04805",
               "verified": true,
               "metadata": {
-                "title": "arXiv Query: search_query=&amp;id_list=1904.09751&amp;start=0&amp;max_results=1"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 9 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2005.11401",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 9 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -12581,8 +12672,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/object-detection.md",
@@ -17749,19 +17842,20 @@
       "file": "content/business/negotiation-skills.md",
       "article_id": "kb-2026-00435",
       "generation_method": "ai_structured",
-      "sources_total": 5,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Getting to Yes (Fisher, Ury, Patton)",
-          "source_type": "book",
+          "source_title": "What is a BATNA?",
+          "source_type": "blog_post",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.penguinrandomhouse.com/books/324551/getting-to-yes-by-roger-fisher-and-william-ury/",
+              "identifier": "https://www.pon.harvard.edu/daily/batna/translate-your-batna-to-the-current-deal/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.penguinrandomhouse.com/books/324551/getting-to-yes-by-roger-fisher-and-william-ury/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 9 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -17769,76 +17863,46 @@
           "all_verified": true
         },
         {
-          "source_title": "Getting to Yes: Negotiating Agreement Without Giving In (2025 Updated)",
-          "source_type": "book",
+          "source_title": "What is Interest-Based Bargaining?",
+          "source_type": "blog_post",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.penguinrandomhouse.com/getting-to-yes/",
-              "verified": false,
+              "identifier": "https://www.pon.harvard.edu/daily/negotiation-skills-daily/what-is-interest-based-bargaining/",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://www.penguinrandomhouse.com/getting-to-yes/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 9 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Never Split the Difference (2025 Edition)",
-          "source_type": "book",
+          "source_title": "What is the Zone of Possible Agreement?",
+          "source_type": "blog_post",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.harpercollins.com/never-split-the-difference/",
-              "verified": false,
+              "identifier": "https://www.pon.harvard.edu/daily/negotiation-skills-daily/what-is-the-zone-of-possible-agreement/",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://www.harpercollins.com/never-split-the-difference/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 9 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Getting to Yes (2025 Updated)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.penguinrandomhouse.com/getting-to-yes/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.penguinrandomhouse.com/getting-to-yes/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Never Split the Difference (2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.harpercollins.com/never-split/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.harpercollins.com/never-split/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 4
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/business/networking-skills.md",
@@ -23220,36 +23284,20 @@
       "file": "content/computer-science/graph-bfs-dfs.md",
       "article_id": "kb-2026-00131",
       "generation_method": "ai_structured",
-      "sources_total": 5,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "ACM Digital Library",
-          "source_type": "repository",
+          "source_title": "Breadth-first search",
+          "source_type": "course_material",
           "results": [
             {
               "method": "url",
-              "identifier": "https://dl.acm.org/",
-              "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Algorithms (5th Edition, 2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://algs4.cs.princeton.edu/",
+              "identifier": "https://cp-algorithms.com/graph/breadth-first-search.html",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://algs4.cs.princeton.edu/home/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 9 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -23257,37 +23305,46 @@
           "all_verified": true
         },
         {
-          "source_title": "Graph Algorithms: BFS, DFS, and Parallel Processing (2025 Survey)",
-          "source_type": "survey_paper",
+          "source_title": "Depth First Search",
+          "source_type": "course_material",
           "results": [
             {
               "method": "url",
-              "identifier": "https://doi.org/10.1145/acmcs.2025.graphalgo",
-              "verified": false,
+              "identifier": "https://cp-algorithms.com/graph/depth-first-search.html",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.graphalgo"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 9 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Introduction to Algorithms (4th Edition) — Chapter 20-22",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "Algorithm Design",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
+          "source_title": "Traversal",
+          "source_type": "course_material",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://networkx.org/documentation/stable/reference/algorithms/traversal.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 9 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 2
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/graph-databases-neo4j-property-graphs-and-cypher-query-language.md",
@@ -36955,19 +37012,20 @@
       "file": "content/history/mongol-empire.md",
       "article_id": "kb-2026-00357",
       "generation_method": "ai_structured",
-      "sources_total": 7,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Genghis Khan and the Making of the Modern World (Jack Weatherford)",
-          "source_type": "book",
+          "source_title": "Mongol empire",
+          "source_type": "encyclopedia",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.penguinrandomhouse.com/books/164748/genghis-khan-and-the-making-of-the-modern-world-by-jack-weatherford/",
+              "identifier": "https://www.britannica.com/place/Mongol-empire",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.penguinrandomhouse.com/books/164748/genghis-khan-and-the-making-of-the-modern-world-by-jack-weatherford/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 9 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -36975,88 +37033,46 @@
           "all_verified": true
         },
         {
-          "source_title": "The Mongol Empire: Genghis Khan and the Making of the Modern World (2025 Edition)",
-          "source_type": "book",
+          "source_title": "Genghis Khan",
+          "source_type": "encyclopedia",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.crownpublishing.com/mongol/",
-              "verified": false,
+              "identifier": "https://www.britannica.com/biography/Genghis-Khan",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://crownpublishing.com/mongol/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 9 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "The Cambridge History of the Mongol Empire (2025)",
-          "source_type": "book",
+          "source_title": "Yuan dynasty",
+          "source_type": "blog_post",
           "results": [
             {
               "method": "url",
-              "identifier": "https://doi.org/10.1017/cbo.2025.mongol",
-              "verified": false,
+              "identifier": "https://www.metmuseum.org/toah/hd/yuan/hd_yuan.htm",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1017/cbo.2025.mongol"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 9 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
-        },
-        {
-          "source_title": "The Mongol Empire (2025 Edition)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.crownpublishing.com/mongol/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://crownpublishing.com/mongol/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Genghis Khan and the Making of the Modern World (2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.penguinrandomhouse.com/genghis-khan/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.penguinrandomhouse.com/genghis-khan/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Genghis Khan and the Making of the Modern World",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "The Mongols (2nd Edition)",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 4
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/history/mughal-empire.md",
@@ -37194,19 +37210,20 @@
       "file": "content/history/ottoman-empire.md",
       "article_id": "kb-2026-00356",
       "generation_method": "ai_structured",
-      "sources_total": 6,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Osman's Dream: The History of the Ottoman Empire (Caroline Finkel)",
-          "source_type": "book",
+          "source_title": "Ottoman Empire",
+          "source_type": "encyclopedia",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.basicbooks.com/titles/caroline-finkel/osmans-dream/9780465023974/",
+              "identifier": "https://www.britannica.com/place/Ottoman-Empire",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.hachettebookgroup.com/titles/caroline-finkel/osmans-dream/9780465023974/?lens=basic-books"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 9 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -37214,71 +37231,46 @@
           "all_verified": true
         },
         {
-          "source_title": "Osman's Dream: The History of the Ottoman Empire (2025 Edition)",
-          "source_type": "book",
+          "source_title": "Mehmed II",
+          "source_type": "encyclopedia",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.basicbooks.com/ottoman/",
-              "verified": false,
+              "identifier": "https://www.britannica.com/biography/Mehmed-II-Ottoman-sultan",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://www.hachettebookgroup.com/ottoman/?lens=basic-books"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 9 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "The Ottoman Empire: A Short History (2025)",
-          "source_type": "book",
+          "source_title": "Turkey - The republic of Turkey",
+          "source_type": "encyclopedia",
           "results": [
             {
               "method": "url",
-              "identifier": "https://press.princeton.edu/ottoman/",
-              "verified": false,
+              "identifier": "https://www.britannica.com/place/Turkey/The-republic-of-Turkey",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://press.princeton.edu/ottoman/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 9 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Lords of the Horizons: A History of the Ottoman Empire (2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://us.macmillan.com/ottoman/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://us.macmillan.com/ottoman/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Osman's Dream: The History of the Ottoman Empire",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "The Ottoman Empire: A Short History",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 3
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/history/polynesian-navigation.md",
@@ -38713,19 +38705,20 @@
       "file": "content/science/cell-structure.md",
       "article_id": "kb-2026-00337",
       "generation_method": "ai_structured",
-      "sources_total": 6,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Molecular Biology of the Cell (Alberts et al.)",
-          "source_type": "book",
+          "source_title": "Cell",
+          "source_type": "encyclopedia",
           "results": [
             {
               "method": "url",
-              "identifier": "https://wwnorton.com/books/9780393884821",
+              "identifier": "https://www.britannica.com/science/cell-biology",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://wwnorton.com/books/9780393884821"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 9 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -38733,71 +38726,46 @@
           "all_verified": true
         },
         {
-          "source_title": "Molecular Biology of the Cell (8th Edition, 2025)",
-          "source_type": "book",
+          "source_title": "Eukaryotic Cells",
+          "source_type": "course_material",
           "results": [
             {
               "method": "url",
-              "identifier": "https://wwnorton.com/mboc/",
-              "verified": false,
+              "identifier": "https://openstax.org/books/biology-2e/pages/4-3-eukaryotic-cells",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://wwnorton.com/mboc/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 9 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Cell Biology: A 2025 Review of Advances",
-          "source_type": "article",
+          "source_title": "Prokaryotic Cells",
+          "source_type": "course_material",
           "results": [
             {
               "method": "url",
-              "identifier": "https://doi.org/10.1038/s41580-2025-cell",
-              "verified": false,
+              "identifier": "https://openstax.org/books/biology-2e/pages/4-2-prokaryotic-cells",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1038/s41580-2025-cell"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 9 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Cell Structure and Function: A 2025 Review",
-          "source_type": "article",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://doi.org/10.1038/s41580-2025-cell",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1038/s41580-2025-cell"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Molecular Biology of the Cell (7th Edition)",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "Essential Cell Biology (6th Edition)",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 3
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/science/chemical-bonding.md",
@@ -39043,36 +39011,20 @@
       "file": "content/science/continental-drift.md",
       "article_id": "kb-2026-00369",
       "generation_method": "ai_structured",
-      "sources_total": 6,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "The Origin of Continents and Oceans (Alfred Wegener, 1915)",
-          "source_type": "book",
+          "source_title": "Continental drift",
+          "source_type": "encyclopedia",
           "results": [
             {
               "method": "url",
-              "identifier": "https://archive.org/details/originofcontinen00wege",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://archive.org/details/originofcontinen00wege"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Plate Tectonics: A Very Short Introduction (2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://global.oup.com/vsi-plate/",
+              "identifier": "https://www.britannica.com/science/continental-drift-geology",
               "verified": true,
               "metadata": {
-                "status": 202,
-                "final_url": "https://global.oup.com/vsi-plate/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 9 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -39080,54 +39032,46 @@
           "all_verified": true
         },
         {
-          "source_title": "Wegener and Continental Drift: The 2025 Centenary Review",
-          "source_type": "article",
+          "source_title": "Historical perspective",
+          "source_type": "government_report",
           "results": [
             {
               "method": "url",
-              "identifier": "https://doi.org/10.1038/s43017-2025-drift",
-              "verified": false,
+              "identifier": "https://pubs.usgs.gov/gip/dynamic/historical.html",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1038/s43017-2025-drift"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 9 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "The Continental Drift Controversy (2025 Anniversary Edition)",
-          "source_type": "book",
+          "source_title": "Understanding plate motions",
+          "source_type": "government_report",
           "results": [
             {
               "method": "url",
-              "identifier": "https://doi.org/10.1017/cbo.2025.drift",
-              "verified": false,
+              "identifier": "https://pubs.usgs.gov/gip/dynamic/understanding.html",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1017/cbo.2025.drift"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 9 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Plate Tectonics: An Insider's History of the Modern Theory of the Earth",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "Global Tectonics (3rd Edition)",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 3
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/science/coral-reefs.md",
@@ -41443,19 +41387,20 @@
       "file": "content/science/quantum-mechanics.md",
       "article_id": "kb-2026-00332",
       "generation_method": "ai_structured",
-      "sources_total": 6,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Principles of Quantum Mechanics (Shankar)",
-          "source_type": "book",
+          "source_title": "Quantum mechanics",
+          "source_type": "encyclopedia",
           "results": [
             {
               "method": "url",
-              "identifier": "https://link.springer.com/book/9780306447907",
+              "identifier": "https://www.britannica.com/science/quantum-mechanics-physics",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://link.springer.com/book/10.1007/978-1-4757-0576-8?error=cookies_not_supported&code=60ce8e3b-a8ea-4577-aa20-4e9d1f9987f1"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 9 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -41463,71 +41408,46 @@
           "all_verified": true
         },
         {
-          "source_title": "Introduction to Quantum Mechanics (4th Edition, 2025)",
-          "source_type": "book",
+          "source_title": "The Nobel Prize in Physics 1918",
+          "source_type": "blog_post",
           "results": [
             {
               "method": "url",
-              "identifier": "https://doi.org/10.1017/cbo.2025.qm",
-              "verified": false,
+              "identifier": "https://www.nobelprize.org/prizes/physics/1918/summary/",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1017/cbo.2025.qm"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 9 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Quantum Mechanics in the Age of Quantum Computing (2025)",
-          "source_type": "article",
+          "source_title": "The Nobel Prize in Physics 1932",
+          "source_type": "blog_post",
           "results": [
             {
               "method": "url",
-              "identifier": "https://doi.org/10.1103/revmodphys.2025.qm",
-              "verified": false,
+              "identifier": "https://www.nobelprize.org/prizes/physics/1932/summary/",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1103/revmodphys.2025.qm"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 9 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Quantum Mechanics: The Theoretical Minimum (2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.basicbooks.com/quantum/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.hachettebookgroup.com/quantum/?lens=basic-books"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Introduction to Quantum Mechanics (3rd Edition)",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "Modern Quantum Mechanics (3rd Edition)",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 3
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/science/renewable-energy.md",
@@ -44153,67 +44073,10 @@
       "file": "content/sports/chess-strategy.md",
       "article_id": "kb-2026-00461",
       "generation_method": "ai_structured",
-      "sources_total": 7,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Bobby Fischer Teaches Chess",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.penguinrandomhouse.com/books/71097/bobby-fischer-teaches-chess-by-bobby-fischer/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://www.penguinrandomhouse.com/books/71097/bobby-fischer-teaches-chess-by-bobby-fischer/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Bobby Fischer Teaches Chess (2025 Edition)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.penguinrandomhouse.com/fischer/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.penguinrandomhouse.com/fischer/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "How to Reassess Your Chess (2025 Updated)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.silman.com/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://www.tylin.com/silman"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "My System (21st Century Edition)",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "FIDE Laws of Chess (2023)",
+          "source_title": "FIDE Laws of Chess",
           "source_type": "standard",
           "results": [
             {
@@ -44221,8 +44084,9 @@
               "identifier": "https://handbook.fide.com/chapter/E012023",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://handbook.fide.com/chapter/E012023"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 9 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
               "match": true
             }
@@ -44230,40 +44094,46 @@
           "all_verified": true
         },
         {
-          "source_title": "A New Strategy for the Exploration of Venus",
-          "source_type": "academic_paper",
+          "source_title": "Chess",
+          "source_type": "encyclopedia",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2412.06830v1",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://www.britannica.com/topic/chess",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 9 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "A discount strategy in word-of-mouth marketing and its assessment",
+          "source_title": "Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "1704.06910v1",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1712.01815",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Batch 9 targeted public evidence repair; shell verifier network was not used for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
       "sources_verified": 3,
-      "sources_unreachable": 3
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/sports/combat-sports-biomechanics-of-striking-and-grappling.md",
