@@ -4,11 +4,11 @@
     "total_articles": 1000,
     "total_with_errors": 342,
     "average_sources_per_article": "2.2",
-    "overall_verification_rate": "70.6%",
+    "overall_verification_rate": "70.9%",
     "elapsed_ms": 635005,
     "elapsed_sec": "635.0",
     "concurrency": 3,
-    "manual_reviewed_articles": 316
+    "manual_reviewed_articles": 326
   },
   "articles": [
     {
@@ -26729,19 +26729,56 @@
       "file": "content/computer-science/jenkins.md",
       "article_id": "kb-2026-00312",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Jenkins Documentation",
-          "source_type": "documentation",
+          "source_title": "Jenkins User Handbook",
+          "source_type": "technical_documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.jenkins.io/doc/",
+              "identifier": "https://www.jenkins.io/doc/book/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.jenkins.io/doc/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-eighth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Pipeline",
+          "source_type": "technical_documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.jenkins.io/doc/book/pipeline/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-eighth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Using a Jenkinsfile",
+          "source_type": "technical_documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.jenkins.io/doc/book/pipeline/jenkinsfile/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-eighth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -26749,8 +26786,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/json.md",
@@ -26941,19 +26980,56 @@
       "file": "content/computer-science/kotlin.md",
       "article_id": "kb-2026-00302",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Kotlin Documentation",
-          "source_type": "documentation",
+          "source_title": "Get started with Kotlin",
+          "source_type": "technical_documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://kotlinlang.org/docs/",
+              "identifier": "https://kotlinlang.org/docs/getting-started.html",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://kotlinlang.org/docs/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-eighth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Get started with Kotlin/JVM",
+          "source_type": "technical_documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kotlinlang.org/docs/jvm-get-started.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-eighth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Null safety",
+          "source_type": "technical_documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kotlinlang.org/docs/null-safety.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-eighth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -26961,8 +27037,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/kubernetes-pod-service.md",
@@ -28167,19 +28245,56 @@
       "file": "content/computer-science/nginx.md",
       "article_id": "kb-2026-00158",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "NGINX Documentation",
-          "source_type": "documentation",
+          "source_title": "NGINX Reverse Proxy",
+          "source_type": "technical_documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://nginx.org/en/docs/",
+              "identifier": "https://docs.nginx.com/nginx/admin-guide/web-server/reverse-proxy/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://nginx.org/en/docs/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-eighth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "HTTP Load Balancing",
+          "source_type": "technical_documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.nginx.com/nginx/admin-guide/load-balancer/http-load-balancer/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-eighth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Serving Static Content",
+          "source_type": "technical_documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.nginx.com/nginx/admin-guide/web-server/serving-static-content/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-eighth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -28187,8 +28302,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/nodejs.md",
@@ -28419,19 +28536,56 @@
       "file": "content/computer-science/nuxt-js.md",
       "article_id": "kb-2026-00296",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Nuxt Documentation",
-          "source_type": "documentation",
+          "source_title": "Nuxt Introduction",
+          "source_type": "technical_documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://nuxt.com/docs/",
+              "identifier": "https://nuxt.com/docs/getting-started/introduction",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://nuxt.com/docs/getting-started/introduction"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-eighth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Rendering Modes",
+          "source_type": "technical_documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://nuxt.com/docs/guide/concepts/rendering",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-eighth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Pages Directory",
+          "source_type": "technical_documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://nuxt.com/docs/guide/directory-structure/pages",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-eighth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -28439,8 +28593,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/oauth-2-0-authorization-framework-and-security-best-practices.md",
@@ -29075,19 +29231,56 @@
       "file": "content/computer-science/performance-api.md",
       "article_id": "kb-2026-00104",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Performance Timeline (W3C)",
+          "source_title": "Performance API",
+          "source_type": "technical_documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/API/Performance_API",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-eighth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "High Resolution Time",
           "source_type": "standard",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.w3.org/TR/performance-timeline/",
+              "identifier": "https://www.w3.org/TR/hr-time-3/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.w3.org/TR/performance-timeline/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-eighth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "User Timing API",
+          "source_type": "technical_documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/API/User_Timing_API",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-eighth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -29095,8 +29288,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/php-language.md",
@@ -29495,19 +29690,56 @@
       "file": "content/computer-science/prometheus.md",
       "article_id": "kb-2026-00165",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Prometheus Documentation",
-          "source_type": "documentation",
+          "source_title": "Prometheus Overview",
+          "source_type": "technical_documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://prometheus.io/docs/",
+              "identifier": "https://prometheus.io/docs/introduction/overview/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://prometheus.io/docs/introduction/overview/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-eighth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Data model",
+          "source_type": "technical_documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://prometheus.io/docs/concepts/data_model/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-eighth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Alerting rules",
+          "source_type": "technical_documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://prometheus.io/docs/prometheus/latest/configuration/alerting_rules/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-eighth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -29515,8 +29747,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/public-key-cryptography.md",
@@ -31803,19 +32037,56 @@
       "file": "content/computer-science/terraform.md",
       "article_id": "kb-2026-00164",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Terraform Documentation",
-          "source_type": "documentation",
+          "source_title": "What is Terraform?",
+          "source_type": "technical_documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://developer.hashicorp.com/terraform/docs",
+              "identifier": "https://developer.hashicorp.com/terraform/intro",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://developer.hashicorp.com/terraform/docs"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-eighth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Terraform Language Documentation",
+          "source_type": "technical_documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.hashicorp.com/terraform/language",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-eighth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Terraform State",
+          "source_type": "technical_documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.hashicorp.com/terraform/language/state",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-eighth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -31823,8 +32094,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/test-driven-development-tdd.md",
@@ -32474,10 +32747,28 @@
       "file": "content/computer-science/web-cryptography-api.md",
       "article_id": "kb-2026-00099",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Web Cryptography API (W3C Recommendation)",
+          "source_title": "Web Crypto API",
+          "source_type": "technical_documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/API/Web_Crypto_API",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-eighth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Web Cryptography API",
           "source_type": "standard",
           "results": [
             {
@@ -32485,8 +32776,27 @@
               "identifier": "https://www.w3.org/TR/WebCryptoAPI/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.w3.org/TR/webcrypto/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-eighth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "SubtleCrypto",
+          "source_type": "technical_documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-eighth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -32494,26 +32804,65 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/web-performance-optimization.md",
       "article_id": "kb-2026-00170",
       "generation_method": "ai_assisted",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Web Vitals (Google)",
-          "source_type": "documentation",
+          "source_title": "Web Vitals",
+          "source_type": "technical_article",
           "results": [
             {
               "method": "url",
-              "identifier": "https://web.dev/vitals/",
+              "identifier": "https://web.dev/articles/vitals",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://web.dev/articles/vitals?hl=pt-br"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-eighth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Critical rendering path",
+          "source_type": "technical_documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/Performance/Critical_rendering_path",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-eighth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Performance scoring",
+          "source_type": "technical_documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.chrome.com/docs/lighthouse/performance/performance-scoring",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-eighth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -32521,8 +32870,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/web-storage-api.md",
@@ -32555,10 +32906,28 @@
       "file": "content/computer-science/web-workers.md",
       "article_id": "kb-2026-00087",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Web Workers (WHATWG)",
+          "source_title": "Web Workers API",
+          "source_type": "technical_documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-eighth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Workers",
           "source_type": "standard",
           "results": [
             {
@@ -32566,8 +32935,27 @@
               "identifier": "https://html.spec.whatwg.org/multipage/workers.html",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://html.spec.whatwg.org/multipage/workers.html"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-eighth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Worker",
+          "source_type": "technical_documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/API/Worker",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-eighth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -32575,8 +32963,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/webassembly.md",

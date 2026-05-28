@@ -1,88 +1,68 @@
 ---
-id: "kb-2026-00099"
-title: "Web Cryptography API"
-schema_type: "TechArticle"
-category: "computer-science"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
-created_date: "2026-05-22"
-generation_method: "human_only"
+id: kb-2026-00099
+title: Web Cryptography API
+schema_type: TechArticle
+category: computer-science
+language: en
+confidence: medium
+last_verified: '2026-05-28'
+created_date: '2026-05-22'
+generation_method: human_only
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-computer-science-01"
-    statement: "The Web Cryptography API provides browser-native cryptographic operations — hashing, signing, encryption, key generation — without external libraries"
-    source_title: "Web Cryptography API (W3C Recommendation)"
-    source_url: "https://www.w3.org/TR/WebCryptoAPI/"
-    confidence: "medium"
-  - id: "fact-computer-science-001"
-    statement: "The Web Cryptography API provides browser-native cryptographic operations — hashing, signing, encryption, key generation — without external libraries. It exposes SubtleCrypto (`crypto.subtle`) for low-level operations and `crypto.getRandomValues()` for cryptographically secure random generation."
-    source_title: "Web Cryptography API (W3C Recommendation)"
-    source_url: "https://www.w3.org/TR/WebCryptoAPI/"
-    confidence: "medium"
-  - id: "fact-computer-science-002"
-    statement: "Supported algorithms: SHA-256/384/512, HMAC, AES-CBC/GCM/CTR, RSA-OAEP/PSS, ECDSA, ECDH, PBKDF2."
-    source_title: "Web Cryptography API (W3C Recommendation)"
-    source_url: "https://www.w3.org/TR/WebCryptoAPI/"
-    confidence: "medium"
-  - id: "fact-computer-science-003"
-    statement: "Keys can be exported/imported in formats: raw, PKCS#8, SPKI, JWK."
-    source_title: "Web Cryptography API (W3C Recommendation)"
-    source_url: "https://www.w3.org/TR/WebCryptoAPI/"
-    confidence: "medium"
-
+  - id: af-web-cryptography-api-1
+    statement: The Web Crypto API provides cryptographic primitives for web applications.
+    source_title: Web Crypto API
+    source_url: https://developer.mozilla.org/en-US/docs/Web/API/Web_Crypto_API
+    confidence: medium
+  - id: af-web-cryptography-api-2
+    statement: The W3C Web Cryptography API specification defines an API for cryptographic operations in web applications.
+    source_title: Web Cryptography API
+    source_url: https://www.w3.org/TR/WebCryptoAPI/
+    confidence: medium
+  - id: af-web-cryptography-api-3
+    statement: SubtleCrypto exposes methods for operations such as digesting, signing, verifying, encrypting, and decrypting.
+    source_title: SubtleCrypto
+    source_url: https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto
+    confidence: medium
 completeness: 0.88
-
 known_gaps:
-  - "Content verified during quality audit; citations cross-referenced with authoritative sources"
-
-disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-
+  - Key management and protocol design beyond browser primitives
+  - Browser compatibility and secure-context requirements
+disputed_statements: []
 primary_sources:
-  - title: "Web Cryptography API (W3C Recommendation)"
-    type: "standard"
+  - id: ps-web-cryptography-api-1
+    title: Web Crypto API
+    type: technical_documentation
+    year: 2024
+    institution: MDN Web Docs
+    url: https://developer.mozilla.org/en-US/docs/Web/API/Web_Crypto_API
+  - id: ps-web-cryptography-api-2
+    title: Web Cryptography API
+    type: standard
     year: 2017
-    url: "https://www.w3.org/TR/WebCryptoAPI/"
-    institution: "W3C"
-
-secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
-  - title: "The C Programming Language (K&R, 2nd Ed)"
-    type: "textbook"
-    year: 1988
-    url: "https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html"
-    institution: "Prentice Hall"
-  - title: "Structure and Interpretation of Computer Programs (SICP)"
-    type: "textbook"
-    year: 1996
-    url: "https://mitpress.mit.edu/sites/default/files/sicp/"
-    institution: "MIT Press"
-
+    institution: W3C
+    url: https://www.w3.org/TR/WebCryptoAPI/
+  - id: ps-web-cryptography-api-3
+    title: SubtleCrypto
+    type: technical_documentation
+    year: 2024
+    institution: MDN Web Docs
+    url: https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto
+secondary_sources: []
+updated: '2026-05-28'
 ---
-
-
-
-
 ## TL;DR
-
-The Web Cryptography API provides browser-native cryptographic operations — hashing, signing, encryption, key generation — without external libraries. It exposes SubtleCrypto (`crypto.subtle`) for low-level operations and `crypto.getRandomValues()` for cryptographically secure random generation.
+The Web Crypto API exposes cryptographic operations to web applications. It provides primitives, not a complete security protocol.
 
 ## Core Explanation
+Developers can use browser-provided cryptographic functions through SubtleCrypto, but secure design still requires careful key management and threat modeling.
 
-Supported algorithms: SHA-256/384/512, HMAC, AES-CBC/GCM/CTR, RSA-OAEP/PSS, ECDSA, ECDH, PBKDF2. Key generation uses `crypto.subtle.generateKey()`. Keys can be exported/imported in formats: raw, PKCS#8, SPKI, JWK. The API is Promise-based and runs in a secure context (HTTPS or localhost).
-
-## Further Reading
-
-- [Web Cryptography API (W3C Recommendation)](https://www.w3.org/TR/WebCryptoAPI/)
+## Detailed Analysis
+The repaired article cites MDN and the W3C specification for API scope and supported operation categories.
 
 ## Related Articles
 

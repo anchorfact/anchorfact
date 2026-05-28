@@ -1,87 +1,65 @@
 ---
-id: "kb-2026-00302"
-title: "Kotlin"
-schema_type: "TechArticle"
-category: "computer-science"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
-created_date: "2026-05-22"
-generation_method: "human_only"
+id: kb-2026-00302
+title: Kotlin
+schema_type: TechArticle
+category: computer-science
+language: en
+confidence: medium
+last_verified: '2026-05-28'
+created_date: '2026-05-22'
+generation_method: human_only
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-computer-science-01"
-    statement: "Kotlin is a statically-typed JVM language, officially supported for Android since 2017"
-    source_title: "Kotlin Documentation"
-    source_url: "https://kotlinlang.org/docs/"
-    confidence: "medium"
-  - id: "fact-computer-science-001"
-    statement: "Kotlin (JetBrains, 2011) is a statically-typed JVM language, officially supported for Android since 2017 (Google I/O). Concise syntax, null safety (nullable types `String?`), coroutines for async, 100% Java interoperable. Used by: Google (Android), Pinterest, Uber, Trello."
-    source_title: "Kotlin Documentation"
-    source_url: "https://kotlinlang.org/docs/"
-    confidence: "medium"
-  - id: "fact-computer-science-002"
-    statement: "Coroutines: `launch { delay(1000) }` — lightweight concurrency."
-    source_title: "Kotlin Documentation"
-    source_url: "https://kotlinlang.org/docs/"
-    confidence: "medium"
-  - id: "fact-computer-science-003"
-    statement: "Kotlin Multiplatform (KMP): share business logic across Android, iOS, Web, Desktop."
-    source_title: "Kotlin Documentation"
-    source_url: "https://kotlinlang.org/docs/"
-    confidence: "medium"
-
+  - id: af-kotlin-1
+    statement: Kotlin is documented as a modern programming language used across platforms.
+    source_title: Get started with Kotlin
+    source_url: https://kotlinlang.org/docs/getting-started.html
+    confidence: medium
+  - id: af-kotlin-2
+    statement: Kotlin/JVM runs Kotlin code on the Java Virtual Machine.
+    source_title: Get started with Kotlin/JVM
+    source_url: https://kotlinlang.org/docs/jvm-get-started.html
+    confidence: medium
+  - id: af-kotlin-3
+    statement: Kotlin's type system is designed to help eliminate null-reference errors.
+    source_title: Null safety
+    source_url: https://kotlinlang.org/docs/null-safety.html
+    confidence: medium
 completeness: 0.88
-
 known_gaps:
-  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
-
-disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-
+  - Multiplatform build complexity across targets
+  - Interoperability edge cases with existing Java codebases
+disputed_statements: []
 primary_sources:
-  - title: "Kotlin Documentation"
-    type: "documentation"
-    year: 2026
-    url: "https://kotlinlang.org/docs/"
-    institution: "JetBrains"
-
-secondary_sources:
-  - title: "Kotlin in Action (2nd Ed)"
-    authors: ["Jemerov", "Isakova"]
-    type: "book"
+  - id: ps-kotlin-1
+    title: Get started with Kotlin
+    type: technical_documentation
     year: 2024
-    url: "https://www.manning.com/books/kotlin-in-action-second-edition"
-    institution: "Manning"
-  - title: "The C Programming Language (K&R, 2nd Ed)"
-    type: "textbook"
-    year: 1988
-    url: "https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html"
-    institution: "Prentice Hall"
-  - title: "Structure and Interpretation of Computer Programs (SICP)"
-    type: "textbook"
-    year: 1996
-    url: "https://mitpress.mit.edu/sites/default/files/sicp/"
-    institution: "MIT Press"
-
+    institution: Kotlin
+    url: https://kotlinlang.org/docs/getting-started.html
+  - id: ps-kotlin-2
+    title: Get started with Kotlin/JVM
+    type: technical_documentation
+    year: 2024
+    institution: Kotlin
+    url: https://kotlinlang.org/docs/jvm-get-started.html
+  - id: ps-kotlin-3
+    title: Null safety
+    type: technical_documentation
+    year: 2024
+    institution: Kotlin
+    url: https://kotlinlang.org/docs/null-safety.html
+secondary_sources: []
+updated: '2026-05-28'
 ---
-
-
-
-
 ## TL;DR
-
-Kotlin (JetBrains, 2011) is a statically-typed JVM language, officially supported for Android since 2017 (Google I/O). Concise syntax, null safety (nullable types `String?`), coroutines for async, 100% Java interoperable. Used by: Google (Android), Pinterest, Uber, Trello.
+Kotlin is a modern language with strong JVM support and built-in null-safety features. Stable public claims should cite Kotlin documentation rather than ecosystem hype.
 
 ## Core Explanation
+Kotlin can be used on the JVM and other platforms. Its language design emphasizes concise syntax and null-safety checks in the type system.
 
-Null safety: `var name: String? = null` — compiler prevents NPEs. Coroutines: `launch { delay(1000) }` — lightweight concurrency. Extension functions: `fun String.isEmail(): Boolean`. Data classes: `data class User(val name: String)`. Kotlin Multiplatform (KMP): share business logic across Android, iOS, Web, Desktop.
-
-## Further Reading
-
-- [Kotlin Documentation](https://kotlinlang.org/docs/)
+## Detailed Analysis
+The repaired article narrows facts to getting started, JVM execution, and null safety.

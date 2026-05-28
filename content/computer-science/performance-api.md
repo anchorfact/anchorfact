@@ -1,83 +1,68 @@
 ---
-id: "kb-2026-00104"
-title: "Performance API"
-schema_type: "TechArticle"
-category: "computer-science"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
-created_date: "2026-05-22"
-generation_method: "human_only"
+id: kb-2026-00104
+title: Performance API
+schema_type: TechArticle
+category: computer-science
+language: en
+confidence: medium
+last_verified: '2026-05-28'
+created_date: '2026-05-22'
+generation_method: human_only
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-computer-science-01"
-    statement: "Core Web Vitals are exposed via PerformanceObserver"
-    source_title: "Performance Timeline (W3C)"
-    source_url: "https://www.w3.org/TR/performance-timeline/"
-    confidence: "medium"
-  - id: "fact-computer-science-001"
-    statement: "The Performance API (`performance.now()`, `performance.getEntries()`) provides high-resolution timing data (microsecond precision) for measuring web application performance. It includes the Navigation Timing, Resource Timing, and User Timing APIs."
-    source_title: "Performance Timeline (W3C)"
-    source_url: "https://www.w3.org/TR/performance-timeline/"
-    confidence: "medium"
-  - id: "fact-computer-science-002"
-    statement: "`performance.now()` returns a DOMHighResTimeStamp relative to `timeOrigin` with 5μs precision."
-    source_title: "Performance Timeline (W3C)"
-    source_url: "https://www.w3.org/TR/performance-timeline/"
-    confidence: "medium"
-  - id: "fact-computer-science-003"
-    statement: "Core Web Vitals (LCP, INP, CLS) are exposed via PerformanceObserver."
-    source_title: "Performance Timeline (W3C)"
-    source_url: "https://www.w3.org/TR/performance-timeline/"
-    confidence: "medium"
-
+  - id: af-performance-api-1
+    statement: The Performance API exposes web performance measurement interfaces.
+    source_title: Performance API
+    source_url: https://developer.mozilla.org/en-US/docs/Web/API/Performance_API
+    confidence: medium
+  - id: af-performance-api-2
+    statement: High Resolution Time defines precise time measurement for web performance APIs.
+    source_title: High Resolution Time
+    source_url: https://www.w3.org/TR/hr-time-3/
+    confidence: medium
+  - id: af-performance-api-3
+    statement: The User Timing API lets developers create application-specific performance marks and measures.
+    source_title: User Timing API
+    source_url: https://developer.mozilla.org/en-US/docs/Web/API/User_Timing_API
+    confidence: medium
 completeness: 0.88
-
 known_gaps:
-  - "Content verified during quality audit; citations cross-referenced with authoritative sources"
-
-disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-
+  - Privacy constraints and timer precision changes across browsers
+  - Interpreting measurements under network and device variability
+disputed_statements: []
 primary_sources:
-  - title: "Performance Timeline (W3C)"
-    type: "standard"
-    year: 2023
-    url: "https://www.w3.org/TR/performance-timeline/"
-    institution: "W3C"
-
-secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
-  - title: "RESTful Web APIs"
-    authors: ["Richardson", "Amundsen"]
-    type: "book"
-    year: 2013
-    url: "https://www.oreilly.com/library/view/restful-web-apis/9781449359713/"
-    institution: "O'Reilly"
-
+  - id: ps-performance-api-1
+    title: Performance API
+    type: technical_documentation
+    year: 2024
+    institution: MDN Web Docs
+    url: https://developer.mozilla.org/en-US/docs/Web/API/Performance_API
+  - id: ps-performance-api-2
+    title: High Resolution Time
+    type: standard
+    year: 2024
+    institution: W3C
+    url: https://www.w3.org/TR/hr-time-3/
+  - id: ps-performance-api-3
+    title: User Timing API
+    type: technical_documentation
+    year: 2024
+    institution: MDN Web Docs
+    url: https://developer.mozilla.org/en-US/docs/Web/API/User_Timing_API
+secondary_sources: []
+updated: '2026-05-28'
 ---
-
-
-
 ## TL;DR
-
-The Performance API (`performance.now()`, `performance.getEntries()`) provides high-resolution timing data (microsecond precision) for measuring web application performance. It includes the Navigation Timing, Resource Timing, and User Timing APIs.
+The Performance API provides browser interfaces for measuring page and application timing. It is a measurement layer, not an optimization by itself.
 
 ## Core Explanation
+Developers can use high-resolution time, performance entries, marks, and measures to understand real runtime behavior in the browser.
 
-`performance.now()` returns a DOMHighResTimeStamp relative to `timeOrigin` with 5μs precision. `performance.mark('name')` and `measure()` for custom metrics. `performance.getEntriesByType('resource')` lists all loaded resources with timing breakdowns (DNS, TCP, request, response). Core Web Vitals (LCP, INP, CLS) are exposed via PerformanceObserver.
-
-## Further Reading
-
-- [Performance Timeline (W3C)](https://www.w3.org/TR/performance-timeline/)
+## Detailed Analysis
+The repaired article uses MDN and W3C sources for Performance API, High Resolution Time, and User Timing.
 
 ## Related Articles
 

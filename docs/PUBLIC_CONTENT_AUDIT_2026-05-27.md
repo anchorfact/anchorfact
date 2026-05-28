@@ -1,8 +1,8 @@
 # AnchorFact Public Content Audit - 2026-05-28
 
-Generated: 2026-05-28T11:27:15.893Z
+Generated: 2026-05-28T11:33:39.102Z
 
-Snapshot: 555 public / 445 draft / 1669 claims.
+Snapshot: 555 public / 445 draft / 1659 claims.
 
 ## Summary
 
@@ -33,16 +33,16 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 | 8 | low_confidence_public | `arts/world-literature` | low | 2/2 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 | 9 | low_confidence_public | `history/age-of-exploration` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 | 10 | low_confidence_public | `history/byzantine-empire` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
-| 11 | risk_fallback | `computer-science/jenkins` | low | 1/1 (100.0%) | 4 | source=pass; claim=weak; summary=pass | repair_sources |
-| 12 | risk_fallback | `computer-science/kotlin` | low | 1/1 (100.0%) | 4 | source=pass; claim=weak; summary=pass | repair_sources |
-| 13 | risk_fallback | `computer-science/nginx` | low | 1/1 (100.0%) | 4 | source=pass; claim=weak; summary=pass | repair_sources |
-| 14 | risk_fallback | `computer-science/nuxt-js` | low | 1/1 (100.0%) | 4 | source=pass; claim=weak; summary=pass | repair_sources |
-| 15 | risk_fallback | `computer-science/performance-api` | medium | 1/1 (100.0%) | 4 | source=pass; claim=pass; summary=pass | repair_sources |
-| 16 | risk_fallback | `computer-science/prometheus` | low | 1/1 (100.0%) | 4 | source=pass; claim=weak; summary=pass | repair_sources |
-| 17 | risk_fallback | `computer-science/terraform` | low | 1/1 (100.0%) | 4 | source=pass; claim=weak; summary=pass | repair_sources |
-| 18 | risk_fallback | `computer-science/web-cryptography-api` | medium | 1/1 (100.0%) | 4 | source=pass; claim=pass; summary=pass | repair_sources |
-| 19 | risk_fallback | `computer-science/web-performance-optimization` | low | 1/1 (100.0%) | 4 | source=pass; claim=weak; summary=pass | repair_sources |
-| 20 | risk_fallback | `computer-science/web-workers` | medium | 1/1 (100.0%) | 4 | source=pass; claim=pass; summary=pass | repair_sources |
+| 11 | risk_fallback | `computer-science/webgpu` | medium | 1/1 (100.0%) | 4 | source=pass; claim=pass; summary=pass | repair_sources |
+| 12 | risk_fallback | `geography/gdp-and-economic-growth` | low | 1/1 (100.0%) | 4 | source=pass; claim=weak; summary=pass | repair_sources |
+| 13 | risk_fallback | `health/addiction-science` | low | 1/1 (100.0%) | 4 | source=pass; claim=weak; summary=pass | repair_sources |
+| 14 | risk_fallback | `health/gut-microbiome` | low | 1/1 (100.0%) | 4 | source=pass; claim=weak; summary=pass | repair_sources |
+| 15 | risk_fallback | `health/hydration-and-health` | medium | 1/1 (100.0%) | 4 | source=pass; claim=pass; summary=pass | repair_sources |
+| 16 | risk_fallback | `science/birds` | low | 1/1 (100.0%) | 4 | source=pass; claim=weak; summary=pass | repair_sources |
+| 17 | risk_fallback | `self-improvement/learning-how-to-learn` | low | 1/1 (100.0%) | 4 | source=pass; claim=weak; summary=pass | repair_sources |
+| 18 | risk_fallback | `arts/ancient-greek-literature` | low | 2/4 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
+| 19 | risk_fallback | `computer-science/canvas-api` | medium | 1/1 (100.0%) | 3 | source=pass; claim=pass; summary=pass | repair_sources |
+| 20 | risk_fallback | `computer-science/clipboard-api` | medium | 1/1 (100.0%) | 3 | source=pass; claim=pass; summary=pass | repair_sources |
 
 ## Article Findings
 
@@ -196,149 +196,149 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 11. Jenkins
+### 11. WebGPU
 
-- canonical slug: `computer-science/jenkins`
-- canonical URL: https://anchorfact.org/computer-science/jenkins/
-- bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.5)
-- verified source coverage: 1/1 (100.0%)
-- claims: 4 total, 4 capped, 0 missing evidence
-- quality reasons: none
-- source-title match: `pass`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement
-- recommendation: `repair_sources`
-
-### 12. Kotlin
-
-- canonical slug: `computer-science/kotlin`
-- canonical URL: https://anchorfact.org/computer-science/kotlin/
-- bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.5)
-- verified source coverage: 1/1 (100.0%)
-- claims: 4 total, 4 capped, 0 missing evidence
-- quality reasons: none
-- source-title match: `pass`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement
-- recommendation: `repair_sources`
-
-### 13. Nginx
-
-- canonical slug: `computer-science/nginx`
-- canonical URL: https://anchorfact.org/computer-science/nginx/
-- bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.5)
-- verified source coverage: 1/1 (100.0%)
-- claims: 4 total, 4 capped, 0 missing evidence
-- quality reasons: none
-- source-title match: `pass`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement
-- recommendation: `repair_sources`
-
-### 14. Nuxt.js
-
-- canonical slug: `computer-science/nuxt-js`
-- canonical URL: https://anchorfact.org/computer-science/nuxt-js/
-- bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.5)
-- verified source coverage: 1/1 (100.0%)
-- claims: 4 total, 4 capped, 0 missing evidence
-- quality reasons: none
-- source-title match: `pass`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement
-- recommendation: `repair_sources`
-
-### 15. Performance API
-
-- canonical slug: `computer-science/performance-api`
-- canonical URL: https://anchorfact.org/computer-science/performance-api/
-- bucket: `risk_fallback`
-- confidence: `medium` (verified_sources, score 0.735)
-- verified source coverage: 1/1 (100.0%)
-- claims: 4 total, 0 capped, 0 missing evidence
-- quality reasons: none
-- source-title match: `pass`
-- claim-evidence match: `pass`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement
-- recommendation: `repair_sources`
-
-### 16. Prometheus
-
-- canonical slug: `computer-science/prometheus`
-- canonical URL: https://anchorfact.org/computer-science/prometheus/
-- bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.5)
-- verified source coverage: 1/1 (100.0%)
-- claims: 4 total, 4 capped, 0 missing evidence
-- quality reasons: none
-- source-title match: `pass`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement
-- recommendation: `repair_sources`
-
-### 17. Terraform
-
-- canonical slug: `computer-science/terraform`
-- canonical URL: https://anchorfact.org/computer-science/terraform/
-- bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.5)
-- verified source coverage: 1/1 (100.0%)
-- claims: 4 total, 4 capped, 0 missing evidence
-- quality reasons: none
-- source-title match: `pass`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement
-- recommendation: `repair_sources`
-
-### 18. Web Cryptography API
-
-- canonical slug: `computer-science/web-cryptography-api`
-- canonical URL: https://anchorfact.org/computer-science/web-cryptography-api/
-- bucket: `risk_fallback`
-- confidence: `medium` (verified_sources, score 0.695)
-- verified source coverage: 1/1 (100.0%)
-- claims: 4 total, 0 capped, 0 missing evidence
-- quality reasons: none
-- source-title match: `pass`
-- claim-evidence match: `pass`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement
-- recommendation: `repair_sources`
-
-### 19. Web Performance Optimization
-
-- canonical slug: `computer-science/web-performance-optimization`
-- canonical URL: https://anchorfact.org/computer-science/web-performance-optimization/
-- bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.49)
-- verified source coverage: 1/1 (100.0%)
-- claims: 4 total, 4 capped, 0 missing evidence
-- quality reasons: none
-- source-title match: `pass`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement
-- recommendation: `repair_sources`
-
-### 20. Web Workers
-
-- canonical slug: `computer-science/web-workers`
-- canonical URL: https://anchorfact.org/computer-science/web-workers/
+- canonical slug: `computer-science/webgpu`
+- canonical URL: https://anchorfact.org/computer-science/webgpu/
 - bucket: `risk_fallback`
 - confidence: `medium` (verified_sources, score 0.745)
 - verified source coverage: 1/1 (100.0%)
 - claims: 4 total, 0 capped, 0 missing evidence
+- quality reasons: none
+- source-title match: `pass`
+- claim-evidence match: `pass`
+- title-summary accuracy: `pass`
+- hygiene flags: generic_dispute_statement
+- recommendation: `repair_sources`
+
+### 12. GDP and Economic Growth
+
+- canonical slug: `geography/gdp-and-economic-growth`
+- canonical URL: https://anchorfact.org/geography/gdp-and-economic-growth/
+- bucket: `risk_fallback`
+- confidence: `low` (verified_sources, score 0.43)
+- verified source coverage: 1/1 (100.0%)
+- claims: 4 total, 4 capped, 0 missing evidence
+- quality reasons: none
+- source-title match: `pass`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: generic_dispute_statement
+- recommendation: `repair_sources`
+
+### 13. Addiction Science
+
+- canonical slug: `health/addiction-science`
+- canonical URL: https://anchorfact.org/health/addiction-science/
+- bucket: `risk_fallback`
+- confidence: `low` (verified_sources, score 0.43)
+- verified source coverage: 1/1 (100.0%)
+- claims: 4 total, 4 capped, 0 missing evidence
+- quality reasons: none
+- source-title match: `pass`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: generic_dispute_statement
+- recommendation: `repair_sources`
+
+### 14. Gut Microbiome
+
+- canonical slug: `health/gut-microbiome`
+- canonical URL: https://anchorfact.org/health/gut-microbiome/
+- bucket: `risk_fallback`
+- confidence: `low` (verified_sources, score 0.45)
+- verified source coverage: 1/1 (100.0%)
+- claims: 4 total, 4 capped, 0 missing evidence
+- quality reasons: none
+- source-title match: `pass`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: generic_dispute_statement
+- recommendation: `repair_sources`
+
+### 15. Hydration and Health
+
+- canonical slug: `health/hydration-and-health`
+- canonical URL: https://anchorfact.org/health/hydration-and-health/
+- bucket: `risk_fallback`
+- confidence: `medium` (verified_sources, score 0.675)
+- verified source coverage: 1/1 (100.0%)
+- claims: 4 total, 0 capped, 0 missing evidence
+- quality reasons: none
+- source-title match: `pass`
+- claim-evidence match: `pass`
+- title-summary accuracy: `pass`
+- hygiene flags: generic_dispute_statement
+- recommendation: `repair_sources`
+
+### 16. Birds
+
+- canonical slug: `science/birds`
+- canonical URL: https://anchorfact.org/science/birds/
+- bucket: `risk_fallback`
+- confidence: `low` (verified_sources, score 0.43)
+- verified source coverage: 1/1 (100.0%)
+- claims: 4 total, 4 capped, 0 missing evidence
+- quality reasons: none
+- source-title match: `pass`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: generic_dispute_statement
+- recommendation: `repair_sources`
+
+### 17. Learning How to Learn
+
+- canonical slug: `self-improvement/learning-how-to-learn`
+- canonical URL: https://anchorfact.org/self-improvement/learning-how-to-learn/
+- bucket: `risk_fallback`
+- confidence: `low` (verified_sources, score 0.43)
+- verified source coverage: 1/1 (100.0%)
+- claims: 4 total, 4 capped, 0 missing evidence
+- quality reasons: none
+- source-title match: `pass`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: generic_dispute_statement
+- recommendation: `repair_sources`
+
+### 18. Ancient Greek Literature
+
+- canonical slug: `arts/ancient-greek-literature`
+- canonical URL: https://anchorfact.org/arts/ancient-greek-literature/
+- bucket: `risk_fallback`
+- confidence: `low` (verified_sources, score 0.55)
+- verified source coverage: 2/4 (50.0%)
+- claims: 3 total, 3 capped, 0 missing evidence
+- quality reasons: partial_source_verification
+- source-title match: `weak`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: none
+- recommendation: `repair_sources`
+
+### 19. Canvas API
+
+- canonical slug: `computer-science/canvas-api`
+- canonical URL: https://anchorfact.org/computer-science/canvas-api/
+- bucket: `risk_fallback`
+- confidence: `medium` (verified_sources, score 0.735)
+- verified source coverage: 1/1 (100.0%)
+- claims: 3 total, 0 capped, 0 missing evidence
+- quality reasons: none
+- source-title match: `pass`
+- claim-evidence match: `pass`
+- title-summary accuracy: `pass`
+- hygiene flags: generic_dispute_statement
+- recommendation: `repair_sources`
+
+### 20. Clipboard API
+
+- canonical slug: `computer-science/clipboard-api`
+- canonical URL: https://anchorfact.org/computer-science/clipboard-api/
+- bucket: `risk_fallback`
+- confidence: `medium` (verified_sources, score 0.735)
+- verified source coverage: 1/1 (100.0%)
+- claims: 3 total, 0 capped, 0 missing evidence
 - quality reasons: none
 - source-title match: `pass`
 - claim-evidence match: `pass`
