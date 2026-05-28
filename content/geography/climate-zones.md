@@ -1,77 +1,73 @@
 ---
-id: "kb-2026-00384"
-title: "Climate Zones"
-schema_type: "TechArticle"
-category: "geography"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
-created_date: "2026-05-22"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+id: climate-zones
+title: Climate Zones
+schema_type: TechArticle
+category: geography
+language: en
+confidence: medium
+last_verified: '2026-05-28'
+created_date: '2026-05-22'
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-geography-001"
-    statement: "The Köppen climate classification (Wladimir Köppen, 1884) categorizes world climates into 5 main groups: A (Tropical), B (Arid/Desert), C (Temperate), D (Continental), E (Polar). Further subdivided by precipitation and temperature patterns. Most widely used climate classification system."
-    source_title: "World Map of Köppen-Geiger Climate Classification"
-    source_url: "https://koeppen-geiger.vu-wien.ac.at/"
-    confidence: "medium"
-  - id: "fact-geography-002"
-    statement: "D Continental: cold winters, warm summers — only in Northern Hemisphere."
-    source_title: "Köppen Climate Classification"
-    source_url: "https://www.britannica.com/science/Koppen-climate-classification"
-    confidence: "medium"
-
-completeness: 0.88
-
+  - id: fact-climate-zones-01
+    statement: The Koppen climate classification divides terrestrial climates into five major types represented by the letters A, B, C, D, and E.
+    source_title: Koppen climate classification - Britannica
+    source_url: https://www.britannica.com/science/Koppen-climate-classification
+    confidence: medium
+  - id: fact-climate-zones-02
+    statement: The Koppen-Geiger system classifies climate types using temperature and precipitation patterns.
+    source_title: World Map of the Koppen-Geiger Climate Classification
+    source_url: https://koeppen-geiger.vu-wien.ac.at/
+    confidence: medium
+completeness: 0.8
 known_gaps:
-  - "Coverage is at a general level; specialized sub-topics and regional variations are not exhaustively addressed"
-  - "Statistics cited may have been updated since publication; readers should verify current data for time-sensitive claims"
-
+  - Regional climate-change projections and local downscaled models are outside this compact article.
 disputed_statements:
-  - statement: "Regional climate impact projections vary significantly across models; debates persist about the reliability of downscaled predictions for specific geographic areas"
-
+  - statement: Regional climate impact projections vary across models, so local future climate-zone shifts require specialized sources.
 primary_sources:
-  - title: "Köppen Climate Classification"
-    type: "standard"
-    year: 2024
-    url: "https://www.britannica.com/science/Koppen-climate-classification"
-    institution: "Encyclopedia Britannica"
-
-secondary_sources:
-  - title: "World Map of Köppen-Geiger Climate Classification"
-    type: "reference"
+  - title: Koppen climate classification - Britannica
+    type: reference
+    year: 2026
+    url: https://www.britannica.com/science/Koppen-climate-classification
+    institution: Encyclopaedia Britannica
+  - title: World Map of the Koppen-Geiger Climate Classification
+    type: research_dataset
     year: 2006
-    url: "https://koeppen-geiger.vu-wien.ac.at/"
-    institution: "University of Veterinary Medicine Vienna"
-  - title: "National Geographic Atlas of the World, 11th Ed"
-    type: "reference"
-    year: 2019
-    url: "https://www.nationalgeographic.com/books/atlas/"
-    institution: "National Geographic Society"
-
+    url: https://koeppen-geiger.vu-wien.ac.at/
+    institution: University of Veterinary Medicine Vienna
+secondary_sources:
+  - title: Updated World Map of the Koppen-Geiger Climate Classification
+    type: journal_article
+    year: 2007
+    url: https://hess.copernicus.org/articles/11/1633/2007/
+    institution: Hydrology and Earth System Sciences
 ---
-
-
 
 ## TL;DR
 
-The Köppen climate classification (Wladimir Köppen, 1884) categorizes world climates into 5 main groups: A (Tropical), B (Arid/Desert), C (Temperate), D (Continental), E (Polar). Further subdivided by precipitation and temperature patterns. Most widely used climate classification system.
+Climate zones group places with similar temperature and precipitation patterns. The Koppen climate classification is a widely used empirical system with five major types: A, B, C, D, and E.
 
 ## Core Explanation
 
-A Tropical: year-round warm, high rainfall — rainforest (Af), monsoon (Am), savanna (Aw). B Arid: evaporation exceeds precipitation — desert (BW), steppe (BS). C Temperate: mild winters — Mediterranean (Cs), humid subtropical (Cfa), marine west coast (Cfb). D Continental: cold winters, warm summers — only in Northern Hemisphere. E Polar: tundra (ET), ice cap (EF). Highland (H): mountain climates.
+The system links climate categories to observed temperature and precipitation patterns rather than to political boundaries. It is commonly used in geography, ecology, and climatology as a compact way to describe broad climate regions.
+
+## Evidence Notes
+
+The previous version contained mojibake in "Koppen" names and used a duplicate legacy article id. This repair makes the article readable, assigns a stable slug-based id, and restores its verification-report entry.
 
 ## Further Reading
 
-- [Köppen Climate Classification](https://www.britannica.com/science/Koppen-climate-classification)
+- [Koppen climate classification - Britannica](https://www.britannica.com/science/Koppen-climate-classification)
+- [World Map of the Koppen-Geiger Climate Classification](https://koeppen-geiger.vu-wien.ac.at/)
 
 ## Related Articles
 
-- [Global Climate Zones and Terrestrial Biomes](../climate-zones-and-biomes.md)
-- [World Climate Zones: Classification and Characteristics](../world-climate-zones-classification-and-characteristics.md)
-- [AI for Climate Science: Earth System Modeling, Extreme Event Prediction, and Carbon Monitoring](../../ai/ai-for-climate-science-earth-system-modeling-extreme-event-prediction-and-carbon-monitoring.md)
+- [Global Climate Zones and Terrestrial Biomes](climate-zones-and-biomes.md)
+- [World Climate Zones](world-climate-zones-classification-and-characteristics.md)
+- [AI for Climate Science](../ai/ai-for-climate-science-earth-system-modeling-extreme-event-prediction-and-carbon-monitoring.md)

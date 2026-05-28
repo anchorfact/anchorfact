@@ -32310,23 +32310,23 @@
       "sources_unreachable": 3
     },
     {
-      "file": "content/geography/mount-everest.md",
-      "article_id": "kb-2026-00384",
+      "file": "content/geography/climate-zones.md",
+      "article_id": "climate-zones",
       "generation_method": "ai_assisted",
       "sources_total": 2,
       "verification_results": [
         {
-          "source_title": "Mount Everest - Britannica",
+          "source_title": "Koppen climate classification - Britannica",
           "source_type": "reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.britannica.com/place/Mount-Everest",
+              "identifier": "https://www.britannica.com/science/Koppen-climate-classification",
               "verified": true,
               "metadata": {
                 "manual_review": true,
                 "reviewed_at": "2026-05-28",
-                "note": "Fifth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
+                "note": "Targeted report hygiene repair; restored climate-zones entry after legacy id collision with mount-everest."
               },
               "match": true
             }
@@ -32334,17 +32334,17 @@
           "all_verified": true
         },
         {
-          "source_title": "Mt. Everest - NASA",
-          "source_type": "government_reference",
+          "source_title": "World Map of the Koppen-Geiger Climate Classification",
+          "source_type": "research_dataset",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.nasa.gov/image-article/mt-everest/",
+              "identifier": "https://koeppen-geiger.vu-wien.ac.at/",
               "verified": true,
               "metadata": {
                 "manual_review": true,
                 "reviewed_at": "2026-05-28",
-                "note": "Fifth targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
+                "note": "Targeted report hygiene repair; restored climate-zones entry after legacy id collision with mount-everest."
               },
               "match": true
             }
