@@ -5,7 +5,7 @@ schema_type: Article
 category: science
 language: en
 confidence: medium
-last_verified: '2026-05-25'
+last_verified: '2026-05-28'
 created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
@@ -15,115 +15,69 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-sci-pp-001
-    statement: 'The Standard Model describes 17 fundamental particles: 6 quarks, 6 leptons, 5 gauge bosons.'
-    source_title: CERN. The Standard Model (2024)
-    source_url: https://home.cern/science/physics/standard-model
-    confidence: high
-  - id: fact-sci-pp-002
-    statement: Higgs boson discovered at CERN LHC in 2012 (ATLAS & CMS), confirming EW symmetry breaking.
-    source_title: ATLAS & CMS. Observation of a new particle (Phys Lett B 2012)
+  - id: fact-particle-physics-1
+    statement: >-
+      CERN describes the Standard Model as the best current description of subatomic particles and
+      three of the fundamental forces.
+    source_title: 'CERN: The Standard Model'
+    source_url: https://home.cern/science/physics/standard-model/
+    confidence: medium
+  - id: fact-particle-physics-2
+    statement: >-
+      The ATLAS Collaboration reported observation of a new particle in the Higgs-boson search in
+      Physics Letters B in 2012.
+    source_title: 'ATLAS: Observation of a New Particle'
     source_url: https://doi.org/10.1016/j.physletb.2012.08.020
-    confidence: high
-  - id: fact-sci-pp-003
-    statement: Dark matter ~27% of universe energy density, inferred from rotation curves (Rubin 1970s).
-    source_title: Rubin & Ford, Rotation of Andromeda (ApJ 1970)
-    source_url: https://doi.org/10.1086/150317
-    confidence: high
-completeness: 0.9
+    source_doi: 10.1016/j.physletb.2012.08.020
+    confidence: medium
+  - id: fact-particle-physics-3
+    statement: >-
+      The Particle Data Group publishes the Review of Particle Physics as a reference for particle
+      properties and related data.
+    source_title: Review of Particle Physics
+    source_url: https://doi.org/10.1103/PhysRevD.110.030001
+    source_doi: 10.1103/PhysRevD.110.030001
+    confidence: medium
+completeness: 0.84
 known_gaps:
-  - Dark matter candidate particles
-  - Quantum gravity approaches
-  - Neutrino mass mechanism
-disputed_statements:
-  - statement: No major disputed statements identified
+  - This compact article intentionally covers a small, source-mapped slice of a broader topic.
+disputed_statements: []
 primary_sources:
-  - title: Introduction to Elementary Particles, 2nd Edition
-    type: textbook
-    year: 2020
-    url: https://www.wiley.com/en-us/Introduction+to+Elementary+Particles%2C+2nd+Edition-p-9783527406015
-    institution: Wiley-VCH
   - title: 'CERN: The Standard Model'
     type: official_documentation
-    year: 2024
-    url: https://home.cern/science/physics/standard-model
+    year: 2026
+    url: https://home.cern/science/physics/standard-model/
     institution: CERN
-  - title: Introduction to Elementary Particles (2nd Edition)
-    authors:
-      - Griffiths, D.
-    type: book
-    year: 2008
-    institution: Wiley-VCH
-  - title: Review of Particle Physics (Particle Data Group)
-    authors:
-      - Particle Data Group
+  - title: 'ATLAS: Observation of a New Particle'
     type: academic_paper
-    year: 2024
-    doi: 10.1103/PhysRevD.110.030001
-    institution: Physical Review D
-secondary_sources:
-  - title: Introduction to Elementary Particles (Griffiths, 2nd Edition)
-    type: textbook
-    year: 2008
-    authors:
-      - Griffiths, David
-    institution: Wiley-VCH
-    url: https://doi.org/10.1002/9783527618460
-  - title: 'The Standard Model: A Primer (Burgess & Moore)'
-    type: textbook
-    year: 2007
-    authors:
-      - Burgess, Cliff P.
-      - Moore, Guy D.
-    institution: Cambridge University Press
-    url: https://doi.org/10.1017/CBO9780511610196
-  - title: Observation of a New Particle in the Search for the Standard Model Higgs Boson (ATLAS/CMS 2012)
-    type: journal_article
     year: 2012
+    url: https://doi.org/10.1016/j.physletb.2012.08.020
+    institution: Physics Letters B
+    doi: 10.1016/j.physletb.2012.08.020
     authors:
       - ATLAS Collaboration
-    institution: CERN / Physics Letters B
-    url: https://doi.org/10.1016/j.physletb.2012.08.020
-  - title: 'CERN Yellow Report: Physics at the HL-LHC and Beyond (High-Luminosity LHC Prospects)'
-    type: report
+  - title: Review of Particle Physics
+    type: academic_paper
     year: 2024
+    url: https://doi.org/10.1103/PhysRevD.110.030001
+    institution: Physical Review D
+    doi: 10.1103/PhysRevD.110.030001
     authors:
-      - CERN
-    institution: CERN
-    url: https://doi.org/10.5170/CERN-2024-002
-  - title: 'The Standard Model at 50: Precision Tests and Future Directions at the LHC (2025)'
-    type: article
-    year: 2025
-    authors:
-      - multiple
-    institution: Nature Reviews Physics
-    url: https://doi.org/10.1038/s42254-2025-sm50
-  - title: 'CERN Future Circular Collider Feasibility Study: Summary Report 2025'
-    type: report
-    year: 2025
-    authors:
-      - CERN
-    institution: CERN
-    url: https://home.cern/science/accelerators/future-circular-collider
-updated: '2026-05-24'
+      - Particle Data Group
+secondary_sources: []
+updated: '2026-05-28'
 ---
 
 ## TL;DR
-The Standard Model is physics' most successful theory, describing all known fundamental particles and three of four fundamental forces. Discovered particles were predicted decades in advance — the Higgs boson took 48 years from theory to experimental confirmation.
+
+Particle physics studies elementary particles and the interactions described by the Standard Model.
 
 ## Core Explanation
-Matter particles (fermions) are divided into quarks (up, down, charm, strange, top, bottom) and leptons (electron, muon, tau, three neutrinos). Force carriers (bosons) include photons (electromagnetism), W/Z bosons (weak force), and gluons (strong force). The Higgs field permeates all space, giving particles mass through interaction.
 
-## Detailed Analysis
-The Standard Model is incomplete — it does not explain dark matter, dark energy, neutrino masses, or gravity. Supersymmetry, string theory, and quantum loop gravity are leading candidates for beyond-Standard-Model physics. The LHC's High-Luminosity upgrade (2029) will increase collision data by 10x.
+The Standard Model groups matter particles and force carriers into a compact framework that explains electromagnetic, weak, and strong interactions. It remains incomplete because gravity and several cosmological observations sit outside that framework.
 
 ## Further Reading
-- CERN Courier: Particle Physics News
-- Symmetry Magazine (Fermilab/SLAC)
-- PDG: Particle Data Group
 
-## Related Articles
-
-- [The Standard Model of Particle Physics: Quarks, Leptons, and Fundamental Forces](../the-standard-model-of-particle-physics-quarks-leptons-and-fundamental-forces.md)
-- [The Standard Model of Cosmology: ΛCDM, Inflation, and the Cosmic Web](../the-standard-model-of-cosmology-cdm-inflation-and-the-cosmic-web.md)
-- [GPT (Generative Pre-trained Transformer) Model Family](../../ai/gpt-models.md)
+- [CERN: The Standard Model](https://home.cern/science/physics/standard-model/)
+- [ATLAS: Observation of a New Particle](https://doi.org/10.1016/j.physletb.2012.08.020)
+- [Review of Particle Physics](https://doi.org/10.1103/PhysRevD.110.030001)

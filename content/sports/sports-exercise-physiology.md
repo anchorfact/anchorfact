@@ -1,12 +1,12 @@
 ---
 id: sports-exercise-physiology
-title: "Exercise Physiology: How the Body Adapts to Training"
+title: 'Exercise Physiology: How the Body Adapts to Training'
 schema_type: Article
 category: sports
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+confidence: medium
+last_verified: '2026-05-28'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -15,89 +15,72 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-sp-ep-001
-    statement: "VO2max: gold standard CRF measure; elite endurance athletes reach 70-85+ ml/kg/min (ACSM 2021)."
-    source_title: ACSM Guidelines for Exercise Testing & Prescription 11th ed. (2021)
-    source_url: https://www.acsm.org/read-research/books/acsms-guidelines-for-exercise-testing-and-prescription
-    confidence: high
-  - id: fact-sp-ep-002
-    statement: Lactate threshold training improves endurance more effectively than VO2max-only (Joyner & Coyle, JPhysiol 2008).
-    source_title: Joyner & Coyle, Endurance exercise physiology of champions (JPhysiol 2008)
-    source_url: https://doi.org/10.1113/jphysiol.2007.143834
-    confidence: high
-  - id: fact-sp-ep-003
-    statement: "ACSM: 150 min/week moderate or 75 min/week vigorous aerobic + 2 days strength training."
-    source_title: Piercy et al. Physical Activity Guidelines (JAMA 2018)
-    source_url: https://doi.org/10.1001/jama.2018.14854
-    confidence: high
-completeness: 0.9
+  - id: fact-exercise-physiology-1
+    statement: >-
+      The Physical Activity Guidelines for Americans provide evidence-based guidance for maintaining
+      or improving health through physical activity.
+    source_title: Physical Activity Guidelines for Americans
+    source_url: >-
+      https://odphp.health.gov/our-work/nutrition-physical-activity/physical-activity-guidelines/current-guidelines
+    confidence: medium
+  - id: fact-exercise-physiology-2
+    statement: >-
+      The ACSM position stand gives guidance for prescribing exercise to develop and maintain
+      cardiorespiratory, musculoskeletal, and neuromotor fitness.
+    source_title: ACSM Quantity and Quality of Exercise Position Stand
+    source_url: https://pubmed.ncbi.nlm.nih.gov/21694556/
+    source_doi: 10.1249/MSS.0b013e318213fefb
+    confidence: medium
+  - id: fact-exercise-physiology-3
+    statement: >-
+      Hawley and colleagues review exercise training adaptations as integrated molecular, cellular,
+      and physiological responses.
+    source_title: Integrative Biology of Exercise
+    source_url: https://doi.org/10.1016/j.cell.2014.10.029
+    source_doi: 10.1016/j.cell.2014.10.029
+    confidence: medium
+completeness: 0.84
 known_gaps:
-  - Molecular mechanisms of muscle hypertrophy
-  - Sex differences in training response
-disputed_statements:
-  - statement: No major disputed statements identified
+  - This compact article intentionally covers a small, source-mapped slice of a broader topic.
+disputed_statements: []
 primary_sources:
-  - title: "Exercise Physiology: Nutrition, Energy, and Human Performance, 9th Ed"
-    type: textbook
-    year: 2022
-    url: https://www.lww.com/exercise-physiology-9781975217280
-    institution: Lippincott Williams & Wilkins
-  - title: ACSM Guidelines for Exercise Testing and Prescription, 11th Ed
-    type: standard
-    year: 2021
-    url: https://www.acsm.org/
-    institution: American College of Sports Medicine
-secondary_sources:
-  - title: Physiology of Sport and Exercise (Kenney, Wilmore, Costill, 8th Edition)
-    type: textbook
-    year: 2022
+  - title: Physical Activity Guidelines for Americans
+    type: government_report
+    year: 2025
+    url: >-
+      https://odphp.health.gov/our-work/nutrition-physical-activity/physical-activity-guidelines/current-guidelines
+    institution: U.S. Office of Disease Prevention and Health Promotion
+  - title: ACSM Quantity and Quality of Exercise Position Stand
+    type: academic_paper
+    year: 2011
+    url: https://pubmed.ncbi.nlm.nih.gov/21694556/
+    institution: Medicine and Science in Sports and Exercise
+    doi: 10.1249/MSS.0b013e318213fefb
+  - title: Integrative Biology of Exercise
+    type: academic_paper
+    year: 2014
+    url: https://doi.org/10.1016/j.cell.2014.10.029
+    institution: Cell
+    doi: 10.1016/j.cell.2014.10.029
     authors:
-      - Kenney, W. Larry
-      - Wilmore, Jack H.
-      - Costill, David L.
-    institution: Human Kinetics
-    url: https://us.humankinetics.com/products/physiology-of-sport-and-exercise-8th-edition
-  - title: "Exercise Physiology: Nutrition, Energy, and Human Performance (McArdle, Katch, Katch)"
-    type: textbook
-    year: 2023
-    authors:
-      - McArdle, William D.
-      - Katch, Frank I.
-      - Katch, Victor L.
-    institution: Wolters Kluwer
-    url: https://www.lww.com/exercise-physiology-nutrition-energy-and-human-performance/p/9781975217303
-  - title: "WHO Physical Activity Guidelines 2020: A Comprehensive Review"
-    type: report
-    year: 2020
-    authors:
-      - WHO
-    institution: World Health Organization
-    url: https://www.who.int/publications/i/item/9789240015128
-  - title: ACSM's Guidelines for Exercise Testing and Prescription (11th Edition)
-    type: textbook
-    year: 2021
-    authors:
-      - American College of Sports Medicine
-    institution: Wolters Kluwer
-    url: https://www.acsm.org/education-resources/books/guidelines-exercise-testing-prescription
-updated: "2026-05-24"
+      - Hawley, J. A.
+      - Hargreaves, M.
+      - Joyner, M. J.
+      - Zierath, J. R.
+secondary_sources: []
+updated: '2026-05-28'
 ---
+
 ## TL;DR
-Exercise physiology explains how cardiovascular, respiratory, muscular, and endocrine systems adapt to training stress. These adaptations are the biological basis for improved athletic performance and health.
+
+Exercise physiology explains how training stresses produce adaptations in fitness, performance, and health.
 
 ## Core Explanation
-The FITT principle (Frequency, Intensity, Time, Type) guides training prescription. Overload triggers the General Adaptation Syndrome: alarm→resistance→exhaustion. Specificity means training adaptations match the demands imposed.
 
-## Detailed Analysis
-Energy systems continuum: ATP-PCr (0-10s), glycolytic (10-120s), oxidative (>2min). Lactate is now understood as a valuable fuel source (lactate shuttle theory). Heart rate variability (HRV) monitoring guides training load management.
+A useful exercise-physiology article should separate activity guidelines, exercise prescription, and biological adaptation. Those layers connect public-health recommendations to the tissue-level changes that training produces.
 
 ## Further Reading
-- ACSM Position Stands
-- Journal of Strength and Conditioning Research
-- Sports Medicine (Springer)
 
-## Related Articles
-
-- [Marathon Training: Physiology, Programming, and Performance](../marathon-training-physiology-programming-and-performance.md)
-- [Strength Training: Physiology of Hypertrophy and Neural Adaptation](../strength-training-physiology-of-hypertrophy-and-neural-adaptation.md)
-- [Triathlon Training: Multi-Sport Physiology and Transitions](../triathlon-training-multi-sport-physiology-and-transitions.md)
+- [Physical Activity Guidelines for Americans](https://odphp.health.gov/our-work/nutrition-physical-activity/physical-activity-guidelines/current-guidelines)
+- [ACSM Quantity and Quality of Exercise Position Stand](https://pubmed.ncbi.nlm.nih.gov/21694556/)
+- [Integrative Biology of Exercise](https://doi.org/10.1016/j.cell.2014.10.029)

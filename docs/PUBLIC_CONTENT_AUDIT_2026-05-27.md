@@ -1,8 +1,8 @@
 # AnchorFact Public Content Audit - 2026-05-28
 
-Generated: 2026-05-28T04:21:37.323Z
+Generated: 2026-05-28T04:34:43.980Z
 
-Snapshot: 555 public / 445 draft / 1577 claims.
+Snapshot: 555 public / 445 draft / 1570 claims.
 
 ## Summary
 
@@ -10,9 +10,9 @@ This is a risk-weighted audit sample of public AnchorFact articles. It is intend
 
 - Sample size: 20
 - Low verified coverage samples: 1
-- Articles with at least one fail check: 7
+- Articles with at least one fail check: 6
 - High-confidence samples needing review: 0
-- Claim-evidence failures: 7
+- Claim-evidence failures: 6
 - Recommendations: keep_public: 9, downgrade_confidence: 0, repair_sources: 11, move_to_draft: 0
 
 ## Method
@@ -28,21 +28,21 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 | 3 | high_confidence | `ai/agentic-ai` | high | 2/2 (100.0%) | 3 | source=pass; claim=pass; summary=pass | keep_public |
 | 4 | high_confidence | `ai/ai-in-healthcare` | high | 3/3 (100.0%) | 3 | source=pass; claim=pass; summary=pass | keep_public |
 | 5 | high_confidence | `ai/ai-red-teaming-and-safety` | high | 3/3 (100.0%) | 3 | source=pass; claim=pass; summary=pass | keep_public |
-| 6 | medium_capped_claims | `science/particle-physics` | medium | 2/4 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
-| 7 | medium_capped_claims | `sports/sports-exercise-physiology` | medium | 1/2 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
-| 8 | medium_capped_claims | `sports/sports-nutrition` | medium | 2/2 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
-| 9 | medium_capped_claims | `ai/ai-agent-frameworks` | medium | 2/2 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
+| 6 | medium_capped_claims | `ai/ai-agents` | medium | 1/2 (50.0%) | 3 | source=weak; claim=pass; summary=pass | repair_sources |
+| 7 | medium_capped_claims | `ai/ai-coding-assistants` | medium | 2/2 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
+| 8 | medium_capped_claims | `ai/ai-in-gaming` | medium | 2/2 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
+| 9 | medium_capped_claims | `ai/ai-regulation-landscape` | medium | 1/2 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
 | 10 | low_confidence_public | `arts/film-genres` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 | 11 | low_confidence_public | `arts/world-literature` | low | 2/2 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 | 12 | low_confidence_public | `history/age-of-exploration` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 | 13 | low_confidence_public | `history/byzantine-empire` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
-| 14 | risk_fallback | `game-development/accessibility-guide` | low | 1/1 (100.0%) | 4 | source=pass; claim=fail; summary=weak | repair_sources |
-| 15 | risk_fallback | `game-development/animation-state-machines` | low | 1/1 (100.0%) | 4 | source=pass; claim=fail; summary=weak | repair_sources |
-| 16 | risk_fallback | `game-development/audio-design-guide` | low | 1/1 (100.0%) | 4 | source=pass; claim=fail; summary=weak | repair_sources |
-| 17 | risk_fallback | `game-development/game-localization` | low | 1/1 (100.0%) | 4 | source=pass; claim=fail; summary=pass | repair_sources |
-| 18 | risk_fallback | `game-development/input-systems-accessibility` | low | 1/1 (100.0%) | 4 | source=pass; claim=fail; summary=weak | repair_sources |
-| 19 | risk_fallback | `game-development/performance-optimization` | low | 1/1 (100.0%) | 4 | source=pass; claim=fail; summary=weak | repair_sources |
-| 20 | risk_fallback | `game-development/story-architecture-code` | low | 1/1 (100.0%) | 4 | source=pass; claim=fail; summary=weak | repair_sources |
+| 14 | risk_fallback | `game-development/core-mechanics` | low | 1/1 (100.0%) | 3 | source=pass; claim=fail; summary=weak | repair_sources |
+| 15 | risk_fallback | `game-development/game-art-pipeline` | low | 1/1 (100.0%) | 3 | source=pass; claim=fail; summary=weak | repair_sources |
+| 16 | risk_fallback | `game-development/game-mathematics` | low | 1/1 (100.0%) | 3 | source=pass; claim=fail; summary=weak | repair_sources |
+| 17 | risk_fallback | `game-development/narrative-design` | low | 1/1 (100.0%) | 3 | source=pass; claim=fail; summary=weak | repair_sources |
+| 18 | risk_fallback | `game-development/physics-systems` | low | 1/1 (100.0%) | 3 | source=pass; claim=fail; summary=weak | repair_sources |
+| 19 | risk_fallback | `game-development/monetization-strategy` | low | 1/1 (100.0%) | 3 | source=pass; claim=fail; summary=pass | repair_sources |
+| 20 | risk_fallback | `business/entrepreneurship-and-startups` | low | 3/6 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
 
 ## Article Findings
 
@@ -121,61 +121,61 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 6. Particle Physics and the Standard Model
+### 6. AI Agents (2025-2026)
 
-- canonical slug: `science/particle-physics`
-- canonical URL: https://anchorfact.org/science/particle-physics/
+- canonical slug: `ai/ai-agents`
+- canonical URL: https://anchorfact.org/ai/ai-agents/
 - bucket: `medium_capped_claims`
-- confidence: `medium` (verified_sources, score 0.86)
-- verified source coverage: 2/4 (50.0%)
-- claims: 3 total, 3 capped, 0 missing evidence
-- quality reasons: claim_evidence_weak, partial_source_verification
+- confidence: `medium` (verified_sources, score 0.72)
+- verified source coverage: 1/2 (50.0%)
+- claims: 3 total, 2 capped, 0 missing evidence
+- quality reasons: partial_source_verification
 - source-title match: `weak`
+- claim-evidence match: `pass`
+- title-summary accuracy: `pass`
+- hygiene flags: generic_dispute_statement
+- recommendation: `repair_sources`
+
+### 7. AI Coding Assistants: Copilot, Cursor, and Claude Code
+
+- canonical slug: `ai/ai-coding-assistants`
+- canonical URL: https://anchorfact.org/ai/ai-coding-assistants/
+- bucket: `medium_capped_claims`
+- confidence: `medium` (verified_sources, score 0.77)
+- verified source coverage: 2/2 (100.0%)
+- claims: 3 total, 2 capped, 0 missing evidence
+- quality reasons: claim_evidence_weak
+- source-title match: `pass`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
 - hygiene flags: claim_evidence_weak
 - recommendation: `repair_sources`
 
-### 7. Exercise Physiology: How the Body Adapts to Training
+### 8. AI in Gaming: NPCs, Procedural Content, and AlphaStar
 
-- canonical slug: `sports/sports-exercise-physiology`
-- canonical URL: https://anchorfact.org/sports/sports-exercise-physiology/
-- bucket: `medium_capped_claims`
-- confidence: `medium` (verified_sources, score 0.725)
-- verified source coverage: 1/2 (50.0%)
-- claims: 3 total, 3 capped, 0 missing evidence
-- quality reasons: generic_source_homepage, claim_evidence_weak, partial_source_verification
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: claim_evidence_weak, generic_source_homepage
-- recommendation: `repair_sources`
-
-### 8. Sports Nutrition: Fueling Performance and Recovery
-
-- canonical slug: `sports/sports-nutrition`
-- canonical URL: https://anchorfact.org/sports/sports-nutrition/
-- bucket: `medium_capped_claims`
-- confidence: `medium` (verified_sources, score 0.795)
-- verified source coverage: 2/2 (100.0%)
-- claims: 3 total, 3 capped, 0 missing evidence
-- quality reasons: generic_source_homepage, claim_evidence_weak
-- source-title match: `pass`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: claim_evidence_weak, generic_source_homepage
-- recommendation: `repair_sources`
-
-### 9. AI Agent Frameworks: LangChain, AutoGen, and CrewAI
-
-- canonical slug: `ai/ai-agent-frameworks`
-- canonical URL: https://anchorfact.org/ai/ai-agent-frameworks/
+- canonical slug: `ai/ai-in-gaming`
+- canonical URL: https://anchorfact.org/ai/ai-in-gaming/
 - bucket: `medium_capped_claims`
 - confidence: `medium` (verified_sources, score 0.76)
 - verified source coverage: 2/2 (100.0%)
 - claims: 3 total, 2 capped, 0 missing evidence
-- quality reasons: generic_source_homepage, claim_evidence_weak
+- quality reasons: claim_evidence_weak
 - source-title match: `pass`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: claim_evidence_weak
+- recommendation: `repair_sources`
+
+### 9. AI Regulation: The 2024-2026 Global Landscape
+
+- canonical slug: `ai/ai-regulation-landscape`
+- canonical URL: https://anchorfact.org/ai/ai-regulation-landscape/
+- bucket: `medium_capped_claims`
+- confidence: `medium` (verified_sources, score 0.745)
+- verified source coverage: 1/2 (50.0%)
+- claims: 3 total, 2 capped, 0 missing evidence
+- quality reasons: generic_source_homepage, claim_evidence_weak, partial_source_verification
+- source-title match: `weak`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
 - hygiene flags: claim_evidence_weak, generic_source_homepage
@@ -241,14 +241,14 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 14. 游戏可访问性设计指南
+### 14. 游戏机制与系统设计
 
-- canonical slug: `game-development/accessibility-guide`
-- canonical URL: https://anchorfact.org/game-development/accessibility-guide/
+- canonical slug: `game-development/core-mechanics`
+- canonical URL: https://anchorfact.org/game-development/core-mechanics/
 - bucket: `risk_fallback`
 - confidence: `low` (verified_sources, score 0.5)
 - verified source coverage: 1/1 (100.0%)
-- claims: 4 total, 4 capped, 0 missing evidence
+- claims: 3 total, 3 capped, 0 missing evidence
 - quality reasons: broken_atomic_fact, generic_source_homepage
 - source-title match: `pass`
 - claim-evidence match: `fail`
@@ -256,14 +256,14 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: broken_atomic_fact, generic_dispute_statement, generic_source_homepage
 - recommendation: `repair_sources`
 
-### 15. 游戏动画状态机设计
+### 15. game art pipeline
 
-- canonical slug: `game-development/animation-state-machines`
-- canonical URL: https://anchorfact.org/game-development/animation-state-machines/
+- canonical slug: `game-development/game-art-pipeline`
+- canonical URL: https://anchorfact.org/game-development/game-art-pipeline/
 - bucket: `risk_fallback`
 - confidence: `low` (verified_sources, score 0.5)
 - verified source coverage: 1/1 (100.0%)
-- claims: 4 total, 4 capped, 0 missing evidence
+- claims: 3 total, 3 capped, 0 missing evidence
 - quality reasons: broken_atomic_fact, generic_source_homepage
 - source-title match: `pass`
 - claim-evidence match: `fail`
@@ -271,14 +271,14 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: broken_atomic_fact, generic_dispute_statement, generic_source_homepage
 - recommendation: `repair_sources`
 
-### 16. 游戏音效设计完全指南
+### 16. 游戏数学
 
-- canonical slug: `game-development/audio-design-guide`
-- canonical URL: https://anchorfact.org/game-development/audio-design-guide/
+- canonical slug: `game-development/game-mathematics`
+- canonical URL: https://anchorfact.org/game-development/game-mathematics/
 - bucket: `risk_fallback`
 - confidence: `low` (verified_sources, score 0.5)
 - verified source coverage: 1/1 (100.0%)
-- claims: 4 total, 4 capped, 0 missing evidence
+- claims: 3 total, 3 capped, 0 missing evidence
 - quality reasons: broken_atomic_fact, generic_source_homepage
 - source-title match: `pass`
 - claim-evidence match: `fail`
@@ -286,64 +286,64 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: broken_atomic_fact, generic_dispute_statement, generic_source_homepage
 - recommendation: `repair_sources`
 
-### 17. 游戏本地化（Localization / L10n）
+### 17. 叙事设计
 
-- canonical slug: `game-development/game-localization`
-- canonical URL: https://anchorfact.org/game-development/game-localization/
+- canonical slug: `game-development/narrative-design`
+- canonical URL: https://anchorfact.org/game-development/narrative-design/
 - bucket: `risk_fallback`
 - confidence: `low` (verified_sources, score 0.5)
 - verified source coverage: 1/1 (100.0%)
-- claims: 4 total, 4 capped, 0 missing evidence
+- claims: 3 total, 3 capped, 0 missing evidence
+- quality reasons: broken_atomic_fact, generic_source_homepage
+- source-title match: `pass`
+- claim-evidence match: `fail`
+- title-summary accuracy: `weak`
+- hygiene flags: broken_atomic_fact, generic_dispute_statement, generic_source_homepage
+- recommendation: `repair_sources`
+
+### 18. 游戏物理系统设计
+
+- canonical slug: `game-development/physics-systems`
+- canonical URL: https://anchorfact.org/game-development/physics-systems/
+- bucket: `risk_fallback`
+- confidence: `low` (verified_sources, score 0.5)
+- verified source coverage: 1/1 (100.0%)
+- claims: 3 total, 3 capped, 0 missing evidence
+- quality reasons: broken_atomic_fact, generic_source_homepage
+- source-title match: `pass`
+- claim-evidence match: `fail`
+- title-summary accuracy: `weak`
+- hygiene flags: broken_atomic_fact, generic_dispute_statement, generic_source_homepage
+- recommendation: `repair_sources`
+
+### 19. 游戏商业化策略（Monetization Strategy）
+
+- canonical slug: `game-development/monetization-strategy`
+- canonical URL: https://anchorfact.org/game-development/monetization-strategy/
+- bucket: `risk_fallback`
+- confidence: `low` (verified_sources, score 0.5)
+- verified source coverage: 1/1 (100.0%)
+- claims: 3 total, 3 capped, 0 missing evidence
 - quality reasons: broken_atomic_fact, generic_source_homepage
 - source-title match: `pass`
 - claim-evidence match: `fail`
 - title-summary accuracy: `pass`
-- hygiene flags: broken_atomic_fact, generic_dispute_statement, generic_source_homepage
+- hygiene flags: broken_atomic_fact, generic_source_homepage
 - recommendation: `repair_sources`
 
-### 18. input systems accessibility
+### 20. Entrepreneurship: From Idea to Scalable Business
 
-- canonical slug: `game-development/input-systems-accessibility`
-- canonical URL: https://anchorfact.org/game-development/input-systems-accessibility/
+- canonical slug: `business/entrepreneurship-and-startups`
+- canonical URL: https://anchorfact.org/business/entrepreneurship-and-startups/
 - bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.5)
-- verified source coverage: 1/1 (100.0%)
-- claims: 4 total, 4 capped, 0 missing evidence
-- quality reasons: broken_atomic_fact, generic_source_homepage
-- source-title match: `pass`
-- claim-evidence match: `fail`
-- title-summary accuracy: `weak`
-- hygiene flags: broken_atomic_fact, generic_dispute_statement, generic_source_homepage
-- recommendation: `repair_sources`
-
-### 19. 游戏性能优化
-
-- canonical slug: `game-development/performance-optimization`
-- canonical URL: https://anchorfact.org/game-development/performance-optimization/
-- bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.5)
-- verified source coverage: 1/1 (100.0%)
-- claims: 4 total, 4 capped, 0 missing evidence
-- quality reasons: broken_atomic_fact, generic_source_homepage
-- source-title match: `pass`
-- claim-evidence match: `fail`
-- title-summary accuracy: `weak`
-- hygiene flags: broken_atomic_fact, generic_dispute_statement, generic_source_homepage
-- recommendation: `repair_sources`
-
-### 20. 叙事架构代码实现指南
-
-- canonical slug: `game-development/story-architecture-code`
-- canonical URL: https://anchorfact.org/game-development/story-architecture-code/
-- bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.5)
-- verified source coverage: 1/1 (100.0%)
-- claims: 4 total, 4 capped, 0 missing evidence
-- quality reasons: broken_atomic_fact, generic_source_homepage
-- source-title match: `pass`
-- claim-evidence match: `fail`
-- title-summary accuracy: `weak`
-- hygiene flags: broken_atomic_fact, generic_dispute_statement, generic_source_homepage
+- confidence: `low` (verified_sources, score 0.55)
+- verified source coverage: 3/6 (50.0%)
+- claims: 3 total, 3 capped, 0 missing evidence
+- quality reasons: generic_source_homepage, claim_evidence_weak, partial_source_verification
+- source-title match: `weak`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: claim_evidence_weak, generic_source_homepage
 - recommendation: `repair_sources`
 
 ## Rule Calibration

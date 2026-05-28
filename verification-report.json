@@ -3,12 +3,12 @@
     "generated": "2026-05-27T14:00:00.000Z",
     "total_articles": 1000,
     "total_with_errors": 0,
-    "average_sources_per_article": "2.0",
-    "overall_verification_rate": "60.5%",
+    "average_sources_per_article": "2.1",
+    "overall_verification_rate": "61.0%",
     "elapsed_ms": 635005,
     "elapsed_sec": "635.0",
     "concurrency": 3,
-    "manual_reviewed_articles": 220
+    "manual_reviewed_articles": 231
   },
   "articles": [
     {
@@ -409,19 +409,20 @@
       "file": "content/ai/ai-agent-frameworks.md",
       "article_id": "ai-agent-frameworks",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "LangChain: Building Applications with LLMs through Composability",
-          "source_type": "official_documentation",
+          "source_title": "LangChain Agents Documentation",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://python.langchain.com/",
+              "identifier": "https://docs.langchain.com/oss/python/langchain/agents",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://docs.langchain.com/oss/python/langchain/overview"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -429,15 +430,35 @@
           "all_verified": true
         },
         {
-          "source_title": "AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation",
-          "source_type": "academic_paper",
+          "source_title": "AutoGen AgentChat Documentation",
+          "source_type": "documentation",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2308.08155",
+              "method": "url",
+              "identifier": "https://microsoft.github.io/autogen/stable/user-guide/agentchat-user-guide/index.html",
               "verified": true,
               "metadata": {
-                "title": "arXiv Query: search_query=&amp;id_list=2308.08155&amp;start=0&amp;max_results=1"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "CrewAI Agents Documentation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.crewai.com/en/concepts/agents",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -445,7 +466,7 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 2,
+      "sources_verified": 3,
       "sources_unreachable": 0
     },
     {
@@ -30193,20 +30214,57 @@
     {
       "file": "content/game-development/accessibility-guide.md",
       "article_id": "kb-gd-001",
-      "generation_method": "human_only",
-      "sources_total": 1,
+      "generation_method": "ai_assisted",
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "游戏开发Wiki（个人知识库）",
-          "source_type": "knowledge_base",
+          "source_title": "Xbox Accessibility Guidelines",
+          "source_type": "official_guideline",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.gdconf.com/",
+              "identifier": "https://learn.microsoft.com/en-us/gaming/accessibility/guidelines",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://gdconf.com/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "WCAG 2.2 Understanding Keyboard",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Game Accessibility Guidelines: Remappable Controls",
+          "source_type": "official_guideline",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://gameaccessibilityguidelines.com/allow-controls-to-be-remapped-reconfigured/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -30214,7 +30272,7 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
+      "sources_verified": 3,
       "sources_unreachable": 0
     },
     {
@@ -30301,20 +30359,57 @@
     {
       "file": "content/game-development/animation-state-machines.md",
       "article_id": "kb-gd-005",
-      "generation_method": "human_only",
-      "sources_total": 1,
+      "generation_method": "ai_assisted",
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "游戏开发Wiki（个人知识库）",
-          "source_type": "knowledge_base",
+          "source_title": "Unity Manual: Animator Controllers",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.gdconf.com/",
+              "identifier": "https://docs.unity3d.com/Manual/AnimatorControllers.html",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://gdconf.com/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Unreal Engine: State Machines",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://dev.epicgames.com/documentation/en-us/unreal-engine/state-machines-in-unreal-engine",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Game Programming Patterns: State",
+          "source_type": "book",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://gameprogrammingpatterns.com/state.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -30322,26 +30417,63 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
+      "sources_verified": 3,
       "sources_unreachable": 0
     },
     {
       "file": "content/game-development/audio-design-guide.md",
       "article_id": "kb-gd-006",
-      "generation_method": "human_only",
-      "sources_total": 1,
+      "generation_method": "ai_assisted",
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "游戏开发Wiki（个人知识库）",
-          "source_type": "knowledge_base",
+          "source_title": "Unity Manual: Audio Overview",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.gdconf.com/",
+              "identifier": "https://docs.unity3d.com/Manual/AudioOverview.html",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://gdconf.com/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Unity Manual: Audio Source",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.unity3d.com/Manual/class-AudioSource.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "FMOD Studio Concepts",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.fmod.com/docs/2.03/studio/fmod-studio-concepts.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -30349,7 +30481,7 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
+      "sources_verified": 3,
       "sources_unreachable": 0
     },
     {
@@ -30774,20 +30906,57 @@
     {
       "file": "content/game-development/game-localization.md",
       "article_id": "kb-gd-016",
-      "generation_method": "human_only",
-      "sources_total": 1,
+      "generation_method": "ai_assisted",
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "游戏开发Wiki（个人知识库）",
-          "source_type": "knowledge_base",
+          "source_title": "W3C: Localization vs. Internationalization",
+          "source_type": "standard",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.gdconf.com/",
+              "identifier": "https://www.w3.org/International/questions/qa-i18n",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://gdconf.com/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Unity Localization Package Manual",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.unity3d.com/Packages/com.unity.localization@1.5/manual/index.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Unicode UTS #35: Locale Data Markup Language",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.unicode.org/reports/tr35/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -30795,7 +30964,7 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
+      "sources_verified": 3,
       "sources_unreachable": 0
     },
     {
@@ -31090,20 +31259,57 @@
     {
       "file": "content/game-development/input-systems-accessibility.md",
       "article_id": "kb-gd-021",
-      "generation_method": "human_only",
-      "sources_total": 1,
+      "generation_method": "ai_assisted",
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "游戏开发Wiki（个人知识库）",
-          "source_type": "knowledge_base",
+          "source_title": "Xbox Accessibility Guideline 107: Input",
+          "source_type": "official_guideline",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.gdconf.com/",
+              "identifier": "https://learn.microsoft.com/en-us/gaming/accessibility/xbox-accessibility-guidelines/107",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://gdconf.com/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "WCAG 2.2 Understanding Keyboard",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Game Accessibility Guidelines: Remappable Controls",
+          "source_type": "official_guideline",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://gameaccessibilityguidelines.com/allow-controls-to-be-remapped-reconfigured/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -31111,7 +31317,7 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
+      "sources_verified": 3,
       "sources_unreachable": 0
     },
     {
@@ -31252,20 +31458,57 @@
     {
       "file": "content/game-development/performance-optimization.md",
       "article_id": "kb-gd-026",
-      "generation_method": "human_only",
-      "sources_total": 1,
+      "generation_method": "ai_assisted",
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "游戏开发Wiki（个人知识库）",
-          "source_type": "knowledge_base",
+          "source_title": "Unity Manual: Unity Profiler",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.gdconf.com/",
+              "identifier": "https://docs.unity3d.com/Manual/Profiler.html",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://gdconf.com/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Unreal Engine: Performance Profiling and Configuration",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://dev.epicgames.com/documentation/en-us/unreal-engine/introduction-to-performance-profiling-and-configuration-in-unreal-engine",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "AMD GPUOpen RDNA Performance Guide",
+          "source_type": "technical_reference",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://gpuopen.com/learn/rdna-performance-guide/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -31273,7 +31516,7 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
+      "sources_verified": 3,
       "sources_unreachable": 0
     },
     {
@@ -31640,20 +31883,57 @@
     {
       "file": "content/game-development/story-architecture-code.md",
       "article_id": "kb-gd-033",
-      "generation_method": "human_only",
-      "sources_total": 1,
+      "generation_method": "ai_assisted",
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "游戏开发Wiki（个人知识库）",
-          "source_type": "knowledge_base",
+          "source_title": "ink Narrative Scripting Language",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.gdconf.com/",
+              "identifier": "https://www.inklestudios.com/ink/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://gdconf.com/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Yarn Spinner: Scripting Fundamentals",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.yarnspinner.dev/write-yarn-scripts/scripting-fundamentals",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Yarn Spinner: Nodes and Lines",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.yarnspinner.dev/write-yarn-scripts/scripting-fundamentals/lines-nodes-and-options",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -31661,7 +31941,7 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
+      "sources_verified": 3,
       "sources_unreachable": 0
     },
     {
@@ -40331,36 +40611,20 @@
       "file": "content/science/particle-physics.md",
       "article_id": "particle-physics",
       "generation_method": "ai_structured",
-      "sources_total": 4,
+      "sources_total": 3,
       "verification_results": [
-        {
-          "source_title": "Introduction to Elementary Particles, 2nd Edition",
-          "source_type": "textbook",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.wiley.com/en-us/Introduction+to+Elementary+Particles%2C+2nd+Edition-p-9783527406015",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.wiley.com/en-us/Introduction+to+Elementary+Particles%2C+2nd+Edition-p-9783527406015"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
         {
           "source_title": "CERN: The Standard Model",
           "source_type": "official_documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://home.cern/science/physics/standard-model",
+              "identifier": "https://home.cern/science/physics/standard-model/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://home.cern/science/physics/standard-model/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -40368,13 +40632,25 @@
           "all_verified": true
         },
         {
-          "source_title": "Introduction to Elementary Particles (2nd Edition)",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
+          "source_title": "ATLAS: Observation of a New Particle",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "doi",
+              "identifier": "10.1016/j.physletb.2012.08.020",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         },
         {
-          "source_title": "Review of Particle Physics (Particle Data Group)",
+          "source_title": "Review of Particle Physics",
           "source_type": "academic_paper",
           "results": [
             {
@@ -40382,18 +40658,18 @@
               "identifier": "10.1103/PhysRevD.110.030001",
               "verified": true,
               "metadata": {
-                "title": "Review of Particle Physics",
-                "publisher": "American Physical Society (APS)",
-                "year": 2024
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
           "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content/science/periodic-table.md",
@@ -43888,36 +44164,56 @@
       "file": "content/sports/sports-exercise-physiology.md",
       "article_id": "sports-exercise-physiology",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Exercise Physiology: Nutrition, Energy, and Human Performance, 9th Ed",
-          "source_type": "textbook",
+          "source_title": "Physical Activity Guidelines for Americans",
+          "source_type": "government_report",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.lww.com/exercise-physiology-9781975217280",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://journals.lww.com/exercise-physiology-9781975217280"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "ACSM Guidelines for Exercise Testing and Prescription, 11th Ed",
-          "source_type": "standard",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.acsm.org/",
+              "identifier": "https://odphp.health.gov/our-work/nutrition-physical-activity/physical-activity-guidelines/current-guidelines",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://acsm.org/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "ACSM Quantity and Quality of Exercise Position Stand",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "doi",
+              "identifier": "10.1249/MSS.0b013e318213fefb",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Integrative Biology of Exercise",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "doi",
+              "identifier": "10.1016/j.cell.2014.10.029",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -43925,8 +44221,8 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content/sports/sports-injury-prevention-and-rehabilitation.md",
@@ -43959,19 +44255,20 @@
       "file": "content/sports/sports-nutrition.md",
       "article_id": "sports-nutrition",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Advanced Sports Nutrition, 3rd Edition",
-          "source_type": "textbook",
+          "source_title": "Nutrition and Athletic Performance",
+          "source_type": "academic_paper",
           "results": [
             {
-              "method": "url",
-              "identifier": "https://www.humankinetics.com/advanced-sports-nutrition/",
+              "method": "doi",
+              "identifier": "10.1249/MSS.0000000000000852",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://us.humankinetics.com/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -43979,16 +44276,35 @@
           "all_verified": true
         },
         {
-          "source_title": "ISSN Position Stand: Nutrient Timing",
-          "source_type": "standard",
+          "source_title": "ISSN Position Stand: Protein and Exercise",
+          "source_type": "academic_paper",
           "results": [
             {
-              "method": "url",
-              "identifier": "https://jissn.biomedcentral.com/",
+              "method": "doi",
+              "identifier": "10.1186/s12970-017-0177-8",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://link.springer.com/journal/12970/volumes-and-issues?error=cookies_not_supported&code=5e12a241-95ca-4df4-93b5-1d2a02bd0c1f"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "IOC Consensus Statement: Dietary Supplements and the High-Performance Athlete",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "doi",
+              "identifier": "10.1136/bjsports-2018-099027",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Sixteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -43996,7 +44312,7 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 2,
+      "sources_verified": 3,
       "sources_unreachable": 0
     },
     {
