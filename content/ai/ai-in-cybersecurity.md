@@ -4,8 +4,8 @@ title: "AI in Cybersecurity: Threat Detection and LLM-Powered Defense"
 schema_type: article
 category: ai
 language: en
-confidence: high
-last_verified: "2026-05-24"
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-24"
 generation_method: ai_structured
 ai_models:
@@ -16,84 +16,63 @@ is_live_document: false
 data_period: static
 completeness: 0.85
 atomic_facts:
-  - id: af-ai-in-cybersecurity-1
+  - id: af-ai-ai-in-cybersecurity-1
     statement: >-
-      A systematic review of 180+ works (Springer 2025) found LLMs applied across 10+ cybersecurity tasks including vulnerability detection (code-level), threat intelligence extraction, phishing
-      detection, malware analysis, and security operations automation.
-    source_title: When LLMs Meet Cybersecurity, Springer Cybersecurity (2025)
-    source_url: https://link.springer.com/article/10.1186/s42400-025-00361-w
-    confidence: high
-  - id: af-ai-in-cybersecurity-2
+      EMBER provides an open dataset and benchmark task for training machine-learning models on
+      static Windows portable executable malware features.
+    source_title: "EMBER: An Open Dataset for Training Static PE Malware Machine Learning Models"
+    source_url: https://arxiv.org/abs/1804.04637
+    confidence: medium
+  - id: af-ai-ai-in-cybersecurity-2
     statement: >-
-      Nature (2025) published an AI-driven cybersecurity framework using a multi-modal fusion of cyber and physical datasets — achieving high-precision anomaly detection by combining network traffic
-      patterns with physical sensor data, outperforming single-modality systems by 23%.
-    source_title: Nature Scientific Reports (2025) doi:10.1038/s41598-025-19634-y
-    source_url: https://www.nature.com/articles/s41598-025-19634-y
-    confidence: high
+      DREBIN uses static analysis and machine learning to detect Android malware while retaining
+      feature explanations for analyst review.
+    source_title: "DREBIN: Effective and Explainable Detection of Android Malware in Your Pocket"
+    source_url: >-
+      https://www.ndss-symposium.org/ndss2014/drebin-effective-and-explainable-detection-of-android-malware-in-your-pocket/
+    confidence: medium
+  - id: af-ai-ai-in-cybersecurity-3
+    statement: >-
+      MITRE ATLAS organizes adversary tactics and techniques for threats against
+      artificial-intelligence-enabled systems.
+    source_title: MITRE ATLAS Matrix
+    source_url: https://atlas.mitre.org/matrices/ATLAS
+    confidence: medium
 primary_sources:
-  - id: ps-ai-in-cybersecurity-1
-    title: "When LLMs meet cybersecurity: a systematic literature review"
+  - id: ps-ai-ai-in-cybersecurity-1
+    title: "EMBER: An Open Dataset for Training Static PE Malware Machine Learning Models"
     type: academic_paper
-    year: 2025
-    institution: Springer Cybersecurity
-    url: https://link.springer.com/article/10.1186/s42400-025-00361-w
-  - id: ps-ai-in-cybersecurity-2
-    title: AI-driven cybersecurity framework for anomaly detection and threat classification
+    year: 2018
+    institution: arXiv
+    url: https://arxiv.org/abs/1804.04637
+  - id: ps-ai-ai-in-cybersecurity-2
+    title: "DREBIN: Effective and Explainable Detection of Android Malware in Your Pocket"
     type: academic_paper
-    year: 2025
-    institution: Nature Scientific Reports
-    url: https://www.nature.com/articles/s41598-025-19634-y
+    year: 2014
+    institution: NDSS Symposium
+    url: >-
+      https://www.ndss-symposium.org/ndss2014/drebin-effective-and-explainable-detection-of-android-malware-in-your-pocket/
+  - id: ps-ai-ai-in-cybersecurity-3
+    title: MITRE ATLAS Matrix
+    type: security_framework
+    year: 2026
+    institution: MITRE
+    url: https://atlas.mitre.org/matrices/ATLAS
 known_gaps:
   - Adversarial attacks on AI-powered security systems
   - Real-time AI defense against zero-day exploits
 disputed_statements: []
-secondary_sources:
-  - title: "Advancing Cybersecurity: A Comprehensive Review of AI-Driven Detection Techniques"
-    type: survey_paper
-    year: 2024
-    authors:
-      - multiple
-    institution: Journal of Big Data (Springer)
-    url: https://doi.org/10.1186/s40537-024-00957-y
-  - title: A Survey on the Applications of Deep Learning in Network Intrusion Detection Systems
-    type: survey_paper
-    year: 2025
-    authors:
-      - multiple
-    institution: IEEE Access
-    url: https://doi.org/10.1109/ACCESS.2025.3567842
-  - title: "Artificial Intelligence in Cybersecurity: A Bibliometric and Synthesis Review (1989-2024)"
-    type: survey_paper
-    year: 2024
-    authors:
-      - multiple
-    institution: Applied Artificial Intelligence (Taylor & Francis)
-    url: https://doi.org/10.1080/08839514.2024.2439609
-  - title: "Deep Learning-Based Intrusion Detection Systems: A Comprehensive Survey"
-    type: survey_paper
-    year: 2025
-    authors:
-      - multiple
-    institution: arXiv
-    url: https://arxiv.org/abs/2504.07839
-updated: "2026-05-24"
+secondary_sources: []
+updated: "2026-05-28"
 ---
 ## TL;DR
-AI is reshaping cybersecurity: machine learning detects anomalies in network traffic, LLMs automate threat intelligence analysis and vulnerability detection, and generative AI enables real-time incident response — creating an arms race between AI-powered defense and AI-powered attacks.
+AI in cybersecurity is strongest when described as specific machine-learning support for malware detection, anomaly triage, phishing or fraud signals, and analyst workflows. It should not be framed as autonomous security without clear evidence and controls.
 
 ## Core Explanation
-Traditional cybersecurity relies on signature-based detection (matching known patterns) and rule-based systems. AI approaches: (1) Anomaly detection — unsupervised learning identifies deviations from normal behavior (network traffic, user actions); (2) Supervised threat classification — classify malware families, phishing emails; (3) LLMs for SOC — automate log analysis, generate incident reports, extract threat intelligence from unstructured text.
-
-## Detailed Analysis
-LLM cybersecurity applications: vulnerability detection (CodeBERT, ChatGPT for code review), secure code generation (prompt-based hardening), binary analysis (transpiled to LLM-readable format), phishing detection (semantic analysis of email content and sender patterns). MDR (Managed Detection and Response) platforms increasingly integrate AI copilots. Adversarial ML threats: attackers poison training data, craft evasion samples that fool ML detectors, and use generative AI for spear-phishing at scale.
+Machine learning can help security teams classify files, prioritize alerts, and detect patterns that are difficult to encode as hand-written rules. Malware examples include static Windows executable features and Android application features. At the same time, AI systems themselves become targets: frameworks such as MITRE ATLAS track adversary behavior against AI-enabled systems, making governance and testing part of cybersecurity practice.
 
 ## Further Reading
-- Awesome-LLM4Cybersecurity GitHub
-- OWASP Top 10 for LLM Applications
-- MITRE ATLAS: Adversarial Threat Landscape for AI
 
-## Related Articles
-
-- [Network Intrusion Detection: AI-Powered Anomaly Detection and Zero-Day Threat Identification](../network-intrusion-detection.md)
-- [AI for Network Security: Intrusion Detection, Threat Intelligence, and Anomaly Analysis](../ai-for-network-security-intrusion-detection-threat-intelligence-and-anomaly-analysis.md)
-- [Information Extraction: NER, Relation Extraction, and LLM-Powered IE](../information-extraction.md)
+- [EMBER](https://arxiv.org/abs/1804.04637)
+- [DREBIN](https://www.ndss-symposium.org/ndss2014/drebin-effective-and-explainable-detection-of-android-malware-in-your-pocket/)
+- [MITRE ATLAS Matrix](https://atlas.mitre.org/matrices/ATLAS)

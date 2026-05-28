@@ -2,13 +2,13 @@
   "summary": {
     "generated": "2026-05-27T14:00:00.000Z",
     "total_articles": 1000,
-    "total_with_errors": 361,
-    "average_sources_per_article": "2.1",
-    "overall_verification_rate": "67.4%",
+    "total_with_errors": 358,
+    "average_sources_per_article": "2.2",
+    "overall_verification_rate": "67.7%",
     "elapsed_ms": 635005,
     "elapsed_sec": "635.0",
     "concurrency": 3,
-    "manual_reviewed_articles": 237
+    "manual_reviewed_articles": 247
   },
   "articles": [
     {
@@ -5941,19 +5941,20 @@
       "file": "content/ai/ai-hardware-accelerators.md",
       "article_id": "ai-hardware-accelerators",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "NVIDIA H100 Tensor Core GPU Architecture",
-          "source_type": "official_documentation",
+          "source_title": "In-Datacenter Performance Analysis of a Tensor Processing Unit",
+          "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://resources.nvidia.com/en-us-tensor-core",
+              "identifier": "https://arxiv.org/abs/1704.04760",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.nvidia.com/en-us/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirtieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -5961,16 +5962,35 @@
           "all_verified": true
         },
         {
-          "source_title": "Cerebras WSE-3: The Fastest AI Chip in the World",
-          "source_type": "official_report",
+          "source_title": "Eyeriss: An Energy-Efficient Reconfigurable Accelerator for Deep Convolutional Neural Networks",
+          "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.cerebras.net/product-chip/",
+              "identifier": "https://doi.org/10.1109/JSSC.2016.2616357",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.cerebras.ai/chip"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirtieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Mixed Precision Training",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1710.03740",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirtieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -5978,8 +5998,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/ai-identity-verification.md",
@@ -6051,19 +6073,20 @@
       "file": "content/ai/ai-in-cybersecurity.md",
       "article_id": "ai-in-cybersecurity",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "When LLMs meet cybersecurity: a systematic literature review",
+          "source_title": "EMBER: An Open Dataset for Training Static PE Malware Machine Learning Models",
           "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://link.springer.com/article/10.1186/s42400-025-00361-w",
+              "identifier": "https://arxiv.org/abs/1804.04637",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://link.springer.com/article/10.1186/s42400-025-00361-w?error=cookies_not_supported&code=ff48fea1-87d1-4508-8e92-109698b50486"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirtieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -6071,16 +6094,35 @@
           "all_verified": true
         },
         {
-          "source_title": "AI-driven cybersecurity framework for anomaly detection and threat classification",
+          "source_title": "DREBIN: Effective and Explainable Detection of Android Malware in Your Pocket",
           "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.nature.com/articles/s41598-025-19634-y",
+              "identifier": "https://www.ndss-symposium.org/ndss2014/drebin-effective-and-explainable-detection-of-android-malware-in-your-pocket/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.nature.com/articles/s41598-025-19634-y?error=cookies_not_supported&code=0629d4c9-72c8-455c-bece-2003d226c7e4"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirtieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "MITRE ATLAS Matrix",
+          "source_type": "security_framework",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://atlas.mitre.org/matrices/ATLAS",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirtieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -6088,8 +6130,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/ai-in-education.md",
@@ -6161,19 +6205,20 @@
       "file": "content/ai/ai-in-finance.md",
       "article_id": "ai-in-finance",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Machine Learning in Finance: From Theory to Practice",
-          "source_type": "textbook",
+          "source_title": "Artificial intelligence and machine learning in financial services",
+          "source_type": "policy_report",
           "results": [
             {
               "method": "url",
-              "identifier": "https://link.springer.com/book/10.1007/978-3-030-41068-1",
+              "identifier": "https://www.fsb.org/2017/11/artificial-intelligence-and-machine-learning-in-financial-services/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://link.springer.com/book/10.1007/978-3-030-41068-1?error=cookies_not_supported&code=36d54abd-9e79-4771-907d-a306cf8c9b1b"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirtieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -6181,16 +6226,35 @@
           "all_verified": true
         },
         {
-          "source_title": "Advances in Financial Machine Learning (Lopez de Prado)",
-          "source_type": "textbook",
+          "source_title": "Machine learning in UK financial services",
+          "source_type": "government_report",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.wiley.com/en-us/Advances+in+Financial+Machine+Learning-p-9781119482086",
+              "identifier": "https://www.bankofengland.co.uk/report/2022/machine-learning-in-uk-financial-services",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.wiley.com/en-us/Advances+in+Financial+Machine+Learning-p-9781119482086"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirtieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "SR 11-7: Guidance on Model Risk Management",
+          "source_type": "government_guidance",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.federalreserve.gov/bankinforeg/srletters/sr1107.htm",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirtieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -6198,8 +6262,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/ai-in-gaming.md",
@@ -6438,36 +6504,56 @@
       "file": "content/ai/ai-ip-patents.md",
       "article_id": "ai-ip-patents",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Advancing patent law with generative AI: Human-in-the-loop frameworks for patent drafting and prior art",
-          "source_type": "academic_paper",
+          "source_title": "WIPO Technology Trends 2019: Artificial Intelligence",
+          "source_type": "government_report",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.sciencedirect.com/science/article/pii/S0172219025000080",
-              "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.sciencedirect.com/science/article/pii/S0172219025000080"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "AI-Powered Prior Art Search: Towards Enriching Intellectual Property Systems",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://link.springer.com/chapter/10.1007/978-3-031-99201-8_7",
+              "identifier": "https://www.wipo.int/publications/en/details.jsp?id=4396",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://link.springer.com/chapter/10.1007/978-3-031-99201-8_7?error=cookies_not_supported&code=64656672-e5a9-4b60-ba12-bfe57f2c7e4d"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirtieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Revised inventorship guidance for AI-assisted inventions",
+          "source_type": "government_guidance",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.uspto.gov/subscription-center/2025/revised-inventorship-guidance-ai-assisted-inventions",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirtieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "AI-related resources",
+          "source_type": "government_guidance",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.uspto.gov/initiatives/artificial-intelligence/artificial-intelligence-resources",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirtieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -6475,8 +6561,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/ai-land-use-classification.md",
@@ -6860,8 +6948,44 @@
       "file": "content/ai/ai-protein-design.md",
       "article_id": "ai-protein-design",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
+        {
+          "source_title": "Highly accurate protein structure prediction with AlphaFold",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.nature.com/articles/s41586-021-03819-2",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirtieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Robust deep learning-based protein sequence design using ProteinMPNN",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://doi.org/10.1126/science.add2187",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirtieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
         {
           "source_title": "De novo design of protein structure and function with RFdiffusion",
           "source_type": "academic_paper",
@@ -6871,34 +6995,20 @@
               "identifier": "https://www.nature.com/articles/s41586-023-06415-8",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.nature.com/articles/s41586-023-06415-8?error=cookies_not_supported&code=0fce1d6d-e145-492a-88dc-adaebf60c32e"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirtieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
           ],
           "all_verified": true
-        },
-        {
-          "source_title": "Robust deep learning–based protein sequence design using ProteinMPNN",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.science.org/doi/10.1126/science.add2187",
-              "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.science.org/doi/10.1126/science.add2187"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/ai-public-health.md",
@@ -26319,19 +26429,20 @@
       "file": "content/computer-science/linux.md",
       "article_id": "kb-2026-00065",
       "generation_method": "human_only",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "The Linux Kernel Documentation",
+          "source_title": "Linux kernel licensing rules",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.kernel.org/doc/html/latest/",
+              "identifier": "https://docs.kernel.org/process/license-rules.html",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.kernel.org/doc/html/latest/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirtieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -26339,14 +26450,46 @@
           "all_verified": true
         },
         {
-          "source_title": "Linux Kernel GitHub Mirror",
-          "source_type": "unknown",
-          "results": [],
-          "all_verified": false
+          "source_title": "How the development process works",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.kernel.org/process/2.Process.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirtieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Active kernel releases",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.kernel.org/category/releases.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirtieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/load-balancing-algorithms-consistent-hashing-and-modern-approaches.md",
@@ -26946,19 +27089,20 @@
       "file": "content/computer-science/nextjs.md",
       "article_id": "kb-2026-00060",
       "generation_method": "human_only",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Next.js Documentation",
+          "source_title": "Next.js Docs: App Router",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://nextjs.org/docs",
+              "identifier": "https://nextjs.org/docs/app",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://nextjs.org/docs"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirtieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -26966,16 +27110,35 @@
           "all_verified": true
         },
         {
-          "source_title": "Next.js GitHub Repository",
-          "source_type": "repository",
+          "source_title": "Next.js Docs: Layouts and Pages",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://github.com/vercel/next.js",
+              "identifier": "https://nextjs.org/docs/app/building-your-application/routing/defining-routes",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://github.com/vercel/next.js"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirtieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Next.js Docs: Server and Client Components",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://nextjs.org/docs/app/building-your-application/rendering/server-components",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirtieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -26983,8 +27146,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/nginx.md",
@@ -27506,19 +27671,20 @@
       "file": "content/computer-science/operating-systems-concepts.md",
       "article_id": "operating-systems-concepts",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Operating System Concepts, 10th Edition",
+          "source_title": "OSTEP: The Abstraction: The Process",
           "source_type": "textbook",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.wiley.com/en-us/Operating+System+Concepts%2C+10th+Edition-p-9781119320913",
+              "identifier": "https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-intro.pdf",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.wiley.com/en-us/Operating+System+Concepts%2C+10th+Edition-p-9781119320913"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirtieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -27526,16 +27692,35 @@
           "all_verified": true
         },
         {
-          "source_title": "Modern Operating Systems, 4th Edition",
+          "source_title": "OSTEP: The Abstraction: Address Spaces",
           "source_type": "textbook",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.pearson.com/en-us/subject-catalog/p/modern-operating-systems/P200000003295",
+              "identifier": "https://pages.cs.wisc.edu/~remzi/OSTEP/vm-intro.pdf",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.pearson.com/en-us/subject-catalog/p/modern-operating-systems/P200000003295"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirtieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OSTEP: File and Directories",
+          "source_type": "textbook",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://pages.cs.wisc.edu/~remzi/OSTEP/file-intro.pdf",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirtieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -27543,8 +27728,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/osi-model.md",
@@ -29661,19 +29848,20 @@
       "file": "content/computer-science/software-engineering-principles.md",
       "article_id": "software-engineering-principles",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Clean Code: A Handbook of Agile Software Craftsmanship",
-          "source_type": "textbook",
+          "source_title": "Software Engineering Body of Knowledge",
+          "source_type": "standard",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.oreilly.com/library/view/clean-code-a/9780136083238/",
+              "identifier": "https://www.computer.org/education/bodies-of-knowledge/software-engineering",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.oreilly.com/library/view/clean-code-a/9780136083238/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirtieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -29681,16 +29869,35 @@
           "all_verified": true
         },
         {
-          "source_title": "Design Patterns: Elements of Reusable Object-Oriented Software (GoF)",
-          "source_type": "textbook",
+          "source_title": "ISO/IEC/IEEE 12207:2026 Systems and software engineering - Software life cycle processes",
+          "source_type": "standard",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.oreilly.com/library/view/design-patterns-elements/0201633612/",
+              "identifier": "https://www.iso.org/standard/90219.html",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.oreilly.com/library/view/design-patterns-elements/0201633612/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirtieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Software Engineering Code of Ethics and Professional Practice",
+          "source_type": "professional_standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.acm.org/code-of-ethics/software-engineering-code",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirtieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -29698,8 +29905,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/solid-principles.md",
@@ -32580,19 +32789,56 @@
       "file": "content/game-development/game-balance-fundamentals.md",
       "article_id": "kb-2026-00219",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "GDC Vault",
-          "source_type": "conference",
+          "source_title": "Game Balance",
+          "source_type": "book",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.gdcvault.com/",
+              "identifier": "https://www.routledge.com/Game-Balance/Romero-Schreiber/p/book/9781498799577",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://gdcvault.com/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirtieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Characteristics of Games",
+          "source_type": "book",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://mitpress.mit.edu/9780262542692/characteristics-of-games/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirtieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "The Art of Game Design: A Book of Lenses",
+          "source_type": "book",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.routledge.com/The-Art-of-Game-Design-A-Book-of-Lenses/Schell/p/book/9781138632059",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirtieth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -32600,8 +32846,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/game-development/game-data-analytics.md",

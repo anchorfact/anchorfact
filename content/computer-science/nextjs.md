@@ -1,81 +1,80 @@
 ---
-id: "kb-2026-00060"
-title: "Next.js"
-schema_type: "TechArticle"
-category: "computer-science"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
+id: kb-2026-00060
+title: Next.js
+schema_type: TechArticle
+category: computer-science
+language: en
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-22"
-generation_method: "human_only"
-ai_models: ["claude-opus"]
+generation_method: human_only
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-computer-science-01"
-    statement: "Next.js is a React-based full-stack web framework created by Vercel, first released in October 2016"
-    source_title: "Next.js Documentation"
-    source_url: "https://nextjs.org/docs"
-    confidence: "medium"
-  - id: "fact-computer-science-02"
-    statement: "With 139,553 GitHub stars as of May 2026, it is the most popular React framework and powers websites for Nike, TikTok, Hulu, Twitch, and Notion"
-    source_title: "Next.js Documentation"
-    source_url: "https://nextjs.org/docs"
-    confidence: "medium"
-  - id: "fact-computer-science-03"
-    statement: "The App Router brought React Server Components as the default rendering model"
-    source_title: "Next.js Documentation"
-    source_url: "https://nextjs.org/docs"
-    confidence: "medium"
-
+  - id: af-computer-science-nextjs-1
+    statement: >-
+      The Next.js App Router is a file-system based router that uses React features such as Server
+      Components, Suspense, and Server Functions.
+    source_title: "Next.js Docs: App Router"
+    source_url: https://nextjs.org/docs/app
+    confidence: medium
+  - id: af-computer-science-nextjs-2
+    statement: >-
+      Next.js routes can be defined with folders and page files, with layouts shared across nested
+      routes.
+    source_title: "Next.js Docs: Layouts and Pages"
+    source_url: https://nextjs.org/docs/app/building-your-application/routing/defining-routes
+    confidence: medium
+  - id: af-computer-science-nextjs-3
+    statement: >-
+      Next.js renders layouts and pages as Server Components by default while allowing Client
+      Components for interactivity and browser APIs.
+    source_title: "Next.js Docs: Server and Client Components"
+    source_url: https://nextjs.org/docs/app/building-your-application/rendering/server-components
+    confidence: medium
 completeness: 0.85
-
 known_gaps:
-  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
-
-disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-
+  - >-
+    This field is under active research and rapid development; some conclusions may evolve with new
+    evidence or technological advances
+  - >-
+    Certain sub-topics are covered at a general level; specialized edge cases and nuanced
+    applications may not be fully addressed
+disputed_statements: []
 primary_sources:
-  - title: "Next.js Documentation"
-    type: "documentation"
+  - id: ps-computer-science-nextjs-1
+    title: "Next.js Docs: App Router"
+    type: documentation
     year: 2026
-    url: "https://nextjs.org/docs"
-    institution: "Vercel"
-  - title: "Next.js GitHub Repository"
-    type: "repository"
-    url: "https://github.com/vercel/next.js"
-    institution: "Vercel"
-
-secondary_sources:
-  - title: "Next.js Documentation"
-    type: "documentation"
+    institution: Vercel
+    url: https://nextjs.org/docs/app
+  - id: ps-computer-science-nextjs-2
+    title: "Next.js Docs: Layouts and Pages"
+    type: documentation
     year: 2026
-    url: "https://nextjs.org/docs"
-    institution: "Vercel"
-
+    institution: Vercel
+    url: https://nextjs.org/docs/app/building-your-application/routing/defining-routes
+  - id: ps-computer-science-nextjs-3
+    title: "Next.js Docs: Server and Client Components"
+    type: documentation
+    year: 2026
+    institution: Vercel
+    url: https://nextjs.org/docs/app/building-your-application/rendering/server-components
+secondary_sources: []
+updated: "2026-05-28"
 ---
-
-
 ## TL;DR
+Next.js is a React framework for building web applications with file-system routing, server rendering, static generation, data fetching, and client-side interactivity. Modern Next.js documentation centers on the App Router and React Server Components.
 
-Next.js is a React-based full-stack web framework created by Vercel, first released in October 2016. It provides server-side rendering (SSR), static site generation (SSG), API routes, and file-system-based routing out of the box. With 139,553 GitHub stars as of May 2026, it is the most popular React framework and powers websites for Nike, TikTok, Hulu, Twitch, and Notion. The App Router (introduced in Next.js 13, 2022, and stabilized in Next.js 14/15) brought React Server Components as the default rendering model.
-
-## Core Features
-
-- **App Router** (v13+): File-system routing with layouts, loading states, error boundaries
-- **React Server Components**: Default server-side rendering with zero client JavaScript for static content
-- **Server Actions**: Mutate data on the server directly from components (no API routes needed)
-- **Static/Dynamic Rendering**: Automatic selection between SSG, ISR, SSR, and streaming per route
-- **Middleware**: Edge-compatible request interception for auth, redirects, A/B testing
-- **Image Optimization**: Automatic responsive images via `next/image`
-- **Turbopack**: Rust-based successor to Webpack (stable in Next.js 15)
+## Core Explanation
+The App Router maps folders and special files such as pages and layouts to application routes. Server Components allow parts of the UI to render on the server by default, while Client Components are used for browser APIs, state, and event handlers. This split lets teams combine server-rendered content with interactive client behavior in the same application.
 
 ## Further Reading
 
-- [Next.js Docs](https://nextjs.org/docs): Official documentation
-- [Next.js GitHub](https://github.com/vercel/next.js): Source code (140K+ stars)
+- [Next.js App Router](https://nextjs.org/docs/app)
+- [Next.js layouts and pages](https://nextjs.org/docs/app/building-your-application/routing/defining-routes)
+- [Next.js Server and Client Components](https://nextjs.org/docs/app/building-your-application/rendering/server-components)

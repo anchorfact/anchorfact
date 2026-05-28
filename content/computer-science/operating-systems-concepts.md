@@ -4,8 +4,8 @@ title: "Operating Systems: Processes, Memory, and File Systems"
 schema_type: Article
 category: computer-science
 language: en
-confidence: high
-last_verified: "2026-05-24"
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-24"
 generation_method: ai_structured
 ai_models:
@@ -15,88 +15,60 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-cs-os-001
-    statement: Tanenbaum's MINIX (1987) inspired Linus Torvalds' creation of Linux (1991).
-    source_title: Tanenbaum & Bos, Modern Operating Systems 5th ed. (Pearson 2022)
-    source_url: https://www.pearson.com/en-us/subject-catalog/p/modern-operating-systems/P200000003285
-    confidence: high
-  - id: fact-cs-os-002
-    statement: "Unix (Bell Labs, Thompson & Ritchie 1969-71): hierarchical FS, pipes, shell scripting."
-    source_title: Ritchie & Thompson, UNIX Time-Sharing System (CACM 1974)
-    source_url: https://doi.org/10.1145/361011.361061
-    confidence: high
-  - id: fact-cs-os-003
-    statement: "Process scheduling: FCFS, SJF, Round Robin, Priority, Multilevel Queue algorithms."
-    source_title: Silberschatz, Galvin & Gagne, OS Concepts 10th ed. (Wiley 2018)
-    source_url: https://www.wiley.com/en-us/Operating+System+Concepts%2C+10th+Edition-p-9781119800361
-    confidence: high
+  - id: af-computer-science-operating-systems-concepts-1
+    statement: OSTEP presents the process as a central operating-system abstraction for a running program.
+    source_title: "OSTEP: The Abstraction: The Process"
+    source_url: https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-intro.pdf
+    confidence: medium
+  - id: af-computer-science-operating-systems-concepts-2
+    statement: >-
+      OSTEP introduces the address space as the operating-system abstraction for virtualizing
+      memory.
+    source_title: "OSTEP: The Abstraction: Address Spaces"
+    source_url: https://pages.cs.wisc.edu/~remzi/OSTEP/vm-intro.pdf
+    confidence: medium
+  - id: af-computer-science-operating-systems-concepts-3
+    statement: >-
+      OSTEP describes files and directories as core operating-system abstractions for persistent
+      storage.
+    source_title: "OSTEP: File and Directories"
+    source_url: https://pages.cs.wisc.edu/~remzi/OSTEP/file-intro.pdf
+    confidence: medium
 completeness: 0.9
 primary_sources:
-  - title: Operating System Concepts, 10th Edition
+  - id: ps-computer-science-operating-systems-concepts-1
+    title: "OSTEP: The Abstraction: The Process"
     type: textbook
-    year: 2018
-    url: https://www.wiley.com/en-us/Operating+System+Concepts%2C+10th+Edition-p-9781119320913
-    institution: Wiley
-  - title: Modern Operating Systems, 4th Edition
+    year: 2023
+    institution: "Operating Systems: Three Easy Pieces"
+    url: https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-intro.pdf
+  - id: ps-computer-science-operating-systems-concepts-2
+    title: "OSTEP: The Abstraction: Address Spaces"
     type: textbook
-    year: 2014
-    url: https://www.pearson.com/en-us/subject-catalog/p/modern-operating-systems/P200000003295
-    institution: Pearson
+    year: 2023
+    institution: "Operating Systems: Three Easy Pieces"
+    url: https://pages.cs.wisc.edu/~remzi/OSTEP/vm-intro.pdf
+  - id: ps-computer-science-operating-systems-concepts-3
+    title: "OSTEP: File and Directories"
+    type: textbook
+    year: 2023
+    institution: "Operating Systems: Three Easy Pieces"
+    url: https://pages.cs.wisc.edu/~remzi/OSTEP/file-intro.pdf
 known_gaps:
   - Container vs hypervisor virtualization
   - Real-time operating systems for embedded systems
-disputed_statements:
-  - statement: No major disputed statements identified
-secondary_sources:
-  - title: Operating System Concepts (Silberschatz, Galvin, Gagne — 10th Edition)
-    type: textbook
-    year: 2018
-    authors:
-      - Silberschatz, Abraham
-      - Galvin, Peter Baer
-      - Gagne, Greg
-    institution: Wiley
-    url: https://www.wiley.com/en-us/Operating+System+Concepts%2C+10th+Edition-p-9781119320913
-  - title: Modern Operating Systems (Tanenbaum & Bos, 5th Edition)
-    type: textbook
-    year: 2023
-    authors:
-      - Tanenbaum, Andrew S.
-      - Bos, Herbert
-    institution: Pearson
-    url: https://www.pearson.com/en-us/subject-catalog/p/modern-operating-systems/P200000011025
-  - title: The Design of the UNIX Operating System (Bach)
-    type: textbook
-    year: 1986
-    authors:
-      - Bach, Maurice J.
-    institution: Prentice Hall
-    url: https://www.oreilly.com/library/view/the-design-of/9780132017992/
-  - title: Linux Kernel Development (Love, 3rd Edition) — The Internals of the Linux Kernel
-    type: textbook
-    year: 2010
-    authors:
-      - Love, Robert
-    institution: Addison-Wesley
-    url: https://www.informit.com/store/linux-kernel-development-9780672329463
-updated: "2026-05-24"
+disputed_statements: []
+secondary_sources: []
+updated: "2026-05-28"
 ---
 ## TL;DR
-Operating systems manage hardware resources and provide abstractions for applications. Process scheduling, memory management, and file systems are the three pillars of OS design.
+Operating systems concepts include processes, memory virtualization, concurrency, scheduling, files, directories, persistence, and protection. A useful beginner model is that the OS provides abstractions over CPU, memory, and storage resources.
 
 ## Core Explanation
-Process management: PCB (Process Control Block) stores process state. Context switching saves/restores CPU registers. Inter-process communication via pipes, message queues, shared memory, sockets. Threads share address space within a process — lighter weight but require synchronization (mutexes, semaphores).
-
-## Detailed Analysis
-Memory: paging (fixed-size pages ← page table → frames), segmentation (logical divisions), TLB (translation lookaside buffer — hardware cache for page table entries). File systems: inodes store metadata, directories map names to inodes. Journaling file systems (ext4, NTFS) prevent corruption from crashes.
+A process is the OS abstraction for a running program. Virtual memory gives each process an address-space abstraction rather than direct unmanaged access to physical memory. File and directory abstractions organize persistent storage so applications can read, write, name, and locate data without controlling raw devices directly.
 
 ## Further Reading
-- OSTEP: Operating Systems: Three Easy Pieces (free)
-- Linux Kernel Documentation
-- Microsoft: Windows Internals
 
-## Related Articles
-
-- [File Systems: FAT, NTFS, ext4, ZFS — Design, Performance, and Reliability](../file-systems-fat-ntfs-ext4-zfs-design-performance-and-reliability.md)
-- [AI and Blockchain: Decentralized Intelligence, Smart Contracts, and Crypto-Economic Systems](../../ai/ai-blockchain.md)
-- [AI Content Moderation Platforms: Large-Scale Safety Systems, Policy Engines, and Multilingual Review](../../ai/ai-content-moderation-platforms.md)
+- [OSTEP: processes](https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-intro.pdf)
+- [OSTEP: address spaces](https://pages.cs.wisc.edu/~remzi/OSTEP/vm-intro.pdf)
+- [OSTEP: files and directories](https://pages.cs.wisc.edu/~remzi/OSTEP/file-intro.pdf)
