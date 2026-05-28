@@ -4,8 +4,8 @@ title: "3D Human Modeling: Parametric Body Models, Mesh Recovery, and Digital Av
 schema_type: article
 category: ai
 language: en
-confidence: high
-last_verified: "2026-05-24"
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-24"
 generation_method: ai_structured
 ai_models:
@@ -18,47 +18,29 @@ completeness: 0.85
 atomic_facts:
   - id: af-3d-human-modeling-1
     statement: >-
-      SMPL (Loper et al., 2015, Max Planck / SIGGRAPH Asia) introduced a learned parametric body model representing the human body as a function of pose parameters (72 values) and shape parameters (10
-      values) -- enabling compact, animatable 3D human representations. SMPL-X (2019) extends to full body including hands and face (119 parameters). These models are the foundation for modern 3D
-      human pose, shape estimation, and motion capture.
-    source_title: SMPL (Loper et al., 2015, Max Planck / SIGGRAPH Asia) / SMPL-X (Pavlakos et al., 2019, CVPR) -- full-body parametric model
-    source_url: https://smpl.is.tue.mpg.de/
-    confidence: high
+      The SMPL paper introduced a skinned multi-person linear body model learned from registered
+      body scans, with separate parameters for body shape and pose.
+    source_title: "SMPL: A Skinned Multi-Person Linear Model"
+    source_url: https://doi.org/10.1145/2816795.2818013
+    confidence: medium
   - id: af-3d-human-modeling-2
     statement: >-
-      Human mesh recovery from single images: HMR (2018) first demonstrated 3D body reconstruction from monocular images. Subsequent advances -- SPIN (2019), PARE (2021, occlusion-robust), CLIFF
-      (2022, camera-aware), and TokenHMR (2024, transformer-based) -- reduced MPJPE from 80mm to 50mm on Human3.6M, enabling virtual try-on, fitness tracking, and AR avatar creation from single
-      photos.
-    source_title: HMR (2018) / SPIN (2019) / PARE (2021) / CLIFF (2022) / TokenHMR (2024) -- human mesh recovery from images
+      HMR reconstructs a full 3D human body mesh from a single RGB image by directly inferring SMPL
+      shape and 3D pose parameters.
+    source_title: End-to-end Recovery of Human Shape and Pose
     source_url: https://arxiv.org/abs/1712.06584
-    confidence: high
+    confidence: medium
+  - id: af-3d-human-modeling-3
+    statement: >-
+      SMPL-X extends SMPL with articulated hands and an expressive face, supporting full-body
+      fitting from a single monocular image.
+    source_title: "Expressive Body Capture: 3D Hands, Face, and Body from a Single Image"
+    source_url: https://arxiv.org/abs/1904.05866
+    confidence: medium
 primary_sources:
   - id: ps-3d-human-modeling-1
     title: "SMPL: A Skinned Multi-Person Linear Model"
     type: academic_paper
-    year: 2015
-    institution: ACM SIGGRAPH Asia / Max Planck Institute
-    url: https://smpl.is.tue.mpg.de/
-  - id: ps-3d-human-modeling-2
-    title: End-to-End Recovery of Human Shape and Pose (HMR)
-    type: academic_paper
-    year: 2018
-    institution: CVPR / UC Berkeley
-    url: https://arxiv.org/abs/1712.06584
-known_gaps:
-  - Realistic clothing simulation and garment reconstruction from images
-  - Full-body capture from monocular video in unconstrained environments
-disputed_statements: []
-secondary_sources:
-  - title: "Deep Learning for 3D Human Pose Estimation and Mesh Recovery: A Survey"
-    type: survey_paper
-    year: 2024
-    authors:
-      - multiple
-    institution: Neurocomputing (Elsevier)
-    url: https://doi.org/10.1016/j.neucom.2024.128049
-  - title: "SMPL: A Skinned Multi-Person Linear Model"
-    type: journal_article
     year: 2015
     authors:
       - Loper, Matthew
@@ -66,35 +48,51 @@ secondary_sources:
       - Romero, Javier
       - Pons-Moll, Gerard
       - Black, Michael J.
-    institution: MPI-IS / ACM TOG (SIGGRAPH Asia)
+    institution: ACM Transactions on Graphics
     url: https://doi.org/10.1145/2816795.2818013
-  - title: "A Survey of Deep Learning-Based Human Pose Estimation: Foundations, Architectures, Benchmarks, and Frontiers"
-    type: survey_paper
-    year: 2025
+    doi: 10.1145/2816795.2818013
+  - id: ps-3d-human-modeling-2
+    title: End-to-end Recovery of Human Shape and Pose
+    type: academic_paper
+    year: 2018
     authors:
-      - multiple
-    institution: IEEE Access
-    url: https://doi.org/10.1109/ACCESS.2025.3567250
-  - title: A Survey on Deep Learning for 2D and 3D Human Pose Estimation
-    type: survey_paper
-    year: 2025
+      - Kanazawa, Angjoo
+      - Black, Michael J.
+      - Jacobs, David W.
+      - Malik, Jitendra
+    institution: CVPR / arXiv
+    url: https://arxiv.org/abs/1712.06584
+  - id: ps-3d-human-modeling-3
+    title: "Expressive Body Capture: 3D Hands, Face, and Body from a Single Image"
+    type: academic_paper
+    year: 2019
     authors:
-      - multiple
-    institution: Artificial Intelligence Review (Springer)
-    url: https://doi.org/10.1007/s10462-025-11430-4
-updated: "2026-05-24"
+      - Pavlakos, Georgios
+      - Choutas, Vasileios
+      - Ghorbani, Nima
+      - Bolkart, Timo
+      - Osman, Ahmed A. A.
+      - Tzionas, Dimitrios
+      - Black, Michael J.
+    institution: CVPR / arXiv
+    url: https://arxiv.org/abs/1904.05866
+known_gaps:
+  - >-
+    Clothed-body reconstruction and garment dynamics require separate models beyond basic body
+    shape.
+  - Single-view 3D recovery remains ambiguous under occlusion and unusual camera viewpoints.
+disputed_statements: []
+secondary_sources: []
+updated: "2026-05-28"
 ---
 ## TL;DR
-3D human modeling reconstructs the human body in three dimensions from images and video -- enabling virtual try-on, motion capture without markers, and realistic digital avatars. Parametric body models (SMPL) and deep learning-based mesh recovery have evolved from laboratory multi-camera setups to working from a single smartphone photo.
+3D human modeling estimates body shape, pose, and mesh geometry from images or video. The public evidence here is narrowed to three well-specified sources: SMPL for parametric body modeling, HMR for single-image mesh recovery, and SMPL-X for hands and face.
 
 ## Core Explanation
-The problem: given an image or video of a person, recover their 3D body shape and pose. Key distinction from 2D pose estimation: 3D modeling outputs a complete 3D mesh (6890 vertices for SMPL) or parametric parameters that can be animated and rendered from any viewpoint. SMPL model: shape parameters (beta -- 10 PCA components from thousands of body scans capturing height, weight, proportions) + pose parameters (theta -- 23 joint rotations + 1 global orientation, 72 total). The model is differentiable -- can be optimized via gradient descent and integrated into deep learning pipelines.
-
-## Detailed Analysis
-HMR (2018): CNN encoder extracts image features -> iterative 3D regression module predicts SMPL parameters. SPIN (2019): alternates between optimization (SMPLify -- optimize SMPL parameters to fit 2D keypoints) and regression (trained on optimization outputs). This self-improving loop boosts accuracy. PARE (2021): part attention mechanism learns which body parts are visible vs. occluded. TokenHMR (2024): transformer-based, treats pose tokens as queries attending to image features. Applications: virtual try-on (Zalando, Amazon), markerless motion capture (Move AI, Plask), fitness form analysis from single-camera video, and AR/VR avatars from a selfie. Key limitations: clothing (SMPL models naked body shape; clothed body requires separate CAPE/SCARF models) and monocular depth ambiguity -- single-view 3D reconstruction is fundamentally ill-posed.
+SMPL made 3D human modeling practical by representing body shape and pose with a compact, learned, animatable model. HMR then showed how a neural model could infer SMPL pose and shape from a single RGB image. SMPL-X broadened the representation to include hands and facial expression, which is important for expressive avatars and richer human capture.
 
 ## Related Articles
 
-- [Cognitive Architectures: ACT-R, Soar, and Computational Models of Human-Like Reasoning](../cognitive-architectures.md)
-- [Diffusion Models: DDPM, Stable Diffusion, and Score-Based Generative Modeling](../diffusion-models-ddpm-stable-diffusion-and-score-based-generative-modeling.md)
 - [Human Pose Estimation: 2D/3D Keypoint Detection and Transformer-Based Body Tracking](../human-pose-estimation.md)
+- [Neural Rendering: NeRFs, Gaussian Splatting, and Differentiable Scene Representations](../neural-rendering.md)
+- [Computer Vision: Convolution, Feature Detection, and Image Understanding](../../computer-science/computer-vision-convolution-feature-detection-and-image-understanding.md)

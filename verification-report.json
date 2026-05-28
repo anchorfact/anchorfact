@@ -4,11 +4,11 @@
     "total_articles": 1000,
     "total_with_errors": 0,
     "average_sources_per_article": "2.1",
-    "overall_verification_rate": "62.1%",
+    "overall_verification_rate": "62.5%",
     "elapsed_ms": 635005,
     "elapsed_sec": "635.0",
     "concurrency": 3,
-    "manual_reviewed_articles": 252
+    "manual_reviewed_articles": 262
   },
   "articles": [
     {
@@ -81,19 +81,20 @@
       "file": "content/ai/3d-human-modeling.md",
       "article_id": "3d-human-modeling",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
           "source_title": "SMPL: A Skinned Multi-Person Linear Model",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "url",
-              "identifier": "https://smpl.is.tue.mpg.de/",
+              "method": "doi",
+              "identifier": "10.1145/2816795.2818013",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://smpl.is.tue.mpg.de/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Nineteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -101,7 +102,7 @@
           "all_verified": true
         },
         {
-          "source_title": "End-to-End Recovery of Human Shape and Pose (HMR)",
+          "source_title": "End-to-end Recovery of Human Shape and Pose",
           "source_type": "academic_paper",
           "results": [
             {
@@ -109,7 +110,27 @@
               "identifier": "1712.06584",
               "verified": true,
               "metadata": {
-                "title": "arXiv Query: search_query=&amp;id_list=1712.06584&amp;start=0&amp;max_results=1"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Nineteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Expressive Body Capture: 3D Hands, Face, and Body from a Single Image",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "arxiv",
+              "identifier": "1904.05866",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Nineteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -117,8 +138,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/activation-functions.md",
@@ -1030,25 +1053,56 @@
       "file": "content/ai/ai-content-moderation-platforms.md",
       "article_id": "ai-content-moderation-platforms",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "AI Content Moderation at Scale: Multi-Stage Detection Pipelines, Policy Engines, and Fairness (2025 Comprehensive Survey)",
-          "source_type": "academic_paper",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "Community Standards Enforcement Report: AI Detection of Hate Speech, Violence, and Misinformation Across 70+ Languages",
-          "source_type": "academic_paper",
+          "source_title": "Community Standards Enforcement Report",
+          "source_type": "transparency_report",
           "results": [
             {
               "method": "url",
               "identifier": "https://transparency.meta.com/reports/community-standards-enforcement/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://transparency.meta.com/reports/community-standards-enforcement/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Nineteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Microsoft's PhotoDNA: Protecting children and businesses in the cloud",
+          "source_type": "technical_article",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://news.microsoft.com/features/microsofts-photodna-protecting-children-and-businesses-in-the-cloud/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Nineteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Perspective API",
+          "source_type": "product_documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.perspectiveapi.com/s/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Nineteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -1056,8 +1110,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/ai-customer-analytics.md",
@@ -1150,19 +1206,20 @@
       "file": "content/ai/ai-digital-forensics.md",
       "article_id": "ai-digital-forensics",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "AI for Multimedia Forensics: Deepfake Detection, Provenance Analysis, and Evidence Authentication (IEEE Signal Processing, 2024)",
+          "source_title": "FaceForensics++: Learning to Detect Manipulated Facial Images",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "url",
-              "identifier": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=79",
+              "method": "arxiv",
+              "identifier": "1901.08971",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=79"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Nineteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -1170,16 +1227,35 @@
           "all_verified": true
         },
         {
-          "source_title": "C2PA Content Credentials 2.1: Cryptographic Provenance for Digital Media",
-          "source_type": "academic_paper",
+          "source_title": "Content Credentials: C2PA Technical Specification",
+          "source_type": "technical_specification",
           "results": [
             {
               "method": "url",
-              "identifier": "https://c2pa.org/specifications/",
+              "identifier": "https://spec.c2pa.org/specifications/specifications/2.3/specs/C2PA_Specification.html",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://spec.c2pa.org/specifications/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Nineteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Media Forensics",
+          "source_type": "program_page",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.darpa.mil/research/programs/media-forensics",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Nineteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -1187,8 +1263,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/ai-digital-marketing.md",
@@ -18081,19 +18159,56 @@
       "file": "content/business/private-label-products.md",
       "article_id": "kb-2026-00213",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Harvard Business Review",
-          "source_type": "journal",
+          "source_title": "What Is a Private Label? How Private Labels Work (2026)",
+          "source_type": "business_guide",
           "results": [
             {
               "method": "url",
-              "identifier": "https://hbr.org/",
+              "identifier": "https://www.shopify.com/blog/what-is-private-label",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://hbr.org/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Nineteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Amazon Brand Registry",
+          "source_type": "seller_documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://sell.amazon.com/brand-registry",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Nineteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Trademark basics",
+          "source_type": "government_guidance",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.uspto.gov/trademarks/basics",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Nineteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -18101,8 +18216,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/business/product-listing-optimization-amazon.md",
@@ -31330,19 +31447,20 @@
       "file": "content/game-development/game-ui-ux-design.md",
       "article_id": "game-ui-ux-design",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "The Art of Game Design",
-          "source_type": "textbook",
+          "source_title": "The Information Capacity of the Human Motor System in Controlling the Amplitude of Movement",
+          "source_type": "academic_paper",
           "results": [
             {
-              "method": "url",
-              "identifier": "https://www.routledge.com/The-Art-of-Game-Design/Schell/p/book/9781138632059",
+              "method": "doi",
+              "identifier": "10.1037/h0055392",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.routledge.com/The-Art-of-Game-Design/Schell/p/book/9781138632059"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Nineteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -31350,16 +31468,35 @@
           "all_verified": true
         },
         {
-          "source_title": "Designing the User Interface, 6th Edition",
-          "source_type": "textbook",
+          "source_title": "10 Usability Heuristics for User Interface Design",
+          "source_type": "design_guideline",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.pearson.com/en-us/subject-catalog/p/designing-the-user-interface/P200000009530",
+              "identifier": "https://www.nngroup.com/articles/ten-usability-heuristics/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.pearson.com/en-us/subject-catalog/p/designing-the-user-interface/P200000009530"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Nineteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Ensure that essential text is readable by default",
+          "source_type": "accessibility_guideline",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://gameaccessibilityguidelines.com/ensure-that-essential-text-is-readable-by-default/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Nineteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -31367,8 +31504,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/game-development/game-ui-ux.md",
@@ -36728,16 +36867,17 @@
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "India's Struggle for Independence (Bipan Chandra)",
-          "source_type": "book",
+          "source_title": "Indian National Congress",
+          "source_type": "reference_article",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.penguin.co.in/book/indias-struggle-for-independence/",
+              "identifier": "https://www.britannica.com/topic/Indian-National-Congress",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.penguin.co.in/book/indias-struggle-for-independence/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Nineteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -36745,33 +36885,35 @@
           "all_verified": true
         },
         {
-          "source_title": "India: A History (2025 Updated)",
-          "source_type": "book",
+          "source_title": "Salt March",
+          "source_type": "reference_article",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.harpercollins.com/india-history/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.harpercollins.com/india-history/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Indian Independence: A Very Short Introduction (2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://global.oup.com/vsi-indian-independence/",
+              "identifier": "https://www.britannica.com/event/Salt-March",
               "verified": true,
               "metadata": {
-                "status": 202,
-                "final_url": "https://global.oup.com/vsi-indian-independence/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Nineteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Indian Independence Act",
+          "source_type": "reference_article",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.britannica.com/topic/Indian-Independence-Act-1947",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Nineteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -36779,8 +36921,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/history/industrial-revolution-steam-factories-and-the-transformation-of-society.md",
@@ -37198,16 +37342,17 @@
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "1587, A Year of No Significance: The Ming Dynasty in Decline (Ray Huang)",
-          "source_type": "book",
+          "source_title": "Ming dynasty",
+          "source_type": "reference_article",
           "results": [
             {
               "method": "url",
-              "identifier": "https://yalebooks.yale.edu/book/9780300028843/1587-a-year-of-no-significance/",
+              "identifier": "https://www.britannica.com/topic/Ming-dynasty-Chinese-history",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://yalebooks.yale.edu/book/9780300028843/1587-a-year-of-no-significance/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Nineteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -37215,16 +37360,17 @@
           "all_verified": true
         },
         {
-          "source_title": "The Troubled Empire: China in the Yuan and Ming Dynasties (2025)",
-          "source_type": "book",
+          "source_title": "Zheng He",
+          "source_type": "reference_article",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.hup.harvard.edu/ming/",
+              "identifier": "https://www.britannica.com/biography/Zheng-He",
               "verified": true,
               "metadata": {
-                "status": 202,
-                "final_url": "https://www.hup.harvard.edu/ming/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Nineteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -37232,25 +37378,28 @@
           "all_verified": true
         },
         {
-          "source_title": "Ming China: Courts and Contacts (2025)",
-          "source_type": "book",
+          "source_title": "Imperial Palaces of the Ming and Qing Dynasties in Beijing and Shenyang",
+          "source_type": "world_heritage_record",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.britishmuseum.org/research/publications/",
-              "verified": false,
+              "identifier": "https://whc.unesco.org/en/list/439/",
+              "verified": true,
               "metadata": {
-                "status": 403,
-                "final_url": "https://www.britishmuseum.org/research/publications/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Nineteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/history/mongol-empire.md",
@@ -38206,16 +38355,17 @@
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "China's Golden Age: Everyday Life in the Tang Dynasty (Charles Benn)",
-          "source_type": "book",
+          "source_title": "Tang dynasty",
+          "source_type": "reference_article",
           "results": [
             {
               "method": "url",
-              "identifier": "https://global.oup.com/academic/product/chinas-golden-age-9780195176650",
+              "identifier": "https://www.britannica.com/topic/Tang-dynasty",
               "verified": true,
               "metadata": {
-                "status": 202,
-                "final_url": "https://global.oup.com/academic/product/chinas-golden-age-9780195176650"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Nineteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -38223,16 +38373,17 @@
           "all_verified": true
         },
         {
-          "source_title": "China's Cosmopolitan Empire: The Tang Dynasty (2025)",
-          "source_type": "book",
+          "source_title": "An Lushan",
+          "source_type": "reference_article",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.hup.harvard.edu/catalog.php?isbn=9780674064010",
+              "identifier": "https://www.britannica.com/biography/An-Lushan",
               "verified": true,
               "metadata": {
-                "status": 202,
-                "final_url": "https://www.hup.harvard.edu/catalog.php?isbn=9780674064010"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Nineteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -38240,25 +38391,28 @@
           "all_verified": true
         },
         {
-          "source_title": "The Tang Dynasty: A Global History (2025)",
-          "source_type": "book",
+          "source_title": "Tang Dynasty (618-906)",
+          "source_type": "museum_essay",
           "results": [
             {
               "method": "url",
-              "identifier": "https://doi.org/10.1017/cbo.2025.tang",
-              "verified": false,
+              "identifier": "https://www.metmuseum.org/essays/tang-dynasty-618-906",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1017/cbo.2025.tang"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Nineteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/history/viking-age.md",
@@ -40422,19 +40576,56 @@
       "file": "content/science/mars-exploration.md",
       "article_id": "kb-2026-00498",
       "generation_method": "ai_assisted",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "NASA Mars Exploration Program",
-          "source_type": "documentation",
+          "source_title": "Mars Exploration",
+          "source_type": "program_page",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.nasa.gov/",
+              "identifier": "https://science.nasa.gov/planetary-science/programs/mars-exploration/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.nasa.gov/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Nineteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "At Work on Mars",
+          "source_type": "topic_page",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.jpl.nasa.gov/topics/mars/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Nineteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "The Mars Future Plan",
+          "source_type": "program_page",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://science.nasa.gov/planetary-science/programs/mars-exploration/future-of-mars-plan/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Nineteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -40442,8 +40633,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/science/molecular-biology-central-dogma.md",
@@ -42627,19 +42820,20 @@
       "file": "content/self-improvement/emotional-intelligence.md",
       "article_id": "kb-2026-00442",
       "generation_method": "ai_structured",
-      "sources_total": 6,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Emotional Intelligence (Daniel Goleman)",
-          "source_type": "book",
+          "source_title": "Emotional Intelligence",
+          "source_type": "academic_paper",
           "results": [
             {
-              "method": "url",
-              "identifier": "https://www.penguinrandomhouse.com/books/311306/emotional-intelligence-by-daniel-goleman/",
+              "method": "doi",
+              "identifier": "10.2190/DUGG-P24E-52WK-6CDG",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.penguinrandomhouse.com/books/311306/emotional-intelligence-by-daniel-goleman/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Nineteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -42647,16 +42841,17 @@
           "all_verified": true
         },
         {
-          "source_title": "Emotional Intelligence: Why It Can Matter More Than IQ (2025 30th Anniversary)",
-          "source_type": "book",
+          "source_title": "Emotional intelligence meets traditional standards for an intelligence",
+          "source_type": "academic_paper",
           "results": [
             {
-              "method": "url",
-              "identifier": "https://www.danielgoleman.info/books/emotional-intelligence/",
+              "method": "doi",
+              "identifier": "10.1016/S0160-2896(99)00016-1",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.danielgoleman.info/books/emotional-intelligence/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Nineteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -42664,54 +42859,28 @@
           "all_verified": true
         },
         {
-          "source_title": "Emotional Intelligence 2.0 (2025 Updated)",
-          "source_type": "book",
+          "source_title": "Emotional Intelligence by Daniel Goleman",
+          "source_type": "book_page",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.talentsmarteq.com/",
+              "identifier": "https://www.penguinrandomhouse.com/books/69105/emotional-intelligence-by-daniel-goleman/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.talentsmarteq.com/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Nineteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
           ],
           "all_verified": true
-        },
-        {
-          "source_title": "Emotional Intelligence (30th Anniversary, 2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.danielgoleman.info/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://www.danielgoleman.info/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Emotional Intelligence: Why It Can Matter More Than IQ",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "Emotional Intelligence 2.0",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
         }
       ],
-      "sources_verified": 4,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/self-improvement/focus-techniques.md",

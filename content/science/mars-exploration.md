@@ -1,75 +1,82 @@
 ---
-id: "kb-2026-00498"
-title: "Mars Exploration"
-schema_type: "TechArticle"
-category: "science"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
+id: kb-2026-00498
+title: Mars Exploration
+schema_type: TechArticle
+category: science
+language: en
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-22"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-science-01"
-    statement: "Mars is the most explored planet beyond Earth"
-    source_url: "https://mars.nasa.gov/"
-    confidence: "medium"
-  - id: "fact-science-02"
-    statement: "Why Mars: most Earth-like planet, past habitability, potential for ancient life"
-    source_url: "https://mars.nasa.gov/"
-    confidence: "medium"
-  - id: "fact-science-03"
-    statement: "Sample return: NASA/ESA Mars Sample Return mission"
-    source_url: "https://mars.nasa.gov/"
-    confidence: "medium"
-
+  - id: fact-mars-exploration-001
+    statement: >-
+      NASA says its Mars exploration has pursued whether Mars was, or is, a habitable world for more
+      than 60 years.
+    source_title: Mars Exploration
+    source_url: https://science.nasa.gov/planetary-science/programs/mars-exploration/
+    confidence: medium
+  - id: fact-mars-exploration-002
+    statement: >-
+      JPL describes the Mars 2020 Perseverance rover mission as the first step of a round-trip
+      journey to return Mars samples to Earth for further study.
+    source_title: At Work on Mars
+    source_url: https://www.jpl.nasa.gov/topics/mars/
+    confidence: medium
+  - id: fact-mars-exploration-003
+    statement: >-
+      NASA describes its Mars Future Plan as reimagining Mars exploration, driving scientific
+      discoveries, and preparing for humans on Mars.
+    source_title: The Mars Future Plan
+    source_url: https://science.nasa.gov/planetary-science/programs/mars-exploration/future-of-mars-plan/
+    confidence: medium
 completeness: 0.88
-
 primary_sources:
-  - title: "NASA Mars Exploration Program"
-    type: "documentation"
+  - id: ps-mars-exploration-1
+    title: Mars Exploration
+    type: program_page
     year: 2026
-    url: "https://www.nasa.gov/"
-    institution: "NASA"
-
-secondary_sources:
-  - title: "QLoRA: Efficient Finetuning of Quantized Language Models"
-    authors: ["Dettmers"]
-    type: "academic_paper"
-    year: 2023
-    url: "https://arxiv.org/abs/2305.14314"
-    doi: "10.48550/arXiv.2305.14314"
-    institution: "arXiv"
-  - title: "Biology (Campbell, 12th Edition)"
-    type: "textbook"
-    year: 2020
-    url: "https://www.pearson.com/en-us/subject-catalog/p/campbell-biology/P200000007058"
-    institution: "Pearson Education"
-
+    institution: NASA Science
+    url: https://science.nasa.gov/planetary-science/programs/mars-exploration/
+  - id: ps-mars-exploration-2
+    title: At Work on Mars
+    type: topic_page
+    year: 2026
+    institution: NASA Jet Propulsion Laboratory
+    url: https://www.jpl.nasa.gov/topics/mars/
+  - id: ps-mars-exploration-3
+    title: The Mars Future Plan
+    type: program_page
+    year: 2026
+    institution: NASA Science
+    url: https://science.nasa.gov/planetary-science/programs/mars-exploration/future-of-mars-plan/
+secondary_sources: []
+known_gaps:
+  - Mission timelines and sample-return architecture can change as NASA plans are revised.
+  - This article does not provide a full chronology of every Mars mission.
+disputed_statements: []
+updated: "2026-05-28"
 ---
-
-
-
-
 ## TL;DR
-
-Mars is the most explored planet beyond Earth. First flyby (Mariner 4, 1965). Key missions: Viking (first landing, 1976), Pathfinder/Sojourner (first rover, 1997), Spirit/Opportunity (2004, Oppy lasted 14 years — 45km), Curiosity (2012, still active, nuclear-powered), Perseverance (2021, collecting samples for return). Evidence of past liquid water is overwhelming.
+Mars exploration studies whether Mars was or is habitable, how its environment changed, and how future robotic and human missions should proceed. The repaired evidence uses NASA Science and JPL pages rather than a generic NASA homepage.
 
 ## Core Explanation
-
-Why Mars: most Earth-like planet, past habitability, potential for ancient life. Perseverance: Jezero Crater (ancient river delta), Ingenuity helicopter (first powered flight on another planet — 72 flights). Sample return: NASA/ESA Mars Sample Return mission (planned 2030s). Challenges: radiation, thin atmosphere (1% of Earth), perchlorates in soil (toxic). Human missions: SpaceX Starship, NASA — 2030s target.
+NASA frames Mars exploration around habitability and long-running robotic investigation. JPL highlights Perseverance as part of a round-trip sample-return effort. NASA's Mars Future Plan connects future science goals with preparation for eventual human exploration.
 
 ## Further Reading
 
-- [NASA Mars Exploration Program](https://mars.nasa.gov/)
+- [Mars Exploration](https://science.nasa.gov/planetary-science/programs/mars-exploration/)
+- [At Work on Mars](https://www.jpl.nasa.gov/topics/mars/)
+- [The Mars Future Plan](https://science.nasa.gov/planetary-science/programs/mars-exploration/future-of-mars-plan/)
 
 ## Related Articles
 
-- [AI for Oil and Gas Exploration: Seismic Interpretation, Reservoir Characterization, and Subsurface Intelligence](../../ai/ai-for-oil-gas-exploration.md)
-- [AI for Space Exploration: Autonomous Navigation, Earth Observation, and Spacecraft Autonomy](../../ai/ai-for-space-exploration.md)
-- [Age of Exploration](../../history/age-of-exploration.md)
+- [Solar System](../solar-system.md)
+- [AI for Space Exploration](../../ai/ai-for-space-exploration.md)
+- [Robotics](../../computer-science/robotics.md)

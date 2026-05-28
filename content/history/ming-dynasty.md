@@ -4,8 +4,8 @@ title: Ming Dynasty
 schema_type: TechArticle
 category: history
 language: en
-confidence: high
-last_verified: "2026-05-24"
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-22"
 generation_method: ai_structured
 ai_models:
@@ -15,72 +15,63 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-history-01
-    statement: The Ming Dynasty was China's last native Han dynasty
-    source_title: "1587, A Year of No Significance: The Ming Dynasty in Decline (Ray Huang)"
-    source_url: https://yalebooks.yale.edu/book/9780300028843/1587-a-year-of-no-significance/
-    confidence: high
-  - id: fact-history-02
-    statement: Founded by Zhu Yuanzhang after overthrowing Mongol Yuan rule
-    source_title: "1587, A Year of No Significance: The Ming Dynasty in Decline (Ray Huang)"
-    source_url: https://yalebooks.yale.edu/book/9780300028843/1587-a-year-of-no-significance/
-    confidence: high
-  - id: fact-history-03
-    statement: "Achievements: Great Wall reconstruction, Forbidden City , Zheng He's treasure voyages , blue-and-white porcelain, and population growth to 160 million"
-    source_title: "1587, A Year of No Significance: The Ming Dynasty in Decline (Ray Huang)"
-    source_url: https://yalebooks.yale.edu/book/9780300028843/1587-a-year-of-no-significance/
-    confidence: high
+  - id: fact-ming-dynasty-001
+    statement: The Ming dynasty ruled China from 1368 to 1644.
+    source_title: Ming dynasty
+    source_url: https://www.britannica.com/topic/Ming-dynasty-Chinese-history
+    confidence: medium
+  - id: fact-ming-dynasty-002
+    statement: Zheng He commanded large Ming maritime expeditions in the early fifteenth century.
+    source_title: Zheng He
+    source_url: https://www.britannica.com/biography/Zheng-He
+    confidence: medium
+  - id: fact-ming-dynasty-003
+    statement: >-
+      UNESCO describes the Forbidden City in Beijing as a seat of supreme power for more than five
+      centuries, beginning in the Ming period.
+    source_title: Imperial Palaces of the Ming and Qing Dynasties in Beijing and Shenyang
+    source_url: https://whc.unesco.org/en/list/439/
+    confidence: medium
 completeness: 0.88
 known_gaps:
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
+  - Ming fiscal history, regional society, and late-dynasty crisis are only summarized.
+  - Specialized art, porcelain, and military history require separate sources.
+disputed_statements: []
 primary_sources:
-  - title: "1587, A Year of No Significance: The Ming Dynasty in Decline (Ray Huang)"
-    type: book
-    year: 1981
-    url: https://yalebooks.yale.edu/book/9780300028843/1587-a-year-of-no-significance/
-    institution: Yale University Press
-  - title: "The Troubled Empire: China in the Yuan and Ming Dynasties (2025)"
-    type: book
-    year: 2025
-    authors:
-      - Brook T.
-    institution: Harvard University Press
-    url: https://www.hup.harvard.edu/ming/
-  - title: "Ming China: Courts and Contacts (2025)"
-    type: book
-    year: 2025
-    authors:
-      - multiple
-    institution: British Museum Press
-    url: https://www.britishmuseum.org/research/publications/
-secondary_sources:
-  - title: Encyclopaedia Britannica
-    type: reference
-    year: 2025
-    url: https://www.britannica.com/
-    institution: Encyclopaedia Britannica, Inc.
-  - title: The Penguin History of the World
-    type: book
-    year: 1976
-    url: https://www.penguin.co.uk/books/36016/the-penguin-history-of-the-world-by-roberts-j-m/9781846144431
-    institution: J.M. Roberts, Penguin
+  - id: ps-ming-dynasty-1
+    title: Ming dynasty
+    type: reference_article
+    year: 2026
+    institution: Encyclopaedia Britannica
+    url: https://www.britannica.com/topic/Ming-dynasty-Chinese-history
+  - id: ps-ming-dynasty-2
+    title: Zheng He
+    type: reference_article
+    year: 2026
+    institution: Encyclopaedia Britannica
+    url: https://www.britannica.com/biography/Zheng-He
+  - id: ps-ming-dynasty-3
+    title: Imperial Palaces of the Ming and Qing Dynasties in Beijing and Shenyang
+    type: world_heritage_record
+    year: 2026
+    institution: UNESCO World Heritage Centre
+    url: https://whc.unesco.org/en/list/439/
+secondary_sources: []
+updated: "2026-05-28"
 ---
 ## TL;DR
-
-The Ming Dynasty (1368-1644) was China's last native Han dynasty. Founded by Zhu Yuanzhang (Hongwu Emperor) after overthrowing Mongol Yuan rule. Achievements: Great Wall reconstruction, Forbidden City (Beijing, 1420), Zheng He's treasure voyages (1405-1433, reaching East Africa), blue-and-white porcelain, and population growth to 160 million.
+The Ming dynasty ruled China from 1368 to 1644. This repaired entry uses Britannica for the dynasty and Zheng He's voyages, plus UNESCO for the Forbidden City and imperial-palace context.
 
 ## Core Explanation
-
-Zheng He: 7 voyages with fleets of 300+ ships, 28,000 crew — largest maritime expeditions in history until WWII. Then China turned inward (1433, voyages halted). Economy: silver-based currency, global trade hub. Fall: famine, peasant rebellions (Li Zicheng), Manchu invasion. Qing Dynasty (Manchu) replaced Ming (1644-1912).
+The Ming dynasty followed the Yuan and preceded the Qing. Zheng He's early fifteenth-century expeditions show the dynasty's maritime reach. The Forbidden City anchors the dynasty's imperial architecture and later Qing continuity, as documented by UNESCO.
 
 ## Further Reading
 
-- [1587, A Year of No Significance: The Ming Dynasty in Decline (Ray Huang)](https://yalebooks.yale.edu/book/9780300028843/1587-a-year-of-no-significance/)
+- [Ming dynasty](https://www.britannica.com/topic/Ming-dynasty-Chinese-history)
+- [Zheng He](https://www.britannica.com/biography/Zheng-He)
+- [Imperial Palaces of the Ming and Qing Dynasties in Beijing and Shenyang](https://whc.unesco.org/en/list/439/)
 
 ## Related Articles
 
 - [Tang Dynasty](../tang-dynasty.md)
+- [Chinese History](../ancient-china.md)

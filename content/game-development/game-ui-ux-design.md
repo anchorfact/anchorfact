@@ -4,8 +4,8 @@ title: Game User Interface and UX Design
 schema_type: TechArticle
 category: game-development
 language: en
-confidence: high
-last_verified: "2026-05-24"
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-24"
 generation_method: ai_structured
 ai_models:
@@ -16,73 +16,64 @@ is_live_document: false
 data_period: static
 atomic_facts:
   - id: fact-gd-ui-001
-    statement: "Fitts's Law (1954): larger/closer UI elements are faster to interact with; core game HUD principle."
-    source_title: Schell, J. The Art of Game Design 3rd ed. (CRC 2019)
-    source_url: https://doi.org/10.1201/9781315208435
-    confidence: high
+    statement: >-
+      Fitts's 1954 paper models target selection as a function of movement amplitude and target
+      tolerance, a basis for thinking about target size and distance in UI interaction.
+    source_title: The Information Capacity of the Human Motor System in Controlling the Amplitude of Movement
+    source_url: https://doi.org/10.1037/h0055392
+    confidence: medium
   - id: fact-gd-ui-002
-    statement: Diegetic UI (in-game world elements) provides higher immersion than non-diegetic HUDs.
-    source_title: Fagerholt & Lorentzon, Beyond the HUD (Chalmers 2009)
-    source_url: https://odr.chalmers.se/items/d4e35a6f-9c81-40f3-bd9e-ee115de6f335
-    confidence: high
+    statement: >-
+      Nielsen's 10 usability heuristics include visibility of system status, user control and
+      freedom, consistency and standards, and error prevention.
+    source_title: 10 Usability Heuristics for User Interface Design
+    source_url: https://www.nngroup.com/articles/ten-usability-heuristics/
+    confidence: medium
   - id: fact-gd-ui-003
-    statement: Nielsen's 10 usability heuristics (1994) widely applied to game UX design.
-    source_title: Hodent, C. The Gamer's Brain (CRC 2017)
-    source_url: https://doi.org/10.1201/9781315154237
-    confidence: high
+    statement: Game Accessibility Guidelines recommend that essential text be readable by default.
+    source_title: Ensure that essential text is readable by default
+    source_url: https://gameaccessibilityguidelines.com/ensure-that-essential-text-is-readable-by-default/
+    confidence: medium
 completeness: 0.9
 known_gaps:
-  - VR/AR UI paradigms
-  - Cross-platform UI scaling strategies
-disputed_statements:
-  - statement: Minimalism vs information density debate in HUD design
+  - Game-specific HUD patterns vary widely across genre and input device.
+  - VR, AR, and couch-coop UI constraints are not covered in depth.
+disputed_statements: []
 primary_sources:
-  - title: The Art of Game Design
-    type: textbook
-    year: 2019
-    url: https://www.routledge.com/The-Art-of-Game-Design/Schell/p/book/9781138632059
-    institution: CRC Press
-  - title: Designing the User Interface, 6th Edition
-    type: textbook
-    year: 2016
-    url: https://www.pearson.com/en-us/subject-catalog/p/designing-the-user-interface/P200000009530
-    institution: Pearson
-secondary_sources:
-  - title: Game UI Database
-    type: database
-    url: https://www.gameuidatabase.com/
-    institution: Game UI Database
+  - id: ps-game-ui-ux-design-1
+    title: The Information Capacity of the Human Motor System in Controlling the Amplitude of Movement
+    type: academic_paper
+    year: 1954
+    authors:
+      - Fitts, Paul M.
+    institution: Journal of Experimental Psychology
+    url: https://doi.org/10.1037/h0055392
+    doi: 10.1037/h0055392
+  - id: ps-game-ui-ux-design-2
+    title: 10 Usability Heuristics for User Interface Design
+    type: design_guideline
+    year: 1994
+    authors:
+      - Nielsen, Jakob
+    institution: Nielsen Norman Group
+    url: https://www.nngroup.com/articles/ten-usability-heuristics/
+  - id: ps-game-ui-ux-design-3
+    title: Ensure that essential text is readable by default
+    type: accessibility_guideline
+    year: 2026
+    institution: Game Accessibility Guidelines
+    url: https://gameaccessibilityguidelines.com/ensure-that-essential-text-is-readable-by-default/
+secondary_sources: []
+updated: "2026-05-28"
 ---
 ## TL;DR
-Game UI bridges player intent and game mechanics. Good UI design communicates game state without breaking immersion, using principles from human-computer interaction adapted to real-time, controller-driven contexts.
+Game UI and UX design adapts general human-computer interaction evidence to real-time play. This repaired entry uses Fitts's Law for target interaction, Nielsen heuristics for interface feedback and control, and game accessibility guidance for readable text.
 
-## UI Classification
-
-### Diegetic vs. Non-Diegetic
-- **Diegetic UI**: Exists in the game world (Dead Space's spine health bar, Pip-Boy in Fallout). Characters can see it. Enhances immersion.
-- **Non-diegetic UI**: Exists only for the player (health bar overlay, minimap). More readable but breaks fourth wall.
-- **Meta UI**: Effects that represent game state visually (screen reddening for low health). Both player and character experience it.
-
-## UX Principles for Games
-
-### Information Hierarchy
-Players need critical information at a glance. Health, ammo, objective markers should be near the screen center (the player's focal point). Secondary info (inventory, quest log) can be in peripheral vision.
-
-### Controller Navigation
-UI must be navigable with D-pad/joystick, not just mouse. Tab order matters. Radial menus reduce selection time for common actions. Button prompts should match controller layout.
-
-### Feedback Loops
-Every player action needs clear feedback: button press → animation change → UI update → sound cue. Missing feedback creates uncertainty and frustration.
-
-## Accessibility
-- Colorblind modes (deuteranopia, protanopia, tritanopia)
-- Scalable UI text for low vision
-- Remappable controls
-- Audio cues for visual information
-- Hold vs. toggle options for repetitive actions
+## Core Explanation
+In games, UI has to communicate state while players are acting under time pressure. Fitts's Law helps reason about targets that are easier or harder to select. Nielsen's heuristics provide a compact checklist for status, consistency, error prevention, and control. Accessibility guidance adds a practical baseline: essential text should be readable without requiring players to fix the interface first.
 
 ## Related Articles
 
-- [Game Audio Systems and Sound Design](../game-audio-systems.md)
-- [Game Design Document (GDD)](../game-design-document-gdd.md)
-- [Real-Time Strategy (RTS) Game Design](../real-time-strategy-rts-game-design.md)
+- [Game Design Principles](../game-design-principles.md)
+- [Input Systems and Accessibility](../input-systems-accessibility.md)
+- [Human-Computer Interaction](../../ai/human-computer-interaction.md)

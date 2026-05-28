@@ -4,8 +4,8 @@ title: Indian Independence Movement
 schema_type: TechArticle
 category: history
 language: en
-confidence: high
-last_verified: "2026-05-24"
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-22"
 generation_method: ai_structured
 ai_models:
@@ -15,74 +15,70 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-history-01
-    statement: "Key events: Salt March , Quit India Movement , Partition"
-    source_title: India's Struggle for Independence (Bipan Chandra)
-    source_url: https://www.penguin.co.in/book/indias-struggle-for-independence/
-    confidence: high
-  - id: fact-history-02
-    statement: "1857 Sepoy Mutiny: first major uprising"
-    source_title: India's Struggle for Independence (Bipan Chandra)
-    source_url: https://www.penguin.co.in/book/indias-struggle-for-independence/
-    confidence: high
-  - id: fact-history-03
-    statement: Indian National Congress founded 1885
-    source_title: India's Struggle for Independence (Bipan Chandra)
-    source_url: https://www.penguin.co.in/book/indias-struggle-for-independence/
-    confidence: high
+  - id: fact-indian-independence-001
+    statement: >-
+      The Indian National Congress was founded in 1885 and became a central organization in the
+      Indian independence movement.
+    source_title: Indian National Congress
+    source_url: https://www.britannica.com/topic/Indian-National-Congress
+    confidence: medium
+  - id: fact-indian-independence-002
+    statement: >-
+      The Salt March was a major nonviolent protest led by Mahatma Gandhi in March and April 1930
+      against British salt laws in India.
+    source_title: Salt March
+    source_url: https://www.britannica.com/event/Salt-March
+    confidence: medium
+  - id: fact-indian-independence-003
+    statement: >-
+      The Indian Independence Act of 1947 provided for British India to be partitioned into the
+      independent dominions of India and Pakistan.
+    source_title: Indian Independence Act
+    source_url: https://www.britannica.com/topic/Indian-Independence-Act-1947
+    confidence: medium
 completeness: 0.88
 known_gaps:
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
+  - >-
+    Regional organizations, princely states, and labor movements are summarized only at a high
+    level.
+  - Partition violence and displacement require more specialized historical treatment.
+disputed_statements: []
 primary_sources:
-  - title: India's Struggle for Independence (Bipan Chandra)
-    type: book
-    year: 1989
-    url: https://www.penguin.co.in/book/indias-struggle-for-independence/
-    institution: Penguin India
-  - title: "India: A History (2025 Updated)"
-    type: book
-    year: 2025
-    authors:
-      - Keay J.
-    institution: HarperCollins
-    url: https://www.harpercollins.com/india-history/
-  - title: "Indian Independence: A Very Short Introduction (2025)"
-    type: book
-    year: 2025
-    authors:
-      - multiple
-    institution: Oxford University Press
-    url: https://global.oup.com/vsi-indian-independence/
-secondary_sources:
-  - title: Encyclopaedia Britannica
-    type: reference
-    year: 2025
-    url: https://www.britannica.com/
-    institution: Encyclopaedia Britannica, Inc.
-  - title: The Penguin History of the World
-    type: book
-    year: 1976
-    url: https://www.penguin.co.uk/books/36016/the-penguin-history-of-the-world-by-roberts-j-m/9781846144431
-    institution: J.M. Roberts, Penguin
+  - id: ps-indian-independence-1
+    title: Indian National Congress
+    type: reference_article
+    year: 2026
+    institution: Encyclopaedia Britannica
+    url: https://www.britannica.com/topic/Indian-National-Congress
+  - id: ps-indian-independence-2
+    title: Salt March
+    type: reference_article
+    year: 2026
+    institution: Encyclopaedia Britannica
+    url: https://www.britannica.com/event/Salt-March
+  - id: ps-indian-independence-3
+    title: Indian Independence Act
+    type: reference_article
+    year: 2026
+    institution: Encyclopaedia Britannica
+    url: https://www.britannica.com/topic/Indian-Independence-Act-1947
+secondary_sources: []
+updated: "2026-05-28"
 ---
 ## TL;DR
-
-India's independence movement (1857-1947) ended British colonial rule. Gandhi's non-violent civil disobedience (Satyagraha) mobilized millions. Key events: Salt March (1930), Quit India Movement (1942), Partition (1947, India + Pakistan — 1-2 million dead, 15 million displaced). India became a republic (1950).
+The Indian independence movement ended British rule in 1947. This repaired article keeps three sourced anchors: the Indian National Congress, Gandhi's Salt March, and the Indian Independence Act.
 
 ## Core Explanation
-
-1857 Sepoy Mutiny: first major uprising. Indian National Congress founded 1885. Gandhi: returned from South Africa (1915), led non-cooperation movement (1920-22), Salt March (1930, 240 miles to sea to make salt illegally). Jinnah and Muslim League demanded Pakistan. WWII: British promised independence for support. Mountbatten Plan: partition with tragic consequences.
+The Indian National Congress became a major political vehicle for anti-colonial organization. Gandhi's Salt March turned the salt tax into a visible nonviolent challenge to British rule. The 1947 Indian Independence Act then created the legal framework for independence and partition into India and Pakistan.
 
 ## Further Reading
 
-- [India's Struggle for Independence (Bipan Chandra)](https://www.penguin.co.in/book/indias-struggle-for-independence/)
+- [Indian National Congress](https://www.britannica.com/topic/Indian-National-Congress)
+- [Salt March](https://www.britannica.com/event/Salt-March)
+- [Indian Independence Act](https://www.britannica.com/topic/Indian-Independence-Act-1947)
 
 ## Related Articles
 
-- [The Open-Source AI Movement: Llama, DeepSeek, and Democratization](../../ai/open-source-ai-movement.md)
 - [Civil Rights Movement](../civil-rights-movement.md)
-- [Parkour: Movement Efficiency, Biomechanics, and Urban Athletics](../../sports/parkour-movement-efficiency-biomechanics-and-urban-athletics.md)
+- [Colonialism](../colonialism.md)
+- [Age of Exploration](../age-of-exploration.md)
