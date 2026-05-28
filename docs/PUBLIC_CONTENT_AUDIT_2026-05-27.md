@@ -1,8 +1,8 @@
 # AnchorFact Public Content Audit - 2026-05-28
 
-Generated: 2026-05-28T12:00:28.434Z
+Generated: 2026-05-28T12:10:31.681Z
 
-Snapshot: 555 public / 445 draft / 1652 claims.
+Snapshot: 555 public / 445 draft / 1658 claims.
 
 ## Summary
 
@@ -11,9 +11,9 @@ This is a risk-weighted audit sample of public AnchorFact articles. It is intend
 - Sample size: 20
 - Low verified coverage samples: 1
 - Articles with at least one fail check: 0
-- High-confidence samples needing review: 3
+- High-confidence samples needing review: 0
 - Claim-evidence failures: 0
-- Recommendations: keep_public: 11, downgrade_confidence: 3, repair_sources: 6, move_to_draft: 0
+- Recommendations: keep_public: 11, downgrade_confidence: 0, repair_sources: 9, move_to_draft: 0
 
 ## Method
 
@@ -34,15 +34,15 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 | 9 | low_confidence_public | `history/age-of-exploration` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 | 10 | low_confidence_public | `history/byzantine-empire` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 | 11 | risk_fallback | `science/climate-change` | medium | 4/5 (80.0%) | 3 | source=weak; claim=pass; summary=pass | keep_public |
-| 12 | risk_fallback | `science/theory-of-relativity` | low | 1/1 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
-| 13 | risk_fallback | `self-improvement/public-speaking` | low | 1/1 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
-| 14 | risk_fallback | `sports/basketball-fundamentals` | low | 1/1 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
-| 15 | risk_fallback | `ai/ai-for-materials-science` | high | 2/3 (66.7%) | 2 | source=weak; claim=pass; summary=pass | downgrade_confidence |
-| 16 | risk_fallback | `ai/ai-for-speech-emotion-recognition` | high | 2/3 (66.7%) | 2 | source=weak; claim=pass; summary=pass | downgrade_confidence |
-| 17 | risk_fallback | `ai/audio-source-separation` | high | 2/3 (66.7%) | 2 | source=weak; claim=pass; summary=pass | downgrade_confidence |
-| 18 | risk_fallback | `computer-science/broadcast-channel-api` | medium | 1/1 (100.0%) | 2 | source=pass; claim=pass; summary=pass | repair_sources |
-| 19 | risk_fallback | `computer-science/css-flexbox` | medium | 1/1 (100.0%) | 2 | source=pass; claim=pass; summary=pass | repair_sources |
-| 20 | risk_fallback | `computer-science/ethereum` | low | 2/2 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
+| 12 | risk_fallback | `computer-science/geolocation-api` | medium | 1/1 (100.0%) | 2 | source=pass; claim=pass; summary=pass | repair_sources |
+| 13 | risk_fallback | `computer-science/go-language` | low | 2/2 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
+| 14 | risk_fallback | `computer-science/history-api` | medium | 1/1 (100.0%) | 2 | source=pass; claim=pass; summary=pass | repair_sources |
+| 15 | risk_fallback | `computer-science/indexeddb` | medium | 1/1 (100.0%) | 2 | source=pass; claim=pass; summary=pass | repair_sources |
+| 16 | risk_fallback | `computer-science/kubernetes` | high | 3/3 (100.0%) | 2 | source=pass; claim=pass; summary=pass | repair_sources |
+| 17 | risk_fallback | `computer-science/kubernetes-pod-service` | low | 1/1 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
+| 18 | risk_fallback | `computer-science/load-balancing` | low | 1/1 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
+| 19 | risk_fallback | `computer-science/navigator-api` | medium | 1/1 (100.0%) | 2 | source=pass; claim=pass; summary=pass | repair_sources |
+| 20 | risk_fallback | `computer-science/nodejs` | low | 2/2 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
 
 ## Article Findings
 
@@ -211,14 +211,29 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 12. Theory of Relativity
+### 12. Geolocation API
 
-- canonical slug: `science/theory-of-relativity`
-- canonical URL: https://anchorfact.org/science/theory-of-relativity/
+- canonical slug: `computer-science/geolocation-api`
+- canonical URL: https://anchorfact.org/computer-science/geolocation-api/
 - bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.43)
+- confidence: `medium` (verified_sources, score 0.715)
 - verified source coverage: 1/1 (100.0%)
-- claims: 3 total, 3 capped, 0 missing evidence
+- claims: 2 total, 0 capped, 0 missing evidence
+- quality reasons: none
+- source-title match: `pass`
+- claim-evidence match: `pass`
+- title-summary accuracy: `pass`
+- hygiene flags: generic_dispute_statement
+- recommendation: `repair_sources`
+
+### 13. Go Programming Language
+
+- canonical slug: `computer-science/go-language`
+- canonical URL: https://anchorfact.org/computer-science/go-language/
+- bucket: `risk_fallback`
+- confidence: `low` (verified_sources, score 0.51)
+- verified source coverage: 2/2 (100.0%)
+- claims: 2 total, 2 capped, 0 missing evidence
 - quality reasons: none
 - source-title match: `pass`
 - claim-evidence match: `weak`
@@ -226,85 +241,10 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: generic_dispute_statement
 - recommendation: `repair_sources`
 
-### 13. Public Speaking
+### 14. History API
 
-- canonical slug: `self-improvement/public-speaking`
-- canonical URL: https://anchorfact.org/self-improvement/public-speaking/
-- bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.45)
-- verified source coverage: 1/1 (100.0%)
-- claims: 3 total, 3 capped, 0 missing evidence
-- quality reasons: none
-- source-title match: `pass`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement
-- recommendation: `repair_sources`
-
-### 14. Basketball Fundamentals
-
-- canonical slug: `sports/basketball-fundamentals`
-- canonical URL: https://anchorfact.org/sports/basketball-fundamentals/
-- bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.45)
-- verified source coverage: 1/1 (100.0%)
-- claims: 3 total, 3 capped, 0 missing evidence
-- quality reasons: none
-- source-title match: `pass`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement
-- recommendation: `repair_sources`
-
-### 15. AI for Materials Science: GNoME, Crystal Discovery, and Materials Informatics
-
-- canonical slug: `ai/ai-for-materials-science`
-- canonical URL: https://anchorfact.org/ai/ai-for-materials-science/
-- bucket: `risk_fallback`
-- confidence: `high` (verified_sources, score 0.88)
-- verified source coverage: 2/3 (66.7%)
-- claims: 2 total, 0 capped, 0 missing evidence
-- quality reasons: partial_source_verification
-- source-title match: `weak`
-- claim-evidence match: `pass`
-- title-summary accuracy: `pass`
-- hygiene flags: none
-- recommendation: `downgrade_confidence`
-
-### 16. AI for Speech Emotion Recognition: Vocal Biomarkers, Mental Health Screening, and Affective Computing
-
-- canonical slug: `ai/ai-for-speech-emotion-recognition`
-- canonical URL: https://anchorfact.org/ai/ai-for-speech-emotion-recognition/
-- bucket: `risk_fallback`
-- confidence: `high` (verified_sources, score 0.88)
-- verified source coverage: 2/3 (66.7%)
-- claims: 2 total, 0 capped, 0 missing evidence
-- quality reasons: partial_source_verification
-- source-title match: `weak`
-- claim-evidence match: `pass`
-- title-summary accuracy: `pass`
-- hygiene flags: none
-- recommendation: `downgrade_confidence`
-
-### 17. Audio Source Separation: Demixing Speech, Music, and Environmental Sounds with Deep Learning
-
-- canonical slug: `ai/audio-source-separation`
-- canonical URL: https://anchorfact.org/ai/audio-source-separation/
-- bucket: `risk_fallback`
-- confidence: `high` (verified_sources, score 0.88)
-- verified source coverage: 2/3 (66.7%)
-- claims: 2 total, 0 capped, 0 missing evidence
-- quality reasons: partial_source_verification
-- source-title match: `weak`
-- claim-evidence match: `pass`
-- title-summary accuracy: `pass`
-- hygiene flags: none
-- recommendation: `downgrade_confidence`
-
-### 18. Broadcast Channel API
-
-- canonical slug: `computer-science/broadcast-channel-api`
-- canonical URL: https://anchorfact.org/computer-science/broadcast-channel-api/
+- canonical slug: `computer-science/history-api`
+- canonical URL: https://anchorfact.org/computer-science/history-api/
 - bucket: `risk_fallback`
 - confidence: `medium` (verified_sources, score 0.745)
 - verified source coverage: 1/1 (100.0%)
@@ -316,12 +256,12 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: generic_dispute_statement
 - recommendation: `repair_sources`
 
-### 19. CSS Flexbox
+### 15. IndexedDB
 
-- canonical slug: `computer-science/css-flexbox`
-- canonical URL: https://anchorfact.org/computer-science/css-flexbox/
+- canonical slug: `computer-science/indexeddb`
+- canonical URL: https://anchorfact.org/computer-science/indexeddb/
 - bucket: `risk_fallback`
-- confidence: `medium` (verified_sources, score 0.695)
+- confidence: `medium` (verified_sources, score 0.715)
 - verified source coverage: 1/1 (100.0%)
 - claims: 2 total, 0 capped, 0 missing evidence
 - quality reasons: none
@@ -331,10 +271,70 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: generic_dispute_statement
 - recommendation: `repair_sources`
 
-### 20. Ethereum
+### 16. Kubernetes (K8s)
 
-- canonical slug: `computer-science/ethereum`
-- canonical URL: https://anchorfact.org/computer-science/ethereum/
+- canonical slug: `computer-science/kubernetes`
+- canonical URL: https://anchorfact.org/computer-science/kubernetes/
+- bucket: `risk_fallback`
+- confidence: `high` (verified_sources, score 0.87)
+- verified source coverage: 3/3 (100.0%)
+- claims: 2 total, 0 capped, 0 missing evidence
+- quality reasons: none
+- source-title match: `pass`
+- claim-evidence match: `pass`
+- title-summary accuracy: `pass`
+- hygiene flags: generic_dispute_statement
+- recommendation: `repair_sources`
+
+### 17. Kubernetes Pod & Service
+
+- canonical slug: `computer-science/kubernetes-pod-service`
+- canonical URL: https://anchorfact.org/computer-science/kubernetes-pod-service/
+- bucket: `risk_fallback`
+- confidence: `low` (verified_sources, score 0.5)
+- verified source coverage: 1/1 (100.0%)
+- claims: 2 total, 2 capped, 0 missing evidence
+- quality reasons: none
+- source-title match: `pass`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: generic_dispute_statement
+- recommendation: `repair_sources`
+
+### 18. Load Balancing
+
+- canonical slug: `computer-science/load-balancing`
+- canonical URL: https://anchorfact.org/computer-science/load-balancing/
+- bucket: `risk_fallback`
+- confidence: `low` (verified_sources, score 0.5)
+- verified source coverage: 1/1 (100.0%)
+- claims: 2 total, 2 capped, 0 missing evidence
+- quality reasons: none
+- source-title match: `pass`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: generic_dispute_statement
+- recommendation: `repair_sources`
+
+### 19. Navigator API
+
+- canonical slug: `computer-science/navigator-api`
+- canonical URL: https://anchorfact.org/computer-science/navigator-api/
+- bucket: `risk_fallback`
+- confidence: `medium` (verified_sources, score 0.745)
+- verified source coverage: 1/1 (100.0%)
+- claims: 2 total, 0 capped, 0 missing evidence
+- quality reasons: none
+- source-title match: `pass`
+- claim-evidence match: `pass`
+- title-summary accuracy: `pass`
+- hygiene flags: generic_dispute_statement
+- recommendation: `repair_sources`
+
+### 20. Node.js
+
+- canonical slug: `computer-science/nodejs`
+- canonical URL: https://anchorfact.org/computer-science/nodejs/
 - bucket: `risk_fallback`
 - confidence: `low` (verified_sources, score 0.56)
 - verified source coverage: 2/2 (100.0%)
@@ -349,7 +349,7 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 ## Rule Calibration
 
 - Keep `low_verified_coverage` as an audit marker until a larger sample confirms the failure rate.
-- Require `high` confidence to have verified coverage >= 50% and at least 2 verified sources.
+- Keep the current high-confidence rule, while continuing spot checks.
 - Keep exporting claims with confidence caps, but continue auditing weak evidence.
 
 ## Next Manual Review

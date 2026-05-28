@@ -4,11 +4,11 @@
     "total_articles": 1000,
     "total_with_errors": 342,
     "average_sources_per_article": "2.3",
-    "overall_verification_rate": "71.6%",
+    "overall_verification_rate": "71.9%",
     "elapsed_ms": 635005,
     "elapsed_sec": "635.0",
     "concurrency": 3,
-    "manual_reviewed_articles": 355
+    "manual_reviewed_articles": 364
   },
   "articles": [
     {
@@ -3973,17 +3973,17 @@
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Scaling deep learning for materials discovery (GNoME)",
+          "source_title": "The Materials Project: A materials genome approach to accelerating materials innovation",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "doi",
-              "identifier": "10.1038/s41586-023-06735-9",
+              "method": "url",
+              "identifier": "https://doi.org/10.1063/1.4812323",
               "verified": true,
               "metadata": {
-                "title": "Scaling deep learning for materials discovery",
-                "publisher": "Springer Science and Business Media LLC",
-                "year": 2023
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -3991,7 +3991,25 @@
           "all_verified": true
         },
         {
-          "source_title": "An autonomous laboratory for the accelerated synthesis of novel materials (A-Lab)",
+          "source_title": "Scaling deep learning for materials discovery",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.nature.com/articles/s41586-023-06735-9",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "An autonomous laboratory for the accelerated synthesis of novel materials",
           "source_type": "academic_paper",
           "results": [
             {
@@ -3999,33 +4017,20 @@
               "identifier": "https://www.nature.com/articles/s41586-023-06934-4",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.nature.com/articles/s41586-023-06934-4?error=cookies_not_supported&code=861fc753-b221-4526-9f34-2c68c55bfeeb"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
           ],
           "all_verified": true
-        },
-        {
-          "source_title": "Graph Networks for Materials Exploration (GNoME)",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "arxiv",
-              "identifier": "2311.14744",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/ai-for-mathematical-reasoning-theorem-proving-symbolic-computation-and-autoformalization.md",
@@ -5209,17 +5214,17 @@
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Improving speech depression detection using transfer learning with wav2vec 2.0 in low-resource environments",
+          "source_title": "The Ryerson Audio-Visual Database of Emotional Speech and Song (RAVDESS)",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "doi",
-              "identifier": "10.1038/s41598-024-60278-1",
+              "method": "url",
+              "identifier": "https://doi.org/10.1371/journal.pone.0196391",
               "verified": true,
               "metadata": {
-                "title": "Improving speech depression detection using transfer learning with wav2vec 2.0 in low-resource environments",
-                "publisher": "Springer Science and Business Media LLC",
-                "year": 2024
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -5227,42 +5232,46 @@
           "all_verified": true
         },
         {
-          "source_title": "Speech-based Clinical Depression Screening: An Empirical Study",
-          "source_type": "academic_paper",
+          "source_title": "IEMOCAP: Interactive emotional dyadic motion capture database",
+          "source_type": "dataset_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2406.03510",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Speech Emotion Recognition: A Comprehensive Survey",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "doi",
-              "identifier": "10.1007/s10462-020-09873-y",
+              "method": "url",
+              "identifier": "https://sail.usc.edu/iemocap/",
               "verified": true,
               "metadata": {
-                "title": "Review text based rating prediction approaches: preference knowledge learning, representation and utilization",
-                "publisher": "Springer Science and Business Media LLC",
-                "year": 2020
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Speech emotion recognition: Emotional models, databases, features, preprocessing methods, supporting modalities, and classifiers",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://doi.org/10.1016/j.specom.2018.01.006",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
             }
           ],
           "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/ai-for-supply-chain.md",
@@ -8536,16 +8545,17 @@
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Music Source Separation in the Waveform Domain (Demucs)",
+          "source_title": "Conv-TasNet: Surpassing Ideal Time-Frequency Magnitude Masking for Speech Separation",
           "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://github.com/facebookresearch/demucs",
+              "identifier": "https://doi.org/10.1109/TASLP.2019.2915167",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://github.com/facebookresearch/demucs"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -8553,17 +8563,17 @@
           "all_verified": true
         },
         {
-          "source_title": "Conv-TasNet: Surpassing Ideal Time-Frequency Masking for Speech Separation",
+          "source_title": "Music Source Separation in the Waveform Domain",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "doi",
-              "identifier": "10.1109/TASLP.2019.2915167",
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1909.01174",
               "verified": true,
               "metadata": {
-                "title": "Conv-TasNet: Surpassing Ideal Time–Frequency Magnitude Masking for Speech Separation",
-                "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
-                "year": 2019
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -8571,24 +8581,28 @@
           "all_verified": true
         },
         {
-          "source_title": "Music Source Separation: A Survey",
-          "source_type": "academic_paper",
+          "source_title": "Open-Unmix - A Reference Implementation for Music Source Separation",
+          "source_type": "software_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "1910.02008",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://doi.org/10.21105/joss.01667",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/autoencoders.md",
@@ -21662,10 +21676,46 @@
       "file": "content/computer-science/broadcast-channel-api.md",
       "article_id": "kb-2026-00108",
       "generation_method": "ai_assisted",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "HTML Standard — BroadcastChannel",
+          "source_title": "Broadcast Channel API - Web APIs | MDN",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/API/Broadcast_Channel_API",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "BroadcastChannel - Web APIs | MDN",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/API/BroadcastChannel",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "HTML Standard: Broadcasting to other browsing contexts",
           "source_type": "standard",
           "results": [
             {
@@ -21673,8 +21723,9 @@
               "identifier": "https://html.spec.whatwg.org/multipage/web-messaging.html#broadcasting-to-other-browsing-contexts",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://html.spec.whatwg.org/multipage/web-messaging.html"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -21682,8 +21733,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/bun-runtime.md",
@@ -22959,10 +23012,10 @@
       "file": "content/computer-science/css-flexbox.md",
       "article_id": "kb-2026-00166",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "CSS Flexible Box Layout Module Level 1 (W3C Candidate Recommendation)",
+          "source_title": "CSS Flexible Box Layout Module Level 1",
           "source_type": "standard",
           "results": [
             {
@@ -22970,8 +23023,45 @@
               "identifier": "https://www.w3.org/TR/css-flexbox-1/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.w3.org/TR/css-flexbox-1/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Basic concepts of flexbox - CSS | MDN",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Learn CSS: Flexbox",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://web.dev/learn/css/flexbox",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -22979,8 +23069,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/css-grid.md",
@@ -24711,19 +24803,20 @@
       "file": "content/computer-science/ethereum.md",
       "article_id": "kb-2026-00068",
       "generation_method": "human_only",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Ethereum Documentation",
+          "source_title": "Introduction to Ethereum",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://ethereum.org/developers/docs/",
+              "identifier": "https://ethereum.org/en/developers/docs/intro-to-ethereum/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://ethereum.org/developers/docs/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -24731,16 +24824,35 @@
           "all_verified": true
         },
         {
-          "source_title": "go-ethereum GitHub",
-          "source_type": "repository",
+          "source_title": "Ethereum Whitepaper",
+          "source_type": "whitepaper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://github.com/ethereum/go-ethereum",
+              "identifier": "https://ethereum.org/en/whitepaper/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://github.com/ethereum/go-ethereum"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Proof-of-stake",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://ethereum.org/en/developers/docs/consensus-mechanisms/pos/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -24748,8 +24860,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/event-sourcing.md",
@@ -46918,10 +47032,46 @@
       "file": "content/science/theory-of-relativity.md",
       "article_id": "kb-2026-00333",
       "generation_method": "ai_assisted",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Relativity: The Special and General Theory (Einstein, 1916)",
+          "source_title": "Special relativity",
+          "source_type": "reference",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.britannica.com/science/special-relativity",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "General relativity",
+          "source_type": "reference",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.britannica.com/science/general-relativity",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Relativity: The Special and General Theory",
           "source_type": "book",
           "results": [
             {
@@ -46929,8 +47079,9 @@
               "identifier": "https://www.gutenberg.org/ebooks/5001",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.gutenberg.org/ebooks/5001"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -46938,8 +47089,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/science/thermodynamics-fundamentals.md",
@@ -48430,19 +48583,56 @@
       "file": "content/self-improvement/public-speaking.md",
       "article_id": "kb-2026-00439",
       "generation_method": "ai_assisted",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "The Art of Public Speaking (Stephen Lucas, 13th Ed)",
-          "source_type": "book",
+          "source_title": "Stand Up, Speak Out: The Practice and Ethics of Public Speaking",
+          "source_type": "open_textbook",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.mheducation.com/highered/product/art-public-speaking-lucas/M9781259924606.html",
+              "identifier": "https://open.lib.umn.edu/publicspeaking/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.mheducation.com/highered/product/art-public-speaking-lucas/M9781259924606.html"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Getting Your Audience Involved",
+          "source_type": "open_textbook_chapter",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://open.lib.umn.edu/publicspeaking/chapter/5-1-getting-your-audience-involved/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Managing Public Speaking Anxiety",
+          "source_type": "open_textbook_chapter",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://open.lib.umn.edu/publicspeaking/chapter/3-1-managing-public-speaking-anxiety/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -48450,8 +48640,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/self-improvement/resilience-building.md",
@@ -48797,19 +48989,56 @@
       "file": "content/sports/basketball-fundamentals.md",
       "article_id": "kb-2026-00381",
       "generation_method": "ai_assisted",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Basketball (And Other Things) (Shea Serrano)",
-          "source_type": "book",
+          "source_title": "Basketball",
+          "source_type": "reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.abramsbooks.com/product/basketball-and-other-things_9781419726477/",
+              "identifier": "https://www.britannica.com/sports/basketball",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.abramsbooks.com/product/basketball-and-other-things_9781419726477/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Official Basketball Rules",
+          "source_type": "rulebook",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.fiba.basketball/documents/official-basketball-rules",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "NBA Rule No. 5: Scoring and Timing",
+          "source_type": "rulebook",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://official.nba.com/rule-no-5-scoring-and-timing/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -48817,8 +49046,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/sports/basketball-rules.md",

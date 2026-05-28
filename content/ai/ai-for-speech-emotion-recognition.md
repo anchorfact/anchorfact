@@ -1,11 +1,13 @@
 ---
 id: ai-for-speech-emotion-recognition
-title: 'AI for Speech Emotion Recognition: Vocal Biomarkers, Mental Health Screening, and Affective Computing'
+title: >-
+  AI for Speech Emotion Recognition: Vocal Biomarkers, Mental Health Screening, and Affective
+  Computing
 schema_type: article
 category: ai
 language: en
-confidence: high
-last_verified: '2026-05-25'
+confidence: medium
+last_verified: '2026-05-28'
 created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
@@ -16,97 +18,66 @@ is_live_document: false
 data_period: static
 completeness: 0.85
 atomic_facts:
-  - id: af-ai-for-speech-emotion-recognition-1
+  - id: fact-ai-001
+    statement: RAVDESS is a validated multimodal database of emotional speech and song recordings.
+    source_title: The Ryerson Audio-Visual Database of Emotional Speech and Song (RAVDESS)
+    source_url: https://doi.org/10.1371/journal.pone.0196391
+    confidence: medium
+  - id: fact-ai-002
     statement: >-
-      A 2024 Nature Scientific Reports study proposed a deep multi-modal framework integrating speech acoustic features (prosody, spectral features, voice quality) with linguistic content (transcribed
-      text) for depression detection, achieving an AUC of 0.82 for depression screening using spontaneous speech recordings.
-    source_title: Nature Scientific Reports (2024) -- Improving speech depression detection using transfer learning -- doi:10.1038/s41598-024-60278-1
-    source_url: https://www.nature.com/articles/s41598-024-60278-1
-    confidence: high
-  - id: af-ai-for-speech-emotion-recognition-2
+      IEMOCAP is an interactive emotional dyadic motion capture database used in emotion recognition
+      research.
+    source_title: 'IEMOCAP: Interactive emotional dyadic motion capture database'
+    source_url: https://sail.usc.edu/iemocap/
+    confidence: medium
+  - id: fact-ai-003
     statement: >-
-      Speech-based emotion recognition (SER) has evolved from hand-crafted acoustic features + SVM to end-to-end deep learning using wav2vec 2.0, HuBERT, and Whisper speech foundation models.
-      State-of-the-art SER achieves 75-85% accuracy on acted emotions but only 55-65% on naturalistic spontaneous emotions, reflecting the challenge of real-world emotion recognition.
-    source_title: Frontiers in Psychology (2025) -- Speech analysis and SER in depression detection / IEEE/ACM TASLP benchmarks
-    source_url: https://arxiv.org/abs/2406.03510
-    confidence: high
+      The Speech Communication review surveys emotional models, databases, features, preprocessing
+      methods, modalities, and classifiers for speech emotion recognition.
+    source_title: >-
+      Speech emotion recognition: Emotional models, databases, features, preprocessing methods,
+      supporting modalities, and classifiers
+    source_url: https://doi.org/10.1016/j.specom.2018.01.006
+    confidence: medium
 primary_sources:
-  - id: ps-ai-for-speech-emotion-recognition-1
-    title: Improving speech depression detection using transfer learning with wav2vec 2.0 in low-resource environments
+  - title: The Ryerson Audio-Visual Database of Emotional Speech and Song (RAVDESS)
     type: academic_paper
-    year: 2024
-    institution: Nature Scientific Reports
-    doi: 10.1038/s41598-024-60278-1
-    url: https://www.nature.com/articles/s41598-024-60278-1
-  - id: ps-ai-for-speech-emotion-recognition-2
-    title: 'Speech-based Clinical Depression Screening: An Empirical Study'
+    year: 2018
+    url: https://doi.org/10.1371/journal.pone.0196391
+    institution: PLOS ONE
+  - title: 'IEMOCAP: Interactive emotional dyadic motion capture database'
+    type: dataset_paper
+    year: 2008
+    url: https://sail.usc.edu/iemocap/
+    institution: USC SAIL
+  - title: >-
+      Speech emotion recognition: Emotional models, databases, features, preprocessing methods,
+      supporting modalities, and classifiers
     type: academic_paper
-    year: 2024
-    institution: arXiv / ACM Multimedia
-    url: https://arxiv.org/abs/2406.03510
-  - title: 'Speech Emotion Recognition: A Comprehensive Survey'
-    authors:
-      - Akçay, M.B.
-      - Oğuz, K.
-    type: academic_paper
-    year: 2020
-    doi: 10.1007/s10462-020-09873-y
-    institution: Artificial Intelligence Review
+    year: 2018
+    url: https://doi.org/10.1016/j.specom.2018.01.006
+    institution: Speech Communication
 known_gaps:
-  - Generalization across languages, cultures, and recording conditions for SER models
-  - Integration of speech emotion AI into clinical workflows with rigorous validation in healthcare settings
+  - >-
+    Coverage intentionally narrowed to directly sourced public evidence; adjacent subtopics are not
+    exhaustively covered.
 disputed_statements: []
-secondary_sources:
-  - title: 'Speech Emotion Recognition: A Comprehensive Survey of Deep Learning Methods and Multimodal Approaches'
-    type: survey_paper
-    year: 2024
-    authors:
-      - multiple
-    institution: IEEE/ACM TASLP
-    url: https://doi.org/10.1109/TASLP.2024.3385267
-  - title: 'Deep Learning for Speech Emotion Recognition: A Systematic Review of Feature Extraction, Model Architectures, and Benchmarks'
-    type: survey_paper
-    year: 2025
-    authors:
-      - multiple
-    institution: Information Fusion (Elsevier)
-    url: https://doi.org/10.1016/j.inffus.2025.102890
-  - title: 'Wav2Vec 2.0: A Framework for Self-Supervised Learning of Speech Representations'
-    type: conference_paper
-    year: 2020
-    authors:
-      - Baevski, Alexei
-      - Zhou, Henry
-      - Mohamed, Abdelrahman
-      - Auli, Michael
-    institution: Facebook AI Research / NeurIPS
-    url: https://arxiv.org/abs/2006.11477
-  - title: 'HuBERT: Self-Supervised Speech Representation Learning by Masked Prediction of Hidden Units'
-    type: journal_article
-    year: 2021
-    authors:
-      - Hsu, Wei-Ning
-      - Bolte, Benjamin
-      - Tsai, Yao-Hung Hubert
-      - et al.
-    institution: Meta AI / IEEE/ACM TASLP
-    url: https://doi.org/10.1109/TASLP.2021.3122291
-updated: '2026-05-24'
+secondary_sources: []
+updated: '2026-05-28'
 ---
-
 ## TL;DR
-Your voice carries rich information about your emotional state. AI systems can now analyze speech patterns -- pitch, rhythm, tone, pauses -- to detect depression, anxiety, and stress with clinical-grade accuracy, enabling passive, scalable mental health screening through everyday voice interactions.
+
+Speech emotion recognition uses acoustic and sometimes linguistic features to classify affective states from speech. This repair removes clinical-grade and benchmark-number claims and lowers confidence to medium.
 
 ## Core Explanation
-Speech emotion recognition (SER) bridges affective computing and signal processing. Key acoustic features: (1) Prosodic features -- pitch (F0) mean, range, variability; speech rate; pause frequency and duration; (2) Voice quality features -- jitter (frequency perturbation), shimmer (amplitude perturbation), harmonics-to-noise ratio, capturing the "roughness" or "breathiness" of the voice; (3) Spectral features -- Mel-frequency cepstral coefficients (MFCCs), spectral centroid, spectral flux, capturing timbre and resonance characteristics. In depression, characteristic patterns include reduced pitch variability (monotone speech), slower speech rate, longer pauses, increased jitter and shimmer, and reduced spectral energy in higher frequencies.
 
-## Detailed Analysis
-Modern SER architectures: (1) Self-supervised speech foundation models (wav2vec 2.0, HuBERT, WavLM, Whisper) are fine-tuned on emotion-labeled speech data. Pre-trained on thousands of hours of unlabeled speech, these models learn general acoustic and linguistic representations, then are fine-tuned on small labeled emotion datasets, dramatically improving SER performance for under-resourced languages; (2) Multi-modal emotion recognition -- combining speech with facial expressions (video) and text (transcripts) using late fusion or cross-modal attention. Vocal biomarkers for mental health: Research has identified specific speech biomarkers for depression (reduced F0 variability, slower rate), anxiety (increased F0, faster rate, voice tremor), PTSD (hyper-arousal vocal patterns), schizophrenia (reduced prosody -- "flat affect" speech), and Parkinson's (reduced loudness, monopitch). Key challenges: (1) Cross-cultural generalization -- emotional expression in speech varies by culture and language; (2) Naturalistic vs. acted data -- most benchmarks use acted emotions which differ from spontaneous real-world emotions; (3) Privacy and ethics -- continuous emotion monitoring raises significant privacy concerns. Companies like Canary Speech, Ellipsis Health, and Kintsugi are pursuing FDA clearance for vocal biomarker-based clinical decision support tools.
+The evidence-focused article treats SER as an affective-computing task supported by benchmark datasets and surveys. It avoids claiming clinical validity for mental-health screening unless a specific clinical validation source is in scope.
 
 ## Further Reading
-- IEMOCAP, RAVDESS, CREMA-D: Standard SER benchmark datasets
-- Canary Speech: Vocal biomarker technology for mental health
-- Kintsugi AI: Voice-based mental health screening platform
+
+- [The Ryerson Audio-Visual Database of Emotional Speech and Song (RAVDESS)](https://doi.org/10.1371/journal.pone.0196391)
+- [IEMOCAP: Interactive emotional dyadic motion capture database](https://sail.usc.edu/iemocap/)
+- [Speech emotion recognition: Emotional models, databases, features, preprocessing methods, supporting modalities, and classifiers](https://doi.org/10.1016/j.specom.2018.01.006)
 
 ## Related Articles
 

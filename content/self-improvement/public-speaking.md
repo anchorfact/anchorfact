@@ -1,83 +1,77 @@
 ---
-id: "kb-2026-00439"
-title: "Public Speaking"
-schema_type: "TechArticle"
-category: "self-improvement"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
-created_date: "2026-05-22"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+id: kb-2026-00439
+title: Public Speaking
+schema_type: TechArticle
+category: self-improvement
+language: en
+confidence: medium
+last_verified: '2026-05-28'
+created_date: '2026-05-22'
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-self-improvement-001"
-    statement: "Public speaking is one of the most common fears (glossophobia) — yet also one of the most valuable skills. Key principles: know your audience, structure (intro-body-conclusion), practice aloud, use stories, control pace, make eye contact. It's not about being perfect — it's about connecting. Toastmasters: global public speaking practice organizatio"
-    source_title: "The Art of Public Speaking (Stephen Lucas, 13th Ed)"
-    source_url: "https://www.mheducation.com/highered/product/art-public-speaking-lucas/M9781259924606.html"
-    confidence: "medium"
-  - id: "fact-self-improvement-002"
-    statement: "Opening: hook (story, question, statistic) in first 30 seconds."
-    source_title: "The Art of Public Speaking (Stephen Lucas, 13th Ed)"
-    source_url: "https://www.mheducation.com/highered/product/art-public-speaking-lucas/M9781259924606.html"
-    confidence: "medium"
-  - id: "fact-self-improvement-003"
-    statement: "Slides: less text, more visuals, 10/20/30 rule (Kawasaki: 10 slides, 20 minutes, 30pt font)."
-    source_title: "The Art of Public Speaking (Stephen Lucas, 13th Ed)"
-    source_url: "https://www.mheducation.com/highered/product/art-public-speaking-lucas/M9781259924606.html"
-    confidence: "medium"
-
+  - id: fact-self-improvement-001
+    statement: >-
+      Stand Up, Speak Out frames public speaking as a practice involving preparation, ethics,
+      audience, organization, and delivery.
+    source_title: 'Stand Up, Speak Out: The Practice and Ethics of Public Speaking'
+    source_url: https://open.lib.umn.edu/publicspeaking/
+    confidence: medium
+  - id: fact-self-improvement-002
+    statement: The audience chapter emphasizes adapting a speech to audience characteristics and involvement.
+    source_title: Getting Your Audience Involved
+    source_url: https://open.lib.umn.edu/publicspeaking/chapter/5-1-getting-your-audience-involved/
+    confidence: medium
+  - id: fact-self-improvement-003
+    statement: >-
+      The anxiety chapter treats public speaking anxiety as manageable through preparation and
+      practice.
+    source_title: Managing Public Speaking Anxiety
+    source_url: https://open.lib.umn.edu/publicspeaking/chapter/3-1-managing-public-speaking-anxiety/
+    confidence: medium
 completeness: 0.88
-
 known_gaps:
-  - "Coverage is at a general level; specialized sub-topics and regional variations are not exhaustively addressed"
-  - "Statistics cited may have been updated since publication; readers should verify current data for time-sensitive claims"
-
-disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-
+  - >-
+    Coverage intentionally narrowed to directly sourced public evidence; adjacent subtopics are not
+    exhaustively covered.
+disputed_statements: []
 primary_sources:
-  - title: "The Art of Public Speaking (Stephen Lucas, 13th Ed)"
-    type: "book"
-    year: 2019
-    url: "https://www.mheducation.com/highered/product/art-public-speaking-lucas/M9781259924606.html"
-    institution: "McGraw-Hill"
-
-secondary_sources:
-  - title: "How to Win Friends and Influence People"
-    type: "book"
-    year: 1936
-    url: "https://www.simonandschuster.com/books/How-to-Win-Friends-and-Influence-People/Dale-Carnegie/9780671027032"
-    institution: "Dale Carnegie, Simon & Schuster"
-  - title: "Atomic Habits (James Clear)"
-    type: "book"
-    year: 2018
-    url: "https://jamesclear.com/atomic-habits"
-    institution: "Avery, Penguin Random House"
-
+  - title: 'Stand Up, Speak Out: The Practice and Ethics of Public Speaking'
+    type: open_textbook
+    year: 2016
+    url: https://open.lib.umn.edu/publicspeaking/
+    institution: University of Minnesota Libraries Publishing
+  - title: Getting Your Audience Involved
+    type: open_textbook_chapter
+    year: 2016
+    url: https://open.lib.umn.edu/publicspeaking/chapter/5-1-getting-your-audience-involved/
+    institution: University of Minnesota Libraries Publishing
+  - title: Managing Public Speaking Anxiety
+    type: open_textbook_chapter
+    year: 2016
+    url: https://open.lib.umn.edu/publicspeaking/chapter/3-1-managing-public-speaking-anxiety/
+    institution: University of Minnesota Libraries Publishing
+secondary_sources: []
+updated: '2026-05-28'
 ---
-
-
-
 ## TL;DR
 
-Public speaking is one of the most common fears (glossophobia) — yet also one of the most valuable skills. Key principles: know your audience, structure (intro-body-conclusion), practice aloud, use stories, control pace, make eye contact. It's not about being perfect — it's about connecting. Toastmasters: global public speaking practice organization.
+Public speaking is a learnable communication practice involving audience analysis, organization, delivery, and adaptation. This repair removes fear-statistics and slide-rule claims that were not directly evidenced.
 
 ## Core Explanation
 
-Structure: tell them what you'll say (intro), say it (body), tell them what you said (conclusion). Opening: hook (story, question, statistic) in first 30 seconds. Power of pause: silence > 'um,' 'uh.' Body language: open posture, gestures, move with purpose. Slides: less text, more visuals, 10/20/30 rule (Kawasaki: 10 slides, 20 minutes, 30pt font). Record yourself and watch — painful but transformative.
+The source-backed overview is practical but narrow: speakers analyze audience needs, organize introductions and conclusions, and manage speaking anxiety with preparation and practice. The article no longer promises universal formulas.
 
 ## Further Reading
 
-- [The Art of Public Speaking (Stephen Lucas, 13th Ed)](https://www.mheducation.com/highered/product/art-public-speaking-lucas/M9781259924606.html)
-atomic_facts:
-  - id: "fact-self-improvement-001"
-    statement: "Public speaking is one of the most common fears (glossophobia) — yet also one of the most valuable skills"
-    confidence: "medium"
+- [Stand Up, Speak Out: The Practice and Ethics of Public Speaking](https://open.lib.umn.edu/publicspeaking/)
+- [Getting Your Audience Involved](https://open.lib.umn.edu/publicspeaking/chapter/5-1-getting-your-audience-involved/)
+- [Managing Public Speaking Anxiety](https://open.lib.umn.edu/publicspeaking/chapter/3-1-managing-public-speaking-anxiety/)
 
 ## Related Articles
 

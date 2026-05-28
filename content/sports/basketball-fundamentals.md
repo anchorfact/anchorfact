@@ -1,86 +1,79 @@
 ---
-id: "kb-2026-00381"
-title: "Basketball Fundamentals"
-schema_type: "TechArticle"
-category: "sports"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
-created_date: "2026-05-22"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+id: kb-2026-00381
+title: Basketball Fundamentals
+schema_type: TechArticle
+category: sports
+language: en
+confidence: medium
+last_verified: '2026-05-28'
+created_date: '2026-05-22'
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-sports-001"
-    statement: "Basketball (James Naismith, 1891, Springfield, MA) is played 5v5 on a court with hoops at each end. NBA (1946) is the premier professional league. Scoring: 2pts (inside arc), 3pts (beyond arc), 1pt (free throw). Positions: point guard, shooting guard, small forward, power forward, center."
-    source_title: "Basketball (And Other Things) (Shea Serrano)"
-    source_url: "https://www.abramsbooks.com/product/basketball-and-other-things_9781419726477/"
-    confidence: "medium"
-  - id: "fact-sports-002"
-    statement: "Key rules: shot clock (24s NBA, 14s reset), 3-second violation (offensive player in paint), traveling (excess steps without dribbling)."
-    source_title: "Official Basketball Rules"
-    source_url: "https://www.fiba.basketball/documents/official-basketball-rules"
-    confidence: "medium"
-  - id: "fact-sports-003"
-    statement: "Legendary players: Michael Jordan, LeBron James, Kareem Abdul-Jabbar, Kobe Bryant, Stephen Curry (revolutionized 3-point shooting)."
-    source_title: "Basketball (And Other Things) (Shea Serrano)"
-    source_url: "https://www.abramsbooks.com/product/basketball-and-other-things_9781419726477/"
-    confidence: "medium"
-
+  - id: fact-sports-001
+    statement: >-
+      Britannica describes basketball as a game between two teams of five players who try to score
+      by throwing a ball through an elevated basket.
+    source_title: Basketball
+    source_url: https://www.britannica.com/sports/basketball
+    confidence: medium
+  - id: fact-sports-002
+    statement: >-
+      FIBA publishes official basketball rules covering teams, playing regulations, violations, and
+      fouls.
+    source_title: Official Basketball Rules
+    source_url: https://www.fiba.basketball/documents/official-basketball-rules
+    confidence: medium
+  - id: fact-sports-003
+    statement: >-
+      NBA scoring rules define field goals and free throws as scoring plays with different point
+      values.
+    source_title: 'NBA Rule No. 5: Scoring and Timing'
+    source_url: https://official.nba.com/rule-no-5-scoring-and-timing/
+    confidence: medium
 completeness: 0.88
-
 known_gaps:
-  - "Coverage is at a general level; specialized sub-topics and regional variations are not exhaustively addressed"
-  - "Statistics cited may have been updated since publication; readers should verify current data for time-sensitive claims"
-
-disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-
+  - >-
+    Coverage intentionally narrowed to directly sourced public evidence; adjacent subtopics are not
+    exhaustively covered.
+disputed_statements: []
 primary_sources:
-  - title: "Basketball (And Other Things) (Shea Serrano)"
-    type: "book"
-    year: 2017
-    url: "https://www.abramsbooks.com/product/basketball-and-other-things_9781419726477/"
-    institution: "Abrams"
-
-secondary_sources:
-  - title: "Official Basketball Rules"
-    type: "rulebook"
+  - title: Basketball
+    type: reference
+    year: 2026
+    url: https://www.britannica.com/sports/basketball
+    institution: Encyclopaedia Britannica
+  - title: Official Basketball Rules
+    type: rulebook
     year: 2024
-    url: "https://www.fiba.basketball/documents/official-basketball-rules"
-    institution: "FIBA (International Basketball Federation)"
-  - title: "The Book of Basketball"
-    type: "book"
-    year: 2009
-    url: "https://www.penguinrandomhouse.com/books/310253/the-book-of-basketball-by-bill-simmons/"
-    institution: "Bill Simmons, ESPN Books"
-
+    url: https://www.fiba.basketball/documents/official-basketball-rules
+    institution: FIBA
+  - title: 'NBA Rule No. 5: Scoring and Timing'
+    type: rulebook
+    year: 2026
+    url: https://official.nba.com/rule-no-5-scoring-and-timing/
+    institution: National Basketball Association
+secondary_sources: []
+updated: '2026-05-28'
 ---
-
-
-
 ## TL;DR
 
-Basketball (James Naismith, 1891, Springfield, MA) is played 5v5 on a court with hoops at each end. NBA (1946) is the premier professional league. Scoring: 2pts (inside arc), 3pts (beyond arc), 1pt (free throw). Positions: point guard, shooting guard, small forward, power forward, center.
+Basketball fundamentals cover team play, scoring, court structure, and basic rules. This repair removes unsourced player rankings and live league framing, using reference and rulebook sources.
 
 ## Core Explanation
 
-Key rules: shot clock (24s NBA, 14s reset), 3-second violation (offensive player in paint), traveling (excess steps without dribbling). Legendary players: Michael Jordan, LeBron James, Kareem Abdul-Jabbar, Kobe Bryant, Stephen Curry (revolutionized 3-point shooting). NBA: 30 teams, FIBA: international governing body. 'Slam dunk' — most spectacular scoring method.
+The safe public summary is that basketball is played by two teams trying to score through elevated baskets, with rules governing players, scoring, fouls, and time. Detailed professional-league specifics are outside this short evidence-focused article.
 
 ## Further Reading
 
-- [Basketball (And Other Things) (Shea Serrano)](https://www.abramsbooks.com/product/basketball-and-other-things_9781419726477/)
-atomic_facts:
-  - id: "fact-sports-001"
-    statement: "Basketball (James Naismith, 1891, Springfield, MA) is played 5v5 on a court with hoops at each end"
-    confidence: "medium"
-  - id: "fact-sports-002"
-    statement: "NBA (1946) is the premier professional league"
-    confidence: "medium"
+- [Basketball](https://www.britannica.com/sports/basketball)
+- [Official Basketball Rules](https://www.fiba.basketball/documents/official-basketball-rules)
+- [NBA Rule No. 5: Scoring and Timing](https://official.nba.com/rule-no-5-scoring-and-timing/)
 
 ## Related Articles
 
