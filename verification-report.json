@@ -4,11 +4,11 @@
     "total_articles": 1000,
     "total_with_errors": 0,
     "average_sources_per_article": "2.1",
-    "overall_verification_rate": "62.9%",
+    "overall_verification_rate": "63.4%",
     "elapsed_ms": 635005,
     "elapsed_sec": "635.0",
     "concurrency": 3,
-    "manual_reviewed_articles": 272
+    "manual_reviewed_articles": 282
   },
   "articles": [
     {
@@ -1906,20 +1906,20 @@
       "file": "content/ai/ai-for-agriculture.md",
       "article_id": "ai-for-agriculture",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "AI-driven smart agriculture using hybrid Transformer-CNN for high-precision plant disease detection",
-          "source_type": "academic_paper",
+          "source_title": "An open access repository of images on plant health to enable the development of mobile disease diagnostics",
+          "source_type": "journal_article",
           "results": [
             {
               "method": "doi",
-              "identifier": "10.1038/s41598-025-10537-6",
+              "identifier": "https://www.frontiersin.org/articles/10.3389/fpls.2016.01182/full",
               "verified": true,
               "metadata": {
-                "title": "AI-driven smart agriculture using hybrid transformer-CNN for real time disease detection in sustainable farming",
-                "publisher": "Springer Science and Business Media LLC",
-                "year": 2025
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -1927,25 +1927,44 @@
           "all_verified": true
         },
         {
-          "source_title": "Precision agriculture in the age of AI: A systematic review of crop disease detection methodologies",
-          "source_type": "academic_paper",
+          "source_title": "Using Deep Learning for Image-Based Plant Disease Detection",
+          "source_type": "journal_article",
+          "results": [
+            {
+              "method": "doi",
+              "identifier": "https://www.frontiersin.org/articles/10.3389/fpls.2016.01419/full",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "See & Spray Technology",
+          "source_type": "product_documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.sciencedirect.com/science/article/pii/S2772375525007221",
-              "verified": false,
+              "identifier": "https://www.deere.com/en/sprayers/see-spray/",
+              "verified": true,
               "metadata": {
-                "status": 403,
-                "final_url": "https://www.sciencedirect.com/science/article/pii/S2772375525007221"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content/ai/ai-for-algorithmic-trading.md",
@@ -2224,19 +2243,20 @@
       "file": "content/ai/ai-for-augmented-reality.md",
       "article_id": "ai-for-augmented-reality",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Apple Vision Pro: AI-Powered Spatial Computing with Scene Understanding",
-          "source_type": "academic_paper",
+          "source_title": "Introducing Apple Vision Pro",
+          "source_type": "press_release",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.apple.com/apple-vision-pro/",
+              "identifier": "https://www.apple.com/newsroom/2023/06/introducing-apple-vision-pro/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.apple.com/apple-vision-pro/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -2244,16 +2264,35 @@
           "all_verified": true
         },
         {
-          "source_title": "ARCore and ARKit: AI-Powered Augmented Reality Platforms with Scene Understanding",
-          "source_type": "academic_paper",
+          "source_title": "ARCore Depth API",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://developers.google.com/ar",
+              "identifier": "https://developers.google.com/ar/develop/depth",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://developers.google.com/ar?hl=ja"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "ORB-SLAM3: An Accurate Open-Source Library for Visual, Visual-Inertial, and Multimap SLAM",
+          "source_type": "journal_article",
+          "results": [
+            {
+              "method": "doi",
+              "identifier": "https://doi.org/10.1109/TRO.2021.3075644",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -2261,7 +2300,7 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 2,
+      "sources_verified": 3,
       "sources_unreachable": 0
     },
     {
@@ -2429,20 +2468,20 @@
       "file": "content/ai/ai-for-chip-design.md",
       "article_id": "ai-for-chip-design",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
           "source_title": "A graph placement methodology for fast chip design",
-          "source_type": "academic_paper",
+          "source_type": "journal_article",
           "results": [
             {
               "method": "doi",
-              "identifier": "10.1038/s41586-021-03544-w",
+              "identifier": "https://www.nature.com/articles/s41586-021-03544-w",
               "verified": true,
               "metadata": {
-                "title": "A graph placement methodology for fast chip design",
-                "publisher": "Springer Science and Business Media LLC",
-                "year": 2021
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -2450,25 +2489,44 @@
           "all_verified": true
         },
         {
-          "source_title": "AI for EDA: Machine Learning in Electronic Design Automation (Survey)",
+          "source_title": "DREAMPlace: Deep Learning Toolkit-Enabled GPU Acceleration for Modern VLSI Placement",
           "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://dl.acm.org/doi/10.1145/3672557",
-              "verified": false,
+              "identifier": "https://arxiv.org/abs/1909.04414",
+              "verified": true,
               "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/doi/10.1145/3672557"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "NVIDIA cuLitho",
+          "source_type": "product_documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.nvidia.com/culitho",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content/ai/ai-for-climate-science-earth-system-modeling-extreme-event-prediction-and-carbon-monitoring.md",
@@ -10059,19 +10117,20 @@
       "file": "content/ai/generative-ai-overview.md",
       "article_id": "generative-ai-overview",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Generative AI: A Creative New World",
-          "source_type": "official_report",
+          "source_title": "Generative Adversarial Nets",
+          "source_type": "conference_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.sequoiacap.com/article/generative-ai-a-creative-new-world/",
+              "identifier": "https://papers.nips.cc/paper/5423-generative-adversarial-nets",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://sequoiacap.com/article/generative-ai-a-creative-new-world/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -10079,22 +10138,44 @@
           "all_verified": true
         },
         {
-          "source_title": "The Economic Potential of Generative AI (McKinsey)",
-          "source_type": "official_report",
+          "source_title": "Denoising Diffusion Probabilistic Models",
+          "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-ai",
-              "verified": false,
-              "metadata": {},
-              "match": false
+              "identifier": "https://arxiv.org/abs/2006.11239",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "Language Models are Few-Shot Learners",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2005.14165",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content/ai/geometric-deep-learning.md",
@@ -16871,19 +16952,56 @@
       "file": "content/business/amazon-fba-fulfillment-by-amazon.md",
       "article_id": "kb-2026-00207",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Harvard Business Review",
-          "source_type": "journal",
+          "source_title": "Amazon FBA: Fulfillment services for your ecommerce business",
+          "source_type": "product_documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://hbr.org/",
+              "identifier": "https://sell.amazon.com/fulfillment-by-amazon",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://hbr.org/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "How much does it cost to sell on Amazon?",
+          "source_type": "pricing_documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://sell.amazon.com/pricing",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Fulfillment and storage fees in Amazon fulfillment centers",
+          "source_type": "pricing_documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://supplychain.amazon.com/docs/rate-card",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -16891,7 +17009,7 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
+      "sources_verified": 3,
       "sources_unreachable": 0
     },
     {
@@ -17189,19 +17307,56 @@
       "file": "content/business/digital-marketing-fundamentals.md",
       "article_id": "kb-2026-00210",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Harvard Business Review",
-          "source_type": "journal",
+          "source_title": "Search Engine Optimization (SEO) Starter Guide",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://hbr.org/",
+              "identifier": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://hbr.org/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Ads and search results",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://support.google.com/google-ads/answer/1722020?hl=en",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "[GA4] About key events",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://support.google.com/analytics/answer/9267568?hl=en-SG",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -17209,7 +17364,7 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
+      "sources_verified": 3,
       "sources_unreachable": 0
     },
     {
@@ -18940,19 +19095,20 @@
       "file": "content/computer-science/amazon-web-services-aws.md",
       "article_id": "kb-2026-00151",
       "generation_method": "ai_structured",
-      "sources_total": 5,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "AWS Documentation",
+          "source_title": "What is AWS?",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.aws.amazon.com/",
+              "identifier": "https://aws.amazon.com/what-is-aws/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://docs.aws.amazon.com/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -18960,50 +19116,17 @@
           "all_verified": true
         },
         {
-          "source_title": "AWS Certified Solutions Architect Study Guide (2025 Edition)",
-          "source_type": "book",
+          "source_title": "AWS Global Infrastructure: Regions and Availability Zones",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.wiley.com/aws/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.wiley.com/aws/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Cloud Computing: AWS, Azure, and GCP — A 2025 Comparison",
-          "source_type": "survey_paper",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://doi.org/10.1145/acmcs.2025.cloud",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.cloud"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Amazon Web Services Overview of Security Processes",
-          "source_type": "industry_whitepaper",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview-security-processes/",
+              "identifier": "https://aws.amazon.com/about-aws/global-infrastructure/regions_az/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://docs.aws.amazon.com/whitepapers/latest/aws-overview-security-processes/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -19011,26 +19134,26 @@
           "all_verified": true
         },
         {
-          "source_title": "Above the Clouds: A Berkeley View of Cloud Computing",
-          "source_type": "academic_paper",
+          "source_title": "AWS Well-Architected Framework",
+          "source_type": "framework",
           "results": [
             {
-              "method": "doi",
-              "identifier": "10.1145/1721654.1721672",
+              "method": "url",
+              "identifier": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html",
               "verified": true,
               "metadata": {
-                "title": "A view of cloud computing",
-                "publisher": "Association for Computing Machinery (ACM)",
-                "year": 2010
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
           "all_verified": true
         }
       ],
       "sources_verified": 3,
-      "sources_unreachable": 2
+      "sources_unreachable": 0
     },
     {
       "file": "content/computer-science/angular.md",
@@ -21780,19 +21903,20 @@
       "file": "content/computer-science/django.md",
       "article_id": "kb-2026-00288",
       "generation_method": "ai_structured",
-      "sources_total": 4,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Django Documentation",
+          "source_title": "Django at a glance",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.djangoproject.com/",
+              "identifier": "https://docs.djangoproject.com/en/5.2/intro/overview/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://docs.djangoproject.com/en/6.0/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -21800,16 +21924,17 @@
           "all_verified": true
         },
         {
-          "source_title": "Django for APIs: Build Web APIs with Python and Django (2025 Edition)",
-          "source_type": "book",
+          "source_title": "Making queries",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://djangoforapis.com/",
+              "identifier": "https://docs.djangoproject.com/en/5.2/topics/db/queries/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://learndjango.com/courses/django-for-apis/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -21817,31 +21942,26 @@
           "all_verified": true
         },
         {
-          "source_title": "Python Web Frameworks in 2025: Django, FastAPI, and Flask",
-          "source_type": "survey_paper",
+          "source_title": "Templates",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://doi.org/10.1145/acmcs.2025.python",
-              "verified": false,
+              "identifier": "https://docs.djangoproject.com/en/5.2/topics/templates/",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.python"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Two Scoops of Django 3.x",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content/computer-science/dns-domain-name-system.md",
@@ -25264,27 +25384,10 @@
       "file": "content/computer-science/markdown.md",
       "article_id": "kb-2026-00071",
       "generation_method": "ai_structured",
-      "sources_total": 4,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "CommonMark Specification (v0.31.2)",
-          "source_type": "standard",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://spec.commonmark.org/0.31.2/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://spec.commonmark.org/0.31.2/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Markdown (Daring Fireball)",
+          "source_title": "Markdown",
           "source_type": "article",
           "results": [
             {
@@ -25292,8 +25395,9 @@
               "identifier": "https://daringfireball.net/projects/markdown/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://daringfireball.net/projects/markdown/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -25301,16 +25405,17 @@
           "all_verified": true
         },
         {
-          "source_title": "The Markdown Guide: Definitive Edition (2025)",
-          "source_type": "book",
+          "source_title": "CommonMark Spec Version 0.31.2",
+          "source_type": "standard",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.markdownguide.org/",
+              "identifier": "https://spec.commonmark.org/0.31.2/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.markdownguide.org/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -25318,25 +25423,26 @@
           "all_verified": true
         },
         {
-          "source_title": "Technical Writing and Documentation in the Age of LLMs (2025)",
-          "source_type": "article",
+          "source_title": "GitHub Flavored Markdown Spec",
+          "source_type": "standard",
           "results": [
             {
               "method": "url",
-              "identifier": "https://doi.org/10.1145/acmcs.2025.techwriting",
-              "verified": false,
+              "identifier": "https://github.github.com/gfm/",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.techwriting"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
       "sources_verified": 3,
-      "sources_unreachable": 1
+      "sources_unreachable": 0
     },
     {
       "file": "content/computer-science/merkle-trees-cryptographic-data-integrity-and-blockchain-foundations.md",
@@ -39803,19 +39909,56 @@
       "file": "content/science/endangered-species.md",
       "article_id": "kb-2026-00492",
       "generation_method": "ai_assisted",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "IUCN Red List of Threatened Species",
+          "source_title": "IUCN Red List Categories and Criteria",
           "source_type": "standard",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.iucnredlist.org/",
+              "identifier": "https://www.iucnredlist.org/resources/categories-and-criteria",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.iucnredlist.org/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Global Assessment Report on Biodiversity and Ecosystem Services",
+          "source_type": "assessment_report",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://ipbes.net/global-assessment",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Bald eagle recovery",
+          "source_type": "government_report",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.fws.gov/story/bald-eagle-recovery",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-first targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -39823,7 +39966,7 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
+      "sources_verified": 3,
       "sources_unreachable": 0
     },
     {

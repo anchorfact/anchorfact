@@ -1,83 +1,75 @@
 ---
-id: "kb-2026-00207"
-title: "Amazon FBA (Fulfillment by Amazon)"
-schema_type: "TechArticle"
-category: "business"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
+id: kb-2026-00207
+title: Amazon FBA (Fulfillment by Amazon)
+schema_type: TechArticle
+category: business
+language: en
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-22"
-generation_method: "human_only"
-ai_models: ["claude-opus"]
+generation_method: human_only
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-business-01"
-    statement: "Long-term storage fees apply after 365 days"
-    source_title: "Harvard Business Review"
-    source_url: "https://hbr.org/"
-    confidence: "medium"
-  - id: "fact-business-001"
-    statement: "FBA allows sellers to store products in Amazon's fulfillment centers; Amazon handles picking, packing, shipping, customer service, and returns for those products. Sellers send inventory to Amazon → Amazon stores → Customer orders → Amazon ships. FBA products get Prime badge, increasing visibility and conversion."
-    source_title: "Harvard Business Review"
-    source_url: "https://hbr.org/"
-    confidence: "medium"
-  - id: "fact-business-002"
-    statement: "Benefits: Prime eligibility, Buy Box advantage, customer service handled by Amazon."
-    source_title: "Harvard Business Review"
-    source_url: "https://hbr.org/"
-    confidence: "medium"
-  - id: "fact-business-003"
-    statement: "Drawbacks: higher fees than FBM (Fulfillment by Merchant), commingled inventory risk, returns management."
-    source_title: "Harvard Business Review"
-    source_url: "https://hbr.org/"
-    confidence: "medium"
-
+  - id: fact-business-001
+    statement: >-
+      Amazon describes Fulfillment by Amazon as a program in which sellers send products to Amazon
+      fulfillment centers and Amazon stores, picks, packs, ships, and handles customer service and
+      returns for those products.
+    source_title: "Amazon FBA: Fulfillment services for your ecommerce business"
+    source_url: https://sell.amazon.com/fulfillment-by-amazon
+    confidence: medium
+  - id: fact-business-002
+    statement: >-
+      Amazon pricing documentation says FBA is an optional program that can add fulfillment-related
+      costs beyond standard selling plan and referral fees.
+    source_title: How much does it cost to sell on Amazon?
+    source_url: https://sell.amazon.com/pricing
+    confidence: medium
+  - id: fact-business-003
+    statement: >-
+      Amazon Supply Chain documentation describes monthly storage fees for inventory occupying space
+      in Amazon fulfillment centers.
+    source_title: Fulfillment and storage fees in Amazon fulfillment centers
+    source_url: https://supplychain.amazon.com/docs/rate-card
+    confidence: medium
 completeness: 0.88
-
 known_gaps:
-  - "Sources reconstructed during quality audit; primary source details were corrupted during batch generation"
-
-disputed_statements:
-  - statement: "The scaling laws hypothesis (that larger models consistently improve) is debated; some researchers argue for diminishing returns beyond certain scales, while others point to emergent abilities at scale"
-
+  - >-
+    Sources reconstructed during quality audit; primary source details were corrupted during batch
+    generation
+disputed_statements: []
 primary_sources:
-  - title: "Harvard Business Review"
-    type: "journal"
+  - id: ps-amazon-fba-1
+    title: "Amazon FBA: Fulfillment services for your ecommerce business"
+    type: product_documentation
     year: 2026
-    url: "https://hbr.org/"
-    institution: "Harvard Business Publishing"
-
-secondary_sources:
-  - title: "Harvard Business Review"
-    type: "journal"
+    institution: Amazon
+    url: https://sell.amazon.com/fulfillment-by-amazon
+  - id: ps-amazon-fba-2
+    title: How much does it cost to sell on Amazon?
+    type: pricing_documentation
     year: 2026
-    url: "https://hbr.org/"
-    institution: "Harvard Business Publishing"
-  - title: "Harvard Business Review"
-    type: "journal"
-    year: 2025
-    url: "https://hbr.org/"
-    institution: "Harvard Business Publishing"
-
+    institution: Amazon
+    url: https://sell.amazon.com/pricing
+  - id: ps-amazon-fba-3
+    title: Fulfillment and storage fees in Amazon fulfillment centers
+    type: pricing_documentation
+    year: 2026
+    institution: Amazon Supply Chain
+    url: https://supplychain.amazon.com/docs/rate-card
+secondary_sources: []
+updated: "2026-05-28"
 ---
-
-
-
 ## TL;DR
-
-FBA allows sellers to store products in Amazon's fulfillment centers; Amazon handles picking, packing, shipping, customer service, and returns for those products. Sellers send inventory to Amazon → Amazon stores → Customer orders → Amazon ships. FBA products get Prime badge, increasing visibility and conversion.
+Fulfillment by Amazon lets sellers outsource parts of storage, picking, packing, shipping, customer service, and returns to Amazon. The main public claims should stay tied to Amazon's own FBA and pricing documentation.
 
 ## Core Explanation
-
-FBA fees: fulfillment fee (per unit, based on size/weight) + monthly storage fee. Long-term storage fees apply after 365 days. Benefits: Prime eligibility, Buy Box advantage, customer service handled by Amazon. Drawbacks: higher fees than FBM (Fulfillment by Merchant), commingled inventory risk, returns management.
-
-## Further Reading
-
--
+Sellers can enroll eligible products in FBA, send inventory to Amazon fulfillment centers, and have Amazon handle fulfillment after customer orders. FBA can simplify logistics, but sellers still need to model referral fees, fulfillment fees, storage fees, inventory turnover, and returns.
 
 ## Related Articles
 
