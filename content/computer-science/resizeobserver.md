@@ -1,75 +1,69 @@
 ---
-id: "kb-2026-00098"
-title: "ResizeObserver"
-schema_type: "TechArticle"
-category: "computer-science"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
+id: kb-2026-00098
+title: ResizeObserver
+schema_type: TechArticle
+category: computer-science
+language: en
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-22"
-generation_method: "human_only"
+generation_method: human_only
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-computer-science-001"
-    statement: "ResizeObserver reports changes to the dimensions of DOM elements (content-box or border-box), replacing polling-based resize detection and `window.resize`-only approaches. It is essential for responsive components and container queries."
-    source_title: "Resize Observer (W3C)"
-    source_url: "https://www.w3.org/TR/resize-observer-1/"
-    confidence: "medium"
-  - id: "fact-computer-science-002"
-    statement: "`new ResizeObserver(entries => { /* entries[0].contentRect */ })`."
-    source_title: "Resize Observer (W3C)"
-    source_url: "https://www.w3.org/TR/resize-observer-1/"
-    confidence: "medium"
-
-completeness: 0.88
-
+  - id: fact-computer-science-resizeobserver-001
+    statement: The Resize Observer specification describes an API for observing changes to an Element size.
+    source_title: Resize Observer
+    source_url: https://www.w3.org/TR/resize-observer-1/
+    confidence: medium
+  - id: fact-computer-science-resizeobserver-002
+    statement: ResizeObserver can observe content-box, border-box, and device-pixel-content-box sizes.
+    source_title: Resize Observer
+    source_url: https://www.w3.org/TR/resize-observer-1/
+    confidence: medium
+  - id: fact-computer-science-resizeobserver-003
+    statement: >-
+      ResizeObserverEntry exposes the observed target and size information such as contentRect, borderBoxSize,
+      contentBoxSize, and devicePixelContentBoxSize.
+    source_title: ResizeObserverEntry - Web APIs | MDN
+    source_url: https://developer.mozilla.org/en-US/docs/Web/API/ResizeObserverEntry
+    confidence: medium
+completeness: 0.86
 known_gaps:
-  - "Content verified during quality audit; citations cross-referenced with authoritative sources"
-
-disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-
+  - This public sample was manually narrowed to source-backed facts on 2026-05-28.
+disputed_statements: []
 primary_sources:
-  - title: "Resize Observer (W3C)"
-    type: "standard"
-    year: 2023
-    url: "https://www.w3.org/TR/resize-observer-1/"
-    institution: "W3C"
-
-secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
+  - title: Resize Observer
+    type: standard
+    year: 2020
+    url: https://www.w3.org/TR/resize-observer-1/
+    institution: W3C
+  - title: ResizeObserver - Web APIs | MDN
+    type: documentation
     year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
-  - title: "The C Programming Language (K&R, 2nd Ed)"
-    type: "textbook"
-    year: 1988
-    url: "https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html"
-    institution: "Prentice Hall"
-  - title: "Structure and Interpretation of Computer Programs (SICP)"
-    type: "textbook"
-    year: 1996
-    url: "https://mitpress.mit.edu/sites/default/files/sicp/"
-    institution: "MIT Press"
-
+    url: https://developer.mozilla.org/en-US/docs/Web/API/ResizeObserver
+    institution: Mozilla
+  - title: ResizeObserverEntry - Web APIs | MDN
+    type: documentation
+    year: 2026
+    url: https://developer.mozilla.org/en-US/docs/Web/API/ResizeObserverEntry
+    institution: Mozilla
+secondary_sources: []
+updated: "2026-05-28"
 ---
-
-
-
 
 ## TL;DR
 
-ResizeObserver reports changes to the dimensions of DOM elements (content-box or border-box), replacing polling-based resize detection and `window.resize`-only approaches. It is essential for responsive components and container queries.
+ResizeObserver lets scripts observe element size changes. This repair removes overbroad claims and keeps to the W3C interface and MDN entry documentation.
 
 ## Core Explanation
 
-`new ResizeObserver(entries => { /* entries[0].contentRect */ })`. Different from `element.onresize` which only works on `window`. Observes actual element size changes including those caused by CSS, layout, or content changes. Runs after layout but before paint. Delivery is batched — multiple changes in the same frame are reported together.
+ResizeObserver is useful when a component needs to react to its own rendered size instead of only viewport size. Observations are delivered as entries that identify the target element and expose the observed box sizes.
 
 ## Further Reading
 
-- [Resize Observer (W3C)](https://www.w3.org/TR/resize-observer-1/)
+- [Resize Observer](https://www.w3.org/TR/resize-observer-1/)
+- [ResizeObserver - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/ResizeObserver)
+- [ResizeObserverEntry - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/ResizeObserverEntry)

@@ -1,76 +1,73 @@
 ---
-id: "kb-2026-00095"
-title: "Same-Origin Policy"
-schema_type: "TechArticle"
-category: "computer-science"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
+id: kb-2026-00095
+title: Same-Origin Policy
+schema_type: TechArticle
+category: computer-science
+language: en
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-22"
-generation_method: "human_only"
+generation_method: human_only
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-computer-science-001"
-    statement: "The Same-Origin Policy (SOP) is a critical web security mechanism restricting how documents and scripts from one origin interact with resources from another origin. Origin = protocol + host + port. SOP prevents malicious websites from reading sensitive data from other sites."
-    source_title: "Same-Origin Policy (MDN Web Docs)"
-    source_url: "https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy"
-    confidence: "medium"
-  - id: "fact-computer-science-002"
-    statement: "SOP is fundamental to browser security and predates CORS."
-    source_title: "Same-Origin Policy (MDN Web Docs)"
-    source_url: "https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy"
-    confidence: "medium"
-
-completeness: 0.88
-
+  - id: fact-computer-science-sop-001
+    statement: >-
+      MDN defines the same-origin policy as a security mechanism restricting how a document or script from one origin
+      can interact with resources from another origin.
+    source_title: Same-origin policy - Security | MDN
+    source_url: https://developer.mozilla.org/en-US/docs/Web/Security/Defenses/Same-origin_policy
+    confidence: medium
+  - id: fact-computer-science-sop-002
+    statement: >-
+      The HTML Standard defines a tuple origin using a scheme, host, port, and domain, and says same-origin checks
+      compare scheme, host, and port.
+    source_title: HTML Standard - Origins
+    source_url: https://html.spec.whatwg.org/multipage/browsers.html#origin
+    confidence: medium
+  - id: fact-computer-science-sop-003
+    statement: >-
+      MDN explains that fetch() and XMLHttpRequest follow the same-origin policy unless cross-origin responses include
+      appropriate CORS headers.
+    source_title: Cross-Origin Resource Sharing (CORS) - HTTP | MDN
+    source_url: https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CORS
+    confidence: medium
+completeness: 0.86
 known_gaps:
-  - "Content verified during quality audit; citations cross-referenced with authoritative sources"
-
-disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-
+  - This public sample was manually narrowed to source-backed facts on 2026-05-28.
+disputed_statements: []
 primary_sources:
-  - title: "Same-Origin Policy (MDN Web Docs)"
-    type: "documentation"
-    year: 2024
-    url: "https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy"
-    institution: "Mozilla"
-
-secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
+  - title: Same-origin policy - Security | MDN
+    type: documentation
     year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
-  - title: "RESTful Web APIs"
-    authors: ["Richardson", "Amundsen"]
-    type: "book"
-    year: 2013
-    url: "https://www.oreilly.com/library/view/restful-web-apis/9781449359713/"
-    institution: "O'Reilly"
-
+    url: https://developer.mozilla.org/en-US/docs/Web/Security/Defenses/Same-origin_policy
+    institution: Mozilla
+  - title: HTML Standard - Origins
+    type: standard
+    year: 2026
+    url: https://html.spec.whatwg.org/multipage/browsers.html#origin
+    institution: WHATWG
+  - title: Cross-Origin Resource Sharing (CORS) - HTTP | MDN
+    type: documentation
+    year: 2026
+    url: https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CORS
+    institution: Mozilla
+secondary_sources: []
+updated: "2026-05-28"
 ---
-
-
 
 ## TL;DR
 
-The Same-Origin Policy (SOP) is a critical web security mechanism restricting how documents and scripts from one origin interact with resources from another origin. Origin = protocol + host + port. SOP prevents malicious websites from reading sensitive data from other sites.
+The same-origin policy is a browser security boundary around documents, scripts, and cross-origin resources. This repair anchors the article to MDN and WHATWG origin definitions.
 
 ## Core Explanation
 
-SOP restricts: DOM access (a page on origin A cannot read origin B's iframe/document content), XMLHttpRequest/Fetch to different origins (unless CORS permits), and cookie/WebStorage access. It does NOT restrict: embedding resources (`<img>`, `<script>`, `<link>`), form submissions, or redirects. SOP is fundamental to browser security and predates CORS.
+Origins are compared by scheme, host, and port. Same-origin policy limits cross-origin interaction by default, while CORS lets servers explicitly authorize selected cross-origin HTTP access.
 
 ## Further Reading
 
-- [Same-Origin Policy (MDN Web Docs)](https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy)
-
-## Related Articles
-
-- [AI Content Moderation Platforms: Large-Scale Safety Systems, Policy Engines, and Multilingual Review](../../ai/ai-content-moderation-platforms.md)
-- [Inflation: Causes, Measurement, and Central Bank Policy](../../business/inflation-causes-measurement-and-central-bank-policy.md)
-- [Content Security Policy (CSP)](../content-security-policy-csp.md)
+- [Same-origin policy - Security | MDN](https://developer.mozilla.org/en-US/docs/Web/Security/Defenses/Same-origin_policy)
+- [HTML Standard - Origins](https://html.spec.whatwg.org/multipage/browsers.html#origin)
+- [Cross-Origin Resource Sharing (CORS) - HTTP | MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CORS)

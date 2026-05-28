@@ -1,77 +1,71 @@
 ---
-id: "kb-2026-00177"
-title: "Prettier"
-schema_type: "TechArticle"
-category: "computer-science"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
+id: kb-2026-00177
+title: Prettier
+schema_type: TechArticle
+category: computer-science
+language: en
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-22"
-generation_method: "human_only"
+generation_method: human_only
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-computer-science-001"
-    statement: "Prettier is an opinionated code formatter supporting JavaScript, TypeScript, CSS, HTML, JSON, Markdown, YAML, and more. It enforces consistent formatting by parsing code and re-printing it with its own rules. Minimizes bike-shedding in code reviews."
-    source_title: "Prettier Documentation"
-    source_url: "https://prettier.io/docs/"
-    confidence: "medium"
-  - id: "fact-computer-science-002"
-    statement: "Key philosophy: limited configurability (by design) — fewer options = less debate."
-    source_title: "Prettier Documentation"
-    source_url: "https://prettier.io/docs/"
-    confidence: "medium"
-
-completeness: 0.88
-
+  - id: fact-computer-science-prettier-001
+    statement: >-
+      Prettier enforces consistent code style by parsing source code and reprinting the parsed abstract syntax tree with
+      its own formatting rules.
+    source_title: What is Prettier? - Prettier
+    source_url: https://prettier.io/docs/
+    confidence: medium
+  - id: fact-computer-science-prettier-002
+    statement: >-
+      Prettier documents printWidth as a preferred line-length target for formatting rather than a hard maximum
+      line-length rule.
+    source_title: Options - Prettier
+    source_url: https://prettier.io/docs/options.html
+    confidence: medium
+  - id: fact-computer-science-prettier-003
+    statement: Prettier configuration files can define formatting options and use overrides for particular file patterns.
+    source_title: Configuration File - Prettier
+    source_url: https://prettier.io/docs/configuration.html
+    confidence: medium
+completeness: 0.86
 known_gaps:
-  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
-
-disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-
+  - This public sample was manually narrowed to source-backed facts on 2026-05-28.
+disputed_statements: []
 primary_sources:
-  - title: "Prettier Documentation"
-    type: "documentation"
+  - title: What is Prettier? - Prettier
+    type: documentation
     year: 2026
-    url: "https://prettier.io/docs/"
-    institution: "Prettier"
-
-secondary_sources:
-  - title: "Effective TypeScript (2nd Edition)"
-    authors: ["Vanderkam, Dan"]
-    type: "book"
-    year: 2024
-    url: "https://www.oreilly.com/library/view/effective-typescript-2nd/9781098155056/"
-    institution: "O'Reilly"
-  - title: "The C Programming Language (K&R, 2nd Ed)"
-    type: "textbook"
-    year: 1988
-    url: "https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html"
-    institution: "Prentice Hall"
-  - title: "Structure and Interpretation of Computer Programs (SICP)"
-    type: "textbook"
-    year: 1996
-    url: "https://mitpress.mit.edu/sites/default/files/sicp/"
-    institution: "MIT Press"
-
+    url: https://prettier.io/docs/
+    institution: Prettier
+  - title: Options - Prettier
+    type: documentation
+    year: 2026
+    url: https://prettier.io/docs/options.html
+    institution: Prettier
+  - title: Configuration File - Prettier
+    type: documentation
+    year: 2026
+    url: https://prettier.io/docs/configuration.html
+    institution: Prettier
+secondary_sources: []
+updated: "2026-05-28"
 ---
-
-
-
 
 ## TL;DR
 
-Prettier is an opinionated code formatter supporting JavaScript, TypeScript, CSS, HTML, JSON, Markdown, YAML, and more. It enforces consistent formatting by parsing code and re-printing it with its own rules. Minimizes bike-shedding in code reviews.
+Prettier is an opinionated formatter that parses code and prints it back in a consistent style. This repair removes review-culture claims and keeps to the formatter, option, and configuration behavior documented by Prettier.
 
 ## Core Explanation
 
-Key philosophy: limited configurability (by design) — fewer options = less debate. `.prettierrc` controls the few options available: `tabWidth`, `semi`, `singleQuote`, `trailingComma`, `printWidth`. `.prettierignore` excludes files. Integrates with ESLint (eslint-config-prettier), editors (format-on-save), and pre-commit hooks (lint-staged + husky).
+The central idea is that Prettier owns formatting output. A project can still set documented options such as print width, and configuration files can apply overrides for specific file patterns.
 
 ## Further Reading
 
-- [Prettier Documentation](https://prettier.io/docs/)
+- [What is Prettier? - Prettier](https://prettier.io/docs/)
+- [Options - Prettier](https://prettier.io/docs/options.html)
+- [Configuration File - Prettier](https://prettier.io/docs/configuration.html)

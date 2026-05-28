@@ -1,8 +1,8 @@
 # AnchorFact Public Content Audit - 2026-05-28
 
-Generated: 2026-05-28T12:23:23.099Z
+Generated: 2026-05-28T12:33:03.735Z
 
-Snapshot: 555 public / 445 draft / 1667 claims.
+Snapshot: 555 public / 445 draft / 1676 claims.
 
 ## Summary
 
@@ -34,15 +34,15 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 | 9 | low_confidence_public | `history/age-of-exploration` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 | 10 | low_confidence_public | `history/byzantine-empire` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 | 11 | risk_fallback | `science/climate-change` | medium | 4/5 (80.0%) | 3 | source=weak; claim=pass; summary=pass | keep_public |
-| 12 | risk_fallback | `computer-science/packer` | low | 1/1 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
-| 13 | risk_fallback | `computer-science/prettier` | low | 1/1 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
-| 14 | risk_fallback | `computer-science/python` | low | 2/2 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
-| 15 | risk_fallback | `computer-science/resizeobserver` | medium | 1/1 (100.0%) | 2 | source=pass; claim=pass; summary=pass | repair_sources |
-| 16 | risk_fallback | `computer-science/same-origin-policy` | low | 1/1 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
-| 17 | risk_fallback | `computer-science/server-sent-events-sse` | medium | 1/1 (100.0%) | 2 | source=pass; claim=pass; summary=pass | repair_sources |
-| 18 | risk_fallback | `computer-science/service-workers` | medium | 1/1 (100.0%) | 2 | source=pass; claim=pass; summary=pass | repair_sources |
-| 19 | risk_fallback | `computer-science/spring-boot` | low | 1/1 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
-| 20 | risk_fallback | `computer-science/svelte` | low | 1/1 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
+| 12 | risk_fallback | `computer-science/swift` | low | 2/2 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
+| 13 | risk_fallback | `computer-science/terraform-state` | low | 1/1 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
+| 14 | risk_fallback | `computer-science/webrtc` | medium | 1/1 (100.0%) | 2 | source=pass; claim=pass; summary=pass | repair_sources |
+| 15 | risk_fallback | `computer-science/yaml` | medium | 1/1 (100.0%) | 2 | source=pass; claim=pass; summary=pass | repair_sources |
+| 16 | risk_fallback | `computer-science/zig-language` | low | 1/1 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
+| 17 | risk_fallback | `health/first-aid-cpr` | medium | 1/1 (100.0%) | 2 | source=pass; claim=pass; summary=weak | repair_sources |
+| 18 | risk_fallback | `health/strength-training-principles` | low | 1/1 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
+| 19 | risk_fallback | `history/middle-ages` | low | 2/3 (66.7%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 20 | risk_fallback | `history/vikings-exploration-and-culture` | low | 1/1 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
 
 ## Article Findings
 
@@ -211,40 +211,10 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 12. Packer
+### 12. Swift Programming Language
 
-- canonical slug: `computer-science/packer`
-- canonical URL: https://anchorfact.org/computer-science/packer/
-- bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.5)
-- verified source coverage: 1/1 (100.0%)
-- claims: 2 total, 2 capped, 0 missing evidence
-- quality reasons: none
-- source-title match: `pass`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement
-- recommendation: `repair_sources`
-
-### 13. Prettier
-
-- canonical slug: `computer-science/prettier`
-- canonical URL: https://anchorfact.org/computer-science/prettier/
-- bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.5)
-- verified source coverage: 1/1 (100.0%)
-- claims: 2 total, 2 capped, 0 missing evidence
-- quality reasons: none
-- source-title match: `pass`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement
-- recommendation: `repair_sources`
-
-### 14. Python Programming Language
-
-- canonical slug: `computer-science/python`
-- canonical URL: https://anchorfact.org/computer-science/python/
+- canonical slug: `computer-science/swift`
+- canonical URL: https://anchorfact.org/computer-science/swift/
 - bucket: `risk_fallback`
 - confidence: `low` (verified_sources, score 0.56)
 - verified source coverage: 2/2 (100.0%)
@@ -256,70 +226,10 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: generic_dispute_statement
 - recommendation: `repair_sources`
 
-### 15. ResizeObserver
+### 13. Terraform State
 
-- canonical slug: `computer-science/resizeobserver`
-- canonical URL: https://anchorfact.org/computer-science/resizeobserver/
-- bucket: `risk_fallback`
-- confidence: `medium` (verified_sources, score 0.735)
-- verified source coverage: 1/1 (100.0%)
-- claims: 2 total, 0 capped, 0 missing evidence
-- quality reasons: none
-- source-title match: `pass`
-- claim-evidence match: `pass`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement
-- recommendation: `repair_sources`
-
-### 16. Same-Origin Policy
-
-- canonical slug: `computer-science/same-origin-policy`
-- canonical URL: https://anchorfact.org/computer-science/same-origin-policy/
-- bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.49)
-- verified source coverage: 1/1 (100.0%)
-- claims: 2 total, 2 capped, 0 missing evidence
-- quality reasons: none
-- source-title match: `pass`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement
-- recommendation: `repair_sources`
-
-### 17. Server-Sent Events (SSE)
-
-- canonical slug: `computer-science/server-sent-events-sse`
-- canonical URL: https://anchorfact.org/computer-science/server-sent-events-sse/
-- bucket: `risk_fallback`
-- confidence: `medium` (verified_sources, score 0.675)
-- verified source coverage: 1/1 (100.0%)
-- claims: 2 total, 0 capped, 0 missing evidence
-- quality reasons: none
-- source-title match: `pass`
-- claim-evidence match: `pass`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement
-- recommendation: `repair_sources`
-
-### 18. Service Workers
-
-- canonical slug: `computer-science/service-workers`
-- canonical URL: https://anchorfact.org/computer-science/service-workers/
-- bucket: `risk_fallback`
-- confidence: `medium` (verified_sources, score 0.735)
-- verified source coverage: 1/1 (100.0%)
-- claims: 2 total, 0 capped, 0 missing evidence
-- quality reasons: none
-- source-title match: `pass`
-- claim-evidence match: `pass`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement
-- recommendation: `repair_sources`
-
-### 19. Spring Boot
-
-- canonical slug: `computer-science/spring-boot`
-- canonical URL: https://anchorfact.org/computer-science/spring-boot/
+- canonical slug: `computer-science/terraform-state`
+- canonical URL: https://anchorfact.org/computer-science/terraform-state/
 - bucket: `risk_fallback`
 - confidence: `low` (verified_sources, score 0.5)
 - verified source coverage: 1/1 (100.0%)
@@ -331,12 +241,102 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: generic_dispute_statement
 - recommendation: `repair_sources`
 
-### 20. Svelte
+### 14. WebRTC
 
-- canonical slug: `computer-science/svelte`
-- canonical URL: https://anchorfact.org/computer-science/svelte/
+- canonical slug: `computer-science/webrtc`
+- canonical URL: https://anchorfact.org/computer-science/webrtc/
+- bucket: `risk_fallback`
+- confidence: `medium` (verified_sources, score 0.735)
+- verified source coverage: 1/1 (100.0%)
+- claims: 2 total, 0 capped, 0 missing evidence
+- quality reasons: none
+- source-title match: `pass`
+- claim-evidence match: `pass`
+- title-summary accuracy: `pass`
+- hygiene flags: generic_dispute_statement
+- recommendation: `repair_sources`
+
+### 15. YAML (YAML Ain't Markup Language)
+
+- canonical slug: `computer-science/yaml`
+- canonical URL: https://anchorfact.org/computer-science/yaml/
+- bucket: `risk_fallback`
+- confidence: `medium` (verified_sources, score 0.715)
+- verified source coverage: 1/1 (100.0%)
+- claims: 2 total, 0 capped, 0 missing evidence
+- quality reasons: none
+- source-title match: `pass`
+- claim-evidence match: `pass`
+- title-summary accuracy: `pass`
+- hygiene flags: generic_dispute_statement
+- recommendation: `repair_sources`
+
+### 16. Zig Language
+
+- canonical slug: `computer-science/zig-language`
+- canonical URL: https://anchorfact.org/computer-science/zig-language/
 - bucket: `risk_fallback`
 - confidence: `low` (verified_sources, score 0.5)
+- verified source coverage: 1/1 (100.0%)
+- claims: 2 total, 2 capped, 0 missing evidence
+- quality reasons: none
+- source-title match: `pass`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: generic_dispute_statement
+- recommendation: `repair_sources`
+
+### 17. First Aid CPR
+
+- canonical slug: `health/first-aid-cpr`
+- canonical URL: https://anchorfact.org/health/first-aid-cpr/
+- bucket: `risk_fallback`
+- confidence: `medium` (verified_sources, score 0.695)
+- verified source coverage: 1/1 (100.0%)
+- claims: 2 total, 0 capped, 0 missing evidence
+- quality reasons: none
+- source-title match: `pass`
+- claim-evidence match: `pass`
+- title-summary accuracy: `weak`
+- hygiene flags: generic_dispute_statement
+- recommendation: `repair_sources`
+
+### 18. Strength Training Principles
+
+- canonical slug: `health/strength-training-principles`
+- canonical URL: https://anchorfact.org/health/strength-training-principles/
+- bucket: `risk_fallback`
+- confidence: `low` (verified_sources, score 0.43)
+- verified source coverage: 1/1 (100.0%)
+- claims: 2 total, 2 capped, 0 missing evidence
+- quality reasons: none
+- source-title match: `pass`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: generic_dispute_statement
+- recommendation: `repair_sources`
+
+### 19. Middle Ages
+
+- canonical slug: `history/middle-ages`
+- canonical URL: https://anchorfact.org/history/middle-ages/
+- bucket: `risk_fallback`
+- confidence: `low` (verified_sources, score 0.55)
+- verified source coverage: 2/3 (66.7%)
+- claims: 2 total, 2 capped, 0 missing evidence
+- quality reasons: partial_source_verification
+- source-title match: `weak`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: none
+- recommendation: `repair_sources`
+
+### 20. Vikings: Exploration and Culture
+
+- canonical slug: `history/vikings-exploration-and-culture`
+- canonical URL: https://anchorfact.org/history/vikings-exploration-and-culture/
+- bucket: `risk_fallback`
+- confidence: `low` (verified_sources, score 0.43)
 - verified source coverage: 1/1 (100.0%)
 - claims: 2 total, 2 capped, 0 missing evidence
 - quality reasons: none

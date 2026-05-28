@@ -1,75 +1,71 @@
 ---
-id: "kb-2026-00294"
-title: "Svelte"
-schema_type: "TechArticle"
-category: "computer-science"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
+id: kb-2026-00294
+title: Svelte
+schema_type: TechArticle
+category: computer-science
+language: en
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-22"
-generation_method: "human_only"
+generation_method: human_only
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-computer-science-01"
-    statement: "Smaller bundles, faster runtime — used by Apple, Spotify, NYT"
-    source_title: "Svelte Documentation"
-    source_url: "https://svelte.dev/docs/"
-    confidence: "medium"
-  - id: "fact-computer-science-02"
-    statement: "Svelte is a radical frontend framework that compiles components to vanilla JavaScript during build — no virtual DOM runtime"
-    source_title: "Svelte Documentation"
-    source_url: "https://svelte.dev/docs/"
-    confidence: "medium"
-
-completeness: 0.88
-
+  - id: fact-computer-science-svelte-001
+    statement: >-
+      Svelte documentation describes Svelte as a framework for building web user interfaces that uses a compiler to turn
+      components into JavaScript.
+    source_title: Overview - Svelte Docs
+    source_url: https://svelte.dev/docs/svelte/overview
+    confidence: medium
+  - id: fact-computer-science-svelte-002
+    statement: >-
+      The Svelte compiler reference says compile converts .svelte source code into a JavaScript module that exports a
+      component.
+    source_title: svelte/compiler - Svelte Docs
+    source_url: https://svelte.dev/docs/svelte/svelte-compiler
+    confidence: medium
+  - id: fact-computer-science-svelte-003
+    statement: SvelteKit documentation describes SvelteKit as a framework for developing web applications using Svelte.
+    source_title: Introduction - SvelteKit Docs
+    source_url: https://svelte.dev/docs/kit/introduction
+    confidence: medium
+completeness: 0.86
 known_gaps:
-  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
-
-disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-
+  - This public sample was manually narrowed to source-backed facts on 2026-05-28.
+disputed_statements: []
 primary_sources:
-  - title: "Svelte Documentation"
-    type: "documentation"
+  - title: Overview - Svelte Docs
+    type: documentation
     year: 2026
-    url: "https://svelte.dev/docs/"
-    institution: "Svelte"
-
-secondary_sources:
-  - title: "React Documentation"
-    type: "documentation"
+    url: https://svelte.dev/docs/svelte/overview
+    institution: Svelte
+  - title: svelte/compiler - Svelte Docs
+    type: documentation
     year: 2026
-    url: "https://react.dev/reference/react"
-    institution: "Meta"
-  - title: "The C Programming Language (K&R, 2nd Ed)"
-    type: "textbook"
-    year: 1988
-    url: "https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html"
-    institution: "Prentice Hall"
-  - title: "Structure and Interpretation of Computer Programs (SICP)"
-    type: "textbook"
-    year: 1996
-    url: "https://mitpress.mit.edu/sites/default/files/sicp/"
-    institution: "MIT Press"
-
+    url: https://svelte.dev/docs/svelte/svelte-compiler
+    institution: Svelte
+  - title: Introduction - SvelteKit Docs
+    type: documentation
+    year: 2026
+    url: https://svelte.dev/docs/kit/introduction
+    institution: Svelte
+secondary_sources: []
+updated: "2026-05-28"
 ---
-
-
 
 ## TL;DR
 
-Svelte (Rich Harris, 2016) is a radical frontend framework that compiles components to vanilla JavaScript during build — no virtual DOM runtime. Svelte 5 (2024) introduced runes ($state, $derived, $effect) for universal reactivity. Smaller bundles, faster runtime — used by Apple, Spotify, NYT.
+Svelte is a web UI framework centered on compiling declarative components into JavaScript. This repair removes user-logo, broad performance, and version-current claims and keeps to Svelte and SvelteKit documentation.
 
 ## Core Explanation
 
-Compile-time approach: framework code is compiled away — output is pure JS. Stores (Svelte 4) → Runes (Svelte 5): `let count = $state(0)`. SvelteKit: full-stack framework like Next.js — file-based routing, SSR, API routes, adapters for deployment. `{#each}`, `{#if}`, `{#await}` template syntax. Reactive declarations: `$: doubled = count * 2` (Svelte 4).
+Svelte components are compiled before they run in the browser. SvelteKit builds on Svelte for application development, while the compiler reference documents how .svelte source becomes JavaScript modules that export components.
 
 ## Further Reading
 
-- [Svelte Documentation](https://svelte.dev/docs/)
+- [Overview - Svelte Docs](https://svelte.dev/docs/svelte/overview)
+- [svelte/compiler - Svelte Docs](https://svelte.dev/docs/svelte/svelte-compiler)
+- [Introduction - SvelteKit Docs](https://svelte.dev/docs/kit/introduction)

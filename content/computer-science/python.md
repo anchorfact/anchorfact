@@ -1,91 +1,71 @@
 ---
-id: "kb-2026-00012"
-title: "Python Programming Language"
-schema_type: "TechArticle"
-category: "computer-science"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
+id: kb-2026-00012
+title: Python Programming Language
+schema_type: TechArticle
+category: computer-science
+language: en
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-22"
-generation_method: "human_only"
-ai_models: ["claude-opus"]
+generation_method: human_only
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-computer-science-01"
-    statement: "Python is a high-level, interpreted programming language created by Guido van Rossum and first released in 1991"
-    source_title: "Python 3.13 Documentation"
-    source_url: "https://docs.python.org/3.13/"
-    confidence: "medium"
-  - id: "fact-computer-science-02"
-    statement: "The PyPI package repository hosts over 500,000 packages as of 2026"
-    source_title: "Python 3.13 Documentation"
-    source_url: "https://docs.python.org/3.13/"
-    confidence: "medium"
-
-completeness: 0.88
-
+  - id: fact-computer-science-python-001
+    statement: The Python FAQ describes Python as a high-level general-purpose programming language.
+    source_title: General Python FAQ
+    source_url: https://docs.python.org/3/faq/general.html
+    confidence: medium
+  - id: fact-computer-science-python-002
+    statement: The Python tutorial describes Python as an interpreted language and notes that indentation groups statements.
+    source_title: Whetting Your Appetite
+    source_url: https://docs.python.org/3/tutorial/appetite.html
+    confidence: medium
+  - id: fact-computer-science-python-003
+    statement: >-
+      The Python FAQ says the standard library covers areas including text processing, internet protocols, software
+      engineering, and operating-system interfaces.
+    source_title: General Python FAQ
+    source_url: https://docs.python.org/3/faq/general.html
+    confidence: medium
+completeness: 0.86
 known_gaps:
-  - "Python version 3.14+ details are evolving; check docs.python.org for latest"
-
-disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-
+  - This public sample was manually narrowed to source-backed facts on 2026-05-28.
+disputed_statements: []
 primary_sources:
-  - title: "Python 3.13 Documentation"
-    type: "documentation"
+  - title: General Python FAQ
+    type: documentation
     year: 2026
-    url: "https://docs.python.org/3.13/"
-    institution: "Python Software Foundation"
-  - title: "TIOBE Index"
-    type: "index"
-    url: "https://www.tiobe.com/tiobe-index/"
-    institution: "Tiobe"
-
-secondary_sources:
-  - title: "Fluent Python (2nd Ed)"
-    authors: ["Ramalho"]
-    type: "book"
-    year: 2021
-    url: "https://www.oreilly.com/library/view/fluent-python-2nd/9781492056348/"
-    institution: "O'Reilly"
-
+    url: https://docs.python.org/3/faq/general.html
+    institution: Python Software Foundation
+  - title: Whetting Your Appetite
+    type: documentation
+    year: 2026
+    url: https://docs.python.org/3/tutorial/appetite.html
+    institution: Python Software Foundation
+  - title: The Python Standard Library
+    type: documentation
+    year: 2026
+    url: https://docs.python.org/3/library/
+    institution: Python Software Foundation
+secondary_sources: []
+updated: "2026-05-28"
 ---
-
 
 ## TL;DR
 
-Python is a high-level, interpreted programming language created by Guido van Rossum and first released in 1991. It emphasizes code readability through significant whitespace and a clean syntax. As of 2026, Python is the most popular programming language according to the TIOBE Index, used by over 15 million developers worldwide for web development, data science, AI/ML, automation, and scientific computing.
+Python is a high-level general-purpose language with an interpreted workflow and a broad standard library. This repair removes dynamic popularity, package-count, and version-current claims.
 
 ## Core Explanation
 
-Python is dynamically typed and garbage-collected, supporting multiple programming paradigms including procedural, object-oriented, and functional programming. Its "batteries included" philosophy means the standard library provides modules for file I/O, networking, regular expressions, JSON/XML parsing, and more out of the box.
-
-Python's dominance in AI/ML is driven by its ecosystem: NumPy/SciPy for scientific computing, PyTorch and TensorFlow for deep learning, LangChain/LlamaIndex for LLM applications, and Jupyter for interactive computing. The PyPI package repository hosts over 500,000 packages as of 2026.
-
-## Key Features
-
-- **Significant whitespace**: Indentation defines code blocks, enforcing readability
-- **Dynamic typing**: Variables don't need type declarations; type hints (PEP 484) are optional
-- **Garbage collection**: Automatic memory management with reference counting and cycle detection
-- **Comprehensive standard library**: HTTP, JSON, SQLite, async I/O, unittest, and more
-- **C API**: Python can call C/C++ libraries; CPython is the reference implementation
-
-## Version History
-
-Python 3.0 (2008) was a breaking change from Python 2, removing accumulated cruft. Python 2 reached end-of-life on January 1, 2020. Key modern versions: Python 3.11 (2022, 10-60% speedup), Python 3.12 (2023, f-string improvements, subinterpreters), Python 3.13 (2024, experimental JIT compiler, free-threaded mode), Python 3.14 (2025).
+The article now sticks to stable language facts from official Python documentation: Python is general-purpose, interpreted, indentation-based for statement grouping, and distributed with a large standard library.
 
 ## Further Reading
 
-- [Python 3.13 Docs](https://docs.python.org/3.13/): Official documentation
-- [PEP Index](https://peps.python.org/): Python Enhancement Proposals
-- [PyPI](https://pypi.org/): Python Package Index
-
-## Related Articles
-
-- [C++ Programming Language](../c++-language.md)
-- [C Programming Language](../c-language.md)
-- [Go Programming Language](../go-language.md)
+- [General Python FAQ](https://docs.python.org/3/faq/general.html)
+- [Whetting Your Appetite](https://docs.python.org/3/tutorial/appetite.html)
+- [The Python Standard Library](https://docs.python.org/3/library/)

@@ -4,11 +4,11 @@
     "total_articles": 1000,
     "total_with_errors": 342,
     "average_sources_per_article": "2.3",
-    "overall_verification_rate": "72.1%",
+    "overall_verification_rate": "72.3%",
     "elapsed_ms": 635005,
     "elapsed_sec": "635.0",
     "concurrency": 3,
-    "manual_reviewed_articles": 373
+    "manual_reviewed_articles": 382
   },
   "articles": [
     {
@@ -29804,10 +29804,10 @@
       "file": "content/computer-science/packer.md",
       "article_id": "kb-2026-00318",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Packer Documentation",
+          "source_title": "Packer documentation | Packer | HashiCorp Developer",
           "source_type": "documentation",
           "results": [
             {
@@ -29815,8 +29815,45 @@
               "identifier": "https://developer.hashicorp.com/packer/docs",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://developer.hashicorp.com/packer/docs"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Packer templates reference overview | Packer | HashiCorp Developer",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.hashicorp.com/packer/docs/templates",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "build block reference | Packer | HashiCorp Developer",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.hashicorp.com/packer/docs/templates/hcl_templates/blocks/build",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -29824,8 +29861,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/page-visibility-api.md",
@@ -30368,10 +30407,10 @@
       "file": "content/computer-science/prettier.md",
       "article_id": "kb-2026-00177",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Prettier Documentation",
+          "source_title": "What is Prettier? - Prettier",
           "source_type": "documentation",
           "results": [
             {
@@ -30379,8 +30418,45 @@
               "identifier": "https://prettier.io/docs/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://prettier.io/docs/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Options - Prettier",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://prettier.io/docs/options.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Configuration File - Prettier",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://prettier.io/docs/configuration.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -30388,8 +30464,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/probability-theory.md",
@@ -30579,19 +30657,20 @@
       "file": "content/computer-science/python.md",
       "article_id": "kb-2026-00012",
       "generation_method": "human_only",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Python 3.13 Documentation",
+          "source_title": "General Python FAQ",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.python.org/3.13/",
+              "identifier": "https://docs.python.org/3/faq/general.html",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://docs.python.org/3.13/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -30599,16 +30678,35 @@
           "all_verified": true
         },
         {
-          "source_title": "TIOBE Index",
-          "source_type": "index",
+          "source_title": "Whetting Your Appetite",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.tiobe.com/tiobe-index/",
+              "identifier": "https://docs.python.org/3/tutorial/appetite.html",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.tiobe.com/tiobe-index/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "The Python Standard Library",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.python.org/3/library/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -30616,8 +30714,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/quic-protocol.md",
@@ -31132,10 +31232,10 @@
       "file": "content/computer-science/resizeobserver.md",
       "article_id": "kb-2026-00098",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Resize Observer (W3C)",
+          "source_title": "Resize Observer",
           "source_type": "standard",
           "results": [
             {
@@ -31143,8 +31243,45 @@
               "identifier": "https://www.w3.org/TR/resize-observer-1/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.w3.org/TR/resize-observer-1/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "ResizeObserver - Web APIs | MDN",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/API/ResizeObserver",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "ResizeObserverEntry - Web APIs | MDN",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/API/ResizeObserverEntry",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -31152,8 +31289,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/responsive-web-design.md",
@@ -31530,19 +31669,56 @@
       "file": "content/computer-science/same-origin-policy.md",
       "article_id": "kb-2026-00095",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Same-Origin Policy (MDN Web Docs)",
+          "source_title": "Same-origin policy - Security | MDN",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/Security/Defenses/Same-origin_policy",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://developer.mozilla.org/en-US/docs/Web/Security/Defenses/Same-origin_policy"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "HTML Standard - Origins",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://html.spec.whatwg.org/multipage/browsers.html#origin",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Cross-Origin Resource Sharing (CORS) - HTTP | MDN",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CORS",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -31550,8 +31726,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/scala-language.md",
@@ -31650,10 +31828,10 @@
       "file": "content/computer-science/server-sent-events-sse.md",
       "article_id": "kb-2026-00083",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Server-Sent Events (W3C Recommendation)",
+          "source_title": "HTML Standard - Server-sent events",
           "source_type": "standard",
           "results": [
             {
@@ -31661,8 +31839,45 @@
               "identifier": "https://html.spec.whatwg.org/multipage/server-sent-events.html",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://html.spec.whatwg.org/multipage/server-sent-events.html"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Using server-sent events - Web APIs | MDN",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "EventSource - Web APIs | MDN",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/API/EventSource",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -31670,8 +31885,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/serverless-computing.md",
@@ -31704,10 +31921,10 @@
       "file": "content/computer-science/service-workers.md",
       "article_id": "kb-2026-00086",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Service Workers Nightly (W3C)",
+          "source_title": "Service Workers Nightly",
           "source_type": "standard",
           "results": [
             {
@@ -31715,8 +31932,45 @@
               "identifier": "https://w3c.github.io/ServiceWorker/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://w3c.github.io/ServiceWorker/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Service Worker API - Web APIs | MDN",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Using Service Workers - Web APIs | MDN",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -31724,8 +31978,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/set-theory.md",
@@ -32061,19 +32317,56 @@
       "file": "content/computer-science/spring-boot.md",
       "article_id": "kb-2026-00291",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Spring Boot Documentation",
+          "source_title": "Spring Boot :: Spring Boot",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.spring.io/spring-boot/",
+              "identifier": "https://docs.spring.io/spring-boot/index.html",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://docs.spring.io/spring-boot/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Auto-configuration :: Spring Boot",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.spring.io/spring-boot/reference/using/auto-configuration.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Build Systems :: Spring Boot",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.spring.io/spring-boot/reference/using/build-systems.html#using.build-systems.starters",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -32081,8 +32374,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/sql-injection.md",
@@ -32443,19 +32738,56 @@
       "file": "content/computer-science/svelte.md",
       "article_id": "kb-2026-00294",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Svelte Documentation",
+          "source_title": "Overview - Svelte Docs",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://svelte.dev/docs/",
+              "identifier": "https://svelte.dev/docs/svelte/overview",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://svelte.dev/docs"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "svelte/compiler - Svelte Docs",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://svelte.dev/docs/svelte/svelte-compiler",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Introduction - SvelteKit Docs",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://svelte.dev/docs/kit/introduction",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -32463,8 +32795,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/swift.md",

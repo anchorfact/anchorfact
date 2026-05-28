@@ -1,78 +1,71 @@
 ---
-id: "kb-2026-00318"
-title: "Packer"
-schema_type: "TechArticle"
-category: "computer-science"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
+id: kb-2026-00318
+title: Packer
+schema_type: TechArticle
+category: computer-science
+language: en
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-22"
-generation_method: "human_only"
+generation_method: human_only
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-computer-science-001"
-    statement: "Packer (HashiCorp, 2013) creates identical machine images for multiple platforms from a single configuration. Define once, build for AWS AMI, Azure VM, GCP image, Docker, VirtualBox. Immutable infrastructure: bake software into image, deploy by launching new instances."
-    source_title: "Packer Documentation"
-    source_url: "https://developer.hashicorp.com/packer/docs"
-    confidence: "medium"
-  - id: "fact-computer-science-001"
-    statement: "Packer (HashiCorp, 2013) creates identical machine images for multiple platforms from a single configuration. Define once, build for AWS AMI, Azure VM, GCP image, Docker, VirtualBox. Immutable infrastructure: bake software into image, deploy by launching new instances."
-    source_title: "Packer Documentation"
-    source_url: "https://developer.hashicorp.com/packer/docs"
-    confidence: "medium"
-
-completeness: 0.88
-
+  - id: fact-computer-science-packer-001
+    statement: HashiCorp Packer creates identical machine images for multiple platforms from a single source configuration.
+    source_title: Packer documentation | Packer | HashiCorp Developer
+    source_url: https://developer.hashicorp.com/packer/docs
+    confidence: medium
+  - id: fact-computer-science-packer-002
+    statement: >-
+      Packer templates are configuration files that define which plugins to use, how to configure them, and the order in
+      which to run them.
+    source_title: Packer templates reference overview | Packer | HashiCorp Developer
+    source_url: https://developer.hashicorp.com/packer/docs/templates
+    confidence: medium
+  - id: fact-computer-science-packer-003
+    statement: >-
+      The Packer build block specifies which builders run, how to provision them, and any post-processing actions for
+      resulting artifacts.
+    source_title: build block reference | Packer | HashiCorp Developer
+    source_url: https://developer.hashicorp.com/packer/docs/templates/hcl_templates/blocks/build
+    confidence: medium
+completeness: 0.86
 known_gaps:
-  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
-
-disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-
+  - This public sample was manually narrowed to source-backed facts on 2026-05-28.
+disputed_statements: []
 primary_sources:
-  - title: "Packer Documentation"
-    type: "documentation"
+  - title: Packer documentation | Packer | HashiCorp Developer
+    type: documentation
     year: 2026
-    url: "https://developer.hashicorp.com/packer/docs"
-    institution: "HashiCorp"
-
-secondary_sources:
-  - title: "Ansible: Up and Running (3rd Edition)"
-    authors: ["Hochstein, Lorin", "Moser, Rene"]
-    type: "book"
-    year: 2022
-    url: "https://www.oreilly.com/library/view/ansible-up-and/9781098109141/"
-    institution: "O'Reilly"
-  - title: "The C Programming Language (K&R, 2nd Ed)"
-    type: "textbook"
-    year: 1988
-    url: "https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html"
-    institution: "Prentice Hall"
-  - title: "Structure and Interpretation of Computer Programs (SICP)"
-    type: "textbook"
-    year: 1996
-    url: "https://mitpress.mit.edu/sites/default/files/sicp/"
-    institution: "MIT Press"
-
+    url: https://developer.hashicorp.com/packer/docs
+    institution: HashiCorp
+  - title: Packer templates reference overview | Packer | HashiCorp Developer
+    type: documentation
+    year: 2026
+    url: https://developer.hashicorp.com/packer/docs/templates
+    institution: HashiCorp
+  - title: build block reference | Packer | HashiCorp Developer
+    type: documentation
+    year: 2026
+    url: https://developer.hashicorp.com/packer/docs/templates/hcl_templates/blocks/build
+    institution: HashiCorp
+secondary_sources: []
+updated: "2026-05-28"
 ---
-
-
-
-
 
 ## TL;DR
 
-Packer (HashiCorp, 2013) creates identical machine images for multiple platforms from a single configuration. Define once, build for AWS AMI, Azure VM, GCP image, Docker, VirtualBox. Immutable infrastructure: bake software into image, deploy by launching new instances.
+Packer builds machine images from source configuration. This repair removes duplicated claims and keeps the article to HashiCorp documentation about images, templates, and build blocks.
 
 ## Core Explanation
 
-HCL configuration: source block (platform), build block (configuration). Provisioners: shell, Ansible, Chef, Puppet, file. Post-processors: Vagrant, vSphere template, Docker push. `packer init`, `packer validate`, `packer build`. HCP Packer: track image metadata across cloud accounts.
+Packer templates describe the plugins and build workflow for creating images. In HCL templates, source and build blocks separate builder configuration from the build steps, provisioners, and post-processing actions.
 
 ## Further Reading
 
-- [Packer Documentation](https://developer.hashicorp.com/packer/docs)
+- [Packer documentation | Packer | HashiCorp Developer](https://developer.hashicorp.com/packer/docs)
+- [Packer templates reference overview | Packer | HashiCorp Developer](https://developer.hashicorp.com/packer/docs/templates)
+- [build block reference | Packer | HashiCorp Developer](https://developer.hashicorp.com/packer/docs/templates/hcl_templates/blocks/build)
