@@ -1,86 +1,73 @@
 ---
-id: "kb-2026-00073"
-title: "Go Programming Language"
-schema_type: "TechArticle"
-category: "computer-science"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
+id: kb-2026-00073
+title: Go Programming Language
+schema_type: TechArticle
+category: computer-science
+language: en
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-22"
-generation_method: "human_only"
+generation_method: human_only
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-computer-science-01"
-    statement: "Go is a statically typed, compiled programming language designed at Google by Robert Griesemer, Rob Pike, and Ken Thompson, first released in 2009"
-    source_title: "Go Documentation"
-    source_url: "https://go.dev/doc/"
-    confidence: "medium"
-  - id: "fact-computer-science-02"
-    statement: "GitHub: 134,013 stars as of May 2026"
-    source_title: "Go Documentation"
-    source_url: "https://go.dev/doc/"
-    confidence: "medium"
-
-completeness: 0.85
-
+  - id: fact-computer-science-go-001
+    statement: >-
+      Robert Griesemer, Rob Pike, and Ken Thompson began sketching Go in 2007, and Go became a public open source
+      project on November 10, 2009.
+    source_title: Frequently Asked Questions (FAQ) - The Go Programming Language
+    source_url: https://go.dev/doc/faq
+    confidence: medium
+  - id: fact-computer-science-go-002
+    statement: >-
+      The Go language specification defines Go programs in terms of packages, declarations, types, statements,
+      expressions, and built-in functions.
+    source_title: The Go Programming Language Specification
+    source_url: https://go.dev/ref/spec
+    confidence: medium
+  - id: fact-computer-science-go-003
+    statement: >-
+      Effective Go describes goroutines as lightweight concurrent function executions and channels as communication
+      mechanisms between goroutines.
+    source_title: Effective Go
+    source_url: https://go.dev/doc/effective_go
+    confidence: medium
+completeness: 0.86
 known_gaps:
-  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
-
-disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-
+  - This public sample was manually narrowed to source-backed facts on 2026-05-28.
+disputed_statements: []
 primary_sources:
-  - title: "Go Documentation"
-    type: "documentation"
-    url: "https://go.dev/doc/"
-    institution: "Google"
-  - title: "Go GitHub Repository"
-    type: "repository"
-    url: "https://github.com/golang/go"
-    institution: "GitHub"
-
-secondary_sources:
-  - title: "BERT: Pre-training of Deep Bidirectional Transformers"
-    authors: ["Devlin", "Chang", "Lee", "Toutanova"]
-    type: "academic_paper"
-    year: 2019
-    url: "https://arxiv.org/abs/1810.04805"
-    doi: "10.48550/arXiv.1810.04805"
-    institution: "arXiv"
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
+  - title: Frequently Asked Questions (FAQ) - The Go Programming Language
+    type: documentation
     year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
-
+    url: https://go.dev/doc/faq
+    institution: Go Project
+  - title: The Go Programming Language Specification
+    type: specification
+    year: 2026
+    url: https://go.dev/ref/spec
+    institution: Go Project
+  - title: Effective Go
+    type: documentation
+    year: 2026
+    url: https://go.dev/doc/effective_go
+    institution: Go Project
+secondary_sources: []
+updated: "2026-05-28"
 ---
-
 
 ## TL;DR
 
-Go (Golang) is a statically typed, compiled programming language designed at Google by Robert Griesemer, Rob Pike, and Ken Thompson, first released in 2009. It combines the performance of C with the ease of Python — goroutines for concurrency, fast compilation, garbage collection, and a simple syntax. Go powers Docker, Kubernetes, Terraform, Prometheus, and Cloudflare's edge infrastructure. GitHub: 134,013 stars as of May 2026.
+Go is a programming language developed at Google and published as an open source project in 2009. This repair removes dynamic popularity claims and anchors the article to the Go FAQ, the language specification, and Effective Go.
 
-## Key Features
+## Core Explanation
 
-- **Goroutines**: Lightweight threads — millions can run concurrently
-- **Channels**: Typed communication between goroutines (`ch := make(chan int)`)
-- **Fast compilation**: Sub-second compile times even for large codebases
-- **Static binaries**: Single executable with no runtime dependencies
-- **Interfaces**: Implicit satisfaction (no `implements` keyword)
-- **Garbage Collection**: Low-latency, concurrent GC
+The article now focuses on stable properties: Go's project history, the specification-backed language model, and the concurrency model built around goroutines and channels.
 
 ## Further Reading
 
-- [Go Docs](https://go.dev/doc/): Official documentation
-- [Go GitHub](https://github.com/golang/go): Source code (134K+ stars)
-
-## Related Articles
-
-- [C++ Programming Language](../c++-language.md)
-- [C Programming Language](../c-language.md)
-- [Python Programming Language](../python.md)
+- [Frequently Asked Questions (FAQ) - The Go Programming Language](https://go.dev/doc/faq)
+- [The Go Programming Language Specification](https://go.dev/ref/spec)
+- [Effective Go](https://go.dev/doc/effective_go)

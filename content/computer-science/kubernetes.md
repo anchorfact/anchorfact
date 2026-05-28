@@ -4,9 +4,9 @@ title: Kubernetes (K8s)
 schema_type: TechArticle
 category: computer-science
 language: en
-confidence: high
-last_verified: '2026-05-25'
-created_date: '2026-05-22'
+confidence: medium
+last_verified: "2026-05-28"
+created_date: "2026-05-22"
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -15,31 +15,40 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-computer-science-01
-    statement: Kubernetes is an open-source container orchestration platform originally designed by Google, based on their internal Borg system
+  - id: fact-computer-science-kubernetes-001
+    statement: >-
+      Kubernetes is an open source system for running distributed systems resiliently, including scaling, failover,
+      deployment patterns, and related operations.
+    source_title: Overview | Kubernetes
+    source_url: https://kubernetes.io/docs/concepts/overview/
+    confidence: medium
+  - id: fact-computer-science-kubernetes-002
+    statement: The Kubernetes documentation describes a cluster as consisting of a control plane and one or more worker nodes.
+    source_title: Kubernetes Components | Kubernetes
+    source_url: https://kubernetes.io/docs/concepts/overview/components/
+    confidence: medium
+  - id: fact-computer-science-kubernetes-003
+    statement: >-
+      The ACM Queue article Borg, Omega, and Kubernetes describes Kubernetes as the third container-management system
+      developed at Google and notes that it is open source.
     source_title: Borg, Omega, and Kubernetes
     source_url: https://queue.acm.org/detail.cfm?id=2898444
-    source_doi: 10.1145/2898442.2898444
-    confidence: high
-  - id: fact-computer-science-02
-    statement: Donated to the CNCF in 2015, it automates deployment, scaling, and management of containerized applications across clusters of machines
-    source_title: Kubernetes Documentation
-    source_url: https://kubernetes.io/docs/
     confidence: medium
-completeness: 0.85
+completeness: 0.86
 known_gaps:
-  - This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
+  - This public sample was manually narrowed to source-backed facts on 2026-05-28.
+disputed_statements: []
 primary_sources:
-  - title: Kubernetes Documentation
+  - title: Overview | Kubernetes
     type: documentation
     year: 2026
-    url: https://kubernetes.io/docs/
-    institution: CNCF
+    url: https://kubernetes.io/docs/concepts/overview/
+    institution: Kubernetes
+  - title: Kubernetes Components | Kubernetes
+    type: documentation
+    year: 2026
+    url: https://kubernetes.io/docs/concepts/overview/components/
+    institution: Kubernetes
   - title: Borg, Omega, and Kubernetes
     authors:
       - Burns, Brendan
@@ -47,49 +56,25 @@ primary_sources:
       - Oppenheimer, David
       - Brewer, Eric
       - Wilkes, John
-    type: academic_paper
+    type: article
     year: 2016
     url: https://queue.acm.org/detail.cfm?id=2898444
     doi: 10.1145/2898442.2898444
-    institution: ACM
-  - title: Kubernetes Documentation (v1.32)
-    type: official_doc
-    year: 2025
-    url: https://kubernetes.io/docs/home/
-    institution: CNCF / Kubernetes
-secondary_sources:
-  - title: MDN Web Docs — HTTP
-    type: documentation
-    year: 2026
-    url: https://developer.mozilla.org/en-US/docs/Web/HTTP
-    institution: Mozilla
+    institution: ACM Queue
+secondary_sources: []
+updated: "2026-05-28"
 ---
-
-
 
 ## TL;DR
 
-Kubernetes (K8s) is an open-source container orchestration platform originally designed by Google, based on their internal Borg system. Donated to the CNCF in 2015, it automates deployment, scaling, and management of containerized applications across clusters of machines. As of 2026, Kubernetes is the de facto standard for cloud-native infrastructure, used by over 60% of organizations running containers in production according to the CNCF Annual Survey.
+Kubernetes is an open source platform for operating containerized and distributed systems. This repair removes broad adoption claims and keeps the article grounded in Kubernetes documentation and the ACM Queue history of Borg, Omega, and Kubernetes.
 
-## Core Concepts
+## Core Explanation
 
-- **Pod**: Smallest deployable unit — one or more containers sharing network/storage
-- **Service**: Stable network endpoint for a set of pods
-- **Deployment**: Declarative pod management with rolling updates and rollbacks
-- **ConfigMap/Secret**: Configuration and sensitive data management
-- **Ingress**: HTTP routing to services
-
-## Architectural Components
-
-**Control Plane**: API server, etcd (state store), scheduler, controller manager
-**Worker Nodes**: kubelet (node agent), kube-proxy (networking), container runtime
+The core model is a cluster with a control plane and worker nodes. Kubernetes manages desired state through API objects and controllers, while its design history draws from Google's earlier Borg and Omega systems.
 
 ## Further Reading
 
-- [Kubernetes Docs](https://kubernetes.io/docs/): Official documentation
-- [Borg Paper](https://queue.acm.org/detail.cfm?id=2898444): The system that inspired K8s
-
-## Related Articles
-
-- [Container Orchestration: Kubernetes Architecture, Scheduling, and Service Mesh](../container-orchestration-kubernetes-architecture-scheduling-and-service-mesh.md)
-- [Kubernetes Pod & Service](../kubernetes-pod-service.md)
+- [Overview | Kubernetes](https://kubernetes.io/docs/concepts/overview/)
+- [Kubernetes Components | Kubernetes](https://kubernetes.io/docs/concepts/overview/components/)
+- [Borg, Omega, and Kubernetes](https://queue.acm.org/detail.cfm?id=2898444)

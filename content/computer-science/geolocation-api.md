@@ -1,76 +1,71 @@
 ---
-id: "kb-2026-00103"
-title: "Geolocation API"
-schema_type: "TechArticle"
-category: "computer-science"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
+id: kb-2026-00103
+title: Geolocation API
+schema_type: TechArticle
+category: computer-science
+language: en
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-22"
-generation_method: "human_only"
+generation_method: human_only
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-computer-science-001"
-    statement: "The Geolocation API (`navigator.geolocation`) provides device location (latitude, longitude, altitude, accuracy) to web applications with user consent. It uses GPS, WiFi, cell tower triangulation, or IP-based location depending on available hardware."
-    source_title: "Geolocation API (W3C Recommendation)"
-    source_url: "https://www.w3.org/TR/geolocation/"
-    confidence: "medium"
-  - id: "fact-computer-science-002"
-    statement: "Accuracy varies: GPS ~5m, WiFi ~50m, IP ~city-level."
-    source_title: "Geolocation API (W3C Recommendation)"
-    source_url: "https://www.w3.org/TR/geolocation/"
-    confidence: "medium"
-
-completeness: 0.88
-
+  - id: fact-computer-science-geolocation-001
+    statement: >-
+      The W3C Geolocation specification provides access to geographic location information associated with the hosting
+      device.
+    source_title: Geolocation
+    source_url: https://www.w3.org/TR/geolocation/
+    confidence: medium
+  - id: fact-computer-science-geolocation-002
+    statement: >-
+      Web content accesses the Geolocation API through the read-only navigator.geolocation property, and browsers
+      require a secure context and user permission for location access.
+    source_title: "Navigator: geolocation property - Web APIs | MDN"
+    source_url: https://developer.mozilla.org/en-US/docs/Web/API/Navigator/geolocation
+    confidence: medium
+  - id: fact-computer-science-geolocation-003
+    statement: The API supports one-shot position requests with getCurrentPosition() and repeated updates with watchPosition().
+    source_title: Geolocation
+    source_url: https://www.w3.org/TR/geolocation/
+    confidence: medium
+completeness: 0.86
 known_gaps:
-  - "Content verified during quality audit; citations cross-referenced with authoritative sources"
-
-disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-
+  - This public sample was manually narrowed to source-backed facts on 2026-05-28.
+disputed_statements: []
 primary_sources:
-  - title: "Geolocation API (W3C Recommendation)"
-    type: "standard"
-    year: 2022
-    url: "https://www.w3.org/TR/geolocation/"
-    institution: "W3C"
-
-secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
+  - title: Geolocation
+    type: standard
     year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
-  - title: "Pro Git (2nd Ed)"
-    authors: ["Chacon", "Straub"]
-    type: "book"
-    year: 2014
-    url: "https://git-scm.com/book/en/v2"
-    institution: "Apress"
-
+    url: https://www.w3.org/TR/geolocation/
+    institution: W3C
+  - title: Geolocation API - Web APIs | MDN
+    type: documentation
+    year: 2026
+    url: https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API
+    institution: Mozilla
+  - title: "Navigator: geolocation property - Web APIs | MDN"
+    type: documentation
+    year: 2026
+    url: https://developer.mozilla.org/en-US/docs/Web/API/Navigator/geolocation
+    institution: Mozilla
+secondary_sources: []
+updated: "2026-05-28"
 ---
-
-
 
 ## TL;DR
 
-The Geolocation API (`navigator.geolocation`) provides device location (latitude, longitude, altitude, accuracy) to web applications with user consent. It uses GPS, WiFi, cell tower triangulation, or IP-based location depending on available hardware.
+The Geolocation API lets web applications request location information for the hosting device. This article keeps to the W3C specification and MDN documentation: access starts at `navigator.geolocation`, requires user permission in secure contexts, and supports current-position and watched-position requests.
 
 ## Core Explanation
 
-`navigator.geolocation.getCurrentPosition(success, error, options)`. `watchPosition()` for continuous tracking. Options include `enableHighAccuracy`, `timeout`, `maximumAge`. The API is asynchronous and can take seconds to resolve. HTTPS is required. Accuracy varies: GPS ~5m, WiFi ~50m, IP ~city-level.
+Geolocation is deliberately permission-gated because location data can identify where a person or device is. The API exposes coordinates and related accuracy fields through position objects, while leaving the underlying location source to the browser and device.
 
 ## Further Reading
 
-- [Geolocation API (W3C Recommendation)](https://www.w3.org/TR/geolocation/)
-
-## Related Articles
-
-- [API Gateway](../api-gateway.md)
-- [Broadcast Channel API](../broadcast-channel-api.md)
-- [Canvas API](../canvas-api.md)
+- [Geolocation](https://www.w3.org/TR/geolocation/)
+- [Geolocation API - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API)
+- [Navigator: geolocation property - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/Navigator/geolocation)

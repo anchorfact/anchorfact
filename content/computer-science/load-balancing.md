@@ -1,82 +1,73 @@
 ---
-id: "kb-2026-00156"
-title: "Load Balancing"
-schema_type: "TechArticle"
-category: "computer-science"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
+id: kb-2026-00156
+title: Load Balancing
+schema_type: TechArticle
+category: computer-science
+language: en
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-22"
-generation_method: "human_only"
+generation_method: human_only
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-computer-science-01"
-    statement: "NGINX and HAProxy are the most popular software load balancers"
-    source_title: "NGINX Documentation"
-    source_url: "https://nginx.org/en/docs/"
-    confidence: "medium"
-  - id: "fact-computer-science-02"
-    statement: "Cloud-native: AWS ALB/NLB, GCP Cloud Load Balancing"
-    source_title: "NGINX Documentation"
-    source_url: "https://nginx.org/en/docs/"
-    confidence: "medium"
-
-completeness: 0.88
-
+  - id: fact-computer-science-load-balancing-001
+    statement: >-
+      A load balancer distributes workloads or incoming traffic across multiple compute resources to improve application
+      availability and fault tolerance.
+    source_title: What is Elastic Load Balancing? - Elastic Load Balancing
+    source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/what-is-load-balancing.html
+    confidence: medium
+  - id: fact-computer-science-load-balancing-002
+    statement: >-
+      AWS Elastic Load Balancing uses health checks to monitor registered targets and route traffic only to healthy
+      targets.
+    source_title: What is Elastic Load Balancing? - Elastic Load Balancing
+    source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/what-is-load-balancing.html
+    confidence: medium
+  - id: fact-computer-science-load-balancing-003
+    statement: >-
+      NGINX Open Source supports load-balancing methods including round robin, least connections, IP hash, and generic
+      hash.
+    source_title: HTTP Load Balancing | NGINX Documentation
+    source_url: https://docs.nginx.com/nginx/admin-guide/load-balancer/http-load-balancer/
+    confidence: medium
+completeness: 0.86
 known_gaps:
-  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
-
-disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-
+  - This public sample was manually narrowed to source-backed facts on 2026-05-28.
+disputed_statements: []
 primary_sources:
-  - title: "NGINX Documentation"
-    type: "documentation"
+  - title: What is Elastic Load Balancing? - Elastic Load Balancing
+    type: documentation
     year: 2026
-    url: "https://nginx.org/en/docs/"
-    institution: "NGINX Inc."
-
-secondary_sources:
-  - title: "Designing Data-Intensive Applications"
-    authors: ["Kleppmann, Martin"]
-    type: "book"
-    year: 2017
-    url: "https://www.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/"
-    institution: "O'Reilly"
-  - title: "The C Programming Language (K&R, 2nd Ed)"
-    type: "textbook"
-    year: 1988
-    url: "https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html"
-    institution: "Prentice Hall"
-  - title: "Structure and Interpretation of Computer Programs (SICP)"
-    type: "textbook"
-    year: 1996
-    url: "https://mitpress.mit.edu/sites/default/files/sicp/"
-    institution: "MIT Press"
-
+    url: https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/what-is-load-balancing.html
+    institution: Amazon Web Services
+  - title: HTTP Load Balancing | NGINX Documentation
+    type: documentation
+    year: 2026
+    url: https://docs.nginx.com/nginx/admin-guide/load-balancer/http-load-balancer/
+    institution: NGINX
+  - title: What is load balancing? | How load balancers work
+    type: documentation
+    year: 2026
+    url: https://www.cloudflare.com/learning/performance/what-is-load-balancing/
+    institution: Cloudflare
+secondary_sources: []
+updated: "2026-05-28"
 ---
-
-
 
 ## TL;DR
 
-A load balancer distributes incoming traffic across multiple backend servers, improving scalability, reliability (failover), and performance. Types: Layer 4 (TCP, fast, no content inspection), Layer 7 (HTTP, content-based routing, SSL termination).
+Load balancing distributes traffic or workload across multiple backends to improve availability, performance, and fault tolerance. This repair removes popularity and vendor-ranking claims and cites vendor documentation directly.
 
 ## Core Explanation
 
-Algorithms: round-robin, least connections, IP hash (session persistence), weighted (unequal server capacity). Health checks probe backend availability. NGINX and HAProxy are the most popular software load balancers. Cloud-native: AWS ALB/NLB, GCP Cloud Load Balancing. Global server load balancing (GSLB) routes traffic across regions via DNS.
+Load balancers commonly combine backend pools, routing methods, and health checks. The operational goal is not just spreading traffic, but avoiding unhealthy or overloaded targets while preserving a stable entry point for clients.
 
 ## Further Reading
 
-- [NGINX Documentation](https://nginx.org/en/docs/)
-
-## Related Articles
-
-- [Load Balancing: Algorithms, Consistent Hashing, and Modern Approaches](../load-balancing-algorithms-consistent-hashing-and-modern-approaches.md)
-- [AI for Smart Grids: Load Forecasting, Demand Response, and Grid Stability](../../ai/ai-smart-grids.md)
-- [Cognitive Load Theory: Optimizing Learning and Decision Making](../../self-improvement/cognitive-load-theory-optimizing-learning-and-decision-making.md)
+- [What is Elastic Load Balancing? - Elastic Load Balancing](https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/what-is-load-balancing.html)
+- [HTTP Load Balancing | NGINX Documentation](https://docs.nginx.com/nginx/admin-guide/load-balancer/http-load-balancer/)
+- [What is load balancing? | How load balancers work](https://www.cloudflare.com/learning/performance/what-is-load-balancing/)

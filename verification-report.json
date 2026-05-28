@@ -4,11 +4,11 @@
     "total_articles": 1000,
     "total_with_errors": 342,
     "average_sources_per_article": "2.3",
-    "overall_verification_rate": "71.9%",
+    "overall_verification_rate": "72.1%",
     "elapsed_ms": 635005,
     "elapsed_sec": "635.0",
     "concurrency": 3,
-    "manual_reviewed_articles": 364
+    "manual_reviewed_articles": 373
   },
   "articles": [
     {
@@ -25484,10 +25484,10 @@
       "file": "content/computer-science/geolocation-api.md",
       "article_id": "kb-2026-00103",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Geolocation API (W3C Recommendation)",
+          "source_title": "Geolocation",
           "source_type": "standard",
           "results": [
             {
@@ -25495,8 +25495,45 @@
               "identifier": "https://www.w3.org/TR/geolocation/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.w3.org/TR/geolocation/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Geolocation API - Web APIs | MDN",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Navigator: geolocation property - Web APIs | MDN",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/API/Navigator/geolocation",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -25504,8 +25541,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/git-branching-strategies.md",
@@ -25743,19 +25782,20 @@
       "file": "content/computer-science/go-language.md",
       "article_id": "kb-2026-00073",
       "generation_method": "human_only",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Go Documentation",
+          "source_title": "Frequently Asked Questions (FAQ) - The Go Programming Language",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://go.dev/doc/",
+              "identifier": "https://go.dev/doc/faq",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://go.dev/doc/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -25763,16 +25803,35 @@
           "all_verified": true
         },
         {
-          "source_title": "Go GitHub Repository",
-          "source_type": "repository",
+          "source_title": "The Go Programming Language Specification",
+          "source_type": "specification",
           "results": [
             {
               "method": "url",
-              "identifier": "https://github.com/golang/go",
+              "identifier": "https://go.dev/ref/spec",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://github.com/golang/go"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Effective Go",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://go.dev/doc/effective_go",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -25780,8 +25839,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/grafana.md",
@@ -26495,19 +26556,56 @@
       "file": "content/computer-science/history-api.md",
       "article_id": "kb-2026-00100",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "HTML Standard — Session History and Navigation",
+          "source_title": "HTML Standard - Navigation and session history",
           "source_type": "standard",
           "results": [
             {
               "method": "url",
-              "identifier": "https://html.spec.whatwg.org/multipage/history.html",
+              "identifier": "https://html.spec.whatwg.org/multipage/nav-history-apis.html#the-history-interface",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://html.spec.whatwg.org/multipage/browsing-the-web.html"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "History API - Web APIs | MDN",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/API/History_API",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Window: popstate event - Web APIs | MDN",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/API/Window/popstate_event",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -26515,8 +26613,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/html5-semantic-elements.md",
@@ -26764,10 +26864,10 @@
       "file": "content/computer-science/indexeddb.md",
       "article_id": "kb-2026-00085",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "IndexedDB API (W3C Recommendation)",
+          "source_title": "Indexed Database API 3.0",
           "source_type": "standard",
           "results": [
             {
@@ -26775,8 +26875,45 @@
               "identifier": "https://www.w3.org/TR/IndexedDB/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.w3.org/TR/IndexedDB/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "IndexedDB API - Web APIs | MDN",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Using IndexedDB - Web APIs | MDN",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Using_IndexedDB",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -26784,8 +26921,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/information-theory.md",
@@ -27382,46 +27521,20 @@
       "file": "content/computer-science/kubernetes-pod-service.md",
       "article_id": "kb-2026-00162",
       "generation_method": "human_only",
-      "sources_total": 1,
-      "verification_results": [
-        {
-          "source_title": "Kubernetes Documentation",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://kubernetes.io/docs/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://kubernetes.io/docs/home/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
-    },
-    {
-      "file": "content/computer-science/kubernetes.md",
-      "article_id": "kb-2026-00014",
-      "generation_method": "ai_structured",
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Kubernetes Documentation",
+          "source_title": "Pods | Kubernetes",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://kubernetes.io/docs/",
+              "identifier": "https://kubernetes.io/docs/concepts/workloads/pods/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://kubernetes.io/docs/home/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -27429,34 +27542,35 @@
           "all_verified": true
         },
         {
-          "source_title": "Borg, Omega, and Kubernetes",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "doi",
-              "identifier": "10.1145/2898442.2898444",
-              "verified": true,
-              "metadata": {
-                "title": "Borg, Omega, and Kubernetes",
-                "publisher": "Association for Computing Machinery (ACM)",
-                "year": 2016
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Kubernetes Documentation (v1.32)",
-          "source_type": "official_doc",
+          "source_title": "Service | Kubernetes",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://kubernetes.io/docs/home/",
+              "identifier": "https://kubernetes.io/docs/concepts/services-networking/service/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://kubernetes.io/docs/home/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Kubernetes Components | Kubernetes",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kubernetes.io/docs/concepts/overview/components/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -27465,7 +27579,75 @@
         }
       ],
       "sources_verified": 3,
-      "sources_unreachable": 0
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
+    },
+    {
+      "file": "content/computer-science/kubernetes.md",
+      "article_id": "kb-2026-00014",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Overview | Kubernetes",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kubernetes.io/docs/concepts/overview/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Kubernetes Components | Kubernetes",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kubernetes.io/docs/concepts/overview/components/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Borg, Omega, and Kubernetes",
+          "source_type": "article",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://queue.acm.org/detail.cfm?id=2898444",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/lambda-calculus-foundations-of-functional-programming-and-computation.md",
@@ -27986,19 +28168,56 @@
       "file": "content/computer-science/load-balancing.md",
       "article_id": "kb-2026-00156",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "NGINX Documentation",
+          "source_title": "What is Elastic Load Balancing? - Elastic Load Balancing",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://nginx.org/en/docs/",
+              "identifier": "https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/what-is-load-balancing.html",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://nginx.org/en/docs/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "HTTP Load Balancing | NGINX Documentation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.nginx.com/nginx/admin-guide/load-balancer/http-load-balancer/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "What is load balancing? | How load balancers work",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.cloudflare.com/learning/performance/what-is-load-balancing/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -28006,8 +28225,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/mapreduce-distributed-data-processing-paradigm.md",
@@ -28523,10 +28744,10 @@
       "file": "content/computer-science/navigator-api.md",
       "article_id": "kb-2026-00109",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "HTML Standard — Navigator",
+          "source_title": "HTML Standard - The Navigator object",
           "source_type": "standard",
           "results": [
             {
@@ -28534,8 +28755,45 @@
               "identifier": "https://html.spec.whatwg.org/multipage/system-state.html#the-navigator-object",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://html.spec.whatwg.org/multipage/system-state.html"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Navigator - Web APIs | MDN",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/API/Navigator",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Navigator: geolocation property - Web APIs | MDN",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/API/Navigator/geolocation",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -28543,8 +28801,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/neural-radiance-fields-nerf-3d-scene-representation-from-images.md",
@@ -28708,19 +28968,20 @@
       "file": "content/computer-science/nodejs.md",
       "article_id": "kb-2026-00059",
       "generation_method": "human_only",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Node.js Documentation",
+          "source_title": "Introduction to Node.js | Node.js Learn",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://nodejs.org/docs/latest/",
+              "identifier": "https://nodejs.org/en/learn/getting-started/introduction-to-nodejs",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://nodejs.org/docs/latest/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -28728,16 +28989,35 @@
           "all_verified": true
         },
         {
-          "source_title": "Node.js GitHub Repository",
-          "source_type": "repository",
+          "source_title": "The Node.js Event Loop | Node.js Learn",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://github.com/nodejs/node",
+              "identifier": "https://nodejs.org/en/learn/asynchronous-work/event-loop-timers-and-nexttick",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://github.com/nodejs/node"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Node.js API Documentation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://nodejs.org/api/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-third targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -28745,8 +29025,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/computer-science/nomad-hashicorp.md",

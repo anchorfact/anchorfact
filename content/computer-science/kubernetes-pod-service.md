@@ -1,83 +1,71 @@
 ---
-id: "kb-2026-00162"
-title: "Kubernetes Pod & Service"
-schema_type: "TechArticle"
-category: "computer-science"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
+id: kb-2026-00162
+title: Kubernetes Pod & Service
+schema_type: TechArticle
+category: computer-science
+language: en
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-22"
-generation_method: "human_only"
+generation_method: human_only
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-computer-science-01"
-    statement: "A Pod is the smallest deployable unit in Kubernetes — one or more containers sharing network namespace, IPC, and storage volumes"
-    source_title: "Kubernetes Documentation"
-    source_url: "https://kubernetes.io/docs/"
-    confidence: "medium"
-  - id: "fact-computer-science-001"
-    statement: "A Pod is the smallest deployable unit in Kubernetes — one or more containers sharing network namespace, IPC, and storage volumes. A Service provides stable networking — a virtual IP (ClusterIP) and DNS name that load-balances across Pod replicas, surviving Pod restarts."
-    source_title: "Kubernetes Documentation"
-    source_url: "https://kubernetes.io/docs/"
-    confidence: "medium"
-
-completeness: 0.88
-
+  - id: fact-computer-science-k8s-pod-service-001
+    statement: >-
+      Kubernetes documentation defines Pods as the smallest deployable units of computing that can be created and
+      managed in Kubernetes.
+    source_title: Pods | Kubernetes
+    source_url: https://kubernetes.io/docs/concepts/workloads/pods/
+    confidence: medium
+  - id: fact-computer-science-k8s-pod-service-002
+    statement: Pods can contain multiple cooperating containers that are co-located, co-scheduled, and share resources.
+    source_title: Pods | Kubernetes
+    source_url: https://kubernetes.io/docs/concepts/workloads/pods/
+    confidence: medium
+  - id: fact-computer-science-k8s-pod-service-003
+    statement: >-
+      Kubernetes Services expose network applications running as one or more Pods and include Service types such as
+      ClusterIP, NodePort, LoadBalancer, and ExternalName.
+    source_title: Service | Kubernetes
+    source_url: https://kubernetes.io/docs/concepts/services-networking/service/
+    confidence: medium
+completeness: 0.86
 known_gaps:
-  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
-
-disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-
+  - This public sample was manually narrowed to source-backed facts on 2026-05-28.
+disputed_statements: []
 primary_sources:
-  - title: "Kubernetes Documentation"
-    type: "documentation"
+  - title: Pods | Kubernetes
+    type: documentation
     year: 2026
-    url: "https://kubernetes.io/docs/"
-    institution: "CNCF"
-
-secondary_sources:
-  - title: "Kubernetes in Action (2nd Edition)"
-    authors: ["Luksa, Marko"]
-    type: "book"
-    year: 2023
-    url: "https://www.manning.com/books/kubernetes-in-action-second-edition"
-    institution: "Manning"
-  - title: "The C Programming Language (K&R, 2nd Ed)"
-    type: "textbook"
-    year: 1988
-    url: "https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html"
-    institution: "Prentice Hall"
-  - title: "Structure and Interpretation of Computer Programs (SICP)"
-    type: "textbook"
-    year: 1996
-    url: "https://mitpress.mit.edu/sites/default/files/sicp/"
-    institution: "MIT Press"
-
+    url: https://kubernetes.io/docs/concepts/workloads/pods/
+    institution: Kubernetes
+  - title: Service | Kubernetes
+    type: documentation
+    year: 2026
+    url: https://kubernetes.io/docs/concepts/services-networking/service/
+    institution: Kubernetes
+  - title: Kubernetes Components | Kubernetes
+    type: documentation
+    year: 2026
+    url: https://kubernetes.io/docs/concepts/overview/components/
+    institution: Kubernetes
+secondary_sources: []
+updated: "2026-05-28"
 ---
-
-
-
 
 ## TL;DR
 
-A Pod is the smallest deployable unit in Kubernetes — one or more containers sharing network namespace, IPC, and storage volumes. A Service provides stable networking — a virtual IP (ClusterIP) and DNS name that load-balances across Pod replicas, surviving Pod restarts.
+Kubernetes Pods and Services are core workload and networking concepts. This repair removes duplicate facts and keeps the article anchored to Kubernetes documentation.
 
 ## Core Explanation
 
-Pod lifecycle: Pending → Running → Succeeded/Failed. Init containers run before app containers. Sidecar pattern: helper container alongside main (logging, proxying). Service types: ClusterIP (internal only), NodePort (exposes on node IP), LoadBalancer (cloud provider LB). Ingress routes external HTTP traffic to Services.
+A Pod is the deployable compute unit in Kubernetes and can hold one or more cooperating containers. A Service gives network access to an application running in Pods and can be published with types such as ClusterIP, NodePort, LoadBalancer, or ExternalName.
 
 ## Further Reading
 
-- [Kubernetes Documentation](https://kubernetes.io/docs/)
-
-## Related Articles
-
-- [Container Orchestration: Kubernetes Architecture, Scheduling, and Service Mesh](../container-orchestration-kubernetes-architecture-scheduling-and-service-mesh.md)
-- [AI for Customer Service: Conversational Agents, Ticket Routing, and Intelligent Contact Centers](../../ai/ai-customer-service.md)
-- [gRPC: Protocol Buffers, HTTP/2 Streaming, and Service Contracts](../grpc-protocol-buffers-http-2-streaming-and-service-contracts.md)
+- [Pods | Kubernetes](https://kubernetes.io/docs/concepts/workloads/pods/)
+- [Service | Kubernetes](https://kubernetes.io/docs/concepts/services-networking/service/)
+- [Kubernetes Components | Kubernetes](https://kubernetes.io/docs/concepts/overview/components/)
