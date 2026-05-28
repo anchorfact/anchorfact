@@ -17178,12 +17178,14 @@
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.wiley.com/en-us/A+Global+History+of+Architecture%2C+3rd+Edition-p-9781118981337",
+              "identifier": "https://www.wiley-vch.de/en/areas-interest/engineering/a-global-history-of-architecture-978-1-118-98133-7",
               "verified": true,
               "metadata": {
+                "status": 200,
+                "final_url": "https://www.wiley-vch.de/en/areas-interest/engineering/a-global-history-of-architecture-978-1-118-98133-7",
                 "manual_review": true,
                 "reviewed_at": "2026-05-28",
-                "note": "Targeted evidence repair pass; shell verifier network was not used for this bounded manual-review update."
+                "note": "Forty-eighth targeted public evidence debt repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -41414,13 +41416,16 @@
           "source_type": "book",
           "results": [
             {
-              "method": "url",
-              "identifier": "https://global.oup.com/academic/product/the-oxford-history-of-ancient-egypt-9780192804587",
+              "method": "doi",
+              "identifier": "10.1093/oso/9780198150343.001.0001",
               "verified": true,
               "metadata": {
+                "title": "The Oxford History Of Ancient Egypt",
+                "publisher": "Oxford University Press",
+                "year": 2000,
                 "manual_review": true,
                 "reviewed_at": "2026-05-28",
-                "note": "Targeted evidence repair pass; shell verifier network was not used for this bounded manual-review update."
+                "note": "Forty-eighth targeted public evidence debt repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -42658,9 +42663,11 @@
               "identifier": "https://www.simonandschuster.com/books/Leonardo-da-Vinci/Walter-Isaacson/9781501139161",
               "verified": true,
               "metadata": {
+                "status": 200,
+                "final_url": "https://www.simonandschuster.com/books/Leonardo-da-Vinci/Walter-Isaacson/9781501139161",
                 "manual_review": true,
                 "reviewed_at": "2026-05-28",
-                "note": "Targeted evidence repair pass; shell verifier network was not used for this bounded manual-review update."
+                "note": "Forty-eighth targeted public evidence debt repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -43404,12 +43411,14 @@
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.penguinrandomhouse.com/books/261409/the-reformation-by-diarmaid-macculloch/",
+              "identifier": "https://www.penguinrandomhouse.com/books/292843/the-reformation-by-diarmaid-macculloch/9780143035381/",
               "verified": true,
               "metadata": {
+                "status": 200,
+                "final_url": "https://www.penguinrandomhouse.com/books/292843/the-reformation-by-diarmaid-macculloch/9780143035381/",
                 "manual_review": true,
                 "reviewed_at": "2026-05-28",
-                "note": "Targeted evidence repair pass; shell verifier network was not used for this bounded manual-review update."
+                "note": "Forty-eighth targeted public evidence debt repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -44007,9 +44016,11 @@
               "identifier": "https://press.princeton.edu/books/hardcover/9780691149851/the-age-of-the-vikings",
               "verified": true,
               "metadata": {
+                "status": 200,
+                "final_url": "https://press.princeton.edu/books/hardcover/9780691149851/the-age-of-the-vikings",
                 "manual_review": true,
                 "reviewed_at": "2026-05-28",
-                "note": "Second targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
+                "note": "Forty-eighth targeted public evidence debt repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }

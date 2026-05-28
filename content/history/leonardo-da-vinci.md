@@ -4,8 +4,8 @@ title: Leonardo da Vinci
 schema_type: TechArticle
 category: history
 language: en
-confidence: high
-last_verified: "2026-05-24"
+confidence: low
+last_verified: "2026-05-28"
 created_date: "2026-05-22"
 generation_method: ai_structured
 ai_models:
@@ -14,53 +14,45 @@ derived_from_human_seed: true
 conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
+completeness: 0.7
 atomic_facts:
   - id: fact-history-001
-    statement: >-
-      Leonardo da Vinci (1452-1519) was the quintessential Renaissance Man — painter (Mona Lisa, The Last Supper), anatomist (dissected 30+ corpses), engineer (flying machines, war engines), scientist
-      (optics, hydraulics), and inventor. His notebooks (7,200+ surviving pages) combine art and science — mirror writing, detailed observations, innovative desi
-    source_title: Leonardo da Vinci (Walter Isaacson)
-    source_url: https://www.simonandschuster.com/books/Leonardo-da-Vinci/Walter-Isaacson/9781501139161
-    confidence: medium
+    statement: "Walter Isaacson's biography presents Leonardo da Vinci as an artist whose notebooks connect art, science, observation, and invention."
+    source_title: "Leonardo da Vinci (Walter Isaacson)"
+    source_url: "https://www.simonandschuster.com/books/Leonardo-da-Vinci/Walter-Isaacson/9781501139161"
+    confidence: low
   - id: fact-history-002
-    statement: "Mona Lisa (1503-19) is one of Leonardo's best-known paintings and is associated with sfumato technique and an ambiguous smile."
-    source_title: Leonardo da Vinci (Walter Isaacson)
-    source_url: https://www.simonandschuster.com/books/Leonardo-da-Vinci/Walter-Isaacson/9781501139161
-    confidence: medium
+    statement: "The Simon & Schuster description identifies The Last Supper and the Mona Lisa as Leonardo's two most famous paintings."
+    source_title: "Leonardo da Vinci (Walter Isaacson)"
+    source_url: "https://www.simonandschuster.com/books/Leonardo-da-Vinci/Walter-Isaacson/9781501139161"
+    confidence: low
   - id: fact-history-003
-    statement: "Last Supper (1498): innovative composition, deteriorating due to experimental technique."
-    source_title: Leonardo da Vinci (Walter Isaacson)
-    source_url: https://www.simonandschuster.com/books/Leonardo-da-Vinci/Walter-Isaacson/9781501139161
-    confidence: medium
-  - id: fact-history-004
-    statement: "Vitruvian Man: ideal human proportions in circle/square."
-    source_title: Leonardo da Vinci (Walter Isaacson)
-    source_url: https://www.simonandschuster.com/books/Leonardo-da-Vinci/Walter-Isaacson/9781501139161
-    confidence: medium
-completeness: 0.88
+    statement: "The same publisher description highlights Leonardo's studies of anatomy, fossils, birds, the heart, flying machines, botany, geology, weaponry, optics, and perspective."
+    source_title: "Leonardo da Vinci (Walter Isaacson)"
+    source_url: "https://www.simonandschuster.com/books/Leonardo-da-Vinci/Walter-Isaacson/9781501139161"
+    confidence: low
 known_gaps:
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
+  - "This is a low-confidence primer backed by one biography publisher page."
+  - "Detailed chronology, attribution debates, conservation history, and manuscript scholarship require more specialized sources."
 disputed_statements: []
 primary_sources:
-  - title: Leonardo da Vinci (Walter Isaacson)
+  - title: "Leonardo da Vinci (Walter Isaacson)"
     type: book
     year: 2017
-    url: https://www.simonandschuster.com/books/Leonardo-da-Vinci/Walter-Isaacson/9781501139161
+    url: "https://www.simonandschuster.com/books/Leonardo-da-Vinci/Walter-Isaacson/9781501139161"
     institution: Simon & Schuster
-secondary_sources:
-  - title: The Penguin History of the World
-    type: book
-    year: 1976
-    url: https://www.penguin.co.uk/books/36016/the-penguin-history-of-the-world-by-roberts-j-m/9781846144431
-    institution: J.M. Roberts, Penguin
+secondary_sources: []
 ---
+
 ## TL;DR
 
-Leonardo da Vinci (1452-1519) was the quintessential Renaissance Man — painter (Mona Lisa, The Last Supper), anatomist (dissected 30+ corpses), engineer (flying machines, war engines), scientist (optics, hydraulics), and inventor. His notebooks (7,200+ surviving pages) combine art and science — mirror writing, detailed observations, innovative designs.
+Leonardo da Vinci is remembered as a Renaissance artist and investigator whose work linked painting, anatomy, engineering, optics, and natural observation. This short primer is low confidence because it is source-mapped to one biography publisher page.
 
 ## Core Explanation
 
-Mona Lisa (1503-19): sfumato technique, ambiguous smile — most famous painting in history. Last Supper (1498): innovative composition, deteriorating due to experimental technique. Vitruvian Man: ideal human proportions in circle/square. Anatomical drawings: more accurate than any before, from personal dissection. Helicopter/tank designs: centuries ahead. Notebooks: mirror-script (left-handed), observation + imagination. 'Simplicity is the ultimate sophistication.'
+The strongest source-mapped summary is modest: Isaacson's biography presents Leonardo as a figure whose art and scientific curiosity were intertwined. The publisher page specifically names the Mona Lisa and The Last Supper and describes the notebooks as a basis for connecting Leonardo's art to his scientific investigations.
+
+This entry avoids unsupported flourishes such as exact surviving-page counts, truncated notebook claims, and broad "centuries ahead" judgments unless they are backed by more precise sources.
 
 ## Further Reading
 

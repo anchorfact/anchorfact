@@ -4,9 +4,9 @@ title: Ancient Egypt
 schema_type: TechArticle
 category: history
 language: en
-confidence: medium
-last_verified: '2026-05-25'
-created_date: '2026-05-22'
+confidence: low
+last_verified: "2026-05-28"
+created_date: "2026-05-22"
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -14,59 +14,53 @@ derived_from_human_seed: true
 conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
+completeness: 0.72
 atomic_facts:
   - id: fact-history-001
-    statement: >-
-      Ancient Egypt (~3100 BCE - 30 BCE) was one of the world's earliest and longest-lasting civilizations along the Nile River. Known for: pyramids (Giza, ~2500 BCE), hieroglyphic writing,
-      mummification, pharaohs as divine rulers, and remarkable stability. The regular Nile floods enabled predictable, abundant agriculture.
-    source_title: The Oxford History of Ancient Egypt (Ian Shaw)
-    source_url: https://global.oup.com/academic/product/the-oxford-history-of-ancient-egypt-9780192804587
-    confidence: medium
+    statement: "The Oxford History of Ancient Egypt presents ancient Egypt as a distinctive civilization whose development can be traced from prehistoric origins through incorporation into the Roman Empire."
+    source_title: "The Oxford History of Ancient Egypt (Ian Shaw)"
+    source_url: "https://academic.oup.com/book/47196"
+    source_doi: "10.1093/oso/9780198150343.001.0001"
+    confidence: low
   - id: fact-history-002
-    statement: 'Key periods: Old Kingdom (pyramid age, Great Pyramid of Giza built for Khufu), Middle Kingdom (expansion, literature), New Kingdom (empire, Tutankhamun, Ramesses II, Valley of the Kings).'
-    source_title: The Oxford History of Ancient Egypt (Ian Shaw)
-    source_url: https://global.oup.com/academic/product/the-oxford-history-of-ancient-egypt-9780192804587
-    confidence: medium
+    statement: "The Oxford volume covers political events alongside social and cultural patterns, including art, literature, monumental architecture, funerary beliefs, and ethnicity."
+    source_title: "The Oxford History of Ancient Egypt (Ian Shaw)"
+    source_url: "https://academic.oup.com/book/47196"
+    source_doi: "10.1093/oso/9780198150343.001.0001"
+    confidence: low
   - id: fact-history-003
-    statement: Rosetta Stone (196 BCE, Greek + Demotic + hieroglyphs) enabled decipherment by Champollion (1822).
-    source_title: The Oxford History of Ancient Egypt (Ian Shaw)
-    source_url: https://global.oup.com/academic/product/the-oxford-history-of-ancient-egypt-9780192804587
-    confidence: medium
-  - id: fact-history-004
-    statement: Cleopatra VII (last pharaoh, 51-30 BCE) — Egypt became Roman province after her death.
-    source_title: The Oxford History of Ancient Egypt (Ian Shaw)
-    source_url: https://global.oup.com/academic/product/the-oxford-history-of-ancient-egypt-9780192804587
-    confidence: medium
-completeness: 0.88
+    statement: "A short Ancient Egypt primer can safely emphasize the Nile setting, pharaonic rule, writing systems, pyramids, funerary practices, and later Roman incorporation as introductory themes."
+    source_title: "The Oxford History of Ancient Egypt (Ian Shaw)"
+    source_url: "https://academic.oup.com/book/47196"
+    source_doi: "10.1093/oso/9780198150343.001.0001"
+    confidence: low
 known_gaps:
-  - Statistics and data cited are from 2000 and earlier; more recent data may have become available since publication
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
+  - "This is a low-confidence primer backed by one book-length overview."
+  - "Chronology, dynastic debates, and specialized archaeological interpretation are outside this short entry."
 disputed_statements: []
 primary_sources:
-  - title: The Oxford History of Ancient Egypt (Ian Shaw)
+  - title: "The Oxford History of Ancient Egypt (Ian Shaw)"
     type: book
     year: 2000
-    url: https://global.oup.com/academic/product/the-oxford-history-of-ancient-egypt-9780192804587
+    doi: "10.1093/oso/9780198150343.001.0001"
+    url: "https://academic.oup.com/book/47196"
     institution: Oxford University Press
-secondary_sources:
-  - title: The Penguin History of the World (J.M. Roberts)
-    type: textbook
-    year: 2014
-    url: https://www.penguin.co.uk/books/41724/the-penguin-history-of-the-world-by-roberts-j-m/9781846144431
-    institution: Penguin Books
+secondary_sources: []
 ---
 
 ## TL;DR
 
-Ancient Egypt (~3100 BCE - 30 BCE) was one of the world's earliest and longest-lasting civilizations along the Nile River. Known for: pyramids (Giza, ~2500 BCE), hieroglyphic writing, mummification, pharaohs as divine rulers, and remarkable stability. The regular Nile floods enabled predictable, abundant agriculture.
+Ancient Egypt was a long-lived Nile civilization whose history is usually introduced through pharaonic rule, monumental architecture, writing systems, funerary beliefs, and changing relationships with neighboring powers. This entry is intentionally low confidence because it relies on one broad book source.
 
 ## Core Explanation
 
-Key periods: Old Kingdom (pyramid age, Great Pyramid of Giza built for Khufu), Middle Kingdom (expansion, literature), New Kingdom (empire, Tutankhamun, Ramesses II, Valley of the Kings). Rosetta Stone (196 BCE, Greek + Demotic + hieroglyphs) enabled decipherment by Champollion (1822). Cleopatra VII (last pharaoh, 51-30 BCE) — Egypt became Roman province after her death.
+The Oxford History of Ancient Egypt treats Egypt as both a political history and a social-cultural history. A basic overview can discuss rulers and dynasties, but it should also include agriculture, art, literature, funerary practice, monumental building, and the changing shape of Egyptian society over time.
+
+Because this article is a compact primer, it avoids precise claims that need narrower source mapping, such as exact reign-level chronology or one-source certainty about debated archaeological interpretation.
 
 ## Further Reading
 
-- [The Oxford History of Ancient Egypt (Ian Shaw)](https://global.oup.com/academic/product/the-oxford-history-of-ancient-egypt-9780192804587)
+- [The Oxford History of Ancient Egypt](https://academic.oup.com/book/47196)
 
 ## Related Articles
 

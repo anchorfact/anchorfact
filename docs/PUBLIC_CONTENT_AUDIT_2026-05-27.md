@@ -1,8 +1,8 @@
 # AnchorFact Public Content Audit - 2026-05-28
 
-Generated: 2026-05-28T13:52:49.742Z
+Generated: 2026-05-28T14:00:49.365Z
 
-Snapshot: 555 public / 445 draft / 1687 claims.
+Snapshot: 555 public / 445 draft / 1683 claims.
 
 ## Summary
 
@@ -13,7 +13,7 @@ This is a risk-weighted audit sample of public AnchorFact articles. It is intend
 - Articles with at least one fail check: 0
 - High-confidence samples needing review: 0
 - Claim-evidence failures: 0
-- Recommendations: keep_public: 19, downgrade_confidence: 0, repair_sources: 1, move_to_draft: 0
+- Recommendations: keep_public: 20, downgrade_confidence: 0, repair_sources: 0, move_to_draft: 0
 
 ## Method
 
@@ -32,7 +32,7 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 | 7 | low_confidence_public | `arts/film-genres` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 | 8 | low_confidence_public | `history/age-of-exploration` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 | 9 | low_confidence_public | `history/byzantine-empire` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
-| 10 | low_confidence_public | `history/ancient-egypt` | low | 1/1 (100.0%) | 4 | source=pass; claim=weak; summary=pass | repair_sources |
+| 10 | low_confidence_public | `health/strength-training` | low | 1/1 (100.0%) | 4 | source=pass; claim=pass; summary=pass | keep_public |
 | 11 | risk_fallback | `science/climate-change` | medium | 4/5 (80.0%) | 3 | source=weak; claim=pass; summary=pass | keep_public |
 | 12 | risk_fallback | `science/plate-tectonics` | medium | 2/2 (100.0%) | 6 | source=pass; claim=pass; summary=pass | keep_public |
 | 13 | risk_fallback | `ai/gradient-descent` | medium | 2/2 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
@@ -181,20 +181,20 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 10. Ancient Egypt
+### 10. Strength Training
 
-- canonical slug: `history/ancient-egypt`
-- canonical URL: https://anchorfact.org/history/ancient-egypt/
+- canonical slug: `health/strength-training`
+- canonical URL: https://anchorfact.org/health/strength-training/
 - bucket: `low_confidence_public`
 - confidence: `low` (verified_sources, score 0.555)
 - verified source coverage: 1/1 (100.0%)
-- claims: 4 total, 4 capped, 0 missing evidence
+- claims: 4 total, 0 capped, 0 missing evidence
 - quality reasons: none
 - source-title match: `pass`
-- claim-evidence match: `weak`
+- claim-evidence match: `pass`
 - title-summary accuracy: `pass`
 - hygiene flags: none
-- recommendation: `repair_sources`
+- recommendation: `keep_public`
 
 ### 11. Climate Change
 
