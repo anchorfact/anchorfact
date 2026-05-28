@@ -1,8 +1,8 @@
 # AnchorFact Public Content Audit - 2026-05-28
 
-Generated: 2026-05-28T09:20:47.331Z
+Generated: 2026-05-28T09:36:08.543Z
 
-Snapshot: 555 public / 445 draft / 1585 claims.
+Snapshot: 555 public / 445 draft / 1595 claims.
 
 ## Summary
 
@@ -29,20 +29,20 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 | 4 | high_confidence | `ai/ai-in-healthcare` | high | 3/3 (100.0%) | 3 | source=pass; claim=pass; summary=pass | keep_public |
 | 5 | high_confidence | `ai/ai-red-teaming-and-safety` | high | 3/3 (100.0%) | 3 | source=pass; claim=pass; summary=pass | keep_public |
 | 6 | medium_capped_claims | `business/strategic-management-theory` | medium | 3/3 (100.0%) | 3 | source=pass; claim=pass; summary=pass | keep_public |
-| 7 | medium_capped_claims | `ai/ai-for-medical-imaging` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 8 | medium_capped_claims | `ai/ai-for-network-security` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 9 | medium_capped_claims | `ai/ai-for-oil-gas-exploration` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 7 | medium_capped_claims | `ai/ai-for-recruiting` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 8 | medium_capped_claims | `ai/ai-for-retail` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 9 | medium_capped_claims | `ai/ai-for-signal-processing` | medium | 3/4 (75.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
 | 10 | low_confidence_public | `arts/film-genres` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 | 11 | low_confidence_public | `arts/world-literature` | low | 2/2 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 | 12 | low_confidence_public | `history/age-of-exploration` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 | 13 | low_confidence_public | `history/byzantine-empire` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
-| 14 | risk_fallback | `ai/ai-smart-contract-audit` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 15 | risk_fallback | `ai/cognitive-architectures` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 16 | risk_fallback | `ai/convolutional-neural-networks-cnn` | medium | 1/1 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
-| 17 | risk_fallback | `ai/data-centric-ai` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 18 | risk_fallback | `ai/human-computer-interaction` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 19 | risk_fallback | `ai/semantic-web-ontology` | medium | 2/3 (66.7%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 20 | risk_fallback | `ai/transfer-learning` | medium | 1/1 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
+| 14 | risk_fallback | `business/tiktok-shop-marketing` | low | 1/1 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
+| 15 | risk_fallback | `computer-science/cross-origin-resource-sharing-cors` | medium | 1/1 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
+| 16 | risk_fallback | `computer-science/electron` | low | 2/4 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 17 | risk_fallback | `computer-science/fullscreen-api` | medium | 1/1 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
+| 18 | risk_fallback | `computer-science/html5-semantic-elements` | medium | 1/1 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
+| 19 | risk_fallback | `computer-science/notifications-api` | medium | 1/1 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
+| 20 | risk_fallback | `computer-science/package-managers-npm-yarn-pnpm` | low | 1/1 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
 
 ## Article Findings
 
@@ -136,12 +136,27 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 7. AI for Medical Imaging: Radiology AI, Computer-Aided Diagnosis, and Clinical Deployment
+### 7. AI for Recruiting: Resume Screening, Talent Matching, and Fairness in Hiring
 
-- canonical slug: `ai/ai-for-medical-imaging`
-- canonical URL: https://anchorfact.org/ai/ai-for-medical-imaging/
+- canonical slug: `ai/ai-for-recruiting`
+- canonical URL: https://anchorfact.org/ai/ai-for-recruiting/
 - bucket: `medium_capped_claims`
-- confidence: `medium` (verified_sources, score 0.765)
+- confidence: `medium` (verified_sources, score 0.85)
+- verified source coverage: 1/2 (50.0%)
+- claims: 2 total, 2 capped, 0 missing evidence
+- quality reasons: partial_source_verification, high_confidence_evidence_gap
+- source-title match: `weak`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: none
+- recommendation: `repair_sources`
+
+### 8. AI for Retail: Cashierless Stores, Dynamic Pricing, and Personalized Shopping
+
+- canonical slug: `ai/ai-for-retail`
+- canonical URL: https://anchorfact.org/ai/ai-for-retail/
+- bucket: `medium_capped_claims`
+- confidence: `medium` (verified_sources, score 0.74)
 - verified source coverage: 1/2 (50.0%)
 - claims: 2 total, 2 capped, 0 missing evidence
 - quality reasons: partial_source_verification
@@ -151,30 +166,15 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `repair_sources`
 
-### 8. AI for Network Security: Intelligent Firewalls, DDoS Mitigation, and Zero-Trust Architectures
+### 9. AI for Signal Processing: Deep Learning for Wireless, Radar, and Biomedical Signals
 
-- canonical slug: `ai/ai-for-network-security`
-- canonical URL: https://anchorfact.org/ai/ai-for-network-security/
+- canonical slug: `ai/ai-for-signal-processing`
+- canonical URL: https://anchorfact.org/ai/ai-for-signal-processing/
 - bucket: `medium_capped_claims`
-- confidence: `medium` (verified_sources, score 0.74)
-- verified source coverage: 1/2 (50.0%)
+- confidence: `medium` (verified_sources, score 0.84)
+- verified source coverage: 3/4 (75.0%)
 - claims: 2 total, 2 capped, 0 missing evidence
-- quality reasons: claim_evidence_weak, partial_source_verification
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: claim_evidence_weak
-- recommendation: `repair_sources`
-
-### 9. AI for Oil and Gas Exploration: Seismic Interpretation, Reservoir Characterization, and Subsurface Intelligence
-
-- canonical slug: `ai/ai-for-oil-gas-exploration`
-- canonical URL: https://anchorfact.org/ai/ai-for-oil-gas-exploration/
-- bucket: `medium_capped_claims`
-- confidence: `medium` (verified_sources, score 0.85)
-- verified source coverage: 1/2 (50.0%)
-- claims: 2 total, 2 capped, 0 missing evidence
-- quality reasons: partial_source_verification, high_confidence_evidence_gap
+- quality reasons: partial_source_verification
 - source-title match: `weak`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
@@ -241,44 +241,29 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 14. AI Smart Contract Auditing: Vulnerability Detection, Formal Verification, and Blockchain Security
+### 14. TikTok Shop Marketing
 
-- canonical slug: `ai/ai-smart-contract-audit`
-- canonical URL: https://anchorfact.org/ai/ai-smart-contract-audit/
+- canonical slug: `business/tiktok-shop-marketing`
+- canonical URL: https://anchorfact.org/business/tiktok-shop-marketing/
 - bucket: `risk_fallback`
-- confidence: `medium` (verified_sources, score 0.74)
-- verified source coverage: 1/2 (50.0%)
-- claims: 2 total, 2 capped, 0 missing evidence
-- quality reasons: generic_source_homepage, partial_source_verification
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_source_homepage
-- recommendation: `repair_sources`
-
-### 15. Cognitive Architectures: ACT-R, Soar, and Computational Models of Human-Like Reasoning
-
-- canonical slug: `ai/cognitive-architectures`
-- canonical URL: https://anchorfact.org/ai/cognitive-architectures/
-- bucket: `risk_fallback`
-- confidence: `medium` (verified_sources, score 0.74)
-- verified source coverage: 1/2 (50.0%)
-- claims: 2 total, 2 capped, 0 missing evidence
-- quality reasons: generic_source_homepage, partial_source_verification
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_source_homepage
-- recommendation: `repair_sources`
-
-### 16. Convolutional Neural Networks (CNN)
-
-- canonical slug: `ai/convolutional-neural-networks-cnn`
-- canonical URL: https://anchorfact.org/ai/convolutional-neural-networks-cnn/
-- bucket: `risk_fallback`
-- confidence: `medium` (verified_sources, score 0.7)
+- confidence: `low` (verified_sources, score 0.5)
 - verified source coverage: 1/1 (100.0%)
 - claims: 2 total, 2 capped, 0 missing evidence
+- quality reasons: generic_source_homepage
+- source-title match: `pass`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: duplicate_sources, generic_source_homepage
+- recommendation: `repair_sources`
+
+### 15. Cross-Origin Resource Sharing (CORS)
+
+- canonical slug: `computer-science/cross-origin-resource-sharing-cors`
+- canonical URL: https://anchorfact.org/computer-science/cross-origin-resource-sharing-cors/
+- bucket: `risk_fallback`
+- confidence: `medium` (verified_sources, score 0.745)
+- verified source coverage: 1/1 (100.0%)
+- claims: 2 total, 0 capped, 0 missing evidence
 - quality reasons: generic_source_homepage
 - source-title match: `pass`
 - claim-evidence match: `weak`
@@ -286,57 +271,72 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: generic_dispute_statement, generic_source_homepage
 - recommendation: `repair_sources`
 
-### 17. Data-Centric AI: The Systematic Engineering of Training Data
+### 16. Electron
 
-- canonical slug: `ai/data-centric-ai`
-- canonical URL: https://anchorfact.org/ai/data-centric-ai/
+- canonical slug: `computer-science/electron`
+- canonical URL: https://anchorfact.org/computer-science/electron/
 - bucket: `risk_fallback`
-- confidence: `medium` (verified_sources, score 0.74)
-- verified source coverage: 1/2 (50.0%)
+- confidence: `low` (verified_sources, score 0.55)
+- verified source coverage: 2/4 (50.0%)
 - claims: 2 total, 2 capped, 0 missing evidence
-- quality reasons: generic_source_homepage, partial_source_verification
+- quality reasons: partial_source_verification
 - source-title match: `weak`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
-- hygiene flags: generic_source_homepage
+- hygiene flags: duplicate_sources, generic_dispute_statement
 - recommendation: `repair_sources`
 
-### 18. Human-Computer Interaction: AI-Powered UX, Generative Interfaces, and Usability Testing
+### 17. Fullscreen API
 
-- canonical slug: `ai/human-computer-interaction`
-- canonical URL: https://anchorfact.org/ai/human-computer-interaction/
+- canonical slug: `computer-science/fullscreen-api`
+- canonical URL: https://anchorfact.org/computer-science/fullscreen-api/
 - bucket: `risk_fallback`
-- confidence: `medium` (verified_sources, score 0.74)
-- verified source coverage: 1/2 (50.0%)
-- claims: 2 total, 2 capped, 0 missing evidence
-- quality reasons: generic_source_homepage, partial_source_verification
-- source-title match: `weak`
+- confidence: `medium` (verified_sources, score 0.735)
+- verified source coverage: 1/1 (100.0%)
+- claims: 2 total, 0 capped, 0 missing evidence
+- quality reasons: generic_source_homepage
+- source-title match: `pass`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
-- hygiene flags: generic_source_homepage
+- hygiene flags: generic_dispute_statement, generic_source_homepage
 - recommendation: `repair_sources`
 
-### 19. Semantic Web and Ontologies: Knowledge Representation, OWL Reasoning, and Linked Data
+### 18. HTML5 Semantic Elements
 
-- canonical slug: `ai/semantic-web-ontology`
-- canonical URL: https://anchorfact.org/ai/semantic-web-ontology/
+- canonical slug: `computer-science/html5-semantic-elements`
+- canonical URL: https://anchorfact.org/computer-science/html5-semantic-elements/
 - bucket: `risk_fallback`
-- confidence: `medium` (verified_sources, score 0.785)
-- verified source coverage: 2/3 (66.7%)
-- claims: 2 total, 2 capped, 0 missing evidence
-- quality reasons: claim_evidence_weak, partial_source_verification
-- source-title match: `weak`
+- confidence: `medium` (verified_sources, score 0.745)
+- verified source coverage: 1/1 (100.0%)
+- claims: 2 total, 0 capped, 0 missing evidence
+- quality reasons: generic_source_homepage
+- source-title match: `pass`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
-- hygiene flags: claim_evidence_weak
+- hygiene flags: generic_dispute_statement, generic_source_homepage
 - recommendation: `repair_sources`
 
-### 20. Transfer Learning
+### 19. Notifications API
 
-- canonical slug: `ai/transfer-learning`
-- canonical URL: https://anchorfact.org/ai/transfer-learning/
+- canonical slug: `computer-science/notifications-api`
+- canonical URL: https://anchorfact.org/computer-science/notifications-api/
 - bucket: `risk_fallback`
-- confidence: `medium` (verified_sources, score 0.7)
+- confidence: `medium` (verified_sources, score 0.745)
+- verified source coverage: 1/1 (100.0%)
+- claims: 2 total, 0 capped, 0 missing evidence
+- quality reasons: generic_source_homepage
+- source-title match: `pass`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: generic_dispute_statement, generic_source_homepage
+- recommendation: `repair_sources`
+
+### 20. Package Managers (npm, yarn, pnpm)
+
+- canonical slug: `computer-science/package-managers-npm-yarn-pnpm`
+- canonical URL: https://anchorfact.org/computer-science/package-managers-npm-yarn-pnpm/
+- bucket: `risk_fallback`
+- confidence: `low` (verified_sources, score 0.5)
 - verified source coverage: 1/1 (100.0%)
 - claims: 2 total, 2 capped, 0 missing evidence
 - quality reasons: generic_source_homepage
