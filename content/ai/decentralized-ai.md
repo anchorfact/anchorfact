@@ -4,8 +4,8 @@ title: "Decentralized AI: Distributed Inference, Peer-to-Peer Networks, and Bloc
 schema_type: article
 category: ai
 language: en
-confidence: high
-last_verified: "2026-05-24"
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-24"
 generation_method: ai_structured
 ai_models:
@@ -16,93 +16,63 @@ is_live_document: false
 data_period: static
 completeness: 0.85
 atomic_facts:
-  - id: af-decentralized-ai-1
+  - id: af-ai-decentralized-ai-1
     statement: >-
-      MDPI Information (September 2025) published a comprehensive systematic review of decentralized AI — analyzing 71 peer-reviewed studies across four pillars: decentralized data governance
-      (federated learning, data cooperatives), decentralized compute networks (P2P GPU sharing, DePIN), decentralized model marketplaces (blockchain-based model licensing), and decentralized inference
-      (distributed LLM serving) — identifying trustworthiness as the central cross-cutting challenge.
-    source_title: "MDPI Information (2025) — Toward Decentralized Intelligence: A Systematic Review — doi:10.3390/info16090765"
-    source_url: https://www.mdpi.com/2078-2489/16/9/765
-    confidence: high
-  - id: af-decentralized-ai-2
+      Federated learning trains models from decentralized data while keeping training examples on
+      client devices or sites.
+    source_title: Communication-Efficient Learning of Deep Networks from Decentralized Data
+    source_url: https://arxiv.org/abs/1602.05629
+    confidence: medium
+  - id: af-ai-decentralized-ai-2
     statement: >-
-      MIT Media Lab's Decentralized AI research initiative and the emerging DePIN (Decentralized Physical Infrastructure Networks) ecosystem (2024-2026) demonstrate practical P2P AI inference at scale
-      — networks like Akash, Gensyn, and Render distribute model serving across thousands of globally distributed GPU nodes, reducing inference costs by 40-70% compared to centralized cloud providers
-      while eliminating single points of failure.
-    source_title: MIT Media Lab DeAI / CalmOps DeAI Compute Networks Guide 2026 / DePIN whitepapers (2024-2025)
-    source_url: https://arxiv.org/abs/2402.02885
-    confidence: high
+      Secure aggregation protocols can allow a server to learn aggregate model updates without
+      seeing individual client updates.
+    source_title: Practical Secure Aggregation for Privacy-Preserving Machine Learning
+    source_url: >-
+      https://research.google/pubs/practical-secure-aggregation-for-privacy-preserving-machine-learning/
+    confidence: medium
+  - id: af-ai-decentralized-ai-3
+    statement: >-
+      Swarm Learning applies decentralized machine learning to confidential clinical data across
+      multiple sites.
+    source_title: Swarm Learning for decentralized and confidential clinical machine learning
+    source_url: https://www.nature.com/articles/s41586-021-03583-3
+    confidence: medium
 primary_sources:
-  - id: ps-decentralized-ai-1
-    title: "Toward Decentralized Intelligence: A Systematic Review of Decentralized AI"
+  - id: ps-ai-decentralized-ai-1
+    title: Communication-Efficient Learning of Deep Networks from Decentralized Data
     type: academic_paper
-    year: 2025
-    institution: MDPI Information
-    doi: 10.3390/info16090765
-    url: https://www.mdpi.com/2078-2489/16/9/765
-  - id: ps-decentralized-ai-2
-    title: A Review on Building Blocks of Decentralized Artificial Intelligence (SLR of 71 studies)
-    type: academic_paper
-    year: 2024
+    year: 2016
     institution: arXiv
-    url: https://arxiv.org/abs/2402.02885
+    url: https://arxiv.org/abs/1602.05629
+  - id: ps-ai-decentralized-ai-2
+    title: Practical Secure Aggregation for Privacy-Preserving Machine Learning
+    type: academic_paper
+    year: 2017
+    institution: ACM CCS
+    url: >-
+      https://research.google/pubs/practical-secure-aggregation-for-privacy-preserving-machine-learning/
+  - id: ps-ai-decentralized-ai-3
+    title: Swarm Learning for decentralized and confidential clinical machine learning
+    type: academic_paper
+    year: 2021
+    institution: Nature
+    url: https://www.nature.com/articles/s41586-021-03583-3
 known_gaps:
   - Latency and coordination overhead in global P2P inference networks
   - Verifiable computation — ensuring decentralized nodes actually ran the claimed model
 disputed_statements: []
-secondary_sources:
-  - title: "Federated Learning: A Comprehensive Survey of Methods, Applications, and Challenges"
-    type: survey_paper
-    year: 2024
-    authors:
-      - multiple
-    institution: IEEE TKDE
-    url: https://doi.org/10.1109/TKDE.2024.3361474
-  - title: Advances and Open Problems in Federated Learning (Google)
-    type: survey_paper
-    year: 2021
-    authors:
-      - Kairouz, Peter
-      - McMahan, H. Brendan
-      - Avent, Brendan
-      - et al. (50+ authors)
-    institution: Google / Foundations & Trends in ML
-    url: https://arxiv.org/abs/1912.04977
-  - title: "Decentralized AI: A Survey of Blockchain-Enabled Federated Learning and Distributed AI Systems"
-    type: survey_paper
-    year: 2024
-    authors:
-      - multiple
-    institution: IEEE Access
-    url: https://doi.org/10.1109/ACCESS.2024.3415265
-  - title: Swarm Learning for Decentralized and Confidential Clinical Machine Learning (Nature)
-    type: journal_article
-    year: 2021
-    authors:
-      - Warnat-Herresthal, Stefanie
-      - Schultze, Hartmut
-      - Shastry, Krishna
-      - et al.
-    institution: University of Bonn / Nature
-    url: https://www.nature.com/articles/s41586-021-03583-3
-updated: "2026-05-24"
+secondary_sources: []
+updated: "2026-05-28"
 ---
 ## TL;DR
-Decentralized AI reimagines how AI systems are built, trained, and served — distributing computation across peer-to-peer networks instead of centralized data centers. Combining federated learning, blockchain incentives, and DePIN GPU networks, decentralized AI promises democratized access, censorship resistance, and elimination of cloud monopolies.
+Decentralized AI: Distributed Inference, Peer-to-Peer Networks, and Blockchain Integration: Decentralized AI distributes training, inference, data control, or governance across devices, organizations, or peer networks.
 
 ## Core Explanation
-Centralized AI model: data flows to cloud data centers → models trained on proprietary clusters → inference served from centralized endpoints (OpenAI, Anthropic, Google). Problems: (1) Privacy — users must share data with providers; (2) Censorship — single entities control which models run; (3) Cost — cloud GPU pricing is 3-5x hardware cost; (4) Single point of failure. Decentralized AI distributes each layer: (A) Data layer — federated learning trains models without centralizing data; differential privacy adds formal guarantees; (B) Compute layer — DePIN networks (Gensyn, Akash, io.net) aggregate idle GPUs from individuals and companies, paying contributors via crypto-economic incentives; (C) Model layer — decentralized marketplaces (Ocean Protocol, SingularityNET) enable peer-to-peer model trading with usage-based micropayments; (D) Inference layer — distributed LLM serving splits models across network nodes for collaborative inference.
-
-## Detailed Analysis
-DePIN for AI compute: Gensyn (2024-2025) builds a protocol for decentralized ML training — model training jobs are split into sub-tasks, verified via zero-knowledge proofs or redundant computation, and distributed to network participants who earn tokens proportional to compute contributed. Render Network distributes GPU rendering/AI inference across 50,000+ consumer GPUs. io.net aggregates GPU clusters from data centers, crypto miners, and consumer hardware. Key technical challenges: (1) Network latency — splitting transformer layers across globally distributed nodes introduces 50-200ms latency per token vs. <10ms in centralized clusters; (2) Verifiable computation — proving a node actually ran the specified model (not a cheaper approximation) without re-executing; ZK-proofs and TEE (Trusted Execution Environment) attestations are leading solutions; (3) Byzantine fault tolerance — handling malicious or unreliable nodes in P2P networks. MIT Media Lab's Decentralized AI group explores privacy-preserving multi-agent systems and community-governed AI. The 2025-2026 trend: "sovereign AI" — nations and organizations running AI infrastructure independent of US/China tech giants, enabled by decentralized compute networks.
+The most evidence-backed public framing is federated and privacy-preserving machine learning. Decentralization can reduce raw data movement, but it introduces coordination, security, privacy, and verification challenges.
 
 ## Further Reading
-- Institute for Decentralized AI (decentralized-ai.org)
-- Gensyn: Decentralized ML Compute Protocol
-- Ocean Protocol: Tokenized AI Data & Model Marketplace
 
-## Related Articles
-
-- [AI and Blockchain: Decentralized Intelligence, Smart Contracts, and Crypto-Economic Systems](../ai-blockchain.md)
-- [Activation Functions in Neural Networks](../activation-functions.md)
-- [AI for Complex Networks: Graph Learning, Resilience, and Network Science](../ai-for-complex-networks.md)
+- [Communication-Efficient Learning of Deep Networks from Decentralized Data](https://arxiv.org/abs/1602.05629)
+- [Practical Secure Aggregation for Privacy-Preserving Machine Learning](https://research.google/pubs/practical-secure-aggregation-for-privacy-preserving-machine-learning/)
+- [Swarm Learning for decentralized and confidential clinical machine learning](https://www.nature.com/articles/s41586-021-03583-3)

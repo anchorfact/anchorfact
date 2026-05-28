@@ -2,13 +2,13 @@
   "summary": {
     "generated": "2026-05-27T14:00:00.000Z",
     "total_articles": 1000,
-    "total_with_errors": 355,
+    "total_with_errors": 351,
     "average_sources_per_article": "2.2",
-    "overall_verification_rate": "68.0%",
+    "overall_verification_rate": "68.3%",
     "elapsed_ms": 635005,
     "elapsed_sec": "635.0",
     "concurrency": 3,
-    "manual_reviewed_articles": 257
+    "manual_reviewed_articles": 267
   },
   "articles": [
     {
@@ -3838,19 +3838,20 @@
       "file": "content/ai/ai-for-logistics.md",
       "article_id": "ai-for-logistics",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Artificial Intelligence in Supply Chain Optimization: A Comprehensive Systematic Review of 199 Articles",
-          "source_type": "academic_paper",
+          "source_title": "Vehicle Routing Problem",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://optimization-online.org/wp-content/uploads/2025/12/GalandeJozaniBuyuktahtakin2025_AISupplyChain_OptOnline.pdf",
+              "identifier": "https://developers.google.com/optimization/routing/vrp",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://optimization-online.org/wp-content/uploads/2025/12/GalandeJozaniBuyuktahtakin2025_AISupplyChain_OptOnline.pdf"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -3858,17 +3859,35 @@
           "all_verified": true
         },
         {
-          "source_title": "AI-driven optimization of vehicle routing problems in supply chain logistics",
+          "source_title": "Deep Reinforcement Learning for Solving the Vehicle Routing Problem",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "doi",
-              "identifier": "10.1007/s10696-025-09653-2",
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1802.04240",
               "verified": true,
               "metadata": {
-                "title": "Ai-driven optimization of vehicle routing problems in supply chain: integrating graph neural networks and reinforcement learning",
-                "publisher": "Springer Science and Business Media LLC",
-                "year": 2026
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Supply Chain 4.0 in consumer goods",
+          "source_type": "industry_report",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.mckinsey.com/capabilities/operations/our-insights/supply-chain-40-in-consumer-goods",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -3876,8 +3895,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/ai-for-manufacturing.md",
@@ -4987,20 +5008,20 @@
       "file": "content/ai/ai-for-social-media.md",
       "article_id": "ai-for-social-media",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Decoding Fake News and Hate Speech: A Survey of Explainable AI Techniques for Social Media Moderation",
-          "source_type": "academic_paper",
+          "source_title": "Community Standards Enforcement Report",
+          "source_type": "transparency_report",
           "results": [
             {
-              "method": "doi",
-              "identifier": "10.1145/3711123",
+              "method": "url",
+              "identifier": "https://transparency.meta.com/reports/community-standards-enforcement/",
               "verified": true,
               "metadata": {
-                "title": "Decoding Fake News and Hate Speech: A Survey of Explainable AI Techniques",
-                "publisher": "Association for Computing Machinery (ACM)",
-                "year": 2025
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -5008,17 +5029,35 @@
           "all_verified": true
         },
         {
-          "source_title": "Measuring context sensitivity in artificial intelligence-based content moderation systems",
+          "source_title": "Perspective API",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.perspectiveapi.com/s/about-the-api",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Detecting Hate Speech in Social Media",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "doi",
-              "identifier": "10.1038/s41562-025-02363-7",
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1712.06427",
               "verified": true,
               "metadata": {
-                "title": "Measuring context sensitivity in artificial intelligence content moderation",
-                "publisher": "Springer Science and Business Media LLC",
-                "year": 2025
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -5026,8 +5065,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/ai-for-software-testing.md",
@@ -5662,20 +5703,20 @@
       "file": "content/ai/ai-for-weather-forecasting.md",
       "article_id": "ai-for-weather-forecasting",
       "generation_method": "ai_structured",
-      "sources_total": 4,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Learning skillful medium-range global weather forecasting (GraphCast)",
+          "source_title": "GraphCast: Learning skillful medium-range global weather forecasting",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "doi",
-              "identifier": "10.1126/science.adi2336",
+              "method": "url",
+              "identifier": "https://www.science.org/doi/10.1126/science.adi2336",
               "verified": true,
               "metadata": {
-                "title": "Learning skillful medium-range global weather forecasting",
-                "publisher": "American Association for the Advancement of Science (AAAS)",
-                "year": 2023
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -5683,17 +5724,17 @@
           "all_verified": true
         },
         {
-          "source_title": "Accurate medium-range global weather forecasting with 3D neural networks (Pangu-Weather)",
+          "source_title": "Accurate medium-range global weather forecasting with 3D neural networks",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "doi",
-              "identifier": "10.1038/s41586-023-06185-3",
+              "method": "url",
+              "identifier": "https://www.nature.com/articles/s41586-023-06185-3",
               "verified": true,
               "metadata": {
-                "title": "Accurate medium-range global weather forecasting with 3D neural networks",
-                "publisher": "Springer Science and Business Media LLC",
-                "year": 2023
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -5701,42 +5742,28 @@
           "all_verified": true
         },
         {
-          "source_title": "Probabilistic Weather Forecasting with Machine Learning (GenCast)",
+          "source_title": "FourCastNet: A Global Data-driven High-resolution Weather Model using Adaptive Fourier Neural Operators",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "doi",
-              "identifier": "10.1038/s41586-024-08252-9",
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2202.11214",
               "verified": true,
               "metadata": {
-                "title": "Probabilistic weather forecasting with machine learning",
-                "publisher": "Springer Science and Business Media LLC",
-                "year": 2024
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
           ],
           "all_verified": true
-        },
-        {
-          "source_title": "FuXi: A Cascade Machine Learning Forecasting System",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "doi",
-              "identifier": "10.1038/s41597-023-02712-7",
-              "verified": false,
-              "metadata": {
-                "error": "CrossRef returned 404"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
         }
       ],
       "sources_verified": 3,
-      "sources_unreachable": 1
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/ai-for-wildlife-conservation.md",
@@ -9076,19 +9103,20 @@
       "file": "content/ai/brain-computer-interface-ai.md",
       "article_id": "brain-computer-interface-ai",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Neuralink's Brain-Computer Interfaces: Medical and Ethical Implications",
+          "source_title": "High-performance brain-to-text communication via handwriting",
           "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.frontiersin.org/journals/human-dynamics/articles/10.3389/fhumd.2025.1553905/full",
+              "identifier": "https://www.nature.com/articles/s41586-021-03506-2",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.frontiersin.org/journals/human-dynamics/articles/10.3389/fhumd.2025.1553905/full"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -9096,16 +9124,35 @@
           "all_verified": true
         },
         {
-          "source_title": "Brain–computer interface control with artificial intelligence copilots",
+          "source_title": "Reach and grasp by people with tetraplegia using a neurally controlled robotic arm",
           "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.nature.com/articles/s42256-025-01090-y",
+              "identifier": "https://www.nature.com/articles/nature11076",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.nature.com/articles/s42256-025-01090-y?error=cookies_not_supported&code=28392ea9-31af-4b91-9f8d-31162fcd79b8"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Neuronal ensemble control of prosthetic devices by a human with tetraplegia",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.nature.com/articles/nature04970",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -9113,26 +9160,29 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/causal-inference-ai.md",
       "article_id": "causal-inference-ai",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
           "source_title": "Causality: Models, Reasoning, and Inference",
-          "source_type": "textbook",
+          "source_type": "book",
           "results": [
             {
               "method": "url",
-              "identifier": "https://doi.org/10.1017/CBO9780511803161",
+              "identifier": "http://bayes.cs.ucla.edu/BOOK-2K/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.cambridge.org/core/books/causality/B0046844FAE10CBF274D4ACBDAEB5F5B"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -9140,43 +9190,65 @@
           "all_verified": true
         },
         {
-          "source_title": "Causal Machine Learning: A Survey and Open Problems",
+          "source_title": "Causal Inference Using Potential Outcomes",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2403.02467",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://doi.org/10.1198/016214504000001880",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "Double/debiased machine learning for treatment and structural parameters",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://academic.oup.com/ectj/article/21/1/C1/5056401",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/causal-representation-learning.md",
       "article_id": "causal-representation-learning",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Deep Causal Learning: Representation, Discovery and Inference",
+          "source_title": "Towards Causal Representation Learning",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "doi",
-              "identifier": "10.1145/3762179",
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2102.11107",
               "verified": true,
               "metadata": {
-                "title": "Deep Causal Learning: Representation, Discovery and Inference",
-                "publisher": "Association for Computing Machinery (ACM)",
-                "year": 2025
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -9184,25 +9256,46 @@
           "all_verified": true
         },
         {
-          "source_title": "Causal Representation Learning via Counterfactual Intervention",
+          "source_title": "Invariant Risk Minimization",
           "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://ojs.aaai.org/index.php/AAAI/article/view/28108",
-              "verified": false,
+              "identifier": "https://arxiv.org/abs/1907.02893",
+              "verified": true,
               "metadata": {
-                "status": 403,
-                "final_url": "https://ojs.aaai.org/index.php/AAAI/article/view/28108"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "Weakly supervised causal representation learning",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2203.16437",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/clip-contrastive-language-image-pre-training.md",
@@ -9300,19 +9393,20 @@
       "file": "content/ai/computational-neuroscience.md",
       "article_id": "computational-neuroscience",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "MICrONS: Functional connectomics spanning multiple areas of mouse visual cortex",
+          "source_title": "A quantitative description of membrane current and its application to conduction and excitation in nerve",
           "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.microns-explorer.org/",
+              "identifier": "https://doi.org/10.1113/jphysiol.1952.sp004764",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.microns-explorer.org/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -9320,17 +9414,35 @@
           "all_verified": true
         },
         {
-          "source_title": "Predictive coding in the visual cortex: a functional interpretation of some extra-classical receptive-field effects",
-          "source_type": "academic_paper",
+          "source_title": "Theoretical Neuroscience",
+          "source_type": "book",
           "results": [
             {
-              "method": "doi",
-              "identifier": "10.1038/4580",
+              "method": "url",
+              "identifier": "https://mitpress.mit.edu/9780262541855/theoretical-neuroscience/",
               "verified": true,
               "metadata": {
-                "title": "Predictive coding in the visual cortex: a functional interpretation of some extra-classical receptive-field effects",
-                "publisher": "Springer Science and Business Media LLC",
-                "year": 2002
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "The Blue Brain Project",
+          "source_type": "research_project",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.epfl.ch/research/domains/bluebrain/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -9338,8 +9450,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/computer-vision.md",
@@ -9898,20 +10012,20 @@
       "file": "content/ai/decentralized-ai.md",
       "article_id": "decentralized-ai",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Toward Decentralized Intelligence: A Systematic Review of Decentralized AI",
+          "source_title": "Communication-Efficient Learning of Deep Networks from Decentralized Data",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "doi",
-              "identifier": "10.3390/info16090765",
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1602.05629",
               "verified": true,
               "metadata": {
-                "title": "Toward Decentralized Intelligence: A Systematic Literature Review of Blockchain-Enabled AI Systems",
-                "publisher": "MDPI AG",
-                "year": 2025
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -9919,24 +10033,46 @@
           "all_verified": true
         },
         {
-          "source_title": "A Review on Building Blocks of Decentralized Artificial Intelligence (SLR of 71 studies)",
+          "source_title": "Practical Secure Aggregation for Privacy-Preserving Machine Learning",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2402.02885",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://research.google/pubs/practical-secure-aggregation-for-privacy-preserving-machine-learning/",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "Swarm Learning for decentralized and confidential clinical machine learning",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.nature.com/articles/s41586-021-03583-3",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/decision-support-systems.md",
@@ -46055,19 +46191,20 @@
       "file": "content/self-improvement/stress-management.md",
       "article_id": "kb-2026-00506",
       "generation_method": "ai_assisted",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Full Catastrophe Living (Jon Kabat-Zinn, Revised Ed)",
-          "source_type": "book",
+          "source_title": "Doing What Matters in Times of Stress",
+          "source_type": "government_guidance",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.penguinrandomhouse.com/books/736/full-catastrophe-living-by-jon-kabat-zinn/",
+              "identifier": "https://www.who.int/publications/i/item/9789240003927",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.penguinrandomhouse.com/books/736/full-catastrophe-living-by-jon-kabat-zinn/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -46075,16 +46212,35 @@
           "all_verified": true
         },
         {
-          "source_title": "Feeling Good: The New Mood Therapy (David Burns)",
-          "source_type": "book",
+          "source_title": "Stress management",
+          "source_type": "professional_guidance",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.harpercollins.com/products/feeling-good-david-d-burns",
+              "identifier": "https://www.apa.org/topics/stress",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.harpercollins.com/products/feeling-good-david-d-burns"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Meditation Programs for Psychological Stress and Well-being",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://doi.org/10.1001/jamainternmed.2013.13018",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -46092,8 +46248,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/self-improvement/time-management.md",
@@ -46253,19 +46411,20 @@
       "file": "content/sports/basketball-rules.md",
       "article_id": "kb-2026-00500",
       "generation_method": "ai_assisted",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "FIBA Official Basketball Rules 2024",
-          "source_type": "rulebook",
+          "source_title": "Official Basketball Rules 2024",
+          "source_type": "sports_rulebook",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.fiba.basketball/documents/official-basketball-rules",
+              "identifier": "https://www.fiba.basketball/documents/official-basketball-rules/current.pdf",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.fiba.basketball/documents/official-basketball-rules"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -46273,16 +46432,35 @@
           "all_verified": true
         },
         {
-          "source_title": "NBA Official Rulebook 2024-25",
-          "source_type": "rulebook",
+          "source_title": "NBA Official Rules",
+          "source_type": "sports_rulebook",
           "results": [
             {
               "method": "url",
               "identifier": "https://official.nba.com/rulebook/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://official.nba.com/rulebook/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "NFHS Basketball Rules Changes",
+          "source_type": "sports_rulebook",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.nfhs.org/sports-resource-content/basketball-rules-changes-2025-26/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Thirty-second targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -46290,8 +46468,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/sports/chess-strategy.md",
