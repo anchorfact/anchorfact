@@ -1,81 +1,73 @@
 ---
-id: "kb-2026-00451"
-title: "Volleyball Fundamentals"
-schema_type: "TechArticle"
-category: "sports"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
+id: kb-2026-00451
+title: Volleyball Fundamentals
+schema_type: TechArticle
+category: sports
+language: en
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-22"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-sports-001"
-    statement: "Volleyball is played 6v6 across a net, with teams allowed 3 touches per side (bump-set-spike). Key skills: serve, pass (bump), set (overhead finger pass), attack (spike), block, dig (defense). Beach volleyball: 2v2, same skills, different strategy. Invented by William G. Morgan (1895, Holyoke, MA)."
-    source_title: "Volleyball Skills & Drills (AVCA)"
-    source_url: "https://www.humankinetics.com/products/volleyball-skills-drills"
-    confidence: "medium"
-  - id: "fact-sports-002"
-    statement: "Scoring: rally scoring to 25 (win by 2), best of 5 sets (5th set to 15)."
-    source_title: "Volleyball Skills & Drills (AVCA)"
-    source_url: "https://www.humankinetics.com/products/volleyball-skills-drills"
-    confidence: "medium"
-
+  - id: fact-sports-01
+    statement: Britannica describes volleyball as a game played by two teams on a court divided by a net.
+    source_title: Volleyball | Definition, History, Rules, Positions, Court, & Facts | Britannica
+    source_url: https://www.britannica.com/sports/volleyball
+    confidence: medium
+  - id: fact-sports-02
+    statement: >-
+      Olympics.com describes indoor volleyball as a six-a-side game in which each team tries to ground the ball on the
+      opposing court.
+    source_title: Volleyball | Olympic Sport
+    source_url: https://www.olympics.com/en/sports/volleyball/
+    confidence: medium
+  - id: fact-sports-03
+    statement: FIVB official rules limit a team to three hits to return the ball, in addition to the block contact.
+    source_title: Official Volleyball Rules 2025-2028
+    source_url: https://www.fivb.com/volleyball/the-game/official-volleyball-rules/
+    confidence: medium
 completeness: 0.88
-
 known_gaps:
-  - "Coverage is at a general level; specialized sub-topics and regional variations are not exhaustively addressed"
-  - "Statistics cited may have been updated since publication; readers should verify current data for time-sensitive claims"
-
-disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-
+  - This public article was narrowed to source-mapped claims during a targeted evidence repair pass.
+disputed_statements: []
 primary_sources:
-  - title: "Volleyball Skills & Drills (AVCA)"
-    type: "book"
-    year: 2005
-    url: "https://www.humankinetics.com/products/volleyball-skills-drills"
-    institution: "Human Kinetics"
-
-secondary_sources:
-  - title: "FIVB Official Volleyball Rules"
-    type: "rulebook"
-    year: 2024
-    url: "https://www.fivb.com/en/volleyball/thegame_glossary/officialrulesofthegames"
-    institution: "FIVB (International Volleyball Federation)"
-  - title: "Sports Rules Encyclopedia"
-    type: "reference"
-    year: 2023
-    url: "https://www.olympic.org/sports"
-    institution: "International Olympic Committee"
-
+  - title: Volleyball | Definition, History, Rules, Positions, Court, & Facts | Britannica
+    type: encyclopedia
+    year: 2026
+    url: https://www.britannica.com/sports/volleyball
+    institution: Encyclopaedia Britannica
+  - title: Volleyball | Olympic Sport
+    type: sports_reference
+    year: 2026
+    url: https://www.olympics.com/en/sports/volleyball/
+    institution: International Olympic Committee
+  - title: Official Volleyball Rules 2025-2028
+    type: rulebook
+    year: 2025
+    url: https://www.fivb.com/volleyball/the-game/official-volleyball-rules/
+    institution: Federation Internationale de Volleyball
+secondary_sources: []
+updated: "2026-05-28"
 ---
-
-
 
 ## TL;DR
 
-Volleyball is played 6v6 across a net, with teams allowed 3 touches per side (bump-set-spike). Key skills: serve, pass (bump), set (overhead finger pass), attack (spike), block, dig (defense). Beach volleyball: 2v2, same skills, different strategy. Invented by William G. Morgan (1895, Holyoke, MA).
+Volleyball fundamentals are narrowed to three source-backed basics: two teams on a net-divided court, six-a-side indoor play in Olympic volleyball, and the FIVB three-hit rule for returning the ball.
 
-## Core Explanation
+## Evidence Notes
 
-Scoring: rally scoring to 25 (win by 2), best of 5 sets (5th set to 15). Positions: setter (orchestrates offense), outside hitter, middle blocker, opposite, libero (defensive specialist, different jersey, can't attack). Rotation: players rotate clockwise after winning serve. Jump serve: added power and unpredictability.
+- Britannica anchors the basic court-and-net framing.
+- Olympics.com anchors the six-a-side indoor game description.
+- FIVB anchors the formal three-hit rule.
 
 ## Further Reading
 
-- [Volleyball Skills & Drills (AVCA)](https://www.humankinetics.com/products/volleyball-skills-drills)
-atomic_facts:
-  - id: "fact-sports-001"
-    statement: "Volleyball is played 6v6 across a net, with teams allowed 3 touches per side (bump-set-spike)"
-    confidence: "medium"
-
-## Related Articles
-
-- [Photography Fundamentals and Composition](../../arts/photography-fundamentals.md)
-- [Poetry Fundamentals](../../arts/poetry-fundamentals.md)
-- [Digital Marketing Fundamentals](../../business/digital-marketing-fundamentals.md)
+- [Volleyball | Britannica](https://www.britannica.com/sports/volleyball)
+- [Volleyball | Olympic Sport](https://www.olympics.com/en/sports/volleyball/)
+- [Official Volleyball Rules 2025-2028](https://www.fivb.com/volleyball/the-game/official-volleyball-rules/)

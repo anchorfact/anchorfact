@@ -1,8 +1,8 @@
 # AnchorFact Public Content Audit - 2026-05-28
 
-Generated: 2026-05-28T12:42:25.536Z
+Generated: 2026-05-28T12:52:29.055Z
 
-Snapshot: 555 public / 445 draft / 1685 claims.
+Snapshot: 555 public / 445 draft / 1688 claims.
 
 ## Summary
 
@@ -13,7 +13,7 @@ This is a risk-weighted audit sample of public AnchorFact articles. It is intend
 - Articles with at least one fail check: 0
 - High-confidence samples needing review: 0
 - Claim-evidence failures: 0
-- Recommendations: keep_public: 17, downgrade_confidence: 0, repair_sources: 3, move_to_draft: 0
+- Recommendations: keep_public: 20, downgrade_confidence: 0, repair_sources: 0, move_to_draft: 0
 
 ## Method
 
@@ -34,15 +34,15 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 | 9 | low_confidence_public | `history/age-of-exploration` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 | 10 | low_confidence_public | `history/byzantine-empire` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 | 11 | risk_fallback | `science/climate-change` | medium | 4/5 (80.0%) | 3 | source=weak; claim=pass; summary=pass | keep_public |
-| 12 | risk_fallback | `self-improvement/growth-mindset` | low | 1/1 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
-| 13 | risk_fallback | `self-improvement/habit-stacking` | low | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 14 | risk_fallback | `sports/volleyball-fundamentals` | low | 1/1 (100.0%) | 2 | source=pass; claim=weak; summary=pass | repair_sources |
-| 15 | risk_fallback | `science/plate-tectonics` | medium | 2/2 (100.0%) | 6 | source=pass; claim=pass; summary=pass | keep_public |
-| 16 | risk_fallback | `ai/gradient-descent` | medium | 2/2 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
-| 17 | risk_fallback | `ai/reinforcement-learning` | medium | 2/2 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
-| 18 | risk_fallback | `ai/tokenization-in-nlp` | medium | 3/3 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
-| 19 | risk_fallback | `arts/digital-art` | medium | 3/3 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
-| 20 | risk_fallback | `computer-science/php-language` | medium | 5/5 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
+| 12 | risk_fallback | `science/plate-tectonics` | medium | 2/2 (100.0%) | 6 | source=pass; claim=pass; summary=pass | keep_public |
+| 13 | risk_fallback | `ai/gradient-descent` | medium | 2/2 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
+| 14 | risk_fallback | `ai/reinforcement-learning` | medium | 2/2 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
+| 15 | risk_fallback | `ai/tokenization-in-nlp` | medium | 3/3 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
+| 16 | risk_fallback | `arts/digital-art` | medium | 3/3 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
+| 17 | risk_fallback | `computer-science/php-language` | medium | 5/5 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
+| 18 | risk_fallback | `computer-science/playwright` | medium | 5/5 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
+| 19 | risk_fallback | `history/computer-history` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
+| 20 | risk_fallback | `history/great-depression` | low | 2/2 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 
 ## Article Findings
 
@@ -211,52 +211,7 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 12. Growth Mindset
-
-- canonical slug: `self-improvement/growth-mindset`
-- canonical URL: https://anchorfact.org/self-improvement/growth-mindset/
-- bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.43)
-- verified source coverage: 1/1 (100.0%)
-- claims: 2 total, 2 capped, 0 missing evidence
-- quality reasons: none
-- source-title match: `pass`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement
-- recommendation: `repair_sources`
-
-### 13. Habit Stacking and Behavior Design
-
-- canonical slug: `self-improvement/habit-stacking`
-- canonical URL: https://anchorfact.org/self-improvement/habit-stacking/
-- bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.48)
-- verified source coverage: 1/2 (50.0%)
-- claims: 2 total, 2 capped, 0 missing evidence
-- quality reasons: partial_source_verification
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: none
-- recommendation: `repair_sources`
-
-### 14. Volleyball Fundamentals
-
-- canonical slug: `sports/volleyball-fundamentals`
-- canonical URL: https://anchorfact.org/sports/volleyball-fundamentals/
-- bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.43)
-- verified source coverage: 1/1 (100.0%)
-- claims: 2 total, 2 capped, 0 missing evidence
-- quality reasons: none
-- source-title match: `pass`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: generic_dispute_statement
-- recommendation: `repair_sources`
-
-### 15. Plate Tectonics
+### 12. Plate Tectonics
 
 - canonical slug: `science/plate-tectonics`
 - canonical URL: https://anchorfact.org/science/plate-tectonics/
@@ -271,7 +226,7 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 16. Gradient Descent and Optimization
+### 13. Gradient Descent and Optimization
 
 - canonical slug: `ai/gradient-descent`
 - canonical URL: https://anchorfact.org/ai/gradient-descent/
@@ -286,7 +241,7 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 17. Reinforcement Learning
+### 14. Reinforcement Learning
 
 - canonical slug: `ai/reinforcement-learning`
 - canonical URL: https://anchorfact.org/ai/reinforcement-learning/
@@ -301,7 +256,7 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 18. Tokenization in NLP
+### 15. Tokenization in NLP
 
 - canonical slug: `ai/tokenization-in-nlp`
 - canonical URL: https://anchorfact.org/ai/tokenization-in-nlp/
@@ -316,7 +271,7 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 19. Digital Art
+### 16. Digital Art
 
 - canonical slug: `arts/digital-art`
 - canonical URL: https://anchorfact.org/arts/digital-art/
@@ -331,13 +286,58 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 20. PHP Language
+### 17. PHP Language
 
 - canonical slug: `computer-science/php-language`
 - canonical URL: https://anchorfact.org/computer-science/php-language/
 - bucket: `risk_fallback`
 - confidence: `medium` (verified_sources, score 0.62)
 - verified source coverage: 5/5 (100.0%)
+- claims: 5 total, 0 capped, 0 missing evidence
+- quality reasons: none
+- source-title match: `pass`
+- claim-evidence match: `pass`
+- title-summary accuracy: `pass`
+- hygiene flags: none
+- recommendation: `keep_public`
+
+### 18. Playwright
+
+- canonical slug: `computer-science/playwright`
+- canonical URL: https://anchorfact.org/computer-science/playwright/
+- bucket: `risk_fallback`
+- confidence: `medium` (verified_sources, score 0.62)
+- verified source coverage: 5/5 (100.0%)
+- claims: 5 total, 0 capped, 0 missing evidence
+- quality reasons: none
+- source-title match: `pass`
+- claim-evidence match: `pass`
+- title-summary accuracy: `pass`
+- hygiene flags: none
+- recommendation: `keep_public`
+
+### 19. Computer History
+
+- canonical slug: `history/computer-history`
+- canonical URL: https://anchorfact.org/history/computer-history/
+- bucket: `risk_fallback`
+- confidence: `low` (verified_sources, score 0.52)
+- verified source coverage: 1/1 (100.0%)
+- claims: 5 total, 0 capped, 0 missing evidence
+- quality reasons: none
+- source-title match: `pass`
+- claim-evidence match: `pass`
+- title-summary accuracy: `pass`
+- hygiene flags: none
+- recommendation: `keep_public`
+
+### 20. Great Depression
+
+- canonical slug: `history/great-depression`
+- canonical URL: https://anchorfact.org/history/great-depression/
+- bucket: `risk_fallback`
+- confidence: `low` (verified_sources, score 0.58)
+- verified source coverage: 2/2 (100.0%)
 - claims: 5 total, 0 capped, 0 missing evidence
 - quality reasons: none
 - source-title match: `pass`

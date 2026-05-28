@@ -1,74 +1,76 @@
 ---
-id: "kb-2026-00509"
-title: "Habit Stacking and Behavior Design"
-schema_type: "TechArticle"
-category: "self-improvement"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-24"
+id: kb-2026-00509
+title: Habit Stacking and Behavior Design
+schema_type: TechArticle
+category: self-improvement
+language: en
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-24"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-si-022"
-    statement: "Habit stacking (BJ Fogg, 'Tiny Habits'): anchor new habits to existing behaviors using formula 'After [current habit], I will [new habit].' Example: After brushing teeth, I will floss one tooth"
-    source_title: "Tiny Habits (BJ Fogg)"
-    source_url: "https://www.hmhco.com/shop/books/tiny-habits/9780358362777"
-    confidence: "high"
-  - id: "fact-si-023"
-    statement: "James Clear's 4 Laws of Behavior Change (Atomic Habits, 2018): 1) Make it Obvious (cue), 2) Make it Attractive (craving), 3) Make it Easy (response), 4) Make it Satisfying (reward). Inversion for breaking bad habits: make invisible, unattractive, difficult, unsatisfying"
-    source_title: "Atomic Habits (James Clear)"
-    source_url: "https://jamesclear.com/atomic-habits"
-    confidence: "high"
-
+  - id: fact-self-improvement-01
+    statement: >-
+      James Clear describes habit stacking as pairing a new habit with a current habit using the formula after current
+      habit, I will new habit.
+    source_title: "Habit Stacking: How to Build New Habits by Taking Advantage of Old Ones"
+    source_url: https://jamesclear.com/habit-stacking
+    confidence: medium
+  - id: fact-self-improvement-02
+    statement: Tiny Habits presents BJ Fogg's Behavior Design method as a way to build habits through small behavior changes.
+    source_title: Tiny Habits Book
+    source_url: https://tinyhabits.com/book/
+    confidence: medium
+  - id: fact-self-improvement-03
+    statement: >-
+      Gollwitzer describes implementation intentions as simple plans that specify how a person will act in response to a
+      future situation.
+    source_title: "Implementation Intentions: Strong Effects of Simple Plans"
+    source_url: https://doi.org/10.1037/0003-066X.54.7.493
+    confidence: medium
 completeness: 0.88
-
 known_gaps:
-  - "Habit change is highly individual; frameworks presented are evidence-based but effectiveness varies"
-  - "Deep-seated behavioral patterns may require therapeutic intervention beyond self-directed behavior design"
-
+  - This public article was narrowed to source-mapped claims during a targeted evidence repair pass.
 primary_sources:
-  - title: "Atomic Habits (James Clear)"
-    type: "book"
-    year: 2018
-    url: "https://jamesclear.com/atomic-habits"
-    institution: "Avery, Penguin Random House"
-  - title: "Tiny Habits: The Small Changes That Change Everything (BJ Fogg)"
-    type: "book"
-    year: 2019
-    url: "https://www.hmhco.com/shop/books/tiny-habits/9780358362777"
-    institution: "Houghton Mifflin Harcourt"
-
-secondary_sources:
-  - title: "The Power of Habit (Charles Duhigg)"
-    type: "book"
-    year: 2012
-    url: "https://www.penguinrandomhouse.com/books/202917/the-power-of-habit-by-charles-duhigg/"
-    institution: "Random House"
-
+  - title: "Habit Stacking: How to Build New Habits by Taking Advantage of Old Ones"
+    type: article
+    year: 2026
+    url: https://jamesclear.com/habit-stacking
+    institution: James Clear
+  - title: Tiny Habits Book
+    type: book
+    year: 2020
+    url: https://tinyhabits.com/book/
+    institution: BJ Fogg
+  - title: "Implementation Intentions: Strong Effects of Simple Plans"
+    type: academic_paper
+    year: 1999
+    url: https://doi.org/10.1037/0003-066X.54.7.493
+    doi: 10.1037/0003-066X.54.7.493
+    institution: American Psychologist
+secondary_sources: []
+updated: "2026-05-28"
+disputed_statements: []
 ---
-
 
 ## TL;DR
 
-Habit stacking anchors new behaviors to existing routines for automaticity. Core frameworks: Fogg Behavior Model (B=MAP: Behavior = Motivation × Ability × Prompt), Clear's 4 Laws (Obvious, Attractive, Easy, Satisfying), habit tracking for reinforcement. Key insight: identity-based habits ("I am a reader") outperform outcome-based ("read 10 books"). Start tiny — scale after consistency.
+Habit stacking is a behavior-design tactic that links a desired action to an existing routine. This repair keeps the claim surface narrow: Clear's habit-stacking formula, Fogg's small-behavior design framing, and Gollwitzer's implementation-intention research.
 
-## Core Explanation
+## Evidence Notes
 
-Habit loop (Duhigg): cue → routine → reward, with craving driving the cycle. Habit stacking formula: "After [anchor habit], I will [new micro-habit]." Implementation intentions: "I will [behavior] at [time] in [location]." Environment design: reduce friction for good habits (gym clothes ready), increase friction for bad ones (phone in another room). The 2-minute rule: scale habits down to ≤2 minutes to start. Never miss twice: single skip is fine, double skip leads to habit extinction. Tracking: visual progress (streak calendar) provides satisfying reinforcement.
+- Clear anchors the habit-stacking formula.
+- Fogg anchors the small-change behavior-design framing.
+- Gollwitzer anchors the broader implementation-intention mechanism.
 
 ## Further Reading
 
-- [Atomic Habits](https://jamesclear.com/atomic-habits)
-- [Tiny Habits](https://www.hmhco.com/shop/books/tiny-habits/9780358362777)
-
-## Related Articles
-
-- [AI for Chip Design: Reinforcement Learning for EDA and Floorplanning](../../ai/ai-for-chip-design-reinforcement-learning-for-eda-and-floorplanning.md)
-- [AI for Chip Design: Reinforcement Learning Placement, EDA Automation, and Semiconductor Intelligence](../../ai/ai-for-chip-design.md)
-- [AI for Drug Discovery: Molecular Docking, Virtual Screening, and De Novo Design](../../ai/ai-for-drug-discovery-molecular-docking-virtual-screening-and-de-novo-design.md)
+- [Habit Stacking: How to Build New Habits by Taking Advantage of Old Ones](https://jamesclear.com/habit-stacking)
+- [Tiny Habits Book](https://tinyhabits.com/book/)
+- [Implementation Intentions: Strong Effects of Simple Plans](https://doi.org/10.1037/0003-066X.54.7.493)

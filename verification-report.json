@@ -4,11 +4,11 @@
     "total_articles": 1000,
     "total_with_errors": 342,
     "average_sources_per_article": "2.4",
-    "overall_verification_rate": "72.5%",
+    "overall_verification_rate": "72.6%",
     "elapsed_ms": 635005,
     "elapsed_sec": "635.0",
     "concurrency": 3,
-    "manual_reviewed_articles": 515
+    "manual_reviewed_articles": 518
   },
   "articles": [
     {
@@ -49026,19 +49026,56 @@
       "file": "content/self-improvement/growth-mindset.md",
       "article_id": "kb-2026-00444",
       "generation_method": "ai_assisted",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Mindset: The New Psychology of Success (Carol Dweck)",
+          "source_title": "Mindset: The New Psychology of Success",
           "source_type": "book",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.penguinrandomhouse.com/books/44330/mindset-by-carol-s-dweck/",
+              "identifier": "https://www.penguinrandomhouse.com/books/44330/mindset-by-carol-s-dweck-phd/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.penguinrandomhouse.com/books/44330/mindset-by-carol-s-dweck/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-sixth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Mindsets That Promote Resilience: When Students Believe That Personal Characteristics Can Be Developed",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "doi",
+              "identifier": "10.1177/1745691612455878",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-sixth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "To What Extent and Under Which Circumstances Are Growth Mind-Sets Important to Academic Achievement?",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "doi",
+              "identifier": "10.1177/0956797617739704",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-sixth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -49046,8 +49083,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/self-improvement/habit-formation-the-science-of-building-and-breaking-habits.md",
@@ -49080,19 +49119,20 @@
       "file": "content/self-improvement/habit-stacking.md",
       "article_id": "kb-2026-00509",
       "generation_method": "ai_assisted",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Atomic Habits (James Clear)",
-          "source_type": "book",
+          "source_title": "Habit Stacking: How to Build New Habits by Taking Advantage of Old Ones",
+          "source_type": "article",
           "results": [
             {
               "method": "url",
-              "identifier": "https://jamesclear.com/atomic-habits",
+              "identifier": "https://jamesclear.com/habit-stacking",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://jamesclear.com/atomic-habits"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-sixth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -49100,25 +49140,46 @@
           "all_verified": true
         },
         {
-          "source_title": "Tiny Habits: The Small Changes That Change Everything (BJ Fogg)",
+          "source_title": "Tiny Habits Book",
           "source_type": "book",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.hmhco.com/shop/books/tiny-habits/9780358362777",
-              "verified": false,
+              "identifier": "https://tinyhabits.com/book/",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://www.hmhco.com/shop/books/tiny-habits/9780358362777"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-sixth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "Implementation Intentions: Strong Effects of Simple Plans",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "doi",
+              "identifier": "10.1037/0003-066X.54.7.493",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-sixth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/self-improvement/ikarian-longevity-lessons-from-the-world-s-blue-zones.md",
@@ -51331,19 +51392,56 @@
       "file": "content/sports/volleyball-fundamentals.md",
       "article_id": "kb-2026-00451",
       "generation_method": "ai_assisted",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Volleyball Skills & Drills (AVCA)",
-          "source_type": "book",
+          "source_title": "Volleyball | Definition, History, Rules, Positions, Court, & Facts | Britannica",
+          "source_type": "encyclopedia",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.humankinetics.com/products/volleyball-skills-drills",
+              "identifier": "https://www.britannica.com/sports/volleyball",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://us.humankinetics.com/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-sixth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Volleyball | Olympic Sport",
+          "source_type": "sports_reference",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.olympics.com/en/sports/volleyball/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-sixth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Official Volleyball Rules 2025-2028",
+          "source_type": "rulebook",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.fivb.com/volleyball/the-game/official-volleyball-rules/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Forty-sixth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -51351,8 +51449,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/sports/winter-sports-science-skiing-snowboarding-and-ice-skating.md",

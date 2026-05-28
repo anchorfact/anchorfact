@@ -1,87 +1,79 @@
 ---
-id: "kb-2026-00444"
-title: "Growth Mindset"
-schema_type: "TechArticle"
-category: "self-improvement"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
+id: kb-2026-00444
+title: Growth Mindset
+schema_type: TechArticle
+category: self-improvement
+language: en
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-22"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-self-improvement-001"
-    statement: "Growth mindset (Carol Dweck, 2006) is the belief that abilities can be developed through effort, learning, and persistence. Fixed mindset: believe abilities are innate and unchangeable. Growth mindset people embrace challenges, learn from criticism, and see effort as the path to mastery. The belief itself becomes a self-fulfilling prophecy."
-    source_title: "Mindset: The New Psychology of Success (Carol Dweck)"
-    source_url: "https://www.penguinrandomhouse.com/books/44330/mindset-by-carol-s-dweck/"
-    confidence: "medium"
-  - id: "fact-self-improvement-001"
-    statement: "Growth mindset (Carol Dweck, 2006) is the belief that abilities can be developed through effort, learning, and persistence. Fixed mindset: believe abilities are innate and unchangeable. Growth mindset people embrace challenges, learn from criticism, and see effort as the path to mastery. The belief itself becomes a self-fulfilling prophecy."
-    source_title: "Mindset: The New Psychology of Success (Carol Dweck)"
-    source_url: "https://www.penguinrandomhouse.com/books/44330/mindset-by-carol-s-dweck/"
-    confidence: "medium"
-
+  - id: fact-self-improvement-01
+    statement: >-
+      Dweck defines a growth mindset as the belief that people can develop basic qualities through effort, strategies,
+      and help from others.
+    source_title: "Mindset: The New Psychology of Success"
+    source_url: https://www.penguinrandomhouse.com/books/44330/mindset-by-carol-s-dweck-phd/
+    confidence: medium
+  - id: fact-self-improvement-02
+    statement: >-
+      Yeager and Dweck review research on how beliefs about whether personal characteristics can be developed relate to
+      student resilience.
+    source_title: "Mindsets That Promote Resilience: When Students Believe That Personal Characteristics Can Be Developed"
+    source_url: https://doi.org/10.1177/1745691612455878
+    confidence: medium
+  - id: fact-self-improvement-03
+    statement: >-
+      Sisk and colleagues meta-analyzed growth-mindset interventions and reported that effects vary by sample and
+      intervention context.
+    source_title: To What Extent and Under Which Circumstances Are Growth Mind-Sets Important to Academic Achievement?
+    source_url: https://doi.org/10.1177/0956797617739704
+    confidence: medium
 completeness: 0.88
-
 known_gaps:
-  - "Coverage is at a general level; specialized sub-topics and regional variations are not exhaustively addressed"
-  - "Statistics cited may have been updated since publication; readers should verify current data for time-sensitive claims"
-
-disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-
+  - This public article was narrowed to source-mapped claims during a targeted evidence repair pass.
+disputed_statements: []
 primary_sources:
-  - title: "Mindset: The New Psychology of Success (Carol Dweck)"
-    type: "book"
-    year: 2006
-    url: "https://www.penguinrandomhouse.com/books/44330/mindset-by-carol-s-dweck/"
-    institution: "Random House"
-
-secondary_sources:
   - title: "Mindset: The New Psychology of Success"
-    type: "book"
+    type: book
     year: 2006
-    url: "https://www.penguinrandomhouse.com/books/44330/mindset-by-carol-s-dweck-phd/"
-    institution: "Carol S. Dweck, Random House"
-  - title: "Atomic Habits (James Clear)"
-    type: "book"
+    url: https://www.penguinrandomhouse.com/books/44330/mindset-by-carol-s-dweck-phd/
+    institution: Random House
+  - title: "Mindsets That Promote Resilience: When Students Believe That Personal Characteristics Can Be Developed"
+    type: academic_paper
+    year: 2012
+    url: https://doi.org/10.1177/1745691612455878
+    doi: 10.1177/1745691612455878
+    institution: Perspectives on Psychological Science
+  - title: To What Extent and Under Which Circumstances Are Growth Mind-Sets Important to Academic Achievement?
+    type: academic_paper
     year: 2018
-    url: "https://jamesclear.com/atomic-habits"
-    institution: "Avery, Penguin Random House"
-
+    url: https://doi.org/10.1177/0956797617739704
+    doi: 10.1177/0956797617739704
+    institution: Psychological Science
+secondary_sources: []
+updated: "2026-05-28"
 ---
-
-
-
 
 ## TL;DR
 
-Growth mindset (Carol Dweck, 2006) is the belief that abilities can be developed through effort, learning, and persistence. Fixed mindset: believe abilities are innate and unchangeable. Growth mindset people embrace challenges, learn from criticism, and see effort as the path to mastery. The belief itself becomes a self-fulfilling prophecy.
+Growth mindset is now presented as a bounded psychology concept rather than a universal success claim. The article uses Dweck's book for the concept, Yeager and Dweck for resilience framing, and Sisk et al. for a more cautious intervention-evidence summary.
 
-## Core Explanation
+## Evidence Notes
 
-Praise process, not intelligence: 'You worked so hard on that' vs. 'You're so smart.' Effort is positive: in a growth mindset, effort means you're learning. 'Not yet' vs. 'failure.' Neuroscience supports neuroplasticity — brains physically change with learning. Fixed mindset triggers: challenges (avoid), obstacles (give up), criticism (ignore), success of others (feel threatened).
+- Dweck anchors the core definition.
+- Yeager and Dweck anchor the student-resilience framing.
+- Sisk et al. anchors the evidence-variation caveat for interventions.
 
 ## Further Reading
 
-- [Mindset: The New Psychology of Success (Carol Dweck)](https://www.penguinrandomhouse.com/books/44330/mindset-by-carol-s-dweck/)
-atomic_facts:
-  - id: "fact-self-improvement-001"
-    statement: "Growth mindset (Carol Dweck, 2006) is the belief that abilities can be developed through effort, learning, and persistence"
-    confidence: "medium"
-  - id: "fact-self-improvement-002"
-    statement: "Fixed mindset: believe abilities are innate and unchangeable"
-    confidence: "medium"
-  - id: "fact-self-improvement-003"
-    statement: "'You're so smart.' Effort is positive: in a growth mindset, effort means you're learning"
-    confidence: "medium"
-
-## Related Articles
-
-- [Growth Mindset: Theory and Applications](../growth-mindset-theory-and-applications.md)
-- [GDP and Economic Growth](../../geography/gdp-and-economic-growth.md)
+- [Mindset: The New Psychology of Success](https://www.penguinrandomhouse.com/books/44330/mindset-by-carol-s-dweck-phd/)
+- [Mindsets That Promote Resilience](https://doi.org/10.1177/1745691612455878)
+- [Growth mindsets and academic achievement meta-analysis](https://doi.org/10.1177/0956797617739704)
