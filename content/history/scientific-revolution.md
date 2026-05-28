@@ -1,12 +1,12 @@
 ---
 id: scientific-revolution
-title: 'The Scientific Revolution: From Copernicus to Newton'
+title: "The Scientific Revolution: From Copernicus to Newton"
 schema_type: Article
 category: history
 language: en
 confidence: medium
-last_verified: '2026-05-25'
-created_date: '2026-05-24'
+last_verified: "2026-05-28"
+created_date: "2026-05-24"
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -15,109 +15,53 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-hist-sr-001
-    statement: 'Kuhn (1962): science progresses through paradigm shifts, not linear accumulation.'
-    source_title: Kuhn, T.S. Structure of Scientific Revolutions 50th Anniv. Ed. (Chicago 2012)
-    source_url: https://press.uchicago.edu/ucp/books/book/chicago/S/bo13179781.html
-    confidence: high
-  - id: fact-hist-sr-002
-    statement: 'Copernican Revolution (1543): displaced Earth from center, initiating 16th-17th c. Scientific Revolution.'
-    source_title: Copernicus, De Revolutionibus (1543) - UNESCO Memory of World
-    source_url: https://www.unesco.org/en/memory-world/copernicus-De-revolutionibus
-    confidence: high
-  - id: fact-hist-sr-003
-    statement: Newton's Principia (1687) unified celestial/terrestrial mechanics, founding classical physics.
-    source_title: Newton, Principia (1687) trans. Cohen & Whitman (UC Press 1999)
-    source_url: https://www.ucpress.edu/book/9780520290884/the-principia
-    confidence: high
+  - id: af-history-scientific-revolution-1
+    statement: >-
+      Britannica describes the Scientific Revolution as a transformation in views of nature,
+      explanation, and method that emerged from the Renaissance and Reformation.
+    source_title: Scientific Revolution
+    source_url: https://www.britannica.com/science/Scientific-Revolution
+    confidence: medium
+  - id: af-history-scientific-revolution-2
+    statement: >-
+      Britannica notes that Copernicus published De revolutionibus orbium coelestium in 1543, making
+      heliocentric astronomy a reference point for later research.
+    source_title: The Copernican revolution
+    source_url: https://www.britannica.com/science/universe/The-Copernican-revolution
+    confidence: medium
+  - id: af-history-scientific-revolution-3
+    statement: >-
+      Britannica identifies Newtons Principia as the 1687 Mathematical Principles of Natural
+      Philosophy.
+    source_title: Principia
+    source_url: https://www.britannica.com/topic/Principia
+    confidence: medium
 completeness: 0.9
 primary_sources:
-  - title: 'The Scientific Revolution: A Very Short Introduction'
+  - id: ps-scientific-revolution-1
+    title: Scientific Revolution
     type: reference
-    year: 2011
-    url: https://global.oup.com/academic/product/the-scientific-revolution-a-very-short-introduction-9780199567416
-    institution: Oxford University Press
-  - title: The Structure of Scientific Revolutions (Kuhn)
-    type: textbook
-    year: 1962
-    url: https://press.uchicago.edu/ucp/books/book/chicago/S/bo13179781.html
-    institution: University of Chicago Press
-  - title: The Structure of Scientific Revolutions (60th Anniversary Edition, 2025)
-    type: book
-    year: 2025
-    authors:
-      - Kuhn T.S.
-    institution: University of Chicago Press
-    url: https://press.uchicago.edu/ucp/books/book/chicago/S/bo13179781.html
-  - title: 'The Scientific Revolution: A Global History (2025)'
-    type: book
-    year: 2025
-    authors:
-      - Wootton D.
-    institution: HarperCollins
-    url: https://www.harpercollins.com/scientific-revolution/
-  - title: 'The Scientific Revolution: A Very Short Introduction'
-    authors:
-      - Principe, L.M.
-    type: book
-    year: 2011
-    institution: Oxford University Press
-  - title: 'The Invention of Science: A New History of the Scientific Revolution'
-    authors:
-      - Wootton, D.
-    type: book
-    year: 2015
-    institution: Harper
+    year: 2026
+    institution: Encyclopaedia Britannica
+    url: https://www.britannica.com/science/Scientific-Revolution
+  - id: ps-scientific-revolution-2
+    title: The Copernican revolution
+    type: reference
+    year: 2026
+    institution: Encyclopaedia Britannica
+    url: https://www.britannica.com/science/universe/The-Copernican-revolution
+  - id: ps-scientific-revolution-3
+    title: Principia
+    type: reference
+    year: 2026
+    institution: Encyclopaedia Britannica
+    url: https://www.britannica.com/topic/Principia
 known_gaps:
   - Scientific Revolution outside Europe
   - Role of instrumentation (telescope, microscope)
-disputed_statements:
-  - statement: No major disputed statements identified
-secondary_sources:
-  - title: The Structure of Scientific Revolutions (Kuhn, 4th Edition)
-    type: textbook
-    year: 2012
-    authors:
-      - Kuhn, Thomas S.
-      - Hacking, Ian (intro.)
-    institution: University of Chicago Press
-    url: https://doi.org/10.7208/9780226458106
-  - title: 'The Scientific Revolution: A Very Short Introduction (Principe)'
-    type: textbook
-    year: 2011
-    authors:
-      - Principe, Lawrence M.
-    institution: Oxford University Press
-    url: https://doi.org/10.1093/actrade/9780199567415.001.0001
-  - title: 'The Copernican Revolution: Planetary Astronomy in the Development of Western Thought (Kuhn)'
-    type: textbook
-    year: 1957
-    authors:
-      - Kuhn, Thomas S.
-    institution: Harvard University Press
-    url: https://www.hup.harvard.edu/books/9780674171039
-  - title: 'Magisteria: The Entangled Histories of Science & Religion (Spencer)'
-    type: textbook
-    year: 2023
-    authors:
-      - Spencer, Nicholas
-    institution: Oneworld Publications
-    url: https://oneworld-publications.com/work/magisteria/
-  - title: 'The Scientific Revolution: New Perspectives and Global Contexts (2025)'
-    type: article
-    year: 2025
-    authors:
-      - multiple
-    institution: Cambridge University Press
-    url: https://doi.org/10.1017/caj.2025.sciencerev
-  - title: 'Kuhn at 60: Reassessing The Structure of Scientific Revolutions in 2025'
-    type: article
-    year: 2025
-    authors:
-      - multiple
-    institution: University of Chicago Press
-    url: https://press.uchicago.edu/ucp/books/book/chicago/S/bo13179781.html
-updated: '2026-05-24'
+disputed_statements: []
+secondary_sources: []
+updated: "2026-05-28"
 ---
 
 ## TL;DR

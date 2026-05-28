@@ -4,11 +4,11 @@
     "total_articles": 1000,
     "total_with_errors": 0,
     "average_sources_per_article": "2.1",
-    "overall_verification_rate": "64.3%",
+    "overall_verification_rate": "65.0%",
     "elapsed_ms": 635005,
     "elapsed_sec": "635.0",
     "concurrency": 3,
-    "manual_reviewed_articles": 178
+    "manual_reviewed_articles": 188
   },
   "articles": [
     {
@@ -3172,20 +3172,20 @@
       "file": "content/ai/ai-for-drug-discovery.md",
       "article_id": "ai-for-drug-discovery",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
           "source_title": "Accurate structure prediction of biomolecular interactions with AlphaFold 3",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "doi",
-              "identifier": "10.1038/s41586-024-07487-w",
+              "method": "url",
+              "identifier": "https://www.nature.com/articles/s41586-024-07487-w",
               "verified": true,
               "metadata": {
-                "title": "Accurate structure prediction of biomolecular interactions with AlphaFold 3",
-                "publisher": "Springer Science and Business Media LLC",
-                "year": 2024
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -3193,61 +3193,101 @@
           "all_verified": true
         },
         {
-          "source_title": "AlphaFold3 in Drug Discovery: A Comprehensive Assessment of its Impact on Structure-Based Drug Design",
+          "source_title": "DiffDock: Diffusion Steps, Twists, and Turns for Molecular Docking",
           "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://pubs.acs.org/doi/10.1021/acs.jcim.5c00120",
-              "verified": false,
+              "identifier": "https://arxiv.org/abs/2210.01776",
+              "verified": true,
               "metadata": {
-                "status": 403,
-                "final_url": "https://pubs.acs.org/doi/10.1021/acs.jcim.5c00120"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "Molecular de-novo design through deep reinforcement learning",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://jcheminf.biomedcentral.com/articles/10.1186/s13321-017-0235-x",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/ai-for-energy.md",
       "article_id": "ai-for-energy",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Energy and AI: AI for energy optimisation and innovation",
-          "source_type": "government_report",
+          "source_title": "AI for energy optimisation and innovation",
+          "source_type": "official_report",
           "results": [
             {
               "method": "url",
               "identifier": "https://www.iea.org/reports/energy-and-ai/ai-for-energy-optimisation-and-innovation",
-              "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.iea.org/reports/energy-and-ai/ai-for-energy-optimisation-and-innovation"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "A deep learning and IoT-driven framework for real-time smart grid management and renewable energy integration",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "doi",
-              "identifier": "10.1038/s41598-025-02649-w",
               "verified": true,
               "metadata": {
-                "title": "A deep learning and IoT-driven framework for real-time adaptive resource allocation and grid optimization in smart energy systems",
-                "publisher": "Springer Science and Business Media LLC",
-                "year": 2025
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Sensing and Predictive Analytics",
+          "source_type": "government_resource",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.nrel.gov/grid/sensing-predictive-analytics",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "DeepMind AI Reduces Google Data Centre Cooling Bill by 40%",
+          "source_type": "official_blog",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://deepmind.google/blog/deepmind-ai-reduces-google-data-centre-cooling-bill-40/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -3255,8 +3295,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/ai-for-food-science.md",
@@ -3310,20 +3352,20 @@
       "file": "content/ai/ai-for-fraud-detection.md",
       "article_id": "ai-for-fraud-detection",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Reinforcement learning with graph neural network (RL-GNN) for fraud detection in imbalanced financial data",
+          "source_title": "Financial fraud detection through the application of machine learning techniques: a literature review",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "doi",
-              "identifier": "10.1038/s41598-025-25200-3",
+              "method": "url",
+              "identifier": "https://www.nature.com/articles/s41599-024-03606-0",
               "verified": true,
               "metadata": {
-                "title": "Reinforcement learning with graph neural network (RL-GNN) fusion for real-time financial fraud detection: a context-aware community mining approach",
-                "publisher": "Springer Science and Business Media LLC",
-                "year": 2025
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -3331,25 +3373,46 @@
           "all_verified": true
         },
         {
-          "source_title": "A Review of Artificial Intelligence for Financial Fraud Detection: Methods, Challenges, and Future Directions",
+          "source_title": "Enhancing Graph Neural Network-based Fraud Detectors against Camouflaged Fraudsters",
           "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.mdpi.com/2076-3417/16/4/1931",
-              "verified": false,
+              "identifier": "https://arxiv.org/abs/2008.08692",
+              "verified": true,
               "metadata": {
-                "status": 403,
-                "final_url": "https://www.mdpi.com/2076-3417/16/4/1931"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "Financial Fraud Detection Based on Machine Learning: A Systematic Literature Review",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.mdpi.com/2076-3417/12/19/9637",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/ai/ai-for-fraud-prevention.md",
@@ -34772,19 +34835,20 @@
       "file": "content/geography/south-american-geography.md",
       "article_id": "south-american-geography",
       "generation_method": "ai_structured",
-      "sources_total": 4,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Physical Geography of South America",
-          "source_type": "textbook",
+          "source_title": "South America",
+          "source_type": "reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://global.oup.com/academic/product/physical-geography-of-south-america-9780190859169/",
+              "identifier": "https://www.britannica.com/place/South-America",
               "verified": true,
               "metadata": {
-                "status": 202,
-                "final_url": "https://global.oup.com/academic/product/physical-geography-of-south-america-9780190859169/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -34792,50 +34856,35 @@
           "all_verified": true
         },
         {
-          "source_title": "WWF Amazon Report 2024",
-          "source_type": "official_report",
+          "source_title": "Amazon",
+          "source_type": "reference",
           "results": [
             {
               "method": "url",
               "identifier": "https://www.worldwildlife.org/places/amazon",
-              "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.worldwildlife.org/places/amazon"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "The Andes: A Geographical Portrait (2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://doi.org/10.1007/andes.2025",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1007/andes.2025"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "South America: A Very Short Introduction (2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://global.oup.com/vsi-south-america/",
               "verified": true,
               "metadata": {
-                "status": 202,
-                "final_url": "https://global.oup.com/vsi-south-america/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Andes Mountains",
+          "source_type": "reference",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.britannica.com/place/Andes-Mountains",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -34843,8 +34892,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 2
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/geography/svalbard-the-arctic-archipelago-s-geography-and-climate-research.md",
@@ -35334,19 +35385,20 @@
       "file": "content/health/epidemiology-fundamentals.md",
       "article_id": "epidemiology-fundamentals",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Principles of Epidemiology in Public Health Practice, 3rd Ed",
-          "source_type": "textbook",
+          "source_title": "Principles of Epidemiology: Definition of Epidemiology",
+          "source_type": "government_resource",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.cdc.gov/training-publichealth101/",
+              "identifier": "https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson1/section1.html",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.cdc.gov/training-publichealth101/php/index.html"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -35354,25 +35406,46 @@
           "all_verified": true
         },
         {
-          "source_title": "Basic Epidemiology, 2nd Edition",
-          "source_type": "textbook",
+          "source_title": "On the Mode of Communication of Cholera",
+          "source_type": "primary_source",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.who.int/publications/i/item/9241547073",
-              "verified": false,
+              "identifier": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1740491/",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://www.who.int/publications/i/item/9241547073"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "The Environment and Disease: Association or Causation?",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://journals.sagepub.com/doi/10.1177/003591576505800503",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/health/epidemiology-principles-of-disease-surveillance-and-outbreak-investigation.md",
@@ -35875,24 +35948,10 @@
       "file": "content/health/nutrition-science.md",
       "article_id": "nutrition-science",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Understanding Nutrition, 16th Edition (Whitney & Rolfes)",
-          "source_type": "textbook",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.cengage.com/c/understanding-nutrition-16e-whitney/9780357447628/",
-              "verified": false,
-              "metadata": {},
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "WHO Healthy Diet Fact Sheet",
+          "source_title": "Healthy diet",
           "source_type": "official_report",
           "results": [
             {
@@ -35900,8 +35959,45 @@
               "identifier": "https://www.who.int/news-room/fact-sheets/detail/healthy-diet",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.who.int/news-room/fact-sheets/detail/healthy-diet"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Primary Prevention of Cardiovascular Disease with a Mediterranean Diet Supplemented with Extra-Virgin Olive Oil or Nuts",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.nejm.org/doi/full/10.1056/NEJMoa1800389",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Food in the Anthropocene: the EAT-Lancet Commission on healthy diets from sustainable food systems",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://pubmed.ncbi.nlm.nih.gov/30660336/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -35909,8 +36005,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/health/obesity-epidemiology-metabolic-consequences-and-interventions.md",
@@ -36078,36 +36176,56 @@
       "file": "content/health/sleep-science-and-circadian-rhythms.md",
       "article_id": "sleep-science-and-circadian-rhythms",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Why We Sleep: Unlocking the Power of Sleep and Dreams",
-          "source_type": "textbook",
+          "source_title": "The 2017 Nobel Prize in Physiology or Medicine",
+          "source_type": "official_report",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.simonandschuster.com/books/Why-We-Sleep/Matthew-Walker/9781501144325",
-              "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.simonandschuster.com/books/Why-We-Sleep/Matthew-Walker/9781501144325"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Circadian Rhythms: A Very Short Introduction",
-          "source_type": "reference",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://global.oup.com/academic/product/circadian-rhythms-a-very-short-introduction-9780198787346",
+              "identifier": "https://www.nobelprize.org/prizes/medicine/2017/press-release/",
               "verified": true,
               "metadata": {
-                "status": 202,
-                "final_url": "https://global.oup.com/academic/product/circadian-rhythms-a-very-short-introduction-9780198787346"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Recommended Amount of Sleep for a Healthy Adult",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4442216/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Sleep drives metabolite clearance from the adult brain",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://pubmed.ncbi.nlm.nih.gov/24136970/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -36115,8 +36233,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/health/sleep-science-circadian-rhythms-and-health.md",
@@ -36979,19 +37099,20 @@
       "file": "content/history/cold-war-history.md",
       "article_id": "cold-war-history",
       "generation_method": "ai_structured",
-      "sources_total": 4,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "The Cold War: A New History",
-          "source_type": "textbook",
+          "source_title": "Cold War",
+          "source_type": "reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.penguinrandomhouse.com/books/290540/the-cold-war-by-john-lewis-gaddis/",
+              "identifier": "https://www.britannica.com/event/Cold-War",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.penguinrandomhouse.com/books/290540/the-cold-war-by-john-lewis-gaddis/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -36999,16 +37120,17 @@
           "all_verified": true
         },
         {
-          "source_title": "The Cold War: A World History",
-          "source_type": "textbook",
+          "source_title": "Cuban missile crisis",
+          "source_type": "reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.basicbooks.com/titles/odd-arne-westad/the-cold-war/9780465093120/",
+              "identifier": "https://www.britannica.com/event/Cuban-missile-crisis",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.hachettebookgroup.com/titles/odd-arne-westad/the-cold-war/9780465093120/?lens=basic-books"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -37016,42 +37138,28 @@
           "all_verified": true
         },
         {
-          "source_title": "The Cold War: A World History (2nd Edition, 2025)",
-          "source_type": "book",
+          "source_title": "Berlin Wall",
+          "source_type": "reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.basicbooks.com/titles/odd-arne-westad/the-cold-war/",
-              "verified": false,
+              "identifier": "https://www.britannica.com/topic/Berlin-Wall",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://www.hachettebookgroup.com/titles/odd-arne-westad/the-cold-war/?lens=basic-books"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Global Cold War: Third World Interventions and the Making of Our Times (2025 Updated)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://doi.org/10.1017/cbo.2025.coldwar",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1017/cbo.2025.coldwar"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 2,
-      "sources_unreachable": 2
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/history/cold-war.md",
@@ -38936,19 +39044,20 @@
       "file": "content/history/scientific-revolution.md",
       "article_id": "scientific-revolution",
       "generation_method": "ai_structured",
-      "sources_total": 6,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "The Scientific Revolution: A Very Short Introduction",
+          "source_title": "Scientific Revolution",
           "source_type": "reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://global.oup.com/academic/product/the-scientific-revolution-a-very-short-introduction-9780199567416",
+              "identifier": "https://www.britannica.com/science/Scientific-Revolution",
               "verified": true,
               "metadata": {
-                "status": 202,
-                "final_url": "https://global.oup.com/academic/product/the-scientific-revolution-a-very-short-introduction-9780199567416"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -38956,16 +39065,17 @@
           "all_verified": true
         },
         {
-          "source_title": "The Structure of Scientific Revolutions (Kuhn)",
-          "source_type": "textbook",
+          "source_title": "The Copernican revolution",
+          "source_type": "reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://press.uchicago.edu/ucp/books/book/chicago/S/bo13179781.html",
+              "identifier": "https://www.britannica.com/science/universe/The-Copernican-revolution",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://press.uchicago.edu/ucp/books/book/chicago/S/bo13179781.html"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -38973,54 +39083,28 @@
           "all_verified": true
         },
         {
-          "source_title": "The Structure of Scientific Revolutions (60th Anniversary Edition, 2025)",
-          "source_type": "book",
+          "source_title": "Principia",
+          "source_type": "reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://press.uchicago.edu/ucp/books/book/chicago/S/bo13179781.html",
+              "identifier": "https://www.britannica.com/topic/Principia",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://press.uchicago.edu/ucp/books/book/chicago/S/bo13179781.html"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
           ],
           "all_verified": true
-        },
-        {
-          "source_title": "The Scientific Revolution: A Global History (2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.harpercollins.com/scientific-revolution/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.harpercollins.com/scientific-revolution/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "The Scientific Revolution: A Very Short Introduction",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "The Invention of Science: A New History of the Scientific Revolution",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
         }
       ],
       "sources_verified": 3,
-      "sources_unreachable": 1
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/history/silk-road.md",
@@ -40808,21 +40892,58 @@
     },
     {
       "file": "content/science/galaxies-and-the-universe.md",
-      "article_id": "kb-2026-00475",
+      "article_id": "galaxies-and-the-universe",
       "generation_method": "ai_assisted",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Cosmos (Carl Sagan)",
-          "source_type": "book",
+          "source_title": "Galaxies",
+          "source_type": "government_resource",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.penguinrandomhouse.com/books/55403/cosmos-by-carl-sagan/",
+              "identifier": "https://science.nasa.gov/universe/galaxies",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.penguinrandomhouse.com/books/55403/cosmos-by-carl-sagan/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Our Milky Way Galaxy: How Big is Space?",
+          "source_type": "government_resource",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://science.nasa.gov/universe/exoplanets/our-milky-way-galaxy-how-big-is-space/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "NASA Hubble Shows Milky Way is Destined for Head-on Collision with Andromeda Galaxy",
+          "source_type": "government_resource",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://science.nasa.gov/missions/hubble/nasas-hubble-shows-milky-way-is-destined-for-head-on-collision-with-andromeda-galaxy",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-28",
+                "note": "Twenty-fourth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -40830,8 +40951,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-28"
     },
     {
       "file": "content/science/general-relativity-einstein-s-theory-of-gravitation-and-its-tests.md",

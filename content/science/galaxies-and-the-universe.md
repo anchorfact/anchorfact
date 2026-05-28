@@ -1,63 +1,70 @@
 ---
-id: "kb-2026-00475"
-title: "Galaxies and the Universe"
-schema_type: "TechArticle"
-category: "science"
-language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
+id: kb-2026-00475
+title: Galaxies and the Universe
+schema_type: TechArticle
+category: science
+language: en
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-22"
-generation_method: "ai_assisted"
-ai_models: ["claude-opus"]
+generation_method: ai_assisted
+ai_models:
+  - claude-opus
 derived_from_human_seed: true
-conflict_of_interest: "none_declared"
+conflict_of_interest: none_declared
 is_live_document: false
-data_period: "static"
-
+data_period: static
 atomic_facts:
-  - id: "fact-science-01"
-    statement: "Milky Way: 100-400 billion stars, 100,000 light-years across, spiral type"
-    source_title: "Cosmos (Carl Sagan)"
-    source_url: "https://www.penguinrandomhouse.com/books/55403/cosmos-by-carl-sagan/"
-    confidence: "high"
-  - id: "fact-science-02"
-    statement: "Andromeda: nearest major galaxy, will collide with Milky Way in 4.5 billion years"
-    source_title: "Cosmos (Carl Sagan)"
-    source_url: "https://www.penguinrandomhouse.com/books/55403/cosmos-by-carl-sagan/"
-    confidence: "high"
-  - id: "fact-science-03"
-    statement: "Hubble Deep Field : pointed at empty patch for 10 days → thousands of galaxies"
-    source_title: "Cosmos (Carl Sagan)"
-    source_url: "https://www.penguinrandomhouse.com/books/55403/cosmos-by-carl-sagan/"
-    confidence: "high"
-
+  - id: af-science-galaxies-and-the-universe-1
+    statement: >-
+      NASA describes galaxies as large systems of stars, gas, dust, and dark matter held together by
+      gravity.
+    source_title: Galaxies
+    source_url: https://science.nasa.gov/universe/galaxies
+    confidence: medium
+  - id: af-science-galaxies-and-the-universe-2
+    statement: >-
+      NASA states that the Milky Way probably contains 100 to 400 billion stars and is about 100,000
+      light-years across.
+    source_title: "Our Milky Way Galaxy: How Big is Space?"
+    source_url: https://science.nasa.gov/universe/exoplanets/our-milky-way-galaxy-how-big-is-space/
+    confidence: medium
+  - id: af-science-galaxies-and-the-universe-3
+    statement: >-
+      NASA Hubble measurements predicted a future collision between the Milky Way and Andromeda
+      galaxies in about 4 billion years.
+    source_title: NASA Hubble Shows Milky Way is Destined for Head-on Collision with Andromeda Galaxy
+    source_url: >-
+      https://science.nasa.gov/missions/hubble/nasas-hubble-shows-milky-way-is-destined-for-head-on-collision-with-andromeda-galaxy
+    confidence: medium
 completeness: 0.88
-
 known_gaps:
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
-
-disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-
+  - >-
+    Certain sub-topics are covered at a general level; specialized edge cases and nuanced
+    applications may not be fully addressed
+disputed_statements: []
 primary_sources:
-  - title: "Cosmos (Carl Sagan)"
-    type: "book"
-    year: 1980
-    url: "https://www.penguinrandomhouse.com/books/55403/cosmos-by-carl-sagan/"
-    institution: "Random House"
-
-secondary_sources:
-  - title: "A Brief History of Time"
-    type: "book"
-    year: 1988
-    url: "https://www.penguinrandomhouse.com/books/31963/a-brief-history-of-time-by-stephen-hawking/"
-    institution: "Stephen Hawking, Bantam"
-  - title: "Nature (journal)"
-    type: "journal"
-    year: 2025
-    url: "https://www.nature.com/"
-    institution: "Springer Nature"
-
+  - id: ps-galaxies-and-the-universe-1
+    title: Galaxies
+    type: government_resource
+    year: 2026
+    institution: NASA Science
+    url: https://science.nasa.gov/universe/galaxies
+  - id: ps-galaxies-and-the-universe-2
+    title: "Our Milky Way Galaxy: How Big is Space?"
+    type: government_resource
+    year: 2018
+    institution: NASA Science
+    url: https://science.nasa.gov/universe/exoplanets/our-milky-way-galaxy-how-big-is-space/
+  - id: ps-galaxies-and-the-universe-3
+    title: NASA Hubble Shows Milky Way is Destined for Head-on Collision with Andromeda Galaxy
+    type: government_resource
+    year: 2012
+    institution: NASA Science
+    url: >-
+      https://science.nasa.gov/missions/hubble/nasas-hubble-shows-milky-way-is-destined-for-head-on-collision-with-andromeda-galaxy
+secondary_sources: []
+updated: "2026-05-28"
 ---
 
 

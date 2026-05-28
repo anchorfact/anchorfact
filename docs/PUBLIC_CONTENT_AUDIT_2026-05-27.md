@@ -1,8 +1,8 @@
 # AnchorFact Public Content Audit - 2026-05-28
 
-Generated: 2026-05-28T08:53:25.984Z
+Generated: 2026-05-28T09:05:17.823Z
 
-Snapshot: 555 public / 445 draft / 1579 claims.
+Snapshot: 555 public / 445 draft / 1582 claims.
 
 ## Summary
 
@@ -29,20 +29,20 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 | 4 | high_confidence | `ai/ai-in-healthcare` | high | 3/3 (100.0%) | 3 | source=pass; claim=pass; summary=pass | keep_public |
 | 5 | high_confidence | `ai/ai-red-teaming-and-safety` | high | 3/3 (100.0%) | 3 | source=pass; claim=pass; summary=pass | keep_public |
 | 6 | medium_capped_claims | `business/strategic-management-theory` | medium | 3/3 (100.0%) | 3 | source=pass; claim=pass; summary=pass | keep_public |
-| 7 | medium_capped_claims | `ai/ai-for-drug-discovery` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 8 | medium_capped_claims | `ai/ai-for-energy` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
-| 9 | medium_capped_claims | `ai/ai-for-fraud-detection` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 7 | medium_capped_claims | `ai/ai-for-iot` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 8 | medium_capped_claims | `ai/ai-for-legal` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
+| 9 | medium_capped_claims | `ai/ai-for-manufacturing` | medium | 1/2 (50.0%) | 2 | source=weak; claim=weak; summary=pass | repair_sources |
 | 10 | low_confidence_public | `arts/film-genres` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 | 11 | low_confidence_public | `arts/world-literature` | low | 2/2 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 | 12 | low_confidence_public | `history/age-of-exploration` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 | 13 | low_confidence_public | `history/byzantine-empire` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
-| 14 | risk_fallback | `geography/south-american-geography` | low | 2/4 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
-| 15 | risk_fallback | `health/epidemiology-fundamentals` | low | 1/2 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
-| 16 | risk_fallback | `health/nutrition-science` | low | 1/2 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
-| 17 | risk_fallback | `health/sleep-science-and-circadian-rhythms` | low | 1/2 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
-| 18 | risk_fallback | `history/cold-war-history` | low | 2/4 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
-| 19 | risk_fallback | `history/scientific-revolution` | low | 3/6 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
-| 20 | risk_fallback | `science/galaxies-and-the-universe` | low | 1/1 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
+| 14 | risk_fallback | `science/human-anatomy` | low | 1/1 (100.0%) | 3 | source=pass; claim=weak; summary=pass | repair_sources |
+| 15 | risk_fallback | `science/statistics-fundamentals` | low | 2/4 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
+| 16 | risk_fallback | `science/thermodynamics-fundamentals` | low | 2/4 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
+| 17 | risk_fallback | `self-improvement/cognitive-biases-handbook` | low | 2/4 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
+| 18 | risk_fallback | `self-improvement/goal-setting` | low | 4/8 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
+| 19 | risk_fallback | `sports/football-tactics` | low | 1/2 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
+| 20 | risk_fallback | `sports/sports-biomechanics` | low | 2/4 (50.0%) | 3 | source=weak; claim=weak; summary=pass | repair_sources |
 
 ## Article Findings
 
@@ -136,10 +136,10 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 7. AI for Drug Discovery: AlphaFold, Molecular Generation, and Generative Chemistry
+### 7. AI for the Internet of Things: Federated Learning, TinyML, and Intelligent Edge Devices
 
-- canonical slug: `ai/ai-for-drug-discovery`
-- canonical URL: https://anchorfact.org/ai/ai-for-drug-discovery/
+- canonical slug: `ai/ai-for-iot`
+- canonical URL: https://anchorfact.org/ai/ai-for-iot/
 - bucket: `medium_capped_claims`
 - confidence: `medium` (verified_sources, score 0.85)
 - verified source coverage: 1/2 (50.0%)
@@ -151,30 +151,30 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `repair_sources`
 
-### 8. AI for Energy: Smart Grids, Renewable Forecasting, and Digital Twins
+### 8. AI for Legal: Contract Analysis, Legal Reasoning, and Regulatory Compliance
 
-- canonical slug: `ai/ai-for-energy`
-- canonical URL: https://anchorfact.org/ai/ai-for-energy/
+- canonical slug: `ai/ai-for-legal`
+- canonical URL: https://anchorfact.org/ai/ai-for-legal/
 - bucket: `medium_capped_claims`
-- confidence: `medium` (verified_sources, score 0.85)
+- confidence: `medium` (verified_sources, score 0.73)
 - verified source coverage: 1/2 (50.0%)
 - claims: 2 total, 2 capped, 0 missing evidence
-- quality reasons: partial_source_verification, high_confidence_evidence_gap
+- quality reasons: partial_source_verification
 - source-title match: `weak`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
 - hygiene flags: none
 - recommendation: `repair_sources`
 
-### 9. AI for Fraud Detection: Graph Neural Networks, Anti-Money Laundering, and Financial Crime
+### 9. AI for Manufacturing: Predictive Maintenance, Quality Control, and Digital Twins
 
-- canonical slug: `ai/ai-for-fraud-detection`
-- canonical URL: https://anchorfact.org/ai/ai-for-fraud-detection/
+- canonical slug: `ai/ai-for-manufacturing`
+- canonical URL: https://anchorfact.org/ai/ai-for-manufacturing/
 - bucket: `medium_capped_claims`
-- confidence: `medium` (verified_sources, score 0.85)
+- confidence: `medium` (verified_sources, score 0.74)
 - verified source coverage: 1/2 (50.0%)
 - claims: 2 total, 2 capped, 0 missing evidence
-- quality reasons: partial_source_verification, high_confidence_evidence_gap
+- quality reasons: partial_source_verification
 - source-title match: `weak`
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
@@ -241,100 +241,10 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 14. South American Geography and Biodiversity
+### 14. Human Anatomy
 
-- canonical slug: `geography/south-american-geography`
-- canonical URL: https://anchorfact.org/geography/south-american-geography/
-- bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.55)
-- verified source coverage: 2/4 (50.0%)
-- claims: 3 total, 3 capped, 0 missing evidence
-- quality reasons: claim_evidence_weak, partial_source_verification
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: claim_evidence_weak
-- recommendation: `repair_sources`
-
-### 15. Epidemiology: The Science of Public Health
-
-- canonical slug: `health/epidemiology-fundamentals`
-- canonical URL: https://anchorfact.org/health/epidemiology-fundamentals/
-- bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.5)
-- verified source coverage: 1/2 (50.0%)
-- claims: 3 total, 3 capped, 0 missing evidence
-- quality reasons: claim_evidence_weak, partial_source_verification
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: claim_evidence_weak
-- recommendation: `repair_sources`
-
-### 16. Nutrition Science: Macronutrients, Micronutrients, and Diet
-
-- canonical slug: `health/nutrition-science`
-- canonical URL: https://anchorfact.org/health/nutrition-science/
-- bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.5)
-- verified source coverage: 1/2 (50.0%)
-- claims: 3 total, 3 capped, 0 missing evidence
-- quality reasons: claim_evidence_weak, partial_source_verification
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: claim_evidence_weak
-- recommendation: `repair_sources`
-
-### 17. Sleep Science and Circadian Rhythms
-
-- canonical slug: `health/sleep-science-and-circadian-rhythms`
-- canonical URL: https://anchorfact.org/health/sleep-science-and-circadian-rhythms/
-- bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.5)
-- verified source coverage: 1/2 (50.0%)
-- claims: 3 total, 3 capped, 0 missing evidence
-- quality reasons: claim_evidence_weak, partial_source_verification
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: claim_evidence_weak
-- recommendation: `repair_sources`
-
-### 18. The Cold War: Ideological Conflict and Nuclear Standoff
-
-- canonical slug: `history/cold-war-history`
-- canonical URL: https://anchorfact.org/history/cold-war-history/
-- bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.55)
-- verified source coverage: 2/4 (50.0%)
-- claims: 3 total, 3 capped, 0 missing evidence
-- quality reasons: claim_evidence_weak, partial_source_verification
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: claim_evidence_weak
-- recommendation: `repair_sources`
-
-### 19. The Scientific Revolution: From Copernicus to Newton
-
-- canonical slug: `history/scientific-revolution`
-- canonical URL: https://anchorfact.org/history/scientific-revolution/
-- bucket: `risk_fallback`
-- confidence: `low` (verified_sources, score 0.55)
-- verified source coverage: 3/6 (50.0%)
-- claims: 3 total, 3 capped, 0 missing evidence
-- quality reasons: claim_evidence_weak, partial_source_verification
-- source-title match: `weak`
-- claim-evidence match: `weak`
-- title-summary accuracy: `pass`
-- hygiene flags: claim_evidence_weak
-- recommendation: `repair_sources`
-
-### 20. Galaxies and the Universe
-
-- canonical slug: `science/galaxies-and-the-universe`
-- canonical URL: https://anchorfact.org/science/galaxies-and-the-universe/
+- canonical slug: `science/human-anatomy`
+- canonical URL: https://anchorfact.org/science/human-anatomy/
 - bucket: `risk_fallback`
 - confidence: `low` (verified_sources, score 0.43)
 - verified source coverage: 1/1 (100.0%)
@@ -344,6 +254,96 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - claim-evidence match: `weak`
 - title-summary accuracy: `pass`
 - hygiene flags: generic_dispute_statement, generic_source_homepage
+- recommendation: `repair_sources`
+
+### 15. Statistics: Probability, Inference, and Modeling
+
+- canonical slug: `science/statistics-fundamentals`
+- canonical URL: https://anchorfact.org/science/statistics-fundamentals/
+- bucket: `risk_fallback`
+- confidence: `low` (verified_sources, score 0.55)
+- verified source coverage: 2/4 (50.0%)
+- claims: 3 total, 3 capped, 0 missing evidence
+- quality reasons: claim_evidence_weak, partial_source_verification
+- source-title match: `weak`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: claim_evidence_weak
+- recommendation: `repair_sources`
+
+### 16. Thermodynamics Fundamentals
+
+- canonical slug: `science/thermodynamics-fundamentals`
+- canonical URL: https://anchorfact.org/science/thermodynamics-fundamentals/
+- bucket: `risk_fallback`
+- confidence: `low` (verified_sources, score 0.54)
+- verified source coverage: 2/4 (50.0%)
+- claims: 3 total, 3 capped, 0 missing evidence
+- quality reasons: claim_evidence_weak, partial_source_verification
+- source-title match: `weak`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: claim_evidence_weak
+- recommendation: `repair_sources`
+
+### 17. Cognitive Biases: A Practical Guide to Clearer Thinking
+
+- canonical slug: `self-improvement/cognitive-biases-handbook`
+- canonical URL: https://anchorfact.org/self-improvement/cognitive-biases-handbook/
+- bucket: `risk_fallback`
+- confidence: `low` (verified_sources, score 0.55)
+- verified source coverage: 2/4 (50.0%)
+- claims: 3 total, 3 capped, 0 missing evidence
+- quality reasons: claim_evidence_weak, partial_source_verification
+- source-title match: `weak`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: claim_evidence_weak
+- recommendation: `repair_sources`
+
+### 18. Goal Setting Frameworks
+
+- canonical slug: `self-improvement/goal-setting`
+- canonical URL: https://anchorfact.org/self-improvement/goal-setting/
+- bucket: `risk_fallback`
+- confidence: `low` (verified_sources, score 0.55)
+- verified source coverage: 4/8 (50.0%)
+- claims: 3 total, 3 capped, 0 missing evidence
+- quality reasons: claim_evidence_weak, partial_source_verification
+- source-title match: `weak`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: claim_evidence_weak
+- recommendation: `repair_sources`
+
+### 19. Football (Soccer) Tactics and Formations
+
+- canonical slug: `sports/football-tactics`
+- canonical URL: https://anchorfact.org/sports/football-tactics/
+- bucket: `risk_fallback`
+- confidence: `low` (verified_sources, score 0.5)
+- verified source coverage: 1/2 (50.0%)
+- claims: 3 total, 3 capped, 0 missing evidence
+- quality reasons: claim_evidence_weak, partial_source_verification
+- source-title match: `weak`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: claim_evidence_weak
+- recommendation: `repair_sources`
+
+### 20. Sports Biomechanics: The Physics of Human Movement
+
+- canonical slug: `sports/sports-biomechanics`
+- canonical URL: https://anchorfact.org/sports/sports-biomechanics/
+- bucket: `risk_fallback`
+- confidence: `low` (verified_sources, score 0.5)
+- verified source coverage: 2/4 (50.0%)
+- claims: 3 total, 3 capped, 0 missing evidence
+- quality reasons: claim_evidence_weak, partial_source_verification
+- source-title match: `weak`
+- claim-evidence match: `weak`
+- title-summary accuracy: `pass`
+- hygiene flags: claim_evidence_weak
 - recommendation: `repair_sources`
 
 ## Rule Calibration

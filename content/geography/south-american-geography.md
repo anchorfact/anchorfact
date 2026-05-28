@@ -4,8 +4,8 @@ title: South American Geography and Biodiversity
 schema_type: Article
 category: geography
 language: en
-confidence: high
-last_verified: "2026-05-24"
+confidence: medium
+last_verified: "2026-05-28"
 created_date: "2026-05-24"
 generation_method: ai_structured
 ai_models:
@@ -15,85 +15,53 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-geo-sa-001
-    statement: "Amazon: 5.5M km² largest tropical rainforest, ~10% Earth species (WWF 2024)."
-    source_title: WWF Amazon Biome Overview (2024)
+  - id: af-geography-south-american-geography-1
+    statement: >-
+      Britannica describes South America as the fourth-largest continent and notes that most of it
+      lies in the Southern Hemisphere.
+    source_title: South America
+    source_url: https://www.britannica.com/place/South-America
+    confidence: medium
+  - id: af-geography-south-american-geography-2
+    statement: >-
+      WWF identifies the Amazon as the largest rainforest on Earth and as a major center of
+      biodiversity.
+    source_title: Amazon
     source_url: https://www.worldwildlife.org/places/amazon
-    confidence: high
-  - id: fact-geo-sa-002
-    statement: "Andes: longest continental mountain range (7,000 km) through 7 countries."
-    source_title: Oncken et al. (eds.) The Andes (Springer 2006)
-    source_url: https://doi.org/10.1007/978-3-540-48684-8
-    confidence: high
-  - id: fact-geo-sa-003
-    statement: "Atacama Desert (Chile): driest non-polar desert; some stations never recorded rainfall (NASA)."
-    source_title: NASA Earth Observatory Atacama Desert (2024)
-    source_url: https://earthobservatory.nasa.gov/biome/biodesert.php
-    confidence: high
+    confidence: medium
+  - id: af-geography-south-american-geography-3
+    statement: >-
+      Britannica describes the Andes as a continuous highland along the western edge of South
+      America.
+    source_title: Andes Mountains
+    source_url: https://www.britannica.com/place/Andes-Mountains
+    confidence: medium
 completeness: 0.9
 known_gaps:
   - Patagonia glacial systems
   - Andean cultural geography
-disputed_statements:
-  - statement: No major disputed statements identified
+disputed_statements: []
 primary_sources:
-  - title: Physical Geography of South America
-    type: textbook
-    year: 2020
-    url: https://global.oup.com/academic/product/physical-geography-of-south-america-9780190859169/
-    institution: Oxford University Press
-  - title: WWF Amazon Report 2024
-    type: official_report
-    year: 2024
-    url: https://www.worldwildlife.org/places/amazon
+  - id: ps-south-american-geography-1
+    title: South America
+    type: reference
+    year: 2026
+    institution: Encyclopaedia Britannica
+    url: https://www.britannica.com/place/South-America
+  - id: ps-south-american-geography-2
+    title: Amazon
+    type: reference
+    year: 2026
     institution: World Wildlife Fund
-  - title: "The Andes: A Geographical Portrait (2025)"
-    type: book
-    year: 2025
-    authors:
-      - multiple
-    institution: Springer
-    url: https://doi.org/10.1007/andes.2025
-  - title: "South America: A Very Short Introduction (2025)"
-    type: book
-    year: 2025
-    authors:
-      - multiple
-    institution: Oxford University Press
-    url: https://global.oup.com/vsi-south-america/
-secondary_sources:
-  - title: "Latin America and the Caribbean: A Regional Geography (Gwynne & Kay)"
-    type: textbook
-    year: 1999
-    authors:
-      - Gwynne, Robert N.
-      - Kay, Cristóbal
-    institution: Routledge
-    url: https://doi.org/10.4324/9780203780312
-  - title: "The Amazon: What Everyone Needs to Know (Plotkin)"
-    type: textbook
-    year: 2020
-    authors:
-      - Plotkin, Mark J.
-    institution: Oxford University Press
-    url: https://doi.org/10.1093/wentk/9780190668280.001.0001
-  - title: The Physical Geography of South America (Veblen, Young, Orme, eds.)
-    type: textbook
-    year: 2007
-    authors:
-      - Veblen, Thomas T.
-      - Young, Kenneth R.
-      - Orme, Antony R. (eds.)
-    institution: Oxford University Press
-    url: https://doi.org/10.1093/oso/9780195313413.001.0001
-  - title: "Amazon Rainforest: Current Status and the Critical Role of Indigenous Territories (Science/RAISG)"
-    type: journal_article
-    year: 2024
-    authors:
-      - multiple
-    institution: Science / RAISG
-    url: https://doi.org/10.1126/science.adn1668
-updated: "2026-05-24"
+    url: https://www.worldwildlife.org/places/amazon
+  - id: ps-south-american-geography-3
+    title: Andes Mountains
+    type: reference
+    year: 2026
+    institution: Encyclopaedia Britannica
+    url: https://www.britannica.com/place/Andes-Mountains
+secondary_sources: []
+updated: "2026-05-28"
 ---
 ## TL;DR
 South America contains Earth's largest rainforest, longest mountain range, and most biodiverse ecosystems. The Amazon basin alone hosts 10% of all known species.
