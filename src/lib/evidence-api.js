@@ -27,10 +27,24 @@ export function parseEvidenceParams(url) {
     };
   }
 
+  const rawFormat = String(url.searchParams.get('format') || 'json').trim().toLowerCase();
+  const format = rawFormat === 'md' ? 'markdown' : rawFormat;
+  if (!['json', 'markdown'].includes(format)) {
+    return {
+      ok: false,
+      status: 400,
+      payload: errorPayload(
+        'invalid_format',
+        'Evidence format must be json, markdown, or md.'
+      )
+    };
+  }
+
   return {
     ok: true,
     query: parsed.query,
-    limit: parsed.limit
+    limit: parsed.limit,
+    format
   };
 }
 
@@ -155,4 +169,55 @@ export function buildEvidenceApiPayload({
       packs
     }
   };
+}
+
+export function renderEvidenceMarkdown(payload) {
+  const lines = [
+    `# AnchorFact Evidence Pack: ${payload.query}`,
+    '',
+    `Generated: ${payload.generated || 'unknown'}`,
+    `Provenance: ${payload.provenance_url || 'unavailable'}`,
+    `Results: ${payload.result_count}`,
+    '',
+    'Citation contract: cite only public claims; include confidence, AnchorFact claim URL, and original source URL.',
+    ''
+  ];
+
+  if (!Array.isArray(payload.packs) || payload.packs.length === 0) {
+    lines.push('_No public evidence packs matched this query._');
+    return `${lines.join('\n')}\n`;
+  }
+
+  for (const pack of payload.packs) {
+    lines.push(`## ${pack.title || pack.canonical_slug}`);
+    lines.push('');
+    lines.push(`- Article: ${pack.url || pack.canonical_slug}`);
+    lines.push(`- Confidence: ${pack.confidence_level || 'unknown'}`);
+    lines.push(`- Matched keywords: ${(pack.retrieval?.matched_keywords || []).join(', ') || 'none'}`);
+    lines.push('');
+    lines.push('### Claims');
+    if (Array.isArray(pack.citation_exports) && pack.citation_exports.length > 0) {
+      for (const citation of pack.citation_exports) {
+        lines.push(citation.markdown || `- ${citation.statement}`);
+      }
+    } else {
+      lines.push('- No public claim citations were found for this pack.');
+    }
+    lines.push('');
+    lines.push('### Sources');
+    if (Array.isArray(pack.sources) && pack.sources.length > 0) {
+      for (const source of pack.sources) {
+        const sourceBits = [
+          source.tier ? `tier ${source.tier}` : null,
+          source.type || null
+        ].filter(Boolean).join(', ');
+        lines.push(`- ${source.title || source.id}${sourceBits ? ` (${sourceBits})` : ''}${source.url ? ` - ${source.url}` : ''}`);
+      }
+    } else {
+      lines.push('- No public sources were found for this pack.');
+    }
+    lines.push('');
+  }
+
+  return `${lines.join('\n')}\n`;
 }

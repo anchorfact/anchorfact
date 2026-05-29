@@ -98,6 +98,7 @@ test('buildExamplesIndex produces executable AI workflow examples', () => {
 
   const evidenceExample = payload.examples[0];
   assert(evidenceExample.workflow[0].call.path.includes('/api/evidence?q=gaussian+splatting&limit=3'), 'evidence example should include encoded query path');
+  assert(evidenceExample.workflow[1].call.path.includes('format=markdown'), 'evidence example should include markdown context path');
   assertEq(evidenceExample.expected_anchor.claim.lookup_id, 'f1');
 
   const searchExample = payload.examples[1];

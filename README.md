@@ -138,7 +138,7 @@ Only public articles contribute publishable facts to `/claims.json`.
 | `/topics.json` | Compact public topic coverage map with article, claim, and source counts. |
 | `/examples.json` | Executable AI usage examples for dynamic API calls and signed static fallback workflows. |
 | `/graph.json` | Signed public graph of topic, article, claim, and source relationships. |
-| `/api/evidence?q=...` | Read-only Cloudflare Pages Function for one-call public evidence packs with search hits, article summaries, claims, sources, and citation exports. |
+| `/api/evidence?q=...` | Read-only Cloudflare Pages Function for one-call public evidence packs with search hits, article summaries, claims, sources, and citation exports. Add `format=markdown` for answer-ready text context. |
 | `/api/search?q=...` | Read-only Cloudflare Pages Function for lightweight public record lookup. |
 | `/api/article?slug=...` | Read-only Cloudflare Pages Function for public article evidence bundles with claims and sources. |
 | `/api/claim?id=...` | Read-only Cloudflare Pages Function for dereferencing one public atomic claim. |

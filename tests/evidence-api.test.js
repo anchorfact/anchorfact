@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 import {
   buildEvidenceApiPayload,
-  parseEvidenceParams
+  parseEvidenceParams,
+  renderEvidenceMarkdown
 } from '../src/lib/evidence-api.js';
 import { onRequestGet, onRequestOptions } from '../functions/api/evidence.js';
 
@@ -193,11 +194,20 @@ test('parseEvidenceParams validates query and clamps limit', () => {
   assertEq(parsed.ok, true);
   assertEq(parsed.query, 'gaussian');
   assertEq(parsed.limit, 20);
+  assertEq(parsed.format, 'json');
 
   const missing = parseEvidenceParams(new URL('https://anchorfact.org/api/evidence'));
   assertEq(missing.ok, false);
   assertEq(missing.status, 400);
   assertEq(missing.payload.error.code, 'missing_or_invalid_query');
+
+  const markdown = parseEvidenceParams(new URL('https://anchorfact.org/api/evidence?q=gaussian&format=md'));
+  assertEq(markdown.ok, true);
+  assertEq(markdown.format, 'markdown');
+
+  const invalid = parseEvidenceParams(new URL('https://anchorfact.org/api/evidence?q=gaussian&format=xml'));
+  assertEq(invalid.ok, false);
+  assertEq(invalid.payload.error.code, 'invalid_format');
 });
 
 test('buildEvidenceApiPayload returns compact public evidence packs', () => {
@@ -225,6 +235,22 @@ test('buildEvidenceApiPayload returns compact public evidence packs', () => {
   assert(result.payload.packs[0].citation_exports[0].inline.includes('AnchorFact:'), 'pack should expose citation-ready inline text');
   assertEq(result.payload.packs[0].source_count, 1);
   assert(result.payload.packs[0].retrieval.matched_keywords.includes('gaussian'), 'pack should expose matched query keywords');
+});
+
+test('renderEvidenceMarkdown returns answer-ready citation context', () => {
+  const result = buildEvidenceApiPayload({
+    query: 'gaussian splatting',
+    manifest: fixtureManifest,
+    claimsPayload: fixtureClaims,
+    sourcesPayload: fixtureSources,
+    searchIndex: fixtureSearchIndex,
+    generated: '2026-05-29T00:00:00.000Z'
+  });
+  const markdown = renderEvidenceMarkdown(result.payload);
+  assert(markdown.includes('# AnchorFact Evidence Pack: gaussian splatting'), 'markdown should include the query heading');
+  assert(markdown.includes('Citation contract:'), 'markdown should include citation contract guidance');
+  assert(markdown.includes('3D Gaussian Splatting represents scenes'), 'markdown should include claim text');
+  assert(markdown.includes('https://arxiv.org/abs/2308.04079'), 'markdown should include source URL');
 });
 
 test('buildEvidenceApiPayload hides draft records even if search data is inconsistent', () => {
@@ -267,6 +293,19 @@ test('Pages Function returns CORS JSON evidence packs', async () => {
   assertEq(payload.result_count, 1);
   assertEq(payload.packs[0].canonical_slug, 'ai/gaussian-splatting');
   assert(payload.packs[0].citation_exports[0].markdown.includes('3D Gaussian Splatting'), 'function response should include markdown citation text');
+});
+
+test('Pages Function returns Markdown evidence packs on request', async () => {
+  const response = await onRequestGet({
+    request: new Request('https://anchorfact.org/api/evidence?q=gaussian&limit=1&format=markdown'),
+    env: assetEnv()
+  });
+  const text = await response.text();
+  assertEq(response.status, 200);
+  assertEq(response.headers.get('Access-Control-Allow-Origin'), '*');
+  assert(response.headers.get('Content-Type').includes('text/markdown'), 'markdown response should use text/markdown');
+  assert(text.includes('# AnchorFact Evidence Pack: gaussian'), 'markdown response should include heading');
+  assert(text.includes('3D Gaussian Splatting represents scenes'), 'markdown response should include claims');
 });
 
 test('Pages Function rejects missing queries and asset failures', async () => {

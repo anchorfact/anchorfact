@@ -1,7 +1,8 @@
 import {
   EVIDENCE_API_SCHEMA_VERSION,
   buildEvidenceApiPayload,
-  parseEvidenceParams
+  parseEvidenceParams,
+  renderEvidenceMarkdown
 } from '../../src/lib/evidence-api.js';
 
 const JSON_HEADERS = {
@@ -16,6 +17,19 @@ function jsonResponse(payload, status = 200, cacheControl = 'public, max-age=300
     status,
     headers: {
       ...JSON_HEADERS,
+      'Cache-Control': cacheControl
+    }
+  });
+}
+
+function markdownResponse(text, cacheControl = 'public, max-age=300') {
+  return new Response(text, {
+    status: 200,
+    headers: {
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Methods': 'GET, OPTIONS',
+      'Access-Control-Allow-Headers': 'Content-Type',
+      'Content-Type': 'text/markdown; charset=utf-8',
       'Cache-Control': cacheControl
     }
   });
@@ -60,6 +74,9 @@ export async function onRequestGet(context) {
       sourcesPayload,
       searchIndex
     });
+    if (result.ok && parsed.format === 'markdown') {
+      return markdownResponse(renderEvidenceMarkdown(result.payload));
+    }
     return jsonResponse(result.payload, result.status, result.ok ? 'public, max-age=300' : 'no-store');
   } catch (error) {
     return jsonResponse({

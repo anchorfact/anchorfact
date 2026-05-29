@@ -113,10 +113,27 @@ export function buildOpenApiContract({
               required: false,
               schema: { type: 'integer', minimum: 1, maximum: 20, default: 5 },
               description: 'Maximum evidence pack count.'
+            },
+            {
+              name: 'format',
+              in: 'query',
+              required: false,
+              schema: { enum: ['json', 'markdown', 'md'], default: 'json' },
+              description: 'Response format. JSON is the default; markdown returns answer-ready context text.'
             }
           ],
           responses: {
-            200: jsonResponse('EvidenceApiResponse'),
+            200: {
+              description: 'OK',
+              content: {
+                'application/json': {
+                  schema: { $ref: '#/components/schemas/EvidenceApiResponse' }
+                },
+                'text/markdown': {
+                  schema: { type: 'string' }
+                }
+              }
+            },
             400: jsonResponse('ApiError')
           }
         }

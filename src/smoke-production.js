@@ -106,7 +106,7 @@ export async function main() {
   const expectedDraft = readExpectedInt('EXPECTED_DRAFT_ARTICLES');
   const expectedClaims = readExpectedInt('EXPECTED_CLAIMS');
 
-  const routes = ['/', '/agent.json', '/.well-known/anchorfact.json', '/openapi.json', '/manifest.json', '/llms.txt', '/claims.json', '/topics.json', '/examples.json', '/graph.json', '/api/evidence?q=gaussian&limit=2', '/api/search?q=gaussian&limit=2', '/api/article?slug=ai/3d-generation-gaussian-splatting', '/api/claim?id=f1', '/api/source?url=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079', '/search-index.json', '/sources.json', '/provenance.json', '/drafts.html'];
+  const routes = ['/', '/agent.json', '/.well-known/anchorfact.json', '/openapi.json', '/manifest.json', '/llms.txt', '/claims.json', '/topics.json', '/examples.json', '/graph.json', '/api/evidence?q=gaussian&limit=2', '/api/evidence?q=gaussian&limit=1&format=markdown', '/api/search?q=gaussian&limit=2', '/api/article?slug=ai/3d-generation-gaussian-splatting', '/api/claim?id=f1', '/api/source?url=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079', '/search-index.json', '/sources.json', '/provenance.json', '/drafts.html'];
   const results = {};
 
   for (const route of routes) {
@@ -123,6 +123,7 @@ export async function main() {
   const examples = JSON.parse(results['/examples.json'].body);
   const graph = JSON.parse(results['/graph.json'].body);
   const evidenceApi = JSON.parse(results['/api/evidence?q=gaussian&limit=2'].body);
+  const evidenceMarkdown = results['/api/evidence?q=gaussian&limit=1&format=markdown'].body;
   const searchApi = JSON.parse(results['/api/search?q=gaussian&limit=2'].body);
   const articleApi = JSON.parse(results['/api/article?slug=ai/3d-generation-gaussian-splatting'].body);
   const claimApi = JSON.parse(results['/api/claim?id=f1'].body);
@@ -220,6 +221,9 @@ export async function main() {
   assertOk(Array.isArray(gaussianEvidencePack?.claims) && gaussianEvidencePack.claims.length >= 1, '/api/evidence returned no claims for expected pack', failures);
   assertOk(Array.isArray(gaussianEvidencePack?.citation_exports) && gaussianEvidencePack.citation_exports.length >= 1, '/api/evidence returned no citation exports for expected pack', failures);
   assertOk(Array.isArray(gaussianEvidencePack?.sources) && gaussianEvidencePack.sources.length >= 1, '/api/evidence returned no sources for expected pack', failures);
+  assertOk(evidenceMarkdown.includes('# AnchorFact Evidence Pack: gaussian'), '/api/evidence markdown response is missing heading', failures);
+  assertOk(evidenceMarkdown.includes('Citation contract:'), '/api/evidence markdown response is missing citation contract', failures);
+  assertOk(evidenceMarkdown.includes('3D Gaussian Splatting'), '/api/evidence markdown response is missing expected evidence text', failures);
   assertOk(searchApi.schema_version === 'anchorfact.search-api.v1', `search api schema_version expected anchorfact.search-api.v1, got ${searchApi.schema_version || '(missing)'}`, failures);
   assertOk(searchApi.provenance_url === new URL('/provenance.json', baseUrl).href, `search api provenance_url expected ${new URL('/provenance.json', baseUrl).href}, got ${searchApi.provenance_url || '(missing)'}`, failures);
   assertOk(searchApi.query === 'gaussian', `search api query expected gaussian, got ${searchApi.query || '(missing)'}`, failures);
@@ -279,6 +283,8 @@ export async function main() {
   headerIncludes(results['/examples.json'], 'Access-Control-Allow-Origin', '*', failures);
   headerIncludes(results['/graph.json'], 'Access-Control-Allow-Origin', '*', failures);
   headerIncludes(results['/api/evidence?q=gaussian&limit=2'], 'Access-Control-Allow-Origin', '*', failures);
+  headerIncludes(results['/api/evidence?q=gaussian&limit=1&format=markdown'], 'Content-Type', 'text/markdown', failures);
+  headerIncludes(results['/api/evidence?q=gaussian&limit=1&format=markdown'], 'Access-Control-Allow-Origin', '*', failures);
   headerIncludes(results['/api/search?q=gaussian&limit=2'], 'Access-Control-Allow-Origin', '*', failures);
   headerIncludes(results['/api/article?slug=ai/3d-generation-gaussian-splatting'], 'Access-Control-Allow-Origin', '*', failures);
   headerIncludes(results['/api/claim?id=f1'], 'Access-Control-Allow-Origin', '*', failures);

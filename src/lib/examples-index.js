@@ -144,6 +144,7 @@ export function buildExamplesIndex({
   const claim = chooseClaim(claims, record);
   const source = chooseSource(sources, claim);
   const evidencePath = queryPath('/api/evidence', { q: query, limit: 3 });
+  const evidenceMarkdownPath = queryPath('/api/evidence', { q: query, limit: 3, format: 'markdown' });
   const searchPath = queryPath('/api/search', { q: query, limit: 3 });
   const articlePath = queryPath('/api/article', { slug: record.canonical_slug });
   const claimPath = queryPath('/api/claim', { id: claimShortId(claim?.id) });
@@ -156,7 +157,8 @@ export function buildExamplesIndex({
       user_question: `What can AnchorFact verify about ${query}?`,
       topic: topicId,
       workflow: [
-        { step: 1, call: call(evidencePath, site), use: 'Read public article summaries, matched claims, and mapped sources before answering.' }
+        { step: 1, call: call(evidencePath, site), use: 'Read public article summaries, matched claims, and mapped sources before answering.' },
+        { step: 2, call: call(evidenceMarkdownPath, site), use: 'Fetch answer-ready Markdown context when a model prompt prefers text over JSON.' }
       ],
       expected_anchor: {
         topic: topic ? { id: topic.id, title: topic.title, article_count: topic.article_count } : null,
