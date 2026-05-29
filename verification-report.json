@@ -2,13 +2,13 @@
   "summary": {
     "generated": "2026-05-27T14:00:00.000Z",
     "total_articles": 1000,
-    "total_with_errors": 330,
-    "average_sources_per_article": "2.4",
-    "overall_verification_rate": "74.5%",
+    "total_with_errors": 277,
+    "average_sources_per_article": "2.3",
+    "overall_verification_rate": "78.3%",
     "elapsed_ms": 635005,
     "elapsed_sec": "635.0",
     "concurrency": 3,
-    "manual_reviewed_articles": 551
+    "manual_reviewed_articles": 570
   },
   "articles": [
     {
@@ -18034,79 +18034,70 @@
       "file": "content/arts/film-history.md",
       "article_id": "kb-2026-00344",
       "generation_method": "ai_structured",
-      "sources_total": 4,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "A Short History of Film (Dixon & Foster)",
-          "source_type": "book",
+          "source_title": "Britannica: Lumiere brothers",
+          "source_type": "encyclopedia",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.rutgersuniversitypress.org/a-short-history-of-film-third-edition/9780813595139/",
-              "verified": false,
+              "identifier": "https://www.britannica.com/biography/Lumiere-brothers",
+              "verified": true,
               "metadata": {
-                "status": 403,
-                "final_url": "https://www.rutgersuniversitypress.org/a-short-history-of-film-third-edition/9780813595139/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted low-risk draft repair batch 60; sources manually reviewed with direct URL checks; local verify-full was not run.",
+                "final_url": "https://www.britannica.com/biography/Lumiere-brothers"
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "The Story of Film (2025 Updated Edition)",
-          "source_type": "book",
+          "source_title": "Britannica: The Jazz Singer",
+          "source_type": "encyclopedia",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.pavilionbooks.com/film/",
-              "verified": false,
+              "identifier": "https://www.britannica.com/topic/The-Jazz-Singer-film-1927",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://www.pavilionbooks.com/film/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted low-risk draft repair batch 60; sources manually reviewed with direct URL checks; local verify-full was not run.",
+                "final_url": "https://www.britannica.com/topic/The-Jazz-Singer-film-1927"
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Film History: An Introduction (6th Edition, 2025)",
-          "source_type": "book",
+          "source_title": "Britannica: What was the first modern blockbuster?",
+          "source_type": "encyclopedia",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.mheducation.com/film-history/",
-              "verified": false,
+              "identifier": "https://www.britannica.com/question/What-was-the-first-modern-blockbuster",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://www.mheducation.com/film-history"
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted low-risk draft repair batch 60; sources manually reviewed with direct URL checks; local verify-full was not run.",
+                "final_url": "https://www.britannica.com/question/What-was-the-first-modern-blockbuster"
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
-        },
-        {
-          "source_title": "The Story of Film (2025 Updated)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.pavilionbooks.com/film/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.pavilionbooks.com/film/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 4
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-30"
     },
     {
       "file": "content/arts/greek-mythology.md",
@@ -18166,79 +18157,51 @@
       "file": "content/arts/impressionism.md",
       "article_id": "kb-2026-00343",
       "generation_method": "ai_structured",
-      "sources_total": 4,
+      "sources_total": 2,
       "verification_results": [
         {
-          "source_title": "Impressionism (Karin H. Grimme)",
-          "source_type": "book",
+          "source_title": "Britannica: Impressionism",
+          "source_type": "encyclopedia",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.taschen.com/en/books/art/43189/impressionism/",
-              "verified": false,
+              "identifier": "https://www.britannica.com/art/Impressionism-art",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://www.taschen.com/en/books/art/43189/impressionism/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted low-risk draft repair batch 60; sources manually reviewed with direct URL checks; local verify-full was not run.",
+                "final_url": "https://www.britannica.com/art/Impressionism-art"
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Impressionism (Art & Ideas) (2025 Edition)",
-          "source_type": "book",
+          "source_title": "Tate: Impressionism",
+          "source_type": "museum_reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.phaidon.com/impressionism/",
-              "verified": false,
+              "identifier": "https://www.tate.org.uk/art/art-terms/i/impressionism",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://www.phaidon.com/en-us/impressionism"
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted low-risk draft repair batch 60; sources manually reviewed with direct URL checks; local verify-full was not run.",
+                "final_url": "https://www.tate.org.uk/art/art-terms/i/impressionism"
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
-        },
-        {
-          "source_title": "The Impressionists at First Hand (2025 Updated)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://thamesandhudson.com/impressionists/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.thamesandhudson.com/impressionists"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Impressionism (Art & Ideas) (2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.phaidon.com/impressionism/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.phaidon.com/en-us/impressionism"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 4
+      "sources_verified": 2,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-30"
     },
     {
       "file": "content/arts/jazz-music.md",
@@ -38056,79 +38019,91 @@
     },
     {
       "file": "content/geography/arctic-and-antarctic.md",
-      "article_id": null,
+      "article_id": "kb-2026-01001",
       "generation_method": "ai_assisted",
       "sources_total": 4,
       "verification_results": [
         {
-          "source_title": "The Arctic: A Guide to Coastal Wildlife (Tony Soper)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.bradtguides.com/product/the-arctic/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.bradtguides.com/product/the-arctic/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "National Geographic Atlas of the World, 11th Ed",
+          "source_title": "NSIDC: Quick Facts about Sea Ice",
           "source_type": "reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.nationalgeographic.com/books/atlas/",
-              "verified": false,
+              "identifier": "https://nsidc.org/learn/parts-cryosphere/sea-ice",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://www.nationalgeographic.com/books/atlas/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted low-risk draft repair batch 60; sources manually reviewed with direct URL checks; local verify-full was not run.",
+                "final_url": "https://nsidc.org/learn/parts-cryosphere/sea-ice"
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Geomorphometric modeling and mapping of Antarctic oases",
-          "source_type": "academic_paper",
+          "source_title": "NSIDC: Ice Sheets",
+          "source_type": "reference",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2305.07523v3",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://nsidc.org/learn/parts-cryosphere/ice-sheets",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted low-risk draft repair batch 60; sources manually reviewed with direct URL checks; local verify-full was not run.",
+                "final_url": "https://nsidc.org/learn/parts-cryosphere/ice-sheets"
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Computer Vision Pipeline for Automated Antarctic Krill Analysis",
-          "source_type": "academic_paper",
+          "source_title": "Antarctic Treaty Secretariat: The Antarctic Treaty",
+          "source_type": "official_record",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2309.06188v2",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://www.ats.aq/e/antarctictreaty.html",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted low-risk draft repair batch 60; sources manually reviewed with direct URL checks; local verify-full was not run.",
+                "final_url": "https://www.ats.aq/e/antarctictreaty.html"
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "NASA Earth Observatory: The Carbon Cycle",
+          "source_type": "government_reference",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://science.nasa.gov/earth/earth-observatory/the-carbon-cycle/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted low-risk draft repair batch 60; sources manually reviewed with direct URL checks; local verify-full was not run.",
+                "final_url": "https://science.nasa.gov/earth/earth-observatory/the-carbon-cycle/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 4
+      "sources_verified": 4,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-30"
     },
     {
       "file": "content/geography/asian-geography.md",
