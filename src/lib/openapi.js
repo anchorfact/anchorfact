@@ -1,5 +1,6 @@
 import {
   AGENT_PROFILE_SCHEMA_VERSION,
+  ARTICLE_API_SCHEMA_VERSION,
   CLAIMS_SCHEMA_VERSION,
   COMPILER_VERSION,
   MANIFEST_SCHEMA_VERSION,
@@ -108,6 +109,25 @@ export function buildOpenApiContract({
           responses: { 200: jsonResponse('SearchApiResponse') }
         }
       },
+      '/api/article': {
+        get: {
+          summary: 'Read-only public article evidence bundle',
+          parameters: [
+            {
+              name: 'slug',
+              in: 'query',
+              required: true,
+              schema: { type: 'string', minLength: 1 },
+              description: 'Canonical public article slug, such as ai/3d-generation-gaussian-splatting.'
+            }
+          ],
+          responses: {
+            200: jsonResponse('ArticleApiResponse'),
+            400: jsonResponse('ApiError'),
+            404: jsonResponse('ApiError')
+          }
+        }
+      },
       '/search-index.json': getJson('Compact public retrieval index', 'SearchIndex'),
       '/sources.json': getJson('Deduplicated public source index', 'Sources'),
       '/provenance.json': getJson('Signed build provenance and artifact hashes', 'Provenance'),
@@ -196,6 +216,32 @@ export function buildOpenApiContract({
           source_index_generated: { type: ['string', 'null'], format: 'date-time' },
           results: { type: 'array', items: { type: 'object' } }
         }),
+        ArticleApiResponse: schemaVersioned('Article API response', ARTICLE_API_SCHEMA_VERSION, {
+          canonical_slug: { type: 'string' },
+          article: { type: 'object' },
+          retrieval: { type: ['object', 'null'] },
+          claim_count: { type: 'integer' },
+          claims: { type: 'array', items: { type: 'object' } },
+          source_count: { type: 'integer' },
+          sources: { type: 'array', items: { type: 'object' } }
+        }),
+        ApiError: {
+          type: 'object',
+          required: ['schema_version', 'error'],
+          properties: {
+            schema_version: { type: 'string' },
+            error: {
+              type: 'object',
+              required: ['code', 'message'],
+              properties: {
+                code: { type: 'string' },
+                message: { type: 'string' }
+              },
+              additionalProperties: true
+            }
+          },
+          additionalProperties: true
+        },
         Sources: schemaVersioned('Sources', SOURCES_SCHEMA_VERSION, {
           source_count: { type: 'integer' },
           sources: { type: 'array', items: { type: 'object' } }

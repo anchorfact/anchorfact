@@ -88,6 +88,7 @@ function writeRootIndex(distDir, results, publicResults, draftResults, claims) {
     <a href="/agent.json">Agent profile</a> &middot;
     <a href="/openapi.json">OpenAPI</a> &middot;
     <a href="/api/search?q=gaussian">Search API</a> &middot;
+    <a href="/api/article?slug=ai/3d-generation-gaussian-splatting">Article API</a> &middot;
     <a href="/llms.txt">llms.txt</a> &middot;
     <a href="/manifest.json">Manifest</a> &middot;
     <a href="/claims.json">Claims JSON</a> &middot;
@@ -162,6 +163,7 @@ ${entries || '_No public verified entries yet._'}
 - [Agent Profile](https://anchorfact.org/agent.json): Machine contract and recommended retrieval workflow.
 - [OpenAPI](https://anchorfact.org/openapi.json): Static read-only endpoint contract for tools.
 - [Search API](https://anchorfact.org/api/search?q=gaussian): Read-only search over public records.
+- [Article API](https://anchorfact.org/api/article?slug=ai/3d-generation-gaussian-splatting): Read-only public article evidence bundles with claims and sources.
 - [Manifest](https://anchorfact.org/manifest.json): Full index with public/draft status.
 - [Claims](https://anchorfact.org/claims.json): Public verified atomic claims.
 - [Search Index](https://anchorfact.org/search-index.json): Compact public retrieval records with keywords, claim ids, and source coverage.
