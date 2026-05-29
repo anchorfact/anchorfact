@@ -87,8 +87,9 @@ test('buildExamplesIndex produces executable AI workflow examples', () => {
 
   assertEq(payload.schema_version, 'anchorfact.examples.v1');
   assertEq(payload.provenance_url, 'https://anchorfact.org/provenance.json');
-  assertEq(payload.example_count, 6);
+  assertEq(payload.example_count, 7);
   assertEq(payload.examples.map(example => example.id), [
+    'local_mcp_planning_and_citation',
     'one_call_evidence_pack',
     'search_to_article_evidence',
     'claim_dereference',
@@ -97,12 +98,19 @@ test('buildExamplesIndex produces executable AI workflow examples', () => {
     'static_fallback'
   ]);
 
-  const evidenceExample = payload.examples[0];
+  const mcpExample = payload.examples[0];
+  assertEq(mcpExample.workflow[0].mcp_tool.tool, 'anchorfact_plan_query');
+  assertEq(mcpExample.workflow[1].mcp_tool.tool, 'anchorfact_search');
+  assertEq(mcpExample.workflow[2].mcp_tool.arguments.article_id, 'ai/3d-generation-gaussian-splatting');
+  assertEq(mcpExample.workflow[3].mcp_tool.tool, 'anchorfact_cite_claim');
+  assert(mcpExample.http_equivalent.some(call => call.path.includes('/api/plan?')), 'MCP example should name HTTP planner equivalent');
+
+  const evidenceExample = payload.examples[1];
   assert(evidenceExample.workflow[0].call.path.includes('/api/evidence?q=gaussian+splatting&limit=3'), 'evidence example should include encoded query path');
   assert(evidenceExample.workflow[1].call.path.includes('format=markdown'), 'evidence example should include markdown context path');
   assertEq(evidenceExample.expected_anchor.claim.lookup_id, 'f1');
 
-  const searchExample = payload.examples[1];
+  const searchExample = payload.examples[2];
   assert(searchExample.workflow[1].call.path.includes('/api/search?q=gaussian+splatting&limit=3'), 'search example should include encoded query path');
   assert(searchExample.workflow[2].call.path.includes('/api/article?slug=ai%2F3d-generation-gaussian-splatting'), 'search example should fetch article evidence');
   assertEq(searchExample.expected_anchor.topic, { id: 'ai', title: 'AI', article_count: 1 });

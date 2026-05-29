@@ -163,6 +163,44 @@ export function buildExamplesIndex({
 
   const examples = [
     {
+      id: 'local_mcp_planning_and_citation',
+      intent: 'Use local MCP tools to plan coverage, inspect a public article, and export a citation-ready claim without relying on HTTP Functions.',
+      user_question: `What can a local MCP host verify about ${query}?`,
+      topic: topicId,
+      workflow: [
+        {
+          step: 1,
+          mcp_tool: { tool: 'anchorfact_plan_query', arguments: { query, limit: 3 } },
+          use: 'Decide whether local AnchorFact coverage is plausible before retrieving records.'
+        },
+        {
+          step: 2,
+          mcp_tool: { tool: 'anchorfact_search', arguments: { query, confidence_min: 'low', limit: 3 } },
+          use: 'Shortlist local public article records from the built dist artifacts.'
+        },
+        {
+          step: 3,
+          mcp_tool: { tool: 'anchorfact_get_article', arguments: { article_id: record.canonical_slug } },
+          use: 'Inspect the selected public article and its source context.'
+        },
+        {
+          step: 4,
+          mcp_tool: { tool: 'anchorfact_cite_claim', arguments: { claim_id: claimShortId(claim?.id), format: 'markdown' } },
+          use: 'Export citation-ready Markdown for the selected claim.'
+        }
+      ],
+      http_equivalent: [
+        call(queryPath('/api/plan', { q: query, limit: 3 }), site),
+        call(evidencePath, site),
+        call(citePath, site)
+      ],
+      expected_anchor: {
+        article: articleAnchor(record),
+        claim: claimAnchor(claim),
+        source: sourceAnchor(source)
+      }
+    },
+    {
       id: 'one_call_evidence_pack',
       intent: 'Fetch a compact source-grounded evidence pack for a natural-language question in one HTTP call.',
       user_question: `What can AnchorFact verify about ${query}?`,

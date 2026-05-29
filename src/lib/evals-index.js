@@ -4,6 +4,7 @@ import {
   EVALS_SCHEMA_VERSION,
   EVIDENCE_API_SCHEMA_VERSION,
   GRAPH_SCHEMA_VERSION,
+  MCP_SCHEMA_VERSION,
   OFFICIAL_SITE,
   PLAN_API_SCHEMA_VERSION,
   PROVENANCE_PATH,
@@ -270,6 +271,25 @@ export function buildEvalsIndex({
           article_has_claim: graphHasEdgeType(graphPayload, 'article_has_claim'),
           claim_supported_by_source: graphHasEdgeType(graphPayload, 'claim_supported_by_source')
         }
+      }
+    },
+    {
+      id: 'mcp_tool_catalog',
+      intent: 'Confirm the signed MCP profile declares local tools needed for planning, search, retrieval, resolution, and citation.',
+      call: call('/mcp.json', site),
+      expected: {
+        status: 200,
+        content_type: 'application/json',
+        schema_version: MCP_SCHEMA_VERSION,
+        required_tools: [
+          'anchorfact_plan_query',
+          'anchorfact_search',
+          'anchorfact_get_article',
+          'anchorfact_resolve_reference',
+          'anchorfact_resolve_references',
+          'anchorfact_cite_claim',
+          'anchorfact_list_categories'
+        ]
       }
     },
     {

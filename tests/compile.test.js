@@ -194,10 +194,10 @@ test('agent profile describes the machine contract', () => {
   assertEq(agent.current_snapshot.public_claims, 2);
   assertEq(agent.current_snapshot.topics, 1);
   assertEq(agent.current_snapshot.capabilities, 9);
-  assertEq(agent.current_snapshot.examples, 6);
+  assertEq(agent.current_snapshot.examples, 7);
   assert(agent.current_snapshot.graph_nodes >= 1, 'agent profile should expose graph node count');
   assert(agent.current_snapshot.graph_edges >= 1, 'agent profile should expose graph edge count');
-  assertEq(agent.current_snapshot.evals, 10);
+  assertEq(agent.current_snapshot.evals, 11);
   assertEq(agent.current_snapshot.mcp_tools, 7);
   assert(agent.current_snapshot.unique_sources >= 1, 'agent profile should expose source count');
   assertEq(agent.endpoints.claims.url, 'https://anchorfact.org/claims.json');
@@ -357,8 +357,9 @@ test('examples.json describes executable AI usage examples', () => {
   const examples = JSON.parse(readFileSync(join(distDir, 'examples.json'), 'utf-8'));
   assertEq(examples.schema_version, 'anchorfact.examples.v1');
   assertEq(examples.provenance_url, 'https://anchorfact.org/provenance.json');
-  assertEq(examples.example_count, 6);
+  assertEq(examples.example_count, 7);
   assertEq(examples.examples.map(example => example.id), [
+    'local_mcp_planning_and_citation',
     'one_call_evidence_pack',
     'search_to_article_evidence',
     'claim_dereference',
@@ -366,14 +367,17 @@ test('examples.json describes executable AI usage examples', () => {
     'source_reuse_lookup',
     'static_fallback'
   ]);
-  const evidenceExample = examples.examples[0];
+  const mcpExample = examples.examples[0];
+  assert(mcpExample.workflow.some(step => step.mcp_tool?.tool === 'anchorfact_plan_query'), 'examples should show MCP planner usage');
+  assert(mcpExample.workflow.some(step => step.mcp_tool?.tool === 'anchorfact_cite_claim'), 'examples should show MCP citation usage');
+  const evidenceExample = examples.examples[1];
   assert(evidenceExample.workflow.some(step => step.call.path.includes('/api/evidence?')), 'examples should show evidence API usage');
   const claimExample = examples.examples.find(example => example.id === 'claim_dereference');
   assert(claimExample.workflow.some(step => step.call.path.includes('/api/resolve?')), 'examples should show resolve API usage');
   assert(claimExample.workflow.some(step => step.call.path.includes('/api/cite?')), 'examples should show citation API usage');
   const mixedExample = examples.examples.find(example => example.id === 'mixed_reference_resolution');
   assert(mixedExample.workflow.some(step => step.call.path.includes('/api/resolve-batch?')), 'examples should show resolve batch API usage');
-  const searchExample = examples.examples[1];
+  const searchExample = examples.examples[2];
   assert(searchExample.workflow.some(step => step.call.path.includes('/api/search?')), 'examples should show search API usage');
   assert(searchExample.workflow.some(step => step.call.path.includes('/api/article?')), 'examples should show article API usage');
   assertEq(searchExample.expected_anchor.article.canonical_slug, 'public-fixture');
@@ -400,7 +404,7 @@ test('evals.json describes executable AI integration checks', () => {
   const evals = JSON.parse(readFileSync(join(distDir, 'evals.json'), 'utf-8'));
   assertEq(evals.schema_version, 'anchorfact.evals.v1');
   assertEq(evals.provenance_url, 'https://anchorfact.org/provenance.json');
-  assertEq(evals.eval_count, 10);
+  assertEq(evals.eval_count, 11);
   assertEq(evals.evals.map(evalCase => evalCase.id), [
     'query_plan',
     'evidence_pack_json',
@@ -411,6 +415,7 @@ test('evals.json describes executable AI integration checks', () => {
     'citation_export',
     'source_reuse_lookup',
     'graph_relationships',
+    'mcp_tool_catalog',
     'signed_provenance_static_artifacts'
   ]);
   assert(evals.evals.some(evalCase => evalCase.call.path.includes('/api/plan?')), 'evals should include plan API checks');
@@ -420,6 +425,8 @@ test('evals.json describes executable AI integration checks', () => {
   assert(evals.evals.some(evalCase => evalCase.call.path.includes('/api/claim?')), 'evals should include claim API checks');
   assert(evals.evals.some(evalCase => evalCase.call.path.includes('/api/cite?')), 'evals should include citation API checks');
   assert(evals.evals.some(evalCase => evalCase.call.path === '/graph.json'), 'evals should include graph checks');
+  const mcpEval = evals.evals.find(evalCase => evalCase.id === 'mcp_tool_catalog');
+  assert(mcpEval.expected.required_tools.includes('anchorfact_plan_query'), 'evals should include MCP planner metadata check');
   const provenanceEval = evals.evals.find(evalCase => evalCase.id === 'signed_provenance_static_artifacts');
   assert(provenanceEval.expected.required_artifacts.includes('evals_json'), 'evals should require self hash in provenance');
   assert(provenanceEval.expected.required_artifacts.includes('mcp_json'), 'evals should require MCP hash in provenance');

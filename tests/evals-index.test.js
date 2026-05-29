@@ -104,7 +104,7 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
 
   assertEq(payload.schema_version, 'anchorfact.evals.v1');
   assertEq(payload.provenance_url, 'https://anchorfact.org/provenance.json');
-  assertEq(payload.eval_count, 10);
+  assertEq(payload.eval_count, 11);
   assertEq(payload.evals.map(evalCase => evalCase.id), [
     'query_plan',
     'evidence_pack_json',
@@ -115,6 +115,7 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
     'citation_export',
     'source_reuse_lookup',
     'graph_relationships',
+    'mcp_tool_catalog',
     'signed_provenance_static_artifacts'
   ]);
 
@@ -163,6 +164,12 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
   assert(provenanceEval.expected.required_artifacts.includes('capabilities_json'), 'provenance eval should require capabilities artifact hash');
   assert(provenanceEval.expected.required_artifacts.includes('coverage_json'), 'provenance eval should require coverage artifact hash');
   assert(provenanceEval.expected.required_artifacts.includes('mcp_json'), 'provenance eval should require mcp artifact hash');
+
+  const mcpEval = payload.evals.find(evalCase => evalCase.id === 'mcp_tool_catalog');
+  assertEq(mcpEval.call.path, '/mcp.json');
+  assertEq(mcpEval.expected.schema_version, 'anchorfact.mcp.v1');
+  assert(mcpEval.expected.required_tools.includes('anchorfact_plan_query'), 'MCP eval should require query planner tool metadata');
+  assert(mcpEval.expected.required_tools.includes('anchorfact_cite_claim'), 'MCP eval should require citation tool metadata');
 });
 
 test('buildEvalsIndex returns an empty contract when no public records exist', () => {
