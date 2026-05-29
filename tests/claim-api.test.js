@@ -153,6 +153,9 @@ test('buildClaimApiPayload returns a public claim with article and matching sour
   assertEq(result.payload.schema_version, 'anchorfact.claim-api.v1');
   assertEq(result.payload.claim_id, 'https://anchorfact.org/fact/f1');
   assertEq(result.payload.claim.statement, '3D Gaussian Splatting represents scenes as anisotropic Gaussians.');
+  assertEq(result.payload.citation_contract.include_anchorfact_claim_url, true);
+  assert(result.payload.citation_export.inline.includes('AnchorFact: 3D Gaussian Splatting; medium confidence'), 'claim response should include inline citation text');
+  assertEq(result.payload.citation_export.source_tier, 'A');
   assertEq(result.payload.article.canonical_slug, 'ai/gaussian-splatting');
   assertEq(result.payload.source_count, 1);
   assertEq(result.payload.sources[0].tier, 'A');
@@ -180,6 +183,7 @@ test('Pages Function returns CORS JSON claim bundles', async () => {
   assertEq(response.status, 200);
   assertEq(response.headers.get('Access-Control-Allow-Origin'), '*');
   assertEq(payload.schema_version, 'anchorfact.claim-api.v1');
+  assert(payload.citation_export.markdown.includes('3D Gaussian Splatting represents scenes'), 'function response should include markdown citation text');
   assertEq(payload.source_count, 1);
 });
 

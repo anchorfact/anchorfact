@@ -307,6 +307,7 @@ export function buildOpenApiContract({
           query: { type: 'string' },
           limit: { type: 'integer' },
           result_count: { type: 'integer' },
+          citation_contract: { type: 'object' },
           search_index_generated: { type: ['string', 'null'], format: 'date-time' },
           manifest_generated: { type: ['string', 'null'], format: 'date-time' },
           claims_generated: { type: ['string', 'null'], format: 'date-time' },
@@ -317,8 +318,10 @@ export function buildOpenApiContract({
           canonical_slug: { type: 'string' },
           article: { type: 'object' },
           retrieval: { type: ['object', 'null'] },
+          citation_contract: { type: 'object' },
           claim_count: { type: 'integer' },
           claims: { type: 'array', items: { type: 'object' } },
+          citation_exports: { type: 'array', items: { type: 'object' } },
           source_count: { type: 'integer' },
           sources: { type: 'array', items: { type: 'object' } }
         }),
@@ -326,6 +329,8 @@ export function buildOpenApiContract({
           claim_id: { type: 'string', format: 'uri' },
           canonical_slug: { type: 'string' },
           claim: { type: 'object' },
+          citation_contract: { type: 'object' },
+          citation_export: { type: 'object' },
           article: { type: 'object' },
           source_count: { type: 'integer' },
           sources: { type: 'array', items: { type: 'object' } }

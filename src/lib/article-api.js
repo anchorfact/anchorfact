@@ -1,3 +1,5 @@
+import { CITATION_CONTRACT, buildClaimCitationExports } from './citation-export.js';
+
 export const ARTICLE_API_SCHEMA_VERSION = 'anchorfact.article-api.v1';
 
 function errorPayload(code, message, extra = {}) {
@@ -143,6 +145,7 @@ export function buildArticleApiPayload({
   const claims = articleClaims(claimsPayload, canonicalSlug);
   const sources = articleSources(sourcesPayload, canonicalSlug);
   const retrieval = retrievalSummary(articleSearchRecord(searchIndex, canonicalSlug));
+  const citationExports = buildClaimCitationExports({ claims, article, sources });
 
   return {
     ok: true,
@@ -158,8 +161,10 @@ export function buildArticleApiPayload({
       search_index_generated: searchIndex?.generated || null,
       article,
       retrieval,
+      citation_contract: CITATION_CONTRACT,
       claim_count: claims.length,
       claims,
+      citation_exports: citationExports,
       source_count: sources.length,
       sources
     }

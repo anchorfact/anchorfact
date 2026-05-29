@@ -1,3 +1,4 @@
+import { CITATION_CONTRACT, buildClaimCitationExports } from './citation-export.js';
 import { parseSearchParams, rankSearchRecords } from './search-api.js';
 
 export const EVIDENCE_API_SCHEMA_VERSION = 'anchorfact.evidence-api.v1';
@@ -81,6 +82,7 @@ function retrievalSummary(result) {
 function evidencePack({ result, article, claimsPayload, sourcesPayload }) {
   const claims = articleClaims(claimsPayload, result.canonical_slug);
   const sources = articleSources(sourcesPayload, result.canonical_slug);
+  const citationExports = buildClaimCitationExports({ claims, article, sources });
   return {
     canonical_slug: result.canonical_slug,
     title: article.title || result.title,
@@ -91,6 +93,7 @@ function evidencePack({ result, article, claimsPayload, sourcesPayload }) {
     retrieval: retrievalSummary(result),
     claim_count: claims.length,
     claims,
+    citation_exports: citationExports,
     source_count: sources.length,
     sources
   };
@@ -143,6 +146,7 @@ export function buildEvidenceApiPayload({
       limit: normalizedLimit,
       result_count: packs.length,
       provenance_url: searchIndex?.provenance_url || manifest?.provenance_url || claimsPayload?.provenance_url || sourcesPayload?.provenance_url || null,
+      citation_contract: CITATION_CONTRACT,
       search_index_generated: searchIndex?.generated || null,
       search_index_schema_version: searchIndex?.schema_version || null,
       manifest_generated: manifest?.generated || null,

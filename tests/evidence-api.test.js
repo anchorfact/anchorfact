@@ -216,10 +216,13 @@ test('buildEvidenceApiPayload returns compact public evidence packs', () => {
   assertEq(result.payload.query, 'gaussian splatting');
   assertEq(result.payload.limit, 2);
   assertEq(result.payload.provenance_url, 'https://anchorfact.org/provenance.json');
+  assertEq(result.payload.citation_contract.include_original_source_url, true);
   assertEq(result.payload.result_count, 1);
   assertEq(result.payload.packs[0].canonical_slug, 'ai/gaussian-splatting');
   assertEq(result.payload.packs[0].article.status, 'public');
   assertEq(result.payload.packs[0].claim_count, 2);
+  assertEq(result.payload.packs[0].citation_exports.length, 2);
+  assert(result.payload.packs[0].citation_exports[0].inline.includes('AnchorFact:'), 'pack should expose citation-ready inline text');
   assertEq(result.payload.packs[0].source_count, 1);
   assert(result.payload.packs[0].retrieval.matched_keywords.includes('gaussian'), 'pack should expose matched query keywords');
 });
@@ -263,6 +266,7 @@ test('Pages Function returns CORS JSON evidence packs', async () => {
   assertEq(payload.schema_version, 'anchorfact.evidence-api.v1');
   assertEq(payload.result_count, 1);
   assertEq(payload.packs[0].canonical_slug, 'ai/gaussian-splatting');
+  assert(payload.packs[0].citation_exports[0].markdown.includes('3D Gaussian Splatting'), 'function response should include markdown citation text');
 });
 
 test('Pages Function rejects missing queries and asset failures', async () => {

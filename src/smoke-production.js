@@ -206,6 +206,7 @@ export async function main() {
     : null;
   assertOk(gaussianEvidencePack?.article?.status === 'public' && gaussianEvidencePack?.article?.is_draft === false, '/api/evidence did not return a public article summary', failures);
   assertOk(Array.isArray(gaussianEvidencePack?.claims) && gaussianEvidencePack.claims.length >= 1, '/api/evidence returned no claims for expected pack', failures);
+  assertOk(Array.isArray(gaussianEvidencePack?.citation_exports) && gaussianEvidencePack.citation_exports.length >= 1, '/api/evidence returned no citation exports for expected pack', failures);
   assertOk(Array.isArray(gaussianEvidencePack?.sources) && gaussianEvidencePack.sources.length >= 1, '/api/evidence returned no sources for expected pack', failures);
   assertOk(searchApi.schema_version === 'anchorfact.search-api.v1', `search api schema_version expected anchorfact.search-api.v1, got ${searchApi.schema_version || '(missing)'}`, failures);
   assertOk(searchApi.provenance_url === new URL('/provenance.json', baseUrl).href, `search api provenance_url expected ${new URL('/provenance.json', baseUrl).href}, got ${searchApi.provenance_url || '(missing)'}`, failures);
@@ -216,10 +217,12 @@ export async function main() {
   assertOk(articleApi.canonical_slug === 'ai/3d-generation-gaussian-splatting', `article api slug expected ai/3d-generation-gaussian-splatting, got ${articleApi.canonical_slug || '(missing)'}`, failures);
   assertOk(articleApi.article?.status === 'public' && articleApi.article?.is_draft === false, '/api/article did not return a public article', failures);
   assertOk(Array.isArray(articleApi.claims) && articleApi.claims.length >= 1, '/api/article returned no claims', failures);
+  assertOk(Array.isArray(articleApi.citation_exports) && articleApi.citation_exports.length >= 1, '/api/article returned no citation exports', failures);
   assertOk(Array.isArray(articleApi.sources) && articleApi.sources.length >= 1, '/api/article returned no sources', failures);
   assertOk(claimApi.schema_version === 'anchorfact.claim-api.v1', `claim api schema_version expected anchorfact.claim-api.v1, got ${claimApi.schema_version || '(missing)'}`, failures);
   assertOk(claimApi.claim_id === 'https://anchorfact.org/fact/f1', `claim api id expected https://anchorfact.org/fact/f1, got ${claimApi.claim_id || '(missing)'}`, failures);
   assertOk(claimApi.claim?.canonical_slug === 'ai/3d-generation-gaussian-splatting', '/api/claim returned the wrong claim slug', failures);
+  assertOk(typeof claimApi.citation_export?.inline === 'string' && claimApi.citation_export.inline.includes('AnchorFact:'), '/api/claim returned no citation export', failures);
   assertOk(claimApi.article?.status === 'public' && claimApi.article?.is_draft === false, '/api/claim did not return a public article', failures);
   assertOk(Array.isArray(claimApi.sources) && claimApi.sources.length >= 1, '/api/claim returned no matching sources', failures);
   assertOk(sourceApi.schema_version === 'anchorfact.source-api.v1', `source api schema_version expected anchorfact.source-api.v1, got ${sourceApi.schema_version || '(missing)'}`, failures);

@@ -179,7 +179,10 @@ test('buildArticleApiPayload returns public article claims and sources', () => {
   assertEq(result.payload.schema_version, 'anchorfact.article-api.v1');
   assertEq(result.payload.canonical_slug, 'ai/gaussian-splatting');
   assertEq(result.payload.article.title, '3D Gaussian Splatting');
+  assertEq(result.payload.citation_contract.prefer_claim_level_citations, true);
   assertEq(result.payload.claim_count, 2);
+  assertEq(result.payload.citation_exports.length, 2);
+  assert(result.payload.citation_exports[0].inline.includes('AnchorFact:'), 'article response should include citation-ready text');
   assertEq(result.payload.source_count, 1);
   assertEq(result.payload.retrieval.routes.markdown, 'https://anchorfact.org/ai/gaussian-splatting/index.md');
 });
@@ -208,6 +211,7 @@ test('Pages Function returns CORS JSON evidence bundles', async () => {
   assertEq(response.headers.get('Access-Control-Allow-Origin'), '*');
   assertEq(payload.schema_version, 'anchorfact.article-api.v1');
   assertEq(payload.claim_count, 2);
+  assertEq(payload.citation_exports.length, 2);
   assertEq(payload.source_count, 1);
 });
 

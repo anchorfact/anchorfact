@@ -1,3 +1,5 @@
+import { CITATION_CONTRACT, buildClaimCitationExport } from './citation-export.js';
+
 export const CLAIM_API_SCHEMA_VERSION = 'anchorfact.claim-api.v1';
 
 const OFFICIAL_SITE = 'https://anchorfact.org';
@@ -138,6 +140,11 @@ export function buildClaimApiPayload({
   }
 
   const sources = matchingSources(sourcesPayload, claim);
+  const citationExport = buildClaimCitationExport({
+    claim,
+    article,
+    source: sources[0] || null
+  });
   return {
     ok: true,
     status: 200,
@@ -150,7 +157,9 @@ export function buildClaimApiPayload({
       manifest_generated: manifest?.generated || null,
       claims_generated: claimsPayload?.generated || null,
       source_index_generated: sourcesPayload?.generated || null,
+      citation_contract: CITATION_CONTRACT,
       claim,
+      citation_export: citationExport,
       article,
       source_count: sources.length,
       sources

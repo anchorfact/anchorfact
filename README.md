@@ -137,7 +137,7 @@ Only public articles contribute publishable facts to `/claims.json`.
 | `/claims.json` | Public verified atomic claims with evidence links. |
 | `/topics.json` | Compact public topic coverage map with article, claim, and source counts. |
 | `/examples.json` | Executable AI usage examples for dynamic API calls and signed static fallback workflows. |
-| `/api/evidence?q=...` | Read-only Cloudflare Pages Function for one-call public evidence packs with search hits, article summaries, claims, and sources. |
+| `/api/evidence?q=...` | Read-only Cloudflare Pages Function for one-call public evidence packs with search hits, article summaries, claims, sources, and citation exports. |
 | `/api/search?q=...` | Read-only Cloudflare Pages Function for lightweight public record lookup. |
 | `/api/article?slug=...` | Read-only Cloudflare Pages Function for public article evidence bundles with claims and sources. |
 | `/api/claim?id=...` | Read-only Cloudflare Pages Function for dereferencing one public atomic claim. |
