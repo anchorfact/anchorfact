@@ -87,15 +87,20 @@ test('buildExamplesIndex produces executable AI workflow examples', () => {
 
   assertEq(payload.schema_version, 'anchorfact.examples.v1');
   assertEq(payload.provenance_url, 'https://anchorfact.org/provenance.json');
-  assertEq(payload.example_count, 4);
+  assertEq(payload.example_count, 5);
   assertEq(payload.examples.map(example => example.id), [
+    'one_call_evidence_pack',
     'search_to_article_evidence',
     'claim_dereference',
     'source_reuse_lookup',
     'static_fallback'
   ]);
 
-  const searchExample = payload.examples[0];
+  const evidenceExample = payload.examples[0];
+  assert(evidenceExample.workflow[0].call.path.includes('/api/evidence?q=gaussian+splatting&limit=3'), 'evidence example should include encoded query path');
+  assertEq(evidenceExample.expected_anchor.claim.lookup_id, 'f1');
+
+  const searchExample = payload.examples[1];
   assert(searchExample.workflow[1].call.path.includes('/api/search?q=gaussian+splatting&limit=3'), 'search example should include encoded query path');
   assert(searchExample.workflow[2].call.path.includes('/api/article?slug=ai%2F3d-generation-gaussian-splatting'), 'search example should fetch article evidence');
   assertEq(searchExample.expected_anchor.topic, { id: 'ai', title: 'AI', article_count: 1 });

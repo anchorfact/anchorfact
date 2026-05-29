@@ -133,6 +133,7 @@ test('public entrypoints exclude draft articles', () => {
   assert(indexHtml.includes('/topics.json'), 'index should link to topics index');
   assert(indexHtml.includes('/examples.json'), 'index should link to examples index');
   assert(indexHtml.includes('/search-index.json'), 'index should link to search index');
+  assert(indexHtml.includes('/api/evidence?q='), 'index should link to evidence API example');
   assert(indexHtml.includes('/api/article?slug='), 'index should link to article API example');
   assert(indexHtml.includes('/api/claim?id='), 'index should link to claim API example');
   assert(indexHtml.includes('/api/source?url='), 'index should link to source API example');
@@ -141,6 +142,7 @@ test('public entrypoints exclude draft articles', () => {
   assert(llmsTxt.includes('Topics'), 'llms.txt should include topics index');
   assert(llmsTxt.includes('Examples'), 'llms.txt should include examples index');
   assert(llmsTxt.includes('Search Index'), 'llms.txt should include search index');
+  assert(llmsTxt.includes('Evidence API'), 'llms.txt should include evidence API');
   assert(llmsTxt.includes('Article API'), 'llms.txt should include article API');
   assert(llmsTxt.includes('Claim API'), 'llms.txt should include claim API');
   assert(llmsTxt.includes('Source API'), 'llms.txt should include source API');
@@ -168,12 +170,13 @@ test('agent profile describes the machine contract', () => {
   assertEq(agent.current_snapshot.draft_articles, 1);
   assertEq(agent.current_snapshot.public_claims, 2);
   assertEq(agent.current_snapshot.topics, 1);
-  assertEq(agent.current_snapshot.examples, 4);
+  assertEq(agent.current_snapshot.examples, 5);
   assert(agent.current_snapshot.unique_sources >= 1, 'agent profile should expose source count');
   assertEq(agent.endpoints.claims.url, 'https://anchorfact.org/claims.json');
   assertEq(agent.endpoints.topics.url, 'https://anchorfact.org/topics.json');
   assertEq(agent.endpoints.examples.url, 'https://anchorfact.org/examples.json');
   assertEq(agent.endpoints.openapi.url, 'https://anchorfact.org/openapi.json');
+  assertEq(agent.endpoints.evidence_api.path, '/api/evidence?q={query}');
   assertEq(agent.endpoints.search_api.path, '/api/search?q={query}');
   assertEq(agent.endpoints.article_api.path, '/api/article?slug={canonical_slug}');
   assertEq(agent.endpoints.claim_api.path, '/api/claim?id={claim_id}');
@@ -185,6 +188,7 @@ test('agent profile describes the machine contract', () => {
   assert(agent.recommended_workflow.some(step => step.includes('/topics.json')), 'agent workflow should mention topics index');
   assert(agent.recommended_workflow.some(step => step.includes('/examples.json')), 'agent workflow should mention examples index');
   assert(agent.recommended_workflow.some(step => step.includes('/search-index.json')), 'agent workflow should mention search index');
+  assert(agent.recommended_workflow.some(step => step.includes('/api/evidence')), 'agent workflow should mention evidence API');
   assert(agent.recommended_workflow.some(step => step.includes('/api/article')), 'agent workflow should mention article API');
   assert(agent.recommended_workflow.some(step => step.includes('/api/claim')), 'agent workflow should mention claim API');
   assert(agent.recommended_workflow.some(step => step.includes('/api/source')), 'agent workflow should mention source API');
@@ -204,6 +208,7 @@ test('openapi.json describes the static AI contract', () => {
   assert(openapi.paths['/claims.json'], 'OpenAPI should describe claims endpoint');
   assert(openapi.paths['/topics.json'], 'OpenAPI should describe topics endpoint');
   assert(openapi.paths['/examples.json'], 'OpenAPI should describe examples endpoint');
+  assert(openapi.paths['/api/evidence'], 'OpenAPI should describe evidence API');
   assert(openapi.paths['/api/search'], 'OpenAPI should describe search API');
   assert(openapi.paths['/api/article'], 'OpenAPI should describe article API');
   assert(openapi.paths['/api/claim'], 'OpenAPI should describe claim API');
@@ -214,6 +219,7 @@ test('openapi.json describes the static AI contract', () => {
   assert(openapi.components.schemas.Topics, 'OpenAPI should define Topics schema');
   assert(openapi.components.schemas.Examples, 'OpenAPI should define Examples schema');
   assert(openapi.components.schemas.SearchIndex, 'OpenAPI should define SearchIndex schema');
+  assert(openapi.components.schemas.EvidenceApiResponse, 'OpenAPI should define EvidenceApiResponse schema');
   assert(openapi.components.schemas.ArticleApiResponse, 'OpenAPI should define ArticleApiResponse schema');
   assert(openapi.components.schemas.ClaimApiResponse, 'OpenAPI should define ClaimApiResponse schema');
   assert(openapi.components.schemas.SourceApiResponse, 'OpenAPI should define SourceApiResponse schema');
@@ -261,14 +267,17 @@ test('examples.json describes executable AI usage examples', () => {
   const examples = JSON.parse(readFileSync(join(distDir, 'examples.json'), 'utf-8'));
   assertEq(examples.schema_version, 'anchorfact.examples.v1');
   assertEq(examples.provenance_url, 'https://anchorfact.org/provenance.json');
-  assertEq(examples.example_count, 4);
+  assertEq(examples.example_count, 5);
   assertEq(examples.examples.map(example => example.id), [
+    'one_call_evidence_pack',
     'search_to_article_evidence',
     'claim_dereference',
     'source_reuse_lookup',
     'static_fallback'
   ]);
-  const searchExample = examples.examples[0];
+  const evidenceExample = examples.examples[0];
+  assert(evidenceExample.workflow.some(step => step.call.path.includes('/api/evidence?')), 'examples should show evidence API usage');
+  const searchExample = examples.examples[1];
   assert(searchExample.workflow.some(step => step.call.path.includes('/api/search?')), 'examples should show search API usage');
   assert(searchExample.workflow.some(step => step.call.path.includes('/api/article?')), 'examples should show article API usage');
   assertEq(searchExample.expected_anchor.article.canonical_slug, 'public-fixture');

@@ -143,12 +143,28 @@ export function buildExamplesIndex({
   const topic = topics.find(candidate => candidate.id === topicId) || null;
   const claim = chooseClaim(claims, record);
   const source = chooseSource(sources, claim);
+  const evidencePath = queryPath('/api/evidence', { q: query, limit: 3 });
   const searchPath = queryPath('/api/search', { q: query, limit: 3 });
   const articlePath = queryPath('/api/article', { slug: record.canonical_slug });
   const claimPath = queryPath('/api/claim', { id: claimShortId(claim?.id) });
   const sourcePath = sourceLookupPath(source);
 
   const examples = [
+    {
+      id: 'one_call_evidence_pack',
+      intent: 'Fetch a compact source-grounded evidence pack for a natural-language question in one HTTP call.',
+      user_question: `What can AnchorFact verify about ${query}?`,
+      topic: topicId,
+      workflow: [
+        { step: 1, call: call(evidencePath, site), use: 'Read public article summaries, matched claims, and mapped sources before answering.' }
+      ],
+      expected_anchor: {
+        topic: topic ? { id: topic.id, title: topic.title, article_count: topic.article_count } : null,
+        article: articleAnchor(record),
+        claim: claimAnchor(claim),
+        source: sourceAnchor(source)
+      }
+    },
     {
       id: 'search_to_article_evidence',
       intent: 'Find public records for a natural-language question, then fetch a source-mapped article evidence bundle before answering.',

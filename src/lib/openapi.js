@@ -4,6 +4,7 @@ import {
   CLAIM_API_SCHEMA_VERSION,
   CLAIMS_SCHEMA_VERSION,
   COMPILER_VERSION,
+  EVIDENCE_API_SCHEMA_VERSION,
   EXAMPLES_SCHEMA_VERSION,
   MANIFEST_SCHEMA_VERSION,
   OFFICIAL_SITE,
@@ -93,6 +94,31 @@ export function buildOpenApiContract({
       '/claims.json': getJson('Public verified atomic claims', 'Claims'),
       '/topics.json': getJson('Public topic coverage map', 'Topics'),
       '/examples.json': getJson('Executable AI usage examples', 'Examples'),
+      '/api/evidence': {
+        get: {
+          summary: 'Read-only public query evidence packs',
+          parameters: [
+            {
+              name: 'q',
+              in: 'query',
+              required: true,
+              schema: { type: 'string', minLength: 1 },
+              description: 'Natural-language query.'
+            },
+            {
+              name: 'limit',
+              in: 'query',
+              required: false,
+              schema: { type: 'integer', minimum: 1, maximum: 20, default: 5 },
+              description: 'Maximum evidence pack count.'
+            }
+          ],
+          responses: {
+            200: jsonResponse('EvidenceApiResponse'),
+            400: jsonResponse('ApiError')
+          }
+        }
+      },
       '/api/search': {
         get: {
           summary: 'Read-only search over public AnchorFact records',
@@ -276,6 +302,16 @@ export function buildOpenApiContract({
           result_count: { type: 'integer' },
           source_index_generated: { type: ['string', 'null'], format: 'date-time' },
           results: { type: 'array', items: { type: 'object' } }
+        }),
+        EvidenceApiResponse: schemaVersioned('Evidence API response', EVIDENCE_API_SCHEMA_VERSION, {
+          query: { type: 'string' },
+          limit: { type: 'integer' },
+          result_count: { type: 'integer' },
+          search_index_generated: { type: ['string', 'null'], format: 'date-time' },
+          manifest_generated: { type: ['string', 'null'], format: 'date-time' },
+          claims_generated: { type: ['string', 'null'], format: 'date-time' },
+          source_index_generated: { type: ['string', 'null'], format: 'date-time' },
+          packs: { type: 'array', items: { type: 'object' } }
         }),
         ArticleApiResponse: schemaVersioned('Article API response', ARTICLE_API_SCHEMA_VERSION, {
           canonical_slug: { type: 'string' },

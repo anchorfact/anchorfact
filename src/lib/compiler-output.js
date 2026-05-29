@@ -89,6 +89,7 @@ function writeRootIndex(distDir, results, publicResults, draftResults, claims) {
     <strong>For AIs</strong><br>
     <a href="/agent.json">Agent profile</a> &middot;
     <a href="/openapi.json">OpenAPI</a> &middot;
+    <a href="/api/evidence?q=gaussian">Evidence API</a> &middot;
     <a href="/api/search?q=gaussian">Search API</a> &middot;
     <a href="/api/article?slug=ai/3d-generation-gaussian-splatting">Article API</a> &middot;
     <a href="/api/claim?id=f1">Claim API</a> &middot;
@@ -168,6 +169,7 @@ ${entries || '_No public verified entries yet._'}
 
 - [Agent Profile](https://anchorfact.org/agent.json): Machine contract and recommended retrieval workflow.
 - [OpenAPI](https://anchorfact.org/openapi.json): Static read-only endpoint contract for tools.
+- [Evidence API](https://anchorfact.org/api/evidence?q=gaussian): One-call public evidence packs with search hits, article summaries, claims, and sources.
 - [Search API](https://anchorfact.org/api/search?q=gaussian): Read-only search over public records.
 - [Article API](https://anchorfact.org/api/article?slug=ai/3d-generation-gaussian-splatting): Read-only public article evidence bundles with claims and sources.
 - [Claim API](https://anchorfact.org/api/claim?id=f1): Read-only public atomic claim lookup with article and source context.
@@ -175,7 +177,7 @@ ${entries || '_No public verified entries yet._'}
 - [Manifest](https://anchorfact.org/manifest.json): Full index with public/draft status.
 - [Claims](https://anchorfact.org/claims.json): Public verified atomic claims.
 - [Topics](https://anchorfact.org/topics.json): Compact topic coverage map with article, claim, and source counts.
-- [Examples](https://anchorfact.org/examples.json): Executable AI usage examples for search, article, claim, source, and static artifact workflows.
+- [Examples](https://anchorfact.org/examples.json): Executable AI usage examples for evidence, search, article, claim, source, and static artifact workflows.
 - [Search Index](https://anchorfact.org/search-index.json): Compact public retrieval records with keywords, claim ids, and source coverage.
 - [Sources](https://anchorfact.org/sources.json): Deduplicated public source index with evidence reuse.
 - [Provenance](https://anchorfact.org/provenance.json): Build identity and artifact checksums.

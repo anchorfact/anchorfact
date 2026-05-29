@@ -114,6 +114,7 @@ test('public machine entrypoints exclude drafts', () => {
   const sitemap = readFileSync(join(distDir, 'sitemap.xml'), 'utf-8');
   assertEq(agent.current_snapshot.public_articles, 1);
   assertEq(agent.endpoints.openapi.url, 'https://anchorfact.org/openapi.json');
+  assertEq(agent.endpoints.evidence_api.path, '/api/evidence?q={query}');
   assertEq(agent.endpoints.search_api.path, '/api/search?q={query}');
   assertEq(agent.endpoints.article_api.path, '/api/article?slug={canonical_slug}');
   assertEq(agent.endpoints.claim_api.path, '/api/claim?id={claim_id}');
@@ -125,6 +126,7 @@ test('public machine entrypoints exclude drafts', () => {
   assertEq(agent.endpoints.sources.url, 'https://anchorfact.org/sources.json');
   assertEq(agent.endpoints.article_jsonld_template.path_template, '/{canonical_slug}/index.json');
   assert(openapi.paths['/{canonical_slug}/index.json'], 'OpenAPI should expose article JSON-LD template');
+  assert(openapi.paths['/api/evidence'], 'OpenAPI should expose evidence API endpoint');
   assert(openapi.paths['/api/search'], 'OpenAPI should expose search API endpoint');
   assert(openapi.paths['/api/article'], 'OpenAPI should expose article API endpoint');
   assert(openapi.paths['/api/claim'], 'OpenAPI should expose claim API endpoint');
@@ -134,7 +136,8 @@ test('public machine entrypoints exclude drafts', () => {
   assert(openapi.paths['/search-index.json'], 'OpenAPI should expose search index endpoint');
   assertEq(topics.topic_count, 1);
   assert(topics.topics.some(topic => topic.id === 'ai'), 'topics index should include ai topic');
-  assertEq(examples.example_count, 4);
+  assertEq(examples.example_count, 5);
+  assert(examples.examples.some(example => example.id === 'one_call_evidence_pack'), 'examples index should include evidence pack workflow');
   assert(examples.examples.some(example => example.id === 'static_fallback'), 'examples index should include static fallback workflow');
   assertEq(search.article_count, 1);
   assert(search.records.some(record => record.canonical_slug === 'ai/public-fixture'), 'search index should link to public article');
