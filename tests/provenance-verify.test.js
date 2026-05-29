@@ -462,6 +462,7 @@ test('verifyLiveProvenance accepts matching official live artifacts', async () =
   assertEq(result.ok, true);
   assertEq(result.failures, []);
   assertEq(result.artifacts.manifest_json.ok, true);
+  assertEq(result.artifacts.content_health_json.ok, true);
   assertEq(result.commit.ok, true);
   assertEq(result.signature.skipped, true);
 });

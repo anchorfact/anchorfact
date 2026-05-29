@@ -2,6 +2,7 @@ import { createHash } from 'crypto';
 import {
   CLAIMS_SCHEMA_VERSION,
   CAPABILITIES_SCHEMA_VERSION,
+  CONTENT_HEALTH_SCHEMA_VERSION,
   COVERAGE_SCHEMA_VERSION,
   EVALS_SCHEMA_VERSION,
   EXAMPLES_SCHEMA_VERSION,
@@ -23,7 +24,7 @@ import {
 } from './provenance-signature.js';
 import { fetchLiveText } from './live-http.js';
 
-const REQUIRED_ARTIFACTS = ['agent_json', 'openapi_json', 'manifest_json', 'claims_json', 'topics_json', 'capabilities_json', 'coverage_json', 'examples_json', 'graph_json', 'evals_json', 'mcp_json', 'search_index_json', 'sources_json', 'llms_txt'];
+const REQUIRED_ARTIFACTS = ['agent_json', 'openapi_json', 'manifest_json', 'claims_json', 'topics_json', 'capabilities_json', 'content_health_json', 'coverage_json', 'examples_json', 'graph_json', 'evals_json', 'mcp_json', 'search_index_json', 'sources_json', 'llms_txt'];
 const OFFICIAL_GITHUB_COMMIT_API = 'https://api.github.com/repos/anchorfact/anchorfact/commits/';
 
 export function sha256Text(text) {
@@ -197,7 +198,7 @@ async function verifyArtifact({ key, artifact, baseUrl, fetchImpl, failures }) {
   };
 }
 
-function verifyCounts({ provenance, manifest, claims, topics, capabilities, coverage, examples, graph, evals, searchIndex, failures }) {
+function verifyCounts({ provenance, manifest, claims, topics, capabilities, contentHealth, coverage, examples, graph, evals, searchIndex, failures }) {
   const publicArticles = countArticles(
     manifest.articles,
     article => article.status === 'public' && article.is_draft === false
@@ -218,6 +219,9 @@ function verifyCounts({ provenance, manifest, claims, topics, capabilities, cove
   checkEq(topics.public_claim_count, claimCount, 'topics public_claim_count', failures);
   checkEq(topics.topic_count, Array.isArray(topics.topics) ? topics.topics.length : 0, 'topics topic_count', failures);
   checkEq(capabilities.capability_count, Array.isArray(capabilities.capabilities) ? capabilities.capabilities.length : 0, 'capabilities capability_count', failures);
+  checkEq(contentHealth.snapshot?.public_articles, manifest.public_article_count, 'content health public_articles', failures);
+  checkEq(contentHealth.snapshot?.draft_articles, manifest.draft_article_count, 'content health draft_articles', failures);
+  checkEq(contentHealth.snapshot?.public_claims, claimCount, 'content health public_claims', failures);
   checkEq(coverage.coverage_summary?.public_articles, manifest.public_article_count, 'coverage public_articles', failures);
   checkEq(coverage.coverage_summary?.public_claims, claimCount, 'coverage public_claims', failures);
   checkEq(coverage.coverage_summary?.topics, topics.topic_count, 'coverage topics', failures);
@@ -287,6 +291,9 @@ export async function verifyLiveProvenance({
   const capabilities = artifacts.capabilities_json?.text
     ? parseJson(artifacts.capabilities_json.text, '/capabilities.json', failures) || {}
     : {};
+  const contentHealth = artifacts.content_health_json?.text
+    ? parseJson(artifacts.content_health_json.text, '/content-health.json', failures) || {}
+    : {};
   const coverage = artifacts.coverage_json?.text
     ? parseJson(artifacts.coverage_json.text, '/coverage.json', failures) || {}
     : {};
@@ -312,6 +319,7 @@ export async function verifyLiveProvenance({
   checkEq(claims.schema_version, CLAIMS_SCHEMA_VERSION, 'claims schema_version', failures);
   checkEq(topics.schema_version, TOPICS_SCHEMA_VERSION, 'topics schema_version', failures);
   checkEq(capabilities.schema_version, CAPABILITIES_SCHEMA_VERSION, 'capabilities schema_version', failures);
+  checkEq(contentHealth.schema_version, CONTENT_HEALTH_SCHEMA_VERSION, 'content health schema_version', failures);
   checkEq(coverage.schema_version, COVERAGE_SCHEMA_VERSION, 'coverage schema_version', failures);
   checkEq(examples.schema_version, EXAMPLES_SCHEMA_VERSION, 'examples schema_version', failures);
   checkEq(graph.schema_version, GRAPH_SCHEMA_VERSION, 'graph schema_version', failures);
@@ -322,6 +330,7 @@ export async function verifyLiveProvenance({
   checkEq(claims.provenance_url, publicUrl(PROVENANCE_PATH, normalizedBaseUrl), 'claims provenance_url', failures);
   checkEq(topics.provenance_url, publicUrl(PROVENANCE_PATH, normalizedBaseUrl), 'topics provenance_url', failures);
   checkEq(capabilities.provenance_url, publicUrl(PROVENANCE_PATH, normalizedBaseUrl), 'capabilities provenance_url', failures);
+  checkEq(contentHealth.provenance_url, publicUrl(PROVENANCE_PATH, normalizedBaseUrl), 'content health provenance_url', failures);
   checkEq(coverage.provenance_url, publicUrl(PROVENANCE_PATH, normalizedBaseUrl), 'coverage provenance_url', failures);
   checkEq(examples.provenance_url, publicUrl(PROVENANCE_PATH, normalizedBaseUrl), 'examples provenance_url', failures);
   checkEq(graph.provenance_url, publicUrl(PROVENANCE_PATH, normalizedBaseUrl), 'graph provenance_url', failures);
@@ -331,7 +340,7 @@ export async function verifyLiveProvenance({
   if (!Array.isArray(mcp.tools) || mcp.tools.length === 0) {
     failures.push('mcp tools list is empty');
   }
-  verifyCounts({ provenance, manifest, claims, topics, capabilities, coverage, examples, graph, evals, searchIndex, failures });
+  verifyCounts({ provenance, manifest, claims, topics, capabilities, contentHealth, coverage, examples, graph, evals, searchIndex, failures });
 
   const signature = await verifySignature({
     fetchImpl,
