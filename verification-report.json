@@ -8,7 +8,7 @@
     "elapsed_ms": 635005,
     "elapsed_sec": "635.0",
     "concurrency": 3,
-    "manual_reviewed_articles": 546
+    "manual_reviewed_articles": 551
   },
   "articles": [
     {
@@ -6815,50 +6815,89 @@
       "file": "content/ai/ai-language-translation-interpretation.md",
       "article_id": "ai-language-translation-interpretation",
       "generation_method": "ai_structured",
-      "sources_total": 3,
+      "sources_total": 4,
       "verification_results": [
         {
-          "source_title": "Machine Translation in the Era of Large Language Models: A Comprehensive Survey of LLM-Based Translation (2025)",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.mdpi.com/2078-2489/16/9/723",
-              "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.mdpi.com/2078-2489/16/9/723"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Simultaneous Machine Translation and Speech-to-Speech Interpretation: Streaming Models, Wait-k Policies, and Voice Preservation",
-          "source_type": "academic_paper",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "Enhancing Code Translation in Language Models with Few-Shot Learning via Retrieval-Augmented Generation",
-          "source_type": "academic_paper",
+          "source_title": "Attention Is All You Need",
+          "source_type": "conference_paper",
           "results": [
             {
               "method": "arxiv",
-              "identifier": "2407.19619v1",
-              "verified": false,
+              "identifier": "1706.03762",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair batch 59; sources manually reviewed with direct URL/DOI checks; local verify-full was not run.",
+                "final_url": "https://arxiv.org/abs/1706.03762"
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "Scaling Neural Machine Translation to 200 Languages",
+          "source_type": "journal_article",
+          "results": [
+            {
+              "method": "doi",
+              "identifier": "10.1038/s41586-024-07335-x",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair batch 59; sources manually reviewed with direct URL/DOI checks; local verify-full was not run.",
+                "final_url": "https://doi.org/10.1038/s41586-024-07335-x"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "SeamlessM4T: Massively Multilingual & Multimodal Machine Translation",
+          "source_type": "technical_report",
+          "results": [
+            {
+              "method": "arxiv",
+              "identifier": "2308.11596",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair batch 59; sources manually reviewed with direct URL/DOI checks; local verify-full was not run.",
+                "final_url": "https://arxiv.org/abs/2308.11596"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "STACL: Simultaneous Translation with Implicit Anticipation and Controllable Latency using Prefix-to-Prefix Framework",
+          "source_type": "conference_paper",
+          "results": [
+            {
+              "method": "arxiv",
+              "identifier": "1810.08398",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair batch 59; sources manually reviewed with direct URL/DOI checks; local verify-full was not run.",
+                "final_url": "https://arxiv.org/abs/1810.08398"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 2
+      "sources_verified": 4,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-30"
     },
     {
       "file": "content/ai/ai-legal-contracts.md",
@@ -7649,39 +7688,89 @@
       "file": "content/ai/ai-search-recommendation.md",
       "article_id": "ai-search-recommendation",
       "generation_method": "ai_structured",
-      "sources_total": 3,
+      "sources_total": 4,
       "verification_results": [
         {
-          "source_title": "Deep Learning for Search and Recommendation: Dense Retrieval, Two-Tower Models, and LLM-Based Ranking (2024-2025 Comprehensive Survey)",
-          "source_type": "academic_paper",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "Large Language Models for Information Retrieval and Recommendation: Conversational Search and Generative Ranking",
-          "source_type": "academic_paper",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "Health System Scale Semantic Search Across Unstructured Clinical Notes",
+          "source_title": "Dense Passage Retrieval for Open-Domain Question Answering",
           "source_type": "academic_paper",
           "results": [
             {
               "method": "arxiv",
-              "identifier": "2604.25605v1",
-              "verified": false,
+              "identifier": "2004.04906",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair batch 59; sources manually reviewed with direct URL/DOI checks; local verify-full was not run.",
+                "final_url": "https://arxiv.org/abs/2004.04906"
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "ColBERT: Efficient and Effective Passage Search via Contextualized Late Interaction over BERT",
+          "source_type": "conference_paper",
+          "results": [
+            {
+              "method": "arxiv",
+              "identifier": "2004.12832",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair batch 59; sources manually reviewed with direct URL/DOI checks; local verify-full was not run.",
+                "final_url": "https://arxiv.org/abs/2004.12832"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Neural Collaborative Filtering",
+          "source_type": "conference_paper",
+          "results": [
+            {
+              "method": "arxiv",
+              "identifier": "1708.05031",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair batch 59; sources manually reviewed with direct URL/DOI checks; local verify-full was not run.",
+                "final_url": "https://arxiv.org/abs/1708.05031"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "A Survey on Large Language Models for Recommendation",
+          "source_type": "survey_paper",
+          "results": [
+            {
+              "method": "arxiv",
+              "identifier": "2305.19860",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair batch 59; sources manually reviewed with direct URL/DOI checks; local verify-full was not run.",
+                "final_url": "https://arxiv.org/abs/2305.19860"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 1
+      "sources_verified": 4,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-30"
     },
     {
       "file": "content/ai/ai-senior-care.md",
@@ -11137,72 +11226,63 @@
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "doi",
-              "identifier": "10.48550/arXiv.1602.05629",
-              "verified": false,
-              "metadata": {
-                "error": "CrossRef returned 404"
-              },
-              "match": false
-            },
-            {
               "method": "arxiv",
               "identifier": "1602.05629",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Active learning for data streams: a survey",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "doi",
-              "identifier": "10.1007/s10994-023-06454-2",
               "verified": true,
               "metadata": {
-                "title": "Active learning for data streams: a survey",
-                "publisher": "Springer Science and Business Media LLC",
-                "year": 2023
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair batch 59; sources manually reviewed with direct URL/DOI checks; local verify-full was not run.",
+                "final_url": "https://arxiv.org/abs/1602.05629"
               },
               "match": true
-            },
-            {
-              "method": "arxiv",
-              "identifier": "2302.08893v4",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "On the Similarities of Embeddings in Contrastive Learning",
+          "source_title": "Advances and Open Problems in Federated Learning",
+          "source_type": "survey_paper",
+          "results": [
+            {
+              "method": "arxiv",
+              "identifier": "1912.04977",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair batch 59; sources manually reviewed with direct URL/DOI checks; local verify-full was not run.",
+                "final_url": "https://arxiv.org/abs/1912.04977"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Practical Secure Aggregation for Privacy-Preserving Machine Learning",
           "source_type": "academic_paper",
           "results": [
             {
               "method": "arxiv",
-              "identifier": "2506.09781v2",
-              "verified": false,
+              "identifier": "1611.04482",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair batch 59; sources manually reviewed with direct URL/DOI checks; local verify-full was not run.",
+                "final_url": "https://arxiv.org/abs/1611.04482"
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 2
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-30"
     },
     {
       "file": "content/ai/few-shot-learning.md",
@@ -13299,8 +13379,65 @@
       "file": "content/ai/model-compression.md",
       "article_id": "model-compression",
       "generation_method": "ai_structured",
-      "sources_total": 3,
+      "sources_total": 4,
       "verification_results": [
+        {
+          "source_title": "Distilling the Knowledge in a Neural Network",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "arxiv",
+              "identifier": "1503.02531",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair batch 59; sources manually reviewed with direct URL/DOI checks; local verify-full was not run.",
+                "final_url": "https://arxiv.org/abs/1503.02531"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Deep Compression: Compressing Deep Neural Networks with Pruning, Trained Quantization and Huffman Coding",
+          "source_type": "conference_paper",
+          "results": [
+            {
+              "method": "arxiv",
+              "identifier": "1510.00149",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair batch 59; sources manually reviewed with direct URL/DOI checks; local verify-full was not run.",
+                "final_url": "https://arxiv.org/abs/1510.00149"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks",
+          "source_type": "conference_paper",
+          "results": [
+            {
+              "method": "arxiv",
+              "identifier": "1803.03635",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair batch 59; sources manually reviewed with direct URL/DOI checks; local verify-full was not run.",
+                "final_url": "https://arxiv.org/abs/1803.03635"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
         {
           "source_title": "A White Paper on Neural Network Quantization",
           "source_type": "academic_paper",
@@ -13308,50 +13445,23 @@
             {
               "method": "arxiv",
               "identifier": "2106.08295",
-              "verified": false,
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair batch 59; sources manually reviewed with direct URL/DOI checks; local verify-full was not run.",
+                "final_url": "https://arxiv.org/abs/2106.08295"
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
-        },
-        {
-          "source_title": "The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "arxiv",
-              "identifier": "1803.03635",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "UniComp: A Unified Evaluation of Large Language Model Compression via Pruning, Quantization and Distillation",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "arxiv",
-              "identifier": "2602.09130v4",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 3
+      "sources_verified": 4,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-30"
     },
     {
       "file": "content/ai/model-evaluation-metrics.md",
@@ -14109,56 +14219,67 @@
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Style Transfer: A Decade Survey of Neural Methods from Gatys to Diffusion Models",
+          "source_title": "A Neural Algorithm of Artistic Style",
           "source_type": "academic_paper",
           "results": [
             {
               "method": "arxiv",
-              "identifier": "2506.19278",
-              "verified": false,
+              "identifier": "1508.06576",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair batch 59; sources manually reviewed with direct URL/DOI checks; local verify-full was not run.",
+                "final_url": "https://arxiv.org/abs/1508.06576"
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Bridging the metrics gap in image style transfer: A comprehensive review of evaluation methods",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "doi",
-              "identifier": "10.1016/j.neucom.2025.128990",
-              "verified": false,
-              "metadata": {
-                "error": "CrossRef returned 404"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Neural Artistic Style Transfer with Conditional Adversaria",
-          "source_type": "academic_paper",
+          "source_title": "Perceptual Losses for Real-Time Style Transfer and Super-Resolution",
+          "source_type": "conference_paper",
           "results": [
             {
               "method": "arxiv",
-              "identifier": "2302.03875v1",
-              "verified": false,
+              "identifier": "1603.08155",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair batch 59; sources manually reviewed with direct URL/DOI checks; local verify-full was not run.",
+                "final_url": "https://arxiv.org/abs/1603.08155"
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "Arbitrary Style Transfer in Real-time with Adaptive Instance Normalization",
+          "source_type": "conference_paper",
+          "results": [
+            {
+              "method": "arxiv",
+              "identifier": "1703.06868",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair batch 59; sources manually reviewed with direct URL/DOI checks; local verify-full was not run.",
+                "final_url": "https://arxiv.org/abs/1703.06868"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 3
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-30"
     },
     {
       "file": "content/ai/neurosymbolic-ai.md",

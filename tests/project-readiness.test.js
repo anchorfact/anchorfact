@@ -46,10 +46,10 @@ test('buildProjectReadiness prioritizes public trust blockers first', () => {
 
 test('buildProjectReadiness selects draft repair only after public surface is clean', () => {
   const readiness = buildProjectReadiness({
-    publicArticles: 583,
+    publicArticles: 588,
     publicAuditActionableCount: 0,
-    publicSourceCoverage: { full: 583, partial: 0, zero: 0 },
-    publicClaimMapping: { total: 1784, mapped: 1784, ratio: 1 },
+    publicSourceCoverage: { full: 588, partial: 0, zero: 0 },
+    publicClaimMapping: { total: 1804, mapped: 1804, ratio: 1 },
     publicLowConfidenceCount: 45,
     staleDocsCount: 0,
     draftRepairCandidateCount: 231,
