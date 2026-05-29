@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 import { execFileSync } from 'child_process';
 import { existsSync, readFileSync, readdirSync, statSync } from 'fs';
-import { join, relative } from 'path';
+import { dirname, join, relative, resolve } from 'path';
+import { pathToFileURL } from 'url';
 
 const ROOT_TEMP_FILES = [
   '.quality-baseline.json',
@@ -88,6 +89,46 @@ const SECRET_PATTERNS = [
   /\bANCHORFACT_PROVENANCE_PRIVATE_KEY_(?:PEM|BASE64)\s*=\s*(?!<secret(?: PEM value)?>)(?!<base64 private key>)[^\s#'"]{20,}/i
 ];
 
+const NODE_CORE_MODULES = new Set([
+  'assert',
+  'async_hooks',
+  'buffer',
+  'child_process',
+  'cluster',
+  'console',
+  'crypto',
+  'dgram',
+  'diagnostics_channel',
+  'dns',
+  'domain',
+  'events',
+  'fs',
+  'http',
+  'http2',
+  'https',
+  'module',
+  'net',
+  'os',
+  'path',
+  'perf_hooks',
+  'process',
+  'punycode',
+  'querystring',
+  'readline',
+  'repl',
+  'stream',
+  'string_decoder',
+  'timers',
+  'tls',
+  'tty',
+  'url',
+  'util',
+  'v8',
+  'vm',
+  'worker_threads',
+  'zlib'
+]);
+
 function extensionOf(path) {
   const match = path.match(/(\.[^.\\\/]+)$/);
   return match ? match[1].toLowerCase() : '';
@@ -107,6 +148,93 @@ function walk(dir, files = []) {
     }
   }
   return files;
+}
+
+function normalizePath(path) {
+  return path.replace(/\\/g, '/');
+}
+
+function importSpecifiers(text) {
+  const specs = [];
+  const importPattern = /^\s*import\s+(?:[^'"]+\s+from\s+)?['"]([^'"]+)['"]/mg;
+  const exportPattern = /^\s*export\s+[^'"]+\s+from\s+['"]([^'"]+)['"]/mg;
+  for (const pattern of [importPattern, exportPattern]) {
+    let match = pattern.exec(text);
+    while (match) {
+      specs.push(match[1]);
+      match = pattern.exec(text);
+    }
+  }
+  return specs;
+}
+
+function isNodeCoreSpecifier(specifier) {
+  const bare = String(specifier || '').replace(/^node:/, '');
+  return NODE_CORE_MODULES.has(bare);
+}
+
+function resolveRelativeImport(rootDir, fromFile, specifier) {
+  const base = resolve(dirname(fromFile), specifier);
+  const candidates = [
+    base,
+    `${base}.js`,
+    join(base, 'index.js')
+  ];
+  return candidates.find(candidate => existsSync(candidate) && statSync(candidate).isFile()) || null;
+}
+
+function functionEntrypoints(rootDir, functionsDir = 'functions') {
+  const baseDir = resolve(rootDir, functionsDir);
+  if (!existsSync(baseDir)) return [];
+  const files = [];
+  function walkFunctions(dir) {
+    for (const entry of readdirSync(dir)) {
+      const fullPath = join(dir, entry);
+      const stat = statSync(fullPath);
+      if (stat.isDirectory()) {
+        walkFunctions(fullPath);
+      } else if (extensionOf(entry) === '.js') {
+        files.push(fullPath);
+      }
+    }
+  }
+  walkFunctions(baseDir);
+  return files;
+}
+
+export function collectFunctionEdgeImportFailures({ rootDir = '.', functionsDir = 'functions' } = {}) {
+  const root = resolve(rootDir);
+  const failures = [];
+  const seen = new Set();
+
+  function visit(file, chain) {
+    const normalizedFile = normalizePath(resolve(file));
+    if (seen.has(normalizedFile)) return;
+    seen.add(normalizedFile);
+
+    const text = readFileSync(file, 'utf8');
+    for (const specifier of importSpecifiers(text)) {
+      if (isNodeCoreSpecifier(specifier)) {
+        const chainText = [...chain, normalizePath(relative(root, file))].join(' -> ');
+        failures.push(`${chainText} imports Node-only module "${specifier}", which is not safe for Cloudflare Pages Functions.`);
+        continue;
+      }
+      if (!specifier.startsWith('.')) continue;
+
+      const resolvedImport = resolveRelativeImport(root, file, specifier);
+      if (!resolvedImport) {
+        failures.push(`${normalizePath(relative(root, file))} imports missing module "${specifier}".`);
+        continue;
+      }
+      visit(resolvedImport, [...chain, normalizePath(relative(root, file))]);
+    }
+  }
+
+  for (const entrypoint of functionEntrypoints(root, functionsDir)) {
+    visit(entrypoint, []);
+  }
+
+  return failures;
 }
 
 function trackedFiles() {
@@ -181,6 +309,10 @@ function checkTextFiles(failures) {
   }
 }
 
+function checkFunctionEdgeImports(failures) {
+  failures.push(...collectFunctionEdgeImportFailures());
+}
+
 function checkProductionIntegrityWorkflow(failures) {
   const path = '.github/workflows/production-integrity.yml';
   if (!existsSync(path)) {
@@ -214,18 +346,29 @@ function checkProductionIntegrityWorkflow(failures) {
   }
 }
 
-const failures = [];
-checkRootTempFiles(failures);
-checkTrackedGeneratedFiles(failures);
-checkTextFiles(failures);
-checkProductionIntegrityWorkflow(failures);
-
-if (failures.length > 0) {
-  console.error('Repository hygiene check failed:');
-  for (const failure of failures) {
-    console.error(`- ${failure}`);
-  }
-  process.exit(1);
+export function runRepoHygiene() {
+  const failures = [];
+  checkRootTempFiles(failures);
+  checkTrackedGeneratedFiles(failures);
+  checkTextFiles(failures);
+  checkFunctionEdgeImports(failures);
+  checkProductionIntegrityWorkflow(failures);
+  return failures;
 }
 
-console.log('Repository hygiene check passed');
+export function main() {
+  const failures = runRepoHygiene();
+  if (failures.length > 0) {
+    console.error('Repository hygiene check failed:');
+    for (const failure of failures) {
+      console.error(`- ${failure}`);
+    }
+    process.exit(1);
+  }
+
+  console.log('Repository hygiene check passed');
+}
+
+if (import.meta.url === pathToFileURL(process.argv[1]).href) {
+  main();
+}
