@@ -93,7 +93,9 @@ test('runAiEvals executes JSON, Markdown, MCP, and provenance eval expectations'
               coverage_status: 'supported',
               should_use_anchorfact: true,
               contains_canonical_slug: 'ai/3d-generation-gaussian-splatting',
-              recommended_call_contains: '/api/evidence'
+              recommended_call_contains: '/api/evidence',
+              min_content_health_public_articles: 1,
+              content_health_trust_boundary: 'draft_entries_excluded_from_ai_entrypoints'
             }
           },
           {
@@ -178,6 +180,10 @@ test('runAiEvals executes JSON, Markdown, MCP, and provenance eval expectations'
         coverage_status: 'supported',
         should_use_anchorfact: true,
         recommended_next_calls: [{ path: '/api/evidence?q=gaussian&limit=3' }],
+        content_health: {
+          snapshot: { public_articles: 555, public_claims: 1685 },
+          trust_boundaries: { draft_entries_excluded_from_ai_entrypoints: true }
+        },
         evidence_packs: [{ canonical_slug: 'ai/3d-generation-gaussian-splatting' }]
       }),
       '/api/evidence?q=gaussian&format=markdown': jsonResponse('# AnchorFact Evidence Pack', 'text/markdown; charset=utf-8'),
@@ -201,6 +207,7 @@ test('runAiEvals executes JSON, Markdown, MCP, and provenance eval expectations'
     })
   });
 
+  if (!report.ok) console.log(JSON.stringify(report, null, 2));
   assertEq(report.ok, true);
   assertEq(report.eval_count, 9);
   assertEq(report.passed, 9);

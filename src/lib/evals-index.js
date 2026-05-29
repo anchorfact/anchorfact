@@ -225,7 +225,9 @@ export function buildEvalsIndex({
         coverage_status: 'supported',
         should_use_anchorfact: true,
         contains_canonical_slug: record.canonical_slug,
-        recommended_call_contains: '/api/evidence'
+        recommended_call_contains: '/api/evidence',
+        min_content_health_public_articles: Math.max(1, searchIndexPayload?.article_count || 0),
+        content_health_trust_boundary: 'draft_entries_excluded_from_ai_entrypoints'
       }
     },
     {

@@ -114,12 +114,19 @@ function evaluateJsonExpected(payload, expected, failures) {
     const count = payload?.snapshot?.public_claims ?? payload?.public_claim_count ?? 0;
     check(count >= expected.min_public_claims, failures, `public claim count expected at least ${expected.min_public_claims}, got ${count}`);
   }
+  if (expected.min_content_health_public_articles !== undefined) {
+    const count = payload?.content_health?.snapshot?.public_articles ?? 0;
+    check(count >= expected.min_content_health_public_articles, failures, `context content health public article count expected at least ${expected.min_content_health_public_articles}, got ${count}`);
+  }
   if (expected.machine_guidance_contains) {
     const guidance = (payload?.machine_guidance || []).join(' ');
     check(guidance.includes(expected.machine_guidance_contains), failures, `machine_guidance should include ${expected.machine_guidance_contains}`);
   }
   if (expected.trust_boundary) {
     check(payload?.trust_boundaries?.[expected.trust_boundary] === true, failures, `trust_boundaries.${expected.trust_boundary} should be true`);
+  }
+  if (expected.content_health_trust_boundary) {
+    check(payload?.content_health?.trust_boundaries?.[expected.content_health_trust_boundary] === true, failures, `content_health.trust_boundaries.${expected.content_health_trust_boundary} should be true`);
   }
   if (expected.min_nodes !== undefined) {
     const count = numberAt(payload, 'node_count', 'nodes') ?? 0;

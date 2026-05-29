@@ -89,7 +89,7 @@ npm run verify:provenance
 npm run verify:provenance:signed
 ```
 
-The smoke test checks the homepage, `/robots.txt`, `/sitemap.xml`, `/agent.json`, `/openapi.json`, `/manifest.json`, `/llms.txt`, `/claims.json`, `/topics.json`, `/capabilities.json`, `/coverage.json`, `/examples.json`, `/graph.json`, `/evals.json`, `/mcp.json`, `/api`, `/api/plan`, `/api/evidence`, `/api/context`, `/api/resolve`, `/api/resolve-batch`, `/api/search`, `/api/article`, `/api/claim`, `/api/cite`, `/api/source`, `/search-index.json`, `/sources.json`, `/provenance.json`, and `/drafts.html` against the live `https://anchorfact.org` deployment. Omit the expected-count environment variables when checking a future snapshot with different counts.
+The smoke test checks the homepage, `/robots.txt`, `/sitemap.xml`, `/agent.json`, `/openapi.json`, `/manifest.json`, `/llms.txt`, `/claims.json`, `/topics.json`, `/capabilities.json`, `/content-health.json`, `/coverage.json`, `/examples.json`, `/graph.json`, `/evals.json`, `/mcp.json`, `/api`, `/api/plan`, `/api/evidence`, `/api/context`, `/api/resolve`, `/api/resolve-batch`, `/api/search`, `/api/article`, `/api/claim`, `/api/cite`, `/api/source`, `/search-index.json`, `/sources.json`, `/provenance.json`, and `/drafts.html` against the live `https://anchorfact.org` deployment. Omit the expected-count environment variables when checking a future snapshot with different counts.
 
 The provenance verifier fetches `/provenance.json`, recomputes SHA-256 checksums for the core AI entrypoints, checks public/draft/claim counts, confirms official build identity, and verifies the source commit against GitHub.
 
@@ -143,6 +143,7 @@ Only public articles contribute publishable facts to `/claims.json`.
 | `/claims.json` | Public verified atomic claims with evidence links. |
 | `/topics.json` | Compact public topic coverage map with article, claim, and source counts. |
 | `/capabilities.json` | AI task-to-endpoint routing guide with trust requirements, output formats, and fallback artifacts. |
+| `/content-health.json` | Signed corpus health summary with public/draft counts, source coverage, claim mapping, draft repair candidates, and trust boundaries. |
 | `/coverage.json` | AI coverage and limits guide with topic, confidence, source tier, and verification distributions. |
 | `/examples.json` | Executable AI usage examples for dynamic API calls, local MCP workflows, and signed static fallback workflows. |
 | `/graph.json` | Signed public graph of topic, article, claim, and source relationships. |
@@ -151,7 +152,7 @@ Only public articles contribute publishable facts to `/claims.json`.
 | `/api` | Compact live API discovery endpoint for agents that need the smallest endpoint index before fetching OpenAPI. |
 | `/api/plan?q=...` | Read-only Cloudflare Pages Function that tells AI agents whether AnchorFact coverage is plausible, which endpoint to call next, or when to fall back to external sources. |
 | `/api/evidence?q=...` | Read-only Cloudflare Pages Function for one-call public evidence packs with search hits, article summaries, claims, sources, and citation exports. Add `format=markdown` for answer-ready text context. |
-| `/api/context?q=...` | Read-only Cloudflare Pages Function for one-call prompt context with planning status, fallback guidance, evidence packs, and citation guardrails. Add `format=markdown` for prompt-ready text. |
+| `/api/context?q=...` | Read-only Cloudflare Pages Function for one-call prompt context with planning status, fallback guidance, content health summary, evidence packs, and citation guardrails. Add `format=markdown` for prompt-ready text. |
 | `/api/resolve?ref=...` | Read-only Cloudflare Pages Function for resolving a public claim id, article slug, source id, or source URL to its matching public API payload. |
 | `/api/resolve-batch?ref=...&ref=...` | Read-only Cloudflare Pages Function for resolving up to 20 mixed public references in one call. Add `format=markdown` for compact text output. |
 | `/api/search?q=...` | Read-only Cloudflare Pages Function for lightweight public record lookup. |

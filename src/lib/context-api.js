@@ -67,6 +67,7 @@ export function buildContextApiPayload({
   topicsPayload,
   coveragePayload,
   capabilitiesPayload,
+  contentHealthPayload,
   generated = new Date().toISOString()
 }) {
   const normalizedQuery = String(query || '').trim();
@@ -118,6 +119,7 @@ export function buildContextApiPayload({
       should_use_anchorfact: plan.should_use_anchorfact,
       confidence: plan.confidence,
       citation_contract: evidence.payload.citation_contract,
+      content_health: compactContentHealth(contentHealthPayload),
       trust_requirements: plan.trust_requirements || [],
       fallback_guidance: plan.fallback_guidance || [],
       recommended_next_calls: plan.recommended_next_calls || [],
@@ -130,6 +132,28 @@ export function buildContextApiPayload({
       manifest_generated: evidence.payload.manifest_generated || null,
       claims_generated: evidence.payload.claims_generated || null
     }
+  };
+}
+
+function compactContentHealth(payload) {
+  if (!payload || typeof payload !== 'object') return null;
+  return {
+    schema_version: payload.schema_version || null,
+    generated: payload.generated || null,
+    provenance_url: payload.provenance_url || null,
+    url: 'https://anchorfact.org/content-health.json',
+    snapshot: {
+      public_articles: payload.snapshot?.public_articles ?? null,
+      draft_articles: payload.snapshot?.draft_articles ?? null,
+      public_claims: payload.snapshot?.public_claims ?? null,
+      public_sources: payload.snapshot?.public_sources ?? null
+    },
+    public_source_coverage: payload.public?.source_coverage || null,
+    public_claim_mapping: payload.public?.claim_mapping || null,
+    trust_boundaries: payload.trust_boundaries || {},
+    machine_guidance: Array.isArray(payload.machine_guidance)
+      ? payload.machine_guidance.slice(0, 4)
+      : []
   };
 }
 
@@ -150,6 +174,16 @@ export function renderContextMarkdown(payload) {
     for (const item of payload.trust_requirements) {
       lines.push(`- ${item}`);
     }
+    lines.push('');
+  }
+
+  if (payload.content_health) {
+    const health = payload.content_health;
+    lines.push('## Corpus Health', '');
+    lines.push(`- Public articles: ${health.snapshot?.public_articles ?? 'unknown'}`);
+    lines.push(`- Public claims: ${health.snapshot?.public_claims ?? 'unknown'}`);
+    lines.push(`- Draft articles excluded: ${health.trust_boundaries?.draft_entries_excluded_from_ai_entrypoints === true ? 'yes' : 'unknown'}`);
+    lines.push(`- Health artifact: ${health.url || '/content-health.json'}`);
     lines.push('');
   }
 

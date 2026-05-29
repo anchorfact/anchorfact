@@ -312,6 +312,7 @@ test('openapi.json describes the static AI contract', () => {
   assert(openapi.components.schemas.SearchIndex, 'OpenAPI should define SearchIndex schema');
   assert(openapi.components.schemas.EvidenceApiResponse, 'OpenAPI should define EvidenceApiResponse schema');
   assert(openapi.components.schemas.ContextApiResponse, 'OpenAPI should define ContextApiResponse schema');
+  assert(openapi.components.schemas.ContextApiResponse.properties.content_health, 'OpenAPI context schema should include content health summary');
   assert(openapi.components.schemas.ResolveApiResponse, 'OpenAPI should define ResolveApiResponse schema');
   assert(openapi.components.schemas.ResolveBatchApiResponse, 'OpenAPI should define ResolveBatchApiResponse schema');
   assert(openapi.components.schemas.ArticleApiResponse, 'OpenAPI should define ArticleApiResponse schema');

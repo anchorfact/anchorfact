@@ -88,7 +88,7 @@ export function buildCapabilitiesIndex({
     },
     {
       id: 'assemble_prompt_context',
-      intent: 'Fetch one AI prompt context pack with coverage status, fallback guidance, evidence packs, and citation guardrails.',
+      intent: 'Fetch one AI prompt context pack with coverage status, content health, fallback guidance, evidence packs, and citation guardrails.',
       use_when: [
         'The agent wants one call before drafting an answer.',
         'The agent needs both supported/unsupported guidance and source-mapped evidence in the same payload.'

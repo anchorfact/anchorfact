@@ -374,7 +374,10 @@ export async function main() {
   assertOk(contextApi.coverage_status !== 'unsupported', '/api/context unexpectedly marked gaussian query unsupported', failures);
   assertOk(contextApi.evidence_pack_count > 0, '/api/context returned no evidence packs', failures);
   assertOk((contextApi.evidence_packs || []).some(pack => pack.canonical_slug === 'ai/3d-generation-gaussian-splatting'), '/api/context did not return expected gaussian pack', failures);
+  assertOk(contextApi.content_health?.snapshot?.public_articles === contentHealth.snapshot?.public_articles, '/api/context content health public count does not match /content-health.json', failures);
+  assertOk(contextApi.content_health?.trust_boundaries?.draft_entries_excluded_from_ai_entrypoints === true, '/api/context content health trust boundary is missing', failures);
   assertOk(contextMarkdown.includes('# AnchorFact Context: gaussian'), '/api/context markdown response is missing heading', failures);
+  assertOk(contextMarkdown.includes('Corpus Health'), '/api/context markdown response is missing corpus health summary', failures);
   assertOk(contextMarkdown.includes('Citation contract:'), '/api/context markdown response is missing citation contract', failures);
   assertOk(contextMarkdown.includes('3D Gaussian Splatting'), '/api/context markdown response is missing expected evidence text', failures);
   assertOk(resolveApi.schema_version === 'anchorfact.resolve-api.v1', `resolve api schema_version expected anchorfact.resolve-api.v1, got ${resolveApi.schema_version || '(missing)'}`, failures);

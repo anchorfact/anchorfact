@@ -152,6 +152,8 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
   assert(contextEval.call.path.includes('/api/context?q=gaussian+splatting&limit=3'), 'context eval should include encoded query path');
   assertEq(contextEval.expected.schema_version, 'anchorfact.context-api.v1');
   assertEq(contextEval.expected.should_use_anchorfact, true);
+  assertEq(contextEval.expected.min_content_health_public_articles, 1);
+  assertEq(contextEval.expected.content_health_trust_boundary, 'draft_entries_excluded_from_ai_entrypoints');
 
   const unsupportedEvidenceEval = payload.evals.find(evalCase => evalCase.id === 'unsupported_query_evidence');
   assert(unsupportedEvidenceEval.call.path.includes('/api/evidence?q=lunar+dentistry&limit=3'), 'unsupported evidence eval should use the same fixed no-coverage query');

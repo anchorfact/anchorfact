@@ -182,7 +182,7 @@ export function buildOpenApiContract({
       },
       '/api/context': {
         get: {
-          summary: 'Read-only AI prompt context with planning status and evidence packs',
+          summary: 'Read-only AI prompt context with planning status, content health, and evidence packs',
           parameters: [
             {
               name: 'q',
@@ -574,6 +574,7 @@ export function buildOpenApiContract({
           should_use_anchorfact: { type: 'boolean' },
           evidence_pack_count: { type: 'integer' },
           evidence_packs: { type: 'array', items: { type: 'object' } },
+          content_health: { type: ['object', 'null'] },
           recommended_next_calls: { type: 'array', items: { type: 'object' } },
           fallback_guidance: { type: 'array', items: { type: 'string' } }
         }),

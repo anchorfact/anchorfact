@@ -152,6 +152,26 @@ const capabilitiesPayload = {
   capabilities: []
 };
 
+const contentHealthPayload = {
+  schema_version: 'anchorfact.content-health.v1',
+  generated: '2026-05-29T00:00:00.000Z',
+  provenance_url: 'https://anchorfact.org/provenance.json',
+  snapshot: {
+    public_articles: 1,
+    draft_articles: 1,
+    public_claims: 1
+  },
+  public: {
+    source_coverage: { full: 1, partial: 0, zero: 0 },
+    claim_mapping: { total: 1, mapped: 1, ratio: 1 }
+  },
+  machine_guidance: ['Use /api/context?q={query} for prompt assembly.'],
+  trust_boundaries: {
+    draft_entries_excluded_from_ai_entrypoints: true,
+    original_sources_remain_authoritative: true
+  }
+};
+
 function payloadArgs(overrides = {}) {
   return {
     query: 'gaussian splatting',
@@ -163,6 +183,7 @@ function payloadArgs(overrides = {}) {
     topicsPayload,
     coveragePayload,
     capabilitiesPayload,
+    contentHealthPayload,
     generated: '2026-05-29T00:00:00.000Z',
     ...overrides
   };
@@ -177,6 +198,7 @@ function assetEnv(overrides = {}) {
     '/topics.json': topicsPayload,
     '/coverage.json': coveragePayload,
     '/capabilities.json': capabilitiesPayload,
+    '/content-health.json': contentHealthPayload,
     ...overrides
   };
   return {
@@ -216,6 +238,9 @@ test('buildContextApiPayload combines planning and public evidence packs', () =>
   assertEq(result.payload.coverage_status, 'supported');
   assertEq(result.payload.should_use_anchorfact, true);
   assertEq(result.payload.evidence_pack_count, 1);
+  assertEq(result.payload.content_health.snapshot.public_articles, 1);
+  assertEq(result.payload.content_health.public_claim_mapping.mapped, 1);
+  assertEq(result.payload.content_health.trust_boundaries.draft_entries_excluded_from_ai_entrypoints, true);
   assert(result.payload.recommended_next_calls.some(call => call.path.includes('/api/evidence')), 'context should include evidence next call');
   assert(result.payload.evidence_packs[0].canonical_slug === 'ai/gaussian-splatting', 'context should include public evidence pack');
   assert(!JSON.stringify(result.payload).includes('Draft facts must not be returned'), 'context should exclude draft claims');
@@ -236,6 +261,8 @@ test('renderContextMarkdown returns answer-ready context with guardrails', () =>
 
   assert(markdown.includes('AnchorFact Context'), 'markdown should identify context payload');
   assert(markdown.includes('Coverage status: supported'), 'markdown should include coverage status');
+  assert(markdown.includes('Corpus Health'), 'markdown should include corpus health summary');
+  assert(markdown.includes('Public claims: 1'), 'markdown should include public claim count');
   assert(markdown.includes('Citation contract:'), 'markdown should include citation contract');
   assert(markdown.includes('3D Gaussian Splatting'), 'markdown should include evidence pack');
 });
@@ -250,6 +277,7 @@ test('Pages Function returns JSON and Markdown context', async () => {
   assertEq(response.headers.get('Access-Control-Allow-Origin'), '*');
   assertEq(payload.schema_version, 'anchorfact.context-api.v1');
   assertEq(payload.evidence_pack_count, 1);
+  assertEq(payload.content_health.snapshot.public_articles, 1);
 
   const markdown = await onRequestGet({
     request: new Request('https://anchorfact.org/api/context?q=gaussian&format=markdown'),

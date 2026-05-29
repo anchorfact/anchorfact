@@ -66,7 +66,8 @@ export async function onRequestGet(context) {
       searchIndex,
       topicsPayload,
       coveragePayload,
-      capabilitiesPayload
+      capabilitiesPayload,
+      contentHealthPayload
     ] = await Promise.all([
       loadJson(context, '/manifest.json'),
       loadJson(context, '/claims.json'),
@@ -74,7 +75,8 @@ export async function onRequestGet(context) {
       loadJson(context, '/search-index.json'),
       loadJson(context, '/topics.json'),
       loadJson(context, '/coverage.json'),
-      loadJson(context, '/capabilities.json')
+      loadJson(context, '/capabilities.json'),
+      loadJson(context, '/content-health.json')
     ]);
 
     const result = buildContextApiPayload({
@@ -86,7 +88,8 @@ export async function onRequestGet(context) {
       searchIndex,
       topicsPayload,
       coveragePayload,
-      capabilitiesPayload
+      capabilitiesPayload,
+      contentHealthPayload
     });
 
     if (result.ok && parsed.format === 'markdown') {
