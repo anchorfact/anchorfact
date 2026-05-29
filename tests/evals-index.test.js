@@ -104,9 +104,10 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
 
   assertEq(payload.schema_version, 'anchorfact.evals.v1');
   assertEq(payload.provenance_url, 'https://anchorfact.org/provenance.json');
-  assertEq(payload.eval_count, 17);
+  assertEq(payload.eval_count, 18);
   assertEq(payload.evals.map(evalCase => evalCase.id), [
     'api_discovery',
+    'openapi_context_contract',
     'query_plan',
     'unsupported_query_plan',
     'evidence_pack_json',
@@ -130,6 +131,13 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
   assertEq(apiDiscoveryEval.expected.schema_version, 'anchorfact.api-index.v1');
   assert(apiDiscoveryEval.expected.required_paths.includes('/api/evidence'), 'API discovery eval should require evidence endpoint');
   assert(apiDiscoveryEval.expected.required_paths.includes('/api/resolve-batch'), 'API discovery eval should require batch resolver endpoint');
+
+  const openapiEval = payload.evals.find(evalCase => evalCase.id === 'openapi_context_contract');
+  assertEq(openapiEval.call.path, '/openapi.json');
+  assertEq(openapiEval.expected.openapi_schema_version, 'anchorfact.openapi.v1');
+  assert(openapiEval.expected.required_schema_properties.ContextApiResponse.includes('answer_policy'), 'OpenAPI eval should require context answer policy');
+  assert(openapiEval.expected.required_schema_properties.AnswerPolicy.includes('can_answer_with_anchorfact'), 'OpenAPI eval should require answer policy fields');
+  assert(openapiEval.expected.required_schema_properties.CitationReadyClaim.includes('cite_api_path'), 'OpenAPI eval should require citation claim fields');
 
   const planEval = payload.evals.find(evalCase => evalCase.id === 'query_plan');
   assert(planEval.call.path.includes('/api/plan?q=gaussian+splatting&limit=3'), 'plan eval should include encoded query path');

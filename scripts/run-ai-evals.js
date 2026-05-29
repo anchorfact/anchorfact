@@ -34,6 +34,13 @@ function evaluateJsonExpected(payload, expected, failures) {
   if (expected.schema_version) {
     check(payload?.schema_version === expected.schema_version, failures, `schema_version expected ${expected.schema_version}, got ${payload?.schema_version || '(missing)'}`);
   }
+  if (expected.openapi_schema_version) {
+    check(
+      payload?.['x-anchorfact-schema-version'] === expected.openapi_schema_version,
+      failures,
+      `x-anchorfact-schema-version expected ${expected.openapi_schema_version}, got ${payload?.['x-anchorfact-schema-version'] || '(missing)'}`
+    );
+  }
   if (expected.coverage_status) {
     check(payload?.coverage_status === expected.coverage_status, failures, `coverage_status expected ${expected.coverage_status}, got ${payload?.coverage_status || '(missing)'}`);
   }
@@ -192,6 +199,18 @@ function evaluateJsonExpected(payload, expected, failures) {
     const paths = new Set((payload?.endpoints || []).map(endpoint => endpoint?.path));
     for (const path of expected.required_paths) {
       check(paths.has(path), failures, `payload should include endpoint path ${path}`);
+    }
+  }
+  if (expected.required_schema_properties && typeof expected.required_schema_properties === 'object') {
+    for (const [schemaName, properties] of Object.entries(expected.required_schema_properties)) {
+      const schemaProperties = payload?.components?.schemas?.[schemaName]?.properties || {};
+      for (const property of properties || []) {
+        check(
+          Object.prototype.hasOwnProperty.call(schemaProperties, property),
+          failures,
+          `OpenAPI schema ${schemaName} should include property ${property}`
+        );
+      }
     }
   }
   if (Array.isArray(expected.citation_export_contains)) {

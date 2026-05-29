@@ -572,14 +572,68 @@ export function buildOpenApiContract({
           limit: { type: 'integer' },
           coverage_status: { enum: ['supported', 'topic_supported', 'unsupported'] },
           should_use_anchorfact: { type: 'boolean' },
-          answer_policy: { type: 'object' },
-          citation_ready_claims: { type: 'array', items: { type: 'object' } },
+          answer_policy: { $ref: '#/components/schemas/AnswerPolicy' },
+          citation_ready_claims: {
+            type: 'array',
+            items: { $ref: '#/components/schemas/CitationReadyClaim' }
+          },
           evidence_pack_count: { type: 'integer' },
           evidence_packs: { type: 'array', items: { type: 'object' } },
           content_health: { type: ['object', 'null'] },
           recommended_next_calls: { type: 'array', items: { type: 'object' } },
           fallback_guidance: { type: 'array', items: { type: 'string' } }
         }),
+        AnswerPolicy: {
+          type: 'object',
+          description: 'Machine decision telling agents whether AnchorFact can support a cited answer for the current query.',
+          required: [
+            'can_answer_with_anchorfact',
+            'answer_mode',
+            'max_claims_to_cite',
+            'required_action',
+            'guardrails'
+          ],
+          properties: {
+            can_answer_with_anchorfact: { type: 'boolean' },
+            answer_mode: { enum: ['answer_with_citations', 'external_sources_required'] },
+            max_claims_to_cite: { type: 'integer', minimum: 0 },
+            required_action: { type: 'string' },
+            unsupported_reason: { type: ['string', 'null'] },
+            guardrails: { type: 'array', items: { type: 'string' } }
+          },
+          additionalProperties: false
+        },
+        CitationReadyClaim: {
+          type: 'object',
+          description: 'Compact claim-level citation candidate extracted from context evidence packs.',
+          required: [
+            'rank',
+            'claim_id',
+            'statement',
+            'confidence',
+            'canonical_slug',
+            'source_url',
+            'cite_api_path'
+          ],
+          properties: {
+            rank: { type: 'integer', minimum: 1 },
+            claim_id: { type: 'string', format: 'uri' },
+            statement: { type: ['string', 'null'] },
+            confidence: { enum: ['high', 'medium', 'low', null] },
+            canonical_slug: { type: ['string', 'null'] },
+            article_title: { type: ['string', 'null'] },
+            article_url: { type: ['string', 'null'], format: 'uri' },
+            source_title: { type: ['string', 'null'] },
+            source_url: { type: ['string', 'null'], format: 'uri' },
+            source_tier: { enum: ['S', 'A', 'B', 'C', null] },
+            source_type: { type: ['string', 'null'] },
+            anchorfact_url: { type: ['string', 'null'], format: 'uri' },
+            cite_api_path: { type: ['string', 'null'] },
+            cite_api_url: { type: ['string', 'null'], format: 'uri' },
+            citation_markdown: { type: ['string', 'null'] }
+          },
+          additionalProperties: false
+        },
         ResolveApiResponse: schemaVersioned('Resolve API response', RESOLVE_API_SCHEMA_VERSION, {
           ref: { type: 'string' },
           resolved_type: { enum: ['article', 'claim', 'source'] },

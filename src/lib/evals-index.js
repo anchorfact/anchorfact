@@ -9,6 +9,7 @@ import {
   GRAPH_SCHEMA_VERSION,
   MCP_SCHEMA_VERSION,
   OFFICIAL_SITE,
+  OPENAPI_SCHEMA_VERSION,
   PLAN_API_SCHEMA_VERSION,
   PROVENANCE_PATH,
   PROVENANCE_SCHEMA_VERSION,
@@ -171,6 +172,37 @@ export function buildEvalsIndex({
           '/api/resolve',
           '/api/resolve-batch'
         ]
+      }
+    },
+    {
+      id: 'openapi_context_contract',
+      intent: 'Confirm OpenAPI describes the context answer policy and compact citation claim contract.',
+      call: call('/openapi.json', site),
+      expected: {
+        status: 200,
+        content_type: 'application/json',
+        schema_version: null,
+        openapi_schema_version: OPENAPI_SCHEMA_VERSION,
+        required_schema_properties: {
+          ContextApiResponse: [
+            'answer_policy',
+            'citation_ready_claims',
+            'evidence_pack_count'
+          ],
+          AnswerPolicy: [
+            'can_answer_with_anchorfact',
+            'answer_mode',
+            'required_action',
+            'guardrails'
+          ],
+          CitationReadyClaim: [
+            'claim_id',
+            'statement',
+            'source_url',
+            'cite_api_path',
+            'citation_markdown'
+          ]
+        }
       }
     },
     {

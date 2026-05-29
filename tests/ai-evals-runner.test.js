@@ -71,6 +71,20 @@ test('runAiEvals executes JSON, Markdown, MCP, and provenance eval expectations'
             }
           },
           {
+            id: 'openapi_context_contract',
+            call: { method: 'GET', path: '/openapi.json' },
+            expected: {
+              status: 200,
+              content_type: 'application/json',
+              openapi_schema_version: 'anchorfact.openapi.v1',
+              required_schema_properties: {
+                ContextApiResponse: ['answer_policy', 'citation_ready_claims'],
+                AnswerPolicy: ['can_answer_with_anchorfact', 'answer_mode'],
+                CitationReadyClaim: ['claim_id', 'source_url', 'cite_api_path']
+              }
+            }
+          },
+          {
             id: 'unsupported_query_plan',
             call: { method: 'GET', path: '/api/plan?q=lunar+dentistry&limit=3' },
             expected: {
@@ -178,6 +192,33 @@ test('runAiEvals executes JSON, Markdown, MCP, and provenance eval expectations'
         schema_version: 'anchorfact.api-index.v1',
         endpoints: [{ path: '/api/plan' }, { path: '/api/evidence' }, { path: '/api/context' }]
       }),
+      '/openapi.json': jsonResponse({
+        openapi: '3.1.0',
+        'x-anchorfact-schema-version': 'anchorfact.openapi.v1',
+        components: {
+          schemas: {
+            ContextApiResponse: {
+              properties: {
+                answer_policy: {},
+                citation_ready_claims: {}
+              }
+            },
+            AnswerPolicy: {
+              properties: {
+                can_answer_with_anchorfact: {},
+                answer_mode: {}
+              }
+            },
+            CitationReadyClaim: {
+              properties: {
+                claim_id: {},
+                source_url: {},
+                cite_api_path: {}
+              }
+            }
+          }
+        }
+      }),
       '/api/plan?q=gaussian&limit=3': jsonResponse({
         schema_version: 'anchorfact.plan-api.v1',
         coverage_status: 'supported',
@@ -258,8 +299,8 @@ test('runAiEvals executes JSON, Markdown, MCP, and provenance eval expectations'
 
   if (!report.ok) console.log(JSON.stringify(report, null, 2));
   assertEq(report.ok, true);
-  assertEq(report.eval_count, 10);
-  assertEq(report.passed, 10);
+  assertEq(report.eval_count, 11);
+  assertEq(report.passed, 11);
   assertEq(report.failed, 0);
   const markdown = renderAiEvalsMarkdown(report);
   assert(markdown.includes('AnchorFact AI Evals - PASS'), 'markdown should show pass');
