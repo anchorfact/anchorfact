@@ -548,8 +548,9 @@ export function buildOpenApiContract({
         PlanApiResponse: schemaVersioned('Plan API response', PLAN_API_SCHEMA_VERSION, {
           query: { type: 'string' },
           limit: { type: 'integer' },
-          coverage_status: { enum: ['supported', 'topic_supported', 'unsupported'] },
+          coverage_status: { enum: ['supported', 'topic_supported', 'unsupported', 'site_help'] },
           should_use_anchorfact: { type: 'boolean' },
+          query_intent: { enum: ['content', 'site_help'] },
           unsupported_intent_reasons: {
             type: 'array',
             items: { enum: ['local_or_personalized', 'live_or_time_sensitive'] }
@@ -574,8 +575,9 @@ export function buildOpenApiContract({
         ContextApiResponse: schemaVersioned('Context API response', CONTEXT_API_SCHEMA_VERSION, {
           query: { type: 'string' },
           limit: { type: 'integer' },
-          coverage_status: { enum: ['supported', 'topic_supported', 'unsupported'] },
+          coverage_status: { enum: ['supported', 'topic_supported', 'unsupported', 'site_help'] },
           should_use_anchorfact: { type: 'boolean' },
+          query_intent: { enum: ['content', 'site_help'] },
           unsupported_intent_reasons: {
             type: 'array',
             items: { enum: ['local_or_personalized', 'live_or_time_sensitive'] }
@@ -603,7 +605,7 @@ export function buildOpenApiContract({
           ],
           properties: {
             can_answer_with_anchorfact: { type: 'boolean' },
-            answer_mode: { enum: ['answer_with_citations', 'external_sources_required'] },
+            answer_mode: { enum: ['answer_with_citations', 'external_sources_required', 'api_guidance'] },
             max_claims_to_cite: { type: 'integer', minimum: 0 },
             required_action: { type: 'string' },
             unsupported_reason: { type: ['string', 'null'] },

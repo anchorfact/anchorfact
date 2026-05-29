@@ -277,6 +277,20 @@ test('buildContextApiPayload suppresses lexical evidence for live unsupported in
   assert(result.payload.fallback_guidance.some(item => item.includes('current')), 'live query should explain current-source fallback');
 });
 
+test('buildContextApiPayload gives API guidance for AnchorFact usage questions', () => {
+  const result = buildContextApiPayload(payloadArgs({ query: 'how to cite a Gaussian claim from AnchorFact' }));
+
+  assertEq(result.payload.coverage_status, 'site_help');
+  assertEq(result.payload.should_use_anchorfact, true);
+  assertEq(result.payload.query_intent, 'site_help');
+  assertEq(result.payload.answer_policy.can_answer_with_anchorfact, true);
+  assertEq(result.payload.answer_policy.answer_mode, 'api_guidance');
+  assertEq(result.payload.evidence_pack_count, 0);
+  assertEq(result.payload.evidence_packs, []);
+  assertEq(result.payload.citation_ready_claims, []);
+  assert(result.payload.recommended_next_calls.some(call => call.path.includes('/api/cite')), 'site help should recommend citation endpoint');
+});
+
 test('renderContextMarkdown returns answer-ready context with guardrails', () => {
   const result = buildContextApiPayload(payloadArgs());
   const markdown = renderContextMarkdown(result.payload);

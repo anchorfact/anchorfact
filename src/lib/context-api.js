@@ -123,7 +123,9 @@ export function buildContextApiPayload({
     return evidence;
   }
 
-  const evidencePacks = plan.should_use_anchorfact === true ? (evidence.payload.packs || []) : [];
+  const evidencePacks = plan.should_use_anchorfact === true && plan.coverage_status !== 'site_help'
+    ? (evidence.payload.packs || [])
+    : [];
   const citationReadyClaims = buildCitationReadyClaims(evidencePacks);
   const answerPolicy = buildAnswerPolicy({
     plan,
@@ -142,6 +144,7 @@ export function buildContextApiPayload({
       limit: normalizedLimit,
       coverage_status: plan.coverage_status,
       should_use_anchorfact: plan.should_use_anchorfact,
+      query_intent: plan.query_intent || 'content',
       confidence: plan.confidence,
       answer_policy: answerPolicy,
       citation_contract: evidence.payload.citation_contract,
@@ -219,6 +222,21 @@ function buildCitationReadyClaims(evidencePacks = [], limit = MAX_CITATION_READY
 }
 
 function buildAnswerPolicy({ plan, evidencePackCount, citationReadyClaims }) {
+  if (plan.coverage_status === 'site_help') {
+    return {
+      can_answer_with_anchorfact: true,
+      answer_mode: 'api_guidance',
+      max_claims_to_cite: 0,
+      required_action: 'Use recommended_next_calls and OpenAPI/API discovery to answer this AnchorFact usage question; do not cite public content claims as usage documentation.',
+      unsupported_reason: null,
+      guardrails: [
+        'Do not cite draft records.',
+        'Do not cite public content articles as AnchorFact API documentation.',
+        'For factual answers, run a separate /api/context or /api/evidence call with the real content query.'
+      ]
+    };
+  }
+
   const hasCitations = citationReadyClaims.length > 0;
   const canAnswer = plan.should_use_anchorfact === true
     && evidencePackCount > 0

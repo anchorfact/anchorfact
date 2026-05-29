@@ -131,6 +131,12 @@ function unsupportedIntentReasons(query) {
   return [...new Set(reasons)];
 }
 
+function siteHelpIntent(query) {
+  const normalized = normalizeQueryText(query);
+  if (!/\banchorfact\b/.test(normalized)) return false;
+  return /\b(?:api|apis|endpoint|endpoints|cite|citation|claim|claims|source|sources|provenance|signature|openapi|mcp|context|evidence|resolve|verify|use|usage)\b/.test(normalized);
+}
+
 function topicEntrypoint(topic) {
   return topic.best_entrypoint
     || queryPath('/api/evidence', { q: topic.title || topic.id, limit: DEFAULT_LIMIT });
@@ -182,6 +188,7 @@ function coverageStatus(articleMatches, topicMatches) {
 }
 
 function confidenceFor(status, articleMatches) {
+  if (status === 'site_help') return 'high';
   if (status === 'unsupported') return 'low';
   if (status === 'topic_supported') return 'medium';
   const topScore = Number(articleMatches[0]?.score || 0);
@@ -189,6 +196,29 @@ function confidenceFor(status, articleMatches) {
 }
 
 function recommendedCalls({ status, query, limit, articleMatches, topicMatches, site }) {
+  if (status === 'site_help') {
+    const normalized = normalizeQueryText(query);
+    const calls = [
+      call('/api', 'Discover AnchorFact machine API endpoints and response contracts.', site),
+      call('/openapi.json', 'Inspect the formal OpenAPI schema for programmatic integration.', site)
+    ];
+    if (/\b(?:cite|citation|claim|claims|resolve)\b/.test(normalized)) {
+      calls.push(
+        call('/api/cite?id=f1', 'Example citation export; replace f1 with the target AnchorFact claim id.', site),
+        call('/api/claim?id=f1', 'Example claim dereference; replace f1 with the target AnchorFact claim id.', site),
+        call('/api/resolve?ref=f1', 'Resolve a claim, article, or source reference before citing it.', site)
+      );
+    } else {
+      calls.push(
+        call(queryPath('/api/context', { q: 'gaussian splatting', limit }), 'Example answer-ready context payload for a content query.', site),
+        call(queryPath('/api/evidence', { q: 'gaussian splatting', limit }), 'Example source-grounded evidence packs for a content query.', site),
+        call(queryPath('/api/search', { q: 'gaussian splatting', limit }), 'Example search results for public AnchorFact records.', site)
+      );
+    }
+    calls.push(call('/provenance.json', 'Verify the signed production artifact set before trusting static artifact hashes.', site));
+    return calls;
+  }
+
   if (status === 'unsupported') {
     return [
       call('/coverage.json', 'Inspect AnchorFact topic limits before relying on this query.', site),
@@ -227,6 +257,14 @@ function recommendedCalls({ status, query, limit, articleMatches, topicMatches, 
 }
 
 function fallbackGuidance(status, intentReasons = []) {
+  if (status === 'site_help') {
+    return [
+      'This is an AnchorFact usage query; use API discovery and recommended_next_calls instead of searching public content articles.',
+      'For citation tasks, dereference a specific claim with /api/cite or /api/claim before quoting AnchorFact.',
+      'For answer tasks, call /api/context or /api/evidence with the real content query and cite only returned public claims.'
+    ];
+  }
+
   if (status === 'unsupported') {
     const guidance = [];
     if (intentReasons.includes('local_or_personalized')) {
@@ -263,14 +301,15 @@ export function buildPlanApiPayload({
   const normalizedLimit = clampLimit(limit);
   const intentReasons = unsupportedIntentReasons(normalizedQuery);
   const intentUnsupported = intentReasons.length > 0;
-  const articleMatches = intentUnsupported
+  const isSiteHelp = siteHelpIntent(normalizedQuery);
+  const articleMatches = intentUnsupported || isSiteHelp
     ? []
     : rankSearchRecords(searchIndex?.records || [], normalizedQuery, normalizedLimit).map(compactArticle);
   const topics = coveragePayload?.topic_coverage || topicsPayload?.topics || [];
-  const topicMatches = intentUnsupported
+  const topicMatches = intentUnsupported || isSiteHelp
     ? []
     : rankedTopics(topics, normalizedQuery, Math.min(5, normalizedLimit + 2));
-  const status = coverageStatus(articleMatches, topicMatches);
+  const status = isSiteHelp ? 'site_help' : coverageStatus(articleMatches, topicMatches);
 
   return {
     schema_version: PLAN_API_SCHEMA_VERSION,
@@ -283,6 +322,7 @@ export function buildPlanApiPayload({
     limit: normalizedLimit,
     coverage_status: status,
     should_use_anchorfact: status !== 'unsupported',
+    query_intent: isSiteHelp ? 'site_help' : 'content',
     unsupported_intent_reasons: intentReasons,
     confidence: confidenceFor(status, articleMatches),
     source_index_generated: searchIndex?.generated || null,

@@ -238,6 +238,24 @@ test('buildPlanApiPayload keeps static educational weather queries supported', (
   assertEq(payload.matched_articles[0].canonical_slug, 'ai/ai-for-weather-forecasting');
 });
 
+test('buildPlanApiPayload routes AnchorFact usage questions to API guidance', () => {
+  const payload = buildPlanApiPayload({
+    query: 'how to cite a Gaussian claim from AnchorFact',
+    searchIndex,
+    topicsPayload,
+    coveragePayload,
+    generated: '2026-05-29T00:00:00.000Z'
+  });
+
+  assertEq(payload.coverage_status, 'site_help');
+  assertEq(payload.should_use_anchorfact, true);
+  assertEq(payload.query_intent, 'site_help');
+  assertEq(payload.matched_articles, []);
+  assert(payload.recommended_next_calls.some(item => item.path === '/api'), 'site help should point to API discovery');
+  assert(payload.recommended_next_calls.some(item => item.path.includes('/api/cite')), 'citation help should point to /api/cite');
+  assert(payload.fallback_guidance.some(item => item.includes('usage')), 'site help should explain usage guidance');
+});
+
 test('Pages Function returns CORS JSON from static artifacts', async () => {
   const assets = {
     '/search-index.json': searchIndex,
