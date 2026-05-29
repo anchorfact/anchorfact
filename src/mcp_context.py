@@ -199,6 +199,20 @@ def _citation_ready_claims(packs: list[dict], limit: int = MAX_CITATION_READY_CL
 
 
 def _answer_policy(plan: dict, evidence_pack_count: int, citation_ready_claims: list[dict]) -> dict:
+    if plan.get("coverage_status") == "site_help":
+        return {
+            "can_answer_with_anchorfact": True,
+            "answer_mode": "api_guidance",
+            "max_claims_to_cite": 0,
+            "required_action": "Use recommended_next_calls and local MCP/API discovery to answer this AnchorFact usage question; do not cite public content claims as usage documentation.",
+            "unsupported_reason": None,
+            "guardrails": [
+                "Do not cite draft records.",
+                "Do not cite public content articles as AnchorFact API documentation.",
+                "For factual answers, run a separate anchorfact_context or /api/context call with the real content query.",
+            ],
+        }
+
     can_answer = (
         plan.get("should_use_anchorfact") is True
         and evidence_pack_count > 0
@@ -254,10 +268,11 @@ def build_context_payload(dist_dir: Path, query: str | None, limit: int = DEFAUL
     content_health = _load_json(dist, "content-health.json", {})
 
     packs = []
-    for result in (plan.get("matched_articles") or [])[:normalized_limit]:
-        article = _public_article(manifest, result.get("canonical_slug"))
-        if article:
-            packs.append(_evidence_pack(dist, result, article, claims_payload, sources_payload))
+    if plan.get("coverage_status") != "site_help":
+        for result in (plan.get("matched_articles") or [])[:normalized_limit]:
+            article = _public_article(manifest, result.get("canonical_slug"))
+            if article:
+                packs.append(_evidence_pack(dist, result, article, claims_payload, sources_payload))
 
     citation_ready_claims = _citation_ready_claims(packs)
     answer_policy = _answer_policy(plan, len(packs), citation_ready_claims)
@@ -285,6 +300,7 @@ def build_context_payload(dist_dir: Path, query: str | None, limit: int = DEFAUL
         "limit": normalized_limit,
         "coverage_status": plan.get("coverage_status"),
         "should_use_anchorfact": plan.get("should_use_anchorfact"),
+        "query_intent": plan.get("query_intent", "content"),
         "confidence": plan.get("confidence"),
         "answer_policy": answer_policy,
         "citation_contract": CITATION_CONTRACT,
@@ -297,6 +313,7 @@ def build_context_payload(dist_dir: Path, query: str | None, limit: int = DEFAUL
         "local_http_next_calls": plan.get("local_http_next_calls", []),
         "matched_topics": plan.get("matched_topics", []),
         "matched_articles": plan.get("matched_articles", []),
+        "unsupported_intent_reasons": plan.get("unsupported_intent_reasons", []),
         "evidence_pack_count": len(packs),
         "evidence_packs": packs,
         "source_index_generated": sources_payload.get("generated"),

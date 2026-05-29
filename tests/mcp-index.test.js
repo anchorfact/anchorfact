@@ -272,6 +272,7 @@ from pathlib import Path
 from mcp_plan import build_plan_payload
 dist = Path(r'''${pyPath(distDir)}''')
 status, payload = build_plan_payload(dist, 'fixture evidence', 2)
+site_status, site_help = build_plan_payload(dist, 'how to cite a fixture claim from AnchorFact', 2)
 unsupported_status, unsupported = build_plan_payload(dist, 'lunar dentistry', 2)
 missing_status, missing = build_plan_payload(dist, '', 2)
 print(json.dumps({
@@ -283,6 +284,12 @@ print(json.dumps({
     "tool_names": [item.get("tool") for item in payload.get("local_mcp_next_tools", [])],
     "local_http_paths": [item.get("path") for item in payload.get("local_http_next_calls", [])],
     "public_paths": [item.get("path") for item in payload.get("recommended_next_calls", [])],
+    "site_status": site_status,
+    "site_coverage": site_help.get("coverage_status"),
+    "site_intent": site_help.get("query_intent"),
+    "site_evidence_tools": [item.get("tool") for item in site_help.get("local_mcp_next_tools", [])],
+    "site_public_paths": [item.get("path") for item in site_help.get("recommended_next_calls", [])],
+    "site_matched_articles": site_help.get("matched_articles", []),
     "unsupported_status": unsupported_status,
     "unsupported_coverage": unsupported.get("coverage_status"),
     "unsupported_should_use": unsupported.get("should_use_anchorfact"),
@@ -301,6 +308,13 @@ print(json.dumps({
   assertEq(result.tool_names.includes('anchorfact_cite_claim'), true);
   assertEq(result.local_http_paths[0].startsWith('/search?'), true);
   assertEq(result.public_paths[0].startsWith('/api/evidence?'), true);
+  assertEq(result.site_status, 200);
+  assertEq(result.site_coverage, 'site_help');
+  assertEq(result.site_intent, 'site_help');
+  assertEq(result.site_evidence_tools.includes('anchorfact_cite_claim'), true);
+  assertEq(result.site_public_paths.includes('/api'), true);
+  assertEq(result.site_public_paths.some(path => path.includes('/api/cite')), true);
+  assertEq(result.site_matched_articles.length, 0);
   assertEq(result.unsupported_status, 200);
   assertEq(result.unsupported_coverage, 'unsupported');
   assertEq(result.unsupported_should_use, false);
@@ -316,6 +330,7 @@ from pathlib import Path
 from mcp_context import build_context_payload, render_context_markdown
 dist = Path(r'''${pyPath(distDir)}''')
 status, payload = build_context_payload(dist, 'fixture evidence', 2)
+site_status, site_help = build_context_payload(dist, 'how to cite a fixture claim from AnchorFact', 2)
 unsupported_status, unsupported = build_context_payload(dist, 'lunar dentistry', 2)
 missing_status, missing = build_context_payload(dist, '', 2)
 markdown = render_context_markdown(payload)
@@ -334,6 +349,13 @@ print(json.dumps({
     "markdown_has_heading": "# AnchorFact Local Context" in markdown,
     "markdown_has_health": "Corpus Health" in markdown,
     "markdown_has_claim": "Public fixture claim." in markdown,
+    "site_status": site_status,
+    "site_coverage": site_help.get("coverage_status"),
+    "site_intent": site_help.get("query_intent"),
+    "site_answer_mode": (site_help.get("answer_policy") or {}).get("answer_mode"),
+    "site_evidence_count": site_help.get("evidence_pack_count"),
+    "site_citation_count": len(site_help.get("citation_ready_claims") or []),
+    "site_next_tools": [item.get("tool") for item in site_help.get("local_mcp_next_tools", [])],
     "unsupported_status": unsupported_status,
     "unsupported_coverage": unsupported.get("coverage_status"),
     "unsupported_count": unsupported.get("evidence_pack_count"),
@@ -355,6 +377,13 @@ print(json.dumps({
   assertEq(result.markdown_has_heading, true);
   assertEq(result.markdown_has_health, true);
   assertEq(result.markdown_has_claim, true);
+  assertEq(result.site_status, 200);
+  assertEq(result.site_coverage, 'site_help');
+  assertEq(result.site_intent, 'site_help');
+  assertEq(result.site_answer_mode, 'api_guidance');
+  assertEq(result.site_evidence_count, 0);
+  assertEq(result.site_citation_count, 0);
+  assertEq(result.site_next_tools.includes('anchorfact_cite_claim'), true);
   assertEq(result.unsupported_status, 200);
   assertEq(result.unsupported_coverage, 'unsupported');
   assertEq(result.unsupported_count, 0);
