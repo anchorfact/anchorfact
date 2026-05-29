@@ -6,6 +6,7 @@ import {
   COMPILER_VERSION,
   EVIDENCE_API_SCHEMA_VERSION,
   EXAMPLES_SCHEMA_VERSION,
+  GRAPH_SCHEMA_VERSION,
   MANIFEST_SCHEMA_VERSION,
   OFFICIAL_SITE,
   OPENAPI_SCHEMA_VERSION,
@@ -94,6 +95,7 @@ export function buildOpenApiContract({
       '/claims.json': getJson('Public verified atomic claims', 'Claims'),
       '/topics.json': getJson('Public topic coverage map', 'Topics'),
       '/examples.json': getJson('Executable AI usage examples', 'Examples'),
+      '/graph.json': getJson('Public knowledge graph', 'Graph'),
       '/api/evidence': {
         get: {
           summary: 'Read-only public query evidence packs',
@@ -290,6 +292,16 @@ export function buildOpenApiContract({
         Examples: schemaVersioned('Examples', EXAMPLES_SCHEMA_VERSION, {
           example_count: { type: 'integer' },
           examples: { type: 'array', items: { type: 'object' } }
+        }),
+        Graph: schemaVersioned('Graph', GRAPH_SCHEMA_VERSION, {
+          public_article_count: { type: 'integer' },
+          public_claim_count: { type: 'integer' },
+          source_count: { type: 'integer' },
+          topic_count: { type: 'integer' },
+          node_count: { type: 'integer' },
+          edge_count: { type: 'integer' },
+          nodes: { type: 'array', items: { type: 'object' } },
+          edges: { type: 'array', items: { type: 'object' } }
         }),
         SearchIndex: schemaVersioned('Search index', SEARCH_INDEX_SCHEMA_VERSION, {
           article_count: { type: 'integer' },

@@ -3,6 +3,7 @@ import { generateKeyPairSync } from 'crypto';
 import {
   CLAIMS_SCHEMA_VERSION,
   EXAMPLES_SCHEMA_VERSION,
+  GRAPH_SCHEMA_VERSION,
   MANIFEST_SCHEMA_VERSION,
   OFFICIAL_SITE,
   OFFICIAL_SOURCE_REPOSITORY,
@@ -120,6 +121,7 @@ function buildFixture(overrides = {}) {
       '/claims.json': {},
       '/topics.json': {},
       '/examples.json': {},
+      '/graph.json': {},
       '/search-index.json': {},
       '/sources.json': {},
       '/provenance.json': {}
@@ -166,12 +168,41 @@ function buildFixture(overrides = {}) {
     example_count: 1,
     examples: [{ id: 'fixture_example', workflow: [] }]
   };
+  const graph = {
+    schema_version: GRAPH_SCHEMA_VERSION,
+    generated: '2026-05-29T00:00:00.000Z',
+    provenance_url: `${baseUrl}/provenance.json`,
+    public_article_count: 2,
+    public_claim_count: 3,
+    source_count: 1,
+    topic_count: 1,
+    node_count: 7,
+    edge_count: 6,
+    nodes: [
+      { id: 'topic:fixture', type: 'topic' },
+      { id: 'article:fixture', type: 'article' },
+      { id: 'article:fixture-two', type: 'article' },
+      { id: 'https://anchorfact.org/fact/f1', type: 'claim' },
+      { id: 'https://anchorfact.org/fact/f2', type: 'claim' },
+      { id: 'https://anchorfact.org/fact/f3', type: 'claim' },
+      { id: 'source:fixture', type: 'source' }
+    ],
+    edges: [
+      { type: 'topic_contains_article', from: 'topic:fixture', to: 'article:fixture' },
+      { type: 'topic_contains_article', from: 'topic:fixture', to: 'article:fixture-two' },
+      { type: 'article_has_claim', from: 'article:fixture', to: 'https://anchorfact.org/fact/f1' },
+      { type: 'article_has_claim', from: 'article:fixture', to: 'https://anchorfact.org/fact/f2' },
+      { type: 'article_has_claim', from: 'article:fixture-two', to: 'https://anchorfact.org/fact/f3' },
+      { type: 'claim_supported_by_source', from: 'https://anchorfact.org/fact/f1', to: 'source:fixture' }
+    ]
+  };
   const manifestText = JSON.stringify(manifest, null, 2);
   const claimsText = JSON.stringify(claims, null, 2);
   const agentText = JSON.stringify(agent, null, 2);
   const openapiText = JSON.stringify(openapi, null, 2);
   const topicsText = JSON.stringify(topics, null, 2);
   const examplesText = JSON.stringify(examples, null, 2);
+  const graphText = JSON.stringify(graph, null, 2);
   const searchText = JSON.stringify(search, null, 2);
   const sourcesText = JSON.stringify(sources, null, 2);
   const provenance = {
@@ -228,6 +259,11 @@ function buildFixture(overrides = {}) {
         sha256: sha256Text(examplesText),
         bytes: Buffer.byteLength(examplesText, 'utf8')
       },
+      graph_json: {
+        path: '/graph.json',
+        sha256: sha256Text(graphText),
+        bytes: Buffer.byteLength(graphText, 'utf8')
+      },
       search_index_json: {
         path: '/search-index.json',
         sha256: sha256Text(searchText),
@@ -275,6 +311,7 @@ function buildFixture(overrides = {}) {
     [`${baseUrl}/claims.json`]: { body: claimsText },
     [`${baseUrl}/topics.json`]: { body: topicsText },
     [`${baseUrl}/examples.json`]: { body: examplesText },
+    [`${baseUrl}/graph.json`]: { body: graphText },
     [`${baseUrl}/search-index.json`]: { body: searchText },
     [`${baseUrl}/sources.json`]: { body: sourcesText },
     [`${baseUrl}/llms.txt`]: { body: llms, contentType: 'text/plain; charset=utf-8' },
