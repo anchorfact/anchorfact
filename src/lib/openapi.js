@@ -15,6 +15,7 @@ import {
   OPENAPI_SCHEMA_VERSION,
   PROVENANCE_PATH,
   PROVENANCE_SCHEMA_VERSION,
+  RESOLVE_BATCH_API_SCHEMA_VERSION,
   RESOLVE_API_SCHEMA_VERSION,
   SEARCH_API_SCHEMA_VERSION,
   SEARCH_INDEX_SCHEMA_VERSION,
@@ -182,6 +183,44 @@ export function buildOpenApiContract({
             200: jsonResponse('ResolveApiResponse'),
             400: jsonResponse('ApiError'),
             404: jsonResponse('ApiError')
+          }
+        }
+      },
+      '/api/resolve-batch': {
+        get: {
+          summary: 'Read-only batch resolver for public AnchorFact references',
+          parameters: [
+            {
+              name: 'ref',
+              in: 'query',
+              required: true,
+              schema: { type: 'array', items: { type: 'string', minLength: 1 }, maxItems: 20 },
+              style: 'form',
+              explode: true,
+              description: 'Repeat this parameter for each claim id, article slug, source id, AnchorFact URL, or original source URL.'
+            },
+            {
+              name: 'format',
+              in: 'query',
+              required: false,
+              schema: { enum: ['json', 'markdown', 'md'], default: 'json' },
+              description: 'Response format. JSON is the default; markdown returns a compact resolution summary.'
+            }
+          ],
+          responses: {
+            200: {
+              description: 'OK',
+              content: {
+                'application/json': {
+                  schema: { $ref: '#/components/schemas/ResolveBatchApiResponse' }
+                },
+                'text/markdown': {
+                  schema: { type: 'string' }
+                }
+              }
+            },
+            400: jsonResponse('ApiError'),
+            502: jsonResponse('ApiError')
           }
         }
       },
@@ -420,6 +459,12 @@ export function buildOpenApiContract({
           result_schema_version: { type: 'string' },
           links: { type: 'object' },
           result: { type: 'object' }
+        }),
+        ResolveBatchApiResponse: schemaVersioned('Resolve batch API response', RESOLVE_BATCH_API_SCHEMA_VERSION, {
+          reference_count: { type: 'integer' },
+          ok_count: { type: 'integer' },
+          error_count: { type: 'integer' },
+          results: { type: 'array', items: { type: 'object' } }
         }),
         ArticleApiResponse: schemaVersioned('Article API response', ARTICLE_API_SCHEMA_VERSION, {
           canonical_slug: { type: 'string' },

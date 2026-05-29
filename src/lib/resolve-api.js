@@ -13,12 +13,26 @@ import {
 } from './source-api.js';
 
 export const RESOLVE_API_SCHEMA_VERSION = 'anchorfact.resolve-api.v1';
+export const RESOLVE_BATCH_API_SCHEMA_VERSION = 'anchorfact.resolve-batch-api.v1';
+
+const MAX_BATCH_REFS = 20;
 
 const OFFICIAL_HOST = 'anchorfact.org';
 
 function errorPayload(code, message, extra = {}) {
   return {
     schema_version: RESOLVE_API_SCHEMA_VERSION,
+    error: {
+      code,
+      message
+    },
+    ...extra
+  };
+}
+
+function batchErrorPayload(code, message, extra = {}) {
+  return {
+    schema_version: RESOLVE_BATCH_API_SCHEMA_VERSION,
     error: {
       code,
       message
@@ -51,6 +65,69 @@ export function parseResolveParams(url) {
   }
 
   return { ok: true, ref };
+}
+
+function collectBatchRefs(url) {
+  const refs = [];
+  for (const param of ['ref', 'id', 'url', 'claim_id', 'source_id', 'slug']) {
+    for (const value of url.searchParams.getAll(param)) {
+      const trimmed = String(value || '').trim();
+      if (trimmed) refs.push(trimmed);
+    }
+  }
+  for (const param of ['refs', 'ids', 'urls']) {
+    for (const value of url.searchParams.getAll(param)) {
+      for (const item of String(value || '').split(/[\n,]+/)) {
+        const trimmed = item.trim();
+        if (trimmed) refs.push(trimmed);
+      }
+    }
+  }
+  return refs;
+}
+
+export function parseResolveBatchParams(url) {
+  const refs = collectBatchRefs(url);
+  if (refs.length === 0) {
+    return {
+      ok: false,
+      status: 400,
+      payload: batchErrorPayload(
+        'missing_or_invalid_references',
+        'Provide one or more public AnchorFact references with repeated ?ref=... parameters.'
+      )
+    };
+  }
+
+  if (refs.length > MAX_BATCH_REFS) {
+    return {
+      ok: false,
+      status: 400,
+      payload: batchErrorPayload(
+        'too_many_references',
+        `Resolve batch accepts at most ${MAX_BATCH_REFS} references per request.`,
+        { max_references: MAX_BATCH_REFS, requested_references: refs.length }
+      )
+    };
+  }
+
+  const rawFormat = String(url.searchParams.get('format') || 'json').trim().toLowerCase();
+  if (!['json', 'markdown', 'md'].includes(rawFormat)) {
+    return {
+      ok: false,
+      status: 400,
+      payload: batchErrorPayload(
+        'unsupported_format',
+        'Resolve batch supports format=json or format=markdown.'
+      )
+    };
+  }
+
+  return {
+    ok: true,
+    refs,
+    format: rawFormat === 'md' ? 'markdown' : rawFormat
+  };
 }
 
 function decoded(value) {
@@ -236,4 +313,75 @@ export function buildResolveApiPayload({
   }
 
   return wrapPayload({ ref, classified, generated, result });
+}
+
+function batchResultItem(outcome) {
+  return {
+    ok: outcome.ok,
+    status: outcome.status,
+    ...outcome.payload
+  };
+}
+
+export function buildResolveBatchApiPayload({
+  refs,
+  manifest,
+  claimsPayload,
+  sourcesPayload,
+  searchIndex,
+  generated = new Date().toISOString()
+}) {
+  const results = refs.map(ref => batchResultItem(buildResolveApiPayload({
+    ref,
+    manifest,
+    claimsPayload,
+    sourcesPayload,
+    searchIndex,
+    generated
+  })));
+  const okCount = results.filter(result => result.ok).length;
+  const provenanceUrl = results.find(result => result.provenance_url)?.provenance_url
+    || manifest?.provenance_url
+    || claimsPayload?.provenance_url
+    || sourcesPayload?.provenance_url
+    || searchIndex?.provenance_url
+    || null;
+
+  return {
+    ok: true,
+    status: 200,
+    payload: {
+      schema_version: RESOLVE_BATCH_API_SCHEMA_VERSION,
+      generated,
+      provenance_url: provenanceUrl,
+      reference_count: refs.length,
+      ok_count: okCount,
+      error_count: results.length - okCount,
+      results
+    }
+  };
+}
+
+function lineForResult(item) {
+  if (!item.ok) {
+    return `- ${item.ref || 'unknown'}: ${item.status} ${item.error?.code || 'error'}`;
+  }
+  const claimStatement = item.result?.claim?.statement;
+  const articleTitle = item.result?.article?.title || item.result?.article?.headline;
+  const sourceTitle = item.result?.source?.title;
+  const label = claimStatement || articleTitle || sourceTitle || item.canonical_ref;
+  return `- ${item.ref}: ${item.resolved_type} -> ${item.canonical_ref} (${item.result_schema_version})${label ? ` - ${label}` : ''}`;
+}
+
+export function renderResolveBatchMarkdown(payload) {
+  const lines = [
+    '# AnchorFact Resolve Batch',
+    '',
+    `Generated: ${payload.generated || 'unknown'}`,
+    `Provenance: ${payload.provenance_url || 'unavailable'}`,
+    `Results: ${payload.ok_count || 0} resolved / ${payload.error_count || 0} errors`,
+    '',
+    ...payload.results.map(lineForResult)
+  ];
+  return `${lines.join('\n')}\n`;
 }

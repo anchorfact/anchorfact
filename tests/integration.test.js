@@ -119,6 +119,7 @@ test('public machine entrypoints exclude drafts', () => {
   assertEq(agent.endpoints.openapi.url, 'https://anchorfact.org/openapi.json');
   assertEq(agent.endpoints.evidence_api.path, '/api/evidence?q={query}');
   assertEq(agent.endpoints.resolve_api.path, '/api/resolve?ref={reference}');
+  assertEq(agent.endpoints.resolve_batch_api.path, '/api/resolve-batch?ref={reference}&ref={reference}');
   assertEq(agent.endpoints.search_api.path, '/api/search?q={query}');
   assertEq(agent.endpoints.article_api.path, '/api/article?slug={canonical_slug}');
   assertEq(agent.endpoints.cite_api.path, '/api/cite?id={claim_id}');
@@ -136,6 +137,7 @@ test('public machine entrypoints exclude drafts', () => {
   assert(openapi.paths['/{canonical_slug}/index.json'], 'OpenAPI should expose article JSON-LD template');
   assert(openapi.paths['/api/evidence'], 'OpenAPI should expose evidence API endpoint');
   assert(openapi.paths['/api/resolve'], 'OpenAPI should expose resolve API endpoint');
+  assert(openapi.paths['/api/resolve-batch'], 'OpenAPI should expose resolve batch API endpoint');
   assert(openapi.paths['/api/search'], 'OpenAPI should expose search API endpoint');
   assert(openapi.paths['/api/article'], 'OpenAPI should expose article API endpoint');
   assert(openapi.paths['/api/cite'], 'OpenAPI should expose citation API endpoint');
@@ -152,9 +154,10 @@ test('public machine entrypoints exclude drafts', () => {
   assertEq(examples.example_count, 5);
   assert(examples.examples.some(example => example.id === 'one_call_evidence_pack'), 'examples index should include evidence pack workflow');
   assert(examples.examples.some(example => example.id === 'static_fallback'), 'examples index should include static fallback workflow');
-  assertEq(evals.eval_count, 8);
+  assertEq(evals.eval_count, 9);
   assert(evals.evals.some(evalCase => evalCase.id === 'evidence_pack_json'), 'evals index should include evidence pack check');
   assert(evals.evals.some(evalCase => evalCase.id === 'reference_resolver'), 'evals index should include resolve API check');
+  assert(evals.evals.some(evalCase => evalCase.id === 'batch_reference_resolver'), 'evals index should include resolve batch API check');
   assert(evals.evals.some(evalCase => evalCase.id === 'citation_export'), 'evals index should include citation API check');
   assert(evals.evals.some(evalCase => evalCase.id === 'signed_provenance_static_artifacts'), 'evals index should include provenance artifact check');
   assertEq(mcp.schema_version, 'anchorfact.mcp.v1');

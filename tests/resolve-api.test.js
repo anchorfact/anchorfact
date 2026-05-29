@@ -1,9 +1,16 @@
 #!/usr/bin/env node
 import {
+  buildResolveBatchApiPayload,
   buildResolveApiPayload,
-  parseResolveParams
+  parseResolveBatchParams,
+  parseResolveParams,
+  renderResolveBatchMarkdown
 } from '../src/lib/resolve-api.js';
 import { onRequestGet, onRequestOptions } from '../functions/api/resolve.js';
+import {
+  onRequestGet as onRequestGetBatch,
+  onRequestOptions as onRequestOptionsBatch
+} from '../functions/api/resolve-batch.js';
 
 let passed = 0, failed = 0;
 const tests = [];
@@ -170,6 +177,47 @@ test('buildResolveApiPayload resolves public source ids and source URLs', () => 
   assertEq(byUrl.payload.result.source_id, 'source:gaussian');
 });
 
+test('parseResolveBatchParams accepts repeated ref parameters and validates limits', () => {
+  const parsed = parseResolveBatchParams(new URL('https://anchorfact.org/api/resolve-batch?ref=f1&ref=source%3Agaussian&format=md'));
+  assertEq(parsed.ok, true);
+  assertEq(parsed.refs, ['f1', 'source:gaussian']);
+  assertEq(parsed.format, 'markdown');
+
+  const missing = parseResolveBatchParams(new URL('https://anchorfact.org/api/resolve-batch'));
+  assertEq(missing.ok, false);
+  assertEq(missing.status, 400);
+
+  const tooManyUrl = new URL('https://anchorfact.org/api/resolve-batch');
+  for (let i = 0; i < 21; i++) tooManyUrl.searchParams.append('ref', `f${i}`);
+  const tooMany = parseResolveBatchParams(tooManyUrl);
+  assertEq(tooMany.ok, false);
+  assertEq(tooMany.payload.error.code, 'too_many_references');
+});
+
+test('buildResolveBatchApiPayload resolves mixed references and preserves item statuses', () => {
+  const result = buildResolveBatchApiPayload({
+    refs: ['f1', 'source:gaussian', 'ai/nope'],
+    manifest: fixtureManifest,
+    claimsPayload: fixtureClaims,
+    sourcesPayload: fixtureSources,
+    searchIndex: fixtureSearchIndex,
+    generated: '2026-05-29T00:00:00.000Z'
+  });
+  assertEq(result.ok, true);
+  assertEq(result.payload.schema_version, 'anchorfact.resolve-batch-api.v1');
+  assertEq(result.payload.reference_count, 3);
+  assertEq(result.payload.ok_count, 2);
+  assertEq(result.payload.error_count, 1);
+  assertEq(result.payload.results[0].resolved_type, 'claim');
+  assertEq(result.payload.results[1].resolved_type, 'source');
+  assertEq(result.payload.results[2].ok, false);
+  assertEq(result.payload.results[2].error.code, 'reference_not_found');
+
+  const markdown = renderResolveBatchMarkdown(result.payload);
+  assert(markdown.includes('# AnchorFact Resolve Batch'), 'batch markdown should include heading');
+  assert(markdown.includes('f1: claim'), 'batch markdown should include claim item');
+});
+
 test('buildResolveApiPayload wraps not-found errors in the resolver schema', () => {
   const result = resolve('ai/nope');
   assertEq(result.ok, false);
@@ -177,6 +225,27 @@ test('buildResolveApiPayload wraps not-found errors in the resolver schema', () 
   assertEq(result.payload.schema_version, 'anchorfact.resolve-api.v1');
   assertEq(result.payload.error.code, 'reference_not_found');
   assertEq(result.payload.resolved_type, 'article');
+});
+
+test('Pages Function returns JSON and Markdown batch resolver payloads', async () => {
+  const response = await onRequestGetBatch({
+    request: new Request('https://anchorfact.org/api/resolve-batch?ref=f1&ref=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079'),
+    env: assetEnv()
+  });
+  const payload = await response.json();
+  assertEq(response.status, 200);
+  assertEq(response.headers.get('Access-Control-Allow-Origin'), '*');
+  assertEq(payload.schema_version, 'anchorfact.resolve-batch-api.v1');
+  assertEq(payload.ok_count, 2);
+  assertEq(payload.results.map(item => item.resolved_type), ['claim', 'source']);
+
+  const markdown = await onRequestGetBatch({
+    request: new Request('https://anchorfact.org/api/resolve-batch?ref=f1&format=markdown'),
+    env: assetEnv()
+  });
+  const text = await markdown.text();
+  assertEq(markdown.headers.get('Content-Type'), 'text/markdown; charset=utf-8');
+  assert(text.includes('# AnchorFact Resolve Batch'), 'markdown response should include heading');
 });
 
 test('Pages Function returns CORS JSON resolver payloads', async () => {
@@ -210,6 +279,10 @@ test('Pages Function supports OPTIONS preflight', () => {
   const response = onRequestOptions();
   assertEq(response.status, 204);
   assertEq(response.headers.get('Access-Control-Allow-Origin'), '*');
+
+  const batchResponse = onRequestOptionsBatch();
+  assertEq(batchResponse.status, 204);
+  assertEq(batchResponse.headers.get('Access-Control-Allow-Origin'), '*');
 });
 
 for (const { name, fn } of tests) {

@@ -7,6 +7,7 @@ import {
   OFFICIAL_SITE,
   PROVENANCE_PATH,
   PROVENANCE_SCHEMA_VERSION,
+  RESOLVE_BATCH_API_SCHEMA_VERSION,
   RESOLVE_API_SCHEMA_VERSION,
   SOURCE_API_SCHEMA_VERSION,
   publicUrl
@@ -17,7 +18,13 @@ const PREFERRED_SLUG = 'ai/3d-generation-gaussian-splatting';
 function queryPath(path, params) {
   const search = new URLSearchParams();
   for (const [key, value] of Object.entries(params)) {
-    if (value !== null && value !== undefined && String(value).trim()) {
+    if (Array.isArray(value)) {
+      for (const item of value) {
+        if (item !== null && item !== undefined && String(item).trim()) {
+          search.append(key, String(item));
+        }
+      }
+    } else if (value !== null && value !== undefined && String(value).trim()) {
       search.set(key, String(value));
     }
   }
@@ -129,6 +136,7 @@ export function buildEvalsIndex({
   const evidencePath = queryPath('/api/evidence', { q: query, limit: 3 });
   const markdownPath = queryPath('/api/evidence', { q: query, limit: 1, format: 'markdown' });
   const resolvePath = queryPath('/api/resolve', { ref: claimLookupId });
+  const resolveBatchPath = queryPath('/api/resolve-batch', { ref: [claimLookupId, source.url || source.id].filter(Boolean) });
   const claimPath = queryPath('/api/claim', { id: claimLookupId });
   const citePath = queryPath('/api/cite', { id: claimLookupId });
 
@@ -184,6 +192,19 @@ export function buildEvalsIndex({
         resolved_type: 'claim',
         canonical_ref: claim?.id || null,
         result_schema_version: CLAIM_API_SCHEMA_VERSION
+      }
+    },
+    {
+      id: 'batch_reference_resolver',
+      intent: 'Confirm several mixed public AnchorFact references resolve in one request.',
+      call: call(resolveBatchPath, site),
+      expected: {
+        status: 200,
+        content_type: 'application/json',
+        schema_version: RESOLVE_BATCH_API_SCHEMA_VERSION,
+        reference_count: 2,
+        ok_count_min: 2,
+        error_count: 0
       }
     },
     {

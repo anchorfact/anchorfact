@@ -104,12 +104,13 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
 
   assertEq(payload.schema_version, 'anchorfact.evals.v1');
   assertEq(payload.provenance_url, 'https://anchorfact.org/provenance.json');
-  assertEq(payload.eval_count, 8);
+  assertEq(payload.eval_count, 9);
   assertEq(payload.evals.map(evalCase => evalCase.id), [
     'evidence_pack_json',
     'evidence_pack_markdown',
     'claim_dereference',
     'reference_resolver',
+    'batch_reference_resolver',
     'citation_export',
     'source_reuse_lookup',
     'graph_relationships',
@@ -133,6 +134,13 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
   assert(resolverEval.call.path.includes('/api/resolve?ref=f1'), 'resolver eval should use reference resolver');
   assertEq(resolverEval.expected.schema_version, 'anchorfact.resolve-api.v1');
   assertEq(resolverEval.expected.resolved_type, 'claim');
+
+  const batchResolverEval = payload.evals.find(evalCase => evalCase.id === 'batch_reference_resolver');
+  assert(batchResolverEval.call.path.includes('/api/resolve-batch?'), 'batch resolver eval should use batch reference resolver');
+  assert(batchResolverEval.call.path.includes('ref=f1'), 'batch resolver eval should include claim shorthand');
+  assertEq(batchResolverEval.expected.schema_version, 'anchorfact.resolve-batch-api.v1');
+  assertEq(batchResolverEval.expected.reference_count, 2);
+  assertEq(batchResolverEval.expected.error_count, 0);
 
   const citationEval = payload.evals.find(evalCase => evalCase.id === 'citation_export');
   assert(citationEval.call.path.includes('/api/cite?id=f1'), 'citation eval should use citation API shorthand claim id');
