@@ -5,6 +5,13 @@ import { fetchLiveText } from './lib/live-http.js';
 
 const DEFAULT_BASE_URL = 'https://anchorfact.org/';
 
+export const REQUIRED_SECURITY_HEADERS = [
+  { route: '/', name: 'X-Content-Type-Options', expected: 'nosniff' },
+  { route: '/', name: 'X-Frame-Options', expected: 'DENY' },
+  { route: '/', name: 'Referrer-Policy', expected: 'strict-origin-when-cross-origin' },
+  { route: '/', name: 'Permissions-Policy', expected: 'camera=()' }
+];
+
 function readExpectedInt(name) {
   if (!process.env[name]) {
     return null;
@@ -461,7 +468,9 @@ export async function main() {
   assertOk(['signed', 'unsigned'].includes(provenance.signature?.status), `provenance signature status expected signed or unsigned, got ${provenance.signature?.status || '(missing)'}`, failures);
   assertOk(llmsText.trim().length > 0, '/llms.txt is empty', failures);
   assertOk(/noindex/i.test(draftsHtml), '/drafts.html is missing noindex', failures);
-  headerIncludes(results['/'], 'X-Content-Type-Options', 'nosniff', failures);
+  for (const header of REQUIRED_SECURITY_HEADERS) {
+    headerIncludes(results[header.route], header.name, header.expected, failures);
+  }
   headerIncludes(results['/agent.json'], 'Access-Control-Allow-Origin', '*', failures);
   headerIncludes(results['/.well-known/anchorfact.json'], 'Access-Control-Allow-Origin', '*', failures);
   headerIncludes(results['/openapi.json'], 'Access-Control-Allow-Origin', '*', failures);

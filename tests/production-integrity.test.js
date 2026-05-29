@@ -5,7 +5,7 @@ import {
   renderIntegrityMarkdown,
   runProductionIntegrity
 } from '../scripts/production-integrity.js';
-import { evalCallRoutes, exampleWorkflowRoutes, fetchRoute } from '../src/smoke-production.js';
+import { REQUIRED_SECURITY_HEADERS, evalCallRoutes, exampleWorkflowRoutes, fetchRoute } from '../src/smoke-production.js';
 
 let passed = 0, failed = 0;
 const tests = [];
@@ -192,6 +192,13 @@ test('production smoke fetches routes with CI-friendly live headers', async () =
   assert(calls[0].options.redirect === 'follow', 'smoke fetch should follow redirects');
   assert(calls[0].options.headers['User-Agent'].includes('Mozilla/5.0'), 'smoke fetch should send a browser-compatible user agent');
   assert(calls[0].options.headers.Accept.includes('application/json'), 'smoke fetch should accept JSON');
+});
+
+test('production smoke requires baseline security response headers', () => {
+  assert(REQUIRED_SECURITY_HEADERS.some(header => header.name === 'X-Content-Type-Options' && header.expected === 'nosniff'), 'should require nosniff');
+  assert(REQUIRED_SECURITY_HEADERS.some(header => header.name === 'X-Frame-Options' && header.expected === 'DENY'), 'should require frame protection');
+  assert(REQUIRED_SECURITY_HEADERS.some(header => header.name === 'Referrer-Policy' && header.expected === 'strict-origin-when-cross-origin'), 'should require referrer policy');
+  assert(REQUIRED_SECURITY_HEADERS.some(header => header.name === 'Permissions-Policy' && header.expected === 'camera=()'), 'should require permissions policy');
 });
 
 test('production smoke can extract safe executable example workflow routes', () => {

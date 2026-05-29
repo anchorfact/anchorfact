@@ -103,7 +103,7 @@ npm run verify:provenance:signed
 
 ## Production Integrity Monitor
 
-The scheduled `Production Integrity` workflow runs daily and can also be started manually from GitHub Actions. It is read-only: it runs production smoke, executes AI evals, requires signed trusted provenance, confirms artifact hashes and counts, and uploads a short integrity report artifact.
+The scheduled `Production Integrity` workflow runs daily and can also be started manually from GitHub Actions. It is read-only: it runs production smoke, executes AI evals, requires signed trusted provenance, confirms security response headers, artifact hashes and counts, and uploads a short integrity report artifact.
 
 For the same local read-only check, run:
 
