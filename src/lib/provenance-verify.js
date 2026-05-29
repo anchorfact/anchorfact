@@ -69,14 +69,18 @@ function checkOfficialIdentity(provenance, failures) {
   checkEq(provenance.build?.branch, 'main', 'build branch', failures);
 }
 
-async function verifyCommit(fetchImpl, provenance, failures) {
+async function verifyCommit(fetchImpl, provenance, failures, githubToken = null) {
   const sha = provenance.build?.commit_sha;
   if (!/^[a-f0-9]{40}$/i.test(String(sha || ''))) {
     failures.push(`build commit_sha is missing or invalid: ${sha || '(missing)'}`);
     return { ok: false, sha: sha || null };
   }
 
-  const response = await fetchLiveText(fetchImpl, `${OFFICIAL_GITHUB_COMMIT_API}${sha}`);
+  const response = await fetchLiveText(
+    fetchImpl,
+    `${OFFICIAL_GITHUB_COMMIT_API}${sha}`,
+    githubToken ? { headers: { Authorization: `Bearer ${githubToken}` } } : {}
+  );
   if (!response.ok) {
     failures.push(`GitHub commit lookup failed for ${sha}: HTTP ${response.status}`);
     return { ok: false, sha };
@@ -213,7 +217,8 @@ export async function verifyLiveProvenance({
   verifyCommit: shouldVerifyCommit = true,
   requireSignature = false,
   requireTrustedSignature = false,
-  trustedPublicKeys = []
+  trustedPublicKeys = [],
+  githubToken = process.env.GITHUB_TOKEN || process.env.GH_TOKEN || null
 } = {}) {
   if (typeof fetchImpl !== 'function') {
     throw new Error('verifyLiveProvenance requires a fetch implementation.');
@@ -273,7 +278,7 @@ export async function verifyLiveProvenance({
   });
 
   const commit = shouldVerifyCommit && requireOfficial
-    ? await verifyCommit(fetchImpl, provenance, failures)
+    ? await verifyCommit(fetchImpl, provenance, failures, githubToken)
     : { ok: true, sha: provenance.build?.commit_sha || null, skipped: true };
 
   return {

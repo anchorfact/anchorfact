@@ -271,6 +271,19 @@ test('verifyLiveProvenance sends CI-friendly live fetch headers', async () => {
   }
 });
 
+test('verifyLiveProvenance can authenticate GitHub commit lookup with a read token', async () => {
+  const fixture = buildFixture();
+  const result = await verifyLiveProvenance({
+    baseUrl: fixture.baseUrl,
+    fetchImpl: fixture.fetchImpl,
+    githubToken: 'github-token-fixture'
+  });
+  assertEq(result.ok, true);
+  const commitCall = fixture.calls.find(call => call.url.includes('api.github.com/repos/anchorfact/anchorfact/commits/'));
+  assert(commitCall, 'commit lookup call should be recorded');
+  assertEq(commitCall.options.headers.Authorization, 'Bearer github-token-fixture');
+});
+
 test('verifyLiveProvenance verifies signed provenance with a trusted public key', async () => {
   const signingKey = fixtureSigningKey();
   const fixture = buildFixture({ signingKey });
