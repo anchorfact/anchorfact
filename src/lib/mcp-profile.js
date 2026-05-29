@@ -178,6 +178,7 @@ export function buildMcpProfile({
     related_public_artifacts: [
       '/agent.json',
       '/openapi.json',
+      '/capabilities.json',
       '/examples.json',
       '/evals.json',
       '/graph.json',

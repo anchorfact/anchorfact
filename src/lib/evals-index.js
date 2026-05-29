@@ -270,6 +270,7 @@ export function buildEvalsIndex({
           'manifest_json',
           'claims_json',
           'topics_json',
+          'capabilities_json',
           'examples_json',
           'graph_json',
           'evals_json',

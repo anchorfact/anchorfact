@@ -2,6 +2,7 @@
 import { generateKeyPairSync } from 'crypto';
 import {
   CLAIMS_SCHEMA_VERSION,
+  CAPABILITIES_SCHEMA_VERSION,
   EVALS_SCHEMA_VERSION,
   EXAMPLES_SCHEMA_VERSION,
   GRAPH_SCHEMA_VERSION,
@@ -122,6 +123,7 @@ function buildFixture(overrides = {}) {
       '/agent.json': {},
       '/claims.json': {},
       '/topics.json': {},
+      '/capabilities.json': {},
       '/examples.json': {},
       '/graph.json': {},
       '/evals.json': {},
@@ -148,6 +150,15 @@ function buildFixture(overrides = {}) {
     public_article_count: 2,
     public_claim_count: 3,
     topics: [{ id: 'fixture', title: 'Fixture', article_count: 2, claim_count: 3, source_count: 1 }]
+  };
+  const capabilities = {
+    schema_version: CAPABILITIES_SCHEMA_VERSION,
+    generated: '2026-05-29T00:00:00.000Z',
+    provenance_url: `${baseUrl}/provenance.json`,
+    capability_count: 1,
+    default_sequence: ['verify_official_build'],
+    selection_rules: [{ when: 'fixture', use_capability: 'verify_official_build' }],
+    capabilities: [{ id: 'verify_official_build' }]
   };
   const search = {
     schema_version: SEARCH_INDEX_SCHEMA_VERSION,
@@ -240,6 +251,7 @@ function buildFixture(overrides = {}) {
   const agentText = JSON.stringify(agent, null, 2);
   const openapiText = JSON.stringify(openapi, null, 2);
   const topicsText = JSON.stringify(topics, null, 2);
+  const capabilitiesText = JSON.stringify(capabilities, null, 2);
   const examplesText = JSON.stringify(examples, null, 2);
   const graphText = JSON.stringify(graph, null, 2);
   const evalsText = JSON.stringify(evals, null, 2);
@@ -294,6 +306,11 @@ function buildFixture(overrides = {}) {
         path: '/topics.json',
         sha256: sha256Text(topicsText),
         bytes: Buffer.byteLength(topicsText, 'utf8')
+      },
+      capabilities_json: {
+        path: '/capabilities.json',
+        sha256: sha256Text(capabilitiesText),
+        bytes: Buffer.byteLength(capabilitiesText, 'utf8')
       },
       examples_json: {
         path: '/examples.json',
@@ -361,6 +378,7 @@ function buildFixture(overrides = {}) {
     [`${baseUrl}/manifest.json`]: { body: manifestText },
     [`${baseUrl}/claims.json`]: { body: claimsText },
     [`${baseUrl}/topics.json`]: { body: topicsText },
+    [`${baseUrl}/capabilities.json`]: { body: capabilitiesText },
     [`${baseUrl}/examples.json`]: { body: examplesText },
     [`${baseUrl}/graph.json`]: { body: graphText },
     [`${baseUrl}/evals.json`]: { body: evalsText },

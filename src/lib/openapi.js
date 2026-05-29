@@ -1,6 +1,7 @@
 import {
   AGENT_PROFILE_SCHEMA_VERSION,
   ARTICLE_API_SCHEMA_VERSION,
+  CAPABILITIES_SCHEMA_VERSION,
   CITE_API_SCHEMA_VERSION,
   CLAIM_API_SCHEMA_VERSION,
   CLAIMS_SCHEMA_VERSION,
@@ -99,6 +100,7 @@ export function buildOpenApiContract({
       '/manifest.json': getJson('Public and draft article manifest', 'Manifest'),
       '/claims.json': getJson('Public verified atomic claims', 'Claims'),
       '/topics.json': getJson('Public topic coverage map', 'Topics'),
+      '/capabilities.json': getJson('AI capability router', 'Capabilities'),
       '/examples.json': getJson('Executable AI usage examples', 'Examples'),
       '/graph.json': getJson('Public knowledge graph', 'Graph'),
       '/evals.json': getJson('Executable AI integration checks', 'Evals'),
@@ -405,6 +407,12 @@ export function buildOpenApiContract({
           public_article_count: { type: 'integer' },
           public_claim_count: { type: 'integer' },
           topics: { type: 'array', items: { type: 'object' } }
+        }),
+        Capabilities: schemaVersioned('Capabilities', CAPABILITIES_SCHEMA_VERSION, {
+          capability_count: { type: 'integer' },
+          default_sequence: { type: 'array', items: { type: 'string' } },
+          selection_rules: { type: 'array', items: { type: 'object' } },
+          capabilities: { type: 'array', items: { type: 'object' } }
         }),
         Examples: schemaVersioned('Examples', EXAMPLES_SCHEMA_VERSION, {
           example_count: { type: 'integer' },

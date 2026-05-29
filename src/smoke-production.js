@@ -120,7 +120,7 @@ export async function main() {
   const expectedDraft = readExpectedInt('EXPECTED_DRAFT_ARTICLES');
   const expectedClaims = readExpectedInt('EXPECTED_CLAIMS');
 
-  const routes = ['/', '/agent.json', '/.well-known/anchorfact.json', '/openapi.json', '/manifest.json', '/llms.txt', '/claims.json', '/topics.json', '/examples.json', '/graph.json', '/evals.json', '/mcp.json', '/api/evidence?q=gaussian&limit=2', '/api/evidence?q=gaussian&limit=1&format=markdown', '/api/resolve?ref=f1', '/api/resolve-batch?ref=f1&ref=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079', '/api/resolve-batch?ref=f1&ref=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079&format=markdown', '/api/search?q=gaussian&limit=2', '/api/article?slug=ai/3d-generation-gaussian-splatting', '/api/claim?id=f1', '/api/cite?id=f1', '/api/cite?id=f1&format=markdown', '/api/source?url=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079', '/search-index.json', '/sources.json', '/provenance.json', '/drafts.html'];
+  const routes = ['/', '/agent.json', '/.well-known/anchorfact.json', '/openapi.json', '/manifest.json', '/llms.txt', '/claims.json', '/topics.json', '/capabilities.json', '/examples.json', '/graph.json', '/evals.json', '/mcp.json', '/api/evidence?q=gaussian&limit=2', '/api/evidence?q=gaussian&limit=1&format=markdown', '/api/resolve?ref=f1', '/api/resolve-batch?ref=f1&ref=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079', '/api/resolve-batch?ref=f1&ref=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079&format=markdown', '/api/search?q=gaussian&limit=2', '/api/article?slug=ai/3d-generation-gaussian-splatting', '/api/claim?id=f1', '/api/cite?id=f1', '/api/cite?id=f1&format=markdown', '/api/source?url=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079', '/search-index.json', '/sources.json', '/provenance.json', '/drafts.html'];
   const results = {};
 
   for (const route of routes) {
@@ -134,6 +134,7 @@ export async function main() {
   const manifest = JSON.parse(results['/manifest.json'].body);
   const claims = JSON.parse(results['/claims.json'].body);
   const topics = JSON.parse(results['/topics.json'].body);
+  const capabilities = JSON.parse(results['/capabilities.json'].body);
   const examples = JSON.parse(results['/examples.json'].body);
   const graph = JSON.parse(results['/graph.json'].body);
   const evals = JSON.parse(results['/evals.json'].body);
@@ -185,6 +186,7 @@ export async function main() {
   assertOk(wellKnownAgentProfile.schema_version === agentProfile.schema_version, 'well-known agent profile schema does not match /agent.json', failures);
   assertOk(wellKnownAgentProfile.generated === agentProfile.generated, 'well-known agent profile generated timestamp does not match /agent.json', failures);
   assertOk(agentProfile.endpoints?.openapi?.url === new URL('/openapi.json', baseUrl).href, 'agent profile OpenAPI endpoint does not match base URL', failures);
+  assertOk(agentProfile.endpoints?.capabilities?.url === new URL('/capabilities.json', baseUrl).href, 'agent profile capabilities endpoint does not match base URL', failures);
   assertOk(agentProfile.endpoints?.evidence_api?.path === '/api/evidence?q={query}', 'agent profile evidence API endpoint template is missing', failures);
   assertOk(agentProfile.endpoints?.resolve_api?.path === '/api/resolve?ref={reference}', 'agent profile resolve API endpoint template is missing', failures);
   assertOk(agentProfile.endpoints?.resolve_batch_api?.path === '/api/resolve-batch?ref={reference}&ref={reference}', 'agent profile resolve batch API endpoint template is missing', failures);
@@ -209,6 +211,7 @@ export async function main() {
   assertOk(openapi.paths?.['/api/cite'], 'openapi is missing /api/cite path', failures);
   assertOk(openapi.paths?.['/api/source'], 'openapi is missing /api/source path', failures);
   assertOk(openapi.paths?.['/topics.json'], 'openapi is missing /topics.json path', failures);
+  assertOk(openapi.paths?.['/capabilities.json'], 'openapi is missing /capabilities.json path', failures);
   assertOk(openapi.paths?.['/examples.json'], 'openapi is missing /examples.json path', failures);
   assertOk(openapi.paths?.['/graph.json'], 'openapi is missing /graph.json path', failures);
   assertOk(openapi.paths?.['/evals.json'], 'openapi is missing /evals.json path', failures);
@@ -219,6 +222,7 @@ export async function main() {
   assertOk(agentProfile.current_snapshot?.draft_articles === manifest.draft_article_count, 'agent profile draft count does not match manifest', failures);
   assertOk(agentProfile.current_snapshot?.public_claims === claimCount, 'agent profile claim count does not match claims.json', failures);
   assertOk(agentProfile.current_snapshot?.topics === topics.topic_count, 'agent profile topic count does not match topics.json', failures);
+  assertOk(agentProfile.current_snapshot?.capabilities === capabilities.capability_count, 'agent profile capability count does not match capabilities.json', failures);
   assertOk(agentProfile.current_snapshot?.examples === examples.example_count, 'agent profile example count does not match examples.json', failures);
   assertOk(agentProfile.current_snapshot?.graph_nodes === graph.node_count, 'agent profile graph node count does not match graph.json', failures);
   assertOk(agentProfile.current_snapshot?.graph_edges === graph.edge_count, 'agent profile graph edge count does not match graph.json', failures);
@@ -238,6 +242,12 @@ export async function main() {
   assertOk(topics.public_article_count === manifest.public_article_count, 'topics public count does not match manifest', failures);
   assertOk(topics.public_claim_count === claimCount, 'topics claim count does not match claims.json', failures);
   assertOk(Array.isArray(topics.topics) && topics.topics.some(topic => topic.id === 'ai'), '/topics.json is missing ai topic', failures);
+  assertOk(capabilities.schema_version === 'anchorfact.capabilities.v1', `capabilities schema_version expected anchorfact.capabilities.v1, got ${capabilities.schema_version || '(missing)'}`, failures);
+  assertOk(capabilities.provenance_url === new URL('/provenance.json', baseUrl).href, `capabilities provenance_url expected ${new URL('/provenance.json', baseUrl).href}, got ${capabilities.provenance_url || '(missing)'}`, failures);
+  assertOk(capabilities.capability_count === (Array.isArray(capabilities.capabilities) ? capabilities.capabilities.length : 0), 'capabilities capability_count does not match capabilities[] length', failures);
+  assertOk(Array.isArray(capabilities.capabilities) && capabilities.capabilities.some(capability => capability.id === 'answer_with_evidence'), '/capabilities.json is missing answer_with_evidence', failures);
+  assertOk(Array.isArray(capabilities.capabilities) && capabilities.capabilities.some(capability => capability.id === 'resolve_many_references'), '/capabilities.json is missing resolve_many_references', failures);
+  assertOk(Array.isArray(capabilities.capabilities) && capabilities.capabilities.some(capability => capability.id === 'verify_official_build'), '/capabilities.json is missing verify_official_build', failures);
   assertOk(examples.schema_version === 'anchorfact.examples.v1', `examples schema_version expected anchorfact.examples.v1, got ${examples.schema_version || '(missing)'}`, failures);
   assertOk(examples.provenance_url === new URL('/provenance.json', baseUrl).href, `examples provenance_url expected ${new URL('/provenance.json', baseUrl).href}, got ${examples.provenance_url || '(missing)'}`, failures);
   assertOk(examples.example_count === (Array.isArray(examples.examples) ? examples.examples.length : 0), 'examples example_count does not match examples[] length', failures);
@@ -341,6 +351,7 @@ export async function main() {
   assertOk(provenance.artifacts?.manifest_json?.sha256 === sha256Text(results['/manifest.json'].body), 'provenance manifest hash does not match /manifest.json', failures);
   assertOk(provenance.artifacts?.claims_json?.sha256 === sha256Text(results['/claims.json'].body), 'provenance claims hash does not match /claims.json', failures);
   assertOk(provenance.artifacts?.topics_json?.sha256 === sha256Text(results['/topics.json'].body), 'provenance topics hash does not match /topics.json', failures);
+  assertOk(provenance.artifacts?.capabilities_json?.sha256 === sha256Text(results['/capabilities.json'].body), 'provenance capabilities hash does not match /capabilities.json', failures);
   assertOk(provenance.artifacts?.examples_json?.sha256 === sha256Text(results['/examples.json'].body), 'provenance examples hash does not match /examples.json', failures);
   assertOk(provenance.artifacts?.graph_json?.sha256 === sha256Text(results['/graph.json'].body), 'provenance graph hash does not match /graph.json', failures);
   assertOk(provenance.artifacts?.evals_json?.sha256 === sha256Text(results['/evals.json'].body), 'provenance evals hash does not match /evals.json', failures);
@@ -359,6 +370,7 @@ export async function main() {
   headerIncludes(results['/manifest.json'], 'Cache-Control', 'max-age=3600', failures);
   headerIncludes(results['/claims.json'], 'Access-Control-Allow-Origin', '*', failures);
   headerIncludes(results['/topics.json'], 'Access-Control-Allow-Origin', '*', failures);
+  headerIncludes(results['/capabilities.json'], 'Access-Control-Allow-Origin', '*', failures);
   headerIncludes(results['/examples.json'], 'Access-Control-Allow-Origin', '*', failures);
   headerIncludes(results['/graph.json'], 'Access-Control-Allow-Origin', '*', failures);
   headerIncludes(results['/evals.json'], 'Access-Control-Allow-Origin', '*', failures);

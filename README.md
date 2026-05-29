@@ -14,6 +14,7 @@ AnchorFact is moving from a scale-first knowledge base to a trust-first verified
 | Draft content | Drafts are retained and compiled, but excluded from AI entrypoints and marked `noindex`. |
 | Confidence | Estimated confidence can never be `high`; public entries must be based on `verified_sources`. |
 | Claims | Public atomic facts with evidence are exported to `/claims.json`. |
+| AI routing | `/capabilities.json` maps common AI tasks to the smallest trustworthy endpoint, output format, and fallback artifacts. |
 | Routing | Canonical URLs are stable path-derived slugs, with optional `slug` frontmatter override. |
 
 ## Quick Start
@@ -87,7 +88,7 @@ npm run verify:provenance
 npm run verify:provenance:signed
 ```
 
-The smoke test checks the homepage, `/agent.json`, `/openapi.json`, `/manifest.json`, `/llms.txt`, `/claims.json`, `/topics.json`, `/examples.json`, `/graph.json`, `/evals.json`, `/mcp.json`, `/api/evidence`, `/api/resolve`, `/api/resolve-batch`, `/api/search`, `/api/article`, `/api/claim`, `/api/cite`, `/api/source`, `/search-index.json`, `/sources.json`, `/provenance.json`, and `/drafts.html` against the live `https://anchorfact.org` deployment. Omit the expected-count environment variables when checking a future snapshot with different counts.
+The smoke test checks the homepage, `/agent.json`, `/openapi.json`, `/manifest.json`, `/llms.txt`, `/claims.json`, `/topics.json`, `/capabilities.json`, `/examples.json`, `/graph.json`, `/evals.json`, `/mcp.json`, `/api/evidence`, `/api/resolve`, `/api/resolve-batch`, `/api/search`, `/api/article`, `/api/claim`, `/api/cite`, `/api/source`, `/search-index.json`, `/sources.json`, `/provenance.json`, and `/drafts.html` against the live `https://anchorfact.org` deployment. Omit the expected-count environment variables when checking a future snapshot with different counts.
 
 The provenance verifier fetches `/provenance.json`, recomputes SHA-256 checksums for the core AI entrypoints, checks public/draft/claim counts, confirms official build identity, and verifies the source commit against GitHub.
 
@@ -136,6 +137,7 @@ Only public articles contribute publishable facts to `/claims.json`.
 | `/manifest.json` | Full public/draft index with quality reasons and verification metadata. |
 | `/claims.json` | Public verified atomic claims with evidence links. |
 | `/topics.json` | Compact public topic coverage map with article, claim, and source counts. |
+| `/capabilities.json` | AI task-to-endpoint routing guide with trust requirements, output formats, and fallback artifacts. |
 | `/examples.json` | Executable AI usage examples for dynamic API calls and signed static fallback workflows. |
 | `/graph.json` | Signed public graph of topic, article, claim, and source relationships. |
 | `/evals.json` | Executable golden integration checks for AI consumers and production smoke. |

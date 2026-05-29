@@ -6,6 +6,7 @@ import { buildOpenApiContract } from './openapi.js';
 import { buildSearchIndex } from './search-index.js';
 import { buildSourceIndex } from './source-index.js';
 import { buildTopicsIndex } from './topics-index.js';
+import { buildCapabilitiesIndex } from './capabilities-index.js';
 import { buildExamplesIndex } from './examples-index.js';
 import { buildGraphIndex } from './graph-index.js';
 import { buildEvalsIndex } from './evals-index.js';
@@ -92,6 +93,7 @@ function writeRootIndex(distDir, results, publicResults, draftResults, claims) {
     <strong>For AIs</strong><br>
     <a href="/agent.json">Agent profile</a> &middot;
     <a href="/openapi.json">OpenAPI</a> &middot;
+    <a href="/capabilities.json">Capabilities</a> &middot;
     <a href="/api/evidence?q=gaussian">Evidence API</a> &middot;
     <a href="/api/resolve?ref=f1">Resolve API</a> &middot;
     <a href="/api/resolve-batch?ref=f1&amp;ref=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079">Resolve Batch API</a> &middot;
@@ -104,6 +106,7 @@ function writeRootIndex(distDir, results, publicResults, draftResults, claims) {
     <a href="/manifest.json">Manifest</a> &middot;
     <a href="/claims.json">Claims JSON</a> &middot;
     <a href="/topics.json">Topics JSON</a> &middot;
+    <a href="/capabilities.json">Capabilities JSON</a> &middot;
     <a href="/examples.json">Examples JSON</a> &middot;
     <a href="/graph.json">Graph JSON</a> &middot;
     <a href="/evals.json">Evals JSON</a> &middot;
@@ -178,6 +181,7 @@ ${entries || '_No public verified entries yet._'}
 
 - [Agent Profile](https://anchorfact.org/agent.json): Machine contract and recommended retrieval workflow.
 - [OpenAPI](https://anchorfact.org/openapi.json): Static read-only endpoint contract for tools.
+- [Capabilities](https://anchorfact.org/capabilities.json): AI task-to-endpoint routing guide with trust requirements and fallback artifacts.
 - [Evidence API](https://anchorfact.org/api/evidence?q=gaussian): One-call public evidence packs with search hits, article summaries, claims, and sources.
 - [Resolve API](https://anchorfact.org/api/resolve?ref=f1): Read-only resolver for public claim ids, article slugs, source ids, and source URLs.
 - [Resolve Batch API](https://anchorfact.org/api/resolve-batch?ref=f1&ref=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079): Read-only batch resolver for multiple mixed public references.
@@ -212,6 +216,7 @@ function writeSitemap(distDir, publicResults) {
     '<url><loc>https://anchorfact.org/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>',
     '<url><loc>https://anchorfact.org/agent.json</loc><changefreq>daily</changefreq><priority>0.9</priority></url>',
     '<url><loc>https://anchorfact.org/openapi.json</loc><changefreq>daily</changefreq><priority>0.9</priority></url>',
+    '<url><loc>https://anchorfact.org/capabilities.json</loc><changefreq>daily</changefreq><priority>0.9</priority></url>',
     '<url><loc>https://anchorfact.org/llms.txt</loc><changefreq>daily</changefreq><priority>0.9</priority></url>',
     '<url><loc>https://anchorfact.org/claims.json</loc><changefreq>daily</changefreq><priority>0.8</priority></url>',
     '<url><loc>https://anchorfact.org/topics.json</loc><changefreq>daily</changefreq><priority>0.8</priority></url>',
@@ -274,6 +279,11 @@ function writeHeaders(distDir) {
   Cache-Control: public, max-age=3600
 
 /topics.json
+  Access-Control-Allow-Origin: *
+  Content-Type: application/json; charset=utf-8
+  Cache-Control: public, max-age=3600
+
+/capabilities.json
   Access-Control-Allow-Origin: *
   Content-Type: application/json; charset=utf-8
   Cache-Control: public, max-age=3600
@@ -378,7 +388,7 @@ function writeDashboard(distDir, results, publicResults, draftResults, claims, v
       <p>High: ${publicDist.high} &middot; Medium: ${publicDist.medium} &middot; Low: ${publicDist.low}</p>
       <p>Verification report: ${verificationTimestamp || 'not available'}</p>
     </div>
-    <p><a href="/">Home</a> &middot; <a href="/llms.txt">llms.txt</a> &middot; <a href="/agent.json">agent.json</a> &middot; <a href="/openapi.json">openapi.json</a> &middot; <a href="/manifest.json">manifest.json</a> &middot; <a href="/claims.json">claims.json</a> &middot; <a href="/topics.json">topics.json</a> &middot; <a href="/examples.json">examples.json</a> &middot; <a href="/graph.json">graph.json</a> &middot; <a href="/evals.json">evals.json</a> &middot; <a href="/mcp.json">mcp.json</a> &middot; <a href="/search-index.json">search-index.json</a> &middot; <a href="/sources.json">sources.json</a> &middot; <a href="/provenance.json">provenance.json</a></p>
+    <p><a href="/">Home</a> &middot; <a href="/llms.txt">llms.txt</a> &middot; <a href="/agent.json">agent.json</a> &middot; <a href="/openapi.json">openapi.json</a> &middot; <a href="/manifest.json">manifest.json</a> &middot; <a href="/claims.json">claims.json</a> &middot; <a href="/topics.json">topics.json</a> &middot; <a href="/capabilities.json">capabilities.json</a> &middot; <a href="/examples.json">examples.json</a> &middot; <a href="/graph.json">graph.json</a> &middot; <a href="/evals.json">evals.json</a> &middot; <a href="/mcp.json">mcp.json</a> &middot; <a href="/search-index.json">search-index.json</a> &middot; <a href="/sources.json">sources.json</a> &middot; <a href="/provenance.json">provenance.json</a></p>
   </div>
 </body>
 </html>`;
@@ -517,6 +527,20 @@ export function writeStaticOutputs(distDir, results, options = {}) {
     join(distDir, 'mcp.json'),
     JSON.stringify(mcpPayload, null, 2)
   );
+  const capabilitiesPayload = buildCapabilitiesIndex({
+    generated,
+    manifest,
+    claimsPayload,
+    topicsPayload,
+    examplesPayload,
+    evalsPayload,
+    mcpPayload,
+    site: build.canonical_site
+  });
+  writeFileSync(
+    join(distDir, 'capabilities.json'),
+    JSON.stringify(capabilitiesPayload, null, 2)
+  );
   writeAgentProfile(distDir, buildAgentProfile({
     generated,
     manifest,
@@ -524,6 +548,7 @@ export function writeStaticOutputs(distDir, results, options = {}) {
     searchIndexPayload,
     sourcesPayload,
     topicsPayload,
+    capabilitiesPayload,
     examplesPayload,
     graphPayload,
     evalsPayload,

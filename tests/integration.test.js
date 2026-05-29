@@ -106,6 +106,7 @@ test('nested route JSON-LD exists and has verification layer', () => {
 test('public machine entrypoints exclude drafts', () => {
   const agent = JSON.parse(readFileSync(join(distDir, 'agent.json'), 'utf-8'));
   const openapi = JSON.parse(readFileSync(join(distDir, 'openapi.json'), 'utf-8'));
+  const capabilities = JSON.parse(readFileSync(join(distDir, 'capabilities.json'), 'utf-8'));
   const topics = JSON.parse(readFileSync(join(distDir, 'topics.json'), 'utf-8'));
   const examples = JSON.parse(readFileSync(join(distDir, 'examples.json'), 'utf-8'));
   const graph = JSON.parse(readFileSync(join(distDir, 'graph.json'), 'utf-8'));
@@ -117,6 +118,7 @@ test('public machine entrypoints exclude drafts', () => {
   const sitemap = readFileSync(join(distDir, 'sitemap.xml'), 'utf-8');
   assertEq(agent.current_snapshot.public_articles, 1);
   assertEq(agent.endpoints.openapi.url, 'https://anchorfact.org/openapi.json');
+  assertEq(agent.endpoints.capabilities.url, 'https://anchorfact.org/capabilities.json');
   assertEq(agent.endpoints.evidence_api.path, '/api/evidence?q={query}');
   assertEq(agent.endpoints.resolve_api.path, '/api/resolve?ref={reference}');
   assertEq(agent.endpoints.resolve_batch_api.path, '/api/resolve-batch?ref={reference}&ref={reference}');
@@ -135,6 +137,7 @@ test('public machine entrypoints exclude drafts', () => {
   assertEq(agent.endpoints.sources.url, 'https://anchorfact.org/sources.json');
   assertEq(agent.endpoints.article_jsonld_template.path_template, '/{canonical_slug}/index.json');
   assert(openapi.paths['/{canonical_slug}/index.json'], 'OpenAPI should expose article JSON-LD template');
+  assert(openapi.paths['/capabilities.json'], 'OpenAPI should expose capabilities endpoint');
   assert(openapi.paths['/api/evidence'], 'OpenAPI should expose evidence API endpoint');
   assert(openapi.paths['/api/resolve'], 'OpenAPI should expose resolve API endpoint');
   assert(openapi.paths['/api/resolve-batch'], 'OpenAPI should expose resolve batch API endpoint');
@@ -144,6 +147,10 @@ test('public machine entrypoints exclude drafts', () => {
   assert(openapi.paths['/api/claim'], 'OpenAPI should expose claim API endpoint');
   assert(openapi.paths['/api/source'], 'OpenAPI should expose source API endpoint');
   assert(openapi.paths['/topics.json'], 'OpenAPI should expose topics endpoint');
+  assertEq(capabilities.schema_version, 'anchorfact.capabilities.v1');
+  assertEq(capabilities.capability_count, 8);
+  assert(capabilities.capabilities.some(capability => capability.id === 'answer_with_evidence'), 'capabilities should include evidence routing');
+  assert(capabilities.capabilities.some(capability => capability.id === 'resolve_many_references'), 'capabilities should include batch resolver routing');
   assert(openapi.paths['/examples.json'], 'OpenAPI should expose examples endpoint');
   assert(openapi.paths['/graph.json'], 'OpenAPI should expose graph endpoint');
   assert(openapi.paths['/evals.json'], 'OpenAPI should expose evals endpoint');
