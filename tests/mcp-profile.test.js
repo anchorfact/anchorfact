@@ -43,6 +43,7 @@ test('buildMcpProfile publishes local MCP install and tool metadata', () => {
   assertEq(profile.name, 'io.github.anchorfact/anchorfact');
   assert(profile.registry_note.includes('not an official MCP Registry'), 'profile should avoid claiming registry submission status');
   assertEq(profile.current_snapshot.public_articles, 555);
+  assert(profile.installation.requirements.includes('npm run mcp:check'), 'profile should publish the local MCP readiness check');
   assertEq(profile.installation.stdio.transport, 'stdio');
   assertEq(profile.installation.stdio.config_snippet.mcpServers.anchorfact.command, 'python');
   assertEq(profile.installation.stdio.config_snippet.mcpServers.anchorfact.args, ['src/mcp_server.py']);

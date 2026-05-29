@@ -184,6 +184,9 @@ The signed `/mcp.json` artifact publishes the local stdio config snippet, HTTP w
 The local MCP tools cover query planning, public article search, article retrieval, single and batch reference resolution, claim citation export, and category counts.
 
 ```bash
+npm run build
+python -m pip install -r src/requirements-mcp.txt
+npm run mcp:check
 python src/mcp_server.py
 python src/mcp_http.py
 ```
@@ -218,6 +221,7 @@ Public hygiene checks are shared by the compiler, quality gate, and audit script
 | `npm run pipeline` | Runs verify, quality, and build. |
 | `npm run smoke:prod` | Checks the live production machine-readable endpoints. |
 | `npm run evals:prod` | Executes live `/evals.json` checks against production AI endpoints and MCP metadata. |
+| `npm run mcp:check` | Verifies the built local MCP data contract, tool catalog, Python dependencies, planner, search, resolver, and citation helpers. |
 | `npm run verify:provenance` | Verifies live provenance identity, artifact checksums, counts, source commit, and optional signature. |
 | `npm run verify:provenance:signed` | Verifies live provenance with the pinned trusted public key. |
 | `npm run production:integrity` | Runs production smoke, AI evals, and trusted signed provenance verification, then emits an integrity report. |

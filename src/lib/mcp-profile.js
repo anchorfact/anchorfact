@@ -63,7 +63,8 @@ export function buildMcpProfile({
       requirements: [
         'npm install',
         'npm run build',
-        'python -m pip install -r src/requirements-mcp.txt'
+        'python -m pip install -r src/requirements-mcp.txt',
+        'npm run mcp:check'
       ],
       stdio: {
         transport: 'stdio',
