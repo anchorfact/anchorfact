@@ -94,8 +94,26 @@ test('runAiEvals executes JSON, Markdown, MCP, and provenance eval expectations'
               should_use_anchorfact: true,
               contains_canonical_slug: 'ai/3d-generation-gaussian-splatting',
               recommended_call_contains: '/api/evidence',
+              answer_policy_can_answer: true,
+              min_citation_ready_claims: 1,
               min_content_health_public_articles: 1,
               content_health_trust_boundary: 'draft_entries_excluded_from_ai_entrypoints'
+            }
+          },
+          {
+            id: 'unsupported_context_pack_json',
+            call: { method: 'GET', path: '/api/context?q=lunar+dentistry&limit=3' },
+            expected: {
+              status: 200,
+              content_type: 'application/json',
+              schema_version: 'anchorfact.context-api.v1',
+              coverage_status: 'unsupported',
+              should_use_anchorfact: false,
+              answer_policy_can_answer: false,
+              min_citation_ready_claims: 0,
+              max_citation_ready_claims: 0,
+              content_health_trust_boundary: 'draft_entries_excluded_from_ai_entrypoints',
+              fallback_guidance_contains: 'external primary'
             }
           },
           {
@@ -183,12 +201,27 @@ test('runAiEvals executes JSON, Markdown, MCP, and provenance eval expectations'
         schema_version: 'anchorfact.context-api.v1',
         coverage_status: 'supported',
         should_use_anchorfact: true,
+        answer_policy: { can_answer_with_anchorfact: true },
+        citation_ready_claims: [{ claim_id: 'https://anchorfact.org/fact/f1' }],
         recommended_next_calls: [{ path: '/api/evidence?q=gaussian&limit=3' }],
         content_health: {
           snapshot: { public_articles: 555, public_claims: 1685 },
           trust_boundaries: { draft_entries_excluded_from_ai_entrypoints: true }
         },
         evidence_packs: [{ canonical_slug: 'ai/3d-generation-gaussian-splatting' }]
+      }),
+      '/api/context?q=lunar+dentistry&limit=3': jsonResponse({
+        schema_version: 'anchorfact.context-api.v1',
+        coverage_status: 'unsupported',
+        should_use_anchorfact: false,
+        answer_policy: { can_answer_with_anchorfact: false },
+        citation_ready_claims: [],
+        fallback_guidance: ['Use external primary sources instead of citing AnchorFact.'],
+        content_health: {
+          snapshot: { public_articles: 555, public_claims: 1685 },
+          trust_boundaries: { draft_entries_excluded_from_ai_entrypoints: true }
+        },
+        evidence_packs: []
       }),
       '/api/evidence?q=gaussian&format=markdown': jsonResponse('# AnchorFact Evidence Pack', 'text/markdown; charset=utf-8'),
       '/mcp.json': jsonResponse({
@@ -225,8 +258,8 @@ test('runAiEvals executes JSON, Markdown, MCP, and provenance eval expectations'
 
   if (!report.ok) console.log(JSON.stringify(report, null, 2));
   assertEq(report.ok, true);
-  assertEq(report.eval_count, 9);
-  assertEq(report.passed, 9);
+  assertEq(report.eval_count, 10);
+  assertEq(report.passed, 10);
   assertEq(report.failed, 0);
   const markdown = renderAiEvalsMarkdown(report);
   assert(markdown.includes('AnchorFact AI Evals - PASS'), 'markdown should show pass');

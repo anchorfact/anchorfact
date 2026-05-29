@@ -100,6 +100,8 @@ function passingPythonSummary() {
     context_status: 200,
     context_schema_version: 'anchorfact.context-api.v1',
     context_evidence_pack_count: 1,
+    context_answer_policy_can_answer: true,
+    context_citation_ready_claim_count: 1,
     health_status: 200,
     health_schema_version: 'anchorfact.content-health.v1',
     health_repair_queue_candidates: 1,
@@ -144,6 +146,8 @@ test('checkLocalMcp fails on MCP profile drift and Python failures', () => {
       search_result_count: 0,
       context_status: 500,
       context_evidence_pack_count: 0,
+      context_answer_policy_can_answer: false,
+      context_citation_ready_claim_count: 0,
       health_status: 500,
       health_repair_queue_candidates: 0,
       cite_status: 404

@@ -217,7 +217,7 @@ test('agent profile describes the machine contract', () => {
   assertEq(agent.current_snapshot.examples, 7);
   assert(agent.current_snapshot.graph_nodes >= 1, 'agent profile should expose graph node count');
   assert(agent.current_snapshot.graph_edges >= 1, 'agent profile should expose graph edge count');
-  assertEq(agent.current_snapshot.evals, 16);
+  assertEq(agent.current_snapshot.evals, 17);
   assertEq(agent.current_snapshot.mcp_tools, 9);
   assert(agent.current_snapshot.unique_sources >= 1, 'agent profile should expose source count');
   assertEq(agent.endpoints.claims.url, 'https://anchorfact.org/claims.json');
@@ -313,6 +313,8 @@ test('openapi.json describes the static AI contract', () => {
   assert(openapi.components.schemas.EvidenceApiResponse, 'OpenAPI should define EvidenceApiResponse schema');
   assert(openapi.components.schemas.ContextApiResponse, 'OpenAPI should define ContextApiResponse schema');
   assert(openapi.components.schemas.ContextApiResponse.properties.content_health, 'OpenAPI context schema should include content health summary');
+  assert(openapi.components.schemas.ContextApiResponse.properties.answer_policy, 'OpenAPI context schema should include answer policy');
+  assert(openapi.components.schemas.ContextApiResponse.properties.citation_ready_claims, 'OpenAPI context schema should include citation-ready claims');
   assert(openapi.components.schemas.ResolveApiResponse, 'OpenAPI should define ResolveApiResponse schema');
   assert(openapi.components.schemas.ResolveBatchApiResponse, 'OpenAPI should define ResolveBatchApiResponse schema');
   assert(openapi.components.schemas.ArticleApiResponse, 'OpenAPI should define ArticleApiResponse schema');
@@ -454,7 +456,7 @@ test('evals.json describes executable AI integration checks', () => {
   const evals = JSON.parse(readFileSync(join(distDir, 'evals.json'), 'utf-8'));
   assertEq(evals.schema_version, 'anchorfact.evals.v1');
   assertEq(evals.provenance_url, 'https://anchorfact.org/provenance.json');
-  assertEq(evals.eval_count, 16);
+  assertEq(evals.eval_count, 17);
   assertEq(evals.evals.map(evalCase => evalCase.id), [
     'api_discovery',
     'query_plan',
@@ -462,6 +464,7 @@ test('evals.json describes executable AI integration checks', () => {
     'evidence_pack_json',
     'context_pack_json',
     'unsupported_query_evidence',
+    'unsupported_context_pack_json',
     'evidence_pack_markdown',
     'claim_dereference',
     'reference_resolver',
@@ -479,6 +482,7 @@ test('evals.json describes executable AI integration checks', () => {
   assert(evals.evals.some(evalCase => evalCase.call.path.includes('/api/context?')), 'evals should include context API checks');
   assert(evals.evals.some(evalCase => evalCase.id === 'unsupported_query_plan'), 'evals should include unsupported plan check');
   assert(evals.evals.some(evalCase => evalCase.id === 'unsupported_query_evidence'), 'evals should include unsupported evidence check');
+  assert(evals.evals.some(evalCase => evalCase.id === 'unsupported_context_pack_json'), 'evals should include unsupported context policy check');
   assert(evals.evals.some(evalCase => evalCase.call.path.includes('/api/resolve?')), 'evals should include resolve API checks');
   assert(evals.evals.some(evalCase => evalCase.call.path.includes('/api/resolve-batch?')), 'evals should include resolve batch API checks');
   assert(evals.evals.some(evalCase => evalCase.call.path.includes('/api/claim?')), 'evals should include claim API checks');

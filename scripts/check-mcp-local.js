@@ -139,6 +139,8 @@ print(json.dumps({
     "context_status": context_status,
     "context_schema_version": context_payload.get("schema_version"),
     "context_evidence_pack_count": context_payload.get("evidence_pack_count"),
+    "context_answer_policy_can_answer": (context_payload.get("answer_policy") or {}).get("can_answer_with_anchorfact"),
+    "context_citation_ready_claim_count": len(context_payload.get("citation_ready_claims") or []),
     "health_status": health_status,
     "health_schema_version": health_payload.get("schema_version"),
     "health_repair_queue_candidates": (health_payload.get("draft", {}).get("repair_queue", {}) or {}).get("candidate_count"),
@@ -190,6 +192,12 @@ function checkPythonSummary(report, summary) {
   checkEqual(report, failures, 'context_schema_version', summary.context_schema_version, 'anchorfact.context-api.v1');
   if ((summary.context_evidence_pack_count || 0) < 1) {
     const message = valueLabel('context_evidence_pack_count', summary.context_evidence_pack_count, '>= 1');
+    failures.push(message);
+    addFailure(report, message);
+  }
+  checkEqual(report, failures, 'context_answer_policy_can_answer', summary.context_answer_policy_can_answer, true);
+  if ((summary.context_citation_ready_claim_count || 0) < 1) {
+    const message = valueLabel('context_citation_ready_claim_count', summary.context_citation_ready_claim_count, '>= 1');
     failures.push(message);
     addFailure(report, message);
   }

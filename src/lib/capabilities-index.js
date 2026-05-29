@@ -88,10 +88,11 @@ export function buildCapabilitiesIndex({
     },
     {
       id: 'assemble_prompt_context',
-      intent: 'Fetch one AI prompt context pack with coverage status, content health, fallback guidance, evidence packs, and citation guardrails.',
+      intent: 'Fetch one AI prompt context pack with answer policy, citation-ready claims, coverage status, content health, fallback guidance, evidence packs, and citation guardrails.',
       use_when: [
         'The agent wants one call before drafting an answer.',
-        'The agent needs both supported/unsupported guidance and source-mapped evidence in the same payload.'
+        'The agent needs both supported/unsupported guidance and source-mapped evidence in the same payload.',
+        'The agent needs an explicit can_answer_with_anchorfact decision before composing a cited answer.'
       ],
       input_patterns: ['natural_language_query'],
       primary_call: call('/api/context?q={query}&limit=3', site),
@@ -105,7 +106,8 @@ export function buildCapabilitiesIndex({
       ],
       fallback_artifacts: ['/search-index.json', '/claims.json', '/sources.json', '/coverage.json', '/content-health.json'],
       trust_requirements: trustRequirements([
-        'Do not draft a cited answer from the context payload unless evidence_pack_count is greater than zero.',
+        'Do not draft a cited answer from the context payload unless answer_policy.can_answer_with_anchorfact is true.',
+        'Prefer citation_ready_claims for compact final-answer citations, then dereference selected claims with /api/cite when needed.',
         'When coverage_status is unsupported, use external primary sources instead of citing AnchorFact.'
       ])
     },

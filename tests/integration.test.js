@@ -184,11 +184,12 @@ test('public machine entrypoints exclude drafts', () => {
   assert(examples.examples.some(example => example.id === 'one_call_evidence_pack'), 'examples index should include evidence pack workflow');
   assert(examples.examples.some(example => example.id === 'mixed_reference_resolution'), 'examples index should include mixed reference workflow');
   assert(examples.examples.some(example => example.id === 'static_fallback'), 'examples index should include static fallback workflow');
-  assertEq(evals.eval_count, 16);
+  assertEq(evals.eval_count, 17);
   assert(evals.evals.some(evalCase => evalCase.id === 'query_plan'), 'evals index should include query planning check');
   assert(evals.evals.some(evalCase => evalCase.id === 'unsupported_query_plan'), 'evals index should include unsupported planning check');
   assert(evals.evals.some(evalCase => evalCase.id === 'evidence_pack_json'), 'evals index should include evidence pack check');
   assert(evals.evals.some(evalCase => evalCase.id === 'unsupported_query_evidence'), 'evals index should include unsupported evidence check');
+  assert(evals.evals.some(evalCase => evalCase.id === 'unsupported_context_pack_json'), 'evals index should include unsupported context policy check');
   assert(evals.evals.some(evalCase => evalCase.id === 'reference_resolver'), 'evals index should include resolve API check');
   assert(evals.evals.some(evalCase => evalCase.id === 'batch_reference_resolver'), 'evals index should include resolve batch API check');
   assert(evals.evals.some(evalCase => evalCase.id === 'citation_export'), 'evals index should include citation API check');

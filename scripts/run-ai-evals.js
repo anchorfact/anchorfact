@@ -40,6 +40,21 @@ function evaluateJsonExpected(payload, expected, failures) {
   if (expected.should_use_anchorfact !== undefined) {
     check(payload?.should_use_anchorfact === expected.should_use_anchorfact, failures, `should_use_anchorfact expected ${expected.should_use_anchorfact}`);
   }
+  if (expected.answer_policy_can_answer !== undefined) {
+    check(
+      payload?.answer_policy?.can_answer_with_anchorfact === expected.answer_policy_can_answer,
+      failures,
+      `answer_policy.can_answer_with_anchorfact expected ${expected.answer_policy_can_answer}`
+    );
+  }
+  if (expected.min_citation_ready_claims !== undefined) {
+    const count = Array.isArray(payload?.citation_ready_claims) ? payload.citation_ready_claims.length : 0;
+    check(count >= expected.min_citation_ready_claims, failures, `citation_ready_claims expected at least ${expected.min_citation_ready_claims}, got ${count}`);
+  }
+  if (expected.max_citation_ready_claims !== undefined) {
+    const count = Array.isArray(payload?.citation_ready_claims) ? payload.citation_ready_claims.length : 0;
+    check(count <= expected.max_citation_ready_claims, failures, `citation_ready_claims expected at most ${expected.max_citation_ready_claims}, got ${count}`);
+  }
   if (expected.recommended_call_contains) {
     const calls = payload?.recommended_next_calls || [];
     check(calls.some(call => String(call?.path || call?.url || '').includes(expected.recommended_call_contains)), failures, `recommended_next_calls should include ${expected.recommended_call_contains}`);

@@ -5,6 +5,7 @@ One-call local context payload for AnchorFact MCP stdio and HTTP interfaces.
 import json
 from datetime import datetime, timezone
 from pathlib import Path
+from urllib.parse import quote
 
 from mcp_claims import CITATION_CONTRACT, build_citation_payload
 from mcp_plan import build_plan_payload
@@ -13,6 +14,8 @@ CONTEXT_API_SCHEMA_VERSION = "anchorfact.context-api.v1"
 MIN_LIMIT = 1
 DEFAULT_LIMIT = 3
 MAX_LIMIT = 10
+MAX_CITATION_READY_CLAIMS = 6
+OFFICIAL_SITE = "https://anchorfact.org"
 
 
 def _load_json(dist_dir: Path, filename: str, default: dict) -> dict:
@@ -70,6 +73,11 @@ def _short_claim_id(value) -> str | None:
     if not raw:
         return None
     return raw.rstrip("/").split("/")[-1] or raw
+
+
+def _public_url(path: str) -> str:
+    normalized_path = path if path.startswith("/") else f"/{path}"
+    return f"{OFFICIAL_SITE}{normalized_path}"
 
 
 def _public_article(manifest: dict, slug: str | None) -> dict | None:
@@ -157,6 +165,70 @@ def _evidence_pack(dist_dir: Path, result: dict, article: dict, claims_payload: 
     }
 
 
+def _citation_ready_claims(packs: list[dict], limit: int = MAX_CITATION_READY_CLAIMS) -> list[dict]:
+    seen = set()
+    claims = []
+    for pack in packs:
+        for citation in pack.get("citation_exports") or []:
+            claim_id = citation.get("claim_id")
+            if not claim_id or claim_id in seen:
+                continue
+            seen.add(claim_id)
+            short_id = _short_claim_id(claim_id)
+            cite_path = f"/api/cite?id={quote(short_id, safe='')}" if short_id else None
+            claims.append({
+                "rank": len(claims) + 1,
+                "claim_id": claim_id,
+                "statement": citation.get("statement"),
+                "confidence": citation.get("confidence") or pack.get("confidence_level"),
+                "canonical_slug": pack.get("canonical_slug"),
+                "article_title": citation.get("article_title") or pack.get("title"),
+                "article_url": citation.get("article_url") or pack.get("url"),
+                "source_title": citation.get("source_title"),
+                "source_url": citation.get("source_url"),
+                "source_tier": citation.get("source_tier"),
+                "source_type": citation.get("source_type"),
+                "anchorfact_url": citation.get("anchorfact_url") or claim_id,
+                "cite_api_path": cite_path,
+                "cite_api_url": _public_url(cite_path) if cite_path else None,
+                "citation_markdown": citation.get("markdown"),
+            })
+            if len(claims) >= limit:
+                return claims
+    return claims
+
+
+def _answer_policy(plan: dict, evidence_pack_count: int, citation_ready_claims: list[dict]) -> dict:
+    can_answer = (
+        plan.get("should_use_anchorfact") is True
+        and evidence_pack_count > 0
+        and len(citation_ready_claims) > 0
+    )
+    if can_answer:
+        unsupported_reason = None
+    elif plan.get("coverage_status") == "unsupported":
+        unsupported_reason = "coverage_status is unsupported"
+    else:
+        unsupported_reason = "no public source-mapped citation-ready claims matched this query"
+
+    return {
+        "can_answer_with_anchorfact": can_answer,
+        "answer_mode": "answer_with_citations" if can_answer else "external_sources_required",
+        "max_claims_to_cite": len(citation_ready_claims) if can_answer else 0,
+        "required_action": (
+            "Use only citation_ready_claims or dereference them with /api/cite before citing AnchorFact."
+            if can_answer
+            else "Do not cite AnchorFact for this query; use external primary or authoritative sources."
+        ),
+        "unsupported_reason": unsupported_reason,
+        "guardrails": [
+            "Do not cite draft records.",
+            "Do not cite nearby articles unless a returned claim directly supports the answer.",
+            "Include the original source URL and AnchorFact claim URL when citing.",
+        ],
+    }
+
+
 def build_context_payload(dist_dir: Path, query: str | None, limit: int = DEFAULT_LIMIT) -> tuple[int, dict]:
     normalized_query = str(query or "").strip()
     if not normalized_query:
@@ -187,6 +259,9 @@ def build_context_payload(dist_dir: Path, query: str | None, limit: int = DEFAUL
         if article:
             packs.append(_evidence_pack(dist, result, article, claims_payload, sources_payload))
 
+    citation_ready_claims = _citation_ready_claims(packs)
+    answer_policy = _answer_policy(plan, len(packs), citation_ready_claims)
+
     generated = (
         plan.get("generated")
         or search_index.get("generated")
@@ -211,7 +286,9 @@ def build_context_payload(dist_dir: Path, query: str | None, limit: int = DEFAUL
         "coverage_status": plan.get("coverage_status"),
         "should_use_anchorfact": plan.get("should_use_anchorfact"),
         "confidence": plan.get("confidence"),
+        "answer_policy": answer_policy,
         "citation_contract": CITATION_CONTRACT,
+        "citation_ready_claims": citation_ready_claims,
         "content_health": _compact_content_health(content_health),
         "trust_requirements": plan.get("trust_requirements", []),
         "fallback_guidance": plan.get("fallback_guidance", []),
@@ -243,6 +320,17 @@ def render_context_markdown(payload: dict) -> str:
         "",
     ]
 
+    if payload.get("answer_policy"):
+        policy = payload["answer_policy"]
+        lines.extend(["## Answer Policy", ""])
+        can_answer = "yes" if policy.get("can_answer_with_anchorfact") is True else "no"
+        lines.append(f"- Can answer with AnchorFact: {can_answer}")
+        lines.append(f"- Mode: {policy.get('answer_mode') or 'unknown'}")
+        lines.append(f"- Required action: {policy.get('required_action') or 'unknown'}")
+        if policy.get("unsupported_reason"):
+            lines.append(f"- Unsupported reason: {policy['unsupported_reason']}")
+        lines.append("")
+
     if payload.get("trust_requirements"):
         lines.extend(["## Trust Requirements", ""])
         for requirement in payload["trust_requirements"]:
@@ -265,6 +353,12 @@ def render_context_markdown(payload: dict) -> str:
         lines.extend(["## Fallback Guidance", ""])
         for guidance in payload["fallback_guidance"]:
             lines.append(f"- {guidance}")
+        lines.append("")
+
+    if payload.get("citation_ready_claims"):
+        lines.extend(["## Citation Ready Claims", ""])
+        for claim in payload["citation_ready_claims"]:
+            lines.append(claim.get("citation_markdown") or f"- {claim.get('statement') or claim.get('claim_id')}")
         lines.append("")
 
     packs = payload.get("evidence_packs") or []

@@ -144,6 +144,7 @@ export function buildEvalsIndex({
   const evidencePath = queryPath('/api/evidence', { q: query, limit: 3 });
   const contextPath = queryPath('/api/context', { q: query, limit: 3 });
   const unsupportedEvidencePath = queryPath('/api/evidence', { q: UNSUPPORTED_QUERY, limit: 3 });
+  const unsupportedContextPath = queryPath('/api/context', { q: UNSUPPORTED_QUERY, limit: 3 });
   const markdownPath = queryPath('/api/evidence', { q: query, limit: 1, format: 'markdown' });
   const resolvePath = queryPath('/api/resolve', { ref: claimLookupId });
   const resolveBatchPath = queryPath('/api/resolve-batch', { ref: [claimLookupId, source.url || source.id].filter(Boolean) });
@@ -226,6 +227,8 @@ export function buildEvalsIndex({
         should_use_anchorfact: true,
         contains_canonical_slug: record.canonical_slug,
         recommended_call_contains: '/api/evidence',
+        answer_policy_can_answer: true,
+        min_citation_ready_claims: 1,
         min_content_health_public_articles: Math.max(1, searchIndexPayload?.article_count || 0),
         content_health_trust_boundary: 'draft_entries_excluded_from_ai_entrypoints'
       }
@@ -239,6 +242,23 @@ export function buildEvalsIndex({
         content_type: 'application/json',
         schema_version: EVIDENCE_API_SCHEMA_VERSION,
         result_count: 0
+      }
+    },
+    {
+      id: 'unsupported_context_pack_json',
+      intent: 'Confirm the context API gives explicit non-citation policy for a fixed no-coverage query.',
+      call: call(unsupportedContextPath, site),
+      expected: {
+        status: 200,
+        content_type: 'application/json',
+        schema_version: CONTEXT_API_SCHEMA_VERSION,
+        coverage_status: 'unsupported',
+        should_use_anchorfact: false,
+        answer_policy_can_answer: false,
+        min_citation_ready_claims: 0,
+        max_citation_ready_claims: 0,
+        content_health_trust_boundary: 'draft_entries_excluded_from_ai_entrypoints',
+        fallback_guidance_contains: 'external primary'
       }
     },
     {

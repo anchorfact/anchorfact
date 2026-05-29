@@ -572,6 +572,8 @@ export function buildOpenApiContract({
           limit: { type: 'integer' },
           coverage_status: { enum: ['supported', 'topic_supported', 'unsupported'] },
           should_use_anchorfact: { type: 'boolean' },
+          answer_policy: { type: 'object' },
+          citation_ready_claims: { type: 'array', items: { type: 'object' } },
           evidence_pack_count: { type: 'integer' },
           evidence_packs: { type: 'array', items: { type: 'object' } },
           content_health: { type: ['object', 'null'] },

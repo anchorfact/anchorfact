@@ -6,9 +6,11 @@ import { buildPlanApiPayload } from './plan-api.js';
 
 export const CONTEXT_API_SCHEMA_VERSION = 'anchorfact.context-api.v1';
 
+const OFFICIAL_SITE = 'https://anchorfact.org';
 const MIN_LIMIT = 1;
 const DEFAULT_LIMIT = 3;
 const MAX_LIMIT = 20;
+const MAX_CITATION_READY_CLAIMS = 6;
 
 function errorPayload(code, message) {
   return {
@@ -21,6 +23,21 @@ function clampLimit(value) {
   const parsed = Number.parseInt(value, 10);
   if (!Number.isFinite(parsed)) return DEFAULT_LIMIT;
   return Math.min(MAX_LIMIT, Math.max(MIN_LIMIT, parsed));
+}
+
+function publicUrl(path, site = OFFICIAL_SITE) {
+  const normalizedPath = path.startsWith('/') ? path : `/${path}`;
+  return `${String(site || OFFICIAL_SITE).replace(/\/+$/, '')}${normalizedPath}`;
+}
+
+function claimShortId(claimId) {
+  if (!claimId) return null;
+  try {
+    const parsed = new URL(claimId);
+    return parsed.pathname.split('/').filter(Boolean).pop() || null;
+  } catch {
+    return String(claimId).split('/').filter(Boolean).pop() || String(claimId);
+  }
 }
 
 export function parseContextParams(url) {
@@ -106,6 +123,14 @@ export function buildContextApiPayload({
     return evidence;
   }
 
+  const evidencePacks = evidence.payload.packs || [];
+  const citationReadyClaims = buildCitationReadyClaims(evidencePacks);
+  const answerPolicy = buildAnswerPolicy({
+    plan,
+    evidencePackCount: evidence.payload.result_count || 0,
+    citationReadyClaims
+  });
+
   return {
     ok: true,
     status: 200,
@@ -118,7 +143,9 @@ export function buildContextApiPayload({
       coverage_status: plan.coverage_status,
       should_use_anchorfact: plan.should_use_anchorfact,
       confidence: plan.confidence,
+      answer_policy: answerPolicy,
       citation_contract: evidence.payload.citation_contract,
+      citation_ready_claims: citationReadyClaims,
       content_health: compactContentHealth(contentHealthPayload),
       trust_requirements: plan.trust_requirements || [],
       fallback_guidance: plan.fallback_guidance || [],
@@ -126,7 +153,7 @@ export function buildContextApiPayload({
       matched_topics: plan.matched_topics || [],
       matched_articles: plan.matched_articles || [],
       evidence_pack_count: evidence.payload.result_count || 0,
-      evidence_packs: evidence.payload.packs || [],
+      evidence_packs: evidencePacks,
       source_index_generated: evidence.payload.source_index_generated || null,
       search_index_generated: evidence.payload.search_index_generated || null,
       manifest_generated: evidence.payload.manifest_generated || null,
@@ -157,6 +184,66 @@ function compactContentHealth(payload) {
   };
 }
 
+function buildCitationReadyClaims(evidencePacks = [], limit = MAX_CITATION_READY_CLAIMS) {
+  const seen = new Set();
+  const claims = [];
+  for (const pack of evidencePacks) {
+    for (const citation of pack?.citation_exports || []) {
+      const claimId = citation?.claim_id;
+      if (!claimId || seen.has(claimId)) continue;
+      seen.add(claimId);
+      const shortId = claimShortId(claimId);
+      const citePath = shortId ? `/api/cite?id=${encodeURIComponent(shortId)}` : null;
+      claims.push({
+        rank: claims.length + 1,
+        claim_id: claimId,
+        statement: citation.statement || null,
+        confidence: citation.confidence || pack?.confidence_level || null,
+        canonical_slug: pack?.canonical_slug || null,
+        article_title: citation.article_title || pack?.title || null,
+        article_url: citation.article_url || pack?.url || null,
+        source_title: citation.source_title || null,
+        source_url: citation.source_url || null,
+        source_tier: citation.source_tier || null,
+        source_type: citation.source_type || null,
+        anchorfact_url: citation.anchorfact_url || claimId,
+        cite_api_path: citePath,
+        cite_api_url: citePath ? publicUrl(citePath) : null,
+        citation_markdown: citation.markdown || null
+      });
+      if (claims.length >= limit) return claims;
+    }
+  }
+  return claims;
+}
+
+function buildAnswerPolicy({ plan, evidencePackCount, citationReadyClaims }) {
+  const hasCitations = citationReadyClaims.length > 0;
+  const canAnswer = plan.should_use_anchorfact === true
+    && evidencePackCount > 0
+    && hasCitations;
+  const unsupportedReason = canAnswer
+    ? null
+    : (plan.coverage_status === 'unsupported'
+        ? 'coverage_status is unsupported'
+        : 'no public source-mapped citation-ready claims matched this query');
+
+  return {
+    can_answer_with_anchorfact: canAnswer,
+    answer_mode: canAnswer ? 'answer_with_citations' : 'external_sources_required',
+    max_claims_to_cite: canAnswer ? citationReadyClaims.length : 0,
+    required_action: canAnswer
+      ? 'Use only citation_ready_claims or dereference them with /api/cite before citing AnchorFact.'
+      : 'Do not cite AnchorFact for this query; use external primary or authoritative sources.',
+    unsupported_reason: unsupportedReason,
+    guardrails: [
+      'Do not cite draft records.',
+      'Do not cite nearby articles unless a returned claim directly supports the answer.',
+      'Include the original source URL and AnchorFact claim URL when citing.'
+    ]
+  };
+}
+
 export function renderContextMarkdown(payload) {
   const lines = [
     `# AnchorFact Context: ${payload.query}`,
@@ -168,6 +255,17 @@ export function renderContextMarkdown(payload) {
     `Evidence packs: ${payload.evidence_pack_count ?? 0}`,
     ''
   ];
+
+  if (payload.answer_policy) {
+    lines.push('## Answer Policy', '');
+    lines.push(`- Can answer with AnchorFact: ${payload.answer_policy.can_answer_with_anchorfact === true ? 'yes' : 'no'}`);
+    lines.push(`- Mode: ${payload.answer_policy.answer_mode || 'unknown'}`);
+    lines.push(`- Required action: ${payload.answer_policy.required_action || 'unknown'}`);
+    if (payload.answer_policy.unsupported_reason) {
+      lines.push(`- Unsupported reason: ${payload.answer_policy.unsupported_reason}`);
+    }
+    lines.push('');
+  }
 
   if (Array.isArray(payload.trust_requirements) && payload.trust_requirements.length > 0) {
     lines.push('## Trust Requirements', '');
@@ -199,6 +297,14 @@ export function renderContextMarkdown(payload) {
     lines.push('## Recommended Next Calls', '');
     for (const call of payload.recommended_next_calls) {
       lines.push(`- ${call.method || 'GET'} ${call.path || call.url || ''}${call.purpose ? ` - ${call.purpose}` : ''}`);
+    }
+    lines.push('');
+  }
+
+  if (Array.isArray(payload.citation_ready_claims) && payload.citation_ready_claims.length > 0) {
+    lines.push('## Citation Ready Claims', '');
+    for (const claim of payload.citation_ready_claims) {
+      lines.push(claim.citation_markdown || `- ${claim.statement || claim.claim_id}`);
     }
     lines.push('');
   }

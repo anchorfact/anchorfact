@@ -85,7 +85,8 @@ test('buildCapabilitiesIndex publishes AI endpoint selection rules', () => {
   const context = payload.capabilities.find(capability => capability.id === 'assemble_prompt_context');
   assertEq(context.primary_call.path, '/api/context?q={query}&limit=3');
   assertEq(context.local_mcp_tools[0].tool, 'anchorfact_context');
-  assert(context.trust_requirements.some(requirement => requirement.includes('evidence_pack_count')), 'context capability should guard unsupported payloads');
+  assert(context.trust_requirements.some(requirement => requirement.includes('answer_policy.can_answer_with_anchorfact')), 'context capability should guard unsupported payloads');
+  assert(context.trust_requirements.some(requirement => requirement.includes('citation_ready_claims')), 'context capability should prefer compact claim citations');
 
   const health = payload.capabilities.find(capability => capability.id === 'inspect_corpus_health');
   assertEq(health.primary_call.path, '/content-health.json');

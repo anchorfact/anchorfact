@@ -237,7 +237,12 @@ test('buildContextApiPayload combines planning and public evidence packs', () =>
   assertEq(result.payload.schema_version, 'anchorfact.context-api.v1');
   assertEq(result.payload.coverage_status, 'supported');
   assertEq(result.payload.should_use_anchorfact, true);
+  assertEq(result.payload.answer_policy.can_answer_with_anchorfact, true);
+  assertEq(result.payload.answer_policy.answer_mode, 'answer_with_citations');
   assertEq(result.payload.evidence_pack_count, 1);
+  assertEq(result.payload.citation_ready_claims.length, 1);
+  assertEq(result.payload.citation_ready_claims[0].claim_id, 'https://anchorfact.org/fact/f1');
+  assertEq(result.payload.citation_ready_claims[0].cite_api_path, '/api/cite?id=f1');
   assertEq(result.payload.content_health.snapshot.public_articles, 1);
   assertEq(result.payload.content_health.public_claim_mapping.mapped, 1);
   assertEq(result.payload.content_health.trust_boundaries.draft_entries_excluded_from_ai_entrypoints, true);
@@ -251,6 +256,10 @@ test('buildContextApiPayload keeps unsupported queries explicit and non-citable'
 
   assertEq(result.payload.coverage_status, 'unsupported');
   assertEq(result.payload.should_use_anchorfact, false);
+  assertEq(result.payload.answer_policy.can_answer_with_anchorfact, false);
+  assertEq(result.payload.answer_policy.answer_mode, 'external_sources_required');
+  assertEq(result.payload.answer_policy.max_claims_to_cite, 0);
+  assertEq(result.payload.citation_ready_claims, []);
   assertEq(result.payload.evidence_pack_count, 0);
   assert(result.payload.fallback_guidance.some(item => item.includes('external primary')), 'unsupported context should direct agents to external primary sources');
 });
@@ -261,6 +270,9 @@ test('renderContextMarkdown returns answer-ready context with guardrails', () =>
 
   assert(markdown.includes('AnchorFact Context'), 'markdown should identify context payload');
   assert(markdown.includes('Coverage status: supported'), 'markdown should include coverage status');
+  assert(markdown.includes('Answer Policy'), 'markdown should include answer policy');
+  assert(markdown.includes('Can answer with AnchorFact: yes'), 'markdown should include answerability');
+  assert(markdown.includes('Citation Ready Claims'), 'markdown should include compact citation claims');
   assert(markdown.includes('Corpus Health'), 'markdown should include corpus health summary');
   assert(markdown.includes('Public claims: 1'), 'markdown should include public claim count');
   assert(markdown.includes('Citation contract:'), 'markdown should include citation contract');

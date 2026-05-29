@@ -41,7 +41,7 @@ export function buildApiIndex({
     recommended_sequence: [
       'Call /api/plan?q={query} first when you are not sure AnchorFact covers a topic.',
       'Call /api/evidence?q={query} when you need answer-ready evidence packs with mapped claims and sources.',
-      'Call /api/context?q={query} when you want planning status, corpus health, fallback guidance, and evidence packs in one prompt-assembly payload.',
+      'Call /api/context?q={query} when you want answer_policy, citation_ready_claims, planning status, corpus health, fallback guidance, and evidence packs in one prompt-assembly payload.',
       'Call /api/resolve or /api/resolve-batch when you already have AnchorFact claim ids, article slugs, source ids, source URLs, or AnchorFact URLs.',
       'Call /api/cite?id={claim_id} when you need a citation-ready atomic claim.',
       'Verify /provenance.json and /provenance.sig before trusting static artifact hashes or counts.'
@@ -56,7 +56,7 @@ export function buildApiIndex({
         { name: 'limit', required: false, description: 'Maximum evidence pack count; default 5.' },
         { name: 'format', required: false, description: 'json, markdown, or md.' }
       ]),
-      endpoint(site, 'context', '/api/context', 'Combine coverage planning, corpus health, fallback guidance, and public evidence packs for prompt assembly.', [
+      endpoint(site, 'context', '/api/context', 'Combine answer policy, citation-ready claims, coverage planning, corpus health, fallback guidance, and public evidence packs for prompt assembly.', [
         { name: 'q', required: true, description: 'Natural-language query.' },
         { name: 'limit', required: false, description: 'Maximum evidence pack count; default 3.' },
         { name: 'format', required: false, description: 'json, markdown, or md.' }

@@ -104,7 +104,7 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
 
   assertEq(payload.schema_version, 'anchorfact.evals.v1');
   assertEq(payload.provenance_url, 'https://anchorfact.org/provenance.json');
-  assertEq(payload.eval_count, 16);
+  assertEq(payload.eval_count, 17);
   assertEq(payload.evals.map(evalCase => evalCase.id), [
     'api_discovery',
     'query_plan',
@@ -112,6 +112,7 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
     'evidence_pack_json',
     'context_pack_json',
     'unsupported_query_evidence',
+    'unsupported_context_pack_json',
     'evidence_pack_markdown',
     'claim_dereference',
     'reference_resolver',
@@ -152,6 +153,8 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
   assert(contextEval.call.path.includes('/api/context?q=gaussian+splatting&limit=3'), 'context eval should include encoded query path');
   assertEq(contextEval.expected.schema_version, 'anchorfact.context-api.v1');
   assertEq(contextEval.expected.should_use_anchorfact, true);
+  assertEq(contextEval.expected.answer_policy_can_answer, true);
+  assertEq(contextEval.expected.min_citation_ready_claims, 1);
   assertEq(contextEval.expected.min_content_health_public_articles, 1);
   assertEq(contextEval.expected.content_health_trust_boundary, 'draft_entries_excluded_from_ai_entrypoints');
 
@@ -159,6 +162,13 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
   assert(unsupportedEvidenceEval.call.path.includes('/api/evidence?q=lunar+dentistry&limit=3'), 'unsupported evidence eval should use the same fixed no-coverage query');
   assertEq(unsupportedEvidenceEval.expected.schema_version, 'anchorfact.evidence-api.v1');
   assertEq(unsupportedEvidenceEval.expected.result_count, 0);
+
+  const unsupportedContextEval = payload.evals.find(evalCase => evalCase.id === 'unsupported_context_pack_json');
+  assert(unsupportedContextEval.call.path.includes('/api/context?q=lunar+dentistry&limit=3'), 'unsupported context eval should use the same fixed no-coverage query');
+  assertEq(unsupportedContextEval.expected.schema_version, 'anchorfact.context-api.v1');
+  assertEq(unsupportedContextEval.expected.should_use_anchorfact, false);
+  assertEq(unsupportedContextEval.expected.answer_policy_can_answer, false);
+  assertEq(unsupportedContextEval.expected.max_citation_ready_claims, 0);
 
   const markdownEval = payload.evals.find(evalCase => evalCase.id === 'evidence_pack_markdown');
   assert(markdownEval.call.path.includes('format=markdown'), 'markdown eval should request markdown format');
