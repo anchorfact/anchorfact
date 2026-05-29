@@ -128,12 +128,30 @@ test('public entrypoints exclude draft articles', () => {
   const indexHtml = readFileSync(join(distDir, 'index.html'), 'utf-8');
   const llmsTxt = readFileSync(join(distDir, 'llms.txt'), 'utf-8');
   const sitemap = readFileSync(join(distDir, 'sitemap.xml'), 'utf-8');
+  assert(indexHtml.includes('/agent.json'), 'index should link to agent profile');
+  assert(llmsTxt.includes('Agent Profile'), 'llms.txt should include agent profile');
+  assert(sitemap.includes('/agent.json'), 'sitemap should include agent profile');
   assert(indexHtml.includes('Public Fixture'), 'index should include public article');
   assert(!indexHtml.includes('Draft Fixture</a></span>'), 'index public list should exclude draft article');
   assert(llmsTxt.includes('Public Fixture'), 'llms.txt should include public article');
   assert(!llmsTxt.includes('Draft Fixture'), 'llms.txt should exclude draft article');
   assert(sitemap.includes('/public-fixture/'), 'sitemap should include public article');
   assert(!sitemap.includes('/draft-fixture/'), 'sitemap should exclude draft article');
+});
+
+test('agent profile describes the machine contract', () => {
+  assert(existsSync(join(distDir, 'agent.json')), 'agent.json missing');
+  assert(existsSync(join(distDir, '.well-known', 'anchorfact.json')), 'well-known agent profile missing');
+  const agent = JSON.parse(readFileSync(join(distDir, 'agent.json'), 'utf-8'));
+  const wellKnown = JSON.parse(readFileSync(join(distDir, '.well-known', 'anchorfact.json'), 'utf-8'));
+  assertEq(agent.schema_version, 'anchorfact.agent.v1');
+  assertEq(agent.official_site, 'https://anchorfact.org');
+  assertEq(agent.current_snapshot.public_articles, 1);
+  assertEq(agent.current_snapshot.draft_articles, 1);
+  assertEq(agent.current_snapshot.public_claims, 2);
+  assertEq(agent.endpoints.claims.url, 'https://anchorfact.org/claims.json');
+  assert(agent.recommended_workflow.some(step => step.includes('/provenance.json')), 'agent workflow should mention provenance');
+  assertEq(wellKnown, agent, 'well-known alias should match agent.json');
 });
 
 test('draft page is generated with noindex and draft status', () => {
@@ -171,9 +189,11 @@ test('provenance.json describes compiled artifacts', () => {
     claims: 2
   });
   assert(/^[a-f0-9]{64}$/.test(provenance.artifacts.manifest_json.sha256), 'manifest checksum should be sha256 hex');
+  assert(/^[a-f0-9]{64}$/.test(provenance.artifacts.agent_json.sha256), 'agent checksum should be sha256 hex');
   assert(/^[a-f0-9]{64}$/.test(provenance.artifacts.claims_json.sha256), 'claims checksum should be sha256 hex');
   assert(/^[a-f0-9]{64}$/.test(provenance.artifacts.llms_txt.sha256), 'llms checksum should be sha256 hex');
   assert(provenance.artifacts.manifest_json.bytes > 0, 'manifest artifact should include byte size');
+  assert(provenance.artifacts.agent_json.bytes > 0, 'agent artifact should include byte size');
   assert(provenance.artifacts.claims_json.bytes > 0, 'claims artifact should include byte size');
   assert(provenance.artifacts.llms_txt.bytes > 0, 'llms artifact should include byte size');
 });
@@ -202,6 +222,8 @@ test('provenance.sig is generated when a signing key is configured', () => {
 test('_headers is generated for Cloudflare Pages static output', () => {
   const headers = readFileSync(join(distDir, '_headers'), 'utf-8');
   assert(headers.includes('/*\n  X-Content-Type-Options: nosniff'), '_headers should include global security headers');
+  assert(headers.includes('/agent.json\n  Access-Control-Allow-Origin: *'), '_headers should expose agent profile CORS');
+  assert(headers.includes('/.well-known/anchorfact.json\n  Access-Control-Allow-Origin: *'), '_headers should expose well-known agent profile CORS');
   assert(headers.includes('/manifest.json\n  Access-Control-Allow-Origin: *'), '_headers should expose manifest CORS');
   assert(headers.includes('/provenance.json\n  Access-Control-Allow-Origin: *'), '_headers should expose provenance CORS');
   assert(headers.includes('/provenance.sig\n  Access-Control-Allow-Origin: *'), '_headers should expose provenance signature CORS');

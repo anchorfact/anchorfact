@@ -81,7 +81,7 @@ export async function main() {
   const expectedDraft = readExpectedInt('EXPECTED_DRAFT_ARTICLES');
   const expectedClaims = readExpectedInt('EXPECTED_CLAIMS');
 
-  const routes = ['/', '/manifest.json', '/llms.txt', '/claims.json', '/provenance.json', '/drafts.html'];
+  const routes = ['/', '/agent.json', '/.well-known/anchorfact.json', '/manifest.json', '/llms.txt', '/claims.json', '/provenance.json', '/drafts.html'];
   const results = {};
 
   for (const route of routes) {
@@ -89,6 +89,8 @@ export async function main() {
     assertOk(results[route].status === 200, `${route} returned ${results[route].status}`, failures);
   }
 
+  const agentProfile = JSON.parse(results['/agent.json'].body);
+  const wellKnownAgentProfile = JSON.parse(results['/.well-known/anchorfact.json'].body);
   const manifest = JSON.parse(results['/manifest.json'].body);
   const claims = JSON.parse(results['/claims.json'].body);
   const provenance = JSON.parse(results['/provenance.json'].body);
@@ -105,6 +107,13 @@ export async function main() {
   );
   const claimCount = countClaims(claims);
 
+  assertOk(agentProfile.schema_version === 'anchorfact.agent.v1', `agent schema_version expected anchorfact.agent.v1, got ${agentProfile.schema_version || '(missing)'}`, failures);
+  assertOk(wellKnownAgentProfile.schema_version === agentProfile.schema_version, 'well-known agent profile schema does not match /agent.json', failures);
+  assertOk(wellKnownAgentProfile.generated === agentProfile.generated, 'well-known agent profile generated timestamp does not match /agent.json', failures);
+  assertOk(agentProfile.endpoints?.provenance?.url === new URL('/provenance.json', baseUrl).href, 'agent profile provenance endpoint does not match base URL', failures);
+  assertOk(agentProfile.current_snapshot?.public_articles === manifest.public_article_count, 'agent profile public count does not match manifest', failures);
+  assertOk(agentProfile.current_snapshot?.draft_articles === manifest.draft_article_count, 'agent profile draft count does not match manifest', failures);
+  assertOk(agentProfile.current_snapshot?.public_claims === claimCount, 'agent profile claim count does not match claims.json', failures);
   assertOk(manifest.public_article_count === publicArticles, `manifest public_article_count ${manifest.public_article_count} does not match articles[] count ${publicArticles}`, failures);
   assertOk(manifest.draft_article_count === draftArticles, `manifest draft_article_count ${manifest.draft_article_count} does not match articles[] count ${draftArticles}`, failures);
   assertOk(manifest.claim_count === claimCount, `manifest claim_count ${manifest.claim_count} does not match claims.json count ${claimCount}`, failures);
@@ -116,6 +125,7 @@ export async function main() {
   assertOk(provenance.content_counts?.public === manifest.public_article_count, 'provenance public count does not match manifest', failures);
   assertOk(provenance.content_counts?.draft === manifest.draft_article_count, 'provenance draft count does not match manifest', failures);
   assertOk(provenance.content_counts?.claims === claimCount, 'provenance claim count does not match claims.json', failures);
+  assertOk(provenance.artifacts?.agent_json?.sha256 === sha256Text(results['/agent.json'].body), 'provenance agent hash does not match /agent.json', failures);
   assertOk(provenance.artifacts?.manifest_json?.sha256 === sha256Text(results['/manifest.json'].body), 'provenance manifest hash does not match /manifest.json', failures);
   assertOk(provenance.artifacts?.claims_json?.sha256 === sha256Text(results['/claims.json'].body), 'provenance claims hash does not match /claims.json', failures);
   assertOk(provenance.artifacts?.llms_txt?.sha256 === sha256Text(results['/llms.txt'].body), 'provenance llms hash does not match /llms.txt', failures);
@@ -123,6 +133,8 @@ export async function main() {
   assertOk(llmsText.trim().length > 0, '/llms.txt is empty', failures);
   assertOk(/noindex/i.test(draftsHtml), '/drafts.html is missing noindex', failures);
   headerIncludes(results['/'], 'X-Content-Type-Options', 'nosniff', failures);
+  headerIncludes(results['/agent.json'], 'Access-Control-Allow-Origin', '*', failures);
+  headerIncludes(results['/.well-known/anchorfact.json'], 'Access-Control-Allow-Origin', '*', failures);
   headerIncludes(results['/manifest.json'], 'Access-Control-Allow-Origin', '*', failures);
   headerIncludes(results['/manifest.json'], 'Cache-Control', 'max-age=3600', failures);
   headerIncludes(results['/claims.json'], 'Access-Control-Allow-Origin', '*', failures);

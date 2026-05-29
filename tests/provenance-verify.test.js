@@ -95,8 +95,19 @@ function buildFixture(overrides = {}) {
     claims: [{ id: 'fact-1' }, { id: 'fact-2' }, { id: 'fact-3' }]
   };
   const llms = '# AnchorFact\n\n- public verified entries\n';
+  const agent = {
+    schema_version: 'anchorfact.agent.v1',
+    generated: '2026-05-29T00:00:00.000Z',
+    official_site: baseUrl,
+    current_snapshot: {
+      public_articles: 2,
+      draft_articles: 1,
+      public_claims: 3
+    }
+  };
   const manifestText = JSON.stringify(manifest, null, 2);
   const claimsText = JSON.stringify(claims, null, 2);
+  const agentText = JSON.stringify(agent, null, 2);
   const provenance = {
     schema_version: PROVENANCE_SCHEMA_VERSION,
     official_source_repository: OFFICIAL_SOURCE_REPOSITORY,
@@ -121,6 +132,11 @@ function buildFixture(overrides = {}) {
       claims: 3
     },
     artifacts: {
+      agent_json: {
+        path: '/agent.json',
+        sha256: sha256Text(agentText),
+        bytes: Buffer.byteLength(agentText, 'utf8')
+      },
       manifest_json: {
         path: '/manifest.json',
         sha256: sha256Text(manifestText),
@@ -162,6 +178,7 @@ function buildFixture(overrides = {}) {
     : null;
   const routes = {
     [`${baseUrl}/provenance.json`]: { body: provenanceText },
+    [`${baseUrl}/agent.json`]: { body: agentText },
     [`${baseUrl}/manifest.json`]: { body: manifestText },
     [`${baseUrl}/claims.json`]: { body: claimsText },
     [`${baseUrl}/llms.txt`]: { body: llms, contentType: 'text/plain; charset=utf-8' },

@@ -1,5 +1,6 @@
-import { writeFileSync } from 'fs';
+import { mkdirSync, writeFileSync } from 'fs';
 import { join } from 'path';
+import { buildAgentProfile } from './agent-profile.js';
 import { publicClaims } from './claims.js';
 import { escapeHtml } from './html.js';
 import { buildManifest, distribution } from './manifest.js';
@@ -81,6 +82,7 @@ function writeRootIndex(distDir, results, publicResults, draftResults, claims) {
   </div>
   <div class="card">
     <strong>For AIs</strong><br>
+    <a href="/agent.json">Agent profile</a> &middot;
     <a href="/llms.txt">llms.txt</a> &middot;
     <a href="/manifest.json">Manifest</a> &middot;
     <a href="/claims.json">Claims JSON</a> &middot;
@@ -150,6 +152,7 @@ ${entries || '_No public verified entries yet._'}
 
 ## API
 
+- [Agent Profile](https://anchorfact.org/agent.json): Machine contract and recommended retrieval workflow.
 - [Manifest](https://anchorfact.org/manifest.json): Full index with public/draft status.
 - [Claims](https://anchorfact.org/claims.json): Public verified atomic claims.
 - [Provenance](https://anchorfact.org/provenance.json): Build identity and artifact checksums.
@@ -167,6 +170,7 @@ ${entries || '_No public verified entries yet._'}
 function writeSitemap(distDir, publicResults) {
   const urls = [
     '<url><loc>https://anchorfact.org/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>',
+    '<url><loc>https://anchorfact.org/agent.json</loc><changefreq>daily</changefreq><priority>0.9</priority></url>',
     '<url><loc>https://anchorfact.org/llms.txt</loc><changefreq>daily</changefreq><priority>0.9</priority></url>',
     '<url><loc>https://anchorfact.org/claims.json</loc><changefreq>daily</changefreq><priority>0.8</priority></url>',
     '<url><loc>https://anchorfact.org/provenance.json</loc><changefreq>daily</changefreq><priority>0.8</priority></url>',
@@ -217,6 +221,16 @@ function writeHeaders(distDir) {
   Cache-Control: public, max-age=86400
 
 /claims.json
+  Access-Control-Allow-Origin: *
+  Content-Type: application/json; charset=utf-8
+  Cache-Control: public, max-age=3600
+
+/agent.json
+  Access-Control-Allow-Origin: *
+  Content-Type: application/json; charset=utf-8
+  Cache-Control: public, max-age=3600
+
+/.well-known/anchorfact.json
   Access-Control-Allow-Origin: *
   Content-Type: application/json; charset=utf-8
   Cache-Control: public, max-age=3600
@@ -283,6 +297,14 @@ function writeDashboard(distDir, results, publicResults, draftResults, claims, v
   writeFileSync(join(distDir, 'dashboard.html'), dashHtml);
 }
 
+function writeAgentProfile(distDir, profile) {
+  const agentText = JSON.stringify(profile, null, 2);
+  writeFileSync(join(distDir, 'agent.json'), agentText);
+  const wellKnownDir = join(distDir, '.well-known');
+  mkdirSync(wellKnownDir, { recursive: true });
+  writeFileSync(join(wellKnownDir, 'anchorfact.json'), agentText);
+}
+
 function writeFavicon(distDir) {
   const favicon = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="6" fill="#2563EB"/><path d="M16 5v20M10 12h12M8 25c3 2 13 2 16 0" stroke="white" stroke-width="3" stroke-linecap="round"/></svg>';
   writeFileSync(join(distDir, 'favicon.svg'), favicon);
@@ -319,6 +341,14 @@ export function writeStaticOutputs(distDir, results, options = {}) {
     generated,
     build
   });
+  writeAgentProfile(distDir, buildAgentProfile({
+    generated,
+    manifest,
+    claimsPayload,
+    publicResults,
+    draftResults,
+    verificationTimestamp: options.verificationTimestamp
+  }));
   writeRootIndex(distDir, results, publicResults, draftResults, claims);
   writeDrafts(distDir, draftResults);
   writeLlmsTxt(distDir, publicResults, claims, options.verificationTimestamp);

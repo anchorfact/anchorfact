@@ -129,6 +129,8 @@ Only public articles contribute publishable facts to `/claims.json`.
 
 | Output | Purpose |
 | --- | --- |
+| `/agent.json` | AI agent discovery profile with endpoint contracts, citation policy, and recommended retrieval workflow. |
+| `/.well-known/anchorfact.json` | Stable well-known alias for `/agent.json`. |
 | `/llms.txt` | Public verified index for LLM crawlers. |
 | `/manifest.json` | Full public/draft index with quality reasons and verification metadata. |
 | `/claims.json` | Public verified atomic claims with evidence links. |
