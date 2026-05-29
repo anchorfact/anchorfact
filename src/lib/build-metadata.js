@@ -14,6 +14,7 @@ export const EVIDENCE_API_SCHEMA_VERSION = 'anchorfact.evidence-api.v1';
 export const ARTICLE_API_SCHEMA_VERSION = 'anchorfact.article-api.v1';
 export const CLAIM_API_SCHEMA_VERSION = 'anchorfact.claim-api.v1';
 export const SOURCE_API_SCHEMA_VERSION = 'anchorfact.source-api.v1';
+export const CITE_API_SCHEMA_VERSION = 'anchorfact.cite-api.v1';
 export const TOPICS_SCHEMA_VERSION = 'anchorfact.topics.v1';
 export const EXAMPLES_SCHEMA_VERSION = 'anchorfact.examples.v1';
 export const GRAPH_SCHEMA_VERSION = 'anchorfact.graph.v1';

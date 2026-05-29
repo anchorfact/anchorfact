@@ -1,4 +1,5 @@
 import {
+  CITE_API_SCHEMA_VERSION,
   CLAIM_API_SCHEMA_VERSION,
   EVALS_SCHEMA_VERSION,
   EVIDENCE_API_SCHEMA_VERSION,
@@ -127,6 +128,7 @@ export function buildEvalsIndex({
   const evidencePath = queryPath('/api/evidence', { q: query, limit: 3 });
   const markdownPath = queryPath('/api/evidence', { q: query, limit: 1, format: 'markdown' });
   const claimPath = queryPath('/api/claim', { id: claimLookupId });
+  const citePath = queryPath('/api/cite', { id: claimLookupId });
 
   const evals = [
     {
@@ -167,6 +169,22 @@ export function buildEvalsIndex({
         claim_id: claim?.id || null,
         canonical_slug: record.canonical_slug,
         min_sources: 1
+      }
+    },
+    {
+      id: 'citation_export',
+      intent: 'Confirm one public atomic claim can be returned as a citation-ready payload.',
+      call: call(citePath, site),
+      expected: {
+        status: 200,
+        content_type: 'application/json',
+        schema_version: CITE_API_SCHEMA_VERSION,
+        claim_id: claim?.id || null,
+        canonical_slug: record.canonical_slug,
+        citation_export_contains: [
+          'AnchorFact:',
+          claim?.source_url || source?.url || ''
+        ].filter(Boolean)
       }
     },
     {

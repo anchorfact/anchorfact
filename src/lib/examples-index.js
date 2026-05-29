@@ -148,6 +148,7 @@ export function buildExamplesIndex({
   const searchPath = queryPath('/api/search', { q: query, limit: 3 });
   const articlePath = queryPath('/api/article', { slug: record.canonical_slug });
   const claimPath = queryPath('/api/claim', { id: claimShortId(claim?.id) });
+  const citePath = queryPath('/api/cite', { id: claimShortId(claim?.id) });
   const sourcePath = sourceLookupPath(source);
 
   const examples = [
@@ -187,7 +188,8 @@ export function buildExamplesIndex({
       intent: 'Dereference one atomic claim before using it in an answer.',
       workflow: [
         { step: 1, call: call(claimPath, site), use: 'Fetch the exact public claim, its article context, and matching source.' },
-        { step: 2, call: call(articlePath, site), use: 'Inspect neighboring source-mapped claims from the same article when context matters.' }
+        { step: 2, call: call(citePath, site), use: 'Fetch the citation-ready payload for direct use in an answer.' },
+        { step: 3, call: call(articlePath, site), use: 'Inspect neighboring source-mapped claims from the same article when context matters.' }
       ],
       expected_anchor: {
         article: articleAnchor(record),

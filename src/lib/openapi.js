@@ -1,6 +1,7 @@
 import {
   AGENT_PROFILE_SCHEMA_VERSION,
   ARTICLE_API_SCHEMA_VERSION,
+  CITE_API_SCHEMA_VERSION,
   CLAIM_API_SCHEMA_VERSION,
   CLAIMS_SCHEMA_VERSION,
   COMPILER_VERSION,
@@ -202,6 +203,42 @@ export function buildOpenApiContract({
           }
         }
       },
+      '/api/cite': {
+        get: {
+          summary: 'Read-only citation export for one public atomic claim',
+          parameters: [
+            {
+              name: 'id',
+              in: 'query',
+              required: true,
+              schema: { type: 'string', minLength: 1 },
+              description: 'Public claim id, such as https://anchorfact.org/fact/f1. Shorthand ids such as f1 are also accepted.'
+            },
+            {
+              name: 'format',
+              in: 'query',
+              required: false,
+              schema: { enum: ['json', 'markdown', 'md'], default: 'json' },
+              description: 'Response format. JSON is the default; markdown returns answer-ready citation text.'
+            }
+          ],
+          responses: {
+            200: {
+              description: 'OK',
+              content: {
+                'application/json': {
+                  schema: { $ref: '#/components/schemas/CiteApiResponse' }
+                },
+                'text/markdown': {
+                  schema: { type: 'string' }
+                }
+              }
+            },
+            400: jsonResponse('ApiError'),
+            404: jsonResponse('ApiError')
+          }
+        }
+      },
       '/api/source': {
         get: {
           summary: 'Read-only public source lookup',
@@ -376,6 +413,15 @@ export function buildOpenApiContract({
           article: { type: 'object' },
           source_count: { type: 'integer' },
           sources: { type: 'array', items: { type: 'object' } }
+        }),
+        CiteApiResponse: schemaVersioned('Citation API response', CITE_API_SCHEMA_VERSION, {
+          claim_id: { type: 'string', format: 'uri' },
+          canonical_slug: { type: 'string' },
+          citation_contract: { type: 'object' },
+          citation_export: { type: 'object' },
+          claim: { type: 'object' },
+          article: { type: 'object' },
+          source: { type: ['object', 'null'] }
         }),
         SourceApiResponse: schemaVersioned('Source API response', SOURCE_API_SCHEMA_VERSION, {
           source_id: { type: 'string' },

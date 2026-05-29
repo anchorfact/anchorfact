@@ -95,6 +95,7 @@ function writeRootIndex(distDir, results, publicResults, draftResults, claims) {
     <a href="/api/evidence?q=gaussian">Evidence API</a> &middot;
     <a href="/api/search?q=gaussian">Search API</a> &middot;
     <a href="/api/article?slug=ai/3d-generation-gaussian-splatting">Article API</a> &middot;
+    <a href="/api/cite?id=f1">Citation API</a> &middot;
     <a href="/api/claim?id=f1">Claim API</a> &middot;
     <a href="/api/source?url=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079">Source API</a> &middot;
     <a href="/llms.txt">llms.txt</a> &middot;
@@ -178,6 +179,7 @@ ${entries || '_No public verified entries yet._'}
 - [Evidence API](https://anchorfact.org/api/evidence?q=gaussian): One-call public evidence packs with search hits, article summaries, claims, and sources.
 - [Search API](https://anchorfact.org/api/search?q=gaussian): Read-only search over public records.
 - [Article API](https://anchorfact.org/api/article?slug=ai/3d-generation-gaussian-splatting): Read-only public article evidence bundles with claims and sources.
+- [Citation API](https://anchorfact.org/api/cite?id=f1): Read-only citation-ready payloads for one public atomic claim.
 - [Claim API](https://anchorfact.org/api/claim?id=f1): Read-only public atomic claim lookup with article and source context.
 - [Source API](https://anchorfact.org/api/source?url=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079): Read-only public source lookup with mapped claims.
 - [Manifest](https://anchorfact.org/manifest.json): Full index with public/draft status.
