@@ -18,6 +18,7 @@ export const TOPICS_SCHEMA_VERSION = 'anchorfact.topics.v1';
 export const EXAMPLES_SCHEMA_VERSION = 'anchorfact.examples.v1';
 export const GRAPH_SCHEMA_VERSION = 'anchorfact.graph.v1';
 export const EVALS_SCHEMA_VERSION = 'anchorfact.evals.v1';
+export const MCP_SCHEMA_VERSION = 'anchorfact.mcp.v1';
 export const OPENAPI_SCHEMA_VERSION = 'anchorfact.openapi.v1';
 export const OFFICIAL_SOURCE_REPOSITORY = 'https://github.com/anchorfact/anchorfact';
 export const OFFICIAL_SITE = 'https://anchorfact.org';
@@ -139,6 +140,7 @@ export function buildProvenance({ manifest, claimsPayload, distDir, generated, b
       examples_json: artifactInfo(distDir, 'examples.json'),
       graph_json: artifactInfo(distDir, 'graph.json'),
       evals_json: artifactInfo(distDir, 'evals.json'),
+      mcp_json: artifactInfo(distDir, 'mcp.json'),
       search_index_json: artifactInfo(distDir, 'search-index.json'),
       sources_json: artifactInfo(distDir, 'sources.json'),
       llms_txt: artifactInfo(distDir, 'llms.txt')

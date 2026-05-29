@@ -5,6 +5,7 @@ import {
   EXAMPLES_SCHEMA_VERSION,
   GRAPH_SCHEMA_VERSION,
   MANIFEST_SCHEMA_VERSION,
+  MCP_SCHEMA_VERSION,
   OFFICIAL_SITE,
   OFFICIAL_SOURCE_REPOSITORY,
   OPENAPI_SCHEMA_VERSION,
@@ -20,7 +21,7 @@ import {
 } from './provenance-signature.js';
 import { fetchLiveText } from './live-http.js';
 
-const REQUIRED_ARTIFACTS = ['agent_json', 'openapi_json', 'manifest_json', 'claims_json', 'topics_json', 'examples_json', 'graph_json', 'evals_json', 'search_index_json', 'sources_json', 'llms_txt'];
+const REQUIRED_ARTIFACTS = ['agent_json', 'openapi_json', 'manifest_json', 'claims_json', 'topics_json', 'examples_json', 'graph_json', 'evals_json', 'mcp_json', 'search_index_json', 'sources_json', 'llms_txt'];
 const OFFICIAL_GITHUB_COMMIT_API = 'https://api.github.com/repos/anchorfact/anchorfact/commits/';
 
 export function sha256Text(text) {
@@ -285,6 +286,9 @@ export async function verifyLiveProvenance({
   const evals = artifacts.evals_json?.text
     ? parseJson(artifacts.evals_json.text, '/evals.json', failures) || {}
     : {};
+  const mcp = artifacts.mcp_json?.text
+    ? parseJson(artifacts.mcp_json.text, '/mcp.json', failures) || {}
+    : {};
   const searchIndex = artifacts.search_index_json?.text
     ? parseJson(artifacts.search_index_json.text, '/search-index.json', failures) || {}
     : {};
@@ -297,6 +301,7 @@ export async function verifyLiveProvenance({
   checkEq(examples.schema_version, EXAMPLES_SCHEMA_VERSION, 'examples schema_version', failures);
   checkEq(graph.schema_version, GRAPH_SCHEMA_VERSION, 'graph schema_version', failures);
   checkEq(evals.schema_version, EVALS_SCHEMA_VERSION, 'evals schema_version', failures);
+  checkEq(mcp.schema_version, MCP_SCHEMA_VERSION, 'mcp schema_version', failures);
   checkEq(searchIndex.schema_version, SEARCH_INDEX_SCHEMA_VERSION, 'search index schema_version', failures);
   checkEq(manifest.provenance_url, publicUrl(PROVENANCE_PATH, normalizedBaseUrl), 'manifest provenance_url', failures);
   checkEq(claims.provenance_url, publicUrl(PROVENANCE_PATH, normalizedBaseUrl), 'claims provenance_url', failures);
@@ -304,7 +309,11 @@ export async function verifyLiveProvenance({
   checkEq(examples.provenance_url, publicUrl(PROVENANCE_PATH, normalizedBaseUrl), 'examples provenance_url', failures);
   checkEq(graph.provenance_url, publicUrl(PROVENANCE_PATH, normalizedBaseUrl), 'graph provenance_url', failures);
   checkEq(evals.provenance_url, publicUrl(PROVENANCE_PATH, normalizedBaseUrl), 'evals provenance_url', failures);
+  checkEq(mcp.provenance_url, publicUrl(PROVENANCE_PATH, normalizedBaseUrl), 'mcp provenance_url', failures);
   checkEq(searchIndex.provenance_url, publicUrl(PROVENANCE_PATH, normalizedBaseUrl), 'search index provenance_url', failures);
+  if (!Array.isArray(mcp.tools) || mcp.tools.length === 0) {
+    failures.push('mcp tools list is empty');
+  }
   verifyCounts({ provenance, manifest, claims, topics, examples, graph, evals, searchIndex, failures });
 
   const signature = await verifySignature({

@@ -133,6 +133,7 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
 
   const provenanceEval = payload.evals.find(evalCase => evalCase.id === 'signed_provenance_static_artifacts');
   assert(provenanceEval.expected.required_artifacts.includes('evals_json'), 'provenance eval should require evals artifact hash');
+  assert(provenanceEval.expected.required_artifacts.includes('mcp_json'), 'provenance eval should require mcp artifact hash');
 });
 
 test('buildEvalsIndex returns an empty contract when no public records exist', () => {

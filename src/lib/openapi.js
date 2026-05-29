@@ -9,6 +9,7 @@ import {
   EXAMPLES_SCHEMA_VERSION,
   GRAPH_SCHEMA_VERSION,
   MANIFEST_SCHEMA_VERSION,
+  MCP_SCHEMA_VERSION,
   OFFICIAL_SITE,
   OPENAPI_SCHEMA_VERSION,
   PROVENANCE_PATH,
@@ -98,6 +99,7 @@ export function buildOpenApiContract({
       '/examples.json': getJson('Executable AI usage examples', 'Examples'),
       '/graph.json': getJson('Public knowledge graph', 'Graph'),
       '/evals.json': getJson('Executable AI integration checks', 'Evals'),
+      '/mcp.json': getJson('Local MCP installation manifest', 'McpProfile'),
       '/api/evidence': {
         get: {
           summary: 'Read-only public query evidence packs',
@@ -325,6 +327,11 @@ export function buildOpenApiContract({
         Evals: schemaVersioned('Evals', EVALS_SCHEMA_VERSION, {
           eval_count: { type: 'integer' },
           evals: { type: 'array', items: { type: 'object' } }
+        }),
+        McpProfile: schemaVersioned('MCP profile', MCP_SCHEMA_VERSION, {
+          name: { type: 'string' },
+          installation: { type: 'object' },
+          tools: { type: 'array', items: { type: 'object' } }
         }),
         SearchIndex: schemaVersioned('Search index', SEARCH_INDEX_SCHEMA_VERSION, {
           article_count: { type: 'integer' },

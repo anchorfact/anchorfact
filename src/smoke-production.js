@@ -120,7 +120,7 @@ export async function main() {
   const expectedDraft = readExpectedInt('EXPECTED_DRAFT_ARTICLES');
   const expectedClaims = readExpectedInt('EXPECTED_CLAIMS');
 
-  const routes = ['/', '/agent.json', '/.well-known/anchorfact.json', '/openapi.json', '/manifest.json', '/llms.txt', '/claims.json', '/topics.json', '/examples.json', '/graph.json', '/evals.json', '/api/evidence?q=gaussian&limit=2', '/api/evidence?q=gaussian&limit=1&format=markdown', '/api/search?q=gaussian&limit=2', '/api/article?slug=ai/3d-generation-gaussian-splatting', '/api/claim?id=f1', '/api/source?url=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079', '/search-index.json', '/sources.json', '/provenance.json', '/drafts.html'];
+  const routes = ['/', '/agent.json', '/.well-known/anchorfact.json', '/openapi.json', '/manifest.json', '/llms.txt', '/claims.json', '/topics.json', '/examples.json', '/graph.json', '/evals.json', '/mcp.json', '/api/evidence?q=gaussian&limit=2', '/api/evidence?q=gaussian&limit=1&format=markdown', '/api/search?q=gaussian&limit=2', '/api/article?slug=ai/3d-generation-gaussian-splatting', '/api/claim?id=f1', '/api/source?url=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079', '/search-index.json', '/sources.json', '/provenance.json', '/drafts.html'];
   const results = {};
 
   for (const route of routes) {
@@ -137,6 +137,7 @@ export async function main() {
   const examples = JSON.parse(results['/examples.json'].body);
   const graph = JSON.parse(results['/graph.json'].body);
   const evals = JSON.parse(results['/evals.json'].body);
+  const mcp = JSON.parse(results['/mcp.json'].body);
   const evidenceApi = JSON.parse(results['/api/evidence?q=gaussian&limit=2'].body);
   const evidenceMarkdown = results['/api/evidence?q=gaussian&limit=1&format=markdown'].body;
   const searchApi = JSON.parse(results['/api/search?q=gaussian&limit=2'].body);
@@ -186,6 +187,7 @@ export async function main() {
   assertOk(agentProfile.endpoints?.source_api?.path === '/api/source?id={source_id}', 'agent profile source API endpoint template is missing', failures);
   assertOk(agentProfile.endpoints?.graph?.url === new URL('/graph.json', baseUrl).href, 'agent profile graph endpoint does not match base URL', failures);
   assertOk(agentProfile.endpoints?.evals?.url === new URL('/evals.json', baseUrl).href, 'agent profile evals endpoint does not match base URL', failures);
+  assertOk(agentProfile.endpoints?.mcp?.url === new URL('/mcp.json', baseUrl).href, 'agent profile mcp endpoint does not match base URL', failures);
   assertOk(agentProfile.endpoints?.provenance?.url === new URL('/provenance.json', baseUrl).href, 'agent profile provenance endpoint does not match base URL', failures);
   assertOk(openapi.openapi === '3.1.0', `openapi version expected 3.1.0, got ${openapi.openapi || '(missing)'}`, failures);
   assertOk(openapi['x-anchorfact-schema-version'] === 'anchorfact.openapi.v1', `openapi AnchorFact schema expected anchorfact.openapi.v1, got ${openapi['x-anchorfact-schema-version'] || '(missing)'}`, failures);
@@ -199,6 +201,7 @@ export async function main() {
   assertOk(openapi.paths?.['/examples.json'], 'openapi is missing /examples.json path', failures);
   assertOk(openapi.paths?.['/graph.json'], 'openapi is missing /graph.json path', failures);
   assertOk(openapi.paths?.['/evals.json'], 'openapi is missing /evals.json path', failures);
+  assertOk(openapi.paths?.['/mcp.json'], 'openapi is missing /mcp.json path', failures);
   assertOk(openapi.paths?.['/search-index.json'], 'openapi is missing /search-index.json path', failures);
   assertOk(openapi.paths?.['/{canonical_slug}/index.json'], 'openapi is missing article JSON-LD path template', failures);
   assertOk(agentProfile.current_snapshot?.public_articles === manifest.public_article_count, 'agent profile public count does not match manifest', failures);
@@ -209,6 +212,7 @@ export async function main() {
   assertOk(agentProfile.current_snapshot?.graph_nodes === graph.node_count, 'agent profile graph node count does not match graph.json', failures);
   assertOk(agentProfile.current_snapshot?.graph_edges === graph.edge_count, 'agent profile graph edge count does not match graph.json', failures);
   assertOk(agentProfile.current_snapshot?.evals === evals.eval_count, 'agent profile eval count does not match evals.json', failures);
+  assertOk(agentProfile.current_snapshot?.mcp_tools === mcp.tools.length, 'agent profile MCP tool count does not match mcp.json', failures);
   assertOk(agentProfile.current_snapshot?.searchable_records === searchIndex.article_count, 'agent profile searchable record count does not match search-index.json', failures);
   assertOk(agentProfile.current_snapshot?.unique_sources === sources.source_count, 'agent profile source count does not match sources.json', failures);
   assertOk(manifest.public_article_count === publicArticles, `manifest public_article_count ${manifest.public_article_count} does not match articles[] count ${publicArticles}`, failures);
@@ -241,6 +245,10 @@ export async function main() {
   assertOk(Array.isArray(evals.evals) && evals.evals.some(evalCase => evalCase.id === 'evidence_pack_json'), '/evals.json is missing evidence_pack_json check', failures);
   assertOk(Array.isArray(evals.evals) && evals.evals.some(evalCase => evalCase.id === 'graph_relationships'), '/evals.json is missing graph_relationships check', failures);
   assertOk(Array.isArray(evals.evals) && evals.evals.some(evalCase => evalCase.id === 'signed_provenance_static_artifacts'), '/evals.json is missing signed provenance check', failures);
+  assertOk(mcp.schema_version === 'anchorfact.mcp.v1', `mcp schema_version expected anchorfact.mcp.v1, got ${mcp.schema_version || '(missing)'}`, failures);
+  assertOk(mcp.provenance_url === new URL('/provenance.json', baseUrl).href, `mcp provenance_url expected ${new URL('/provenance.json', baseUrl).href}, got ${mcp.provenance_url || '(missing)'}`, failures);
+  assertOk(mcp.installation?.stdio?.config_snippet?.mcpServers?.anchorfact?.command === 'python', '/mcp.json is missing stdio MCP config snippet', failures);
+  assertOk(Array.isArray(mcp.tools) && mcp.tools.some(tool => tool.name === 'anchorfact_search'), '/mcp.json is missing anchorfact_search tool metadata', failures);
   assertOk(evidenceApi.schema_version === 'anchorfact.evidence-api.v1', `evidence api schema_version expected anchorfact.evidence-api.v1, got ${evidenceApi.schema_version || '(missing)'}`, failures);
   assertOk(evidenceApi.provenance_url === new URL('/provenance.json', baseUrl).href, `evidence api provenance_url expected ${new URL('/provenance.json', baseUrl).href}, got ${evidenceApi.provenance_url || '(missing)'}`, failures);
   assertOk(evidenceApi.query === 'gaussian', `evidence api query expected gaussian, got ${evidenceApi.query || '(missing)'}`, failures);
@@ -299,6 +307,7 @@ export async function main() {
   assertOk(provenance.artifacts?.examples_json?.sha256 === sha256Text(results['/examples.json'].body), 'provenance examples hash does not match /examples.json', failures);
   assertOk(provenance.artifacts?.graph_json?.sha256 === sha256Text(results['/graph.json'].body), 'provenance graph hash does not match /graph.json', failures);
   assertOk(provenance.artifacts?.evals_json?.sha256 === sha256Text(results['/evals.json'].body), 'provenance evals hash does not match /evals.json', failures);
+  assertOk(provenance.artifacts?.mcp_json?.sha256 === sha256Text(results['/mcp.json'].body), 'provenance mcp hash does not match /mcp.json', failures);
   assertOk(provenance.artifacts?.search_index_json?.sha256 === sha256Text(results['/search-index.json'].body), 'provenance search index hash does not match /search-index.json', failures);
   assertOk(provenance.artifacts?.sources_json?.sha256 === sha256Text(results['/sources.json'].body), 'provenance sources hash does not match /sources.json', failures);
   assertOk(provenance.artifacts?.llms_txt?.sha256 === sha256Text(results['/llms.txt'].body), 'provenance llms hash does not match /llms.txt', failures);
@@ -316,6 +325,7 @@ export async function main() {
   headerIncludes(results['/examples.json'], 'Access-Control-Allow-Origin', '*', failures);
   headerIncludes(results['/graph.json'], 'Access-Control-Allow-Origin', '*', failures);
   headerIncludes(results['/evals.json'], 'Access-Control-Allow-Origin', '*', failures);
+  headerIncludes(results['/mcp.json'], 'Access-Control-Allow-Origin', '*', failures);
   headerIncludes(results['/api/evidence?q=gaussian&limit=2'], 'Access-Control-Allow-Origin', '*', failures);
   headerIncludes(results['/api/evidence?q=gaussian&limit=1&format=markdown'], 'Content-Type', 'text/markdown', failures);
   headerIncludes(results['/api/evidence?q=gaussian&limit=1&format=markdown'], 'Access-Control-Allow-Origin', '*', failures);

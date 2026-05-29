@@ -6,6 +6,7 @@ import {
   EXAMPLES_SCHEMA_VERSION,
   GRAPH_SCHEMA_VERSION,
   MANIFEST_SCHEMA_VERSION,
+  MCP_SCHEMA_VERSION,
   OFFICIAL_SITE,
   OFFICIAL_SOURCE_REPOSITORY,
   OPENAPI_SCHEMA_VERSION,
@@ -124,6 +125,7 @@ function buildFixture(overrides = {}) {
       '/examples.json': {},
       '/graph.json': {},
       '/evals.json': {},
+      '/mcp.json': {},
       '/search-index.json': {},
       '/sources.json': {},
       '/provenance.json': {}
@@ -209,10 +211,29 @@ function buildFixture(overrides = {}) {
         call: { method: 'GET', path: '/provenance.json', url: `${baseUrl}/provenance.json` },
         expected: {
           status: 200,
-          required_artifacts: ['evals_json']
+          required_artifacts: ['evals_json', 'mcp_json']
         }
       }
     ]
+  };
+  const mcp = {
+    schema_version: MCP_SCHEMA_VERSION,
+    generated: '2026-05-29T00:00:00.000Z',
+    provenance_url: `${baseUrl}/provenance.json`,
+    name: 'io.github.anchorfact/anchorfact',
+    installation: {
+      stdio: {
+        config_snippet: {
+          mcpServers: {
+            anchorfact: {
+              command: 'python',
+              args: ['src/mcp_server.py']
+            }
+          }
+        }
+      }
+    },
+    tools: [{ name: 'anchorfact_search' }]
   };
   const manifestText = JSON.stringify(manifest, null, 2);
   const claimsText = JSON.stringify(claims, null, 2);
@@ -222,6 +243,7 @@ function buildFixture(overrides = {}) {
   const examplesText = JSON.stringify(examples, null, 2);
   const graphText = JSON.stringify(graph, null, 2);
   const evalsText = JSON.stringify(evals, null, 2);
+  const mcpText = JSON.stringify(mcp, null, 2);
   const searchText = JSON.stringify(search, null, 2);
   const sourcesText = JSON.stringify(sources, null, 2);
   const provenance = {
@@ -288,6 +310,11 @@ function buildFixture(overrides = {}) {
         sha256: sha256Text(evalsText),
         bytes: Buffer.byteLength(evalsText, 'utf8')
       },
+      mcp_json: {
+        path: '/mcp.json',
+        sha256: sha256Text(mcpText),
+        bytes: Buffer.byteLength(mcpText, 'utf8')
+      },
       search_index_json: {
         path: '/search-index.json',
         sha256: sha256Text(searchText),
@@ -337,6 +364,7 @@ function buildFixture(overrides = {}) {
     [`${baseUrl}/examples.json`]: { body: examplesText },
     [`${baseUrl}/graph.json`]: { body: graphText },
     [`${baseUrl}/evals.json`]: { body: evalsText },
+    [`${baseUrl}/mcp.json`]: { body: mcpText },
     [`${baseUrl}/search-index.json`]: { body: searchText },
     [`${baseUrl}/sources.json`]: { body: sourcesText },
     [`${baseUrl}/llms.txt`]: { body: llms, contentType: 'text/plain; charset=utf-8' },

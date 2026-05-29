@@ -87,7 +87,7 @@ npm run verify:provenance
 npm run verify:provenance:signed
 ```
 
-The smoke test checks the homepage, `/agent.json`, `/openapi.json`, `/manifest.json`, `/llms.txt`, `/claims.json`, `/topics.json`, `/examples.json`, `/graph.json`, `/evals.json`, `/api/evidence`, `/api/search`, `/api/article`, `/api/claim`, `/api/source`, `/search-index.json`, `/sources.json`, `/provenance.json`, and `/drafts.html` against the live `https://anchorfact.org` deployment. Omit the expected-count environment variables when checking a future snapshot with different counts.
+The smoke test checks the homepage, `/agent.json`, `/openapi.json`, `/manifest.json`, `/llms.txt`, `/claims.json`, `/topics.json`, `/examples.json`, `/graph.json`, `/evals.json`, `/mcp.json`, `/api/evidence`, `/api/search`, `/api/article`, `/api/claim`, `/api/source`, `/search-index.json`, `/sources.json`, `/provenance.json`, and `/drafts.html` against the live `https://anchorfact.org` deployment. Omit the expected-count environment variables when checking a future snapshot with different counts.
 
 The provenance verifier fetches `/provenance.json`, recomputes SHA-256 checksums for the core AI entrypoints, checks public/draft/claim counts, confirms official build identity, and verifies the source commit against GitHub.
 
@@ -139,6 +139,7 @@ Only public articles contribute publishable facts to `/claims.json`.
 | `/examples.json` | Executable AI usage examples for dynamic API calls and signed static fallback workflows. |
 | `/graph.json` | Signed public graph of topic, article, claim, and source relationships. |
 | `/evals.json` | Executable golden integration checks for AI consumers and production smoke. |
+| `/mcp.json` | Signed local MCP installation manifest and tool metadata. |
 | `/api/evidence?q=...` | Read-only Cloudflare Pages Function for one-call public evidence packs with search hits, article summaries, claims, sources, and citation exports. Add `format=markdown` for answer-ready text context. |
 | `/api/search?q=...` | Read-only Cloudflare Pages Function for lightweight public record lookup. |
 | `/api/article?slug=...` | Read-only Cloudflare Pages Function for public article evidence bundles with claims and sources. |
@@ -169,6 +170,7 @@ Forks can run the same verifier with `--allow-unofficial --skip-commit` while th
 
 The Python MCP server and optional HTTP wrapper are backed by `dist/manifest.json`.
 They index public articles only and resolve articles by canonical slug, canonical URL, or JSON-LD `@id`.
+The signed `/mcp.json` artifact publishes the local stdio config snippet, HTTP wrapper metadata, and tool schemas for MCP-capable hosts.
 
 ```bash
 python src/mcp_server.py

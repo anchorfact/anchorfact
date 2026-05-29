@@ -219,6 +219,7 @@ export function buildEvalsIndex({
           'examples_json',
           'graph_json',
           'evals_json',
+          'mcp_json',
           'search_index_json',
           'sources_json',
           'llms_txt'

@@ -110,6 +110,7 @@ test('public machine entrypoints exclude drafts', () => {
   const examples = JSON.parse(readFileSync(join(distDir, 'examples.json'), 'utf-8'));
   const graph = JSON.parse(readFileSync(join(distDir, 'graph.json'), 'utf-8'));
   const evals = JSON.parse(readFileSync(join(distDir, 'evals.json'), 'utf-8'));
+  const mcp = JSON.parse(readFileSync(join(distDir, 'mcp.json'), 'utf-8'));
   const search = JSON.parse(readFileSync(join(distDir, 'search-index.json'), 'utf-8'));
   const sources = JSON.parse(readFileSync(join(distDir, 'sources.json'), 'utf-8'));
   const llms = readFileSync(join(distDir, 'llms.txt'), 'utf-8');
@@ -126,6 +127,7 @@ test('public machine entrypoints exclude drafts', () => {
   assertEq(agent.endpoints.examples.url, 'https://anchorfact.org/examples.json');
   assertEq(agent.endpoints.graph.url, 'https://anchorfact.org/graph.json');
   assertEq(agent.endpoints.evals.url, 'https://anchorfact.org/evals.json');
+  assertEq(agent.endpoints.mcp.url, 'https://anchorfact.org/mcp.json');
   assertEq(agent.endpoints.search_index.url, 'https://anchorfact.org/search-index.json');
   assertEq(agent.endpoints.sources.url, 'https://anchorfact.org/sources.json');
   assertEq(agent.endpoints.article_jsonld_template.path_template, '/{canonical_slug}/index.json');
@@ -139,6 +141,7 @@ test('public machine entrypoints exclude drafts', () => {
   assert(openapi.paths['/examples.json'], 'OpenAPI should expose examples endpoint');
   assert(openapi.paths['/graph.json'], 'OpenAPI should expose graph endpoint');
   assert(openapi.paths['/evals.json'], 'OpenAPI should expose evals endpoint');
+  assert(openapi.paths['/mcp.json'], 'OpenAPI should expose MCP endpoint');
   assert(openapi.paths['/search-index.json'], 'OpenAPI should expose search index endpoint');
   assertEq(topics.topic_count, 1);
   assert(topics.topics.some(topic => topic.id === 'ai'), 'topics index should include ai topic');
@@ -148,6 +151,8 @@ test('public machine entrypoints exclude drafts', () => {
   assertEq(evals.eval_count, 6);
   assert(evals.evals.some(evalCase => evalCase.id === 'evidence_pack_json'), 'evals index should include evidence pack check');
   assert(evals.evals.some(evalCase => evalCase.id === 'signed_provenance_static_artifacts'), 'evals index should include provenance artifact check');
+  assertEq(mcp.schema_version, 'anchorfact.mcp.v1');
+  assert(mcp.tools.some(tool => tool.name === 'anchorfact_search'), 'MCP profile should include search tool metadata');
   assertEq(graph.public_article_count, 1);
   assert(graph.nodes.some(node => node.id === 'article:ai/public-fixture'), 'graph should link to public article');
   assert(!graph.nodes.some(node => node.id === 'article:draft-fixture'), 'graph should exclude draft article');
