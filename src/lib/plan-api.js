@@ -1,16 +1,17 @@
-import {
-  OFFICIAL_SITE,
-  PLAN_API_SCHEMA_VERSION as BUILD_PLAN_API_SCHEMA_VERSION,
-  PROVENANCE_PATH,
-  publicUrl
-} from './build-metadata.js';
 import { rankSearchRecords } from './search-api.js';
 
-export const PLAN_API_SCHEMA_VERSION = BUILD_PLAN_API_SCHEMA_VERSION;
+export const PLAN_API_SCHEMA_VERSION = 'anchorfact.plan-api.v1';
 
+const OFFICIAL_SITE = 'https://anchorfact.org';
+const PROVENANCE_PATH = '/provenance.json';
 const MIN_LIMIT = 1;
 const DEFAULT_LIMIT = 3;
 const MAX_LIMIT = 10;
+
+function publicUrl(path, site = OFFICIAL_SITE) {
+  const normalizedPath = path.startsWith('/') ? path : `/${path}`;
+  return `${String(site || OFFICIAL_SITE).replace(/\/+$/, '')}${normalizedPath}`;
+}
 
 function normalizeText(value) {
   return String(value || '')
