@@ -155,11 +155,12 @@ test('public machine entrypoints exclude drafts', () => {
   assert(openapi.paths['/api/source'], 'OpenAPI should expose source API endpoint');
   assert(openapi.paths['/topics.json'], 'OpenAPI should expose topics endpoint');
   assertEq(capabilities.schema_version, 'anchorfact.capabilities.v1');
-  assertEq(capabilities.capability_count, 9);
+  assertEq(capabilities.capability_count, 10);
   const planner = capabilities.capabilities.find(capability => capability.id === 'plan_query');
   assert(planner, 'capabilities should include query planning');
   assert(planner.local_mcp_tools.some(tool => tool.tool === 'anchorfact_plan_query'), 'capabilities should map query planning to MCP');
   assert(capabilities.capabilities.some(capability => capability.id === 'answer_with_evidence'), 'capabilities should include evidence routing');
+  assert(capabilities.capabilities.some(capability => capability.id === 'assemble_prompt_context'), 'capabilities should include context routing');
   assert(capabilities.capabilities.some(capability => capability.id === 'resolve_many_references'), 'capabilities should include batch resolver routing');
   assertEq(coverage.schema_version, 'anchorfact.coverage.v1');
   assertEq(coverage.coverage_summary.public_articles, 1);
@@ -189,6 +190,7 @@ test('public machine entrypoints exclude drafts', () => {
   assertEq(mcp.schema_version, 'anchorfact.mcp.v1');
   assert(mcp.tools.some(tool => tool.name === 'anchorfact_plan_query'), 'MCP profile should include query planner tool metadata');
   assert(mcp.tools.some(tool => tool.name === 'anchorfact_search'), 'MCP profile should include search tool metadata');
+  assert(mcp.tools.some(tool => tool.name === 'anchorfact_context'), 'MCP profile should include context tool metadata');
   assert(mcp.tools.some(tool => tool.name === 'anchorfact_resolve_reference'), 'MCP profile should include resolver tool metadata');
   assert(mcp.tools.some(tool => tool.name === 'anchorfact_resolve_references'), 'MCP profile should include batch resolver tool metadata');
   assert(mcp.tools.some(tool => tool.name === 'anchorfact_cite_claim'), 'MCP profile should include citation tool metadata');

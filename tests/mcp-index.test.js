@@ -266,6 +266,51 @@ print(json.dumps({
   assertEq(result.missing_code, 'missing_or_invalid_query');
 });
 
+test('local context builder returns prompt context and excludes drafts', () => {
+  const result = runPython(`
+import json
+from pathlib import Path
+from mcp_context import build_context_payload, render_context_markdown
+dist = Path(r'''${pyPath(distDir)}''')
+status, payload = build_context_payload(dist, 'fixture evidence', 2)
+unsupported_status, unsupported = build_context_payload(dist, 'lunar dentistry', 2)
+missing_status, missing = build_context_payload(dist, '', 2)
+markdown = render_context_markdown(payload)
+print(json.dumps({
+    "status": status,
+    "schema": payload.get("schema_version"),
+    "coverage_status": payload.get("coverage_status"),
+    "should_use": payload.get("should_use_anchorfact"),
+    "evidence_pack_count": payload.get("evidence_pack_count"),
+    "top_slug": payload.get("evidence_packs", [{}])[0].get("canonical_slug"),
+    "citation_contract": payload.get("citation_contract", {}).get("include_anchorfact_claim_url"),
+    "has_draft_claim": "Draft facts" in json.dumps(payload),
+    "markdown_has_heading": "# AnchorFact Local Context" in markdown,
+    "markdown_has_claim": "Public fixture claim." in markdown,
+    "unsupported_status": unsupported_status,
+    "unsupported_coverage": unsupported.get("coverage_status"),
+    "unsupported_count": unsupported.get("evidence_pack_count"),
+    "missing_status": missing_status,
+    "missing_code": missing.get("error", {}).get("code"),
+}))
+`);
+  assertEq(result.status, 200);
+  assertEq(result.schema, 'anchorfact.context-api.v1');
+  assertEq(result.coverage_status, 'supported');
+  assertEq(result.should_use, true);
+  assertEq(result.evidence_pack_count, 1);
+  assertEq(result.top_slug, 'ai/public-fixture');
+  assertEq(result.citation_contract, true);
+  assertEq(result.has_draft_claim, false);
+  assertEq(result.markdown_has_heading, true);
+  assertEq(result.markdown_has_claim, true);
+  assertEq(result.unsupported_status, 200);
+  assertEq(result.unsupported_coverage, 'unsupported');
+  assertEq(result.unsupported_count, 0);
+  assertEq(result.missing_status, 400);
+  assertEq(result.missing_code, 'missing_or_invalid_query');
+});
+
 test('claim citation helper returns citation-ready JSON and Markdown', () => {
   const result = runPython(`
 import json

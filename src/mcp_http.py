@@ -10,6 +10,7 @@ from fastapi import FastAPI, Query
 from fastapi.responses import JSONResponse, PlainTextResponse
 
 from mcp_claims import build_citation_payload, render_citation_markdown
+from mcp_context import build_context_payload, render_context_markdown
 from mcp_index import (
     list_public_categories,
     load_article_detail,
@@ -108,6 +109,19 @@ def api_plan(
     limit: int = Query(3, ge=1, le=10),
 ):
     status, payload = build_plan_payload(DIST_DIR, q or query, limit)
+    return JSONResponse(payload, status_code=status)
+
+
+@app.get("/context")
+def api_context(
+    q: str | None = Query(None, description="Natural-language factual query"),
+    query: str | None = Query(None, description="Alias for q"),
+    limit: int = Query(3, ge=1, le=10),
+    format: str = Query("json", enum=["json", "markdown", "md"]),
+):
+    status, payload = build_context_payload(DIST_DIR, q or query, limit)
+    if status == 200 and format in {"markdown", "md"}:
+        return PlainTextResponse(render_context_markdown(payload), media_type="text/markdown")
     return JSONResponse(payload, status_code=status)
 
 

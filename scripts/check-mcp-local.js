@@ -18,6 +18,7 @@ export const REQUIRED_DIST_FILES = [
 export const REQUIRED_MCP_TOOLS = [
   'anchorfact_plan_query',
   'anchorfact_search',
+  'anchorfact_context',
   'anchorfact_get_article',
   'anchorfact_resolve_reference',
   'anchorfact_resolve_references',
@@ -75,6 +76,7 @@ dist = Path(${JSON.stringify(distDir)})
 dependencies = {name: importlib.util.find_spec(name) is not None for name in ${JSON.stringify(REQUIRED_PYTHON_PACKAGES)}}
 
 from mcp_claims import build_citation_payload
+from mcp_context import build_context_payload
 from mcp_index import list_public_categories, load_public_article_index
 from mcp_plan import build_plan_payload
 from mcp_resolve import build_reference_batch_payload, build_reference_payload
@@ -109,6 +111,7 @@ index = BM25Index()
 index.build(articles)
 search_results = index.search(query, confidence_min="low", limit=3) if query else []
 plan_status, plan_payload = build_plan_payload(dist, query, 3) if query else (400, {})
+context_status, context_payload = build_context_payload(dist, query, 3) if query else (400, {})
 cite_status, cite_payload = build_citation_payload(dist, claim_ref) if claim_ref else (400, {})
 resolve_status, resolve_payload = build_reference_payload(dist, claim_ref or (record or {}).get("canonical_slug"))
 batch_refs = [item for item in [claim_ref, (record or {}).get("canonical_slug")] if item]
@@ -129,6 +132,9 @@ print(json.dumps({
     "plan_status": plan_status,
     "plan_coverage_status": plan_payload.get("coverage_status"),
     "plan_should_use_anchorfact": plan_payload.get("should_use_anchorfact"),
+    "context_status": context_status,
+    "context_schema_version": context_payload.get("schema_version"),
+    "context_evidence_pack_count": context_payload.get("evidence_pack_count"),
     "cite_status": cite_status,
     "cite_schema_version": cite_payload.get("schema_version"),
     "resolve_status": resolve_status,
@@ -172,6 +178,13 @@ function checkPythonSummary(report, summary) {
   }
   checkEqual(report, failures, 'plan_status', summary.plan_status, 200);
   checkEqual(report, failures, 'plan_should_use_anchorfact', summary.plan_should_use_anchorfact, true);
+  checkEqual(report, failures, 'context_status', summary.context_status, 200);
+  checkEqual(report, failures, 'context_schema_version', summary.context_schema_version, 'anchorfact.context-api.v1');
+  if ((summary.context_evidence_pack_count || 0) < 1) {
+    const message = valueLabel('context_evidence_pack_count', summary.context_evidence_pack_count, '>= 1');
+    failures.push(message);
+    addFailure(report, message);
+  }
   checkEqual(report, failures, 'cite_status', summary.cite_status, 200);
   checkEqual(report, failures, 'resolve_status', summary.resolve_status, 200);
   checkEqual(report, failures, 'batch_status', summary.batch_status, 200);

@@ -149,6 +149,7 @@ export function buildExamplesIndex({
   const topic = topics.find(candidate => candidate.id === topicId) || null;
   const claim = chooseClaim(claims, record);
   const source = chooseSource(sources, claim);
+  const contextPath = queryPath('/api/context', { q: query, limit: 3 });
   const evidencePath = queryPath('/api/evidence', { q: query, limit: 3 });
   const evidenceMarkdownPath = queryPath('/api/evidence', { q: query, limit: 3, format: 'markdown' });
   const searchPath = queryPath('/api/search', { q: query, limit: 3 });
@@ -175,22 +176,28 @@ export function buildExamplesIndex({
         },
         {
           step: 2,
+          mcp_tool: { tool: 'anchorfact_context', arguments: { query, limit: 3, format: 'json' } },
+          use: 'Assemble local coverage guidance, evidence packs, and citation guardrails in one call.'
+        },
+        {
+          step: 3,
           mcp_tool: { tool: 'anchorfact_search', arguments: { query, confidence_min: 'low', limit: 3 } },
           use: 'Shortlist local public article records from the built dist artifacts.'
         },
         {
-          step: 3,
+          step: 4,
           mcp_tool: { tool: 'anchorfact_get_article', arguments: { article_id: record.canonical_slug } },
           use: 'Inspect the selected public article and its source context.'
         },
         {
-          step: 4,
+          step: 5,
           mcp_tool: { tool: 'anchorfact_cite_claim', arguments: { claim_id: claimShortId(claim?.id), format: 'markdown' } },
           use: 'Export citation-ready Markdown for the selected claim.'
         }
       ],
       http_equivalent: [
         call(queryPath('/api/plan', { q: query, limit: 3 }), site),
+        call(contextPath, site),
         call(evidencePath, site),
         call(citePath, site)
       ],

@@ -100,10 +100,12 @@ test('buildExamplesIndex produces executable AI workflow examples', () => {
 
   const mcpExample = payload.examples[0];
   assertEq(mcpExample.workflow[0].mcp_tool.tool, 'anchorfact_plan_query');
-  assertEq(mcpExample.workflow[1].mcp_tool.tool, 'anchorfact_search');
-  assertEq(mcpExample.workflow[2].mcp_tool.arguments.article_id, 'ai/3d-generation-gaussian-splatting');
-  assertEq(mcpExample.workflow[3].mcp_tool.tool, 'anchorfact_cite_claim');
+  assertEq(mcpExample.workflow[1].mcp_tool.tool, 'anchorfact_context');
+  assertEq(mcpExample.workflow[2].mcp_tool.tool, 'anchorfact_search');
+  assertEq(mcpExample.workflow[3].mcp_tool.arguments.article_id, 'ai/3d-generation-gaussian-splatting');
+  assertEq(mcpExample.workflow[4].mcp_tool.tool, 'anchorfact_cite_claim');
   assert(mcpExample.http_equivalent.some(call => call.path.includes('/api/plan?')), 'MCP example should name HTTP planner equivalent');
+  assert(mcpExample.http_equivalent.some(call => call.path.includes('/api/context?')), 'MCP example should name HTTP context equivalent');
 
   const evidenceExample = payload.examples[1];
   assert(evidenceExample.workflow[0].call.path.includes('/api/evidence?q=gaussian+splatting&limit=3'), 'evidence example should include encoded query path');

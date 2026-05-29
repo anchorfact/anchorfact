@@ -87,6 +87,29 @@ export function buildCapabilitiesIndex({
       ])
     },
     {
+      id: 'assemble_prompt_context',
+      intent: 'Fetch one AI prompt context pack with coverage status, fallback guidance, evidence packs, and citation guardrails.',
+      use_when: [
+        'The agent wants one call before drafting an answer.',
+        'The agent needs both supported/unsupported guidance and source-mapped evidence in the same payload.'
+      ],
+      input_patterns: ['natural_language_query'],
+      primary_call: call('/api/context?q={query}&limit=3', site),
+      local_mcp_tools: localMcpTools(
+        localMcpTool('anchorfact_context', { query: '{query}', limit: 3, format: 'json' }, 'Assemble local planning guidance and public evidence packs in one MCP call.')
+      ),
+      output_formats: ['application/json', 'text/markdown'],
+      follow_up_calls: [
+        call('/api/cite?id={claim_id}', site),
+        call('/api/resolve?ref={reference}', site)
+      ],
+      fallback_artifacts: ['/search-index.json', '/claims.json', '/sources.json', '/coverage.json'],
+      trust_requirements: trustRequirements([
+        'Do not draft a cited answer from the context payload unless evidence_pack_count is greater than zero.',
+        'When coverage_status is unsupported, use external primary sources instead of citing AnchorFact.'
+      ])
+    },
+    {
       id: 'search_public_records',
       intent: 'Find candidate public AnchorFact records before fetching a full article or claim.',
       use_when: [
@@ -219,6 +242,7 @@ export function buildCapabilitiesIndex({
       primary_call: call('/mcp.json', site),
       local_mcp_tools: localMcpTools(
         localMcpTool('anchorfact_plan_query', { query: '{query}', limit: 3 }, 'Plan local coverage.'),
+        localMcpTool('anchorfact_context', { query: '{query}', limit: 3, format: 'json' }, 'Assemble local answer context.'),
         localMcpTool('anchorfact_search', { query: '{query}', confidence_min: 'medium', limit: 5 }, 'Search local public records.'),
         localMcpTool('anchorfact_get_article', { article_id: '{canonical_slug}' }, 'Retrieve one local article.'),
         localMcpTool('anchorfact_resolve_reference', { reference: '{reference}' }, 'Resolve one local reference.'),
@@ -256,7 +280,7 @@ export function buildCapabilitiesIndex({
     default_sequence: [
       'verify_official_build',
       'plan_query',
-      'answer_with_evidence',
+      'assemble_prompt_context',
       'cite_atomic_claim'
     ],
     selection_rules: [
@@ -267,6 +291,10 @@ export function buildCapabilitiesIndex({
       {
         when: 'You have a natural-language factual question.',
         use_capability: 'answer_with_evidence'
+      },
+      {
+        when: 'You need one prompt-ready context pack before drafting an answer.',
+        use_capability: 'assemble_prompt_context'
       },
       {
         when: 'You only need to shortlist public records.',

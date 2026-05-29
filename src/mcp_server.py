@@ -13,6 +13,7 @@ from mcp.server.stdio import stdio_server
 from mcp.types import TextContent, Tool
 
 from mcp_claims import build_citation_payload, render_citation_markdown
+from mcp_context import build_context_payload, render_context_markdown
 from mcp_index import (
     list_public_categories,
     load_article_detail,
@@ -97,6 +98,23 @@ async def list_tools() -> list[Tool]:
                         "description": "Minimum confidence filter, default medium",
                     },
                     "limit": {"type": "integer", "description": "Maximum result count, default 5, max 20"},
+                },
+                "required": ["query"],
+            },
+        ),
+        Tool(
+            name="anchorfact_context",
+            description="Return one local prompt context pack with coverage status, fallback guidance, evidence packs, and citation guardrails.",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "query": {"type": "string", "description": "Natural-language factual query to contextualize."},
+                    "limit": {"type": "integer", "description": "Maximum evidence pack count, default 3, max 10"},
+                    "format": {
+                        "type": "string",
+                        "enum": ["json", "markdown", "md"],
+                        "description": "Output format, default json.",
+                    },
                 },
                 "required": ["query"],
             },
@@ -194,6 +212,15 @@ async def call_tool(name: str, arguments: dict[str, Any]) -> list[TextContent]:
             "source": "AnchorFact - anchorfact.org",
             "search_engine": "BM25",
         }, ensure_ascii=False, indent=2))]
+
+    if name == "anchorfact_context":
+        query = arguments.get("query", arguments.get("q", ""))
+        limit = arguments.get("limit", 3)
+        output_format = str(arguments.get("format", "json")).strip().lower()
+        status, payload = build_context_payload(DIST_DIR, query, limit)
+        if status == 200 and output_format in {"markdown", "md"}:
+            return [TextContent(type="text", text=render_context_markdown(payload))]
+        return [TextContent(type="text", text=json.dumps(payload, ensure_ascii=False, indent=2))]
 
     if name == "anchorfact_get_article":
         article_id = arguments.get("article_id", "")

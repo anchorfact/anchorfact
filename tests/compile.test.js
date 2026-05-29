@@ -207,12 +207,12 @@ test('agent profile describes the machine contract', () => {
   assertEq(agent.current_snapshot.draft_articles, 1);
   assertEq(agent.current_snapshot.public_claims, 2);
   assertEq(agent.current_snapshot.topics, 1);
-  assertEq(agent.current_snapshot.capabilities, 9);
+  assertEq(agent.current_snapshot.capabilities, 10);
   assertEq(agent.current_snapshot.examples, 7);
   assert(agent.current_snapshot.graph_nodes >= 1, 'agent profile should expose graph node count');
   assert(agent.current_snapshot.graph_edges >= 1, 'agent profile should expose graph edge count');
   assertEq(agent.current_snapshot.evals, 15);
-  assertEq(agent.current_snapshot.mcp_tools, 7);
+  assertEq(agent.current_snapshot.mcp_tools, 8);
   assert(agent.current_snapshot.unique_sources >= 1, 'agent profile should expose source count');
   assertEq(agent.endpoints.claims.url, 'https://anchorfact.org/claims.json');
   assertEq(agent.endpoints.topics.url, 'https://anchorfact.org/topics.json');
@@ -352,7 +352,7 @@ test('capabilities.json describes AI endpoint routing', () => {
   const capabilities = JSON.parse(readFileSync(join(distDir, 'capabilities.json'), 'utf-8'));
   assertEq(capabilities.schema_version, 'anchorfact.capabilities.v1');
   assertEq(capabilities.provenance_url, 'https://anchorfact.org/provenance.json');
-  assertEq(capabilities.capability_count, 9);
+  assertEq(capabilities.capability_count, 10);
   const planner = capabilities.capabilities.find(capability => capability.id === 'plan_query');
   assert(planner, 'capabilities should include query planning workflow');
   assert(planner.local_mcp_tools.some(tool => tool.tool === 'anchorfact_plan_query'), 'plan capability should include local MCP planner mapping');
@@ -391,6 +391,7 @@ test('examples.json describes executable AI usage examples', () => {
   ]);
   const mcpExample = examples.examples[0];
   assert(mcpExample.workflow.some(step => step.mcp_tool?.tool === 'anchorfact_plan_query'), 'examples should show MCP planner usage');
+  assert(mcpExample.workflow.some(step => step.mcp_tool?.tool === 'anchorfact_context'), 'examples should show MCP context usage');
   assert(mcpExample.workflow.some(step => step.mcp_tool?.tool === 'anchorfact_cite_claim'), 'examples should show MCP citation usage');
   const evidenceExample = examples.examples[1];
   assert(evidenceExample.workflow.some(step => step.call.path.includes('/api/evidence?')), 'examples should show evidence API usage');
@@ -457,6 +458,7 @@ test('evals.json describes executable AI integration checks', () => {
   assert(evals.evals.some(evalCase => evalCase.call.path === '/graph.json'), 'evals should include graph checks');
   const mcpEval = evals.evals.find(evalCase => evalCase.id === 'mcp_tool_catalog');
   assert(mcpEval.expected.required_tools.includes('anchorfact_plan_query'), 'evals should include MCP planner metadata check');
+  assert(mcpEval.expected.required_tools.includes('anchorfact_context'), 'evals should include MCP context metadata check');
   const provenanceEval = evals.evals.find(evalCase => evalCase.id === 'signed_provenance_static_artifacts');
   assert(provenanceEval.expected.required_artifacts.includes('evals_json'), 'evals should require self hash in provenance');
   assert(provenanceEval.expected.required_artifacts.includes('mcp_json'), 'evals should require MCP hash in provenance');
@@ -474,6 +476,7 @@ test('mcp.json describes local MCP installation and tools', () => {
   assertEq(mcp.tools.map(tool => tool.name), [
     'anchorfact_plan_query',
     'anchorfact_search',
+    'anchorfact_context',
     'anchorfact_get_article',
     'anchorfact_resolve_reference',
     'anchorfact_resolve_references',

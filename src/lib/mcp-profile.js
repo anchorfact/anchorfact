@@ -87,6 +87,7 @@ export function buildMcpProfile({
         endpoints: {
           health: `${HTTP_CONFIG.base_url}/health`,
           plan: `${HTTP_CONFIG.base_url}/plan?q={query}`,
+          context: `${HTTP_CONFIG.base_url}/context?q={query}`,
           search: `${HTTP_CONFIG.base_url}/search?q={query}`,
           article: `${HTTP_CONFIG.base_url}/article?id={canonical_slug}`,
           resolve: `${HTTP_CONFIG.base_url}/resolve?ref={reference}`,
@@ -128,6 +129,26 @@ export function buildMcpProfile({
             maximum: 20,
             default: 5,
             description: 'Maximum result count.'
+          }
+        }
+      }),
+      tool('anchorfact_context', 'Return one local prompt context pack with coverage status, fallback guidance, evidence packs, and citation guardrails.', {
+        type: 'object',
+        required: ['query'],
+        properties: {
+          query: { type: 'string', description: 'Natural-language factual query to contextualize.' },
+          limit: {
+            type: 'integer',
+            minimum: 1,
+            maximum: 10,
+            default: 3,
+            description: 'Maximum evidence pack count.'
+          },
+          format: {
+            type: 'string',
+            enum: ['json', 'markdown', 'md'],
+            default: 'json',
+            description: 'Output format.'
           }
         }
       }),

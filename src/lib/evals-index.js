@@ -341,7 +341,7 @@ export function buildEvalsIndex({
     },
     {
       id: 'mcp_tool_catalog',
-      intent: 'Confirm the signed MCP profile declares local tools needed for planning, search, retrieval, resolution, and citation.',
+      intent: 'Confirm the signed MCP profile declares local tools needed for planning, prompt context, search, retrieval, resolution, and citation.',
       call: call('/mcp.json', site),
       expected: {
         status: 200,
@@ -350,6 +350,7 @@ export function buildEvalsIndex({
         required_tools: [
           'anchorfact_plan_query',
           'anchorfact_search',
+          'anchorfact_context',
           'anchorfact_get_article',
           'anchorfact_resolve_reference',
           'anchorfact_resolve_references',

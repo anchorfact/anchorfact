@@ -38,6 +38,7 @@ test('buildCapabilitiesIndex publishes AI endpoint selection rules', () => {
       tools: [
         { name: 'anchorfact_plan_query' },
         { name: 'anchorfact_search' },
+        { name: 'anchorfact_context' },
         { name: 'anchorfact_get_article' },
         { name: 'anchorfact_resolve_reference' },
         { name: 'anchorfact_resolve_references' },
@@ -51,11 +52,12 @@ test('buildCapabilitiesIndex publishes AI endpoint selection rules', () => {
   assertEq(payload.provenance_url, 'https://anchorfact.org/provenance.json');
   assertEq(payload.current_snapshot.public_articles, 555);
   assertEq(payload.current_snapshot.public_claims, 1685);
-  assertEq(payload.current_snapshot.mcp_tools, 7);
-  assertEq(payload.capability_count, 9);
+  assertEq(payload.current_snapshot.mcp_tools, 8);
+  assertEq(payload.capability_count, 10);
   assertEq(payload.capabilities.map(capability => capability.id), [
     'plan_query',
     'answer_with_evidence',
+    'assemble_prompt_context',
     'search_public_records',
     'resolve_single_reference',
     'resolve_many_references',
@@ -78,6 +80,11 @@ test('buildCapabilitiesIndex publishes AI endpoint selection rules', () => {
   assert(evidence.follow_up_calls.some(call => call.path === '/api/cite?id={claim_id}'), 'evidence capability should point to citation export');
   assert(evidence.fallback_artifacts.includes('/search-index.json'), 'evidence capability should name static fallback artifacts');
 
+  const context = payload.capabilities.find(capability => capability.id === 'assemble_prompt_context');
+  assertEq(context.primary_call.path, '/api/context?q={query}&limit=3');
+  assertEq(context.local_mcp_tools[0].tool, 'anchorfact_context');
+  assert(context.trust_requirements.some(requirement => requirement.includes('evidence_pack_count')), 'context capability should guard unsupported payloads');
+
   const batch = payload.capabilities.find(capability => capability.id === 'resolve_many_references');
   assertEq(batch.primary_call.path, '/api/resolve-batch?ref={reference}&ref={reference}');
   assertEq(batch.local_mcp_tools[0].tool, 'anchorfact_resolve_references');
@@ -89,6 +96,7 @@ test('buildCapabilitiesIndex publishes AI endpoint selection rules', () => {
   const mcp = payload.capabilities.find(capability => capability.id === 'connect_local_mcp');
   assertEq(mcp.local_mcp_tools.map(tool => tool.tool), [
     'anchorfact_plan_query',
+    'anchorfact_context',
     'anchorfact_search',
     'anchorfact_get_article',
     'anchorfact_resolve_reference',
@@ -100,10 +108,11 @@ test('buildCapabilitiesIndex publishes AI endpoint selection rules', () => {
   assertEq(payload.default_sequence, [
     'verify_official_build',
     'plan_query',
-    'answer_with_evidence',
+    'assemble_prompt_context',
     'cite_atomic_claim'
   ]);
   assert(payload.selection_rules.some(rule => rule.use_capability === 'plan_query'), 'selection rules should include query planning');
+  assert(payload.selection_rules.some(rule => rule.use_capability === 'assemble_prompt_context'), 'selection rules should include prompt context');
   assert(payload.selection_rules.some(rule => rule.use_capability === 'resolve_many_references'), 'selection rules should include batch resolution');
 });
 

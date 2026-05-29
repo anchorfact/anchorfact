@@ -85,6 +85,9 @@ function passingPythonSummary() {
     plan_status: 200,
     plan_coverage_status: 'supported',
     plan_should_use_anchorfact: true,
+    context_status: 200,
+    context_schema_version: 'anchorfact.context-api.v1',
+    context_evidence_pack_count: 1,
     cite_status: 200,
     cite_schema_version: 'anchorfact.cite-api.v1',
     resolve_status: 200,
@@ -123,6 +126,8 @@ test('checkLocalMcp fails on MCP profile drift and Python failures', () => {
       ...JSON.parse(passingPythonSummary()),
       dependencies: { mcp: false, fastapi: true, uvicorn: true },
       search_result_count: 0,
+      context_status: 500,
+      context_evidence_pack_count: 0,
       cite_status: 404
     })
   });
@@ -132,6 +137,7 @@ test('checkLocalMcp fails on MCP profile drift and Python failures', () => {
   assert(report.failures.some(failure => failure.includes('public_articles')), 'count drift should fail');
   assert(report.failures.some(failure => failure.includes('mcp')), 'missing Python dependency should fail');
   assert(report.failures.some(failure => failure.includes('search')), 'search failure should fail');
+  assert(report.failures.some(failure => failure.includes('context')), 'context failure should fail');
   assert(report.failures.some(failure => failure.includes('cite')), 'cite failure should fail');
 });
 
