@@ -11,6 +11,7 @@ from fastapi.responses import JSONResponse, PlainTextResponse
 
 from mcp_claims import build_citation_payload, render_citation_markdown
 from mcp_context import build_context_payload, render_context_markdown
+from mcp_health import build_health_payload, render_health_markdown
 from mcp_index import (
     list_public_categories,
     load_article_detail,
@@ -86,6 +87,14 @@ def article_response(article_id: str):
 @app.get("/health")
 def health():
     return {"status": "ok", "articles": len(load_index())}
+
+
+@app.get("/corpus-health")
+def api_corpus_health(format: str = Query("json", enum=["json", "markdown", "md"])):
+    status, payload = build_health_payload(DIST_DIR)
+    if status == 200 and format in {"markdown", "md"}:
+        return PlainTextResponse(render_health_markdown(payload), media_type="text/markdown")
+    return JSONResponse(payload, status_code=status)
 
 
 @app.get("/search")

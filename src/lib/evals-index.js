@@ -371,6 +371,7 @@ export function buildEvalsIndex({
           'anchorfact_plan_query',
           'anchorfact_search',
           'anchorfact_context',
+          'anchorfact_content_health',
           'anchorfact_get_article',
           'anchorfact_resolve_reference',
           'anchorfact_resolve_references',

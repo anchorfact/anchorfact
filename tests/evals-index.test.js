@@ -210,6 +210,7 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
   assertEq(mcpEval.expected.schema_version, 'anchorfact.mcp.v1');
   assert(mcpEval.expected.required_tools.includes('anchorfact_plan_query'), 'MCP eval should require query planner tool metadata');
   assert(mcpEval.expected.required_tools.includes('anchorfact_context'), 'MCP eval should require context tool metadata');
+  assert(mcpEval.expected.required_tools.includes('anchorfact_content_health'), 'MCP eval should require corpus health tool metadata');
   assert(mcpEval.expected.required_tools.includes('anchorfact_cite_claim'), 'MCP eval should require citation tool metadata');
 });
 

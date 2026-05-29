@@ -14,6 +14,7 @@ from mcp.types import TextContent, Tool
 
 from mcp_claims import build_citation_payload, render_citation_markdown
 from mcp_context import build_context_payload, render_context_markdown
+from mcp_health import build_health_payload, render_health_markdown
 from mcp_index import (
     list_public_categories,
     load_article_detail,
@@ -120,6 +121,20 @@ async def list_tools() -> list[Tool]:
             },
         ),
         Tool(
+            name="anchorfact_content_health",
+            description="Return local corpus health, public source coverage, trust boundaries, and the draft repair queue.",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "format": {
+                        "type": "string",
+                        "enum": ["json", "markdown", "md"],
+                        "description": "Output format, default json.",
+                    },
+                },
+            },
+        ),
+        Tool(
             name="anchorfact_get_article",
             description="Retrieve one public article by canonical slug, canonical URL, or JSON-LD @id.",
             inputSchema={
@@ -220,6 +235,13 @@ async def call_tool(name: str, arguments: dict[str, Any]) -> list[TextContent]:
         status, payload = build_context_payload(DIST_DIR, query, limit)
         if status == 200 and output_format in {"markdown", "md"}:
             return [TextContent(type="text", text=render_context_markdown(payload))]
+        return [TextContent(type="text", text=json.dumps(payload, ensure_ascii=False, indent=2))]
+
+    if name == "anchorfact_content_health":
+        output_format = str(arguments.get("format", "json")).strip().lower()
+        status, payload = build_health_payload(DIST_DIR)
+        if status == 200 and output_format in {"markdown", "md"}:
+            return [TextContent(type="text", text=render_health_markdown(payload))]
         return [TextContent(type="text", text=json.dumps(payload, ensure_ascii=False, indent=2))]
 
     if name == "anchorfact_get_article":

@@ -168,6 +168,24 @@ writeFileSync(join(distDir, 'content-health.json'), JSON.stringify({
     source_coverage: { full: 1, partial: 0, zero: 0 },
     claim_mapping: { total: 1, mapped: 1, ratio: 1 }
   },
+  draft: {
+    repair_queue: {
+      candidate_count: 1,
+      next_batch_size: 1,
+      next_batch: [
+        {
+          canonical_slug: 'ai/draft-fixture',
+          title: 'Draft Fixture',
+          confidence_level: 'low',
+          sources_verified: 0,
+          sources_total: 1,
+          quality_reasons: ['no_verified_sources'],
+          repair_complexity: 1
+        }
+      ],
+      selection_policy: ['Prioritize lower repair_complexity values first.']
+    }
+  },
   machine_guidance: ['Use local MCP context for prompt assembly.'],
   trust_boundaries: {
     draft_entries_excluded_from_ai_entrypoints: true,
@@ -338,6 +356,34 @@ print(json.dumps({
   assertEq(result.unsupported_count, 0);
   assertEq(result.missing_status, 400);
   assertEq(result.missing_code, 'missing_or_invalid_query');
+});
+
+test('local corpus health helper exposes draft repair queue', () => {
+  const result = runPython(`
+import json
+from pathlib import Path
+from mcp_health import build_health_payload, render_health_markdown
+status, payload = build_health_payload(Path(r'''${pyPath(distDir)}'''))
+markdown = render_health_markdown(payload)
+print(json.dumps({
+    "status": status,
+    "schema": payload.get("schema_version"),
+    "public_articles": payload.get("snapshot", {}).get("public_articles"),
+    "repair_candidate_count": payload.get("draft", {}).get("repair_queue", {}).get("candidate_count"),
+    "next_slug": payload.get("draft", {}).get("repair_queue", {}).get("next_batch", [{}])[0].get("canonical_slug"),
+    "policy": payload.get("draft", {}).get("repair_queue", {}).get("selection_policy", []),
+    "markdown_has_heading": "# AnchorFact Local Corpus Health" in markdown,
+    "markdown_has_queue": "Draft Repair Queue" in markdown,
+}))
+`);
+  assertEq(result.status, 200);
+  assertEq(result.schema, 'anchorfact.content-health.v1');
+  assertEq(result.public_articles, 1);
+  assertEq(result.repair_candidate_count, 1);
+  assertEq(result.next_slug, 'ai/draft-fixture');
+  assertEq(result.policy.some(item => item.includes('repair_complexity')), true);
+  assertEq(result.markdown_has_heading, true);
+  assertEq(result.markdown_has_queue, true);
 });
 
 test('claim citation helper returns citation-ready JSON and Markdown', () => {

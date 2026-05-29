@@ -124,7 +124,7 @@ test('runAiEvals executes JSON, Markdown, MCP, and provenance eval expectations'
               status: 200,
               content_type: 'application/json',
               schema_version: 'anchorfact.mcp.v1',
-              required_tools: ['anchorfact_plan_query', 'anchorfact_cite_claim']
+              required_tools: ['anchorfact_plan_query', 'anchorfact_content_health', 'anchorfact_cite_claim']
             }
           },
           {
@@ -192,7 +192,11 @@ test('runAiEvals executes JSON, Markdown, MCP, and provenance eval expectations'
       '/api/evidence?q=gaussian&format=markdown': jsonResponse('# AnchorFact Evidence Pack', 'text/markdown; charset=utf-8'),
       '/mcp.json': jsonResponse({
         schema_version: 'anchorfact.mcp.v1',
-        tools: [{ name: 'anchorfact_plan_query' }, { name: 'anchorfact_cite_claim' }]
+        tools: [
+          { name: 'anchorfact_plan_query' },
+          { name: 'anchorfact_content_health' },
+          { name: 'anchorfact_cite_claim' }
+        ]
       }),
       '/content-health.json': jsonResponse({
         schema_version: 'anchorfact.content-health.v1',

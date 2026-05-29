@@ -55,6 +55,18 @@ function writeFixture({ omitTool = null, snapshotPublic = 1 } = {}) {
   writeJson(join(distDir, 'coverage.json'), { topic_coverage: [] });
   writeJson(join(distDir, 'topics.json'), { topics: [] });
   writeJson(join(distDir, 'capabilities.json'), {});
+  writeJson(join(distDir, 'content-health.json'), {
+    schema_version: 'anchorfact.content-health.v1',
+    snapshot: { public_articles: 1, draft_articles: 0, public_claims: 1 },
+    draft: {
+      repair_queue: {
+        candidate_count: 1,
+        next_batch: [{ canonical_slug: 'ai/draft-a' }],
+        selection_policy: ['Prioritize lower repair_complexity values first.']
+      }
+    },
+    trust_boundaries: { draft_entries_excluded_from_ai_entrypoints: true }
+  });
   writeJson(join(distDir, 'mcp.json'), {
     schema_version: 'anchorfact.mcp.v1',
     current_snapshot: {
@@ -88,6 +100,10 @@ function passingPythonSummary() {
     context_status: 200,
     context_schema_version: 'anchorfact.context-api.v1',
     context_evidence_pack_count: 1,
+    health_status: 200,
+    health_schema_version: 'anchorfact.content-health.v1',
+    health_repair_queue_candidates: 1,
+    health_repair_queue_next_batch: 1,
     cite_status: 200,
     cite_schema_version: 'anchorfact.cite-api.v1',
     resolve_status: 200,
@@ -128,6 +144,8 @@ test('checkLocalMcp fails on MCP profile drift and Python failures', () => {
       search_result_count: 0,
       context_status: 500,
       context_evidence_pack_count: 0,
+      health_status: 500,
+      health_repair_queue_candidates: 0,
       cite_status: 404
     })
   });
@@ -138,6 +156,7 @@ test('checkLocalMcp fails on MCP profile drift and Python failures', () => {
   assert(report.failures.some(failure => failure.includes('mcp')), 'missing Python dependency should fail');
   assert(report.failures.some(failure => failure.includes('search')), 'search failure should fail');
   assert(report.failures.some(failure => failure.includes('context')), 'context failure should fail');
+  assert(report.failures.some(failure => failure.includes('health')), 'health failure should fail');
   assert(report.failures.some(failure => failure.includes('cite')), 'cite failure should fail');
 });
 

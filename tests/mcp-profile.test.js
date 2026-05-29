@@ -48,6 +48,7 @@ test('buildMcpProfile publishes local MCP install and tool metadata', () => {
   assertEq(profile.installation.stdio.config_snippet.mcpServers.anchorfact.command, 'python');
   assertEq(profile.installation.stdio.config_snippet.mcpServers.anchorfact.args, ['src/mcp_server.py']);
   assertEq(profile.installation.local_http_wrapper.base_url, 'http://127.0.0.1:8000');
+  assertEq(profile.installation.local_http_wrapper.endpoints.corpus_health, 'http://127.0.0.1:8000/corpus-health');
   assertEq(profile.installation.local_http_wrapper.endpoints.plan, 'http://127.0.0.1:8000/plan?q={query}');
   assertEq(profile.installation.local_http_wrapper.endpoints.context, 'http://127.0.0.1:8000/context?q={query}');
   assertEq(profile.installation.local_http_wrapper.endpoints.resolve, 'http://127.0.0.1:8000/resolve?ref={reference}');
@@ -57,6 +58,7 @@ test('buildMcpProfile publishes local MCP install and tool metadata', () => {
     'anchorfact_plan_query',
     'anchorfact_search',
     'anchorfact_context',
+    'anchorfact_content_health',
     'anchorfact_get_article',
     'anchorfact_resolve_reference',
     'anchorfact_resolve_references',

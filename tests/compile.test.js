@@ -211,14 +211,14 @@ test('agent profile describes the machine contract', () => {
   assertEq(agent.current_snapshot.draft_articles, 1);
   assertEq(agent.current_snapshot.public_claims, 2);
   assertEq(agent.current_snapshot.topics, 1);
-  assertEq(agent.current_snapshot.capabilities, 10);
+  assertEq(agent.current_snapshot.capabilities, 11);
   assertEq(agent.current_snapshot.content_health_public_articles, 1);
   assertEq(agent.current_snapshot.content_health_draft_articles, 1);
   assertEq(agent.current_snapshot.examples, 7);
   assert(agent.current_snapshot.graph_nodes >= 1, 'agent profile should expose graph node count');
   assert(agent.current_snapshot.graph_edges >= 1, 'agent profile should expose graph edge count');
   assertEq(agent.current_snapshot.evals, 16);
-  assertEq(agent.current_snapshot.mcp_tools, 8);
+  assertEq(agent.current_snapshot.mcp_tools, 9);
   assert(agent.current_snapshot.unique_sources >= 1, 'agent profile should expose source count');
   assertEq(agent.endpoints.claims.url, 'https://anchorfact.org/claims.json');
   assertEq(agent.endpoints.topics.url, 'https://anchorfact.org/topics.json');
@@ -363,11 +363,12 @@ test('capabilities.json describes AI endpoint routing', () => {
   const capabilities = JSON.parse(readFileSync(join(distDir, 'capabilities.json'), 'utf-8'));
   assertEq(capabilities.schema_version, 'anchorfact.capabilities.v1');
   assertEq(capabilities.provenance_url, 'https://anchorfact.org/provenance.json');
-  assertEq(capabilities.capability_count, 10);
+  assertEq(capabilities.capability_count, 11);
   const planner = capabilities.capabilities.find(capability => capability.id === 'plan_query');
   assert(planner, 'capabilities should include query planning workflow');
   assert(planner.local_mcp_tools.some(tool => tool.tool === 'anchorfact_plan_query'), 'plan capability should include local MCP planner mapping');
   assert(capabilities.capabilities.some(capability => capability.id === 'answer_with_evidence'), 'capabilities should include evidence workflow');
+  assert(capabilities.capabilities.some(capability => capability.id === 'inspect_corpus_health'), 'capabilities should include corpus health workflow');
   assert(capabilities.capabilities.some(capability => capability.id === 'resolve_many_references'), 'capabilities should include batch resolver workflow');
   assert(capabilities.capabilities.some(capability => capability.id === 'verify_official_build'), 'capabilities should include provenance verification workflow');
   assert(capabilities.default_sequence.includes('verify_official_build'), 'capabilities should put provenance in the default sequence');
@@ -487,6 +488,7 @@ test('evals.json describes executable AI integration checks', () => {
   const mcpEval = evals.evals.find(evalCase => evalCase.id === 'mcp_tool_catalog');
   assert(mcpEval.expected.required_tools.includes('anchorfact_plan_query'), 'evals should include MCP planner metadata check');
   assert(mcpEval.expected.required_tools.includes('anchorfact_context'), 'evals should include MCP context metadata check');
+  assert(mcpEval.expected.required_tools.includes('anchorfact_content_health'), 'evals should include MCP corpus health metadata check');
   const provenanceEval = evals.evals.find(evalCase => evalCase.id === 'signed_provenance_static_artifacts');
   assert(provenanceEval.expected.required_artifacts.includes('evals_json'), 'evals should require self hash in provenance');
   assert(provenanceEval.expected.required_artifacts.includes('mcp_json'), 'evals should require MCP hash in provenance');
@@ -502,10 +504,12 @@ test('mcp.json describes local MCP installation and tools', () => {
   assertEq(mcp.provenance_url, 'https://anchorfact.org/provenance.json');
   assertEq(mcp.installation.stdio.config_snippet.mcpServers.anchorfact.command, 'python');
   assertEq(mcp.installation.stdio.config_snippet.mcpServers.anchorfact.args, ['src/mcp_server.py']);
+  assertEq(mcp.installation.local_http_wrapper.endpoints.corpus_health, 'http://127.0.0.1:8000/corpus-health');
   assertEq(mcp.tools.map(tool => tool.name), [
     'anchorfact_plan_query',
     'anchorfact_search',
     'anchorfact_context',
+    'anchorfact_content_health',
     'anchorfact_get_article',
     'anchorfact_resolve_reference',
     'anchorfact_resolve_references',

@@ -86,6 +86,7 @@ export function buildMcpProfile({
         base_url: HTTP_CONFIG.base_url,
         endpoints: {
           health: `${HTTP_CONFIG.base_url}/health`,
+          corpus_health: `${HTTP_CONFIG.base_url}/corpus-health`,
           plan: `${HTTP_CONFIG.base_url}/plan?q={query}`,
           context: `${HTTP_CONFIG.base_url}/context?q={query}`,
           search: `${HTTP_CONFIG.base_url}/search?q={query}`,
@@ -144,6 +145,17 @@ export function buildMcpProfile({
             default: 3,
             description: 'Maximum evidence pack count.'
           },
+          format: {
+            type: 'string',
+            enum: ['json', 'markdown', 'md'],
+            default: 'json',
+            description: 'Output format.'
+          }
+        }
+      }),
+      tool('anchorfact_content_health', 'Return local corpus health, public source coverage, trust boundaries, and the draft repair queue.', {
+        type: 'object',
+        properties: {
           format: {
             type: 'string',
             enum: ['json', 'markdown', 'md'],

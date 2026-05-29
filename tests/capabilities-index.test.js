@@ -39,6 +39,7 @@ test('buildCapabilitiesIndex publishes AI endpoint selection rules', () => {
         { name: 'anchorfact_plan_query' },
         { name: 'anchorfact_search' },
         { name: 'anchorfact_context' },
+        { name: 'anchorfact_content_health' },
         { name: 'anchorfact_get_article' },
         { name: 'anchorfact_resolve_reference' },
         { name: 'anchorfact_resolve_references' },
@@ -52,12 +53,13 @@ test('buildCapabilitiesIndex publishes AI endpoint selection rules', () => {
   assertEq(payload.provenance_url, 'https://anchorfact.org/provenance.json');
   assertEq(payload.current_snapshot.public_articles, 555);
   assertEq(payload.current_snapshot.public_claims, 1685);
-  assertEq(payload.current_snapshot.mcp_tools, 8);
-  assertEq(payload.capability_count, 10);
+  assertEq(payload.current_snapshot.mcp_tools, 9);
+  assertEq(payload.capability_count, 11);
   assertEq(payload.capabilities.map(capability => capability.id), [
     'plan_query',
     'answer_with_evidence',
     'assemble_prompt_context',
+    'inspect_corpus_health',
     'search_public_records',
     'resolve_single_reference',
     'resolve_many_references',
@@ -85,6 +87,12 @@ test('buildCapabilitiesIndex publishes AI endpoint selection rules', () => {
   assertEq(context.local_mcp_tools[0].tool, 'anchorfact_context');
   assert(context.trust_requirements.some(requirement => requirement.includes('evidence_pack_count')), 'context capability should guard unsupported payloads');
 
+  const health = payload.capabilities.find(capability => capability.id === 'inspect_corpus_health');
+  assertEq(health.primary_call.path, '/content-health.json');
+  assertEq(health.local_mcp_tools[0].tool, 'anchorfact_content_health');
+  assert(health.fallback_artifacts.includes('/content-health.json'), 'health capability should name content-health fallback');
+  assert(health.use_when.some(item => item.includes('draft repair queue')), 'health capability should mention repair queue use');
+
   const batch = payload.capabilities.find(capability => capability.id === 'resolve_many_references');
   assertEq(batch.primary_call.path, '/api/resolve-batch?ref={reference}&ref={reference}');
   assertEq(batch.local_mcp_tools[0].tool, 'anchorfact_resolve_references');
@@ -96,6 +104,7 @@ test('buildCapabilitiesIndex publishes AI endpoint selection rules', () => {
   const mcp = payload.capabilities.find(capability => capability.id === 'connect_local_mcp');
   assertEq(mcp.local_mcp_tools.map(tool => tool.tool), [
     'anchorfact_plan_query',
+    'anchorfact_content_health',
     'anchorfact_context',
     'anchorfact_search',
     'anchorfact_get_article',
@@ -112,6 +121,7 @@ test('buildCapabilitiesIndex publishes AI endpoint selection rules', () => {
     'cite_atomic_claim'
   ]);
   assert(payload.selection_rules.some(rule => rule.use_capability === 'plan_query'), 'selection rules should include query planning');
+  assert(payload.selection_rules.some(rule => rule.use_capability === 'inspect_corpus_health'), 'selection rules should include corpus health');
   assert(payload.selection_rules.some(rule => rule.use_capability === 'assemble_prompt_context'), 'selection rules should include prompt context');
   assert(payload.selection_rules.some(rule => rule.use_capability === 'resolve_many_references'), 'selection rules should include batch resolution');
 });

@@ -110,6 +110,28 @@ export function buildCapabilitiesIndex({
       ])
     },
     {
+      id: 'inspect_corpus_health',
+      intent: 'Inspect signed corpus health, public source coverage, trust boundaries, and the draft repair queue.',
+      use_when: [
+        'The agent needs the draft repair queue before planning content repair.',
+        'The agent is checking public source coverage or content health before deciding whether to trust local artifacts.'
+      ],
+      input_patterns: ['content_health', 'draft_repair_queue', 'source_coverage'],
+      primary_call: call('/content-health.json', site),
+      local_mcp_tools: localMcpTools(
+        localMcpTool('anchorfact_content_health', { format: 'json' }, 'Inspect local corpus health and the next draft repair batch.')
+      ),
+      output_formats: ['application/json', 'text/markdown'],
+      follow_up_calls: [
+        call('/provenance.json', site),
+        call('/evals.json', site)
+      ],
+      fallback_artifacts: ['/content-health.json', '/manifest.json', '/coverage.json'],
+      trust_requirements: trustRequirements([
+        'Use draft repair queue entries only for maintenance planning; draft entries remain excluded from public AI answer entrypoints.'
+      ])
+    },
+    {
       id: 'search_public_records',
       intent: 'Find candidate public AnchorFact records before fetching a full article or claim.',
       use_when: [
@@ -242,6 +264,7 @@ export function buildCapabilitiesIndex({
       primary_call: call('/mcp.json', site),
       local_mcp_tools: localMcpTools(
         localMcpTool('anchorfact_plan_query', { query: '{query}', limit: 3 }, 'Plan local coverage.'),
+        localMcpTool('anchorfact_content_health', { format: 'json' }, 'Inspect local corpus health and draft repair queue.'),
         localMcpTool('anchorfact_context', { query: '{query}', limit: 3, format: 'json' }, 'Assemble local answer context.'),
         localMcpTool('anchorfact_search', { query: '{query}', confidence_min: 'medium', limit: 5 }, 'Search local public records.'),
         localMcpTool('anchorfact_get_article', { article_id: '{canonical_slug}' }, 'Retrieve one local article.'),
@@ -295,6 +318,10 @@ export function buildCapabilitiesIndex({
       {
         when: 'You need one prompt-ready context pack before drafting an answer.',
         use_capability: 'assemble_prompt_context'
+      },
+      {
+        when: 'You need corpus health, public source coverage, or draft repair queue state.',
+        use_capability: 'inspect_corpus_health'
       },
       {
         when: 'You only need to shortlist public records.',
