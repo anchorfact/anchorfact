@@ -179,6 +179,7 @@ test('public machine entrypoints exclude drafts', () => {
   assert(evals.evals.some(evalCase => evalCase.id === 'citation_export'), 'evals index should include citation API check');
   assert(evals.evals.some(evalCase => evalCase.id === 'signed_provenance_static_artifacts'), 'evals index should include provenance artifact check');
   assertEq(mcp.schema_version, 'anchorfact.mcp.v1');
+  assert(mcp.tools.some(tool => tool.name === 'anchorfact_plan_query'), 'MCP profile should include query planner tool metadata');
   assert(mcp.tools.some(tool => tool.name === 'anchorfact_search'), 'MCP profile should include search tool metadata');
   assert(mcp.tools.some(tool => tool.name === 'anchorfact_resolve_reference'), 'MCP profile should include resolver tool metadata');
   assert(mcp.tools.some(tool => tool.name === 'anchorfact_resolve_references'), 'MCP profile should include batch resolver tool metadata');

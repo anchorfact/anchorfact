@@ -198,7 +198,7 @@ test('agent profile describes the machine contract', () => {
   assert(agent.current_snapshot.graph_nodes >= 1, 'agent profile should expose graph node count');
   assert(agent.current_snapshot.graph_edges >= 1, 'agent profile should expose graph edge count');
   assertEq(agent.current_snapshot.evals, 10);
-  assertEq(agent.current_snapshot.mcp_tools, 6);
+  assertEq(agent.current_snapshot.mcp_tools, 7);
   assert(agent.current_snapshot.unique_sources >= 1, 'agent profile should expose source count');
   assertEq(agent.endpoints.claims.url, 'https://anchorfact.org/claims.json');
   assertEq(agent.endpoints.topics.url, 'https://anchorfact.org/topics.json');
@@ -433,6 +433,7 @@ test('mcp.json describes local MCP installation and tools', () => {
   assertEq(mcp.installation.stdio.config_snippet.mcpServers.anchorfact.command, 'python');
   assertEq(mcp.installation.stdio.config_snippet.mcpServers.anchorfact.args, ['src/mcp_server.py']);
   assertEq(mcp.tools.map(tool => tool.name), [
+    'anchorfact_plan_query',
     'anchorfact_search',
     'anchorfact_get_article',
     'anchorfact_resolve_reference',

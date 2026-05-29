@@ -85,6 +85,7 @@ export function buildMcpProfile({
         base_url: HTTP_CONFIG.base_url,
         endpoints: {
           health: `${HTTP_CONFIG.base_url}/health`,
+          plan: `${HTTP_CONFIG.base_url}/plan?q={query}`,
           search: `${HTTP_CONFIG.base_url}/search?q={query}`,
           article: `${HTTP_CONFIG.base_url}/article?id={canonical_slug}`,
           resolve: `${HTTP_CONFIG.base_url}/resolve?ref={reference}`,
@@ -95,6 +96,20 @@ export function buildMcpProfile({
       }
     },
     tools: [
+      tool('anchorfact_plan_query', 'Plan whether AnchorFact has plausible public coverage and which local or public calls to make next.', {
+        type: 'object',
+        required: ['query'],
+        properties: {
+          query: { type: 'string', description: 'Natural-language factual query to assess.' },
+          limit: {
+            type: 'integer',
+            minimum: 1,
+            maximum: 10,
+            default: 3,
+            description: 'Maximum planned result count.'
+          }
+        }
+      }),
       tool('anchorfact_search', 'Search public AnchorFact articles with BM25 ranking.', {
         type: 'object',
         required: ['query'],

@@ -16,12 +16,13 @@ from mcp_index import (
     load_public_article_index,
     resolve_article_reference,
 )
+from mcp_plan import build_plan_payload
 from mcp_resolve import build_reference_batch_payload, build_reference_payload, render_reference_batch_markdown
 from mcp_search import BM25Index
 
 DIST_DIR = Path(__file__).resolve().parent.parent / "dist"
 
-app = FastAPI(title="AnchorFact MCP", version="1.3.0")
+app = FastAPI(title="AnchorFact MCP", version="1.4.0")
 
 _article_index: list[dict] | None = None
 _search_index = BM25Index()
@@ -98,6 +99,16 @@ def api_search(
         "results": [search_result(article) for article in search_articles(q, confidence_min, limit)],
         "source": "AnchorFact - anchorfact.org",
     }
+
+
+@app.get("/plan")
+def api_plan(
+    q: str | None = Query(None, description="Natural-language factual query"),
+    query: str | None = Query(None, description="Alias for q"),
+    limit: int = Query(3, ge=1, le=10),
+):
+    status, payload = build_plan_payload(DIST_DIR, q or query, limit)
+    return JSONResponse(payload, status_code=status)
 
 
 @app.get("/article")

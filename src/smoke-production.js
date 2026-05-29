@@ -287,6 +287,7 @@ export async function main() {
   assertOk(mcp.schema_version === 'anchorfact.mcp.v1', `mcp schema_version expected anchorfact.mcp.v1, got ${mcp.schema_version || '(missing)'}`, failures);
   assertOk(mcp.provenance_url === new URL('/provenance.json', baseUrl).href, `mcp provenance_url expected ${new URL('/provenance.json', baseUrl).href}, got ${mcp.provenance_url || '(missing)'}`, failures);
   assertOk(mcp.installation?.stdio?.config_snippet?.mcpServers?.anchorfact?.command === 'python', '/mcp.json is missing stdio MCP config snippet', failures);
+  assertOk(Array.isArray(mcp.tools) && mcp.tools.some(tool => tool.name === 'anchorfact_plan_query'), '/mcp.json is missing anchorfact_plan_query tool metadata', failures);
   assertOk(Array.isArray(mcp.tools) && mcp.tools.some(tool => tool.name === 'anchorfact_search'), '/mcp.json is missing anchorfact_search tool metadata', failures);
   assertOk(Array.isArray(mcp.tools) && mcp.tools.some(tool => tool.name === 'anchorfact_resolve_reference'), '/mcp.json is missing anchorfact_resolve_reference tool metadata', failures);
   assertOk(Array.isArray(mcp.tools) && mcp.tools.some(tool => tool.name === 'anchorfact_resolve_references'), '/mcp.json is missing anchorfact_resolve_references tool metadata', failures);

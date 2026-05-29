@@ -93,6 +93,67 @@ writeFileSync(join(distDir, 'sources.json'), JSON.stringify({
   ]
 }, null, 2));
 
+writeFileSync(join(distDir, 'search-index.json'), JSON.stringify({
+  schema_version: 'anchorfact.search-index.v1',
+  generated: '2026-05-29T00:00:00.000Z',
+  provenance_url: 'https://anchorfact.org/provenance.json',
+  article_count: 1,
+  records: [
+    {
+      canonical_slug: 'ai/public-fixture',
+      title: 'Public Fixture Evidence',
+      url: 'https://anchorfact.org/ai/public-fixture/',
+      description: 'Fixture evidence for local planner tests.',
+      confidence_level: 'medium',
+      source_coverage: { verified: 1, total: 1, ratio: 1 },
+      claim_count: 1,
+      claim_ids: ['https://anchorfact.org/fact/f1'],
+      keywords: ['fixture', 'evidence', 'planner'],
+      search_text: 'ai public fixture evidence local planner claim source',
+      routes: {
+        html: 'https://anchorfact.org/ai/public-fixture/',
+        markdown: 'https://anchorfact.org/ai/public-fixture/index.md',
+        jsonld: 'https://anchorfact.org/ai/public-fixture/index.json'
+      }
+    }
+  ]
+}, null, 2));
+
+writeFileSync(join(distDir, 'coverage.json'), JSON.stringify({
+  schema_version: 'anchorfact.coverage.v1',
+  generated: '2026-05-29T00:00:00.000Z',
+  provenance_url: 'https://anchorfact.org/provenance.json',
+  topic_coverage: [
+    {
+      id: 'ai',
+      title: 'AI',
+      article_count: 1,
+      claim_count: 1,
+      source_count: 1,
+      best_entrypoint: '/api/evidence?q=AI&limit=3',
+      top_articles: [
+        {
+          canonical_slug: 'ai/public-fixture',
+          title: 'Public Fixture Evidence'
+        }
+      ]
+    }
+  ]
+}, null, 2));
+
+writeFileSync(join(distDir, 'topics.json'), JSON.stringify({
+  schema_version: 'anchorfact.topics.v1',
+  generated: '2026-05-29T00:00:00.000Z',
+  provenance_url: 'https://anchorfact.org/provenance.json',
+  topics: []
+}, null, 2));
+
+writeFileSync(join(distDir, 'capabilities.json'), JSON.stringify({
+  schema_version: 'anchorfact.capabilities.v1',
+  generated: '2026-05-29T00:00:00.000Z',
+  provenance_url: 'https://anchorfact.org/provenance.json'
+}, null, 2));
+
 writeFileSync(join(articleDir, 'index.json'), JSON.stringify({
   '@context': 'https://schema.org',
   '@id': 'https://anchorfact.org/kb/ai/public-fixture',
@@ -159,6 +220,50 @@ print(json.dumps({
 `);
   assertEq(result.medium, ['high', 'medium']);
   assertEq(result.low.includes('low'), true);
+});
+
+test('local query planner returns MCP-native next steps', () => {
+  const result = runPython(`
+import json
+from pathlib import Path
+from mcp_plan import build_plan_payload
+dist = Path(r'''${pyPath(distDir)}''')
+status, payload = build_plan_payload(dist, 'fixture evidence', 2)
+unsupported_status, unsupported = build_plan_payload(dist, 'lunar dentistry', 2)
+missing_status, missing = build_plan_payload(dist, '', 2)
+print(json.dumps({
+    "status": status,
+    "schema": payload.get("schema_version"),
+    "coverage_status": payload.get("coverage_status"),
+    "should_use": payload.get("should_use_anchorfact"),
+    "top_slug": payload.get("matched_articles", [{}])[0].get("canonical_slug"),
+    "tool_names": [item.get("tool") for item in payload.get("local_mcp_next_tools", [])],
+    "local_http_paths": [item.get("path") for item in payload.get("local_http_next_calls", [])],
+    "public_paths": [item.get("path") for item in payload.get("recommended_next_calls", [])],
+    "unsupported_status": unsupported_status,
+    "unsupported_coverage": unsupported.get("coverage_status"),
+    "unsupported_should_use": unsupported.get("should_use_anchorfact"),
+    "unsupported_guidance": unsupported.get("fallback_guidance", []),
+    "missing_status": missing_status,
+    "missing_code": missing.get("error", {}).get("code"),
+}))
+`);
+  assertEq(result.status, 200);
+  assertEq(result.schema, 'anchorfact.plan-api.v1');
+  assertEq(result.coverage_status, 'supported');
+  assertEq(result.should_use, true);
+  assertEq(result.top_slug, 'ai/public-fixture');
+  assertEq(result.tool_names.includes('anchorfact_search'), true);
+  assertEq(result.tool_names.includes('anchorfact_get_article'), true);
+  assertEq(result.tool_names.includes('anchorfact_cite_claim'), true);
+  assertEq(result.local_http_paths[0].startsWith('/search?'), true);
+  assertEq(result.public_paths[0].startsWith('/api/evidence?'), true);
+  assertEq(result.unsupported_status, 200);
+  assertEq(result.unsupported_coverage, 'unsupported');
+  assertEq(result.unsupported_should_use, false);
+  assertEq(result.unsupported_guidance.some(item => item.includes('external primary')), true);
+  assertEq(result.missing_status, 400);
+  assertEq(result.missing_code, 'missing_or_invalid_query');
 });
 
 test('claim citation helper returns citation-ready JSON and Markdown', () => {

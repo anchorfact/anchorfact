@@ -19,6 +19,7 @@ from mcp_index import (
     load_public_article_index,
     resolve_article_reference,
 )
+from mcp_plan import build_plan_payload
 from mcp_resolve import build_reference_batch_payload, build_reference_payload, render_reference_batch_markdown
 from mcp_search import BM25Index as SharedBM25Index
 
@@ -71,6 +72,18 @@ server = Server("anchorfact")
 @server.list_tools()
 async def list_tools() -> list[Tool]:
     return [
+        Tool(
+            name="anchorfact_plan_query",
+            description="Plan whether AnchorFact has plausible public coverage and which local or public calls to make next.",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "query": {"type": "string", "description": "Natural-language factual query to assess."},
+                    "limit": {"type": "integer", "description": "Maximum planned result count, default 3, max 10"},
+                },
+                "required": ["query"],
+            },
+        ),
         Tool(
             name="anchorfact_search",
             description="Search public AnchorFact articles with BM25 ranking.",
@@ -165,6 +178,10 @@ async def list_tools() -> list[Tool]:
 
 @server.call_tool()
 async def call_tool(name: str, arguments: dict[str, Any]) -> list[TextContent]:
+    if name == "anchorfact_plan_query":
+        status, payload = build_plan_payload(DIST_DIR, arguments.get("query", arguments.get("q", "")), arguments.get("limit", 3))
+        return [TextContent(type="text", text=json.dumps(payload, ensure_ascii=False, indent=2))]
+
     if name == "anchorfact_search":
         query = arguments.get("query", "")
         confidence_min = arguments.get("confidence_min", "medium")
