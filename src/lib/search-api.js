@@ -134,6 +134,7 @@ export function buildSearchApiPayload({
     query,
     limit: clampLimit(limit),
     result_count: results.length,
+    provenance_url: searchIndex?.provenance_url || null,
     source_index_generated: searchIndex?.generated || null,
     source_index_schema_version: searchIndex?.schema_version || null,
     results

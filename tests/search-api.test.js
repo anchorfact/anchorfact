@@ -26,6 +26,7 @@ function assertEq(actual, expected, ctx = '') {
 const fixtureIndex = {
   schema_version: 'anchorfact.search-index.v1',
   generated: '2026-05-29T00:00:00.000Z',
+  provenance_url: 'https://anchorfact.org/provenance.json',
   article_count: 3,
   records: [
     {
@@ -102,6 +103,7 @@ test('buildSearchApiPayload returns compact agent-friendly results', () => {
   assertEq(payload.schema_version, 'anchorfact.search-api.v1');
   assertEq(payload.query, 'gaussian radiance');
   assertEq(payload.limit, 2);
+  assertEq(payload.provenance_url, fixtureIndex.provenance_url);
   assertEq(payload.source_index_generated, fixtureIndex.generated);
   assertEq(payload.results[0].canonical_slug, 'ai/gaussian-splatting');
   assert(payload.results[0].claim_ids.includes('fact-1'), 'result should carry claim ids');
@@ -123,6 +125,7 @@ test('Pages Function returns CORS JSON from the static search index', async () =
   const payload = await response.json();
   assertEq(response.status, 200);
   assertEq(response.headers.get('Access-Control-Allow-Origin'), '*');
+  assertEq(payload.provenance_url, fixtureIndex.provenance_url);
   assertEq(payload.result_count, 1);
   assertEq(payload.results[0].canonical_slug, 'ai/gaussian-splatting');
 });

@@ -193,6 +193,7 @@ export async function main() {
   assertOk(examples.example_count === (Array.isArray(examples.examples) ? examples.examples.length : 0), 'examples example_count does not match examples[] length', failures);
   assertOk(Array.isArray(examples.examples) && examples.examples.some(example => example.id === 'search_to_article_evidence'), '/examples.json is missing search_to_article_evidence example', failures);
   assertOk(searchApi.schema_version === 'anchorfact.search-api.v1', `search api schema_version expected anchorfact.search-api.v1, got ${searchApi.schema_version || '(missing)'}`, failures);
+  assertOk(searchApi.provenance_url === new URL('/provenance.json', baseUrl).href, `search api provenance_url expected ${new URL('/provenance.json', baseUrl).href}, got ${searchApi.provenance_url || '(missing)'}`, failures);
   assertOk(searchApi.query === 'gaussian', `search api query expected gaussian, got ${searchApi.query || '(missing)'}`, failures);
   assertOk(Array.isArray(searchApi.results) && searchApi.results.length > 0, '/api/search returned no results', failures);
   assertOk(searchApi.results.some(result => result.canonical_slug === 'ai/3d-generation-gaussian-splatting'), '/api/search did not return expected gaussian result', failures);
