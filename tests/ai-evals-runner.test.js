@@ -553,6 +553,47 @@ test('runAiEvals retries transient 5xx eval route responses', async () => {
   assertEq(evidenceCalls, 2);
 });
 
+test('runAiEvals can pace production eval route calls', async () => {
+  const delays = [];
+  const report = await runAiEvals({
+    baseUrl: 'https://anchorfact.org',
+    generatedAt: '2026-05-29T00:00:00.000Z',
+    routeIntervalMs: 125,
+    sleepImpl: async (ms) => {
+      delays.push(ms);
+    },
+    fetchImpl: fetchFixture({
+      '/evals.json': jsonResponse({
+        evals: [
+          {
+            id: 'api_discovery',
+            call: { method: 'GET', path: '/api' },
+            expected: {
+              status: 200,
+              content_type: 'application/json',
+              schema_version: 'anchorfact.api-index.v1'
+            }
+          },
+          {
+            id: 'mcp_tool_catalog',
+            call: { method: 'GET', path: '/mcp.json' },
+            expected: {
+              status: 200,
+              content_type: 'application/json',
+              schema_version: 'anchorfact.mcp.v1'
+            }
+          }
+        ]
+      }),
+      '/api': jsonResponse({ schema_version: 'anchorfact.api-index.v1' }),
+      '/mcp.json': jsonResponse({ schema_version: 'anchorfact.mcp.v1' })
+    })
+  });
+
+  assertEq(report.ok, true);
+  assertEq(delays, [125]);
+});
+
 for (const { name, fn } of tests) {
   try {
     await fn();

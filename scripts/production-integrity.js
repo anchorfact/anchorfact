@@ -14,9 +14,21 @@ export const DEFAULT_EXPECTED_COUNTS = {
 };
 
 export const DEFAULT_PUBLIC_KEY_PATH = 'keys/provenance.pub.pem';
+export const DEFAULT_AFTER_SMOKE_DELAY_MS = 5000;
+export const DEFAULT_AI_EVAL_RETRY_DELAY_MS = 15000;
+export const DEFAULT_AI_EVAL_ATTEMPTS = 2;
+export const DEFAULT_INTEGRITY_EVAL_OPTIONS = {
+  routeRetries: 4,
+  routeRetryDelayMs: 750,
+  routeIntervalMs: 150
+};
 
 function isoNow() {
   return new Date().toISOString();
+}
+
+function sleep(ms) {
+  return ms > 0 ? new Promise(resolve => setTimeout(resolve, ms)) : Promise.resolve();
 }
 
 function commandOutput(error, field) {
@@ -104,7 +116,8 @@ export function buildIntegrityReport({
     ai_evals: {
       eval_count: aiEvals?.eval_count ?? null,
       passed: aiEvals?.passed ?? null,
-      failed: aiEvals?.failed ?? null
+      failed: aiEvals?.failed ?? null,
+      attempts: aiEvals?.attempts ?? null
     },
     failures,
     smoke_stdout: smoke?.ok ? '' : (smoke?.stdout || ''),
@@ -138,7 +151,7 @@ Base URL: ${report.base_url}
 ## Checks
 
 - smoke: ${report.checks.smoke ? 'pass' : 'fail'}
-- AI evals: ${report.checks.ai_evals ? 'pass' : 'fail'} (${report.ai_evals.passed ?? 0}/${report.ai_evals.eval_count ?? 0})
+- AI evals: ${report.checks.ai_evals ? 'pass' : 'fail'} (${report.ai_evals.passed ?? 0}/${report.ai_evals.eval_count ?? 0}, attempts=${report.ai_evals.attempts ?? 1})
 - signed provenance: ${report.checks.signed_provenance ? 'pass' : 'fail'}
 - source commit: ${report.checks.commit ? 'pass' : 'fail'}
 
@@ -190,11 +203,27 @@ export async function runProductionIntegrity({
   expectedCounts = DEFAULT_EXPECTED_COUNTS,
   smokeRunner = runProductionSmoke,
   evalRunner = runAiEvals,
+  evalOptions = DEFAULT_INTEGRITY_EVAL_OPTIONS,
   verifier = verifyLiveProvenance,
-  generatedAt = isoNow()
+  generatedAt = isoNow(),
+  afterSmokeDelayMs = DEFAULT_AFTER_SMOKE_DELAY_MS,
+  aiEvalRetryDelayMs = DEFAULT_AI_EVAL_RETRY_DELAY_MS,
+  aiEvalAttempts = DEFAULT_AI_EVAL_ATTEMPTS,
+  sleepImpl = sleep
 } = {}) {
   const smoke = smokeRunner({ baseUrl, expectedCounts });
-  const aiEvals = await evalRunner({ baseUrl });
+  const wait = typeof sleepImpl === 'function' ? sleepImpl : sleep;
+  if (afterSmokeDelayMs > 0) await wait(afterSmokeDelayMs);
+
+  let aiEvals = null;
+  const maxAiEvalAttempts = Math.max(1, Number(aiEvalAttempts) || 1);
+  for (let attempt = 1; attempt <= maxAiEvalAttempts; attempt++) {
+    const evalReport = await evalRunner({ baseUrl, ...evalOptions });
+    aiEvals = { ...evalReport, attempts: attempt };
+    if (aiEvals.ok || attempt === maxAiEvalAttempts) break;
+    if (aiEvalRetryDelayMs > 0) await wait(aiEvalRetryDelayMs);
+  }
+
   const trustedPublicKeys = [readFileSync(publicKeyPath, 'utf8')];
   const provenance = await verifier({
     baseUrl,

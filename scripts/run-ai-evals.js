@@ -296,10 +296,14 @@ export async function runAiEvals({
   fetchImpl = globalThis.fetch,
   generatedAt = new Date().toISOString(),
   routeRetries = DEFAULT_ROUTE_RETRIES,
-  routeRetryDelayMs = DEFAULT_ROUTE_RETRY_DELAY_MS
+  routeRetryDelayMs = DEFAULT_ROUTE_RETRY_DELAY_MS,
+  routeIntervalMs = 0,
+  sleepImpl = sleep
 } = {}) {
   const normalizedBaseUrl = new URL(baseUrl);
   const routeFetchOptions = { retries: routeRetries, retryDelayMs: routeRetryDelayMs };
+  const delayBetweenRoutes = Number.isFinite(routeIntervalMs) ? Math.max(0, routeIntervalMs) : 0;
+  const routeSleep = typeof sleepImpl === 'function' ? sleepImpl : sleep;
   const evalsResponse = await fetchEvalRoute(normalizedBaseUrl, '/evals.json', fetchImpl, routeFetchOptions);
   const failures = [];
   check(evalsResponse.status === 200, failures, `/evals.json returned ${evalsResponse.status}`);
@@ -312,7 +316,10 @@ export async function runAiEvals({
   }
 
   const results = [];
-  for (const evalCase of evalsPayload.evals || []) {
+  const evalCases = evalsPayload.evals || [];
+  for (let index = 0; index < evalCases.length; index++) {
+    if (index > 0 && delayBetweenRoutes > 0) await routeSleep(delayBetweenRoutes);
+    const evalCase = evalCases[index];
     const expected = evalCase.expected || {};
     const routeFailures = [];
     const path = evalCase.call?.path;

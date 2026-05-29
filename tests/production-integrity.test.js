@@ -134,19 +134,26 @@ test('buildIntegrityReport fails when AI evals fail', () => {
 test('runProductionIntegrity wires smoke and signed verifier dependencies', async () => {
   let smokeCalled = false;
   let evalCalled = false;
+  const delays = [];
   let verifierArgs = null;
   const report = await runProductionIntegrity({
     baseUrl: 'https://anchorfact.org',
     publicKeyPath: 'keys/provenance.pub.pem',
     generatedAt: '2026-05-29T00:00:00.000Z',
+    sleepImpl: async (ms) => {
+      delays.push(ms);
+    },
     smokeRunner: ({ expectedCounts }) => {
       smokeCalled = true;
       assertEq(expectedCounts, DEFAULT_EXPECTED_COUNTS);
       return { ok: true, stdout: 'smoke ok', stderr: '' };
     },
-    evalRunner: async ({ baseUrl }) => {
+    evalRunner: async ({ baseUrl, routeRetries, routeRetryDelayMs, routeIntervalMs }) => {
       evalCalled = true;
       assertEq(baseUrl, 'https://anchorfact.org');
+      assert(routeRetries >= 4, 'production integrity evals should use conservative retry count');
+      assert(routeRetryDelayMs >= 500, 'production integrity evals should use conservative retry delay');
+      assert(routeIntervalMs > 0, 'production integrity evals should pace route calls');
       return { ok: true, eval_count: 11, passed: 11, failed: 0, failures: [], results: [] };
     },
     verifier: async (args) => {
@@ -158,9 +165,50 @@ test('runProductionIntegrity wires smoke and signed verifier dependencies', asyn
   assertEq(report.ok, true);
   assertEq(smokeCalled, true);
   assertEq(evalCalled, true);
+  assert(delays.some(ms => ms > 0), 'production integrity should cool down after smoke before AI evals');
   assertEq(verifierArgs.requireSignature, true);
   assertEq(verifierArgs.requireTrustedSignature, true);
   assert(Array.isArray(verifierArgs.trustedPublicKeys), 'trusted public keys should be loaded');
+});
+
+test('runProductionIntegrity retries transient AI eval suite failures once', async () => {
+  let evalCalls = 0;
+  const delays = [];
+  const report = await runProductionIntegrity({
+    baseUrl: 'https://anchorfact.org',
+    publicKeyPath: 'keys/provenance.pub.pem',
+    generatedAt: '2026-05-29T00:00:00.000Z',
+    sleepImpl: async (ms) => {
+      delays.push(ms);
+    },
+    smokeRunner: () => ({ ok: true, stdout: 'smoke ok', stderr: '' }),
+    evalRunner: async () => {
+      evalCalls++;
+      if (evalCalls === 1) {
+        return {
+          ok: false,
+          eval_count: 1,
+          passed: 0,
+          failed: 1,
+          failures: [],
+          results: [
+            {
+              id: 'query_routing_http_status_codes',
+              ok: false,
+              failures: ['/api/evidence?q=HTTP+status+codes&limit=3 status expected 200, got 503']
+            }
+          ]
+        };
+      }
+      return { ok: true, eval_count: 1, passed: 1, failed: 0, failures: [], results: [] };
+    },
+    verifier: async () => provenanceResult()
+  });
+
+  assertEq(report.ok, true);
+  assertEq(evalCalls, 2);
+  assert(delays.length >= 2, 'should wait after smoke and before retrying failed AI evals');
+  assertEq(report.ai_evals.attempts, 2);
 });
 
 test('production smoke fetches routes with CI-friendly live headers', async () => {
