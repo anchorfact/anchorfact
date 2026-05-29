@@ -59,6 +59,23 @@ test('Common academic and preferred source types are A-tier', () => {
     assertEq(classifySourceTier({ type }), 'A', type);
   }
 });
+test('Common report and paper aliases are A-tier', () => {
+  for (const type of [
+    'policy_report',
+    'scientific_report',
+    'consensus_report',
+    'assessment_report',
+    'scientific_assessment',
+    'industry_report',
+    'report',
+    'research_publication',
+    'dataset_paper',
+    'software_paper',
+    'historical_paper'
+  ]) {
+    assertEq(classifySourceTier({ type }), 'A', type);
+  }
+});
 test('Blog post is B-tier', () => {
   assertEq(classifySourceTier({ type: 'blog_post' }), 'B');
 });
@@ -87,6 +104,42 @@ test('Reference and book-like source types are B-tier', () => {
     'article'
   ]) {
     assertEq(classifySourceTier({ type }), 'B', type);
+  }
+});
+test('Common documentation, government, and reference aliases are B-tier', () => {
+  for (const type of [
+    'technical_documentation',
+    'official_documentation',
+    'developer_documentation',
+    'government_document',
+    'government_resource',
+    'government_guidance',
+    'technical_reference',
+    'official_reference',
+    'museum_reference',
+    'encyclopedia_entry',
+    'release_notes',
+    'medical_guideline',
+    'accessibility_guideline',
+    'primary_document',
+    'package_index',
+    'official_blog',
+    'academic_project',
+    'conference_keynote'
+  ]) {
+    assertEq(classifySourceTier({ type }), 'B', type);
+  }
+});
+test('Standard aliases are S-tier', () => {
+  for (const type of [
+    'technical_specification',
+    'specification',
+    'industry_standard',
+    'government_standard',
+    'professional_standard',
+    'draft_standard'
+  ]) {
+    assertEq(classifySourceTier({ type }), 'S', type);
   }
 });
 test('Unknown is C-tier', () => {
