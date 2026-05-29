@@ -5,7 +5,7 @@ import {
   renderIntegrityMarkdown,
   runProductionIntegrity
 } from '../scripts/production-integrity.js';
-import { REQUIRED_SECURITY_HEADERS, evalCallRoutes, exampleWorkflowRoutes, fetchRoute } from '../src/smoke-production.js';
+import { REQUIRED_SECURITY_HEADERS, evalCallRoutes, exampleWorkflowRoutes, fetchRoute, readJsonRoute } from '../src/smoke-production.js';
 
 let passed = 0, failed = 0;
 const tests = [];
@@ -192,6 +192,34 @@ test('production smoke fetches routes with CI-friendly live headers', async () =
   assert(calls[0].options.redirect === 'follow', 'smoke fetch should follow redirects');
   assert(calls[0].options.headers['User-Agent'].includes('Mozilla/5.0'), 'smoke fetch should send a browser-compatible user agent');
   assert(calls[0].options.headers.Accept.includes('application/json'), 'smoke fetch should accept JSON');
+});
+
+test('production smoke retries transient empty JSON route bodies', async () => {
+  const originalFetch = globalThis.fetch;
+  let calls = 0;
+  globalThis.fetch = async (url, options = {}) => {
+    calls++;
+    assert(options.redirect === 'follow', 'retry fetch should keep live fetch options');
+    return {
+      status: 200,
+      ok: true,
+      url: String(url),
+      headers: new Map([['content-type', 'application/json; charset=utf-8']]),
+      async text() {
+        return calls === 1 ? '' : '{"ok":true}';
+      }
+    };
+  };
+
+  try {
+    const results = {};
+    const payload = await readJsonRoute('https://anchorfact.org', '/agent.json', results, { retryDelayMs: 0 });
+    assertEq(payload, { ok: true });
+    assertEq(calls, 2);
+    assertEq(results['/agent.json'].body, '{"ok":true}');
+  } finally {
+    globalThis.fetch = originalFetch;
+  }
 });
 
 test('production smoke requires baseline security response headers', () => {

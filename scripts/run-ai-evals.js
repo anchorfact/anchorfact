@@ -3,6 +3,13 @@ import { pathToFileURL } from 'url';
 import { OFFICIAL_SITE } from '../src/lib/build-metadata.js';
 import { fetchLiveText } from '../src/lib/live-http.js';
 
+const DEFAULT_ROUTE_RETRIES = 2;
+const DEFAULT_ROUTE_RETRY_DELAY_MS = 250;
+
+function sleep(ms) {
+  return ms > 0 ? new Promise(resolve => setTimeout(resolve, ms)) : Promise.resolve();
+}
+
 function isSafeRoute(path) {
   const pathname = typeof path === 'string' ? path.split(/[?#]/)[0] : '';
   return typeof path === 'string'
@@ -226,24 +233,43 @@ function evaluateTextExpected(body, expected, failures) {
   }
 }
 
-export async function fetchEvalRoute(baseUrl, route, fetchImpl = globalThis.fetch) {
-  const response = await fetchLiveText(fetchImpl, new URL(route, baseUrl));
-  return {
-    route,
-    status: response.status,
-    contentType: response.contentType || '',
-    body: response.text,
-    error: response.error || null
-  };
+export async function fetchEvalRoute(baseUrl, route, fetchImpl = globalThis.fetch, options = {}) {
+  const retries = Number.isFinite(options.retries) ? options.retries : DEFAULT_ROUTE_RETRIES;
+  const retryDelayMs = Number.isFinite(options.retryDelayMs) ? options.retryDelayMs : DEFAULT_ROUTE_RETRY_DELAY_MS;
+  const maxAttempts = Math.max(1, retries + 1);
+  let result = null;
+
+  for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+    const response = await fetchLiveText(fetchImpl, new URL(route, baseUrl));
+    result = {
+      route,
+      status: response.status,
+      contentType: response.contentType || '',
+      body: response.text,
+      error: response.error || null
+    };
+
+    const shouldRetry = result.status === 0 || !String(result.body || '').trim();
+    if (!shouldRetry || attempt === maxAttempts) {
+      return result;
+    }
+
+    await sleep(retryDelayMs * attempt);
+  }
+
+  return result;
 }
 
 export async function runAiEvals({
   baseUrl = OFFICIAL_SITE,
   fetchImpl = globalThis.fetch,
-  generatedAt = new Date().toISOString()
+  generatedAt = new Date().toISOString(),
+  routeRetries = DEFAULT_ROUTE_RETRIES,
+  routeRetryDelayMs = DEFAULT_ROUTE_RETRY_DELAY_MS
 } = {}) {
   const normalizedBaseUrl = new URL(baseUrl);
-  const evalsResponse = await fetchEvalRoute(normalizedBaseUrl, '/evals.json', fetchImpl);
+  const routeFetchOptions = { retries: routeRetries, retryDelayMs: routeRetryDelayMs };
+  const evalsResponse = await fetchEvalRoute(normalizedBaseUrl, '/evals.json', fetchImpl, routeFetchOptions);
   const failures = [];
   check(evalsResponse.status === 200, failures, `/evals.json returned ${evalsResponse.status}`);
 
@@ -266,7 +292,7 @@ export async function runAiEvals({
       continue;
     }
 
-    const response = await fetchEvalRoute(normalizedBaseUrl, path, fetchImpl);
+    const response = await fetchEvalRoute(normalizedBaseUrl, path, fetchImpl, routeFetchOptions);
     check(response.status === expected.status, routeFailures, `${path} status expected ${expected.status}, got ${response.status}`);
     if (expected.content_type) {
       check(response.contentType.toLowerCase().includes(expected.content_type.toLowerCase()), routeFailures, `${path} content-type expected ${expected.content_type}, got ${response.contentType || '(missing)'}`);

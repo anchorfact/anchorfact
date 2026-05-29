@@ -4,6 +4,8 @@ import { pathToFileURL } from 'url';
 import { fetchLiveText } from './lib/live-http.js';
 
 const DEFAULT_BASE_URL = 'https://anchorfact.org/';
+const DEFAULT_JSON_RETRIES = 2;
+const DEFAULT_JSON_RETRY_DELAY_MS = 250;
 
 export const REQUIRED_SECURITY_HEADERS = [
   { route: '/', name: 'X-Content-Type-Options', expected: 'nosniff' },
@@ -45,6 +47,10 @@ function sha256Text(text) {
   return createHash('sha256').update(Buffer.from(text, 'utf8')).digest('hex');
 }
 
+function sleep(ms) {
+  return ms > 0 ? new Promise(resolve => setTimeout(resolve, ms)) : Promise.resolve();
+}
+
 export async function fetchRoute(baseUrl, route) {
   const url = new URL(route, baseUrl);
   const response = await fetchLiveText(fetch, url);
@@ -58,6 +64,34 @@ export async function fetchRoute(baseUrl, route) {
     headers: response.headers || {},
     body: response.text,
   };
+}
+
+export async function readJsonRoute(baseUrl, route, results, options = {}) {
+  const retries = Number.isFinite(options.retries) ? options.retries : DEFAULT_JSON_RETRIES;
+  const retryDelayMs = Number.isFinite(options.retryDelayMs) ? options.retryDelayMs : DEFAULT_JSON_RETRY_DELAY_MS;
+  const maxAttempts = Math.max(1, retries + 1);
+  let lastError = null;
+
+  for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+    if (attempt > 1 || !results[route]) {
+      results[route] = await fetchRoute(baseUrl, route);
+    }
+
+    try {
+      const body = String(results[route]?.body || '');
+      if (!body.trim()) {
+        throw new Error('empty response body');
+      }
+      return JSON.parse(body);
+    } catch (error) {
+      lastError = error;
+      if (attempt < maxAttempts) {
+        await sleep(retryDelayMs * attempt);
+      }
+    }
+  }
+
+  throw new Error(`${route} returned invalid JSON after ${maxAttempts} attempts: ${lastError?.message || String(lastError)}`);
 }
 
 function assertOk(condition, message, failures) {
@@ -133,37 +167,37 @@ export async function main() {
     assertOk(results[route].status === 200, `${route} returned ${results[route].status}`, failures);
   }
 
-  const agentProfile = JSON.parse(results['/agent.json'].body);
-  const wellKnownAgentProfile = JSON.parse(results['/.well-known/anchorfact.json'].body);
-  const openapi = JSON.parse(results['/openapi.json'].body);
-  const manifest = JSON.parse(results['/manifest.json'].body);
-  const claims = JSON.parse(results['/claims.json'].body);
-  const topics = JSON.parse(results['/topics.json'].body);
-  const capabilities = JSON.parse(results['/capabilities.json'].body);
-  const contentHealth = JSON.parse(results['/content-health.json'].body);
-  const coverage = JSON.parse(results['/coverage.json'].body);
-  const examples = JSON.parse(results['/examples.json'].body);
-  const graph = JSON.parse(results['/graph.json'].body);
-  const evals = JSON.parse(results['/evals.json'].body);
-  const mcp = JSON.parse(results['/mcp.json'].body);
-  const apiIndex = JSON.parse(results['/api'].body);
-  const planApi = JSON.parse(results['/api/plan?q=gaussian&limit=2'].body);
-  const evidenceApi = JSON.parse(results['/api/evidence?q=gaussian&limit=2'].body);
+  const agentProfile = await readJsonRoute(baseUrl, '/agent.json', results);
+  const wellKnownAgentProfile = await readJsonRoute(baseUrl, '/.well-known/anchorfact.json', results);
+  const openapi = await readJsonRoute(baseUrl, '/openapi.json', results);
+  const manifest = await readJsonRoute(baseUrl, '/manifest.json', results);
+  const claims = await readJsonRoute(baseUrl, '/claims.json', results);
+  const topics = await readJsonRoute(baseUrl, '/topics.json', results);
+  const capabilities = await readJsonRoute(baseUrl, '/capabilities.json', results);
+  const contentHealth = await readJsonRoute(baseUrl, '/content-health.json', results);
+  const coverage = await readJsonRoute(baseUrl, '/coverage.json', results);
+  const examples = await readJsonRoute(baseUrl, '/examples.json', results);
+  const graph = await readJsonRoute(baseUrl, '/graph.json', results);
+  const evals = await readJsonRoute(baseUrl, '/evals.json', results);
+  const mcp = await readJsonRoute(baseUrl, '/mcp.json', results);
+  const apiIndex = await readJsonRoute(baseUrl, '/api', results);
+  const planApi = await readJsonRoute(baseUrl, '/api/plan?q=gaussian&limit=2', results);
+  const evidenceApi = await readJsonRoute(baseUrl, '/api/evidence?q=gaussian&limit=2', results);
   const evidenceMarkdown = results['/api/evidence?q=gaussian&limit=1&format=markdown'].body;
-  const contextApi = JSON.parse(results['/api/context?q=gaussian&limit=2'].body);
+  const contextApi = await readJsonRoute(baseUrl, '/api/context?q=gaussian&limit=2', results);
   const contextMarkdown = results['/api/context?q=gaussian&limit=1&format=markdown'].body;
-  const resolveApi = JSON.parse(results['/api/resolve?ref=f1'].body);
-  const resolveBatchApi = JSON.parse(results['/api/resolve-batch?ref=f1&ref=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079'].body);
+  const resolveApi = await readJsonRoute(baseUrl, '/api/resolve?ref=f1', results);
+  const resolveBatchApi = await readJsonRoute(baseUrl, '/api/resolve-batch?ref=f1&ref=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079', results);
   const resolveBatchMarkdown = results['/api/resolve-batch?ref=f1&ref=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079&format=markdown'].body;
-  const searchApi = JSON.parse(results['/api/search?q=gaussian&limit=2'].body);
-  const articleApi = JSON.parse(results['/api/article?slug=ai/3d-generation-gaussian-splatting'].body);
-  const claimApi = JSON.parse(results['/api/claim?id=f1'].body);
-  const citeApi = JSON.parse(results['/api/cite?id=f1'].body);
+  const searchApi = await readJsonRoute(baseUrl, '/api/search?q=gaussian&limit=2', results);
+  const articleApi = await readJsonRoute(baseUrl, '/api/article?slug=ai/3d-generation-gaussian-splatting', results);
+  const claimApi = await readJsonRoute(baseUrl, '/api/claim?id=f1', results);
+  const citeApi = await readJsonRoute(baseUrl, '/api/cite?id=f1', results);
   const citeMarkdown = results['/api/cite?id=f1&format=markdown'].body;
-  const sourceApi = JSON.parse(results['/api/source?url=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079'].body);
-  const searchIndex = JSON.parse(results['/search-index.json'].body);
-  const sources = JSON.parse(results['/sources.json'].body);
-  const provenance = JSON.parse(results['/provenance.json'].body);
+  const sourceApi = await readJsonRoute(baseUrl, '/api/source?url=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079', results);
+  const searchIndex = await readJsonRoute(baseUrl, '/search-index.json', results);
+  const sources = await readJsonRoute(baseUrl, '/sources.json', results);
+  const provenance = await readJsonRoute(baseUrl, '/provenance.json', results);
   const robotsText = results['/robots.txt'].body;
   const sitemapText = results['/sitemap.xml'].body;
   const llmsText = results['/llms.txt'].body;

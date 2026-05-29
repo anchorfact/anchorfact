@@ -393,6 +393,48 @@ test('runAiEvals reports expectation failures', async () => {
   assert(report.results[3].failures.some(failure => failure.includes('C-tier source')), 'C-tier source drift should be reported');
 });
 
+test('runAiEvals retries transient empty eval route bodies', async () => {
+  let claimCalls = 0;
+  const report = await runAiEvals({
+    baseUrl: 'https://anchorfact.org',
+    generatedAt: '2026-05-29T00:00:00.000Z',
+    routeRetryDelayMs: 0,
+    fetchImpl: async (url) => {
+      const route = `${url.pathname}${url.search}`;
+      if (route === '/evals.json') {
+        return jsonResponse({
+          evals: [
+            {
+              id: 'claim_dereference',
+              call: { method: 'GET', path: '/api/claim?id=f1' },
+              expected: {
+                status: 200,
+                content_type: 'application/json',
+                schema_version: 'anchorfact.claim-api.v1',
+                claim_id: 'https://anchorfact.org/fact/f1'
+              }
+            }
+          ]
+        });
+      }
+      if (route === '/api/claim?id=f1') {
+        claimCalls++;
+        return claimCalls === 1
+          ? jsonResponse('', 'application/json; charset=utf-8', 200)
+          : jsonResponse({
+              schema_version: 'anchorfact.claim-api.v1',
+              claim_id: 'https://anchorfact.org/fact/f1'
+            });
+      }
+      return jsonResponse({ error: 'missing fixture' }, 'application/json; charset=utf-8', 404);
+    }
+  });
+
+  assertEq(report.ok, true);
+  assertEq(report.passed, 1);
+  assertEq(claimCalls, 2);
+});
+
 for (const { name, fn } of tests) {
   try {
     await fn();
