@@ -1,5 +1,4 @@
-import { SEARCH_API_SCHEMA_VERSION } from './build-metadata.js';
-
+export const SEARCH_API_SCHEMA_VERSION = 'anchorfact.search-api.v1';
 const MIN_LIMIT = 1;
 const DEFAULT_LIMIT = 5;
 const MAX_LIMIT = 20;
