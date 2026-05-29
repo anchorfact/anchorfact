@@ -6,13 +6,22 @@ import {
 } from './build-metadata.js';
 
 const FATAL_DRAFT_REASONS = new Set([
+  'broken_atomic_fact',
+  'claim_evidence_weak',
+  'encoding_mojibake',
   'explicit_draft',
   'estimated_confidence',
+  'generic_source_homepage',
   'missing_primary_sources',
   'no_verified_sources',
   'placeholder_content',
   'verification_count_mismatch',
   'yaml_field_damage'
+]);
+
+const AUTO_REPAIR_EXCLUDED_REASONS = new Set([
+  'encoding_mojibake',
+  'placeholder_content'
 ]);
 
 function increment(map, key, amount = 1) {
@@ -51,6 +60,10 @@ function claimMappingCoverage(claims) {
     mapped,
     ratio: (claims || []).length ? Number((mapped / claims.length).toFixed(4)) : 0
   };
+}
+
+function autoRepairExclusionReasons(reasons = []) {
+  return reasons.filter(reason => AUTO_REPAIR_EXCLUDED_REASONS.has(reason));
 }
 
 function baseStatusBucket() {
@@ -111,7 +124,7 @@ function draftRepairCandidates(manifest, limit = 25) {
     const isPublic = article.status === 'public' && article.is_draft === false;
     if (isPublic) continue;
     const reasons = article.quality_reasons || [];
-    if (reasons.includes('placeholder_content')) continue;
+    if (autoRepairExclusionReasons(reasons).length > 0) continue;
     const fatalCount = reasons.filter(reason => FATAL_DRAFT_REASONS.has(reason)).length;
     candidates.push({
       canonical_slug: article.canonical_slug,
@@ -131,11 +144,31 @@ function draftRepairCandidates(manifest, limit = 25) {
   return candidates.slice(0, limit);
 }
 
+function draftRepairExclusions(manifest) {
+  const excluded = [];
+  for (const article of manifest?.articles || []) {
+    const isPublic = article.status === 'public' && article.is_draft === false;
+    if (isPublic) continue;
+    const reasons = article.quality_reasons || [];
+    const exclusionReasons = autoRepairExclusionReasons(reasons);
+    if (exclusionReasons.length === 0) continue;
+    excluded.push({
+      canonical_slug: article.canonical_slug,
+      title: article.title,
+      quality_reasons: reasons,
+      exclusion_reasons: exclusionReasons
+    });
+  }
+  return excluded;
+}
+
 function draftRepairQueue(manifest) {
   const candidates = draftRepairCandidates(manifest, 100000);
+  const excluded = draftRepairExclusions(manifest);
   const complexity = {};
   const categories = {};
   const reasons = {};
+  const exclusionReasons = {};
 
   for (const candidate of candidates) {
     increment(complexity, String(candidate.repair_complexity));
@@ -145,19 +178,28 @@ function draftRepairQueue(manifest) {
     }
   }
 
+  for (const item of excluded) {
+    for (const reason of item.exclusion_reasons || []) {
+      increment(exclusionReasons, reason);
+    }
+  }
+
   return {
     candidate_count: candidates.length,
+    excluded_count: excluded.length,
     next_batch_size: Math.min(5, candidates.length),
     next_batch: candidates.slice(0, 5),
     selection_policy: [
-      'Exclude placeholder drafts from automatic repair queues.',
+      'Exclude placeholder and encoding-damaged drafts from automatic repair queues.',
+      'Route encoding-damaged drafts to manual restoration or rewrite planning before source repair.',
       'Prioritize lower repair_complexity values first.',
       'Prefer drafts with more existing sources when complexity ties.',
       'Use canonical slug order as the final stable tie-breaker.'
     ],
     complexity_distribution: topEntries(complexity, 10),
     category_distribution: topEntries(categories, 30),
-    quality_reason_distribution: topEntries(reasons, 30)
+    quality_reason_distribution: topEntries(reasons, 30),
+    exclusion_reason_distribution: topEntries(exclusionReasons, 30)
   };
 }
 
@@ -172,6 +214,7 @@ export function buildContentHealthIndex({
   const sourceSummary = summarizeSources(sourcesPayload || {});
   const publicClaims = claimsPayload?.claims || [];
   const publicClaimCoverage = claimMappingCoverage(publicClaims);
+  const repairQueue = draftRepairQueue(manifest || {});
 
   return {
     schema_version: CONTENT_HEALTH_SCHEMA_VERSION,
@@ -193,9 +236,10 @@ export function buildContentHealthIndex({
     },
     draft: {
       ...byStatus.draft,
-      repair_candidate_count: draftRepairCandidates(manifest || {}, 100000).length,
+      repair_candidate_count: repairQueue.candidate_count,
+      repair_excluded_count: repairQueue.excluded_count,
       repair_candidates: draftRepairCandidates(manifest || {}, 25),
-      repair_queue: draftRepairQueue(manifest || {})
+      repair_queue: repairQueue
     },
     machine_guidance: [
       'Use public AnchorFact records only when status is public and source-mapped claims are present.',

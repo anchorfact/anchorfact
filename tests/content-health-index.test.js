@@ -30,9 +30,9 @@ test('buildContentHealthIndex publishes signed corpus health guidance', () => {
   const payload = buildContentHealthIndex({
     generated: '2026-05-29T00:00:00.000Z',
     manifest: {
-      article_count: 4,
+      article_count: 5,
       public_article_count: 2,
-      draft_article_count: 2,
+      draft_article_count: 3,
       claim_count: 2,
       verification_report: '2026-05-28T00:00:00.000Z',
       articles: [
@@ -67,6 +67,16 @@ test('buildContentHealthIndex publishes signed corpus health guidance', () => {
           quality_reasons: ['no_verified_sources']
         },
         {
+          canonical_slug: 'game-development/encoding-damaged-draft',
+          title: 'Encoding Damaged Draft',
+          status: 'draft',
+          is_draft: true,
+          confidence_level: 'low',
+          sources_verified: 1,
+          sources_total: 10,
+          quality_reasons: ['encoding_mojibake', 'broken_atomic_fact', 'generic_source_homepage']
+        },
+        {
           canonical_slug: 'ai/placeholder-draft',
           title: 'Placeholder Draft',
           status: 'draft',
@@ -97,7 +107,7 @@ test('buildContentHealthIndex publishes signed corpus health guidance', () => {
   assertEq(payload.schema_version, 'anchorfact.content-health.v1');
   assertEq(payload.provenance_url, 'https://anchorfact.org/provenance.json');
   assertEq(payload.snapshot.public_articles, 2);
-  assertEq(payload.snapshot.draft_articles, 2);
+  assertEq(payload.snapshot.draft_articles, 3);
   assertEq(payload.public.source_coverage.full, 1);
   assertEq(payload.public.source_coverage.partial, 1);
   assertEq(payload.draft.source_coverage.zero, 2);
@@ -105,9 +115,13 @@ test('buildContentHealthIndex publishes signed corpus health guidance', () => {
   assertEq(payload.public.sources.tier_distribution, { A: 1, S: 1 });
   assert(payload.public.quality_reasons.some(reason => reason.name === 'partial_source_verification'), 'public health should include quality reasons');
   assert(payload.draft.repair_candidates.some(candidate => candidate.canonical_slug === 'ai/draft-a'), 'draft health should include repair candidates');
+  assert(!payload.draft.repair_candidates.some(candidate => candidate.canonical_slug === 'game-development/encoding-damaged-draft'), 'encoding-damaged drafts should stay out of automatic repair candidates');
   assertEq(payload.draft.repair_queue.candidate_count, 1);
+  assertEq(payload.draft.repair_queue.excluded_count, 2);
   assertEq(payload.draft.repair_queue.next_batch[0].canonical_slug, 'ai/draft-a');
   assert(!payload.draft.repair_queue.next_batch.some(candidate => candidate.canonical_slug === 'ai/placeholder-draft'), 'placeholder drafts should stay out of automatic repair queues');
+  assert(payload.draft.repair_queue.exclusion_reason_distribution.some(reason => reason.name === 'encoding_mojibake'), 'repair queue should summarize encoding-damaged exclusions');
+  assert(payload.draft.repair_queue.selection_policy.some(item => item.includes('encoding-damaged')), 'repair queue should explain encoding-damaged exclusions');
   assert(payload.draft.repair_queue.selection_policy.some(item => item.includes('repair_complexity')), 'repair queue should explain priority order');
   assert(payload.draft.repair_queue.quality_reason_distribution.some(reason => reason.name === 'no_verified_sources'), 'repair queue should summarize reasons');
   assert(payload.machine_guidance.some(item => item.includes('/api/context')), 'health guidance should direct agents to context API');

@@ -84,20 +84,26 @@ test('buildContentHealthReport summarizes public and draft health', () => {
 
   try {
     const manifest = {
-      article_count: 3,
+      article_count: 4,
       public_article_count: 2,
-      draft_article_count: 1,
+      draft_article_count: 2,
       claim_count: 2,
       articles: [
         publicArticle('ai/public-a', { confidence_level: 'high' }),
         publicArticle('science/public-b', { sources_verified: 1, sources_total: 2, quality_reasons: ['partial_source_verification'] }),
-        draftArticle('ai/draft-a')
+        draftArticle('ai/draft-a'),
+        draftArticle('game-development/encoding-damaged-draft', {
+          sources_verified: 1,
+          sources_total: 10,
+          quality_reasons: ['encoding_mojibake', 'broken_atomic_fact', 'generic_source_homepage']
+        })
       ]
     };
     const contentBySlug = new Map([
       ['ai/public-a', content('ai', 'academic_paper')],
       ['science/public-b', content('science', 'government_report')],
-      ['ai/draft-a', content('ai', 'blog_post')]
+      ['ai/draft-a', content('ai', 'blog_post')],
+      ['game-development/encoding-damaged-draft', content('game-development', 'blog_post')]
     ]);
     const report = buildContentHealthReport({
       manifest,
@@ -132,10 +138,13 @@ test('buildContentHealthReport summarizes public and draft health', () => {
     assertEq(report.public.source_coverage.partial, 1);
     assertEq(report.draft.source_coverage.zero, 1);
     assertEq(report.public.source_tiers.A, 2);
-    assertEq(report.draft.source_tiers.B, 1);
+    assertEq(report.draft.source_tiers.B, 2);
     assertEq(report.public_audit.rows, 2);
     assert(report.stale_docs.some(item => item.path === 'README.md'), 'should report stale docs');
     assert(report.draft.repair_candidates.some(item => item.canonical_slug === 'ai/draft-a'), 'should include draft candidate');
+    assert(!report.draft.repair_candidates.some(item => item.canonical_slug === 'game-development/encoding-damaged-draft'), 'should not recommend encoding-damaged drafts for automatic repair');
+    assertEq(report.draft.repair_excluded_count, 1);
+    assert(report.draft.repair_exclusion_reasons.some(item => item.name === 'encoding_mojibake'), 'should summarize encoding-damaged repair exclusions');
   } finally {
     rmSync(root, { recursive: true, force: true });
   }

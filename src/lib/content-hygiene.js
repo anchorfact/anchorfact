@@ -14,6 +14,7 @@ const MOJIBAKE_PATTERNS = [
   /\uFFFD/,
   /\u00E9[\u0090-\u00BF]/,
   /(?:\u9225|\u937A|\u95C6|\u9359|\u9471|\u951B|\u9E93|\u7EFE)[\s\S]{0,20}(?:\uFFFD|\u20AC|\?)/,
+  /[\u9225\u922B\u9239\u951B\u8133\u941C][\s\S]{0,80}[\u9225\u922B\u9239\u951B\u8133\u941C\u20AC]/,
   /(?:\u20AC|\uFFFD).{0,12}(?:\u20AC|\uFFFD)/
 ];
 

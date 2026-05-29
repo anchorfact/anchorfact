@@ -123,6 +123,26 @@ test('majority broken atomic facts make article draft', () => {
   assertEq(q.fatalReasons.includes('broken_atomic_fact'), true);
 });
 
+test('encoding-damaged mojibake text makes article draft', () => {
+  const damagedText = '\u9239\u6eb6\u9239\u20ac headings survived a bad transcode';
+  const q = evaluateArticleQuality({
+    frontmatter: {
+      primary_sources: [{ title: 'Paper', url: 'https://example.com/paper' }],
+      atomic_facts: [
+        { statement: damagedText, source_url: 'https://example.com/paper' }
+      ]
+    },
+    body: `## TL;DR\n${damagedText}`,
+    filePath: 'content/ai/test.md',
+    contentDir: 'content',
+    verificationData: { sources_total: 1, sources_verified: 1 },
+    confidence: { level: 'medium', inputs: { based_on: 'verified_sources' } }
+  });
+  assertEq(q.publicEligible, false);
+  assertEq(q.qualityReasons.includes('encoding_mojibake'), true);
+  assertEq(q.fatalReasons.includes('encoding_mojibake'), true);
+});
+
 test('high confidence evidence gap is recorded as an audit reason', () => {
   const q = evaluateArticleQuality({
     frontmatter: {

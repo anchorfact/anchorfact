@@ -19,13 +19,22 @@ const DEFAULT_STALE_PATTERNS = [
 ];
 
 const FATAL_DRAFT_REASONS = new Set([
+  'broken_atomic_fact',
+  'claim_evidence_weak',
+  'encoding_mojibake',
   'explicit_draft',
   'estimated_confidence',
+  'generic_source_homepage',
   'missing_primary_sources',
   'no_verified_sources',
   'placeholder_content',
   'verification_count_mismatch',
   'yaml_field_damage'
+]);
+
+const AUTO_REPAIR_EXCLUDED_REASONS = new Set([
+  'encoding_mojibake',
+  'placeholder_content'
 ]);
 
 function increment(map, key, amount = 1) {
@@ -50,6 +59,10 @@ function coverageBucket(article) {
 
 function sortedObject(value) {
   return Object.fromEntries(Object.entries(value).sort((a, b) => a[0].localeCompare(b[0])));
+}
+
+function autoRepairExclusionReasons(reasons = []) {
+  return reasons.filter(reason => AUTO_REPAIR_EXCLUDED_REASONS.has(reason));
 }
 
 function scanStaleDocs(root, patterns = DEFAULT_STALE_PATTERNS) {
@@ -121,6 +134,8 @@ export function buildContentHealthReport(data, options = {}) {
     }
   };
   const draftCandidates = [];
+  let draftExcludedCount = 0;
+  const draftExclusionReasons = {};
 
   for (const article of manifest.articles || []) {
     const status = article.status === 'public' && article.is_draft === false ? 'public' : 'draft';
@@ -144,7 +159,13 @@ export function buildContentHealthReport(data, options = {}) {
     bucket.atomic_facts += facts.length;
     bucket.mapped_atomic_facts += facts.filter(fact => fact.source_ref || fact.source_url || fact.source_doi || fact.source_title).length;
 
-    if (status === 'draft' && !reasons.includes('placeholder_content')) {
+    if (status === 'draft') {
+      const exclusionReasons = autoRepairExclusionReasons(reasons);
+      if (exclusionReasons.length > 0) {
+        draftExcludedCount++;
+        for (const reason of exclusionReasons) increment(draftExclusionReasons, reason);
+        continue;
+      }
       const fatalCount = reasons.filter(reason => FATAL_DRAFT_REASONS.has(reason)).length;
       draftCandidates.push({
         canonical_slug: article.canonical_slug,
@@ -196,6 +217,8 @@ export function buildContentHealthReport(data, options = {}) {
       source_tiers: sortedObject(byStatus.draft.source_tiers),
       source_types: topEntries(byStatus.draft.source_types, 30),
       quality_reasons: topEntries(byStatus.draft.quality_reasons, 20),
+      repair_excluded_count: draftExcludedCount,
+      repair_exclusion_reasons: topEntries(draftExclusionReasons, 30),
       repair_candidates: draftCandidates.slice(0, options.candidateLimit || 25)
     },
     stale_docs: scanStaleDocs(options.root || process.cwd())
@@ -219,6 +242,9 @@ export function renderContentHealthReport(report) {
     ? report.draft.repair_candidates
       .map(item => `- ${item.canonical_slug}: ${item.sources_verified || 0}/${item.sources_total || 0} sources, reasons=${item.quality_reasons.join(', ') || 'none'}`)
       .join('\n')
+    : '- none';
+  const exclusions = (report.draft.repair_exclusion_reasons || []).length
+    ? listEntries(report.draft.repair_exclusion_reasons.slice(0, 12))
     : '- none';
 
   return `# AnchorFact Content Health - ${report.generated.slice(0, 10)}
@@ -255,12 +281,16 @@ ${listEntries(report.public.source_types.slice(0, 12))}
 - source coverage: ${coverageText(report.draft.source_coverage)}
 - source tiers: ${JSON.stringify(report.draft.source_tiers)}
 - atomic facts mapped: ${report.draft.mapped_atomic_facts}/${report.draft.atomic_facts}
+- automatic repair exclusions: ${report.draft.repair_excluded_count || 0}
 
 Top draft reasons:
 ${listEntries(report.draft.quality_reasons.slice(0, 12))}
 
 Draft repair candidates:
 ${candidates}
+
+Draft repair exclusions:
+${exclusions}
 
 ## Stale Docs
 
