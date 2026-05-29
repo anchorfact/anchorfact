@@ -467,6 +467,48 @@ test('runAiEvals retries transient empty eval route bodies', async () => {
   assertEq(claimCalls, 2);
 });
 
+test('runAiEvals retries transient 5xx eval route responses', async () => {
+  let evidenceCalls = 0;
+  const report = await runAiEvals({
+    baseUrl: 'https://anchorfact.org',
+    generatedAt: '2026-05-29T00:00:00.000Z',
+    routeRetryDelayMs: 0,
+    fetchImpl: async (url) => {
+      const route = `${url.pathname}${url.search}`;
+      if (route === '/evals.json') {
+        return jsonResponse({
+          evals: [
+            {
+              id: 'ai_query_routing_rlhf',
+              call: { method: 'GET', path: '/api/evidence?q=RLHF&limit=3' },
+              expected: {
+                status: 200,
+                content_type: 'application/json',
+                schema_version: 'anchorfact.evidence-api.v1',
+                top_canonical_slug: 'ai/rlhf'
+              }
+            }
+          ]
+        });
+      }
+      if (route === '/api/evidence?q=RLHF&limit=3') {
+        evidenceCalls++;
+        return evidenceCalls === 1
+          ? jsonResponse({ error: 'temporary edge failure' }, 'application/json; charset=utf-8', 503)
+          : jsonResponse({
+              schema_version: 'anchorfact.evidence-api.v1',
+              packs: [{ canonical_slug: 'ai/rlhf' }]
+            });
+      }
+      return jsonResponse({ error: 'missing fixture' }, 'application/json; charset=utf-8', 404);
+    }
+  });
+
+  assertEq(report.ok, true);
+  assertEq(report.passed, 1);
+  assertEq(evidenceCalls, 2);
+});
+
 for (const { name, fn } of tests) {
   try {
     await fn();

@@ -46,6 +46,36 @@ const HIGH_INTENT_QUERY_EVALS = [
     id: 'ai_query_routing_low_resource_nlp',
     query: 'low resource NLP',
     canonical_slug: 'ai/low-resource-nlp'
+  },
+  {
+    id: 'query_routing_postgresql',
+    query: 'postgresql',
+    canonical_slug: 'computer-science/postgresql'
+  },
+  {
+    id: 'query_routing_climate_change',
+    query: 'climate change',
+    canonical_slug: 'science/climate-change'
+  },
+  {
+    id: 'query_routing_stock_market_basics',
+    query: 'stock market basics',
+    canonical_slug: 'business/stock-market-basics'
+  },
+  {
+    id: 'query_routing_ancient_egypt',
+    query: 'ancient egypt',
+    canonical_slug: 'history/ancient-egypt'
+  },
+  {
+    id: 'query_routing_public_speaking',
+    query: 'public speaking',
+    canonical_slug: 'self-improvement/public-speaking'
+  },
+  {
+    id: 'query_routing_sports_biomechanics',
+    query: 'sports biomechanics',
+    canonical_slug: 'sports/sports-biomechanics'
   }
 ];
 

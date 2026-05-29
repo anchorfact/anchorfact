@@ -104,7 +104,7 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
 
   assertEq(payload.schema_version, 'anchorfact.evals.v1');
   assertEq(payload.provenance_url, 'https://anchorfact.org/provenance.json');
-  assertEq(payload.eval_count, 23);
+  assertEq(payload.eval_count, 29);
   assertEq(payload.evals.map(evalCase => evalCase.id), [
     'api_discovery',
     'openapi_context_contract',
@@ -116,6 +116,12 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
     'ai_query_routing_rlhf',
     'ai_query_routing_mixture_of_experts',
     'ai_query_routing_low_resource_nlp',
+    'query_routing_postgresql',
+    'query_routing_climate_change',
+    'query_routing_stock_market_basics',
+    'query_routing_ancient_egypt',
+    'query_routing_public_speaking',
+    'query_routing_sports_biomechanics',
     'context_pack_json',
     'unsupported_query_evidence',
     'unsupported_context_pack_json',
@@ -166,6 +172,10 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
   assert(rlhfEval.call.path.includes('/api/evidence?q=RLHF&limit=3'), 'RLHF routing eval should use the high-intent acronym query');
   assertEq(rlhfEval.expected.top_canonical_slug, 'ai/rlhf');
   assertEq(rlhfEval.expected.contains_canonical_slug, 'ai/rlhf');
+
+  const climateEval = payload.evals.find(evalCase => evalCase.id === 'query_routing_climate_change');
+  assert(climateEval.call.path.includes('/api/evidence?q=climate+change&limit=3'), 'climate routing eval should use a cross-domain science query');
+  assertEq(climateEval.expected.top_canonical_slug, 'science/climate-change');
 
   const contextEval = payload.evals.find(evalCase => evalCase.id === 'context_pack_json');
   assert(contextEval.call.path.includes('/api/context?q=gaussian+splatting&limit=3'), 'context eval should include encoded query path');

@@ -250,6 +250,42 @@ test('production smoke retries transient empty JSON route bodies', async () => {
   }
 });
 
+test('production smoke retries transient 5xx route responses', async () => {
+  const originalFetch = globalThis.fetch;
+  let calls = 0;
+  globalThis.fetch = async (url) => {
+    calls++;
+    if (calls === 1) {
+      return {
+        status: 503,
+        ok: false,
+        url: String(url),
+        headers: new Map([['content-type', 'application/json; charset=utf-8']]),
+        async text() {
+          return '{"error":"temporary edge failure"}';
+        }
+      };
+    }
+    return {
+      status: 200,
+      ok: true,
+      url: String(url),
+      headers: new Map([['content-type', 'application/json; charset=utf-8']]),
+      async text() {
+        return '{"schema_version":"anchorfact.evidence-api.v1"}';
+      }
+    };
+  };
+
+  try {
+    const result = await fetchRoute('https://anchorfact.org', '/api/evidence?q=gaussian', { routeRetryDelayMs: 0 });
+    assertEq(result.status, 200);
+    assertEq(calls, 2);
+  } finally {
+    globalThis.fetch = originalFetch;
+  }
+});
+
 test('production smoke requires baseline security response headers', () => {
   assert(REQUIRED_SECURITY_HEADERS.some(header => header.name === 'X-Content-Type-Options' && header.expected === 'nosniff'), 'should require nosniff');
   assert(REQUIRED_SECURITY_HEADERS.some(header => header.name === 'X-Frame-Options' && header.expected === 'DENY'), 'should require frame protection');
