@@ -33,7 +33,7 @@ No local `verify-full` run was performed for this audit.
 
 The signed `/content-health.json` artifact is the current machine-readable
 source of truth for health metrics. It reports full source coverage for all 578
-public articles, 1764/1764 mapped public claims, and 1651 public sources.
+public articles, 1764/1764 mapped public claims, and 1519 public sources.
 
 ## Website and Public Surface
 
@@ -71,7 +71,7 @@ Current public-health counters from the signed content health artifact:
 | Partial source coverage | 0 |
 | Zero source coverage | 0 |
 | Public claim mappings | 1764 / 1764 |
-| Public sources | 1651 |
+| Public sources | 1519 |
 
 Recommended content posture remains conservative. Public content should expand
 only when it can keep the current standard: source-mapped facts, explicit
