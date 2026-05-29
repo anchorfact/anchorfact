@@ -37,6 +37,19 @@ function matchingPack(payload, slug) {
   return (payload?.packs || []).find(pack => pack?.canonical_slug === slug) || null;
 }
 
+function firstCanonicalSlug(payload) {
+  const candidates = [
+    payload?.packs,
+    payload?.results,
+    payload?.evidence_packs,
+    payload?.matched_articles
+  ];
+  for (const list of candidates) {
+    if (Array.isArray(list) && list[0]?.canonical_slug) return list[0].canonical_slug;
+  }
+  return null;
+}
+
 function evaluateJsonExpected(payload, expected, failures) {
   if (expected.schema_version) {
     check(payload?.schema_version === expected.schema_version, failures, `schema_version expected ${expected.schema_version}, got ${payload?.schema_version || '(missing)'}`);
@@ -82,6 +95,10 @@ function evaluateJsonExpected(payload, expected, failures) {
   }
   if (expected.contains_canonical_slug) {
     check(jsonIncludes(payload, expected.contains_canonical_slug), failures, `payload should include canonical slug ${expected.contains_canonical_slug}`);
+  }
+  if (expected.top_canonical_slug) {
+    const actual = firstCanonicalSlug(payload);
+    check(actual === expected.top_canonical_slug, failures, `top canonical slug expected ${expected.top_canonical_slug}, got ${actual || '(missing)'}`);
   }
   if (expected.claim_id) {
     check(jsonIncludes(payload, expected.claim_id), failures, `payload should include claim ${expected.claim_id}`);

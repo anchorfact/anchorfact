@@ -393,6 +393,38 @@ test('runAiEvals reports expectation failures', async () => {
   assert(report.results[3].failures.some(failure => failure.includes('C-tier source')), 'C-tier source drift should be reported');
 });
 
+test('runAiEvals reports top-ranked canonical slug drift for query routing evals', async () => {
+  const report = await runAiEvals({
+    baseUrl: 'https://anchorfact.org',
+    generatedAt: '2026-05-29T00:00:00.000Z',
+    fetchImpl: fetchFixture({
+      '/evals.json': jsonResponse({
+        evals: [
+          {
+            id: 'ai_query_routing_rlhf',
+            call: { method: 'GET', path: '/api/evidence?q=RLHF&limit=3' },
+            expected: {
+              status: 200,
+              content_type: 'application/json',
+              schema_version: 'anchorfact.evidence-api.v1',
+              top_canonical_slug: 'ai/rlhf'
+            }
+          }
+        ]
+      }),
+      '/api/evidence?q=RLHF&limit=3': jsonResponse({
+        schema_version: 'anchorfact.evidence-api.v1',
+        result_count: 1,
+        packs: [{ canonical_slug: 'ai/constitutional-ai' }]
+      })
+    })
+  });
+
+  assertEq(report.ok, false);
+  assertEq(report.failed, 1);
+  assert(report.results[0].failures.some(failure => failure.includes('top canonical slug')), 'top slug drift should be reported');
+});
+
 test('runAiEvals retries transient empty eval route bodies', async () => {
   let claimCalls = 0;
   const report = await runAiEvals({

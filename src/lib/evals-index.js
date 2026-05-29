@@ -21,6 +21,33 @@ import {
 
 const PREFERRED_SLUG = 'ai/3d-generation-gaussian-splatting';
 const UNSUPPORTED_QUERY = 'lunar dentistry';
+const HIGH_INTENT_QUERY_EVALS = [
+  {
+    id: 'ai_query_routing_retrieval_augmented_generation',
+    query: 'retrieval augmented generation',
+    canonical_slug: 'ai/rag'
+  },
+  {
+    id: 'ai_query_routing_parameter_efficient_fine_tuning',
+    query: 'parameter efficient fine tuning',
+    canonical_slug: 'ai/parameter-efficient-fine-tuning'
+  },
+  {
+    id: 'ai_query_routing_rlhf',
+    query: 'RLHF',
+    canonical_slug: 'ai/rlhf'
+  },
+  {
+    id: 'ai_query_routing_mixture_of_experts',
+    query: 'mixture of experts',
+    canonical_slug: 'ai/mixture-of-experts'
+  },
+  {
+    id: 'ai_query_routing_low_resource_nlp',
+    query: 'low resource NLP',
+    canonical_slug: 'ai/low-resource-nlp'
+  }
+];
 
 function queryPath(path, params) {
   const search = new URLSearchParams();
@@ -247,6 +274,21 @@ export function buildEvalsIndex({
         min_sources_per_matching_pack: 1
       }
     },
+    ...HIGH_INTENT_QUERY_EVALS.map(evalCase => ({
+      id: evalCase.id,
+      intent: `Confirm the high-intent AI query "${evalCase.query}" resolves first to the intended evidence pack.`,
+      call: call(queryPath('/api/evidence', { q: evalCase.query, limit: 3 }), site),
+      expected: {
+        status: 200,
+        content_type: 'application/json',
+        schema_version: EVIDENCE_API_SCHEMA_VERSION,
+        top_canonical_slug: evalCase.canonical_slug,
+        contains_canonical_slug: evalCase.canonical_slug,
+        min_packs: 1,
+        min_claims_per_matching_pack: 1,
+        min_sources_per_matching_pack: 1
+      }
+    })),
     {
       id: 'context_pack_json',
       intent: 'Confirm the context API combines planning status, fallback guidance, and source-grounded evidence packs.',

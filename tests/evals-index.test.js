@@ -104,13 +104,18 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
 
   assertEq(payload.schema_version, 'anchorfact.evals.v1');
   assertEq(payload.provenance_url, 'https://anchorfact.org/provenance.json');
-  assertEq(payload.eval_count, 18);
+  assertEq(payload.eval_count, 23);
   assertEq(payload.evals.map(evalCase => evalCase.id), [
     'api_discovery',
     'openapi_context_contract',
     'query_plan',
     'unsupported_query_plan',
     'evidence_pack_json',
+    'ai_query_routing_retrieval_augmented_generation',
+    'ai_query_routing_parameter_efficient_fine_tuning',
+    'ai_query_routing_rlhf',
+    'ai_query_routing_mixture_of_experts',
+    'ai_query_routing_low_resource_nlp',
     'context_pack_json',
     'unsupported_query_evidence',
     'unsupported_context_pack_json',
@@ -156,6 +161,11 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
   assert(evidenceEval.call.path.includes('/api/evidence?q=gaussian+splatting&limit=3'), 'evidence eval should include encoded query path');
   assertEq(evidenceEval.expected.schema_version, 'anchorfact.evidence-api.v1');
   assertEq(evidenceEval.expected.contains_canonical_slug, 'ai/3d-generation-gaussian-splatting');
+
+  const rlhfEval = payload.evals.find(evalCase => evalCase.id === 'ai_query_routing_rlhf');
+  assert(rlhfEval.call.path.includes('/api/evidence?q=RLHF&limit=3'), 'RLHF routing eval should use the high-intent acronym query');
+  assertEq(rlhfEval.expected.top_canonical_slug, 'ai/rlhf');
+  assertEq(rlhfEval.expected.contains_canonical_slug, 'ai/rlhf');
 
   const contextEval = payload.evals.find(evalCase => evalCase.id === 'context_pack_json');
   assert(contextEval.call.path.includes('/api/context?q=gaussian+splatting&limit=3'), 'context eval should include encoded query path');
