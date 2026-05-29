@@ -60,6 +60,7 @@ test('buildMcpProfile publishes local MCP install and tool metadata', () => {
   ]);
   assert(profile.related_public_artifacts.includes('/evals.json'), 'profile should point agents to evals');
   assert(profile.related_public_artifacts.includes('/capabilities.json'), 'profile should point agents to capabilities');
+  assert(profile.related_public_artifacts.includes('/coverage.json'), 'profile should point agents to coverage');
   assert(profile.related_public_artifacts.includes('/provenance.json'), 'profile should point agents to provenance');
 });
 

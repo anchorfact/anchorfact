@@ -271,6 +271,7 @@ export function buildEvalsIndex({
           'claims_json',
           'topics_json',
           'capabilities_json',
+          'coverage_json',
           'examples_json',
           'graph_json',
           'evals_json',

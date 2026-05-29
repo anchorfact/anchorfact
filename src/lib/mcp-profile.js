@@ -179,6 +179,7 @@ export function buildMcpProfile({
       '/agent.json',
       '/openapi.json',
       '/capabilities.json',
+      '/coverage.json',
       '/examples.json',
       '/evals.json',
       '/graph.json',

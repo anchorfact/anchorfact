@@ -131,6 +131,7 @@ test('public entrypoints exclude draft articles', () => {
   assert(indexHtml.includes('/agent.json'), 'index should link to agent profile');
   assert(indexHtml.includes('/openapi.json'), 'index should link to OpenAPI contract');
   assert(indexHtml.includes('/capabilities.json'), 'index should link to capabilities router');
+  assert(indexHtml.includes('/coverage.json'), 'index should link to coverage guide');
   assert(indexHtml.includes('/topics.json'), 'index should link to topics index');
   assert(indexHtml.includes('/examples.json'), 'index should link to examples index');
   assert(indexHtml.includes('/graph.json'), 'index should link to graph index');
@@ -147,6 +148,7 @@ test('public entrypoints exclude draft articles', () => {
   assert(llmsTxt.includes('Agent Profile'), 'llms.txt should include agent profile');
   assert(llmsTxt.includes('OpenAPI'), 'llms.txt should include OpenAPI contract');
   assert(llmsTxt.includes('Capabilities'), 'llms.txt should include capabilities router');
+  assert(llmsTxt.includes('Coverage'), 'llms.txt should include coverage guide');
   assert(llmsTxt.includes('Topics'), 'llms.txt should include topics index');
   assert(llmsTxt.includes('Examples'), 'llms.txt should include examples index');
   assert(llmsTxt.includes('Graph'), 'llms.txt should include graph index');
@@ -163,6 +165,7 @@ test('public entrypoints exclude draft articles', () => {
   assert(sitemap.includes('/agent.json'), 'sitemap should include agent profile');
   assert(sitemap.includes('/openapi.json'), 'sitemap should include OpenAPI contract');
   assert(sitemap.includes('/capabilities.json'), 'sitemap should include capabilities router');
+  assert(sitemap.includes('/coverage.json'), 'sitemap should include coverage guide');
   assert(sitemap.includes('/topics.json'), 'sitemap should include topics index');
   assert(sitemap.includes('/examples.json'), 'sitemap should include examples index');
   assert(sitemap.includes('/graph.json'), 'sitemap should include graph index');
@@ -198,6 +201,7 @@ test('agent profile describes the machine contract', () => {
   assertEq(agent.endpoints.claims.url, 'https://anchorfact.org/claims.json');
   assertEq(agent.endpoints.topics.url, 'https://anchorfact.org/topics.json');
   assertEq(agent.endpoints.capabilities.url, 'https://anchorfact.org/capabilities.json');
+  assertEq(agent.endpoints.coverage.url, 'https://anchorfact.org/coverage.json');
   assertEq(agent.endpoints.examples.url, 'https://anchorfact.org/examples.json');
   assertEq(agent.endpoints.graph.url, 'https://anchorfact.org/graph.json');
   assertEq(agent.endpoints.evals.url, 'https://anchorfact.org/evals.json');
@@ -217,6 +221,7 @@ test('agent profile describes the machine contract', () => {
   assert(agent.recommended_workflow.some(step => step.includes('/provenance.json')), 'agent workflow should mention provenance');
   assert(agent.recommended_workflow.some(step => step.includes('/topics.json')), 'agent workflow should mention topics index');
   assert(agent.recommended_workflow.some(step => step.includes('/capabilities.json')), 'agent workflow should mention capabilities router');
+  assert(agent.recommended_workflow.some(step => step.includes('/coverage.json')), 'agent workflow should mention coverage guide');
   assert(agent.recommended_workflow.some(step => step.includes('/examples.json')), 'agent workflow should mention examples index');
   assert(agent.recommended_workflow.some(step => step.includes('/graph.json')), 'agent workflow should mention graph index');
   assert(agent.recommended_workflow.some(step => step.includes('/evals.json')), 'agent workflow should mention evals index');
@@ -244,6 +249,7 @@ test('openapi.json describes the static AI contract', () => {
   assert(openapi.paths['/agent.json'], 'OpenAPI should describe agent profile');
   assert(openapi.paths['/claims.json'], 'OpenAPI should describe claims endpoint');
   assert(openapi.paths['/capabilities.json'], 'OpenAPI should describe capabilities endpoint');
+  assert(openapi.paths['/coverage.json'], 'OpenAPI should describe coverage endpoint');
   assert(openapi.paths['/topics.json'], 'OpenAPI should describe topics endpoint');
   assert(openapi.paths['/examples.json'], 'OpenAPI should describe examples endpoint');
   assert(openapi.paths['/graph.json'], 'OpenAPI should describe graph endpoint');
@@ -262,6 +268,7 @@ test('openapi.json describes the static AI contract', () => {
   assert(openapi.paths['/{canonical_slug}/index.json'], 'OpenAPI should describe article JSON-LD template');
   assert(openapi.components.schemas.Topics, 'OpenAPI should define Topics schema');
   assert(openapi.components.schemas.Capabilities, 'OpenAPI should define Capabilities schema');
+  assert(openapi.components.schemas.Coverage, 'OpenAPI should define Coverage schema');
   assert(openapi.components.schemas.Examples, 'OpenAPI should define Examples schema');
   assert(openapi.components.schemas.Graph, 'OpenAPI should define Graph schema');
   assert(openapi.components.schemas.Evals, 'OpenAPI should define Evals schema');
@@ -323,6 +330,18 @@ test('capabilities.json describes AI endpoint routing', () => {
   assert(capabilities.capabilities.some(capability => capability.id === 'resolve_many_references'), 'capabilities should include batch resolver workflow');
   assert(capabilities.capabilities.some(capability => capability.id === 'verify_official_build'), 'capabilities should include provenance verification workflow');
   assert(capabilities.default_sequence.includes('verify_official_build'), 'capabilities should put provenance in the default sequence');
+});
+
+test('coverage.json describes public coverage and limits', () => {
+  assert(existsSync(join(distDir, 'coverage.json')), 'coverage.json missing');
+  const coverage = JSON.parse(readFileSync(join(distDir, 'coverage.json'), 'utf-8'));
+  assertEq(coverage.schema_version, 'anchorfact.coverage.v1');
+  assertEq(coverage.provenance_url, 'https://anchorfact.org/provenance.json');
+  assertEq(coverage.coverage_summary.public_articles, 1);
+  assertEq(coverage.coverage_summary.public_claims, 2);
+  assertEq(coverage.coverage_summary.confidence_distribution.medium, 1);
+  assert(coverage.topic_coverage.some(topic => topic.id === 'public-fixture'), 'coverage should include fixture topic');
+  assert(coverage.coverage_limits.some(limit => limit.id === 'not_general_web_search'), 'coverage should describe limits');
 });
 
 test('examples.json describes executable AI usage examples', () => {
@@ -395,6 +414,7 @@ test('evals.json describes executable AI integration checks', () => {
   assert(provenanceEval.expected.required_artifacts.includes('evals_json'), 'evals should require self hash in provenance');
   assert(provenanceEval.expected.required_artifacts.includes('mcp_json'), 'evals should require MCP hash in provenance');
   assert(provenanceEval.expected.required_artifacts.includes('capabilities_json'), 'evals should require capabilities hash in provenance');
+  assert(provenanceEval.expected.required_artifacts.includes('coverage_json'), 'evals should require coverage hash in provenance');
 });
 
 test('mcp.json describes local MCP installation and tools', () => {
@@ -414,6 +434,7 @@ test('mcp.json describes local MCP installation and tools', () => {
   ]);
   assert(mcp.related_public_artifacts.includes('/evals.json'), 'MCP profile should link evals');
   assert(mcp.related_public_artifacts.includes('/capabilities.json'), 'MCP profile should link capabilities');
+  assert(mcp.related_public_artifacts.includes('/coverage.json'), 'MCP profile should link coverage');
 });
 
 test('sources.json describes deduplicated public evidence sources', () => {
@@ -474,6 +495,7 @@ test('provenance.json describes compiled artifacts', () => {
   assert(/^[a-f0-9]{64}$/.test(provenance.artifacts.claims_json.sha256), 'claims checksum should be sha256 hex');
   assert(/^[a-f0-9]{64}$/.test(provenance.artifacts.topics_json.sha256), 'topics checksum should be sha256 hex');
   assert(/^[a-f0-9]{64}$/.test(provenance.artifacts.capabilities_json.sha256), 'capabilities checksum should be sha256 hex');
+  assert(/^[a-f0-9]{64}$/.test(provenance.artifacts.coverage_json.sha256), 'coverage checksum should be sha256 hex');
   assert(/^[a-f0-9]{64}$/.test(provenance.artifacts.examples_json.sha256), 'examples checksum should be sha256 hex');
   assert(/^[a-f0-9]{64}$/.test(provenance.artifacts.graph_json.sha256), 'graph checksum should be sha256 hex');
   assert(/^[a-f0-9]{64}$/.test(provenance.artifacts.evals_json.sha256), 'evals checksum should be sha256 hex');
@@ -487,6 +509,7 @@ test('provenance.json describes compiled artifacts', () => {
   assert(provenance.artifacts.claims_json.bytes > 0, 'claims artifact should include byte size');
   assert(provenance.artifacts.topics_json.bytes > 0, 'topics artifact should include byte size');
   assert(provenance.artifacts.capabilities_json.bytes > 0, 'capabilities artifact should include byte size');
+  assert(provenance.artifacts.coverage_json.bytes > 0, 'coverage artifact should include byte size');
   assert(provenance.artifacts.examples_json.bytes > 0, 'examples artifact should include byte size');
   assert(provenance.artifacts.graph_json.bytes > 0, 'graph artifact should include byte size');
   assert(provenance.artifacts.evals_json.bytes > 0, 'evals artifact should include byte size');
@@ -526,6 +549,7 @@ test('_headers is generated for Cloudflare Pages static output', () => {
   assert(headers.includes('/manifest.json\n  Access-Control-Allow-Origin: *'), '_headers should expose manifest CORS');
   assert(headers.includes('/topics.json\n  Access-Control-Allow-Origin: *'), '_headers should expose topics CORS');
   assert(headers.includes('/capabilities.json\n  Access-Control-Allow-Origin: *'), '_headers should expose capabilities CORS');
+  assert(headers.includes('/coverage.json\n  Access-Control-Allow-Origin: *'), '_headers should expose coverage CORS');
   assert(headers.includes('/examples.json\n  Access-Control-Allow-Origin: *'), '_headers should expose examples CORS');
   assert(headers.includes('/graph.json\n  Access-Control-Allow-Origin: *'), '_headers should expose graph CORS');
   assert(headers.includes('/evals.json\n  Access-Control-Allow-Origin: *'), '_headers should expose evals CORS');

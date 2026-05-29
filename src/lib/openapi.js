@@ -6,6 +6,7 @@ import {
   CLAIM_API_SCHEMA_VERSION,
   CLAIMS_SCHEMA_VERSION,
   COMPILER_VERSION,
+  COVERAGE_SCHEMA_VERSION,
   EVALS_SCHEMA_VERSION,
   EVIDENCE_API_SCHEMA_VERSION,
   EXAMPLES_SCHEMA_VERSION,
@@ -101,6 +102,7 @@ export function buildOpenApiContract({
       '/claims.json': getJson('Public verified atomic claims', 'Claims'),
       '/topics.json': getJson('Public topic coverage map', 'Topics'),
       '/capabilities.json': getJson('AI capability router', 'Capabilities'),
+      '/coverage.json': getJson('AI coverage and limits guide', 'Coverage'),
       '/examples.json': getJson('Executable AI usage examples', 'Examples'),
       '/graph.json': getJson('Public knowledge graph', 'Graph'),
       '/evals.json': getJson('Executable AI integration checks', 'Evals'),
@@ -413,6 +415,13 @@ export function buildOpenApiContract({
           default_sequence: { type: 'array', items: { type: 'string' } },
           selection_rules: { type: 'array', items: { type: 'object' } },
           capabilities: { type: 'array', items: { type: 'object' } }
+        }),
+        Coverage: schemaVersioned('Coverage', COVERAGE_SCHEMA_VERSION, {
+          coverage_summary: { type: 'object' },
+          topic_coverage: { type: 'array', items: { type: 'object' } },
+          best_entrypoints: { type: 'object' },
+          recommended_decision_flow: { type: 'array', items: { type: 'object' } },
+          coverage_limits: { type: 'array', items: { type: 'object' } }
         }),
         Examples: schemaVersioned('Examples', EXAMPLES_SCHEMA_VERSION, {
           example_count: { type: 'integer' },

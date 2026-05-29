@@ -107,6 +107,7 @@ test('public machine entrypoints exclude drafts', () => {
   const agent = JSON.parse(readFileSync(join(distDir, 'agent.json'), 'utf-8'));
   const openapi = JSON.parse(readFileSync(join(distDir, 'openapi.json'), 'utf-8'));
   const capabilities = JSON.parse(readFileSync(join(distDir, 'capabilities.json'), 'utf-8'));
+  const coverage = JSON.parse(readFileSync(join(distDir, 'coverage.json'), 'utf-8'));
   const topics = JSON.parse(readFileSync(join(distDir, 'topics.json'), 'utf-8'));
   const examples = JSON.parse(readFileSync(join(distDir, 'examples.json'), 'utf-8'));
   const graph = JSON.parse(readFileSync(join(distDir, 'graph.json'), 'utf-8'));
@@ -119,6 +120,7 @@ test('public machine entrypoints exclude drafts', () => {
   assertEq(agent.current_snapshot.public_articles, 1);
   assertEq(agent.endpoints.openapi.url, 'https://anchorfact.org/openapi.json');
   assertEq(agent.endpoints.capabilities.url, 'https://anchorfact.org/capabilities.json');
+  assertEq(agent.endpoints.coverage.url, 'https://anchorfact.org/coverage.json');
   assertEq(agent.endpoints.evidence_api.path, '/api/evidence?q={query}');
   assertEq(agent.endpoints.resolve_api.path, '/api/resolve?ref={reference}');
   assertEq(agent.endpoints.resolve_batch_api.path, '/api/resolve-batch?ref={reference}&ref={reference}');
@@ -138,6 +140,7 @@ test('public machine entrypoints exclude drafts', () => {
   assertEq(agent.endpoints.article_jsonld_template.path_template, '/{canonical_slug}/index.json');
   assert(openapi.paths['/{canonical_slug}/index.json'], 'OpenAPI should expose article JSON-LD template');
   assert(openapi.paths['/capabilities.json'], 'OpenAPI should expose capabilities endpoint');
+  assert(openapi.paths['/coverage.json'], 'OpenAPI should expose coverage endpoint');
   assert(openapi.paths['/api/evidence'], 'OpenAPI should expose evidence API endpoint');
   assert(openapi.paths['/api/resolve'], 'OpenAPI should expose resolve API endpoint');
   assert(openapi.paths['/api/resolve-batch'], 'OpenAPI should expose resolve batch API endpoint');
@@ -151,6 +154,9 @@ test('public machine entrypoints exclude drafts', () => {
   assertEq(capabilities.capability_count, 8);
   assert(capabilities.capabilities.some(capability => capability.id === 'answer_with_evidence'), 'capabilities should include evidence routing');
   assert(capabilities.capabilities.some(capability => capability.id === 'resolve_many_references'), 'capabilities should include batch resolver routing');
+  assertEq(coverage.schema_version, 'anchorfact.coverage.v1');
+  assertEq(coverage.coverage_summary.public_articles, 1);
+  assert(coverage.topic_coverage.some(topic => topic.id === 'ai'), 'coverage should include ai topic');
   assert(openapi.paths['/examples.json'], 'OpenAPI should expose examples endpoint');
   assert(openapi.paths['/graph.json'], 'OpenAPI should expose graph endpoint');
   assert(openapi.paths['/evals.json'], 'OpenAPI should expose evals endpoint');

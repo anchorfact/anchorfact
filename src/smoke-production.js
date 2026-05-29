@@ -120,7 +120,7 @@ export async function main() {
   const expectedDraft = readExpectedInt('EXPECTED_DRAFT_ARTICLES');
   const expectedClaims = readExpectedInt('EXPECTED_CLAIMS');
 
-  const routes = ['/', '/agent.json', '/.well-known/anchorfact.json', '/openapi.json', '/manifest.json', '/llms.txt', '/claims.json', '/topics.json', '/capabilities.json', '/examples.json', '/graph.json', '/evals.json', '/mcp.json', '/api/evidence?q=gaussian&limit=2', '/api/evidence?q=gaussian&limit=1&format=markdown', '/api/resolve?ref=f1', '/api/resolve-batch?ref=f1&ref=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079', '/api/resolve-batch?ref=f1&ref=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079&format=markdown', '/api/search?q=gaussian&limit=2', '/api/article?slug=ai/3d-generation-gaussian-splatting', '/api/claim?id=f1', '/api/cite?id=f1', '/api/cite?id=f1&format=markdown', '/api/source?url=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079', '/search-index.json', '/sources.json', '/provenance.json', '/drafts.html'];
+  const routes = ['/', '/agent.json', '/.well-known/anchorfact.json', '/openapi.json', '/manifest.json', '/llms.txt', '/claims.json', '/topics.json', '/capabilities.json', '/coverage.json', '/examples.json', '/graph.json', '/evals.json', '/mcp.json', '/api/evidence?q=gaussian&limit=2', '/api/evidence?q=gaussian&limit=1&format=markdown', '/api/resolve?ref=f1', '/api/resolve-batch?ref=f1&ref=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079', '/api/resolve-batch?ref=f1&ref=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079&format=markdown', '/api/search?q=gaussian&limit=2', '/api/article?slug=ai/3d-generation-gaussian-splatting', '/api/claim?id=f1', '/api/cite?id=f1', '/api/cite?id=f1&format=markdown', '/api/source?url=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079', '/search-index.json', '/sources.json', '/provenance.json', '/drafts.html'];
   const results = {};
 
   for (const route of routes) {
@@ -135,6 +135,7 @@ export async function main() {
   const claims = JSON.parse(results['/claims.json'].body);
   const topics = JSON.parse(results['/topics.json'].body);
   const capabilities = JSON.parse(results['/capabilities.json'].body);
+  const coverage = JSON.parse(results['/coverage.json'].body);
   const examples = JSON.parse(results['/examples.json'].body);
   const graph = JSON.parse(results['/graph.json'].body);
   const evals = JSON.parse(results['/evals.json'].body);
@@ -187,6 +188,7 @@ export async function main() {
   assertOk(wellKnownAgentProfile.generated === agentProfile.generated, 'well-known agent profile generated timestamp does not match /agent.json', failures);
   assertOk(agentProfile.endpoints?.openapi?.url === new URL('/openapi.json', baseUrl).href, 'agent profile OpenAPI endpoint does not match base URL', failures);
   assertOk(agentProfile.endpoints?.capabilities?.url === new URL('/capabilities.json', baseUrl).href, 'agent profile capabilities endpoint does not match base URL', failures);
+  assertOk(agentProfile.endpoints?.coverage?.url === new URL('/coverage.json', baseUrl).href, 'agent profile coverage endpoint does not match base URL', failures);
   assertOk(agentProfile.endpoints?.evidence_api?.path === '/api/evidence?q={query}', 'agent profile evidence API endpoint template is missing', failures);
   assertOk(agentProfile.endpoints?.resolve_api?.path === '/api/resolve?ref={reference}', 'agent profile resolve API endpoint template is missing', failures);
   assertOk(agentProfile.endpoints?.resolve_batch_api?.path === '/api/resolve-batch?ref={reference}&ref={reference}', 'agent profile resolve batch API endpoint template is missing', failures);
@@ -212,6 +214,7 @@ export async function main() {
   assertOk(openapi.paths?.['/api/source'], 'openapi is missing /api/source path', failures);
   assertOk(openapi.paths?.['/topics.json'], 'openapi is missing /topics.json path', failures);
   assertOk(openapi.paths?.['/capabilities.json'], 'openapi is missing /capabilities.json path', failures);
+  assertOk(openapi.paths?.['/coverage.json'], 'openapi is missing /coverage.json path', failures);
   assertOk(openapi.paths?.['/examples.json'], 'openapi is missing /examples.json path', failures);
   assertOk(openapi.paths?.['/graph.json'], 'openapi is missing /graph.json path', failures);
   assertOk(openapi.paths?.['/evals.json'], 'openapi is missing /evals.json path', failures);
@@ -248,6 +251,12 @@ export async function main() {
   assertOk(Array.isArray(capabilities.capabilities) && capabilities.capabilities.some(capability => capability.id === 'answer_with_evidence'), '/capabilities.json is missing answer_with_evidence', failures);
   assertOk(Array.isArray(capabilities.capabilities) && capabilities.capabilities.some(capability => capability.id === 'resolve_many_references'), '/capabilities.json is missing resolve_many_references', failures);
   assertOk(Array.isArray(capabilities.capabilities) && capabilities.capabilities.some(capability => capability.id === 'verify_official_build'), '/capabilities.json is missing verify_official_build', failures);
+  assertOk(coverage.schema_version === 'anchorfact.coverage.v1', `coverage schema_version expected anchorfact.coverage.v1, got ${coverage.schema_version || '(missing)'}`, failures);
+  assertOk(coverage.provenance_url === new URL('/provenance.json', baseUrl).href, `coverage provenance_url expected ${new URL('/provenance.json', baseUrl).href}, got ${coverage.provenance_url || '(missing)'}`, failures);
+  assertOk(coverage.coverage_summary?.public_articles === manifest.public_article_count, 'coverage public count does not match manifest', failures);
+  assertOk(coverage.coverage_summary?.public_claims === claimCount, 'coverage claim count does not match claims.json', failures);
+  assertOk(Array.isArray(coverage.topic_coverage) && coverage.topic_coverage.some(topic => topic.id === 'ai'), '/coverage.json is missing ai topic coverage', failures);
+  assertOk(Array.isArray(coverage.coverage_limits) && coverage.coverage_limits.some(limit => limit.id === 'not_general_web_search'), '/coverage.json is missing coverage limits', failures);
   assertOk(examples.schema_version === 'anchorfact.examples.v1', `examples schema_version expected anchorfact.examples.v1, got ${examples.schema_version || '(missing)'}`, failures);
   assertOk(examples.provenance_url === new URL('/provenance.json', baseUrl).href, `examples provenance_url expected ${new URL('/provenance.json', baseUrl).href}, got ${examples.provenance_url || '(missing)'}`, failures);
   assertOk(examples.example_count === (Array.isArray(examples.examples) ? examples.examples.length : 0), 'examples example_count does not match examples[] length', failures);
@@ -352,6 +361,7 @@ export async function main() {
   assertOk(provenance.artifacts?.claims_json?.sha256 === sha256Text(results['/claims.json'].body), 'provenance claims hash does not match /claims.json', failures);
   assertOk(provenance.artifacts?.topics_json?.sha256 === sha256Text(results['/topics.json'].body), 'provenance topics hash does not match /topics.json', failures);
   assertOk(provenance.artifacts?.capabilities_json?.sha256 === sha256Text(results['/capabilities.json'].body), 'provenance capabilities hash does not match /capabilities.json', failures);
+  assertOk(provenance.artifacts?.coverage_json?.sha256 === sha256Text(results['/coverage.json'].body), 'provenance coverage hash does not match /coverage.json', failures);
   assertOk(provenance.artifacts?.examples_json?.sha256 === sha256Text(results['/examples.json'].body), 'provenance examples hash does not match /examples.json', failures);
   assertOk(provenance.artifacts?.graph_json?.sha256 === sha256Text(results['/graph.json'].body), 'provenance graph hash does not match /graph.json', failures);
   assertOk(provenance.artifacts?.evals_json?.sha256 === sha256Text(results['/evals.json'].body), 'provenance evals hash does not match /evals.json', failures);
@@ -371,6 +381,7 @@ export async function main() {
   headerIncludes(results['/claims.json'], 'Access-Control-Allow-Origin', '*', failures);
   headerIncludes(results['/topics.json'], 'Access-Control-Allow-Origin', '*', failures);
   headerIncludes(results['/capabilities.json'], 'Access-Control-Allow-Origin', '*', failures);
+  headerIncludes(results['/coverage.json'], 'Access-Control-Allow-Origin', '*', failures);
   headerIncludes(results['/examples.json'], 'Access-Control-Allow-Origin', '*', failures);
   headerIncludes(results['/graph.json'], 'Access-Control-Allow-Origin', '*', failures);
   headerIncludes(results['/evals.json'], 'Access-Control-Allow-Origin', '*', failures);

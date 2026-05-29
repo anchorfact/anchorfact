@@ -3,6 +3,7 @@ import { generateKeyPairSync } from 'crypto';
 import {
   CLAIMS_SCHEMA_VERSION,
   CAPABILITIES_SCHEMA_VERSION,
+  COVERAGE_SCHEMA_VERSION,
   EVALS_SCHEMA_VERSION,
   EXAMPLES_SCHEMA_VERSION,
   GRAPH_SCHEMA_VERSION,
@@ -124,6 +125,7 @@ function buildFixture(overrides = {}) {
       '/claims.json': {},
       '/topics.json': {},
       '/capabilities.json': {},
+      '/coverage.json': {},
       '/examples.json': {},
       '/graph.json': {},
       '/evals.json': {},
@@ -159,6 +161,26 @@ function buildFixture(overrides = {}) {
     default_sequence: ['verify_official_build'],
     selection_rules: [{ when: 'fixture', use_capability: 'verify_official_build' }],
     capabilities: [{ id: 'verify_official_build' }]
+  };
+  const coverage = {
+    schema_version: COVERAGE_SCHEMA_VERSION,
+    generated: '2026-05-29T00:00:00.000Z',
+    provenance_url: `${baseUrl}/provenance.json`,
+    coverage_summary: {
+      public_articles: 2,
+      draft_articles: 1,
+      public_claims: 3,
+      topics: 1,
+      unique_sources: 1,
+      confidence_distribution: { high: 0, medium: 2, low: 0 },
+      source_verification: { full: 2, partial: 0, none: 0, full_ratio: 1 },
+      source_tier_distribution: { S: 1 },
+      top_source_types: [{ type: 'academic_paper', count: 1 }]
+    },
+    topic_coverage: [{ id: 'fixture', article_count: 2, claim_count: 3, source_count: 1 }],
+    best_entrypoints: { answer_with_evidence: '/api/evidence?q={query}&limit=3' },
+    recommended_decision_flow: [],
+    coverage_limits: [{ id: 'not_general_web_search' }]
   };
   const search = {
     schema_version: SEARCH_INDEX_SCHEMA_VERSION,
@@ -252,6 +274,7 @@ function buildFixture(overrides = {}) {
   const openapiText = JSON.stringify(openapi, null, 2);
   const topicsText = JSON.stringify(topics, null, 2);
   const capabilitiesText = JSON.stringify(capabilities, null, 2);
+  const coverageText = JSON.stringify(coverage, null, 2);
   const examplesText = JSON.stringify(examples, null, 2);
   const graphText = JSON.stringify(graph, null, 2);
   const evalsText = JSON.stringify(evals, null, 2);
@@ -311,6 +334,11 @@ function buildFixture(overrides = {}) {
         path: '/capabilities.json',
         sha256: sha256Text(capabilitiesText),
         bytes: Buffer.byteLength(capabilitiesText, 'utf8')
+      },
+      coverage_json: {
+        path: '/coverage.json',
+        sha256: sha256Text(coverageText),
+        bytes: Buffer.byteLength(coverageText, 'utf8')
       },
       examples_json: {
         path: '/examples.json',
@@ -379,6 +407,7 @@ function buildFixture(overrides = {}) {
     [`${baseUrl}/claims.json`]: { body: claimsText },
     [`${baseUrl}/topics.json`]: { body: topicsText },
     [`${baseUrl}/capabilities.json`]: { body: capabilitiesText },
+    [`${baseUrl}/coverage.json`]: { body: coverageText },
     [`${baseUrl}/examples.json`]: { body: examplesText },
     [`${baseUrl}/graph.json`]: { body: graphText },
     [`${baseUrl}/evals.json`]: { body: evalsText },
