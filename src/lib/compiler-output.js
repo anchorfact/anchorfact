@@ -94,6 +94,7 @@ function writeRootIndex(distDir, results, publicResults, draftResults, claims) {
     <strong>For AIs</strong><br>
     <a href="/agent.json">Agent profile</a> &middot;
     <a href="/openapi.json">OpenAPI</a> &middot;
+    <a href="/api">API Index</a> &middot;
     <a href="/capabilities.json">Capabilities</a> &middot;
     <a href="/api/plan?q=gaussian">Plan API</a> &middot;
     <a href="/api/evidence?q=gaussian">Evidence API</a> &middot;
@@ -184,6 +185,7 @@ ${entries || '_No public verified entries yet._'}
 
 - [Agent Profile](https://anchorfact.org/agent.json): Machine contract and recommended retrieval workflow.
 - [OpenAPI](https://anchorfact.org/openapi.json): Static read-only endpoint contract for tools.
+- [API Index](https://anchorfact.org/api): Compact live API discovery endpoint for agents.
 - [Capabilities](https://anchorfact.org/capabilities.json): AI task-to-endpoint routing guide with trust requirements and fallback artifacts.
 - [Coverage](https://anchorfact.org/coverage.json): AI coverage and limits guide with topic, confidence, source tier, and verification distributions.
 - [Plan API](https://anchorfact.org/api/plan?q=gaussian): Read-only query planner that recommends AnchorFact next calls or external-source fallback.
@@ -221,6 +223,7 @@ function writeSitemap(distDir, publicResults) {
     '<url><loc>https://anchorfact.org/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>',
     '<url><loc>https://anchorfact.org/agent.json</loc><changefreq>daily</changefreq><priority>0.9</priority></url>',
     '<url><loc>https://anchorfact.org/openapi.json</loc><changefreq>daily</changefreq><priority>0.9</priority></url>',
+    '<url><loc>https://anchorfact.org/api</loc><changefreq>daily</changefreq><priority>0.9</priority></url>',
     '<url><loc>https://anchorfact.org/capabilities.json</loc><changefreq>daily</changefreq><priority>0.9</priority></url>',
     '<url><loc>https://anchorfact.org/coverage.json</loc><changefreq>daily</changefreq><priority>0.9</priority></url>',
     '<url><loc>https://anchorfact.org/llms.txt</loc><changefreq>daily</changefreq><priority>0.9</priority></url>',
@@ -260,6 +263,7 @@ Sitemap: https://anchorfact.org/sitemap.xml
 LLMs: https://anchorfact.org/llms.txt
 Agent: https://anchorfact.org/agent.json
 OpenAPI: https://anchorfact.org/openapi.json
+API: https://anchorfact.org/api
 MCP: https://anchorfact.org/mcp.json
 Provenance: https://anchorfact.org/provenance.json
 `;

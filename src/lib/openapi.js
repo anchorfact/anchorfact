@@ -1,5 +1,6 @@
 import {
   AGENT_PROFILE_SCHEMA_VERSION,
+  API_INDEX_SCHEMA_VERSION,
   ARTICLE_API_SCHEMA_VERSION,
   CAPABILITIES_SCHEMA_VERSION,
   CITE_API_SCHEMA_VERSION,
@@ -99,6 +100,7 @@ export function buildOpenApiContract({
       '/agent.json': getJson('AI agent discovery profile', 'AgentProfile'),
       '/.well-known/anchorfact.json': getJson('Well-known alias for the AI agent discovery profile', 'AgentProfile'),
       '/openapi.json': getJson('This OpenAPI machine contract', 'OpenApiContract'),
+      '/api': getJson('Compact live API discovery index', 'ApiIndex'),
       '/manifest.json': getJson('Public and draft article manifest', 'Manifest'),
       '/claims.json': getJson('Public verified atomic claims', 'Claims'),
       '/topics.json': getJson('Public topic coverage map', 'Topics'),
@@ -420,6 +422,12 @@ export function buildOpenApiContract({
           additionalProperties: true
         },
         AgentProfile: schemaVersioned('Agent profile', AGENT_PROFILE_SCHEMA_VERSION),
+        ApiIndex: schemaVersioned('API index', API_INDEX_SCHEMA_VERSION, {
+          read_only: { type: 'boolean' },
+          recommended_sequence: { type: 'array', items: { type: 'string' } },
+          endpoints: { type: 'array', items: { type: 'object' } },
+          static_fallbacks: { type: 'array', items: { type: 'object' } }
+        }),
         Manifest: schemaVersioned('Manifest', MANIFEST_SCHEMA_VERSION, {
           article_count: { type: 'integer' },
           public_article_count: { type: 'integer' },

@@ -104,8 +104,9 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
 
   assertEq(payload.schema_version, 'anchorfact.evals.v1');
   assertEq(payload.provenance_url, 'https://anchorfact.org/provenance.json');
-  assertEq(payload.eval_count, 13);
+  assertEq(payload.eval_count, 14);
   assertEq(payload.evals.map(evalCase => evalCase.id), [
+    'api_discovery',
     'query_plan',
     'unsupported_query_plan',
     'evidence_pack_json',
@@ -121,7 +122,13 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
     'signed_provenance_static_artifacts'
   ]);
 
-  const planEval = payload.evals[0];
+  const apiDiscoveryEval = payload.evals.find(evalCase => evalCase.id === 'api_discovery');
+  assertEq(apiDiscoveryEval.call.path, '/api');
+  assertEq(apiDiscoveryEval.expected.schema_version, 'anchorfact.api-index.v1');
+  assert(apiDiscoveryEval.expected.required_paths.includes('/api/evidence'), 'API discovery eval should require evidence endpoint');
+  assert(apiDiscoveryEval.expected.required_paths.includes('/api/resolve-batch'), 'API discovery eval should require batch resolver endpoint');
+
+  const planEval = payload.evals.find(evalCase => evalCase.id === 'query_plan');
   assert(planEval.call.path.includes('/api/plan?q=gaussian+splatting&limit=3'), 'plan eval should include encoded query path');
   assertEq(planEval.expected.schema_version, 'anchorfact.plan-api.v1');
   assertEq(planEval.expected.should_use_anchorfact, true);

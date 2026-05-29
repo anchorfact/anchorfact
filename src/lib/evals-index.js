@@ -1,4 +1,5 @@
 import {
+  API_INDEX_SCHEMA_VERSION,
   CITE_API_SCHEMA_VERSION,
   CLAIM_API_SCHEMA_VERSION,
   EVALS_SCHEMA_VERSION,
@@ -147,6 +148,27 @@ export function buildEvalsIndex({
   const citePath = queryPath('/api/cite', { id: claimLookupId });
 
   const evals = [
+    {
+      id: 'api_discovery',
+      intent: 'Confirm the compact live API index tells AI agents which read-only endpoints are available.',
+      call: call('/api', site),
+      expected: {
+        status: 200,
+        content_type: 'application/json',
+        schema_version: API_INDEX_SCHEMA_VERSION,
+        required_paths: [
+          '/api/plan',
+          '/api/evidence',
+          '/api/search',
+          '/api/article',
+          '/api/claim',
+          '/api/cite',
+          '/api/source',
+          '/api/resolve',
+          '/api/resolve-batch'
+        ]
+      }
+    },
     {
       id: 'query_plan',
       intent: 'Confirm the query planner routes a covered public query to the right next AnchorFact calls.',

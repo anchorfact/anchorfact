@@ -48,6 +48,16 @@ test('runAiEvals executes JSON, Markdown, MCP, and provenance eval expectations'
       '/evals.json': jsonResponse({
         evals: [
           {
+            id: 'api_discovery',
+            call: { method: 'GET', path: '/api' },
+            expected: {
+              status: 200,
+              content_type: 'application/json',
+              schema_version: 'anchorfact.api-index.v1',
+              required_paths: ['/api/plan', '/api/evidence']
+            }
+          },
+          {
             id: 'query_plan',
             call: { method: 'GET', path: '/api/plan?q=gaussian&limit=3' },
             expected: {
@@ -114,6 +124,10 @@ test('runAiEvals executes JSON, Markdown, MCP, and provenance eval expectations'
           }
         ]
       }),
+      '/api': jsonResponse({
+        schema_version: 'anchorfact.api-index.v1',
+        endpoints: [{ path: '/api/plan' }, { path: '/api/evidence' }]
+      }),
       '/api/plan?q=gaussian&limit=3': jsonResponse({
         schema_version: 'anchorfact.plan-api.v1',
         coverage_status: 'supported',
@@ -149,8 +163,8 @@ test('runAiEvals executes JSON, Markdown, MCP, and provenance eval expectations'
   });
 
   assertEq(report.ok, true);
-  assertEq(report.eval_count, 6);
-  assertEq(report.passed, 6);
+  assertEq(report.eval_count, 7);
+  assertEq(report.passed, 7);
   assertEq(report.failed, 0);
   const markdown = renderAiEvalsMarkdown(report);
   assert(markdown.includes('AnchorFact AI Evals - PASS'), 'markdown should show pass');

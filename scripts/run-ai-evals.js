@@ -131,6 +131,12 @@ function evaluateJsonExpected(payload, expected, failures) {
       check(tools.has(tool), failures, `MCP profile should include tool ${tool}`);
     }
   }
+  if (Array.isArray(expected.required_paths)) {
+    const paths = new Set((payload?.endpoints || []).map(endpoint => endpoint?.path));
+    for (const path of expected.required_paths) {
+      check(paths.has(path), failures, `payload should include endpoint path ${path}`);
+    }
+  }
   if (Array.isArray(expected.citation_export_contains)) {
     for (const text of expected.citation_export_contains) {
       check(jsonIncludes(payload, text), failures, `citation export should include ${text}`);

@@ -1,5 +1,6 @@
 import {
   AGENT_PROFILE_SCHEMA_VERSION,
+  API_INDEX_SCHEMA_VERSION,
   ARTICLE_API_SCHEMA_VERSION,
   CAPABILITIES_SCHEMA_VERSION,
   CITE_API_SCHEMA_VERSION,
@@ -85,6 +86,7 @@ export function buildAgentProfile({
     schemas: {
       manifest: MANIFEST_SCHEMA_VERSION,
       openapi: OPENAPI_SCHEMA_VERSION,
+      api_index: API_INDEX_SCHEMA_VERSION,
       article_api: ARTICLE_API_SCHEMA_VERSION,
       cite_api: CITE_API_SCHEMA_VERSION,
       claim_api: CLAIM_API_SCHEMA_VERSION,
@@ -109,6 +111,7 @@ export function buildAgentProfile({
     recommended_workflow: [
       'Fetch /agent.json to discover the current machine contract.',
       'Fetch /openapi.json when integrating with tools that prefer a standard endpoint contract.',
+      'Fetch /api as a compact API index when you need the smallest live endpoint discovery payload.',
       'Fetch /provenance.json and /provenance.sig, then verify the pinned public key before trusting counts or hashes.',
       'Use /api/plan?q={query} before evidence retrieval when you need AnchorFact to decide whether coverage is plausible, which endpoint to call next, or when to fall back to external sources.',
       'Use /api/evidence?q={query} for one-call public evidence packs that combine search hits, article summaries, claims, sources, and citation_exports; add format=markdown for answer-ready context.',
@@ -137,6 +140,7 @@ export function buildAgentProfile({
       agent_profile: endpoint('/agent.json', 'This discovery document for AI agents and crawlers.'),
       well_known_agent_profile: endpoint('/.well-known/anchorfact.json', 'Stable well-known alias for the agent discovery document.'),
       openapi: endpoint('/openapi.json', 'OpenAPI 3.1 description of the static read-only machine contract.'),
+      api_index: endpoint('/api', 'Compact live API discovery index for AI agents.'),
       llms_txt: endpoint('/llms.txt', 'Public verified article index optimized for LLM crawlers.', 'text/plain'),
       manifest: endpoint('/manifest.json', 'Full article index with public/draft status, confidence, and verification metadata.'),
       claims: endpoint('/claims.json', 'Public verified atomic claims with evidence links.'),

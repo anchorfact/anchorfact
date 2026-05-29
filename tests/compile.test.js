@@ -131,6 +131,7 @@ test('public entrypoints exclude draft articles', () => {
   const robotsTxt = readFileSync(join(distDir, 'robots.txt'), 'utf-8');
   assert(indexHtml.includes('/agent.json'), 'index should link to agent profile');
   assert(indexHtml.includes('/openapi.json'), 'index should link to OpenAPI contract');
+  assert(indexHtml.includes('/api'), 'index should link to API index');
   assert(indexHtml.includes('/capabilities.json'), 'index should link to capabilities router');
   assert(indexHtml.includes('/coverage.json'), 'index should link to coverage guide');
   assert(indexHtml.includes('/topics.json'), 'index should link to topics index');
@@ -149,6 +150,7 @@ test('public entrypoints exclude draft articles', () => {
   assert(indexHtml.includes('/api/source?url='), 'index should link to source API example');
   assert(llmsTxt.includes('Agent Profile'), 'llms.txt should include agent profile');
   assert(llmsTxt.includes('OpenAPI'), 'llms.txt should include OpenAPI contract');
+  assert(llmsTxt.includes('API Index'), 'llms.txt should include API index');
   assert(llmsTxt.includes('Capabilities'), 'llms.txt should include capabilities router');
   assert(llmsTxt.includes('Coverage'), 'llms.txt should include coverage guide');
   assert(llmsTxt.includes('Topics'), 'llms.txt should include topics index');
@@ -167,6 +169,7 @@ test('public entrypoints exclude draft articles', () => {
   assert(llmsTxt.includes('Source API'), 'llms.txt should include source API');
   assert(sitemap.includes('/agent.json'), 'sitemap should include agent profile');
   assert(sitemap.includes('/openapi.json'), 'sitemap should include OpenAPI contract');
+  assert(sitemap.includes('/api'), 'sitemap should include API index');
   assert(sitemap.includes('/capabilities.json'), 'sitemap should include capabilities router');
   assert(sitemap.includes('/coverage.json'), 'sitemap should include coverage guide');
   assert(sitemap.includes('/topics.json'), 'sitemap should include topics index');
@@ -179,6 +182,7 @@ test('public entrypoints exclude draft articles', () => {
   assert(robotsTxt.includes('LLMs: https://anchorfact.org/llms.txt'), 'robots.txt should advertise llms.txt');
   assert(robotsTxt.includes('Agent: https://anchorfact.org/agent.json'), 'robots.txt should advertise agent profile');
   assert(robotsTxt.includes('OpenAPI: https://anchorfact.org/openapi.json'), 'robots.txt should advertise OpenAPI contract');
+  assert(robotsTxt.includes('API: https://anchorfact.org/api'), 'robots.txt should advertise API index');
   assert(robotsTxt.includes('MCP: https://anchorfact.org/mcp.json'), 'robots.txt should advertise MCP manifest');
   assert(robotsTxt.includes('Provenance: https://anchorfact.org/provenance.json'), 'robots.txt should advertise provenance');
   assert(indexHtml.includes('Public Fixture'), 'index should include public article');
@@ -205,7 +209,7 @@ test('agent profile describes the machine contract', () => {
   assertEq(agent.current_snapshot.examples, 7);
   assert(agent.current_snapshot.graph_nodes >= 1, 'agent profile should expose graph node count');
   assert(agent.current_snapshot.graph_edges >= 1, 'agent profile should expose graph edge count');
-  assertEq(agent.current_snapshot.evals, 13);
+  assertEq(agent.current_snapshot.evals, 14);
   assertEq(agent.current_snapshot.mcp_tools, 7);
   assert(agent.current_snapshot.unique_sources >= 1, 'agent profile should expose source count');
   assertEq(agent.endpoints.claims.url, 'https://anchorfact.org/claims.json');
@@ -217,6 +221,7 @@ test('agent profile describes the machine contract', () => {
   assertEq(agent.endpoints.evals.url, 'https://anchorfact.org/evals.json');
   assertEq(agent.endpoints.mcp.url, 'https://anchorfact.org/mcp.json');
   assertEq(agent.endpoints.openapi.url, 'https://anchorfact.org/openapi.json');
+  assertEq(agent.endpoints.api_index.path, '/api');
   assertEq(agent.endpoints.plan_api.path, '/api/plan?q={query}');
   assertEq(agent.endpoints.evidence_api.path, '/api/evidence?q={query}');
   assertEq(agent.endpoints.resolve_api.path, '/api/resolve?ref={reference}');
@@ -238,6 +243,7 @@ test('agent profile describes the machine contract', () => {
   assert(agent.recommended_workflow.some(step => step.includes('/evals.json')), 'agent workflow should mention evals index');
   assert(agent.recommended_workflow.some(step => step.includes('/mcp.json')), 'agent workflow should mention MCP profile');
   assert(agent.recommended_workflow.some(step => step.includes('/search-index.json')), 'agent workflow should mention search index');
+  assert(agent.recommended_workflow.some(step => step.includes('/api as a compact API index')), 'agent workflow should mention API index');
   assert(agent.recommended_workflow.some(step => step.includes('/api/plan')), 'agent workflow should mention plan API');
   assert(agent.recommended_workflow.some(step => step.includes('/api/evidence')), 'agent workflow should mention evidence API');
   assert(agent.recommended_workflow.some(step => step.includes('/api/resolve')), 'agent workflow should mention resolve API');
@@ -267,6 +273,7 @@ test('openapi.json describes the static AI contract', () => {
   assert(openapi.paths['/graph.json'], 'OpenAPI should describe graph endpoint');
   assert(openapi.paths['/evals.json'], 'OpenAPI should describe evals endpoint');
   assert(openapi.paths['/mcp.json'], 'OpenAPI should describe MCP endpoint');
+  assert(openapi.paths['/api'], 'OpenAPI should describe API index');
   assert(openapi.paths['/api/plan'], 'OpenAPI should describe plan API');
   assert(openapi.paths['/api/evidence'], 'OpenAPI should describe evidence API');
   assert(openapi.paths['/api/resolve'], 'OpenAPI should describe resolve API');
@@ -285,6 +292,7 @@ test('openapi.json describes the static AI contract', () => {
   assert(openapi.components.schemas.Examples, 'OpenAPI should define Examples schema');
   assert(openapi.components.schemas.Graph, 'OpenAPI should define Graph schema');
   assert(openapi.components.schemas.Evals, 'OpenAPI should define Evals schema');
+  assert(openapi.components.schemas.ApiIndex, 'OpenAPI should define API index schema');
   assert(openapi.components.schemas.McpProfile, 'OpenAPI should define MCP schema');
   assert(openapi.components.schemas.SearchIndex, 'OpenAPI should define SearchIndex schema');
   assert(openapi.components.schemas.EvidenceApiResponse, 'OpenAPI should define EvidenceApiResponse schema');
@@ -412,8 +420,9 @@ test('evals.json describes executable AI integration checks', () => {
   const evals = JSON.parse(readFileSync(join(distDir, 'evals.json'), 'utf-8'));
   assertEq(evals.schema_version, 'anchorfact.evals.v1');
   assertEq(evals.provenance_url, 'https://anchorfact.org/provenance.json');
-  assertEq(evals.eval_count, 13);
+  assertEq(evals.eval_count, 14);
   assertEq(evals.evals.map(evalCase => evalCase.id), [
+    'api_discovery',
     'query_plan',
     'unsupported_query_plan',
     'evidence_pack_json',
@@ -428,6 +437,7 @@ test('evals.json describes executable AI integration checks', () => {
     'mcp_tool_catalog',
     'signed_provenance_static_artifacts'
   ]);
+  assert(evals.evals.some(evalCase => evalCase.call.path === '/api'), 'evals should include API discovery checks');
   assert(evals.evals.some(evalCase => evalCase.call.path.includes('/api/plan?')), 'evals should include plan API checks');
   assert(evals.evals.some(evalCase => evalCase.call.path.includes('/api/evidence?')), 'evals should include evidence API checks');
   assert(evals.evals.some(evalCase => evalCase.id === 'unsupported_query_plan'), 'evals should include unsupported plan check');
