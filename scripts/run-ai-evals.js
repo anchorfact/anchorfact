@@ -130,6 +130,10 @@ function evaluateJsonExpected(payload, expected, failures) {
       : '';
     check(policy.includes(expected.repair_queue_policy_contains), failures, `draft repair queue selection_policy should include ${expected.repair_queue_policy_contains}`);
   }
+  if (expected.max_public_source_tier_c !== undefined) {
+    const count = payload?.public?.sources?.tier_distribution?.C ?? 0;
+    check(count <= expected.max_public_source_tier_c, failures, `public C-tier source count expected at most ${expected.max_public_source_tier_c}, got ${count}`);
+  }
   if (expected.min_content_health_public_articles !== undefined) {
     const count = payload?.content_health?.snapshot?.public_articles ?? 0;
     check(count >= expected.min_content_health_public_articles, failures, `context content health public article count expected at least ${expected.min_content_health_public_articles}, got ${count}`);

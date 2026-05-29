@@ -140,7 +140,8 @@ test('runAiEvals executes JSON, Markdown, MCP, and provenance eval expectations'
               trust_boundary: 'draft_entries_excluded_from_ai_entrypoints',
               min_repair_queue_candidates: 1,
               min_repair_queue_next_batch: 1,
-              repair_queue_policy_contains: 'repair_complexity'
+              repair_queue_policy_contains: 'repair_complexity',
+              max_public_source_tier_c: 0
             }
           },
           {
@@ -201,6 +202,7 @@ test('runAiEvals executes JSON, Markdown, MCP, and provenance eval expectations'
       '/content-health.json': jsonResponse({
         schema_version: 'anchorfact.content-health.v1',
         snapshot: { public_articles: 555, public_claims: 1685 },
+        public: { sources: { tier_distribution: { A: 1, B: 1, S: 1 } } },
         draft: {
           repair_queue: {
             candidate_count: 1,
@@ -276,7 +278,8 @@ test('runAiEvals reports expectation failures', async () => {
               schema_version: 'anchorfact.content-health.v1',
               min_repair_queue_candidates: 1,
               min_repair_queue_next_batch: 1,
-              repair_queue_policy_contains: 'repair_complexity'
+              repair_queue_policy_contains: 'repair_complexity',
+              max_public_source_tier_c: 0
             }
           }
         ]
@@ -295,6 +298,7 @@ test('runAiEvals reports expectation failures', async () => {
       }),
       '/content-health.json': jsonResponse({
         schema_version: 'anchorfact.content-health.v1',
+        public: { sources: { tier_distribution: { C: 2 } } },
         draft: {
           repair_queue: {
             candidate_count: 0,
@@ -312,6 +316,7 @@ test('runAiEvals reports expectation failures', async () => {
   assert(report.results[1].failures.some(failure => failure.includes('external primary')), 'fallback guidance mismatch should be reported');
   assert(report.results[2].failures.some(failure => failure.includes('result_count')), 'result_count mismatch should be reported');
   assert(report.results[3].failures.some(failure => failure.includes('repair queue')), 'repair queue mismatch should be reported');
+  assert(report.results[3].failures.some(failure => failure.includes('C-tier source')), 'C-tier source drift should be reported');
 });
 
 for (const { name, fn } of tests) {

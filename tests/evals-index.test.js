@@ -197,6 +197,7 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
   assertEq(healthEval.expected.min_repair_queue_candidates, 1);
   assertEq(healthEval.expected.min_repair_queue_next_batch, 1);
   assertEq(healthEval.expected.repair_queue_policy_contains, 'repair_complexity');
+  assertEq(healthEval.expected.max_public_source_tier_c, 0);
 
   const provenanceEval = payload.evals.find(evalCase => evalCase.id === 'signed_provenance_static_artifacts');
   assert(provenanceEval.expected.required_artifacts.includes('evals_json'), 'provenance eval should require evals artifact hash');
