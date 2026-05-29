@@ -5,6 +5,7 @@ import {
   renderIntegrityMarkdown,
   runProductionIntegrity
 } from '../scripts/production-integrity.js';
+import { fetchRoute } from '../src/smoke-production.js';
 
 let passed = 0, failed = 0;
 const tests = [];
@@ -127,6 +128,37 @@ test('runProductionIntegrity wires smoke and signed verifier dependencies', asyn
   assertEq(verifierArgs.requireSignature, true);
   assertEq(verifierArgs.requireTrustedSignature, true);
   assert(Array.isArray(verifierArgs.trustedPublicKeys), 'trusted public keys should be loaded');
+});
+
+test('production smoke fetches routes with CI-friendly live headers', async () => {
+  const originalFetch = globalThis.fetch;
+  const calls = [];
+  globalThis.fetch = async (url, options = {}) => {
+    calls.push({ url: String(url), options });
+    return {
+      status: 200,
+      ok: true,
+      url: String(url),
+      headers: new Map([
+        ['content-type', 'application/json; charset=utf-8'],
+        ['cache-control', 'max-age=3600']
+      ]),
+      async text() {
+        return '{}';
+      }
+    };
+  };
+
+  try {
+    await fetchRoute('https://anchorfact.org', '/provenance.json');
+  } finally {
+    globalThis.fetch = originalFetch;
+  }
+
+  assertEq(calls.length, 1);
+  assert(calls[0].options.redirect === 'follow', 'smoke fetch should follow redirects');
+  assert(calls[0].options.headers['User-Agent'].includes('Mozilla/5.0'), 'smoke fetch should send a browser-compatible user agent');
+  assert(calls[0].options.headers.Accept.includes('application/json'), 'smoke fetch should accept JSON');
 });
 
 for (const { name, fn } of tests) {

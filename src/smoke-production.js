@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 import { createHash } from 'crypto';
+import { pathToFileURL } from 'url';
+import { liveFetchOptions } from './lib/live-http.js';
 
 const DEFAULT_BASE_URL = 'https://anchorfact.org/';
 
@@ -36,9 +38,9 @@ function sha256Text(text) {
   return createHash('sha256').update(Buffer.from(text, 'utf8')).digest('hex');
 }
 
-async function fetchRoute(baseUrl, route) {
+export async function fetchRoute(baseUrl, route) {
   const url = new URL(route, baseUrl);
-  const response = await fetch(url, { redirect: 'follow' });
+  const response = await fetch(url, liveFetchOptions());
   const body = await response.text();
   const headers = Object.fromEntries(response.headers.entries());
 
@@ -71,7 +73,7 @@ function headerIncludes(result, name, expected, failures) {
   assertOk(actual.toLowerCase().includes(expected.toLowerCase()), `${result.route} header ${name} expected to include ${expected}, got ${actual || '(missing)'}`, failures);
 }
 
-async function main() {
+export async function main() {
   const baseUrl = new URL(process.argv[2] || process.env.ANCHORFACT_BASE_URL || DEFAULT_BASE_URL);
   const failures = [];
 
@@ -164,7 +166,9 @@ async function main() {
   }
 }
 
-main().catch((error) => {
-  console.error(error);
-  process.exitCode = 1;
-});
+if (import.meta.url === pathToFileURL(process.argv[1]).href) {
+  main().catch((error) => {
+    console.error(error);
+    process.exitCode = 1;
+  });
+}

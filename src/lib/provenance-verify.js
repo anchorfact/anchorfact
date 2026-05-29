@@ -12,6 +12,7 @@ import {
   PROVENANCE_SIGNATURE_PATH,
   verifyProvenanceSignature
 } from './provenance-signature.js';
+import { fetchLiveText } from './live-http.js';
 
 const REQUIRED_ARTIFACTS = ['manifest_json', 'claims_json', 'llms_txt'];
 const OFFICIAL_GITHUB_COMMIT_API = 'https://api.github.com/repos/anchorfact/anchorfact/commits/';
@@ -37,21 +38,6 @@ export function isSafeArtifactPath(path) {
 
 function routeUrl(baseUrl, path) {
   return `${normalizeBaseUrl(baseUrl)}${path}`;
-}
-
-async function fetchText(fetchImpl, url) {
-  const response = await fetchImpl(url, {
-    headers: {
-      'User-Agent': 'anchorfact-provenance-verifier'
-    },
-    redirect: 'follow'
-  });
-  const text = await response.text();
-  return {
-    ok: response.ok,
-    status: response.status,
-    text
-  };
 }
 
 function parseJson(text, label, failures) {
@@ -89,7 +75,7 @@ async function verifyCommit(fetchImpl, provenance, failures) {
     return { ok: false, sha: sha || null };
   }
 
-  const response = await fetchText(fetchImpl, `${OFFICIAL_GITHUB_COMMIT_API}${sha}`);
+  const response = await fetchLiveText(fetchImpl, `${OFFICIAL_GITHUB_COMMIT_API}${sha}`);
   if (!response.ok) {
     failures.push(`GitHub commit lookup failed for ${sha}: HTTP ${response.status}`);
     return { ok: false, sha };
@@ -132,7 +118,7 @@ async function verifySignature({
     };
   }
 
-  const response = await fetchText(fetchImpl, routeUrl(baseUrl, PROVENANCE_SIGNATURE_PATH));
+  const response = await fetchLiveText(fetchImpl, routeUrl(baseUrl, PROVENANCE_SIGNATURE_PATH));
   if (!response.ok) {
     failures.push(`${PROVENANCE_SIGNATURE_PATH} fetch failed: HTTP ${response.status}`);
     return {
@@ -171,7 +157,7 @@ async function verifyArtifact({ key, artifact, baseUrl, fetchImpl, failures }) {
   }
 
   const url = routeUrl(baseUrl, artifact.path);
-  const response = await fetchText(fetchImpl, url);
+  const response = await fetchLiveText(fetchImpl, url);
   if (!response.ok) {
     failures.push(`${key} fetch failed for ${artifact.path}: HTTP ${response.status}`);
     return { ok: false, key, path: artifact.path, url };
@@ -234,7 +220,7 @@ export async function verifyLiveProvenance({
   const failures = [];
   const artifacts = {};
 
-  const provenanceResponse = await fetchText(fetchImpl, routeUrl(normalizedBaseUrl, PROVENANCE_PATH));
+  const provenanceResponse = await fetchLiveText(fetchImpl, routeUrl(normalizedBaseUrl, PROVENANCE_PATH));
   if (!provenanceResponse.ok) {
     failures.push(`${PROVENANCE_PATH} fetch failed: HTTP ${provenanceResponse.status}`);
   }

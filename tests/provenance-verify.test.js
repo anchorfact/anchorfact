@@ -48,8 +48,9 @@ class FakeResponse {
   }
 }
 
-function makeFetch(routes) {
-  return async (url) => {
+function makeFetch(routes, calls = []) {
+  return async (url, options = {}) => {
+    calls.push({ url, options });
     const route = routes[url];
     if (!route) {
       return new FakeResponse(404, JSON.stringify({ error: 'not found', url }));
@@ -172,9 +173,12 @@ function buildFixture(overrides = {}) {
     routes[`${baseUrl}/provenance.sig`] = { body: JSON.stringify(signaturePayload, null, 2) };
   }
 
+  const calls = [];
+
   return {
     baseUrl,
-    fetchImpl: makeFetch(routes),
+    fetchImpl: makeFetch(routes, calls),
+    calls,
     signingKey: overrides.signingKey
   };
 }
@@ -192,6 +196,22 @@ test('verifyLiveProvenance accepts matching official live artifacts', async () =
   assertEq(result.artifacts.manifest_json.ok, true);
   assertEq(result.commit.ok, true);
   assertEq(result.signature.skipped, true);
+});
+
+test('verifyLiveProvenance sends CI-friendly live fetch headers', async () => {
+  const fixture = buildFixture();
+  const result = await verifyLiveProvenance({
+    baseUrl: fixture.baseUrl,
+    fetchImpl: fixture.fetchImpl
+  });
+  assertEq(result.ok, true);
+  assert(fixture.calls.length > 0, 'fetch calls should be recorded');
+  for (const call of fixture.calls) {
+    assert(call.options.redirect === 'follow', 'live fetch should follow redirects');
+    assert(call.options.headers['User-Agent'].includes('Mozilla/5.0'), 'live fetch should send a browser-compatible user agent');
+    assert(call.options.headers.Accept.includes('application/json'), 'live fetch should accept JSON');
+    assert(call.options.headers['Accept-Language'].includes('en-US'), 'live fetch should send accept language');
+  }
 });
 
 test('verifyLiveProvenance verifies signed provenance with a trusted public key', async () => {
