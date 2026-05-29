@@ -5,7 +5,7 @@ import {
   renderIntegrityMarkdown,
   runProductionIntegrity
 } from '../scripts/production-integrity.js';
-import { REQUIRED_SECURITY_HEADERS, evalCallRoutes, exampleWorkflowRoutes, fetchRoute, readJsonRoute } from '../src/smoke-production.js';
+import { REQUIRED_SECURITY_HEADERS, evalCallRoutes, exampleWorkflowRoutes, fetchRoute, hasCanonicalSlug, readJsonRoute } from '../src/smoke-production.js';
 
 let passed = 0, failed = 0;
 const tests = [];
@@ -255,6 +255,12 @@ test('production smoke requires baseline security response headers', () => {
   assert(REQUIRED_SECURITY_HEADERS.some(header => header.name === 'X-Frame-Options' && header.expected === 'DENY'), 'should require frame protection');
   assert(REQUIRED_SECURITY_HEADERS.some(header => header.name === 'Referrer-Policy' && header.expected === 'strict-origin-when-cross-origin'), 'should require referrer policy');
   assert(REQUIRED_SECURITY_HEADERS.some(header => header.name === 'Permissions-Policy' && header.expected === 'camera=()'), 'should require permissions policy');
+});
+
+test('production smoke treats missing canonical slug arrays as a failed assertion value', () => {
+  assertEq(hasCanonicalSlug(undefined, 'ai/3d-generation-gaussian-splatting'), false);
+  assertEq(hasCanonicalSlug({}, 'ai/3d-generation-gaussian-splatting'), false);
+  assertEq(hasCanonicalSlug([{ canonical_slug: 'ai/3d-generation-gaussian-splatting' }], 'ai/3d-generation-gaussian-splatting'), true);
 });
 
 test('production smoke can extract safe executable example workflow routes', () => {

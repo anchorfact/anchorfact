@@ -124,6 +124,10 @@ function assertExpected(actual, expected, label, failures) {
   assertOk(actual === expected, `${label} expected ${expected}, got ${actual}`, failures);
 }
 
+export function hasCanonicalSlug(items, slug) {
+  return Array.isArray(items) && items.some(item => item?.canonical_slug === slug);
+}
+
 function headerIncludes(result, name, expected, failures) {
   const actual = result.headers[name.toLowerCase()] || '';
   assertOk(actual.toLowerCase().includes(expected.toLowerCase()), `${result.route} header ${name} expected to include ${expected}, got ${actual || '(missing)'}`, failures);
@@ -426,7 +430,7 @@ export async function main() {
   assertOk(evidenceApi.provenance_url === new URL('/provenance.json', baseUrl).href, `evidence api provenance_url expected ${new URL('/provenance.json', baseUrl).href}, got ${evidenceApi.provenance_url || '(missing)'}`, failures);
   assertOk(evidenceApi.query === 'gaussian', `evidence api query expected gaussian, got ${evidenceApi.query || '(missing)'}`, failures);
   assertOk(Array.isArray(evidenceApi.packs) && evidenceApi.packs.length > 0, '/api/evidence returned no packs', failures);
-  assertOk(evidenceApi.packs.some(pack => pack.canonical_slug === 'ai/3d-generation-gaussian-splatting'), '/api/evidence did not return expected gaussian pack', failures);
+  assertOk(hasCanonicalSlug(evidenceApi.packs, 'ai/3d-generation-gaussian-splatting'), '/api/evidence did not return expected gaussian pack', failures);
   const gaussianEvidencePack = Array.isArray(evidenceApi.packs)
     ? evidenceApi.packs.find(pack => pack.canonical_slug === 'ai/3d-generation-gaussian-splatting')
     : null;
@@ -440,7 +444,7 @@ export async function main() {
   assertOk(contextApi.schema_version === 'anchorfact.context-api.v1', `context api schema_version expected anchorfact.context-api.v1, got ${contextApi.schema_version || '(missing)'}`, failures);
   assertOk(contextApi.coverage_status !== 'unsupported', '/api/context unexpectedly marked gaussian query unsupported', failures);
   assertOk(contextApi.evidence_pack_count > 0, '/api/context returned no evidence packs', failures);
-  assertOk((contextApi.evidence_packs || []).some(pack => pack.canonical_slug === 'ai/3d-generation-gaussian-splatting'), '/api/context did not return expected gaussian pack', failures);
+  assertOk(hasCanonicalSlug(contextApi.evidence_packs, 'ai/3d-generation-gaussian-splatting'), '/api/context did not return expected gaussian pack', failures);
   assertOk(contextApi.content_health?.snapshot?.public_articles === contentHealth.snapshot?.public_articles, '/api/context content health public count does not match /content-health.json', failures);
   assertOk(contextApi.content_health?.trust_boundaries?.draft_entries_excluded_from_ai_entrypoints === true, '/api/context content health trust boundary is missing', failures);
   assertOk(contextMarkdown.includes('# AnchorFact Context: gaussian'), '/api/context markdown response is missing heading', failures);
@@ -462,7 +466,7 @@ export async function main() {
   assertOk(searchApi.provenance_url === new URL('/provenance.json', baseUrl).href, `search api provenance_url expected ${new URL('/provenance.json', baseUrl).href}, got ${searchApi.provenance_url || '(missing)'}`, failures);
   assertOk(searchApi.query === 'gaussian', `search api query expected gaussian, got ${searchApi.query || '(missing)'}`, failures);
   assertOk(Array.isArray(searchApi.results) && searchApi.results.length > 0, '/api/search returned no results', failures);
-  assertOk(searchApi.results.some(result => result.canonical_slug === 'ai/3d-generation-gaussian-splatting'), '/api/search did not return expected gaussian result', failures);
+  assertOk(hasCanonicalSlug(searchApi.results, 'ai/3d-generation-gaussian-splatting'), '/api/search did not return expected gaussian result', failures);
   assertOk(articleApi.schema_version === 'anchorfact.article-api.v1', `article api schema_version expected anchorfact.article-api.v1, got ${articleApi.schema_version || '(missing)'}`, failures);
   assertOk(articleApi.canonical_slug === 'ai/3d-generation-gaussian-splatting', `article api slug expected ai/3d-generation-gaussian-splatting, got ${articleApi.canonical_slug || '(missing)'}`, failures);
   assertOk(articleApi.article?.status === 'public' && articleApi.article?.is_draft === false, '/api/article did not return a public article', failures);
