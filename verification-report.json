@@ -29009,28 +29009,53 @@
       "file": "content/computer-science/mqtt-protocol.md",
       "article_id": "kb-2026-00188",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 2,
       "verification_results": [
         {
-          "source_title": "ACM Digital Library",
-          "source_type": "repository",
+          "source_title": "MQTT Version 5.0",
+          "source_type": "standard",
           "results": [
             {
               "method": "url",
-              "identifier": "https://dl.acm.org/",
-              "verified": false,
+              "identifier": "https://docs.oasis-open.org/mqtt/mqtt/v5.0/os/mqtt-v5.0-os.html",
+              "verified": true,
               "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/"
+                "status": 200,
+                "final_url": "https://docs.oasis-open.org/mqtt/mqtt/v5.0/os/mqtt-v5.0-os.html",
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair and public promotion; source URL verified directly; local verify-full was not run."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "MQTT Version 3.1.1",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html",
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair and public promotion; source URL verified directly; local verify-full was not run."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 1
+      "sources_verified": 2,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-30"
     },
     {
       "file": "content/computer-science/mutationobserver.md",
@@ -32571,28 +32596,53 @@
       "file": "content/computer-science/smtp-protocol.md",
       "article_id": "kb-2026-00187",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 2,
       "verification_results": [
         {
-          "source_title": "ACM Digital Library",
-          "source_type": "repository",
+          "source_title": "RFC 5321: Simple Mail Transfer Protocol",
+          "source_type": "rfc",
           "results": [
             {
               "method": "url",
-              "identifier": "https://dl.acm.org/",
-              "verified": false,
+              "identifier": "https://www.rfc-editor.org/rfc/rfc5321.html",
+              "verified": true,
               "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/"
+                "status": 200,
+                "final_url": "https://www.rfc-editor.org/rfc/rfc5321.html",
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair and public promotion; source URL verified directly; local verify-full was not run."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "RFC 6409: Message Submission for Mail",
+          "source_type": "rfc",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.rfc-editor.org/rfc/rfc6409.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.rfc-editor.org/rfc/rfc6409.html",
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair and public promotion; source URL verified directly; local verify-full was not run."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 1
+      "sources_verified": 2,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-30"
     },
     {
       "file": "content/computer-science/software-development-life-cycle-sdlc.md",
@@ -33030,28 +33080,73 @@
       "file": "content/computer-science/ssh-protocol.md",
       "article_id": "kb-2026-00123",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "ACM Digital Library",
-          "source_type": "repository",
+          "source_title": "RFC 4251: The Secure Shell (SSH) Protocol Architecture",
+          "source_type": "rfc",
           "results": [
             {
               "method": "url",
-              "identifier": "https://dl.acm.org/",
-              "verified": false,
+              "identifier": "https://www.rfc-editor.org/rfc/rfc4251.html",
+              "verified": true,
               "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/"
+                "status": 200,
+                "final_url": "https://www.rfc-editor.org/rfc/rfc4251.html",
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair and public promotion; source URL verified directly; local verify-full was not run."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "RFC 4253: The Secure Shell (SSH) Transport Layer Protocol",
+          "source_type": "rfc",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.rfc-editor.org/rfc/rfc4253.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.rfc-editor.org/rfc/rfc4253.html",
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair and public promotion; source URL verified directly; local verify-full was not run."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "RFC 4254: The Secure Shell (SSH) Connection Protocol",
+          "source_type": "rfc",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.rfc-editor.org/rfc/rfc4254.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.rfc-editor.org/rfc/rfc4254.html",
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair and public promotion; source URL verified directly; local verify-full was not run."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-30"
     },
     {
       "file": "content/computer-science/strategy-pattern.md",

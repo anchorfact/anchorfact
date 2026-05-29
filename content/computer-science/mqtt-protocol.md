@@ -4,8 +4,8 @@ title: "MQTT Protocol"
 schema_type: "TechArticle"
 category: "computer-science"
 language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
+confidence: "medium"
+last_verified: "2026-05-30"
 created_date: "2026-05-22"
 generation_method: "human_only"
 ai_models: ["claude-opus"]
@@ -15,83 +15,64 @@ is_live_document: false
 data_period: "static"
 
 atomic_facts:
-  - id: "fact-computer-science-01"
-    statement: "Created by IBM , standardized by OASIS"
-    source_title: "ACM Digital Library"
-    source_url: "https://dl.acm.org/"
+  - id: "fact-mqtt-1"
+    statement: "The OASIS MQTT 5.0 specification defines MQTT as a client-server publish/subscribe messaging transport protocol."
+    source_title: "MQTT Version 5.0"
+    source_url: "https://docs.oasis-open.org/mqtt/mqtt/v5.0/os/mqtt-v5.0-os.html"
     confidence: "medium"
-  - id: "fact-computer-science-001"
-    statement: "MQTT is a lightweight publish-subscribe messaging protocol designed for constrained devices and low-bandwidth networks. Created by IBM (1999), standardized by OASIS. Used extensively in IoT: smart homes, industrial sensors, connected vehicles. QoS levels: 0 (at most once), 1 (at least once), 2 (exactly once)."
-    source_title: "ACM Digital Library"
-    source_url: "https://dl.acm.org/"
+  - id: "fact-mqtt-2"
+    statement: "MQTT 5.0 defines three Quality of Service levels for application messages: at most once, at least once, and exactly once."
+    source_title: "MQTT Version 5.0"
+    source_url: "https://docs.oasis-open.org/mqtt/mqtt/v5.0/os/mqtt-v5.0-os.html"
     confidence: "medium"
-  - id: "fact-computer-science-002"
-    statement: "Architecture: Broker (central server) + Clients (publishers and subscribers)."
-    source_title: "ACM Digital Library"
-    source_url: "https://dl.acm.org/"
-    confidence: "medium"
-  - id: "fact-computer-science-003"
-    statement: "Retained messages: new subscribers receive last published message."
-    source_title: "ACM Digital Library"
-    source_url: "https://dl.acm.org/"
-    confidence: "medium"
-  - id: "fact-computer-science-004"
-    statement: "Last Will and Testament (LWT): message published if client disconnects unexpectedly."
-    source_title: "ACM Digital Library"
-    source_url: "https://dl.acm.org/"
+  - id: "fact-mqtt-3"
+    statement: "MQTT 3.1.1 is also an OASIS Standard for the MQTT protocol."
+    source_title: "MQTT Version 3.1.1"
+    source_url: "https://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html"
     confidence: "medium"
 
-completeness: 0.88
+completeness: 0.8
 
 known_gaps:
-  - "Sources reconstructed during quality audit; primary source details were corrupted during batch generation"
+  - "This compact repair focuses on the standardized publish/subscribe model and QoS semantics, not broker-specific implementation behavior."
 
-disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+disputed_statements: []
 
 primary_sources:
-  - title: "ACM Digital Library"
-    type: "repository"
-    year: 2026
-    url: "https://dl.acm.org/"
-    institution: "ACM"
+  - title: "MQTT Version 5.0"
+    authors: ["Banks, A.", "Briggs, E.", "Borgendale, K.", "Gupta, R."]
+    type: "standard"
+    year: 2019
+    url: "https://docs.oasis-open.org/mqtt/mqtt/v5.0/os/mqtt-v5.0-os.html"
+    institution: "OASIS"
+  - title: "MQTT Version 3.1.1"
+    authors: ["Banks, A.", "Gupta, R."]
+    type: "standard"
+    year: 2014
+    url: "https://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html"
+    institution: "OASIS"
 
-secondary_sources:
-  - title: "ACM Digital Library"
-    type: "repository"
-    year: 2026
-    url: "https://dl.acm.org/"
-    institution: "ACM"
-  - title: "The C Programming Language (K&R, 2nd Ed)"
-    type: "textbook"
-    year: 1988
-    url: "https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html"
-    institution: "Prentice Hall"
-  - title: "Structure and Interpretation of Computer Programs (SICP)"
-    type: "textbook"
-    year: 1996
-    url: "https://mitpress.mit.edu/sites/default/files/sicp/"
-    institution: "MIT Press"
-
+secondary_sources: []
+updated: "2026-05-30"
 ---
-
-
-
 
 ## TL;DR
 
-MQTT is a lightweight publish-subscribe messaging protocol designed for constrained devices and low-bandwidth networks. Created by IBM (1999), standardized by OASIS. Used extensively in IoT: smart homes, industrial sensors, connected vehicles. QoS levels: 0 (at most once), 1 (at least once), 2 (exactly once).
+MQTT is a client-server publish/subscribe messaging protocol standardized by OASIS. It is often used when applications need topic-based message exchange with explicit delivery-service levels.
 
 ## Core Explanation
 
-Architecture: Broker (central server) + Clients (publishers and subscribers). Topics use hierarchical structure: `home/livingroom/temperature`. Retained messages: new subscribers receive last published message. Last Will and Testament (LWT): message published if client disconnects unexpectedly.
+MQTT clients publish messages to topic names and subscribe using topic filters. The server, often called a broker, receives publications and routes matching messages to subscribers.
+
+The protocol defines Quality of Service levels for message delivery: at most once, at least once, and exactly once. Those levels describe protocol delivery guarantees, not whether an application has processed a message successfully.
 
 ## Further Reading
 
--
+- [MQTT Version 5.0](https://docs.oasis-open.org/mqtt/mqtt/v5.0/os/mqtt-v5.0-os.html)
+- [MQTT Version 3.1.1](https://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html)
 
 ## Related Articles
 
-- [Model Context Protocol (MCP)](../../ai/mcp.md)
-- [gRPC: Protocol Buffers, HTTP/2 Streaming, and Service Contracts](../grpc-protocol-buffers-http-2-streaming-and-service-contracts.md)
-- [HTTP/3: QUIC Protocol and Next-Generation Web Transport](../http-3-quic-protocol-and-next-generation-web-transport.md)
+- [Message Queues](../message-queues.md)
+- [Internet of Things (IoT)](../internet-of-things-iot.md)
+- [TCP/IP Protocol Suite](../tcp-ip.md)
