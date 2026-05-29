@@ -95,6 +95,15 @@ The provenance verifier fetches `/provenance.json`, recomputes SHA-256 checksums
 
 The AI eval runner fetches `/evals.json` from production and executes the listed golden checks against live JSON, Markdown, and MCP manifest surfaces. It is intended to catch contract drift that a basic endpoint smoke test would not see.
 
+The local usefulness benchmark uses the built `dist/` artifacts to score whether representative AI queries return answer-ready context, citation-ready claims, and enough source depth to justify future content work:
+
+```bash
+npm run build
+npm run benchmark:ai
+```
+
+Treat this as a direction-setting metric. A passing benchmark means the current AI entrypoints are usable; improvement candidates show which existing public topics should be strengthened before broad content expansion.
+
 The stricter signed check uses the pinned public key in `keys/provenance.pub.pem`:
 
 ```bash
@@ -226,6 +235,7 @@ Public hygiene checks are shared by the compiler, quality gate, and audit script
 | `npm run pipeline` | Runs verify, quality, and build. |
 | `npm run smoke:prod` | Checks the live production machine-readable endpoints. |
 | `npm run evals:prod` | Executes live `/evals.json` checks against production AI endpoints and MCP metadata. |
+| `npm run benchmark:ai` | Scores built local AI query usefulness across representative context and citation cases. |
 | `npm run mcp:check` | Verifies the built local MCP data contract, tool catalog, Python dependencies, planner, search, resolver, and citation helpers. |
 | `npm run verify:provenance` | Verifies live provenance identity, artifact checksums, counts, source commit, and optional signature. |
 | `npm run verify:provenance:signed` | Verifies live provenance with the pinned trusted public key. |

@@ -114,6 +114,19 @@ The next opportunity is presentation, not stricter gating. The content-health
 artifact and production integrity report should be treated as the compact
 machine summary, while the sampled audit remains the readable spot-check.
 
+### AI Usefulness Benchmark
+
+The representative query benchmark now has a local usefulness runner:
+`npm run benchmark:ai`. It scores the built `dist/` artifacts through the same
+context assembly path used by AI consumers, checking not only top-result routing
+but also citation-ready claims, source URLs, source depth, and confidence.
+
+The current benchmark passes at 98.18/100 across 11 representative queries.
+It also identifies two measured improvement candidates:
+`history/ancient-egypt` and `business/stock-market-basics`. Both are usable,
+but still low-confidence and single-source, so they are better next targets
+than broad draft expansion.
+
 ### Verification Data
 
 The current workflow deliberately separates local targeted repair from full
@@ -180,17 +193,22 @@ integrity expectations together.
    409 draft articles, especially the lower-complexity candidates, without
    automatically publishing anything weak.
 
-3. Keep monitoring trustworthy.
+3. Improve benchmark candidates before broad expansion.
+   Use `npm run benchmark:ai` after each build. If it reports low-confidence or
+   single-source candidates, strengthen those public topics before publishing
+   unrelated drafts.
+
+4. Keep monitoring trustworthy.
    Production Integrity should remain read-only, should not deploy or mutate
    Cloudflare state, and should fail only on real trust-chain, contract, count,
    or sustained availability problems.
 
-4. Continue compiler and API refactors only behind behavior locks.
+5. Continue compiler and API refactors only behind behavior locks.
    Strengthen tests before reshaping internals, and do not change public output
    paths, schema versions, or signed artifact semantics in the same pass as a
    refactor.
 
-5. Keep docs and launch metrics live.
+6. Keep docs and launch metrics live.
    Count changes should update README, launch docs, content-health expectations,
    smoke expectations, production integrity expectations, and repo hygiene
    patterns together.
@@ -198,8 +216,8 @@ integrity expectations together.
 ## Acceptance Criteria for the Next Engineering Batch
 
 - `npm.cmd test`, `npm.cmd run quality`, `npm.cmd run build`,
-  `npm.cmd run audit-public-sample`, `npm.cmd run audit-public-full`, and
-  `npm.cmd audit` pass.
+  `npm.cmd run benchmark:ai`, `npm.cmd run audit-public-sample`,
+  `npm.cmd run audit-public-full`, and `npm.cmd audit` pass.
 - `git diff --staged --name-only` excludes `dist/`.
 - CI succeeds after push.
 - Production provenance points to the pushed commit.

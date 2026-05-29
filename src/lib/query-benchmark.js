@@ -83,6 +83,7 @@ export function buildQueryBenchmarkCatalog() {
     purpose: 'Representative AI-agent queries used to measure whether AnchorFact routes real usage to citable public evidence.',
     case_count: QUERY_BENCHMARK_CASES.length,
     pass_gate: 'All benchmark cases are executable through /evals.json and must pass npm run evals:prod and production integrity.',
+    usefulness_gate: 'Run npm run benchmark:ai after local builds; routing is necessary, but answer-ready citations and source depth decide future content priorities.',
     cases: QUERY_BENCHMARK_CASES.map(item => ({
       id: item.id,
       category: item.category,
