@@ -104,10 +104,12 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
 
   assertEq(payload.schema_version, 'anchorfact.evals.v1');
   assertEq(payload.provenance_url, 'https://anchorfact.org/provenance.json');
-  assertEq(payload.eval_count, 11);
+  assertEq(payload.eval_count, 13);
   assertEq(payload.evals.map(evalCase => evalCase.id), [
     'query_plan',
+    'unsupported_query_plan',
     'evidence_pack_json',
+    'unsupported_query_evidence',
     'evidence_pack_markdown',
     'claim_dereference',
     'reference_resolver',
@@ -125,10 +127,22 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
   assertEq(planEval.expected.should_use_anchorfact, true);
   assertEq(planEval.expected.recommended_call_contains, '/api/evidence');
 
-  const evidenceEval = payload.evals[1];
+  const unsupportedPlanEval = payload.evals.find(evalCase => evalCase.id === 'unsupported_query_plan');
+  assert(unsupportedPlanEval.call.path.includes('/api/plan?q=lunar+dentistry&limit=3'), 'unsupported plan eval should use a fixed no-coverage query');
+  assertEq(unsupportedPlanEval.expected.coverage_status, 'unsupported');
+  assertEq(unsupportedPlanEval.expected.should_use_anchorfact, false);
+  assertEq(unsupportedPlanEval.expected.recommended_call_contains, '/coverage.json');
+  assertEq(unsupportedPlanEval.expected.fallback_guidance_contains, 'external primary');
+
+  const evidenceEval = payload.evals.find(evalCase => evalCase.id === 'evidence_pack_json');
   assert(evidenceEval.call.path.includes('/api/evidence?q=gaussian+splatting&limit=3'), 'evidence eval should include encoded query path');
   assertEq(evidenceEval.expected.schema_version, 'anchorfact.evidence-api.v1');
   assertEq(evidenceEval.expected.contains_canonical_slug, 'ai/3d-generation-gaussian-splatting');
+
+  const unsupportedEvidenceEval = payload.evals.find(evalCase => evalCase.id === 'unsupported_query_evidence');
+  assert(unsupportedEvidenceEval.call.path.includes('/api/evidence?q=lunar+dentistry&limit=3'), 'unsupported evidence eval should use the same fixed no-coverage query');
+  assertEq(unsupportedEvidenceEval.expected.schema_version, 'anchorfact.evidence-api.v1');
+  assertEq(unsupportedEvidenceEval.expected.result_count, 0);
 
   const markdownEval = payload.evals.find(evalCase => evalCase.id === 'evidence_pack_markdown');
   assert(markdownEval.call.path.includes('format=markdown'), 'markdown eval should request markdown format');

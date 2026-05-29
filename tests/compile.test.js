@@ -197,7 +197,7 @@ test('agent profile describes the machine contract', () => {
   assertEq(agent.current_snapshot.examples, 7);
   assert(agent.current_snapshot.graph_nodes >= 1, 'agent profile should expose graph node count');
   assert(agent.current_snapshot.graph_edges >= 1, 'agent profile should expose graph edge count');
-  assertEq(agent.current_snapshot.evals, 11);
+  assertEq(agent.current_snapshot.evals, 13);
   assertEq(agent.current_snapshot.mcp_tools, 7);
   assert(agent.current_snapshot.unique_sources >= 1, 'agent profile should expose source count');
   assertEq(agent.endpoints.claims.url, 'https://anchorfact.org/claims.json');
@@ -404,10 +404,12 @@ test('evals.json describes executable AI integration checks', () => {
   const evals = JSON.parse(readFileSync(join(distDir, 'evals.json'), 'utf-8'));
   assertEq(evals.schema_version, 'anchorfact.evals.v1');
   assertEq(evals.provenance_url, 'https://anchorfact.org/provenance.json');
-  assertEq(evals.eval_count, 11);
+  assertEq(evals.eval_count, 13);
   assertEq(evals.evals.map(evalCase => evalCase.id), [
     'query_plan',
+    'unsupported_query_plan',
     'evidence_pack_json',
+    'unsupported_query_evidence',
     'evidence_pack_markdown',
     'claim_dereference',
     'reference_resolver',
@@ -420,6 +422,8 @@ test('evals.json describes executable AI integration checks', () => {
   ]);
   assert(evals.evals.some(evalCase => evalCase.call.path.includes('/api/plan?')), 'evals should include plan API checks');
   assert(evals.evals.some(evalCase => evalCase.call.path.includes('/api/evidence?')), 'evals should include evidence API checks');
+  assert(evals.evals.some(evalCase => evalCase.id === 'unsupported_query_plan'), 'evals should include unsupported plan check');
+  assert(evals.evals.some(evalCase => evalCase.id === 'unsupported_query_evidence'), 'evals should include unsupported evidence check');
   assert(evals.evals.some(evalCase => evalCase.call.path.includes('/api/resolve?')), 'evals should include resolve API checks');
   assert(evals.evals.some(evalCase => evalCase.call.path.includes('/api/resolve-batch?')), 'evals should include resolve batch API checks');
   assert(evals.evals.some(evalCase => evalCase.call.path.includes('/api/claim?')), 'evals should include claim API checks');

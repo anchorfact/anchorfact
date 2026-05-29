@@ -44,6 +44,13 @@ function evaluateJsonExpected(payload, expected, failures) {
     const calls = payload?.recommended_next_calls || [];
     check(calls.some(call => String(call?.path || call?.url || '').includes(expected.recommended_call_contains)), failures, `recommended_next_calls should include ${expected.recommended_call_contains}`);
   }
+  if (expected.fallback_guidance_contains) {
+    const guidance = (payload?.fallback_guidance || []).join(' ');
+    check(guidance.includes(expected.fallback_guidance_contains), failures, `fallback_guidance should include ${expected.fallback_guidance_contains}`);
+  }
+  if (expected.result_count !== undefined) {
+    check(payload?.result_count === expected.result_count, failures, `result_count expected ${expected.result_count}, got ${payload?.result_count}`);
+  }
   if (expected.contains_canonical_slug) {
     check(jsonIncludes(payload, expected.contains_canonical_slug), failures, `payload should include canonical slug ${expected.contains_canonical_slug}`);
   }

@@ -16,6 +16,7 @@ import {
 } from './build-metadata.js';
 
 const PREFERRED_SLUG = 'ai/3d-generation-gaussian-splatting';
+const UNSUPPORTED_QUERY = 'lunar dentistry';
 
 function queryPath(path, params) {
   const search = new URLSearchParams();
@@ -136,7 +137,9 @@ export function buildEvalsIndex({
   const claimLookupId = claimShortId(claim?.id);
   const sourcePath = sourceLookupPath(source);
   const planPath = queryPath('/api/plan', { q: query, limit: 3 });
+  const unsupportedPlanPath = queryPath('/api/plan', { q: UNSUPPORTED_QUERY, limit: 3 });
   const evidencePath = queryPath('/api/evidence', { q: query, limit: 3 });
+  const unsupportedEvidencePath = queryPath('/api/evidence', { q: UNSUPPORTED_QUERY, limit: 3 });
   const markdownPath = queryPath('/api/evidence', { q: query, limit: 1, format: 'markdown' });
   const resolvePath = queryPath('/api/resolve', { ref: claimLookupId });
   const resolveBatchPath = queryPath('/api/resolve-batch', { ref: [claimLookupId, source.url || source.id].filter(Boolean) });
@@ -159,6 +162,20 @@ export function buildEvalsIndex({
       }
     },
     {
+      id: 'unsupported_query_plan',
+      intent: 'Confirm the query planner tells agents not to cite AnchorFact for a fixed no-coverage query.',
+      call: call(unsupportedPlanPath, site),
+      expected: {
+        status: 200,
+        content_type: 'application/json',
+        schema_version: PLAN_API_SCHEMA_VERSION,
+        coverage_status: 'unsupported',
+        should_use_anchorfact: false,
+        recommended_call_contains: '/coverage.json',
+        fallback_guidance_contains: 'external primary'
+      }
+    },
+    {
       id: 'evidence_pack_json',
       intent: 'Confirm the one-call evidence API returns source-grounded JSON for a canonical public query.',
       call: call(evidencePath, site),
@@ -170,6 +187,17 @@ export function buildEvalsIndex({
         min_packs: 1,
         min_claims_per_matching_pack: 1,
         min_sources_per_matching_pack: 1
+      }
+    },
+    {
+      id: 'unsupported_query_evidence',
+      intent: 'Confirm the one-call evidence API returns an explicit empty result for the same no-coverage query.',
+      call: call(unsupportedEvidencePath, site),
+      expected: {
+        status: 200,
+        content_type: 'application/json',
+        schema_version: EVIDENCE_API_SCHEMA_VERSION,
+        result_count: 0
       }
     },
     {

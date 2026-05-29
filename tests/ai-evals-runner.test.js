@@ -61,6 +61,29 @@ test('runAiEvals executes JSON, Markdown, MCP, and provenance eval expectations'
             }
           },
           {
+            id: 'unsupported_query_plan',
+            call: { method: 'GET', path: '/api/plan?q=lunar+dentistry&limit=3' },
+            expected: {
+              status: 200,
+              content_type: 'application/json',
+              schema_version: 'anchorfact.plan-api.v1',
+              coverage_status: 'unsupported',
+              should_use_anchorfact: false,
+              recommended_call_contains: '/coverage.json',
+              fallback_guidance_contains: 'external primary'
+            }
+          },
+          {
+            id: 'unsupported_query_evidence',
+            call: { method: 'GET', path: '/api/evidence?q=lunar+dentistry&limit=3' },
+            expected: {
+              status: 200,
+              content_type: 'application/json',
+              schema_version: 'anchorfact.evidence-api.v1',
+              result_count: 0
+            }
+          },
+          {
             id: 'evidence_markdown',
             call: { method: 'GET', path: '/api/evidence?q=gaussian&format=markdown' },
             expected: {
@@ -98,6 +121,18 @@ test('runAiEvals executes JSON, Markdown, MCP, and provenance eval expectations'
         matched_articles: [{ canonical_slug: 'ai/3d-generation-gaussian-splatting' }],
         recommended_next_calls: [{ path: '/api/evidence?q=gaussian&limit=3' }]
       }),
+      '/api/plan?q=lunar+dentistry&limit=3': jsonResponse({
+        schema_version: 'anchorfact.plan-api.v1',
+        coverage_status: 'unsupported',
+        should_use_anchorfact: false,
+        recommended_next_calls: [{ path: '/coverage.json' }],
+        fallback_guidance: ['Use external primary sources instead of citing AnchorFact.']
+      }),
+      '/api/evidence?q=lunar+dentistry&limit=3': jsonResponse({
+        schema_version: 'anchorfact.evidence-api.v1',
+        result_count: 0,
+        packs: []
+      }),
       '/api/evidence?q=gaussian&format=markdown': jsonResponse('# AnchorFact Evidence Pack', 'text/markdown; charset=utf-8'),
       '/mcp.json': jsonResponse({
         schema_version: 'anchorfact.mcp.v1',
@@ -114,8 +149,8 @@ test('runAiEvals executes JSON, Markdown, MCP, and provenance eval expectations'
   });
 
   assertEq(report.ok, true);
-  assertEq(report.eval_count, 4);
-  assertEq(report.passed, 4);
+  assertEq(report.eval_count, 6);
+  assertEq(report.passed, 6);
   assertEq(report.failed, 0);
   const markdown = renderAiEvalsMarkdown(report);
   assert(markdown.includes('AnchorFact AI Evals - PASS'), 'markdown should show pass');
@@ -137,19 +172,49 @@ test('runAiEvals reports expectation failures', async () => {
               schema_version: 'anchorfact.mcp.v1',
               required_tools: ['anchorfact_plan_query']
             }
+          },
+          {
+            id: 'unsupported_query_plan',
+            call: { method: 'GET', path: '/api/plan?q=lunar+dentistry&limit=3' },
+            expected: {
+              status: 200,
+              content_type: 'application/json',
+              schema_version: 'anchorfact.plan-api.v1',
+              fallback_guidance_contains: 'external primary'
+            }
+          },
+          {
+            id: 'unsupported_query_evidence',
+            call: { method: 'GET', path: '/api/evidence?q=lunar+dentistry&limit=3' },
+            expected: {
+              status: 200,
+              content_type: 'application/json',
+              schema_version: 'anchorfact.evidence-api.v1',
+              result_count: 0
+            }
           }
         ]
       }),
       '/mcp.json': jsonResponse({
         schema_version: 'anchorfact.mcp.v1',
         tools: []
+      }),
+      '/api/plan?q=lunar+dentistry&limit=3': jsonResponse({
+        schema_version: 'anchorfact.plan-api.v1',
+        fallback_guidance: ['No local coverage.']
+      }),
+      '/api/evidence?q=lunar+dentistry&limit=3': jsonResponse({
+        schema_version: 'anchorfact.evidence-api.v1',
+        result_count: 1
       })
     })
   });
 
   assertEq(report.ok, false);
-  assertEq(report.failed, 1);
+  assertEq(report.failed, 3);
   assert(report.results[0].failures.some(failure => failure.includes('anchorfact_plan_query')), 'missing tool should be reported');
+  assert(report.results[1].failures.some(failure => failure.includes('external primary')), 'fallback guidance mismatch should be reported');
+  assert(report.results[2].failures.some(failure => failure.includes('result_count')), 'result_count mismatch should be reported');
 });
 
 for (const { name, fn } of tests) {
