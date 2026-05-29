@@ -52,6 +52,11 @@ const MOJIBAKE_PATTERNS = [
 ];
 
 const STALE_METRIC_PATTERNS = [
+  /596 public/i,
+  /596 public entries/i,
+  /Public eligible articles\s*\|\s*596/i,
+  /Public articles\s*\|\s*596/i,
+  /EXPECTED_PUBLIC_ARTICLES=596/i,
   /593 public/i,
   /593 public entries/i,
   /Public eligible articles\s*\|\s*593/i,
@@ -107,6 +112,9 @@ const STALE_METRIC_PATTERNS = [
   /Public eligible articles\s*\|\s*563/i,
   /Public articles\s*\|\s*563/i,
   /EXPECTED_PUBLIC_ARTICLES=563/i,
+  /404 draft/i,
+  /Draft articles\s*\|\s*404/i,
+  /EXPECTED_DRAFT_ARTICLES=404/i,
   /407 draft/i,
   /Draft articles\s*\|\s*407/i,
   /EXPECTED_DRAFT_ARTICLES=407/i,
@@ -140,6 +148,11 @@ const STALE_METRIC_PATTERNS = [
   /412 draft/i,
   /Draft articles\s*\|\s*412/i,
   /EXPECTED_DRAFT_ARTICLES=412/i,
+  /1830 public claims/i,
+  /1830 published claims/i,
+  /1830 claims from production smoke/i,
+  /Public claims\s*\|\s*1830/i,
+  /EXPECTED_CLAIMS=1830/i,
   /1820 public claims/i,
   /1820 published claims/i,
   /1820 claims from production smoke/i,

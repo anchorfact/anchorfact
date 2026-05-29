@@ -4,8 +4,8 @@ title: "REST API"
 schema_type: "TechArticle"
 category: "computer-science"
 language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
+confidence: "medium"
+last_verified: "2026-05-30"
 created_date: "2026-05-22"
 generation_method: "human_only"
 ai_models: ["claude-opus"]
@@ -15,86 +15,64 @@ is_live_document: false
 data_period: "static"
 
 atomic_facts:
-  - id: "fact-computer-science-01"
-    statement: "REST is an architectural style for designing networked applications, defined by Roy Fielding in his 2000 doctoral dissertation at UC Irvine"
+  - id: "fact-rest-api-1"
+    statement: "Roy Fielding's dissertation defines REST as an architectural style for distributed hypermedia systems."
     source_title: "Architectural Styles and the Design of Network-based Software Architectures"
-    source_url: "https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm"
+    source_url: "https://ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm"
     confidence: "medium"
-  - id: "fact-computer-science-02"
-    statement: "REST is the dominant API architecture on the web, used by virtually all major platforms including Google, Amazon, Twitter, and GitHub"
+  - id: "fact-rest-api-2"
+    statement: "Fielding describes REST's constraints as client-server, stateless, cache, uniform interface, layered system, and optional code-on-demand."
     source_title: "Architectural Styles and the Design of Network-based Software Architectures"
-    source_url: "https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm"
+    source_url: "https://ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm"
+    confidence: "medium"
+  - id: "fact-rest-api-3"
+    statement: "RFC 9110 defines HTTP methods as the primary source of request semantics in HTTP."
+    source_title: "RFC 9110: HTTP Semantics"
+    source_url: "https://www.ietf.org/rfc/rfc9110.html"
     confidence: "medium"
 
-completeness: 0.88
+completeness: 0.8
 
 known_gaps:
-  - "Statistics and data cited are from 2013 and earlier; more recent data may have become available since publication"
-  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
-  - "Recent developments from 2025-2026 may not be reflected"
+  - "This compact repair defines REST from primary sources and avoids broad adoption or vendor-usage claims."
 
-disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+disputed_statements: []
 
 primary_sources:
   - title: "Architectural Styles and the Design of Network-based Software Architectures"
     authors: ["Fielding, Roy Thomas"]
     type: "dissertation"
     year: 2000
-    url: "https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm"
+    url: "https://ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm"
     institution: "UC Irvine"
+  - title: "RFC 9110: HTTP Semantics"
+    authors: ["Fielding, R.", "Nottingham, M.", "Reschke, J."]
+    type: "rfc"
+    year: 2022
+    url: "https://www.ietf.org/rfc/rfc9110.html"
+    institution: "IETF"
 
-secondary_sources:
-  - title: "RESTful Web APIs"
-    authors: ["Richardson", "Amundsen"]
-    type: "book"
-    year: 2013
-    url: "https://www.oreilly.com/library/view/restful-web-apis/9781449359713/"
-    institution: "O'Reilly"
-  - title: "The C Programming Language (K&R, 2nd Ed)"
-    type: "textbook"
-    year: 1988
-    url: "https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html"
-    institution: "Prentice Hall"
-  - title: "Structure and Interpretation of Computer Programs (SICP)"
-    type: "textbook"
-    year: 1996
-    url: "https://mitpress.mit.edu/sites/default/files/sicp/"
-    institution: "MIT Press"
-
+secondary_sources: []
+updated: "2026-05-30"
 ---
-
-
 
 ## TL;DR
 
-REST (Representational State Transfer) is an architectural style for designing networked applications, defined by Roy Fielding in his 2000 doctoral dissertation at UC Irvine. A REST API uses HTTP methods (GET, POST, PUT, DELETE) to perform CRUD operations on resources identified by URLs, with stateless communication and standardized response formats (typically JSON). REST is the dominant API architecture on the web, used by virtually all major platforms including Google, Amazon, Twitter, and GitHub.
+REST is an architectural style for distributed hypermedia systems, not a single protocol. A REST-style web API usually exposes resources through HTTP, uses HTTP request semantics, keeps application state out of the server session, and relies on representations transferred between client and server.
 
-## Core Constraints
+## Core Explanation
 
-- **Client-Server**: Separation of UI and data storage concerns
-- **Stateless**: Each request contains all information needed; no server-side session state
-- **Cacheable**: Responses explicitly marked as cacheable or non-cacheable
-- **Uniform Interface**: Resources identified by URLs, manipulated via representations
-- **Layered System**: Intermediaries (proxies, gateways) are transparent to client/server
-- **Code on Demand** (optional): Server can extend client functionality by sending executable code
+Fielding's REST constraints are client-server, stateless, cache, uniform interface, layered system, and optional code-on-demand. The uniform interface constraint is the key distinction: clients interact with resources through a shared interface instead of custom per-application operations.
 
-## Richardson Maturity Model
-
-| Level | Description |
-|:-----:|------------|
-| 0 | Single endpoint, single method (RPC over HTTP) |
-| 1 | Resources with individual URLs |
-| 2 | HTTP verbs used properly (GET/POST/PUT/DELETE + status codes) |
-| 3 | HATEOAS — hypermedia controls in responses |
+In HTTP APIs, REST-style designs commonly pair resource identifiers with HTTP methods and status codes. That practical pattern should not be confused with the full architectural style, which is broader than CRUD naming conventions.
 
 ## Further Reading
 
-- [Fielding's Dissertation](https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm): Chapter 5 defines REST
+- [Architectural Styles and the Design of Network-based Software Architectures](https://ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm)
+- [RFC 9110: HTTP Semantics](https://www.ietf.org/rfc/rfc9110.html)
 
 ## Related Articles
 
+- [Hypertext Transfer Protocol (HTTP)](../http-protocol.md)
+- [HTTP Status Codes](../http-status-codes.md)
 - [API Gateway](../api-gateway.md)
-- [Broadcast Channel API](../broadcast-channel-api.md)
-- [Canvas API](../canvas-api.md)

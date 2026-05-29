@@ -27141,25 +27141,30 @@
       "sources_total": 1,
       "verification_results": [
         {
-          "source_title": "ACM Digital Library",
-          "source_type": "repository",
+          "source_title": "RFC 9110: HTTP Semantics",
+          "source_type": "rfc",
           "results": [
             {
               "method": "url",
-              "identifier": "https://dl.acm.org/",
-              "verified": false,
+              "identifier": "https://www.ietf.org/rfc/rfc9110.html",
+              "verified": true,
               "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/"
+                "status": 200,
+                "final_url": "https://www.ietf.org/rfc/rfc9110.html",
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair and public promotion; source URL verified directly; local verify-full was not run."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 1
+      "sources_verified": 1,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-30"
     },
     {
       "file": "content/computer-science/https-tls.md",
@@ -31094,28 +31099,73 @@
       "file": "content/computer-science/quic-protocol.md",
       "article_id": "kb-2026-00190",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "ACM Digital Library",
-          "source_type": "repository",
+          "source_title": "RFC 9000: QUIC: A UDP-Based Multiplexed and Secure Transport",
+          "source_type": "rfc",
           "results": [
             {
               "method": "url",
-              "identifier": "https://dl.acm.org/",
-              "verified": false,
+              "identifier": "https://www.ietf.org/rfc/rfc9000.html",
+              "verified": true,
               "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/"
+                "status": 200,
+                "final_url": "https://www.ietf.org/rfc/rfc9000.html",
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair and public promotion; source URL verified directly; local verify-full was not run."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "RFC 9001: Using TLS to Secure QUIC",
+          "source_type": "rfc",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.ietf.org/rfc/rfc9001.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.ietf.org/rfc/rfc9001.html",
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair and public promotion; source URL verified directly; local verify-full was not run."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "RFC 9114: HTTP/3",
+          "source_type": "rfc",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.ietf.org/rfc/rfc9114.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.ietf.org/rfc/rfc9114.html",
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair and public promotion; source URL verified directly; local verify-full was not run."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-30"
     },
     {
       "file": "content/computer-science/quicksort-mergesort.md",
@@ -31735,7 +31785,7 @@
       "file": "content/computer-science/rest-api.md",
       "article_id": "kb-2026-00064",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 2,
       "verification_results": [
         {
           "source_title": "Architectural Styles and the Design of Network-based Software Architectures",
@@ -31743,17 +31793,45 @@
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm",
-              "verified": false,
-              "metadata": {},
-              "match": false
+              "identifier": "https://ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm",
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair and public promotion; source URL verified directly; local verify-full was not run."
+              },
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "RFC 9110: HTTP Semantics",
+          "source_type": "rfc",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.ietf.org/rfc/rfc9110.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.ietf.org/rfc/rfc9110.html",
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair and public promotion; source URL verified directly; local verify-full was not run."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 1
+      "sources_verified": 2,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-30"
     },
     {
       "file": "content/computer-science/rsync.md",

@@ -10,6 +10,7 @@
 const S_TIER_TYPES = new Set(['standard', 'patent', 'rfc']);
 const A_TIER_TYPES = new Set([
   'academic_paper',
+  'dissertation',
   'journal_article',
   'conference_paper',
   'survey_paper',

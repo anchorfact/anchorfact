@@ -44,6 +44,7 @@ test('Academic paper is A-tier', () => {
 test('Common academic and preferred source types are A-tier', () => {
   for (const type of [
     'journal_article',
+    'dissertation',
     'conference_paper',
     'survey_paper',
     'academic_article',

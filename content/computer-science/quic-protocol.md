@@ -4,8 +4,8 @@ title: "QUIC Protocol"
 schema_type: "TechArticle"
 category: "computer-science"
 language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
+confidence: "medium"
+last_verified: "2026-05-30"
 created_date: "2026-05-22"
 generation_method: "human_only"
 ai_models: ["claude-opus"]
@@ -15,78 +15,76 @@ is_live_document: false
 data_period: "static"
 
 atomic_facts:
-  - id: "fact-computer-science-01"
-    statement: "QUIC is a UDP-based transport protocol developed by Google and standardized as IETF RFC 9000"
-    source_title: "ACM Digital Library"
-    source_url: "https://dl.acm.org/"
+  - id: "fact-quic-1"
+    statement: "RFC 9000 defines QUIC as a UDP-based multiplexed and secure transport protocol."
+    source_title: "RFC 9000: QUIC: A UDP-Based Multiplexed and Secure Transport"
+    source_url: "https://www.ietf.org/rfc/rfc9000.html"
     confidence: "medium"
-  - id: "fact-computer-science-001"
-    statement: "QUIC is a UDP-based transport protocol developed by Google (2012) and standardized as IETF RFC 9000 (2021). It is the foundation of HTTP/3. Key innovations: 0-RTT connection, multiplexed streams without head-of-line blocking, built-in TLS 1.3 encryption, and connection migration (survives IP changes)."
-    source_title: "ACM Digital Library"
-    source_url: "https://dl.acm.org/"
+  - id: "fact-quic-2"
+    statement: "RFC 9000 states that QUIC provides stream multiplexing, per-stream flow control, and low-latency connection establishment."
+    source_title: "RFC 9000: QUIC: A UDP-Based Multiplexed and Secure Transport"
+    source_url: "https://www.ietf.org/rfc/rfc9000.html"
     confidence: "medium"
-  - id: "fact-computer-science-002"
-    statement: "0-RTT: for previously visited servers, data can be sent immediately."
-    source_title: "ACM Digital Library"
-    source_url: "https://dl.acm.org/"
+  - id: "fact-quic-3"
+    statement: "RFC 9001 specifies the use of TLS to secure QUIC."
+    source_title: "RFC 9001: Using TLS to Secure QUIC"
+    source_url: "https://www.ietf.org/rfc/rfc9001.html"
     confidence: "medium"
-  - id: "fact-computer-science-003"
-    statement: "Adoption: all Google services, Facebook, Cloudflare, ~35% of web traffic."
-    source_title: "ACM Digital Library"
-    source_url: "https://dl.acm.org/"
+  - id: "fact-quic-4"
+    statement: "RFC 9114 defines HTTP/3 as a mapping of HTTP semantics over QUIC."
+    source_title: "RFC 9114: HTTP/3"
+    source_url: "https://www.ietf.org/rfc/rfc9114.html"
     confidence: "medium"
 
-completeness: 0.88
+completeness: 0.8
 
 known_gaps:
-  - "Sources reconstructed during quality audit; primary source details were corrupted during batch generation"
+  - "This compact repair avoids deployment-share claims and focuses on the standardized protocol model."
 
-disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+disputed_statements: []
 
 primary_sources:
-  - title: "ACM Digital Library"
-    type: "repository"
-    year: 2026
-    url: "https://dl.acm.org/"
-    institution: "ACM"
+  - title: "RFC 9000: QUIC: A UDP-Based Multiplexed and Secure Transport"
+    authors: ["Iyengar, J.", "Thomson, M."]
+    type: "rfc"
+    year: 2021
+    url: "https://www.ietf.org/rfc/rfc9000.html"
+    institution: "IETF"
+  - title: "RFC 9001: Using TLS to Secure QUIC"
+    authors: ["Thomson, M.", "Turner, S."]
+    type: "rfc"
+    year: 2021
+    url: "https://www.ietf.org/rfc/rfc9001.html"
+    institution: "IETF"
+  - title: "RFC 9114: HTTP/3"
+    authors: ["Bishop, M."]
+    type: "rfc"
+    year: 2022
+    url: "https://www.ietf.org/rfc/rfc9114.html"
+    institution: "IETF"
 
-secondary_sources:
-  - title: "ACM Digital Library"
-    type: "repository"
-    year: 2026
-    url: "https://dl.acm.org/"
-    institution: "ACM"
-  - title: "The C Programming Language (K&R, 2nd Ed)"
-    type: "textbook"
-    year: 1988
-    url: "https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html"
-    institution: "Prentice Hall"
-  - title: "Structure and Interpretation of Computer Programs (SICP)"
-    type: "textbook"
-    year: 1996
-    url: "https://mitpress.mit.edu/sites/default/files/sicp/"
-    institution: "MIT Press"
-
+secondary_sources: []
+updated: "2026-05-30"
 ---
-
-
-
 
 ## TL;DR
 
-QUIC is a UDP-based transport protocol developed by Google (2012) and standardized as IETF RFC 9000 (2021). It is the foundation of HTTP/3. Key innovations: 0-RTT connection, multiplexed streams without head-of-line blocking, built-in TLS 1.3 encryption, and connection migration (survives IP changes).
+QUIC is a secure transport protocol built on UDP. It provides multiplexed streams, flow control, low-latency connection setup, and the transport foundation used by HTTP/3.
 
 ## Core Explanation
 
-QUIC eliminates TCP's head-of-line blocking by treating each stream independently — lost packets in one stream don't block others. 0-RTT: for previously visited servers, data can be sent immediately. Connection ID enables seamless WiFi-to-cellular switching. QUIC is mandatory encrypted (TLS 1.3 built-in). Adoption: all Google services, Facebook, Cloudflare, ~35% of web traffic.
+QUIC moves several transport responsibilities into an encrypted UDP-based protocol. Its stream model lets independent streams share one connection while retaining separate flow control.
+
+The protocol is secured with TLS as specified for QUIC, and HTTP/3 maps HTTP semantics onto QUIC rather than onto TCP. That makes QUIC especially important for agents and applications that need to understand modern web transport behavior.
 
 ## Further Reading
 
--
+- [RFC 9000: QUIC: A UDP-Based Multiplexed and Secure Transport](https://www.ietf.org/rfc/rfc9000.html)
+- [RFC 9001: Using TLS to Secure QUIC](https://www.ietf.org/rfc/rfc9001.html)
+- [RFC 9114: HTTP/3](https://www.ietf.org/rfc/rfc9114.html)
 
 ## Related Articles
 
 - [HTTP/3: QUIC Protocol and Next-Generation Web Transport](../http-3-quic-protocol-and-next-generation-web-transport.md)
-- [Model Context Protocol (MCP)](../../ai/mcp.md)
-- [gRPC: Protocol Buffers, HTTP/2 Streaming, and Service Contracts](../grpc-protocol-buffers-http-2-streaming-and-service-contracts.md)
+- [Hypertext Transfer Protocol (HTTP)](../http-protocol.md)
+- [gRPC](../grpc.md)
