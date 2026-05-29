@@ -54,7 +54,7 @@ test('runAiEvals executes JSON, Markdown, MCP, and provenance eval expectations'
               status: 200,
               content_type: 'application/json',
               schema_version: 'anchorfact.api-index.v1',
-              required_paths: ['/api/plan', '/api/evidence']
+              required_paths: ['/api/plan', '/api/evidence', '/api/context']
             }
           },
           {
@@ -81,6 +81,19 @@ test('runAiEvals executes JSON, Markdown, MCP, and provenance eval expectations'
               should_use_anchorfact: false,
               recommended_call_contains: '/coverage.json',
               fallback_guidance_contains: 'external primary'
+            }
+          },
+          {
+            id: 'context_pack_json',
+            call: { method: 'GET', path: '/api/context?q=gaussian&limit=3' },
+            expected: {
+              status: 200,
+              content_type: 'application/json',
+              schema_version: 'anchorfact.context-api.v1',
+              coverage_status: 'supported',
+              should_use_anchorfact: true,
+              contains_canonical_slug: 'ai/3d-generation-gaussian-splatting',
+              recommended_call_contains: '/api/evidence'
             }
           },
           {
@@ -126,7 +139,7 @@ test('runAiEvals executes JSON, Markdown, MCP, and provenance eval expectations'
       }),
       '/api': jsonResponse({
         schema_version: 'anchorfact.api-index.v1',
-        endpoints: [{ path: '/api/plan' }, { path: '/api/evidence' }]
+        endpoints: [{ path: '/api/plan' }, { path: '/api/evidence' }, { path: '/api/context' }]
       }),
       '/api/plan?q=gaussian&limit=3': jsonResponse({
         schema_version: 'anchorfact.plan-api.v1',
@@ -147,6 +160,13 @@ test('runAiEvals executes JSON, Markdown, MCP, and provenance eval expectations'
         result_count: 0,
         packs: []
       }),
+      '/api/context?q=gaussian&limit=3': jsonResponse({
+        schema_version: 'anchorfact.context-api.v1',
+        coverage_status: 'supported',
+        should_use_anchorfact: true,
+        recommended_next_calls: [{ path: '/api/evidence?q=gaussian&limit=3' }],
+        evidence_packs: [{ canonical_slug: 'ai/3d-generation-gaussian-splatting' }]
+      }),
       '/api/evidence?q=gaussian&format=markdown': jsonResponse('# AnchorFact Evidence Pack', 'text/markdown; charset=utf-8'),
       '/mcp.json': jsonResponse({
         schema_version: 'anchorfact.mcp.v1',
@@ -163,8 +183,8 @@ test('runAiEvals executes JSON, Markdown, MCP, and provenance eval expectations'
   });
 
   assertEq(report.ok, true);
-  assertEq(report.eval_count, 7);
-  assertEq(report.passed, 7);
+  assertEq(report.eval_count, 8);
+  assertEq(report.passed, 8);
   assertEq(report.failed, 0);
   const markdown = renderAiEvalsMarkdown(report);
   assert(markdown.includes('AnchorFact AI Evals - PASS'), 'markdown should show pass');

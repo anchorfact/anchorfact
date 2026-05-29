@@ -13,6 +13,7 @@ export const API_INDEX_SCHEMA_VERSION = 'anchorfact.api-index.v1';
 export const SEARCH_API_SCHEMA_VERSION = 'anchorfact.search-api.v1';
 export const PLAN_API_SCHEMA_VERSION = 'anchorfact.plan-api.v1';
 export const EVIDENCE_API_SCHEMA_VERSION = 'anchorfact.evidence-api.v1';
+export const CONTEXT_API_SCHEMA_VERSION = 'anchorfact.context-api.v1';
 export const ARTICLE_API_SCHEMA_VERSION = 'anchorfact.article-api.v1';
 export const CLAIM_API_SCHEMA_VERSION = 'anchorfact.claim-api.v1';
 export const SOURCE_API_SCHEMA_VERSION = 'anchorfact.source-api.v1';

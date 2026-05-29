@@ -104,12 +104,13 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
 
   assertEq(payload.schema_version, 'anchorfact.evals.v1');
   assertEq(payload.provenance_url, 'https://anchorfact.org/provenance.json');
-  assertEq(payload.eval_count, 14);
+  assertEq(payload.eval_count, 15);
   assertEq(payload.evals.map(evalCase => evalCase.id), [
     'api_discovery',
     'query_plan',
     'unsupported_query_plan',
     'evidence_pack_json',
+    'context_pack_json',
     'unsupported_query_evidence',
     'evidence_pack_markdown',
     'claim_dereference',
@@ -145,6 +146,11 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
   assert(evidenceEval.call.path.includes('/api/evidence?q=gaussian+splatting&limit=3'), 'evidence eval should include encoded query path');
   assertEq(evidenceEval.expected.schema_version, 'anchorfact.evidence-api.v1');
   assertEq(evidenceEval.expected.contains_canonical_slug, 'ai/3d-generation-gaussian-splatting');
+
+  const contextEval = payload.evals.find(evalCase => evalCase.id === 'context_pack_json');
+  assert(contextEval.call.path.includes('/api/context?q=gaussian+splatting&limit=3'), 'context eval should include encoded query path');
+  assertEq(contextEval.expected.schema_version, 'anchorfact.context-api.v1');
+  assertEq(contextEval.expected.should_use_anchorfact, true);
 
   const unsupportedEvidenceEval = payload.evals.find(evalCase => evalCase.id === 'unsupported_query_evidence');
   assert(unsupportedEvidenceEval.call.path.includes('/api/evidence?q=lunar+dentistry&limit=3'), 'unsupported evidence eval should use the same fixed no-coverage query');

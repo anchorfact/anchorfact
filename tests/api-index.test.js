@@ -33,6 +33,7 @@ test('buildApiIndex publishes the machine API discovery contract', () => {
   for (const path of [
     '/api/plan',
     '/api/evidence',
+    '/api/context',
     '/api/search',
     '/api/article',
     '/api/claim',

@@ -7,6 +7,7 @@ import {
   CLAIM_API_SCHEMA_VERSION,
   CLAIMS_SCHEMA_VERSION,
   COMPILER_VERSION,
+  CONTEXT_API_SCHEMA_VERSION,
   COVERAGE_SCHEMA_VERSION,
   EVALS_SCHEMA_VERSION,
   EVIDENCE_API_SCHEMA_VERSION,
@@ -174,6 +175,49 @@ export function buildOpenApiContract({
               }
             },
             400: jsonResponse('ApiError')
+          }
+        }
+      },
+      '/api/context': {
+        get: {
+          summary: 'Read-only AI prompt context with planning status and evidence packs',
+          parameters: [
+            {
+              name: 'q',
+              in: 'query',
+              required: true,
+              schema: { type: 'string', minLength: 1 },
+              description: 'Natural-language query.'
+            },
+            {
+              name: 'limit',
+              in: 'query',
+              required: false,
+              schema: { type: 'integer', minimum: 1, maximum: 20, default: 3 },
+              description: 'Maximum evidence pack count.'
+            },
+            {
+              name: 'format',
+              in: 'query',
+              required: false,
+              schema: { enum: ['json', 'markdown', 'md'], default: 'json' },
+              description: 'Response format. JSON is the default; markdown returns prompt-ready context text.'
+            }
+          ],
+          responses: {
+            200: {
+              description: 'OK',
+              content: {
+                'application/json': {
+                  schema: { $ref: '#/components/schemas/ContextApiResponse' }
+                },
+                'text/markdown': {
+                  schema: { type: 'string' }
+                }
+              }
+            },
+            400: jsonResponse('ApiError'),
+            502: jsonResponse('ApiError')
           }
         }
       },
@@ -513,6 +557,16 @@ export function buildOpenApiContract({
           claims_generated: { type: ['string', 'null'], format: 'date-time' },
           source_index_generated: { type: ['string', 'null'], format: 'date-time' },
           packs: { type: 'array', items: { type: 'object' } }
+        }),
+        ContextApiResponse: schemaVersioned('Context API response', CONTEXT_API_SCHEMA_VERSION, {
+          query: { type: 'string' },
+          limit: { type: 'integer' },
+          coverage_status: { enum: ['supported', 'topic_supported', 'unsupported'] },
+          should_use_anchorfact: { type: 'boolean' },
+          evidence_pack_count: { type: 'integer' },
+          evidence_packs: { type: 'array', items: { type: 'object' } },
+          recommended_next_calls: { type: 'array', items: { type: 'object' } },
+          fallback_guidance: { type: 'array', items: { type: 'string' } }
         }),
         ResolveApiResponse: schemaVersioned('Resolve API response', RESOLVE_API_SCHEMA_VERSION, {
           ref: { type: 'string' },

@@ -123,6 +123,7 @@ test('public machine entrypoints exclude drafts', () => {
   assertEq(agent.endpoints.coverage.url, 'https://anchorfact.org/coverage.json');
   assertEq(agent.endpoints.plan_api.path, '/api/plan?q={query}');
   assertEq(agent.endpoints.evidence_api.path, '/api/evidence?q={query}');
+  assertEq(agent.endpoints.context_api.path, '/api/context?q={query}');
   assertEq(agent.endpoints.resolve_api.path, '/api/resolve?ref={reference}');
   assertEq(agent.endpoints.resolve_batch_api.path, '/api/resolve-batch?ref={reference}&ref={reference}');
   assertEq(agent.endpoints.search_api.path, '/api/search?q={query}');
@@ -144,6 +145,7 @@ test('public machine entrypoints exclude drafts', () => {
   assert(openapi.paths['/coverage.json'], 'OpenAPI should expose coverage endpoint');
   assert(openapi.paths['/api/plan'], 'OpenAPI should expose plan API endpoint');
   assert(openapi.paths['/api/evidence'], 'OpenAPI should expose evidence API endpoint');
+  assert(openapi.paths['/api/context'], 'OpenAPI should expose context API endpoint');
   assert(openapi.paths['/api/resolve'], 'OpenAPI should expose resolve API endpoint');
   assert(openapi.paths['/api/resolve-batch'], 'OpenAPI should expose resolve batch API endpoint');
   assert(openapi.paths['/api/search'], 'OpenAPI should expose search API endpoint');
@@ -174,7 +176,7 @@ test('public machine entrypoints exclude drafts', () => {
   assert(examples.examples.some(example => example.id === 'one_call_evidence_pack'), 'examples index should include evidence pack workflow');
   assert(examples.examples.some(example => example.id === 'mixed_reference_resolution'), 'examples index should include mixed reference workflow');
   assert(examples.examples.some(example => example.id === 'static_fallback'), 'examples index should include static fallback workflow');
-  assertEq(evals.eval_count, 14);
+  assertEq(evals.eval_count, 15);
   assert(evals.evals.some(evalCase => evalCase.id === 'query_plan'), 'evals index should include query planning check');
   assert(evals.evals.some(evalCase => evalCase.id === 'unsupported_query_plan'), 'evals index should include unsupported planning check');
   assert(evals.evals.some(evalCase => evalCase.id === 'evidence_pack_json'), 'evals index should include evidence pack check');

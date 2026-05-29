@@ -120,7 +120,7 @@ export async function main() {
   const expectedDraft = readExpectedInt('EXPECTED_DRAFT_ARTICLES');
   const expectedClaims = readExpectedInt('EXPECTED_CLAIMS');
 
-  const routes = ['/', '/robots.txt', '/sitemap.xml', '/agent.json', '/.well-known/anchorfact.json', '/openapi.json', '/manifest.json', '/llms.txt', '/claims.json', '/topics.json', '/capabilities.json', '/coverage.json', '/examples.json', '/graph.json', '/evals.json', '/mcp.json', '/api', '/api/plan?q=gaussian&limit=2', '/api/evidence?q=gaussian&limit=2', '/api/evidence?q=gaussian&limit=1&format=markdown', '/api/resolve?ref=f1', '/api/resolve-batch?ref=f1&ref=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079', '/api/resolve-batch?ref=f1&ref=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079&format=markdown', '/api/search?q=gaussian&limit=2', '/api/article?slug=ai/3d-generation-gaussian-splatting', '/api/claim?id=f1', '/api/cite?id=f1', '/api/cite?id=f1&format=markdown', '/api/source?url=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079', '/search-index.json', '/sources.json', '/provenance.json', '/drafts.html'];
+  const routes = ['/', '/robots.txt', '/sitemap.xml', '/agent.json', '/.well-known/anchorfact.json', '/openapi.json', '/manifest.json', '/llms.txt', '/claims.json', '/topics.json', '/capabilities.json', '/coverage.json', '/examples.json', '/graph.json', '/evals.json', '/mcp.json', '/api', '/api/plan?q=gaussian&limit=2', '/api/evidence?q=gaussian&limit=2', '/api/evidence?q=gaussian&limit=1&format=markdown', '/api/context?q=gaussian&limit=2', '/api/context?q=gaussian&limit=1&format=markdown', '/api/resolve?ref=f1', '/api/resolve-batch?ref=f1&ref=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079', '/api/resolve-batch?ref=f1&ref=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079&format=markdown', '/api/search?q=gaussian&limit=2', '/api/article?slug=ai/3d-generation-gaussian-splatting', '/api/claim?id=f1', '/api/cite?id=f1', '/api/cite?id=f1&format=markdown', '/api/source?url=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079', '/search-index.json', '/sources.json', '/provenance.json', '/drafts.html'];
   const results = {};
 
   for (const route of routes) {
@@ -144,6 +144,8 @@ export async function main() {
   const planApi = JSON.parse(results['/api/plan?q=gaussian&limit=2'].body);
   const evidenceApi = JSON.parse(results['/api/evidence?q=gaussian&limit=2'].body);
   const evidenceMarkdown = results['/api/evidence?q=gaussian&limit=1&format=markdown'].body;
+  const contextApi = JSON.parse(results['/api/context?q=gaussian&limit=2'].body);
+  const contextMarkdown = results['/api/context?q=gaussian&limit=1&format=markdown'].body;
   const resolveApi = JSON.parse(results['/api/resolve?ref=f1'].body);
   const resolveBatchApi = JSON.parse(results['/api/resolve-batch?ref=f1&ref=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079'].body);
   const resolveBatchMarkdown = results['/api/resolve-batch?ref=f1&ref=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079&format=markdown'].body;
@@ -194,6 +196,7 @@ export async function main() {
   assertOk(agentProfile.endpoints?.capabilities?.url === new URL('/capabilities.json', baseUrl).href, 'agent profile capabilities endpoint does not match base URL', failures);
   assertOk(agentProfile.endpoints?.coverage?.url === new URL('/coverage.json', baseUrl).href, 'agent profile coverage endpoint does not match base URL', failures);
   assertOk(agentProfile.endpoints?.evidence_api?.path === '/api/evidence?q={query}', 'agent profile evidence API endpoint template is missing', failures);
+  assertOk(agentProfile.endpoints?.context_api?.path === '/api/context?q={query}', 'agent profile context API endpoint template is missing', failures);
   assertOk(agentProfile.endpoints?.resolve_api?.path === '/api/resolve?ref={reference}', 'agent profile resolve API endpoint template is missing', failures);
   assertOk(agentProfile.endpoints?.resolve_batch_api?.path === '/api/resolve-batch?ref={reference}&ref={reference}', 'agent profile resolve batch API endpoint template is missing', failures);
   assertOk(agentProfile.endpoints?.plan_api?.path === '/api/plan?q={query}', 'agent profile plan API endpoint template is missing', failures);
@@ -210,6 +213,7 @@ export async function main() {
   assertOk(openapi['x-anchorfact-schema-version'] === 'anchorfact.openapi.v1', `openapi AnchorFact schema expected anchorfact.openapi.v1, got ${openapi['x-anchorfact-schema-version'] || '(missing)'}`, failures);
   assertOk(openapi['x-provenance-url'] === new URL('/provenance.json', baseUrl).href, `openapi provenance url expected ${new URL('/provenance.json', baseUrl).href}, got ${openapi['x-provenance-url'] || '(missing)'}`, failures);
   assertOk(openapi.paths?.['/api/evidence'], 'openapi is missing /api/evidence path', failures);
+  assertOk(openapi.paths?.['/api/context'], 'openapi is missing /api/context path', failures);
   assertOk(openapi.paths?.['/api/resolve'], 'openapi is missing /api/resolve path', failures);
   assertOk(openapi.paths?.['/api/resolve-batch'], 'openapi is missing /api/resolve-batch path', failures);
   assertOk(openapi.paths?.['/api/plan'], 'openapi is missing /api/plan path', failures);
@@ -246,7 +250,7 @@ export async function main() {
   assertOk(agentProfile.endpoints?.api_index?.path === '/api', 'agent profile API index endpoint is missing', failures);
   assertOk(apiIndex.schema_version === 'anchorfact.api-index.v1', `api index schema_version expected anchorfact.api-index.v1, got ${apiIndex.schema_version || '(missing)'}`, failures);
   const apiIndexPaths = new Set((apiIndex.endpoints || []).map(endpoint => endpoint?.path));
-  for (const path of ['/api/plan', '/api/evidence', '/api/resolve', '/api/resolve-batch', '/api/search', '/api/article', '/api/claim', '/api/cite', '/api/source']) {
+  for (const path of ['/api/plan', '/api/evidence', '/api/context', '/api/resolve', '/api/resolve-batch', '/api/search', '/api/article', '/api/claim', '/api/cite', '/api/source']) {
     assertOk(apiIndexPaths.has(path), `/api is missing ${path}`, failures);
   }
   assertOk(agentProfile.current_snapshot?.topics === topics.topic_count, 'agent profile topic count does not match topics.json', failures);
@@ -341,6 +345,13 @@ export async function main() {
   assertOk(evidenceMarkdown.includes('# AnchorFact Evidence Pack: gaussian'), '/api/evidence markdown response is missing heading', failures);
   assertOk(evidenceMarkdown.includes('Citation contract:'), '/api/evidence markdown response is missing citation contract', failures);
   assertOk(evidenceMarkdown.includes('3D Gaussian Splatting'), '/api/evidence markdown response is missing expected evidence text', failures);
+  assertOk(contextApi.schema_version === 'anchorfact.context-api.v1', `context api schema_version expected anchorfact.context-api.v1, got ${contextApi.schema_version || '(missing)'}`, failures);
+  assertOk(contextApi.coverage_status !== 'unsupported', '/api/context unexpectedly marked gaussian query unsupported', failures);
+  assertOk(contextApi.evidence_pack_count > 0, '/api/context returned no evidence packs', failures);
+  assertOk((contextApi.evidence_packs || []).some(pack => pack.canonical_slug === 'ai/3d-generation-gaussian-splatting'), '/api/context did not return expected gaussian pack', failures);
+  assertOk(contextMarkdown.includes('# AnchorFact Context: gaussian'), '/api/context markdown response is missing heading', failures);
+  assertOk(contextMarkdown.includes('Citation contract:'), '/api/context markdown response is missing citation contract', failures);
+  assertOk(contextMarkdown.includes('3D Gaussian Splatting'), '/api/context markdown response is missing expected evidence text', failures);
   assertOk(resolveApi.schema_version === 'anchorfact.resolve-api.v1', `resolve api schema_version expected anchorfact.resolve-api.v1, got ${resolveApi.schema_version || '(missing)'}`, failures);
   assertOk(resolveApi.resolved_type === 'claim', `resolve api resolved_type expected claim, got ${resolveApi.resolved_type || '(missing)'}`, failures);
   assertOk(resolveApi.canonical_ref === 'https://anchorfact.org/fact/f1', `resolve api canonical_ref expected https://anchorfact.org/fact/f1, got ${resolveApi.canonical_ref || '(missing)'}`, failures);
@@ -430,6 +441,9 @@ export async function main() {
   headerIncludes(results['/api/evidence?q=gaussian&limit=2'], 'Access-Control-Allow-Origin', '*', failures);
   headerIncludes(results['/api/evidence?q=gaussian&limit=1&format=markdown'], 'Content-Type', 'text/markdown', failures);
   headerIncludes(results['/api/evidence?q=gaussian&limit=1&format=markdown'], 'Access-Control-Allow-Origin', '*', failures);
+  headerIncludes(results['/api/context?q=gaussian&limit=2'], 'Access-Control-Allow-Origin', '*', failures);
+  headerIncludes(results['/api/context?q=gaussian&limit=1&format=markdown'], 'Content-Type', 'text/markdown', failures);
+  headerIncludes(results['/api/context?q=gaussian&limit=1&format=markdown'], 'Access-Control-Allow-Origin', '*', failures);
   headerIncludes(results['/api/resolve?ref=f1'], 'Access-Control-Allow-Origin', '*', failures);
   headerIncludes(results['/api/resolve-batch?ref=f1&ref=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079'], 'Access-Control-Allow-Origin', '*', failures);
   headerIncludes(results['/api/resolve-batch?ref=f1&ref=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079&format=markdown'], 'Content-Type', 'text/markdown', failures);

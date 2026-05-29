@@ -98,6 +98,7 @@ function writeRootIndex(distDir, results, publicResults, draftResults, claims) {
     <a href="/capabilities.json">Capabilities</a> &middot;
     <a href="/api/plan?q=gaussian">Plan API</a> &middot;
     <a href="/api/evidence?q=gaussian">Evidence API</a> &middot;
+    <a href="/api/context?q=gaussian">Context API</a> &middot;
     <a href="/api/resolve?ref=f1">Resolve API</a> &middot;
     <a href="/api/resolve-batch?ref=f1&amp;ref=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079">Resolve Batch API</a> &middot;
     <a href="/api/search?q=gaussian">Search API</a> &middot;
@@ -190,6 +191,7 @@ ${entries || '_No public verified entries yet._'}
 - [Coverage](https://anchorfact.org/coverage.json): AI coverage and limits guide with topic, confidence, source tier, and verification distributions.
 - [Plan API](https://anchorfact.org/api/plan?q=gaussian): Read-only query planner that recommends AnchorFact next calls or external-source fallback.
 - [Evidence API](https://anchorfact.org/api/evidence?q=gaussian): One-call public evidence packs with search hits, article summaries, claims, and sources.
+- [Context API](https://anchorfact.org/api/context?q=gaussian): One-call prompt context with planning status, fallback guidance, evidence packs, and citation guardrails.
 - [Resolve API](https://anchorfact.org/api/resolve?ref=f1): Read-only resolver for public claim ids, article slugs, source ids, and source URLs.
 - [Resolve Batch API](https://anchorfact.org/api/resolve-batch?ref=f1&ref=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079): Read-only batch resolver for multiple mixed public references.
 - [Search API](https://anchorfact.org/api/search?q=gaussian): Read-only search over public records.

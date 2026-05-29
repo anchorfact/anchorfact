@@ -2,6 +2,7 @@ import {
   API_INDEX_SCHEMA_VERSION,
   CITE_API_SCHEMA_VERSION,
   CLAIM_API_SCHEMA_VERSION,
+  CONTEXT_API_SCHEMA_VERSION,
   EVALS_SCHEMA_VERSION,
   EVIDENCE_API_SCHEMA_VERSION,
   GRAPH_SCHEMA_VERSION,
@@ -140,6 +141,7 @@ export function buildEvalsIndex({
   const planPath = queryPath('/api/plan', { q: query, limit: 3 });
   const unsupportedPlanPath = queryPath('/api/plan', { q: UNSUPPORTED_QUERY, limit: 3 });
   const evidencePath = queryPath('/api/evidence', { q: query, limit: 3 });
+  const contextPath = queryPath('/api/context', { q: query, limit: 3 });
   const unsupportedEvidencePath = queryPath('/api/evidence', { q: UNSUPPORTED_QUERY, limit: 3 });
   const markdownPath = queryPath('/api/evidence', { q: query, limit: 1, format: 'markdown' });
   const resolvePath = queryPath('/api/resolve', { ref: claimLookupId });
@@ -209,6 +211,20 @@ export function buildEvalsIndex({
         min_packs: 1,
         min_claims_per_matching_pack: 1,
         min_sources_per_matching_pack: 1
+      }
+    },
+    {
+      id: 'context_pack_json',
+      intent: 'Confirm the context API combines planning status, fallback guidance, and source-grounded evidence packs.',
+      call: call(contextPath, site),
+      expected: {
+        status: 200,
+        content_type: 'application/json',
+        schema_version: CONTEXT_API_SCHEMA_VERSION,
+        coverage_status: 'supported',
+        should_use_anchorfact: true,
+        contains_canonical_slug: record.canonical_slug,
+        recommended_call_contains: '/api/evidence'
       }
     },
     {
