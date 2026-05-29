@@ -105,9 +105,19 @@ function buildFixture(overrides = {}) {
       public_claims: 3
     }
   };
+  const sources = {
+    schema_version: 'anchorfact.sources.v1',
+    generated: '2026-05-29T00:00:00.000Z',
+    provenance_url: `${baseUrl}/provenance.json`,
+    source_count: 1,
+    public_article_count: 2,
+    public_claim_count: 3,
+    sources: [{ id: 'source:fixture', title: 'Fixture Paper', tier: 'S' }]
+  };
   const manifestText = JSON.stringify(manifest, null, 2);
   const claimsText = JSON.stringify(claims, null, 2);
   const agentText = JSON.stringify(agent, null, 2);
+  const sourcesText = JSON.stringify(sources, null, 2);
   const provenance = {
     schema_version: PROVENANCE_SCHEMA_VERSION,
     official_source_repository: OFFICIAL_SOURCE_REPOSITORY,
@@ -147,6 +157,11 @@ function buildFixture(overrides = {}) {
         sha256: sha256Text(claimsText),
         bytes: Buffer.byteLength(claimsText, 'utf8')
       },
+      sources_json: {
+        path: '/sources.json',
+        sha256: sha256Text(sourcesText),
+        bytes: Buffer.byteLength(sourcesText, 'utf8')
+      },
       llms_txt: {
         path: '/llms.txt',
         sha256: sha256Text(llms),
@@ -181,6 +196,7 @@ function buildFixture(overrides = {}) {
     [`${baseUrl}/agent.json`]: { body: agentText },
     [`${baseUrl}/manifest.json`]: { body: manifestText },
     [`${baseUrl}/claims.json`]: { body: claimsText },
+    [`${baseUrl}/sources.json`]: { body: sourcesText },
     [`${baseUrl}/llms.txt`]: { body: llms, contentType: 'text/plain; charset=utf-8' },
     'https://api.github.com/repos/anchorfact/anchorfact/commits/75b8761df7e7a92d63a204d456c2e553d299f48d': {
       body: JSON.stringify({ sha: '75b8761df7e7a92d63a204d456c2e553d299f48d' })

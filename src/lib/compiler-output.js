@@ -2,6 +2,7 @@ import { mkdirSync, writeFileSync } from 'fs';
 import { join } from 'path';
 import { buildAgentProfile } from './agent-profile.js';
 import { publicClaims } from './claims.js';
+import { buildSourceIndex } from './source-index.js';
 import { escapeHtml } from './html.js';
 import { buildManifest, distribution } from './manifest.js';
 import {
@@ -86,6 +87,7 @@ function writeRootIndex(distDir, results, publicResults, draftResults, claims) {
     <a href="/llms.txt">llms.txt</a> &middot;
     <a href="/manifest.json">Manifest</a> &middot;
     <a href="/claims.json">Claims JSON</a> &middot;
+    <a href="/sources.json">Sources JSON</a> &middot;
     <a href="/provenance.json">Provenance</a> &middot;
     <a href="/dashboard.html">Dashboard</a>
   </div>
@@ -155,6 +157,7 @@ ${entries || '_No public verified entries yet._'}
 - [Agent Profile](https://anchorfact.org/agent.json): Machine contract and recommended retrieval workflow.
 - [Manifest](https://anchorfact.org/manifest.json): Full index with public/draft status.
 - [Claims](https://anchorfact.org/claims.json): Public verified atomic claims.
+- [Sources](https://anchorfact.org/sources.json): Deduplicated public source index with evidence reuse.
 - [Provenance](https://anchorfact.org/provenance.json): Build identity and artifact checksums.
 
 ## Policy
@@ -173,6 +176,7 @@ function writeSitemap(distDir, publicResults) {
     '<url><loc>https://anchorfact.org/agent.json</loc><changefreq>daily</changefreq><priority>0.9</priority></url>',
     '<url><loc>https://anchorfact.org/llms.txt</loc><changefreq>daily</changefreq><priority>0.9</priority></url>',
     '<url><loc>https://anchorfact.org/claims.json</loc><changefreq>daily</changefreq><priority>0.8</priority></url>',
+    '<url><loc>https://anchorfact.org/sources.json</loc><changefreq>daily</changefreq><priority>0.8</priority></url>',
     '<url><loc>https://anchorfact.org/provenance.json</loc><changefreq>daily</changefreq><priority>0.8</priority></url>',
     ...publicResults.flatMap(result => {
       const slug = result._quality.canonicalSlug;
@@ -221,6 +225,11 @@ function writeHeaders(distDir) {
   Cache-Control: public, max-age=86400
 
 /claims.json
+  Access-Control-Allow-Origin: *
+  Content-Type: application/json; charset=utf-8
+  Cache-Control: public, max-age=3600
+
+/sources.json
   Access-Control-Allow-Origin: *
   Content-Type: application/json; charset=utf-8
   Cache-Control: public, max-age=3600
@@ -290,7 +299,7 @@ function writeDashboard(distDir, results, publicResults, draftResults, claims, v
       <p>High: ${publicDist.high} &middot; Medium: ${publicDist.medium} &middot; Low: ${publicDist.low}</p>
       <p>Verification report: ${verificationTimestamp || 'not available'}</p>
     </div>
-    <p><a href="/">Home</a> &middot; <a href="/llms.txt">llms.txt</a> &middot; <a href="/manifest.json">manifest.json</a> &middot; <a href="/claims.json">claims.json</a> &middot; <a href="/provenance.json">provenance.json</a></p>
+    <p><a href="/">Home</a> &middot; <a href="/llms.txt">llms.txt</a> &middot; <a href="/manifest.json">manifest.json</a> &middot; <a href="/claims.json">claims.json</a> &middot; <a href="/sources.json">sources.json</a> &middot; <a href="/provenance.json">provenance.json</a></p>
   </div>
 </body>
 </html>`;
@@ -336,6 +345,17 @@ export function writeStaticOutputs(distDir, results, options = {}) {
     join(distDir, 'claims.json'),
     JSON.stringify(claimsPayload, null, 2)
   );
+  const sourcesPayload = buildSourceIndex({
+    generated,
+    publicResults,
+    claims,
+    verificationTimestamp: options.verificationTimestamp,
+    site: build.canonical_site
+  });
+  writeFileSync(
+    join(distDir, 'sources.json'),
+    JSON.stringify(sourcesPayload, null, 2)
+  );
   const manifest = writeManifest(distDir, results, publicResults, draftResults, claims, {
     ...options,
     generated,
@@ -345,6 +365,7 @@ export function writeStaticOutputs(distDir, results, options = {}) {
     generated,
     manifest,
     claimsPayload,
+    sourcesPayload,
     publicResults,
     draftResults,
     verificationTimestamp: options.verificationTimestamp

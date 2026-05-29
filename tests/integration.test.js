@@ -105,11 +105,15 @@ test('nested route JSON-LD exists and has verification layer', () => {
 
 test('public machine entrypoints exclude drafts', () => {
   const agent = JSON.parse(readFileSync(join(distDir, 'agent.json'), 'utf-8'));
+  const sources = JSON.parse(readFileSync(join(distDir, 'sources.json'), 'utf-8'));
   const llms = readFileSync(join(distDir, 'llms.txt'), 'utf-8');
   const sitemap = readFileSync(join(distDir, 'sitemap.xml'), 'utf-8');
   assertEq(agent.current_snapshot.public_articles, 1);
   assertEq(agent.endpoints.manifest.url, 'https://anchorfact.org/manifest.json');
+  assertEq(agent.endpoints.sources.url, 'https://anchorfact.org/sources.json');
   assertEq(agent.endpoints.article_jsonld_template.path_template, '/{canonical_slug}/index.json');
+  assertEq(sources.public_article_count, 1);
+  assert(sources.sources.some(source => source.articles.some(article => article.canonical_slug === 'ai/public-fixture')), 'source index should link to public article');
   assert(llms.includes('Public Fixture'), 'llms should include public fixture');
   assert(!llms.includes('Draft Fixture'), 'llms should exclude draft fixture');
   assert(sitemap.includes('/ai/public-fixture/'), 'sitemap should include nested public route');

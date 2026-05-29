@@ -5,6 +5,7 @@ import {
   OFFICIAL_SOURCE_REPOSITORY,
   OFFICIAL_SITE,
   PROVENANCE_SCHEMA_VERSION,
+  SOURCES_SCHEMA_VERSION,
   publicUrl
 } from './build-metadata.js';
 
@@ -21,6 +22,7 @@ export function buildAgentProfile({
   generated,
   manifest,
   claimsPayload,
+  sourcesPayload,
   publicResults,
   draftResults,
   verificationTimestamp
@@ -43,18 +45,21 @@ export function buildAgentProfile({
       public_articles: publicResults.length,
       draft_articles: draftResults.length,
       public_claims: claimsPayload.claim_count,
+      unique_sources: sourcesPayload?.source_count ?? null,
       verification_report: verificationTimestamp || null,
       build_commit_sha: manifest.build?.commit_sha || null
     },
     schemas: {
       manifest: MANIFEST_SCHEMA_VERSION,
       claims: CLAIMS_SCHEMA_VERSION,
+      sources: SOURCES_SCHEMA_VERSION,
       provenance: PROVENANCE_SCHEMA_VERSION
     },
     recommended_workflow: [
       'Fetch /agent.json to discover the current machine contract.',
       'Fetch /provenance.json and /provenance.sig, then verify the pinned public key before trusting counts or hashes.',
       'Fetch /manifest.json to select public articles by canonical_slug, status, confidence_level, and source coverage.',
+      'Fetch /sources.json to inspect source tier, source type, article reuse, and claim reuse.',
       'Fetch /claims.json for atomic public claims with evidence links.',
       'Fetch /{canonical_slug}/index.json for JSON-LD article context before citing a claim.',
       'Do not cite draft entries or entries whose status is not public.'
@@ -65,6 +70,7 @@ export function buildAgentProfile({
       llms_txt: endpoint('/llms.txt', 'Public verified article index optimized for LLM crawlers.', 'text/plain'),
       manifest: endpoint('/manifest.json', 'Full article index with public/draft status, confidence, and verification metadata.'),
       claims: endpoint('/claims.json', 'Public verified atomic claims with evidence links.'),
+      sources: endpoint('/sources.json', 'Deduplicated public source index with tier, type, article reuse, and claim reuse.'),
       provenance: endpoint('/provenance.json', 'Build identity, official-site metadata, content counts, and artifact checksums.'),
       provenance_signature: endpoint('/provenance.sig', 'Detached Ed25519 signature for /provenance.json.'),
       article_jsonld_template: {

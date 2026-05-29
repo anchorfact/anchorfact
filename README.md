@@ -134,6 +134,7 @@ Only public articles contribute publishable facts to `/claims.json`.
 | `/llms.txt` | Public verified index for LLM crawlers. |
 | `/manifest.json` | Full public/draft index with quality reasons and verification metadata. |
 | `/claims.json` | Public verified atomic claims with evidence links. |
+| `/sources.json` | Deduplicated public source index with source tier, type, article reuse, and claim reuse. |
 | `/provenance.json` | Build identity, schema version, content counts, and artifact checksums. |
 | `/provenance.sig` | Optional detached Ed25519 signature for `/provenance.json`, emitted only when a signing key is configured. |
 | `/drafts.html` | Draft review index, marked `noindex`. |

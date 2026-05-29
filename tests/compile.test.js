@@ -149,9 +149,30 @@ test('agent profile describes the machine contract', () => {
   assertEq(agent.current_snapshot.public_articles, 1);
   assertEq(agent.current_snapshot.draft_articles, 1);
   assertEq(agent.current_snapshot.public_claims, 2);
+  assert(agent.current_snapshot.unique_sources >= 1, 'agent profile should expose source count');
   assertEq(agent.endpoints.claims.url, 'https://anchorfact.org/claims.json');
+  assertEq(agent.endpoints.sources.url, 'https://anchorfact.org/sources.json');
   assert(agent.recommended_workflow.some(step => step.includes('/provenance.json')), 'agent workflow should mention provenance');
+  assert(agent.recommended_workflow.some(step => step.includes('/sources.json')), 'agent workflow should mention source index');
   assertEq(wellKnown, agent, 'well-known alias should match agent.json');
+});
+
+test('sources.json describes deduplicated public evidence sources', () => {
+  assert(existsSync(join(distDir, 'sources.json')), 'sources.json missing');
+  const sources = JSON.parse(readFileSync(join(distDir, 'sources.json'), 'utf-8'));
+  assertEq(sources.schema_version, 'anchorfact.sources.v1');
+  assertEq(sources.provenance_url, 'https://anchorfact.org/provenance.json');
+  assertEq(sources.public_article_count, 1);
+  assertEq(sources.public_claim_count, 2);
+  assert(sources.source_count >= 1, 'sources should include at least one source');
+  assert(sources.tier_distribution.S >= 1, 'DOI source should be S-tier');
+  const fixtureSource = sources.sources.find(source => source.title === 'Fixture Paper');
+  assert(fixtureSource, 'fixture source missing');
+  assertEq(fixtureSource.type, 'academic_paper');
+  assertEq(fixtureSource.tier, 'S');
+  assertEq(fixtureSource.article_count, 1);
+  assertEq(fixtureSource.claim_count, 0);
+  assertEq(fixtureSource.articles[0].canonical_slug, 'public-fixture');
 });
 
 test('draft page is generated with noindex and draft status', () => {
@@ -191,10 +212,12 @@ test('provenance.json describes compiled artifacts', () => {
   assert(/^[a-f0-9]{64}$/.test(provenance.artifacts.manifest_json.sha256), 'manifest checksum should be sha256 hex');
   assert(/^[a-f0-9]{64}$/.test(provenance.artifacts.agent_json.sha256), 'agent checksum should be sha256 hex');
   assert(/^[a-f0-9]{64}$/.test(provenance.artifacts.claims_json.sha256), 'claims checksum should be sha256 hex');
+  assert(/^[a-f0-9]{64}$/.test(provenance.artifacts.sources_json.sha256), 'sources checksum should be sha256 hex');
   assert(/^[a-f0-9]{64}$/.test(provenance.artifacts.llms_txt.sha256), 'llms checksum should be sha256 hex');
   assert(provenance.artifacts.manifest_json.bytes > 0, 'manifest artifact should include byte size');
   assert(provenance.artifacts.agent_json.bytes > 0, 'agent artifact should include byte size');
   assert(provenance.artifacts.claims_json.bytes > 0, 'claims artifact should include byte size');
+  assert(provenance.artifacts.sources_json.bytes > 0, 'sources artifact should include byte size');
   assert(provenance.artifacts.llms_txt.bytes > 0, 'llms artifact should include byte size');
 });
 
@@ -225,6 +248,7 @@ test('_headers is generated for Cloudflare Pages static output', () => {
   assert(headers.includes('/agent.json\n  Access-Control-Allow-Origin: *'), '_headers should expose agent profile CORS');
   assert(headers.includes('/.well-known/anchorfact.json\n  Access-Control-Allow-Origin: *'), '_headers should expose well-known agent profile CORS');
   assert(headers.includes('/manifest.json\n  Access-Control-Allow-Origin: *'), '_headers should expose manifest CORS');
+  assert(headers.includes('/sources.json\n  Access-Control-Allow-Origin: *'), '_headers should expose sources CORS');
   assert(headers.includes('/provenance.json\n  Access-Control-Allow-Origin: *'), '_headers should expose provenance CORS');
   assert(headers.includes('/provenance.sig\n  Access-Control-Allow-Origin: *'), '_headers should expose provenance signature CORS');
   assert(headers.includes('/*/index.json\n  Access-Control-Allow-Origin: *'), '_headers should expose article JSON-LD CORS');

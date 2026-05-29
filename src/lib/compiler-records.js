@@ -52,6 +52,7 @@ export function compileJsonLd(frontmatter, body, quality, confidence, verificati
       author: source.authors?.join(', '),
       sameAs: source.url || (source.doi ? `https://doi.org/${source.doi}` : undefined),
       'anchorfact:sourceTier': classifySourceTier(source),
+      'anchorfact:sourceType': source.type || null,
       'anchorfact:year': source.year || null
     }))
   };

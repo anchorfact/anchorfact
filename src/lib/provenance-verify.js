@@ -14,7 +14,7 @@ import {
 } from './provenance-signature.js';
 import { fetchLiveText } from './live-http.js';
 
-const REQUIRED_ARTIFACTS = ['agent_json', 'manifest_json', 'claims_json', 'llms_txt'];
+const REQUIRED_ARTIFACTS = ['agent_json', 'manifest_json', 'claims_json', 'sources_json', 'llms_txt'];
 const OFFICIAL_GITHUB_COMMIT_API = 'https://api.github.com/repos/anchorfact/anchorfact/commits/';
 
 export function sha256Text(text) {
