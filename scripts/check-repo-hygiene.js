@@ -81,6 +81,8 @@ const STALE_METRIC_PATTERNS = [
 
 const SECRET_PATTERNS = [
   /-----BEGIN [A-Z ]*PRIVATE KEY-----/,
+  /\bgithub_pat_[A-Za-z0-9_]{20,}\b/,
+  /\bgh[pousr]_[A-Za-z0-9_]{20,}\b/,
   /\bcf[a-z]{2}_[A-Za-z0-9_-]{20,}\b/,
   /\bCLOUDFLARE_API_TOKEN\s*=\s*['"][^'"]+['"]/i,
   /\bANCHORFACT_PROVENANCE_PRIVATE_KEY_(?:PEM|BASE64)\s*=\s*(?!<secret(?: PEM value)?>)(?!<base64 private key>)[^\s#'"]{20,}/i
