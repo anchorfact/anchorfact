@@ -386,6 +386,37 @@ print(json.dumps({
   assertEq(result.markdown_has_queue, true);
 });
 
+test('local HTTP wrapper exposes corpus health JSON and Markdown routes', () => {
+  const result = runPython(`
+import json
+from pathlib import Path
+import mcp_http
+
+mcp_http.DIST_DIR = Path(r'''${pyPath(distDir)}''')
+route_paths = [getattr(route, "path", None) for route in mcp_http.app.routes]
+json_response = mcp_http.api_corpus_health(format="json")
+markdown_response = mcp_http.api_corpus_health(format="markdown")
+payload = json.loads(json_response.body.decode("utf-8"))
+markdown = markdown_response.body.decode("utf-8")
+print(json.dumps({
+    "has_route": "/corpus-health" in route_paths,
+    "json_status": json_response.status_code,
+    "json_schema": payload.get("schema_version"),
+    "json_next_slug": payload.get("draft", {}).get("repair_queue", {}).get("next_batch", [{}])[0].get("canonical_slug"),
+    "markdown_status": markdown_response.status_code,
+    "markdown_media_type": markdown_response.media_type,
+    "markdown_has_queue": "Draft Repair Queue" in markdown,
+}))
+`);
+  assertEq(result.has_route, true);
+  assertEq(result.json_status, 200);
+  assertEq(result.json_schema, 'anchorfact.content-health.v1');
+  assertEq(result.json_next_slug, 'ai/draft-fixture');
+  assertEq(result.markdown_status, 200);
+  assertEq(result.markdown_media_type, 'text/markdown');
+  assertEq(result.markdown_has_queue, true);
+});
+
 test('claim citation helper returns citation-ready JSON and Markdown', () => {
   const result = runPython(`
 import json
