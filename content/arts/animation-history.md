@@ -5,7 +5,7 @@ schema_type: TechArticle
 category: arts
 language: en
 confidence: medium
-last_verified: '2026-05-25'
+last_verified: '2026-05-30'
 created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
@@ -14,103 +14,76 @@ derived_from_human_seed: true
 conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
-atomic_facts:
-  - id: fact-arts-001
-    statement: >-
-      Animation creates the illusion of motion through sequential images. History: flip books → traditional hand-drawn (Disney, 1920s+) → stop-motion (clay, puppets) → CGI (Pixar's Toy Story, 1995,
-      first fully CGI feature) → modern hybrid. Disney's 12 principles of animation (Thomas & Johnston, 1981) remain foundational.
-    source_title: 'The Illusion of Life: Disney Animation (Thomas & Johnston)'
-    source_url: https://www.disneybooks.com/book/the-illusion-of-life/
-    confidence: medium
-  - id: fact-arts-002
-    statement: '12 principles: squash and stretch, anticipation, staging, straight ahead vs.'
-    source_title: 'The Illusion of Life: Disney Animation (Thomas & Johnston)'
-    source_url: https://www.disneybooks.com/book/the-illusion-of-life/
-    confidence: medium
-  - id: fact-arts-003
-    statement: 'Anime: Japanese distinctive style (Studio Ghibli — Miyazaki).'
-    source_title: 'The Illusion of Life: Disney Animation (Thomas & Johnston)'
-    source_url: https://www.disneybooks.com/book/the-illusion-of-life/
-    confidence: medium
-  - id: fact-arts-004
-    statement: 'Motion capture: record real movement → animate character (Andy Serkis — Gollum).'
-    source_title: 'The Illusion of Life: Disney Animation (Thomas & Johnston)'
-    source_url: https://www.disneybooks.com/book/the-illusion-of-life/
-    confidence: medium
-completeness: 0.88
+completeness: 0.72
 known_gaps:
-  - Statistics and data cited are from 2018 and earlier; more recent data may have become available since publication
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-disputed_statements:
-  - statement: >-
-      The definition of 'art' remains contested in aesthetics, particularly regarding conceptual art and readymades; institutional theories (art is what the artworld accepts) compete with formalist
-      and expressionist accounts
+  - This is a compact history entry, not a complete survey of global animation traditions.
+  - Regional traditions, labor history, television animation, and experimental animation require separate treatment.
+disputed_statements: []
+atomic_facts:
+  - id: fact-animation-history-001
+    statement: The 12 principles popularized in The Illusion of Life remain a common vocabulary for discussing character animation.
+    source_title: 'The Illusion of Life: Disney Animation'
+    source_url: https://books.disney.com/book/the-illusion-of-life/
+    confidence: medium
+  - id: fact-animation-history-002
+    statement: Lasseter's SIGGRAPH paper described how principles from traditional hand-drawn animation could be applied to 3D computer animation.
+    source_title: Principles of Traditional Animation Applied to 3D Computer Animation
+    source_url: https://doi.org/10.1145/37402.37407
+    confidence: medium
+  - id: fact-animation-history-003
+    statement: Pixar identifies Toy Story, released in 1995, as the world's first CG animated feature film.
+    source_title: Our Story
+    source_url: https://www.pixar.com/our-story
+    confidence: medium
 primary_sources:
-  - title: 'The Illusion of Life: Disney Animation (Thomas & Johnston)'
+  - title: 'The Illusion of Life: Disney Animation'
+    authors:
+      - Thomas, F.
+      - Johnston, O.
     type: book
     year: 1981
-    url: https://www.disneybooks.com/book/the-illusion-of-life/
+    url: https://books.disney.com/book/the-illusion-of-life/
     institution: Disney Editions
-  - title: The Animator's Survival Kit (2025 Expanded Edition)
-    type: book
-    year: 2025
+  - title: Principles of Traditional Animation Applied to 3D Computer Animation
     authors:
-      - Williams R.
-    institution: Faber & Faber
-    url: https://www.faber.co.uk/animation/
-  - title: 'Animation: A World History (2025 Updated)'
-    type: book
-    year: 2025
-    authors:
-      - Bendazzi G.
-    institution: CRC Press
-    url: https://www.routledge.com/animation-history/
-  - title: The Animator's Survival Kit (Expanded Edition 2025)
-    type: book
-    year: 2025
-    authors:
-      - Williams R.
-    institution: Faber & Faber
-    url: https://www.faber.co.uk/animation/
-  - title: The Animator's Survival Kit
-    authors:
-      - Williams, R.
-    type: book
-    year: 2001
-    institution: Faber & Faber
-  - title: 'Of Mice and Magic: A History of American Animated Cartoons'
-    authors:
-      - Maltin, L.
-    type: book
+      - Lasseter, J.
+    type: conference_paper
     year: 1987
-    institution: Plume
+    doi: 10.1145/37402.37407
+    url: https://doi.org/10.1145/37402.37407
+    institution: ACM SIGGRAPH
+  - title: Our Story
+    type: official_record
+    year: 2026
+    url: https://www.pixar.com/our-story
+    institution: Pixar Animation Studios
 secondary_sources:
-  - title: 'Film History: An Introduction'
-    type: book
-    year: 2018
-    url: https://www.mheducation.com/highered/product/film-history-introduction-thompson-bordwell/M9781259870354.html
-    institution: Kristin Thompson & David Bordwell, McGraw-Hill
-  - title: The Story of Art (E.H. Gombrich)
-    type: textbook
-    year: 1995
-    url: https://www.phaidon.com/store/art/the-story-of-art-9780714832470/
-    institution: Phaidon Press
+  - title: Reviewing and Updating the 12 Principles of Animation
+    type: journal_article
+    year: 2020
+    doi: 10.1177/1746847720969919
+    url: https://doi.org/10.1177/1746847720969919
+    institution: Animation
 ---
 
 ## TL;DR
 
-Animation creates the illusion of motion through sequential images. History: flip books → traditional hand-drawn (Disney, 1920s+) → stop-motion (clay, puppets) → CGI (Pixar's Toy Story, 1995, first fully CGI feature) → modern hybrid. Disney's 12 principles of animation (Thomas & Johnston, 1981) remain foundational.
+Animation history spans optical toys, hand-drawn and stop-motion production, computer animation, and hybrid digital workflows. For public evidence use, this entry keeps only a small set of source-mapped claims: the 12-principle vocabulary, the transfer of traditional principles into 3D computer animation, and Toy Story's milestone status in CG feature production.
 
 ## Core Explanation
 
-12 principles: squash and stretch, anticipation, staging, straight ahead vs. pose-to-pose, follow through, slow in/slow out, arcs, secondary action, timing, exaggeration, solid drawing, appeal. Anime: Japanese distinctive style (Studio Ghibli — Miyazaki). CGI software: Maya, Blender, Cinema 4D. Motion capture: record real movement → animate character (Andy Serkis — Gollum). Frame rate: 24 fps (film standard).
+The 12 principles associated with Disney animation provide a practical vocabulary for motion, staging, timing, appeal, and related craft decisions. John Lasseter's 1987 SIGGRAPH paper made the bridge explicit by describing how those traditional ideas apply to 3D computer animation. Pixar's own history places Toy Story's 1995 release as a milestone for feature-length CG animation.
+
+This article avoids treating animation history as a single studio lineage. Anime, stop-motion, television animation, independent work, and regional traditions are substantial topics that need dedicated sources before they should be summarized as public claims.
 
 ## Further Reading
 
-- [The Illusion of Life: Disney Animation (Thomas & Johnston)](https://www.disneybooks.com/book/the-illusion-of-life/)
+- [The Illusion of Life](https://books.disney.com/book/the-illusion-of-life/)
+- [Principles of Traditional Animation Applied to 3D Computer Animation](https://doi.org/10.1145/37402.37407)
+- [Pixar: Our Story](https://www.pixar.com/our-story)
 
 ## Related Articles
 
-- [Architecture History](../architecture-history.md)
-- [Digital Art and New Media Art History](../digital-art-history.md)
-- [Fashion History](../fashion-history.md)
+- [Architecture History](./architecture-history.md)
+- [Digital Art and New Media Art History](./digital-art-history.md)
+- [Film History](./film-history.md)

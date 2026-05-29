@@ -5,7 +5,7 @@ schema_type: TechArticle
 category: self-improvement
 language: en
 confidence: medium
-last_verified: '2026-05-26'
+last_verified: '2026-05-30'
 created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
@@ -14,118 +14,81 @@ derived_from_human_seed: true
 conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
-atomic_facts:
-  - id: fact-self-improvement-001
-    statement: >-
-      Time management prioritizes tasks for maximum effectiveness. Eisenhower Matrix: urgent/important quadrants — do important before urgent. Pareto Principle: 80% of results from 20% of effort. Time
-      blocking: schedule deep work sessions. Parkinson's Law: work expands to fill available time — set deadlines.
-    source_title: 'Deep Work: Rules for Focused Success in a Distracted World'
-    source_url: https://www.hachettebookgroup.com/titles/cal-newport/deep-work/9781455586691/
-    confidence: medium
-  - id: fact-self-improvement-002
-    statement: 'Covey''s 7 Habits: Be proactive, Begin with end in mind, First things first, Think win-win, Seek first to understand, Synergize, Sharpen the saw.'
-    source_title: The 7 Habits of Highly Effective People (Stephen Covey)
-    source_url: https://www.simonandschuster.com/books/The-7-Habits-of-Highly-Effective-People/Stephen-R-Covey/9781982143817
-    confidence: medium
-  - id: fact-self-improvement-003
-    statement: 'Deep work (Cal Newport): 90-minute focused blocks — 4 hours deep work can exceed 12 hours shallow work.'
-    source_title: 'Deep Work: Rules for Focused Success in a Distracted World'
-    source_url: https://www.hachettebookgroup.com/titles/cal-newport/deep-work/9781455586691/
-    confidence: medium
-completeness: 0.88
+completeness: 0.74
 known_gaps:
-  - Coverage is at a general level; specialized sub-topics and regional variations are not exhaustively addressed
-  - Statistics cited may have been updated since publication; readers should verify current data for time-sensitive claims
+  - This article summarizes stable research concepts and does not prescribe a universal productivity system.
+  - Effects vary by work context, autonomy, workload, and individual constraints.
 disputed_statements:
-  - statement: The effectiveness of popular productivity methods (GTD, Pomodoro, time-blocking) varies widely by individual; controlled studies are limited, and most evidence is anecdotal or correlational
+  - statement: Popular productivity methods are often marketed more strongly than the available controlled evidence supports.
+atomic_facts:
+  - id: fact-time-management-001
+    statement: Britton and Tesser reported that time-management practices predicted college grade point average in a prospective student study.
+    source_title: Effects of Time-Management Practices on College Grades
+    source_url: https://doi.org/10.1037/0022-0663.83.3.405
+    confidence: medium
+  - id: fact-time-management-002
+    statement: Macan tested a process model in which time-management behaviors were linked to perceived control over time and work-related outcomes.
+    source_title: 'Time Management: Test of a Process Model'
+    source_url: https://doi.org/10.1037/0021-9010.79.3.381
+    confidence: medium
+  - id: fact-time-management-003
+    statement: Goal-setting theory emphasizes specific, challenging goals with commitment and feedback as a practical route to better task performance.
+    source_title: 'Building a Practically Useful Theory of Goal Setting and Task Motivation: A 35-Year Odyssey'
+    source_url: https://doi.org/10.1037/0003-066X.57.9.705
+    confidence: medium
 primary_sources:
-  - title: The 7 Habits of Highly Effective People (Stephen Covey)
-    type: book
-    year: 1989
-    url: https://www.simonandschuster.com/books/The-7-Habits-of-Highly-Effective-People/Stephen-R-Covey/9781982143817
-    institution: Free Press
-  - title: 'Getting Things Done: The Art of Stress-Free Productivity (2025 Updated)'
-    type: book
-    year: 2025
+  - title: Effects of Time-Management Practices on College Grades
     authors:
-      - Allen D.
-    institution: Penguin
-    url: https://www.penguinrandomhouse.com/gtd/
-  - title: 'Make Time: How to Focus on What Matters Every Day (2025)'
-    type: book
-    year: 2025
-    authors:
-      - Knapp J.
-      - Zeratsky J.
-    institution: Currency
-    url: https://www.crownpublishing.com/make-time/
-  - title: 'Getting Things Done: The Art of Stress-Free Productivity (Revised Edition)'
-    authors:
-      - Allen, D.
-    type: book
-    year: 2015
-    institution: Penguin
-  - title: Eat That Frog! (3rd Edition)
-    authors:
-      - Tracy, B.
-    type: book
-    year: 2017
-    institution: Berrett-Koehler
-  - title: 'IoT-Driven Smart Management in Broiler Farming: Simulation of Remote Sensing and Control Systems'
-    authors:
-      - Sandra Coello Suarez
-      - V. Sanchez Padilla
-      - Ronald Ponguillo-Intriago
-      - Albert Espinal
-    year: 2025
-    doi: 10.1109/TEMSCONLATAM65810.2025.11238529
-    url: https://arxiv.org/abs/2510.23356v1
+      - Britton, B. K.
+      - Tesser, A.
     type: academic_paper
-    institution: arXiv
-  - title: Impacts of National Cultures on Managerial Decisions of Engaging in Core Earnings Management
+    year: 1991
+    doi: 10.1037/0022-0663.83.3.405
+    url: https://doi.org/10.1037/0022-0663.83.3.405
+    institution: Journal of Educational Psychology
+  - title: 'Time Management: Test of a Process Model'
     authors:
-      - Muhammad Rofiqul Islam
-      - Abdullah Al Mehdi
-    year: 2024
-    doi: 10.7176/EJBM/16-4-07
-    url: https://arxiv.org/abs/2407.16854v1
+      - Macan, T. H.
     type: academic_paper
-    institution: arXiv
+    year: 1994
+    doi: 10.1037/0021-9010.79.3.381
+    url: https://doi.org/10.1037/0021-9010.79.3.381
+    institution: Journal of Applied Psychology
+  - title: 'Building a Practically Useful Theory of Goal Setting and Task Motivation: A 35-Year Odyssey'
+    authors:
+      - Locke, E. A.
+      - Latham, G. P.
+    type: academic_paper
+    year: 2002
+    doi: 10.1037/0003-066X.57.9.705
+    url: https://doi.org/10.1037/0003-066X.57.9.705
+    institution: American Psychologist
 secondary_sources:
-  - title: 'Deep Work: Rules for Focused Success in a Distracted World'
+  - title: Deep Work
     type: book
     year: 2016
     url: https://www.hachettebookgroup.com/titles/cal-newport/deep-work/9781455586691/
-    institution: Cal Newport, Grand Central
-  - title: Atomic Habits (James Clear)
-    type: book
-    year: 2018
-    url: https://jamesclear.com/atomic-habits
-    institution: Avery, Penguin Random House
+    institution: Grand Central Publishing
 ---
-
 
 ## TL;DR
 
-Time management prioritizes tasks for maximum effectiveness. Eisenhower Matrix: urgent/important quadrants — do important before urgent. Pareto Principle: 80% of results from 20% of effort. Time blocking: schedule deep work sessions. Parkinson's Law: work expands to fill available time — set deadlines.
+Time management is best treated as a set of planning, prioritization, and goal-setting behaviors rather than a single universal method. The strongest public claims should stay close to tested constructs: time-management practices, perceived control over time, and specific goals with feedback.
 
 ## Core Explanation
 
-Covey's 7 Habits: Be proactive, Begin with end in mind, First things first, Think win-win, Seek first to understand, Synergize, Sharpen the saw. Important vs. Urgent: quadrant II (important not urgent) is where long-term success lives (planning, learning, relationships). Deep work (Cal Newport): 90-minute focused blocks — 4 hours deep work can exceed 12 hours shallow work. Say no to almost everything.
+Research on time management is mixed but useful when it is kept bounded. Britton and Tesser studied time-management practices in relation to student grade outcomes. Macan's process model focused less on a particular calendar technique and more on whether behaviors increase perceived control over time. Locke and Latham's goal-setting work adds a complementary point: specific, challenging goals tend to work better when people are committed and receive useful feedback.
+
+For practical AI answers, AnchorFact should describe time management as a decision-support framework: choose important work, make commitments visible, allocate time deliberately, and review outcomes. It should not claim that named commercial or popular methods reliably outperform alternatives for every person.
 
 ## Further Reading
 
-- [The 7 Habits of Highly Effective People (Stephen Covey)](https://www.simonandschuster.com/books/The-7-Habits-of-Highly-Effective-People/Stephen-R-Covey/9781982143817)
-atomic_facts:
-  - id: "fact-self-improvement-001"
-    statement: "Pareto Principle: 80% of results from 20% of effort"
-    confidence: "medium"
-  - id: "fact-self-improvement-002"
-    statement: "Urgent: quadrant II (important not urgent) is where long-term success lives (planning, learning, relationships)"
-    confidence: "medium"
+- [Effects of Time-Management Practices on College Grades](https://doi.org/10.1037/0022-0663.83.3.405)
+- [Time Management: Test of a Process Model](https://doi.org/10.1037/0021-9010.79.3.381)
+- [Building a Practically Useful Theory of Goal Setting and Task Motivation](https://doi.org/10.1037/0003-066X.57.9.705)
 
 ## Related Articles
 
-- [3D Generation and Gaussian Splatting: From NeRF to Real-Time Rendering](../../ai/3d-generation-gaussian-splatting.md)
-- [AI for Call Centers: Speech Analytics, Real-Time Agent Assist, and Sentiment Detection](../../ai/ai-call-center.md)
-- [AI for Fleet Management: Predictive Maintenance, Route Optimization, and Telematics](../../ai/ai-fleet-management.md)
+- [Goal Setting](./goal-setting.md)
+- [Productivity Systems](./productivity-systems.md)
+- [Focus Techniques](./focus-techniques.md)

@@ -8,7 +8,7 @@
     "elapsed_ms": 635005,
     "elapsed_sec": "635.0",
     "concurrency": 3,
-    "manual_reviewed_articles": 531
+    "manual_reviewed_articles": 536
   },
   "articles": [
     {
@@ -1144,63 +1144,94 @@
       "sources_total": 4,
       "verification_results": [
         {
-          "source_title": "Machine Learning for Customer Analytics: Churn Prediction, CLV Modeling, and Behavioral Segmentation (2024-2025 Survey)",
-          "source_type": "academic_paper",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "Causal Inference and Uplift Modeling for Customer Interventions: Next-Best-Action and Incrementality Testing",
-          "source_type": "academic_paper",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "Explainability, risk modeling, and segmentation based customer churn analytics for personalized retention in e-commerce",
-          "source_type": "academic_paper",
+          "source_title": "RFM and CLV: Using Iso-Value Curves for Customer Base Analysis",
+          "source_type": "journal_article",
           "results": [
             {
               "method": "doi",
-              "identifier": "10.1109/ICARC68737.2026.11454037",
+              "identifier": "10.1509/jmkr.2005.42.4.415",
               "verified": true,
               "metadata": {
-                "title": "Explainability, Risk Modeling, and Segmentation Based Customer Churn Analytics for Personalized Retention in E-Commerce",
-                "publisher": "IEEE",
-                "year": 2026
+                "title": "RFM and CLV: Using Iso-Value Curves for Customer Base Analysis",
+                "publisher": "SAGE Publications",
+                "year": 2005,
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair batch 56; sources were manually checked and bounded to specific source-mapped claims. Local verify-full was not run."
               },
               "match": true
-            },
-            {
-              "method": "arxiv",
-              "identifier": "2510.11604v2",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 503"
-              },
-              "match": false
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Prediction Modeling and Analysis for Telecom Customer Churn in Two Months",
+          "source_title": "Customer Segmentation Using an Extended RFM Model and Clustering Algorithms in E-Commerce",
+          "source_type": "journal_article",
+          "results": [
+            {
+              "method": "doi",
+              "identifier": "10.3390/jtaer21050142",
+              "verified": true,
+              "metadata": {
+                "title": "Customer Segmentation Using an Extended RFM Model and Clustering Algorithms in E-Commerce",
+                "publisher": "MDPI",
+                "year": 2026,
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair batch 56; sources were manually checked and bounded to specific source-mapped claims. Local verify-full was not run."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Customer Churn Prediction: A Systematic Review of Recent Advances, Trends, and Challenges in Machine Learning and Deep Learning",
+          "source_type": "survey_paper",
+          "results": [
+            {
+              "method": "doi",
+              "identifier": "10.3390/make7030105",
+              "verified": true,
+              "metadata": {
+                "title": "Customer Churn Prediction: A Systematic Review of Recent Advances, Trends, and Challenges in Machine Learning and Deep Learning",
+                "publisher": "MDPI",
+                "year": 2025,
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair batch 56; sources were manually checked and bounded to specific source-mapped claims. Local verify-full was not run."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Uplift Modeling: From Causal Inference to Personalization",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "1911.00558v1",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2308.09066",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "title": "Uplift Modeling: From Causal Inference to Personalization",
+                "publisher": "arXiv",
+                "year": 2023,
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair batch 56; sources were manually checked and bounded to specific source-mapped claims. Local verify-full was not run."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 1
+      "sources_verified": 4,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-30"
     },
     {
       "file": "content/ai/ai-customer-service.md",
@@ -17037,91 +17068,76 @@
       "file": "content/arts/animation-history.md",
       "article_id": "kb-2026-00478",
       "generation_method": "ai_structured",
-      "sources_total": 6,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "The Illusion of Life: Disney Animation (Thomas & Johnston)",
+          "source_title": "The Illusion of Life: Disney Animation",
           "source_type": "book",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.disneybooks.com/book/the-illusion-of-life/",
-              "verified": false,
+              "identifier": "https://books.disney.com/book/the-illusion-of-life/",
+              "verified": true,
               "metadata": {
-                "status": 503,
-                "final_url": "https://books.disney.com/book/the-illusion-of-life//?utm_campaign=Vanity%20Domain&utm_medium=referral&utm_source=book/the-illusion-of-life/&utm_content=disneybooks.com%20Vanity%20Domain"
+                "title": "The Illusion of Life: Disney Animation",
+                "publisher": "Disney Editions",
+                "year": 1981,
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair batch 56; sources were manually checked and bounded to specific source-mapped claims. Local verify-full was not run."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "The Animator's Survival Kit (2025 Expanded Edition)",
-          "source_type": "book",
+          "source_title": "Principles of Traditional Animation Applied to 3D Computer Animation",
+          "source_type": "conference_paper",
+          "results": [
+            {
+              "method": "doi",
+              "identifier": "10.1145/37402.37407",
+              "verified": true,
+              "metadata": {
+                "title": "Principles of Traditional Animation Applied to 3D Computer Animation",
+                "publisher": "ACM",
+                "year": 1987,
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair batch 56; sources were manually checked and bounded to specific source-mapped claims. Local verify-full was not run."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Our Story",
+          "source_type": "official_record",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.faber.co.uk/animation/",
-              "verified": false,
+              "identifier": "https://www.pixar.com/our-story",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://www.faber.co.uk/animation/"
+                "title": "Our Story",
+                "publisher": "Pixar Animation Studios",
+                "year": 2026,
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair batch 56; sources were manually checked and bounded to specific source-mapped claims. Local verify-full was not run."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Animation: A World History (2025 Updated)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.routledge.com/animation-history/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.routledge.com/animation-history/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "The Animator's Survival Kit (Expanded Edition 2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.faber.co.uk/animation/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.faber.co.uk/animation/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "The Animator's Survival Kit",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "Of Mice and Magic: A History of American Animated Cartoons",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 4
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-30"
     },
     {
       "file": "content/arts/architecture-history.md",
@@ -19649,96 +19665,76 @@
       "file": "content/business/lean-manufacturing.md",
       "article_id": "kb-2026-00437",
       "generation_method": "ai_structured",
-      "sources_total": 5,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "The Machine That Changed the World (Womack, Jones, Roos)",
-          "source_type": "book",
+          "source_title": "Toyota Production System",
+          "source_type": "official_record",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.simonandschuster.com/books/The-Machine-That-Changed-the-World/James-P-Womack/9780743299794",
-              "verified": false,
+              "identifier": "https://global.toyota/en/company/vision-and-philosophy/production-system/",
+              "verified": true,
               "metadata": {
-                "status": 403,
-                "final_url": "https://www.simonandschuster.com/books/The-Machine-That-Changed-the-World/James-P-Womack/9780743299794"
+                "title": "Toyota Production System",
+                "publisher": "Toyota Motor Corporation",
+                "year": 2026,
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair batch 56; sources were manually checked and bounded to specific source-mapped claims. Local verify-full was not run."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "The Toyota Way: 14 Management Principles (2nd Edition, 2025)",
-          "source_type": "book",
+          "source_title": "The Five Steps of Lean Implementation",
+          "source_type": "professional_resource",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.mheducation.com/toyota-way/",
-              "verified": false,
+              "identifier": "https://www.lean.org/the-lean-post/articles/the-five-steps-of-lean-implementation/",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://www.mheducation.com/toyota-way"
+                "title": "The Five Steps of Lean Implementation",
+                "publisher": "Lean Enterprise Institute",
+                "year": 2000,
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair batch 56; sources were manually checked and bounded to specific source-mapped claims. Local verify-full was not run."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Lean Thinking: Banish Waste and Create Wealth (2025 Updated)",
-          "source_type": "book",
+          "source_title": "What is Lean?",
+          "source_type": "professional_resource",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.simonandschuster.com/lean-thinking/",
-              "verified": false,
+              "identifier": "https://asq.org/quality-resources/lean",
+              "verified": true,
               "metadata": {
-                "status": 403,
-                "final_url": "https://www.simonandschuster.com/lean-thinking/"
+                "title": "What is Lean?",
+                "publisher": "American Society for Quality",
+                "year": 2026,
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair batch 56; sources were manually checked and bounded to specific source-mapped claims. Local verify-full was not run."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
-        },
-        {
-          "source_title": "The Toyota Way (2nd Edition, 2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.mheducation.com/toyota-way/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.mheducation.com/toyota-way"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Lean Thinking (2025 Updated)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.simonandschuster.com/lean-thinking/",
-              "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.simonandschuster.com/lean-thinking/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 5
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-30"
     },
     {
       "file": "content/business/management-styles.md",
@@ -39305,72 +39301,76 @@
       "file": "content/geography/world-geography.md",
       "article_id": "kb-2026-00347",
       "generation_method": "ai_assisted",
-      "sources_total": 5,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "National Geographic Atlas of the World (11th Ed)",
-          "source_type": "book",
+          "source_title": "How Much of the Ocean Have We Explored?",
+          "source_type": "government_reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.nationalgeographic.com/books/article/atlas-of-the-world-11th-edition",
-              "verified": false,
+              "identifier": "https://oceanservice.noaa.gov/facts/oceanwater.html",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://www.nationalgeographic.com/books/article/atlas-of-the-world-11th-edition"
+                "title": "How Much of the Ocean Have We Explored?",
+                "publisher": "National Oceanic and Atmospheric Administration",
+                "year": 2026,
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair batch 56; replacement URL sanity checked after the original USGS page returned 405. Local verify-full was not run."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "The World Today: Concepts and Regions in Geography (8th Edition)",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "National Geographic Atlas of the World (11th Edition)",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "Artificial Intelligence and Human Geography",
-          "source_type": "academic_paper",
+          "source_title": "Continent",
+          "source_type": "reference",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2312.08827v1",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://www.britannica.com/science/continent",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "title": "Continent",
+                "publisher": "Encyclopaedia Britannica",
+                "year": 2026,
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair batch 56; sources were manually checked and bounded to specific source-mapped claims. Local verify-full was not run."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "A Scoping Review of Earth Observation and Machine Learning for Causal Inference: Implications for the Geography of Poverty",
-          "source_type": "academic_paper",
+          "source_title": "Russia",
+          "source_type": "reference",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2406.02584v4",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://www.britannica.com/place/Russia",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "title": "Russia",
+                "publisher": "Encyclopaedia Britannica",
+                "year": 2026,
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair batch 56; replacement URL sanity checked after the CIA World Factbook URL redirected away from the country comparison table. Local verify-full was not run."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 3
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-30"
     },
     {
       "file": "content/geography/world-religions.md",
@@ -49826,128 +49826,76 @@
       "file": "content/self-improvement/time-management.md",
       "article_id": "kb-2026-00440",
       "generation_method": "ai_structured",
-      "sources_total": 7,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "The 7 Habits of Highly Effective People (Stephen Covey)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.simonandschuster.com/books/The-7-Habits-of-Highly-Effective-People/Stephen-R-Covey/9781982143817",
-              "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.simonandschuster.com/books/The-7-Habits-of-Highly-Effective-People/Stephen-R-Covey/9781982143817"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Getting Things Done: The Art of Stress-Free Productivity (2025 Updated)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.penguinrandomhouse.com/gtd/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.penguinrandomhouse.com/gtd/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Make Time: How to Focus on What Matters Every Day (2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.crownpublishing.com/make-time/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://crownpublishing.com/make-time/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Getting Things Done: The Art of Stress-Free Productivity (Revised Edition)",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "Eat That Frog! (3rd Edition)",
-          "source_type": "book",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "IoT-Driven Smart Management in Broiler Farming: Simulation of Remote Sensing and Control Systems",
+          "source_title": "Effects of Time-Management Practices on College Grades",
           "source_type": "academic_paper",
           "results": [
             {
               "method": "doi",
-              "identifier": "10.1109/TEMSCONLATAM65810.2025.11238529",
+              "identifier": "10.1037/0022-0663.83.3.405",
               "verified": true,
               "metadata": {
-                "title": "IoT-Driven Smart Management in Broiler Farming: Simulation of Remote Sensing and Control Systems",
-                "publisher": "IEEE",
-                "year": 2025
+                "title": "Effects of Time-Management Practices on College Grades",
+                "publisher": "American Psychological Association",
+                "year": 1991,
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair batch 56; sources were manually checked and bounded to specific source-mapped claims. Local verify-full was not run."
               },
               "match": true
-            },
-            {
-              "method": "arxiv",
-              "identifier": "2510.23356v1",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Impacts of National Cultures on Managerial Decisions of Engaging in Core Earnings Management",
+          "source_title": "Time Management: Test of a Process Model",
           "source_type": "academic_paper",
           "results": [
             {
               "method": "doi",
-              "identifier": "10.7176/EJBM/16-4-07",
+              "identifier": "10.1037/0021-9010.79.3.381",
               "verified": true,
               "metadata": {
-                "title": "Impacts of National Cultures on Managerial Decisions of Engaging in Core Earnings Management",
-                "publisher": "International Institute for Science, Technology and Education",
-                "year": 2024
+                "title": "Time Management: Test of a Process Model",
+                "publisher": "American Psychological Association",
+                "year": 1994,
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair batch 56; sources were manually checked and bounded to specific source-mapped claims. Local verify-full was not run."
               },
               "match": true
-            },
-            {
-              "method": "arxiv",
-              "identifier": "2407.16854v1",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "Building a Practically Useful Theory of Goal Setting and Task Motivation: A 35-Year Odyssey",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "doi",
+              "identifier": "10.1037/0003-066X.57.9.705",
+              "verified": true,
+              "metadata": {
+                "title": "Building a Practically Useful Theory of Goal Setting and Task Motivation: A 35-Year Odyssey",
+                "publisher": "American Psychological Association",
+                "year": 2002,
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair batch 56; sources were manually checked and bounded to specific source-mapped claims. Local verify-full was not run."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 3
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-30"
     },
     {
       "file": "content/sports/basketball-fundamentals.md",

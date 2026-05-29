@@ -30,9 +30,9 @@ Each public entry exposes:
 | Metric | Value |
 | --- | ---: |
 | Total articles | 1000 |
-| Public eligible articles | 568 |
-| Draft articles | 432 |
-| Public claims | 1731 |
+| Public eligible articles | 573 |
+| Draft articles | 427 |
+| Public claims | 1747 |
 | Overall source verification rate | 74.5% |
 | Average sources per article | 2.4 |
 
