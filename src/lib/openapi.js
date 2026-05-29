@@ -13,6 +13,7 @@ import {
   SEARCH_INDEX_SCHEMA_VERSION,
   SOURCE_API_SCHEMA_VERSION,
   SOURCES_SCHEMA_VERSION,
+  TOPICS_SCHEMA_VERSION,
   publicUrl
 } from './build-metadata.js';
 
@@ -89,6 +90,7 @@ export function buildOpenApiContract({
       '/openapi.json': getJson('This OpenAPI machine contract', 'OpenApiContract'),
       '/manifest.json': getJson('Public and draft article manifest', 'Manifest'),
       '/claims.json': getJson('Public verified atomic claims', 'Claims'),
+      '/topics.json': getJson('Public topic coverage map', 'Topics'),
       '/api/search': {
         get: {
           summary: 'Read-only search over public AnchorFact records',
@@ -250,6 +252,12 @@ export function buildOpenApiContract({
         Claims: schemaVersioned('Claims', CLAIMS_SCHEMA_VERSION, {
           claim_count: { type: 'integer' },
           claims: { type: 'array', items: { type: 'object' } }
+        }),
+        Topics: schemaVersioned('Topics', TOPICS_SCHEMA_VERSION, {
+          topic_count: { type: 'integer' },
+          public_article_count: { type: 'integer' },
+          public_claim_count: { type: 'integer' },
+          topics: { type: 'array', items: { type: 'object' } }
         }),
         SearchIndex: schemaVersioned('Search index', SEARCH_INDEX_SCHEMA_VERSION, {
           article_count: { type: 'integer' },

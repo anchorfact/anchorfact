@@ -12,6 +12,7 @@ import {
   SEARCH_INDEX_SCHEMA_VERSION,
   SOURCE_API_SCHEMA_VERSION,
   SOURCES_SCHEMA_VERSION,
+  TOPICS_SCHEMA_VERSION,
   publicUrl
 } from './build-metadata.js';
 
@@ -30,6 +31,7 @@ export function buildAgentProfile({
   claimsPayload,
   searchIndexPayload,
   sourcesPayload,
+  topicsPayload,
   publicResults,
   draftResults,
   verificationTimestamp
@@ -52,6 +54,7 @@ export function buildAgentProfile({
       public_articles: publicResults.length,
       draft_articles: draftResults.length,
       public_claims: claimsPayload.claim_count,
+      topics: topicsPayload?.topic_count ?? null,
       searchable_records: searchIndexPayload?.article_count ?? null,
       unique_sources: sourcesPayload?.source_count ?? null,
       verification_report: verificationTimestamp || null,
@@ -64,6 +67,7 @@ export function buildAgentProfile({
       claim_api: CLAIM_API_SCHEMA_VERSION,
       source_api: SOURCE_API_SCHEMA_VERSION,
       claims: CLAIMS_SCHEMA_VERSION,
+      topics: TOPICS_SCHEMA_VERSION,
       search_api: SEARCH_API_SCHEMA_VERSION,
       search_index: SEARCH_INDEX_SCHEMA_VERSION,
       sources: SOURCES_SCHEMA_VERSION,
@@ -77,6 +81,7 @@ export function buildAgentProfile({
       'Use /api/article?slug={canonical_slug} to fetch a public article evidence bundle with claims and sources.',
       'Use /api/claim?id={claim_id} to dereference one public atomic claim with its article and matching source.',
       'Use /api/source?id={source_id} or /api/source?url={source_url} to inspect a public source and mapped claims.',
+      'Fetch /topics.json to inspect topic-level public coverage before selecting a query strategy.',
       'Fetch /search-index.json to shortlist public records by title, keywords, claims, source coverage, and route templates.',
       'Fetch /manifest.json to select public articles by canonical_slug, status, confidence_level, and source coverage.',
       'Fetch /sources.json to inspect source tier, source type, article reuse, and claim reuse.',
@@ -91,6 +96,7 @@ export function buildAgentProfile({
       llms_txt: endpoint('/llms.txt', 'Public verified article index optimized for LLM crawlers.', 'text/plain'),
       manifest: endpoint('/manifest.json', 'Full article index with public/draft status, confidence, and verification metadata.'),
       claims: endpoint('/claims.json', 'Public verified atomic claims with evidence links.'),
+      topics: endpoint('/topics.json', 'Compact public topic coverage map with article, claim, and source counts.'),
       search_api: endpoint('/api/search?q={query}', 'Read-only search API backed by the signed static search index.'),
       article_api: endpoint('/api/article?slug={canonical_slug}', 'Read-only public article evidence bundle with claims, sources, and retrieval metadata.'),
       claim_api: endpoint('/api/claim?id={claim_id}', 'Read-only public atomic claim lookup with article and matching source metadata.'),

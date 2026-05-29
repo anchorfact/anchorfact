@@ -8,6 +8,7 @@ import {
   PROVENANCE_PATH,
   PROVENANCE_SCHEMA_VERSION,
   SEARCH_INDEX_SCHEMA_VERSION,
+  TOPICS_SCHEMA_VERSION,
   publicUrl
 } from './build-metadata.js';
 import {
@@ -16,7 +17,7 @@ import {
 } from './provenance-signature.js';
 import { fetchLiveText } from './live-http.js';
 
-const REQUIRED_ARTIFACTS = ['agent_json', 'openapi_json', 'manifest_json', 'claims_json', 'search_index_json', 'sources_json', 'llms_txt'];
+const REQUIRED_ARTIFACTS = ['agent_json', 'openapi_json', 'manifest_json', 'claims_json', 'topics_json', 'search_index_json', 'sources_json', 'llms_txt'];
 const OFFICIAL_GITHUB_COMMIT_API = 'https://api.github.com/repos/anchorfact/anchorfact/commits/';
 
 export function sha256Text(text) {
@@ -190,7 +191,7 @@ async function verifyArtifact({ key, artifact, baseUrl, fetchImpl, failures }) {
   };
 }
 
-function verifyCounts({ provenance, manifest, claims, searchIndex, failures }) {
+function verifyCounts({ provenance, manifest, claims, topics, searchIndex, failures }) {
   const publicArticles = countArticles(
     manifest.articles,
     article => article.status === 'public' && article.is_draft === false
@@ -207,6 +208,9 @@ function verifyCounts({ provenance, manifest, claims, searchIndex, failures }) {
   checkEq(provenance.content_counts?.public, manifest.public_article_count, 'provenance public count', failures);
   checkEq(provenance.content_counts?.draft, manifest.draft_article_count, 'provenance draft count', failures);
   checkEq(provenance.content_counts?.claims, claimCount, 'provenance claims count', failures);
+  checkEq(topics.public_article_count, manifest.public_article_count, 'topics public_article_count', failures);
+  checkEq(topics.public_claim_count, claimCount, 'topics public_claim_count', failures);
+  checkEq(topics.topic_count, Array.isArray(topics.topics) ? topics.topics.length : 0, 'topics topic_count', failures);
   checkEq(searchIndex.article_count, manifest.public_article_count, 'search index article_count', failures);
   checkEq(searchIndex.public_claim_count, claimCount, 'search index public_claim_count', failures);
 }
@@ -259,6 +263,9 @@ export async function verifyLiveProvenance({
   const claims = artifacts.claims_json?.text
     ? parseJson(artifacts.claims_json.text, '/claims.json', failures) || {}
     : {};
+  const topics = artifacts.topics_json?.text
+    ? parseJson(artifacts.topics_json.text, '/topics.json', failures) || {}
+    : {};
   const searchIndex = artifacts.search_index_json?.text
     ? parseJson(artifacts.search_index_json.text, '/search-index.json', failures) || {}
     : {};
@@ -267,11 +274,13 @@ export async function verifyLiveProvenance({
   checkEq(openapi['x-anchorfact-schema-version'], OPENAPI_SCHEMA_VERSION, 'OpenAPI AnchorFact schema version', failures);
   checkEq(openapi['x-provenance-url'], publicUrl(PROVENANCE_PATH, normalizedBaseUrl), 'OpenAPI provenance url', failures);
   checkEq(claims.schema_version, CLAIMS_SCHEMA_VERSION, 'claims schema_version', failures);
+  checkEq(topics.schema_version, TOPICS_SCHEMA_VERSION, 'topics schema_version', failures);
   checkEq(searchIndex.schema_version, SEARCH_INDEX_SCHEMA_VERSION, 'search index schema_version', failures);
   checkEq(manifest.provenance_url, publicUrl(PROVENANCE_PATH, normalizedBaseUrl), 'manifest provenance_url', failures);
   checkEq(claims.provenance_url, publicUrl(PROVENANCE_PATH, normalizedBaseUrl), 'claims provenance_url', failures);
+  checkEq(topics.provenance_url, publicUrl(PROVENANCE_PATH, normalizedBaseUrl), 'topics provenance_url', failures);
   checkEq(searchIndex.provenance_url, publicUrl(PROVENANCE_PATH, normalizedBaseUrl), 'search index provenance_url', failures);
-  verifyCounts({ provenance, manifest, claims, searchIndex, failures });
+  verifyCounts({ provenance, manifest, claims, topics, searchIndex, failures });
 
   const signature = await verifySignature({
     fetchImpl,

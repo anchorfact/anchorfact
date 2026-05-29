@@ -7,7 +7,8 @@ import {
   OFFICIAL_SOURCE_REPOSITORY,
   OPENAPI_SCHEMA_VERSION,
   PROVENANCE_SCHEMA_VERSION,
-  SEARCH_INDEX_SCHEMA_VERSION
+  SEARCH_INDEX_SCHEMA_VERSION,
+  TOPICS_SCHEMA_VERSION
 } from '../src/lib/build-metadata.js';
 import {
   publicKeyFingerprint,
@@ -116,6 +117,7 @@ function buildFixture(overrides = {}) {
     paths: {
       '/agent.json': {},
       '/claims.json': {},
+      '/topics.json': {},
       '/search-index.json': {},
       '/sources.json': {},
       '/provenance.json': {}
@@ -129,6 +131,15 @@ function buildFixture(overrides = {}) {
     public_article_count: 2,
     public_claim_count: 3,
     sources: [{ id: 'source:fixture', title: 'Fixture Paper', tier: 'S' }]
+  };
+  const topics = {
+    schema_version: TOPICS_SCHEMA_VERSION,
+    generated: '2026-05-29T00:00:00.000Z',
+    provenance_url: `${baseUrl}/provenance.json`,
+    topic_count: 1,
+    public_article_count: 2,
+    public_claim_count: 3,
+    topics: [{ id: 'fixture', title: 'Fixture', article_count: 2, claim_count: 3, source_count: 1 }]
   };
   const search = {
     schema_version: SEARCH_INDEX_SCHEMA_VERSION,
@@ -150,6 +161,7 @@ function buildFixture(overrides = {}) {
   const claimsText = JSON.stringify(claims, null, 2);
   const agentText = JSON.stringify(agent, null, 2);
   const openapiText = JSON.stringify(openapi, null, 2);
+  const topicsText = JSON.stringify(topics, null, 2);
   const searchText = JSON.stringify(search, null, 2);
   const sourcesText = JSON.stringify(sources, null, 2);
   const provenance = {
@@ -196,6 +208,11 @@ function buildFixture(overrides = {}) {
         sha256: sha256Text(claimsText),
         bytes: Buffer.byteLength(claimsText, 'utf8')
       },
+      topics_json: {
+        path: '/topics.json',
+        sha256: sha256Text(topicsText),
+        bytes: Buffer.byteLength(topicsText, 'utf8')
+      },
       search_index_json: {
         path: '/search-index.json',
         sha256: sha256Text(searchText),
@@ -241,6 +258,7 @@ function buildFixture(overrides = {}) {
     [`${baseUrl}/openapi.json`]: { body: openapiText },
     [`${baseUrl}/manifest.json`]: { body: manifestText },
     [`${baseUrl}/claims.json`]: { body: claimsText },
+    [`${baseUrl}/topics.json`]: { body: topicsText },
     [`${baseUrl}/search-index.json`]: { body: searchText },
     [`${baseUrl}/sources.json`]: { body: sourcesText },
     [`${baseUrl}/llms.txt`]: { body: llms, contentType: 'text/plain; charset=utf-8' },

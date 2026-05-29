@@ -106,6 +106,7 @@ test('nested route JSON-LD exists and has verification layer', () => {
 test('public machine entrypoints exclude drafts', () => {
   const agent = JSON.parse(readFileSync(join(distDir, 'agent.json'), 'utf-8'));
   const openapi = JSON.parse(readFileSync(join(distDir, 'openapi.json'), 'utf-8'));
+  const topics = JSON.parse(readFileSync(join(distDir, 'topics.json'), 'utf-8'));
   const search = JSON.parse(readFileSync(join(distDir, 'search-index.json'), 'utf-8'));
   const sources = JSON.parse(readFileSync(join(distDir, 'sources.json'), 'utf-8'));
   const llms = readFileSync(join(distDir, 'llms.txt'), 'utf-8');
@@ -117,6 +118,7 @@ test('public machine entrypoints exclude drafts', () => {
   assertEq(agent.endpoints.claim_api.path, '/api/claim?id={claim_id}');
   assertEq(agent.endpoints.source_api.path, '/api/source?id={source_id}');
   assertEq(agent.endpoints.manifest.url, 'https://anchorfact.org/manifest.json');
+  assertEq(agent.endpoints.topics.url, 'https://anchorfact.org/topics.json');
   assertEq(agent.endpoints.search_index.url, 'https://anchorfact.org/search-index.json');
   assertEq(agent.endpoints.sources.url, 'https://anchorfact.org/sources.json');
   assertEq(agent.endpoints.article_jsonld_template.path_template, '/{canonical_slug}/index.json');
@@ -125,7 +127,10 @@ test('public machine entrypoints exclude drafts', () => {
   assert(openapi.paths['/api/article'], 'OpenAPI should expose article API endpoint');
   assert(openapi.paths['/api/claim'], 'OpenAPI should expose claim API endpoint');
   assert(openapi.paths['/api/source'], 'OpenAPI should expose source API endpoint');
+  assert(openapi.paths['/topics.json'], 'OpenAPI should expose topics endpoint');
   assert(openapi.paths['/search-index.json'], 'OpenAPI should expose search index endpoint');
+  assertEq(topics.topic_count, 1);
+  assert(topics.topics.some(topic => topic.id === 'ai'), 'topics index should include ai topic');
   assertEq(search.article_count, 1);
   assert(search.records.some(record => record.canonical_slug === 'ai/public-fixture'), 'search index should link to public article');
   assert(!search.records.some(record => record.canonical_slug === 'draft-fixture'), 'search index should exclude draft article');
