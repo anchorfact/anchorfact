@@ -217,7 +217,7 @@ test('agent profile describes the machine contract', () => {
   assertEq(agent.current_snapshot.examples, 7);
   assert(agent.current_snapshot.graph_nodes >= 1, 'agent profile should expose graph node count');
   assert(agent.current_snapshot.graph_edges >= 1, 'agent profile should expose graph edge count');
-  assertEq(agent.current_snapshot.evals, 30);
+  assertEq(agent.current_snapshot.evals, 33);
   assertEq(agent.current_snapshot.mcp_tools, 9);
   assert(agent.current_snapshot.unique_sources >= 1, 'agent profile should expose source count');
   assertEq(agent.endpoints.claims.url, 'https://anchorfact.org/claims.json');
@@ -460,7 +460,7 @@ test('evals.json describes executable AI integration checks', () => {
   const evals = JSON.parse(readFileSync(join(distDir, 'evals.json'), 'utf-8'));
   assertEq(evals.schema_version, 'anchorfact.evals.v1');
   assertEq(evals.provenance_url, 'https://anchorfact.org/provenance.json');
-  assertEq(evals.eval_count, 30);
+  assertEq(evals.eval_count, 33);
   assertEq(evals.evals.map(evalCase => evalCase.id), [
     'api_discovery',
     'openapi_context_contract',
@@ -473,6 +473,9 @@ test('evals.json describes executable AI integration checks', () => {
     'ai_query_routing_mixture_of_experts',
     'ai_query_routing_low_resource_nlp',
     'query_routing_postgresql',
+    'query_routing_rest_api',
+    'query_routing_http_status_codes',
+    'query_routing_quic_protocol',
     'query_routing_climate_change',
     'query_routing_stock_market_basics',
     'query_routing_ancient_egypt',

@@ -42,6 +42,27 @@ export const QUERY_BENCHMARK_CASES = [
     intent: 'Database reference queries should route to stable technical evidence outside the AI category.'
   },
   {
+    id: 'query_routing_rest_api',
+    category: 'technical_reference',
+    query: 'REST API',
+    expected_top_slug: 'computer-science/rest-api',
+    intent: 'API-design queries should route to the compact REST evidence pack rather than generic API gateway material.'
+  },
+  {
+    id: 'query_routing_http_status_codes',
+    category: 'technical_reference',
+    query: 'HTTP status codes',
+    expected_top_slug: 'computer-science/http-status-codes',
+    intent: 'HTTP result-code queries should resolve to the standards-backed status-code article.'
+  },
+  {
+    id: 'query_routing_quic_protocol',
+    category: 'technical_reference',
+    query: 'QUIC protocol',
+    expected_top_slug: 'computer-science/quic-protocol',
+    intent: 'Modern web transport queries should resolve to the QUIC protocol evidence pack.'
+  },
+  {
     id: 'query_routing_climate_change',
     category: 'cross_domain',
     query: 'climate change',

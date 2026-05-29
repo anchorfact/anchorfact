@@ -27138,7 +27138,7 @@
       "file": "content/computer-science/http-status-codes.md",
       "article_id": "kb-2026-00185",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 2,
       "verification_results": [
         {
           "source_title": "RFC 9110: HTTP Semantics",
@@ -27159,9 +27159,29 @@
             }
           ],
           "all_verified": true
+        },
+        {
+          "source_title": "Hypertext Transfer Protocol (HTTP) Status Code Registry",
+          "source_type": "official_record",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml",
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Benchmark follow-up for source depth; source URL verified directly; local verify-full was not run."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 1,
+      "sources_verified": 2,
       "sources_unreachable": 0,
       "manual_reviewed": true,
       "manual_reviewed_at": "2026-05-30"

@@ -29,7 +29,7 @@ function provenanceResult(overrides = {}) {
     ok: true,
     failures: [],
     provenance: {
-      content_counts: { public: 599, draft: 401, claims: 1840 },
+      content_counts: { public: 599, draft: 401, claims: 1841 },
       build: { commit_sha: '00e1bf052adcf0d5b396e0f77be0640810e557d7' },
       signature: {
         key_id: 'ed25519:fixture',

@@ -15,8 +15,9 @@ import { buildAuditRows, loadAuditData } from './audit-public-sample.js';
 const DEFAULT_STALE_PATTERNS = [
   /EXPECTED_PUBLIC_ARTICLES=(?!599\b)\d+/,
   /EXPECTED_DRAFT_ARTICLES=(?!401\b)\d+/,
-  /EXPECTED_CLAIMS=(?!1840\b)\d+/,
-  /\b(?!599\b)\d+\s+public\s*\/\s*(?!401\b)\d+\s+draft\s*\/\s*(?!1840\b)\d+\s+claims/i,
+  /EXPECTED_CLAIMS=(?!1841\b)\d+/,
+  /\b(?!599\b)\d+\s+public\s*\/\s*(?!401\b)\d+\s+draft\s*\/\s*(?!1841\b)\d+\s+claims/i,
+  /\b1840 claims\b/i,
   /\b596 public\b/i,
   /\b404 draft\b/i,
   /\b1830 claims\b/i,

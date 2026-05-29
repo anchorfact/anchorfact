@@ -104,7 +104,7 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
 
   assertEq(payload.schema_version, 'anchorfact.evals.v1');
   assertEq(payload.provenance_url, 'https://anchorfact.org/provenance.json');
-  assertEq(payload.eval_count, 30);
+  assertEq(payload.eval_count, 33);
   assertEq(payload.evals.map(evalCase => evalCase.id), [
     'api_discovery',
     'openapi_context_contract',
@@ -117,6 +117,9 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
     'ai_query_routing_mixture_of_experts',
     'ai_query_routing_low_resource_nlp',
     'query_routing_postgresql',
+    'query_routing_rest_api',
+    'query_routing_http_status_codes',
+    'query_routing_quic_protocol',
     'query_routing_climate_change',
     'query_routing_stock_market_basics',
     'query_routing_ancient_egypt',
@@ -173,6 +176,10 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
   assert(rlhfEval.call.path.includes('/api/evidence?q=RLHF&limit=3'), 'RLHF routing eval should use the high-intent acronym query');
   assertEq(rlhfEval.expected.top_canonical_slug, 'ai/rlhf');
   assertEq(rlhfEval.expected.contains_canonical_slug, 'ai/rlhf');
+
+  const restEval = payload.evals.find(evalCase => evalCase.id === 'query_routing_rest_api');
+  assert(restEval.call.path.includes('/api/evidence?q=REST+API&limit=3'), 'REST API routing eval should use the high-intent API query');
+  assertEq(restEval.expected.top_canonical_slug, 'computer-science/rest-api');
 
   const climateEval = payload.evals.find(evalCase => evalCase.id === 'query_routing_climate_change');
   assert(climateEval.call.path.includes('/api/evidence?q=climate+change&limit=3'), 'climate routing eval should use a cross-domain science query');
@@ -241,8 +248,9 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
   const benchmarkEval = payload.evals.find(evalCase => evalCase.id === 'coverage_query_benchmark_catalog');
   assertEq(benchmarkEval.call.path, '/coverage.json');
   assertEq(benchmarkEval.expected.schema_version, 'anchorfact.coverage.v1');
-  assertEq(benchmarkEval.expected.min_query_benchmark_cases, 11);
+  assertEq(benchmarkEval.expected.min_query_benchmark_cases, 14);
   assert(benchmarkEval.expected.required_query_benchmark_slugs.includes('ai/rlhf'), 'benchmark eval should require RLHF query coverage');
+  assert(benchmarkEval.expected.required_query_benchmark_slugs.includes('computer-science/rest-api'), 'benchmark eval should require REST API query coverage');
   assert(benchmarkEval.expected.query_benchmark_pass_gate_contains.includes('/evals.json'), 'benchmark eval should require executable eval pass gate');
 
   const provenanceEval = payload.evals.find(evalCase => evalCase.id === 'signed_provenance_static_artifacts');

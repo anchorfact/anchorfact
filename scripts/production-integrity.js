@@ -10,7 +10,7 @@ import { runAiEvals } from './run-ai-evals.js';
 export const DEFAULT_EXPECTED_COUNTS = {
   public: 599,
   draft: 401,
-  claims: 1840
+  claims: 1841
 };
 
 export const DEFAULT_PUBLIC_KEY_PATH = 'keys/provenance.pub.pem';

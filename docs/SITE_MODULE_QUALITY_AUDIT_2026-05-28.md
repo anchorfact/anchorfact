@@ -6,7 +6,7 @@ AnchorFact is healthy at the deployment, machine-contract, and test-gate level.
 The current `main` branch is clean and synchronized with `origin/main`, CI is
 green for the latest pushed commit, production integrity monitoring passes, and
 the live public surface is stable at 599 public articles, 401 draft articles,
-and 1840 published claims.
+and 1841 published claims.
 
 The public evidence debt described in the original version of this audit has
 been cleared. The current full public audit reports 599 `keep_public` rows and
@@ -23,7 +23,7 @@ No local `verify-full` run was performed for this audit.
 | --- | --- | --- |
 | Repository state | `main...origin/main`, no local changes before this report | Healthy |
 | Public surface | 599 public / 401 draft | Stable |
-| Published claims surface | 1840 claims from production smoke and provenance | Stable |
+| Published claims surface | 1841 claims from production smoke and provenance | Stable |
 | Local tests | `npm.cmd test` passed | Healthy |
 | Quality gate | `npm.cmd run quality` passed | Healthy |
 | Production smoke | `npm.cmd run smoke:prod` passed | Healthy |
@@ -33,7 +33,7 @@ No local `verify-full` run was performed for this audit.
 
 The signed `/content-health.json` artifact is the current machine-readable
 source of truth for health metrics. It reports full source coverage for all 599
-public articles, 1840/1840 mapped public claims, and 1719 public sources.
+public articles, 1841/1841 mapped public claims, and 1720 public sources.
 
 ## Website and Public Surface
 
@@ -70,7 +70,7 @@ Current public-health counters from the signed content health artifact:
 | Full verified source coverage | 599 |
 | Partial source coverage | 0 |
 | Zero source coverage | 0 |
-| Public claim mappings | 1840 / 1840 |
+| Public claim mappings | 1841 / 1841 |
 | Public sources | 1704 |
 
 Recommended content posture remains conservative. Public content should expand
@@ -121,7 +121,7 @@ The representative query benchmark now has a local usefulness runner:
 context assembly path used by AI consumers, checking not only top-result routing
 but also citation-ready claims, source URLs, source depth, and confidence.
 
-The current benchmark passes at 100/100 across 11 representative queries and
+The current benchmark passes at 100/100 across 14 representative queries and
 reports no improvement candidates. The prior thin cases,
 `history/ancient-egypt` and `business/stock-market-basics`, were strengthened
 from low-confidence single-source entries to medium-confidence multi-source
