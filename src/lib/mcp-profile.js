@@ -87,6 +87,7 @@ export function buildMcpProfile({
           health: `${HTTP_CONFIG.base_url}/health`,
           search: `${HTTP_CONFIG.base_url}/search?q={query}`,
           article: `${HTTP_CONFIG.base_url}/article?id={canonical_slug}`,
+          resolve: `${HTTP_CONFIG.base_url}/resolve?ref={reference}`,
           cite: `${HTTP_CONFIG.base_url}/cite?id={claim_id}`,
           stats: `${HTTP_CONFIG.base_url}/stats`
         }
@@ -120,6 +121,16 @@ export function buildMcpProfile({
           article_id: {
             type: 'string',
             description: 'Canonical slug, canonical URL, or JSON-LD @id.'
+          }
+        }
+      }),
+      tool('anchorfact_resolve_reference', 'Resolve a public AnchorFact claim id, article slug or URL, source id, or source URL.', {
+        type: 'object',
+        required: ['reference'],
+        properties: {
+          reference: {
+            type: 'string',
+            description: 'Claim shorthand or URL, article slug or URL, source id, or source URL.'
           }
         }
       }),

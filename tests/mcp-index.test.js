@@ -192,6 +192,44 @@ print(json.dumps({
   assertEq(result.missing_code, 'public_claim_not_found');
 });
 
+test('reference resolver returns local payloads for claims, articles, and sources', () => {
+  const result = runPython(`
+import json
+from pathlib import Path
+from mcp_resolve import build_reference_payload
+dist = Path(r'''${pyPath(distDir)}''')
+refs = ['f1', 'ai/public-fixture', 'source:fixture', 'https://example.com/fixture', 'ai/missing']
+resolved = {}
+for ref in refs:
+    status, payload = build_reference_payload(dist, ref)
+    resolved[ref] = {
+        "status": status,
+        "schema": payload.get("schema_version"),
+        "resolved_type": payload.get("resolved_type"),
+        "canonical_ref": payload.get("canonical_ref"),
+        "result_schema": payload.get("result_schema_version"),
+        "error_code": (payload.get("error") or {}).get("code"),
+        "source_id": (payload.get("result") or {}).get("source_id"),
+    }
+print(json.dumps(resolved))
+`);
+  assertEq(result.f1.status, 200);
+  assertEq(result.f1.schema, 'anchorfact.resolve-api.v1');
+  assertEq(result.f1.resolved_type, 'claim');
+  assertEq(result.f1.canonical_ref, 'https://anchorfact.org/fact/f1');
+  assertEq(result.f1.result_schema, 'anchorfact.cite-api.v1');
+  assertEq(result['ai/public-fixture'].status, 200);
+  assertEq(result['ai/public-fixture'].resolved_type, 'article');
+  assertEq(result['ai/public-fixture'].canonical_ref, 'ai/public-fixture');
+  assertEq(result['source:fixture'].status, 200);
+  assertEq(result['source:fixture'].resolved_type, 'source');
+  assertEq(result['source:fixture'].source_id, 'source:fixture');
+  assertEq(result['https://example.com/fixture'].status, 200);
+  assertEq(result['https://example.com/fixture'].resolved_type, 'source');
+  assertEq(result['ai/missing'].status, 404);
+  assertEq(result['ai/missing'].error_code, 'reference_not_found');
+});
+
 rmSync(root, { recursive: true, force: true });
 
 console.log(`\n${passed} passed, ${failed} failed`);

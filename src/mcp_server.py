@@ -19,6 +19,7 @@ from mcp_index import (
     load_public_article_index,
     resolve_article_reference,
 )
+from mcp_resolve import build_reference_payload
 from mcp_search import BM25Index as SharedBM25Index
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -102,6 +103,20 @@ async def list_tools() -> list[Tool]:
             },
         ),
         Tool(
+            name="anchorfact_resolve_reference",
+            description="Resolve a public AnchorFact claim id, article slug or URL, source id, or source URL.",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "reference": {
+                        "type": "string",
+                        "description": "Claim id, article slug, AnchorFact URL, source id, or source URL.",
+                    }
+                },
+                "required": ["reference"],
+            },
+        ),
+        Tool(
             name="anchorfact_cite_claim",
             description="Return citation-ready JSON or Markdown for one public AnchorFact claim.",
             inputSchema={
@@ -170,6 +185,11 @@ async def call_tool(name: str, arguments: dict[str, Any]) -> list[TextContent]:
             "markdown_url": entry.get("markdown_url"),
             "jsonld_url": entry.get("jsonld_url"),
         }, ensure_ascii=False, indent=2))]
+
+    if name == "anchorfact_resolve_reference":
+        reference = arguments.get("reference", arguments.get("ref", ""))
+        _, payload = build_reference_payload(DIST_DIR, reference)
+        return [TextContent(type="text", text=json.dumps(payload, ensure_ascii=False, indent=2))]
 
     if name == "anchorfact_cite_claim":
         claim_id = arguments.get("claim_id", "")

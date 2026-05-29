@@ -173,7 +173,7 @@ Forks can run the same verifier with `--allow-unofficial --skip-commit` while th
 The Python MCP server and optional HTTP wrapper are backed by `dist/manifest.json`.
 They index public articles only and resolve articles by canonical slug, canonical URL, or JSON-LD `@id`.
 The signed `/mcp.json` artifact publishes the local stdio config snippet, HTTP wrapper metadata, and tool schemas for MCP-capable hosts.
-The local MCP tools cover public article search, article retrieval, claim citation export, and category counts.
+The local MCP tools cover public article search, article retrieval, reference resolution, claim citation export, and category counts.
 
 ```bash
 python src/mcp_server.py
@@ -181,7 +181,7 @@ python src/mcp_http.py
 ```
 
 Search results use canonical slugs as `id` values and include `canonical_url`, `jsonld_id`, Markdown URL, and JSON-LD URL fields.
-Citation results use the same claim-level contract as `/api/cite`.
+Reference resolution mirrors `/api/resolve`; citation results use the same claim-level contract as `/api/cite`.
 
 ## Trust Rules
 
