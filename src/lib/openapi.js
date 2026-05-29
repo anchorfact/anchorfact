@@ -4,6 +4,7 @@ import {
   CLAIM_API_SCHEMA_VERSION,
   CLAIMS_SCHEMA_VERSION,
   COMPILER_VERSION,
+  EXAMPLES_SCHEMA_VERSION,
   MANIFEST_SCHEMA_VERSION,
   OFFICIAL_SITE,
   OPENAPI_SCHEMA_VERSION,
@@ -91,6 +92,7 @@ export function buildOpenApiContract({
       '/manifest.json': getJson('Public and draft article manifest', 'Manifest'),
       '/claims.json': getJson('Public verified atomic claims', 'Claims'),
       '/topics.json': getJson('Public topic coverage map', 'Topics'),
+      '/examples.json': getJson('Executable AI usage examples', 'Examples'),
       '/api/search': {
         get: {
           summary: 'Read-only search over public AnchorFact records',
@@ -258,6 +260,10 @@ export function buildOpenApiContract({
           public_article_count: { type: 'integer' },
           public_claim_count: { type: 'integer' },
           topics: { type: 'array', items: { type: 'object' } }
+        }),
+        Examples: schemaVersioned('Examples', EXAMPLES_SCHEMA_VERSION, {
+          example_count: { type: 'integer' },
+          examples: { type: 'array', items: { type: 'object' } }
         }),
         SearchIndex: schemaVersioned('Search index', SEARCH_INDEX_SCHEMA_VERSION, {
           article_count: { type: 'integer' },

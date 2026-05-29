@@ -6,6 +6,7 @@ import { buildOpenApiContract } from './openapi.js';
 import { buildSearchIndex } from './search-index.js';
 import { buildSourceIndex } from './source-index.js';
 import { buildTopicsIndex } from './topics-index.js';
+import { buildExamplesIndex } from './examples-index.js';
 import { escapeHtml } from './html.js';
 import { buildManifest, distribution } from './manifest.js';
 import {
@@ -96,6 +97,7 @@ function writeRootIndex(distDir, results, publicResults, draftResults, claims) {
     <a href="/manifest.json">Manifest</a> &middot;
     <a href="/claims.json">Claims JSON</a> &middot;
     <a href="/topics.json">Topics JSON</a> &middot;
+    <a href="/examples.json">Examples JSON</a> &middot;
     <a href="/search-index.json">Search Index</a> &middot;
     <a href="/sources.json">Sources JSON</a> &middot;
     <a href="/provenance.json">Provenance</a> &middot;
@@ -173,6 +175,7 @@ ${entries || '_No public verified entries yet._'}
 - [Manifest](https://anchorfact.org/manifest.json): Full index with public/draft status.
 - [Claims](https://anchorfact.org/claims.json): Public verified atomic claims.
 - [Topics](https://anchorfact.org/topics.json): Compact topic coverage map with article, claim, and source counts.
+- [Examples](https://anchorfact.org/examples.json): Executable AI usage examples for search, article, claim, source, and static artifact workflows.
 - [Search Index](https://anchorfact.org/search-index.json): Compact public retrieval records with keywords, claim ids, and source coverage.
 - [Sources](https://anchorfact.org/sources.json): Deduplicated public source index with evidence reuse.
 - [Provenance](https://anchorfact.org/provenance.json): Build identity and artifact checksums.
@@ -195,6 +198,7 @@ function writeSitemap(distDir, publicResults) {
     '<url><loc>https://anchorfact.org/llms.txt</loc><changefreq>daily</changefreq><priority>0.9</priority></url>',
     '<url><loc>https://anchorfact.org/claims.json</loc><changefreq>daily</changefreq><priority>0.8</priority></url>',
     '<url><loc>https://anchorfact.org/topics.json</loc><changefreq>daily</changefreq><priority>0.8</priority></url>',
+    '<url><loc>https://anchorfact.org/examples.json</loc><changefreq>daily</changefreq><priority>0.8</priority></url>',
     '<url><loc>https://anchorfact.org/search-index.json</loc><changefreq>daily</changefreq><priority>0.8</priority></url>',
     '<url><loc>https://anchorfact.org/sources.json</loc><changefreq>daily</changefreq><priority>0.8</priority></url>',
     '<url><loc>https://anchorfact.org/provenance.json</loc><changefreq>daily</changefreq><priority>0.8</priority></url>',
@@ -250,6 +254,11 @@ function writeHeaders(distDir) {
   Cache-Control: public, max-age=3600
 
 /topics.json
+  Access-Control-Allow-Origin: *
+  Content-Type: application/json; charset=utf-8
+  Cache-Control: public, max-age=3600
+
+/examples.json
   Access-Control-Allow-Origin: *
   Content-Type: application/json; charset=utf-8
   Cache-Control: public, max-age=3600
@@ -334,7 +343,7 @@ function writeDashboard(distDir, results, publicResults, draftResults, claims, v
       <p>High: ${publicDist.high} &middot; Medium: ${publicDist.medium} &middot; Low: ${publicDist.low}</p>
       <p>Verification report: ${verificationTimestamp || 'not available'}</p>
     </div>
-    <p><a href="/">Home</a> &middot; <a href="/llms.txt">llms.txt</a> &middot; <a href="/agent.json">agent.json</a> &middot; <a href="/openapi.json">openapi.json</a> &middot; <a href="/manifest.json">manifest.json</a> &middot; <a href="/claims.json">claims.json</a> &middot; <a href="/topics.json">topics.json</a> &middot; <a href="/search-index.json">search-index.json</a> &middot; <a href="/sources.json">sources.json</a> &middot; <a href="/provenance.json">provenance.json</a></p>
+    <p><a href="/">Home</a> &middot; <a href="/llms.txt">llms.txt</a> &middot; <a href="/agent.json">agent.json</a> &middot; <a href="/openapi.json">openapi.json</a> &middot; <a href="/manifest.json">manifest.json</a> &middot; <a href="/claims.json">claims.json</a> &middot; <a href="/topics.json">topics.json</a> &middot; <a href="/examples.json">examples.json</a> &middot; <a href="/search-index.json">search-index.json</a> &middot; <a href="/sources.json">sources.json</a> &middot; <a href="/provenance.json">provenance.json</a></p>
   </div>
 </body>
 </html>`;
@@ -420,6 +429,18 @@ export function writeStaticOutputs(distDir, results, options = {}) {
     join(distDir, 'topics.json'),
     JSON.stringify(topicsPayload, null, 2)
   );
+  const examplesPayload = buildExamplesIndex({
+    generated,
+    topicsPayload,
+    searchIndexPayload,
+    claimsPayload,
+    sourcesPayload,
+    site: build.canonical_site
+  });
+  writeFileSync(
+    join(distDir, 'examples.json'),
+    JSON.stringify(examplesPayload, null, 2)
+  );
   const manifest = writeManifest(distDir, results, publicResults, draftResults, claims, {
     ...options,
     generated,
@@ -432,6 +453,7 @@ export function writeStaticOutputs(distDir, results, options = {}) {
     searchIndexPayload,
     sourcesPayload,
     topicsPayload,
+    examplesPayload,
     publicResults,
     draftResults,
     verificationTimestamp: options.verificationTimestamp

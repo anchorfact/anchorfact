@@ -2,6 +2,7 @@
 import { generateKeyPairSync } from 'crypto';
 import {
   CLAIMS_SCHEMA_VERSION,
+  EXAMPLES_SCHEMA_VERSION,
   MANIFEST_SCHEMA_VERSION,
   OFFICIAL_SITE,
   OFFICIAL_SOURCE_REPOSITORY,
@@ -118,6 +119,7 @@ function buildFixture(overrides = {}) {
       '/agent.json': {},
       '/claims.json': {},
       '/topics.json': {},
+      '/examples.json': {},
       '/search-index.json': {},
       '/sources.json': {},
       '/provenance.json': {}
@@ -157,11 +159,19 @@ function buildFixture(overrides = {}) {
       }
     ]
   };
+  const examples = {
+    schema_version: EXAMPLES_SCHEMA_VERSION,
+    generated: '2026-05-29T00:00:00.000Z',
+    provenance_url: `${baseUrl}/provenance.json`,
+    example_count: 1,
+    examples: [{ id: 'fixture_example', workflow: [] }]
+  };
   const manifestText = JSON.stringify(manifest, null, 2);
   const claimsText = JSON.stringify(claims, null, 2);
   const agentText = JSON.stringify(agent, null, 2);
   const openapiText = JSON.stringify(openapi, null, 2);
   const topicsText = JSON.stringify(topics, null, 2);
+  const examplesText = JSON.stringify(examples, null, 2);
   const searchText = JSON.stringify(search, null, 2);
   const sourcesText = JSON.stringify(sources, null, 2);
   const provenance = {
@@ -213,6 +223,11 @@ function buildFixture(overrides = {}) {
         sha256: sha256Text(topicsText),
         bytes: Buffer.byteLength(topicsText, 'utf8')
       },
+      examples_json: {
+        path: '/examples.json',
+        sha256: sha256Text(examplesText),
+        bytes: Buffer.byteLength(examplesText, 'utf8')
+      },
       search_index_json: {
         path: '/search-index.json',
         sha256: sha256Text(searchText),
@@ -259,6 +274,7 @@ function buildFixture(overrides = {}) {
     [`${baseUrl}/manifest.json`]: { body: manifestText },
     [`${baseUrl}/claims.json`]: { body: claimsText },
     [`${baseUrl}/topics.json`]: { body: topicsText },
+    [`${baseUrl}/examples.json`]: { body: examplesText },
     [`${baseUrl}/search-index.json`]: { body: searchText },
     [`${baseUrl}/sources.json`]: { body: sourcesText },
     [`${baseUrl}/llms.txt`]: { body: llms, contentType: 'text/plain; charset=utf-8' },

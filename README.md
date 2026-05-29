@@ -87,7 +87,7 @@ npm run verify:provenance
 npm run verify:provenance:signed
 ```
 
-The smoke test checks the homepage, `/agent.json`, `/openapi.json`, `/manifest.json`, `/llms.txt`, `/claims.json`, `/topics.json`, `/api/search`, `/api/article`, `/api/claim`, `/api/source`, `/search-index.json`, `/sources.json`, `/provenance.json`, and `/drafts.html` against the live `https://anchorfact.org` deployment. Omit the expected-count environment variables when checking a future snapshot with different counts.
+The smoke test checks the homepage, `/agent.json`, `/openapi.json`, `/manifest.json`, `/llms.txt`, `/claims.json`, `/topics.json`, `/examples.json`, `/api/search`, `/api/article`, `/api/claim`, `/api/source`, `/search-index.json`, `/sources.json`, `/provenance.json`, and `/drafts.html` against the live `https://anchorfact.org` deployment. Omit the expected-count environment variables when checking a future snapshot with different counts.
 
 The provenance verifier fetches `/provenance.json`, recomputes SHA-256 checksums for the core AI entrypoints, checks public/draft/claim counts, confirms official build identity, and verifies the source commit against GitHub.
 
@@ -136,6 +136,7 @@ Only public articles contribute publishable facts to `/claims.json`.
 | `/manifest.json` | Full public/draft index with quality reasons and verification metadata. |
 | `/claims.json` | Public verified atomic claims with evidence links. |
 | `/topics.json` | Compact public topic coverage map with article, claim, and source counts. |
+| `/examples.json` | Executable AI usage examples for dynamic API calls and signed static fallback workflows. |
 | `/api/search?q=...` | Read-only Cloudflare Pages Function for lightweight public record lookup. |
 | `/api/article?slug=...` | Read-only Cloudflare Pages Function for public article evidence bundles with claims and sources. |
 | `/api/claim?id=...` | Read-only Cloudflare Pages Function for dereferencing one public atomic claim. |
