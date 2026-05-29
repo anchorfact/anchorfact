@@ -104,7 +104,7 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
 
   assertEq(payload.schema_version, 'anchorfact.evals.v1');
   assertEq(payload.provenance_url, 'https://anchorfact.org/provenance.json');
-  assertEq(payload.eval_count, 29);
+  assertEq(payload.eval_count, 30);
   assertEq(payload.evals.map(evalCase => evalCase.id), [
     'api_discovery',
     'openapi_context_contract',
@@ -133,6 +133,7 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
     'source_reuse_lookup',
     'graph_relationships',
     'content_health_summary',
+    'coverage_query_benchmark_catalog',
     'mcp_tool_catalog',
     'signed_provenance_static_artifacts'
   ]);
@@ -236,6 +237,13 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
   assertEq(healthEval.expected.min_repair_queue_next_batch, 1);
   assertEq(healthEval.expected.repair_queue_policy_contains, 'repair_complexity');
   assertEq(healthEval.expected.max_public_source_tier_c, 0);
+
+  const benchmarkEval = payload.evals.find(evalCase => evalCase.id === 'coverage_query_benchmark_catalog');
+  assertEq(benchmarkEval.call.path, '/coverage.json');
+  assertEq(benchmarkEval.expected.schema_version, 'anchorfact.coverage.v1');
+  assertEq(benchmarkEval.expected.min_query_benchmark_cases, 11);
+  assert(benchmarkEval.expected.required_query_benchmark_slugs.includes('ai/rlhf'), 'benchmark eval should require RLHF query coverage');
+  assert(benchmarkEval.expected.query_benchmark_pass_gate_contains.includes('/evals.json'), 'benchmark eval should require executable eval pass gate');
 
   const provenanceEval = payload.evals.find(evalCase => evalCase.id === 'signed_provenance_static_artifacts');
   assert(provenanceEval.expected.required_artifacts.includes('evals_json'), 'provenance eval should require evals artifact hash');

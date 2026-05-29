@@ -217,7 +217,7 @@ test('agent profile describes the machine contract', () => {
   assertEq(agent.current_snapshot.examples, 7);
   assert(agent.current_snapshot.graph_nodes >= 1, 'agent profile should expose graph node count');
   assert(agent.current_snapshot.graph_edges >= 1, 'agent profile should expose graph edge count');
-  assertEq(agent.current_snapshot.evals, 29);
+  assertEq(agent.current_snapshot.evals, 30);
   assertEq(agent.current_snapshot.mcp_tools, 9);
   assert(agent.current_snapshot.unique_sources >= 1, 'agent profile should expose source count');
   assertEq(agent.endpoints.claims.url, 'https://anchorfact.org/claims.json');
@@ -401,6 +401,8 @@ test('coverage.json describes public coverage and limits', () => {
   assertEq(coverage.coverage_summary.public_articles, 1);
   assertEq(coverage.coverage_summary.public_claims, 2);
   assertEq(coverage.coverage_summary.confidence_distribution.medium, 1);
+  assert(coverage.query_benchmark.cases.some(item => item.expected_top_slug === 'ai/rlhf'), 'coverage should expose the representative query benchmark');
+  assert(coverage.query_benchmark.pass_gate.includes('/evals.json'), 'coverage benchmark should point to executable evals');
   assert(coverage.topic_coverage.some(topic => topic.id === 'public-fixture'), 'coverage should include fixture topic');
   assert(coverage.coverage_limits.some(limit => limit.id === 'not_general_web_search'), 'coverage should describe limits');
 });
@@ -458,7 +460,7 @@ test('evals.json describes executable AI integration checks', () => {
   const evals = JSON.parse(readFileSync(join(distDir, 'evals.json'), 'utf-8'));
   assertEq(evals.schema_version, 'anchorfact.evals.v1');
   assertEq(evals.provenance_url, 'https://anchorfact.org/provenance.json');
-  assertEq(evals.eval_count, 29);
+  assertEq(evals.eval_count, 30);
   assertEq(evals.evals.map(evalCase => evalCase.id), [
     'api_discovery',
     'openapi_context_contract',
@@ -487,6 +489,7 @@ test('evals.json describes executable AI integration checks', () => {
     'source_reuse_lookup',
     'graph_relationships',
     'content_health_summary',
+    'coverage_query_benchmark_catalog',
     'mcp_tool_catalog',
     'signed_provenance_static_artifacts'
   ]);

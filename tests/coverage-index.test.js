@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 import { buildCoverageIndex } from '../src/lib/coverage-index.js';
+import { QUERY_BENCHMARK_CASES } from '../src/lib/query-benchmark.js';
 
 let passed = 0, failed = 0;
 
@@ -67,6 +68,9 @@ test('buildCoverageIndex summarizes public coverage and limits for AI routing', 
   });
   assertEq(payload.coverage_summary.source_tier_distribution.S, 2);
   assertEq(payload.topic_coverage.map(topic => topic.id), ['ai', 'science']);
+  assertEq(payload.query_benchmark.case_count, QUERY_BENCHMARK_CASES.length);
+  assert(payload.query_benchmark.cases.some(item => item.expected_top_slug === 'ai/rlhf'), 'query benchmark should include high-intent AI routing cases');
+  assert(payload.query_benchmark.pass_gate.includes('/evals.json'), 'query benchmark should point to executable evals');
   assert(payload.coverage_limits.some(limit => limit.id === 'not_general_web_search'), 'coverage limits should warn that AnchorFact is not a general web search engine');
   assertEq(payload.best_entrypoints.plan_query, '/api/plan?q={query}&limit=3');
   assert(payload.recommended_decision_flow.some(step => step.use === '/api/plan?q={query}&limit=3'), 'decision flow should point to plan API');

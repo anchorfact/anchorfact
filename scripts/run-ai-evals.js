@@ -180,6 +180,20 @@ function evaluateJsonExpected(payload, expected, failures) {
     const count = payload?.public?.sources?.tier_distribution?.C ?? 0;
     check(count <= expected.max_public_source_tier_c, failures, `public C-tier source count expected at most ${expected.max_public_source_tier_c}, got ${count}`);
   }
+  if (expected.min_query_benchmark_cases !== undefined) {
+    const count = payload?.query_benchmark?.case_count ?? (Array.isArray(payload?.query_benchmark?.cases) ? payload.query_benchmark.cases.length : 0);
+    check(count >= expected.min_query_benchmark_cases, failures, `query benchmark case count expected at least ${expected.min_query_benchmark_cases}, got ${count}`);
+  }
+  if (Array.isArray(expected.required_query_benchmark_slugs)) {
+    const slugs = new Set((payload?.query_benchmark?.cases || []).map(item => item?.expected_top_slug));
+    for (const slug of expected.required_query_benchmark_slugs) {
+      check(slugs.has(slug), failures, `query benchmark should include expected_top_slug ${slug}`);
+    }
+  }
+  if (expected.query_benchmark_pass_gate_contains) {
+    const passGate = String(payload?.query_benchmark?.pass_gate || '');
+    check(passGate.includes(expected.query_benchmark_pass_gate_contains), failures, `query benchmark pass_gate should include ${expected.query_benchmark_pass_gate_contains}`);
+  }
   if (expected.min_content_health_public_articles !== undefined) {
     const count = payload?.content_health?.snapshot?.public_articles ?? 0;
     check(count >= expected.min_content_health_public_articles, failures, `context content health public article count expected at least ${expected.min_content_health_public_articles}, got ${count}`);

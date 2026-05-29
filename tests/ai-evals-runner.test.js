@@ -177,6 +177,18 @@ test('runAiEvals executes JSON, Markdown, MCP, and provenance eval expectations'
             }
           },
           {
+            id: 'coverage_query_benchmark_catalog',
+            call: { method: 'GET', path: '/coverage.json' },
+            expected: {
+              status: 200,
+              content_type: 'application/json',
+              schema_version: 'anchorfact.coverage.v1',
+              min_query_benchmark_cases: 2,
+              required_query_benchmark_slugs: ['ai/rlhf', 'science/climate-change'],
+              query_benchmark_pass_gate_contains: '/evals.json'
+            }
+          },
+          {
             id: 'signed_provenance_static_artifacts',
             call: { method: 'GET', path: '/provenance.json' },
             expected: {
@@ -287,6 +299,17 @@ test('runAiEvals executes JSON, Markdown, MCP, and provenance eval expectations'
         machine_guidance: ['Use /api/context?q={query} for prompt assembly.'],
         trust_boundaries: { draft_entries_excluded_from_ai_entrypoints: true }
       }),
+      '/coverage.json': jsonResponse({
+        schema_version: 'anchorfact.coverage.v1',
+        query_benchmark: {
+          case_count: 2,
+          pass_gate: 'All benchmark cases must pass through /evals.json and npm run evals:prod.',
+          cases: [
+            { expected_top_slug: 'ai/rlhf' },
+            { expected_top_slug: 'science/climate-change' }
+          ]
+        }
+      }),
       '/provenance.json': jsonResponse({
         schema_version: 'anchorfact.provenance.v1',
         artifacts: {
@@ -299,8 +322,8 @@ test('runAiEvals executes JSON, Markdown, MCP, and provenance eval expectations'
 
   if (!report.ok) console.log(JSON.stringify(report, null, 2));
   assertEq(report.ok, true);
-  assertEq(report.eval_count, 11);
-  assertEq(report.passed, 11);
+  assertEq(report.eval_count, 12);
+  assertEq(report.passed, 12);
   assertEq(report.failed, 0);
   const markdown = renderAiEvalsMarkdown(report);
   assert(markdown.includes('AnchorFact AI Evals - PASS'), 'markdown should show pass');
@@ -355,6 +378,18 @@ test('runAiEvals reports expectation failures', async () => {
               repair_queue_policy_contains: 'repair_complexity',
               max_public_source_tier_c: 0
             }
+          },
+          {
+            id: 'coverage_query_benchmark_catalog',
+            call: { method: 'GET', path: '/coverage.json' },
+            expected: {
+              status: 200,
+              content_type: 'application/json',
+              schema_version: 'anchorfact.coverage.v1',
+              min_query_benchmark_cases: 2,
+              required_query_benchmark_slugs: ['ai/rlhf'],
+              query_benchmark_pass_gate_contains: '/evals.json'
+            }
           }
         ]
       }),
@@ -380,17 +415,26 @@ test('runAiEvals reports expectation failures', async () => {
             selection_policy: ['No stable policy yet.']
           }
         }
+      }),
+      '/coverage.json': jsonResponse({
+        schema_version: 'anchorfact.coverage.v1',
+        query_benchmark: {
+          case_count: 1,
+          pass_gate: 'Manual only.',
+          cases: [{ expected_top_slug: 'ai/not-rlhf' }]
+        }
       })
     })
   });
 
   assertEq(report.ok, false);
-  assertEq(report.failed, 4);
+  assertEq(report.failed, 5);
   assert(report.results[0].failures.some(failure => failure.includes('anchorfact_plan_query')), 'missing tool should be reported');
   assert(report.results[1].failures.some(failure => failure.includes('external primary')), 'fallback guidance mismatch should be reported');
   assert(report.results[2].failures.some(failure => failure.includes('result_count')), 'result_count mismatch should be reported');
   assert(report.results[3].failures.some(failure => failure.includes('repair queue')), 'repair queue mismatch should be reported');
   assert(report.results[3].failures.some(failure => failure.includes('C-tier source')), 'C-tier source drift should be reported');
+  assert(report.results[4].failures.some(failure => failure.includes('query benchmark')), 'query benchmark mismatch should be reported');
 });
 
 test('runAiEvals reports top-ranked canonical slug drift for query routing evals', async () => {

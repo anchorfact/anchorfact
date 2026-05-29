@@ -4,6 +4,7 @@ import {
   CLAIM_API_SCHEMA_VERSION,
   CONTEXT_API_SCHEMA_VERSION,
   CONTENT_HEALTH_SCHEMA_VERSION,
+  COVERAGE_SCHEMA_VERSION,
   EVALS_SCHEMA_VERSION,
   EVIDENCE_API_SCHEMA_VERSION,
   GRAPH_SCHEMA_VERSION,
@@ -18,66 +19,10 @@ import {
   SOURCE_API_SCHEMA_VERSION,
   publicUrl
 } from './build-metadata.js';
+import { QUERY_BENCHMARK_CASES } from './query-benchmark.js';
 
 const PREFERRED_SLUG = 'ai/3d-generation-gaussian-splatting';
 const UNSUPPORTED_QUERY = 'lunar dentistry';
-const HIGH_INTENT_QUERY_EVALS = [
-  {
-    id: 'ai_query_routing_retrieval_augmented_generation',
-    query: 'retrieval augmented generation',
-    canonical_slug: 'ai/rag'
-  },
-  {
-    id: 'ai_query_routing_parameter_efficient_fine_tuning',
-    query: 'parameter efficient fine tuning',
-    canonical_slug: 'ai/parameter-efficient-fine-tuning'
-  },
-  {
-    id: 'ai_query_routing_rlhf',
-    query: 'RLHF',
-    canonical_slug: 'ai/rlhf'
-  },
-  {
-    id: 'ai_query_routing_mixture_of_experts',
-    query: 'mixture of experts',
-    canonical_slug: 'ai/mixture-of-experts'
-  },
-  {
-    id: 'ai_query_routing_low_resource_nlp',
-    query: 'low resource NLP',
-    canonical_slug: 'ai/low-resource-nlp'
-  },
-  {
-    id: 'query_routing_postgresql',
-    query: 'postgresql',
-    canonical_slug: 'computer-science/postgresql'
-  },
-  {
-    id: 'query_routing_climate_change',
-    query: 'climate change',
-    canonical_slug: 'science/climate-change'
-  },
-  {
-    id: 'query_routing_stock_market_basics',
-    query: 'stock market basics',
-    canonical_slug: 'business/stock-market-basics'
-  },
-  {
-    id: 'query_routing_ancient_egypt',
-    query: 'ancient egypt',
-    canonical_slug: 'history/ancient-egypt'
-  },
-  {
-    id: 'query_routing_public_speaking',
-    query: 'public speaking',
-    canonical_slug: 'self-improvement/public-speaking'
-  },
-  {
-    id: 'query_routing_sports_biomechanics',
-    query: 'sports biomechanics',
-    canonical_slug: 'sports/sports-biomechanics'
-  }
-];
 
 function queryPath(path, params) {
   const search = new URLSearchParams();
@@ -304,7 +249,7 @@ export function buildEvalsIndex({
         min_sources_per_matching_pack: 1
       }
     },
-    ...HIGH_INTENT_QUERY_EVALS.map(evalCase => ({
+    ...QUERY_BENCHMARK_CASES.map(evalCase => ({
       id: evalCase.id,
       intent: `Confirm the high-intent AI query "${evalCase.query}" resolves first to the intended evidence pack.`,
       call: call(queryPath('/api/evidence', { q: evalCase.query, limit: 3 }), site),
@@ -312,8 +257,8 @@ export function buildEvalsIndex({
         status: 200,
         content_type: 'application/json',
         schema_version: EVIDENCE_API_SCHEMA_VERSION,
-        top_canonical_slug: evalCase.canonical_slug,
-        contains_canonical_slug: evalCase.canonical_slug,
+        top_canonical_slug: evalCase.expected_top_slug,
+        contains_canonical_slug: evalCase.expected_top_slug,
         min_packs: 1,
         min_claims_per_matching_pack: 1,
         min_sources_per_matching_pack: 1
@@ -482,6 +427,19 @@ export function buildEvalsIndex({
         min_repair_queue_next_batch: 1,
         repair_queue_policy_contains: 'repair_complexity',
         max_public_source_tier_c: 0
+      }
+    },
+    {
+      id: 'coverage_query_benchmark_catalog',
+      intent: 'Confirm the signed coverage artifact exposes the representative AI query benchmark used to steer future content work.',
+      call: call('/coverage.json', site),
+      expected: {
+        status: 200,
+        content_type: 'application/json',
+        schema_version: COVERAGE_SCHEMA_VERSION,
+        min_query_benchmark_cases: QUERY_BENCHMARK_CASES.length,
+        required_query_benchmark_slugs: QUERY_BENCHMARK_CASES.map(item => item.expected_top_slug),
+        query_benchmark_pass_gate_contains: '/evals.json'
       }
     },
     {

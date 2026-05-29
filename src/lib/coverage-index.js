@@ -4,6 +4,7 @@ import {
   PROVENANCE_PATH,
   publicUrl
 } from './build-metadata.js';
+import { buildQueryBenchmarkCatalog } from './query-benchmark.js';
 
 const CONFIDENCE_LEVELS = ['high', 'medium', 'low'];
 
@@ -98,6 +99,7 @@ export function buildCoverageIndex({
       top_source_types: topEntries(sourcesPayload?.type_distribution)
     },
     topic_coverage: topicCoverage(topicsPayload),
+    query_benchmark: buildQueryBenchmarkCatalog(),
     best_entrypoints: {
       discover_contract: '/agent.json',
       route_task: '/capabilities.json',

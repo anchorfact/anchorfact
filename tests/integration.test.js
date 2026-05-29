@@ -184,7 +184,7 @@ test('public machine entrypoints exclude drafts', () => {
   assert(examples.examples.some(example => example.id === 'one_call_evidence_pack'), 'examples index should include evidence pack workflow');
   assert(examples.examples.some(example => example.id === 'mixed_reference_resolution'), 'examples index should include mixed reference workflow');
   assert(examples.examples.some(example => example.id === 'static_fallback'), 'examples index should include static fallback workflow');
-  assertEq(evals.eval_count, 29);
+  assertEq(evals.eval_count, 30);
   assert(evals.evals.some(evalCase => evalCase.id === 'openapi_context_contract'), 'evals index should include OpenAPI context contract check');
   assert(evals.evals.some(evalCase => evalCase.id === 'ai_query_routing_rlhf'), 'evals index should include high-intent AI query routing check');
   assert(evals.evals.some(evalCase => evalCase.id === 'query_routing_climate_change'), 'evals index should include cross-domain query routing check');
@@ -197,6 +197,7 @@ test('public machine entrypoints exclude drafts', () => {
   assert(evals.evals.some(evalCase => evalCase.id === 'batch_reference_resolver'), 'evals index should include resolve batch API check');
   assert(evals.evals.some(evalCase => evalCase.id === 'citation_export'), 'evals index should include citation API check');
   assert(evals.evals.some(evalCase => evalCase.id === 'content_health_summary'), 'evals index should include content health check');
+  assert(evals.evals.some(evalCase => evalCase.id === 'coverage_query_benchmark_catalog'), 'evals index should include query benchmark catalog check');
   assert(evals.evals.some(evalCase => evalCase.id === 'mcp_tool_catalog'), 'evals index should include MCP tool catalog check');
   assert(evals.evals.some(evalCase => evalCase.id === 'signed_provenance_static_artifacts'), 'evals index should include provenance artifact check');
   assertEq(mcp.schema_version, 'anchorfact.mcp.v1');
