@@ -87,7 +87,7 @@ npm run verify:provenance
 npm run verify:provenance:signed
 ```
 
-The smoke test checks the homepage, `/agent.json`, `/manifest.json`, `/llms.txt`, `/claims.json`, `/search-index.json`, `/sources.json`, `/provenance.json`, and `/drafts.html` against the live `https://anchorfact.org` deployment. Omit the expected-count environment variables when checking a future snapshot with different counts.
+The smoke test checks the homepage, `/agent.json`, `/openapi.json`, `/manifest.json`, `/llms.txt`, `/claims.json`, `/search-index.json`, `/sources.json`, `/provenance.json`, and `/drafts.html` against the live `https://anchorfact.org` deployment. Omit the expected-count environment variables when checking a future snapshot with different counts.
 
 The provenance verifier fetches `/provenance.json`, recomputes SHA-256 checksums for the core AI entrypoints, checks public/draft/claim counts, confirms official build identity, and verifies the source commit against GitHub.
 
@@ -131,6 +131,7 @@ Only public articles contribute publishable facts to `/claims.json`.
 | --- | --- |
 | `/agent.json` | AI agent discovery profile with endpoint contracts, citation policy, and recommended retrieval workflow. |
 | `/.well-known/anchorfact.json` | Stable well-known alias for `/agent.json`. |
+| `/openapi.json` | OpenAPI 3.1 description of the static read-only machine contract. |
 | `/llms.txt` | Public verified index for LLM crawlers. |
 | `/manifest.json` | Full public/draft index with quality reasons and verification metadata. |
 | `/claims.json` | Public verified atomic claims with evidence links. |

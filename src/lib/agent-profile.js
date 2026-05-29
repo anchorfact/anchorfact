@@ -4,6 +4,7 @@ import {
   MANIFEST_SCHEMA_VERSION,
   OFFICIAL_SOURCE_REPOSITORY,
   OFFICIAL_SITE,
+  OPENAPI_SCHEMA_VERSION,
   PROVENANCE_SCHEMA_VERSION,
   SEARCH_INDEX_SCHEMA_VERSION,
   SOURCES_SCHEMA_VERSION,
@@ -54,6 +55,7 @@ export function buildAgentProfile({
     },
     schemas: {
       manifest: MANIFEST_SCHEMA_VERSION,
+      openapi: OPENAPI_SCHEMA_VERSION,
       claims: CLAIMS_SCHEMA_VERSION,
       search_index: SEARCH_INDEX_SCHEMA_VERSION,
       sources: SOURCES_SCHEMA_VERSION,
@@ -61,6 +63,7 @@ export function buildAgentProfile({
     },
     recommended_workflow: [
       'Fetch /agent.json to discover the current machine contract.',
+      'Fetch /openapi.json when integrating with tools that prefer a standard endpoint contract.',
       'Fetch /provenance.json and /provenance.sig, then verify the pinned public key before trusting counts or hashes.',
       'Fetch /search-index.json to shortlist public records by title, keywords, claims, source coverage, and route templates.',
       'Fetch /manifest.json to select public articles by canonical_slug, status, confidence_level, and source coverage.',
@@ -72,6 +75,7 @@ export function buildAgentProfile({
     endpoints: {
       agent_profile: endpoint('/agent.json', 'This discovery document for AI agents and crawlers.'),
       well_known_agent_profile: endpoint('/.well-known/anchorfact.json', 'Stable well-known alias for the agent discovery document.'),
+      openapi: endpoint('/openapi.json', 'OpenAPI 3.1 description of the static read-only machine contract.'),
       llms_txt: endpoint('/llms.txt', 'Public verified article index optimized for LLM crawlers.', 'text/plain'),
       manifest: endpoint('/manifest.json', 'Full article index with public/draft status, confidence, and verification metadata.'),
       claims: endpoint('/claims.json', 'Public verified atomic claims with evidence links.'),

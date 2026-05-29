@@ -4,6 +4,7 @@ import {
   MANIFEST_SCHEMA_VERSION,
   OFFICIAL_SITE,
   OFFICIAL_SOURCE_REPOSITORY,
+  OPENAPI_SCHEMA_VERSION,
   PROVENANCE_PATH,
   PROVENANCE_SCHEMA_VERSION,
   SEARCH_INDEX_SCHEMA_VERSION,
@@ -15,7 +16,7 @@ import {
 } from './provenance-signature.js';
 import { fetchLiveText } from './live-http.js';
 
-const REQUIRED_ARTIFACTS = ['agent_json', 'manifest_json', 'claims_json', 'search_index_json', 'sources_json', 'llms_txt'];
+const REQUIRED_ARTIFACTS = ['agent_json', 'openapi_json', 'manifest_json', 'claims_json', 'search_index_json', 'sources_json', 'llms_txt'];
 const OFFICIAL_GITHUB_COMMIT_API = 'https://api.github.com/repos/anchorfact/anchorfact/commits/';
 
 export function sha256Text(text) {
@@ -252,6 +253,9 @@ export async function verifyLiveProvenance({
   const manifest = artifacts.manifest_json?.text
     ? parseJson(artifacts.manifest_json.text, '/manifest.json', failures) || {}
     : {};
+  const openapi = artifacts.openapi_json?.text
+    ? parseJson(artifacts.openapi_json.text, '/openapi.json', failures) || {}
+    : {};
   const claims = artifacts.claims_json?.text
     ? parseJson(artifacts.claims_json.text, '/claims.json', failures) || {}
     : {};
@@ -259,6 +263,9 @@ export async function verifyLiveProvenance({
     ? parseJson(artifacts.search_index_json.text, '/search-index.json', failures) || {}
     : {};
   checkEq(manifest.schema_version, MANIFEST_SCHEMA_VERSION, 'manifest schema_version', failures);
+  checkEq(openapi.openapi, '3.1.0', 'OpenAPI version', failures);
+  checkEq(openapi['x-anchorfact-schema-version'], OPENAPI_SCHEMA_VERSION, 'OpenAPI AnchorFact schema version', failures);
+  checkEq(openapi['x-provenance-url'], publicUrl(PROVENANCE_PATH, normalizedBaseUrl), 'OpenAPI provenance url', failures);
   checkEq(claims.schema_version, CLAIMS_SCHEMA_VERSION, 'claims schema_version', failures);
   checkEq(searchIndex.schema_version, SEARCH_INDEX_SCHEMA_VERSION, 'search index schema_version', failures);
   checkEq(manifest.provenance_url, publicUrl(PROVENANCE_PATH, normalizedBaseUrl), 'manifest provenance_url', failures);

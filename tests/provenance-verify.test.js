@@ -5,6 +5,7 @@ import {
   MANIFEST_SCHEMA_VERSION,
   OFFICIAL_SITE,
   OFFICIAL_SOURCE_REPOSITORY,
+  OPENAPI_SCHEMA_VERSION,
   PROVENANCE_SCHEMA_VERSION,
   SEARCH_INDEX_SCHEMA_VERSION
 } from '../src/lib/build-metadata.js';
@@ -106,6 +107,20 @@ function buildFixture(overrides = {}) {
       public_claims: 3
     }
   };
+  const openapi = {
+    openapi: '3.1.0',
+    info: { title: 'AnchorFact Machine API', version: '0.3.0' },
+    servers: [{ url: baseUrl }],
+    'x-anchorfact-schema-version': OPENAPI_SCHEMA_VERSION,
+    'x-provenance-url': `${baseUrl}/provenance.json`,
+    paths: {
+      '/agent.json': {},
+      '/claims.json': {},
+      '/search-index.json': {},
+      '/sources.json': {},
+      '/provenance.json': {}
+    }
+  };
   const sources = {
     schema_version: 'anchorfact.sources.v1',
     generated: '2026-05-29T00:00:00.000Z',
@@ -134,6 +149,7 @@ function buildFixture(overrides = {}) {
   const manifestText = JSON.stringify(manifest, null, 2);
   const claimsText = JSON.stringify(claims, null, 2);
   const agentText = JSON.stringify(agent, null, 2);
+  const openapiText = JSON.stringify(openapi, null, 2);
   const searchText = JSON.stringify(search, null, 2);
   const sourcesText = JSON.stringify(sources, null, 2);
   const provenance = {
@@ -169,6 +185,11 @@ function buildFixture(overrides = {}) {
         path: '/manifest.json',
         sha256: sha256Text(manifestText),
         bytes: Buffer.byteLength(manifestText, 'utf8')
+      },
+      openapi_json: {
+        path: '/openapi.json',
+        sha256: sha256Text(openapiText),
+        bytes: Buffer.byteLength(openapiText, 'utf8')
       },
       claims_json: {
         path: '/claims.json',
@@ -217,6 +238,7 @@ function buildFixture(overrides = {}) {
   const routes = {
     [`${baseUrl}/provenance.json`]: { body: provenanceText },
     [`${baseUrl}/agent.json`]: { body: agentText },
+    [`${baseUrl}/openapi.json`]: { body: openapiText },
     [`${baseUrl}/manifest.json`]: { body: manifestText },
     [`${baseUrl}/claims.json`]: { body: claimsText },
     [`${baseUrl}/search-index.json`]: { body: searchText },

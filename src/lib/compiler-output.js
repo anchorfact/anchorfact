@@ -2,6 +2,7 @@ import { mkdirSync, writeFileSync } from 'fs';
 import { join } from 'path';
 import { buildAgentProfile } from './agent-profile.js';
 import { publicClaims } from './claims.js';
+import { buildOpenApiContract } from './openapi.js';
 import { buildSearchIndex } from './search-index.js';
 import { buildSourceIndex } from './source-index.js';
 import { escapeHtml } from './html.js';
@@ -85,6 +86,7 @@ function writeRootIndex(distDir, results, publicResults, draftResults, claims) {
   <div class="card">
     <strong>For AIs</strong><br>
     <a href="/agent.json">Agent profile</a> &middot;
+    <a href="/openapi.json">OpenAPI</a> &middot;
     <a href="/llms.txt">llms.txt</a> &middot;
     <a href="/manifest.json">Manifest</a> &middot;
     <a href="/claims.json">Claims JSON</a> &middot;
@@ -157,6 +159,7 @@ ${entries || '_No public verified entries yet._'}
 ## API
 
 - [Agent Profile](https://anchorfact.org/agent.json): Machine contract and recommended retrieval workflow.
+- [OpenAPI](https://anchorfact.org/openapi.json): Static read-only endpoint contract for tools.
 - [Manifest](https://anchorfact.org/manifest.json): Full index with public/draft status.
 - [Claims](https://anchorfact.org/claims.json): Public verified atomic claims.
 - [Search Index](https://anchorfact.org/search-index.json): Compact public retrieval records with keywords, claim ids, and source coverage.
@@ -177,6 +180,7 @@ function writeSitemap(distDir, publicResults) {
   const urls = [
     '<url><loc>https://anchorfact.org/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>',
     '<url><loc>https://anchorfact.org/agent.json</loc><changefreq>daily</changefreq><priority>0.9</priority></url>',
+    '<url><loc>https://anchorfact.org/openapi.json</loc><changefreq>daily</changefreq><priority>0.9</priority></url>',
     '<url><loc>https://anchorfact.org/llms.txt</loc><changefreq>daily</changefreq><priority>0.9</priority></url>',
     '<url><loc>https://anchorfact.org/claims.json</loc><changefreq>daily</changefreq><priority>0.8</priority></url>',
     '<url><loc>https://anchorfact.org/search-index.json</loc><changefreq>daily</changefreq><priority>0.8</priority></url>',
@@ -248,6 +252,11 @@ function writeHeaders(distDir) {
   Content-Type: application/json; charset=utf-8
   Cache-Control: public, max-age=3600
 
+/openapi.json
+  Access-Control-Allow-Origin: *
+  Content-Type: application/json; charset=utf-8
+  Cache-Control: public, max-age=3600
+
 /.well-known/anchorfact.json
   Access-Control-Allow-Origin: *
   Content-Type: application/json; charset=utf-8
@@ -308,7 +317,7 @@ function writeDashboard(distDir, results, publicResults, draftResults, claims, v
       <p>High: ${publicDist.high} &middot; Medium: ${publicDist.medium} &middot; Low: ${publicDist.low}</p>
       <p>Verification report: ${verificationTimestamp || 'not available'}</p>
     </div>
-    <p><a href="/">Home</a> &middot; <a href="/llms.txt">llms.txt</a> &middot; <a href="/manifest.json">manifest.json</a> &middot; <a href="/claims.json">claims.json</a> &middot; <a href="/search-index.json">search-index.json</a> &middot; <a href="/sources.json">sources.json</a> &middot; <a href="/provenance.json">provenance.json</a></p>
+    <p><a href="/">Home</a> &middot; <a href="/llms.txt">llms.txt</a> &middot; <a href="/agent.json">agent.json</a> &middot; <a href="/openapi.json">openapi.json</a> &middot; <a href="/manifest.json">manifest.json</a> &middot; <a href="/claims.json">claims.json</a> &middot; <a href="/search-index.json">search-index.json</a> &middot; <a href="/sources.json">sources.json</a> &middot; <a href="/provenance.json">provenance.json</a></p>
   </div>
 </body>
 </html>`;
@@ -353,6 +362,13 @@ export function writeStaticOutputs(distDir, results, options = {}) {
   writeFileSync(
     join(distDir, 'claims.json'),
     JSON.stringify(claimsPayload, null, 2)
+  );
+  writeFileSync(
+    join(distDir, 'openapi.json'),
+    JSON.stringify(buildOpenApiContract({
+      generated,
+      site: build.canonical_site
+    }), null, 2)
   );
   const searchIndexPayload = buildSearchIndex({
     generated,
