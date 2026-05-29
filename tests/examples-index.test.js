@@ -87,11 +87,12 @@ test('buildExamplesIndex produces executable AI workflow examples', () => {
 
   assertEq(payload.schema_version, 'anchorfact.examples.v1');
   assertEq(payload.provenance_url, 'https://anchorfact.org/provenance.json');
-  assertEq(payload.example_count, 5);
+  assertEq(payload.example_count, 6);
   assertEq(payload.examples.map(example => example.id), [
     'one_call_evidence_pack',
     'search_to_article_evidence',
     'claim_dereference',
+    'mixed_reference_resolution',
     'source_reuse_lookup',
     'static_fallback'
   ]);
@@ -112,6 +113,11 @@ test('buildExamplesIndex produces executable AI workflow examples', () => {
   assert(claimExample.workflow[1].call.path.includes('/api/claim?id=f1'), 'claim example should use shorthand claim id');
   assert(claimExample.workflow[2].call.path.includes('/api/cite?id=f1'), 'claim example should fetch citation-ready payload');
   assertEq(claimExample.expected_anchor.claim.lookup_id, 'f1');
+
+  const mixedExample = payload.examples.find(example => example.id === 'mixed_reference_resolution');
+  assert(mixedExample.workflow[0].call.path.includes('/api/resolve-batch?ref=f1'), 'mixed reference example should use resolve batch API');
+  assert(mixedExample.workflow[0].call.path.includes('ref=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079'), 'mixed reference example should include source URL');
+  assert(mixedExample.workflow[1].call.path.includes('format=markdown'), 'mixed reference example should include markdown batch output');
 
   const sourceExample = payload.examples.find(example => example.id === 'source_reuse_lookup');
   assert(sourceExample.workflow[0].call.path.includes('/api/source?url=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079'), 'source example should use source URL lookup');

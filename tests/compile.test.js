@@ -185,7 +185,7 @@ test('agent profile describes the machine contract', () => {
   assertEq(agent.current_snapshot.draft_articles, 1);
   assertEq(agent.current_snapshot.public_claims, 2);
   assertEq(agent.current_snapshot.topics, 1);
-  assertEq(agent.current_snapshot.examples, 5);
+  assertEq(agent.current_snapshot.examples, 6);
   assert(agent.current_snapshot.graph_nodes >= 1, 'agent profile should expose graph node count');
   assert(agent.current_snapshot.graph_edges >= 1, 'agent profile should expose graph edge count');
   assertEq(agent.current_snapshot.evals, 9);
@@ -310,11 +310,12 @@ test('examples.json describes executable AI usage examples', () => {
   const examples = JSON.parse(readFileSync(join(distDir, 'examples.json'), 'utf-8'));
   assertEq(examples.schema_version, 'anchorfact.examples.v1');
   assertEq(examples.provenance_url, 'https://anchorfact.org/provenance.json');
-  assertEq(examples.example_count, 5);
+  assertEq(examples.example_count, 6);
   assertEq(examples.examples.map(example => example.id), [
     'one_call_evidence_pack',
     'search_to_article_evidence',
     'claim_dereference',
+    'mixed_reference_resolution',
     'source_reuse_lookup',
     'static_fallback'
   ]);
@@ -323,6 +324,8 @@ test('examples.json describes executable AI usage examples', () => {
   const claimExample = examples.examples.find(example => example.id === 'claim_dereference');
   assert(claimExample.workflow.some(step => step.call.path.includes('/api/resolve?')), 'examples should show resolve API usage');
   assert(claimExample.workflow.some(step => step.call.path.includes('/api/cite?')), 'examples should show citation API usage');
+  const mixedExample = examples.examples.find(example => example.id === 'mixed_reference_resolution');
+  assert(mixedExample.workflow.some(step => step.call.path.includes('/api/resolve-batch?')), 'examples should show resolve batch API usage');
   const searchExample = examples.examples[1];
   assert(searchExample.workflow.some(step => step.call.path.includes('/api/search?')), 'examples should show search API usage');
   assert(searchExample.workflow.some(step => step.call.path.includes('/api/article?')), 'examples should show article API usage');

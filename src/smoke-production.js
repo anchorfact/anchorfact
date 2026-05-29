@@ -243,6 +243,7 @@ export async function main() {
   assertOk(examples.example_count === (Array.isArray(examples.examples) ? examples.examples.length : 0), 'examples example_count does not match examples[] length', failures);
   assertOk(Array.isArray(examples.examples) && examples.examples.some(example => example.id === 'one_call_evidence_pack'), '/examples.json is missing one_call_evidence_pack example', failures);
   assertOk(Array.isArray(examples.examples) && examples.examples.some(example => example.id === 'search_to_article_evidence'), '/examples.json is missing search_to_article_evidence example', failures);
+  assertOk(Array.isArray(examples.examples) && examples.examples.some(example => example.id === 'mixed_reference_resolution'), '/examples.json is missing mixed_reference_resolution example', failures);
   assertOk(graph.schema_version === 'anchorfact.graph.v1', `graph schema_version expected anchorfact.graph.v1, got ${graph.schema_version || '(missing)'}`, failures);
   assertOk(graph.provenance_url === new URL('/provenance.json', baseUrl).href, `graph provenance_url expected ${new URL('/provenance.json', baseUrl).href}, got ${graph.provenance_url || '(missing)'}`, failures);
   assertOk(graph.public_article_count === manifest.public_article_count, 'graph public_article_count does not match manifest', failures);

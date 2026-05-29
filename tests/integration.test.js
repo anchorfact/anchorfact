@@ -151,8 +151,9 @@ test('public machine entrypoints exclude drafts', () => {
   assert(openapi.paths['/search-index.json'], 'OpenAPI should expose search index endpoint');
   assertEq(topics.topic_count, 1);
   assert(topics.topics.some(topic => topic.id === 'ai'), 'topics index should include ai topic');
-  assertEq(examples.example_count, 5);
+  assertEq(examples.example_count, 6);
   assert(examples.examples.some(example => example.id === 'one_call_evidence_pack'), 'examples index should include evidence pack workflow');
+  assert(examples.examples.some(example => example.id === 'mixed_reference_resolution'), 'examples index should include mixed reference workflow');
   assert(examples.examples.some(example => example.id === 'static_fallback'), 'examples index should include static fallback workflow');
   assertEq(evals.eval_count, 9);
   assert(evals.evals.some(evalCase => evalCase.id === 'evidence_pack_json'), 'evals index should include evidence pack check');

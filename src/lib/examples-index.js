@@ -10,7 +10,13 @@ const PREFERRED_SLUG = 'ai/3d-generation-gaussian-splatting';
 function queryPath(path, params) {
   const search = new URLSearchParams();
   for (const [key, value] of Object.entries(params)) {
-    if (value !== null && value !== undefined && String(value).trim()) {
+    if (Array.isArray(value)) {
+      for (const item of value) {
+        if (item !== null && item !== undefined && String(item).trim()) {
+          search.append(key, String(item));
+        }
+      }
+    } else if (value !== null && value !== undefined && String(value).trim()) {
       search.set(key, String(value));
     }
   }
@@ -147,6 +153,9 @@ export function buildExamplesIndex({
   const evidenceMarkdownPath = queryPath('/api/evidence', { q: query, limit: 3, format: 'markdown' });
   const searchPath = queryPath('/api/search', { q: query, limit: 3 });
   const resolveClaimPath = queryPath('/api/resolve', { ref: claimShortId(claim?.id) });
+  const mixedReferences = [claimShortId(claim?.id), source?.url || source?.id, record.canonical_slug].filter(Boolean);
+  const resolveBatchPath = queryPath('/api/resolve-batch', { ref: mixedReferences });
+  const resolveBatchMarkdownPath = queryPath('/api/resolve-batch', { ref: mixedReferences.slice(0, 2), format: 'markdown' });
   const articlePath = queryPath('/api/article', { slug: record.canonical_slug });
   const claimPath = queryPath('/api/claim', { id: claimShortId(claim?.id) });
   const citePath = queryPath('/api/cite', { id: claimShortId(claim?.id) });
@@ -196,6 +205,20 @@ export function buildExamplesIndex({
       expected_anchor: {
         article: articleAnchor(record),
         claim: claimAnchor(claim)
+      }
+    },
+    {
+      id: 'mixed_reference_resolution',
+      intent: 'Resolve several claim, source, and article references in one request before choosing follow-up APIs.',
+      workflow: [
+        { step: 1, call: call(resolveBatchPath, site), use: 'Resolve mixed public references and inspect each item status without doing several round trips.' },
+        { step: 2, call: call(resolveBatchMarkdownPath, site), use: 'Fetch compact text output when a prompt only needs a resolution summary.' },
+        { step: 3, call: call(citePath, site), use: 'Fetch citation-ready claim output only for resolved claim references that will be cited.' }
+      ],
+      expected_anchor: {
+        article: articleAnchor(record),
+        claim: claimAnchor(claim),
+        source: sourceAnchor(source)
       }
     },
     {
