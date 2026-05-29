@@ -104,7 +104,7 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
 
   assertEq(payload.schema_version, 'anchorfact.evals.v1');
   assertEq(payload.provenance_url, 'https://anchorfact.org/provenance.json');
-  assertEq(payload.eval_count, 15);
+  assertEq(payload.eval_count, 16);
   assertEq(payload.evals.map(evalCase => evalCase.id), [
     'api_discovery',
     'query_plan',
@@ -119,6 +119,7 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
     'citation_export',
     'source_reuse_lookup',
     'graph_relationships',
+    'content_health_summary',
     'mcp_tool_catalog',
     'signed_provenance_static_artifacts'
   ]);
@@ -186,9 +187,16 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
   assert(sourceEval.call.path.includes('/api/source?url=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079'), 'source eval should use source URL lookup');
   assertEq(sourceEval.expected.contains_claim_id, 'https://anchorfact.org/fact/f1');
 
+  const healthEval = payload.evals.find(evalCase => evalCase.id === 'content_health_summary');
+  assertEq(healthEval.call.path, '/content-health.json');
+  assertEq(healthEval.expected.schema_version, 'anchorfact.content-health.v1');
+  assertEq(healthEval.expected.machine_guidance_contains, '/api/context');
+  assertEq(healthEval.expected.trust_boundary, 'draft_entries_excluded_from_ai_entrypoints');
+
   const provenanceEval = payload.evals.find(evalCase => evalCase.id === 'signed_provenance_static_artifacts');
   assert(provenanceEval.expected.required_artifacts.includes('evals_json'), 'provenance eval should require evals artifact hash');
   assert(provenanceEval.expected.required_artifacts.includes('capabilities_json'), 'provenance eval should require capabilities artifact hash');
+  assert(provenanceEval.expected.required_artifacts.includes('content_health_json'), 'provenance eval should require content health artifact hash');
   assert(provenanceEval.expected.required_artifacts.includes('coverage_json'), 'provenance eval should require coverage artifact hash');
   assert(provenanceEval.expected.required_artifacts.includes('mcp_json'), 'provenance eval should require mcp artifact hash');
 

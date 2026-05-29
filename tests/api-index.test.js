@@ -47,6 +47,7 @@ test('buildApiIndex publishes the machine API discovery contract', () => {
 
   assert(payload.static_fallbacks.some(fallback => fallback.path === '/agent.json'), 'api index should point to agent profile fallback');
   assert(payload.static_fallbacks.some(fallback => fallback.path === '/openapi.json'), 'api index should point to OpenAPI fallback');
+  assert(payload.static_fallbacks.some(fallback => fallback.path === '/content-health.json'), 'api index should point to content health fallback');
   assert(payload.static_fallbacks.some(fallback => fallback.path === '/provenance.json'), 'api index should point to provenance fallback');
 });
 

@@ -3,6 +3,7 @@ import { generateKeyPairSync } from 'crypto';
 import {
   CLAIMS_SCHEMA_VERSION,
   CAPABILITIES_SCHEMA_VERSION,
+  CONTENT_HEALTH_SCHEMA_VERSION,
   COVERAGE_SCHEMA_VERSION,
   EVALS_SCHEMA_VERSION,
   EXAMPLES_SCHEMA_VERSION,
@@ -249,6 +250,16 @@ function buildFixture(overrides = {}) {
       }
     ]
   };
+  const contentHealth = {
+    schema_version: CONTENT_HEALTH_SCHEMA_VERSION,
+    generated: '2026-05-29T00:00:00.000Z',
+    provenance_url: `${baseUrl}/provenance.json`,
+    snapshot: { public_articles: 2, draft_articles: 1, public_claims: 3 },
+    public: { source_coverage: { full: 2, partial: 0, zero: 0 } },
+    draft: { source_coverage: { full: 0, partial: 0, zero: 1 } },
+    machine_guidance: ['Use /api/context?q={query} for prompt assembly.'],
+    trust_boundaries: { draft_entries_excluded_from_ai_entrypoints: true }
+  };
   const mcp = {
     schema_version: MCP_SCHEMA_VERSION,
     generated: '2026-05-29T00:00:00.000Z',
@@ -274,6 +285,7 @@ function buildFixture(overrides = {}) {
   const openapiText = JSON.stringify(openapi, null, 2);
   const topicsText = JSON.stringify(topics, null, 2);
   const capabilitiesText = JSON.stringify(capabilities, null, 2);
+  const contentHealthText = JSON.stringify(contentHealth, null, 2);
   const coverageText = JSON.stringify(coverage, null, 2);
   const examplesText = JSON.stringify(examples, null, 2);
   const graphText = JSON.stringify(graph, null, 2);
@@ -334,6 +346,11 @@ function buildFixture(overrides = {}) {
         path: '/capabilities.json',
         sha256: sha256Text(capabilitiesText),
         bytes: Buffer.byteLength(capabilitiesText, 'utf8')
+      },
+      content_health_json: {
+        path: '/content-health.json',
+        sha256: sha256Text(contentHealthText),
+        bytes: Buffer.byteLength(contentHealthText, 'utf8')
       },
       coverage_json: {
         path: '/coverage.json',
@@ -407,6 +424,7 @@ function buildFixture(overrides = {}) {
     [`${baseUrl}/claims.json`]: { body: claimsText },
     [`${baseUrl}/topics.json`]: { body: topicsText },
     [`${baseUrl}/capabilities.json`]: { body: capabilitiesText },
+    [`${baseUrl}/content-health.json`]: { body: contentHealthText },
     [`${baseUrl}/coverage.json`]: { body: coverageText },
     [`${baseUrl}/examples.json`]: { body: examplesText },
     [`${baseUrl}/graph.json`]: { body: graphText },

@@ -107,6 +107,7 @@ test('public machine entrypoints exclude drafts', () => {
   const agent = JSON.parse(readFileSync(join(distDir, 'agent.json'), 'utf-8'));
   const openapi = JSON.parse(readFileSync(join(distDir, 'openapi.json'), 'utf-8'));
   const capabilities = JSON.parse(readFileSync(join(distDir, 'capabilities.json'), 'utf-8'));
+  const health = JSON.parse(readFileSync(join(distDir, 'content-health.json'), 'utf-8'));
   const coverage = JSON.parse(readFileSync(join(distDir, 'coverage.json'), 'utf-8'));
   const topics = JSON.parse(readFileSync(join(distDir, 'topics.json'), 'utf-8'));
   const examples = JSON.parse(readFileSync(join(distDir, 'examples.json'), 'utf-8'));
@@ -120,6 +121,7 @@ test('public machine entrypoints exclude drafts', () => {
   assertEq(agent.current_snapshot.public_articles, 1);
   assertEq(agent.endpoints.openapi.url, 'https://anchorfact.org/openapi.json');
   assertEq(agent.endpoints.capabilities.url, 'https://anchorfact.org/capabilities.json');
+  assertEq(agent.endpoints.content_health.url, 'https://anchorfact.org/content-health.json');
   assertEq(agent.endpoints.coverage.url, 'https://anchorfact.org/coverage.json');
   assertEq(agent.endpoints.plan_api.path, '/api/plan?q={query}');
   assertEq(agent.endpoints.evidence_api.path, '/api/evidence?q={query}');
@@ -142,6 +144,7 @@ test('public machine entrypoints exclude drafts', () => {
   assertEq(agent.endpoints.article_jsonld_template.path_template, '/{canonical_slug}/index.json');
   assert(openapi.paths['/{canonical_slug}/index.json'], 'OpenAPI should expose article JSON-LD template');
   assert(openapi.paths['/capabilities.json'], 'OpenAPI should expose capabilities endpoint');
+  assert(openapi.paths['/content-health.json'], 'OpenAPI should expose content health endpoint');
   assert(openapi.paths['/coverage.json'], 'OpenAPI should expose coverage endpoint');
   assert(openapi.paths['/api/plan'], 'OpenAPI should expose plan API endpoint');
   assert(openapi.paths['/api/evidence'], 'OpenAPI should expose evidence API endpoint');
@@ -162,6 +165,9 @@ test('public machine entrypoints exclude drafts', () => {
   assert(capabilities.capabilities.some(capability => capability.id === 'answer_with_evidence'), 'capabilities should include evidence routing');
   assert(capabilities.capabilities.some(capability => capability.id === 'assemble_prompt_context'), 'capabilities should include context routing');
   assert(capabilities.capabilities.some(capability => capability.id === 'resolve_many_references'), 'capabilities should include batch resolver routing');
+  assertEq(health.schema_version, 'anchorfact.content-health.v1');
+  assertEq(health.snapshot.public_articles, 1);
+  assertEq(health.trust_boundaries.draft_entries_excluded_from_ai_entrypoints, true);
   assertEq(coverage.schema_version, 'anchorfact.coverage.v1');
   assertEq(coverage.coverage_summary.public_articles, 1);
   assert(coverage.topic_coverage.some(topic => topic.id === 'ai'), 'coverage should include ai topic');
@@ -177,7 +183,7 @@ test('public machine entrypoints exclude drafts', () => {
   assert(examples.examples.some(example => example.id === 'one_call_evidence_pack'), 'examples index should include evidence pack workflow');
   assert(examples.examples.some(example => example.id === 'mixed_reference_resolution'), 'examples index should include mixed reference workflow');
   assert(examples.examples.some(example => example.id === 'static_fallback'), 'examples index should include static fallback workflow');
-  assertEq(evals.eval_count, 15);
+  assertEq(evals.eval_count, 16);
   assert(evals.evals.some(evalCase => evalCase.id === 'query_plan'), 'evals index should include query planning check');
   assert(evals.evals.some(evalCase => evalCase.id === 'unsupported_query_plan'), 'evals index should include unsupported planning check');
   assert(evals.evals.some(evalCase => evalCase.id === 'evidence_pack_json'), 'evals index should include evidence pack check');
@@ -185,6 +191,7 @@ test('public machine entrypoints exclude drafts', () => {
   assert(evals.evals.some(evalCase => evalCase.id === 'reference_resolver'), 'evals index should include resolve API check');
   assert(evals.evals.some(evalCase => evalCase.id === 'batch_reference_resolver'), 'evals index should include resolve batch API check');
   assert(evals.evals.some(evalCase => evalCase.id === 'citation_export'), 'evals index should include citation API check');
+  assert(evals.evals.some(evalCase => evalCase.id === 'content_health_summary'), 'evals index should include content health check');
   assert(evals.evals.some(evalCase => evalCase.id === 'mcp_tool_catalog'), 'evals index should include MCP tool catalog check');
   assert(evals.evals.some(evalCase => evalCase.id === 'signed_provenance_static_artifacts'), 'evals index should include provenance artifact check');
   assertEq(mcp.schema_version, 'anchorfact.mcp.v1');

@@ -126,6 +126,19 @@ test('runAiEvals executes JSON, Markdown, MCP, and provenance eval expectations'
             }
           },
           {
+            id: 'content_health_summary',
+            call: { method: 'GET', path: '/content-health.json' },
+            expected: {
+              status: 200,
+              content_type: 'application/json',
+              schema_version: 'anchorfact.content-health.v1',
+              min_public_articles: 1,
+              min_public_claims: 1,
+              machine_guidance_contains: '/api/context',
+              trust_boundary: 'draft_entries_excluded_from_ai_entrypoints'
+            }
+          },
+          {
             id: 'signed_provenance_static_artifacts',
             call: { method: 'GET', path: '/provenance.json' },
             expected: {
@@ -172,6 +185,12 @@ test('runAiEvals executes JSON, Markdown, MCP, and provenance eval expectations'
         schema_version: 'anchorfact.mcp.v1',
         tools: [{ name: 'anchorfact_plan_query' }, { name: 'anchorfact_cite_claim' }]
       }),
+      '/content-health.json': jsonResponse({
+        schema_version: 'anchorfact.content-health.v1',
+        snapshot: { public_articles: 555, public_claims: 1685 },
+        machine_guidance: ['Use /api/context?q={query} for prompt assembly.'],
+        trust_boundaries: { draft_entries_excluded_from_ai_entrypoints: true }
+      }),
       '/provenance.json': jsonResponse({
         schema_version: 'anchorfact.provenance.v1',
         artifacts: {
@@ -183,8 +202,8 @@ test('runAiEvals executes JSON, Markdown, MCP, and provenance eval expectations'
   });
 
   assertEq(report.ok, true);
-  assertEq(report.eval_count, 8);
-  assertEq(report.passed, 8);
+  assertEq(report.eval_count, 9);
+  assertEq(report.passed, 9);
   assertEq(report.failed, 0);
   const markdown = renderAiEvalsMarkdown(report);
   assert(markdown.includes('AnchorFact AI Evals - PASS'), 'markdown should show pass');

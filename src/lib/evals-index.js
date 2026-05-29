@@ -3,6 +3,7 @@ import {
   CITE_API_SCHEMA_VERSION,
   CLAIM_API_SCHEMA_VERSION,
   CONTEXT_API_SCHEMA_VERSION,
+  CONTENT_HEALTH_SCHEMA_VERSION,
   EVALS_SCHEMA_VERSION,
   EVIDENCE_API_SCHEMA_VERSION,
   GRAPH_SCHEMA_VERSION,
@@ -340,6 +341,20 @@ export function buildEvalsIndex({
       }
     },
     {
+      id: 'content_health_summary',
+      intent: 'Confirm the signed content health artifact exposes public/draft counts, AI guidance, and trust boundaries.',
+      call: call('/content-health.json', site),
+      expected: {
+        status: 200,
+        content_type: 'application/json',
+        schema_version: CONTENT_HEALTH_SCHEMA_VERSION,
+        min_public_articles: Math.max(1, searchIndexPayload?.article_count || 0),
+        min_public_claims: Math.max(1, claimsPayload?.claim_count || 0),
+        machine_guidance_contains: '/api/context',
+        trust_boundary: 'draft_entries_excluded_from_ai_entrypoints'
+      }
+    },
+    {
       id: 'mcp_tool_catalog',
       intent: 'Confirm the signed MCP profile declares local tools needed for planning, prompt context, search, retrieval, resolution, and citation.',
       call: call('/mcp.json', site),
@@ -374,6 +389,7 @@ export function buildEvalsIndex({
           'claims_json',
           'topics_json',
           'capabilities_json',
+          'content_health_json',
           'coverage_json',
           'examples_json',
           'graph_json',

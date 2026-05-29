@@ -26,6 +26,7 @@ export const GRAPH_SCHEMA_VERSION = 'anchorfact.graph.v1';
 export const EVALS_SCHEMA_VERSION = 'anchorfact.evals.v1';
 export const MCP_SCHEMA_VERSION = 'anchorfact.mcp.v1';
 export const CAPABILITIES_SCHEMA_VERSION = 'anchorfact.capabilities.v1';
+export const CONTENT_HEALTH_SCHEMA_VERSION = 'anchorfact.content-health.v1';
 export const COVERAGE_SCHEMA_VERSION = 'anchorfact.coverage.v1';
 export const OPENAPI_SCHEMA_VERSION = 'anchorfact.openapi.v1';
 export const OFFICIAL_SOURCE_REPOSITORY = 'https://github.com/anchorfact/anchorfact';
@@ -146,6 +147,7 @@ export function buildProvenance({ manifest, claimsPayload, distDir, generated, b
       claims_json: artifactInfo(distDir, 'claims.json'),
       topics_json: artifactInfo(distDir, 'topics.json'),
       capabilities_json: artifactInfo(distDir, 'capabilities.json'),
+      content_health_json: artifactInfo(distDir, 'content-health.json'),
       coverage_json: artifactInfo(distDir, 'coverage.json'),
       examples_json: artifactInfo(distDir, 'examples.json'),
       graph_json: artifactInfo(distDir, 'graph.json'),

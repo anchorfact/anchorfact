@@ -57,7 +57,7 @@ export function buildCapabilitiesIndex({
         call('/api/evidence?q={query}&limit=3', site),
         call('/api/search?q={query}&limit=5', site)
       ],
-      fallback_artifacts: ['/coverage.json', '/capabilities.json', '/search-index.json'],
+      fallback_artifacts: ['/coverage.json', '/content-health.json', '/capabilities.json', '/search-index.json'],
       trust_requirements: trustRequirements([
         'When coverage_status is unsupported, use external primary sources instead of citing AnchorFact.'
       ])
@@ -103,7 +103,7 @@ export function buildCapabilitiesIndex({
         call('/api/cite?id={claim_id}', site),
         call('/api/resolve?ref={reference}', site)
       ],
-      fallback_artifacts: ['/search-index.json', '/claims.json', '/sources.json', '/coverage.json'],
+      fallback_artifacts: ['/search-index.json', '/claims.json', '/sources.json', '/coverage.json', '/content-health.json'],
       trust_requirements: trustRequirements([
         'Do not draft a cited answer from the context payload unless evidence_pack_count is greater than zero.',
         'When coverage_status is unsupported, use external primary sources instead of citing AnchorFact.'

@@ -8,6 +8,7 @@ import {
   CLAIMS_SCHEMA_VERSION,
   COMPILER_VERSION,
   CONTEXT_API_SCHEMA_VERSION,
+  CONTENT_HEALTH_SCHEMA_VERSION,
   COVERAGE_SCHEMA_VERSION,
   EVALS_SCHEMA_VERSION,
   EVIDENCE_API_SCHEMA_VERSION,
@@ -106,6 +107,7 @@ export function buildOpenApiContract({
       '/claims.json': getJson('Public verified atomic claims', 'Claims'),
       '/topics.json': getJson('Public topic coverage map', 'Topics'),
       '/capabilities.json': getJson('AI capability router', 'Capabilities'),
+      '/content-health.json': getJson('Signed corpus health summary', 'ContentHealth'),
       '/coverage.json': getJson('AI coverage and limits guide', 'Coverage'),
       '/examples.json': getJson('Executable AI usage examples', 'Examples'),
       '/graph.json': getJson('Public knowledge graph', 'Graph'),
@@ -500,6 +502,13 @@ export function buildOpenApiContract({
           best_entrypoints: { type: 'object' },
           recommended_decision_flow: { type: 'array', items: { type: 'object' } },
           coverage_limits: { type: 'array', items: { type: 'object' } }
+        }),
+        ContentHealth: schemaVersioned('Content health', CONTENT_HEALTH_SCHEMA_VERSION, {
+          snapshot: { type: 'object' },
+          public: { type: 'object' },
+          draft: { type: 'object' },
+          machine_guidance: { type: 'array', items: { type: 'string' } },
+          trust_boundaries: { type: 'object' }
         }),
         Examples: schemaVersioned('Examples', EXAMPLES_SCHEMA_VERSION, {
           example_count: { type: 'integer' },

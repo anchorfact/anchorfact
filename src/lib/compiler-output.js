@@ -8,6 +8,7 @@ import { buildSourceIndex } from './source-index.js';
 import { buildTopicsIndex } from './topics-index.js';
 import { buildCapabilitiesIndex } from './capabilities-index.js';
 import { buildCoverageIndex } from './coverage-index.js';
+import { buildContentHealthIndex } from './content-health-index.js';
 import { buildExamplesIndex } from './examples-index.js';
 import { buildGraphIndex } from './graph-index.js';
 import { buildEvalsIndex } from './evals-index.js';
@@ -111,6 +112,7 @@ function writeRootIndex(distDir, results, publicResults, draftResults, claims) {
     <a href="/claims.json">Claims JSON</a> &middot;
     <a href="/topics.json">Topics JSON</a> &middot;
     <a href="/capabilities.json">Capabilities JSON</a> &middot;
+    <a href="/content-health.json">Content Health JSON</a> &middot;
     <a href="/coverage.json">Coverage JSON</a> &middot;
     <a href="/examples.json">Examples JSON</a> &middot;
     <a href="/graph.json">Graph JSON</a> &middot;
@@ -188,6 +190,7 @@ ${entries || '_No public verified entries yet._'}
 - [OpenAPI](https://anchorfact.org/openapi.json): Static read-only endpoint contract for tools.
 - [API Index](https://anchorfact.org/api): Compact live API discovery endpoint for agents.
 - [Capabilities](https://anchorfact.org/capabilities.json): AI task-to-endpoint routing guide with trust requirements and fallback artifacts.
+- [Content Health](https://anchorfact.org/content-health.json): Signed corpus health summary for AI trust decisions.
 - [Coverage](https://anchorfact.org/coverage.json): AI coverage and limits guide with topic, confidence, source tier, and verification distributions.
 - [Plan API](https://anchorfact.org/api/plan?q=gaussian): Read-only query planner that recommends AnchorFact next calls or external-source fallback.
 - [Evidence API](https://anchorfact.org/api/evidence?q=gaussian): One-call public evidence packs with search hits, article summaries, claims, and sources.
@@ -227,6 +230,7 @@ function writeSitemap(distDir, publicResults) {
     '<url><loc>https://anchorfact.org/openapi.json</loc><changefreq>daily</changefreq><priority>0.9</priority></url>',
     '<url><loc>https://anchorfact.org/api</loc><changefreq>daily</changefreq><priority>0.9</priority></url>',
     '<url><loc>https://anchorfact.org/capabilities.json</loc><changefreq>daily</changefreq><priority>0.9</priority></url>',
+    '<url><loc>https://anchorfact.org/content-health.json</loc><changefreq>daily</changefreq><priority>0.9</priority></url>',
     '<url><loc>https://anchorfact.org/coverage.json</loc><changefreq>daily</changefreq><priority>0.9</priority></url>',
     '<url><loc>https://anchorfact.org/llms.txt</loc><changefreq>daily</changefreq><priority>0.9</priority></url>',
     '<url><loc>https://anchorfact.org/claims.json</loc><changefreq>daily</changefreq><priority>0.8</priority></url>',
@@ -266,6 +270,7 @@ LLMs: https://anchorfact.org/llms.txt
 Agent: https://anchorfact.org/agent.json
 OpenAPI: https://anchorfact.org/openapi.json
 API: https://anchorfact.org/api
+Health: https://anchorfact.org/content-health.json
 MCP: https://anchorfact.org/mcp.json
 Provenance: https://anchorfact.org/provenance.json
 `;
@@ -301,6 +306,11 @@ function writeHeaders(distDir) {
   Cache-Control: public, max-age=3600
 
 /capabilities.json
+  Access-Control-Allow-Origin: *
+  Content-Type: application/json; charset=utf-8
+  Cache-Control: public, max-age=3600
+
+/content-health.json
   Access-Control-Allow-Origin: *
   Content-Type: application/json; charset=utf-8
   Cache-Control: public, max-age=3600
@@ -410,7 +420,7 @@ function writeDashboard(distDir, results, publicResults, draftResults, claims, v
       <p>High: ${publicDist.high} &middot; Medium: ${publicDist.medium} &middot; Low: ${publicDist.low}</p>
       <p>Verification report: ${verificationTimestamp || 'not available'}</p>
     </div>
-    <p><a href="/">Home</a> &middot; <a href="/llms.txt">llms.txt</a> &middot; <a href="/agent.json">agent.json</a> &middot; <a href="/openapi.json">openapi.json</a> &middot; <a href="/manifest.json">manifest.json</a> &middot; <a href="/claims.json">claims.json</a> &middot; <a href="/topics.json">topics.json</a> &middot; <a href="/capabilities.json">capabilities.json</a> &middot; <a href="/coverage.json">coverage.json</a> &middot; <a href="/examples.json">examples.json</a> &middot; <a href="/graph.json">graph.json</a> &middot; <a href="/evals.json">evals.json</a> &middot; <a href="/mcp.json">mcp.json</a> &middot; <a href="/search-index.json">search-index.json</a> &middot; <a href="/sources.json">sources.json</a> &middot; <a href="/provenance.json">provenance.json</a></p>
+    <p><a href="/">Home</a> &middot; <a href="/llms.txt">llms.txt</a> &middot; <a href="/agent.json">agent.json</a> &middot; <a href="/openapi.json">openapi.json</a> &middot; <a href="/manifest.json">manifest.json</a> &middot; <a href="/claims.json">claims.json</a> &middot; <a href="/topics.json">topics.json</a> &middot; <a href="/capabilities.json">capabilities.json</a> &middot; <a href="/content-health.json">content-health.json</a> &middot; <a href="/coverage.json">coverage.json</a> &middot; <a href="/examples.json">examples.json</a> &middot; <a href="/graph.json">graph.json</a> &middot; <a href="/evals.json">evals.json</a> &middot; <a href="/mcp.json">mcp.json</a> &middot; <a href="/search-index.json">search-index.json</a> &middot; <a href="/sources.json">sources.json</a> &middot; <a href="/provenance.json">provenance.json</a></p>
   </div>
 </body>
 </html>`;
@@ -575,6 +585,17 @@ export function writeStaticOutputs(distDir, results, options = {}) {
     join(distDir, 'coverage.json'),
     JSON.stringify(coveragePayload, null, 2)
   );
+  const contentHealthPayload = buildContentHealthIndex({
+    generated,
+    manifest,
+    claimsPayload,
+    sourcesPayload,
+    site: build.canonical_site
+  });
+  writeFileSync(
+    join(distDir, 'content-health.json'),
+    JSON.stringify(contentHealthPayload, null, 2)
+  );
   writeAgentProfile(distDir, buildAgentProfile({
     generated,
     manifest,
@@ -583,6 +604,7 @@ export function writeStaticOutputs(distDir, results, options = {}) {
     sourcesPayload,
     topicsPayload,
     capabilitiesPayload,
+    contentHealthPayload,
     examplesPayload,
     graphPayload,
     evalsPayload,

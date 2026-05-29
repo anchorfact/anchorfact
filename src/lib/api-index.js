@@ -91,6 +91,7 @@ export function buildApiIndex({
       staticFallback(site, '/agent.json', 'Full AI agent discovery profile and recommended workflow.'),
       staticFallback(site, '/openapi.json', 'Full OpenAPI 3.1 machine contract.'),
       staticFallback(site, '/capabilities.json', 'Task-to-endpoint routing guide.'),
+      staticFallback(site, '/content-health.json', 'Signed corpus health summary for AI trust decisions.'),
       staticFallback(site, '/coverage.json', 'Coverage and limits guide for deciding when to fall back to external primary sources.'),
       staticFallback(site, '/examples.json', 'Executable workflow examples.'),
       staticFallback(site, '/evals.json', 'Executable golden checks for this machine contract.'),
