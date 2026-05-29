@@ -251,7 +251,11 @@ export async function main() {
   assertOk(capabilities.schema_version === 'anchorfact.capabilities.v1', `capabilities schema_version expected anchorfact.capabilities.v1, got ${capabilities.schema_version || '(missing)'}`, failures);
   assertOk(capabilities.provenance_url === new URL('/provenance.json', baseUrl).href, `capabilities provenance_url expected ${new URL('/provenance.json', baseUrl).href}, got ${capabilities.provenance_url || '(missing)'}`, failures);
   assertOk(capabilities.capability_count === (Array.isArray(capabilities.capabilities) ? capabilities.capabilities.length : 0), 'capabilities capability_count does not match capabilities[] length', failures);
-  assertOk(Array.isArray(capabilities.capabilities) && capabilities.capabilities.some(capability => capability.id === 'plan_query'), '/capabilities.json is missing plan_query', failures);
+  const planCapability = Array.isArray(capabilities.capabilities)
+    ? capabilities.capabilities.find(capability => capability.id === 'plan_query')
+    : null;
+  assertOk(!!planCapability, '/capabilities.json is missing plan_query', failures);
+  assertOk(Array.isArray(planCapability?.local_mcp_tools) && planCapability.local_mcp_tools.some(tool => tool.tool === 'anchorfact_plan_query'), '/capabilities.json plan_query is missing MCP planner mapping', failures);
   assertOk(Array.isArray(capabilities.capabilities) && capabilities.capabilities.some(capability => capability.id === 'answer_with_evidence'), '/capabilities.json is missing answer_with_evidence', failures);
   assertOk(Array.isArray(capabilities.capabilities) && capabilities.capabilities.some(capability => capability.id === 'resolve_many_references'), '/capabilities.json is missing resolve_many_references', failures);
   assertOk(Array.isArray(capabilities.capabilities) && capabilities.capabilities.some(capability => capability.id === 'verify_official_build'), '/capabilities.json is missing verify_official_build', failures);

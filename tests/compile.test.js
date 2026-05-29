@@ -331,7 +331,9 @@ test('capabilities.json describes AI endpoint routing', () => {
   assertEq(capabilities.schema_version, 'anchorfact.capabilities.v1');
   assertEq(capabilities.provenance_url, 'https://anchorfact.org/provenance.json');
   assertEq(capabilities.capability_count, 9);
-  assert(capabilities.capabilities.some(capability => capability.id === 'plan_query'), 'capabilities should include query planning workflow');
+  const planner = capabilities.capabilities.find(capability => capability.id === 'plan_query');
+  assert(planner, 'capabilities should include query planning workflow');
+  assert(planner.local_mcp_tools.some(tool => tool.tool === 'anchorfact_plan_query'), 'plan capability should include local MCP planner mapping');
   assert(capabilities.capabilities.some(capability => capability.id === 'answer_with_evidence'), 'capabilities should include evidence workflow');
   assert(capabilities.capabilities.some(capability => capability.id === 'resolve_many_references'), 'capabilities should include batch resolver workflow');
   assert(capabilities.capabilities.some(capability => capability.id === 'verify_official_build'), 'capabilities should include provenance verification workflow');

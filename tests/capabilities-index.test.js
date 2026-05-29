@@ -34,14 +34,24 @@ test('buildCapabilitiesIndex publishes AI endpoint selection rules', () => {
     topicsPayload: { topic_count: 17 },
     examplesPayload: { example_count: 6 },
     evalsPayload: { eval_count: 10 },
-    mcpPayload: { tools: [{ name: 'anchorfact_search' }, { name: 'anchorfact_cite_claim' }] }
+    mcpPayload: {
+      tools: [
+        { name: 'anchorfact_plan_query' },
+        { name: 'anchorfact_search' },
+        { name: 'anchorfact_get_article' },
+        { name: 'anchorfact_resolve_reference' },
+        { name: 'anchorfact_resolve_references' },
+        { name: 'anchorfact_cite_claim' },
+        { name: 'anchorfact_list_categories' }
+      ]
+    }
   });
 
   assertEq(payload.schema_version, 'anchorfact.capabilities.v1');
   assertEq(payload.provenance_url, 'https://anchorfact.org/provenance.json');
   assertEq(payload.current_snapshot.public_articles, 555);
   assertEq(payload.current_snapshot.public_claims, 1685);
-  assertEq(payload.current_snapshot.mcp_tools, 2);
+  assertEq(payload.current_snapshot.mcp_tools, 7);
   assertEq(payload.capability_count, 9);
   assertEq(payload.capabilities.map(capability => capability.id), [
     'plan_query',
@@ -57,20 +67,35 @@ test('buildCapabilitiesIndex publishes AI endpoint selection rules', () => {
 
   const planner = payload.capabilities.find(capability => capability.id === 'plan_query');
   assertEq(planner.primary_call.path, '/api/plan?q={query}&limit=3');
+  assertEq(planner.local_mcp_tools[0].tool, 'anchorfact_plan_query');
   assert(planner.fallback_artifacts.includes('/coverage.json'), 'plan capability should name coverage fallback');
 
   const evidence = payload.capabilities.find(capability => capability.id === 'answer_with_evidence');
   assertEq(evidence.primary_call.path, '/api/evidence?q={query}&limit=3');
+  assert(evidence.local_mcp_tools.some(tool => tool.tool === 'anchorfact_search'), 'evidence capability should name local search fallback');
+  assert(evidence.local_mcp_tools.some(tool => tool.tool === 'anchorfact_cite_claim'), 'evidence capability should name local citation fallback');
   assert(evidence.output_formats.includes('text/markdown'), 'evidence capability should advertise markdown output');
   assert(evidence.follow_up_calls.some(call => call.path === '/api/cite?id={claim_id}'), 'evidence capability should point to citation export');
   assert(evidence.fallback_artifacts.includes('/search-index.json'), 'evidence capability should name static fallback artifacts');
 
   const batch = payload.capabilities.find(capability => capability.id === 'resolve_many_references');
   assertEq(batch.primary_call.path, '/api/resolve-batch?ref={reference}&ref={reference}');
+  assertEq(batch.local_mcp_tools[0].tool, 'anchorfact_resolve_references');
   assert(batch.input_patterns.includes('source_url'), 'batch resolver should accept source URLs');
 
   const provenance = payload.capabilities.find(capability => capability.id === 'verify_official_build');
   assert(provenance.trust_requirements.some(requirement => requirement.includes('pinned public key')), 'provenance capability should require pinned key verification');
+
+  const mcp = payload.capabilities.find(capability => capability.id === 'connect_local_mcp');
+  assertEq(mcp.local_mcp_tools.map(tool => tool.tool), [
+    'anchorfact_plan_query',
+    'anchorfact_search',
+    'anchorfact_get_article',
+    'anchorfact_resolve_reference',
+    'anchorfact_resolve_references',
+    'anchorfact_cite_claim',
+    'anchorfact_list_categories'
+  ]);
 
   assertEq(payload.default_sequence, [
     'verify_official_build',

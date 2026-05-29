@@ -31,6 +31,14 @@ export function buildCapabilitiesIndex({
   mcpPayload,
   site = OFFICIAL_SITE
 } = {}) {
+  const mcpToolNames = new Set((mcpPayload?.tools || []).map(tool => tool.name));
+  const localMcpTool = (toolName, args, purpose) => (
+    mcpToolNames.has(toolName)
+      ? { tool: toolName, arguments: args, purpose }
+      : null
+  );
+  const localMcpTools = (...tools) => tools.filter(Boolean);
+
   const capabilities = [
     {
       id: 'plan_query',
@@ -41,6 +49,9 @@ export function buildCapabilitiesIndex({
       ],
       input_patterns: ['natural_language_query'],
       primary_call: call('/api/plan?q={query}&limit=3', site),
+      local_mcp_tools: localMcpTools(
+        localMcpTool('anchorfact_plan_query', { query: '{query}', limit: 3 }, 'Plan whether local AnchorFact coverage is plausible before fetching evidence.')
+      ),
       output_formats: ['application/json'],
       follow_up_calls: [
         call('/api/evidence?q={query}&limit=3', site),
@@ -60,6 +71,11 @@ export function buildCapabilitiesIndex({
       ],
       input_patterns: ['natural_language_query'],
       primary_call: call('/api/evidence?q={query}&limit=3', site),
+      local_mcp_tools: localMcpTools(
+        localMcpTool('anchorfact_search', { query: '{query}', confidence_min: 'low', limit: 3 }, 'Search local public records for candidate articles.'),
+        localMcpTool('anchorfact_get_article', { article_id: '{canonical_slug}' }, 'Retrieve the selected local article with sources.'),
+        localMcpTool('anchorfact_cite_claim', { claim_id: '{claim_id}' }, 'Export citation-ready text for a selected local claim.')
+      ),
       output_formats: ['application/json', 'text/markdown'],
       follow_up_calls: [
         call('/api/cite?id={claim_id}', site),
@@ -79,6 +95,9 @@ export function buildCapabilitiesIndex({
       ],
       input_patterns: ['natural_language_query', 'topic_keyword'],
       primary_call: call('/api/search?q={query}&limit=5', site),
+      local_mcp_tools: localMcpTools(
+        localMcpTool('anchorfact_search', { query: '{query}', confidence_min: 'medium', limit: 5 }, 'Search the local public article index.')
+      ),
       output_formats: ['application/json'],
       follow_up_calls: [
         call('/api/article?slug={canonical_slug}', site),
@@ -96,6 +115,9 @@ export function buildCapabilitiesIndex({
       ],
       input_patterns: ['claim_id', 'claim_url', 'article_slug', 'anchorfact_url', 'source_id', 'source_url'],
       primary_call: call('/api/resolve?ref={reference}', site),
+      local_mcp_tools: localMcpTools(
+        localMcpTool('anchorfact_resolve_reference', { reference: '{reference}' }, 'Resolve one local public claim, article, source, or URL reference.')
+      ),
       output_formats: ['application/json'],
       follow_up_calls: [
         call('/api/cite?id={claim_id}', site)
@@ -112,6 +134,9 @@ export function buildCapabilitiesIndex({
       ],
       input_patterns: ['claim_id', 'article_slug', 'anchorfact_url', 'source_id', 'source_url'],
       primary_call: call('/api/resolve-batch?ref={reference}&ref={reference}', site),
+      local_mcp_tools: localMcpTools(
+        localMcpTool('anchorfact_resolve_references', { references: ['{reference}'], format: 'json' }, 'Resolve several local public references while preserving item-level errors.')
+      ),
       output_formats: ['application/json', 'text/markdown'],
       follow_up_calls: [
         call('/api/cite?id={claim_id}', site),
@@ -131,6 +156,9 @@ export function buildCapabilitiesIndex({
       ],
       input_patterns: ['claim_id', 'claim_url'],
       primary_call: call('/api/cite?id={claim_id}', site),
+      local_mcp_tools: localMcpTools(
+        localMcpTool('anchorfact_cite_claim', { claim_id: '{claim_id}', format: 'json' }, 'Export citation-ready local JSON or Markdown for one claim.')
+      ),
       output_formats: ['application/json', 'text/markdown'],
       follow_up_calls: [
         call('/api/claim?id={claim_id}', site)
@@ -149,6 +177,9 @@ export function buildCapabilitiesIndex({
       ],
       input_patterns: ['source_id', 'source_url'],
       primary_call: call('/api/source?url={source_url}', site),
+      local_mcp_tools: localMcpTools(
+        localMcpTool('anchorfact_resolve_reference', { reference: '{source_url}' }, 'Resolve a local source reference and inspect mapped public claims.')
+      ),
       output_formats: ['application/json'],
       follow_up_calls: [
         call('/api/resolve?ref={source_url}', site),
@@ -186,6 +217,15 @@ export function buildCapabilitiesIndex({
       ],
       input_patterns: ['mcp_host', 'local_repository'],
       primary_call: call('/mcp.json', site),
+      local_mcp_tools: localMcpTools(
+        localMcpTool('anchorfact_plan_query', { query: '{query}', limit: 3 }, 'Plan local coverage.'),
+        localMcpTool('anchorfact_search', { query: '{query}', confidence_min: 'medium', limit: 5 }, 'Search local public records.'),
+        localMcpTool('anchorfact_get_article', { article_id: '{canonical_slug}' }, 'Retrieve one local article.'),
+        localMcpTool('anchorfact_resolve_reference', { reference: '{reference}' }, 'Resolve one local reference.'),
+        localMcpTool('anchorfact_resolve_references', { references: ['{reference}'], format: 'json' }, 'Resolve several local references.'),
+        localMcpTool('anchorfact_cite_claim', { claim_id: '{claim_id}', format: 'json' }, 'Export citation-ready local claim text.'),
+        localMcpTool('anchorfact_list_categories', {}, 'List local public categories.')
+      ),
       output_formats: ['application/json'],
       follow_up_calls: [
         call('/examples.json', site),

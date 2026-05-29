@@ -154,7 +154,9 @@ test('public machine entrypoints exclude drafts', () => {
   assert(openapi.paths['/topics.json'], 'OpenAPI should expose topics endpoint');
   assertEq(capabilities.schema_version, 'anchorfact.capabilities.v1');
   assertEq(capabilities.capability_count, 9);
-  assert(capabilities.capabilities.some(capability => capability.id === 'plan_query'), 'capabilities should include query planning');
+  const planner = capabilities.capabilities.find(capability => capability.id === 'plan_query');
+  assert(planner, 'capabilities should include query planning');
+  assert(planner.local_mcp_tools.some(tool => tool.tool === 'anchorfact_plan_query'), 'capabilities should map query planning to MCP');
   assert(capabilities.capabilities.some(capability => capability.id === 'answer_with_evidence'), 'capabilities should include evidence routing');
   assert(capabilities.capabilities.some(capability => capability.id === 'resolve_many_references'), 'capabilities should include batch resolver routing');
   assertEq(coverage.schema_version, 'anchorfact.coverage.v1');
