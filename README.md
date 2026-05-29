@@ -84,6 +84,7 @@ After a production deployment, run:
 
 ```bash
 EXPECTED_PUBLIC_ARTICLES=555 EXPECTED_DRAFT_ARTICLES=445 EXPECTED_CLAIMS=1685 npm run smoke:prod
+npm run evals:prod
 npm run verify:provenance
 npm run verify:provenance:signed
 ```
@@ -91,6 +92,8 @@ npm run verify:provenance:signed
 The smoke test checks the homepage, `/agent.json`, `/openapi.json`, `/manifest.json`, `/llms.txt`, `/claims.json`, `/topics.json`, `/capabilities.json`, `/coverage.json`, `/examples.json`, `/graph.json`, `/evals.json`, `/mcp.json`, `/api/plan`, `/api/evidence`, `/api/resolve`, `/api/resolve-batch`, `/api/search`, `/api/article`, `/api/claim`, `/api/cite`, `/api/source`, `/search-index.json`, `/sources.json`, `/provenance.json`, and `/drafts.html` against the live `https://anchorfact.org` deployment. Omit the expected-count environment variables when checking a future snapshot with different counts.
 
 The provenance verifier fetches `/provenance.json`, recomputes SHA-256 checksums for the core AI entrypoints, checks public/draft/claim counts, confirms official build identity, and verifies the source commit against GitHub.
+
+The AI eval runner fetches `/evals.json` from production and executes the listed golden checks against live JSON, Markdown, and MCP manifest surfaces. It is intended to catch contract drift that a basic endpoint smoke test would not see.
 
 The stricter signed check uses the pinned public key in `keys/provenance.pub.pem`:
 
@@ -100,7 +103,7 @@ npm run verify:provenance:signed
 
 ## Production Integrity Monitor
 
-The scheduled `Production Integrity` workflow runs daily and can also be started manually from GitHub Actions. It is read-only: it runs production smoke, requires signed trusted provenance, confirms artifact hashes and counts, and uploads a short integrity report artifact.
+The scheduled `Production Integrity` workflow runs daily and can also be started manually from GitHub Actions. It is read-only: it runs production smoke, executes AI evals, requires signed trusted provenance, confirms artifact hashes and counts, and uploads a short integrity report artifact.
 
 For the same local read-only check, run:
 
@@ -139,9 +142,9 @@ Only public articles contribute publishable facts to `/claims.json`.
 | `/topics.json` | Compact public topic coverage map with article, claim, and source counts. |
 | `/capabilities.json` | AI task-to-endpoint routing guide with trust requirements, output formats, and fallback artifacts. |
 | `/coverage.json` | AI coverage and limits guide with topic, confidence, source tier, and verification distributions. |
-| `/examples.json` | Executable AI usage examples for dynamic API calls and signed static fallback workflows. |
+| `/examples.json` | Executable AI usage examples for dynamic API calls, local MCP workflows, and signed static fallback workflows. |
 | `/graph.json` | Signed public graph of topic, article, claim, and source relationships. |
-| `/evals.json` | Executable golden integration checks for AI consumers and production smoke. |
+| `/evals.json` | Executable golden integration checks consumed by `npm run evals:prod` and the production integrity monitor. |
 | `/mcp.json` | Signed local MCP installation manifest and tool metadata. |
 | `/api/plan?q=...` | Read-only Cloudflare Pages Function that tells AI agents whether AnchorFact coverage is plausible, which endpoint to call next, or when to fall back to external sources. |
 | `/api/evidence?q=...` | Read-only Cloudflare Pages Function for one-call public evidence packs with search hits, article summaries, claims, sources, and citation exports. Add `format=markdown` for answer-ready text context. |
@@ -214,9 +217,10 @@ Public hygiene checks are shared by the compiler, quality gate, and audit script
 | `npm run pages:build` | Runs quality and build for Cloudflare Pages. |
 | `npm run pipeline` | Runs verify, quality, and build. |
 | `npm run smoke:prod` | Checks the live production machine-readable endpoints. |
+| `npm run evals:prod` | Executes live `/evals.json` checks against production AI endpoints and MCP metadata. |
 | `npm run verify:provenance` | Verifies live provenance identity, artifact checksums, counts, source commit, and optional signature. |
 | `npm run verify:provenance:signed` | Verifies live provenance with the pinned trusted public key. |
-| `npm run production:integrity` | Runs production smoke plus trusted signed provenance verification and emits an integrity report. |
+| `npm run production:integrity` | Runs production smoke, AI evals, and trusted signed provenance verification, then emits an integrity report. |
 | `npm run audit-public-sample` | Regenerates the 20-article public content audit report. |
 | `npm run audit-public-full` | Fails if any public article has an actionable audit recommendation. |
 | `npm run repo:hygiene` | Checks for stale root snapshots, mojibake, old launch metrics, and tracked generated files. |
