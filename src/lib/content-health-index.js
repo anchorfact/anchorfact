@@ -4,6 +4,7 @@ import {
   PROVENANCE_PATH,
   publicUrl
 } from './build-metadata.js';
+import { buildProjectReadiness } from './project-readiness.js';
 
 const FATAL_DRAFT_REASONS = new Set([
   'broken_atomic_fact',
@@ -215,6 +216,16 @@ export function buildContentHealthIndex({
   const publicClaims = claimsPayload?.claims || [];
   const publicClaimCoverage = claimMappingCoverage(publicClaims);
   const repairQueue = draftRepairQueue(manifest || {});
+  const projectReadiness = buildProjectReadiness({
+    publicArticles: byStatus.public.articles,
+    publicAuditActionableCount: 0,
+    publicSourceCoverage: byStatus.public.source_coverage,
+    publicClaimMapping: publicClaimCoverage,
+    publicLowConfidenceCount: byStatus.public.confidence.low || 0,
+    staleDocsCount: 0,
+    draftRepairCandidateCount: repairQueue.candidate_count,
+    draftRepairExcludedCount: repairQueue.excluded_count
+  });
 
   return {
     schema_version: CONTENT_HEALTH_SCHEMA_VERSION,
@@ -234,6 +245,7 @@ export function buildContentHealthIndex({
       claim_mapping: publicClaimCoverage,
       sources: sourceSummary
     },
+    project_readiness: projectReadiness,
     draft: {
       ...byStatus.draft,
       repair_candidate_count: repairQueue.candidate_count,

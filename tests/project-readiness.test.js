@@ -1,0 +1,67 @@
+#!/usr/bin/env node
+import { buildProjectReadiness } from '../src/lib/project-readiness.js';
+
+let passed = 0, failed = 0;
+
+function test(name, fn) {
+  try {
+    fn();
+    passed++;
+    console.log(`  ok ${name}`);
+  } catch (error) {
+    failed++;
+    console.log(`  fail ${name}: ${error.message}`);
+  }
+}
+
+function assert(condition, message) {
+  if (!condition) throw new Error(message);
+}
+
+function assertEq(actual, expected, ctx = '') {
+  if (JSON.stringify(actual) !== JSON.stringify(expected)) {
+    throw new Error(`${ctx} expected ${JSON.stringify(expected)}, got ${JSON.stringify(actual)}`);
+  }
+}
+
+console.log('AnchorFact Project Readiness Tests\n');
+
+test('buildProjectReadiness prioritizes public trust blockers first', () => {
+  const readiness = buildProjectReadiness({
+    publicArticles: 10,
+    publicAuditActionableCount: 2,
+    publicSourceCoverage: { full: 8, partial: 2, zero: 0 },
+    publicClaimMapping: { total: 30, mapped: 28, ratio: 0.9333 },
+    staleDocsCount: 1,
+    draftRepairCandidateCount: 12,
+    draftRepairExcludedCount: 3
+  });
+
+  assert(readiness.score_100 < 90, 'public blockers should materially reduce readiness');
+  assertEq(readiness.grade, 'needs_attention');
+  assertEq(readiness.next_focus, 'repair_public_audit');
+  assert(readiness.blockers.some(blocker => blocker.id === 'public_audit_actionable'), 'should expose public audit blocker');
+  assert(readiness.next_actions[0].area === 'public_trust', 'first action should protect public trust');
+});
+
+test('buildProjectReadiness selects draft repair only after public surface is clean', () => {
+  const readiness = buildProjectReadiness({
+    publicArticles: 568,
+    publicAuditActionableCount: 0,
+    publicSourceCoverage: { full: 568, partial: 0, zero: 0 },
+    publicClaimMapping: { total: 1731, mapped: 1731, ratio: 1 },
+    publicLowConfidenceCount: 45,
+    staleDocsCount: 0,
+    draftRepairCandidateCount: 231,
+    draftRepairExcludedCount: 201
+  });
+
+  assertEq(readiness.score_100, 93);
+  assertEq(readiness.grade, 'strong');
+  assertEq(readiness.next_focus, 'prioritize_draft_repair_queue');
+  assertEq(readiness.signals.public_claim_mapping_ratio, 1);
+  assert(readiness.next_actions.some(action => action.area === 'draft_asset_pipeline'), 'should recommend measured draft repair');
+});
+
+console.log(`\n${passed} passed, ${failed} failed`);
+process.exit(failed > 0 ? 1 : 0);

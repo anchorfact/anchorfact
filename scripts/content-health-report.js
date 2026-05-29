@@ -3,6 +3,7 @@ import { existsSync, mkdirSync, readFileSync, readdirSync, statSync, writeFileSy
 import { dirname, join, resolve } from 'path';
 import { pathToFileURL } from 'url';
 import { classifySourceTier } from '../src/lib/confidence.js';
+import { buildProjectReadiness } from '../src/lib/project-readiness.js';
 import { buildAuditRows, loadAuditData } from './audit-public-sample.js';
 
 const DEFAULT_STALE_PATTERNS = [
@@ -193,6 +194,14 @@ export function buildContentHealthReport(data, options = {}) {
     (b.sources_total || 0) - (a.sources_total || 0) ||
     a.canonical_slug.localeCompare(b.canonical_slug)
   );
+  const staleDocs = scanStaleDocs(options.root || process.cwd());
+  const publicClaimMapping = {
+    total: byStatus.public.atomic_facts,
+    mapped: byStatus.public.mapped_atomic_facts,
+    ratio: byStatus.public.atomic_facts
+      ? Number((byStatus.public.mapped_atomic_facts / byStatus.public.atomic_facts).toFixed(4))
+      : 1
+  };
 
   return {
     generated: options.generatedAt || new Date().toISOString(),
@@ -211,6 +220,16 @@ export function buildContentHealthReport(data, options = {}) {
         .filter(row => row.recommendation !== 'keep_public')
         .map(row => ({ canonical_slug: row.canonical_slug, recommendation: row.recommendation }))
     },
+    project_readiness: buildProjectReadiness({
+      publicArticles: byStatus.public.articles,
+      publicAuditActionableCount: publicRows.filter(row => row.recommendation !== 'keep_public').length,
+      publicSourceCoverage: byStatus.public.source_coverage,
+      publicClaimMapping,
+      publicLowConfidenceCount: byStatus.public.confidence.low || 0,
+      staleDocsCount: staleDocs.length,
+      draftRepairCandidateCount: draftCandidates.length,
+      draftRepairExcludedCount: draftExcludedCount
+    }),
     public: {
       ...byStatus.public,
       confidence: sortedObject(byStatus.public.confidence),
@@ -226,11 +245,12 @@ export function buildContentHealthReport(data, options = {}) {
       source_tiers: sortedObject(byStatus.draft.source_tiers),
       source_types: topEntries(byStatus.draft.source_types, 30),
       quality_reasons: topEntries(byStatus.draft.quality_reasons, 20),
+      repair_candidate_count: draftCandidates.length,
       repair_excluded_count: draftExcludedCount,
       repair_exclusion_reasons: topEntries(draftExclusionReasons, 30),
       repair_candidates: draftCandidates.slice(0, options.candidateLimit || 25)
     },
-    stale_docs: scanStaleDocs(options.root || process.cwd())
+    stale_docs: staleDocs
   };
 }
 
@@ -241,6 +261,11 @@ function listEntries(entries) {
 
 function coverageText(coverage) {
   return `full=${coverage.full}, partial=${coverage.partial}, zero=${coverage.zero}`;
+}
+
+function actionList(actions = []) {
+  if (actions.length === 0) return '- none';
+  return actions.map(action => `- ${action.area}: ${action.action}`).join('\n');
 }
 
 export function renderContentHealthReport(report) {
@@ -270,6 +295,15 @@ Snapshot: ${report.snapshot.public} public / ${report.snapshot.draft} draft / ${
 - repair_sources: ${report.public_audit.recommendations.repair_sources || 0}
 - move_to_draft: ${report.public_audit.recommendations.move_to_draft || 0}
 - actionable: ${report.public_audit.actionable_count}
+
+## Project Readiness
+
+- score: ${report.project_readiness.score_100}/100 (${report.project_readiness.grade})
+- next_focus: ${report.project_readiness.next_focus}
+- blockers: ${report.project_readiness.blockers.length}
+
+Next actions:
+${actionList(report.project_readiness.next_actions)}
 
 ## Public Content
 

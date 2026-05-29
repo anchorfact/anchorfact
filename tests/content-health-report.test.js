@@ -140,6 +140,8 @@ test('buildContentHealthReport summarizes public and draft health', () => {
     assertEq(report.public.source_tiers.A, 2);
     assertEq(report.draft.source_tiers.B, 2);
     assertEq(report.public_audit.rows, 2);
+    assert(report.project_readiness, 'should include project readiness guidance');
+    assertEq(report.project_readiness.next_focus, 'repair_public_audit');
     assert(report.stale_docs.some(item => item.path === 'README.md'), 'should report stale docs');
     assert(report.draft.repair_candidates.some(item => item.canonical_slug === 'ai/draft-a'), 'should include draft candidate');
     assert(!report.draft.repair_candidates.some(item => item.canonical_slug === 'game-development/encoding-damaged-draft'), 'should not recommend encoding-damaged drafts for automatic repair');
@@ -158,6 +160,23 @@ test('renderContentHealthReport uses readable report sections', () => {
       rows: 1,
       recommendations: { keep_public: 1, downgrade_confidence: 0, repair_sources: 0, move_to_draft: 0 },
       actionable_count: 0
+    },
+    project_readiness: {
+      score_100: 100,
+      grade: 'excellent',
+      next_focus: 'maintain_and_measure_ai_usage',
+      blockers: [],
+      next_actions: [
+        { area: 'measurement', action: 'Keep representative AI evals aligned with real usage before broad expansion.' }
+      ],
+      signals: {
+        public_audit_actionable_count: 0,
+        public_source_gap_articles: 0,
+        public_claim_mapping_ratio: 1,
+        stale_docs_count: 0,
+        draft_repair_candidate_count: 0,
+        draft_repair_excluded_count: 0
+      }
     },
     public: {
       confidence: { medium: 1 },
@@ -181,6 +200,8 @@ test('renderContentHealthReport uses readable report sections', () => {
   };
   const text = renderContentHealthReport(report);
   assert(text.includes('## Public Audit'), 'missing public audit section');
+  assert(text.includes('## Project Readiness'), 'missing project readiness section');
+  assert(text.includes('- score: 100/100 (excellent)'), 'missing readiness score');
   assert(text.includes('Snapshot: 1 public / 0 draft / 1 claims.'), 'missing snapshot');
   assert(text.includes('source coverage: full=1, partial=0, zero=0'), 'missing coverage summary');
 });

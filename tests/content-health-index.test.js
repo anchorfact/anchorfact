@@ -112,6 +112,9 @@ test('buildContentHealthIndex publishes signed corpus health guidance', () => {
   assertEq(payload.public.source_coverage.partial, 1);
   assertEq(payload.draft.source_coverage.zero, 2);
   assertEq(payload.public.claim_mapping, { total: 2, mapped: 2, ratio: 1 });
+  assert(payload.project_readiness, 'content health index should include project readiness guidance');
+  assertEq(payload.project_readiness.next_focus, 'complete_public_source_coverage');
+  assert(payload.project_readiness.next_actions.some(action => action.area === 'public_source_coverage'), 'readiness should recommend source completion first');
   assertEq(payload.public.sources.tier_distribution, { A: 1, S: 1 });
   assert(payload.public.quality_reasons.some(reason => reason.name === 'partial_source_verification'), 'public health should include quality reasons');
   assert(payload.draft.repair_candidates.some(candidate => candidate.canonical_slug === 'ai/draft-a'), 'draft health should include repair candidates');
