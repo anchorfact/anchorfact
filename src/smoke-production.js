@@ -81,7 +81,7 @@ export async function main() {
   const expectedDraft = readExpectedInt('EXPECTED_DRAFT_ARTICLES');
   const expectedClaims = readExpectedInt('EXPECTED_CLAIMS');
 
-  const routes = ['/', '/agent.json', '/.well-known/anchorfact.json', '/manifest.json', '/llms.txt', '/claims.json', '/sources.json', '/provenance.json', '/drafts.html'];
+  const routes = ['/', '/agent.json', '/.well-known/anchorfact.json', '/manifest.json', '/llms.txt', '/claims.json', '/search-index.json', '/sources.json', '/provenance.json', '/drafts.html'];
   const results = {};
 
   for (const route of routes) {
@@ -93,6 +93,7 @@ export async function main() {
   const wellKnownAgentProfile = JSON.parse(results['/.well-known/anchorfact.json'].body);
   const manifest = JSON.parse(results['/manifest.json'].body);
   const claims = JSON.parse(results['/claims.json'].body);
+  const searchIndex = JSON.parse(results['/search-index.json'].body);
   const sources = JSON.parse(results['/sources.json'].body);
   const provenance = JSON.parse(results['/provenance.json'].body);
   const llmsText = results['/llms.txt'].body;
@@ -115,6 +116,7 @@ export async function main() {
   assertOk(agentProfile.current_snapshot?.public_articles === manifest.public_article_count, 'agent profile public count does not match manifest', failures);
   assertOk(agentProfile.current_snapshot?.draft_articles === manifest.draft_article_count, 'agent profile draft count does not match manifest', failures);
   assertOk(agentProfile.current_snapshot?.public_claims === claimCount, 'agent profile claim count does not match claims.json', failures);
+  assertOk(agentProfile.current_snapshot?.searchable_records === searchIndex.article_count, 'agent profile searchable record count does not match search-index.json', failures);
   assertOk(agentProfile.current_snapshot?.unique_sources === sources.source_count, 'agent profile source count does not match sources.json', failures);
   assertOk(manifest.public_article_count === publicArticles, `manifest public_article_count ${manifest.public_article_count} does not match articles[] count ${publicArticles}`, failures);
   assertOk(manifest.draft_article_count === draftArticles, `manifest draft_article_count ${manifest.draft_article_count} does not match articles[] count ${draftArticles}`, failures);
@@ -123,6 +125,11 @@ export async function main() {
   assertOk(manifest.provenance_url === new URL('/provenance.json', baseUrl).href, `manifest provenance_url expected ${new URL('/provenance.json', baseUrl).href}, got ${manifest.provenance_url || '(missing)'}`, failures);
   assertOk(claims.schema_version === 'anchorfact.claims.v1', `claims schema_version expected anchorfact.claims.v1, got ${claims.schema_version || '(missing)'}`, failures);
   assertOk(claims.provenance_url === new URL('/provenance.json', baseUrl).href, `claims provenance_url expected ${new URL('/provenance.json', baseUrl).href}, got ${claims.provenance_url || '(missing)'}`, failures);
+  assertOk(searchIndex.schema_version === 'anchorfact.search-index.v1', `search-index schema_version expected anchorfact.search-index.v1, got ${searchIndex.schema_version || '(missing)'}`, failures);
+  assertOk(searchIndex.provenance_url === new URL('/provenance.json', baseUrl).href, `search-index provenance_url expected ${new URL('/provenance.json', baseUrl).href}, got ${searchIndex.provenance_url || '(missing)'}`, failures);
+  assertOk(searchIndex.article_count === manifest.public_article_count, 'search index article count does not match manifest', failures);
+  assertOk(searchIndex.public_claim_count === claimCount, 'search index claim count does not match claims.json', failures);
+  assertOk(Array.isArray(searchIndex.records) && searchIndex.records.length > 0, '/search-index.json has no records', failures);
   assertOk(sources.schema_version === 'anchorfact.sources.v1', `sources schema_version expected anchorfact.sources.v1, got ${sources.schema_version || '(missing)'}`, failures);
   assertOk(sources.provenance_url === new URL('/provenance.json', baseUrl).href, `sources provenance_url expected ${new URL('/provenance.json', baseUrl).href}, got ${sources.provenance_url || '(missing)'}`, failures);
   assertOk(sources.public_article_count === manifest.public_article_count, 'sources public count does not match manifest', failures);
@@ -135,6 +142,7 @@ export async function main() {
   assertOk(provenance.artifacts?.agent_json?.sha256 === sha256Text(results['/agent.json'].body), 'provenance agent hash does not match /agent.json', failures);
   assertOk(provenance.artifacts?.manifest_json?.sha256 === sha256Text(results['/manifest.json'].body), 'provenance manifest hash does not match /manifest.json', failures);
   assertOk(provenance.artifacts?.claims_json?.sha256 === sha256Text(results['/claims.json'].body), 'provenance claims hash does not match /claims.json', failures);
+  assertOk(provenance.artifacts?.search_index_json?.sha256 === sha256Text(results['/search-index.json'].body), 'provenance search index hash does not match /search-index.json', failures);
   assertOk(provenance.artifacts?.sources_json?.sha256 === sha256Text(results['/sources.json'].body), 'provenance sources hash does not match /sources.json', failures);
   assertOk(provenance.artifacts?.llms_txt?.sha256 === sha256Text(results['/llms.txt'].body), 'provenance llms hash does not match /llms.txt', failures);
   assertOk(['signed', 'unsigned'].includes(provenance.signature?.status), `provenance signature status expected signed or unsigned, got ${provenance.signature?.status || '(missing)'}`, failures);
@@ -146,6 +154,7 @@ export async function main() {
   headerIncludes(results['/manifest.json'], 'Access-Control-Allow-Origin', '*', failures);
   headerIncludes(results['/manifest.json'], 'Cache-Control', 'max-age=3600', failures);
   headerIncludes(results['/claims.json'], 'Access-Control-Allow-Origin', '*', failures);
+  headerIncludes(results['/search-index.json'], 'Access-Control-Allow-Origin', '*', failures);
   headerIncludes(results['/sources.json'], 'Access-Control-Allow-Origin', '*', failures);
   headerIncludes(results['/provenance.json'], 'Access-Control-Allow-Origin', '*', failures);
   headerIncludes(results['/provenance.json'], 'Cache-Control', 'max-age=3600', failures);

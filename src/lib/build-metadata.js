@@ -8,6 +8,7 @@ export const CLAIMS_SCHEMA_VERSION = 'anchorfact.claims.v1';
 export const PROVENANCE_SCHEMA_VERSION = 'anchorfact.provenance.v1';
 export const AGENT_PROFILE_SCHEMA_VERSION = 'anchorfact.agent.v1';
 export const SOURCES_SCHEMA_VERSION = 'anchorfact.sources.v1';
+export const SEARCH_INDEX_SCHEMA_VERSION = 'anchorfact.search-index.v1';
 export const OFFICIAL_SOURCE_REPOSITORY = 'https://github.com/anchorfact/anchorfact';
 export const OFFICIAL_SITE = 'https://anchorfact.org';
 export const PROVENANCE_PATH = '/provenance.json';
@@ -123,6 +124,7 @@ export function buildProvenance({ manifest, claimsPayload, distDir, generated, b
       agent_json: artifactInfo(distDir, 'agent.json'),
       manifest_json: artifactInfo(distDir, 'manifest.json'),
       claims_json: artifactInfo(distDir, 'claims.json'),
+      search_index_json: artifactInfo(distDir, 'search-index.json'),
       sources_json: artifactInfo(distDir, 'sources.json'),
       llms_txt: artifactInfo(distDir, 'llms.txt')
     },

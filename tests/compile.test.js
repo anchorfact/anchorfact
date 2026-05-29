@@ -129,8 +129,11 @@ test('public entrypoints exclude draft articles', () => {
   const llmsTxt = readFileSync(join(distDir, 'llms.txt'), 'utf-8');
   const sitemap = readFileSync(join(distDir, 'sitemap.xml'), 'utf-8');
   assert(indexHtml.includes('/agent.json'), 'index should link to agent profile');
+  assert(indexHtml.includes('/search-index.json'), 'index should link to search index');
   assert(llmsTxt.includes('Agent Profile'), 'llms.txt should include agent profile');
+  assert(llmsTxt.includes('Search Index'), 'llms.txt should include search index');
   assert(sitemap.includes('/agent.json'), 'sitemap should include agent profile');
+  assert(sitemap.includes('/search-index.json'), 'sitemap should include search index');
   assert(indexHtml.includes('Public Fixture'), 'index should include public article');
   assert(!indexHtml.includes('Draft Fixture</a></span>'), 'index public list should exclude draft article');
   assert(llmsTxt.includes('Public Fixture'), 'llms.txt should include public article');
@@ -152,9 +155,34 @@ test('agent profile describes the machine contract', () => {
   assert(agent.current_snapshot.unique_sources >= 1, 'agent profile should expose source count');
   assertEq(agent.endpoints.claims.url, 'https://anchorfact.org/claims.json');
   assertEq(agent.endpoints.sources.url, 'https://anchorfact.org/sources.json');
+  assertEq(agent.endpoints.search_index.url, 'https://anchorfact.org/search-index.json');
   assert(agent.recommended_workflow.some(step => step.includes('/provenance.json')), 'agent workflow should mention provenance');
+  assert(agent.recommended_workflow.some(step => step.includes('/search-index.json')), 'agent workflow should mention search index');
   assert(agent.recommended_workflow.some(step => step.includes('/sources.json')), 'agent workflow should mention source index');
   assertEq(wellKnown, agent, 'well-known alias should match agent.json');
+});
+
+test('search-index.json exposes compact public retrieval records', () => {
+  assert(existsSync(join(distDir, 'search-index.json')), 'search-index.json missing');
+  const search = JSON.parse(readFileSync(join(distDir, 'search-index.json'), 'utf-8'));
+  assertEq(search.schema_version, 'anchorfact.search-index.v1');
+  assertEq(search.provenance_url, 'https://anchorfact.org/provenance.json');
+  assertEq(search.article_count, 1);
+  assertEq(search.public_claim_count, 2);
+  assertEq(search.records.length, 1);
+  const record = search.records[0];
+  assertEq(record.canonical_slug, 'public-fixture');
+  assertEq(record.title, 'Public Fixture');
+  assertEq(record.url, 'https://anchorfact.org/public-fixture/');
+  assertEq(record.confidence_level, 'medium');
+  assertEq(record.claim_count, 2);
+  assertEq(record.source_count, 1);
+  assertEq(record.source_coverage, { verified: 1, total: 1, ratio: 1 });
+  assert(record.source_tiers.includes('S'), 'record should include S source tier');
+  assert(record.claim_ids.includes('https://anchorfact.org/fact/fact-public-fixture-1'), 'record should expose claim ids');
+  assert(record.keywords.includes('fixture'), 'record should include stable keywords');
+  assert(record.search_text.includes('public fixture claim'), 'search text should include public claims');
+  assert(!record.search_text.includes('draft fixture'), 'search text should exclude drafts');
 });
 
 test('sources.json describes deduplicated public evidence sources', () => {
@@ -212,11 +240,13 @@ test('provenance.json describes compiled artifacts', () => {
   assert(/^[a-f0-9]{64}$/.test(provenance.artifacts.manifest_json.sha256), 'manifest checksum should be sha256 hex');
   assert(/^[a-f0-9]{64}$/.test(provenance.artifacts.agent_json.sha256), 'agent checksum should be sha256 hex');
   assert(/^[a-f0-9]{64}$/.test(provenance.artifacts.claims_json.sha256), 'claims checksum should be sha256 hex');
+  assert(/^[a-f0-9]{64}$/.test(provenance.artifacts.search_index_json.sha256), 'search index checksum should be sha256 hex');
   assert(/^[a-f0-9]{64}$/.test(provenance.artifacts.sources_json.sha256), 'sources checksum should be sha256 hex');
   assert(/^[a-f0-9]{64}$/.test(provenance.artifacts.llms_txt.sha256), 'llms checksum should be sha256 hex');
   assert(provenance.artifacts.manifest_json.bytes > 0, 'manifest artifact should include byte size');
   assert(provenance.artifacts.agent_json.bytes > 0, 'agent artifact should include byte size');
   assert(provenance.artifacts.claims_json.bytes > 0, 'claims artifact should include byte size');
+  assert(provenance.artifacts.search_index_json.bytes > 0, 'search index artifact should include byte size');
   assert(provenance.artifacts.sources_json.bytes > 0, 'sources artifact should include byte size');
   assert(provenance.artifacts.llms_txt.bytes > 0, 'llms artifact should include byte size');
 });
@@ -248,6 +278,7 @@ test('_headers is generated for Cloudflare Pages static output', () => {
   assert(headers.includes('/agent.json\n  Access-Control-Allow-Origin: *'), '_headers should expose agent profile CORS');
   assert(headers.includes('/.well-known/anchorfact.json\n  Access-Control-Allow-Origin: *'), '_headers should expose well-known agent profile CORS');
   assert(headers.includes('/manifest.json\n  Access-Control-Allow-Origin: *'), '_headers should expose manifest CORS');
+  assert(headers.includes('/search-index.json\n  Access-Control-Allow-Origin: *'), '_headers should expose search index CORS');
   assert(headers.includes('/sources.json\n  Access-Control-Allow-Origin: *'), '_headers should expose sources CORS');
   assert(headers.includes('/provenance.json\n  Access-Control-Allow-Origin: *'), '_headers should expose provenance CORS');
   assert(headers.includes('/provenance.sig\n  Access-Control-Allow-Origin: *'), '_headers should expose provenance signature CORS');

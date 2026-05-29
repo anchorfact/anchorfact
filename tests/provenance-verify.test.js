@@ -5,7 +5,8 @@ import {
   MANIFEST_SCHEMA_VERSION,
   OFFICIAL_SITE,
   OFFICIAL_SOURCE_REPOSITORY,
-  PROVENANCE_SCHEMA_VERSION
+  PROVENANCE_SCHEMA_VERSION,
+  SEARCH_INDEX_SCHEMA_VERSION
 } from '../src/lib/build-metadata.js';
 import {
   publicKeyFingerprint,
@@ -114,9 +115,26 @@ function buildFixture(overrides = {}) {
     public_claim_count: 3,
     sources: [{ id: 'source:fixture', title: 'Fixture Paper', tier: 'S' }]
   };
+  const search = {
+    schema_version: SEARCH_INDEX_SCHEMA_VERSION,
+    generated: '2026-05-29T00:00:00.000Z',
+    provenance_url: `${baseUrl}/provenance.json`,
+    article_count: 2,
+    public_claim_count: 3,
+    records: [
+      {
+        canonical_slug: 'fixture',
+        title: 'Fixture',
+        url: `${baseUrl}/fixture/`,
+        claim_count: 3,
+        source_count: 1
+      }
+    ]
+  };
   const manifestText = JSON.stringify(manifest, null, 2);
   const claimsText = JSON.stringify(claims, null, 2);
   const agentText = JSON.stringify(agent, null, 2);
+  const searchText = JSON.stringify(search, null, 2);
   const sourcesText = JSON.stringify(sources, null, 2);
   const provenance = {
     schema_version: PROVENANCE_SCHEMA_VERSION,
@@ -157,6 +175,11 @@ function buildFixture(overrides = {}) {
         sha256: sha256Text(claimsText),
         bytes: Buffer.byteLength(claimsText, 'utf8')
       },
+      search_index_json: {
+        path: '/search-index.json',
+        sha256: sha256Text(searchText),
+        bytes: Buffer.byteLength(searchText, 'utf8')
+      },
       sources_json: {
         path: '/sources.json',
         sha256: sha256Text(sourcesText),
@@ -196,6 +219,7 @@ function buildFixture(overrides = {}) {
     [`${baseUrl}/agent.json`]: { body: agentText },
     [`${baseUrl}/manifest.json`]: { body: manifestText },
     [`${baseUrl}/claims.json`]: { body: claimsText },
+    [`${baseUrl}/search-index.json`]: { body: searchText },
     [`${baseUrl}/sources.json`]: { body: sourcesText },
     [`${baseUrl}/llms.txt`]: { body: llms, contentType: 'text/plain; charset=utf-8' },
     'https://api.github.com/repos/anchorfact/anchorfact/commits/75b8761df7e7a92d63a204d456c2e553d299f48d': {
