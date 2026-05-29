@@ -69,7 +69,7 @@ Preferred source types:
 - `textbook`
 - `industry_whitepaper`
 
-Common aliases such as `technical_documentation`, `official_documentation`, `government_document`, `museum_reference`, `reference_article`, `technical_specification`, `scientific_report`, and `conference_keynote` are normalized to the closest preferred type during confidence scoring. Truly unknown source types remain lower-tier until they are reviewed and added deliberately.
+Common aliases such as `technical_documentation`, `official_documentation`, `government_document`, `museum_reference`, `reference_article`, `technical_specification`, `scientific_report`, `regulatory_report`, `design_guideline`, and `conference_keynote` are normalized to the closest preferred type during confidence scoring. Truly unknown source types remain lower-tier until they are reviewed and added deliberately.
 
 ## Publication Workflow
 
