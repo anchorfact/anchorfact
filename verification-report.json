@@ -8,7 +8,7 @@
     "elapsed_ms": 635005,
     "elapsed_sec": "635.0",
     "concurrency": 3,
-    "manual_reviewed_articles": 541
+    "manual_reviewed_articles": 546
   },
   "articles": [
     {
@@ -863,36 +863,67 @@
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "AI-Powered Code Translation and Legacy Modernization: LLM-Based Transpilation (2024-2025 Survey)",
-          "source_type": "academic_paper",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "Large Language Models for Program Translation: COBOL-to-Java, Python-to-C++, and Multi-Language Transpilation",
-          "source_type": "academic_paper",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "Enhancing Code Translation in Language Models with Few-Shot Learning via Retrieval-Augmented Generation",
+          "source_title": "Unsupervised Translation of Programming Languages",
           "source_type": "academic_paper",
           "results": [
             {
               "method": "arxiv",
-              "identifier": "2407.19619v1",
-              "verified": false,
+              "identifier": "2006.03511",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair batch 58; sources manually reviewed with direct URL/DOI checks; local verify-full was not run.",
+                "final_url": "https://arxiv.org/abs/2006.03511"
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "A Systematic Literature Review on Neural Code Translation",
+          "source_type": "survey_paper",
+          "results": [
+            {
+              "method": "arxiv",
+              "identifier": "2505.07425",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair batch 58; sources manually reviewed with direct URL/DOI checks; local verify-full was not run.",
+                "final_url": "https://arxiv.org/abs/2505.07425"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Verified Code Transpilation with LLMs",
+          "source_type": "conference_paper",
+          "results": [
+            {
+              "method": "arxiv",
+              "identifier": "2406.03003",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair batch 58; sources manually reviewed with direct URL/DOI checks; local verify-full was not run.",
+                "final_url": "https://arxiv.org/abs/2406.03003"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-30"
     },
     {
       "file": "content/ai/ai-coding-assistants.md",
@@ -6611,55 +6642,70 @@
       "file": "content/ai/ai-inventory-management.md",
       "article_id": "ai-inventory-management",
       "generation_method": "ai_structured",
-      "sources_total": 4,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Machine Learning for Inventory Management: Demand Forecasting, Safety Stock Optimization, and Automated Replenishment (2024-2025 Comprehensive Survey)",
-          "source_type": "academic_paper",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "Deep Probabilistic Forecasting for Retail Demand: DeepAR, TFT, and N-BEATS Applied to Inventory Optimization",
-          "source_type": "academic_paper",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "Inventory Management with Partially Observed Nonstationary Demand",
+          "source_title": "DeepAR: Probabilistic Forecasting with Autoregressive Recurrent Networks",
           "source_type": "academic_paper",
           "results": [
             {
               "method": "arxiv",
-              "identifier": "1206.6283v1",
-              "verified": false,
+              "identifier": "1704.04110",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair batch 58; sources manually reviewed with direct URL/DOI checks; local verify-full was not run.",
+                "final_url": "https://arxiv.org/abs/1704.04110"
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Splitting hybrid Make-To-Order and Make-To-Stock demand profiles",
+          "source_title": "Temporal Fusion Transformers for Interpretable Multi-horizon Time Series Forecasting",
           "source_type": "academic_paper",
           "results": [
             {
               "method": "arxiv",
-              "identifier": "1504.03594v1",
-              "verified": false,
+              "identifier": "1912.09363",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair batch 58; sources manually reviewed with direct URL/DOI checks; local verify-full was not run.",
+                "final_url": "https://arxiv.org/abs/1912.09363"
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "N-BEATS: Neural basis expansion analysis for interpretable time series forecasting",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "arxiv",
+              "identifier": "1905.10437",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair batch 58; sources manually reviewed with direct URL/DOI checks; local verify-full was not run.",
+                "final_url": "https://arxiv.org/abs/1905.10437"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 2
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-30"
     },
     {
       "file": "content/ai/ai-ip-patents.md",
@@ -7732,74 +7778,86 @@
       "sources_total": 4,
       "verification_results": [
         {
-          "source_title": "Deep Learning for Smart Grid Load Forecasting and Renewable Energy Prediction (2023-2025 Comprehensive Survey)",
-          "source_type": "academic_paper",
-          "results": [],
-          "all_verified": false
+          "source_title": "Deep Learning for Intelligent Demand Response and Smart Grids: A Comprehensive Survey",
+          "source_type": "survey_paper",
+          "results": [
+            {
+              "method": "arxiv",
+              "identifier": "2101.08013",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair batch 58; sources manually reviewed with direct URL/DOI checks; local verify-full was not run.",
+                "final_url": "https://arxiv.org/abs/2101.08013"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         },
         {
-          "source_title": "Reinforcement Learning for Grid Optimization: Battery Storage, EV Charging, and Demand Response",
-          "source_type": "academic_paper",
-          "results": [],
-          "all_verified": false
+          "source_title": "Short-Term Electricity-Load Forecasting by Deep Learning: A Comprehensive Survey",
+          "source_type": "survey_paper",
+          "results": [
+            {
+              "method": "arxiv",
+              "identifier": "2408.16202",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair batch 58; sources manually reviewed with direct URL/DOI checks; local verify-full was not run.",
+                "final_url": "https://arxiv.org/abs/2408.16202"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         },
         {
-          "source_title": "Smart Grid Monitoring Using Power Line Modems: Anomaly Detection and Localization",
+          "source_title": "Distributed Energy Management and Demand Response in Smart Grids: A Multi-Agent Deep Reinforcement Learning Framework",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "doi",
-              "identifier": "10.1109/TSG.2019.2899264",
+              "method": "arxiv",
+              "identifier": "2211.15858",
               "verified": true,
               "metadata": {
-                "title": "Smart Grid Monitoring Using Power Line Modems: Anomaly Detection and Localization",
-                "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
-                "year": 2019
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair batch 58; sources manually reviewed with direct URL/DOI checks; local verify-full was not run.",
+                "final_url": "https://arxiv.org/abs/2211.15858"
               },
               "match": true
-            },
-            {
-              "method": "arxiv",
-              "identifier": "1807.05347v2",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 503"
-              },
-              "match": false
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Demand-Side Scheduling Based on Multi-Agent Deep Actor-Critic Learning for Smart Grids",
-          "source_type": "academic_paper",
+          "source_title": "NREL Sensing and Predictive Analytics",
+          "source_type": "government_reference",
           "results": [
             {
-              "method": "doi",
-              "identifier": "10.1109/SmartGridComm47815.2020.9302935",
+              "method": "url",
+              "identifier": "https://www.nrel.gov/grid/sensing-predictive-analytics",
               "verified": true,
               "metadata": {
-                "title": "Demand-Side Scheduling Based on Multi-Agent Deep Actor-Critic Learning for Smart Grids",
-                "publisher": "IEEE",
-                "year": 2020
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair batch 58; sources manually reviewed with direct URL/DOI checks; local verify-full was not run.",
+                "final_url": "https://www.nrel.gov/grid/sensing-predictive-analytics"
               },
               "match": true
-            },
-            {
-              "method": "arxiv",
-              "identifier": "2005.01979v2",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
             }
           ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 0
+      "sources_verified": 4,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-30"
     },
     {
       "file": "content/ai/ai-social-listening.md",
@@ -8120,32 +8178,61 @@
       "sources_total": 4,
       "verification_results": [
         {
-          "source_title": "AI-Powered Travel Planning: LLM-Based Itinerary Generation, Price Prediction, and Personalization (2024-2025 Survey)",
-          "source_type": "academic_paper",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "Machine Learning for Travel Demand Prediction: Flight Pricing, Hotel Occupancy, and Tourism Forecasting",
-          "source_type": "academic_paper",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "Narrative-Driven Travel Planning: Geoculturally-Grounded Script Generation with Evolutionary Itinerary Optimization",
+          "source_title": "TRIP-PAL: Travel Planning with Guarantees by Combining Large Language Models and Automated Planners",
           "source_type": "academic_paper",
           "results": [
             {
               "method": "arxiv",
-              "identifier": "2502.14456v3",
-              "verified": false,
+              "identifier": "2406.10196",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair batch 58; sources manually reviewed with direct URL/DOI checks; local verify-full was not run.",
+                "final_url": "https://arxiv.org/abs/2406.10196"
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "ITINERA: Integrating Spatial Optimization with Large Language Models for Open-domain Urban Itinerary Planning",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "arxiv",
+              "identifier": "2402.07204",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair batch 58; sources manually reviewed with direct URL/DOI checks; local verify-full was not run.",
+                "final_url": "https://arxiv.org/abs/2402.07204"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Intelligent tourism recommender systems: A survey",
+          "source_type": "survey_paper",
+          "results": [
+            {
+              "method": "doi",
+              "identifier": "10.1016/j.eswa.2014.06.007",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair batch 58; sources manually reviewed with direct URL/DOI checks; local verify-full was not run.",
+                "final_url": "https://doi.org/10.1016/j.eswa.2014.06.007"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         },
         {
           "source_title": "iTIMO: An LLM-empowered Synthesis Dataset for Travel Itinerary Modification",
@@ -8153,19 +8240,24 @@
           "results": [
             {
               "method": "arxiv",
-              "identifier": "2601.10609v4",
-              "verified": false,
+              "identifier": "2601.10609",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair batch 58; sources manually reviewed with direct URL/DOI checks; local verify-full was not run.",
+                "final_url": "https://arxiv.org/abs/2601.10609"
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 2
+      "sources_verified": 4,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-30"
     },
     {
       "file": "content/ai/ai-video-generation.md",
@@ -15425,7 +15517,7 @@
       "file": "content/ai/scene-text-recognition.md",
       "article_id": "scene-text-recognition",
       "generation_method": "ai_structured",
-      "sources_total": 4,
+      "sources_total": 3,
       "verification_results": [
         {
           "source_title": "TrOCR: Transformer-based Optical Character Recognition with Pre-trained Models",
@@ -15434,67 +15526,61 @@
             {
               "method": "arxiv",
               "identifier": "2109.10282",
-              "verified": false,
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair batch 58; sources manually reviewed with direct URL/DOI checks; local verify-full was not run.",
+                "final_url": "https://arxiv.org/abs/2109.10282"
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "A Two-Stage End-to-End Framework for Robust Scene Text Recognition",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.mdpi.com/2079-9292/14/23/4594",
-              "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.mdpi.com/2079-9292/14/23/4594"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Geometric Perception based Efficient Text Recognition",
+          "source_title": "Character Region Awareness for Text Detection",
           "source_type": "academic_paper",
           "results": [
             {
               "method": "arxiv",
-              "identifier": "2302.03873v1",
-              "verified": false,
+              "identifier": "1904.01941",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair batch 58; sources manually reviewed with direct URL/DOI checks; local verify-full was not run.",
+                "final_url": "https://arxiv.org/abs/1904.01941"
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Upcycle Your OCR: Reusing OCRs for Post-OCR Text Correction in Romanised Sanskrit",
+          "source_title": "An End-to-End Trainable Neural Network for Image-based Sequence Recognition and Its Application to Scene Text Recognition",
           "source_type": "academic_paper",
           "results": [
             {
               "method": "arxiv",
-              "identifier": "1809.02147v1",
-              "verified": false,
+              "identifier": "1507.05717",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair batch 58; sources manually reviewed with direct URL/DOI checks; local verify-full was not run.",
+                "final_url": "https://arxiv.org/abs/1507.05717"
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 4
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-30"
     },
     {
       "file": "content/ai/self-supervised-learning.md",
