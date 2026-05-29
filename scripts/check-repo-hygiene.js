@@ -22,6 +22,7 @@ const TEXT_EXTENSIONS = new Set([
   '.js',
   '.json',
   '.md',
+  '.pem',
   '.py',
   '.toml',
   '.txt',
@@ -76,6 +77,13 @@ const STALE_METRIC_PATTERNS = [
   /EXPECTED_CLAIMS=1683/i,
   /876 articles/i,
   /total_articles["\s:]+805/i
+];
+
+const SECRET_PATTERNS = [
+  /-----BEGIN [A-Z ]*PRIVATE KEY-----/,
+  /\bcf[a-z]{2}_[A-Za-z0-9_-]{20,}\b/,
+  /\bCLOUDFLARE_API_TOKEN\s*=\s*['"][^'"]+['"]/i,
+  /\bANCHORFACT_PROVENANCE_PRIVATE_KEY_(?:PEM|BASE64)\s*=\s*(?!<secret(?: PEM value)?>)(?!<base64 private key>)[^\s#'"]{20,}/i
 ];
 
 function extensionOf(path) {
@@ -137,6 +145,13 @@ function checkTextFiles(failures) {
     if (/^docs\/PUBLIC_CONTENT_REPAIR_/.test(relativePath)) continue;
 
     const text = readFileSync(file, 'utf8');
+    for (const pattern of SECRET_PATTERNS) {
+      if (pattern.test(text)) {
+        failures.push(`${relativePath} appears to contain a private key, API token, or signing secret.`);
+        break;
+      }
+    }
+
     for (const pattern of MOJIBAKE_PATTERNS) {
       if (pattern.test(text)) {
         failures.push(`${relativePath} appears to contain mojibake or replacement characters.`);

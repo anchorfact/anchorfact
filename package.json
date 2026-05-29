@@ -12,6 +12,7 @@
     "pipeline": "npm run verify && npm run quality && npm run build",
     "smoke:prod": "node src/smoke-production.js",
     "verify:provenance": "node scripts/verify-live-provenance.js",
+    "verify:provenance:signed": "node scripts/verify-live-provenance.js --require-trusted-signature --public-key keys/provenance.pub.pem",
     "audit-public-sample": "node scripts/audit-public-sample.js",
     "audit-public-full": "node scripts/check-public-audit.js",
     "content:health": "node scripts/content-health-report.js",

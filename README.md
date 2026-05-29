@@ -84,16 +84,17 @@ After a production deployment, run:
 ```bash
 EXPECTED_PUBLIC_ARTICLES=555 EXPECTED_DRAFT_ARTICLES=445 EXPECTED_CLAIMS=1685 npm run smoke:prod
 npm run verify:provenance
+npm run verify:provenance:signed
 ```
 
 The smoke test checks the homepage, `/manifest.json`, `/llms.txt`, `/claims.json`, `/provenance.json`, and `/drafts.html` against the live `https://anchorfact.org` deployment. Omit the expected-count environment variables when checking a future snapshot with different counts.
 
 The provenance verifier fetches `/provenance.json`, recomputes SHA-256 checksums for the core AI entrypoints, checks public/draft/claim counts, confirms official build identity, and verifies the source commit against GitHub.
 
-When a signing public key is available, run the stricter check:
+The stricter signed check uses the pinned public key in `keys/provenance.pub.pem`:
 
 ```bash
-npm run verify:provenance -- --require-trusted-signature --public-key path/to/provenance.pub.pem
+npm run verify:provenance:signed
 ```
 
 ## Content Model
@@ -133,7 +134,10 @@ Consumers can independently verify the live canonical build with:
 
 ```bash
 npm run verify:provenance
+npm run verify:provenance:signed
 ```
+
+The pinned production provenance public key lives at `keys/provenance.pub.pem`; its SHA-256 fingerprint is `eb2ff7aa5be8441bba29b6e35874ac06b04d944caf0b22be72933d8383bc4968`.
 
 Forks can run the same verifier with `--allow-unofficial --skip-commit` while they establish their own source repository and release identity. Signed forks should use their own signing keys and publish their own public key.
 
@@ -176,6 +180,7 @@ Public hygiene checks are shared by the compiler, quality gate, and audit script
 | `npm run pipeline` | Runs verify, quality, and build. |
 | `npm run smoke:prod` | Checks the live production machine-readable endpoints. |
 | `npm run verify:provenance` | Verifies live provenance identity, artifact checksums, counts, source commit, and optional signature. |
+| `npm run verify:provenance:signed` | Verifies live provenance with the pinned trusted public key. |
 | `npm run audit-public-sample` | Regenerates the 20-article public content audit report. |
 | `npm run audit-public-full` | Fails if any public article has an actionable audit recommendation. |
 | `npm run repo:hygiene` | Checks for stale root snapshots, mojibake, old launch metrics, and tracked generated files. |
