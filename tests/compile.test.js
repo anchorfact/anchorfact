@@ -132,10 +132,12 @@ test('public entrypoints exclude draft articles', () => {
   assert(indexHtml.includes('/openapi.json'), 'index should link to OpenAPI contract');
   assert(indexHtml.includes('/search-index.json'), 'index should link to search index');
   assert(indexHtml.includes('/api/article?slug='), 'index should link to article API example');
+  assert(indexHtml.includes('/api/claim?id='), 'index should link to claim API example');
   assert(llmsTxt.includes('Agent Profile'), 'llms.txt should include agent profile');
   assert(llmsTxt.includes('OpenAPI'), 'llms.txt should include OpenAPI contract');
   assert(llmsTxt.includes('Search Index'), 'llms.txt should include search index');
   assert(llmsTxt.includes('Article API'), 'llms.txt should include article API');
+  assert(llmsTxt.includes('Claim API'), 'llms.txt should include claim API');
   assert(sitemap.includes('/agent.json'), 'sitemap should include agent profile');
   assert(sitemap.includes('/openapi.json'), 'sitemap should include OpenAPI contract');
   assert(sitemap.includes('/search-index.json'), 'sitemap should include search index');
@@ -162,12 +164,14 @@ test('agent profile describes the machine contract', () => {
   assertEq(agent.endpoints.openapi.url, 'https://anchorfact.org/openapi.json');
   assertEq(agent.endpoints.search_api.path, '/api/search?q={query}');
   assertEq(agent.endpoints.article_api.path, '/api/article?slug={canonical_slug}');
+  assertEq(agent.endpoints.claim_api.path, '/api/claim?id={claim_id}');
   assertEq(agent.endpoints.sources.url, 'https://anchorfact.org/sources.json');
   assertEq(agent.endpoints.search_index.url, 'https://anchorfact.org/search-index.json');
   assert(agent.recommended_workflow.some(step => step.includes('/openapi.json')), 'agent workflow should mention OpenAPI');
   assert(agent.recommended_workflow.some(step => step.includes('/provenance.json')), 'agent workflow should mention provenance');
   assert(agent.recommended_workflow.some(step => step.includes('/search-index.json')), 'agent workflow should mention search index');
   assert(agent.recommended_workflow.some(step => step.includes('/api/article')), 'agent workflow should mention article API');
+  assert(agent.recommended_workflow.some(step => step.includes('/api/claim')), 'agent workflow should mention claim API');
   assert(agent.recommended_workflow.some(step => step.includes('/sources.json')), 'agent workflow should mention source index');
   assertEq(wellKnown, agent, 'well-known alias should match agent.json');
 });
@@ -184,11 +188,13 @@ test('openapi.json describes the static AI contract', () => {
   assert(openapi.paths['/claims.json'], 'OpenAPI should describe claims endpoint');
   assert(openapi.paths['/api/search'], 'OpenAPI should describe search API');
   assert(openapi.paths['/api/article'], 'OpenAPI should describe article API');
+  assert(openapi.paths['/api/claim'], 'OpenAPI should describe claim API');
   assert(openapi.paths['/search-index.json'], 'OpenAPI should describe search index endpoint');
   assert(openapi.paths['/sources.json'], 'OpenAPI should describe sources endpoint');
   assert(openapi.paths['/{canonical_slug}/index.json'], 'OpenAPI should describe article JSON-LD template');
   assert(openapi.components.schemas.SearchIndex, 'OpenAPI should define SearchIndex schema');
   assert(openapi.components.schemas.ArticleApiResponse, 'OpenAPI should define ArticleApiResponse schema');
+  assert(openapi.components.schemas.ClaimApiResponse, 'OpenAPI should define ClaimApiResponse schema');
 });
 
 test('search-index.json exposes compact public retrieval records', () => {

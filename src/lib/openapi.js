@@ -1,6 +1,7 @@
 import {
   AGENT_PROFILE_SCHEMA_VERSION,
   ARTICLE_API_SCHEMA_VERSION,
+  CLAIM_API_SCHEMA_VERSION,
   CLAIMS_SCHEMA_VERSION,
   COMPILER_VERSION,
   MANIFEST_SCHEMA_VERSION,
@@ -128,6 +129,25 @@ export function buildOpenApiContract({
           }
         }
       },
+      '/api/claim': {
+        get: {
+          summary: 'Read-only public atomic claim lookup',
+          parameters: [
+            {
+              name: 'id',
+              in: 'query',
+              required: true,
+              schema: { type: 'string', minLength: 1 },
+              description: 'Public claim id, such as https://anchorfact.org/fact/f1. Shorthand ids such as f1 are also accepted.'
+            }
+          ],
+          responses: {
+            200: jsonResponse('ClaimApiResponse'),
+            400: jsonResponse('ApiError'),
+            404: jsonResponse('ApiError')
+          }
+        }
+      },
       '/search-index.json': getJson('Compact public retrieval index', 'SearchIndex'),
       '/sources.json': getJson('Deduplicated public source index', 'Sources'),
       '/provenance.json': getJson('Signed build provenance and artifact hashes', 'Provenance'),
@@ -222,6 +242,14 @@ export function buildOpenApiContract({
           retrieval: { type: ['object', 'null'] },
           claim_count: { type: 'integer' },
           claims: { type: 'array', items: { type: 'object' } },
+          source_count: { type: 'integer' },
+          sources: { type: 'array', items: { type: 'object' } }
+        }),
+        ClaimApiResponse: schemaVersioned('Claim API response', CLAIM_API_SCHEMA_VERSION, {
+          claim_id: { type: 'string', format: 'uri' },
+          canonical_slug: { type: 'string' },
+          claim: { type: 'object' },
+          article: { type: 'object' },
           source_count: { type: 'integer' },
           sources: { type: 'array', items: { type: 'object' } }
         }),

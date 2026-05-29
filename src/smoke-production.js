@@ -81,7 +81,7 @@ export async function main() {
   const expectedDraft = readExpectedInt('EXPECTED_DRAFT_ARTICLES');
   const expectedClaims = readExpectedInt('EXPECTED_CLAIMS');
 
-  const routes = ['/', '/agent.json', '/.well-known/anchorfact.json', '/openapi.json', '/manifest.json', '/llms.txt', '/claims.json', '/api/search?q=gaussian&limit=2', '/api/article?slug=ai/3d-generation-gaussian-splatting', '/search-index.json', '/sources.json', '/provenance.json', '/drafts.html'];
+  const routes = ['/', '/agent.json', '/.well-known/anchorfact.json', '/openapi.json', '/manifest.json', '/llms.txt', '/claims.json', '/api/search?q=gaussian&limit=2', '/api/article?slug=ai/3d-generation-gaussian-splatting', '/api/claim?id=f1', '/search-index.json', '/sources.json', '/provenance.json', '/drafts.html'];
   const results = {};
 
   for (const route of routes) {
@@ -96,6 +96,7 @@ export async function main() {
   const claims = JSON.parse(results['/claims.json'].body);
   const searchApi = JSON.parse(results['/api/search?q=gaussian&limit=2'].body);
   const articleApi = JSON.parse(results['/api/article?slug=ai/3d-generation-gaussian-splatting'].body);
+  const claimApi = JSON.parse(results['/api/claim?id=f1'].body);
   const searchIndex = JSON.parse(results['/search-index.json'].body);
   const sources = JSON.parse(results['/sources.json'].body);
   const provenance = JSON.parse(results['/provenance.json'].body);
@@ -118,12 +119,14 @@ export async function main() {
   assertOk(agentProfile.endpoints?.openapi?.url === new URL('/openapi.json', baseUrl).href, 'agent profile OpenAPI endpoint does not match base URL', failures);
   assertOk(agentProfile.endpoints?.search_api?.path === '/api/search?q={query}', 'agent profile search API endpoint template is missing', failures);
   assertOk(agentProfile.endpoints?.article_api?.path === '/api/article?slug={canonical_slug}', 'agent profile article API endpoint template is missing', failures);
+  assertOk(agentProfile.endpoints?.claim_api?.path === '/api/claim?id={claim_id}', 'agent profile claim API endpoint template is missing', failures);
   assertOk(agentProfile.endpoints?.provenance?.url === new URL('/provenance.json', baseUrl).href, 'agent profile provenance endpoint does not match base URL', failures);
   assertOk(openapi.openapi === '3.1.0', `openapi version expected 3.1.0, got ${openapi.openapi || '(missing)'}`, failures);
   assertOk(openapi['x-anchorfact-schema-version'] === 'anchorfact.openapi.v1', `openapi AnchorFact schema expected anchorfact.openapi.v1, got ${openapi['x-anchorfact-schema-version'] || '(missing)'}`, failures);
   assertOk(openapi['x-provenance-url'] === new URL('/provenance.json', baseUrl).href, `openapi provenance url expected ${new URL('/provenance.json', baseUrl).href}, got ${openapi['x-provenance-url'] || '(missing)'}`, failures);
   assertOk(openapi.paths?.['/api/search'], 'openapi is missing /api/search path', failures);
   assertOk(openapi.paths?.['/api/article'], 'openapi is missing /api/article path', failures);
+  assertOk(openapi.paths?.['/api/claim'], 'openapi is missing /api/claim path', failures);
   assertOk(openapi.paths?.['/search-index.json'], 'openapi is missing /search-index.json path', failures);
   assertOk(openapi.paths?.['/{canonical_slug}/index.json'], 'openapi is missing article JSON-LD path template', failures);
   assertOk(agentProfile.current_snapshot?.public_articles === manifest.public_article_count, 'agent profile public count does not match manifest', failures);
@@ -147,6 +150,11 @@ export async function main() {
   assertOk(articleApi.article?.status === 'public' && articleApi.article?.is_draft === false, '/api/article did not return a public article', failures);
   assertOk(Array.isArray(articleApi.claims) && articleApi.claims.length >= 1, '/api/article returned no claims', failures);
   assertOk(Array.isArray(articleApi.sources) && articleApi.sources.length >= 1, '/api/article returned no sources', failures);
+  assertOk(claimApi.schema_version === 'anchorfact.claim-api.v1', `claim api schema_version expected anchorfact.claim-api.v1, got ${claimApi.schema_version || '(missing)'}`, failures);
+  assertOk(claimApi.claim_id === 'https://anchorfact.org/fact/f1', `claim api id expected https://anchorfact.org/fact/f1, got ${claimApi.claim_id || '(missing)'}`, failures);
+  assertOk(claimApi.claim?.canonical_slug === 'ai/3d-generation-gaussian-splatting', '/api/claim returned the wrong claim slug', failures);
+  assertOk(claimApi.article?.status === 'public' && claimApi.article?.is_draft === false, '/api/claim did not return a public article', failures);
+  assertOk(Array.isArray(claimApi.sources) && claimApi.sources.length >= 1, '/api/claim returned no matching sources', failures);
   assertOk(searchIndex.schema_version === 'anchorfact.search-index.v1', `search-index schema_version expected anchorfact.search-index.v1, got ${searchIndex.schema_version || '(missing)'}`, failures);
   assertOk(searchIndex.provenance_url === new URL('/provenance.json', baseUrl).href, `search-index provenance_url expected ${new URL('/provenance.json', baseUrl).href}, got ${searchIndex.provenance_url || '(missing)'}`, failures);
   assertOk(searchIndex.article_count === manifest.public_article_count, 'search index article count does not match manifest', failures);
@@ -180,6 +188,7 @@ export async function main() {
   headerIncludes(results['/claims.json'], 'Access-Control-Allow-Origin', '*', failures);
   headerIncludes(results['/api/search?q=gaussian&limit=2'], 'Access-Control-Allow-Origin', '*', failures);
   headerIncludes(results['/api/article?slug=ai/3d-generation-gaussian-splatting'], 'Access-Control-Allow-Origin', '*', failures);
+  headerIncludes(results['/api/claim?id=f1'], 'Access-Control-Allow-Origin', '*', failures);
   headerIncludes(results['/search-index.json'], 'Access-Control-Allow-Origin', '*', failures);
   headerIncludes(results['/sources.json'], 'Access-Control-Allow-Origin', '*', failures);
   headerIncludes(results['/provenance.json'], 'Access-Control-Allow-Origin', '*', failures);
