@@ -120,7 +120,7 @@ export async function main() {
   const expectedDraft = readExpectedInt('EXPECTED_DRAFT_ARTICLES');
   const expectedClaims = readExpectedInt('EXPECTED_CLAIMS');
 
-  const routes = ['/', '/agent.json', '/.well-known/anchorfact.json', '/openapi.json', '/manifest.json', '/llms.txt', '/claims.json', '/topics.json', '/capabilities.json', '/coverage.json', '/examples.json', '/graph.json', '/evals.json', '/mcp.json', '/api/plan?q=gaussian&limit=2', '/api/evidence?q=gaussian&limit=2', '/api/evidence?q=gaussian&limit=1&format=markdown', '/api/resolve?ref=f1', '/api/resolve-batch?ref=f1&ref=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079', '/api/resolve-batch?ref=f1&ref=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079&format=markdown', '/api/search?q=gaussian&limit=2', '/api/article?slug=ai/3d-generation-gaussian-splatting', '/api/claim?id=f1', '/api/cite?id=f1', '/api/cite?id=f1&format=markdown', '/api/source?url=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079', '/search-index.json', '/sources.json', '/provenance.json', '/drafts.html'];
+  const routes = ['/', '/robots.txt', '/sitemap.xml', '/agent.json', '/.well-known/anchorfact.json', '/openapi.json', '/manifest.json', '/llms.txt', '/claims.json', '/topics.json', '/capabilities.json', '/coverage.json', '/examples.json', '/graph.json', '/evals.json', '/mcp.json', '/api/plan?q=gaussian&limit=2', '/api/evidence?q=gaussian&limit=2', '/api/evidence?q=gaussian&limit=1&format=markdown', '/api/resolve?ref=f1', '/api/resolve-batch?ref=f1&ref=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079', '/api/resolve-batch?ref=f1&ref=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079&format=markdown', '/api/search?q=gaussian&limit=2', '/api/article?slug=ai/3d-generation-gaussian-splatting', '/api/claim?id=f1', '/api/cite?id=f1', '/api/cite?id=f1&format=markdown', '/api/source?url=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079', '/search-index.json', '/sources.json', '/provenance.json', '/drafts.html'];
   const results = {};
 
   for (const route of routes) {
@@ -155,6 +155,8 @@ export async function main() {
   const searchIndex = JSON.parse(results['/search-index.json'].body);
   const sources = JSON.parse(results['/sources.json'].body);
   const provenance = JSON.parse(results['/provenance.json'].body);
+  const robotsText = results['/robots.txt'].body;
+  const sitemapText = results['/sitemap.xml'].body;
   const llmsText = results['/llms.txt'].body;
   const draftsHtml = results['/drafts.html'].body;
   const exampleRoutes = exampleWorkflowRoutes(examples);
@@ -224,6 +226,16 @@ export async function main() {
   assertOk(openapi.paths?.['/mcp.json'], 'openapi is missing /mcp.json path', failures);
   assertOk(openapi.paths?.['/search-index.json'], 'openapi is missing /search-index.json path', failures);
   assertOk(openapi.paths?.['/{canonical_slug}/index.json'], 'openapi is missing article JSON-LD path template', failures);
+  assertOk(robotsText.includes('Sitemap: https://anchorfact.org/sitemap.xml'), '/robots.txt does not advertise sitemap.xml', failures);
+  assertOk(robotsText.includes('LLMs: https://anchorfact.org/llms.txt'), '/robots.txt does not advertise llms.txt', failures);
+  assertOk(robotsText.includes('Agent: https://anchorfact.org/agent.json'), '/robots.txt does not advertise agent.json', failures);
+  assertOk(robotsText.includes('OpenAPI: https://anchorfact.org/openapi.json'), '/robots.txt does not advertise openapi.json', failures);
+  assertOk(robotsText.includes('MCP: https://anchorfact.org/mcp.json'), '/robots.txt does not advertise mcp.json', failures);
+  assertOk(robotsText.includes('Provenance: https://anchorfact.org/provenance.json'), '/robots.txt does not advertise provenance.json', failures);
+  assertOk(sitemapText.includes('https://anchorfact.org/agent.json'), '/sitemap.xml does not include agent.json', failures);
+  assertOk(sitemapText.includes('https://anchorfact.org/llms.txt'), '/sitemap.xml does not include llms.txt', failures);
+  assertOk(sitemapText.includes('https://anchorfact.org/mcp.json'), '/sitemap.xml does not include mcp.json', failures);
+  assertOk(sitemapText.includes('https://anchorfact.org/provenance.json'), '/sitemap.xml does not include provenance.json', failures);
   assertOk(agentProfile.current_snapshot?.public_articles === manifest.public_article_count, 'agent profile public count does not match manifest', failures);
   assertOk(agentProfile.current_snapshot?.draft_articles === manifest.draft_article_count, 'agent profile draft count does not match manifest', failures);
   assertOk(agentProfile.current_snapshot?.public_claims === claimCount, 'agent profile claim count does not match claims.json', failures);

@@ -128,6 +128,7 @@ test('public entrypoints exclude draft articles', () => {
   const indexHtml = readFileSync(join(distDir, 'index.html'), 'utf-8');
   const llmsTxt = readFileSync(join(distDir, 'llms.txt'), 'utf-8');
   const sitemap = readFileSync(join(distDir, 'sitemap.xml'), 'utf-8');
+  const robotsTxt = readFileSync(join(distDir, 'robots.txt'), 'utf-8');
   assert(indexHtml.includes('/agent.json'), 'index should link to agent profile');
   assert(indexHtml.includes('/openapi.json'), 'index should link to OpenAPI contract');
   assert(indexHtml.includes('/capabilities.json'), 'index should link to capabilities router');
@@ -174,12 +175,19 @@ test('public entrypoints exclude draft articles', () => {
   assert(sitemap.includes('/evals.json'), 'sitemap should include evals index');
   assert(sitemap.includes('/mcp.json'), 'sitemap should include MCP profile');
   assert(sitemap.includes('/search-index.json'), 'sitemap should include search index');
+  assert(robotsTxt.includes('Sitemap: https://anchorfact.org/sitemap.xml'), 'robots.txt should include sitemap');
+  assert(robotsTxt.includes('LLMs: https://anchorfact.org/llms.txt'), 'robots.txt should advertise llms.txt');
+  assert(robotsTxt.includes('Agent: https://anchorfact.org/agent.json'), 'robots.txt should advertise agent profile');
+  assert(robotsTxt.includes('OpenAPI: https://anchorfact.org/openapi.json'), 'robots.txt should advertise OpenAPI contract');
+  assert(robotsTxt.includes('MCP: https://anchorfact.org/mcp.json'), 'robots.txt should advertise MCP manifest');
+  assert(robotsTxt.includes('Provenance: https://anchorfact.org/provenance.json'), 'robots.txt should advertise provenance');
   assert(indexHtml.includes('Public Fixture'), 'index should include public article');
   assert(!indexHtml.includes('Draft Fixture</a></span>'), 'index public list should exclude draft article');
   assert(llmsTxt.includes('Public Fixture'), 'llms.txt should include public article');
   assert(!llmsTxt.includes('Draft Fixture'), 'llms.txt should exclude draft article');
   assert(sitemap.includes('/public-fixture/'), 'sitemap should include public article');
   assert(!sitemap.includes('/draft-fixture/'), 'sitemap should exclude draft article');
+  assert(!robotsTxt.includes('draft'), 'robots.txt should not expose draft routes');
 });
 
 test('agent profile describes the machine contract', () => {

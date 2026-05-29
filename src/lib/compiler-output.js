@@ -257,6 +257,11 @@ User-agent: *
 Allow: /
 
 Sitemap: https://anchorfact.org/sitemap.xml
+LLMs: https://anchorfact.org/llms.txt
+Agent: https://anchorfact.org/agent.json
+OpenAPI: https://anchorfact.org/openapi.json
+MCP: https://anchorfact.org/mcp.json
+Provenance: https://anchorfact.org/provenance.json
 `;
   writeFileSync(join(distDir, 'robots.txt'), robotsTxt);
 }
