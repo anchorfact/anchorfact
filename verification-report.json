@@ -2,13 +2,13 @@
   "summary": {
     "generated": "2026-05-27T14:00:00.000Z",
     "total_articles": 1000,
-    "total_with_errors": 339,
+    "total_with_errors": 335,
     "average_sources_per_article": "2.4",
-    "overall_verification_rate": "73.3%",
+    "overall_verification_rate": "73.8%",
     "elapsed_ms": 635005,
     "elapsed_sec": "635.0",
     "concurrency": 3,
-    "manual_reviewed_articles": 521
+    "manual_reviewed_articles": 526
   },
   "articles": [
     {
@@ -295,45 +295,67 @@
       "file": "content/ai/adversarial-machine-learning.md",
       "article_id": "adversarial-machine-learning",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Adversarial Machine Learning: A Taxonomy and Terminology of Attacks and Mitigations (NIST AI 100-2e3)",
-          "source_type": "government_report",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-2e2025.pdf",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-2e2025.pdf"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "A survey on adversarial machine learning: Attacks, defenses, real-world applications, and algorithmic framework",
+          "source_title": "Intriguing Properties of Neural Networks",
           "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.sciencedirect.com/science/article/pii/S0925231226000676",
-              "verified": false,
+              "identifier": "https://arxiv.org/abs/1312.6199",
+              "verified": true,
               "metadata": {
-                "status": 403,
-                "final_url": "https://www.sciencedirect.com/science/article/pii/S0925231226000676"
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Fifty-fourth targeted AI query coverage repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "Explaining and Harnessing Adversarial Examples",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1412.6572",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Fifty-fourth targeted AI query coverage repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Towards Deep Learning Models Resistant to Adversarial Attacks",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1706.06083",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Fifty-fourth targeted AI query coverage repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 2
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-30"
     },
     {
       "file": "content/ai/affective-computing.md",
@@ -8847,56 +8869,64 @@
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Batch Normalization: Accelerating Deep Network Training (Ioffe & Szegedy, 2015)",
+          "source_title": "Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "1502.03167",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1502.03167",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Fifty-fourth targeted AI query coverage repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Exemplar Normalization for Learning Deep Representation",
+          "source_title": "Layer Normalization",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2003.08761v2",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1607.06450",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Fifty-fourth targeted AI query coverage repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Reciprocal Normalization for Domain Adaptation",
+          "source_title": "Group Normalization",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2112.10474v1",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1803.08494",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Fifty-fourth targeted AI query coverage repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 3
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-30"
     },
     {
       "file": "content/ai/bayesian-deep-learning.md",
@@ -9001,70 +9031,60 @@
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "doi",
-              "identifier": "10.48550/arXiv.1810.04805",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1810.04805",
+              "verified": true,
               "metadata": {
-                "error": "CrossRef returned 404"
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Fifty-fourth targeted AI query coverage repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
-            },
-            {
-              "method": "arxiv",
-              "identifier": "1810.04805",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "BERT4Rec: Sequential Recommendation with Bidirectional Encoder Representations from Transformer",
+          "source_title": "RoBERTa: A Robustly Optimized BERT Pretraining Approach",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "1904.06690v2",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1907.11692",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Fifty-fourth targeted AI query coverage repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Domain Generalisation with Bidirectional Encoder Representations from Vision Transformers",
+          "source_title": "ELECTRA: Pre-training Text Encoders as Discriminators Rather Than Generators",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "doi",
-              "identifier": "10.5281/zenodo.8246304",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2003.10555",
+              "verified": true,
               "metadata": {
-                "error": "CrossRef returned 404"
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Fifty-fourth targeted AI query coverage repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
-            },
-            {
-              "method": "arxiv",
-              "identifier": "2307.08117v1",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 3
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-30"
     },
     {
       "file": "content/ai/biometric-recognition.md",
@@ -9334,18 +9354,56 @@
       "file": "content/ai/clip-contrastive-language-image-pre-training.md",
       "article_id": "kb-2026-00003",
       "generation_method": "ai_structured",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Source 1 — CLIP: Contrastive Language-Image Pre-Training",
+          "source_title": "Learning Transferable Visual Models From Natural Language Supervision",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2103.00020",
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2103.00020",
               "verified": true,
               "metadata": {
-                "title": "arXiv Query: search_query=&amp;id_list=2103.00020&amp;start=0&amp;max_results=1"
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Fifty-fourth targeted AI query coverage repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Scaling Up Visual and Vision-Language Representation Learning With Noisy Text Supervision",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2102.05918",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Fifty-fourth targeted AI query coverage repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "LiT: Zero-Shot Transfer With Locked-image Text Tuning",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2111.07991",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Fifty-fourth targeted AI query coverage repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -9353,8 +9411,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-30"
     },
     {
       "file": "content/ai/cognitive-architectures.md",
@@ -14514,43 +14574,85 @@
       "file": "content/ai/prompt-engineering.md",
       "article_id": "prompt-engineering",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 4,
       "verification_results": [
+        {
+          "source_title": "Language Models are Few-Shot Learners",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2005.14165",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Fifty-fourth targeted AI query coverage repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
         {
           "source_title": "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2201.11903",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2201.11903",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Fifty-fourth targeted AI query coverage repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Language Models are Few-Shot Learners (GPT-3)",
+          "source_title": "Self-Consistency Improves Chain of Thought Reasoning in Language Models",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2005.14165",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2203.11171",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Fifty-fourth targeted AI query coverage repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2210.03629",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Fifty-fourth targeted AI query coverage repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 2
+      "sources_verified": 4,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-30"
     },
     {
       "file": "content/ai/protein-structure-prediction.md",

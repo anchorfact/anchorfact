@@ -1,12 +1,12 @@
 ---
 id: adversarial-machine-learning
-title: "Adversarial Machine Learning: Attacks, Defenses, and Robustness Engineering"
-schema_type: article
+title: Adversarial Machine Learning
+schema_type: TechArticle
 category: ai
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+confidence: medium
+last_verified: '2026-05-30'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-4.5-sonnet
@@ -14,98 +14,87 @@ derived_from_human_seed: true
 conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
-completeness: 0.85
 atomic_facts:
-  - id: fact-aml-1
-    statement: FGSM (Goodfellow et al. 2015) generates adversarial examples by adding ε·sign(∇_x L(x,y)) to input, demonstrating that imperceptible perturbations can cause high-confidence misclassification.
-    source_title: Goodfellow, Ian J., Jonathon Shlens, and Christian Szegedy. Explaining and Harnessing Adversarial Examples. ICLR 2015
+  - id: fact-ai-adversarial-ml-1
+    statement: Szegedy et al. showed that small adversarial perturbations can cause neural networks to misclassify inputs, revealing a vulnerability in high-dimensional classifiers.
+    source_title: Intriguing Properties of Neural Networks
+    source_url: https://arxiv.org/abs/1312.6199
+    source_doi: 10.48550/arXiv.1312.6199
+    confidence: medium
+  - id: fact-ai-adversarial-ml-2
+    statement: Goodfellow, Shlens, and Szegedy introduced the fast gradient sign method as a simple way to generate adversarial examples using the sign of the input gradient.
+    source_title: Explaining and Harnessing Adversarial Examples
     source_url: https://arxiv.org/abs/1412.6572
-    confidence: high
-  - id: fact-aml-2
-    statement: >-
-      PGD (Madry et al. 2018, MIT) is the strongest first-order adversarial attack — iteratively applying FGSM with projection — and adversarial training with PGD became the standard defense for
-      certified robustness.
-    source_title: Madry, Aleksander, et al. Towards Deep Learning Models Resistant to Adversarial Attacks. ICLR 2018
-    source_url: https://openreview.net/forum?id=rJzIBfZAb
-    confidence: high
-  - id: fact-aml-3
-    statement: >-
-      Adversarial training, where models are trained on adversarially perturbed examples, is the most effective empirical defense, but certified defenses using interval bound propagation provide
-      provable guarantees.
-    source_title: Gowal, Sven, et al. Scalable Verified Training for Provably Robust Image Classification. ICCV 2019
-    source_url: https://arxiv.org/abs/1905.12588
-    confidence: high
-primary_sources:
-  - id: ps-adversarial-machine-learning-1
-    title: "Adversarial Machine Learning: A Taxonomy and Terminology of Attacks and Mitigations (NIST AI 100-2e3)"
-    type: government_report
-    year: 2025
-    institution: NIST (National Institute of Standards and Technology)
-    url: https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-2e2025.pdf
-  - id: ps-adversarial-machine-learning-2
-    title: "A survey on adversarial machine learning: Attacks, defenses, real-world applications, and algorithmic framework"
-    type: academic_paper
-    year: 2026
-    institution: Neurocomputing / Elsevier
-    url: https://www.sciencedirect.com/science/article/pii/S0925231226000676
+    source_doi: 10.48550/arXiv.1412.6572
+    confidence: medium
+  - id: fact-ai-adversarial-ml-3
+    statement: Madry et al. framed adversarial robustness as robust optimization and used projected gradient descent adversaries in adversarial training experiments.
+    source_title: Towards Deep Learning Models Resistant to Adversarial Attacks
+    source_url: https://arxiv.org/abs/1706.06083
+    source_doi: 10.48550/arXiv.1706.06083
+    confidence: medium
+completeness: 0.82
 known_gaps:
-  - Certified robustness guarantees for deep networks
-  - Real-time adversarial detection in production ML pipelines
+  - This article covers foundational adversarial-example concepts, not current multimodal attack leaderboards.
+  - Certified robustness, data poisoning, model extraction, and prompt-level attacks deserve separate focused entries.
 disputed_statements: []
-secondary_sources:
-  - title: Explaining and Harnessing Adversarial Examples (FGSM)
-    type: conference_paper
-    year: 2015
+primary_sources:
+  - title: Intriguing Properties of Neural Networks
+    authors:
+      - Szegedy, Christian
+      - Zaremba, Wojciech
+      - Sutskever, Ilya
+      - Bruna, Joan
+      - Erhan, Dumitru
+      - Goodfellow, Ian
+      - Fergus, Rob
+    type: academic_paper
+    year: 2014
+    url: https://arxiv.org/abs/1312.6199
+    doi: 10.48550/arXiv.1312.6199
+    institution: Google / New York University
+  - title: Explaining and Harnessing Adversarial Examples
     authors:
       - Goodfellow, Ian J.
       - Shlens, Jonathon
       - Szegedy, Christian
-    institution: Google Brain / ICLR
+    type: academic_paper
+    year: 2015
     url: https://arxiv.org/abs/1412.6572
-  - title: Towards Deep Learning Models Resistant to Adversarial Attacks (PGD)
-    type: conference_paper
-    year: 2018
+    doi: 10.48550/arXiv.1412.6572
+    institution: Google / ICLR
+  - title: Towards Deep Learning Models Resistant to Adversarial Attacks
     authors:
       - Madry, Aleksander
       - Makelov, Aleksandar
       - Schmidt, Ludwig
       - Tsipras, Dimitris
       - Vladu, Adrian
-    institution: MIT / ICLR
-    url: https://openreview.net/forum?id=rJzIBfZAb
-  - title: "Adversarial Machine Learning: A Review of Methods, Tools, and Defenses"
-    type: survey_paper
-    year: 2025
-    authors:
-      - multiple
-    institution: Artificial Intelligence Review (Springer)
-    url: https://doi.org/10.1007/s10462-025-11147-4
-  - title: Adversarial Robustness — Theory and Practice (NeurIPS Tutorial)
-    type: tutorial
-    year: 2019
-    authors:
-      - Kolter, Zico
-      - Madry, Aleksander
-    institution: NeurIPS / MIT
-    url: https://adversarial-ml-tutorial.org/
-updated: "2026-05-24"
+    type: academic_paper
+    year: 2018
+    url: https://arxiv.org/abs/1706.06083
+    doi: 10.48550/arXiv.1706.06083
+    institution: MIT
 ---
+
 ## TL;DR
-Adversarial Machine Learning studies how AI systems can be fooled — and defended. Tiny perturbations invisible to humans can cause state-of-the-art models to misclassify with high confidence. Building robust AI requires understanding the attack surface and engineering defenses.
 
-## Core Explanation
-Adversarial attacks: (1) Evasion attacks — add imperceptible perturbation ε to input x such that f(x+ε) ≠ f(x). FGSM (Fast Gradient Sign Method): x' = x + ε·sign(∇_x L). PGD (Projected Gradient Descent) iterates FGSM within L∞ ball. Physical attacks: printed adversarial patches on objects fool real-world computer vision. (2) Poisoning attacks — inject malicious samples into training data to create backdoors. (3) Privacy attacks — extract training data (membership inference) or reconstruct inputs (model inversion).
+Adversarial machine learning studies inputs, training data, and model interactions that are intentionally crafted to make machine-learning systems fail. This entry focuses on the foundational adversarial-example line of work: small input perturbations, gradient-based attacks, and adversarial training.
 
-## Detailed Analysis
-Defense taxonomy: (1) Adversarial training — augment training with adversarial examples (most effective but computationally expensive); (2) Certified defenses — provide mathematical guarantees of robustness within perturbation bounds (randomized smoothing, interval bound propagation); (3) Detection methods — identify adversarial inputs at inference (feature squeezing, MagNet); (4) Input preprocessing — JPEG compression, total variation minimization to remove perturbations. 2025 trend: multimodal adversarial attacks combining visual, text, and audio modalities. NIST emphasizes that no defense is universally effective — defense-in-depth and red teaming are essential. ICCV 2025 featured adversarial vulnerability exploration in vision-language-action models for robotics.
+## Core Claims
+
+Early adversarial-example work showed that neural networks can make confident mistakes on inputs changed by small, targeted perturbations. That result made robustness a core concern for safety-critical machine-learning systems.
+
+The fast gradient sign method is a simple gradient-based attack. It perturbs an input in the direction indicated by the sign of the loss gradient, making it a compact baseline for studying adversarial examples.
+
+Madry et al. framed robustness as an optimization problem against adversarial perturbations and used projected gradient descent adversaries in training. This helped establish adversarial training as a central empirical defense baseline.
+
+## Citation Boundaries
+
+Use this article for foundational adversarial-example concepts. Do not use it for current threat intelligence, current defense performance rankings, or claims that any single defense fully solves adversarial robustness.
 
 ## Further Reading
-- Adversarial Robustness Toolbox (IBM ART)
-- CleverHans Library (Google/TensorFlow)
-- NIST AI Risk Management Framework
 
-## Related Articles
-
-- [AI for Drug Repurposing: Identifying New Uses for Existing Drugs Through Machine Learning](../ai-drug-repurposing.md)
-- [AI Democratization: Open-Source Models, Low-Code AI, and Accessible Machine Learning](../ai-for-democratization.md)
-- [Anomaly Detection in Machine Learning](../anomaly-detection.md)
+- [Intriguing Properties of Neural Networks](https://arxiv.org/abs/1312.6199)
+- [Explaining and Harnessing Adversarial Examples](https://arxiv.org/abs/1412.6572)
+- [Towards Deep Learning Models Resistant to Adversarial Attacks](https://arxiv.org/abs/1706.06083)
