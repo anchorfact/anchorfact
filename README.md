@@ -97,6 +97,16 @@ The stricter signed check uses the pinned public key in `keys/provenance.pub.pem
 npm run verify:provenance:signed
 ```
 
+## Production Integrity Monitor
+
+The scheduled `Production Integrity` workflow runs daily and can also be started manually from GitHub Actions. It is read-only: it runs production smoke, requires signed trusted provenance, confirms artifact hashes and counts, and uploads a short integrity report artifact.
+
+For the same local read-only check, run:
+
+```bash
+npm run production:integrity
+```
+
 ## Content Model
 
 Content lives in `content/` as Markdown with YAML frontmatter.
@@ -181,6 +191,7 @@ Public hygiene checks are shared by the compiler, quality gate, and audit script
 | `npm run smoke:prod` | Checks the live production machine-readable endpoints. |
 | `npm run verify:provenance` | Verifies live provenance identity, artifact checksums, counts, source commit, and optional signature. |
 | `npm run verify:provenance:signed` | Verifies live provenance with the pinned trusted public key. |
+| `npm run production:integrity` | Runs production smoke plus trusted signed provenance verification and emits an integrity report. |
 | `npm run audit-public-sample` | Regenerates the 20-article public content audit report. |
 | `npm run audit-public-full` | Fails if any public article has an actionable audit recommendation. |
 | `npm run repo:hygiene` | Checks for stale root snapshots, mojibake, old launch metrics, and tracked generated files. |

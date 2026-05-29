@@ -179,10 +179,44 @@ function checkTextFiles(failures) {
   }
 }
 
+function checkProductionIntegrityWorkflow(failures) {
+  const path = '.github/workflows/production-integrity.yml';
+  if (!existsSync(path)) {
+    failures.push(`${path} is required for signed production monitoring.`);
+    return;
+  }
+
+  const text = readFileSync(path, 'utf8');
+  const requiredPatterns = [
+    [/name:\s*Production Integrity/, 'workflow name should be Production Integrity'],
+    [/workflow_dispatch:/, 'workflow should support manual dispatch'],
+    [/cron:\s*'27 0 \* \* \*'/, 'workflow should run daily at the expected cron schedule'],
+    [/permissions:\s*\r?\n\s+contents:\s+read/, 'workflow should use read-only contents permission'],
+    [/npm run production:integrity/, 'workflow should run the production integrity script'],
+    [/actions\/upload-artifact@v4/, 'workflow should upload the integrity report artifact']
+  ];
+
+  for (const [pattern, message] of requiredPatterns) {
+    if (!pattern.test(text)) failures.push(`${path}: ${message}.`);
+  }
+
+  const forbiddenPatterns = [
+    [/contents:\s+write/, 'must not request contents write permission'],
+    [/verify-full/, 'must not run verify-full'],
+    [/CLOUDFLARE_API_TOKEN/i, 'must not reference Cloudflare API tokens'],
+    [/wrangler/i, 'must not deploy or mutate Cloudflare state']
+  ];
+
+  for (const [pattern, message] of forbiddenPatterns) {
+    if (pattern.test(text)) failures.push(`${path}: ${message}.`);
+  }
+}
+
 const failures = [];
 checkRootTempFiles(failures);
 checkTrackedGeneratedFiles(failures);
 checkTextFiles(failures);
+checkProductionIntegrityWorkflow(failures);
 
 if (failures.length > 0) {
   console.error('Repository hygiene check failed:');

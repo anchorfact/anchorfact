@@ -1,0 +1,45 @@
+name: Production Integrity
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '27 0 * * *'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: production-integrity
+  cancel-in-progress: false
+
+jobs:
+  integrity:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup Node
+        uses: actions/setup-node@v5
+        with:
+          node-version: '24'
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run production integrity monitor
+        run: |
+          mkdir -p reports
+          npm run production:integrity -- --write reports/production-integrity.md --write-json reports/production-integrity.json
+
+      - name: Upload integrity report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: production-integrity-report
+          path: reports/production-integrity.*
+          if-no-files-found: warn
+          retention-days: 14
