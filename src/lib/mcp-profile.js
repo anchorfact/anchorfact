@@ -87,6 +87,7 @@ export function buildMcpProfile({
           health: `${HTTP_CONFIG.base_url}/health`,
           search: `${HTTP_CONFIG.base_url}/search?q={query}`,
           article: `${HTTP_CONFIG.base_url}/article?id={canonical_slug}`,
+          cite: `${HTTP_CONFIG.base_url}/cite?id={claim_id}`,
           stats: `${HTTP_CONFIG.base_url}/stats`
         }
       }
@@ -119,6 +120,22 @@ export function buildMcpProfile({
           article_id: {
             type: 'string',
             description: 'Canonical slug, canonical URL, or JSON-LD @id.'
+          }
+        }
+      }),
+      tool('anchorfact_cite_claim', 'Return citation-ready JSON or Markdown for one public AnchorFact claim.', {
+        type: 'object',
+        required: ['claim_id'],
+        properties: {
+          claim_id: {
+            type: 'string',
+            description: 'Claim shorthand, /fact/{id}, or full https://anchorfact.org/fact/{id} URL.'
+          },
+          format: {
+            type: 'string',
+            enum: ['json', 'markdown', 'md'],
+            default: 'json',
+            description: 'Output format.'
           }
         }
       }),

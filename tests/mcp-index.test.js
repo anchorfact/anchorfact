@@ -32,6 +32,8 @@ rmSync(root, { recursive: true, force: true });
 mkdirSync(articleDir, { recursive: true });
 
 writeFileSync(join(distDir, 'manifest.json'), JSON.stringify({
+  generated: '2026-05-29T00:00:00.000Z',
+  provenance_url: 'https://anchorfact.org/provenance.json',
   articles: [
     {
       id: 'https://anchorfact.org/kb/ai/public-fixture',
@@ -52,6 +54,41 @@ writeFileSync(join(distDir, 'manifest.json'), JSON.stringify({
       status: 'draft',
       confidence_level: 'low',
       is_draft: true
+    }
+  ]
+}, null, 2));
+
+writeFileSync(join(distDir, 'claims.json'), JSON.stringify({
+  generated: '2026-05-29T00:00:00.000Z',
+  provenance_url: 'https://anchorfact.org/provenance.json',
+  claims: [
+    {
+      id: 'https://anchorfact.org/fact/f1',
+      canonical_slug: 'ai/public-fixture',
+      statement: 'Public fixture claim.',
+      confidence: 'medium',
+      source_title: 'Fixture Paper',
+      source_url: 'https://example.com/fixture'
+    }
+  ]
+}, null, 2));
+
+writeFileSync(join(distDir, 'sources.json'), JSON.stringify({
+  generated: '2026-05-29T00:00:00.000Z',
+  provenance_url: 'https://anchorfact.org/provenance.json',
+  sources: [
+    {
+      id: 'source:fixture',
+      title: 'Fixture Paper',
+      url: 'https://example.com/fixture',
+      tier: 'A',
+      type: 'academic_paper',
+      articles: [
+        {
+          canonical_slug: 'ai/public-fixture',
+          title: 'Public Fixture'
+        }
+      ]
     }
   ]
 }, null, 2));
@@ -122,6 +159,37 @@ print(json.dumps({
 `);
   assertEq(result.medium, ['high', 'medium']);
   assertEq(result.low.includes('low'), true);
+});
+
+test('claim citation helper returns citation-ready JSON and Markdown', () => {
+  const result = runPython(`
+import json
+from pathlib import Path
+from mcp_claims import build_citation_payload, normalize_claim_id, render_citation_markdown
+status, payload = build_citation_payload(Path(r'''${pyPath(distDir)}'''), 'f1')
+missing_status, missing = build_citation_payload(Path(r'''${pyPath(distDir)}'''), 'missing')
+markdown = render_citation_markdown(payload)
+print(json.dumps({
+    "normalized": normalize_claim_id('/fact/f1'),
+    "status": status,
+    "schema": payload.get("schema_version"),
+    "claim_id": payload.get("claim_id"),
+    "source_tier": payload.get("citation_export", {}).get("source_tier"),
+    "inline": payload.get("citation_export", {}).get("inline"),
+    "markdown_has_heading": "# AnchorFact Citation" in markdown,
+    "missing_status": missing_status,
+    "missing_code": missing.get("error", {}).get("code"),
+}))
+`);
+  assertEq(result.normalized, 'https://anchorfact.org/fact/f1');
+  assertEq(result.status, 200);
+  assertEq(result.schema, 'anchorfact.cite-api.v1');
+  assertEq(result.claim_id, 'https://anchorfact.org/fact/f1');
+  assertEq(result.source_tier, 'A');
+  assertEq(result.inline.includes('AnchorFact:'), true);
+  assertEq(result.markdown_has_heading, true);
+  assertEq(result.missing_status, 404);
+  assertEq(result.missing_code, 'public_claim_not_found');
 });
 
 rmSync(root, { recursive: true, force: true });

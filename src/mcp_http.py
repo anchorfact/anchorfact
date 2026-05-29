@@ -7,8 +7,9 @@ This local API is backed by dist/manifest.json and exposes public articles only.
 from pathlib import Path
 
 from fastapi import FastAPI, Query
-from fastapi.responses import JSONResponse
+from fastapi.responses import JSONResponse, PlainTextResponse
 
+from mcp_claims import build_citation_payload, render_citation_markdown
 from mcp_index import (
     list_public_categories,
     load_article_detail,
@@ -106,6 +107,17 @@ def api_article_query(id: str = Query(..., description="Canonical slug, canonica
 @app.get("/article/{article_id:path}")
 def api_article(article_id: str):
     return article_response(article_id)
+
+
+@app.get("/cite")
+def api_cite(
+    id: str = Query(..., description="Claim shorthand, /fact/{id}, or full AnchorFact claim URL"),
+    format: str = Query("json", enum=["json", "markdown", "md"]),
+):
+    status, payload = build_citation_payload(DIST_DIR, id)
+    if status == 200 and format in {"markdown", "md"}:
+        return PlainTextResponse(render_citation_markdown(payload), media_type="text/markdown")
+    return JSONResponse(payload, status_code=status)
 
 
 @app.get("/stats")

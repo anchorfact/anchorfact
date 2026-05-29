@@ -12,6 +12,7 @@ from mcp.server import Server
 from mcp.server.stdio import stdio_server
 from mcp.types import TextContent, Tool
 
+from mcp_claims import build_citation_payload, render_citation_markdown
 from mcp_index import (
     list_public_categories,
     load_article_detail,
@@ -101,6 +102,25 @@ async def list_tools() -> list[Tool]:
             },
         ),
         Tool(
+            name="anchorfact_cite_claim",
+            description="Return citation-ready JSON or Markdown for one public AnchorFact claim.",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "claim_id": {
+                        "type": "string",
+                        "description": "Claim shorthand, /fact/{id}, or full https://anchorfact.org/fact/{id} URL.",
+                    },
+                    "format": {
+                        "type": "string",
+                        "enum": ["json", "markdown", "md"],
+                        "description": "Output format, default json.",
+                    },
+                },
+                "required": ["claim_id"],
+            },
+        ),
+        Tool(
             name="anchorfact_list_categories",
             description="List public AnchorFact categories and article counts.",
             inputSchema={"type": "object", "properties": {}},
@@ -150,6 +170,14 @@ async def call_tool(name: str, arguments: dict[str, Any]) -> list[TextContent]:
             "markdown_url": entry.get("markdown_url"),
             "jsonld_url": entry.get("jsonld_url"),
         }, ensure_ascii=False, indent=2))]
+
+    if name == "anchorfact_cite_claim":
+        claim_id = arguments.get("claim_id", "")
+        output_format = str(arguments.get("format", "json")).strip().lower()
+        status, payload = build_citation_payload(DIST_DIR, claim_id)
+        if status == 200 and output_format in {"markdown", "md"}:
+            return [TextContent(type="text", text=render_citation_markdown(payload))]
+        return [TextContent(type="text", text=json.dumps(payload, ensure_ascii=False, indent=2))]
 
     if name == "anchorfact_list_categories":
         categories = list_categories()
