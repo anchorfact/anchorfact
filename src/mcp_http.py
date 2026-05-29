@@ -16,12 +16,12 @@ from mcp_index import (
     load_public_article_index,
     resolve_article_reference,
 )
-from mcp_resolve import build_reference_payload
+from mcp_resolve import build_reference_batch_payload, build_reference_payload, render_reference_batch_markdown
 from mcp_search import BM25Index
 
 DIST_DIR = Path(__file__).resolve().parent.parent / "dist"
 
-app = FastAPI(title="AnchorFact MCP", version="1.2.0")
+app = FastAPI(title="AnchorFact MCP", version="1.3.0")
 
 _article_index: list[dict] | None = None
 _search_index = BM25Index()
@@ -116,6 +116,18 @@ def api_resolve(
     reference: str | None = Query(None, description="Alias for ref"),
 ):
     status, payload = build_reference_payload(DIST_DIR, ref or reference)
+    return JSONResponse(payload, status_code=status)
+
+
+@app.get("/resolve-batch")
+def api_resolve_batch(
+    ref: list[str] | None = Query(None, description="Repeat for each claim id, article slug, source id, or source URL"),
+    refs: str | None = Query(None, description="Comma- or newline-separated references"),
+    format: str = Query("json", enum=["json", "markdown", "md"]),
+):
+    status, payload = build_reference_batch_payload(DIST_DIR, ref or refs)
+    if status == 200 and format in {"markdown", "md"}:
+        return PlainTextResponse(render_reference_batch_markdown(payload), media_type="text/markdown")
     return JSONResponse(payload, status_code=status)
 
 

@@ -88,6 +88,7 @@ export function buildMcpProfile({
           search: `${HTTP_CONFIG.base_url}/search?q={query}`,
           article: `${HTTP_CONFIG.base_url}/article?id={canonical_slug}`,
           resolve: `${HTTP_CONFIG.base_url}/resolve?ref={reference}`,
+          resolve_batch: `${HTTP_CONFIG.base_url}/resolve-batch?ref={reference}&ref={reference}`,
           cite: `${HTTP_CONFIG.base_url}/cite?id={claim_id}`,
           stats: `${HTTP_CONFIG.base_url}/stats`
         }
@@ -131,6 +132,25 @@ export function buildMcpProfile({
           reference: {
             type: 'string',
             description: 'Claim shorthand or URL, article slug or URL, source id, or source URL.'
+          }
+        }
+      }),
+      tool('anchorfact_resolve_references', 'Resolve several mixed public AnchorFact references in one call.', {
+        type: 'object',
+        required: ['references'],
+        properties: {
+          references: {
+            type: 'array',
+            items: { type: 'string' },
+            minItems: 1,
+            maxItems: 20,
+            description: 'Claim ids, article slugs, AnchorFact URLs, source ids, or source URLs.'
+          },
+          format: {
+            type: 'string',
+            enum: ['json', 'markdown', 'md'],
+            default: 'json',
+            description: 'Output format.'
           }
         }
       }),

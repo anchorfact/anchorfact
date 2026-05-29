@@ -48,11 +48,13 @@ test('buildMcpProfile publishes local MCP install and tool metadata', () => {
   assertEq(profile.installation.stdio.config_snippet.mcpServers.anchorfact.args, ['src/mcp_server.py']);
   assertEq(profile.installation.local_http_wrapper.base_url, 'http://127.0.0.1:8000');
   assertEq(profile.installation.local_http_wrapper.endpoints.resolve, 'http://127.0.0.1:8000/resolve?ref={reference}');
+  assertEq(profile.installation.local_http_wrapper.endpoints.resolve_batch, 'http://127.0.0.1:8000/resolve-batch?ref={reference}&ref={reference}');
   assertEq(profile.installation.local_http_wrapper.endpoints.cite, 'http://127.0.0.1:8000/cite?id={claim_id}');
   assertEq(profile.tools.map(tool => tool.name), [
     'anchorfact_search',
     'anchorfact_get_article',
     'anchorfact_resolve_reference',
+    'anchorfact_resolve_references',
     'anchorfact_cite_claim',
     'anchorfact_list_categories'
   ]);

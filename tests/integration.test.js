@@ -163,6 +163,7 @@ test('public machine entrypoints exclude drafts', () => {
   assertEq(mcp.schema_version, 'anchorfact.mcp.v1');
   assert(mcp.tools.some(tool => tool.name === 'anchorfact_search'), 'MCP profile should include search tool metadata');
   assert(mcp.tools.some(tool => tool.name === 'anchorfact_resolve_reference'), 'MCP profile should include resolver tool metadata');
+  assert(mcp.tools.some(tool => tool.name === 'anchorfact_resolve_references'), 'MCP profile should include batch resolver tool metadata');
   assert(mcp.tools.some(tool => tool.name === 'anchorfact_cite_claim'), 'MCP profile should include citation tool metadata');
   assertEq(graph.public_article_count, 1);
   assert(graph.nodes.some(node => node.id === 'article:ai/public-fixture'), 'graph should link to public article');

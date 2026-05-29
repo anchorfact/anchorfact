@@ -11,8 +11,10 @@ from mcp_index import load_article_detail, resolve_article_reference
 
 OFFICIAL_SITE = "https://anchorfact.org"
 RESOLVE_API_SCHEMA_VERSION = "anchorfact.resolve-api.v1"
+RESOLVE_BATCH_API_SCHEMA_VERSION = "anchorfact.resolve-batch-api.v1"
 SOURCE_API_SCHEMA_VERSION = "anchorfact.source-api.v1"
 MCP_ARTICLE_SCHEMA_VERSION = "anchorfact.mcp-article.v1"
+MAX_BATCH_REFS = 20
 
 
 def _load_json(dist_dir: Path, filename: str) -> dict:
@@ -61,6 +63,17 @@ def _is_external_url(value: object) -> bool:
 def _error_payload(code: str, message: str, **extra: object) -> dict:
     return {
         "schema_version": RESOLVE_API_SCHEMA_VERSION,
+        "error": {
+            "code": code,
+            "message": message,
+        },
+        **extra,
+    }
+
+
+def _batch_error_payload(code: str, message: str, **extra: object) -> dict:
+    return {
+        "schema_version": RESOLVE_BATCH_API_SCHEMA_VERSION,
         "error": {
             "code": code,
             "message": message,
@@ -235,3 +248,82 @@ def build_reference_payload(dist_dir: Path, reference: object) -> tuple[int, dic
     if status != 200:
         return status, _wrap_not_found(ref, "article", ref, payload)
     return 200, _wrap(ref, "article", payload["canonical_slug"], payload)
+
+
+def _normalize_batch_references(references: object) -> list[str]:
+    if references is None:
+        return []
+    if isinstance(references, str):
+        values = references.replace("\n", ",").split(",")
+    elif isinstance(references, (list, tuple)):
+        values = []
+        for item in references:
+            if isinstance(item, str) and ("\n" in item or "," in item):
+                values.extend(item.replace("\n", ",").split(","))
+            else:
+                values.append(item)
+    else:
+        values = [references]
+    return [str(value).strip() for value in values if str(value or "").strip()]
+
+
+def build_reference_batch_payload(dist_dir: Path, references: object) -> tuple[int, dict]:
+    refs = _normalize_batch_references(references)
+    if not refs:
+        return 400, _batch_error_payload(
+            "missing_or_invalid_references",
+            "Provide one or more public AnchorFact references.",
+        )
+    if len(refs) > MAX_BATCH_REFS:
+        return 400, _batch_error_payload(
+            "too_many_references",
+            f"Resolve batch accepts at most {MAX_BATCH_REFS} references per request.",
+            max_references=MAX_BATCH_REFS,
+            requested_references=len(refs),
+        )
+
+    results = []
+    for ref in refs:
+        status, payload = build_reference_payload(dist_dir, ref)
+        results.append({
+            "ok": status == 200,
+            "status": status,
+            **payload,
+        })
+    ok_count = sum(1 for result in results if result["ok"])
+    provenance_url = next((result.get("provenance_url") for result in results if result.get("provenance_url")), None)
+    return 200, {
+        "schema_version": RESOLVE_BATCH_API_SCHEMA_VERSION,
+        "generated": next((result.get("generated") for result in results if result.get("generated")), None),
+        "provenance_url": provenance_url,
+        "reference_count": len(refs),
+        "ok_count": ok_count,
+        "error_count": len(results) - ok_count,
+        "results": results,
+    }
+
+
+def render_reference_batch_markdown(payload: dict) -> str:
+    lines = [
+        "# AnchorFact Resolve Batch",
+        "",
+        f"Generated: {payload.get('generated') or 'unknown'}",
+        f"Provenance: {payload.get('provenance_url') or 'unavailable'}",
+        f"Results: {payload.get('ok_count', 0)} resolved / {payload.get('error_count', 0)} errors",
+        "",
+    ]
+    for item in payload.get("results", []):
+        if not item.get("ok"):
+            lines.append(f"- {item.get('ref') or 'unknown'}: {item.get('status')} {(item.get('error') or {}).get('code') or 'error'}")
+            continue
+        label = (
+            ((item.get("result") or {}).get("claim") or {}).get("statement")
+            or ((item.get("result") or {}).get("article") or {}).get("title")
+            or ((item.get("result") or {}).get("source") or {}).get("title")
+            or item.get("canonical_ref")
+        )
+        lines.append(
+            f"- {item.get('ref')}: {item.get('resolved_type')} -> {item.get('canonical_ref')} "
+            f"({item.get('result_schema_version')}) - {label}"
+        )
+    return "\n".join(lines) + "\n"

@@ -19,7 +19,7 @@ from mcp_index import (
     load_public_article_index,
     resolve_article_reference,
 )
-from mcp_resolve import build_reference_payload
+from mcp_resolve import build_reference_batch_payload, build_reference_payload, render_reference_batch_markdown
 from mcp_search import BM25Index as SharedBM25Index
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -117,6 +117,26 @@ async def list_tools() -> list[Tool]:
             },
         ),
         Tool(
+            name="anchorfact_resolve_references",
+            description="Resolve several mixed public AnchorFact references in one call.",
+            inputSchema={
+                "type": "object",
+                "properties": {
+                    "references": {
+                        "type": "array",
+                        "items": {"type": "string"},
+                        "description": "Claim ids, article slugs, AnchorFact URLs, source ids, or source URLs.",
+                    },
+                    "format": {
+                        "type": "string",
+                        "enum": ["json", "markdown", "md"],
+                        "description": "Output format, default json.",
+                    },
+                },
+                "required": ["references"],
+            },
+        ),
+        Tool(
             name="anchorfact_cite_claim",
             description="Return citation-ready JSON or Markdown for one public AnchorFact claim.",
             inputSchema={
@@ -189,6 +209,14 @@ async def call_tool(name: str, arguments: dict[str, Any]) -> list[TextContent]:
     if name == "anchorfact_resolve_reference":
         reference = arguments.get("reference", arguments.get("ref", ""))
         _, payload = build_reference_payload(DIST_DIR, reference)
+        return [TextContent(type="text", text=json.dumps(payload, ensure_ascii=False, indent=2))]
+
+    if name == "anchorfact_resolve_references":
+        references = arguments.get("references", arguments.get("refs", []))
+        output_format = str(arguments.get("format", "json")).strip().lower()
+        _, payload = build_reference_batch_payload(DIST_DIR, references)
+        if output_format in {"markdown", "md"} and "error" not in payload:
+            return [TextContent(type="text", text=render_reference_batch_markdown(payload))]
         return [TextContent(type="text", text=json.dumps(payload, ensure_ascii=False, indent=2))]
 
     if name == "anchorfact_cite_claim":

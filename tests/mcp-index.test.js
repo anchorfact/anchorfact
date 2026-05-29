@@ -196,7 +196,7 @@ test('reference resolver returns local payloads for claims, articles, and source
   const result = runPython(`
 import json
 from pathlib import Path
-from mcp_resolve import build_reference_payload
+from mcp_resolve import build_reference_batch_payload, build_reference_payload, render_reference_batch_markdown
 dist = Path(r'''${pyPath(distDir)}''')
 refs = ['f1', 'ai/public-fixture', 'source:fixture', 'https://example.com/fixture', 'ai/missing']
 resolved = {}
@@ -211,6 +211,16 @@ for ref in refs:
         "error_code": (payload.get("error") or {}).get("code"),
         "source_id": (payload.get("result") or {}).get("source_id"),
     }
+batch_status, batch = build_reference_batch_payload(dist, ['f1', 'source:fixture', 'ai/missing'])
+markdown = render_reference_batch_markdown(batch)
+resolved["batch"] = {
+    "status": batch_status,
+    "schema": batch.get("schema_version"),
+    "reference_count": batch.get("reference_count"),
+    "ok_count": batch.get("ok_count"),
+    "error_count": batch.get("error_count"),
+    "markdown_has_heading": "# AnchorFact Resolve Batch" in markdown,
+}
 print(json.dumps(resolved))
 `);
   assertEq(result.f1.status, 200);
@@ -228,6 +238,12 @@ print(json.dumps(resolved))
   assertEq(result['https://example.com/fixture'].resolved_type, 'source');
   assertEq(result['ai/missing'].status, 404);
   assertEq(result['ai/missing'].error_code, 'reference_not_found');
+  assertEq(result.batch.status, 200);
+  assertEq(result.batch.schema, 'anchorfact.resolve-batch-api.v1');
+  assertEq(result.batch.reference_count, 3);
+  assertEq(result.batch.ok_count, 2);
+  assertEq(result.batch.error_count, 1);
+  assertEq(result.batch.markdown_has_heading, true);
 });
 
 rmSync(root, { recursive: true, force: true });
