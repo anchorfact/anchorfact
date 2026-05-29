@@ -61,8 +61,10 @@ function writeFixture({ omitTool = null, snapshotPublic = 1 } = {}) {
     draft: {
       repair_queue: {
         candidate_count: 1,
+        excluded_count: 1,
         next_batch: [{ canonical_slug: 'ai/draft-a' }],
-        selection_policy: ['Prioritize lower repair_complexity values first.']
+        selection_policy: ['Prioritize lower repair_complexity values first.'],
+        exclusion_reason_distribution: [{ name: 'placeholder_content', count: 1 }]
       }
     },
     trust_boundaries: { draft_entries_excluded_from_ai_entrypoints: true }
@@ -105,6 +107,7 @@ function passingPythonSummary() {
     health_status: 200,
     health_schema_version: 'anchorfact.content-health.v1',
     health_repair_queue_candidates: 1,
+    health_repair_queue_excluded_count: 1,
     health_repair_queue_next_batch: 1,
     cite_status: 200,
     cite_schema_version: 'anchorfact.cite-api.v1',
@@ -129,10 +132,12 @@ test('checkLocalMcp reports a passing local MCP contract', () => {
   assertEq(report.checks.mcp_profile.status, 'pass');
   assertEq(report.checks.snapshot_counts.status, 'pass');
   assertEq(report.checks.python_modules.status, 'pass');
+  assertEq(report.checks.python_modules.health_repair_queue_excluded_count, 1);
 
   const markdown = renderLocalMcpCheckMarkdown(report);
   assert(markdown.includes('# AnchorFact Local MCP Check - PASS'), 'markdown should include pass heading');
   assert(markdown.includes('public fixture'), 'markdown should include exercised query');
+  assert(markdown.includes('health repair exclusions: 1'), 'markdown should include health exclusion count');
 });
 
 test('checkLocalMcp fails on MCP profile drift and Python failures', () => {
@@ -150,6 +155,7 @@ test('checkLocalMcp fails on MCP profile drift and Python failures', () => {
       context_citation_ready_claim_count: 0,
       health_status: 500,
       health_repair_queue_candidates: 0,
+      health_repair_queue_excluded_count: null,
       cite_status: 404
     })
   });

@@ -81,6 +81,7 @@ def render_health_markdown(payload: dict) -> str:
         "## Draft Repair Queue",
         "",
         f"- Candidate count: {queue.get('candidate_count') if queue.get('candidate_count') is not None else 0}",
+        f"- Automatic repair exclusions: {queue.get('excluded_count') if queue.get('excluded_count') is not None else 0}",
         f"- Next batch size: {queue.get('next_batch_size') if queue.get('next_batch_size') is not None else len(queue.get('next_batch') or [])}",
     ])
 
@@ -91,6 +92,13 @@ def render_health_markdown(payload: dict) -> str:
             f"(complexity {item.get('repair_complexity')}, reasons: {reasons})"
         )
     lines.append("")
+
+    exclusion_reasons = queue.get("exclusion_reason_distribution") or []
+    if exclusion_reasons:
+        lines.extend(["## Repair Queue Exclusions", ""])
+        for item in exclusion_reasons:
+            lines.append(f"- {item.get('name') or 'unknown'}: {item.get('count') if item.get('count') is not None else 0}")
+        lines.append("")
 
     if queue.get("selection_policy"):
         lines.extend(["## Selection Policy", ""])

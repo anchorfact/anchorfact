@@ -116,6 +116,7 @@ search_results = index.search(query, confidence_min="low", limit=3) if query els
 plan_status, plan_payload = build_plan_payload(dist, query, 3) if query else (400, {})
 context_status, context_payload = build_context_payload(dist, query, 3) if query else (400, {})
 health_status, health_payload = build_health_payload(dist)
+health_queue = (health_payload.get("draft", {}).get("repair_queue", {}) or {})
 cite_status, cite_payload = build_citation_payload(dist, claim_ref) if claim_ref else (400, {})
 resolve_status, resolve_payload = build_reference_payload(dist, claim_ref or (record or {}).get("canonical_slug"))
 batch_refs = [item for item in [claim_ref, (record or {}).get("canonical_slug")] if item]
@@ -143,8 +144,9 @@ print(json.dumps({
     "context_citation_ready_claim_count": len(context_payload.get("citation_ready_claims") or []),
     "health_status": health_status,
     "health_schema_version": health_payload.get("schema_version"),
-    "health_repair_queue_candidates": (health_payload.get("draft", {}).get("repair_queue", {}) or {}).get("candidate_count"),
-    "health_repair_queue_next_batch": len((health_payload.get("draft", {}).get("repair_queue", {}) or {}).get("next_batch") or []),
+    "health_repair_queue_candidates": health_queue.get("candidate_count"),
+    "health_repair_queue_excluded_count": health_queue.get("excluded_count"),
+    "health_repair_queue_next_batch": len(health_queue.get("next_batch") or []),
     "cite_status": cite_status,
     "cite_schema_version": cite_payload.get("schema_version"),
     "resolve_status": resolve_status,
@@ -208,6 +210,11 @@ function checkPythonSummary(report, summary) {
     failures.push(message);
     addFailure(report, message);
   }
+  if (!Number.isFinite(summary.health_repair_queue_excluded_count ?? null)) {
+    const message = valueLabel('health_repair_queue_excluded_count', summary.health_repair_queue_excluded_count, 'a number');
+    failures.push(message);
+    addFailure(report, message);
+  }
   if (!Number.isFinite(summary.health_repair_queue_next_batch ?? null)) {
     const message = valueLabel('health_repair_queue_next_batch', summary.health_repair_queue_next_batch, 'a number');
     failures.push(message);
@@ -229,6 +236,7 @@ function checkPythonSummary(report, summary) {
     plan_coverage_status: summary.plan_coverage_status || null,
     dependencies: summary.dependencies || {},
     category_count: summary.category_count || 0,
+    health_repair_queue_excluded_count: summary.health_repair_queue_excluded_count ?? null,
     failures
   };
 }
@@ -340,6 +348,7 @@ export function renderLocalMcpCheckMarkdown(report) {
     `- snapshot counts: ${report.checks.snapshot_counts?.status || 'unknown'}`,
     `- Python modules: ${python.status || 'unknown'}`,
     `- exercised query: ${python.exercised_query || 'unavailable'}`,
+    `- health repair exclusions: ${python.health_repair_queue_excluded_count ?? 'unknown'}`,
     '',
     '## MCP Tools',
     '',
