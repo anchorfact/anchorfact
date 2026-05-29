@@ -132,7 +132,7 @@ export function buildMcpProfile({
           }
         }
       }),
-      tool('anchorfact_context', 'Return one local prompt context pack with coverage status, fallback guidance, evidence packs, and citation guardrails.', {
+      tool('anchorfact_context', 'Return one local prompt context pack with coverage status, content health, fallback guidance, evidence packs, and citation guardrails.', {
         type: 'object',
         required: ['query'],
         properties: {

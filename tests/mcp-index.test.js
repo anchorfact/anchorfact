@@ -154,6 +154,27 @@ writeFileSync(join(distDir, 'capabilities.json'), JSON.stringify({
   provenance_url: 'https://anchorfact.org/provenance.json'
 }, null, 2));
 
+writeFileSync(join(distDir, 'content-health.json'), JSON.stringify({
+  schema_version: 'anchorfact.content-health.v1',
+  generated: '2026-05-29T00:00:00.000Z',
+  provenance_url: 'https://anchorfact.org/provenance.json',
+  snapshot: {
+    public_articles: 1,
+    draft_articles: 1,
+    public_claims: 1,
+    public_sources: 1
+  },
+  public: {
+    source_coverage: { full: 1, partial: 0, zero: 0 },
+    claim_mapping: { total: 1, mapped: 1, ratio: 1 }
+  },
+  machine_guidance: ['Use local MCP context for prompt assembly.'],
+  trust_boundaries: {
+    draft_entries_excluded_from_ai_entrypoints: true,
+    original_sources_remain_authoritative: true
+  }
+}, null, 2));
+
 writeFileSync(join(articleDir, 'index.json'), JSON.stringify({
   '@context': 'https://schema.org',
   '@id': 'https://anchorfact.org/kb/ai/public-fixture',
@@ -284,8 +305,12 @@ print(json.dumps({
     "evidence_pack_count": payload.get("evidence_pack_count"),
     "top_slug": payload.get("evidence_packs", [{}])[0].get("canonical_slug"),
     "citation_contract": payload.get("citation_contract", {}).get("include_anchorfact_claim_url"),
+    "content_health_public": payload.get("content_health", {}).get("snapshot", {}).get("public_articles"),
+    "content_health_mapping": payload.get("content_health", {}).get("public_claim_mapping", {}).get("mapped"),
+    "content_health_trust": payload.get("content_health", {}).get("trust_boundaries", {}).get("draft_entries_excluded_from_ai_entrypoints"),
     "has_draft_claim": "Draft facts" in json.dumps(payload),
     "markdown_has_heading": "# AnchorFact Local Context" in markdown,
+    "markdown_has_health": "Corpus Health" in markdown,
     "markdown_has_claim": "Public fixture claim." in markdown,
     "unsupported_status": unsupported_status,
     "unsupported_coverage": unsupported.get("coverage_status"),
@@ -301,8 +326,12 @@ print(json.dumps({
   assertEq(result.evidence_pack_count, 1);
   assertEq(result.top_slug, 'ai/public-fixture');
   assertEq(result.citation_contract, true);
+  assertEq(result.content_health_public, 1);
+  assertEq(result.content_health_mapping, 1);
+  assertEq(result.content_health_trust, true);
   assertEq(result.has_draft_claim, false);
   assertEq(result.markdown_has_heading, true);
+  assertEq(result.markdown_has_health, true);
   assertEq(result.markdown_has_claim, true);
   assertEq(result.unsupported_status, 200);
   assertEq(result.unsupported_coverage, 'unsupported');

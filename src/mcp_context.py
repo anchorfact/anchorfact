@@ -23,6 +23,29 @@ def _load_json(dist_dir: Path, filename: str, default: dict) -> dict:
         return default
 
 
+def _compact_content_health(payload: dict) -> dict | None:
+    if not payload or not payload.get("schema_version"):
+        return None
+    snapshot = payload.get("snapshot") or {}
+    public = payload.get("public") or {}
+    return {
+        "schema_version": payload.get("schema_version"),
+        "generated": payload.get("generated"),
+        "provenance_url": payload.get("provenance_url"),
+        "path": "/content-health.json",
+        "snapshot": {
+            "public_articles": snapshot.get("public_articles"),
+            "draft_articles": snapshot.get("draft_articles"),
+            "public_claims": snapshot.get("public_claims"),
+            "public_sources": snapshot.get("public_sources"),
+        },
+        "public_source_coverage": public.get("source_coverage"),
+        "public_claim_mapping": public.get("claim_mapping"),
+        "trust_boundaries": payload.get("trust_boundaries") or {},
+        "machine_guidance": (payload.get("machine_guidance") or [])[:4],
+    }
+
+
 def _generated_timestamp() -> str:
     return datetime.now(timezone.utc).isoformat(timespec="milliseconds").replace("+00:00", "Z")
 
@@ -156,6 +179,7 @@ def build_context_payload(dist_dir: Path, query: str | None, limit: int = DEFAUL
     claims_payload = _load_json(dist, "claims.json", {"claims": []})
     sources_payload = _load_json(dist, "sources.json", {"sources": []})
     search_index = _load_json(dist, "search-index.json", {})
+    content_health = _load_json(dist, "content-health.json", {})
 
     packs = []
     for result in (plan.get("matched_articles") or [])[:normalized_limit]:
@@ -188,6 +212,7 @@ def build_context_payload(dist_dir: Path, query: str | None, limit: int = DEFAUL
         "should_use_anchorfact": plan.get("should_use_anchorfact"),
         "confidence": plan.get("confidence"),
         "citation_contract": CITATION_CONTRACT,
+        "content_health": _compact_content_health(content_health),
         "trust_requirements": plan.get("trust_requirements", []),
         "fallback_guidance": plan.get("fallback_guidance", []),
         "recommended_next_calls": plan.get("recommended_next_calls", []),
@@ -222,6 +247,18 @@ def render_context_markdown(payload: dict) -> str:
         lines.extend(["## Trust Requirements", ""])
         for requirement in payload["trust_requirements"]:
             lines.append(f"- {requirement}")
+        lines.append("")
+
+    if payload.get("content_health"):
+        health = payload["content_health"]
+        snapshot = health.get("snapshot") or {}
+        boundaries = health.get("trust_boundaries") or {}
+        lines.extend(["## Corpus Health", ""])
+        lines.append(f"- Public articles: {snapshot.get('public_articles') or 'unknown'}")
+        lines.append(f"- Public claims: {snapshot.get('public_claims') or 'unknown'}")
+        excluded = "yes" if boundaries.get("draft_entries_excluded_from_ai_entrypoints") is True else "unknown"
+        lines.append(f"- Draft articles excluded: {excluded}")
+        lines.append(f"- Health artifact: {health.get('path') or '/content-health.json'}")
         lines.append("")
 
     if payload.get("fallback_guidance"):

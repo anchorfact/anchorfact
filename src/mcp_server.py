@@ -104,7 +104,7 @@ async def list_tools() -> list[Tool]:
         ),
         Tool(
             name="anchorfact_context",
-            description="Return one local prompt context pack with coverage status, fallback guidance, evidence packs, and citation guardrails.",
+            description="Return one local prompt context pack with coverage status, content health, fallback guidance, evidence packs, and citation guardrails.",
             inputSchema={
                 "type": "object",
                 "properties": {
