@@ -15,6 +15,7 @@ import {
   OPENAPI_SCHEMA_VERSION,
   PROVENANCE_PATH,
   PROVENANCE_SCHEMA_VERSION,
+  RESOLVE_API_SCHEMA_VERSION,
   SEARCH_API_SCHEMA_VERSION,
   SEARCH_INDEX_SCHEMA_VERSION,
   SOURCE_API_SCHEMA_VERSION,
@@ -163,6 +164,25 @@ export function buildOpenApiContract({
             }
           ],
           responses: { 200: jsonResponse('SearchApiResponse') }
+        }
+      },
+      '/api/resolve': {
+        get: {
+          summary: 'Read-only resolver for public AnchorFact references',
+          parameters: [
+            {
+              name: 'ref',
+              in: 'query',
+              required: true,
+              schema: { type: 'string', minLength: 1 },
+              description: 'Claim id, article slug, source id, AnchorFact URL, or original source URL.'
+            }
+          ],
+          responses: {
+            200: jsonResponse('ResolveApiResponse'),
+            400: jsonResponse('ApiError'),
+            404: jsonResponse('ApiError')
+          }
         }
       },
       '/api/article': {
@@ -392,6 +412,14 @@ export function buildOpenApiContract({
           claims_generated: { type: ['string', 'null'], format: 'date-time' },
           source_index_generated: { type: ['string', 'null'], format: 'date-time' },
           packs: { type: 'array', items: { type: 'object' } }
+        }),
+        ResolveApiResponse: schemaVersioned('Resolve API response', RESOLVE_API_SCHEMA_VERSION, {
+          ref: { type: 'string' },
+          resolved_type: { enum: ['article', 'claim', 'source'] },
+          canonical_ref: { type: 'string' },
+          result_schema_version: { type: 'string' },
+          links: { type: 'object' },
+          result: { type: 'object' }
         }),
         ArticleApiResponse: schemaVersioned('Article API response', ARTICLE_API_SCHEMA_VERSION, {
           canonical_slug: { type: 'string' },

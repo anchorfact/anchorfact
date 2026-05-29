@@ -108,7 +108,9 @@ test('buildExamplesIndex produces executable AI workflow examples', () => {
   assertEq(searchExample.expected_anchor.article.canonical_slug, 'ai/3d-generation-gaussian-splatting');
 
   const claimExample = payload.examples.find(example => example.id === 'claim_dereference');
-  assert(claimExample.workflow[0].call.path.includes('/api/claim?id=f1'), 'claim example should use shorthand claim id');
+  assert(claimExample.workflow[0].call.path.includes('/api/resolve?ref=f1'), 'claim example should resolve shorthand claim id first');
+  assert(claimExample.workflow[1].call.path.includes('/api/claim?id=f1'), 'claim example should use shorthand claim id');
+  assert(claimExample.workflow[2].call.path.includes('/api/cite?id=f1'), 'claim example should fetch citation-ready payload');
   assertEq(claimExample.expected_anchor.claim.lookup_id, 'f1');
 
   const sourceExample = payload.examples.find(example => example.id === 'source_reuse_lookup');

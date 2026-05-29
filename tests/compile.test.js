@@ -137,6 +137,7 @@ test('public entrypoints exclude draft articles', () => {
   assert(indexHtml.includes('/mcp.json'), 'index should link to MCP profile');
   assert(indexHtml.includes('/search-index.json'), 'index should link to search index');
   assert(indexHtml.includes('/api/evidence?q='), 'index should link to evidence API example');
+  assert(indexHtml.includes('/api/resolve?ref='), 'index should link to resolve API example');
   assert(indexHtml.includes('/api/article?slug='), 'index should link to article API example');
   assert(indexHtml.includes('/api/cite?id='), 'index should link to citation API example');
   assert(indexHtml.includes('/api/claim?id='), 'index should link to claim API example');
@@ -150,6 +151,7 @@ test('public entrypoints exclude draft articles', () => {
   assert(llmsTxt.includes('MCP'), 'llms.txt should include MCP profile');
   assert(llmsTxt.includes('Search Index'), 'llms.txt should include search index');
   assert(llmsTxt.includes('Evidence API'), 'llms.txt should include evidence API');
+  assert(llmsTxt.includes('Resolve API'), 'llms.txt should include resolve API');
   assert(llmsTxt.includes('Article API'), 'llms.txt should include article API');
   assert(llmsTxt.includes('Citation API'), 'llms.txt should include citation API');
   assert(llmsTxt.includes('Claim API'), 'llms.txt should include claim API');
@@ -184,7 +186,7 @@ test('agent profile describes the machine contract', () => {
   assertEq(agent.current_snapshot.examples, 5);
   assert(agent.current_snapshot.graph_nodes >= 1, 'agent profile should expose graph node count');
   assert(agent.current_snapshot.graph_edges >= 1, 'agent profile should expose graph edge count');
-  assertEq(agent.current_snapshot.evals, 7);
+  assertEq(agent.current_snapshot.evals, 8);
   assertEq(agent.current_snapshot.mcp_tools, 4);
   assert(agent.current_snapshot.unique_sources >= 1, 'agent profile should expose source count');
   assertEq(agent.endpoints.claims.url, 'https://anchorfact.org/claims.json');
@@ -195,6 +197,7 @@ test('agent profile describes the machine contract', () => {
   assertEq(agent.endpoints.mcp.url, 'https://anchorfact.org/mcp.json');
   assertEq(agent.endpoints.openapi.url, 'https://anchorfact.org/openapi.json');
   assertEq(agent.endpoints.evidence_api.path, '/api/evidence?q={query}');
+  assertEq(agent.endpoints.resolve_api.path, '/api/resolve?ref={reference}');
   assertEq(agent.endpoints.search_api.path, '/api/search?q={query}');
   assertEq(agent.endpoints.article_api.path, '/api/article?slug={canonical_slug}');
   assertEq(agent.endpoints.cite_api.path, '/api/cite?id={claim_id}');
@@ -211,6 +214,7 @@ test('agent profile describes the machine contract', () => {
   assert(agent.recommended_workflow.some(step => step.includes('/mcp.json')), 'agent workflow should mention MCP profile');
   assert(agent.recommended_workflow.some(step => step.includes('/search-index.json')), 'agent workflow should mention search index');
   assert(agent.recommended_workflow.some(step => step.includes('/api/evidence')), 'agent workflow should mention evidence API');
+  assert(agent.recommended_workflow.some(step => step.includes('/api/resolve')), 'agent workflow should mention resolve API');
   assert(agent.recommended_workflow.some(step => step.includes('/api/article')), 'agent workflow should mention article API');
   assert(agent.recommended_workflow.some(step => step.includes('/api/cite')), 'agent workflow should mention citation API');
   assert(agent.recommended_workflow.some(step => step.includes('/api/claim')), 'agent workflow should mention claim API');
@@ -235,6 +239,7 @@ test('openapi.json describes the static AI contract', () => {
   assert(openapi.paths['/evals.json'], 'OpenAPI should describe evals endpoint');
   assert(openapi.paths['/mcp.json'], 'OpenAPI should describe MCP endpoint');
   assert(openapi.paths['/api/evidence'], 'OpenAPI should describe evidence API');
+  assert(openapi.paths['/api/resolve'], 'OpenAPI should describe resolve API');
   assert(openapi.paths['/api/search'], 'OpenAPI should describe search API');
   assert(openapi.paths['/api/article'], 'OpenAPI should describe article API');
   assert(openapi.paths['/api/cite'], 'OpenAPI should describe citation API');
@@ -250,6 +255,7 @@ test('openapi.json describes the static AI contract', () => {
   assert(openapi.components.schemas.McpProfile, 'OpenAPI should define MCP schema');
   assert(openapi.components.schemas.SearchIndex, 'OpenAPI should define SearchIndex schema');
   assert(openapi.components.schemas.EvidenceApiResponse, 'OpenAPI should define EvidenceApiResponse schema');
+  assert(openapi.components.schemas.ResolveApiResponse, 'OpenAPI should define ResolveApiResponse schema');
   assert(openapi.components.schemas.ArticleApiResponse, 'OpenAPI should define ArticleApiResponse schema');
   assert(openapi.components.schemas.CiteApiResponse, 'OpenAPI should define CiteApiResponse schema');
   assert(openapi.components.schemas.ClaimApiResponse, 'OpenAPI should define ClaimApiResponse schema');
@@ -309,6 +315,7 @@ test('examples.json describes executable AI usage examples', () => {
   const evidenceExample = examples.examples[0];
   assert(evidenceExample.workflow.some(step => step.call.path.includes('/api/evidence?')), 'examples should show evidence API usage');
   const claimExample = examples.examples.find(example => example.id === 'claim_dereference');
+  assert(claimExample.workflow.some(step => step.call.path.includes('/api/resolve?')), 'examples should show resolve API usage');
   assert(claimExample.workflow.some(step => step.call.path.includes('/api/cite?')), 'examples should show citation API usage');
   const searchExample = examples.examples[1];
   assert(searchExample.workflow.some(step => step.call.path.includes('/api/search?')), 'examples should show search API usage');
@@ -337,17 +344,19 @@ test('evals.json describes executable AI integration checks', () => {
   const evals = JSON.parse(readFileSync(join(distDir, 'evals.json'), 'utf-8'));
   assertEq(evals.schema_version, 'anchorfact.evals.v1');
   assertEq(evals.provenance_url, 'https://anchorfact.org/provenance.json');
-  assertEq(evals.eval_count, 7);
+  assertEq(evals.eval_count, 8);
   assertEq(evals.evals.map(evalCase => evalCase.id), [
     'evidence_pack_json',
     'evidence_pack_markdown',
     'claim_dereference',
+    'reference_resolver',
     'citation_export',
     'source_reuse_lookup',
     'graph_relationships',
     'signed_provenance_static_artifacts'
   ]);
   assert(evals.evals.some(evalCase => evalCase.call.path.includes('/api/evidence?')), 'evals should include evidence API checks');
+  assert(evals.evals.some(evalCase => evalCase.call.path.includes('/api/resolve?')), 'evals should include resolve API checks');
   assert(evals.evals.some(evalCase => evalCase.call.path.includes('/api/claim?')), 'evals should include claim API checks');
   assert(evals.evals.some(evalCase => evalCase.call.path.includes('/api/cite?')), 'evals should include citation API checks');
   assert(evals.evals.some(evalCase => evalCase.call.path === '/graph.json'), 'evals should include graph checks');

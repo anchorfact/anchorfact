@@ -104,11 +104,12 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
 
   assertEq(payload.schema_version, 'anchorfact.evals.v1');
   assertEq(payload.provenance_url, 'https://anchorfact.org/provenance.json');
-  assertEq(payload.eval_count, 7);
+  assertEq(payload.eval_count, 8);
   assertEq(payload.evals.map(evalCase => evalCase.id), [
     'evidence_pack_json',
     'evidence_pack_markdown',
     'claim_dereference',
+    'reference_resolver',
     'citation_export',
     'source_reuse_lookup',
     'graph_relationships',
@@ -127,6 +128,11 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
   const claimEval = payload.evals.find(evalCase => evalCase.id === 'claim_dereference');
   assert(claimEval.call.path.includes('/api/claim?id=f1'), 'claim eval should use shorthand claim id');
   assertEq(claimEval.expected.claim_id, 'https://anchorfact.org/fact/f1');
+
+  const resolverEval = payload.evals.find(evalCase => evalCase.id === 'reference_resolver');
+  assert(resolverEval.call.path.includes('/api/resolve?ref=f1'), 'resolver eval should use reference resolver');
+  assertEq(resolverEval.expected.schema_version, 'anchorfact.resolve-api.v1');
+  assertEq(resolverEval.expected.resolved_type, 'claim');
 
   const citationEval = payload.evals.find(evalCase => evalCase.id === 'citation_export');
   assert(citationEval.call.path.includes('/api/cite?id=f1'), 'citation eval should use citation API shorthand claim id');

@@ -120,7 +120,7 @@ export async function main() {
   const expectedDraft = readExpectedInt('EXPECTED_DRAFT_ARTICLES');
   const expectedClaims = readExpectedInt('EXPECTED_CLAIMS');
 
-  const routes = ['/', '/agent.json', '/.well-known/anchorfact.json', '/openapi.json', '/manifest.json', '/llms.txt', '/claims.json', '/topics.json', '/examples.json', '/graph.json', '/evals.json', '/mcp.json', '/api/evidence?q=gaussian&limit=2', '/api/evidence?q=gaussian&limit=1&format=markdown', '/api/search?q=gaussian&limit=2', '/api/article?slug=ai/3d-generation-gaussian-splatting', '/api/claim?id=f1', '/api/cite?id=f1', '/api/cite?id=f1&format=markdown', '/api/source?url=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079', '/search-index.json', '/sources.json', '/provenance.json', '/drafts.html'];
+  const routes = ['/', '/agent.json', '/.well-known/anchorfact.json', '/openapi.json', '/manifest.json', '/llms.txt', '/claims.json', '/topics.json', '/examples.json', '/graph.json', '/evals.json', '/mcp.json', '/api/evidence?q=gaussian&limit=2', '/api/evidence?q=gaussian&limit=1&format=markdown', '/api/resolve?ref=f1', '/api/search?q=gaussian&limit=2', '/api/article?slug=ai/3d-generation-gaussian-splatting', '/api/claim?id=f1', '/api/cite?id=f1', '/api/cite?id=f1&format=markdown', '/api/source?url=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079', '/search-index.json', '/sources.json', '/provenance.json', '/drafts.html'];
   const results = {};
 
   for (const route of routes) {
@@ -140,6 +140,7 @@ export async function main() {
   const mcp = JSON.parse(results['/mcp.json'].body);
   const evidenceApi = JSON.parse(results['/api/evidence?q=gaussian&limit=2'].body);
   const evidenceMarkdown = results['/api/evidence?q=gaussian&limit=1&format=markdown'].body;
+  const resolveApi = JSON.parse(results['/api/resolve?ref=f1'].body);
   const searchApi = JSON.parse(results['/api/search?q=gaussian&limit=2'].body);
   const articleApi = JSON.parse(results['/api/article?slug=ai/3d-generation-gaussian-splatting'].body);
   const claimApi = JSON.parse(results['/api/claim?id=f1'].body);
@@ -183,6 +184,7 @@ export async function main() {
   assertOk(wellKnownAgentProfile.generated === agentProfile.generated, 'well-known agent profile generated timestamp does not match /agent.json', failures);
   assertOk(agentProfile.endpoints?.openapi?.url === new URL('/openapi.json', baseUrl).href, 'agent profile OpenAPI endpoint does not match base URL', failures);
   assertOk(agentProfile.endpoints?.evidence_api?.path === '/api/evidence?q={query}', 'agent profile evidence API endpoint template is missing', failures);
+  assertOk(agentProfile.endpoints?.resolve_api?.path === '/api/resolve?ref={reference}', 'agent profile resolve API endpoint template is missing', failures);
   assertOk(agentProfile.endpoints?.search_api?.path === '/api/search?q={query}', 'agent profile search API endpoint template is missing', failures);
   assertOk(agentProfile.endpoints?.article_api?.path === '/api/article?slug={canonical_slug}', 'agent profile article API endpoint template is missing', failures);
   assertOk(agentProfile.endpoints?.cite_api?.path === '/api/cite?id={claim_id}', 'agent profile cite API endpoint template is missing', failures);
@@ -196,6 +198,7 @@ export async function main() {
   assertOk(openapi['x-anchorfact-schema-version'] === 'anchorfact.openapi.v1', `openapi AnchorFact schema expected anchorfact.openapi.v1, got ${openapi['x-anchorfact-schema-version'] || '(missing)'}`, failures);
   assertOk(openapi['x-provenance-url'] === new URL('/provenance.json', baseUrl).href, `openapi provenance url expected ${new URL('/provenance.json', baseUrl).href}, got ${openapi['x-provenance-url'] || '(missing)'}`, failures);
   assertOk(openapi.paths?.['/api/evidence'], 'openapi is missing /api/evidence path', failures);
+  assertOk(openapi.paths?.['/api/resolve'], 'openapi is missing /api/resolve path', failures);
   assertOk(openapi.paths?.['/api/search'], 'openapi is missing /api/search path', failures);
   assertOk(openapi.paths?.['/api/article'], 'openapi is missing /api/article path', failures);
   assertOk(openapi.paths?.['/api/claim'], 'openapi is missing /api/claim path', failures);
@@ -247,6 +250,7 @@ export async function main() {
   assertOk(evals.provenance_url === new URL('/provenance.json', baseUrl).href, `evals provenance_url expected ${new URL('/provenance.json', baseUrl).href}, got ${evals.provenance_url || '(missing)'}`, failures);
   assertOk(evals.eval_count === (Array.isArray(evals.evals) ? evals.evals.length : 0), 'evals eval_count does not match evals[] length', failures);
   assertOk(Array.isArray(evals.evals) && evals.evals.some(evalCase => evalCase.id === 'evidence_pack_json'), '/evals.json is missing evidence_pack_json check', failures);
+  assertOk(Array.isArray(evals.evals) && evals.evals.some(evalCase => evalCase.id === 'reference_resolver'), '/evals.json is missing reference_resolver check', failures);
   assertOk(Array.isArray(evals.evals) && evals.evals.some(evalCase => evalCase.id === 'citation_export'), '/evals.json is missing citation_export check', failures);
   assertOk(Array.isArray(evals.evals) && evals.evals.some(evalCase => evalCase.id === 'graph_relationships'), '/evals.json is missing graph_relationships check', failures);
   assertOk(Array.isArray(evals.evals) && evals.evals.some(evalCase => evalCase.id === 'signed_provenance_static_artifacts'), '/evals.json is missing signed provenance check', failures);
@@ -270,6 +274,11 @@ export async function main() {
   assertOk(evidenceMarkdown.includes('# AnchorFact Evidence Pack: gaussian'), '/api/evidence markdown response is missing heading', failures);
   assertOk(evidenceMarkdown.includes('Citation contract:'), '/api/evidence markdown response is missing citation contract', failures);
   assertOk(evidenceMarkdown.includes('3D Gaussian Splatting'), '/api/evidence markdown response is missing expected evidence text', failures);
+  assertOk(resolveApi.schema_version === 'anchorfact.resolve-api.v1', `resolve api schema_version expected anchorfact.resolve-api.v1, got ${resolveApi.schema_version || '(missing)'}`, failures);
+  assertOk(resolveApi.resolved_type === 'claim', `resolve api resolved_type expected claim, got ${resolveApi.resolved_type || '(missing)'}`, failures);
+  assertOk(resolveApi.canonical_ref === 'https://anchorfact.org/fact/f1', `resolve api canonical_ref expected https://anchorfact.org/fact/f1, got ${resolveApi.canonical_ref || '(missing)'}`, failures);
+  assertOk(resolveApi.result_schema_version === 'anchorfact.claim-api.v1', '/api/resolve did not wrap the claim API payload', failures);
+  assertOk(resolveApi.result?.claim_id === 'https://anchorfact.org/fact/f1', '/api/resolve returned the wrong claim payload', failures);
   assertOk(searchApi.schema_version === 'anchorfact.search-api.v1', `search api schema_version expected anchorfact.search-api.v1, got ${searchApi.schema_version || '(missing)'}`, failures);
   assertOk(searchApi.provenance_url === new URL('/provenance.json', baseUrl).href, `search api provenance_url expected ${new URL('/provenance.json', baseUrl).href}, got ${searchApi.provenance_url || '(missing)'}`, failures);
   assertOk(searchApi.query === 'gaussian', `search api query expected gaussian, got ${searchApi.query || '(missing)'}`, failures);
@@ -343,6 +352,7 @@ export async function main() {
   headerIncludes(results['/api/evidence?q=gaussian&limit=2'], 'Access-Control-Allow-Origin', '*', failures);
   headerIncludes(results['/api/evidence?q=gaussian&limit=1&format=markdown'], 'Content-Type', 'text/markdown', failures);
   headerIncludes(results['/api/evidence?q=gaussian&limit=1&format=markdown'], 'Access-Control-Allow-Origin', '*', failures);
+  headerIncludes(results['/api/resolve?ref=f1'], 'Access-Control-Allow-Origin', '*', failures);
   headerIncludes(results['/api/search?q=gaussian&limit=2'], 'Access-Control-Allow-Origin', '*', failures);
   headerIncludes(results['/api/article?slug=ai/3d-generation-gaussian-splatting'], 'Access-Control-Allow-Origin', '*', failures);
   headerIncludes(results['/api/claim?id=f1'], 'Access-Control-Allow-Origin', '*', failures);

@@ -7,6 +7,7 @@ import {
   OFFICIAL_SITE,
   PROVENANCE_PATH,
   PROVENANCE_SCHEMA_VERSION,
+  RESOLVE_API_SCHEMA_VERSION,
   SOURCE_API_SCHEMA_VERSION,
   publicUrl
 } from './build-metadata.js';
@@ -127,6 +128,7 @@ export function buildEvalsIndex({
   const sourcePath = sourceLookupPath(source);
   const evidencePath = queryPath('/api/evidence', { q: query, limit: 3 });
   const markdownPath = queryPath('/api/evidence', { q: query, limit: 1, format: 'markdown' });
+  const resolvePath = queryPath('/api/resolve', { ref: claimLookupId });
   const claimPath = queryPath('/api/claim', { id: claimLookupId });
   const citePath = queryPath('/api/cite', { id: claimLookupId });
 
@@ -169,6 +171,19 @@ export function buildEvalsIndex({
         claim_id: claim?.id || null,
         canonical_slug: record.canonical_slug,
         min_sources: 1
+      }
+    },
+    {
+      id: 'reference_resolver',
+      intent: 'Confirm an arbitrary public AnchorFact reference resolves to the matching API payload.',
+      call: call(resolvePath, site),
+      expected: {
+        status: 200,
+        content_type: 'application/json',
+        schema_version: RESOLVE_API_SCHEMA_VERSION,
+        resolved_type: 'claim',
+        canonical_ref: claim?.id || null,
+        result_schema_version: CLAIM_API_SCHEMA_VERSION
       }
     },
     {

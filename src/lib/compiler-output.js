@@ -93,6 +93,7 @@ function writeRootIndex(distDir, results, publicResults, draftResults, claims) {
     <a href="/agent.json">Agent profile</a> &middot;
     <a href="/openapi.json">OpenAPI</a> &middot;
     <a href="/api/evidence?q=gaussian">Evidence API</a> &middot;
+    <a href="/api/resolve?ref=f1">Resolve API</a> &middot;
     <a href="/api/search?q=gaussian">Search API</a> &middot;
     <a href="/api/article?slug=ai/3d-generation-gaussian-splatting">Article API</a> &middot;
     <a href="/api/cite?id=f1">Citation API</a> &middot;
@@ -177,6 +178,7 @@ ${entries || '_No public verified entries yet._'}
 - [Agent Profile](https://anchorfact.org/agent.json): Machine contract and recommended retrieval workflow.
 - [OpenAPI](https://anchorfact.org/openapi.json): Static read-only endpoint contract for tools.
 - [Evidence API](https://anchorfact.org/api/evidence?q=gaussian): One-call public evidence packs with search hits, article summaries, claims, and sources.
+- [Resolve API](https://anchorfact.org/api/resolve?ref=f1): Read-only resolver for public claim ids, article slugs, source ids, and source URLs.
 - [Search API](https://anchorfact.org/api/search?q=gaussian): Read-only search over public records.
 - [Article API](https://anchorfact.org/api/article?slug=ai/3d-generation-gaussian-splatting): Read-only public article evidence bundles with claims and sources.
 - [Citation API](https://anchorfact.org/api/cite?id=f1): Read-only citation-ready payloads for one public atomic claim.

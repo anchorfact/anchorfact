@@ -146,6 +146,7 @@ export function buildExamplesIndex({
   const evidencePath = queryPath('/api/evidence', { q: query, limit: 3 });
   const evidenceMarkdownPath = queryPath('/api/evidence', { q: query, limit: 3, format: 'markdown' });
   const searchPath = queryPath('/api/search', { q: query, limit: 3 });
+  const resolveClaimPath = queryPath('/api/resolve', { ref: claimShortId(claim?.id) });
   const articlePath = queryPath('/api/article', { slug: record.canonical_slug });
   const claimPath = queryPath('/api/claim', { id: claimShortId(claim?.id) });
   const citePath = queryPath('/api/cite', { id: claimShortId(claim?.id) });
@@ -187,9 +188,10 @@ export function buildExamplesIndex({
       id: 'claim_dereference',
       intent: 'Dereference one atomic claim before using it in an answer.',
       workflow: [
-        { step: 1, call: call(claimPath, site), use: 'Fetch the exact public claim, its article context, and matching source.' },
-        { step: 2, call: call(citePath, site), use: 'Fetch the citation-ready payload for direct use in an answer.' },
-        { step: 3, call: call(articlePath, site), use: 'Inspect neighboring source-mapped claims from the same article when context matters.' }
+        { step: 1, call: call(resolveClaimPath, site), use: 'Resolve a claim shorthand or URL when the reference type is uncertain.' },
+        { step: 2, call: call(claimPath, site), use: 'Fetch the exact public claim, its article context, and matching source.' },
+        { step: 3, call: call(citePath, site), use: 'Fetch the citation-ready payload for direct use in an answer.' },
+        { step: 4, call: call(articlePath, site), use: 'Inspect neighboring source-mapped claims from the same article when context matters.' }
       ],
       expected_anchor: {
         article: articleAnchor(record),
