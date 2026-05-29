@@ -2,6 +2,7 @@
 import { generateKeyPairSync } from 'crypto';
 import {
   CLAIMS_SCHEMA_VERSION,
+  EVALS_SCHEMA_VERSION,
   EXAMPLES_SCHEMA_VERSION,
   GRAPH_SCHEMA_VERSION,
   MANIFEST_SCHEMA_VERSION,
@@ -122,6 +123,7 @@ function buildFixture(overrides = {}) {
       '/topics.json': {},
       '/examples.json': {},
       '/graph.json': {},
+      '/evals.json': {},
       '/search-index.json': {},
       '/sources.json': {},
       '/provenance.json': {}
@@ -196,6 +198,22 @@ function buildFixture(overrides = {}) {
       { type: 'claim_supported_by_source', from: 'https://anchorfact.org/fact/f1', to: 'source:fixture' }
     ]
   };
+  const evals = {
+    schema_version: EVALS_SCHEMA_VERSION,
+    generated: '2026-05-29T00:00:00.000Z',
+    provenance_url: `${baseUrl}/provenance.json`,
+    eval_count: 1,
+    evals: [
+      {
+        id: 'fixture_eval',
+        call: { method: 'GET', path: '/provenance.json', url: `${baseUrl}/provenance.json` },
+        expected: {
+          status: 200,
+          required_artifacts: ['evals_json']
+        }
+      }
+    ]
+  };
   const manifestText = JSON.stringify(manifest, null, 2);
   const claimsText = JSON.stringify(claims, null, 2);
   const agentText = JSON.stringify(agent, null, 2);
@@ -203,6 +221,7 @@ function buildFixture(overrides = {}) {
   const topicsText = JSON.stringify(topics, null, 2);
   const examplesText = JSON.stringify(examples, null, 2);
   const graphText = JSON.stringify(graph, null, 2);
+  const evalsText = JSON.stringify(evals, null, 2);
   const searchText = JSON.stringify(search, null, 2);
   const sourcesText = JSON.stringify(sources, null, 2);
   const provenance = {
@@ -264,6 +283,11 @@ function buildFixture(overrides = {}) {
         sha256: sha256Text(graphText),
         bytes: Buffer.byteLength(graphText, 'utf8')
       },
+      evals_json: {
+        path: '/evals.json',
+        sha256: sha256Text(evalsText),
+        bytes: Buffer.byteLength(evalsText, 'utf8')
+      },
       search_index_json: {
         path: '/search-index.json',
         sha256: sha256Text(searchText),
@@ -312,6 +336,7 @@ function buildFixture(overrides = {}) {
     [`${baseUrl}/topics.json`]: { body: topicsText },
     [`${baseUrl}/examples.json`]: { body: examplesText },
     [`${baseUrl}/graph.json`]: { body: graphText },
+    [`${baseUrl}/evals.json`]: { body: evalsText },
     [`${baseUrl}/search-index.json`]: { body: searchText },
     [`${baseUrl}/sources.json`]: { body: sourcesText },
     [`${baseUrl}/llms.txt`]: { body: llms, contentType: 'text/plain; charset=utf-8' },

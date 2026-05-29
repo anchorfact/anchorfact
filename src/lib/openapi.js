@@ -4,6 +4,7 @@ import {
   CLAIM_API_SCHEMA_VERSION,
   CLAIMS_SCHEMA_VERSION,
   COMPILER_VERSION,
+  EVALS_SCHEMA_VERSION,
   EVIDENCE_API_SCHEMA_VERSION,
   EXAMPLES_SCHEMA_VERSION,
   GRAPH_SCHEMA_VERSION,
@@ -96,6 +97,7 @@ export function buildOpenApiContract({
       '/topics.json': getJson('Public topic coverage map', 'Topics'),
       '/examples.json': getJson('Executable AI usage examples', 'Examples'),
       '/graph.json': getJson('Public knowledge graph', 'Graph'),
+      '/evals.json': getJson('Executable AI integration checks', 'Evals'),
       '/api/evidence': {
         get: {
           summary: 'Read-only public query evidence packs',
@@ -319,6 +321,10 @@ export function buildOpenApiContract({
           edge_count: { type: 'integer' },
           nodes: { type: 'array', items: { type: 'object' } },
           edges: { type: 'array', items: { type: 'object' } }
+        }),
+        Evals: schemaVersioned('Evals', EVALS_SCHEMA_VERSION, {
+          eval_count: { type: 'integer' },
+          evals: { type: 'array', items: { type: 'object' } }
         }),
         SearchIndex: schemaVersioned('Search index', SEARCH_INDEX_SCHEMA_VERSION, {
           article_count: { type: 'integer' },

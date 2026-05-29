@@ -5,7 +5,7 @@ import {
   renderIntegrityMarkdown,
   runProductionIntegrity
 } from '../scripts/production-integrity.js';
-import { exampleWorkflowRoutes, fetchRoute } from '../src/smoke-production.js';
+import { evalCallRoutes, exampleWorkflowRoutes, fetchRoute } from '../src/smoke-production.js';
 
 let passed = 0, failed = 0;
 const tests = [];
@@ -178,6 +178,21 @@ test('production smoke can extract safe executable example workflow routes', () 
   });
 
   assertEq(routes, ['/api/search?q=gaussian&limit=3', '/examples.json']);
+});
+
+test('production smoke can extract safe executable eval routes', () => {
+  const routes = evalCallRoutes({
+    evals: [
+      { call: { method: 'GET', path: '/api/evidence?q=gaussian&limit=3' } },
+      { call: { method: 'GET', path: '/api/evidence?q=gaussian&limit=3' } },
+      { call: { method: 'POST', path: '/api/evidence?q=ignored' } },
+      { call: { method: 'GET', path: 'https://example.com/external' } },
+      { call: { method: 'GET', path: '/../unsafe' } },
+      { call: { method: 'GET', path: '/graph.json' } }
+    ]
+  });
+
+  assertEq(routes, ['/api/evidence?q=gaussian&limit=3', '/graph.json']);
 });
 
 for (const { name, fn } of tests) {
