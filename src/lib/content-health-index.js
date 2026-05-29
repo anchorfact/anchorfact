@@ -131,6 +131,36 @@ function draftRepairCandidates(manifest, limit = 25) {
   return candidates.slice(0, limit);
 }
 
+function draftRepairQueue(manifest) {
+  const candidates = draftRepairCandidates(manifest, 100000);
+  const complexity = {};
+  const categories = {};
+  const reasons = {};
+
+  for (const candidate of candidates) {
+    increment(complexity, String(candidate.repair_complexity));
+    increment(categories, String(candidate.canonical_slug || '').split('/')[0] || 'unknown');
+    for (const reason of candidate.quality_reasons || []) {
+      increment(reasons, reason);
+    }
+  }
+
+  return {
+    candidate_count: candidates.length,
+    next_batch_size: Math.min(5, candidates.length),
+    next_batch: candidates.slice(0, 5),
+    selection_policy: [
+      'Exclude placeholder drafts from automatic repair queues.',
+      'Prioritize lower repair_complexity values first.',
+      'Prefer drafts with more existing sources when complexity ties.',
+      'Use canonical slug order as the final stable tie-breaker.'
+    ],
+    complexity_distribution: topEntries(complexity, 10),
+    category_distribution: topEntries(categories, 30),
+    quality_reason_distribution: topEntries(reasons, 30)
+  };
+}
+
 export function buildContentHealthIndex({
   generated,
   manifest,
@@ -164,7 +194,8 @@ export function buildContentHealthIndex({
     draft: {
       ...byStatus.draft,
       repair_candidate_count: draftRepairCandidates(manifest || {}, 100000).length,
-      repair_candidates: draftRepairCandidates(manifest || {}, 25)
+      repair_candidates: draftRepairCandidates(manifest || {}, 25),
+      repair_queue: draftRepairQueue(manifest || {})
     },
     machine_guidance: [
       'Use public AnchorFact records only when status is public and source-mapped claims are present.',
