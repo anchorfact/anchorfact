@@ -76,6 +76,10 @@ const STALE_METRIC_PATTERNS = [
   /1683 public claims/i,
   /Public claims\s*\|\s*1683/i,
   /EXPECTED_CLAIMS=1683/i,
+  /1543 public claims/i,
+  /1543 published claims/i,
+  /1543 claims from production smoke/i,
+  /Published claims surface\s*\|\s*1543/i,
   /876 articles/i,
   /total_articles["\s:]+805/i
 ];
@@ -275,31 +279,37 @@ function checkTextFiles(failures) {
     if (/^docs\/PUBLIC_CONTENT_REPAIR_/.test(relativePath)) continue;
 
     const text = readFileSync(file, 'utf8');
-    for (const pattern of SECRET_PATTERNS) {
-      if (pattern.test(text)) {
-        failures.push(`${relativePath} appears to contain a private key, API token, or signing secret.`);
-        break;
-      }
+    failures.push(...textHygieneFailures(relativePath, text));
+  }
+}
+
+export function textHygieneFailures(relativePath, text) {
+  const failures = [];
+  for (const pattern of SECRET_PATTERNS) {
+    if (pattern.test(text)) {
+      failures.push(`${relativePath} appears to contain a private key, API token, or signing secret.`);
+      break;
     }
+  }
 
-    for (const pattern of MOJIBAKE_PATTERNS) {
-      if (pattern.test(text)) {
-        failures.push(`${relativePath} appears to contain mojibake or replacement characters.`);
-        break;
-      }
+  for (const pattern of MOJIBAKE_PATTERNS) {
+    if (pattern.test(text)) {
+      failures.push(`${relativePath} appears to contain mojibake or replacement characters.`);
+      break;
     }
+  }
 
-    const shouldCheckMetrics = (
-      relativePath === 'mcp.json'
-      || relativePath === 'README.md'
-      || relativePath === 'DESIGN.md'
-      || relativePath === 'PROMOTION.md'
-      || relativePath === 'SECURITY.md'
-      || relativePath.startsWith('docs/')
-      || relativePath.startsWith('.github/')
-    );
-    if (!shouldCheckMetrics) continue;
+  const shouldCheckMetrics = (
+    relativePath === 'mcp.json'
+    || relativePath === 'README.md'
+    || relativePath === 'DESIGN.md'
+    || relativePath === 'PROMOTION.md'
+    || relativePath === 'SECURITY.md'
+    || relativePath.startsWith('docs/')
+    || relativePath.startsWith('.github/')
+  );
 
+  if (shouldCheckMetrics) {
     for (const pattern of STALE_METRIC_PATTERNS) {
       if (pattern.test(text)) {
         failures.push(`${relativePath} contains stale launch metrics or old MCP counts.`);
@@ -307,6 +317,8 @@ function checkTextFiles(failures) {
       }
     }
   }
+
+  return failures;
 }
 
 function checkFunctionEdgeImports(failures) {

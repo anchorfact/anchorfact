@@ -2,7 +2,10 @@
 import { mkdtempSync, mkdirSync, rmSync, writeFileSync } from 'fs';
 import { tmpdir } from 'os';
 import { join } from 'path';
-import { collectFunctionEdgeImportFailures } from '../scripts/check-repo-hygiene.js';
+import {
+  collectFunctionEdgeImportFailures,
+  textHygieneFailures
+} from '../scripts/check-repo-hygiene.js';
 
 let passed = 0, failed = 0;
 
@@ -64,6 +67,22 @@ test('collectFunctionEdgeImportFailures rejects transitive Node-only imports fro
   } finally {
     rmSync(root, { recursive: true, force: true });
   }
+});
+
+test('textHygieneFailures catches stale production claim metrics', () => {
+  const failures = textHygieneFailures(
+    'docs/SITE_MODULE_QUALITY_AUDIT_2026-05-28.md',
+    'Published claims surface | 1543 claims from production smoke | Stable'
+  );
+  assert(failures.some(failure => failure.includes('stale launch metrics')), 'stale claim count should fail hygiene');
+});
+
+test('textHygieneFailures accepts current production claim metrics', () => {
+  const failures = textHygieneFailures(
+    'docs/LAUNCH_READINESS_2026-05-27.md',
+    'Snapshot: 555 public / 445 draft / 1685 claims.'
+  );
+  assertEq(failures, []);
 });
 
 console.log(`\n${passed} passed, ${failed} failed`);
