@@ -5,6 +5,7 @@ import { dirname, resolve } from 'path';
 import { pathToFileURL } from 'url';
 import { OFFICIAL_SITE } from '../src/lib/build-metadata.js';
 import { verifyLiveProvenance } from '../src/lib/provenance-verify.js';
+import { runAiEvals } from './run-ai-evals.js';
 
 export const DEFAULT_EXPECTED_COUNTS = {
   public: 555,
@@ -57,12 +58,18 @@ export function buildIntegrityReport({
   baseUrl = OFFICIAL_SITE,
   expectedCounts = DEFAULT_EXPECTED_COUNTS,
   smoke,
-  provenance
+  provenance,
+  aiEvals
 }) {
   const failures = [];
   if (!smoke?.ok) failures.push('Production smoke failed');
   if (!provenance?.ok) failures.push('Signed provenance verification failed');
+  if (!aiEvals?.ok) failures.push('AI evals failed');
   for (const failure of provenance?.failures || []) failures.push(failure);
+  for (const failure of aiEvals?.failures || []) failures.push(failure);
+  for (const result of aiEvals?.results || []) {
+    for (const failure of result.failures || []) failures.push(`${result.id}: ${failure}`);
+  }
 
   const artifactHashes = {};
   for (const [key, artifact] of Object.entries(provenance?.artifacts || {})) {
@@ -90,8 +97,14 @@ export function buildIntegrityReport({
     artifacts: artifactHashes,
     checks: {
       smoke: smoke?.ok === true,
+      ai_evals: aiEvals?.ok === true,
       signed_provenance: provenance?.ok === true,
       commit: provenance?.commit?.ok === true
+    },
+    ai_evals: {
+      eval_count: aiEvals?.eval_count ?? null,
+      passed: aiEvals?.passed ?? null,
+      failed: aiEvals?.failed ?? null
     },
     failures,
     smoke_stdout: smoke?.ok ? '' : (smoke?.stdout || ''),
@@ -125,6 +138,7 @@ Base URL: ${report.base_url}
 ## Checks
 
 - smoke: ${report.checks.smoke ? 'pass' : 'fail'}
+- AI evals: ${report.checks.ai_evals ? 'pass' : 'fail'} (${report.ai_evals.passed ?? 0}/${report.ai_evals.eval_count ?? 0})
 - signed provenance: ${report.checks.signed_provenance ? 'pass' : 'fail'}
 - source commit: ${report.checks.commit ? 'pass' : 'fail'}
 
@@ -175,10 +189,12 @@ export async function runProductionIntegrity({
   publicKeyPath = DEFAULT_PUBLIC_KEY_PATH,
   expectedCounts = DEFAULT_EXPECTED_COUNTS,
   smokeRunner = runProductionSmoke,
+  evalRunner = runAiEvals,
   verifier = verifyLiveProvenance,
   generatedAt = isoNow()
 } = {}) {
   const smoke = smokeRunner({ baseUrl, expectedCounts });
+  const aiEvals = await evalRunner({ baseUrl });
   const trustedPublicKeys = [readFileSync(publicKeyPath, 'utf8')];
   const provenance = await verifier({
     baseUrl,
@@ -192,7 +208,8 @@ export async function runProductionIntegrity({
     baseUrl,
     expectedCounts,
     smoke,
-    provenance
+    provenance,
+    aiEvals
   });
 }
 

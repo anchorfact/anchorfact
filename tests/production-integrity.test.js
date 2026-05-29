@@ -61,13 +61,15 @@ test('buildIntegrityReport summarizes a passing production check', () => {
     baseUrl: 'https://anchorfact.org',
     expectedCounts: DEFAULT_EXPECTED_COUNTS,
     smoke: { ok: true, stdout: 'smoke ok', stderr: '' },
-    provenance: provenanceResult()
+    provenance: provenanceResult(),
+    aiEvals: { ok: true, eval_count: 11, passed: 11, failed: 0, failures: [], results: [] }
   });
 
   assertEq(report.ok, true);
   assertEq(report.failures, []);
   assertEq(report.counts.public, 555);
   assertEq(report.signature.trusted, true);
+  assertEq(report.checks.ai_evals, true);
   assertEq(report.artifacts.claims_json, 'b'.repeat(64));
   const markdown = renderIntegrityMarkdown(report);
   assert(markdown.includes('AnchorFact Production Integrity - PASS'), 'markdown should show pass');
@@ -80,7 +82,8 @@ test('buildIntegrityReport fails when production smoke fails', () => {
     baseUrl: 'https://anchorfact.org',
     expectedCounts: DEFAULT_EXPECTED_COUNTS,
     smoke: { ok: false, stdout: '', stderr: 'smoke failed' },
-    provenance: provenanceResult()
+    provenance: provenanceResult(),
+    aiEvals: { ok: true, eval_count: 11, passed: 11, failed: 0, failures: [], results: [] }
   });
 
   assertEq(report.ok, false);
@@ -93,6 +96,7 @@ test('buildIntegrityReport fails when signed provenance verification fails', () 
     baseUrl: 'https://anchorfact.org',
     expectedCounts: DEFAULT_EXPECTED_COUNTS,
     smoke: { ok: true, stdout: 'smoke ok', stderr: '' },
+    aiEvals: { ok: true, eval_count: 11, passed: 11, failed: 0, failures: [], results: [] },
     provenance: provenanceResult({
       ok: false,
       failures: ['signature is valid but not trusted by a configured public key'],
@@ -105,8 +109,31 @@ test('buildIntegrityReport fails when signed provenance verification fails', () 
   assert(report.failures.some(failure => failure.includes('not trusted')), 'verifier details should be included');
 });
 
+test('buildIntegrityReport fails when AI evals fail', () => {
+  const report = buildIntegrityReport({
+    generatedAt: '2026-05-29T00:00:00.000Z',
+    baseUrl: 'https://anchorfact.org',
+    expectedCounts: DEFAULT_EXPECTED_COUNTS,
+    smoke: { ok: true, stdout: 'smoke ok', stderr: '' },
+    aiEvals: {
+      ok: false,
+      eval_count: 1,
+      passed: 0,
+      failed: 1,
+      failures: [],
+      results: [{ id: 'mcp_tool_catalog', ok: false, failures: ['missing tool'] }]
+    },
+    provenance: provenanceResult()
+  });
+
+  assertEq(report.ok, false);
+  assert(report.failures.includes('AI evals failed'), 'AI eval failure should be reported');
+  assert(report.failures.some(failure => failure.includes('mcp_tool_catalog')), 'AI eval details should be included');
+});
+
 test('runProductionIntegrity wires smoke and signed verifier dependencies', async () => {
   let smokeCalled = false;
+  let evalCalled = false;
   let verifierArgs = null;
   const report = await runProductionIntegrity({
     baseUrl: 'https://anchorfact.org',
@@ -117,6 +144,11 @@ test('runProductionIntegrity wires smoke and signed verifier dependencies', asyn
       assertEq(expectedCounts, DEFAULT_EXPECTED_COUNTS);
       return { ok: true, stdout: 'smoke ok', stderr: '' };
     },
+    evalRunner: async ({ baseUrl }) => {
+      evalCalled = true;
+      assertEq(baseUrl, 'https://anchorfact.org');
+      return { ok: true, eval_count: 11, passed: 11, failed: 0, failures: [], results: [] };
+    },
     verifier: async (args) => {
       verifierArgs = args;
       return provenanceResult();
@@ -125,6 +157,7 @@ test('runProductionIntegrity wires smoke and signed verifier dependencies', asyn
 
   assertEq(report.ok, true);
   assertEq(smokeCalled, true);
+  assertEq(evalCalled, true);
   assertEq(verifierArgs.requireSignature, true);
   assertEq(verifierArgs.requireTrustedSignature, true);
   assert(Array.isArray(verifierArgs.trustedPublicKeys), 'trusted public keys should be loaded');
