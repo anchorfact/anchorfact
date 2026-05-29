@@ -42,6 +42,32 @@ const searchIndex = {
       search_text: '3d gaussian splatting neural rendering real time radiance field'
     },
     {
+      canonical_slug: 'business/restaurant-technology',
+      title: 'Restaurant Technology',
+      url: 'https://anchorfact.org/business/restaurant-technology/',
+      description: 'Digital systems used by restaurants.',
+      confidence_level: 'medium',
+      source_coverage: { verified: 1, total: 1, ratio: 1 },
+      claim_count: 1,
+      claim_ids: ['https://anchorfact.org/fact/f4'],
+      keywords: ['restaurant', 'restaurants', 'technology'],
+      routes: { jsonld: 'https://anchorfact.org/business/restaurant-technology/index.json' },
+      search_text: 'restaurant restaurants technology reservations delivery systems'
+    },
+    {
+      canonical_slug: 'ai/ai-for-weather-forecasting',
+      title: 'AI for Weather Forecasting',
+      url: 'https://anchorfact.org/ai/ai-for-weather-forecasting/',
+      description: 'Machine learning systems for meteorological forecasting.',
+      confidence_level: 'medium',
+      source_coverage: { verified: 1, total: 1, ratio: 1 },
+      claim_count: 1,
+      claim_ids: ['https://anchorfact.org/fact/f5'],
+      keywords: ['weather', 'forecasting', 'meteorology'],
+      routes: { jsonld: 'https://anchorfact.org/ai/ai-for-weather-forecasting/index.json' },
+      search_text: 'weather forecasting meteorology machine learning'
+    },
+    {
       canonical_slug: 'science/statistics',
       title: 'Statistics Fundamentals',
       url: 'https://anchorfact.org/science/statistics/',
@@ -166,6 +192,50 @@ test('buildPlanApiPayload warns agents away from unsupported queries', () => {
   assertEq(payload.matched_articles, []);
   assert(payload.fallback_guidance.some(item => item.includes('external primary')), 'unsupported plan should recommend external sources');
   assert(payload.recommended_next_calls.some(item => item.path.includes('/coverage.json')), 'unsupported plan should point to coverage limits');
+});
+
+test('buildPlanApiPayload rejects live, local, and time-sensitive questions even with lexical matches', () => {
+  const localPayload = buildPlanApiPayload({
+    query: 'best restaurants near me',
+    searchIndex,
+    topicsPayload,
+    coveragePayload,
+    generated: '2026-05-29T00:00:00.000Z'
+  });
+
+  assertEq(localPayload.coverage_status, 'unsupported');
+  assertEq(localPayload.should_use_anchorfact, false);
+  assertEq(localPayload.matched_articles, []);
+  assert(localPayload.unsupported_intent_reasons.includes('local_or_personalized'), 'local query should carry an intent reason');
+  assert(localPayload.fallback_guidance.some(item => item.includes('local')), 'local query should explain external/local fallback');
+
+  const livePayload = buildPlanApiPayload({
+    query: 'Who won the NBA Finals in 2026?',
+    searchIndex,
+    topicsPayload,
+    coveragePayload,
+    generated: '2026-05-29T00:00:00.000Z'
+  });
+
+  assertEq(livePayload.coverage_status, 'unsupported');
+  assertEq(livePayload.should_use_anchorfact, false);
+  assert(livePayload.unsupported_intent_reasons.includes('live_or_time_sensitive'), 'live query should carry an intent reason');
+  assert(livePayload.fallback_guidance.some(item => item.includes('current')), 'live query should explain current-source fallback');
+});
+
+test('buildPlanApiPayload keeps static educational weather queries supported', () => {
+  const payload = buildPlanApiPayload({
+    query: 'weather forecasting',
+    searchIndex,
+    topicsPayload,
+    coveragePayload,
+    generated: '2026-05-29T00:00:00.000Z'
+  });
+
+  assertEq(payload.coverage_status, 'supported');
+  assertEq(payload.should_use_anchorfact, true);
+  assertEq(payload.unsupported_intent_reasons, []);
+  assertEq(payload.matched_articles[0].canonical_slug, 'ai/ai-for-weather-forecasting');
 });
 
 test('Pages Function returns CORS JSON from static artifacts', async () => {

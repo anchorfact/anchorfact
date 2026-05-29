@@ -1,4 +1,5 @@
 import { rankSearchRecords } from './search-api.js';
+import { normalizeQueryText, queryTokens } from './query-text.js';
 
 export const PLAN_API_SCHEMA_VERSION = 'anchorfact.plan-api.v1';
 
@@ -11,20 +12,6 @@ const MAX_LIMIT = 10;
 function publicUrl(path, site = OFFICIAL_SITE) {
   const normalizedPath = path.startsWith('/') ? path : `/${path}`;
   return `${String(site || OFFICIAL_SITE).replace(/\/+$/, '')}${normalizedPath}`;
-}
-
-function normalizeText(value) {
-  return String(value || '')
-    .replace(/[^a-z0-9]+/gi, ' ')
-    .replace(/\s+/g, ' ')
-    .trim()
-    .toLowerCase();
-}
-
-function queryTokens(query) {
-  return normalizeText(query)
-    .split(' ')
-    .filter(token => token.length >= 2);
 }
 
 function clampLimit(value) {
@@ -80,10 +67,10 @@ export function parsePlanParams(url) {
 }
 
 function scoreTopic(topic, query, tokens) {
-  const phrase = normalizeText(query);
-  const id = normalizeText(topic.id);
-  const title = normalizeText(topic.title);
-  const articleText = normalizeText((topic.top_articles || [])
+  const phrase = normalizeQueryText(query);
+  const id = normalizeQueryText(topic.id);
+  const title = normalizeQueryText(topic.title);
+  const articleText = normalizeQueryText((topic.top_articles || [])
     .map(article => `${article.title || ''} ${article.canonical_slug || ''}`)
     .join(' '));
   let score = 0;
@@ -106,6 +93,30 @@ function scoreTopic(topic, query, tokens) {
     score,
     matched_keywords: [...matchedKeywords].sort()
   };
+}
+
+function unsupportedIntentReasons(query) {
+  const normalized = normalizeQueryText(query);
+  const reasons = [];
+  const hasLiveTimeMarker = /\b(?:today|tonight|tomorrow|yesterday|now|current|latest|recent|this week|this month)\b/.test(normalized);
+  const asksLiveWeather = /\bweather\b/.test(normalized)
+    && (hasLiveTimeMarker || /\bweather (?:forecast|in|near|for)\b/.test(normalized));
+
+  if (/\b(?:near me|nearby|closest|directions|opening hours|for me|my location)\b/.test(normalized)
+    || /\blocal (?:restaurants?|venues?|business(?:es)?|listings?|stores?|shops?|services?|events?)\b/.test(normalized)
+    || /\bbest restaurants?\b/.test(normalized)) {
+    reasons.push('local_or_personalized');
+  }
+
+  if (hasLiveTimeMarker
+    || asksLiveWeather
+    || /\b(?:score|scores|standings|schedule|stock price|exchange rate)\b/.test(normalized)
+    || /\bwho won\b/.test(normalized)
+    || /\b20(?:2[5-9]|[3-9]\d)\b/.test(normalized)) {
+    reasons.push('live_or_time_sensitive');
+  }
+
+  return [...new Set(reasons)];
 }
 
 function topicEntrypoint(topic) {
@@ -203,9 +214,17 @@ function recommendedCalls({ status, query, limit, articleMatches, topicMatches, 
   return calls;
 }
 
-function fallbackGuidance(status) {
+function fallbackGuidance(status, intentReasons = []) {
   if (status === 'unsupported') {
+    const guidance = [];
+    if (intentReasons.includes('local_or_personalized')) {
+      guidance.push('AnchorFact is not a live local directory or personalized recommendation source; use current local listings or official venue sources.');
+    }
+    if (intentReasons.includes('live_or_time_sensitive')) {
+      guidance.push('AnchorFact is not a live news, sports, market, weather, or current-results source; use current authoritative sources.');
+    }
     return [
+      ...guidance,
       'AnchorFact has no clear public coverage for this query.',
       'Use external primary or authoritative sources instead of stretching nearby AnchorFact records.',
       'Do not cite AnchorFact unless a later search or evidence call returns a public source-mapped claim.'
@@ -230,10 +249,15 @@ export function buildPlanApiPayload({
 }) {
   const normalizedQuery = String(query || '').trim();
   const normalizedLimit = clampLimit(limit);
-  const articleMatches = rankSearchRecords(searchIndex?.records || [], normalizedQuery, normalizedLimit)
-    .map(compactArticle);
+  const intentReasons = unsupportedIntentReasons(normalizedQuery);
+  const intentUnsupported = intentReasons.length > 0;
+  const articleMatches = intentUnsupported
+    ? []
+    : rankSearchRecords(searchIndex?.records || [], normalizedQuery, normalizedLimit).map(compactArticle);
   const topics = coveragePayload?.topic_coverage || topicsPayload?.topics || [];
-  const topicMatches = rankedTopics(topics, normalizedQuery, Math.min(5, normalizedLimit + 2));
+  const topicMatches = intentUnsupported
+    ? []
+    : rankedTopics(topics, normalizedQuery, Math.min(5, normalizedLimit + 2));
   const status = coverageStatus(articleMatches, topicMatches);
 
   return {
@@ -247,6 +271,7 @@ export function buildPlanApiPayload({
     limit: normalizedLimit,
     coverage_status: status,
     should_use_anchorfact: status !== 'unsupported',
+    unsupported_intent_reasons: intentReasons,
     confidence: confidenceFor(status, articleMatches),
     source_index_generated: searchIndex?.generated || null,
     coverage_generated: coveragePayload?.generated || null,
@@ -261,7 +286,7 @@ export function buildPlanApiPayload({
       topicMatches,
       site
     }),
-    fallback_guidance: fallbackGuidance(status),
+    fallback_guidance: fallbackGuidance(status, intentReasons),
     trust_requirements: [
       'Use only public records returned by AnchorFact endpoints.',
       'Verify /provenance.json and /provenance.sig with the pinned public key before relying on artifact hashes.',

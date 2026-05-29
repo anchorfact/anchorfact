@@ -123,11 +123,11 @@ export function buildContextApiPayload({
     return evidence;
   }
 
-  const evidencePacks = evidence.payload.packs || [];
+  const evidencePacks = plan.should_use_anchorfact === true ? (evidence.payload.packs || []) : [];
   const citationReadyClaims = buildCitationReadyClaims(evidencePacks);
   const answerPolicy = buildAnswerPolicy({
     plan,
-    evidencePackCount: evidence.payload.result_count || 0,
+    evidencePackCount: evidencePacks.length,
     citationReadyClaims
   });
 
@@ -152,7 +152,8 @@ export function buildContextApiPayload({
       recommended_next_calls: plan.recommended_next_calls || [],
       matched_topics: plan.matched_topics || [],
       matched_articles: plan.matched_articles || [],
-      evidence_pack_count: evidence.payload.result_count || 0,
+      unsupported_intent_reasons: plan.unsupported_intent_reasons || [],
+      evidence_pack_count: evidencePacks.length,
       evidence_packs: evidencePacks,
       source_index_generated: evidence.payload.source_index_generated || null,
       search_index_generated: evidence.payload.search_index_generated || null,

@@ -1,21 +1,9 @@
+import { normalizeQueryText, queryTokens } from './query-text.js';
+
 export const SEARCH_API_SCHEMA_VERSION = 'anchorfact.search-api.v1';
 const MIN_LIMIT = 1;
 const DEFAULT_LIMIT = 5;
 const MAX_LIMIT = 20;
-
-function normalizeText(value) {
-  return String(value || '')
-    .replace(/[^a-z0-9]+/gi, ' ')
-    .replace(/\s+/g, ' ')
-    .trim()
-    .toLowerCase();
-}
-
-function queryTokens(query) {
-  return normalizeText(query)
-    .split(' ')
-    .filter(token => token.length >= 2);
-}
 
 function clampLimit(value) {
   const parsed = Number.parseInt(value, 10);
@@ -51,11 +39,11 @@ function occurrenceCount(haystack, needle) {
 }
 
 function scoreRecord(record, query, tokens) {
-  const title = normalizeText(record.title);
-  const description = normalizeText(record.description);
-  const text = normalizeText(record.search_text);
-  const keywords = new Set((record.keywords || []).map(normalizeText));
-  const phrase = normalizeText(query);
+  const title = normalizeQueryText(record.title);
+  const description = normalizeQueryText(record.description);
+  const text = normalizeQueryText(record.search_text);
+  const keywords = new Set((record.keywords || []).map(normalizeQueryText));
+  const phrase = normalizeQueryText(query);
   const matchedKeywords = new Set();
   let score = 0;
 

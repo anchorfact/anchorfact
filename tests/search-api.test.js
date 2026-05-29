@@ -92,6 +92,26 @@ test('rankSearchRecords ranks exact title and keyword matches first', () => {
   assert(results[0].matched_keywords.includes('gaussian'), 'matched keywords should include gaussian');
 });
 
+test('rankSearchRecords ignores generic question words and standalone years', () => {
+  const results = rankSearchRecords([
+    {
+      canonical_slug: 'sports/generic-history',
+      title: 'Sports History',
+      url: 'https://anchorfact.org/sports/generic-history/',
+      description: 'A public sports reference.',
+      confidence_level: 'medium',
+      source_coverage: { verified: 1, total: 1, ratio: 1 },
+      claim_count: 1,
+      claim_ids: ['fact-sports'],
+      keywords: ['sports'],
+      routes: {},
+      search_text: 'sports history in the year 2026 with public reference'
+    }
+  ], 'Who won the NBA Finals in 2026?', 3);
+
+  assertEq(results, []);
+});
+
 test('buildSearchApiPayload returns compact agent-friendly results', () => {
   const payload = buildSearchApiPayload({
     query: 'gaussian radiance',

@@ -264,6 +264,19 @@ test('buildContextApiPayload keeps unsupported queries explicit and non-citable'
   assert(result.payload.fallback_guidance.some(item => item.includes('external primary')), 'unsupported context should direct agents to external primary sources');
 });
 
+test('buildContextApiPayload suppresses lexical evidence for live unsupported intents', () => {
+  const result = buildContextApiPayload(payloadArgs({ query: 'What is 3D Gaussian Splatting today?' }));
+
+  assertEq(result.payload.coverage_status, 'unsupported');
+  assertEq(result.payload.should_use_anchorfact, false);
+  assertEq(result.payload.answer_policy.can_answer_with_anchorfact, false);
+  assertEq(result.payload.answer_policy.answer_mode, 'external_sources_required');
+  assertEq(result.payload.evidence_pack_count, 0);
+  assertEq(result.payload.evidence_packs, []);
+  assertEq(result.payload.citation_ready_claims, []);
+  assert(result.payload.fallback_guidance.some(item => item.includes('current')), 'live query should explain current-source fallback');
+});
+
 test('renderContextMarkdown returns answer-ready context with guardrails', () => {
   const result = buildContextApiPayload(payloadArgs());
   const markdown = renderContextMarkdown(result.payload);

@@ -550,6 +550,10 @@ export function buildOpenApiContract({
           limit: { type: 'integer' },
           coverage_status: { enum: ['supported', 'topic_supported', 'unsupported'] },
           should_use_anchorfact: { type: 'boolean' },
+          unsupported_intent_reasons: {
+            type: 'array',
+            items: { enum: ['local_or_personalized', 'live_or_time_sensitive'] }
+          },
           confidence: { enum: ['high', 'medium', 'low'] },
           matched_topics: { type: 'array', items: { type: 'object' } },
           matched_articles: { type: 'array', items: { type: 'object' } },
@@ -572,6 +576,10 @@ export function buildOpenApiContract({
           limit: { type: 'integer' },
           coverage_status: { enum: ['supported', 'topic_supported', 'unsupported'] },
           should_use_anchorfact: { type: 'boolean' },
+          unsupported_intent_reasons: {
+            type: 'array',
+            items: { enum: ['local_or_personalized', 'live_or_time_sensitive'] }
+          },
           answer_policy: { $ref: '#/components/schemas/AnswerPolicy' },
           citation_ready_claims: {
             type: 'array',
