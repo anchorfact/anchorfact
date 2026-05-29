@@ -102,6 +102,7 @@ export function buildCoverageIndex({
       discover_contract: '/agent.json',
       route_task: '/capabilities.json',
       check_coverage: '/coverage.json',
+      plan_query: '/api/plan?q={query}&limit=3',
       answer_with_evidence: '/api/evidence?q={query}&limit=3',
       cite_claim: '/api/cite?id={claim_id}',
       verify_official_build: '/provenance.json'
@@ -109,12 +110,12 @@ export function buildCoverageIndex({
     recommended_decision_flow: [
       {
         step: 1,
-        question: 'Does the query fall inside a listed topic or public article title?',
-        use: '/coverage.json'
+        question: 'Ask AnchorFact whether public coverage is plausible and which endpoint should be called next.',
+        use: '/api/plan?q={query}&limit=3'
       },
       {
         step: 2,
-        question: 'If coverage is plausible, fetch source-grounded public evidence.',
+        question: 'If the plan says coverage is plausible, fetch source-grounded public evidence.',
         use: '/api/evidence?q={query}&limit=3'
       },
       {

@@ -138,6 +138,7 @@ test('public entrypoints exclude draft articles', () => {
   assert(indexHtml.includes('/evals.json'), 'index should link to evals index');
   assert(indexHtml.includes('/mcp.json'), 'index should link to MCP profile');
   assert(indexHtml.includes('/search-index.json'), 'index should link to search index');
+  assert(indexHtml.includes('/api/plan?q='), 'index should link to plan API example');
   assert(indexHtml.includes('/api/evidence?q='), 'index should link to evidence API example');
   assert(indexHtml.includes('/api/resolve?ref='), 'index should link to resolve API example');
   assert(indexHtml.includes('/api/resolve-batch?ref='), 'index should link to resolve batch API example');
@@ -155,6 +156,7 @@ test('public entrypoints exclude draft articles', () => {
   assert(llmsTxt.includes('Evals'), 'llms.txt should include evals index');
   assert(llmsTxt.includes('MCP'), 'llms.txt should include MCP profile');
   assert(llmsTxt.includes('Search Index'), 'llms.txt should include search index');
+  assert(llmsTxt.includes('Plan API'), 'llms.txt should include plan API');
   assert(llmsTxt.includes('Evidence API'), 'llms.txt should include evidence API');
   assert(llmsTxt.includes('Resolve API'), 'llms.txt should include resolve API');
   assert(llmsTxt.includes('Resolve Batch API'), 'llms.txt should include resolve batch API');
@@ -191,11 +193,11 @@ test('agent profile describes the machine contract', () => {
   assertEq(agent.current_snapshot.draft_articles, 1);
   assertEq(agent.current_snapshot.public_claims, 2);
   assertEq(agent.current_snapshot.topics, 1);
-  assertEq(agent.current_snapshot.capabilities, 8);
+  assertEq(agent.current_snapshot.capabilities, 9);
   assertEq(agent.current_snapshot.examples, 6);
   assert(agent.current_snapshot.graph_nodes >= 1, 'agent profile should expose graph node count');
   assert(agent.current_snapshot.graph_edges >= 1, 'agent profile should expose graph edge count');
-  assertEq(agent.current_snapshot.evals, 9);
+  assertEq(agent.current_snapshot.evals, 10);
   assertEq(agent.current_snapshot.mcp_tools, 6);
   assert(agent.current_snapshot.unique_sources >= 1, 'agent profile should expose source count');
   assertEq(agent.endpoints.claims.url, 'https://anchorfact.org/claims.json');
@@ -207,6 +209,7 @@ test('agent profile describes the machine contract', () => {
   assertEq(agent.endpoints.evals.url, 'https://anchorfact.org/evals.json');
   assertEq(agent.endpoints.mcp.url, 'https://anchorfact.org/mcp.json');
   assertEq(agent.endpoints.openapi.url, 'https://anchorfact.org/openapi.json');
+  assertEq(agent.endpoints.plan_api.path, '/api/plan?q={query}');
   assertEq(agent.endpoints.evidence_api.path, '/api/evidence?q={query}');
   assertEq(agent.endpoints.resolve_api.path, '/api/resolve?ref={reference}');
   assertEq(agent.endpoints.resolve_batch_api.path, '/api/resolve-batch?ref={reference}&ref={reference}');
@@ -227,6 +230,7 @@ test('agent profile describes the machine contract', () => {
   assert(agent.recommended_workflow.some(step => step.includes('/evals.json')), 'agent workflow should mention evals index');
   assert(agent.recommended_workflow.some(step => step.includes('/mcp.json')), 'agent workflow should mention MCP profile');
   assert(agent.recommended_workflow.some(step => step.includes('/search-index.json')), 'agent workflow should mention search index');
+  assert(agent.recommended_workflow.some(step => step.includes('/api/plan')), 'agent workflow should mention plan API');
   assert(agent.recommended_workflow.some(step => step.includes('/api/evidence')), 'agent workflow should mention evidence API');
   assert(agent.recommended_workflow.some(step => step.includes('/api/resolve')), 'agent workflow should mention resolve API');
   assert(agent.recommended_workflow.some(step => step.includes('/api/resolve-batch')), 'agent workflow should mention resolve batch API');
@@ -255,6 +259,7 @@ test('openapi.json describes the static AI contract', () => {
   assert(openapi.paths['/graph.json'], 'OpenAPI should describe graph endpoint');
   assert(openapi.paths['/evals.json'], 'OpenAPI should describe evals endpoint');
   assert(openapi.paths['/mcp.json'], 'OpenAPI should describe MCP endpoint');
+  assert(openapi.paths['/api/plan'], 'OpenAPI should describe plan API');
   assert(openapi.paths['/api/evidence'], 'OpenAPI should describe evidence API');
   assert(openapi.paths['/api/resolve'], 'OpenAPI should describe resolve API');
   assert(openapi.paths['/api/resolve-batch'], 'OpenAPI should describe resolve batch API');
@@ -325,7 +330,8 @@ test('capabilities.json describes AI endpoint routing', () => {
   const capabilities = JSON.parse(readFileSync(join(distDir, 'capabilities.json'), 'utf-8'));
   assertEq(capabilities.schema_version, 'anchorfact.capabilities.v1');
   assertEq(capabilities.provenance_url, 'https://anchorfact.org/provenance.json');
-  assertEq(capabilities.capability_count, 8);
+  assertEq(capabilities.capability_count, 9);
+  assert(capabilities.capabilities.some(capability => capability.id === 'plan_query'), 'capabilities should include query planning workflow');
   assert(capabilities.capabilities.some(capability => capability.id === 'answer_with_evidence'), 'capabilities should include evidence workflow');
   assert(capabilities.capabilities.some(capability => capability.id === 'resolve_many_references'), 'capabilities should include batch resolver workflow');
   assert(capabilities.capabilities.some(capability => capability.id === 'verify_official_build'), 'capabilities should include provenance verification workflow');
@@ -392,8 +398,9 @@ test('evals.json describes executable AI integration checks', () => {
   const evals = JSON.parse(readFileSync(join(distDir, 'evals.json'), 'utf-8'));
   assertEq(evals.schema_version, 'anchorfact.evals.v1');
   assertEq(evals.provenance_url, 'https://anchorfact.org/provenance.json');
-  assertEq(evals.eval_count, 9);
+  assertEq(evals.eval_count, 10);
   assertEq(evals.evals.map(evalCase => evalCase.id), [
+    'query_plan',
     'evidence_pack_json',
     'evidence_pack_markdown',
     'claim_dereference',
@@ -404,6 +411,7 @@ test('evals.json describes executable AI integration checks', () => {
     'graph_relationships',
     'signed_provenance_static_artifacts'
   ]);
+  assert(evals.evals.some(evalCase => evalCase.call.path.includes('/api/plan?')), 'evals should include plan API checks');
   assert(evals.evals.some(evalCase => evalCase.call.path.includes('/api/evidence?')), 'evals should include evidence API checks');
   assert(evals.evals.some(evalCase => evalCase.call.path.includes('/api/resolve?')), 'evals should include resolve API checks');
   assert(evals.evals.some(evalCase => evalCase.call.path.includes('/api/resolve-batch?')), 'evals should include resolve batch API checks');

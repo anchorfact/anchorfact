@@ -5,6 +5,7 @@ import {
   EVIDENCE_API_SCHEMA_VERSION,
   GRAPH_SCHEMA_VERSION,
   OFFICIAL_SITE,
+  PLAN_API_SCHEMA_VERSION,
   PROVENANCE_PATH,
   PROVENANCE_SCHEMA_VERSION,
   RESOLVE_BATCH_API_SCHEMA_VERSION,
@@ -133,6 +134,7 @@ export function buildEvalsIndex({
   const source = chooseSource(sources, claim, record);
   const claimLookupId = claimShortId(claim?.id);
   const sourcePath = sourceLookupPath(source);
+  const planPath = queryPath('/api/plan', { q: query, limit: 3 });
   const evidencePath = queryPath('/api/evidence', { q: query, limit: 3 });
   const markdownPath = queryPath('/api/evidence', { q: query, limit: 1, format: 'markdown' });
   const resolvePath = queryPath('/api/resolve', { ref: claimLookupId });
@@ -141,6 +143,20 @@ export function buildEvalsIndex({
   const citePath = queryPath('/api/cite', { id: claimLookupId });
 
   const evals = [
+    {
+      id: 'query_plan',
+      intent: 'Confirm the query planner routes a covered public query to the right next AnchorFact calls.',
+      call: call(planPath, site),
+      expected: {
+        status: 200,
+        content_type: 'application/json',
+        schema_version: PLAN_API_SCHEMA_VERSION,
+        coverage_status: 'supported',
+        should_use_anchorfact: true,
+        contains_canonical_slug: record.canonical_slug,
+        recommended_call_contains: '/api/evidence'
+      }
+    },
     {
       id: 'evidence_pack_json',
       intent: 'Confirm the one-call evidence API returns source-grounded JSON for a canonical public query.',

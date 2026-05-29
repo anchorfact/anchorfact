@@ -104,8 +104,9 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
 
   assertEq(payload.schema_version, 'anchorfact.evals.v1');
   assertEq(payload.provenance_url, 'https://anchorfact.org/provenance.json');
-  assertEq(payload.eval_count, 9);
+  assertEq(payload.eval_count, 10);
   assertEq(payload.evals.map(evalCase => evalCase.id), [
+    'query_plan',
     'evidence_pack_json',
     'evidence_pack_markdown',
     'claim_dereference',
@@ -117,7 +118,13 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
     'signed_provenance_static_artifacts'
   ]);
 
-  const evidenceEval = payload.evals[0];
+  const planEval = payload.evals[0];
+  assert(planEval.call.path.includes('/api/plan?q=gaussian+splatting&limit=3'), 'plan eval should include encoded query path');
+  assertEq(planEval.expected.schema_version, 'anchorfact.plan-api.v1');
+  assertEq(planEval.expected.should_use_anchorfact, true);
+  assertEq(planEval.expected.recommended_call_contains, '/api/evidence');
+
+  const evidenceEval = payload.evals[1];
   assert(evidenceEval.call.path.includes('/api/evidence?q=gaussian+splatting&limit=3'), 'evidence eval should include encoded query path');
   assertEq(evidenceEval.expected.schema_version, 'anchorfact.evidence-api.v1');
   assertEq(evidenceEval.expected.contains_canonical_slug, 'ai/3d-generation-gaussian-splatting');

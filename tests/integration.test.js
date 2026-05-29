@@ -121,6 +121,7 @@ test('public machine entrypoints exclude drafts', () => {
   assertEq(agent.endpoints.openapi.url, 'https://anchorfact.org/openapi.json');
   assertEq(agent.endpoints.capabilities.url, 'https://anchorfact.org/capabilities.json');
   assertEq(agent.endpoints.coverage.url, 'https://anchorfact.org/coverage.json');
+  assertEq(agent.endpoints.plan_api.path, '/api/plan?q={query}');
   assertEq(agent.endpoints.evidence_api.path, '/api/evidence?q={query}');
   assertEq(agent.endpoints.resolve_api.path, '/api/resolve?ref={reference}');
   assertEq(agent.endpoints.resolve_batch_api.path, '/api/resolve-batch?ref={reference}&ref={reference}');
@@ -141,6 +142,7 @@ test('public machine entrypoints exclude drafts', () => {
   assert(openapi.paths['/{canonical_slug}/index.json'], 'OpenAPI should expose article JSON-LD template');
   assert(openapi.paths['/capabilities.json'], 'OpenAPI should expose capabilities endpoint');
   assert(openapi.paths['/coverage.json'], 'OpenAPI should expose coverage endpoint');
+  assert(openapi.paths['/api/plan'], 'OpenAPI should expose plan API endpoint');
   assert(openapi.paths['/api/evidence'], 'OpenAPI should expose evidence API endpoint');
   assert(openapi.paths['/api/resolve'], 'OpenAPI should expose resolve API endpoint');
   assert(openapi.paths['/api/resolve-batch'], 'OpenAPI should expose resolve batch API endpoint');
@@ -151,7 +153,8 @@ test('public machine entrypoints exclude drafts', () => {
   assert(openapi.paths['/api/source'], 'OpenAPI should expose source API endpoint');
   assert(openapi.paths['/topics.json'], 'OpenAPI should expose topics endpoint');
   assertEq(capabilities.schema_version, 'anchorfact.capabilities.v1');
-  assertEq(capabilities.capability_count, 8);
+  assertEq(capabilities.capability_count, 9);
+  assert(capabilities.capabilities.some(capability => capability.id === 'plan_query'), 'capabilities should include query planning');
   assert(capabilities.capabilities.some(capability => capability.id === 'answer_with_evidence'), 'capabilities should include evidence routing');
   assert(capabilities.capabilities.some(capability => capability.id === 'resolve_many_references'), 'capabilities should include batch resolver routing');
   assertEq(coverage.schema_version, 'anchorfact.coverage.v1');
@@ -168,7 +171,8 @@ test('public machine entrypoints exclude drafts', () => {
   assert(examples.examples.some(example => example.id === 'one_call_evidence_pack'), 'examples index should include evidence pack workflow');
   assert(examples.examples.some(example => example.id === 'mixed_reference_resolution'), 'examples index should include mixed reference workflow');
   assert(examples.examples.some(example => example.id === 'static_fallback'), 'examples index should include static fallback workflow');
-  assertEq(evals.eval_count, 9);
+  assertEq(evals.eval_count, 10);
+  assert(evals.evals.some(evalCase => evalCase.id === 'query_plan'), 'evals index should include query planning check');
   assert(evals.evals.some(evalCase => evalCase.id === 'evidence_pack_json'), 'evals index should include evidence pack check');
   assert(evals.evals.some(evalCase => evalCase.id === 'reference_resolver'), 'evals index should include resolve API check');
   assert(evals.evals.some(evalCase => evalCase.id === 'batch_reference_resolver'), 'evals index should include resolve batch API check');

@@ -15,6 +15,7 @@ import {
   MCP_SCHEMA_VERSION,
   OFFICIAL_SITE,
   OPENAPI_SCHEMA_VERSION,
+  PLAN_API_SCHEMA_VERSION,
   PROVENANCE_PATH,
   PROVENANCE_SCHEMA_VERSION,
   RESOLVE_BATCH_API_SCHEMA_VERSION,
@@ -107,6 +108,31 @@ export function buildOpenApiContract({
       '/graph.json': getJson('Public knowledge graph', 'Graph'),
       '/evals.json': getJson('Executable AI integration checks', 'Evals'),
       '/mcp.json': getJson('Local MCP installation manifest', 'McpProfile'),
+      '/api/plan': {
+        get: {
+          summary: 'Read-only AI query planner for AnchorFact coverage and next calls',
+          parameters: [
+            {
+              name: 'q',
+              in: 'query',
+              required: true,
+              schema: { type: 'string', minLength: 1 },
+              description: 'Natural-language query to plan against AnchorFact public coverage.'
+            },
+            {
+              name: 'limit',
+              in: 'query',
+              required: false,
+              schema: { type: 'integer', minimum: 1, maximum: 10, default: 3 },
+              description: 'Maximum article match count to include in the plan.'
+            }
+          ],
+          responses: {
+            200: jsonResponse('PlanApiResponse'),
+            400: jsonResponse('ApiError')
+          }
+        }
+      },
       '/api/evidence': {
         get: {
           summary: 'Read-only public query evidence packs',
@@ -457,6 +483,17 @@ export function buildOpenApiContract({
           result_count: { type: 'integer' },
           source_index_generated: { type: ['string', 'null'], format: 'date-time' },
           results: { type: 'array', items: { type: 'object' } }
+        }),
+        PlanApiResponse: schemaVersioned('Plan API response', PLAN_API_SCHEMA_VERSION, {
+          query: { type: 'string' },
+          limit: { type: 'integer' },
+          coverage_status: { enum: ['supported', 'topic_supported', 'unsupported'] },
+          should_use_anchorfact: { type: 'boolean' },
+          confidence: { enum: ['high', 'medium', 'low'] },
+          matched_topics: { type: 'array', items: { type: 'object' } },
+          matched_articles: { type: 'array', items: { type: 'object' } },
+          recommended_next_calls: { type: 'array', items: { type: 'object' } },
+          fallback_guidance: { type: 'array', items: { type: 'string' } }
         }),
         EvidenceApiResponse: schemaVersioned('Evidence API response', EVIDENCE_API_SCHEMA_VERSION, {
           query: { type: 'string' },

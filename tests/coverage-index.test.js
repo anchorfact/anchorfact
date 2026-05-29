@@ -68,6 +68,8 @@ test('buildCoverageIndex summarizes public coverage and limits for AI routing', 
   assertEq(payload.coverage_summary.source_tier_distribution.S, 2);
   assertEq(payload.topic_coverage.map(topic => topic.id), ['ai', 'science']);
   assert(payload.coverage_limits.some(limit => limit.id === 'not_general_web_search'), 'coverage limits should warn that AnchorFact is not a general web search engine');
+  assertEq(payload.best_entrypoints.plan_query, '/api/plan?q={query}&limit=3');
+  assert(payload.recommended_decision_flow.some(step => step.use === '/api/plan?q={query}&limit=3'), 'decision flow should point to plan API');
   assert(payload.recommended_decision_flow.some(step => step.use === '/api/evidence?q={query}&limit=3'), 'decision flow should point to evidence API');
 });
 

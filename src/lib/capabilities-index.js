@@ -33,6 +33,25 @@ export function buildCapabilitiesIndex({
 } = {}) {
   const capabilities = [
     {
+      id: 'plan_query',
+      intent: 'Decide whether AnchorFact has plausible public coverage for a natural-language question and choose the next endpoint.',
+      use_when: [
+        'The agent is not sure whether AnchorFact should be used for the question.',
+        'The agent needs a machine-readable plan before fetching evidence or falling back to external sources.'
+      ],
+      input_patterns: ['natural_language_query'],
+      primary_call: call('/api/plan?q={query}&limit=3', site),
+      output_formats: ['application/json'],
+      follow_up_calls: [
+        call('/api/evidence?q={query}&limit=3', site),
+        call('/api/search?q={query}&limit=5', site)
+      ],
+      fallback_artifacts: ['/coverage.json', '/capabilities.json', '/search-index.json'],
+      trust_requirements: trustRequirements([
+        'When coverage_status is unsupported, use external primary sources instead of citing AnchorFact.'
+      ])
+    },
+    {
       id: 'answer_with_evidence',
       intent: 'Answer a natural-language question with public, source-grounded AnchorFact evidence packs.',
       use_when: [
@@ -196,10 +215,15 @@ export function buildCapabilitiesIndex({
     },
     default_sequence: [
       'verify_official_build',
+      'plan_query',
       'answer_with_evidence',
       'cite_atomic_claim'
     ],
     selection_rules: [
+      {
+        when: 'You need to decide whether AnchorFact coverage is plausible before retrieving evidence.',
+        use_capability: 'plan_query'
+      },
       {
         when: 'You have a natural-language factual question.',
         use_capability: 'answer_with_evidence'

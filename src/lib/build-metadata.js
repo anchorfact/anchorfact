@@ -10,6 +10,7 @@ export const AGENT_PROFILE_SCHEMA_VERSION = 'anchorfact.agent.v1';
 export const SOURCES_SCHEMA_VERSION = 'anchorfact.sources.v1';
 export const SEARCH_INDEX_SCHEMA_VERSION = 'anchorfact.search-index.v1';
 export const SEARCH_API_SCHEMA_VERSION = 'anchorfact.search-api.v1';
+export const PLAN_API_SCHEMA_VERSION = 'anchorfact.plan-api.v1';
 export const EVIDENCE_API_SCHEMA_VERSION = 'anchorfact.evidence-api.v1';
 export const ARTICLE_API_SCHEMA_VERSION = 'anchorfact.article-api.v1';
 export const CLAIM_API_SCHEMA_VERSION = 'anchorfact.claim-api.v1';

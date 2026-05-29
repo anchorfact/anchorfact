@@ -1,0 +1,226 @@
+#!/usr/bin/env node
+import {
+  buildPlanApiPayload,
+  parsePlanParams
+} from '../src/lib/plan-api.js';
+import { onRequestGet, onRequestOptions } from '../functions/api/plan.js';
+
+let passed = 0, failed = 0;
+const tests = [];
+
+function test(name, fn) {
+  tests.push({ name, fn });
+}
+
+function assert(condition, message) {
+  if (!condition) throw new Error(message);
+}
+
+function assertEq(actual, expected, ctx = '') {
+  if (JSON.stringify(actual) !== JSON.stringify(expected)) {
+    throw new Error(`${ctx} expected ${JSON.stringify(expected)}, got ${JSON.stringify(actual)}`);
+  }
+}
+
+const searchIndex = {
+  schema_version: 'anchorfact.search-index.v1',
+  generated: '2026-05-29T00:00:00.000Z',
+  provenance_url: 'https://anchorfact.org/provenance.json',
+  article_count: 2,
+  records: [
+    {
+      canonical_slug: 'ai/gaussian-splatting',
+      title: '3D Gaussian Splatting',
+      url: 'https://anchorfact.org/ai/gaussian-splatting/',
+      description: 'Real-time neural scene rendering.',
+      confidence_level: 'medium',
+      source_coverage: { verified: 3, total: 3, ratio: 1 },
+      claim_count: 3,
+      claim_ids: ['https://anchorfact.org/fact/f1', 'https://anchorfact.org/fact/f2'],
+      keywords: ['gaussian', 'splatting', 'rendering'],
+      routes: { jsonld: 'https://anchorfact.org/ai/gaussian-splatting/index.json' },
+      search_text: '3d gaussian splatting neural rendering real time radiance field'
+    },
+    {
+      canonical_slug: 'science/statistics',
+      title: 'Statistics Fundamentals',
+      url: 'https://anchorfact.org/science/statistics/',
+      description: 'Probability, inference, and uncertainty.',
+      confidence_level: 'medium',
+      source_coverage: { verified: 2, total: 3, ratio: 0.667 },
+      claim_count: 2,
+      claim_ids: ['https://anchorfact.org/fact/f3'],
+      keywords: ['statistics', 'probability'],
+      routes: { jsonld: 'https://anchorfact.org/science/statistics/index.json' },
+      search_text: 'statistics probability inference uncertainty'
+    }
+  ]
+};
+
+const topicsPayload = {
+  schema_version: 'anchorfact.topics.v1',
+  generated: '2026-05-29T00:00:00.000Z',
+  provenance_url: 'https://anchorfact.org/provenance.json',
+  topic_count: 2,
+  topics: [
+    {
+      id: 'ai',
+      title: 'AI',
+      article_count: 1,
+      claim_count: 3,
+      source_count: 3,
+      top_articles: [
+        { canonical_slug: 'ai/gaussian-splatting', title: '3D Gaussian Splatting' }
+      ]
+    },
+    {
+      id: 'science',
+      title: 'Science',
+      article_count: 1,
+      claim_count: 2,
+      source_count: 2,
+      top_articles: [
+        { canonical_slug: 'science/statistics', title: 'Statistics Fundamentals' }
+      ]
+    }
+  ]
+};
+
+const coveragePayload = {
+  schema_version: 'anchorfact.coverage.v1',
+  generated: '2026-05-29T00:00:00.000Z',
+  provenance_url: 'https://anchorfact.org/provenance.json',
+  topic_coverage: [
+    {
+      id: 'ai',
+      title: 'AI',
+      article_count: 1,
+      claim_count: 3,
+      source_count: 3,
+      best_entrypoint: '/api/evidence?q=AI&limit=3'
+    },
+    {
+      id: 'science',
+      title: 'Science',
+      article_count: 1,
+      claim_count: 2,
+      source_count: 2,
+      best_entrypoint: '/api/evidence?q=Science&limit=3'
+    }
+  ]
+};
+
+const capabilitiesPayload = {
+  schema_version: 'anchorfact.capabilities.v1',
+  generated: '2026-05-29T00:00:00.000Z',
+  capability_count: 8,
+  capabilities: []
+};
+
+console.log('AnchorFact Plan API Tests\n');
+
+test('parsePlanParams validates query and clamps limit', () => {
+  const parsed = parsePlanParams(new URL('https://anchorfact.org/api/plan?q=gaussian&limit=99'));
+  assertEq(parsed.ok, true);
+  assertEq(parsed.query, 'gaussian');
+  assertEq(parsed.limit, 10);
+
+  const missing = parsePlanParams(new URL('https://anchorfact.org/api/plan'));
+  assertEq(missing.ok, false);
+  assertEq(missing.status, 400);
+  assertEq(missing.payload.error.code, 'missing_or_invalid_query');
+});
+
+test('buildPlanApiPayload recommends AnchorFact calls for supported queries', () => {
+  const payload = buildPlanApiPayload({
+    query: 'gaussian rendering',
+    limit: 2,
+    searchIndex,
+    topicsPayload,
+    coveragePayload,
+    capabilitiesPayload,
+    generated: '2026-05-29T00:00:00.000Z'
+  });
+
+  assertEq(payload.schema_version, 'anchorfact.plan-api.v1');
+  assertEq(payload.coverage_status, 'supported');
+  assertEq(payload.should_use_anchorfact, true);
+  assertEq(payload.matched_articles[0].canonical_slug, 'ai/gaussian-splatting');
+  assert(payload.recommended_next_calls.some(item => item.path.includes('/api/evidence?q=gaussian+rendering&limit=2')), 'plan should route to evidence API');
+  assert(payload.recommended_next_calls.some(item => item.path.includes('/api/article?slug=ai%2Fgaussian-splatting')), 'plan should include article inspection');
+  assert(payload.recommended_next_calls.some(item => item.path.includes('/api/cite?id=https%3A%2F%2Fanchorfact.org%2Ffact%2Ff1')), 'plan should include citation lookup');
+  assert(payload.trust_requirements.some(item => item.includes('pinned public key')), 'plan should carry trust requirements');
+});
+
+test('buildPlanApiPayload warns agents away from unsupported queries', () => {
+  const payload = buildPlanApiPayload({
+    query: 'local restaurant opening hours',
+    searchIndex,
+    topicsPayload,
+    coveragePayload,
+    generated: '2026-05-29T00:00:00.000Z'
+  });
+
+  assertEq(payload.coverage_status, 'unsupported');
+  assertEq(payload.should_use_anchorfact, false);
+  assertEq(payload.matched_articles, []);
+  assert(payload.fallback_guidance.some(item => item.includes('external primary')), 'unsupported plan should recommend external sources');
+  assert(payload.recommended_next_calls.some(item => item.path.includes('/coverage.json')), 'unsupported plan should point to coverage limits');
+});
+
+test('Pages Function returns CORS JSON from static artifacts', async () => {
+  const assets = {
+    '/search-index.json': searchIndex,
+    '/topics.json': topicsPayload,
+    '/coverage.json': coveragePayload,
+    '/capabilities.json': capabilitiesPayload
+  };
+  const response = await onRequestGet({
+    request: new Request('https://anchorfact.org/api/plan?q=gaussian&limit=1'),
+    env: {
+      ASSETS: {
+        fetch: async url => {
+          const payload = assets[new URL(url).pathname];
+          return new Response(JSON.stringify(payload || {}), {
+            status: payload ? 200 : 404,
+            headers: { 'Content-Type': 'application/json' }
+          });
+        }
+      }
+    }
+  });
+  const payload = await response.json();
+  assertEq(response.status, 200);
+  assertEq(response.headers.get('Access-Control-Allow-Origin'), '*');
+  assertEq(payload.schema_version, 'anchorfact.plan-api.v1');
+  assertEq(payload.coverage_status, 'supported');
+  assertEq(payload.matched_articles[0].canonical_slug, 'ai/gaussian-splatting');
+});
+
+test('Pages Function rejects empty queries and supports OPTIONS', async () => {
+  const response = await onRequestGet({
+    request: new Request('https://anchorfact.org/api/plan'),
+    env: { ASSETS: { fetch: async () => new Response('{}') } }
+  });
+  const payload = await response.json();
+  assertEq(response.status, 400);
+  assertEq(payload.error.code, 'missing_or_invalid_query');
+
+  const options = onRequestOptions();
+  assertEq(options.status, 204);
+  assertEq(options.headers.get('Access-Control-Allow-Methods'), 'GET, OPTIONS');
+});
+
+for (const { name, fn } of tests) {
+  try {
+    await fn();
+    passed++;
+    console.log(`  ok ${name}`);
+  } catch (e) {
+    failed++;
+    console.log(`  fail ${name}: ${e.message}`);
+  }
+}
+
+console.log(`\n${passed} passed, ${failed} failed`);
+process.exit(failed > 0 ? 1 : 0);

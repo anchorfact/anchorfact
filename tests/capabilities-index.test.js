@@ -33,7 +33,7 @@ test('buildCapabilitiesIndex publishes AI endpoint selection rules', () => {
     claimsPayload: { claim_count: 1685 },
     topicsPayload: { topic_count: 17 },
     examplesPayload: { example_count: 6 },
-    evalsPayload: { eval_count: 9 },
+    evalsPayload: { eval_count: 10 },
     mcpPayload: { tools: [{ name: 'anchorfact_search' }, { name: 'anchorfact_cite_claim' }] }
   });
 
@@ -42,8 +42,9 @@ test('buildCapabilitiesIndex publishes AI endpoint selection rules', () => {
   assertEq(payload.current_snapshot.public_articles, 555);
   assertEq(payload.current_snapshot.public_claims, 1685);
   assertEq(payload.current_snapshot.mcp_tools, 2);
-  assertEq(payload.capability_count, 8);
+  assertEq(payload.capability_count, 9);
   assertEq(payload.capabilities.map(capability => capability.id), [
+    'plan_query',
     'answer_with_evidence',
     'search_public_records',
     'resolve_single_reference',
@@ -53,6 +54,10 @@ test('buildCapabilitiesIndex publishes AI endpoint selection rules', () => {
     'verify_official_build',
     'connect_local_mcp'
   ]);
+
+  const planner = payload.capabilities.find(capability => capability.id === 'plan_query');
+  assertEq(planner.primary_call.path, '/api/plan?q={query}&limit=3');
+  assert(planner.fallback_artifacts.includes('/coverage.json'), 'plan capability should name coverage fallback');
 
   const evidence = payload.capabilities.find(capability => capability.id === 'answer_with_evidence');
   assertEq(evidence.primary_call.path, '/api/evidence?q={query}&limit=3');
@@ -69,9 +74,11 @@ test('buildCapabilitiesIndex publishes AI endpoint selection rules', () => {
 
   assertEq(payload.default_sequence, [
     'verify_official_build',
+    'plan_query',
     'answer_with_evidence',
     'cite_atomic_claim'
   ]);
+  assert(payload.selection_rules.some(rule => rule.use_capability === 'plan_query'), 'selection rules should include query planning');
   assert(payload.selection_rules.some(rule => rule.use_capability === 'resolve_many_references'), 'selection rules should include batch resolution');
 });
 
