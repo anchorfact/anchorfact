@@ -4,8 +4,8 @@ title: "JSON (JavaScript Object Notation)"
 schema_type: "TechArticle"
 category: "computer-science"
 language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
+confidence: "medium"
+last_verified: "2026-05-30"
 created_date: "2026-05-22"
 generation_method: "human_only"
 derived_from_human_seed: true
@@ -14,95 +14,62 @@ is_live_document: false
 data_period: "static"
 
 atomic_facts:
-  - id: "fact-computer-science-01"
-    statement: "Derived from JavaScript object literal syntax and popularized by Douglas Crockford in the early 2000s, JSON is the dominant data format for web APIs, configuration files, and data storage"
-    source_title: "RFC 8259 — The JavaScript Object Notation (JSON) Data Interchange Format"
-    source_url: "https://www.rfc-editor.org/rfc/rfc8259"
+  - id: "fact-json-1"
+    statement: "RFC 8259 defines JSON as a lightweight, text-based, language-independent data interchange format."
+    source_title: "RFC 8259: The JavaScript Object Notation (JSON) Data Interchange Format"
+    source_url: "https://www.ietf.org/rfc/rfc8259.txt"
     confidence: "medium"
-  - id: "fact-computer-science-002"
-    statement: "Derived from JavaScript object literal syntax and popularized by Douglas Crockford in the early 2000s, JSON is the dominant data format for web APIs, configuration files, and data storage."
-    source_title: "RFC 8259 — The JavaScript Object Notation (JSON) Data Interchange Format"
-    source_url: "https://www.rfc-editor.org/rfc/rfc8259"
+  - id: "fact-json-2"
+    statement: "RFC 8259 says JSON represents four primitive types, strings, numbers, booleans, and null, and two structured types, objects and arrays."
+    source_title: "RFC 8259: The JavaScript Object Notation (JSON) Data Interchange Format"
+    source_url: "https://www.ietf.org/rfc/rfc8259.txt"
     confidence: "medium"
-  - id: "fact-computer-science-003"
-    statement: "Its simplicity — four primitive types (string, number, boolean, null) plus arrays and objects — has made it the universal lingua franca of data exchange on the web."
-    source_title: "RFC 8259 — The JavaScript Object Notation (JSON) Data Interchange Format"
-    source_url: "https://www.rfc-editor.org/rfc/rfc8259"
-    confidence: "medium"
-  - id: "fact-computer-science-004"
-    statement: "5e10` | | Boolean | `true`, `false` | | Null | `null` | | Array | `[1, \"two\", true]` | | Object | `{\"key\": \"value\"}` |  **Notably absent**: Date type, integer vs."
-    source_title: "RFC 8259 — The JavaScript Object Notation (JSON) Data Interchange Format"
-    source_url: "https://www.rfc-editor.org/rfc/rfc8259"
-    confidence: "medium"
-  - id: "fact-computer-science-005"
-    statement: "float distinction, comments, trailing commas."
-    source_title: "RFC 8259 — The JavaScript Object Notation (JSON) Data Interchange Format"
-    source_url: "https://www.rfc-editor.org/rfc/rfc8259"
+  - id: "fact-json-3"
+    statement: "ECMA-404 defines JSON syntax and describes JSON text as a sequence of Unicode code points that conforms to the JSON value grammar."
+    source_title: "ECMA-404: The JSON Data Interchange Syntax"
+    source_url: "https://ecma-international.org/publications-and-standards/standards/ecma-404/"
     confidence: "medium"
 
-completeness: 0.88
+completeness: 0.8
 
 known_gaps:
-  - "Content verified during quality audit; citations cross-referenced with authoritative sources"
+  - "This compact repair covers the core JSON standard and does not survey JSON extensions such as JSON Schema or JSON-LD."
 
-disputed_statements:
-  - statement: "The productivity impact of static typing in dynamic languages is contested: TypeScript advocates cite error reduction, while skeptics argue the overhead outweighs benefits for smaller projects"
+disputed_statements: []
 
 primary_sources:
-  - title: "RFC 8259 — The JavaScript Object Notation (JSON) Data Interchange Format"
+  - title: "RFC 8259: The JavaScript Object Notation (JSON) Data Interchange Format"
     authors: ["Bray, T."]
-    type: "standard"
+    type: "rfc"
     year: 2017
-    url: "https://www.rfc-editor.org/rfc/rfc8259"
+    url: "https://www.ietf.org/rfc/rfc8259.txt"
     institution: "IETF"
-  - title: "ECMA-404 — The JSON Data Interchange Syntax"
+  - title: "ECMA-404: The JSON Data Interchange Syntax"
     type: "standard"
     year: 2017
+    url: "https://ecma-international.org/publications-and-standards/standards/ecma-404/"
     institution: "Ecma International"
 
-secondary_sources:
-  - title: "MDN Web Docs — HTTP"
-    type: "documentation"
-    year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
-    institution: "Mozilla"
-
+secondary_sources: []
+updated: "2026-05-30"
 ---
-
-
 
 ## TL;DR
 
-JSON (JavaScript Object Notation) is a lightweight, text-based data interchange format standardized as IETF RFC 8259 and ECMA-404. Derived from JavaScript object literal syntax and popularized by Douglas Crockford in the early 2000s, JSON is the dominant data format for web APIs, configuration files, and data storage. Its simplicity — four primitive types (string, number, boolean, null) plus arrays and objects — has made it the universal lingua franca of data exchange on the web.
+JSON is a lightweight text format for exchanging structured data. Its grammar is deliberately small: a JSON value can be an object, array, string, number, boolean, or null.
 
-## Core Types
+## Core Explanation
 
-| Type | Example |
-|------|---------|
-| String | `"hello"` |
-| Number | `42`, `3.14`, `-1.5e10` |
-| Boolean | `true`, `false` |
-| Null | `null` |
-| Array | `[1, "two", true]` |
-| Object | `{"key": "value"}` |
+JSON is commonly used because its data model is easy for humans to read and easy for programs to parse. Objects hold name/value pairs, arrays hold ordered values, and primitive values cover strings, numbers, booleans, and null.
 
-**Notably absent**: Date type, integer vs. float distinction, comments, trailing commas.
-
-## Key Extensions
-
-- **JSON Schema**: Schema validation language (IETF draft)
-- **JSON-LD**: Linked Data format using JSON (W3C Recommendation)
-- **JSON5**: Superset with comments, trailing commas, unquoted keys
-- **GeoJSON**: Geographic data format (RFC 7946)
-- **NDJSON**: Newline-delimited JSON for streaming
+The standards intentionally define syntax, not application semantics. Dates, comments, trailing commas, object-member uniqueness policies, and schema validation are handled by surrounding formats, parsers, or application conventions.
 
 ## Further Reading
 
-- [RFC 8259](https://www.rfc-editor.org/rfc/rfc8259): IETF JSON standard
-- [JSON.org](https://www.json.org/): Douglas Crockford's JSON page
+- [RFC 8259: The JavaScript Object Notation (JSON) Data Interchange Format](https://www.ietf.org/rfc/rfc8259.txt)
+- [ECMA-404: The JSON Data Interchange Syntax](https://ecma-international.org/publications-and-standards/standards/ecma-404/)
 
 ## Related Articles
 
-- [AI for Augmented Reality: Real-Time Object Detection, Depth Estimation, and Scene Understanding](../../ai/ai-for-augmented-reality-real-time-object-detection-depth-estimation-and-scene-understanding.md)
-- [AI for Satellite Imagery: Object Detection, Change Detection, and Global Monitoring](../../ai/ai-satellite-imagery.md)
-- [AI for Surveillance Systems: Object Tracking, Anomaly Detection, and Intelligent Monitoring](../../ai/ai-surveillance-systems.md)
+- [REST API](../rest-api.md)
+- [API Gateway](../api-gateway.md)

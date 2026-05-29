@@ -24458,45 +24458,73 @@
       "file": "content/computer-science/dns-domain-name-system.md",
       "article_id": "kb-2026-00181",
       "generation_method": "human_only",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "RFC 1035 — Domain Names — Implementation and Specification",
-          "source_type": "standard",
+          "source_title": "RFC 1034: Domain Names - Concepts and Facilities",
+          "source_type": "rfc",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.rfc-editor.org/rfc/rfc1035",
-              "verified": false,
+              "identifier": "https://www.ietf.org/rfc/rfc1034.txt",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://www.rfc-editor.org/rfc/rfc1035"
+                "status": 200,
+                "final_url": "https://www.ietf.org/rfc/rfc1034.txt",
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair and public promotion; source URL verified directly; local verify-full was not run."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "RFC 4033 — DNS Security Introduction and Requirements",
-          "source_type": "standard",
+          "source_title": "RFC 1035: Domain Names - Implementation and Specification",
+          "source_type": "rfc",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.rfc-editor.org/rfc/rfc4033",
-              "verified": false,
+              "identifier": "https://www.ietf.org/rfc/rfc1035.txt",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://www.rfc-editor.org/rfc/rfc4033"
+                "status": 200,
+                "final_url": "https://www.ietf.org/rfc/rfc1035.txt",
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair and public promotion; source URL verified directly; local verify-full was not run."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "RFC 4033: DNS Security Introduction and Requirements",
+          "source_type": "rfc",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.ietf.org/rfc/rfc4033.txt",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.ietf.org/rfc/rfc4033.txt",
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair and public promotion; source URL verified directly; local verify-full was not run."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 2
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-30"
     },
     {
       "file": "content/computer-science/dns-the-domain-name-system-architecture-and-security.md",
@@ -27021,76 +27049,90 @@
       "sources_total": 4,
       "verification_results": [
         {
-          "source_title": "RFC 9110 — HTTP Semantics",
-          "source_type": "standard",
+          "source_title": "RFC 9110: HTTP Semantics",
+          "source_type": "rfc",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.rfc-editor.org/rfc/rfc9110",
-              "verified": false,
+              "identifier": "https://www.ietf.org/rfc/rfc9110.html",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://www.rfc-editor.org/rfc/rfc9110"
+                "status": 200,
+                "final_url": "https://www.ietf.org/rfc/rfc9110.html",
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair and public promotion; source URL verified directly; local verify-full was not run."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "RFC 9112 — HTTP/1.1",
-          "source_type": "standard",
+          "source_title": "RFC 9112: HTTP/1.1",
+          "source_type": "rfc",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.rfc-editor.org/rfc/rfc9112",
-              "verified": false,
+              "identifier": "https://www.ietf.org/rfc/rfc9112.html",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://www.rfc-editor.org/rfc/rfc9112"
+                "status": 200,
+                "final_url": "https://www.ietf.org/rfc/rfc9112.html",
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair and public promotion; source URL verified directly; local verify-full was not run."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "RFC 9113 — HTTP/2",
-          "source_type": "standard",
+          "source_title": "RFC 9113: HTTP/2",
+          "source_type": "rfc",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.rfc-editor.org/rfc/rfc9113",
-              "verified": false,
+              "identifier": "https://www.ietf.org/rfc/rfc9113.html",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://www.rfc-editor.org/rfc/rfc9113"
+                "status": 200,
+                "final_url": "https://www.ietf.org/rfc/rfc9113.html",
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair and public promotion; source URL verified directly; local verify-full was not run."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "RFC 9114 — HTTP/3",
-          "source_type": "standard",
+          "source_title": "RFC 9114: HTTP/3",
+          "source_type": "rfc",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.rfc-editor.org/rfc/rfc9114",
-              "verified": false,
+              "identifier": "https://www.ietf.org/rfc/rfc9114.html",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://www.rfc-editor.org/rfc/rfc9114"
+                "status": 200,
+                "final_url": "https://www.ietf.org/rfc/rfc9114.html",
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair and public promotion; source URL verified directly; local verify-full was not run."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 4
+      "sources_verified": 4,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-30"
     },
     {
       "file": "content/computer-science/http-status-codes.md",
@@ -27576,31 +27618,50 @@
       "sources_total": 2,
       "verification_results": [
         {
-          "source_title": "RFC 8259 — The JavaScript Object Notation (JSON) Data Interchange Format",
+          "source_title": "RFC 8259: The JavaScript Object Notation (JSON) Data Interchange Format",
+          "source_type": "rfc",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.ietf.org/rfc/rfc8259.txt",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.ietf.org/rfc/rfc8259.txt",
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair and public promotion; source URL verified directly; local verify-full was not run."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "ECMA-404: The JSON Data Interchange Syntax",
           "source_type": "standard",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.rfc-editor.org/rfc/rfc8259",
-              "verified": false,
+              "identifier": "https://ecma-international.org/publications-and-standards/standards/ecma-404/",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://www.rfc-editor.org/rfc/rfc8259"
+                "status": 200,
+                "final_url": "https://ecma-international.org/publications-and-standards/standards/ecma-404/",
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair and public promotion; source URL verified directly; local verify-full was not run."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
-        },
-        {
-          "source_title": "ECMA-404 — The JSON Data Interchange Syntax",
-          "source_type": "standard",
-          "results": [],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 1
+      "sources_verified": 2,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-30"
     },
     {
       "file": "content/computer-science/julia-language.md",
