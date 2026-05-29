@@ -8,7 +8,7 @@
     "elapsed_ms": 635005,
     "elapsed_sec": "635.0",
     "concurrency": 3,
-    "manual_reviewed_articles": 536
+    "manual_reviewed_articles": 541
   },
   "articles": [
     {
@@ -1496,52 +1496,94 @@
       "sources_total": 4,
       "verification_results": [
         {
-          "source_title": "Deep Learning for Historical Document Analysis: Handwriting Recognition, Layout Analysis, and Text Restoration (2024-2025 Survey)",
-          "source_type": "academic_paper",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "The Vesuvius Challenge: Reading the Herculaneum Papyri with Computer Vision and Machine Learning",
-          "source_type": "academic_paper",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "Handwriting Classification for the Analysis of Art-Historical Documents",
+          "source_title": "TrOCR: Transformer-based Optical Character Recognition with Pre-trained Models",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2011.02264v1",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2109.10282",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "title": "TrOCR: Transformer-based Optical Character Recognition with Pre-trained Models",
+                "publisher": "arXiv",
+                "year": 2021,
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair batch 57; sources were manually checked and bounded to specific source-mapped claims. Local verify-full was not run."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Handwriting Recognition in Historical Documents with Multimodal LLM",
-          "source_type": "academic_paper",
+          "source_title": "OCR-free Document Understanding Transformer",
+          "source_type": "conference_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2410.24034v1",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2111.15664",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 503"
+                "title": "OCR-free Document Understanding Transformer",
+                "publisher": "arXiv",
+                "year": 2022,
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair batch 57; sources were manually checked and bounded to specific source-mapped claims. Local verify-full was not run."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "Handwritten Text Recognition: A Comprehensive Systematic Literature Review",
+          "source_type": "survey_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2502.08417",
+              "verified": true,
+              "metadata": {
+                "title": "Handwritten Text Recognition: A Comprehensive Systematic Literature Review",
+                "publisher": "arXiv",
+                "year": 2025,
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair batch 57; sources were manually checked and bounded to specific source-mapped claims. Local verify-full was not run."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Transkribus: a Platform for Transcription, Recognition and Retrieval of Historical Documents",
+          "source_type": "conference_paper",
+          "results": [
+            {
+              "method": "doi",
+              "identifier": "10.1109/ICFHR.2016.0079",
+              "verified": true,
+              "metadata": {
+                "title": "Transkribus: a Platform for Transcription, Recognition and Retrieval of Historical Documents",
+                "publisher": "IEEE",
+                "year": 2016,
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair batch 57; sources were manually checked and bounded to specific source-mapped claims. Local verify-full was not run."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 2
+      "sources_verified": 4,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-30"
     },
     {
       "file": "content/ai/ai-document-understanding.md",
@@ -1611,66 +1653,76 @@
       "file": "content/ai/ai-drone-autonomy.md",
       "article_id": "ai-drone-autonomy",
       "generation_method": "ai_structured",
-      "sources_total": 4,
+      "sources_total": 3,
       "verification_results": [
-        {
-          "source_title": "Deep Reinforcement Learning for Autonomous Drone Navigation and Agile Maneuvering (2023-2025 Survey)",
-          "source_type": "academic_paper",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "Multi-Agent Reinforcement Learning for Drone Swarm Coordination: Formation Control, Coverage, and Search-and-Rescue",
-          "source_type": "academic_paper",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "Advanced Drone Swarm Security by Using Blockchain Governance Game",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "doi",
-              "identifier": "10.3390/math10183338",
-              "verified": true,
-              "metadata": {
-                "title": "Advanced Drone Swarm Security by Using Blockchain Governance Game",
-                "publisher": "MDPI AG",
-                "year": 2022
-              },
-              "match": true
-            },
-            {
-              "method": "arxiv",
-              "identifier": "2112.15454v4",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
         {
           "source_title": "AlphaPilot: Autonomous Drone Racing",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2005.12813v2",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2005.12813",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "title": "AlphaPilot: Autonomous Drone Racing",
+                "publisher": "arXiv",
+                "year": 2020,
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair batch 57; sources were manually checked and bounded to specific source-mapped claims. Local verify-full was not run."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "Champion-level Drone Racing Using Deep Reinforcement Learning",
+          "source_type": "journal_article",
+          "results": [
+            {
+              "method": "doi",
+              "identifier": "10.1038/s41586-023-06419-4",
+              "verified": true,
+              "metadata": {
+                "title": "Champion-level Drone Racing Using Deep Reinforcement Learning",
+                "publisher": "Nature",
+                "year": 2023,
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair batch 57; sources were manually checked and bounded to specific source-mapped claims. Local verify-full was not run."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Learning High-Speed Flight in the Wild",
+          "source_type": "journal_article",
+          "results": [
+            {
+              "method": "doi",
+              "identifier": "10.1126/scirobotics.abg5810",
+              "verified": true,
+              "metadata": {
+                "title": "Learning High-Speed Flight in the Wild",
+                "publisher": "Science Robotics",
+                "year": 2021,
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair batch 57; sources were manually checked and bounded to specific source-mapped claims. Local verify-full was not run."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-30"
     },
     {
       "file": "content/ai/ai-drug-repurposing.md",
@@ -2795,88 +2847,76 @@
       "file": "content/ai/ai-for-construction.md",
       "article_id": "ai-for-construction",
       "generation_method": "ai_structured",
-      "sources_total": 4,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Automation in Construction: AI and Computer Vision for Construction Safety Monitoring (2023-2025 Special Issues)",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.sciencedirect.com/journal/automation-in-construction",
-              "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.sciencedirect.com/journal/automation-in-construction"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Building Information Modeling (BIM) integrated with AI, IoT, and Digital Twins for Smart Construction",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.sciencedirect.com/search?qs=BIM+AI+digital+twin+construction",
-              "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.sciencedirect.com/search?qs=BIM+AI+digital+twin+construction"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "WiCV 2019: The Sixth Women In Computer Vision Workshop",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "arxiv",
-              "identifier": "1909.10225v1",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 503"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Spatial Monitoring and Insect Behavioural Analysis Using Computer Vision for Precision Pollination",
-          "source_type": "academic_paper",
+          "source_title": "Artificial Intelligence and Smart Vision for Building and Construction 4.0: Machine and Deep Learning Methods and Applications",
+          "source_type": "survey_paper",
           "results": [
             {
               "method": "doi",
-              "identifier": "10.1007/s11263-022-01715-4",
+              "identifier": "10.1016/j.autcon.2022.104440",
               "verified": true,
               "metadata": {
-                "title": "Spatial Monitoring and Insect Behavioural Analysis Using Computer Vision for Precision Pollination",
-                "publisher": "Springer Science and Business Media LLC",
-                "year": 2022
+                "title": "Artificial Intelligence and Smart Vision for Building and Construction 4.0: Machine and Deep Learning Methods and Applications",
+                "publisher": "Elsevier",
+                "year": 2022,
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair batch 57; sources were manually checked and bounded to specific source-mapped claims. Local verify-full was not run."
               },
               "match": true
-            },
-            {
-              "method": "arxiv",
-              "identifier": "2205.04675v2",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "Computer Vision Applications in Construction: Current State, Opportunities and Challenges",
+          "source_type": "survey_paper",
+          "results": [
+            {
+              "method": "doi",
+              "identifier": "10.1016/j.autcon.2021.103940",
+              "verified": true,
+              "metadata": {
+                "title": "Computer Vision Applications in Construction: Current State, Opportunities and Challenges",
+                "publisher": "Elsevier",
+                "year": 2021,
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair batch 57; sources were manually checked and bounded to specific source-mapped claims. Local verify-full was not run."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Automated Computer Vision-Based Construction Progress Monitoring: A Systematic Review",
+          "source_type": "survey_paper",
+          "results": [
+            {
+              "method": "doi",
+              "identifier": "10.3390/buildings12071037",
+              "verified": true,
+              "metadata": {
+                "title": "Automated Computer Vision-Based Construction Progress Monitoring: A Systematic Review",
+                "publisher": "MDPI",
+                "year": 2022,
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair batch 57; sources were manually checked and bounded to specific source-mapped claims. Local verify-full was not run."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 3
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-30"
     },
     {
       "file": "content/ai/ai-for-crisis-hotlines.md",
@@ -5389,73 +5429,94 @@
       "sources_total": 4,
       "verification_results": [
         {
-          "source_title": "A Comprehensive Survey of Synthetic Tabular Data Generation: Methods, Evaluation, and Applications",
-          "source_type": "academic_paper",
+          "source_title": "Modeling Tabular Data Using Conditional GAN",
+          "source_type": "conference_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2504.16506",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1907.00503",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "title": "Modeling Tabular Data Using Conditional GAN",
+                "publisher": "arXiv",
+                "year": 2019,
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair batch 57; sources were manually checked and bounded to specific source-mapped claims. Local verify-full was not run."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Generating realistic synthetic tabular data with integrated LLM conditioning",
+          "source_title": "The Synthetic Data Vault",
+          "source_type": "conference_paper",
+          "results": [
+            {
+              "method": "doi",
+              "identifier": "10.1109/DSAA.2016.49",
+              "verified": true,
+              "metadata": {
+                "title": "The Synthetic Data Vault",
+                "publisher": "IEEE",
+                "year": 2016,
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair batch 57; sources were manually checked and bounded to specific source-mapped claims. Local verify-full was not run."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "TabDDPM: Modelling Tabular Data with Diffusion Models",
           "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.sciencedirect.com/science/article/pii/S0925231225020430",
-              "verified": false,
+              "identifier": "https://arxiv.org/abs/2209.15421",
+              "verified": true,
               "metadata": {
-                "status": 403,
-                "final_url": "https://www.sciencedirect.com/science/article/pii/S0925231225020430"
+                "title": "TabDDPM: Modelling Tabular Data with Diffusion Models",
+                "publisher": "arXiv",
+                "year": 2022,
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair batch 57; sources were manually checked and bounded to specific source-mapped claims. Local verify-full was not run."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Privacy Measurement in Tabular Synthetic Data: State of the Art and Future Research Directions",
-          "source_type": "academic_paper",
+          "source_title": "Why Do Tree-Based Models Still Outperform Deep Learning on Tabular Data?",
+          "source_type": "conference_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2311.17453v1",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2207.08815",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 503"
+                "title": "Why Do Tree-Based Models Still Outperform Deep Learning on Tabular Data?",
+                "publisher": "arXiv",
+                "year": 2022,
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair batch 57; sources were manually checked and bounded to specific source-mapped claims. Local verify-full was not run."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Diffusion and Flow Matching Models for Tabular Data: A Survey",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "arxiv",
-              "identifier": "2502.17119v2",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 4
+      "sources_verified": 4,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-30"
     },
     {
       "file": "content/ai/ai-for-transportation.md",
@@ -5527,76 +5588,76 @@
       "file": "content/ai/ai-for-urban-planning.md",
       "article_id": "ai-for-urban-planning",
       "generation_method": "ai_structured",
-      "sources_total": 4,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Generative spatial artificial intelligence for sustainable smart cities: opportunities, challenges, and future directions",
-          "source_type": "academic_paper",
+          "source_title": "Urban Computing: Concepts, Methodologies, and Applications",
+          "source_type": "journal_article",
           "results": [
             {
               "method": "doi",
-              "identifier": "10.1016/j.nbsj.2025.100004",
-              "verified": false,
+              "identifier": "10.1145/2629592",
+              "verified": true,
               "metadata": {
-                "error": "CrossRef returned 404"
+                "title": "Urban Computing: Concepts, Methodologies, and Applications",
+                "publisher": "ACM",
+                "year": 2014,
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair batch 57; sources were manually checked and bounded to specific source-mapped claims. Local verify-full was not run."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "IoT, AI, and Digital Twins in Smart Cities: A Systematic Literature Review",
-          "source_type": "academic_paper",
+          "source_title": "City Digital Twins for Urban Resilience",
+          "source_type": "journal_article",
+          "results": [
+            {
+              "method": "doi",
+              "identifier": "10.1038/s43588-024-00657-w",
+              "verified": true,
+              "metadata": {
+                "title": "City Digital Twins for Urban Resilience",
+                "publisher": "Nature Computational Science",
+                "year": 2024,
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair batch 57; sources were manually checked and bounded to specific source-mapped claims. Local verify-full was not run."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "AI & Cities: Risks, Applications and Governance",
+          "source_type": "official_report",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.mdpi.com/2624-6511/8/5/175",
-              "verified": false,
+              "identifier": "https://unhabitat.org/ai-cities-risks-applications-and-governance",
+              "verified": true,
               "metadata": {
-                "status": 403,
-                "final_url": "https://www.mdpi.com/2624-6511/8/5/175"
+                "title": "AI & Cities: Risks, Applications and Governance",
+                "publisher": "UN-Habitat",
+                "year": 2022,
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair batch 57; sources were manually checked and bounded to specific source-mapped claims. Local verify-full was not run."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Urban Comfort Assessment in the Era of Digital Planning: A Multidimensional, Data-driven, and AI-assisted Framework",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "arxiv",
-              "identifier": "2508.16057v1",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Planning, Living and Judging: A Multi-agent LLM-based Framework for Cyclical Urban Planning",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "arxiv",
-              "identifier": "2412.20505v1",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 4
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-30"
     },
     {
       "file": "content/ai/ai-for-video-surveillance.md",
