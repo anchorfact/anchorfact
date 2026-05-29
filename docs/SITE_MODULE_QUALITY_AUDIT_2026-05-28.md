@@ -121,11 +121,11 @@ The representative query benchmark now has a local usefulness runner:
 context assembly path used by AI consumers, checking not only top-result routing
 but also citation-ready claims, source URLs, source depth, and confidence.
 
-The current benchmark passes at 98.18/100 across 11 representative queries.
-It also identifies two measured improvement candidates:
-`history/ancient-egypt` and `business/stock-market-basics`. Both are usable,
-but still low-confidence and single-source, so they are better next targets
-than broad draft expansion.
+The current benchmark passes at 100/100 across 11 representative queries and
+reports no improvement candidates. The prior thin cases,
+`history/ancient-egypt` and `business/stock-market-basics`, were strengthened
+from low-confidence single-source entries to medium-confidence multi-source
+evidence packs.
 
 ### Verification Data
 
@@ -196,7 +196,8 @@ integrity expectations together.
 3. Improve benchmark candidates before broad expansion.
    Use `npm run benchmark:ai` after each build. If it reports low-confidence or
    single-source candidates, strengthen those public topics before publishing
-   unrelated drafts.
+   unrelated drafts. When it reports no candidates, return to the ranked draft
+   repair queue rather than inventing new surfaces.
 
 4. Keep monitoring trustworthy.
    Production Integrity should remain read-only, should not deploy or mutate

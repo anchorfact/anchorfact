@@ -20557,22 +20557,62 @@
       "file": "content/business/stock-market-basics.md",
       "article_id": "kb-2026-00429",
       "generation_method": "ai_assisted",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "A Random Walk Down Wall Street (Malkiel, 13th Ed)",
-          "source_type": "book",
+          "source_title": "Investor.gov: Stocks",
+          "source_type": "government_reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://wwnorton.com/books/9781324035466",
+              "identifier": "https://www.investor.gov/introduction-investing/investing-basics/investment-products/stocks",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://wwnorton.com/books/9781324035466",
+                "final_url": "https://www.investor.gov/introduction-investing/investing-basics/investment-products/stocks",
                 "manual_review": true,
-                "reviewed_at": "2026-05-28",
-                "note": "Forty-seventh targeted public evidence debt repair pass; local verify-full was not run for this bounded manual-review update."
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted AI usefulness benchmark repair; sources manually reviewed with direct URL or DOI checks; local verify-full was not run."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Investor.gov: Diversification",
+          "source_type": "government_reference",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.investor.gov/introduction-investing/investing-basics/glossary/diversification",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.investor.gov/introduction-investing/investing-basics/glossary/diversification",
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted AI usefulness benchmark repair; sources manually reviewed with direct URL or DOI checks; local verify-full was not run."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Investor.gov: Index Funds",
+          "source_type": "government_reference",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.investor.gov/introduction-investing/investing-basics/investment-products/mutual-funds-and-exchange-traded-4",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.investor.gov/introduction-investing/investing-basics/investment-products/mutual-funds-and-exchange-traded-4",
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted AI usefulness benchmark repair; sources manually reviewed with direct URL or DOI checks; local verify-full was not run."
               },
               "match": true
             }
@@ -20580,10 +20620,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
+      "sources_verified": 3,
       "sources_unreachable": 0,
       "manual_reviewed": true,
-      "manual_reviewed_at": "2026-05-28"
+      "manual_reviewed_at": "2026-05-30"
     },
     {
       "file": "content/business/strategic-management-theory.md",
@@ -41626,8 +41666,28 @@
       "file": "content/history/ancient-egypt.md",
       "article_id": "kb-2026-00350",
       "generation_method": "ai_structured",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
+        {
+          "source_title": "Britannica: Ancient Egypt",
+          "source_type": "reference",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.britannica.com/place/ancient-Egypt",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.britannica.com/place/ancient-Egypt",
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted AI usefulness benchmark repair; sources manually reviewed with direct URL or DOI checks; local verify-full was not run."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
         {
           "source_title": "The Oxford History of Ancient Egypt (Ian Shaw)",
           "source_type": "book",
@@ -41641,8 +41701,28 @@
                 "publisher": "Oxford University Press",
                 "year": 2000,
                 "manual_review": true,
-                "reviewed_at": "2026-05-28",
-                "note": "Forty-eighth targeted public evidence debt repair pass; local verify-full was not run for this bounded manual-review update."
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted AI usefulness benchmark repair; sources manually reviewed with direct URL or DOI checks; local verify-full was not run."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "UNESCO: Memphis and its Necropolis",
+          "source_type": "official_report",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://whc.unesco.org/en/list/86/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://whc.unesco.org/en/list/86/",
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted AI usefulness benchmark repair; sources manually reviewed with direct URL or DOI checks; local verify-full was not run."
               },
               "match": true
             }
@@ -41650,10 +41730,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
+      "sources_verified": 3,
       "sources_unreachable": 0,
       "manual_reviewed": true,
-      "manual_reviewed_at": "2026-05-28"
+      "manual_reviewed_at": "2026-05-30"
     },
     {
       "file": "content/history/ancient-egyptian-civilization.md",

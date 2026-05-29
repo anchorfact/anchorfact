@@ -4,8 +4,8 @@ title: "Stock Market Basics"
 schema_type: "TechArticle"
 category: "business"
 language: "en"
-confidence: "low"
-last_verified: "2026-05-28"
+confidence: "medium"
+last_verified: "2026-05-30"
 created_date: "2026-05-22"
 generation_method: "ai_assisted"
 ai_models:
@@ -14,49 +14,63 @@ derived_from_human_seed: true
 conflict_of_interest: "none_declared"
 is_live_document: false
 data_period: "static"
-completeness: 0.7
+completeness: 0.82
 atomic_facts:
   - id: "fact-business-001"
-    statement: "A Random Walk Down Wall Street is a long-running investment guide by Burton G. Malkiel that discusses market efficiency, diversification, and index-style investing for individual investors."
-    source_title: "A Random Walk Down Wall Street (Malkiel, 13th Ed)"
-    source_url: "https://wwnorton.com/books/9781324035466"
-    confidence: "low"
+    statement: "Investor.gov explains that stocks are a type of security that gives stockholders a share of ownership in a company."
+    source_title: "Investor.gov: Stocks"
+    source_url: "https://www.investor.gov/introduction-investing/investing-basics/investment-products/stocks"
+    confidence: "medium"
   - id: "fact-business-002"
-    statement: "The book's central random-walk argument is that stock prices are difficult to forecast consistently from publicly available information."
-    source_title: "A Random Walk Down Wall Street (Malkiel, 13th Ed)"
-    source_url: "https://wwnorton.com/books/9781324035466"
-    confidence: "low"
+    statement: "Investor.gov defines diversification as spreading money among different investments so losses in one investment may be offset by gains in another."
+    source_title: "Investor.gov: Diversification"
+    source_url: "https://www.investor.gov/introduction-investing/investing-basics/glossary/diversification"
+    confidence: "medium"
   - id: "fact-business-003"
-    statement: "For a basic stock-market overview, the source supports emphasizing diversification and caution about reliable market timing rather than promising repeatable stock-picking outperformance."
-    source_title: "A Random Walk Down Wall Street (Malkiel, 13th Ed)"
-    source_url: "https://wwnorton.com/books/9781324035466"
-    confidence: "low"
+    statement: "Investor.gov describes index funds as mutual funds or exchange-traded funds that seek to track the returns of a market index."
+    source_title: "Investor.gov: Index Funds"
+    source_url: "https://www.investor.gov/introduction-investing/investing-basics/investment-products/mutual-funds-and-exchange-traded-4"
+    confidence: "medium"
 known_gaps:
-  - "This short article is a low-confidence primer backed by one book source."
+  - "This is an educational primer, not investment, legal, tax, or personalized financial advice."
   - "Current market returns, exchange listings, index membership, and active-manager performance statistics change over time and are intentionally omitted."
 disputed_statements: []
 primary_sources:
-  - title: "A Random Walk Down Wall Street (Malkiel, 13th Ed)"
-    type: "book"
-    year: 2023
-    url: "https://wwnorton.com/books/9781324035466"
-    institution: "W. W. Norton"
+  - title: "Investor.gov: Stocks"
+    type: "government_reference"
+    year: 2026
+    url: "https://www.investor.gov/introduction-investing/investing-basics/investment-products/stocks"
+    institution: "U.S. Securities and Exchange Commission"
+  - title: "Investor.gov: Diversification"
+    type: "government_reference"
+    year: 2026
+    url: "https://www.investor.gov/introduction-investing/investing-basics/glossary/diversification"
+    institution: "U.S. Securities and Exchange Commission"
+  - title: "Investor.gov: Index Funds"
+    type: "government_reference"
+    year: 2026
+    url: "https://www.investor.gov/introduction-investing/investing-basics/investment-products/mutual-funds-and-exchange-traded-4"
+    institution: "U.S. Securities and Exchange Commission"
 secondary_sources: []
 ---
 
 ## TL;DR
 
-The stock market is where investors buy and sell ownership shares in public companies. This primer is intentionally conservative: with one book source, it focuses on market efficiency, diversification, and the difficulty of consistently timing or beating the market.
+The stock market is where investors buy and sell ownership shares in public companies. This primer is intentionally conservative: it explains stocks, diversification, and index funds using Investor.gov educational references, while avoiding current market calls or personalized advice.
 
 ## Core Explanation
 
-Stocks represent ownership claims on companies, and stock prices move as buyers and sellers update their expectations about business results, interest rates, risk, and future cash flows. Market indexes group many stocks together so investors can follow broad market segments instead of one company at a time.
+Investor.gov describes stocks as securities that give stockholders ownership shares in a company. For a beginner overview, that supports a simple framing: a stock is an ownership instrument, not a guaranteed return.
 
-A Random Walk Down Wall Street argues that public information is quickly reflected in prices, making reliable short-term prediction difficult. For beginners, the practical takeaway is not that markets are risk-free; it is that diversification, costs, time horizon, and risk tolerance matter more than confidence in a single prediction.
+Investor.gov also emphasizes diversification as spreading money across different investments so one loss may be offset elsewhere. Its index-fund explanation gives a practical example of broad exposure: a fund can seek to track a market index rather than relying on one stock selection.
+
+This entry does not provide investment advice, current performance data, or recommendations about any security.
 
 ## Further Reading
 
-- [A Random Walk Down Wall Street (Malkiel, 13th Ed)](https://wwnorton.com/books/9781324035466)
+- [Investor.gov: Stocks](https://www.investor.gov/introduction-investing/investing-basics/investment-products/stocks)
+- [Investor.gov: Diversification](https://www.investor.gov/introduction-investing/investing-basics/glossary/diversification)
+- [Investor.gov: Index Funds](https://www.investor.gov/introduction-investing/investing-basics/investment-products/mutual-funds-and-exchange-traded-4)
 
 ## Related Articles
 
