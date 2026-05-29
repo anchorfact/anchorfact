@@ -92,6 +92,39 @@ test('rankSearchRecords ranks exact title and keyword matches first', () => {
   assert(results[0].matched_keywords.includes('gaussian'), 'matched keywords should include gaussian');
 });
 
+test('rankSearchRecords favors exact title phrases over narrower title matches', () => {
+  const results = rankSearchRecords([
+    {
+      canonical_slug: 'ai/latent-diffusion-models',
+      title: 'Latent Diffusion Models',
+      url: 'https://anchorfact.org/ai/latent-diffusion-models/',
+      description: 'Diffusion models that operate in latent spaces.',
+      confidence_level: 'medium',
+      source_coverage: { verified: 3, total: 3, ratio: 1 },
+      claim_count: 3,
+      claim_ids: ['fact-latent-diffusion'],
+      keywords: ['latent', 'diffusion', 'models'],
+      routes: {},
+      search_text: 'latent diffusion models diffusion models compressed latent spaces'
+    },
+    {
+      canonical_slug: 'ai/diffusion-models',
+      title: 'Diffusion Models',
+      url: 'https://anchorfact.org/ai/diffusion-models/',
+      description: 'The general diffusion model family.',
+      confidence_level: 'medium',
+      source_coverage: { verified: 3, total: 3, ratio: 1 },
+      claim_count: 3,
+      claim_ids: ['fact-diffusion'],
+      keywords: ['diffusion', 'models'],
+      routes: {},
+      search_text: 'diffusion models noising denoising generative model family'
+    }
+  ], 'diffusion models', 2);
+
+  assertEq(results[0].canonical_slug, 'ai/diffusion-models');
+});
+
 test('rankSearchRecords ignores generic question words and standalone years', () => {
   const results = rankSearchRecords([
     {

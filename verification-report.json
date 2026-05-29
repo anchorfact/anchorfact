@@ -2,13 +2,13 @@
   "summary": {
     "generated": "2026-05-27T14:00:00.000Z",
     "total_articles": 1000,
-    "total_with_errors": 342,
+    "total_with_errors": 339,
     "average_sources_per_article": "2.4",
-    "overall_verification_rate": "72.6%",
+    "overall_verification_rate": "73.3%",
     "elapsed_ms": 635005,
     "elapsed_sec": "635.0",
     "concurrency": 3,
-    "manual_reviewed_articles": 518
+    "manual_reviewed_articles": 521
   },
   "articles": [
     {
@@ -10328,129 +10328,67 @@
       "file": "content/ai/diffusion-models.md",
       "article_id": "kb-2026-00009",
       "generation_method": "ai_structured",
-      "sources_total": 5,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Denoising Diffusion Probabilistic Models (DDPM)",
+          "source_title": "Denoising Diffusion Probabilistic Models",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "doi",
-              "identifier": "10.48550/arXiv.2006.11239",
-              "verified": false,
-              "metadata": {
-                "error": "CrossRef returned 404"
-              },
-              "match": false
-            },
-            {
-              "method": "arxiv",
-              "identifier": "2006.11239",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "High-Resolution Image Synthesis with Latent Diffusion Models (Stable Diffusion)",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "doi",
-              "identifier": "10.48550/arXiv.2112.10752",
-              "verified": false,
-              "metadata": {
-                "error": "CrossRef returned 404"
-              },
-              "match": false
-            },
-            {
-              "method": "arxiv",
-              "identifier": "2112.10752",
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2006.11239",
               "verified": true,
               "metadata": {
-                "title": "arXiv Query: search_query=&amp;id_list=2112.10752&amp;start=0&amp;max_results=1"
+                "manual_review": true,
+                "reviewed_at": "2026-05-29",
+                "note": "Fifty-third targeted core AI coverage repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "High-Resolution Image Synthesis with Latent Diffusion Models",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2112.10752",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-29",
+                "note": "Fifty-third targeted core AI coverage repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         },
         {
           "source_title": "Score-Based Generative Modeling through Stochastic Differential Equations",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "doi",
-              "identifier": "10.48550/arXiv.2011.13456",
-              "verified": false,
-              "metadata": {
-                "error": "CrossRef returned 404"
-              },
-              "match": false
-            },
-            {
-              "method": "arxiv",
-              "identifier": "2011.13456",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Fast calibration of two-factor models for energy option pricing",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "doi",
-              "identifier": "10.1002/asmb.2604",
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2011.13456",
               "verified": true,
               "metadata": {
-                "title": "Fast calibration of two‐factor models for energy option pricing",
-                "publisher": "Wiley",
-                "year": 2021
+                "manual_review": true,
+                "reviewed_at": "2026-05-29",
+                "note": "Fifty-third targeted core AI coverage repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
-            },
-            {
-              "method": "arxiv",
-              "identifier": "1809.03941v6",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
-        },
-        {
-          "source_title": "MetaSC: Test-Time Safety Specification Optimization for Language Models",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "arxiv",
-              "identifier": "2502.07985v2",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 3
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-29"
     },
     {
       "file": "content/ai/distributed-training-systems.md",
@@ -11141,88 +11079,78 @@
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "doi",
-              "identifier": "10.48550/arXiv.1406.2661",
-              "verified": false,
-              "metadata": {
-                "error": "CrossRef returned 404"
-              },
-              "match": false
-            },
-            {
-              "method": "arxiv",
-              "identifier": "1406.2661",
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1406.2661",
               "verified": true,
               "metadata": {
-                "title": "arXiv Query: search_query=&amp;id_list=1406.2661&amp;start=0&amp;max_results=1"
+                "manual_review": true,
+                "reviewed_at": "2026-05-29",
+                "note": "Fifty-third targeted core AI coverage repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Quaternion Generative Adversarial Networks",
+          "source_title": "Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "doi",
-              "identifier": "10.1007/978-3-030-91390-8_4",
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1511.06434",
               "verified": true,
               "metadata": {
-                "title": "Quaternion Generative Adversarial Networks",
-                "publisher": "Springer International Publishing",
-                "year": 2022
+                "manual_review": true,
+                "reviewed_at": "2026-05-29",
+                "note": "Fifty-third targeted core AI coverage repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
-            },
-            {
-              "method": "arxiv",
-              "identifier": "2104.09630v2",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Improved Techniques for Training GANs",
+          "source_title": "Wasserstein GAN",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "1606.03498",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1701.07875",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-29",
+                "note": "Fifty-third targeted core AI coverage repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
           "source_title": "Progressive Growing of GANs for Improved Quality, Stability, and Variation",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "doi",
-              "identifier": "10.48550/arXiv.1710.10196",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1710.10196",
+              "verified": true,
               "metadata": {
-                "error": "CrossRef returned 404"
+                "manual_review": true,
+                "reviewed_at": "2026-05-29",
+                "note": "Fifty-third targeted core AI coverage repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 2
+      "sources_verified": 4,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-29"
     },
     {
       "file": "content/ai/generative-ai-overview.md",
@@ -12381,118 +12309,67 @@
       "file": "content/ai/llms.md",
       "article_id": "kb-2026-00005",
       "generation_method": "ai_structured",
-      "sources_total": 5,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Language Models are Few-Shot Learners (GPT-3)",
+          "source_title": "Language Models are Few-Shot Learners",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "doi",
-              "identifier": "10.48550/arXiv.2005.14165",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2005.14165",
+              "verified": true,
               "metadata": {
-                "error": "CrossRef returned 404"
+                "manual_review": true,
+                "reviewed_at": "2026-05-29",
+                "note": "Fifty-third targeted core AI coverage repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
-            },
-            {
-              "method": "arxiv",
-              "identifier": "2005.14165",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Training Compute-Optimal Large Language Models (Chinchilla)",
+          "source_title": "Training Compute-Optimal Large Language Models",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "doi",
-              "identifier": "10.48550/arXiv.2203.15556",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2203.15556",
+              "verified": true,
               "metadata": {
-                "error": "CrossRef returned 404"
+                "manual_review": true,
+                "reviewed_at": "2026-05-29",
+                "note": "Fifty-third targeted core AI coverage repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
-            },
-            {
-              "method": "arxiv",
-              "identifier": "2203.15556",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
           "source_title": "Emergent Abilities of Large Language Models",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "doi",
-              "identifier": "10.48550/arXiv.2206.07682",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2206.07682",
+              "verified": true,
               "metadata": {
-                "error": "CrossRef returned 404"
+                "manual_review": true,
+                "reviewed_at": "2026-05-29",
+                "note": "Fifty-third targeted core AI coverage repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
-            },
-            {
-              "method": "arxiv",
-              "identifier": "2206.07682",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Reinforcement Learning Meets Large Language Models: A Survey of Advancements and Applications Across the LLM Lifecycle",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "arxiv",
-              "identifier": "2509.16679v1",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "How do language models learn facts? Dynamics, curricula and hallucinations",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "arxiv",
-              "identifier": "2503.21676v2",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 5
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-29"
     },
     {
       "file": "content/ai/long-context-models.md",

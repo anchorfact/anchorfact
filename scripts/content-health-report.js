@@ -6,10 +6,13 @@ import { classifySourceTier } from '../src/lib/confidence.js';
 import { buildAuditRows, loadAuditData } from './audit-public-sample.js';
 
 const DEFAULT_STALE_PATTERNS = [
-  /EXPECTED_PUBLIC_ARTICLES=(?!555\b)\d+/,
-  /EXPECTED_DRAFT_ARTICLES=(?!445\b)\d+/,
-  /EXPECTED_CLAIMS=(?!1685\b)\d+/,
-  /\b(?!555\b)\d+\s+public\s*\/\s*(?!445\b)\d+\s+draft\s*\/\s*(?!1685\b)\d+\s+claims/i,
+  /EXPECTED_PUBLIC_ARTICLES=(?!558\b)\d+/,
+  /EXPECTED_DRAFT_ARTICLES=(?!442\b)\d+/,
+  /EXPECTED_CLAIMS=(?!1695\b)\d+/,
+  /\b(?!558\b)\d+\s+public\s*\/\s*(?!442\b)\d+\s+draft\s*\/\s*(?!1695\b)\d+\s+claims/i,
+  /\b555 public\b/i,
+  /\b445 draft\b/i,
+  /\b1685 claims\b/i,
   /\b573 public\b/i,
   /\b554 public\b/i,
   /\b446 draft\b/i,

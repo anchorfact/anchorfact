@@ -4,35 +4,39 @@ title: Diffusion Models
 schema_type: TechArticle
 category: ai
 language: en
-confidence: high
-last_verified: '2026-05-25'
+confidence: medium
+last_verified: '2026-05-29'
 created_date: '2026-05-22'
 generation_method: ai_structured
 conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-ai-01
-    statement: >-
-      Popularized by DDPM and made practical by Stable Diffusion / Latent Diffusion Models , diffusion has surpassed GANs as the dominant paradigm for high-quality image generation and has expanded to
-      video , audio , 3D , and biology
-    source_title: High-Resolution Image Synthesis with Latent Diffusion Models (Stable Diffusion)
-    source_url: https://arxiv.org/abs/2112.10752
-    source_doi: 10.48550/arXiv.2112.10752
-    confidence: high
-  - id: fact-ai-02
-    statement: Diffusion models are generative models that create data by learning to reverse a gradual noise-adding process
-    source_title: Denoising Diffusion Probabilistic Models (DDPM)
+  - id: fact-ai-diffusion-1
+    statement: Denoising Diffusion Probabilistic Models train a model to reverse a gradual noising process and demonstrated high-quality image synthesis with that approach.
+    source_title: Denoising Diffusion Probabilistic Models
     source_url: https://arxiv.org/abs/2006.11239
     source_doi: 10.48550/arXiv.2006.11239
-    confidence: high
-completeness: 0.9
+    confidence: medium
+  - id: fact-ai-diffusion-2
+    statement: Latent Diffusion Models apply diffusion in a compressed latent space, reducing the computational cost of high-resolution image synthesis while retaining generation quality.
+    source_title: High-Resolution Image Synthesis with Latent Diffusion Models
+    source_url: https://arxiv.org/abs/2112.10752
+    source_doi: 10.48550/arXiv.2112.10752
+    confidence: medium
+  - id: fact-ai-diffusion-3
+    statement: Score-Based Generative Modeling through Stochastic Differential Equations provides a continuous-time framework that connects score-based generative models and diffusion processes.
+    source_title: Score-Based Generative Modeling through Stochastic Differential Equations
+    source_url: https://arxiv.org/abs/2011.13456
+    source_doi: 10.48550/arXiv.2011.13456
+    confidence: medium
+completeness: 0.84
 known_gaps:
-  - DDIM, Consistency Models, and other sampling acceleration techniques deserve separate treatment
-disputed_statements:
-  - statement: The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches
+  - Sampling acceleration, consistency models, and product-specific image systems deserve separate entries.
+  - This article is about the model family, not current image-generator quality rankings.
+disputed_statements: []
 primary_sources:
-  - title: Denoising Diffusion Probabilistic Models (DDPM)
+  - title: Denoising Diffusion Probabilistic Models
     authors:
       - Ho, Jonathan
       - Jain, Ajay
@@ -42,13 +46,13 @@ primary_sources:
     url: https://arxiv.org/abs/2006.11239
     doi: 10.48550/arXiv.2006.11239
     institution: UC Berkeley
-  - title: High-Resolution Image Synthesis with Latent Diffusion Models (Stable Diffusion)
+  - title: High-Resolution Image Synthesis with Latent Diffusion Models
     authors:
       - Rombach, Robin
       - Blattmann, Andreas
       - Lorenz, Dominik
       - Esser, Patrick
-      - Ommer, Björn
+      - Ommer, Bjorn
     type: academic_paper
     year: 2022
     url: https://arxiv.org/abs/2112.10752
@@ -67,125 +71,26 @@ primary_sources:
     url: https://arxiv.org/abs/2011.13456
     doi: 10.48550/arXiv.2011.13456
     institution: Stanford University / Google Brain
-  - title: Fast calibration of two-factor models for energy option pricing
-    authors:
-      - Emanuele Fabbiani
-      - Andrea Marziali
-      - Giuseppe De Nicolao
-    year: 2018
-    doi: 10.1002/asmb.2604
-    url: https://arxiv.org/abs/1809.03941v6
-    type: academic_paper
-    institution: arXiv
-  - title: 'MetaSC: Test-Time Safety Specification Optimization for Language Models'
-    authors:
-      - Víctor Gallego
-    year: 2025
-    url: https://arxiv.org/abs/2502.07985v2
-    type: academic_paper
-    institution: arXiv
-secondary_sources:
-  - title: Sora Technical Report
-    type: technical_report
-    year: 2024
-    url: https://openai.com/index/sora/
-    institution: OpenAI
 ---
-
-
 
 ## TL;DR
 
-Diffusion models are generative models that create data (images, video, audio, 3D) by learning to reverse a gradual noise-adding process. Starting from pure random noise, they iteratively denoise toward a coherent output. Popularized by DDPM (Ho et al., 2020, UC Berkeley, 15,000+ citations on Google Scholar as of May 2026) and made practical by Stable Diffusion / Latent Diffusion Models (Rombach et al., 2022), diffusion has surpassed GANs as the dominant paradigm for high-quality image generation and has expanded to video (Sora), audio (AudioLDM), 3D (DreamFusion), and biology (AlphaFold 3).
+Diffusion models generate data by learning to reverse a noising process. The central idea is to corrupt training examples with noise, then train a model to denoise step by step. Later variants made the approach practical for high-resolution generation by moving the process into latent spaces or by framing it with score-based stochastic differential equations.
 
-## Core Explanation
+## Core Claims
 
-Diffusion models work in two phases:
+DDPM made diffusion practical as a generative-model recipe: add noise during training, learn the reverse process, then generate from noise by iteratively denoising.
 
-### Forward Process (Training)
+Latent diffusion changes the operating space. Instead of running every denoising step directly over pixels, it works over compressed latent representations and then decodes the final latent back into an image.
 
-Starting from a real data point x₀ (an image), Gaussian noise is gradually added over T timesteps according to a predefined variance schedule β₁, ..., β_T:
+Score-based SDE work gives a broader mathematical view of the family, connecting diffusion-like sampling with score functions and continuous-time stochastic processes.
 
-```
-q(x_t | x_{t-1}) = N(x_t; √(1-β_t)·x_{t-1}, β_t·I)
-```
+## Citation Boundaries
 
-After T steps (typically T=1000), x_T is pure isotropic Gaussian noise. The model learns to predict the noise that was added at each step ε_θ(x_t, t) — essentially learning to reverse the destruction process:
-
-```
-L = E_{x₀,ε,t}[||ε - ε_θ(x_t, t)||²]
-```
-
-This is remarkably simple: the training objective is just a noise prediction regression. No adversarial dynamics, no mode collapse — just predicting which Gaussian noise was added at each step.
-
-### Reverse Process (Generation)
-
-Starting from pure noise x_T ~ N(0, I), the model iteratively removes predicted noise:
-
-```
-x_{t-1} = (1/√(1-β_t)) · (x_t - (β_t/√(1-ᾱ_t))·ε_θ(x_t, t)) + σ_t·z
-```
-
-Over T steps (or fewer using accelerated samplers like DDIM), this converges to a realistic data point. The process is a Markov chain: each step depends only on the previous state and the current timestep embedding.
-
-## Detailed Analysis
-
-### Why Diffusion Superseded GANs
-
-| Property | GANs | Diffusion Models |
-|----------|:----:|:----------------:|
-| Training stability | Unstable (adversarial game) | Stable (simple regression loss) |
-| Mode coverage | Prone to mode collapse | Naturally covers full data distribution |
-| Sample diversity | Can be limited | High diversity |
-| Quality at scale | Excellent (StyleGAN) | Excellent, scales predictably |
-| Training/inference speed | Fast inference, slow training | Fast training, slow inference (mitigated by DDIM, LCM) |
-| Controllability | Limited (requires conditional GAN) | Excellent (cross-attention conditioning) |
-
-The training stability advantage is decisive: GANs require careful balancing of generator and discriminator — if either becomes too strong, training collapses. Diffusion models avoid this entirely by framing generation as a denoising problem with a simple regression objective.
-
-### Latent Diffusion Models (Stable Diffusion)
-
-The original DDPM operates in pixel space, which is computationally prohibitive for high resolution. For a 1024×1024×3 image:
-- Pixel-space diffusion: 3.1M dimensions per step × 1000 steps = enormous
-- Latent diffusion (LDM): compress to 64×64×4 latent space via VAE → 16K dimensions
-
-This 200× compression reduces training time from GPU-weeks to GPU-hours while improving quality. The VAE encoder E maps images to latent codes; diffusion happens entirely in latent space; the VAE decoder D reconstructs the final image. Text conditioning is added via cross-attention with CLIP text embeddings at each U-Net layer.
-
-Stable Diffusion was trained on **LAION-5B**, a dataset of 5.85 billion image-text pairs scraped from the web, and released as open-source in August 2022 by Stability AI, RunwayML, and the CompVis group at LMU Munich. It democratized image generation: previous systems (DALL·E 2) required API access; Stable Diffusion ran on a consumer GPU.
-
-### Major Implementations Timeline
-
-| System | Developer | Release | Key Innovation |
-|--------|-----------|:------:|---------------|
-| DDPM | Ho et al. (UC Berkeley) | Jun 2020 | Proved diffusion can generate high-quality images |
-| DALL·E 2 | OpenAI | Apr 2022 | CLIP-guided diffusion + inpainting |
-| Stable Diffusion | Stability AI / CompVis | Aug 2022 | Latent diffusion, open-source, consumer GPU |
-| Midjourney | Midjourney Inc. | Jul 2022 | Proprietary aesthetic tuning, Discord-native |
-| Imagen | Google | May 2022 | Large frozen T5 text encoders for conditioning |
-| DALL·E 3 | OpenAI | Oct 2023 | Captioner-to-image pipeline (GPT-4V integrated) |
-| SDXL | Stability AI | Jul 2023 | 2.6B params, improved composition |
-| Sora | OpenAI | Feb 2024 | Video diffusion via spacetime patches |
-| Stable Diffusion 3 | Stability AI | Feb 2024 | MMDiT architecture (joint image-text transformer) |
-| Flux | Black Forest Labs | Aug 2024 | Flow matching, 12B params, state-of-art quality |
-
-### Beyond Images
-
-| Domain | Representative Work | Key Approach |
-|--------|-------------------|-------------|
-| **Video** | Sora (OpenAI, 2024), Runway Gen-3 | Treats video as 3D grid of spacetime patches |
-| **Audio** | AudioLDM (2023), MusicGen (Meta, 2023) | Latent diffusion on mel-spectrograms; text-to-music |
-| **3D** | DreamFusion (Google, 2022), Zero123 (2023) | Score Distillation Sampling; multi-view diffusion |
-| **Biology** | AlphaFold 3 (DeepMind, 2024) | Diffusion module for protein-ligand structure prediction |
-| **Motion** | MDM (2023), MotionDiffuse (2023) | Human motion generation for animation and robotics |
+Use this article for stable model-family facts. Do not use it as evidence for the current best image, video, audio, or 3D generation system; those comparisons change quickly and require current evaluations.
 
 ## Further Reading
 
-- [DDPM Paper](https://arxiv.org/abs/2006.11239): Original diffusion models paper (15K+ citations)
-- [Stable Diffusion / LDM](https://arxiv.org/abs/2112.10752): Latent diffusion for efficient generation
-- [Score-Based SDE](https://arxiv.org/abs/2011.13456): Unified framework for diffusion and score-based models
-
-## Related Articles
-
-- [AI for Protein Design: Diffusion Models, Sequence Generation, and Functional Optimization](../ai-for-protein-design-diffusion-models-sequence-generation-and-functional-optimization.md)
-- [AI for Tabular Data: Synthetic Generation, Diffusion Models, and Privacy-Preserving Structured Data](../ai-for-tabular-data.md)
-- [Diffusion Models: DDPM, Stable Diffusion, and Score-Based Generative Modeling](../diffusion-models-ddpm-stable-diffusion-and-score-based-generative-modeling.md)
+- [Denoising Diffusion Probabilistic Models](https://arxiv.org/abs/2006.11239)
+- [High-Resolution Image Synthesis with Latent Diffusion Models](https://arxiv.org/abs/2112.10752)
+- [Score-Based Generative Modeling through Stochastic Differential Equations](https://arxiv.org/abs/2011.13456)

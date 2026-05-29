@@ -66,10 +66,12 @@ function scoreRecord(record, query, tokens) {
   const descriptionCounts = tokenCounts(descriptionTokens);
   const textCounts = tokenCounts(textTokensValue);
   const phrase = normalizeQueryText(query);
+  const titlePhrase = titleTokens.join(' ');
   const matchedKeywords = new Set();
   const matchedQueryTokens = new Set();
   let score = 0;
 
+  if (titlePhrase === phrase) score += 20;
   if (containsPhrase(titleTokens, phrase)) score += 16;
   if (containsPhrase(textTokensValue, phrase)) score += 8;
   if (containsPhrase(descriptionTokens, phrase)) score += 4;

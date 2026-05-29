@@ -4,59 +4,56 @@ title: Large Language Models (LLMs)
 schema_type: TechArticle
 category: ai
 language: en
-confidence: high
-last_verified: '2026-05-25'
+confidence: medium
+last_verified: '2026-05-29'
 created_date: '2026-05-22'
 generation_method: ai_structured
 conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-ai-01
-    statement: Large Language Models are Transformer-based neural networks trained on internet-scale text corpora to predict and generate human language
-    source_title: Language Models are Few-Shot Learners (GPT-3)
+  - id: fact-ai-llms-1
+    statement: GPT-3 is an autoregressive language model with 175 billion parameters, and Brown et al. reported that scaling language models improves task-agnostic few-shot performance.
+    source_title: Language Models are Few-Shot Learners
     source_url: https://arxiv.org/abs/2005.14165
     source_doi: 10.48550/arXiv.2005.14165
-    confidence: high
-  - id: fact-ai-02
-    statement: They exhibit emergent abilities — qualitatively new capabilities that appear abruptly when model size exceeds specific thresholds, without being explicitly programmed
+    confidence: medium
+  - id: fact-ai-llms-2
+    statement: Hoffmann et al. argued that compute-optimal language-model training should scale model size and training tokens together; their 70B-parameter Chinchilla model used about 1.4T tokens and outperformed larger undertrained models.
+    source_title: Training Compute-Optimal Large Language Models
+    source_url: https://arxiv.org/abs/2203.15556
+    source_doi: 10.48550/arXiv.2203.15556
+    confidence: medium
+  - id: fact-ai-llms-3
+    statement: Wei et al. define emergent abilities as abilities that are not present in smaller language models but are present in larger language models.
     source_title: Emergent Abilities of Large Language Models
     source_url: https://arxiv.org/abs/2206.07682
     source_doi: 10.48550/arXiv.2206.07682
-    confidence: high
-  - id: fact-ai-03
-    statement: >-
-      The key insight is scaling: as model size, training data volume, and compute budget increase simultaneously, model performance improves predictably — but also acquires qualitatively new
-      capabilities that smaller models simply do not possess
-    source_title: Training Compute-Optimal Large Language Models (Chinchilla)
-    source_url: https://arxiv.org/abs/2203.15556
-    source_doi: 10.48550/arXiv.2203.15556
-    confidence: high
-completeness: 0.9
+    confidence: medium
+completeness: 0.82
 known_gaps:
-  - Benchmark scores are from public leaderboards as of late 2024; newer models may exceed these by the time of reading
-  - Model parameter counts for frontier models (GPT-4, Gemini, Claude) are estimates from external analysis, not official documentation
-disputed_statements:
-  - statement: The debate between AI safety accelerationists and decelerationists remains unresolved; there is no scientific consensus on optimal AI governance approaches
+  - This article covers durable scaling and behavior concepts, not live frontier-model rankings.
+  - Proprietary parameter counts and current benchmark leaderboards should be checked from current primary sources.
+  - Emergent-abilities framing remains a research interpretation and should be read with measurement critiques.
+disputed_statements: []
 primary_sources:
-  - title: Language Models are Few-Shot Learners (GPT-3)
+  - title: Language Models are Few-Shot Learners
     authors:
       - Brown, Tom B.
       - Mann, Benjamin
       - Ryder, Nick
       - Kaplan, Jared
-      - et al.
     type: academic_paper
     year: 2020
     url: https://arxiv.org/abs/2005.14165
     doi: 10.48550/arXiv.2005.14165
     institution: OpenAI
-  - title: Training Compute-Optimal Large Language Models (Chinchilla)
+  - title: Training Compute-Optimal Large Language Models
     authors:
       - Hoffmann, Jordan
       - Borgeaud, Sebastian
       - Mensch, Arthur
-      - et al.
+      - Sifre, Laurent
     type: academic_paper
     year: 2022
     url: https://arxiv.org/abs/2203.15556
@@ -68,181 +65,31 @@ primary_sources:
       - Tay, Yi
       - Bommasani, Rishi
       - Raffel, Colin
-      - Zoph, Barret
-      - Borgeaud, Sebastian
-      - Yogatama, Dani
-      - Bosma, Maarten
-      - Zhou, Denny
-      - Metzler, Donald
-      - Chi, Ed H.
-      - Hashimoto, Tatsunori
-      - Vinyals, Oriol
-      - Liang, Percy
-      - Dean, Jeff
-      - Fedus, William
     type: academic_paper
     year: 2022
     url: https://arxiv.org/abs/2206.07682
     doi: 10.48550/arXiv.2206.07682
     institution: Google Research
-  - title: 'Reinforcement Learning Meets Large Language Models: A Survey of Advancements and Applications Across the LLM Lifecycle'
-    authors:
-      - Keliang Liu
-      - Dingkang Yang
-      - Ziyun Qian
-      - Weijie Yin
-      - Yuchi Wang
-      - Hongsheng Li
-      - Jun Liu
-      - Peng Zhai
-      - Yang Liu
-      - Lihua Zhang
-    year: 2025
-    url: https://arxiv.org/abs/2509.16679v1
-    type: academic_paper
-    institution: arXiv
-  - title: How do language models learn facts? Dynamics, curricula and hallucinations
-    authors:
-      - Nicolas Zucchet
-      - Jörg Bornschein
-      - Stephanie Chan
-      - Andrew Lampinen
-      - Razvan Pascanu
-      - Soham De
-    year: 2025
-    url: https://arxiv.org/abs/2503.21676v2
-    type: academic_paper
-    institution: arXiv
-secondary_sources:
-  - title: Stanford CRFM HELM Benchmark
-    type: benchmark
-    year: 2025
-    url: https://crfm.stanford.edu/helm/
-    institution: Stanford University
-  - title: Scaling Laws for Neural Language Models
-    authors:
-      - Kaplan, Jared
-      - McCandlish, Sam
-      - Henighan, Tom
-      - et al.
-    type: academic_paper
-    year: 2020
-    url: https://arxiv.org/abs/2001.08361
-    doi: 10.48550/arXiv.2001.08361
-    institution: OpenAI
 ---
-
-
 
 ## TL;DR
 
-Large Language Models (LLMs) are Transformer-based neural networks trained on internet-scale text corpora (trillions of tokens) to predict and generate human language. They exhibit **emergent abilities** — qualitatively new capabilities (arithmetic, reasoning, coding, translation) that appear abruptly when model size exceeds specific thresholds, without being explicitly programmed. The Chinchilla scaling laws (Hoffmann et al., 2022) established that optimal training requires approximately 20 tokens of training data per model parameter. As of May 2026, frontier LLMs exceed 1 trillion parameters, process 2+ million token context windows, and power products used by over 300 million weekly active users (ChatGPT alone).
+Large language models are neural language models scaled to large parameter counts and large training corpora. For durable citation, this entry focuses on three stable ideas: GPT-3's few-shot scaling result, Chinchilla's compute-optimal training rule, and the research definition of emergent abilities.
 
-## Core Explanation
+## Core Claims
 
-LLMs are trained in three stages:
+GPT-3 showed that a sufficiently large autoregressive language model can perform many tasks from instructions or a few examples in the prompt, without gradient updates for each task.
 
-1. **Pre-training**: Self-supervised next-token prediction on trillions of tokens from web text, books, academic papers, and code. This phase consumes >99% of total training compute and is the most expensive component.
+Chinchilla reframed scaling by arguing that many earlier large models were undertrained. Under a fixed compute budget, Hoffmann et al. found that model size and training-token count should increase together rather than spending most of the budget only on more parameters.
 
-2. **Supervised Fine-Tuning (SFT) / Instruction Tuning**: The pre-trained model is fine-tuned on human-curated prompt-response pairs (typically tens of thousands of examples). This teaches the model to follow instructions rather than simply complete text.
+Emergent abilities are reported behaviors that appear at larger model scales even when smaller models do not show them. Treat that framing carefully: it is useful for describing scale-dependent behavior, but it is not a live leaderboard and does not by itself prove that a model is reliable.
 
-3. **RLHF (Reinforcement Learning from Human Feedback)** : Human labelers rank model outputs; a reward model is trained on these preferences; PPO reinforcement learning optimizes the LLM to produce outputs that maximize human preference scores. This alignment step makes the model helpful, harmless, and honest.
+## Citation Boundaries
 
-The key insight is **scaling**: as model size, training data volume, and compute budget increase simultaneously, model performance improves predictably — but also acquires *qualitatively new* capabilities that smaller models simply do not possess.
-
-## Detailed Analysis
-
-### Scaling Laws
-
-**Kaplan et al. (2020, OpenAI)** established the first empirical scaling laws: language modeling loss follows a power-law relationship with model size (N), dataset size (D), and compute (C) individually, with diminishing returns when any dimension is bottlenecked:
-
-```
-L(N) ∝ N^(-0.076)
-L(D) ∝ D^(-0.095)
-L(C_opt) ∝ C^(-0.050)
-```
-
-**Chinchilla scaling laws** (Hoffmann et al., 2022, DeepMind) refined this analysis, finding that previous models (including GPT-3) were significantly **undertrained** — they had too many parameters relative to their training data. The Chinchilla optimal: for a given compute budget, parameters and training tokens should scale **equally** — approximately 20 tokens per parameter. This means training a 70B model requires ~1.4 trillion tokens, not the ~300 billion tokens that GPT-3 (175B) was trained on. The 70B Chinchilla model matched or exceeded the performance of the 280B Gopher model despite being 4× smaller, simply because it was trained on 4× more data.
-
-| Model | Parameters | Training Tokens | Tokens/Param | Chinchilla-Optimal? |
-|-------|:----------:|:---------------:|:------------:|:-------------------:|
-| GPT-3 | 175B | ~300B | ~1.7 | ❌ Massively undertrained |
-| Gopher | 280B | ~300B | ~1.1 | ❌ Undertrained |
-| Chinchilla | 70B | ~1.4T | ~20 | ✅ Optimal |
-| LLaMA 2 70B | 70B | 2T | ~29 | ✅ Slightly overtrained |
-| LLaMA 3 70B | 70B | 15T | ~214 | ✅ Deliberately overtrained |
-
-### Emergent Abilities
-
-Wei et al. (2022, Google Research) documented a phenomenon where LLM capabilities appear suddenly at specific scale thresholds — not gradually, but with a phase transition. At 7B parameters, an LLM performs near-random on arithmetic; at 13B, it shows modest improvement; at ~50B, it suddenly achieves >90% accuracy. This pattern repeats across over 100 documented tasks.
-
-| Emergent Capability | Threshold (approx.) | Example |
-|--------------------|:-------------------:|---------|
-| Arithmetic | ~10B | 3-digit addition suddenly works |
-| Translation | ~30B | BLEU scores jump from near-zero |
-| Multi-step reasoning | ~50B | Chain-of-thought becomes effective |
-| Instruction following | ~100B | Zero-shot task completion |
-| Tool use | ~200B | API calling, code execution |
-
-**Important caveat**: Schaeffer et al. (2023) argued that whether emergence appears "abrupt" depends on the choice of metric — continuous metrics (e.g., token-level loss) show smooth improvement, while discontinuous metrics (e.g., exact-match accuracy) create the illusion of sudden jumps. The debate about whether emergence is a fundamental property or a measurement artifact remains active.
-
-### Frontier LLM Landscape (May 2026)
-
-| Family | Developer | Params (Latest) | Context Length | Key Architecture | Open Weights |
-|--------|-----------|:--------------:|:-------------:|-----------------|:------------:|
-| GPT | OpenAI | Trillions (MoE) | 128K+ | Decoder-only | ❌ |
-| Claude | Anthropic | ~1T+ (est.) | 200K+ | Decoder-only | ❌ |
-| Gemini | Google DeepMind | Trillions (MoE) | 2M | Decoder-only, natively multimodal | ❌ |
-| LLaMA | Meta | 400B+ | 128K | Decoder-only | ✅ |
-| Grok | xAI | 300B+ | 128K+ | Decoder-only (MoE) | ✅ (v1) |
-| Qwen | Alibaba | 200B+ | 1M | Decoder-only | ✅ |
-| DeepSeek | DeepSeek AI | 671B (MoE) | 128K+ | Decoder-only (MoE) | ✅ |
-| Mistral | Mistral AI | 100B+ | 128K | Decoder-only | ✅ |
-
-### Applications
-
-LLMs are deployed across virtually every knowledge-work domain:
-
-| Domain | Key Applications | Representative Tools |
-|--------|-----------------|---------------------|
-| Software Engineering | Code generation, review, debugging, documentation | GitHub Copilot, Cursor, Claude Code |
-| Content Creation | Marketing copy, articles, translations | ChatGPT, Claude, Jasper |
-| Education | Tutoring, problem solving, essay feedback | Khan Academy AI (Khanmigo), Duolingo Max |
-| Healthcare | Clinical summarization, literature analysis | Abridge, Nabla Copilot |
-| Legal | Contract review, e-discovery, research | Harvey AI, CoCounsel |
-| Scientific Research | Literature review, hypothesis generation | Elicit, Consensus, Microsoft Discovery |
-
-### Key Benchmarks (Late 2024)
-
-| Benchmark | Focus | GPT-4 | Claude 3.5 Sonnet | Gemini 1.5 Pro | LLaMA 3.1 405B |
-|-----------|-------|:-----:|:-----------------:|:-------------:|:-------------:|
-| MMLU | Multitask knowledge (57 subjects) | 86.4% | 88.7% | 85.9% | 88.6% |
-| HumanEval | Python code generation | 87.0% | 92.0% | 83.0% | 89.0% |
-| MATH | Mathematical reasoning | 72.2% | 71.1% | 67.7% | 73.8% |
-| GPQA | Graduate-level Q&A | 41.4% | 59.4% | 46.2% | 51.1% |
-
-*Note: Frontier models are updated frequently. These scores are from public leaderboards as of November 2024. Consult the HELM benchmark (Stanford CRFM) for continuously updated evaluations.*
-
-### Training Costs
-
-| Model | Parameters | Training Cost (est.) | Year |
-|-------|:----------:|:--------------------:|:----:|
-| GPT-3 (175B) | 175B | ~$4.6M | 2020 |
-| PaLM (540B) | 540B | ~$10M | 2022 |
-| GPT-4 | ~1.76T (MoE, est.) | ~$100M+ (est.) | 2023 |
-| Gemini Ultra | Trillions (MoE) | ~$150M+ (est.) | 2024 |
-
-Training costs have increased approximately 10× per generation, driven primarily by larger models and datasets.
+Use this article for stable LLM concepts: few-shot prompting at scale, compute-optimal scaling, and the definition of emergent abilities. Do not use it for current model rankings, pricing, product availability, private parameter counts, or live benchmark claims.
 
 ## Further Reading
 
-- [GPT-3 Paper](https://arxiv.org/abs/2005.14165): Language Models are Few-Shot Learners (30K+ citations)
-- [Chinchilla Paper](https://arxiv.org/abs/2203.15556): Training Compute-Optimal LLMs
-- [Emergent Abilities Paper](https://arxiv.org/abs/2206.07682): Wei et al., 2022
-- [HELM Benchmark](https://crfm.stanford.edu/helm/): Stanford's holistic evaluation framework
-
-## Related Articles
-
-- [LoRA: Low-Rank Adaptation of Large Language Models](../lora-low-rank-adaptation-of-large-language-models.md)
-- [Text-to-SQL: Natural Language Database Querying with Large Language Models](../text-to-sql.md)
-- [AI Red Teaming: Security Testing for Language Models](../ai-red-teaming-and-safety.md)
+- [Language Models are Few-Shot Learners](https://arxiv.org/abs/2005.14165)
+- [Training Compute-Optimal Large Language Models](https://arxiv.org/abs/2203.15556)
+- [Emergent Abilities of Large Language Models](https://arxiv.org/abs/2206.07682)
