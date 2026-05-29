@@ -22,6 +22,7 @@ import {
   publicKeyId,
   signProvenanceText
 } from '../src/lib/provenance-signature.js';
+import { fetchLiveText } from '../src/lib/live-http.js';
 import { sha256Text, verifyLiveProvenance } from '../src/lib/provenance-verify.js';
 
 let passed = 0, failed = 0;
@@ -556,6 +557,36 @@ test('verifyLiveProvenance rejects unsafe artifact paths', async () => {
   });
   assertEq(result.ok, false);
   assert(result.failures.some(failure => failure.includes('unsafe artifact path')), 'unsafe artifact path should fail');
+});
+
+test('fetchLiveText retries transient network failures', async () => {
+  let calls = 0;
+  const result = await fetchLiveText(async () => {
+    calls++;
+    if (calls === 1) {
+      throw new TypeError('fetch failed', { cause: new Error('connect timeout') });
+    }
+    return new FakeResponse(200, 'ok', 'text/plain; charset=utf-8');
+  }, 'https://anchorfact.org/provenance.json', { retryDelayMs: 0 });
+
+  assertEq(calls, 2, 'fetch should retry once before succeeding');
+  assertEq(result.ok, true, 'retry result should pass');
+  assertEq(result.status, 200, 'retry result status');
+  assertEq(result.text, 'ok', 'retry result body');
+  assertEq(result.contentType, 'text/plain; charset=utf-8', 'retry result content-type');
+});
+
+test('fetchLiveText reports exhausted network failures without throwing', async () => {
+  let calls = 0;
+  const result = await fetchLiveText(async () => {
+    calls++;
+    throw new TypeError('fetch failed', { cause: new Error('connect timeout') });
+  }, 'https://anchorfact.org/provenance.json', { retries: 1, retryDelayMs: 0 });
+
+  assertEq(calls, 2, 'fetch should respect retry count');
+  assertEq(result.ok, false, 'exhausted retry result should fail');
+  assertEq(result.status, 0, 'network failure status');
+  assert(result.error.includes('connect timeout'), 'network failure should include root cause');
 });
 
 for (const { name, fn } of tests) {

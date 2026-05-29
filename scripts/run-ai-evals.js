@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import { pathToFileURL } from 'url';
 import { OFFICIAL_SITE } from '../src/lib/build-metadata.js';
-import { liveFetchOptions } from '../src/lib/live-http.js';
+import { fetchLiveText } from '../src/lib/live-http.js';
 
 function isSafeRoute(path) {
   const pathname = typeof path === 'string' ? path.split(/[?#]/)[0] : '';
@@ -173,13 +173,13 @@ function evaluateTextExpected(body, expected, failures) {
 }
 
 export async function fetchEvalRoute(baseUrl, route, fetchImpl = globalThis.fetch) {
-  const response = await fetchImpl(new URL(route, baseUrl), liveFetchOptions());
-  const body = await response.text();
+  const response = await fetchLiveText(fetchImpl, new URL(route, baseUrl));
   return {
     route,
     status: response.status,
-    contentType: response.headers.get('content-type') || '',
-    body
+    contentType: response.contentType || '',
+    body: response.text,
+    error: response.error || null
   };
 }
 

@@ -91,7 +91,7 @@ async function verifyCommit(fetchImpl, provenance, failures, githubToken = null)
     githubToken ? { headers: { Authorization: `Bearer ${githubToken}` } } : {}
   );
   if (!response.ok) {
-    failures.push(`GitHub commit lookup failed for ${sha}: HTTP ${response.status}`);
+    failures.push(`GitHub commit lookup failed for ${sha}: ${fetchFailure(response)}`);
     return { ok: false, sha };
   }
 
@@ -101,6 +101,10 @@ async function verifyCommit(fetchImpl, provenance, failures, githubToken = null)
     failures.push(`GitHub commit response did not confirm ${sha}`);
   }
   return { ok: commitOk, sha };
+}
+
+function fetchFailure(response) {
+  return response.error ? `network error: ${response.error}` : `HTTP ${response.status}`;
 }
 
 async function verifySignature({
@@ -134,7 +138,7 @@ async function verifySignature({
 
   const response = await fetchLiveText(fetchImpl, routeUrl(baseUrl, PROVENANCE_SIGNATURE_PATH));
   if (!response.ok) {
-    failures.push(`${PROVENANCE_SIGNATURE_PATH} fetch failed: HTTP ${response.status}`);
+    failures.push(`${PROVENANCE_SIGNATURE_PATH} fetch failed: ${fetchFailure(response)}`);
     return {
       ok: false,
       trusted: false,
@@ -173,7 +177,7 @@ async function verifyArtifact({ key, artifact, baseUrl, fetchImpl, failures }) {
   const url = routeUrl(baseUrl, artifact.path);
   const response = await fetchLiveText(fetchImpl, url);
   if (!response.ok) {
-    failures.push(`${key} fetch failed for ${artifact.path}: HTTP ${response.status}`);
+    failures.push(`${key} fetch failed for ${artifact.path}: ${fetchFailure(response)}`);
     return { ok: false, key, path: artifact.path, url };
   }
 
@@ -257,7 +261,7 @@ export async function verifyLiveProvenance({
 
   const provenanceResponse = await fetchLiveText(fetchImpl, routeUrl(normalizedBaseUrl, PROVENANCE_PATH));
   if (!provenanceResponse.ok) {
-    failures.push(`${PROVENANCE_PATH} fetch failed: HTTP ${provenanceResponse.status}`);
+    failures.push(`${PROVENANCE_PATH} fetch failed: ${fetchFailure(provenanceResponse)}`);
   }
 
   const provenance = parseJson(provenanceResponse.text, PROVENANCE_PATH, failures) || {};

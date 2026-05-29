@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import { createHash } from 'crypto';
 import { pathToFileURL } from 'url';
-import { liveFetchOptions } from './lib/live-http.js';
+import { fetchLiveText } from './lib/live-http.js';
 
 const DEFAULT_BASE_URL = 'https://anchorfact.org/';
 
@@ -40,18 +40,16 @@ function sha256Text(text) {
 
 export async function fetchRoute(baseUrl, route) {
   const url = new URL(route, baseUrl);
-  const response = await fetch(url, liveFetchOptions());
-  const body = await response.text();
-  const headers = Object.fromEntries(response.headers.entries());
+  const response = await fetchLiveText(fetch, url);
 
   return {
     route,
     url: url.href,
-    finalUrl: response.url,
+    finalUrl: response.finalUrl,
     status: response.status,
-    contentType: response.headers.get('content-type') || '',
-    headers,
-    body,
+    contentType: response.contentType || '',
+    headers: response.headers || {},
+    body: response.text,
   };
 }
 
