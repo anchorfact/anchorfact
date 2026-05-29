@@ -4,6 +4,8 @@ import { pathToFileURL } from 'url';
 import { fetchLiveText } from './lib/live-http.js';
 
 const DEFAULT_BASE_URL = 'https://anchorfact.org/';
+const DEFAULT_ROUTE_RETRIES = 2;
+const DEFAULT_ROUTE_RETRY_DELAY_MS = 250;
 const DEFAULT_JSON_RETRIES = 2;
 const DEFAULT_JSON_RETRY_DELAY_MS = 250;
 
@@ -51,19 +53,34 @@ function sleep(ms) {
   return ms > 0 ? new Promise(resolve => setTimeout(resolve, ms)) : Promise.resolve();
 }
 
-export async function fetchRoute(baseUrl, route) {
+export async function fetchRoute(baseUrl, route, options = {}) {
   const url = new URL(route, baseUrl);
-  const response = await fetchLiveText(fetch, url);
+  const routeRetries = Number.isFinite(options.routeRetries) ? options.routeRetries : DEFAULT_ROUTE_RETRIES;
+  const routeRetryDelayMs = Number.isFinite(options.routeRetryDelayMs) ? options.routeRetryDelayMs : DEFAULT_ROUTE_RETRY_DELAY_MS;
+  const maxAttempts = Math.max(1, routeRetries + 1);
+  let result = null;
 
-  return {
-    route,
-    url: url.href,
-    finalUrl: response.finalUrl,
-    status: response.status,
-    contentType: response.contentType || '',
-    headers: response.headers || {},
-    body: response.text,
-  };
+  for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+    const response = await fetchLiveText(fetch, url);
+    result = {
+      route,
+      url: url.href,
+      finalUrl: response.finalUrl,
+      status: response.status,
+      contentType: response.contentType || '',
+      headers: response.headers || {},
+      body: response.text,
+    };
+
+    const shouldRetry = result.status === 0 || !String(result.body || '').trim();
+    if (!shouldRetry || attempt === maxAttempts) {
+      return result;
+    }
+
+    await sleep(routeRetryDelayMs * attempt);
+  }
+
+  return result;
 }
 
 export async function readJsonRoute(baseUrl, route, results, options = {}) {

@@ -194,6 +194,34 @@ test('production smoke fetches routes with CI-friendly live headers', async () =
   assert(calls[0].options.headers.Accept.includes('application/json'), 'smoke fetch should accept JSON');
 });
 
+test('production smoke retries transient route fetch failures', async () => {
+  const originalFetch = globalThis.fetch;
+  let calls = 0;
+  globalThis.fetch = async (url) => {
+    calls++;
+    if (calls <= 3) {
+      throw new Error('temporary network failure');
+    }
+    return {
+      status: 200,
+      ok: true,
+      url: String(url),
+      headers: new Map([['content-type', 'text/html; charset=utf-8']]),
+      async text() {
+        return '<!doctype html><meta name="robots" content="noindex">';
+      }
+    };
+  };
+
+  try {
+    const result = await fetchRoute('https://anchorfact.org', '/drafts.html', { routeRetryDelayMs: 0 });
+    assertEq(result.status, 200);
+    assertEq(calls, 4);
+  } finally {
+    globalThis.fetch = originalFetch;
+  }
+});
+
 test('production smoke retries transient empty JSON route bodies', async () => {
   const originalFetch = globalThis.fetch;
   let calls = 0;
