@@ -1,12 +1,12 @@
 ---
 id: parameter-efficient-fine-tuning
-title: "Parameter-Efficient Fine-Tuning: LoRA, QLoRA, and Adapters"
+title: Parameter-Efficient Fine-Tuning for Language Models (PEFT)
 schema_type: TechArticle
 category: ai
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+confidence: medium
+last_verified: '2026-05-30'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -15,98 +15,107 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: f1
-    statement: >-
-      LoRA (Hu et al. 2022, Microsoft, ICLR) decomposes weight updates into low-rank matrices, reducing trainable parameters by 10,000× while maintaining full fine-tuning quality — enabling adaptation
-      of 175B models on a single GPU.
-    source_title: "Hu, Edward J., et al. LoRA: Low-Rank Adaptation of Large Language Models. ICLR 2022"
-    source_url: https://arxiv.org/abs/2106.09685
-    confidence: high
-  - id: f2
-    statement: >-
-      QLoRA (Dettmers et al. 2023, NeurIPS) combines 4-bit quantization with LoRA, enabling fine-tuning of a 65B parameter model on a single 48GB GPU while preserving 99.3% of 16-bit fine-tuning
-      performance.
-    source_title: "Dettmers, Tim, et al. QLoRA: Efficient Finetuning of Quantized LLMs. NeurIPS 2023"
-    source_url: https://arxiv.org/abs/2305.14314
-    confidence: high
-  - id: f3
-    statement: >-
-      Prefix-Tuning (Li & Liang 2021, Stanford, ACL) prepends learnable continuous vectors to the input, achieving GPT-3-comparable performance while only training 0.1% of parameters — demonstrating
-      that prompting can be optimized via gradient descent.
-    source_title: "Li, Xiang Lisa, and Percy Liang. Prefix-Tuning: Optimizing Continuous Prompts for Generation. ACL 2021"
+  - id: fact-ai-peft-1
+    statement: Adapter-based transfer learning inserts small trainable modules into a pretrained model while keeping most original parameters fixed.
+    source_title: Parameter-Efficient Transfer Learning for NLP
+    source_url: https://arxiv.org/abs/1902.00751
+    source_doi: 10.48550/arXiv.1902.00751
+    confidence: medium
+  - id: fact-ai-peft-2
+    statement: Prefix-tuning optimizes continuous task-specific vectors prepended to the model input while keeping language-model parameters frozen.
+    source_title: 'Prefix-Tuning: Optimizing Continuous Prompts for Generation'
     source_url: https://arxiv.org/abs/2101.00190
-    confidence: high
-completeness: 0.9
-primary_sources:
-  - title: "LoRA: Low-Rank Adaptation of Large Language Models"
-    type: academic_paper
-    year: 2022
-    url: https://arxiv.org/abs/2106.09685
-    institution: ICLR
-  - title: "QLoRA: Efficient Finetuning of Quantized Language Models"
-    type: academic_paper
-    year: 2023
-    url: https://arxiv.org/abs/2305.14314
-    institution: NeurIPS
+    source_doi: 10.48550/arXiv.2101.00190
+    confidence: medium
+  - id: fact-ai-peft-3
+    statement: LoRA represents fine-tuning updates with low-rank matrices and freezes the pretrained model weights during adaptation.
+    source_title: 'LoRA: Low-Rank Adaptation of Large Language Models'
+    source_url: https://arxiv.org/abs/2106.09685
+    source_doi: 10.48550/arXiv.2106.09685
+    confidence: medium
+  - id: fact-ai-peft-4
+    statement: QLoRA combines quantized base models with low-rank adapters to reduce memory requirements for supervised fine-tuning.
+    source_title: 'QLoRA: Efficient Finetuning of Quantized LLMs'
+    source_url: https://arxiv.org/abs/2305.14314
+    source_doi: 10.48550/arXiv.2305.14314
+    confidence: medium
+completeness: 0.84
 known_gaps:
-  - Multi-task LoRA merging
-  - LoRA for vision and multimodal models
-disputed_statements:
-  - statement: No major disputed statements identified
-secondary_sources:
-  - title: "LoRA: Low-Rank Adaptation of Large Language Models"
-    type: conference_paper
-    year: 2022
+  - This article covers PEFT method families, not current framework recommendations or benchmark leaderboards.
+  - Adapter merging, rank selection, quantization details, and multimodal PEFT require task-specific evaluation.
+disputed_statements: []
+primary_sources:
+  - title: Parameter-Efficient Transfer Learning for NLP
+    authors:
+      - Houlsby, Neil
+      - Giurgiu, Andrei
+      - Jastrzebski, Stanislaw
+      - Morrone, Bruna
+      - de Laroussilhe, Quentin
+      - Gesmundo, Andrea
+      - Attariyan, Mona
+      - Gelly, Sylvain
+    type: academic_paper
+    year: 2019
+    url: https://arxiv.org/abs/1902.00751
+    doi: 10.48550/arXiv.1902.00751
+    institution: Google Research
+  - title: 'Prefix-Tuning: Optimizing Continuous Prompts for Generation'
+    authors:
+      - Li, Xiang Lisa
+      - Liang, Percy
+    type: academic_paper
+    year: 2021
+    url: https://arxiv.org/abs/2101.00190
+    doi: 10.48550/arXiv.2101.00190
+    institution: Stanford University
+  - title: 'LoRA: Low-Rank Adaptation of Large Language Models'
     authors:
       - Hu, Edward J.
       - Shen, Yelong
       - Wallis, Phillip
-      - et al.
-    institution: Microsoft / ICLR
+      - Allen-Zhu, Zeyuan
+      - Li, Yuanzhi
+      - Wang, Shean
+      - Wang, Lu
+      - Chen, Weizhu
+    type: academic_paper
+    year: 2022
     url: https://arxiv.org/abs/2106.09685
-  - title: "QLoRA: Efficient Finetuning of Quantized LLMs"
-    type: conference_paper
-    year: 2023
+    doi: 10.48550/arXiv.2106.09685
+    institution: Microsoft
+  - title: 'QLoRA: Efficient Finetuning of Quantized LLMs'
     authors:
       - Dettmers, Tim
       - Pagnoni, Artidoro
       - Holtzman, Ari
       - Zettlemoyer, Luke
-    institution: University of Washington / NeurIPS
+    type: academic_paper
+    year: 2023
     url: https://arxiv.org/abs/2305.14314
-  - title: "A Survey of Parameter-Efficient Fine-Tuning: From LoRA to Adapters to Prompt Tuning"
-    type: survey_paper
-    year: 2024
-    authors:
-      - multiple
-    institution: ACM Computing Surveys
-    url: https://doi.org/10.1145/3635100
-  - title: "Prefix-Tuning: Optimizing Continuous Prompts for Generation"
-    type: conference_paper
-    year: 2021
-    authors:
-      - Li, Xiang Lisa
-      - Liang, Percy
-    institution: Stanford / ACL
-    url: https://arxiv.org/abs/2101.00190
-updated: "2026-05-24"
+    doi: 10.48550/arXiv.2305.14314
+    institution: University of Washington
 ---
+
 ## TL;DR
-Parameter-efficient fine-tuning (PEFT) adapts large pre-trained models to new tasks by training only a small fraction of parameters. LoRA and QLoRA have democratized LLM customization — GPT-equivalent quality fine-tuning now runs on consumer hardware.
 
-## Core Explanation
-The full fine-tuning problem: updating all 175B parameters of GPT-3 requires 350GB of GPU memory just for optimizer states. PEFT solutions: (1) Adapters — small bottleneck layers inserted between transformer blocks; (2) Prefix tuning — learnable prefix vectors prepended to input; (3) LoRA — low-rank weight updates (ΔW = BA where A and B are small matrices).
+Parameter-efficient fine-tuning, or PEFT, adapts large pretrained language models by training a small set of extra or low-rank parameters while leaving most base-model weights fixed. This makes adaptation cheaper than full fine-tuning and allows multiple task adapters to share one base model.
 
-## Detailed Analysis
-LoRA typically applies to attention projection matrices (W_q, W_v). Rank r=8-64 provides good performance. Multiple LoRA adapters can be hot-swapped for different tasks without reloading the base model. DORA (2024) adds magnitude-direction decomposition for improved performance.
+## Core Claims
+
+Adapters insert small trainable modules into a pretrained network. The base model can remain mostly frozen, while each task gets its own lightweight parameters.
+
+Prefix-tuning moves adaptation into continuous prompt-like vectors. Instead of updating the whole model, training learns vectors that condition generation for a task.
+
+LoRA and QLoRA are widely cited PEFT variants. LoRA trains low-rank update matrices for selected weights; QLoRA combines low-rank adapters with quantized base-model weights to reduce memory use during fine-tuning.
+
+## Citation Boundaries
+
+Use this article for stable PEFT concepts. Do not use it to choose a current fine-tuning framework, claim consumer-hardware feasibility for a specific model, or compare current commercial fine-tuning products.
 
 ## Further Reading
-- HuggingFace PEFT Library
-- Unsloth: Fast Fine-Tuning
-- Axolotl: Fine-Tuning Framework
 
-## Related Articles
-
-- [Efficient and Green AI: Reducing the Carbon Footprint of Machine Learning](../efficient-green-ai.md)
-- [Instruction Tuning: Teaching LLMs to Follow Directions](../instruction-tuning.md)
-- [LoRA: Low-Rank Adaptation of Large Language Models](../lora-low-rank-adaptation-of-large-language-models.md)
+- [Parameter-Efficient Transfer Learning for NLP](https://arxiv.org/abs/1902.00751)
+- [Prefix-Tuning: Optimizing Continuous Prompts for Generation](https://arxiv.org/abs/2101.00190)
+- [LoRA: Low-Rank Adaptation of Large Language Models](https://arxiv.org/abs/2106.09685)
+- [QLoRA: Efficient Finetuning of Quantized LLMs](https://arxiv.org/abs/2305.14314)

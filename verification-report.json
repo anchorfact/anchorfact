@@ -2,13 +2,13 @@
   "summary": {
     "generated": "2026-05-27T14:00:00.000Z",
     "total_articles": 1000,
-    "total_with_errors": 335,
+    "total_with_errors": 330,
     "average_sources_per_article": "2.4",
-    "overall_verification_rate": "73.8%",
+    "overall_verification_rate": "74.5%",
     "elapsed_ms": 635005,
     "elapsed_sec": "635.0",
     "concurrency": 3,
-    "manual_reviewed_articles": 526
+    "manual_reviewed_articles": 531
   },
   "articles": [
     {
@@ -12635,97 +12635,67 @@
       "file": "content/ai/low-resource-nlp.md",
       "article_id": "low-resource-nlp",
       "generation_method": "ai_structured",
-      "sources_total": 4,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Natural language processing applications for low-resource languages: A comprehensive survey",
+          "source_title": "Unsupervised Cross-lingual Representation Learning at Scale",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "doi",
-              "identifier": "10.1017/nlp.2025.7",
-              "verified": false,
-              "metadata": {
-                "error": "CrossRef returned 404"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Generative AI and Large Language Models in Language Preservation: Automating Translation and Revitalization",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "arxiv",
-              "identifier": "2501.11496",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Specializing Multilingual Language Models: An Empirical Study",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "doi",
-              "identifier": "10.18653/v1/2021.mrl-1.5",
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1911.02116",
               "verified": true,
               "metadata": {
-                "title": "Specializing Multilingual Language Models: An Empirical Study",
-                "publisher": "Association for Computational Linguistics",
-                "year": 2021
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Fifty-fifth targeted AI query coverage repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
-            },
-            {
-              "method": "arxiv",
-              "identifier": "2106.09063v4",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Creating Lexical Resources for Endangered Languages",
+          "source_title": "No Language Left Behind: Scaling Human-Centered Machine Translation",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "doi",
-              "identifier": "10.3115/v1/w14-2207",
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2207.04672",
               "verified": true,
               "metadata": {
-                "title": "Creating Lexical Resources for Endangered Languages",
-                "publisher": "Association for Computational Linguistics",
-                "year": 2015
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Fifty-fifth targeted AI query coverage repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
-            },
-            {
-              "method": "arxiv",
-              "identifier": "2208.03876v1",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "Scaling Speech Technology to 1,000+ Languages",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2305.13516",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Fifty-fifth targeted AI query coverage repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 2
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-30"
     },
     {
       "file": "content/ai/machine-translation.md",
@@ -13002,76 +12972,78 @@
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "doi",
-              "identifier": "10.48550/arXiv.1701.06538",
-              "verified": false,
-              "metadata": {
-                "error": "CrossRef returned 404"
-              },
-              "match": false
-            },
-            {
-              "method": "arxiv",
-              "identifier": "1701.06538",
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1701.06538",
               "verified": true,
               "metadata": {
-                "title": "arXiv Query: search_query=&amp;id_list=1701.06538&amp;start=0&amp;max_results=1"
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Fifty-fifth targeted AI query coverage repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
           "source_title": "Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "doi",
-              "identifier": "10.48550/arXiv.2101.03961",
-              "verified": false,
-              "metadata": {
-                "error": "CrossRef returned 404"
-              },
-              "match": false
-            },
-            {
-              "method": "arxiv",
-              "identifier": "2101.03961",
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2101.03961",
               "verified": true,
               "metadata": {
-                "title": "arXiv Query: search_query=&amp;id_list=2101.03961&amp;start=0&amp;max_results=1"
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Fifty-fifth targeted AI query coverage repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "GPT-4 Technical Report",
-          "source_type": "unknown",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "MoE++: Accelerating Mixture-of-Experts Methods with Zero-Computation Experts",
+          "source_title": "GLaM: Efficient Scaling of Language Models with Mixture-of-Experts",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2410.07348v1",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2112.06905",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Fifty-fifth targeted AI query coverage repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "Mixtral of Experts",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2401.04088",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Fifty-fifth targeted AI query coverage repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 1
+      "sources_verified": 4,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-30"
     },
     {
       "file": "content/ai/mlops-llmops.md",
@@ -14378,43 +14350,85 @@
       "file": "content/ai/parameter-efficient-fine-tuning.md",
       "article_id": "parameter-efficient-fine-tuning",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 4,
       "verification_results": [
+        {
+          "source_title": "Parameter-Efficient Transfer Learning for NLP",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1902.00751",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Fifty-fifth targeted AI query coverage repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Prefix-Tuning: Optimizing Continuous Prompts for Generation",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2101.00190",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Fifty-fifth targeted AI query coverage repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
         {
           "source_title": "LoRA: Low-Rank Adaptation of Large Language Models",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2106.09685",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2106.09685",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Fifty-fifth targeted AI query coverage repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "QLoRA: Efficient Finetuning of Quantized Language Models",
+          "source_title": "QLoRA: Efficient Finetuning of Quantized LLMs",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2305.14314",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2305.14314",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Fifty-fifth targeted AI query coverage repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 2
+      "sources_verified": 4,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-30"
     },
     {
       "file": "content/ai/physics-informed-neural-networks.md",
@@ -14797,70 +14811,60 @@
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "doi",
-              "identifier": "10.48550/arXiv.2005.11401",
-              "verified": false,
-              "metadata": {
-                "error": "CrossRef returned 404"
-              },
-              "match": false
-            },
-            {
-              "method": "arxiv",
-              "identifier": "2005.11401",
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2005.11401",
               "verified": true,
               "metadata": {
-                "title": "arXiv Query: search_query=&amp;id_list=2005.11401&amp;start=0&amp;max_results=1"
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Fifty-fifth targeted AI query coverage repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
           "source_title": "Dense Passage Retrieval for Open-Domain Question Answering",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "doi",
-              "identifier": "10.48550/arXiv.2004.04906",
-              "verified": false,
-              "metadata": {
-                "error": "CrossRef returned 404"
-              },
-              "match": false
-            },
-            {
-              "method": "arxiv",
-              "identifier": "2004.04906",
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2004.04906",
               "verified": true,
               "metadata": {
-                "title": "arXiv Query: search_query=&amp;id_list=2004.04906&amp;start=0&amp;max_results=1"
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Fifty-fifth targeted AI query coverage repair pass; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "AR-RAG: Autoregressive Retrieval Augmentation for Image Generation",
+          "source_title": "REALM: Retrieval-Augmented Language Model Pre-Training",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2506.06962v3",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2002.08909",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Fifty-fifth targeted AI query coverage repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-30"
     },
     {
       "file": "content/ai/reasoning-models.md",
@@ -15197,93 +15201,67 @@
       "file": "content/ai/rlhf.md",
       "article_id": "kb-2026-00007",
       "generation_method": "ai_structured",
-      "sources_total": 4,
+      "sources_total": 3,
       "verification_results": [
         {
           "source_title": "Deep Reinforcement Learning from Human Preferences",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "doi",
-              "identifier": "10.48550/arXiv.1706.03741",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1706.03741",
+              "verified": true,
               "metadata": {
-                "error": "CrossRef returned 404"
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Fifty-fifth targeted AI query coverage repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
-            },
-            {
-              "method": "arxiv",
-              "identifier": "1706.03741",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Training Language Models to Follow Instructions with Human Feedback (InstructGPT)",
+          "source_title": "Training Language Models to Follow Instructions with Human Feedback",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "doi",
-              "identifier": "10.48550/arXiv.2203.02155",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2203.02155",
+              "verified": true,
               "metadata": {
-                "error": "CrossRef returned 404"
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Fifty-fifth targeted AI query coverage repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
-            },
-            {
-              "method": "arxiv",
-              "identifier": "2203.02155",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "RLHF-Blender: A Configurable Interactive Interface for Learning from Diverse Human Feedback",
+          "source_title": "Direct Preference Optimization: Your Language Model is Secretly a Reward Model",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2308.04332v1",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2305.18290",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Fifty-fifth targeted AI query coverage repair pass; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Iterative Preference Learning from Human Feedback: Bridging Theory and Practice for RLHF under KL-Constraint",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "arxiv",
-              "identifier": "2312.11456v4",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 4
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-30"
     },
     {
       "file": "content/ai/robot-manipulation.md",
