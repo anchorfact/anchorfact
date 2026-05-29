@@ -112,6 +112,113 @@ test('rankSearchRecords ignores generic question words and standalone years', ()
   assertEq(results, []);
 });
 
+test('rankSearchRecords does not match query tokens inside longer words', () => {
+  const results = rankSearchRecords([
+    {
+      canonical_slug: 'health/human-anatomy',
+      title: 'Human Anatomy',
+      url: 'https://anchorfact.org/health/human-anatomy/',
+      description: 'Systems, organs, and body structure.',
+      confidence_level: 'medium',
+      source_coverage: { verified: 3, total: 3, ratio: 1 },
+      claim_count: 3,
+      claim_ids: ['fact-anatomy'],
+      keywords: ['human', 'anatomy', 'organs'],
+      routes: {},
+      search_text: 'human anatomy systems organs and function'
+    }
+  ], 'GANs', 3);
+
+  assertEq(results, []);
+});
+
+test('rankSearchRecords favors exact acronym matches over generic topical words', () => {
+  const results = rankSearchRecords([
+    {
+      canonical_slug: 'ai/neural-architecture-search',
+      title: 'Neural Architecture Search',
+      url: 'https://anchorfact.org/ai/neural-architecture-search/',
+      description: 'Search methods for model architectures.',
+      confidence_level: 'medium',
+      source_coverage: { verified: 3, total: 3, ratio: 1 },
+      claim_count: 3,
+      claim_ids: ['fact-nas'],
+      keywords: ['neural', 'architecture', 'search'],
+      routes: {},
+      search_text: 'neural architecture search methods for machine learning architectures'
+    },
+    {
+      canonical_slug: 'ai/convolutional-neural-networks-cnn',
+      title: 'Convolutional Neural Networks (CNN)',
+      url: 'https://anchorfact.org/ai/convolutional-neural-networks-cnn/',
+      description: 'Convolutional neural networks for visual data.',
+      confidence_level: 'medium',
+      source_coverage: { verified: 3, total: 3, ratio: 1 },
+      claim_count: 3,
+      claim_ids: ['fact-cnn'],
+      keywords: ['convolutional', 'neural', 'networks', 'cnn'],
+      routes: {},
+      search_text: 'convolutional neural networks cnn image recognition'
+    }
+  ], 'CNN architecture', 2);
+
+  assertEq(results[0].canonical_slug, 'ai/convolutional-neural-networks-cnn');
+});
+
+test('rankSearchRecords uses canonical slugs as exact topic signals', () => {
+  const results = rankSearchRecords([
+    {
+      canonical_slug: 'ai/object-detection',
+      title: 'Object Detection: YOLO, R-CNN, and DETR',
+      url: 'https://anchorfact.org/ai/object-detection/',
+      description: 'Object detection systems often include R-CNN variants.',
+      confidence_level: 'medium',
+      source_coverage: { verified: 3, total: 3, ratio: 1 },
+      claim_count: 3,
+      claim_ids: ['fact-object-detection'],
+      keywords: ['object', 'detection', 'cnn'],
+      routes: {},
+      search_text: 'object detection yolo r cnn detr cnn cnn'
+    },
+    {
+      canonical_slug: 'ai/convolutional-neural-networks-cnn',
+      title: 'Convolutional Neural Networks (CNN)',
+      url: 'https://anchorfact.org/ai/convolutional-neural-networks-cnn/',
+      description: 'Convolutional neural networks for visual data.',
+      confidence_level: 'medium',
+      source_coverage: { verified: 3, total: 3, ratio: 1 },
+      claim_count: 3,
+      claim_ids: ['fact-cnn'],
+      keywords: ['convolutional', 'neural', 'networks', 'cnn'],
+      routes: {},
+      search_text: 'convolutional neural networks cnn'
+    }
+  ], 'CNN', 2);
+
+  assertEq(results[0].canonical_slug, 'ai/convolutional-neural-networks-cnn');
+});
+
+test('rankSearchRecords rejects weak-only matches for multi-token queries', () => {
+  const records = [
+    {
+      canonical_slug: 'computer-science/cap-theorem',
+      title: 'CAP Theorem',
+      url: 'https://anchorfact.org/computer-science/cap-theorem/',
+      description: 'The CAP theorem describes distributed system trade-offs.',
+      confidence_level: 'medium',
+      source_coverage: { verified: 3, total: 3, ratio: 1 },
+      claim_count: 3,
+      claim_ids: ['fact-cap'],
+      keywords: ['cap', 'theorem', 'distributed'],
+      routes: {},
+      search_text: 'cap theorem distributed systems consistency availability partition tolerance'
+    }
+  ];
+
+  assertEq(rankSearchRecords(records, 'Bayes theorem', 3), []);
+  assertEq(rankSearchRecords(records, 'CAP theorem', 3)[0].canonical_slug, 'computer-science/cap-theorem');
+});
+
 test('buildSearchApiPayload returns compact agent-friendly results', () => {
   const payload = buildSearchApiPayload({
     query: 'gaussian radiance',

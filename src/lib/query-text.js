@@ -43,6 +43,21 @@ const QUERY_STOPWORDS = new Set([
 ]);
 
 const STANDALONE_YEAR = /^(?:1[6-9]\d{2}|20\d{2}|21\d{2})$/;
+const WEAK_MULTI_TOKEN_MATCHES = new Set([
+  'architecture',
+  'basics',
+  'evidence',
+  'fundamentals',
+  'guide',
+  'history',
+  'introduction',
+  'methods',
+  'models',
+  'overview',
+  'systems',
+  'techniques',
+  'theorem'
+]);
 
 export function normalizeQueryText(value) {
   return String(value || '')
@@ -52,13 +67,24 @@ export function normalizeQueryText(value) {
     .toLowerCase();
 }
 
+export function textTokens(value) {
+  const normalized = normalizeQueryText(value);
+  return normalized ? normalized.split(' ') : [];
+}
+
 export function queryTokens(value, options = {}) {
   const includeYears = options.includeYears === true;
-  return normalizeQueryText(value)
-    .split(' ')
+  return textTokens(value)
     .filter(token =>
       token.length >= 2
       && !QUERY_STOPWORDS.has(token)
       && (includeYears || !STANDALONE_YEAR.test(token))
     );
+}
+
+export function hasStrongMatchedToken(tokens, matchedTokens) {
+  if (tokens.length < 2) return true;
+  const strongTokens = tokens.filter(token => !WEAK_MULTI_TOKEN_MATCHES.has(token));
+  if (strongTokens.length === 0) return true;
+  return strongTokens.some(token => matchedTokens.has(token));
 }

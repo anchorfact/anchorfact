@@ -1,5 +1,10 @@
 import { rankSearchRecords } from './search-api.js';
-import { normalizeQueryText, queryTokens } from './query-text.js';
+import {
+  hasStrongMatchedToken,
+  normalizeQueryText,
+  queryTokens,
+  textTokens
+} from './query-text.js';
 
 export const PLAN_API_SCHEMA_VERSION = 'anchorfact.plan-api.v1';
 
@@ -68,30 +73,37 @@ export function parsePlanParams(url) {
 
 function scoreTopic(topic, query, tokens) {
   const phrase = normalizeQueryText(query);
-  const id = normalizeQueryText(topic.id);
-  const title = normalizeQueryText(topic.title);
-  const articleText = normalizeQueryText((topic.top_articles || [])
+  const idTokens = textTokens(topic.id);
+  const titleTokens = textTokens(topic.title);
+  const articleTokens = textTokens((topic.top_articles || [])
     .map(article => `${article.title || ''} ${article.canonical_slug || ''}`)
     .join(' '));
+  const idText = idTokens.join(' ');
+  const titleText = titleTokens.join(' ');
+  const articleSet = new Set(articleTokens);
   let score = 0;
   const matchedKeywords = new Set();
+  const matchedQueryTokens = new Set();
 
-  if (phrase && title.includes(phrase)) score += 8;
-  if (phrase && id === phrase) score += 6;
+  if (phrase && ` ${titleText} `.includes(` ${phrase} `)) score += 8;
+  if (phrase && idText === phrase) score += 6;
   for (const token of tokens) {
-    if (id.split(' ').includes(token) || title.split(' ').includes(token)) {
+    if (idTokens.includes(token) || titleTokens.includes(token)) {
       score += 3;
       matchedKeywords.add(token);
+      matchedQueryTokens.add(token);
     }
-    if (articleText.includes(token)) {
+    if (articleSet.has(token)) {
       score += 1;
       matchedKeywords.add(token);
+      matchedQueryTokens.add(token);
     }
   }
 
   return {
     score,
-    matched_keywords: [...matchedKeywords].sort()
+    matched_keywords: [...matchedKeywords].sort(),
+    matched_query_tokens: matchedQueryTokens
   };
 }
 
@@ -129,7 +141,7 @@ function rankedTopics(topics, query, limit) {
   if (tokens.length === 0) return [];
   return (topics || [])
     .map(topic => ({ topic, score: scoreTopic(topic, query, tokens) }))
-    .filter(entry => entry.score.score > 0)
+    .filter(entry => entry.score.score > 0 && hasStrongMatchedToken(tokens, entry.score.matched_query_tokens))
     .sort((a, b) =>
       b.score.score - a.score.score
       || (b.topic.article_count || 0) - (a.topic.article_count || 0)

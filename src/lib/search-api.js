@@ -1,9 +1,15 @@
-import { normalizeQueryText, queryTokens } from './query-text.js';
+import {
+  hasStrongMatchedToken,
+  normalizeQueryText,
+  queryTokens,
+  textTokens
+} from './query-text.js';
 
 export const SEARCH_API_SCHEMA_VERSION = 'anchorfact.search-api.v1';
 const MIN_LIMIT = 1;
 const DEFAULT_LIMIT = 5;
 const MAX_LIMIT = 20;
+const SHORT_TOKEN_BOOST_SKIP = new Set(['ai']);
 
 function clampLimit(value) {
   const parsed = Number.parseInt(value, 10);
@@ -27,54 +33,94 @@ export function parseSearchParams(url) {
   };
 }
 
-function occurrenceCount(haystack, needle) {
-  if (!needle) return 0;
-  let count = 0;
-  let position = haystack.indexOf(needle);
-  while (position !== -1) {
-    count++;
-    position = haystack.indexOf(needle, position + needle.length);
+function tokenCounts(tokens) {
+  const counts = new Map();
+  for (const token of tokens) {
+    counts.set(token, (counts.get(token) || 0) + 1);
   }
-  return count;
+  return counts;
+}
+
+function countToken(counts, token) {
+  return counts.get(token) || 0;
+}
+
+function containsPhrase(tokens, phrase) {
+  if (!phrase) return false;
+  return ` ${tokens.join(' ')} `.includes(` ${phrase} `);
+}
+
+function isShortExactToken(token) {
+  return token.length >= 2 && token.length <= 5 && !SHORT_TOKEN_BOOST_SKIP.has(token);
 }
 
 function scoreRecord(record, query, tokens) {
-  const title = normalizeQueryText(record.title);
-  const description = normalizeQueryText(record.description);
-  const text = normalizeQueryText(record.search_text);
-  const keywords = new Set((record.keywords || []).map(normalizeQueryText));
+  const titleTokens = textTokens(record.title);
+  const slugTokens = textTokens(record.canonical_slug);
+  const descriptionTokens = textTokens(record.description);
+  const textTokensValue = textTokens(record.search_text);
+  const keywordTokens = (record.keywords || []).flatMap(textTokens);
+  const titleSet = new Set(titleTokens);
+  const slugSet = new Set(slugTokens);
+  const keywordSet = new Set(keywordTokens);
+  const descriptionCounts = tokenCounts(descriptionTokens);
+  const textCounts = tokenCounts(textTokensValue);
   const phrase = normalizeQueryText(query);
   const matchedKeywords = new Set();
+  const matchedQueryTokens = new Set();
   let score = 0;
 
-  if (phrase && title.includes(phrase)) score += 16;
-  if (phrase && text.includes(phrase)) score += 8;
-  if (phrase && description.includes(phrase)) score += 4;
+  if (containsPhrase(titleTokens, phrase)) score += 16;
+  if (containsPhrase(textTokensValue, phrase)) score += 8;
+  if (containsPhrase(descriptionTokens, phrase)) score += 4;
 
   for (const token of tokens) {
-    if (title.split(' ').includes(token)) {
+    const exactTitle = titleSet.has(token);
+    const exactSlug = slugSet.has(token);
+    const exactKeyword = keywordSet.has(token);
+
+    if (exactSlug) {
+      score += 10;
+      matchedKeywords.add(token);
+      matchedQueryTokens.add(token);
+    }
+    if (exactTitle) {
       score += 8;
       matchedKeywords.add(token);
+      matchedQueryTokens.add(token);
     }
-    if (keywords.has(token)) {
+    if (exactKeyword) {
       score += 6;
       matchedKeywords.add(token);
+      matchedQueryTokens.add(token);
     }
-    if (description.includes(token)) {
-      score += 2;
-      matchedKeywords.add(token);
+    if ((exactSlug || exactTitle || exactKeyword) && isShortExactToken(token)) {
+      score += 8;
     }
-    const occurrences = occurrenceCount(text, token);
-    if (occurrences > 0) {
-      score += Math.min(occurrences, 4);
+
+    const descriptionOccurrences = countToken(descriptionCounts, token);
+    if (descriptionOccurrences > 0) {
+      score += Math.min(descriptionOccurrences, 2) * 2;
       matchedKeywords.add(token);
+      matchedQueryTokens.add(token);
+    }
+    const textOccurrences = countToken(textCounts, token);
+    if (textOccurrences > 0) {
+      score += Math.min(textOccurrences, 4);
+      matchedKeywords.add(token);
+      matchedQueryTokens.add(token);
     }
   }
 
   return {
     score,
-    matched_keywords: [...matchedKeywords].sort()
+    matched_keywords: [...matchedKeywords].sort(),
+    matched_query_tokens: matchedQueryTokens
   };
+}
+
+function hasStrongQueryMatch(score, tokens) {
+  return hasStrongMatchedToken(tokens, score.matched_query_tokens);
 }
 
 function resultRecord(record, score) {
@@ -99,7 +145,7 @@ export function rankSearchRecords(records, query, limit = DEFAULT_LIMIT) {
 
   return (records || [])
     .map(record => ({ record, score: scoreRecord(record, query, tokens) }))
-    .filter(result => result.score.score > 0)
+    .filter(result => result.score.score > 0 && hasStrongQueryMatch(result.score, tokens))
     .sort((a, b) =>
       b.score.score - a.score.score
       || (b.record.claim_count || 0) - (a.record.claim_count || 0)
