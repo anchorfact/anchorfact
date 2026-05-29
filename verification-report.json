@@ -27697,62 +27697,53 @@
       "file": "content/computer-science/jwt.md",
       "article_id": "kb-2026-00076",
       "generation_method": "ai_structured",
-      "sources_total": 3,
+      "sources_total": 2,
       "verification_results": [
         {
-          "source_title": "RFC 7519 — JSON Web Token (JWT)",
-          "source_type": "standard",
+          "source_title": "RFC 7519: JSON Web Token (JWT)",
+          "source_type": "rfc",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.rfc-editor.org/rfc/rfc7519",
-              "verified": false,
+              "identifier": "https://www.rfc-editor.org/rfc/rfc7519.txt",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://www.rfc-editor.org/rfc/rfc7519"
+                "status": 200,
+                "final_url": "https://www.rfc-editor.org/rfc/rfc7519.txt",
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair and public promotion; RFC text URL verified directly; local verify-full was not run."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "API Security in Action (2025 Edition)",
-          "source_type": "book",
+          "source_title": "RFC 8725: JSON Web Token Best Current Practices",
+          "source_type": "rfc",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.manning.com/api-security/",
-              "verified": false,
+              "identifier": "https://www.rfc-editor.org/rfc/rfc8725.txt",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://www.manning.com/api-security/"
+                "status": 200,
+                "final_url": "https://www.rfc-editor.org/rfc/rfc8725.txt",
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair and public promotion; RFC text URL verified directly; local verify-full was not run."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
-        },
-        {
-          "source_title": "OAuth 2.1 and JWT: The Modern Authentication Stack (2025)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.oreilly.com/oauth/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.oreilly.com/oauth/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 3
+      "sources_verified": 2,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-30"
     },
     {
       "file": "content/computer-science/kotlin.md",
@@ -29658,59 +29649,70 @@
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "RFC 6749 — The OAuth 2.0 Authorization Framework",
-          "source_type": "standard",
+          "source_title": "RFC 6749: The OAuth 2.0 Authorization Framework",
+          "source_type": "rfc",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.rfc-editor.org/rfc/rfc6749",
-              "verified": false,
+              "identifier": "https://www.rfc-editor.org/rfc/rfc6749.txt",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://www.rfc-editor.org/rfc/rfc6749"
+                "status": 200,
+                "final_url": "https://www.rfc-editor.org/rfc/rfc6749.txt",
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair and public promotion; RFC text URL verified directly; local verify-full was not run."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "OAuth 2.1 and OpenID Connect: The Modern Identity Stack (2025)",
-          "source_type": "book",
+          "source_title": "RFC 7636: Proof Key for Code Exchange by OAuth Public Clients",
+          "source_type": "rfc",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.oreilly.com/oauth/",
-              "verified": false,
+              "identifier": "https://www.rfc-editor.org/rfc/rfc7636.txt",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://www.oreilly.com/oauth/"
+                "status": 200,
+                "final_url": "https://www.rfc-editor.org/rfc/rfc7636.txt",
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair and public promotion; RFC text URL verified directly; local verify-full was not run."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Authentication and Authorization in Distributed Systems (2025 Survey)",
-          "source_type": "survey_paper",
+          "source_title": "RFC 9700: Best Current Practice for OAuth 2.0 Security",
+          "source_type": "rfc",
           "results": [
             {
               "method": "url",
-              "identifier": "https://doi.org/10.1145/acmcs.2025.auth",
-              "verified": false,
+              "identifier": "https://www.rfc-editor.org/rfc/rfc9700.txt",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.auth"
+                "status": 200,
+                "final_url": "https://www.rfc-editor.org/rfc/rfc9700.txt",
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft repair and public promotion; RFC text URL verified directly; local verify-full was not run."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 3
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-30"
     },
     {
       "file": "content/computer-science/object-oriented-programming-oop.md",

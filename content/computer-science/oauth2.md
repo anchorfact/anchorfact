@@ -4,111 +4,84 @@ title: OAuth 2.0
 schema_type: TechArticle
 category: computer-science
 language: en
-confidence: high
-last_verified: "2026-05-24"
+confidence: medium
+last_verified: "2026-05-30"
 created_date: "2026-05-22"
 generation_method: ai_structured
 derived_from_human_seed: true
 conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
+completeness: 0.84
 atomic_facts:
-  - id: fact-computer-science-01
-    statement: OAuth 2.0 is an authorization framework standardized as IETF RFC 6749 that enables third-party applications to obtain limited access to a user's resources without exposing their credentials
-    source_title: RFC 6749 — The OAuth 2.0 Authorization Framework
-    source_url: https://www.rfc-editor.org/rfc/rfc6749
+  - id: fact-computer-science-oauth2-001
+    statement: "RFC 6749 defines OAuth 2.0 as an authorization framework that enables a third-party application to obtain limited access to an HTTP service."
+    source_title: "RFC 6749: The OAuth 2.0 Authorization Framework"
+    source_url: "https://www.rfc-editor.org/rfc/rfc6749.txt"
     confidence: medium
-  - id: fact-computer-science-001
-    statement: >-
-      OAuth 2.0 is an authorization framework standardized as IETF RFC 6749 (2012) that enables third-party applications to obtain limited access to a user's resources without exposing their
-      credentials. It powers virtually all "Sign in with Google/GitHub/Apple" flows and is the foundation of modern API security.
-    source_title: RFC 6749 — The OAuth 2.0 Authorization Framework
-    source_url: https://www.rfc-editor.org/rfc/rfc6749
+  - id: fact-computer-science-oauth2-002
+    statement: "RFC 7636 specifies Proof Key for Code Exchange (PKCE) as an OAuth extension for public clients using the authorization code grant."
+    source_title: "RFC 7636: Proof Key for Code Exchange by OAuth Public Clients"
+    source_url: "https://www.rfc-editor.org/rfc/rfc7636.txt"
     confidence: medium
-completeness: 0.88
+  - id: fact-computer-science-oauth2-003
+    statement: "RFC 9700 describes best current security practice for OAuth 2.0 and covers threats and lessons learned since the original OAuth 2.0 specifications were published."
+    source_title: "RFC 9700: Best Current Practice for OAuth 2.0 Security"
+    source_url: "https://www.rfc-editor.org/rfc/rfc9700.txt"
+    confidence: medium
 known_gaps:
-  - Statistics and data cited are from 2017 and earlier; more recent data may have become available since publication
-  - This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances
-  - Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed
-  - Recent developments from 2025-2026 may not be reflected
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
+  - "This article focuses on protocol boundaries and security guidance, not provider-specific login button behavior."
+  - "OpenID Connect identity-layer details are related but outside this compact OAuth 2.0 entry."
+disputed_statements: []
 primary_sources:
-  - title: RFC 6749 — The OAuth 2.0 Authorization Framework
+  - title: "RFC 6749: The OAuth 2.0 Authorization Framework"
     authors:
       - Hardt, D.
-    type: standard
+    type: rfc
     year: 2012
-    url: https://www.rfc-editor.org/rfc/rfc6749
+    url: "https://www.rfc-editor.org/rfc/rfc6749.txt"
     institution: IETF
-  - title: "OAuth 2.1 and OpenID Connect: The Modern Identity Stack (2025)"
-    type: book
+  - title: "RFC 7636: Proof Key for Code Exchange by OAuth Public Clients"
+    authors:
+      - Sakimura, N.
+      - Bradley, J.
+      - Agarwal, N.
+    type: rfc
+    year: 2015
+    url: "https://www.rfc-editor.org/rfc/rfc7636.txt"
+    institution: IETF
+  - title: "RFC 9700: Best Current Practice for OAuth 2.0 Security"
+    authors:
+      - Lodderstedt, T.
+      - Bradley, J.
+      - Labunets, A.
+      - Fett, D.
+    type: rfc
     year: 2025
-    authors:
-      - multiple
-    institution: O'Reilly Media
-    url: https://www.oreilly.com/oauth/
-  - title: Authentication and Authorization in Distributed Systems (2025 Survey)
-    type: survey_paper
-    year: 2025
-    authors:
-      - multiple
-    institution: ACM Computing Surveys
-    url: https://doi.org/10.1145/acmcs.2025.auth
-secondary_sources:
-  - title: OAuth 2 in Action
-    authors:
-      - Richer
-      - Sanso
-    type: book
-    year: 2017
-    url: https://www.manning.com/books/oauth-2-in-action
-    institution: Manning
-  - title: The C Programming Language (K&R, 2nd Ed)
-    type: textbook
-    year: 1988
-    url: https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html
-    institution: Prentice Hall
-  - title: Structure and Interpretation of Computer Programs (SICP)
-    type: textbook
-    year: 1996
-    url: https://mitpress.mit.edu/sites/default/files/sicp/
-    institution: MIT Press
-  - title: "OAuth 2.1 and Beyond: Evolution of Authorization Frameworks (2025 Survey)"
-    type: survey_paper
-    year: 2025
-    authors:
-      - multiple
-    institution: ACM Computing Surveys
-    url: https://doi.org/10.1145/acmcs.2025.oauth
-  - title: "Zero Trust Authentication: Patterns and Anti-Patterns in 2025"
-    type: article
-    year: 2025
-    authors:
-      - multiple
-    institution: IEEE Security & Privacy
-    url: https://doi.org/10.1109/msp.2025.zerotrust
+    url: "https://www.rfc-editor.org/rfc/rfc9700.txt"
+    institution: IETF
+secondary_sources: []
 ---
+
 ## TL;DR
 
-OAuth 2.0 is an authorization framework standardized as IETF RFC 6749 (2012) that enables third-party applications to obtain limited access to a user's resources without exposing their credentials. It powers virtually all "Sign in with Google/GitHub/Apple" flows and is the foundation of modern API security.
+OAuth 2.0 is an authorization framework for delegated, limited access to HTTP services. It is not the same thing as authentication by itself; identity flows usually add OpenID Connect on top. For modern deployments, PKCE and the OAuth 2.0 security best current practice are central to using the framework safely.
 
-## Core Grant Types
+## Core Explanation
 
-| Grant Type | Use Case |
-|-----------|----------|
-| **Authorization Code + PKCE** | Web/mobile apps (most common, most secure) |
-| **Client Credentials** | Server-to-server, no user involved |
-| **Device Code** | Input-constrained devices (TV, IoT) |
-| **Refresh Token** | Obtain new access token without re-authentication |
+RFC 6749 separates the resource owner, client, authorization server, and resource server. Instead of handing a password to a third-party client, the resource owner authorizes limited access and the client receives an access token for a defined scope or context.
+
+PKCE, standardized in RFC 7636, adds a proof step to the authorization code flow for public clients. The client sends a code challenge during authorization and later proves possession of the original verifier when redeeming the authorization code.
+
+RFC 9700 updates the security posture for OAuth 2.0 deployments. It documents newer attack classes and lessons learned from broad adoption, making clear that real systems must validate redirect behavior, token audience, client assumptions, and authorization server metadata rather than treating OAuth as a single turnkey login feature.
 
 ## Further Reading
 
-- [RFC 6749](https://www.rfc-editor.org/rfc/rfc6749): OAuth 2.0 specification
-- [OAuth 2.1 Draft](https://datatracker.ietf.org/doc/draft-ietf-oauth-v2-1/): Consolidation and security best practices
+- [RFC 6749: The OAuth 2.0 Authorization Framework](https://www.rfc-editor.org/rfc/rfc6749.txt)
+- [RFC 7636: Proof Key for Code Exchange by OAuth Public Clients](https://www.rfc-editor.org/rfc/rfc7636.txt)
+- [RFC 9700: Best Current Practice for OAuth 2.0 Security](https://www.rfc-editor.org/rfc/rfc9700.txt)
 
 ## Related Articles
 
 - [OAuth 2.0: Authorization Framework and Security Best Practices](../oauth-2-0-authorization-framework-and-security-best-practices.md)
+- [JWT (JSON Web Token)](../jwt.md)
