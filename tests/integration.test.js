@@ -115,6 +115,7 @@ test('public machine entrypoints exclude drafts', () => {
   assertEq(agent.endpoints.search_api.path, '/api/search?q={query}');
   assertEq(agent.endpoints.article_api.path, '/api/article?slug={canonical_slug}');
   assertEq(agent.endpoints.claim_api.path, '/api/claim?id={claim_id}');
+  assertEq(agent.endpoints.source_api.path, '/api/source?id={source_id}');
   assertEq(agent.endpoints.manifest.url, 'https://anchorfact.org/manifest.json');
   assertEq(agent.endpoints.search_index.url, 'https://anchorfact.org/search-index.json');
   assertEq(agent.endpoints.sources.url, 'https://anchorfact.org/sources.json');
@@ -123,6 +124,7 @@ test('public machine entrypoints exclude drafts', () => {
   assert(openapi.paths['/api/search'], 'OpenAPI should expose search API endpoint');
   assert(openapi.paths['/api/article'], 'OpenAPI should expose article API endpoint');
   assert(openapi.paths['/api/claim'], 'OpenAPI should expose claim API endpoint');
+  assert(openapi.paths['/api/source'], 'OpenAPI should expose source API endpoint');
   assert(openapi.paths['/search-index.json'], 'OpenAPI should expose search index endpoint');
   assertEq(search.article_count, 1);
   assert(search.records.some(record => record.canonical_slug === 'ai/public-fixture'), 'search index should link to public article');

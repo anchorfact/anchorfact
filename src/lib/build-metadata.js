@@ -12,6 +12,7 @@ export const SEARCH_INDEX_SCHEMA_VERSION = 'anchorfact.search-index.v1';
 export const SEARCH_API_SCHEMA_VERSION = 'anchorfact.search-api.v1';
 export const ARTICLE_API_SCHEMA_VERSION = 'anchorfact.article-api.v1';
 export const CLAIM_API_SCHEMA_VERSION = 'anchorfact.claim-api.v1';
+export const SOURCE_API_SCHEMA_VERSION = 'anchorfact.source-api.v1';
 export const OPENAPI_SCHEMA_VERSION = 'anchorfact.openapi.v1';
 export const OFFICIAL_SOURCE_REPOSITORY = 'https://github.com/anchorfact/anchorfact';
 export const OFFICIAL_SITE = 'https://anchorfact.org';

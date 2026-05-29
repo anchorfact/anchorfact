@@ -11,6 +11,7 @@ import {
   PROVENANCE_SCHEMA_VERSION,
   SEARCH_API_SCHEMA_VERSION,
   SEARCH_INDEX_SCHEMA_VERSION,
+  SOURCE_API_SCHEMA_VERSION,
   SOURCES_SCHEMA_VERSION,
   publicUrl
 } from './build-metadata.js';
@@ -148,6 +149,32 @@ export function buildOpenApiContract({
           }
         }
       },
+      '/api/source': {
+        get: {
+          summary: 'Read-only public source lookup',
+          parameters: [
+            {
+              name: 'id',
+              in: 'query',
+              required: false,
+              schema: { type: 'string' },
+              description: 'Source id from /sources.json, /api/article, or /api/claim, such as source:58200638706697c4.'
+            },
+            {
+              name: 'url',
+              in: 'query',
+              required: false,
+              schema: { type: 'string', format: 'uri' },
+              description: 'Original source URL. Either id or url is required.'
+            }
+          ],
+          responses: {
+            200: jsonResponse('SourceApiResponse'),
+            400: jsonResponse('ApiError'),
+            404: jsonResponse('ApiError')
+          }
+        }
+      },
       '/search-index.json': getJson('Compact public retrieval index', 'SearchIndex'),
       '/sources.json': getJson('Deduplicated public source index', 'Sources'),
       '/provenance.json': getJson('Signed build provenance and artifact hashes', 'Provenance'),
@@ -252,6 +279,13 @@ export function buildOpenApiContract({
           article: { type: 'object' },
           source_count: { type: 'integer' },
           sources: { type: 'array', items: { type: 'object' } }
+        }),
+        SourceApiResponse: schemaVersioned('Source API response', SOURCE_API_SCHEMA_VERSION, {
+          source_id: { type: 'string' },
+          source_url: { type: ['string', 'null'], format: 'uri' },
+          source: { type: 'object' },
+          claim_count: { type: 'integer' },
+          claims: { type: 'array', items: { type: 'object' } }
         }),
         ApiError: {
           type: 'object',

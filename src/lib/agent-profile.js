@@ -10,6 +10,7 @@ import {
   PROVENANCE_SCHEMA_VERSION,
   SEARCH_API_SCHEMA_VERSION,
   SEARCH_INDEX_SCHEMA_VERSION,
+  SOURCE_API_SCHEMA_VERSION,
   SOURCES_SCHEMA_VERSION,
   publicUrl
 } from './build-metadata.js';
@@ -61,6 +62,7 @@ export function buildAgentProfile({
       openapi: OPENAPI_SCHEMA_VERSION,
       article_api: ARTICLE_API_SCHEMA_VERSION,
       claim_api: CLAIM_API_SCHEMA_VERSION,
+      source_api: SOURCE_API_SCHEMA_VERSION,
       claims: CLAIMS_SCHEMA_VERSION,
       search_api: SEARCH_API_SCHEMA_VERSION,
       search_index: SEARCH_INDEX_SCHEMA_VERSION,
@@ -74,6 +76,7 @@ export function buildAgentProfile({
       'Use /api/search?q={query} for lightweight public record lookup when a live HTTP call is available.',
       'Use /api/article?slug={canonical_slug} to fetch a public article evidence bundle with claims and sources.',
       'Use /api/claim?id={claim_id} to dereference one public atomic claim with its article and matching source.',
+      'Use /api/source?id={source_id} or /api/source?url={source_url} to inspect a public source and mapped claims.',
       'Fetch /search-index.json to shortlist public records by title, keywords, claims, source coverage, and route templates.',
       'Fetch /manifest.json to select public articles by canonical_slug, status, confidence_level, and source coverage.',
       'Fetch /sources.json to inspect source tier, source type, article reuse, and claim reuse.',
@@ -91,6 +94,7 @@ export function buildAgentProfile({
       search_api: endpoint('/api/search?q={query}', 'Read-only search API backed by the signed static search index.'),
       article_api: endpoint('/api/article?slug={canonical_slug}', 'Read-only public article evidence bundle with claims, sources, and retrieval metadata.'),
       claim_api: endpoint('/api/claim?id={claim_id}', 'Read-only public atomic claim lookup with article and matching source metadata.'),
+      source_api: endpoint('/api/source?id={source_id}', 'Read-only public source lookup with reuse and mapped claim metadata.'),
       search_index: endpoint('/search-index.json', 'Compact public retrieval index with keywords, claim ids, source coverage, and article routes.'),
       sources: endpoint('/sources.json', 'Deduplicated public source index with tier, type, article reuse, and claim reuse.'),
       provenance: endpoint('/provenance.json', 'Build identity, official-site metadata, content counts, and artifact checksums.'),
