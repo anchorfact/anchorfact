@@ -5,7 +5,7 @@ import {
   renderIntegrityMarkdown,
   runProductionIntegrity
 } from '../scripts/production-integrity.js';
-import { fetchRoute } from '../src/smoke-production.js';
+import { exampleWorkflowRoutes, fetchRoute } from '../src/smoke-production.js';
 
 let passed = 0, failed = 0;
 const tests = [];
@@ -159,6 +159,25 @@ test('production smoke fetches routes with CI-friendly live headers', async () =
   assert(calls[0].options.redirect === 'follow', 'smoke fetch should follow redirects');
   assert(calls[0].options.headers['User-Agent'].includes('Mozilla/5.0'), 'smoke fetch should send a browser-compatible user agent');
   assert(calls[0].options.headers.Accept.includes('application/json'), 'smoke fetch should accept JSON');
+});
+
+test('production smoke can extract safe executable example workflow routes', () => {
+  const routes = exampleWorkflowRoutes({
+    examples: [
+      {
+        workflow: [
+          { call: { method: 'GET', path: '/api/search?q=gaussian&limit=3' } },
+          { call: { method: 'GET', path: '/api/search?q=gaussian&limit=3' } },
+          { call: { method: 'POST', path: '/api/search?q=ignored' } },
+          { call: { method: 'GET', path: 'https://example.com/external' } },
+          { call: { method: 'GET', path: '/../unsafe' } },
+          { call: { method: 'GET', path: '/examples.json' } }
+        ]
+      }
+    ]
+  });
+
+  assertEq(routes, ['/api/search?q=gaussian&limit=3', '/examples.json']);
 });
 
 for (const { name, fn } of tests) {

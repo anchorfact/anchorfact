@@ -73,6 +73,31 @@ function headerIncludes(result, name, expected, failures) {
   assertOk(actual.toLowerCase().includes(expected.toLowerCase()), `${result.route} header ${name} expected to include ${expected}, got ${actual || '(missing)'}`, failures);
 }
 
+function isSafeExampleRoute(path) {
+  const pathname = typeof path === 'string' ? path.split(/[?#]/)[0] : '';
+  return typeof path === 'string'
+    && path.startsWith('/')
+    && !path.startsWith('//')
+    && !path.includes('\\')
+    && !pathname.split('/').includes('..');
+}
+
+export function exampleWorkflowRoutes(examplesPayload, limit = 24) {
+  const routes = [];
+  for (const example of examplesPayload?.examples || []) {
+    for (const step of example.workflow || []) {
+      const method = step.call?.method || 'GET';
+      const path = step.call?.path;
+      if (method !== 'GET' || !isSafeExampleRoute(path) || routes.includes(path)) {
+        continue;
+      }
+      routes.push(path);
+      if (routes.length >= limit) return routes;
+    }
+  }
+  return routes;
+}
+
 export async function main() {
   const baseUrl = new URL(process.argv[2] || process.env.ANCHORFACT_BASE_URL || DEFAULT_BASE_URL);
   const failures = [];
@@ -105,6 +130,14 @@ export async function main() {
   const provenance = JSON.parse(results['/provenance.json'].body);
   const llmsText = results['/llms.txt'].body;
   const draftsHtml = results['/drafts.html'].body;
+  const exampleRoutes = exampleWorkflowRoutes(examples);
+  assertOk(exampleRoutes.length >= 4, '/examples.json exposes too few executable workflow calls', failures);
+  for (const route of exampleRoutes) {
+    if (!results[route]) {
+      results[route] = await fetchRoute(baseUrl, route);
+    }
+    assertOk(results[route].status === 200, `example workflow route ${route} returned ${results[route].status}`, failures);
+  }
 
   const publicArticles = countArticles(
     manifest.articles,
