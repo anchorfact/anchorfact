@@ -194,6 +194,9 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
   assertEq(healthEval.expected.schema_version, 'anchorfact.content-health.v1');
   assertEq(healthEval.expected.machine_guidance_contains, '/api/context');
   assertEq(healthEval.expected.trust_boundary, 'draft_entries_excluded_from_ai_entrypoints');
+  assertEq(healthEval.expected.min_repair_queue_candidates, 1);
+  assertEq(healthEval.expected.min_repair_queue_next_batch, 1);
+  assertEq(healthEval.expected.repair_queue_policy_contains, 'repair_complexity');
 
   const provenanceEval = payload.evals.find(evalCase => evalCase.id === 'signed_provenance_static_artifacts');
   assert(provenanceEval.expected.required_artifacts.includes('evals_json'), 'provenance eval should require evals artifact hash');

@@ -114,6 +114,22 @@ function evaluateJsonExpected(payload, expected, failures) {
     const count = payload?.snapshot?.public_claims ?? payload?.public_claim_count ?? 0;
     check(count >= expected.min_public_claims, failures, `public claim count expected at least ${expected.min_public_claims}, got ${count}`);
   }
+  if (expected.min_repair_queue_candidates !== undefined) {
+    const count = payload?.draft?.repair_queue?.candidate_count ?? 0;
+    check(count >= expected.min_repair_queue_candidates, failures, `draft repair queue candidate count expected at least ${expected.min_repair_queue_candidates}, got ${count}`);
+  }
+  if (expected.min_repair_queue_next_batch !== undefined) {
+    const count = Array.isArray(payload?.draft?.repair_queue?.next_batch)
+      ? payload.draft.repair_queue.next_batch.length
+      : 0;
+    check(count >= expected.min_repair_queue_next_batch, failures, `draft repair queue next batch expected at least ${expected.min_repair_queue_next_batch}, got ${count}`);
+  }
+  if (expected.repair_queue_policy_contains) {
+    const policy = Array.isArray(payload?.draft?.repair_queue?.selection_policy)
+      ? payload.draft.repair_queue.selection_policy.join(' ')
+      : '';
+    check(policy.includes(expected.repair_queue_policy_contains), failures, `draft repair queue selection_policy should include ${expected.repair_queue_policy_contains}`);
+  }
   if (expected.min_content_health_public_articles !== undefined) {
     const count = payload?.content_health?.snapshot?.public_articles ?? 0;
     check(count >= expected.min_content_health_public_articles, failures, `context content health public article count expected at least ${expected.min_content_health_public_articles}, got ${count}`);

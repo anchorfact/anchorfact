@@ -137,7 +137,10 @@ test('runAiEvals executes JSON, Markdown, MCP, and provenance eval expectations'
               min_public_articles: 1,
               min_public_claims: 1,
               machine_guidance_contains: '/api/context',
-              trust_boundary: 'draft_entries_excluded_from_ai_entrypoints'
+              trust_boundary: 'draft_entries_excluded_from_ai_entrypoints',
+              min_repair_queue_candidates: 1,
+              min_repair_queue_next_batch: 1,
+              repair_queue_policy_contains: 'repair_complexity'
             }
           },
           {
@@ -194,6 +197,13 @@ test('runAiEvals executes JSON, Markdown, MCP, and provenance eval expectations'
       '/content-health.json': jsonResponse({
         schema_version: 'anchorfact.content-health.v1',
         snapshot: { public_articles: 555, public_claims: 1685 },
+        draft: {
+          repair_queue: {
+            candidate_count: 1,
+            next_batch: [{ canonical_slug: 'ai/draft-a' }],
+            selection_policy: ['Prioritize lower repair_complexity values first.']
+          }
+        },
         machine_guidance: ['Use /api/context?q={query} for prompt assembly.'],
         trust_boundaries: { draft_entries_excluded_from_ai_entrypoints: true }
       }),
@@ -252,6 +262,18 @@ test('runAiEvals reports expectation failures', async () => {
               schema_version: 'anchorfact.evidence-api.v1',
               result_count: 0
             }
+          },
+          {
+            id: 'content_health_summary',
+            call: { method: 'GET', path: '/content-health.json' },
+            expected: {
+              status: 200,
+              content_type: 'application/json',
+              schema_version: 'anchorfact.content-health.v1',
+              min_repair_queue_candidates: 1,
+              min_repair_queue_next_batch: 1,
+              repair_queue_policy_contains: 'repair_complexity'
+            }
           }
         ]
       }),
@@ -266,15 +288,26 @@ test('runAiEvals reports expectation failures', async () => {
       '/api/evidence?q=lunar+dentistry&limit=3': jsonResponse({
         schema_version: 'anchorfact.evidence-api.v1',
         result_count: 1
+      }),
+      '/content-health.json': jsonResponse({
+        schema_version: 'anchorfact.content-health.v1',
+        draft: {
+          repair_queue: {
+            candidate_count: 0,
+            next_batch: [],
+            selection_policy: ['No stable policy yet.']
+          }
+        }
       })
     })
   });
 
   assertEq(report.ok, false);
-  assertEq(report.failed, 3);
+  assertEq(report.failed, 4);
   assert(report.results[0].failures.some(failure => failure.includes('anchorfact_plan_query')), 'missing tool should be reported');
   assert(report.results[1].failures.some(failure => failure.includes('external primary')), 'fallback guidance mismatch should be reported');
   assert(report.results[2].failures.some(failure => failure.includes('result_count')), 'result_count mismatch should be reported');
+  assert(report.results[3].failures.some(failure => failure.includes('repair queue')), 'repair queue mismatch should be reported');
 });
 
 for (const { name, fn } of tests) {

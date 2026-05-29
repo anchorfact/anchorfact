@@ -305,6 +305,16 @@ export async function main() {
     'content-health source coverage buckets do not sum to public article count',
     failures,
   );
+  const repairQueue = contentHealth.draft?.repair_queue || {};
+  assertOk(Number.isInteger(repairQueue.candidate_count) && repairQueue.candidate_count >= 0, 'content-health repair queue candidate count is missing', failures);
+  assertOk(Array.isArray(repairQueue.next_batch), 'content-health repair queue next batch is missing', failures);
+  assertOk(repairQueue.next_batch.length === Math.min(5, repairQueue.candidate_count), 'content-health repair queue next batch size does not match candidate count', failures);
+  assertOk(
+    Array.isArray(repairQueue.selection_policy)
+      && repairQueue.selection_policy.some(policy => String(policy).includes('repair_complexity')),
+    'content-health repair queue selection policy is missing priority guidance',
+    failures,
+  );
   assertOk(contentHealth.trust_boundaries?.draft_entries_excluded_from_ai_entrypoints === true, 'content-health trust boundary does not exclude draft entries from AI entrypoints', failures);
   assertOk(Array.isArray(contentHealth.machine_guidance) && contentHealth.machine_guidance.some(guidance => String(guidance).includes('/api/context')), 'content-health machine guidance does not advertise /api/context', failures);
   assertOk(coverage.schema_version === 'anchorfact.coverage.v1', `coverage schema_version expected anchorfact.coverage.v1, got ${coverage.schema_version || '(missing)'}`, failures);

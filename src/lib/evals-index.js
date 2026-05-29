@@ -353,7 +353,10 @@ export function buildEvalsIndex({
         min_public_articles: Math.max(1, searchIndexPayload?.article_count || 0),
         min_public_claims: Math.max(1, claimsPayload?.claim_count || 0),
         machine_guidance_contains: '/api/context',
-        trust_boundary: 'draft_entries_excluded_from_ai_entrypoints'
+        trust_boundary: 'draft_entries_excluded_from_ai_entrypoints',
+        min_repair_queue_candidates: 1,
+        min_repair_queue_next_batch: 1,
+        repair_queue_policy_contains: 'repair_complexity'
       }
     },
     {
