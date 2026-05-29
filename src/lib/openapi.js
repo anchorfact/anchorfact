@@ -7,6 +7,7 @@ import {
   OPENAPI_SCHEMA_VERSION,
   PROVENANCE_PATH,
   PROVENANCE_SCHEMA_VERSION,
+  SEARCH_API_SCHEMA_VERSION,
   SEARCH_INDEX_SCHEMA_VERSION,
   SOURCES_SCHEMA_VERSION,
   publicUrl
@@ -85,6 +86,28 @@ export function buildOpenApiContract({
       '/openapi.json': getJson('This OpenAPI machine contract', 'OpenApiContract'),
       '/manifest.json': getJson('Public and draft article manifest', 'Manifest'),
       '/claims.json': getJson('Public verified atomic claims', 'Claims'),
+      '/api/search': {
+        get: {
+          summary: 'Read-only search over public AnchorFact records',
+          parameters: [
+            {
+              name: 'q',
+              in: 'query',
+              required: true,
+              schema: { type: 'string', minLength: 1 },
+              description: 'Natural-language query.'
+            },
+            {
+              name: 'limit',
+              in: 'query',
+              required: false,
+              schema: { type: 'integer', minimum: 1, maximum: 20, default: 5 },
+              description: 'Maximum result count.'
+            }
+          ],
+          responses: { 200: jsonResponse('SearchApiResponse') }
+        }
+      },
       '/search-index.json': getJson('Compact public retrieval index', 'SearchIndex'),
       '/sources.json': getJson('Deduplicated public source index', 'Sources'),
       '/provenance.json': getJson('Signed build provenance and artifact hashes', 'Provenance'),
@@ -165,6 +188,13 @@ export function buildOpenApiContract({
           article_count: { type: 'integer' },
           public_claim_count: { type: 'integer' },
           records: { type: 'array', items: { type: 'object' } }
+        }),
+        SearchApiResponse: schemaVersioned('Search API response', SEARCH_API_SCHEMA_VERSION, {
+          query: { type: 'string' },
+          limit: { type: 'integer' },
+          result_count: { type: 'integer' },
+          source_index_generated: { type: ['string', 'null'], format: 'date-time' },
+          results: { type: 'array', items: { type: 'object' } }
         }),
         Sources: schemaVersioned('Sources', SOURCES_SCHEMA_VERSION, {
           source_count: { type: 'integer' },

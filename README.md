@@ -87,7 +87,7 @@ npm run verify:provenance
 npm run verify:provenance:signed
 ```
 
-The smoke test checks the homepage, `/agent.json`, `/openapi.json`, `/manifest.json`, `/llms.txt`, `/claims.json`, `/search-index.json`, `/sources.json`, `/provenance.json`, and `/drafts.html` against the live `https://anchorfact.org` deployment. Omit the expected-count environment variables when checking a future snapshot with different counts.
+The smoke test checks the homepage, `/agent.json`, `/openapi.json`, `/manifest.json`, `/llms.txt`, `/claims.json`, `/api/search`, `/search-index.json`, `/sources.json`, `/provenance.json`, and `/drafts.html` against the live `https://anchorfact.org` deployment. Omit the expected-count environment variables when checking a future snapshot with different counts.
 
 The provenance verifier fetches `/provenance.json`, recomputes SHA-256 checksums for the core AI entrypoints, checks public/draft/claim counts, confirms official build identity, and verifies the source commit against GitHub.
 
@@ -135,6 +135,7 @@ Only public articles contribute publishable facts to `/claims.json`.
 | `/llms.txt` | Public verified index for LLM crawlers. |
 | `/manifest.json` | Full public/draft index with quality reasons and verification metadata. |
 | `/claims.json` | Public verified atomic claims with evidence links. |
+| `/api/search?q=...` | Read-only Cloudflare Pages Function for lightweight public record lookup. |
 | `/search-index.json` | Compact public retrieval index with keywords, claim ids, source coverage, and article routes. |
 | `/sources.json` | Deduplicated public source index with source tier, type, article reuse, and claim reuse. |
 | `/provenance.json` | Build identity, schema version, content counts, and artifact checksums. |

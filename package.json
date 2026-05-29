@@ -19,7 +19,7 @@
     "audit-public-full": "node scripts/check-public-audit.js",
     "content:health": "node scripts/content-health-report.js",
     "repo:hygiene": "node scripts/check-repo-hygiene.js",
-    "test": "node tests/confidence.test.js && node tests/article-quality.test.js && node tests/build-metadata.test.js && node tests/provenance-signature.test.js && node tests/provenance-verify.test.js && node tests/production-integrity.test.js && node tests/compile.test.js && node tests/integration.test.js && node tests/mcp-index.test.js && node tests/public-audit.test.js && node tests/content-health-report.test.js && node tests/quality-gate.test.js && node tests/verification-cache.test.js && npm run repo:hygiene",
+    "test": "node tests/confidence.test.js && node tests/article-quality.test.js && node tests/build-metadata.test.js && node tests/provenance-signature.test.js && node tests/provenance-verify.test.js && node tests/production-integrity.test.js && node tests/search-api.test.js && node tests/compile.test.js && node tests/integration.test.js && node tests/mcp-index.test.js && node tests/public-audit.test.js && node tests/content-health-report.test.js && node tests/quality-gate.test.js && node tests/verification-cache.test.js && npm run repo:hygiene",
     "serve": "node src/serve.js",
     "deploy": "npm run pages:build && wrangler pages deploy dist",
     "monitor": "node scripts/monitor-sources.js --summary"
