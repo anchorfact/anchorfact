@@ -18,14 +18,29 @@ export const DEFAULT_PUBLIC_KEY_PATH = 'keys/provenance.pub.pem';
 export const DEFAULT_AFTER_SMOKE_DELAY_MS = 5000;
 export const DEFAULT_AI_EVAL_RETRY_DELAY_MS = 15000;
 export const DEFAULT_AI_EVAL_ATTEMPTS = 2;
-export const DEFAULT_EDGE_CACHE_STATIC_ARTIFACTS = [
+export const SIGNED_MACHINE_ARTIFACT_PATHS = [
   '/graph.json',
   '/search-index.json',
   '/claims.json',
-  '/agent.json'
+  '/agent.json',
+  '/openapi.json',
+  '/manifest.json',
+  '/topics.json',
+  '/capabilities.json',
+  '/content-health.json',
+  '/coverage.json',
+  '/examples.json',
+  '/evals.json',
+  '/mcp.json',
+  '/sources.json',
+  '/llms.txt',
+  '/provenance.json',
+  '/provenance.sig'
 ];
+export const DEFAULT_EDGE_CACHE_STATIC_ARTIFACTS = [];
 export const DEFAULT_EDGE_CACHE_DYNAMIC_CONTROLS = [
-  '/api/context?q=gaussian&limit=1'
+  '/api/context?q=gaussian&limit=1',
+  ...SIGNED_MACHINE_ARTIFACT_PATHS
 ];
 export const DEFAULT_INTEGRITY_EVAL_OPTIONS = {
   routeRetries: 4,

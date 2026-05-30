@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 import {
+  DEFAULT_EDGE_CACHE_DYNAMIC_CONTROLS,
   DEFAULT_EXPECTED_COUNTS,
   buildIntegrityReport,
   checkProductionEdgeCache,
@@ -236,6 +237,14 @@ test('checkProductionEdgeCache fails when an API control is edge cached', async 
   assertEq(result.dynamic_controls[0].cf_cache_status, 'HIT');
 });
 
+test('default edge cache controls keep signed provenance dynamic', () => {
+  assert(DEFAULT_EDGE_CACHE_DYNAMIC_CONTROLS.includes('/provenance.json'), 'provenance.json should not be edge cached');
+  assert(DEFAULT_EDGE_CACHE_DYNAMIC_CONTROLS.includes('/provenance.sig'), 'provenance.sig should not be edge cached');
+  assert(DEFAULT_EDGE_CACHE_DYNAMIC_CONTROLS.includes('/graph.json'), 'signed graph artifact should not be edge cached without versioned URLs');
+  assert(DEFAULT_EDGE_CACHE_DYNAMIC_CONTROLS.includes('/search-index.json'), 'signed search artifact should not be edge cached without versioned URLs');
+  assert(DEFAULT_EDGE_CACHE_DYNAMIC_CONTROLS.includes('/claims.json'), 'signed claims artifact should not be edge cached without versioned URLs');
+});
+
 test('runProductionIntegrity wires smoke and signed verifier dependencies', async () => {
   let smokeCalled = false;
   let evalCalled = false;
@@ -314,6 +323,7 @@ test('runProductionIntegrity retries transient AI eval suite failures once', asy
       }
       return { ok: true, eval_count: 1, passed: 1, failed: 0, failures: [], results: [] };
     },
+    edgeCacheChecker: async () => ({ ok: true, failures: [], static_artifacts: [], dynamic_controls: [] }),
     verifier: async () => provenanceResult()
   });
 

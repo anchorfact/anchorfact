@@ -121,7 +121,7 @@ npm run verify:provenance:signed
 
 ## Production Integrity Monitor
 
-The scheduled `Production Integrity` workflow runs daily and can also be started manually from GitHub Actions. It is read-only: it runs production smoke, executes AI evals, requires signed trusted provenance, confirms security response headers, artifact hashes and counts, verifies Cloudflare edge caching for machine-readable static artifacts while keeping API routes dynamic, and uploads a short integrity report artifact.
+The scheduled `Production Integrity` workflow runs daily and can also be started manually from GitHub Actions. It is read-only: it runs production smoke, executes AI evals, requires signed trusted provenance, confirms security response headers, artifact hashes and counts, verifies that signed machine artifacts and API routes stay dynamically revalidated at the Cloudflare edge, and uploads a short integrity report artifact.
 
 For the same local read-only check, run:
 
@@ -249,7 +249,7 @@ Public hygiene checks are shared by the compiler, quality gate, and audit script
 | `npm run mcp:check` | Verifies the built local MCP data contract, tool catalog, Python dependencies, planner, search, resolver, and citation helpers. |
 | `npm run verify:provenance` | Verifies live provenance identity, artifact checksums, counts, source commit, and optional signature. |
 | `npm run verify:provenance:signed` | Verifies live provenance with the pinned trusted public key. |
-| `npm run production:integrity` | Runs production smoke, AI evals, trusted signed provenance verification, and edge-cache checks, then emits an integrity report. |
+| `npm run production:integrity` | Runs production smoke, AI evals, trusted signed provenance verification, and edge cache-policy checks, then emits an integrity report. |
 | `npm run audit-public-sample` | Regenerates the 20-article public content audit report. |
 | `npm run audit-public-full` | Fails if any public article has an actionable audit recommendation. |
 | `npm run repo:hygiene` | Checks for stale root snapshots, mojibake, old launch metrics, and tracked generated files. |

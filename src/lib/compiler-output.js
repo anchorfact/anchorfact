@@ -373,12 +373,12 @@ function writeHeaders(distDir) {
 /provenance.json
   Access-Control-Allow-Origin: *
   Content-Type: application/json; charset=utf-8
-  Cache-Control: public, max-age=3600
+  Cache-Control: public, max-age=0, must-revalidate
 
 /provenance.sig
   Access-Control-Allow-Origin: *
   Content-Type: application/json; charset=utf-8
-  Cache-Control: public, max-age=3600
+  Cache-Control: public, max-age=0, must-revalidate
 
 /drafts
   X-Robots-Tag: noindex, nofollow

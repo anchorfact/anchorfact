@@ -592,7 +592,7 @@ export async function main() {
   headerIncludes(results['/search-index.json'], 'Access-Control-Allow-Origin', '*', failures);
   headerIncludes(results['/sources.json'], 'Access-Control-Allow-Origin', '*', failures);
   headerIncludes(results['/provenance.json'], 'Access-Control-Allow-Origin', '*', failures);
-  headerIncludes(results['/provenance.json'], 'Cache-Control', 'max-age=3600', failures);
+  headerIncludes(results['/provenance.json'], 'Cache-Control', 'max-age=0, must-revalidate', failures);
   headerIncludes(results['/drafts.html'], 'X-Robots-Tag', 'noindex', failures);
 
   const firstPublicArticle = Array.isArray(manifest.articles)
