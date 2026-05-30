@@ -388,7 +388,7 @@ def _high_stakes_personal_advice_intent(normalized: str) -> bool:
         normalized,
     ) is not None
     medical_domain = re.search(
-        r"\b(?:aspirin|chest pain|symptoms?|diagnos(?:e|is)|treat(?:ment)?|dosage|dose|medication|medicine|depression|anxiety|suicid(?:e|al)|cancer|doctor|hospital|pain|pregnan(?:t|cy)|infection|blood pressure)\b",
+        r"\b(?:aspirin|ibuprofen|acetaminophen|metformin|semaglutide|insulin|antibiotic|antibiotics|antidepressant|antidepressants|ssri|ssris|opioid|opioids|blood thinner|blood thinners|chest pain|symptoms?|diagnos(?:e|is)|treat(?:ment)?|dosage|dose|medication|medicine|prescription|depression|anxiety|suicid(?:e|al)|cancer|doctor|hospital|pain|pregnan(?:t|cy)|infection|blood pressure)\b",
         normalized,
     ) is not None
     legal_domain = re.search(

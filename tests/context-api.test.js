@@ -428,6 +428,15 @@ test('buildContextApiPayload suppresses lexical evidence for high-stakes persona
   assertEq(result.payload.citation_ready_claims, []);
   assert(result.payload.unsupported_intent_reasons.includes('high_stakes_personal_advice'), 'context should expose high-stakes unsupported reason');
   assert(result.payload.fallback_guidance.some(item => item.includes('professional')), 'context should send personal advice to professional sources');
+
+  const medicationChange = buildContextApiPayload(payloadArgs({ query: 'can I stop taking antidepressants' }));
+  assertEq(medicationChange.payload.coverage_status, 'unsupported');
+  assertEq(medicationChange.payload.should_use_anchorfact, false);
+  assertEq(medicationChange.payload.answer_policy.can_answer_with_anchorfact, false);
+  assertEq(medicationChange.payload.answer_policy.answer_mode, 'external_sources_required');
+  assertEq(medicationChange.payload.evidence_pack_count, 0);
+  assertEq(medicationChange.payload.citation_ready_claims, []);
+  assert(medicationChange.payload.unsupported_intent_reasons.includes('high_stakes_personal_advice'), 'medication change should expose high-stakes unsupported reason');
 });
 
 test('buildContextApiPayload suppresses lexical evidence for harmful operational requests', () => {
