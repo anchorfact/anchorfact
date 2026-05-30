@@ -217,7 +217,7 @@ test('agent profile describes the machine contract', () => {
   assertEq(agent.current_snapshot.examples, 7);
   assert(agent.current_snapshot.graph_nodes >= 1, 'agent profile should expose graph node count');
   assert(agent.current_snapshot.graph_edges >= 1, 'agent profile should expose graph edge count');
-  assertEq(agent.current_snapshot.evals, 39);
+  assertEq(agent.current_snapshot.evals, 40);
   assertEq(agent.current_snapshot.mcp_tools, 9);
   assert(agent.current_snapshot.unique_sources >= 1, 'agent profile should expose source count');
   assertEq(agent.endpoints.claims.url, 'https://anchorfact.org/claims.json');
@@ -472,7 +472,7 @@ test('evals.json describes executable AI integration checks', () => {
   const evals = JSON.parse(readFileSync(join(distDir, 'evals.json'), 'utf-8'));
   assertEq(evals.schema_version, 'anchorfact.evals.v1');
   assertEq(evals.provenance_url, 'https://anchorfact.org/provenance.json');
-  assertEq(evals.eval_count, 39);
+  assertEq(evals.eval_count, 40);
   assertEq(evals.evals.map(evalCase => evalCase.id), [
     'api_discovery',
     'openapi_context_contract',
@@ -498,6 +498,7 @@ test('evals.json describes executable AI integration checks', () => {
     'query_routing_public_speaking',
     'query_routing_sports_biomechanics',
     'agent_usage_anchorfact_citation_help',
+    'unsupported_medical_personal_advice',
     'unsupported_live_stock_price',
     'context_pack_json',
     'unsupported_query_evidence',
@@ -518,6 +519,7 @@ test('evals.json describes executable AI integration checks', () => {
   assert(evals.evals.some(evalCase => evalCase.id === 'openapi_context_contract'), 'evals should include OpenAPI context contract check');
   assert(evals.evals.some(evalCase => evalCase.id === 'ai_query_routing_rlhf'), 'evals should include high-intent AI query routing checks');
   assert(evals.evals.some(evalCase => evalCase.id === 'query_routing_climate_change'), 'evals should include cross-domain query routing checks');
+  assert(evals.evals.some(evalCase => evalCase.id === 'unsupported_medical_personal_advice'), 'evals should include high-stakes personal advice refusal checks');
   assert(evals.evals.some(evalCase => evalCase.call.path.includes('/api/plan?')), 'evals should include plan API checks');
   assert(evals.evals.some(evalCase => evalCase.call.path.includes('/api/evidence?')), 'evals should include evidence API checks');
   assert(evals.evals.some(evalCase => evalCase.call.path.includes('/api/context?')), 'evals should include context API checks');

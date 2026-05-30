@@ -45,6 +45,19 @@ const manifest = {
       title: 'Draft Only',
       status: 'draft',
       is_draft: true
+    },
+    {
+      id: 'article:health/medication-safety',
+      canonical_slug: 'health/medication-safety',
+      canonical_url: 'https://anchorfact.org/health/medication-safety/',
+      title: 'Medication Safety',
+      description: 'Educational medication safety reference.',
+      status: 'public',
+      is_draft: false,
+      confidence_level: 'medium',
+      confidence_score: 0.8,
+      sources_verified: 1,
+      sources_total: 1
     }
   ]
 };
@@ -68,6 +81,14 @@ const claimsPayload = {
       statement: 'Draft facts must not be returned.',
       confidence: 'low',
       source_url: 'https://example.com/draft'
+    },
+    {
+      id: 'https://anchorfact.org/fact/f6',
+      canonical_slug: 'health/medication-safety',
+      statement: 'Aspirin is an antiplatelet medication used in specific cardiovascular contexts.',
+      confidence: 'medium',
+      source_url: 'https://example.gov/aspirin',
+      source_title: 'Medication Safety Reference'
     }
   ]
 };
@@ -92,6 +113,14 @@ const sourcesPayload = {
       tier: 'C',
       url: 'https://example.com/draft',
       articles: [{ canonical_slug: 'ai/draft-only', title: 'Draft Only' }]
+    },
+    {
+      id: 'source:medication',
+      title: 'Medication Safety Reference',
+      type: 'government_reference',
+      tier: 'B',
+      url: 'https://example.gov/aspirin',
+      articles: [{ canonical_slug: 'health/medication-safety', title: 'Medication Safety' }]
     }
   ]
 };
@@ -123,6 +152,18 @@ const searchIndex = {
       claim_count: 1,
       keywords: ['draft', 'gaussian'],
       search_text: 'draft gaussian placeholder'
+    },
+    {
+      canonical_slug: 'health/medication-safety',
+      title: 'Medication Safety',
+      url: 'https://anchorfact.org/health/medication-safety/',
+      description: 'Educational medication safety reference.',
+      confidence_level: 'medium',
+      source_coverage: { verified: 1, total: 1, ratio: 1 },
+      claim_ids: ['https://anchorfact.org/fact/f6'],
+      claim_count: 1,
+      keywords: ['aspirin', 'medication', 'safety'],
+      search_text: 'aspirin medication safety chest pain symptoms treatment'
     }
   ]
 };
@@ -275,6 +316,20 @@ test('buildContextApiPayload suppresses lexical evidence for live unsupported in
   assertEq(result.payload.evidence_packs, []);
   assertEq(result.payload.citation_ready_claims, []);
   assert(result.payload.fallback_guidance.some(item => item.includes('current')), 'live query should explain current-source fallback');
+});
+
+test('buildContextApiPayload suppresses lexical evidence for high-stakes personal advice', () => {
+  const result = buildContextApiPayload(payloadArgs({ query: 'should I take aspirin for chest pain' }));
+
+  assertEq(result.payload.coverage_status, 'unsupported');
+  assertEq(result.payload.should_use_anchorfact, false);
+  assertEq(result.payload.answer_policy.can_answer_with_anchorfact, false);
+  assertEq(result.payload.answer_policy.answer_mode, 'external_sources_required');
+  assertEq(result.payload.evidence_pack_count, 0);
+  assertEq(result.payload.evidence_packs, []);
+  assertEq(result.payload.citation_ready_claims, []);
+  assert(result.payload.unsupported_intent_reasons.includes('high_stakes_personal_advice'), 'context should expose high-stakes unsupported reason');
+  assert(result.payload.fallback_guidance.some(item => item.includes('professional')), 'context should send personal advice to professional sources');
 });
 
 test('buildContextApiPayload gives API guidance for AnchorFact usage questions', () => {

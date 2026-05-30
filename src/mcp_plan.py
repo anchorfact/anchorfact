@@ -370,7 +370,33 @@ def _unsupported_intent_reasons(query: str) -> list[str]:
         or re.search(r"\b20(?:2[5-9]|[3-9]\d)\b", normalized)
     ):
         reasons.append("live_or_time_sensitive")
+    if _high_stakes_personal_advice_intent(normalized):
+        reasons.append("high_stakes_personal_advice")
     return list(dict.fromkeys(reasons))
+
+
+def _high_stakes_personal_advice_intent(normalized: str) -> bool:
+    personal_advice = re.search(
+        r"\b(?:should|can|could|would|do|does|need|must)\s+(?:i|we)\b|\b(?:for me|my|me|myself|our)\b",
+        normalized,
+    ) is not None
+    direct_advice = re.search(
+        r"\b(?:diagnose|treat|treatment|dosage|dose|prescribe|take|sue|lawsuit|appeal|buy|sell|invest|retire|retirement)\b",
+        normalized,
+    ) is not None
+    medical_domain = re.search(
+        r"\b(?:aspirin|chest pain|symptoms?|diagnos(?:e|is)|treat(?:ment)?|dosage|dose|medication|medicine|depression|anxiety|suicid(?:e|al)|cancer|doctor|hospital|pain|pregnan(?:t|cy)|infection|blood pressure)\b",
+        normalized,
+    ) is not None
+    legal_domain = re.search(
+        r"\b(?:sue|lawsuit|eviction|landlord|tenant|contract|court|custody|divorce|immigration|criminal|lawyer|attorney|legal advice)\b",
+        normalized,
+    ) is not None
+    financial_domain = re.search(
+        r"\b(?:invest|investment|buy|sell|stock|stocks|crypto|bitcoin|portfolio|loan|mortgage|tax|retire|retirement|insurance)\b",
+        normalized,
+    ) is not None
+    return (medical_domain or legal_domain or financial_domain) and (personal_advice or direct_advice)
 
 
 def _site_help_intent(query: str) -> bool:
@@ -578,6 +604,8 @@ def _fallback_guidance(status: str, intent_reasons: list[str] | None = None) -> 
             guidance.append("AnchorFact is not a live local directory or personalized recommendation source; use current local listings or official venue sources.")
         if "live_or_time_sensitive" in intent_reasons:
             guidance.append("AnchorFact is not a live news, sports, market, weather, or current-results source; use current authoritative sources.")
+        if "high_stakes_personal_advice" in intent_reasons:
+            guidance.append("AnchorFact is not a medical, legal, or financial professional advice source; use qualified professional guidance or current authoritative sources.")
         return [
             *guidance,
             "AnchorFact has no clear public coverage for this query.",

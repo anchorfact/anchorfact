@@ -68,6 +68,19 @@ const searchIndex = {
       search_text: 'weather forecasting meteorology machine learning'
     },
     {
+      canonical_slug: 'health/medication-safety',
+      title: 'Medication Safety',
+      url: 'https://anchorfact.org/health/medication-safety/',
+      description: 'Educational medication safety reference.',
+      confidence_level: 'medium',
+      source_coverage: { verified: 2, total: 2, ratio: 1 },
+      claim_count: 2,
+      claim_ids: ['https://anchorfact.org/fact/f6'],
+      keywords: ['aspirin', 'medication', 'safety'],
+      routes: { jsonld: 'https://anchorfact.org/health/medication-safety/index.json' },
+      search_text: 'aspirin medication safety chest pain symptoms treatment'
+    },
+    {
       canonical_slug: 'science/statistics',
       title: 'Statistics Fundamentals',
       url: 'https://anchorfact.org/science/statistics/',
@@ -221,6 +234,33 @@ test('buildPlanApiPayload rejects live, local, and time-sensitive questions even
   assertEq(livePayload.should_use_anchorfact, false);
   assert(livePayload.unsupported_intent_reasons.includes('live_or_time_sensitive'), 'live query should carry an intent reason');
   assert(livePayload.fallback_guidance.some(item => item.includes('current')), 'live query should explain current-source fallback');
+});
+
+test('buildPlanApiPayload rejects high-stakes personal advice even with lexical matches', () => {
+  const payload = buildPlanApiPayload({
+    query: 'should I take aspirin for chest pain',
+    searchIndex,
+    topicsPayload,
+    coveragePayload,
+    generated: '2026-05-29T00:00:00.000Z'
+  });
+
+  assertEq(payload.coverage_status, 'unsupported');
+  assertEq(payload.should_use_anchorfact, false);
+  assertEq(payload.matched_articles, []);
+  assert(payload.unsupported_intent_reasons.includes('high_stakes_personal_advice'), 'personal medical advice should carry a high-stakes reason');
+  assert(payload.fallback_guidance.some(item => item.includes('professional')), 'high-stakes advice should direct agents to authoritative professional sources');
+
+  const educational = buildPlanApiPayload({
+    query: 'medication safety',
+    searchIndex,
+    topicsPayload,
+    coveragePayload,
+    generated: '2026-05-29T00:00:00.000Z'
+  });
+  assertEq(educational.coverage_status, 'supported');
+  assertEq(educational.should_use_anchorfact, true);
+  assertEq(educational.unsupported_intent_reasons, []);
 });
 
 test('buildPlanApiPayload keeps static educational weather queries supported', () => {

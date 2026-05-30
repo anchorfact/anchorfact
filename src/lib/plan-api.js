@@ -128,7 +128,21 @@ function unsupportedIntentReasons(query) {
     reasons.push('live_or_time_sensitive');
   }
 
+  if (highStakesPersonalAdviceIntent(normalized)) {
+    reasons.push('high_stakes_personal_advice');
+  }
+
   return [...new Set(reasons)];
+}
+
+function highStakesPersonalAdviceIntent(normalized) {
+  const personalAdvicePattern = /\b(?:should|can|could|would|do|does|need|must)\s+(?:i|we)\b|\b(?:for me|my|me|myself|our)\b/;
+  const directAdvicePattern = /\b(?:diagnose|treat|treatment|dosage|dose|prescribe|take|sue|lawsuit|appeal|buy|sell|invest|retire|retirement)\b/;
+  const medicalDomain = /\b(?:aspirin|chest pain|symptoms?|diagnos(?:e|is)|treat(?:ment)?|dosage|dose|medication|medicine|depression|anxiety|suicid(?:e|al)|cancer|doctor|hospital|pain|pregnan(?:t|cy)|infection|blood pressure)\b/.test(normalized);
+  const legalDomain = /\b(?:sue|lawsuit|eviction|landlord|tenant|contract|court|custody|divorce|immigration|criminal|lawyer|attorney|legal advice)\b/.test(normalized);
+  const financialDomain = /\b(?:invest|investment|buy|sell|stock|stocks|crypto|bitcoin|portfolio|loan|mortgage|tax|retire|retirement|insurance)\b/.test(normalized);
+  const highStakesDomain = medicalDomain || legalDomain || financialDomain;
+  return highStakesDomain && (personalAdvicePattern.test(normalized) || directAdvicePattern.test(normalized));
 }
 
 function siteHelpIntent(query) {
@@ -272,6 +286,9 @@ function fallbackGuidance(status, intentReasons = []) {
     }
     if (intentReasons.includes('live_or_time_sensitive')) {
       guidance.push('AnchorFact is not a live news, sports, market, weather, or current-results source; use current authoritative sources.');
+    }
+    if (intentReasons.includes('high_stakes_personal_advice')) {
+      guidance.push('AnchorFact is not a medical, legal, or financial professional advice source; use qualified professional guidance or current authoritative sources.');
     }
     return [
       ...guidance,

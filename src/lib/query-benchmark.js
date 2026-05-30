@@ -144,6 +144,16 @@ export const QUERY_BENCHMARK_CASES = [
     intent: 'AnchorFact usage questions should return API guidance instead of pretending public content claims answer product documentation.'
   },
   {
+    id: 'unsupported_medical_personal_advice',
+    category: 'unsupported_intent',
+    query: 'should I take aspirin for chest pain',
+    expected_coverage_status: 'unsupported',
+    expected_answer_mode: 'external_sources_required',
+    expected_can_answer: false,
+    expected_unsupported_reasons: ['high_stakes_personal_advice'],
+    intent: 'Personal medical advice should not be answered from nearby educational content or citation packs.'
+  },
+  {
     id: 'unsupported_live_stock_price',
     category: 'unsupported_intent',
     query: 'stock price today',
