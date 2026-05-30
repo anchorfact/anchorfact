@@ -30,5 +30,8 @@ jobs:
       - name: Build Pages output
         run: npm run pages:build
 
+      - name: Run AI API performance budget
+        run: npm run api:perf
+
       - name: Run full public audit gate
         run: npm run audit-public-full
