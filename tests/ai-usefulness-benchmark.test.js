@@ -225,5 +225,46 @@ test('buildAiUsefulnessBenchmarkReport fails when top routing or citation readin
   assert(report.cases[1].failures.some(failure => failure.includes('citation-ready')), 'citation depth gap should fail when minimum is explicit');
 });
 
+test('buildAiUsefulnessBenchmarkReport supports site-help and unsupported-intent cases', () => {
+  const report = buildAiUsefulnessBenchmarkReport({
+    generated: '2026-05-30T00:00:00.000Z',
+    artifacts: fixtureArtifacts(),
+    cases: [
+      {
+        id: 'anchorfact_citation_help',
+        category: 'agent_usage',
+        query: 'how should an AI agent cite AnchorFact claims',
+        expected_coverage_status: 'site_help',
+        expected_answer_mode: 'api_guidance',
+        expected_can_answer: true,
+        min_citation_ready_claims: 0
+      },
+      {
+        id: 'live_stock_price_refusal',
+        category: 'unsupported_intent',
+        query: 'stock price today',
+        expected_coverage_status: 'unsupported',
+        expected_answer_mode: 'external_sources_required',
+        expected_can_answer: false,
+        expected_unsupported_reasons: ['live_or_time_sensitive']
+      }
+    ]
+  });
+
+  assertEq(report.ok, true);
+  assertEq(report.case_count, 2);
+  assertEq(report.failed, 0);
+  assertEq(report.improvement_candidate_count, 0);
+  assertEq(report.cases[0].checks.coverage_status_matches_expected, true);
+  assertEq(report.cases[0].checks.answer_mode_matches_expected, true);
+  assertEq(report.cases[1].checks.non_citable_refusal, true);
+  assertEq(report.cases[1].answer_policy.can_answer_with_anchorfact, false);
+  assert(report.cases[1].unsupported_intent_reasons.includes('live_or_time_sensitive'), 'unsupported case should record the live/time-sensitive reason');
+
+  const markdown = renderAiUsefulnessBenchmarkMarkdown(report);
+  assert(markdown.includes('coverage=site_help mode=api_guidance'), 'site-help case should render the context policy instead of a missing top result');
+  assert(markdown.includes('coverage=unsupported mode=external_sources_required'), 'unsupported case should render the refusal policy instead of a missing top result');
+});
+
 console.log(`\n${passed} passed, ${failed} failed`);
 process.exit(failed > 0 ? 1 : 0);

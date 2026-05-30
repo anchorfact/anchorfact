@@ -217,7 +217,7 @@ test('agent profile describes the machine contract', () => {
   assertEq(agent.current_snapshot.examples, 7);
   assert(agent.current_snapshot.graph_nodes >= 1, 'agent profile should expose graph node count');
   assert(agent.current_snapshot.graph_edges >= 1, 'agent profile should expose graph edge count');
-  assertEq(agent.current_snapshot.evals, 33);
+  assertEq(agent.current_snapshot.evals, 36);
   assertEq(agent.current_snapshot.mcp_tools, 9);
   assert(agent.current_snapshot.unique_sources >= 1, 'agent profile should expose source count');
   assertEq(agent.endpoints.claims.url, 'https://anchorfact.org/claims.json');
@@ -460,7 +460,7 @@ test('evals.json describes executable AI integration checks', () => {
   const evals = JSON.parse(readFileSync(join(distDir, 'evals.json'), 'utf-8'));
   assertEq(evals.schema_version, 'anchorfact.evals.v1');
   assertEq(evals.provenance_url, 'https://anchorfact.org/provenance.json');
-  assertEq(evals.eval_count, 33);
+  assertEq(evals.eval_count, 36);
   assertEq(evals.evals.map(evalCase => evalCase.id), [
     'api_discovery',
     'openapi_context_contract',
@@ -469,6 +469,7 @@ test('evals.json describes executable AI integration checks', () => {
     'evidence_pack_json',
     'ai_query_routing_retrieval_augmented_generation',
     'ai_query_routing_parameter_efficient_fine_tuning',
+    'ai_query_intent_fine_tune_with_adapters',
     'ai_query_routing_rlhf',
     'ai_query_routing_mixture_of_experts',
     'ai_query_routing_low_resource_nlp',
@@ -481,6 +482,8 @@ test('evals.json describes executable AI integration checks', () => {
     'query_routing_ancient_egypt',
     'query_routing_public_speaking',
     'query_routing_sports_biomechanics',
+    'agent_usage_anchorfact_citation_help',
+    'unsupported_live_stock_price',
     'context_pack_json',
     'unsupported_query_evidence',
     'unsupported_context_pack_json',

@@ -104,7 +104,7 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
 
   assertEq(payload.schema_version, 'anchorfact.evals.v1');
   assertEq(payload.provenance_url, 'https://anchorfact.org/provenance.json');
-  assertEq(payload.eval_count, 33);
+  assertEq(payload.eval_count, 36);
   assertEq(payload.evals.map(evalCase => evalCase.id), [
     'api_discovery',
     'openapi_context_contract',
@@ -113,6 +113,7 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
     'evidence_pack_json',
     'ai_query_routing_retrieval_augmented_generation',
     'ai_query_routing_parameter_efficient_fine_tuning',
+    'ai_query_intent_fine_tune_with_adapters',
     'ai_query_routing_rlhf',
     'ai_query_routing_mixture_of_experts',
     'ai_query_routing_low_resource_nlp',
@@ -125,6 +126,8 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
     'query_routing_ancient_egypt',
     'query_routing_public_speaking',
     'query_routing_sports_biomechanics',
+    'agent_usage_anchorfact_citation_help',
+    'unsupported_live_stock_price',
     'context_pack_json',
     'unsupported_query_evidence',
     'unsupported_context_pack_json',
@@ -177,6 +180,12 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
   assertEq(rlhfEval.expected.top_canonical_slug, 'ai/rlhf');
   assertEq(rlhfEval.expected.contains_canonical_slug, 'ai/rlhf');
 
+  const adaptersEval = payload.evals.find(evalCase => evalCase.id === 'ai_query_intent_fine_tune_with_adapters');
+  assert(adaptersEval.call.path.includes('/api/evidence?q=fine+tune+a+model+cheaply+with+adapters&limit=3'), 'adapter intent eval should use the natural-language query');
+  assertEq(adaptersEval.expected.top_canonical_slug, 'ai/parameter-efficient-fine-tuning');
+  assertEq(adaptersEval.expected.min_claims_per_matching_pack, 2);
+  assertEq(adaptersEval.expected.min_sources_per_matching_pack, 2);
+
   const restEval = payload.evals.find(evalCase => evalCase.id === 'query_routing_rest_api');
   assert(restEval.call.path.includes('/api/evidence?q=REST+API&limit=3'), 'REST API routing eval should use the high-intent API query');
   assertEq(restEval.expected.top_canonical_slug, 'computer-science/rest-api');
@@ -184,6 +193,23 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
   const climateEval = payload.evals.find(evalCase => evalCase.id === 'query_routing_climate_change');
   assert(climateEval.call.path.includes('/api/evidence?q=climate+change&limit=3'), 'climate routing eval should use a cross-domain science query');
   assertEq(climateEval.expected.top_canonical_slug, 'science/climate-change');
+
+  const siteHelpEval = payload.evals.find(evalCase => evalCase.id === 'agent_usage_anchorfact_citation_help');
+  assert(siteHelpEval.call.path.includes('/api/context?q=how+should+an+AI+agent+cite+AnchorFact+claims&limit=3'), 'site-help eval should use the context API');
+  assertEq(siteHelpEval.expected.schema_version, 'anchorfact.context-api.v1');
+  assertEq(siteHelpEval.expected.coverage_status, 'site_help');
+  assertEq(siteHelpEval.expected.answer_policy_mode, 'api_guidance');
+  assertEq(siteHelpEval.expected.max_citation_ready_claims, 0);
+  assertEq(siteHelpEval.expected.recommended_call_contains, '/api/cite');
+
+  const liveRefusalEval = payload.evals.find(evalCase => evalCase.id === 'unsupported_live_stock_price');
+  assert(liveRefusalEval.call.path.includes('/api/context?q=stock+price+today&limit=3'), 'live refusal eval should use the context API');
+  assertEq(liveRefusalEval.expected.coverage_status, 'unsupported');
+  assertEq(liveRefusalEval.expected.should_use_anchorfact, false);
+  assertEq(liveRefusalEval.expected.answer_policy_can_answer, false);
+  assertEq(liveRefusalEval.expected.answer_policy_mode, 'external_sources_required');
+  assertEq(liveRefusalEval.expected.max_citation_ready_claims, 0);
+  assertEq(liveRefusalEval.expected.unsupported_intent_reasons, ['live_or_time_sensitive']);
 
   const contextEval = payload.evals.find(evalCase => evalCase.id === 'context_pack_json');
   assert(contextEval.call.path.includes('/api/context?q=gaussian+splatting&limit=3'), 'context eval should include encoded query path');
@@ -248,7 +274,7 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
   const benchmarkEval = payload.evals.find(evalCase => evalCase.id === 'coverage_query_benchmark_catalog');
   assertEq(benchmarkEval.call.path, '/coverage.json');
   assertEq(benchmarkEval.expected.schema_version, 'anchorfact.coverage.v1');
-  assertEq(benchmarkEval.expected.min_query_benchmark_cases, 14);
+  assertEq(benchmarkEval.expected.min_query_benchmark_cases, 17);
   assert(benchmarkEval.expected.required_query_benchmark_slugs.includes('ai/rlhf'), 'benchmark eval should require RLHF query coverage');
   assert(benchmarkEval.expected.required_query_benchmark_slugs.includes('computer-science/rest-api'), 'benchmark eval should require REST API query coverage');
   assert(benchmarkEval.expected.query_benchmark_pass_gate_contains.includes('/evals.json'), 'benchmark eval should require executable eval pass gate');

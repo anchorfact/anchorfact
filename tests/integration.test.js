@@ -184,11 +184,14 @@ test('public machine entrypoints exclude drafts', () => {
   assert(examples.examples.some(example => example.id === 'one_call_evidence_pack'), 'examples index should include evidence pack workflow');
   assert(examples.examples.some(example => example.id === 'mixed_reference_resolution'), 'examples index should include mixed reference workflow');
   assert(examples.examples.some(example => example.id === 'static_fallback'), 'examples index should include static fallback workflow');
-  assertEq(evals.eval_count, 33);
+  assertEq(evals.eval_count, 36);
   assert(evals.evals.some(evalCase => evalCase.id === 'openapi_context_contract'), 'evals index should include OpenAPI context contract check');
+  assert(evals.evals.some(evalCase => evalCase.id === 'ai_query_intent_fine_tune_with_adapters'), 'evals index should include natural-language AI intent routing check');
   assert(evals.evals.some(evalCase => evalCase.id === 'ai_query_routing_rlhf'), 'evals index should include high-intent AI query routing check');
   assert(evals.evals.some(evalCase => evalCase.id === 'query_routing_rest_api'), 'evals index should include API fundamentals routing check');
   assert(evals.evals.some(evalCase => evalCase.id === 'query_routing_climate_change'), 'evals index should include cross-domain query routing check');
+  assert(evals.evals.some(evalCase => evalCase.id === 'agent_usage_anchorfact_citation_help'), 'evals index should include AnchorFact usage guidance check');
+  assert(evals.evals.some(evalCase => evalCase.id === 'unsupported_live_stock_price'), 'evals index should include live/time-sensitive refusal check');
   assert(evals.evals.some(evalCase => evalCase.id === 'query_plan'), 'evals index should include query planning check');
   assert(evals.evals.some(evalCase => evalCase.id === 'unsupported_query_plan'), 'evals index should include unsupported planning check');
   assert(evals.evals.some(evalCase => evalCase.id === 'evidence_pack_json'), 'evals index should include evidence pack check');

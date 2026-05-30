@@ -26,24 +26,47 @@ function citationReadyClaims(payload) {
 
 function caseScore(checks) {
   const weights = {
-    top_result_matches_expected: 20,
-    can_answer_with_anchorfact: 20,
-    expected_pack_present: 15,
-    minimum_citation_ready_claims: 15,
+    top_result_matches_expected: 15,
+    can_answer_matches_expected: 15,
+    expected_pack_present: 10,
+    minimum_citation_ready_claims: 10,
     minimum_sources_per_expected_pack: 10,
     citation_ready_claims_have_source_urls: 10,
+    coverage_status_matches_expected: 10,
+    answer_mode_matches_expected: 10,
     preferred_confidence: 5,
     recommended_source_depth: 5
   };
   return Object.entries(weights).reduce((sum, [key, weight]) => sum + (checks[key] ? weight : 0), 0);
 }
 
-function improvementSignals({ pack, citations }) {
+function improvementSignals({ pack, citations, expectsCitationAnswer = true }) {
   const signals = [];
+  if (!expectsCitationAnswer) return signals;
   if (pack?.confidence_level === 'low') signals.push('low_confidence_top_pack');
   if ((pack?.source_count || 0) < 2) signals.push('single_source_expected_pack');
   if (citations.length < 2) signals.push('thin_citation_ready_claims');
   return signals;
+}
+
+function expectedCanAnswer(benchmarkCase) {
+  return benchmarkCase.expected_can_answer !== undefined
+    ? benchmarkCase.expected_can_answer === true
+    : true;
+}
+
+function minimumCitationReadyClaims(benchmarkCase) {
+  if (benchmarkCase.min_citation_ready_claims !== undefined) {
+    return benchmarkCase.min_citation_ready_claims;
+  }
+  if (benchmarkCase.expected_can_answer === false) return 0;
+  if (benchmarkCase.expected_answer_mode === 'api_guidance') return 0;
+  return DEFAULT_MIN_CITATION_READY_CLAIMS;
+}
+
+function unsupportedReasonsMatch(actual = [], expected = []) {
+  if (!Array.isArray(expected) || expected.length === 0) return true;
+  return expected.every(reason => actual.includes(reason));
 }
 
 export function evaluateAiUsefulnessCase({
@@ -65,48 +88,83 @@ export function evaluateAiUsefulnessCase({
     contentHealthPayload: artifacts.contentHealthPayload
   });
   const payload = context.payload || {};
-  const expected = expectedPack(payload, benchmarkCase.expected_top_slug);
+  const expectedSlug = benchmarkCase.expected_top_slug || null;
+  const expected = expectedSlug ? expectedPack(payload, expectedSlug) : null;
   const top = topPack(payload);
   const citations = citationReadyClaims(payload);
-  const minClaims = benchmarkCase.min_citation_ready_claims ?? DEFAULT_MIN_CITATION_READY_CLAIMS;
-  const minSources = benchmarkCase.min_sources_per_expected_pack ?? DEFAULT_MIN_SOURCES_PER_EXPECTED_PACK;
+  const shouldAnswer = expectedCanAnswer(benchmarkCase);
+  const minClaims = minimumCitationReadyClaims(benchmarkCase);
+  const minSources = benchmarkCase.min_sources_per_expected_pack ?? (expectedSlug ? DEFAULT_MIN_SOURCES_PER_EXPECTED_PACK : 0);
   const claimsWithSourceUrls = citations.filter(claim => claim?.source_url).length;
+  const unsupportedIntentReasons = Array.isArray(payload.unsupported_intent_reasons)
+    ? payload.unsupported_intent_reasons
+    : [];
   const checks = {
-    top_result_matches_expected: top?.canonical_slug === benchmarkCase.expected_top_slug,
-    can_answer_with_anchorfact: payload?.answer_policy?.can_answer_with_anchorfact === true,
-    expected_pack_present: expected !== null,
+    top_result_matches_expected: expectedSlug ? top?.canonical_slug === expectedSlug : true,
+    can_answer_matches_expected: payload?.answer_policy?.can_answer_with_anchorfact === shouldAnswer,
+    expected_pack_present: expectedSlug ? expected !== null : true,
     minimum_citation_ready_claims: citations.length >= minClaims,
-    minimum_sources_per_expected_pack: (expected?.source_count || 0) >= minSources,
+    minimum_sources_per_expected_pack: expectedSlug ? (expected?.source_count || 0) >= minSources : true,
     citation_ready_claims_have_source_urls: claimsWithSourceUrls >= Math.min(minClaims, citations.length),
-    preferred_confidence: PREFERRED_CONFIDENCE.has(expected?.confidence_level || ''),
-    recommended_source_depth: (expected?.source_count || 0) >= 2
+    coverage_status_matches_expected: benchmarkCase.expected_coverage_status
+      ? payload.coverage_status === benchmarkCase.expected_coverage_status
+      : true,
+    answer_mode_matches_expected: benchmarkCase.expected_answer_mode
+      ? payload?.answer_policy?.answer_mode === benchmarkCase.expected_answer_mode
+      : true,
+    preferred_confidence: expectedSlug ? PREFERRED_CONFIDENCE.has(expected?.confidence_level || '') : true,
+    recommended_source_depth: expectedSlug ? (expected?.source_count || 0) >= 2 : true,
+    non_citable_refusal: shouldAnswer
+      ? true
+      : (payload.evidence_pack_count || 0) === 0
+          && citations.length === 0
+          && payload?.answer_policy?.answer_mode === 'external_sources_required',
+    unsupported_reasons_match_expected: unsupportedReasonsMatch(
+      unsupportedIntentReasons,
+      benchmarkCase.expected_unsupported_reasons
+    )
   };
   const failures = [];
-  if (!checks.top_result_matches_expected) {
-    failures.push(`top result expected ${benchmarkCase.expected_top_slug}, got ${top?.canonical_slug || '(missing)'}`);
+  if (expectedSlug && !checks.top_result_matches_expected) {
+    failures.push(`top result expected ${expectedSlug}, got ${top?.canonical_slug || '(missing)'}`);
   }
-  if (!checks.can_answer_with_anchorfact) {
-    failures.push('answer_policy.can_answer_with_anchorfact should be true');
+  if (!checks.can_answer_matches_expected) {
+    failures.push(`answer_policy.can_answer_with_anchorfact expected ${shouldAnswer}, got ${payload?.answer_policy?.can_answer_with_anchorfact === true}`);
   }
-  if (!checks.expected_pack_present) {
-    failures.push(`expected evidence pack ${benchmarkCase.expected_top_slug} is missing`);
+  if (expectedSlug && !checks.expected_pack_present) {
+    failures.push(`expected evidence pack ${expectedSlug} is missing`);
   }
   if (!checks.minimum_citation_ready_claims) {
     failures.push(`citation-ready claims expected at least ${minClaims}, got ${citations.length}`);
   }
-  if (!checks.minimum_sources_per_expected_pack) {
+  if (expectedSlug && !checks.minimum_sources_per_expected_pack) {
     failures.push(`expected pack sources expected at least ${minSources}, got ${expected?.source_count || 0}`);
   }
   if (!checks.citation_ready_claims_have_source_urls) {
     failures.push(`citation-ready claims with source_url expected at least ${Math.min(minClaims, citations.length)}, got ${claimsWithSourceUrls}`);
   }
+  if (!checks.coverage_status_matches_expected) {
+    failures.push(`coverage_status expected ${benchmarkCase.expected_coverage_status}, got ${payload.coverage_status || '(missing)'}`);
+  }
+  if (!checks.answer_mode_matches_expected) {
+    failures.push(`answer_mode expected ${benchmarkCase.expected_answer_mode}, got ${payload?.answer_policy?.answer_mode || '(missing)'}`);
+  }
+  if (!checks.non_citable_refusal) {
+    failures.push('unsupported benchmark case should return no evidence packs or citation-ready claims');
+  }
+  if (!checks.unsupported_reasons_match_expected) {
+    failures.push(`unsupported_intent_reasons expected ${benchmarkCase.expected_unsupported_reasons.join(', ')}, got ${unsupportedIntentReasons.join(', ') || '(none)'}`);
+  }
 
-  const signals = improvementSignals({ pack: expected, citations });
+  const expectsCitationAnswer = Boolean(expectedSlug)
+    && shouldAnswer
+    && benchmarkCase.expected_answer_mode !== 'api_guidance';
+  const signals = improvementSignals({ pack: expected, citations, expectsCitationAnswer });
   return {
     id: benchmarkCase.id,
     category: benchmarkCase.category || 'uncategorized',
     query: benchmarkCase.query,
-    expected_top_slug: benchmarkCase.expected_top_slug,
+    expected_top_slug: expectedSlug,
     top_slug: top?.canonical_slug || null,
     ok: failures.length === 0,
     score_100: caseScore(checks),
@@ -115,6 +173,8 @@ export function evaluateAiUsefulnessCase({
     improvement_signals: signals,
     evidence_pack_count: payload.evidence_pack_count || 0,
     citation_ready_claim_count: citations.length,
+    coverage_status: payload.coverage_status || null,
+    unsupported_intent_reasons: unsupportedIntentReasons,
     expected_pack: expected ? {
       canonical_slug: expected.canonical_slug,
       confidence_level: expected.confidence_level || null,
@@ -212,9 +272,12 @@ export function renderAiUsefulnessBenchmarkMarkdown(report) {
     ).join('\n')
     : '- none';
   const caseLines = report.cases.length
-    ? report.cases.map(result =>
-      `- ${result.id}: ${result.ok ? 'pass' : `fail (${result.failures.join('; ')})`} score=${result.score_100} top=${result.top_slug || '(missing)'}`
-    ).join('\n')
+    ? report.cases.map(result => {
+      const routeSummary = result.expected_top_slug
+        ? `top=${result.top_slug || '(missing)'}`
+        : `coverage=${result.coverage_status || '(missing)'} mode=${result.answer_policy?.answer_mode || '(missing)'}`;
+      return `- ${result.id}: ${result.ok ? 'pass' : `fail (${result.failures.join('; ')})`} score=${result.score_100} ${routeSummary}`;
+    }).join('\n')
     : '- none';
   const failures = report.failures.length
     ? report.failures.map(failure => `- ${failure}`).join('\n')

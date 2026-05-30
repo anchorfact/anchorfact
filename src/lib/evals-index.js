@@ -48,6 +48,61 @@ function call(path, site) {
   };
 }
 
+function benchmarkEvalCase(evalCase, site) {
+  if (evalCase.expected_top_slug) {
+    return {
+      id: evalCase.id,
+      intent: `Confirm the high-intent AI query "${evalCase.query}" resolves first to the intended evidence pack.`,
+      call: call(queryPath('/api/evidence', { q: evalCase.query, limit: 3 }), site),
+      expected: {
+        status: 200,
+        content_type: 'application/json',
+        schema_version: EVIDENCE_API_SCHEMA_VERSION,
+        top_canonical_slug: evalCase.expected_top_slug,
+        contains_canonical_slug: evalCase.expected_top_slug,
+        min_packs: 1,
+        min_claims_per_matching_pack: evalCase.min_citation_ready_claims ?? 1,
+        min_sources_per_matching_pack: evalCase.min_sources_per_expected_pack ?? 1
+      }
+    };
+  }
+
+  const expectedCanAnswer = evalCase.expected_can_answer !== undefined
+    ? evalCase.expected_can_answer === true
+    : true;
+  const expectedShouldUse = evalCase.expected_should_use_anchorfact !== undefined
+    ? evalCase.expected_should_use_anchorfact === true
+    : evalCase.expected_coverage_status !== 'unsupported';
+  const expected = {
+    status: 200,
+    content_type: 'application/json',
+    schema_version: CONTEXT_API_SCHEMA_VERSION,
+    coverage_status: evalCase.expected_coverage_status || undefined,
+    should_use_anchorfact: expectedShouldUse,
+    answer_policy_can_answer: expectedCanAnswer,
+    answer_policy_mode: evalCase.expected_answer_mode || undefined,
+    min_citation_ready_claims: evalCase.min_citation_ready_claims ?? 0
+  };
+
+  if (!expectedCanAnswer) {
+    expected.max_citation_ready_claims = 0;
+    expected.fallback_guidance_contains = 'external primary';
+  } else if (evalCase.expected_answer_mode === 'api_guidance') {
+    expected.max_citation_ready_claims = 0;
+    expected.recommended_call_contains = '/api/cite';
+  }
+  if (Array.isArray(evalCase.expected_unsupported_reasons)) {
+    expected.unsupported_intent_reasons = evalCase.expected_unsupported_reasons;
+  }
+
+  return {
+    id: evalCase.id,
+    intent: `Confirm the AI query "${evalCase.query}" receives the intended context answer policy.`,
+    call: call(queryPath('/api/context', { q: evalCase.query, limit: 3 }), site),
+    expected
+  };
+}
+
 function claimShortId(claimId) {
   if (!claimId) return null;
   try {
@@ -249,21 +304,7 @@ export function buildEvalsIndex({
         min_sources_per_matching_pack: 1
       }
     },
-    ...QUERY_BENCHMARK_CASES.map(evalCase => ({
-      id: evalCase.id,
-      intent: `Confirm the high-intent AI query "${evalCase.query}" resolves first to the intended evidence pack.`,
-      call: call(queryPath('/api/evidence', { q: evalCase.query, limit: 3 }), site),
-      expected: {
-        status: 200,
-        content_type: 'application/json',
-        schema_version: EVIDENCE_API_SCHEMA_VERSION,
-        top_canonical_slug: evalCase.expected_top_slug,
-        contains_canonical_slug: evalCase.expected_top_slug,
-        min_packs: 1,
-        min_claims_per_matching_pack: 1,
-        min_sources_per_matching_pack: 1
-      }
-    })),
+    ...QUERY_BENCHMARK_CASES.map(evalCase => benchmarkEvalCase(evalCase, site)),
     {
       id: 'context_pack_json',
       intent: 'Confirm the context API combines planning status, fallback guidance, and source-grounded evidence packs.',
@@ -438,7 +479,9 @@ export function buildEvalsIndex({
         content_type: 'application/json',
         schema_version: COVERAGE_SCHEMA_VERSION,
         min_query_benchmark_cases: QUERY_BENCHMARK_CASES.length,
-        required_query_benchmark_slugs: QUERY_BENCHMARK_CASES.map(item => item.expected_top_slug),
+        required_query_benchmark_slugs: QUERY_BENCHMARK_CASES
+          .map(item => item.expected_top_slug)
+          .filter(Boolean),
         query_benchmark_pass_gate_contains: '/evals.json'
       }
     },

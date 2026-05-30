@@ -95,14 +95,14 @@ The provenance verifier fetches `/provenance.json`, recomputes SHA-256 checksums
 
 The AI eval runner fetches `/evals.json` from production and executes the listed golden checks against live JSON, Markdown, and MCP manifest surfaces. It is intended to catch contract drift that a basic endpoint smoke test would not see.
 
-The local usefulness benchmark uses the built `dist/` artifacts to score whether representative AI queries return answer-ready context, citation-ready claims, and enough source depth to justify future content work:
+The local usefulness benchmark uses the built `dist/` artifacts to score whether representative AI queries return answer-ready context, citation-ready claims, enough source depth, product/API guidance for AnchorFact usage questions, and explicit external-source fallback for unsupported or time-sensitive requests:
 
 ```bash
 npm run build
 npm run benchmark:ai
 ```
 
-Treat this as a direction-setting metric. A passing benchmark means the current AI entrypoints are usable; improvement candidates show which existing public topics should be strengthened before broad content expansion.
+Treat this as a direction-setting metric. A passing benchmark means the current AI entrypoints are usable and know when not to answer; improvement candidates show which existing public topics or routing policies should be strengthened before broad content expansion.
 
 The local API performance budget uses the same built artifacts to guard the Cloudflare Pages Function hot paths that serve AI agents:
 

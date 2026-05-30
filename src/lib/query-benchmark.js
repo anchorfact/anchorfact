@@ -14,6 +14,15 @@ export const QUERY_BENCHMARK_CASES = [
     intent: 'PEFT is a common model-adaptation query and should not drift to broader fine-tuning topics.'
   },
   {
+    id: 'ai_query_intent_fine_tune_with_adapters',
+    category: 'agent_intent',
+    query: 'fine tune a model cheaply with adapters',
+    expected_top_slug: 'ai/parameter-efficient-fine-tuning',
+    min_citation_ready_claims: 2,
+    min_sources_per_expected_pack: 2,
+    intent: 'A natural-language model-adaptation question should route to PEFT with enough citation-ready evidence for an agent answer.'
+  },
+  {
     id: 'ai_query_routing_rlhf',
     category: 'core_ai',
     query: 'RLHF',
@@ -96,22 +105,48 @@ export const QUERY_BENCHMARK_CASES = [
     query: 'sports biomechanics',
     expected_top_slug: 'sports/sports-biomechanics',
     intent: 'Sports-science routing checks cross-category recall and precision.'
+  },
+  {
+    id: 'agent_usage_anchorfact_citation_help',
+    category: 'agent_usage',
+    query: 'how should an AI agent cite AnchorFact claims',
+    expected_coverage_status: 'site_help',
+    expected_answer_mode: 'api_guidance',
+    expected_can_answer: true,
+    min_citation_ready_claims: 0,
+    intent: 'AnchorFact usage questions should return API guidance instead of pretending public content claims answer product documentation.'
+  },
+  {
+    id: 'unsupported_live_stock_price',
+    category: 'unsupported_intent',
+    query: 'stock price today',
+    expected_coverage_status: 'unsupported',
+    expected_answer_mode: 'external_sources_required',
+    expected_can_answer: false,
+    expected_unsupported_reasons: ['live_or_time_sensitive'],
+    intent: 'Live market-price questions should be rejected for AnchorFact citation and routed to current authoritative sources.'
   }
 ];
 
 export function buildQueryBenchmarkCatalog() {
   return {
-    purpose: 'Representative AI-agent queries used to measure whether AnchorFact routes real usage to citable public evidence.',
+    purpose: 'Representative AI-agent queries used to measure whether AnchorFact routes real usage to citable public evidence, API guidance, or explicit external-source fallback.',
     case_count: QUERY_BENCHMARK_CASES.length,
     pass_gate: 'All benchmark cases are executable through /evals.json and must pass npm run evals:prod and production integrity.',
-    usefulness_gate: 'Run npm run benchmark:ai after local builds; routing is necessary, but answer-ready citations and source depth decide future content priorities.',
+    usefulness_gate: 'Run npm run benchmark:ai after local builds; routing is necessary, but answer-ready citations, source depth, and correct refusal behavior decide future content priorities.',
     cases: QUERY_BENCHMARK_CASES.map(item => ({
       id: item.id,
       category: item.category,
       query: item.query,
-      expected_top_slug: item.expected_top_slug,
+      expected_top_slug: item.expected_top_slug || null,
+      expected_coverage_status: item.expected_coverage_status || null,
+      expected_answer_mode: item.expected_answer_mode || (item.expected_top_slug ? 'answer_with_citations' : null),
+      expected_can_answer: item.expected_can_answer !== undefined ? item.expected_can_answer : true,
       intent: item.intent,
-      evidence_call: `/api/evidence?q=${encodeURIComponent(item.query)}&limit=3`
+      evidence_call: item.expected_top_slug
+        ? `/api/evidence?q=${encodeURIComponent(item.query)}&limit=3`
+        : null,
+      context_call: `/api/context?q=${encodeURIComponent(item.query)}&limit=3`
     }))
   };
 }

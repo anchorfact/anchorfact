@@ -74,6 +74,19 @@ function evaluateJsonExpected(payload, expected, failures) {
       `answer_policy.can_answer_with_anchorfact expected ${expected.answer_policy_can_answer}`
     );
   }
+  if (expected.answer_policy_mode) {
+    check(
+      payload?.answer_policy?.answer_mode === expected.answer_policy_mode,
+      failures,
+      `answer_policy.answer_mode expected ${expected.answer_policy_mode}, got ${payload?.answer_policy?.answer_mode || '(missing)'}`
+    );
+  }
+  if (Array.isArray(expected.unsupported_intent_reasons)) {
+    const reasons = new Set(payload?.unsupported_intent_reasons || []);
+    for (const reason of expected.unsupported_intent_reasons) {
+      check(reasons.has(reason), failures, `unsupported_intent_reasons should include ${reason}`);
+    }
+  }
   if (expected.min_citation_ready_claims !== undefined) {
     const count = Array.isArray(payload?.citation_ready_claims) ? payload.citation_ready_claims.length : 0;
     check(count >= expected.min_citation_ready_claims, failures, `citation_ready_claims expected at least ${expected.min_citation_ready_claims}, got ${count}`);
