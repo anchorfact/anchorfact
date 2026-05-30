@@ -436,7 +436,8 @@ function buildFixture(overrides = {}) {
     [`${baseUrl}/llms.txt`]: { body: llms, contentType: 'text/plain; charset=utf-8' },
     'https://api.github.com/repos/anchorfact/anchorfact/commits/75b8761df7e7a92d63a204d456c2e553d299f48d': {
       body: JSON.stringify({ sha: '75b8761df7e7a92d63a204d456c2e553d299f48d' })
-    }
+    },
+    ...overrides.routes
   };
   if (signaturePayload) {
     routes[`${baseUrl}/provenance.sig`] = { body: JSON.stringify(signaturePayload, null, 2) };
@@ -495,6 +496,28 @@ test('verifyLiveProvenance can authenticate GitHub commit lookup with a read tok
   const commitCall = fixture.calls.find(call => call.url.includes('api.github.com/repos/anchorfact/anchorfact/commits/'));
   assert(commitCall, 'commit lookup call should be recorded');
   assertEq(commitCall.options.headers.Authorization, 'Bearer github-token-fixture');
+});
+
+test('verifyLiveProvenance falls back to GitHub commit page when API is rate-limited', async () => {
+  const sha = '75b8761df7e7a92d63a204d456c2e553d299f48d';
+  const fixture = buildFixture({
+    routes: {
+      [`https://api.github.com/repos/anchorfact/anchorfact/commits/${sha}`]: new FakeResponse(403, JSON.stringify({ message: 'API rate limit exceeded' })),
+      [`https://github.com/anchorfact/anchorfact/commit/${sha}`]: {
+        body: `<html><body>Commit ${sha}</body></html>`,
+        contentType: 'text/html; charset=utf-8'
+      }
+    }
+  });
+
+  const result = await verifyLiveProvenance({
+    baseUrl: fixture.baseUrl,
+    fetchImpl: fixture.fetchImpl
+  });
+
+  assertEq(result.ok, true);
+  assertEq(result.commit.ok, true);
+  assertEq(result.commit.method, 'html_fallback');
 });
 
 test('verifyLiveProvenance verifies signed provenance with a trusted public key', async () => {

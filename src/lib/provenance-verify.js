@@ -26,6 +26,7 @@ import { fetchLiveText } from './live-http.js';
 
 const REQUIRED_ARTIFACTS = ['agent_json', 'openapi_json', 'manifest_json', 'claims_json', 'topics_json', 'capabilities_json', 'content_health_json', 'coverage_json', 'examples_json', 'graph_json', 'evals_json', 'mcp_json', 'search_index_json', 'sources_json', 'llms_txt'];
 const OFFICIAL_GITHUB_COMMIT_API = 'https://api.github.com/repos/anchorfact/anchorfact/commits/';
+const OFFICIAL_GITHUB_COMMIT_PAGE = 'https://github.com/anchorfact/anchorfact/commit/';
 
 export function sha256Text(text) {
   return createHash('sha256').update(Buffer.from(String(text), 'utf8')).digest('hex');
@@ -91,7 +92,17 @@ async function verifyCommit(fetchImpl, provenance, failures, githubToken = null)
     githubToken ? { headers: { Authorization: `Bearer ${githubToken}` } } : {}
   );
   if (!response.ok) {
+    const fallback = await fetchLiveText(fetchImpl, `${OFFICIAL_GITHUB_COMMIT_PAGE}${sha}`);
+    if (fallback.ok && fallback.text.includes(sha)) {
+      return { ok: true, sha, method: 'html_fallback' };
+    }
+
     failures.push(`GitHub commit lookup failed for ${sha}: ${fetchFailure(response)}`);
+    if (!fallback.ok) {
+      failures.push(`GitHub commit page fallback failed for ${sha}: ${fetchFailure(fallback)}`);
+    } else {
+      failures.push(`GitHub commit page fallback did not confirm ${sha}`);
+    }
     return { ok: false, sha };
   }
 
@@ -100,7 +111,7 @@ async function verifyCommit(fetchImpl, provenance, failures, githubToken = null)
   if (!commitOk) {
     failures.push(`GitHub commit response did not confirm ${sha}`);
   }
-  return { ok: commitOk, sha };
+  return { ok: commitOk, sha, method: 'api' };
 }
 
 function fetchFailure(response) {
