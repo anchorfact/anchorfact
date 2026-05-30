@@ -6560,20 +6560,47 @@
       "sources_total": 2,
       "verification_results": [
         {
-          "source_title": "Deep Learning for Hand Pose Estimation and Gesture Recognition: From Depth Sensors to Monocular Transformers (2024-2025 Survey)",
+          "source_title": "MediaPipe Hands: On-device Real-time Hand Tracking",
           "source_type": "academic_paper",
-          "results": [],
-          "all_verified": false
+          "results": [
+            {
+              "method": "arxiv",
+              "identifier": "2006.10214",
+              "verified": true,
+              "metadata": {
+                "title": "MediaPipe Hands: On-device Real-time Hand Tracking",
+                "manual_reviewed": true,
+                "manual_review_note": "Verified against arXiv metadata and article abstract for a bounded source-mapped repair."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         },
         {
-          "source_title": "Sign Language Recognition with AI: Computer Vision, Sequence Modeling, and Real-Time Translation (2025 Survey)",
-          "source_type": "academic_paper",
-          "results": [],
-          "all_verified": false
+          "source_title": "Reconstructing Hands in 3D with Transformers",
+          "source_type": "conference_paper",
+          "results": [
+            {
+              "method": "arxiv",
+              "identifier": "2312.05251",
+              "verified": true,
+              "metadata": {
+                "title": "Reconstructing Hands in 3D with Transformers",
+                "manual_reviewed": true,
+                "manual_review_note": "Verified against arXiv metadata and article abstract for a bounded source-mapped repair."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 0
+      "sources_verified": 2,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-30",
+      "manual_review_note": "Content narrowed to two source-mapped hand tracking / hand mesh recovery facts; sign-language accuracy and broad application claims were removed."
     },
     {
       "file": "content/ai/ai-governance-and-policy.md",
