@@ -467,7 +467,42 @@ export function buildOpenApiContract({
           },
           additionalProperties: true
         },
-        AgentProfile: schemaVersioned('Agent profile', AGENT_PROFILE_SCHEMA_VERSION),
+        AgentProfile: schemaVersioned('Agent profile', AGENT_PROFILE_SCHEMA_VERSION, {
+          quick_start: { $ref: '#/components/schemas/AgentQuickStart' }
+        }),
+        AgentQuickStart: {
+          type: 'object',
+          description: 'Smallest stable decision contract for AI consumers choosing an AnchorFact answer path.',
+          required: ['default_answer_path', 'default_answer_mode', 'citation_path', 'trust_check', 'fallback_policy'],
+          properties: {
+            purpose: { type: 'string' },
+            default_answer_path: { const: '/api/context?q={query}' },
+            default_answer_mode: { enum: ['answer_with_citations'] },
+            local_mcp_answer_tool: { const: 'anchorfact_context' },
+            citation_path: { const: '/api/cite?id={claim_id}' },
+            trust_check: {
+              type: 'object',
+              properties: {
+                path: { const: '/provenance.json' },
+                signature_path: { const: '/provenance.sig' },
+                require_trusted_signature: { type: 'boolean' },
+                pinned_public_key_path: { type: 'string' }
+              },
+              additionalProperties: true
+            },
+            fallback_policy: {
+              type: 'object',
+              properties: {
+                unsupported_answer_mode: { enum: ['external_sources_required'] },
+                use_external_sources_when: { type: 'array', items: { type: 'string' } }
+              },
+              additionalProperties: true
+            },
+            steps: { type: 'array', items: { type: 'object' } },
+            do_not_use: { type: 'array', items: { type: 'string' } }
+          },
+          additionalProperties: true
+        },
         ApiIndex: schemaVersioned('API index', API_INDEX_SCHEMA_VERSION, {
           read_only: { type: 'boolean' },
           recommended_sequence: { type: 'array', items: { type: 'string' } },

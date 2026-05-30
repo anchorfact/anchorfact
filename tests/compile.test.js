@@ -243,6 +243,15 @@ test('agent profile describes the machine contract', () => {
   assertEq(agent.endpoints.source_api.path, '/api/source?id={source_id}');
   assertEq(agent.endpoints.sources.url, 'https://anchorfact.org/sources.json');
   assertEq(agent.endpoints.search_index.url, 'https://anchorfact.org/search-index.json');
+  assertEq(agent.quick_start.default_answer_path, '/api/context?q={query}');
+  assertEq(agent.quick_start.default_answer_mode, 'answer_with_citations');
+  assertEq(agent.quick_start.local_mcp_answer_tool, 'anchorfact_context');
+  assertEq(agent.quick_start.citation_path, '/api/cite?id={claim_id}');
+  assertEq(agent.quick_start.trust_check.path, '/provenance.json');
+  assertEq(agent.quick_start.fallback_policy.unsupported_answer_mode, 'external_sources_required');
+  assert(agent.quick_start.do_not_use.includes('draft entries'), 'quick start should warn against draft citation');
+  assert(agent.quick_start.steps.some(step => step.id === 'assemble_context' && step.path === '/api/context?q={query}'), 'quick start should make context the default answer path');
+  assert(agent.quick_start.steps.some(step => step.id === 'verify_provenance' && step.path === '/provenance.json'), 'quick start should make provenance verification explicit');
   assert(agent.recommended_workflow.some(step => step.includes('/openapi.json')), 'agent workflow should mention OpenAPI');
   assert(agent.recommended_workflow.some(step => step.includes('/provenance.json')), 'agent workflow should mention provenance');
   assert(agent.recommended_workflow.some(step => step.includes('/topics.json')), 'agent workflow should mention topics index');
@@ -300,6 +309,9 @@ test('openapi.json describes the static AI contract', () => {
   assert(openapi.paths['/search-index.json'], 'OpenAPI should describe search index endpoint');
   assert(openapi.paths['/sources.json'], 'OpenAPI should describe sources endpoint');
   assert(openapi.paths['/{canonical_slug}/index.json'], 'OpenAPI should describe article JSON-LD template');
+  assert(openapi.components.schemas.AgentProfile.properties.quick_start, 'OpenAPI should describe agent quick-start guidance');
+  assert(openapi.components.schemas.AgentQuickStart.properties.default_answer_path, 'OpenAPI should define default answer path guidance');
+  assert(openapi.components.schemas.AgentQuickStart.properties.fallback_policy, 'OpenAPI should define fallback policy guidance');
   assert(openapi.components.schemas.Topics, 'OpenAPI should define Topics schema');
   assert(openapi.components.schemas.Capabilities, 'OpenAPI should define Capabilities schema');
   assert(openapi.components.schemas.ContentHealth, 'OpenAPI should define ContentHealth schema');

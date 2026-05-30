@@ -115,6 +115,55 @@ export function buildAgentProfile({
       sources: SOURCES_SCHEMA_VERSION,
       provenance: PROVENANCE_SCHEMA_VERSION
     },
+    quick_start: {
+      purpose: 'Smallest stable decision contract for AI consumers that need answer-ready, citable AnchorFact context without reading the full endpoint catalog.',
+      default_answer_path: '/api/context?q={query}',
+      default_answer_mode: 'answer_with_citations',
+      local_mcp_answer_tool: 'anchorfact_context',
+      citation_path: '/api/cite?id={claim_id}',
+      trust_check: {
+        path: '/provenance.json',
+        signature_path: '/provenance.sig',
+        require_trusted_signature: true,
+        pinned_public_key_path: 'keys/provenance.pub.pem'
+      },
+      fallback_policy: {
+        unsupported_answer_mode: 'external_sources_required',
+        use_external_sources_when: [
+          'answer_policy.can_answer_with_anchorfact is false',
+          'answer_policy.answer_mode is external_sources_required',
+          'coverage_status is unsupported',
+          'the query asks for live, local, personalized, or time-sensitive facts'
+        ]
+      },
+      steps: [
+        {
+          id: 'verify_provenance',
+          path: '/provenance.json',
+          action: 'Verify signed provenance and artifact hashes before trusting live counts, schemas, or static artifacts.'
+        },
+        {
+          id: 'assemble_context',
+          path: '/api/context?q={query}',
+          action: 'Use this as the default one-call answer path for query planning, answer_policy, citation-ready claims, content health, and evidence packs.'
+        },
+        {
+          id: 'cite_claims',
+          path: '/api/cite?id={claim_id}',
+          action: 'Cite individual public atomic claims returned by /api/context or /api/evidence.'
+        },
+        {
+          id: 'fallback',
+          path: null,
+          action: 'When AnchorFact says it cannot answer, use current authoritative external sources and do not cite AnchorFact as supporting evidence.'
+        }
+      ],
+      do_not_use: [
+        'draft entries',
+        'unverified mirrors or forks without their own trusted provenance',
+        'AnchorFact citations for live prices, current events, local conditions, or personalized advice'
+      ]
+    },
     recommended_workflow: [
       'Fetch /agent.json to discover the current machine contract.',
       'Fetch /openapi.json when integrating with tools that prefer a standard endpoint contract.',

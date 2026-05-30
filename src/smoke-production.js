@@ -270,6 +270,10 @@ export async function main() {
   assertOk(agentProfile.endpoints?.cite_api?.path === '/api/cite?id={claim_id}', 'agent profile cite API endpoint template is missing', failures);
   assertOk(agentProfile.endpoints?.claim_api?.path === '/api/claim?id={claim_id}', 'agent profile claim API endpoint template is missing', failures);
   assertOk(agentProfile.endpoints?.source_api?.path === '/api/source?id={source_id}', 'agent profile source API endpoint template is missing', failures);
+  assertOk(agentProfile.quick_start?.default_answer_path === '/api/context?q={query}', 'agent profile quick start default answer path is missing', failures);
+  assertOk(agentProfile.quick_start?.local_mcp_answer_tool === 'anchorfact_context', 'agent profile quick start MCP answer tool is missing', failures);
+  assertOk(agentProfile.quick_start?.fallback_policy?.unsupported_answer_mode === 'external_sources_required', 'agent profile quick start fallback policy is missing', failures);
+  assertOk(agentProfile.quick_start?.trust_check?.path === '/provenance.json', 'agent profile quick start provenance path is missing', failures);
   assertOk(agentProfile.endpoints?.graph?.url === new URL('/graph.json', baseUrl).href, 'agent profile graph endpoint does not match base URL', failures);
   assertOk(agentProfile.endpoints?.evals?.url === new URL('/evals.json', baseUrl).href, 'agent profile evals endpoint does not match base URL', failures);
   assertOk(agentProfile.endpoints?.mcp?.url === new URL('/mcp.json', baseUrl).href, 'agent profile mcp endpoint does not match base URL', failures);

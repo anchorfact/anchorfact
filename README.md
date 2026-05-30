@@ -153,7 +153,7 @@ Only public articles contribute publishable facts to `/claims.json`.
 | --- | --- |
 | `/robots.txt` | Public crawler discovery file advertising sitemap, LLM index, agent profile, OpenAPI, MCP, and provenance entrypoints. |
 | `/sitemap.xml` | Public-only sitemap for AI and search crawlers; draft routes are excluded. |
-| `/agent.json` | AI agent discovery profile with endpoint contracts, citation policy, and recommended retrieval workflow. |
+| `/agent.json` | AI agent discovery profile with endpoint contracts, citation policy, quick-start answer path, and recommended retrieval workflow. |
 | `/.well-known/anchorfact.json` | Stable well-known alias for `/agent.json`. |
 | `/openapi.json` | OpenAPI 3.1 description of the static read-only machine contract. |
 | `/llms.txt` | Public verified index for LLM crawlers. |
