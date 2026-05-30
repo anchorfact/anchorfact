@@ -68,6 +68,19 @@ const searchIndex = {
       search_text: 'weather forecasting meteorology machine learning'
     },
     {
+      canonical_slug: 'self-improvement/time-management',
+      title: 'Time Management',
+      url: 'https://anchorfact.org/self-improvement/time-management/',
+      description: 'Static time-management methods for planning and prioritization.',
+      confidence_level: 'medium',
+      source_coverage: { verified: 1, total: 1, ratio: 1 },
+      claim_count: 1,
+      claim_ids: ['https://anchorfact.org/fact/f9'],
+      keywords: ['time', 'management', 'planning'],
+      routes: { jsonld: 'https://anchorfact.org/self-improvement/time-management/index.json' },
+      search_text: 'time management planning prioritization productivity'
+    },
+    {
       canonical_slug: 'health/medication-safety',
       title: 'Medication Safety',
       url: 'https://anchorfact.org/health/medication-safety/',
@@ -260,6 +273,40 @@ test('buildPlanApiPayload rejects live, local, and time-sensitive questions even
   assertEq(livePayload.should_use_anchorfact, false);
   assert(livePayload.unsupported_intent_reasons.includes('live_or_time_sensitive'), 'live query should carry an intent reason');
   assert(livePayload.fallback_guidance.some(item => item.includes('current')), 'live query should explain current-source fallback');
+
+  for (const query of [
+    'weather Paris',
+    'temperature in Paris',
+    'time in Tokyo',
+    'flight status AA100',
+    'who is the CEO of OpenAI',
+    'president of France'
+  ]) {
+    const implicitLivePayload = buildPlanApiPayload({
+      query,
+      searchIndex,
+      topicsPayload,
+      coveragePayload,
+      generated: '2026-05-29T00:00:00.000Z'
+    });
+    assertEq(implicitLivePayload.coverage_status, 'unsupported', query);
+    assertEq(implicitLivePayload.should_use_anchorfact, false, query);
+    assertEq(implicitLivePayload.matched_articles, [], query);
+    assert(implicitLivePayload.unsupported_intent_reasons.includes('live_or_time_sensitive'), `${query} should carry a live/current intent reason`);
+  }
+
+  for (const query of ['weather forecasting', 'time management']) {
+    const staticPayload = buildPlanApiPayload({
+      query,
+      searchIndex,
+      topicsPayload,
+      coveragePayload,
+      generated: '2026-05-29T00:00:00.000Z'
+    });
+    assertEq(staticPayload.coverage_status, 'supported', query);
+    assertEq(staticPayload.should_use_anchorfact, true, query);
+    assertEq(staticPayload.unsupported_intent_reasons, [], query);
+  }
 });
 
 test('buildPlanApiPayload rejects high-stakes personal advice even with lexical matches', () => {

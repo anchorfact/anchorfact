@@ -122,6 +122,7 @@ function unsupportedIntentReasons(query) {
 
   if (hasLiveTimeMarker
     || asksLiveWeather
+    || implicitLiveFactIntent(normalized)
     || /\b(?:score|scores|standings|schedule|stock price|exchange rate)\b/.test(normalized)
     || /\bwho won\b/.test(normalized)
     || /\b20(?:2[5-9]|[3-9]\d)\b/.test(normalized)) {
@@ -157,6 +158,23 @@ function harmfulOperationalRequestIntent(normalized) {
   const weaponAbuse = /\b(?:pipe bomb|bomb|explosive|weapon design|nuclear weapon|bioweapon)\b/.test(normalized);
   const fraudAbuse = /\b(?:tax fraud|fraud|scam|money laundering|identity theft|credit card theft)\b/.test(normalized);
   return (cyberAbuse || weaponAbuse || fraudAbuse) && (harmfulAction || (broadHowTo && !defensiveIntent));
+}
+
+function implicitLiveFactIntent(normalized) {
+  const staticWeatherKnowledge = /\b(?:weather forecasting|weather prediction|meteorolog(?:y|ical)|climate|atmospheric|forecasting model)\b/.test(normalized);
+  const weatherLookup = /\bweather\b/.test(normalized) && !staticWeatherKnowledge;
+  const staticTemperatureKnowledge = /\b(?:thermodynamics|thermal|physics|temperature scale|celsius|fahrenheit|kelvin|heat transfer|absolute zero)\b/.test(normalized);
+  const temperatureLookup = /\btemperature\b/.test(normalized) && !staticTemperatureKnowledge;
+  const staticTimeKnowledge = /\b(?:time management|time series|geological time|spacetime|runtime|time complexity)\b/.test(normalized);
+  const timeLookup = /\b(?:what time is it|local time|time in|time at|time for)\b/.test(normalized) && !staticTimeKnowledge;
+  const flightLookup = /\b(?:flight status|flight tracker|flight delay|flight delays|arrival time|departure time|boarding gate|gate number)\b/.test(normalized);
+  const currentRoleLookup = /\b(?:(?:who is|who s|name|current)\s+)?(?:the\s+)?(?:ceo|chief executive|president|prime minister|mayor|governor|chair|chairperson|leader|director)\s+(?:of|for)\b/.test(normalized);
+  const historicalContext = /\b(?:was|were|former|during|history|historical|ancient|medieval|renaissance|napoleonic|revolution|war|century|1[5-9]\d{2}|20[01]\d)\b/.test(normalized);
+  return weatherLookup
+    || temperatureLookup
+    || timeLookup
+    || flightLookup
+    || (currentRoleLookup && !historicalContext);
 }
 
 function siteHelpIntent(query) {

@@ -104,7 +104,7 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
 
   assertEq(payload.schema_version, 'anchorfact.evals.v1');
   assertEq(payload.provenance_url, 'https://anchorfact.org/provenance.json');
-  assertEq(payload.eval_count, 41);
+  assertEq(payload.eval_count, 43);
   assertEq(payload.evals.map(evalCase => evalCase.id), [
     'api_discovery',
     'openapi_context_contract',
@@ -133,6 +133,8 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
     'unsupported_medical_personal_advice',
     'unsupported_harmful_operational_request',
     'unsupported_live_stock_price',
+    'unsupported_live_weather_location',
+    'unsupported_current_leadership_fact',
     'context_pack_json',
     'unsupported_query_evidence',
     'unsupported_context_pack_json',
@@ -240,6 +242,24 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
   assertEq(liveRefusalEval.expected.max_citation_ready_claims, 0);
   assertEq(liveRefusalEval.expected.unsupported_intent_reasons, ['live_or_time_sensitive']);
 
+  const liveWeatherEval = payload.evals.find(evalCase => evalCase.id === 'unsupported_live_weather_location');
+  assert(liveWeatherEval.call.path.includes('/api/context?q=weather+Paris&limit=3'), 'implicit weather refusal eval should use the context API');
+  assertEq(liveWeatherEval.expected.coverage_status, 'unsupported');
+  assertEq(liveWeatherEval.expected.should_use_anchorfact, false);
+  assertEq(liveWeatherEval.expected.answer_policy_can_answer, false);
+  assertEq(liveWeatherEval.expected.answer_policy_mode, 'external_sources_required');
+  assertEq(liveWeatherEval.expected.max_citation_ready_claims, 0);
+  assertEq(liveWeatherEval.expected.unsupported_intent_reasons, ['live_or_time_sensitive']);
+
+  const currentLeadershipEval = payload.evals.find(evalCase => evalCase.id === 'unsupported_current_leadership_fact');
+  assert(currentLeadershipEval.call.path.includes('/api/context?q=who+is+the+CEO+of+OpenAI&limit=3'), 'current leadership refusal eval should use the context API');
+  assertEq(currentLeadershipEval.expected.coverage_status, 'unsupported');
+  assertEq(currentLeadershipEval.expected.should_use_anchorfact, false);
+  assertEq(currentLeadershipEval.expected.answer_policy_can_answer, false);
+  assertEq(currentLeadershipEval.expected.answer_policy_mode, 'external_sources_required');
+  assertEq(currentLeadershipEval.expected.max_citation_ready_claims, 0);
+  assertEq(currentLeadershipEval.expected.unsupported_intent_reasons, ['live_or_time_sensitive']);
+
   const contextEval = payload.evals.find(evalCase => evalCase.id === 'context_pack_json');
   assert(contextEval.call.path.includes('/api/context?q=gaussian+splatting&limit=3'), 'context eval should include encoded query path');
   assertEq(contextEval.expected.schema_version, 'anchorfact.context-api.v1');
@@ -303,7 +323,7 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
   const benchmarkEval = payload.evals.find(evalCase => evalCase.id === 'coverage_query_benchmark_catalog');
   assertEq(benchmarkEval.call.path, '/coverage.json');
   assertEq(benchmarkEval.expected.schema_version, 'anchorfact.coverage.v1');
-  assertEq(benchmarkEval.expected.min_query_benchmark_cases, 22);
+  assertEq(benchmarkEval.expected.min_query_benchmark_cases, 24);
   assert(benchmarkEval.expected.required_query_benchmark_slugs.includes('ai/rlhf'), 'benchmark eval should require RLHF query coverage');
   assert(benchmarkEval.expected.required_query_benchmark_slugs.includes('ai/kolmogorov-arnold-networks'), 'benchmark eval should require KAN query coverage');
   assert(benchmarkEval.expected.required_query_benchmark_slugs.includes('ai/vision-transformers'), 'benchmark eval should require ViT query coverage');

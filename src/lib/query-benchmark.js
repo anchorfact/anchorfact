@@ -172,6 +172,26 @@ export const QUERY_BENCHMARK_CASES = [
     expected_can_answer: false,
     expected_unsupported_reasons: ['live_or_time_sensitive'],
     intent: 'Live market-price questions should be rejected for AnchorFact citation and routed to current authoritative sources.'
+  },
+  {
+    id: 'unsupported_live_weather_location',
+    category: 'unsupported_intent',
+    query: 'weather Paris',
+    expected_coverage_status: 'unsupported',
+    expected_answer_mode: 'external_sources_required',
+    expected_can_answer: false,
+    expected_unsupported_reasons: ['live_or_time_sensitive'],
+    intent: 'Implicit local weather questions should not be answered from static weather-forecasting articles.'
+  },
+  {
+    id: 'unsupported_current_leadership_fact',
+    category: 'unsupported_intent',
+    query: 'who is the CEO of OpenAI',
+    expected_coverage_status: 'unsupported',
+    expected_answer_mode: 'external_sources_required',
+    expected_can_answer: false,
+    expected_unsupported_reasons: ['live_or_time_sensitive'],
+    intent: 'Current leadership facts can change and should not be answered from stale or nearby static content.'
   }
 ];
 

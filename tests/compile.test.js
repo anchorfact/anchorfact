@@ -217,7 +217,7 @@ test('agent profile describes the machine contract', () => {
   assertEq(agent.current_snapshot.examples, 7);
   assert(agent.current_snapshot.graph_nodes >= 1, 'agent profile should expose graph node count');
   assert(agent.current_snapshot.graph_edges >= 1, 'agent profile should expose graph edge count');
-  assertEq(agent.current_snapshot.evals, 41);
+  assertEq(agent.current_snapshot.evals, 43);
   assertEq(agent.current_snapshot.mcp_tools, 9);
   assert(agent.current_snapshot.unique_sources >= 1, 'agent profile should expose source count');
   assertEq(agent.endpoints.claims.url, 'https://anchorfact.org/claims.json');
@@ -472,7 +472,7 @@ test('evals.json describes executable AI integration checks', () => {
   const evals = JSON.parse(readFileSync(join(distDir, 'evals.json'), 'utf-8'));
   assertEq(evals.schema_version, 'anchorfact.evals.v1');
   assertEq(evals.provenance_url, 'https://anchorfact.org/provenance.json');
-  assertEq(evals.eval_count, 41);
+  assertEq(evals.eval_count, 43);
   assertEq(evals.evals.map(evalCase => evalCase.id), [
     'api_discovery',
     'openapi_context_contract',
@@ -501,6 +501,8 @@ test('evals.json describes executable AI integration checks', () => {
     'unsupported_medical_personal_advice',
     'unsupported_harmful_operational_request',
     'unsupported_live_stock_price',
+    'unsupported_live_weather_location',
+    'unsupported_current_leadership_fact',
     'context_pack_json',
     'unsupported_query_evidence',
     'unsupported_context_pack_json',
@@ -522,6 +524,8 @@ test('evals.json describes executable AI integration checks', () => {
   assert(evals.evals.some(evalCase => evalCase.id === 'query_routing_climate_change'), 'evals should include cross-domain query routing checks');
   assert(evals.evals.some(evalCase => evalCase.id === 'unsupported_medical_personal_advice'), 'evals should include high-stakes personal advice refusal checks');
   assert(evals.evals.some(evalCase => evalCase.id === 'unsupported_harmful_operational_request'), 'evals should include harmful operational request refusal checks');
+  assert(evals.evals.some(evalCase => evalCase.id === 'unsupported_live_weather_location'), 'evals should include implicit live weather refusal checks');
+  assert(evals.evals.some(evalCase => evalCase.id === 'unsupported_current_leadership_fact'), 'evals should include current leadership refusal checks');
   assert(evals.evals.some(evalCase => evalCase.call.path.includes('/api/plan?')), 'evals should include plan API checks');
   assert(evals.evals.some(evalCase => evalCase.call.path.includes('/api/evidence?')), 'evals should include evidence API checks');
   assert(evals.evals.some(evalCase => evalCase.call.path.includes('/api/context?')), 'evals should include context API checks');

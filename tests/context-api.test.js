@@ -71,6 +71,19 @@ const manifest = {
       confidence_score: 0.8,
       sources_verified: 1,
       sources_total: 1
+    },
+    {
+      id: 'article:ai/ai-for-weather-forecasting',
+      canonical_slug: 'ai/ai-for-weather-forecasting',
+      canonical_url: 'https://anchorfact.org/ai/ai-for-weather-forecasting/',
+      title: 'AI for Weather Forecasting',
+      description: 'Machine learning systems for meteorological forecasting.',
+      status: 'public',
+      is_draft: false,
+      confidence_level: 'medium',
+      confidence_score: 0.8,
+      sources_verified: 1,
+      sources_total: 1
     }
   ]
 };
@@ -110,6 +123,14 @@ const claimsPayload = {
       confidence: 'medium',
       source_url: 'https://example.org/sql-injection-prevention',
       source_title: 'SQL Injection Prevention Reference'
+    },
+    {
+      id: 'https://anchorfact.org/fact/f9',
+      canonical_slug: 'ai/ai-for-weather-forecasting',
+      statement: 'Machine learning weather forecasting systems estimate future meteorological states from atmospheric data.',
+      confidence: 'medium',
+      source_url: 'https://example.org/weather-forecasting',
+      source_title: 'Weather Forecasting Reference'
     }
   ]
 };
@@ -150,6 +171,14 @@ const sourcesPayload = {
       tier: 'B',
       url: 'https://example.org/sql-injection-prevention',
       articles: [{ canonical_slug: 'computer-science/sql-injection', title: 'SQL Injection Prevention' }]
+    },
+    {
+      id: 'source:weather',
+      title: 'Weather Forecasting Reference',
+      type: 'academic_paper',
+      tier: 'A',
+      url: 'https://example.org/weather-forecasting',
+      articles: [{ canonical_slug: 'ai/ai-for-weather-forecasting', title: 'AI for Weather Forecasting' }]
     }
   ]
 };
@@ -205,6 +234,18 @@ const searchIndex = {
       claim_count: 1,
       keywords: ['sql', 'injection', 'prevention', 'payload'],
       search_text: 'sql injection prevention attack payload parameterized queries secure coding'
+    },
+    {
+      canonical_slug: 'ai/ai-for-weather-forecasting',
+      title: 'AI for Weather Forecasting',
+      url: 'https://anchorfact.org/ai/ai-for-weather-forecasting/',
+      description: 'Machine learning systems for meteorological forecasting.',
+      confidence_level: 'medium',
+      source_coverage: { verified: 1, total: 1, ratio: 1 },
+      claim_ids: ['https://anchorfact.org/fact/f9'],
+      claim_count: 1,
+      keywords: ['weather', 'forecasting', 'meteorology'],
+      search_text: 'weather forecasting meteorology machine learning'
     }
   ]
 };
@@ -357,6 +398,22 @@ test('buildContextApiPayload suppresses lexical evidence for live unsupported in
   assertEq(result.payload.evidence_packs, []);
   assertEq(result.payload.citation_ready_claims, []);
   assert(result.payload.fallback_guidance.some(item => item.includes('current')), 'live query should explain current-source fallback');
+
+  const weather = buildContextApiPayload(payloadArgs({ query: 'weather Paris' }));
+  assertEq(weather.payload.coverage_status, 'unsupported');
+  assertEq(weather.payload.should_use_anchorfact, false);
+  assertEq(weather.payload.answer_policy.can_answer_with_anchorfact, false);
+  assertEq(weather.payload.answer_policy.answer_mode, 'external_sources_required');
+  assertEq(weather.payload.evidence_pack_count, 0);
+  assertEq(weather.payload.evidence_packs, []);
+  assertEq(weather.payload.citation_ready_claims, []);
+  assert(weather.payload.unsupported_intent_reasons.includes('live_or_time_sensitive'), 'location weather should carry a live intent reason');
+
+  const staticWeather = buildContextApiPayload(payloadArgs({ query: 'weather forecasting' }));
+  assertEq(staticWeather.payload.coverage_status, 'supported');
+  assertEq(staticWeather.payload.should_use_anchorfact, true);
+  assertEq(staticWeather.payload.unsupported_intent_reasons, []);
+  assertEq(staticWeather.payload.evidence_packs[0].canonical_slug, 'ai/ai-for-weather-forecasting');
 });
 
 test('buildContextApiPayload suppresses lexical evidence for high-stakes personal advice', () => {

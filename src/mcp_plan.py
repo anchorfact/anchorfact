@@ -365,6 +365,7 @@ def _unsupported_intent_reasons(query: str) -> list[str]:
     if (
         has_live_time_marker
         or asks_live_weather
+        or _implicit_live_fact_intent(normalized)
         or re.search(r"\b(?:score|scores|standings|schedule|stock price|exchange rate)\b", normalized)
         or re.search(r"\bwho won\b", normalized)
         or re.search(r"\b20(?:2[5-9]|[3-9]\d)\b", normalized)
@@ -424,6 +425,43 @@ def _harmful_operational_request_intent(normalized: str) -> bool:
         normalized,
     ) is not None
     return (cyber_abuse or weapon_abuse or fraud_abuse) and (harmful_action or (broad_how_to and not defensive_intent))
+
+
+def _implicit_live_fact_intent(normalized: str) -> bool:
+    static_weather_knowledge = re.search(
+        r"\b(?:weather forecasting|weather prediction|meteorolog(?:y|ical)|climate|atmospheric|forecasting model)\b",
+        normalized,
+    ) is not None
+    weather_lookup = re.search(r"\bweather\b", normalized) is not None and not static_weather_knowledge
+    static_temperature_knowledge = re.search(
+        r"\b(?:thermodynamics|thermal|physics|temperature scale|celsius|fahrenheit|kelvin|heat transfer|absolute zero)\b",
+        normalized,
+    ) is not None
+    temperature_lookup = re.search(r"\btemperature\b", normalized) is not None and not static_temperature_knowledge
+    static_time_knowledge = re.search(
+        r"\b(?:time management|time series|geological time|spacetime|runtime|time complexity)\b",
+        normalized,
+    ) is not None
+    time_lookup = re.search(r"\b(?:what time is it|local time|time in|time at|time for)\b", normalized) is not None and not static_time_knowledge
+    flight_lookup = re.search(
+        r"\b(?:flight status|flight tracker|flight delay|flight delays|arrival time|departure time|boarding gate|gate number)\b",
+        normalized,
+    ) is not None
+    current_role_lookup = re.search(
+        r"\b(?:(?:who is|who s|name|current)\s+)?(?:the\s+)?(?:ceo|chief executive|president|prime minister|mayor|governor|chair|chairperson|leader|director)\s+(?:of|for)\b",
+        normalized,
+    ) is not None
+    historical_context = re.search(
+        r"\b(?:was|were|former|during|history|historical|ancient|medieval|renaissance|napoleonic|revolution|war|century|1[5-9]\d{2}|20[01]\d)\b",
+        normalized,
+    ) is not None
+    return (
+        weather_lookup
+        or temperature_lookup
+        or time_lookup
+        or flight_lookup
+        or (current_role_lookup and not historical_context)
+    )
 
 
 def _site_help_intent(query: str) -> bool:
