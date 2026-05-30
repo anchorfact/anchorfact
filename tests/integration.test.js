@@ -184,10 +184,13 @@ test('public machine entrypoints exclude drafts', () => {
   assert(examples.examples.some(example => example.id === 'one_call_evidence_pack'), 'examples index should include evidence pack workflow');
   assert(examples.examples.some(example => example.id === 'mixed_reference_resolution'), 'examples index should include mixed reference workflow');
   assert(examples.examples.some(example => example.id === 'static_fallback'), 'examples index should include static fallback workflow');
-  assertEq(evals.eval_count, 36);
+  assertEq(evals.eval_count, 39);
   assert(evals.evals.some(evalCase => evalCase.id === 'openapi_context_contract'), 'evals index should include OpenAPI context contract check');
   assert(evals.evals.some(evalCase => evalCase.id === 'ai_query_intent_fine_tune_with_adapters'), 'evals index should include natural-language AI intent routing check');
   assert(evals.evals.some(evalCase => evalCase.id === 'ai_query_routing_rlhf'), 'evals index should include high-intent AI query routing check');
+  assert(evals.evals.some(evalCase => evalCase.id === 'ai_query_routing_kolmogorov_arnold_networks'), 'evals index should include KAN routing checks');
+  assert(evals.evals.some(evalCase => evalCase.id === 'ai_query_routing_vision_transformers'), 'evals index should include vision transformer routing checks');
+  assert(evals.evals.some(evalCase => evalCase.id === 'ai_query_routing_meta_learning'), 'evals index should include meta-learning routing checks');
   assert(evals.evals.some(evalCase => evalCase.id === 'query_routing_rest_api'), 'evals index should include API fundamentals routing check');
   assert(evals.evals.some(evalCase => evalCase.id === 'query_routing_climate_change'), 'evals index should include cross-domain query routing check');
   assert(evals.evals.some(evalCase => evalCase.id === 'agent_usage_anchorfact_citation_help'), 'evals index should include AnchorFact usage guidance check');

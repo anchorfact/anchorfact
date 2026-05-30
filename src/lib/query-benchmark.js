@@ -44,6 +44,33 @@ export const QUERY_BENCHMARK_CASES = [
     intent: 'Low-resource NLP is a representative long-tail AI topic where precise routing matters.'
   },
   {
+    id: 'ai_query_routing_kolmogorov_arnold_networks',
+    category: 'core_ai',
+    query: 'kolmogorov arnold networks',
+    expected_top_slug: 'ai/kolmogorov-arnold-networks',
+    min_citation_ready_claims: 2,
+    min_sources_per_expected_pack: 2,
+    intent: 'KAN should route to the dedicated architecture evidence pack with enough source-backed claims for an AI answer.'
+  },
+  {
+    id: 'ai_query_routing_vision_transformers',
+    category: 'core_ai',
+    query: 'vision transformers',
+    expected_top_slug: 'ai/vision-transformers',
+    min_citation_ready_claims: 2,
+    min_sources_per_expected_pack: 2,
+    intent: 'Vision Transformer queries should resolve to the ViT evidence pack rather than generic transformer or computer-vision material.'
+  },
+  {
+    id: 'ai_query_routing_meta_learning',
+    category: 'core_ai',
+    query: 'meta learning maml',
+    expected_top_slug: 'ai/meta-learning',
+    min_citation_ready_claims: 2,
+    min_sources_per_expected_pack: 2,
+    intent: 'Meta-learning intent should route to the MAML/Reptile evidence pack with citation-ready source depth.'
+  },
+  {
     id: 'query_routing_postgresql',
     category: 'technical_reference',
     query: 'postgresql',

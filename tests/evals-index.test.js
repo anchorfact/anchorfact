@@ -104,7 +104,7 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
 
   assertEq(payload.schema_version, 'anchorfact.evals.v1');
   assertEq(payload.provenance_url, 'https://anchorfact.org/provenance.json');
-  assertEq(payload.eval_count, 36);
+  assertEq(payload.eval_count, 39);
   assertEq(payload.evals.map(evalCase => evalCase.id), [
     'api_discovery',
     'openapi_context_contract',
@@ -117,6 +117,9 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
     'ai_query_routing_rlhf',
     'ai_query_routing_mixture_of_experts',
     'ai_query_routing_low_resource_nlp',
+    'ai_query_routing_kolmogorov_arnold_networks',
+    'ai_query_routing_vision_transformers',
+    'ai_query_routing_meta_learning',
     'query_routing_postgresql',
     'query_routing_rest_api',
     'query_routing_http_status_codes',
@@ -185,6 +188,12 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
   assertEq(adaptersEval.expected.top_canonical_slug, 'ai/parameter-efficient-fine-tuning');
   assertEq(adaptersEval.expected.min_claims_per_matching_pack, 2);
   assertEq(adaptersEval.expected.min_sources_per_matching_pack, 2);
+
+  const kanEval = payload.evals.find(evalCase => evalCase.id === 'ai_query_routing_kolmogorov_arnold_networks');
+  assert(kanEval.call.path.includes('/api/evidence?q=kolmogorov+arnold+networks&limit=3'), 'KAN routing eval should use the canonical architecture query');
+  assertEq(kanEval.expected.top_canonical_slug, 'ai/kolmogorov-arnold-networks');
+  assertEq(kanEval.expected.min_claims_per_matching_pack, 2);
+  assertEq(kanEval.expected.min_sources_per_matching_pack, 2);
 
   const restEval = payload.evals.find(evalCase => evalCase.id === 'query_routing_rest_api');
   assert(restEval.call.path.includes('/api/evidence?q=REST+API&limit=3'), 'REST API routing eval should use the high-intent API query');
@@ -274,8 +283,11 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
   const benchmarkEval = payload.evals.find(evalCase => evalCase.id === 'coverage_query_benchmark_catalog');
   assertEq(benchmarkEval.call.path, '/coverage.json');
   assertEq(benchmarkEval.expected.schema_version, 'anchorfact.coverage.v1');
-  assertEq(benchmarkEval.expected.min_query_benchmark_cases, 17);
+  assertEq(benchmarkEval.expected.min_query_benchmark_cases, 20);
   assert(benchmarkEval.expected.required_query_benchmark_slugs.includes('ai/rlhf'), 'benchmark eval should require RLHF query coverage');
+  assert(benchmarkEval.expected.required_query_benchmark_slugs.includes('ai/kolmogorov-arnold-networks'), 'benchmark eval should require KAN query coverage');
+  assert(benchmarkEval.expected.required_query_benchmark_slugs.includes('ai/vision-transformers'), 'benchmark eval should require ViT query coverage');
+  assert(benchmarkEval.expected.required_query_benchmark_slugs.includes('ai/meta-learning'), 'benchmark eval should require meta-learning query coverage');
   assert(benchmarkEval.expected.required_query_benchmark_slugs.includes('computer-science/rest-api'), 'benchmark eval should require REST API query coverage');
   assert(benchmarkEval.expected.query_benchmark_pass_gate_contains.includes('/evals.json'), 'benchmark eval should require executable eval pass gate');
 
