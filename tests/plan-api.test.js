@@ -81,6 +81,32 @@ const searchIndex = {
       search_text: 'aspirin medication safety chest pain symptoms treatment'
     },
     {
+      canonical_slug: 'computer-science/sql-injection',
+      title: 'SQL Injection Prevention',
+      url: 'https://anchorfact.org/computer-science/sql-injection/',
+      description: 'Educational secure coding reference for SQL injection prevention.',
+      confidence_level: 'medium',
+      source_coverage: { verified: 2, total: 2, ratio: 1 },
+      claim_count: 2,
+      claim_ids: ['https://anchorfact.org/fact/f7'],
+      keywords: ['sql', 'injection', 'prevention', 'payload'],
+      routes: { jsonld: 'https://anchorfact.org/computer-science/sql-injection/index.json' },
+      search_text: 'sql injection prevention attack payload parameterized queries secure coding'
+    },
+    {
+      canonical_slug: 'computer-science/phishing-awareness',
+      title: 'Phishing Awareness',
+      url: 'https://anchorfact.org/computer-science/phishing-awareness/',
+      description: 'Educational reference for recognizing and preventing phishing.',
+      confidence_level: 'medium',
+      source_coverage: { verified: 2, total: 2, ratio: 1 },
+      claim_count: 2,
+      claim_ids: ['https://anchorfact.org/fact/f8'],
+      keywords: ['phishing', 'prevention', 'awareness'],
+      routes: { jsonld: 'https://anchorfact.org/computer-science/phishing-awareness/index.json' },
+      search_text: 'phishing prevention awareness training recognize report secure email'
+    },
+    {
       canonical_slug: 'science/statistics',
       title: 'Statistics Fundamentals',
       url: 'https://anchorfact.org/science/statistics/',
@@ -261,6 +287,48 @@ test('buildPlanApiPayload rejects high-stakes personal advice even with lexical 
   assertEq(educational.coverage_status, 'supported');
   assertEq(educational.should_use_anchorfact, true);
   assertEq(educational.unsupported_intent_reasons, []);
+});
+
+test('buildPlanApiPayload rejects harmful operational requests without blocking defensive education', () => {
+  const payload = buildPlanApiPayload({
+    query: 'sql injection attack payload',
+    searchIndex,
+    topicsPayload,
+    coveragePayload,
+    generated: '2026-05-29T00:00:00.000Z'
+  });
+
+  assertEq(payload.coverage_status, 'unsupported');
+  assertEq(payload.should_use_anchorfact, false);
+  assertEq(payload.matched_articles, []);
+  assert(payload.unsupported_intent_reasons.includes('harmful_operational_request'), 'attack payload request should carry a harmful-operation reason');
+  assert(payload.fallback_guidance.some(item => item.includes('harmful operational')), 'harmful requests should explain why AnchorFact will not cite them');
+
+  const defensive = buildPlanApiPayload({
+    query: 'sql injection prevention',
+    searchIndex,
+    topicsPayload,
+    coveragePayload,
+    generated: '2026-05-29T00:00:00.000Z'
+  });
+
+  assertEq(defensive.coverage_status, 'supported');
+  assertEq(defensive.should_use_anchorfact, true);
+  assertEq(defensive.unsupported_intent_reasons, []);
+  assertEq(defensive.matched_articles[0].canonical_slug, 'computer-science/sql-injection');
+
+  const defensiveHowTo = buildPlanApiPayload({
+    query: 'how to prevent phishing',
+    searchIndex,
+    topicsPayload,
+    coveragePayload,
+    generated: '2026-05-29T00:00:00.000Z'
+  });
+
+  assertEq(defensiveHowTo.coverage_status, 'supported');
+  assertEq(defensiveHowTo.should_use_anchorfact, true);
+  assertEq(defensiveHowTo.unsupported_intent_reasons, []);
+  assertEq(defensiveHowTo.matched_articles[0].canonical_slug, 'computer-science/phishing-awareness');
 });
 
 test('buildPlanApiPayload keeps static educational weather queries supported', () => {

@@ -372,6 +372,8 @@ def _unsupported_intent_reasons(query: str) -> list[str]:
         reasons.append("live_or_time_sensitive")
     if _high_stakes_personal_advice_intent(normalized):
         reasons.append("high_stakes_personal_advice")
+    if _harmful_operational_request_intent(normalized):
+        reasons.append("harmful_operational_request")
     return list(dict.fromkeys(reasons))
 
 
@@ -397,6 +399,31 @@ def _high_stakes_personal_advice_intent(normalized: str) -> bool:
         normalized,
     ) is not None
     return (medical_domain or legal_domain or financial_domain) and (personal_advice or direct_advice)
+
+
+def _harmful_operational_request_intent(normalized: str) -> bool:
+    harmful_action = re.search(
+        r"\b(?:write|create|make|build|generate|template|payload|bypass|exploit|attack|steal|commit|evade|fake|construct|design)\b",
+        normalized,
+    ) is not None
+    broad_how_to = re.search(r"\bhow to\b", normalized) is not None
+    defensive_intent = re.search(
+        r"\b(?:prevent(?:ion)?|defen[sc]e|defend|protect|mitigat(?:e|ion)|detect(?:ion)?|monitor(?:ing)?|incident response|awareness|training|secure|security|report|recognize|analysis|forensics|education(?:al)?)\b",
+        normalized,
+    ) is not None
+    cyber_abuse = re.search(
+        r"\b(?:ransomware|malware|phishing|credential theft|keylogger|exploit|payload|bypass authentication|hack(?:ing)?|ddos|sql injection attack)\b",
+        normalized,
+    ) is not None
+    weapon_abuse = re.search(
+        r"\b(?:pipe bomb|bomb|explosive|weapon design|nuclear weapon|bioweapon)\b",
+        normalized,
+    ) is not None
+    fraud_abuse = re.search(
+        r"\b(?:tax fraud|fraud|scam|money laundering|identity theft|credit card theft)\b",
+        normalized,
+    ) is not None
+    return (cyber_abuse or weapon_abuse or fraud_abuse) and (harmful_action or (broad_how_to and not defensive_intent))
 
 
 def _site_help_intent(query: str) -> bool:
@@ -606,6 +633,8 @@ def _fallback_guidance(status: str, intent_reasons: list[str] | None = None) -> 
             guidance.append("AnchorFact is not a live news, sports, market, weather, or current-results source; use current authoritative sources.")
         if "high_stakes_personal_advice" in intent_reasons:
             guidance.append("AnchorFact is not a medical, legal, or financial professional advice source; use qualified professional guidance or current authoritative sources.")
+        if "harmful_operational_request" in intent_reasons:
+            guidance.append("AnchorFact does not support harmful operational requests for abuse, weapons, fraud, or intrusion; use defensive, educational, or authoritative safety resources instead.")
         return [
             *guidance,
             "AnchorFact has no clear public coverage for this query.",

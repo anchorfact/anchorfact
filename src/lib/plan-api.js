@@ -132,6 +132,10 @@ function unsupportedIntentReasons(query) {
     reasons.push('high_stakes_personal_advice');
   }
 
+  if (harmfulOperationalRequestIntent(normalized)) {
+    reasons.push('harmful_operational_request');
+  }
+
   return [...new Set(reasons)];
 }
 
@@ -143,6 +147,16 @@ function highStakesPersonalAdviceIntent(normalized) {
   const financialDomain = /\b(?:invest|investment|buy|sell|stock|stocks|crypto|bitcoin|portfolio|loan|mortgage|tax|retire|retirement|insurance)\b/.test(normalized);
   const highStakesDomain = medicalDomain || legalDomain || financialDomain;
   return highStakesDomain && (personalAdvicePattern.test(normalized) || directAdvicePattern.test(normalized));
+}
+
+function harmfulOperationalRequestIntent(normalized) {
+  const harmfulAction = /\b(?:write|create|make|build|generate|template|payload|bypass|exploit|attack|steal|commit|evade|fake|construct|design)\b/.test(normalized);
+  const broadHowTo = /\bhow to\b/.test(normalized);
+  const defensiveIntent = /\b(?:prevent(?:ion)?|defen[sc]e|defend|protect|mitigat(?:e|ion)|detect(?:ion)?|monitor(?:ing)?|incident response|awareness|training|secure|security|report|recognize|analysis|forensics|education(?:al)?)\b/.test(normalized);
+  const cyberAbuse = /\b(?:ransomware|malware|phishing|credential theft|keylogger|exploit|payload|bypass authentication|hack(?:ing)?|ddos|sql injection attack)\b/.test(normalized);
+  const weaponAbuse = /\b(?:pipe bomb|bomb|explosive|weapon design|nuclear weapon|bioweapon)\b/.test(normalized);
+  const fraudAbuse = /\b(?:tax fraud|fraud|scam|money laundering|identity theft|credit card theft)\b/.test(normalized);
+  return (cyberAbuse || weaponAbuse || fraudAbuse) && (harmfulAction || (broadHowTo && !defensiveIntent));
 }
 
 function siteHelpIntent(query) {
@@ -289,6 +303,9 @@ function fallbackGuidance(status, intentReasons = []) {
     }
     if (intentReasons.includes('high_stakes_personal_advice')) {
       guidance.push('AnchorFact is not a medical, legal, or financial professional advice source; use qualified professional guidance or current authoritative sources.');
+    }
+    if (intentReasons.includes('harmful_operational_request')) {
+      guidance.push('AnchorFact does not support harmful operational requests for abuse, weapons, fraud, or intrusion; use defensive, educational, or authoritative safety resources instead.');
     }
     return [
       ...guidance,

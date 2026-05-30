@@ -121,11 +121,11 @@ The representative query benchmark now has a local usefulness runner:
 context assembly path used by AI consumers, checking not only top-result routing
 but also citation-ready claims, source URLs, source depth, and confidence.
 
-The current benchmark passes at 100/100 across 21 representative queries and
+The current benchmark passes at 100/100 across 22 representative queries and
 reports no improvement candidates. It now covers citation-ready public topics,
 natural-language AI intent routing, AnchorFact API usage guidance, and explicit
-fallback behavior for live, time-sensitive, or high-stakes personal-advice
-requests that require external sources.
+fallback behavior for live, time-sensitive, high-stakes personal-advice, or
+harmful operational requests that require external sources.
 
 ### Verification Data
 

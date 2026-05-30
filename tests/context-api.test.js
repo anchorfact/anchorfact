@@ -58,6 +58,19 @@ const manifest = {
       confidence_score: 0.8,
       sources_verified: 1,
       sources_total: 1
+    },
+    {
+      id: 'article:computer-science/sql-injection',
+      canonical_slug: 'computer-science/sql-injection',
+      canonical_url: 'https://anchorfact.org/computer-science/sql-injection/',
+      title: 'SQL Injection Prevention',
+      description: 'Educational secure coding reference for SQL injection prevention.',
+      status: 'public',
+      is_draft: false,
+      confidence_level: 'medium',
+      confidence_score: 0.8,
+      sources_verified: 1,
+      sources_total: 1
     }
   ]
 };
@@ -89,6 +102,14 @@ const claimsPayload = {
       confidence: 'medium',
       source_url: 'https://example.gov/aspirin',
       source_title: 'Medication Safety Reference'
+    },
+    {
+      id: 'https://anchorfact.org/fact/f7',
+      canonical_slug: 'computer-science/sql-injection',
+      statement: 'Parameterized queries reduce SQL injection risk by separating code from data.',
+      confidence: 'medium',
+      source_url: 'https://example.org/sql-injection-prevention',
+      source_title: 'SQL Injection Prevention Reference'
     }
   ]
 };
@@ -121,6 +142,14 @@ const sourcesPayload = {
       tier: 'B',
       url: 'https://example.gov/aspirin',
       articles: [{ canonical_slug: 'health/medication-safety', title: 'Medication Safety' }]
+    },
+    {
+      id: 'source:sql-injection',
+      title: 'SQL Injection Prevention Reference',
+      type: 'documentation',
+      tier: 'B',
+      url: 'https://example.org/sql-injection-prevention',
+      articles: [{ canonical_slug: 'computer-science/sql-injection', title: 'SQL Injection Prevention' }]
     }
   ]
 };
@@ -164,6 +193,18 @@ const searchIndex = {
       claim_count: 1,
       keywords: ['aspirin', 'medication', 'safety'],
       search_text: 'aspirin medication safety chest pain symptoms treatment'
+    },
+    {
+      canonical_slug: 'computer-science/sql-injection',
+      title: 'SQL Injection Prevention',
+      url: 'https://anchorfact.org/computer-science/sql-injection/',
+      description: 'Educational secure coding reference for SQL injection prevention.',
+      confidence_level: 'medium',
+      source_coverage: { verified: 1, total: 1, ratio: 1 },
+      claim_ids: ['https://anchorfact.org/fact/f7'],
+      claim_count: 1,
+      keywords: ['sql', 'injection', 'prevention', 'payload'],
+      search_text: 'sql injection prevention attack payload parameterized queries secure coding'
     }
   ]
 };
@@ -330,6 +371,26 @@ test('buildContextApiPayload suppresses lexical evidence for high-stakes persona
   assertEq(result.payload.citation_ready_claims, []);
   assert(result.payload.unsupported_intent_reasons.includes('high_stakes_personal_advice'), 'context should expose high-stakes unsupported reason');
   assert(result.payload.fallback_guidance.some(item => item.includes('professional')), 'context should send personal advice to professional sources');
+});
+
+test('buildContextApiPayload suppresses lexical evidence for harmful operational requests', () => {
+  const result = buildContextApiPayload(payloadArgs({ query: 'sql injection attack payload' }));
+
+  assertEq(result.payload.coverage_status, 'unsupported');
+  assertEq(result.payload.should_use_anchorfact, false);
+  assertEq(result.payload.answer_policy.can_answer_with_anchorfact, false);
+  assertEq(result.payload.answer_policy.answer_mode, 'external_sources_required');
+  assertEq(result.payload.evidence_pack_count, 0);
+  assertEq(result.payload.evidence_packs, []);
+  assertEq(result.payload.citation_ready_claims, []);
+  assert(result.payload.unsupported_intent_reasons.includes('harmful_operational_request'), 'context should expose harmful-operation unsupported reason');
+  assert(result.payload.fallback_guidance.some(item => item.includes('harmful operational')), 'context should refuse harmful operational citation use');
+
+  const defensive = buildContextApiPayload(payloadArgs({ query: 'sql injection prevention' }));
+  assertEq(defensive.payload.coverage_status, 'supported');
+  assertEq(defensive.payload.should_use_anchorfact, true);
+  assertEq(defensive.payload.unsupported_intent_reasons, []);
+  assertEq(defensive.payload.evidence_packs[0].canonical_slug, 'computer-science/sql-injection');
 });
 
 test('buildContextApiPayload gives API guidance for AnchorFact usage questions', () => {
