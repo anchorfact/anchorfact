@@ -8,7 +8,7 @@
     "elapsed_ms": 635005,
     "elapsed_sec": "635.0",
     "concurrency": 3,
-    "manual_reviewed_articles": 573
+    "manual_reviewed_articles": 576
   },
   "articles": [
     {
@@ -582,23 +582,76 @@
       "file": "content/ai/ai-air-quality.md",
       "article_id": "ai-air-quality",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Deep Learning for Air Quality Monitoring and Prediction: Low-Cost Sensor Calibration, Satellite Estimation, and Forecasting (2024-2025 Survey)",
-          "source_type": "academic_paper",
-          "results": [],
-          "all_verified": false
+          "source_title": "Long-Term Evaluation of the PurpleAir PA-II Low-Cost Particulate Matter Sensor",
+          "source_type": "journal_article",
+          "results": [
+            {
+              "method": "doi",
+              "identifier": "10.1021/acs.est.9b06046",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted AI-first draft asset repair batch 69; sources were manually reviewed from primary URLs without running local verify-full.",
+                "title": "Long-Term Evaluation of the PurpleAir PA-II Low-Cost Particulate Matter Sensor",
+                "publisher": "American Chemical Society",
+                "year": 2020
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         },
         {
-          "source_title": "Machine Learning for Air Pollution Source Attribution and Health Impact Assessment",
-          "source_type": "academic_paper",
-          "results": [],
-          "all_verified": false
+          "source_title": "A systematic survey of air quality prediction based on deep learning",
+          "source_type": "survey_paper",
+          "results": [
+            {
+              "method": "doi",
+              "identifier": "10.1016/j.aej.2024.03.095",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted AI-first draft asset repair batch 69; sources were manually reviewed from primary URLs without running local verify-full.",
+                "title": "A systematic survey of air quality prediction based on deep learning",
+                "publisher": "Elsevier",
+                "year": 2024
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "A review of air pollution prediction with machine learning",
+          "source_type": "survey_paper",
+          "results": [
+            {
+              "method": "doi",
+              "identifier": "10.1016/j.envint.2021.106907",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted AI-first draft asset repair batch 69; sources were manually reviewed from primary URLs without running local verify-full.",
+                "title": "A review of air pollution prediction with machine learning",
+                "publisher": "Elsevier",
+                "year": 2021
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-30"
     },
     {
       "file": "content/ai/ai-art-and-creativity.md",
@@ -668,23 +721,75 @@
       "file": "content/ai/ai-beauty-fashion.md",
       "article_id": "ai-beauty-fashion",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Artificial Intelligence in Fashion and Beauty: Virtual Try-On, Computer Vision, and Personalized Styling (2024-2025 Survey)",
-          "source_type": "academic_paper",
-          "results": [],
-          "all_verified": false
+          "source_title": "VITON: An Image-Based Virtual Try-On Network",
+          "source_type": "conference_paper",
+          "results": [
+            {
+              "method": "doi",
+              "identifier": "10.1109/CVPR.2018.00787",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted AI-first draft asset repair batch 69; sources were manually reviewed from primary URLs without running local verify-full.",
+                "title": "VITON: An Image-Based Virtual Try-On Network",
+                "publisher": "IEEE",
+                "year": 2018
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         },
         {
-          "source_title": "Computer Vision for Fashion: Trend Detection, Clothing Parsing, and Generative Try-On (2025 Survey)",
-          "source_type": "academic_paper",
-          "results": [],
-          "all_verified": false
+          "source_title": "VITON-HD: High-Resolution Virtual Try-On via Misalignment-Aware Normalization",
+          "source_type": "conference_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://openaccess.thecvf.com/content/CVPR2021/html/Choi_VITON-HD_High-Resolution_Virtual_Try-On_via_Misalignment-Aware_Normalization_CVPR_2021_paper.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted AI-first draft asset repair batch 69; sources were manually reviewed from primary URLs without running local verify-full.",
+                "status": 200,
+                "final_url": "https://openaccess.thecvf.com/content/CVPR2021/html/Choi_VITON-HD_High-Resolution_Virtual_Try-On_via_Misalignment-Aware_Normalization_CVPR_2021_paper.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Fashion Meets Computer Vision: A Survey",
+          "source_type": "survey_paper",
+          "results": [
+            {
+              "method": "doi",
+              "identifier": "10.1145/3635113",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted AI-first draft asset repair batch 69; sources were manually reviewed from primary URLs without running local verify-full.",
+                "title": "Fashion Meets Computer Vision: A Survey",
+                "publisher": "ACM",
+                "year": 2024
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-30"
     },
     {
       "file": "content/ai/ai-benchmarks-and-evaluation.md",
@@ -838,23 +943,74 @@
       "file": "content/ai/ai-call-center.md",
       "article_id": "ai-call-center",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "AI-Powered Contact Center Transformation: Real-Time Agent Assist, Speech Analytics, and Quality Management (2024-2025 Survey)",
-          "source_type": "academic_paper",
-          "results": [],
-          "all_verified": false
+          "source_title": "QART: A System for Real-Time Holistic Quality Assurance for Contact Center Dialogues",
+          "source_type": "conference_paper",
+          "results": [
+            {
+              "method": "doi",
+              "identifier": "10.1609/aaai.v30i1.9887",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted AI-first draft asset repair batch 69; sources were manually reviewed from primary URLs without running local verify-full.",
+                "title": "QART: A System for Real-Time Holistic Quality Assurance for Contact Center Dialogues",
+                "publisher": "AAAI",
+                "year": 2016
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         },
         {
-          "source_title": "Deep Learning for Conversational Speech Analytics: Sentiment, Emotion, and Intent Detection in Contact Centers",
+          "source_title": "An Intelligent Real-Time Agent Assistant for Customer Service",
           "source_type": "academic_paper",
-          "results": [],
-          "all_verified": false
+          "results": [
+            {
+              "method": "arxiv",
+              "identifier": "1909.02851",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted AI-first draft asset repair batch 69; sources were manually reviewed from primary URLs without running local verify-full.",
+                "title": "An Intelligent Real-Time Agent Assistant for Customer Service"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "A Contemporary Review on Chatbots, AI-Powered Virtual Conversational Agents, and LLMs: Applications in Contact Centers",
+          "source_type": "survey_paper",
+          "results": [
+            {
+              "method": "doi",
+              "identifier": "10.1016/j.cosrev.2024.100632",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted AI-first draft asset repair batch 69; sources were manually reviewed from primary URLs without running local verify-full.",
+                "title": "A Contemporary Review on Chatbots, AI-Powered Virtual Conversational Agents, and LLMs: Applications in Contact Centers",
+                "publisher": "Elsevier",
+                "year": 2024
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-30"
     },
     {
       "file": "content/ai/ai-code-translation.md",

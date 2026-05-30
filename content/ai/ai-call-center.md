@@ -1,12 +1,12 @@
 ---
 id: ai-call-center
-title: "AI for Call Centers: Speech Analytics, Real-Time Agent Assist, and Sentiment Detection"
+title: 'AI for Call Centers: Speech Analytics, Agent Assist, and Quality Review'
 schema_type: article
 category: ai
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+confidence: medium
+last_verified: '2026-05-30'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-4.5-sonnet
@@ -14,83 +14,64 @@ derived_from_human_seed: true
 conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
-completeness: 0.85
+completeness: 0.72
 atomic_facts:
   - id: af-ai-call-center-1
-    statement: >-
-      AI call center platforms (Cresta, Observe.AI, Gong, Cogito) deploy real-time agent assist -- speech-to-text transcription (Whisper, ASR) + NLP for live call analysis, surfacing relevant
-      knowledge base articles, suggesting responses, and detecting customer sentiment (frustration, satisfaction). Cresta (2025) reports 15-25% reduction in average handle time and 10-20% improvement
-      in CSAT scores across enterprise deployments.
-    source_title: Cresta AI (2025) -- real-time agent assist / Observe.AI / Gong Revenue Intelligence / Cogito behavioral AI
-    source_url: https://arxiv.org/search/?query=call+center+AI+agent+assist+speech+analytics
-    confidence: high
+    statement: 'Call-center speech analytics can use automatic speech recognition to turn calls into transcripts, then apply text classification, topic modeling, sentiment analysis, or summarization to support quality review.'
+    source_title: 'QART: A System for Real-Time Holistic Quality Assurance for Contact Center Dialogues'
+    source_url: https://ojs.aaai.org/index.php/AAAI/article/view/9887
+    confidence: medium
   - id: af-ai-call-center-2
-    statement: >-
-      Post-call analytics: AI automatically scores 100% of calls (vs 1-2% manual QA) on compliance (required disclosures, prohibited language), soft skills (empathy, active listening, talk-listen
-      ratio), and outcome (issue resolved, sale made). NLP topic modeling identifies trending customer issues. WFM (Workforce Management) AI predicts call volume by 15-minute interval, optimizing
-      agent scheduling to minimize wait times while controlling costs.
-    source_title: NICE inContact / Genesys AI / AWS Amazon Connect AI / Talkdesk AI / Calabrio workforce AI
-    source_url: https://arxiv.org/search/?query=speech+analytics+call+center+sentiment
-    confidence: high
+    statement: 'Industrial contact-center agent-assist systems have been designed to provide real-time guidance by retrieving relevant information and recommending actions while a customer conversation is still in progress.'
+    source_title: 'An Intelligent Real-Time Agent Assistant for Customer Service'
+    source_url: https://arxiv.org/abs/1909.02851
+    confidence: medium
+  - id: af-ai-call-center-3
+    statement: 'Recent contact-center AI reviews distinguish virtual agents, agent assistance, quality monitoring, analytics, and workforce operations as separate application areas rather than one universal automation task.'
+    source_title: 'A Contemporary Review on Chatbots, AI-Powered Virtual Conversational Agents, and LLMs: Applications in Contact Centers'
+    source_url: https://doi.org/10.1016/j.cosrev.2024.100632
+    confidence: medium
 primary_sources:
   - id: ps-ai-call-center-1
-    title: "AI-Powered Contact Center Transformation: Real-Time Agent Assist, Speech Analytics, and Quality Management (2024-2025 Survey)"
-    type: academic_paper
-    year: 2025
-    institution: ACM / NAACL Industry Track / arXiv
-    url: https://arxiv.org/search/?query=call+center+AI+agent+assist+speech+analytics
+    title: 'QART: A System for Real-Time Holistic Quality Assurance for Contact Center Dialogues'
+    type: conference_paper
+    year: 2016
+    institution: AAAI
+    doi: 10.1609/aaai.v30i1.9887
+    url: https://ojs.aaai.org/index.php/AAAI/article/view/9887
   - id: ps-ai-call-center-2
-    title: "Deep Learning for Conversational Speech Analytics: Sentiment, Emotion, and Intent Detection in Contact Centers"
+    title: 'An Intelligent Real-Time Agent Assistant for Customer Service'
     type: academic_paper
-    year: 2025
-    institution: IEEE Signal Processing / Interspeech / arXiv
-    url: https://arxiv.org/search/?query=speech+analytics+call+center+sentiment
-known_gaps:
-  - Real-time multilingual call center AI with sub-second translation
-  - Emotion-aware agent assist -- detecting and de-escalating high-stress situations
-disputed_statements: []
-secondary_sources:
-  - title: "A Contemporary Review on Chatbots, AI-Powered Virtual Conversational Agents, and LLMs: Applications in Contact Centers"
+    year: 2019
+    institution: arXiv
+    url: https://arxiv.org/abs/1909.02851
+  - id: ps-ai-call-center-3
+    title: 'A Contemporary Review on Chatbots, AI-Powered Virtual Conversational Agents, and LLMs: Applications in Contact Centers'
     type: survey_paper
     year: 2024
-    authors:
-      - multiple
-    institution: Computer Science Review (Elsevier)
+    institution: Computer Science Review
+    doi: 10.1016/j.cosrev.2024.100632
     url: https://doi.org/10.1016/j.cosrev.2024.100632
-  - title: "DMG Consulting: Contact Center AI Goals and Investment Priorities for 2024"
-    type: report
-    year: 2024
-    authors:
-      - Fluss, Donna
-    institution: DMG Consulting / CRMXchange
-    url: https://www.crmxchange.com/uploadedFiles/Columns/CRM_Columns/images/DMG_2024_Goals_Survey_Report.pdf
-  - title: "Azure AI Services for Call Center Overview: Speech-to-Text, Sentiment, Summarization"
-    type: technical_report
-    year: 2024
-    authors:
-      - Microsoft
-    institution: Microsoft Azure AI
-    url: https://docs.azure.cn/en-us/ai-services/speech-service/call-center-overview
-  - title: "Statista: AI Use at Contact Centers Worldwide 2024 — Voice Authentication, Process Automation, Analytics"
-    type: report
-    year: 2024
-    authors:
-      - Statista Research
-    institution: Statista
-    url: https://www.statista.com/topics/12642/ai-use-at-contact-centers/
-updated: "2026-05-24"
+known_gaps:
+  - Vendor-reported reductions in handle time or improvements in satisfaction need deployment-specific evidence.
+  - Speech analytics can raise privacy, surveillance, and labor-management concerns when deployed without clear governance.
+disputed_statements: []
+secondary_sources: []
+updated: '2026-05-30'
 ---
+
 ## TL;DR
-AI is the silent coach on every customer service call -- transcribing conversations in real-time, suggesting the best responses, detecting customer frustration, and scoring quality across every interaction. From Cresta to Gong, AI transforms call centers from cost centers into intelligence hubs.
+
+AI call-center systems combine speech recognition, retrieval, classification, summarization, and analytics. The defensible story is not that AI automatically improves every call center, but that it can make transcripts, quality review, and agent support more scalable when the system is governed and measured.
 
 ## Core Explanation
-Call center AI: (1) Real-time transcription -- ASR (Whisper, DeepSpeech) converts speech to text with <500ms latency. Speaker diarization tracks agent vs customer turns; (2) Agent assist -- NLP analyzes live transcript, surfaces relevant knowledge articles, suggests next-best-action, flags compliance violations, detects customer sentiment; (3) Post-call analytics -- auto-scores 100% of calls on quality rubric (greeting, empathy, resolution, compliance). ML identifies coaching opportunities and trending issues; (4) WFM -- ML forecasts contact volume per 15-min interval, auto-schedules agents with optimal skills mix.
 
-## Detailed Analysis
-Cresta: real-time agent assist using GPT-4. Features: instant knowledge surfacing (agent mentions product -> relevant docs appear), behavioral guidance ("slow down, the customer sounds confused"), and auto-generated call summaries. Cresta reports 15-25% AHT reduction. Gong: post-call revenue intelligence. Analyzes sales calls for deal risk (competitor mentions, pricing objections, lack of decision-maker involvement). Cogito: behavioral AI analyzing voice tone. Detects: agent burnout (flat tone), customer escalation risk (rising pitch), and conversational dynamics (interruption patterns). Speech emotion recognition: models trained on acted emotional speech (RAVDESS, IEMOCAP) classify 6-8 emotions. Challenges: real-world emotional expression is more subtle than acted datasets. WFM AI: combines historical call patterns + calendar events + marketing campaigns -> call volume forecast. Optimization: Erlang-C + ML for multi-skill scheduling.
+The first step is usually transcription. Once speech becomes text, models can identify topics, summarize calls, flag possible compliance issues, classify sentiment, or retrieve knowledge-base material. Real-time agent-assist systems add a timing constraint: recommendations must arrive during the conversation, and irrelevant suggestions can distract the human agent.
+
+Post-call analytics is a different workflow. It can review many more calls than manual sampling, but quality scores still need calibrated rubrics, representative validation data, and human oversight. Contact-center AI also includes virtual agents and workforce planning, which should be evaluated separately from real-time guidance or quality monitoring.
 
 ## Related Articles
 
-- [AI for Augmented Reality: Real-Time Object Detection, Depth Estimation, and Scene Understanding](../ai-for-augmented-reality-real-time-object-detection-depth-estimation-and-scene-understanding.md)
-- [3D Generation and Gaussian Splatting: From NeRF to Real-Time Rendering](../3d-generation-gaussian-splatting.md)
-- [AI for Election Integrity: Disinformation Detection, Voter Analytics, and Electoral Security](../ai-election-integrity.md)
+- [Conversational AI Systems: Dialogue Management and Assistant Design](../conversational-ai-systems.md)
+- [Speech Recognition: Turning Audio into Text](../speech-recognition.md)
+- [Retrieval-Augmented Generation: External Knowledge for LLMs](../retrieval-augmented-generation-rag-external-knowledge-for-llms.md)
