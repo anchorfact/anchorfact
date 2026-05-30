@@ -1,12 +1,12 @@
 ---
 id: long-context-models
-title: "Long-Context Language Models: Beyond 1M Tokens"
-schema_type: TechArticle
+title: 'Long-Context Language Models: Memory, Retrieval, and Evaluation'
+schema_type: article
 category: ai
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+confidence: medium
+last_verified: '2026-05-30'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -14,95 +14,62 @@ derived_from_human_seed: true
 conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
+completeness: 0.72
 atomic_facts:
-  - id: f1
-    statement: >-
-      Structured State Space Models (S4, Gu et al. 2022, ICLR) provide a mathematical framework for modeling sequences with O(N log N) complexity, successfully handling the Long Range Arena benchmark
-      with sequences up to 16K tokens.
-    source_title: Gu, Albert, Karan Goel, and Christopher Ré. Efficiently Modeling Long Sequences with Structured State Spaces. ICLR 2022
-    source_url: https://arxiv.org/abs/2111.00396
-    confidence: high
-  - id: f2
-    statement: >-
-      Mamba (Gu & Dao 2023, ICML 2024) introduces a selective SSM that achieves Transformer-quality language modeling with linear time complexity, processing sequences 5× faster than Transformers of
-      equivalent size.
-    source_title: "Gu, Albert, and Tri Dao. Mamba: Linear-Time Sequence Modeling with Selective State Spaces. ICML 2024"
-    source_url: https://arxiv.org/abs/2312.00752
-    confidence: high
-  - id: f3
-    statement: >-
-      Gemini 1.5 Pro (Google 2024) demonstrated near-perfect recall (>99%) on contexts up to 10M tokens, representing a 100× increase over previous models and enabling novel in-context learning
-      capabilities.
-    source_title: "Google DeepMind. Gemini 1.5: Unlocking multimodal understanding across millions of tokens of context. 2024"
-    source_url: https://arxiv.org/abs/2403.05530
-    confidence: high
-completeness: 0.9
-known_gaps:
-  - Needle-in-haystack limitations
-  - Long-context inference cost optimization
-disputed_statements:
-  - statement: No major disputed statements identified
+  - id: af-long-context-models-1
+    statement: 'Transformer-XL extends Transformer language models by reusing hidden states from prior segments and adding relative positional encodings for longer-term dependency modeling.'
+    source_title: 'Transformer-XL: Attentive Language Models Beyond a Fixed-Length Context'
+    source_url: https://arxiv.org/abs/1901.02860
+    confidence: medium
+  - id: af-long-context-models-2
+    statement: 'Longformer reduces attention cost for long documents by combining local sliding-window attention with optional global attention tokens.'
+    source_title: 'Longformer: The Long-Document Transformer'
+    source_url: https://arxiv.org/abs/2004.05150
+    confidence: medium
+  - id: af-long-context-models-3
+    statement: 'RULER evaluates long-context language models with synthetic tasks intended to measure usable context length beyond simple needle-in-a-haystack retrieval.'
+    source_title: "RULER: What's the Real Context Size of Your Long-Context Language Models?"
+    source_url: https://arxiv.org/abs/2404.06654
+    confidence: medium
 primary_sources:
-  - title: "Gemini 1.5: Unlocking multimodal understanding across millions of tokens of context"
-    type: academic_paper
-    year: 2024
-    url: https://arxiv.org/abs/2403.05530
-    institution: Google DeepMind
-  - title: "RULER: What's the Real Context Size of Your Long-Context Language Models?"
-    type: academic_paper
-    year: 2024
-    url: https://arxiv.org/abs/2405.07704
-    institution: NeurIPS
-secondary_sources:
-  - title: Efficiently Modeling Long Sequences with Structured State Spaces (S4)
+  - id: ps-long-context-models-1
+    title: 'Transformer-XL: Attentive Language Models Beyond a Fixed-Length Context'
     type: conference_paper
-    year: 2022
-    authors:
-      - Gu, Albert
-      - Goel, Karan
-      - Ré, Christopher
-    institution: Stanford / ICLR
-    url: https://arxiv.org/abs/2111.00396
-  - title: "Mamba: Linear-Time Sequence Modeling with Selective State Spaces"
+    year: 2019
+    institution: ACL
+    url: https://arxiv.org/abs/1901.02860
+  - id: ps-long-context-models-2
+    title: 'Longformer: The Long-Document Transformer'
+    type: conference_paper
+    year: 2020
+    institution: arXiv
+    url: https://arxiv.org/abs/2004.05150
+  - id: ps-long-context-models-3
+    title: "RULER: What's the Real Context Size of Your Long-Context Language Models?"
     type: conference_paper
     year: 2024
-    authors:
-      - Gu, Albert
-      - Dao, Tri
-    institution: CMU / Princeton / ICML
-    url: https://arxiv.org/abs/2312.00752
-  - title: Effective Long-Context Scaling of Foundation Models (Llama 3 Long / Meta)
-    type: technical_report
-    year: 2024
-    authors:
-      - Meta AI
-    institution: Meta AI
-    url: https://arxiv.org/abs/2404.12345
-  - title: "A Survey on Long-Context Language Models: Architectures, Training, and Inference"
-    type: survey_paper
-    year: 2024
-    authors:
-      - multiple
-    institution: ACM Computing Surveys
-    url: https://doi.org/10.1145/3635100
-updated: "2026-05-24"
+    institution: COLM
+    url: https://arxiv.org/abs/2404.06654
+known_gaps:
+  - A large advertised context window does not prove reliable use of every token in the window.
+  - Long-context inference can be expensive because attention, memory, and KV-cache costs grow with sequence length.
+disputed_statements: []
+secondary_sources: []
+updated: '2026-05-30'
 ---
+
 ## TL;DR
-Modern LLMs process context windows of 100K-2M tokens — entire books, codebases, or years of conversation history. Gemini 1.5 Pro demonstrated >99% retrieval accuracy across 1M tokens, proving usable long-context capability.
+
+Long-context language models try to use more of the prompt, document, or conversation history at once. The important distinction is advertised context length versus usable context length: a model can accept many tokens while still missing details, over-weighting endpoints, or paying high inference cost.
 
 ## Core Explanation
-Context window = working memory limit. Pre-2023: 4K-32K tokens. 2024-2025: 128K-2M tokens via architectural innovations (RoPE scaling, Ring Attention, FlashAttention). The "lost-in-the-middle" problem means models attend most to beginning and end of context, missing information in the middle.
 
-## Detailed Analysis
-Key techniques: Rotary Position Embedding (RoPE) interpolation; Ring Attention distributes sequences across devices; KV-cache quantization reduces memory. RULER benchmark measures real usable context beyond simple needle-in-haystack tests. Long-context enables RAG replacement for some use cases.
+The standard Transformer has strong sequence modeling behavior, but full attention becomes expensive as context length grows. Transformer-XL introduced recurrence across segments so a model could reuse past hidden states. Longformer changed the attention pattern, using local sliding windows and selected global tokens to make long-document processing cheaper.
 
-## Further Reading
-- RULER: Long Context Evaluation
-- FlashAttention Paper
-- Anthropic: Long Context Best Practices
+Evaluation is its own problem. Needle-style retrieval tests can show that a model finds one inserted fact, but they do not cover all long-context behaviors. Benchmarks such as RULER test multiple synthetic tasks so researchers can compare practical context use rather than only nominal token limits.
 
 ## Related Articles
 
-- [AI Red Teaming: Security Testing for Language Models](../ai-red-teaming-and-safety.md)
 - [Large Language Models (LLMs)](../llms.md)
-- [LoRA: Low-Rank Adaptation of Large Language Models](../lora-low-rank-adaptation-of-large-language-models.md)
+- [Retrieval-Augmented Generation (RAG)](../rag.md)
+- [Attention Mechanism: Query-Key-Value and Contextual Representation](../attention-mechanism.md)

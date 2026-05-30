@@ -8,7 +8,7 @@
     "elapsed_ms": 635005,
     "elapsed_sec": "635.0",
     "concurrency": 3,
-    "manual_reviewed_articles": 582
+    "manual_reviewed_articles": 585
   },
   "articles": [
     {
@@ -11195,43 +11195,67 @@
       "file": "content/ai/deep-reinforcement-learning-algorithms.md",
       "article_id": "deep-reinforcement-learning-algorithms",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Proximal Policy Optimization Algorithms (PPO)",
+          "source_title": "Proximal Policy Optimization Algorithms",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "1707.06347",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1707.06347",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted AI-first draft asset repair batch 72; sources were manually reviewed from arXiv, JMLR, and Stanford textbook URLs without running local verify-full."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Mastering Diverse Domains through World Models (Dreamer v3)",
+          "source_title": "Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor",
+          "source_type": "conference_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1801.01290",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted AI-first draft asset repair batch 72; sources were manually reviewed from arXiv, JMLR, and Stanford textbook URLs without running local verify-full."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Mastering Diverse Domains through World Models",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2301.04104",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2301.04104",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted AI-first draft asset repair batch 72; sources were manually reviewed from arXiv, JMLR, and Stanford textbook URLs without running local verify-full."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 2
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-30"
     },
     {
       "file": "content/ai/diffusion-models-ddpm-stable-diffusion-and-score-based-generative-modeling.md",
@@ -12985,43 +13009,67 @@
       "file": "content/ai/language-modeling-theory.md",
       "article_id": "language-modeling-theory",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Scaling Laws for Neural Language Models (Kaplan et al., 2020)",
-          "source_type": "academic_paper",
+          "source_title": "A Neural Probabilistic Language Model",
+          "source_type": "journal_article",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2001.08361",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://www.jmlr.org/papers/v3/bengio03a.html",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted AI-first draft asset repair batch 72; sources were manually reviewed from arXiv, JMLR, and Stanford textbook URLs without running local verify-full."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Training Compute-Optimal Large Language Models (Chinchilla -- Hoffmann et al., 2022)",
+          "source_title": "Speech and Language Processing, Chapter 3: N-gram Language Models",
+          "source_type": "textbook_chapter",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://web.stanford.edu/~jurafsky/slp3/3.pdf",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted AI-first draft asset repair batch 72; sources were manually reviewed from arXiv, JMLR, and Stanford textbook URLs without running local verify-full."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Scaling Laws for Neural Language Models",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2203.15556",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2001.08361",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted AI-first draft asset repair batch 72; sources were manually reviewed from arXiv, JMLR, and Stanford textbook URLs without running local verify-full."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 2
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-30"
     },
     {
       "file": "content/ai/large-language-model-training-scaling-laws-data-curation-and-compute.md",
@@ -13317,43 +13365,67 @@
       "file": "content/ai/long-context-models.md",
       "article_id": "long-context-models",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Gemini 1.5: Unlocking multimodal understanding across millions of tokens of context",
-          "source_type": "academic_paper",
+          "source_title": "Transformer-XL: Attentive Language Models Beyond a Fixed-Length Context",
+          "source_type": "conference_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2403.05530",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1901.02860",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted AI-first draft asset repair batch 72; sources were manually reviewed from arXiv, JMLR, and Stanford textbook URLs without running local verify-full."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "Longformer: The Long-Document Transformer",
+          "source_type": "conference_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2004.05150",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted AI-first draft asset repair batch 72; sources were manually reviewed from arXiv, JMLR, and Stanford textbook URLs without running local verify-full."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         },
         {
           "source_title": "RULER: What's the Real Context Size of Your Long-Context Language Models?",
-          "source_type": "academic_paper",
+          "source_type": "conference_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2405.07704",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2404.06654",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted AI-first draft asset repair batch 72; sources were manually reviewed from arXiv, JMLR, and Stanford textbook URLs without running local verify-full."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 2
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-30"
     },
     {
       "file": "content/ai/lora-low-rank-adaptation-of-large-language-models.md",
