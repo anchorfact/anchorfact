@@ -29,7 +29,7 @@ function provenanceResult(overrides = {}) {
     ok: true,
     failures: [],
     provenance: {
-      content_counts: { public: 607, draft: 393, claims: 1866 },
+      content_counts: { public: 610, draft: 390, claims: 1875 },
       build: { commit_sha: '00e1bf052adcf0d5b396e0f77be0640810e557d7' },
       signature: {
         key_id: 'ed25519:fixture',
@@ -67,7 +67,7 @@ test('buildIntegrityReport summarizes a passing production check', () => {
 
   assertEq(report.ok, true);
   assertEq(report.failures, []);
-  assertEq(report.counts.public, 607);
+  assertEq(report.counts.public, 610);
   assertEq(report.signature.trusted, true);
   assertEq(report.checks.ai_evals, true);
   assertEq(report.artifacts.claims_json, 'b'.repeat(64));

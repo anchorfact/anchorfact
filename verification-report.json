@@ -8,7 +8,7 @@
     "elapsed_ms": 635005,
     "elapsed_sec": "635.0",
     "concurrency": 3,
-    "manual_reviewed_articles": 570
+    "manual_reviewed_articles": 573
   },
   "articles": [
     {
@@ -8291,36 +8291,72 @@
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "AI-Powered Meeting Intelligence: Transcription, Summarization, and Action Item Extraction (2024-2025 Comprehensive Survey)",
-          "source_type": "academic_paper",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "Organizational Network Analysis with Graph Neural Networks: Collaboration Patterns and Expertise Location",
-          "source_type": "academic_paper",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "HKD-SHO: A hybrid smart home system based on knowledge-based and data-driven services",
-          "source_type": "academic_paper",
+          "source_title": "Summaries, Highlights, and Action Items: Design, Implementation and Evaluation of an LLM-powered Meeting Recap System",
+          "source_type": "research_report",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2402.15521v1",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://www.microsoft.com/en-us/research/?p=1144428",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft asset repair batch 68; sources were manually reviewed from primary URLs without running local verify-full.",
+                "status": 200,
+                "final_url": "https://www.microsoft.com/en-us/research/?p=1144428"
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "MeetingBank: A Benchmark Dataset for Meeting Summarization",
+          "source_type": "conference_paper",
+          "results": [
+            {
+              "method": "doi",
+              "identifier": "10.18653/v1/2023.acl-long.906",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft asset repair batch 68; sources were manually reviewed from primary URLs without running local verify-full.",
+                "title": "MeetingBank: A Benchmark Dataset for Meeting Summarization",
+                "publisher": "Association for Computational Linguistics",
+                "year": 2023
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Abstractive Meeting Summarization: A Survey",
+          "source_type": "survey_paper",
+          "results": [
+            {
+              "method": "doi",
+              "identifier": "10.1162/tacl_a_00578",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft asset repair batch 68; sources were manually reviewed from primary URLs without running local verify-full.",
+                "title": "Abstractive Meeting Summarization: A Survey",
+                "publisher": "MIT Press",
+                "year": 2023
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-30"
     },
     {
       "file": "content/ai/ai-training-data-curation.md",
@@ -8680,47 +8716,73 @@
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "AI-Powered Writing Assistants: Grammar Correction, Style Enhancement, and Generative Rewriting (2024-2025 Comprehensive Survey)",
-          "source_type": "academic_paper",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "Human-AI Collaborative Writing: Productivity, Style Homogenization, and Authorship Ethics",
-          "source_type": "academic_paper",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "LLMs as Writing Assistants: Exploring Perspectives on Sense of Ownership and Reasoning",
-          "source_type": "academic_paper",
+          "source_title": "GECToR - Grammatical Error Correction: Tag, Not Rewrite",
+          "source_type": "conference_paper",
           "results": [
             {
               "method": "doi",
-              "identifier": "10.1145/3690712.3690723",
+              "identifier": "10.18653/v1/2020.bea-1.16",
               "verified": true,
               "metadata": {
-                "title": "LLMs as Writing Assistants: Exploring Perspectives on Sense of Ownership and Reasoning",
-                "publisher": "ACM",
-                "year": 2024
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft asset repair batch 68; sources were manually reviewed from primary URLs without running local verify-full.",
+                "title": "GECToR - Grammatical Error Correction: Tag, Not Rewrite",
+                "publisher": "Association for Computational Linguistics",
+                "year": 2020
               },
               "match": true
-            },
-            {
-              "method": "arxiv",
-              "identifier": "2404.00027v5",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "CoAuthor: Designing a Human-AI Collaborative Writing Dataset for Exploring Language Model Capabilities",
+          "source_type": "conference_paper",
+          "results": [
+            {
+              "method": "doi",
+              "identifier": "10.1145/3491102.3502030",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft asset repair batch 68; sources were manually reviewed from primary URLs without running local verify-full.",
+                "title": "CoAuthor: Designing a Human-AI Collaborative Writing Dataset for Exploring Language Model Capabilities",
+                "publisher": "ACM",
+                "year": 2022
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Experimental Evidence on the Productivity Effects of Generative Artificial Intelligence",
+          "source_type": "journal_article",
+          "results": [
+            {
+              "method": "doi",
+              "identifier": "10.1126/science.adh2586",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft asset repair batch 68; sources were manually reviewed from primary URLs without running local verify-full.",
+                "title": "Experimental Evidence on the Productivity Effects of Generative Artificial Intelligence",
+                "publisher": "AAAS",
+                "year": 2023
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-30"
     },
     {
       "file": "content/ai/anomaly-detection.md",
@@ -16285,57 +16347,68 @@
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "OpenAI o1 System Card: Learning to Reason with Large Language Models",
-          "source_type": "industry_report",
+          "source_title": "Learning to Reason with LLMs",
+          "source_type": "technical_report",
           "results": [
             {
               "method": "url",
               "identifier": "https://openai.com/index/learning-to-reason-with-llms/",
-              "verified": false,
+              "verified": true,
               "metadata": {
-                "status": 403,
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft asset repair batch 68; sources were manually reviewed from primary URLs without running local verify-full.",
+                "status": 200,
                 "final_url": "https://openai.com/index/learning-to-reason-with-llms/"
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Forest-of-Thought: Scaling Test-Time Compute for Enhancing LLM Reasoning",
+          "source_title": "Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters",
+          "source_type": "conference_paper",
+          "results": [
+            {
+              "method": "arxiv",
+              "identifier": "2408.03314",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft asset repair batch 68; sources were manually reviewed from primary URLs without running local verify-full.",
+                "title": "Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Tree of Thoughts: Deliberate Problem Solving with Large Language Models",
           "source_type": "academic_paper",
           "results": [
             {
               "method": "arxiv",
-              "identifier": "2412.09078",
-              "verified": false,
+              "identifier": "2305.10601",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted draft asset repair batch 68; sources were manually reviewed from primary URLs without running local verify-full.",
+                "title": "Tree of Thoughts: Deliberate Problem Solving with Large Language Models"
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Sleep-time Compute: Beyond Inference Scaling at Test-time",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "arxiv",
-              "identifier": "2504.13171v1",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 3
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-30"
     },
     {
       "file": "content/ai/text-classification.md",

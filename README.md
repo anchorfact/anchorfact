@@ -83,7 +83,7 @@ If the generated `verification-report.json` changes, the workflow commits it bac
 After a production deployment, run:
 
 ```bash
-EXPECTED_PUBLIC_ARTICLES=607 EXPECTED_DRAFT_ARTICLES=393 EXPECTED_CLAIMS=1866 npm run smoke:prod
+EXPECTED_PUBLIC_ARTICLES=610 EXPECTED_DRAFT_ARTICLES=390 EXPECTED_CLAIMS=1875 npm run smoke:prod
 npm run evals:prod
 npm run verify:provenance
 npm run verify:provenance:signed
