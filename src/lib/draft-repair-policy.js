@@ -28,7 +28,7 @@ const STRICT_REVIEW_RULES = [
   },
   {
     name: 'physical_safety_or_autonomy',
-    pattern: /\b(workplace[-\s]?safety|autonomous[-\s]?driving|autonomous[-\s]?vehicle|self[-\s]?driving|safety[-\s]?critical)\b/i
+    pattern: /\b(workplace[-\s]?safety|autonomous[-\s]?driving|autonomous[-\s]?vehicle|autonomous[-\s]?forklifts?|self[-\s]?driving|warehouse[-\s]?robotics|bin[-\s]?picking|safety[-\s]?critical)\b/i
   },
   {
     name: 'legal_or_civic_rights',

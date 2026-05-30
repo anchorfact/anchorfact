@@ -84,9 +84,9 @@ test('buildContentHealthReport summarizes public and draft health', () => {
 
   try {
     const manifest = {
-      article_count: 7,
+      article_count: 8,
       public_article_count: 2,
-      draft_article_count: 5,
+      draft_article_count: 6,
       claim_count: 2,
       articles: [
         publicArticle('ai/public-a', { confidence_level: 'high' }),
@@ -95,6 +95,7 @@ test('buildContentHealthReport summarizes public and draft health', () => {
         draftArticle('business/brand-draft', { sources_total: 10 }),
         draftArticle('ai/ai-public-health', { sources_total: 4 }),
         draftArticle('ai/ai-for-fraud-prevention', { title: 'AI for Payment Fraud Prevention' }),
+        draftArticle('ai/ai-warehouse-robotics', { title: 'AI for Warehouse Robotics: Autonomous Forklifts' }),
         draftArticle('game-development/encoding-damaged-draft', {
           sources_verified: 1,
           sources_total: 10,
@@ -109,6 +110,7 @@ test('buildContentHealthReport summarizes public and draft health', () => {
       ['business/brand-draft', content('business', 'blog_post')],
       ['ai/ai-public-health', content('ai', 'government_report')],
       ['ai/ai-for-fraud-prevention', content('ai', 'blog_post')],
+      ['ai/ai-warehouse-robotics', content('ai', 'blog_post')],
       ['game-development/encoding-damaged-draft', content('game-development', 'blog_post')]
     ]);
     const report = buildContentHealthReport({
@@ -142,9 +144,9 @@ test('buildContentHealthReport summarizes public and draft health', () => {
     assertEq(report.snapshot.public, 2);
     assertEq(report.public.source_coverage.full, 1);
     assertEq(report.public.source_coverage.partial, 1);
-    assertEq(report.draft.source_coverage.zero, 4);
+    assertEq(report.draft.source_coverage.zero, 5);
     assertEq(report.public.source_tiers.A, 2);
-    assertEq(report.draft.source_tiers.B, 4);
+    assertEq(report.draft.source_tiers.B, 5);
     assertEq(report.public_audit.rows, 2);
     assert(report.project_readiness, 'should include project readiness guidance');
     assertEq(report.project_readiness.next_focus, 'repair_public_audit');
@@ -157,9 +159,12 @@ test('buildContentHealthReport summarizes public and draft health', () => {
     assert(report.draft.strict_review_candidates.some(item => item.canonical_slug === 'ai/ai-public-health'), 'should route high-stakes drafts to strict review');
     assert(!report.draft.repair_candidates.some(item => item.canonical_slug === 'ai/ai-for-fraud-prevention'), 'should not recommend financial-risk drafts for automatic repair');
     assert(report.draft.strict_review_candidates.some(item => item.canonical_slug === 'ai/ai-for-fraud-prevention'), 'should route financial-risk drafts to strict review');
-    assertEq(report.draft.strict_review_candidate_count, 2);
+    assert(!report.draft.repair_candidates.some(item => item.canonical_slug === 'ai/ai-warehouse-robotics'), 'should not recommend physical-safety drafts for automatic repair');
+    assert(report.draft.strict_review_candidates.some(item => item.canonical_slug === 'ai/ai-warehouse-robotics'), 'should route physical-safety drafts to strict review');
+    assertEq(report.draft.strict_review_candidate_count, 3);
     assert(report.draft.strict_review_reasons.some(item => item.name === 'medical_or_public_health'), 'should summarize strict-review reasons');
     assert(report.draft.strict_review_reasons.some(item => item.name === 'financial_or_insurance'), 'should summarize financial strict-review reasons');
+    assert(report.draft.strict_review_reasons.some(item => item.name === 'physical_safety_or_autonomy'), 'should summarize physical-safety strict-review reasons');
     assert(!report.draft.repair_candidates.some(item => item.canonical_slug === 'game-development/encoding-damaged-draft'), 'should not recommend encoding-damaged drafts for automatic repair');
     assertEq(report.draft.repair_excluded_count, 1);
     assert(report.draft.repair_exclusion_reasons.some(item => item.name === 'encoding_mojibake'), 'should summarize encoding-damaged repair exclusions');
