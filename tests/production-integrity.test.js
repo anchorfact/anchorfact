@@ -2,6 +2,7 @@
 import {
   DEFAULT_EXPECTED_COUNTS,
   buildIntegrityReport,
+  checkProductionEdgeCache,
   renderIntegrityMarkdown,
   runProductionIntegrity
 } from '../scripts/production-integrity.js';
@@ -53,6 +54,22 @@ function provenanceResult(overrides = {}) {
   };
 }
 
+function edgeResponse({ status = 200, cacheStatus = 'HIT', age = '1' } = {}) {
+  return {
+    status,
+    ok: status >= 200 && status < 300,
+    url: 'https://anchorfact.org/fixture.json',
+    headers: new Map([
+      ['cf-cache-status', cacheStatus],
+      ['age', age],
+      ['cache-control', 'public, max-age=3600']
+    ]),
+    async text() {
+      return '';
+    }
+  };
+}
+
 console.log('AnchorFact Production Integrity Tests\n');
 
 test('buildIntegrityReport summarizes a passing production check', () => {
@@ -62,7 +79,8 @@ test('buildIntegrityReport summarizes a passing production check', () => {
     expectedCounts: DEFAULT_EXPECTED_COUNTS,
     smoke: { ok: true, stdout: 'smoke ok', stderr: '' },
     provenance: provenanceResult(),
-    aiEvals: { ok: true, eval_count: 11, passed: 11, failed: 0, failures: [], results: [] }
+    aiEvals: { ok: true, eval_count: 11, passed: 11, failed: 0, failures: [], results: [] },
+    edgeCache: { ok: true, failures: [], static_artifacts: [], dynamic_controls: [] }
   });
 
   assertEq(report.ok, true);
@@ -70,10 +88,12 @@ test('buildIntegrityReport summarizes a passing production check', () => {
   assertEq(report.counts.public, 630);
   assertEq(report.signature.trusted, true);
   assertEq(report.checks.ai_evals, true);
+  assertEq(report.checks.edge_cache, true);
   assertEq(report.artifacts.claims_json, 'b'.repeat(64));
   const markdown = renderIntegrityMarkdown(report);
   assert(markdown.includes('AnchorFact Production Integrity - PASS'), 'markdown should show pass');
   assert(markdown.includes('signature: status=signed, ok=true, trusted=true'), 'markdown should include signature status');
+  assert(markdown.includes('edge cache: pass'), 'markdown should include edge cache status');
 });
 
 test('buildIntegrityReport fails when production smoke fails', () => {
@@ -131,9 +151,95 @@ test('buildIntegrityReport fails when AI evals fail', () => {
   assert(report.failures.some(failure => failure.includes('mcp_tool_catalog')), 'AI eval details should be included');
 });
 
+test('buildIntegrityReport fails when edge cache check fails', () => {
+  const report = buildIntegrityReport({
+    generatedAt: '2026-05-29T00:00:00.000Z',
+    baseUrl: 'https://anchorfact.org',
+    expectedCounts: DEFAULT_EXPECTED_COUNTS,
+    smoke: { ok: true, stdout: 'smoke ok', stderr: '' },
+    aiEvals: { ok: true, eval_count: 11, passed: 11, failed: 0, failures: [], results: [] },
+    provenance: provenanceResult(),
+    edgeCache: {
+      ok: false,
+      failures: ['/graph.json never reached an edge cache hit status'],
+      static_artifacts: [],
+      dynamic_controls: []
+    }
+  });
+
+  assertEq(report.ok, false);
+  assert(report.failures.includes('Edge cache verification failed'), 'edge cache failure should be reported');
+  assert(report.failures.some(failure => failure.includes('/graph.json')), 'edge cache details should be included');
+  const markdown = renderIntegrityMarkdown(report);
+  assert(markdown.includes('edge cache: fail'), 'markdown should show edge cache failure');
+});
+
+test('checkProductionEdgeCache verifies static artifacts warm to cache hits and API stays dynamic', async () => {
+  const calls = [];
+  const perPathCalls = new Map();
+  const result = await checkProductionEdgeCache({
+    baseUrl: 'https://anchorfact.org',
+    staticArtifacts: ['/graph.json', '/search-index.json'],
+    dynamicControls: ['/api/context?q=gaussian&limit=1'],
+    fetchImpl: async (url, options = {}) => {
+      const parsed = new URL(String(url));
+      const path = `${parsed.pathname}${parsed.search}`;
+      const count = (perPathCalls.get(path) || 0) + 1;
+      perPathCalls.set(path, count);
+      calls.push({ path, method: options.method });
+      if (path.startsWith('/api/')) return edgeResponse({ cacheStatus: 'DYNAMIC', age: '0' });
+      return edgeResponse({ cacheStatus: count === 1 ? 'MISS' : 'HIT', age: count === 1 ? '0' : '1' });
+    }
+  });
+
+  assertEq(result.ok, true);
+  assertEq(result.failures, []);
+  assertEq(calls.every(call => call.method === 'HEAD'), true);
+  assertEq(perPathCalls.get('/graph.json'), 2);
+  assertEq(perPathCalls.get('/search-index.json'), 2);
+  assertEq(perPathCalls.get('/api/context?q=gaussian&limit=1'), 1);
+});
+
+test('checkProductionEdgeCache fails when a static artifact remains dynamic', async () => {
+  const result = await checkProductionEdgeCache({
+    baseUrl: 'https://anchorfact.org',
+    staticArtifacts: ['/graph.json'],
+    dynamicControls: ['/api/context?q=gaussian&limit=1'],
+    fetchImpl: async (url) => {
+      const parsed = new URL(String(url));
+      return parsed.pathname.startsWith('/api/')
+        ? edgeResponse({ cacheStatus: 'DYNAMIC', age: '0' })
+        : edgeResponse({ cacheStatus: 'DYNAMIC', age: '0' });
+    }
+  });
+
+  assertEq(result.ok, false);
+  assert(result.failures.some(failure => failure.includes('/graph.json')), 'static cache failure should name the artifact');
+  assert(result.static_artifacts[0].attempts.every(attempt => attempt.cf_cache_status === 'DYNAMIC'), 'attempt history should preserve cache statuses');
+});
+
+test('checkProductionEdgeCache fails when an API control is edge cached', async () => {
+  const result = await checkProductionEdgeCache({
+    baseUrl: 'https://anchorfact.org',
+    staticArtifacts: ['/graph.json'],
+    dynamicControls: ['/api/context?q=gaussian&limit=1'],
+    fetchImpl: async (url) => {
+      const parsed = new URL(String(url));
+      return parsed.pathname.startsWith('/api/')
+        ? edgeResponse({ cacheStatus: 'HIT', age: '5' })
+        : edgeResponse({ cacheStatus: 'HIT', age: '5' });
+    }
+  });
+
+  assertEq(result.ok, false);
+  assert(result.failures.some(failure => failure.includes('/api/context')), 'dynamic control failure should name the API route');
+  assertEq(result.dynamic_controls[0].cf_cache_status, 'HIT');
+});
+
 test('runProductionIntegrity wires smoke and signed verifier dependencies', async () => {
   let smokeCalled = false;
   let evalCalled = false;
+  let edgeCacheCalled = false;
   const delays = [];
   let verifierArgs = null;
   const report = await runProductionIntegrity({
@@ -156,6 +262,11 @@ test('runProductionIntegrity wires smoke and signed verifier dependencies', asyn
       assert(routeIntervalMs > 0, 'production integrity evals should pace route calls');
       return { ok: true, eval_count: 11, passed: 11, failed: 0, failures: [], results: [] };
     },
+    edgeCacheChecker: async ({ baseUrl }) => {
+      edgeCacheCalled = true;
+      assertEq(baseUrl, 'https://anchorfact.org');
+      return { ok: true, failures: [], static_artifacts: [], dynamic_controls: [] };
+    },
     verifier: async (args) => {
       verifierArgs = args;
       return provenanceResult();
@@ -165,6 +276,7 @@ test('runProductionIntegrity wires smoke and signed verifier dependencies', asyn
   assertEq(report.ok, true);
   assertEq(smokeCalled, true);
   assertEq(evalCalled, true);
+  assertEq(edgeCacheCalled, true);
   assert(delays.some(ms => ms > 0), 'production integrity should cool down after smoke before AI evals');
   assertEq(verifierArgs.requireSignature, true);
   assertEq(verifierArgs.requireTrustedSignature, true);

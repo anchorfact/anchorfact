@@ -4,6 +4,7 @@ import { mkdirSync, readFileSync, writeFileSync } from 'fs';
 import { dirname, resolve } from 'path';
 import { pathToFileURL } from 'url';
 import { OFFICIAL_SITE } from '../src/lib/build-metadata.js';
+import { fetchLiveText } from '../src/lib/live-http.js';
 import { verifyLiveProvenance } from '../src/lib/provenance-verify.js';
 import { runAiEvals } from './run-ai-evals.js';
 
@@ -17,11 +18,22 @@ export const DEFAULT_PUBLIC_KEY_PATH = 'keys/provenance.pub.pem';
 export const DEFAULT_AFTER_SMOKE_DELAY_MS = 5000;
 export const DEFAULT_AI_EVAL_RETRY_DELAY_MS = 15000;
 export const DEFAULT_AI_EVAL_ATTEMPTS = 2;
+export const DEFAULT_EDGE_CACHE_STATIC_ARTIFACTS = [
+  '/graph.json',
+  '/search-index.json',
+  '/claims.json',
+  '/agent.json'
+];
+export const DEFAULT_EDGE_CACHE_DYNAMIC_CONTROLS = [
+  '/api/context?q=gaussian&limit=1'
+];
 export const DEFAULT_INTEGRITY_EVAL_OPTIONS = {
   routeRetries: 4,
   routeRetryDelayMs: 750,
   routeIntervalMs: 150
 };
+
+const EDGE_CACHE_HIT_STATUSES = new Set(['HIT', 'REVALIDATED', 'STALE', 'UPDATING']);
 
 function isoNow() {
   return new Date().toISOString();
@@ -55,6 +67,107 @@ function summarizeAiEvalAttempt(aiEvals, attempt) {
     failed: aiEvals?.failed ?? null,
     failures: aiEvals?.failures || [],
     failed_results: failedEvalResults(aiEvals)
+  };
+}
+
+function routeUrl(baseUrl, route) {
+  return new URL(route, baseUrl).toString();
+}
+
+function headerValue(headers, name) {
+  if (!headers) return '';
+  if (typeof headers.get === 'function') {
+    const direct = headers.get(name);
+    if (direct) return direct;
+  }
+  const wanted = name.toLowerCase();
+  const entries = typeof headers.entries === 'function' ? headers.entries() : Object.entries(headers);
+  for (const [key, value] of entries) {
+    if (key.toLowerCase() === wanted) return String(value || '');
+  }
+  return '';
+}
+
+function normalizeCacheStatus(value) {
+  return String(value || '').trim().toUpperCase();
+}
+
+function cacheAttempt(route, response) {
+  return {
+    status: response.status,
+    ok: response.ok === true,
+    cf_cache_status: normalizeCacheStatus(headerValue(response.headers, 'cf-cache-status')) || null,
+    age: headerValue(response.headers, 'age') || null,
+    cache_control: headerValue(response.headers, 'cache-control') || null
+  };
+}
+
+function cacheStatusList(attempts) {
+  return attempts
+    .map(attempt => attempt.cf_cache_status || 'missing')
+    .join(' -> ');
+}
+
+export async function checkProductionEdgeCache({
+  baseUrl = OFFICIAL_SITE,
+  staticArtifacts = DEFAULT_EDGE_CACHE_STATIC_ARTIFACTS,
+  dynamicControls = DEFAULT_EDGE_CACHE_DYNAMIC_CONTROLS,
+  fetchImpl = globalThis.fetch,
+  staticAttempts = 2
+} = {}) {
+  const failures = [];
+  const staticResults = [];
+  const maxStaticAttempts = Math.max(1, Number(staticAttempts) || 1);
+
+  for (const path of staticArtifacts) {
+    const attempts = [];
+    for (let attempt = 1; attempt <= maxStaticAttempts; attempt++) {
+      const response = await fetchLiveText(fetchImpl, routeUrl(baseUrl, path), {
+        method: 'HEAD',
+        retries: 1,
+        retryDelayMs: 250
+      });
+      attempts.push(cacheAttempt(path, response));
+      const cacheStatus = attempts[attempts.length - 1].cf_cache_status;
+      if (response.ok && EDGE_CACHE_HIT_STATUSES.has(cacheStatus)) break;
+    }
+
+    const reachedHit = attempts.some(attempt => attempt.ok && EDGE_CACHE_HIT_STATUSES.has(attempt.cf_cache_status));
+    if (!reachedHit) {
+      failures.push(`${path} never reached an edge cache hit status (saw ${cacheStatusList(attempts)})`);
+    }
+    staticResults.push({
+      path,
+      ok: reachedHit,
+      attempts
+    });
+  }
+
+  const dynamicResults = [];
+  for (const path of dynamicControls) {
+    const response = await fetchLiveText(fetchImpl, routeUrl(baseUrl, path), {
+      method: 'HEAD',
+      retries: 1,
+      retryDelayMs: 250
+    });
+    const result = { path, ...cacheAttempt(path, response) };
+    if (!result.ok) {
+      failures.push(`${path} returned status ${result.status}; expected a successful dynamic control response`);
+    }
+    if (!result.cf_cache_status) {
+      failures.push(`${path} did not return a cf-cache-status header`);
+    } else if (EDGE_CACHE_HIT_STATUSES.has(result.cf_cache_status)) {
+      failures.push(`${path} returned cache status ${result.cf_cache_status}; API routes must remain uncached`);
+    }
+    result.ok = result.ok && Boolean(result.cf_cache_status) && !EDGE_CACHE_HIT_STATUSES.has(result.cf_cache_status);
+    dynamicResults.push(result);
+  }
+
+  return {
+    ok: failures.length === 0,
+    static_artifacts: staticResults,
+    dynamic_controls: dynamicResults,
+    failures
   };
 }
 
@@ -93,14 +206,17 @@ export function buildIntegrityReport({
   expectedCounts = DEFAULT_EXPECTED_COUNTS,
   smoke,
   provenance,
-  aiEvals
+  aiEvals,
+  edgeCache
 }) {
   const failures = [];
   if (!smoke?.ok) failures.push('Production smoke failed');
   if (!provenance?.ok) failures.push('Signed provenance verification failed');
   if (!aiEvals?.ok) failures.push('AI evals failed');
+  if (edgeCache?.ok === false) failures.push('Edge cache verification failed');
   for (const failure of provenance?.failures || []) failures.push(failure);
   for (const failure of aiEvals?.failures || []) failures.push(failure);
+  for (const failure of edgeCache?.failures || []) failures.push(failure);
   for (const result of aiEvals?.results || []) {
     for (const failure of result.failures || []) failures.push(`${result.id}: ${failure}`);
   }
@@ -133,7 +249,14 @@ export function buildIntegrityReport({
       smoke: smoke?.ok === true,
       ai_evals: aiEvals?.ok === true,
       signed_provenance: provenance?.ok === true,
-      commit: provenance?.commit?.ok === true
+      commit: provenance?.commit?.ok === true,
+      edge_cache: edgeCache?.ok !== false
+    },
+    edge_cache: {
+      ok: edgeCache?.ok !== false,
+      static_artifacts: edgeCache?.static_artifacts || [],
+      dynamic_controls: edgeCache?.dynamic_controls || [],
+      failures: edgeCache?.failures || []
     },
     ai_evals: {
       eval_count: aiEvals?.eval_count ?? null,
@@ -168,6 +291,19 @@ export function renderIntegrityMarkdown(report) {
         })
         .join('\n')
     : '- none';
+  const staticCacheLines = (report.edge_cache?.static_artifacts || []).length
+    ? report.edge_cache.static_artifacts
+        .map(result => {
+          const statuses = cacheStatusList(result.attempts || []);
+          return `- ${result.path}: ${result.ok ? 'pass' : 'fail'} (${statuses})`;
+        })
+        .join('\n')
+    : '- none';
+  const dynamicCacheLines = (report.edge_cache?.dynamic_controls || []).length
+    ? report.edge_cache.dynamic_controls
+        .map(result => `- ${result.path}: ${result.ok ? 'pass' : 'fail'} (${result.cf_cache_status || 'missing'})`)
+        .join('\n')
+    : '- none';
 
   return `# AnchorFact Production Integrity - ${report.ok ? 'PASS' : 'FAIL'}
 
@@ -190,10 +326,21 @@ Base URL: ${report.base_url}
 - AI evals: ${report.checks.ai_evals ? 'pass' : 'fail'} (${report.ai_evals.passed ?? 0}/${report.ai_evals.eval_count ?? 0}, attempts=${report.ai_evals.attempts ?? 1})
 - signed provenance: ${report.checks.signed_provenance ? 'pass' : 'fail'}
 - source commit: ${report.checks.commit ? 'pass' : 'fail'}
+- edge cache: ${report.checks.edge_cache ? 'pass' : 'fail'}
 
 ## Artifact Hashes
 
 ${artifacts}
+
+## Edge Cache
+
+Static artifacts:
+
+${staticCacheLines}
+
+Dynamic controls:
+
+${dynamicCacheLines}
 
 ## AI Eval Attempts
 
@@ -245,6 +392,7 @@ export async function runProductionIntegrity({
   evalRunner = runAiEvals,
   evalOptions = DEFAULT_INTEGRITY_EVAL_OPTIONS,
   verifier = verifyLiveProvenance,
+  edgeCacheChecker = checkProductionEdgeCache,
   generatedAt = isoNow(),
   afterSmokeDelayMs = DEFAULT_AFTER_SMOKE_DELAY_MS,
   aiEvalRetryDelayMs = DEFAULT_AI_EVAL_RETRY_DELAY_MS,
@@ -252,6 +400,7 @@ export async function runProductionIntegrity({
   sleepImpl = sleep
 } = {}) {
   const smoke = smokeRunner({ baseUrl, expectedCounts });
+  const edgeCache = await edgeCacheChecker({ baseUrl });
   const wait = typeof sleepImpl === 'function' ? sleepImpl : sleep;
   if (afterSmokeDelayMs > 0) await wait(afterSmokeDelayMs);
 
@@ -280,7 +429,8 @@ export async function runProductionIntegrity({
     expectedCounts,
     smoke,
     provenance,
-    aiEvals
+    aiEvals,
+    edgeCache
   });
 }
 
