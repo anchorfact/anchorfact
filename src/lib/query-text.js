@@ -45,18 +45,25 @@ const QUERY_STOPWORDS = new Set([
 const STANDALONE_YEAR = /^(?:1[6-9]\d{2}|20\d{2}|21\d{2})$/;
 const WEAK_MULTI_TOKEN_MATCHES = new Set([
   'architecture',
+  'action',
+  'actions',
   'basics',
   'evidence',
   'fundamentals',
   'guide',
   'history',
   'introduction',
+  'management',
+  'mechanism',
+  'mechanisms',
   'methods',
   'models',
   'overview',
+  'resistance',
   'systems',
   'techniques',
-  'theorem'
+  'theorem',
+  'type'
 ]);
 
 export function normalizeQueryText(value) {

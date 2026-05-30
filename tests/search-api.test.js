@@ -245,11 +245,41 @@ test('rankSearchRecords rejects weak-only matches for multi-token queries', () =
       keywords: ['cap', 'theorem', 'distributed'],
       routes: {},
       search_text: 'cap theorem distributed systems consistency availability partition tolerance'
+    },
+    {
+      canonical_slug: 'ai/attention-mechanisms-deep-dive',
+      title: 'Attention Mechanisms Deep Dive',
+      url: 'https://anchorfact.org/ai/attention-mechanisms-deep-dive/',
+      description: 'Attention mechanisms and action selection in neural systems.',
+      confidence_level: 'medium',
+      source_coverage: { verified: 3, total: 3, ratio: 1 },
+      claim_count: 3,
+      claim_ids: ['fact-attention'],
+      keywords: ['attention', 'mechanisms', 'action'],
+      routes: {},
+      search_text: 'attention mechanisms action selection neural systems'
+    },
+    {
+      canonical_slug: 'health/strength-training',
+      title: 'Strength Training',
+      url: 'https://anchorfact.org/health/strength-training/',
+      description: 'Progressive resistance training and adaptation.',
+      confidence_level: 'medium',
+      source_coverage: { verified: 3, total: 3, ratio: 1 },
+      claim_count: 3,
+      claim_ids: ['fact-strength'],
+      keywords: ['strength', 'training', 'resistance'],
+      routes: {},
+      search_text: 'strength training progressive resistance adaptation'
     }
   ];
 
   assertEq(rankSearchRecords(records, 'Bayes theorem', 3), []);
   assertEq(rankSearchRecords(records, 'CAP theorem', 3)[0].canonical_slug, 'computer-science/cap-theorem');
+  assertEq(rankSearchRecords(records, 'antibiotics mechanisms of action', 3), []);
+  assertEq(rankSearchRecords(records, 'antibiotic resistance', 3), []);
+  assertEq(rankSearchRecords(records, 'diabetes type 2 management', 3), []);
+  assertEq(rankSearchRecords(records, 'attention mechanism', 3)[0].canonical_slug, 'ai/attention-mechanisms-deep-dive');
 });
 
 test('buildSearchApiPayload returns compact agent-friendly results', () => {

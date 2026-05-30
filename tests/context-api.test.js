@@ -446,6 +446,15 @@ test('buildContextApiPayload suppresses lexical evidence for high-stakes persona
   assertEq(medicationSafety.payload.evidence_pack_count, 0);
   assertEq(medicationSafety.payload.citation_ready_claims, []);
   assert(medicationSafety.payload.unsupported_intent_reasons.includes('high_stakes_personal_advice'), 'medication safety lookup should expose high-stakes unsupported reason');
+
+  const diseaseManagement = buildContextApiPayload(payloadArgs({ query: 'diabetes type 2 management' }));
+  assertEq(diseaseManagement.payload.coverage_status, 'unsupported');
+  assertEq(diseaseManagement.payload.should_use_anchorfact, false);
+  assertEq(diseaseManagement.payload.answer_policy.can_answer_with_anchorfact, false);
+  assertEq(diseaseManagement.payload.answer_policy.answer_mode, 'external_sources_required');
+  assertEq(diseaseManagement.payload.evidence_pack_count, 0);
+  assertEq(diseaseManagement.payload.citation_ready_claims, []);
+  assert(diseaseManagement.payload.unsupported_intent_reasons.includes('high_stakes_personal_advice'), 'disease management lookup should expose high-stakes unsupported reason');
 });
 
 test('buildContextApiPayload suppresses lexical evidence for harmful operational requests', () => {

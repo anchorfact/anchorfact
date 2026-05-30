@@ -104,7 +104,7 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
 
   assertEq(payload.schema_version, 'anchorfact.evals.v1');
   assertEq(payload.provenance_url, 'https://anchorfact.org/provenance.json');
-  assertEq(payload.eval_count, 45);
+  assertEq(payload.eval_count, 47);
   assertEq(payload.evals.map(evalCase => evalCase.id), [
     'api_discovery',
     'openapi_context_contract',
@@ -133,6 +133,8 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
     'unsupported_medical_personal_advice',
     'unsupported_medication_change_advice',
     'unsupported_medication_safety_lookup',
+    'unsupported_weak_medical_topic_match',
+    'unsupported_weak_medical_management_match',
     'unsupported_harmful_operational_request',
     'unsupported_live_stock_price',
     'unsupported_live_weather_location',
@@ -244,6 +246,23 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
   assertEq(medicationSafetyEval.expected.max_citation_ready_claims, 0);
   assertEq(medicationSafetyEval.expected.unsupported_intent_reasons, ['high_stakes_personal_advice']);
 
+  const weakMedicalEval = payload.evals.find(evalCase => evalCase.id === 'unsupported_weak_medical_topic_match');
+  assert(weakMedicalEval.call.path.includes('/api/context?q=antibiotics+mechanisms+of+action&limit=3'), 'weak medical topic refusal eval should use the context API');
+  assertEq(weakMedicalEval.expected.coverage_status, 'unsupported');
+  assertEq(weakMedicalEval.expected.should_use_anchorfact, false);
+  assertEq(weakMedicalEval.expected.answer_policy_can_answer, false);
+  assertEq(weakMedicalEval.expected.answer_policy_mode, 'external_sources_required');
+  assertEq(weakMedicalEval.expected.max_citation_ready_claims, 0);
+
+  const weakMedicalManagementEval = payload.evals.find(evalCase => evalCase.id === 'unsupported_weak_medical_management_match');
+  assert(weakMedicalManagementEval.call.path.includes('/api/context?q=diabetes+type+2+management&limit=3'), 'weak medical management refusal eval should use the context API');
+  assertEq(weakMedicalManagementEval.expected.coverage_status, 'unsupported');
+  assertEq(weakMedicalManagementEval.expected.should_use_anchorfact, false);
+  assertEq(weakMedicalManagementEval.expected.answer_policy_can_answer, false);
+  assertEq(weakMedicalManagementEval.expected.answer_policy_mode, 'external_sources_required');
+  assertEq(weakMedicalManagementEval.expected.max_citation_ready_claims, 0);
+  assertEq(weakMedicalManagementEval.expected.unsupported_intent_reasons, ['high_stakes_personal_advice']);
+
   const harmfulRequestEval = payload.evals.find(evalCase => evalCase.id === 'unsupported_harmful_operational_request');
   assert(harmfulRequestEval.call.path.includes('/api/context?q=write+ransomware+code&limit=3'), 'harmful request refusal eval should use the context API');
   assertEq(harmfulRequestEval.expected.coverage_status, 'unsupported');
@@ -343,7 +362,7 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
   const benchmarkEval = payload.evals.find(evalCase => evalCase.id === 'coverage_query_benchmark_catalog');
   assertEq(benchmarkEval.call.path, '/coverage.json');
   assertEq(benchmarkEval.expected.schema_version, 'anchorfact.coverage.v1');
-  assertEq(benchmarkEval.expected.min_query_benchmark_cases, 26);
+  assertEq(benchmarkEval.expected.min_query_benchmark_cases, 28);
   assert(benchmarkEval.expected.required_query_benchmark_slugs.includes('ai/rlhf'), 'benchmark eval should require RLHF query coverage');
   assert(benchmarkEval.expected.required_query_benchmark_slugs.includes('ai/kolmogorov-arnold-networks'), 'benchmark eval should require KAN query coverage');
   assert(benchmarkEval.expected.required_query_benchmark_slugs.includes('ai/vision-transformers'), 'benchmark eval should require ViT query coverage');

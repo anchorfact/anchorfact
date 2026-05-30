@@ -142,10 +142,10 @@ function unsupportedIntentReasons(query) {
 
 function highStakesPersonalAdviceIntent(normalized) {
   const personalAdvicePattern = /\b(?:should|can|could|would|do|does|need|must)\s+(?:i|we)\b|\b(?:for me|my|me|myself|our)\b/;
-  const directAdvicePattern = /\b(?:diagnose|treat|treatment|dosage|dose|prescribe|take|sue|lawsuit|appeal|buy|sell|invest|retire|retirement)\b/;
+  const directAdvicePattern = /\b(?:diagnose|treat|treatment|management|guidelines?|dosage|dose|prescribe|take|sue|lawsuit|appeal|buy|sell|invest|retire|retirement)\b/;
   const medicationDomain = /\b(?:aspirin|ibuprofen|acetaminophen|metformin|semaglutide|insulin|antibiotic|antibiotics|antidepressant|antidepressants|ssri|ssris|opioid|opioids|blood thinner|blood thinners|medication|medicine|prescription)\b/;
   const medicationSafetyLookup = /\b(?:safe|safety|side effects?|withdrawal|contraindications?|interactions?|during pregnancy|while pregnant|pregnan(?:t|cy)|dosage|dose|stop(?:ping)?|taper(?:ing)?)\b/;
-  const medicalDomain = /\b(?:aspirin|ibuprofen|acetaminophen|metformin|semaglutide|insulin|antibiotic|antibiotics|antidepressant|antidepressants|ssri|ssris|opioid|opioids|blood thinner|blood thinners|chest pain|symptoms?|diagnos(?:e|is)|treat(?:ment)?|dosage|dose|medication|medicine|prescription|depression|anxiety|suicid(?:e|al)|cancer|doctor|hospital|pain|pregnan(?:t|cy)|infection|blood pressure)\b/.test(normalized);
+  const medicalDomain = /\b(?:aspirin|ibuprofen|acetaminophen|metformin|semaglutide|insulin|antibiotic|antibiotics|antidepressant|antidepressants|ssri|ssris|opioid|opioids|blood thinner|blood thinners|chest pain|symptoms?|diagnos(?:e|is)|treat(?:ment)?|dosage|dose|medication|medicine|prescription|diabetes|hypertension|depression|anxiety|suicid(?:e|al)|cancer|doctor|hospital|pain|pregnan(?:t|cy)|infection|blood pressure)\b/.test(normalized);
   const legalDomain = /\b(?:sue|lawsuit|eviction|landlord|tenant|contract|court|custody|divorce|immigration|criminal|lawyer|attorney|legal advice)\b/.test(normalized);
   const financialDomain = /\b(?:invest|investment|buy|sell|stock|stocks|crypto|bitcoin|portfolio|loan|mortgage|tax|retire|retirement|insurance)\b/.test(normalized);
   const highStakesDomain = medicalDomain || legalDomain || financialDomain;

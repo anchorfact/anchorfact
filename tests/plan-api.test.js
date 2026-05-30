@@ -330,6 +330,7 @@ test('buildPlanApiPayload rejects high-stakes personal advice even with lexical 
     'SSRI side effects',
     'semaglutide side effects',
     'metformin during pregnancy',
+    'diabetes type 2 management',
     'medication safety'
   ]) {
     const medicationPayload = buildPlanApiPayload({

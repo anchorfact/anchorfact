@@ -23,8 +23,9 @@ QUERY_STOPWORDS = {
 }
 STANDALONE_YEAR_RE = re.compile(r"^(?:1[6-9]\d{2}|20\d{2}|21\d{2})$")
 WEAK_MULTI_TOKEN_MATCHES = {
-    "architecture", "basics", "evidence", "fundamentals", "guide", "history",
-    "introduction", "methods", "models", "overview", "systems", "techniques", "theorem",
+    "architecture", "action", "actions", "basics", "evidence", "fundamentals", "guide",
+    "history", "introduction", "management", "mechanism", "mechanisms", "methods",
+    "models", "overview", "resistance", "systems", "techniques", "theorem", "type",
 }
 SHORT_TOKEN_BOOST_SKIP = {"ai"}
 
@@ -384,7 +385,7 @@ def _high_stakes_personal_advice_intent(normalized: str) -> bool:
         normalized,
     ) is not None
     direct_advice = re.search(
-        r"\b(?:diagnose|treat|treatment|dosage|dose|prescribe|take|sue|lawsuit|appeal|buy|sell|invest|retire|retirement)\b",
+        r"\b(?:diagnose|treat|treatment|management|guidelines?|dosage|dose|prescribe|take|sue|lawsuit|appeal|buy|sell|invest|retire|retirement)\b",
         normalized,
     ) is not None
     medication_domain = re.search(
@@ -396,7 +397,7 @@ def _high_stakes_personal_advice_intent(normalized: str) -> bool:
         normalized,
     ) is not None
     medical_domain = re.search(
-        r"\b(?:aspirin|ibuprofen|acetaminophen|metformin|semaglutide|insulin|antibiotic|antibiotics|antidepressant|antidepressants|ssri|ssris|opioid|opioids|blood thinner|blood thinners|chest pain|symptoms?|diagnos(?:e|is)|treat(?:ment)?|dosage|dose|medication|medicine|prescription|depression|anxiety|suicid(?:e|al)|cancer|doctor|hospital|pain|pregnan(?:t|cy)|infection|blood pressure)\b",
+        r"\b(?:aspirin|ibuprofen|acetaminophen|metformin|semaglutide|insulin|antibiotic|antibiotics|antidepressant|antidepressants|ssri|ssris|opioid|opioids|blood thinner|blood thinners|chest pain|symptoms?|diagnos(?:e|is)|treat(?:ment)?|dosage|dose|medication|medicine|prescription|diabetes|hypertension|depression|anxiety|suicid(?:e|al)|cancer|doctor|hospital|pain|pregnan(?:t|cy)|infection|blood pressure)\b",
         normalized,
     ) is not None
     legal_domain = re.search(
