@@ -4,6 +4,7 @@ import {
   parseEvidenceParams,
   renderEvidenceMarkdown
 } from '../../src/lib/evidence-api.js';
+import { loadJsonAsset } from '../_lib/assets.js';
 
 const JSON_HEADERS = {
   'Access-Control-Allow-Origin': '*',
@@ -35,15 +36,6 @@ function markdownResponse(text, cacheControl = 'public, max-age=300') {
   });
 }
 
-async function loadJson(context, path) {
-  const url = new URL(path, context.request.url);
-  const response = await context.env.ASSETS.fetch(url);
-  if (!response.ok) {
-    throw new Error(`${path} fetch failed with HTTP ${response.status}`);
-  }
-  return response.json();
-}
-
 export function onRequestOptions() {
   return new Response(null, {
     status: 204,
@@ -60,10 +52,10 @@ export async function onRequestGet(context) {
 
   try {
     const [manifest, claimsPayload, sourcesPayload, searchIndex] = await Promise.all([
-      loadJson(context, '/manifest.json'),
-      loadJson(context, '/claims.json'),
-      loadJson(context, '/sources.json'),
-      loadJson(context, '/search-index.json')
+      loadJsonAsset(context, '/manifest.json'),
+      loadJsonAsset(context, '/claims.json'),
+      loadJsonAsset(context, '/sources.json'),
+      loadJsonAsset(context, '/search-index.json')
     ]);
 
     const result = buildEvidenceApiPayload({

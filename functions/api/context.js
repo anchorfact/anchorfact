@@ -4,6 +4,7 @@ import {
   parseContextParams,
   renderContextMarkdown
 } from '../../src/lib/context-api.js';
+import { loadJsonAsset } from '../_lib/assets.js';
 
 const JSON_HEADERS = {
   'Access-Control-Allow-Origin': '*',
@@ -35,15 +36,6 @@ function markdownResponse(text, cacheControl = 'public, max-age=300') {
   });
 }
 
-async function loadJson(context, path) {
-  const url = new URL(path, context.request.url);
-  const response = await context.env.ASSETS.fetch(url);
-  if (!response.ok) {
-    throw new Error(`${path} fetch failed with HTTP ${response.status}`);
-  }
-  return response.json();
-}
-
 export function onRequestOptions() {
   return new Response(null, {
     status: 204,
@@ -69,14 +61,14 @@ export async function onRequestGet(context) {
       capabilitiesPayload,
       contentHealthPayload
     ] = await Promise.all([
-      loadJson(context, '/manifest.json'),
-      loadJson(context, '/claims.json'),
-      loadJson(context, '/sources.json'),
-      loadJson(context, '/search-index.json'),
-      loadJson(context, '/topics.json'),
-      loadJson(context, '/coverage.json'),
-      loadJson(context, '/capabilities.json'),
-      loadJson(context, '/content-health.json')
+      loadJsonAsset(context, '/manifest.json'),
+      loadJsonAsset(context, '/claims.json'),
+      loadJsonAsset(context, '/sources.json'),
+      loadJsonAsset(context, '/search-index.json'),
+      loadJsonAsset(context, '/topics.json'),
+      loadJsonAsset(context, '/coverage.json'),
+      loadJsonAsset(context, '/capabilities.json'),
+      loadJsonAsset(context, '/content-health.json')
     ]);
 
     const result = buildContextApiPayload({

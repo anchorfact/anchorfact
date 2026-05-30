@@ -120,6 +120,7 @@ export function buildEvidenceApiPayload({
   claimsPayload,
   sourcesPayload,
   searchIndex,
+  rankedResults = null,
   generated = new Date().toISOString()
 }) {
   const normalizedQuery = String(query || '').trim();
@@ -136,7 +137,9 @@ export function buildEvidenceApiPayload({
 
   const parsed = parseSearchParams(new URL(`https://anchorfact.org/api/evidence?q=${encodeURIComponent(normalizedQuery)}&limit=${encodeURIComponent(limit)}`));
   const normalizedLimit = parsed.ok ? parsed.limit : 5;
-  const ranked = rankSearchRecords(searchIndex?.records || [], normalizedQuery, normalizedLimit);
+  const ranked = Array.isArray(rankedResults)
+    ? rankedResults.slice(0, normalizedLimit)
+    : rankSearchRecords(searchIndex?.records || [], normalizedQuery, normalizedLimit);
   const packs = ranked
     .map(result => ({
       result,

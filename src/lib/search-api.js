@@ -33,21 +33,27 @@ export function parseSearchParams(url) {
   };
 }
 
-function tokenCounts(tokens) {
-  const counts = new Map();
-  for (const token of tokens) {
-    counts.set(token, (counts.get(token) || 0) + 1);
-  }
-  return counts;
-}
-
-function countToken(counts, token) {
-  return counts.get(token) || 0;
-}
-
-function containsPhrase(tokens, phrase) {
+function containsPhrase(text, phrase) {
   if (!phrase) return false;
-  return ` ${tokens.join(' ')} `.includes(` ${phrase} `);
+  return ` ${text} `.includes(` ${phrase} `);
+}
+
+function containsToken(text, token) {
+  return ` ${text} `.includes(` ${token} `);
+}
+
+function countToken(text, token, max = Infinity) {
+  let count = 0;
+  let offset = 0;
+  const haystack = ` ${text} `;
+  const needle = ` ${token} `;
+  while (count < max) {
+    const index = haystack.indexOf(needle, offset);
+    if (index < 0) return count;
+    count++;
+    offset = index + needle.length - 1;
+  }
+  return count;
 }
 
 function isShortExactToken(token) {
@@ -55,30 +61,32 @@ function isShortExactToken(token) {
 }
 
 function scoreRecord(record, query, tokens) {
-  const titleTokens = textTokens(record.title);
-  const slugTokens = textTokens(record.canonical_slug);
-  const descriptionTokens = textTokens(record.description);
-  const textTokensValue = textTokens(record.search_text);
+  const titleText = normalizeQueryText(record.title);
+  const slugText = normalizeQueryText(record.canonical_slug);
+  const descriptionText = normalizeQueryText(record.description);
+  const searchText = record.search_text
+    ? String(record.search_text)
+    : normalizeQueryText([
+        record.canonical_slug,
+        record.title,
+        record.description,
+        ...(record.keywords || [])
+      ].filter(Boolean).join(' '));
   const keywordTokens = (record.keywords || []).flatMap(textTokens);
-  const titleSet = new Set(titleTokens);
-  const slugSet = new Set(slugTokens);
   const keywordSet = new Set(keywordTokens);
-  const descriptionCounts = tokenCounts(descriptionTokens);
-  const textCounts = tokenCounts(textTokensValue);
   const phrase = normalizeQueryText(query);
-  const titlePhrase = titleTokens.join(' ');
   const matchedKeywords = new Set();
   const matchedQueryTokens = new Set();
   let score = 0;
 
-  if (titlePhrase === phrase) score += 20;
-  if (containsPhrase(titleTokens, phrase)) score += 16;
-  if (containsPhrase(textTokensValue, phrase)) score += 8;
-  if (containsPhrase(descriptionTokens, phrase)) score += 4;
+  if (titleText === phrase) score += 20;
+  if (containsPhrase(titleText, phrase)) score += 16;
+  if (containsPhrase(searchText, phrase)) score += 8;
+  if (containsPhrase(descriptionText, phrase)) score += 4;
 
   for (const token of tokens) {
-    const exactTitle = titleSet.has(token);
-    const exactSlug = slugSet.has(token);
+    const exactTitle = containsToken(titleText, token);
+    const exactSlug = containsToken(slugText, token);
     const exactKeyword = keywordSet.has(token);
 
     if (exactSlug) {
@@ -100,15 +108,9 @@ function scoreRecord(record, query, tokens) {
       score += 8;
     }
 
-    const descriptionOccurrences = countToken(descriptionCounts, token);
+    const descriptionOccurrences = countToken(descriptionText, token, 2);
     if (descriptionOccurrences > 0) {
-      score += Math.min(descriptionOccurrences, 2) * 2;
-      matchedKeywords.add(token);
-      matchedQueryTokens.add(token);
-    }
-    const textOccurrences = countToken(textCounts, token);
-    if (textOccurrences > 0) {
-      score += Math.min(textOccurrences, 4);
+      score += descriptionOccurrences * 2;
       matchedKeywords.add(token);
       matchedQueryTokens.add(token);
     }

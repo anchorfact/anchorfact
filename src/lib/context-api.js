@@ -116,6 +116,7 @@ export function buildContextApiPayload({
     claimsPayload,
     sourcesPayload,
     searchIndex,
+    rankedResults: plan.matched_articles || null,
     generated
   });
 

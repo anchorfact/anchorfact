@@ -3,6 +3,7 @@ import {
   buildPlanApiPayload,
   parsePlanParams
 } from '../../src/lib/plan-api.js';
+import { loadJsonAsset } from '../_lib/assets.js';
 
 const JSON_HEADERS = {
   'Access-Control-Allow-Origin': '*',
@@ -21,15 +22,6 @@ function jsonResponse(payload, status = 200, cacheControl = 'public, max-age=300
   });
 }
 
-async function loadJson(context, path) {
-  const url = new URL(path, context.request.url);
-  const response = await context.env.ASSETS.fetch(url);
-  if (!response.ok) {
-    throw new Error(`${path} fetch failed with HTTP ${response.status}`);
-  }
-  return response.json();
-}
-
 export function onRequestOptions() {
   return new Response(null, {
     status: 204,
@@ -46,10 +38,10 @@ export async function onRequestGet(context) {
 
   try {
     const [searchIndex, topicsPayload, coveragePayload, capabilitiesPayload] = await Promise.all([
-      loadJson(context, '/search-index.json'),
-      loadJson(context, '/topics.json'),
-      loadJson(context, '/coverage.json'),
-      loadJson(context, '/capabilities.json')
+      loadJsonAsset(context, '/search-index.json'),
+      loadJsonAsset(context, '/topics.json'),
+      loadJsonAsset(context, '/coverage.json'),
+      loadJsonAsset(context, '/capabilities.json')
     ]);
 
     return jsonResponse(buildPlanApiPayload({
