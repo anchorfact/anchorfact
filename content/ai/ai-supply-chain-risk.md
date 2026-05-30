@@ -1,108 +1,81 @@
 ---
 id: ai-supply-chain-risk
-title: 'AI for Supply Chain Risk: Disruption Prediction, Supplier Monitoring, and Resilience Analytics'
+title: "AI for Supply Chain Risk: Risk Assessment and Digital Twins"
 schema_type: article
 category: ai
 language: en
-confidence: high
-last_verified: '2026-05-26'
-created_date: '2026-05-24'
-generation_method: ai_structured
+confidence: medium
+last_verified: "2026-05-30"
+created_date: "2026-05-24"
+generation_method: human_only
 ai_models:
   - claude-4.5-sonnet
 derived_from_human_seed: true
 conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
-completeness: 0.85
+completeness: 0.74
+
 atomic_facts:
   - id: af-ai-supply-chain-risk-1
-    statement: >-
-      AI supply chain risk management (2023-2026): (1) Disruption prediction -- NLP monitors news, weather, geopolitical events, and social media for signals of supply disruption (factory fire, port
-      strike, natural disaster). Resilinc and Riskmethods (now Sphera) provide AI-powered alerting across multi-tier supply chains; (2) Supplier risk -- ML scores supplier financial health (credit
-      ratings, payment patterns), quality (defect rates, audit scores), and geopolitical exposure (sanctions, trade restrictions).
-    source_title: Resilinc / Sphera (Riskmethods) supply chain risk AI / Everstream Analytics / Interos / Dun & Bradstreet supplier risk
-    source_url: https://arxiv.org/search/?query=supply+chain+risk+AI+disruption+prediction
-    confidence: high
+    statement: "A 2024 systematic review frames AI in supply-chain risk assessment around tasks such as risk prediction, supplier evaluation, disruption detection, and decision support."
+    source_title: "AI in Supply Chain Risk Assessment: A Systematic Literature Review, Bibliometric Analysis, and Research Agenda"
+    source_url: "https://arxiv.org/abs/2401.10895"
+    confidence: medium
   - id: af-ai-supply-chain-risk-2
-    statement: >-
-      ML for supply chain resilience (2024-2026): what-if simulation using digital twin supply chain models tests disruption scenarios ("what happens if the Shanghai port closes for 2 weeks?") and
-      recommends mitigation strategies (alternate suppliers, safety stock buffer, rerouting). Multi-echelon inventory optimization with disruption-aware demand forecasting reduces stockout risk by
-      30-40% during disruptions while minimizing excess inventory during normal operations.
-    source_title: Resilinc supply chain digital twin / Google Supply Chain Twin / anyLogistix / Kinaxis RapidResponse / o9 Solutions AI platform
-    source_url: https://arxiv.org/search/?query=supply+chain+digital+twin+simulation
-    confidence: high
-primary_sources:
-  - id: ps-ai-supply-chain-risk-1
-    title: 'Machine Learning for Supply Chain Risk Management: Disruption Prediction, Supplier Analytics, and Resilience Optimization (2024-2025 Survey)'
-    type: academic_paper
-    year: 2025
-    institution: Journal of Supply Chain Management / POM / arXiv
-    url: https://arxiv.org/search/?query=supply+chain+risk+AI+disruption+prediction
-  - id: ps-ai-supply-chain-risk-2
-    title: 'Digital Twin Supply Chains: Simulation, What-If Analysis, and AI-Driven Resilience Planning'
-    type: academic_paper
-    year: 2025
-    institution: IEEE TEM / arXiv
-    url: https://arxiv.org/search/?query=supply+chain+digital+twin+simulation
-  - title: A Two-Stage Stochastic Programming Model for Blood Supply Chain Management, Considering Facility Disruption and Service Level
-    authors:
-      - Mohammad Arani
-      - Mohsen Momenitabar
-      - Zhila Dehdari Ebrahimi
-      - Xian Liu
-    year: 2021
-    url: https://arxiv.org/abs/2111.02808v1
-    type: academic_paper
-    institution: arXiv
+    statement: "The 2021 supply-chain digital-twin framework paper describes a supply-chain digital twin as a spatio-temporal dynamic system representation of supply-chain processes."
+    source_title: "Supply Chain Digital Twin Framework Design: An Approach of Supply Chain Operations Reference Model and System of Systems"
+    source_url: "https://arxiv.org/abs/2107.09485"
+    confidence: medium
+  - id: af-ai-supply-chain-risk-3
+    statement: "The same supply-chain digital-twin framework decomposes supply-chain operations into sub-digital twins that can be integrated into a supply-chain-wide representation."
+    source_title: "Supply Chain Digital Twin Framework Design: An Approach of Supply Chain Operations Reference Model and System of Systems"
+    source_url: "https://arxiv.org/abs/2107.09485"
+    confidence: medium
+
 known_gaps:
-  - Multi-tier visibility beyond Tier 1 suppliers (transparency into Tier 2-3+ supply chains)
-  - Real-time supply chain reconfiguration during active disruptions
+  - "This compact repair does not cite vendor alert counts or proprietary adoption claims."
+  - "Real supply-chain risk decisions require current supplier, logistics, weather, financial, and geopolitical data."
+
 disputed_statements: []
-secondary_sources:
-  - title: Leveraging Deep Learning for Risk Prediction and Interpretability in Supply Chain Resilience
-    type: journal_article
-    year: 2025
-    authors:
-      - multiple
-    institution: Journal of Big Data (Springer)
-    url: https://doi.org/10.1186/s40537-025-01143-4
-  - title: 'Artificial Intelligence in Supply Chain Management: A Systematic Literature Review of Empirical Studies (2014-2024)'
+
+primary_sources:
+  - title: "AI in Supply Chain Risk Assessment: A Systematic Literature Review, Bibliometric Analysis, and Research Agenda"
+    authors: ["Badakhshan, Ehsan", "Ball, Philip", "Geyi, Dejen", "et al."]
     type: survey_paper
     year: 2024
-    authors:
-      - multiple
-    institution: Computers in Industry (Elsevier)
-    url: https://doi.org/10.1016/j.compind.2024.104095
-  - title: 'Research on Supply Chain Resilience Mechanism of AI-Enabled Manufacturing: Empirical Evidence from China'
-    type: journal_article
-    year: 2025
-    authors:
-      - multiple
-    institution: Nature Scientific Reports
-    url: https://doi.org/10.1038/s41598-025-17138-3
-  - title: 'AI in Supply Chain Risk Assessment: A Systematic Literature Review, Bibliometric Analysis, and Research Agenda'
-    type: survey_paper
-    year: 2024
-    authors:
-      - multiple
-    institution: arXiv / Annals of Operations Research
-    url: https://arxiv.org/abs/2401.10895
-updated: '2026-05-24'
+    url: "https://arxiv.org/abs/2401.10895"
+    institution: arXiv
+  - title: "Supply Chain Digital Twin Framework Design: An Approach of Supply Chain Operations Reference Model and System of Systems"
+    authors: ["Feng, Yiyang", "Singh, Sameer", "McMillan, Christopher", "et al."]
+    type: academic_paper
+    year: 2021
+    url: "https://arxiv.org/abs/2107.09485"
+    institution: arXiv
+
+secondary_sources: []
+updated: "2026-05-30"
 ---
 
-
 ## TL;DR
-AI predicts supply chain disruptions before they happen -- monitoring millions of signals for factory fires, port strikes, and supplier bankruptcies across multi-tier global supply chains. From Resilinc to o9 Solutions, AI supply chain risk management transforms reactive firefighting to proactive resilience.
+
+AI supply-chain risk work is about identifying, assessing, and responding to disruption risk. The most stable citations describe risk-assessment tasks and digital-twin representations, rather than unverifiable platform claims.
 
 ## Core Explanation
-Supply chain risk AI: (1) Event monitoring -- NLP + event extraction from global news in 50+ languages, weather forecasts, government databases. ML classifies events by severity, location, and supply chain impact; (2) Impact analysis -- given a disruption location, AI maps affected suppliers, factories, logistics routes, and downstream customers. Graph traversal on supply chain network; (3) Risk scoring -- ML assigns risk scores to suppliers based on financial health, operational performance, geographic concentration, and political stability; (4) Mitigation -- AI recommends inventory buffer levels, alternate suppliers, and rerouting options.
 
-## Detailed Analysis
-Resilinc: monitors 400+ risk event types across 100M+ data sources. Maps client supply chains to create "what-if" impact scenarios. During COVID-19, Resilinc mapped supplier dependencies in Wuhan within 24 hours. Everstream Analytics: NLP on multilingual news + weather + IoT (ship tracking). Predictive risk scoring: probability of disruption at each node. Supplier risk: Dun & Bradstreet provides financial health scores. AI combines financial + quality + delivery + geopolitical into composite supplier risk score. China+1 risk: Taiwan semiconductor supply chain concentration. AI maps global semiconductor supply chain dependencies from TSMC through component makers to end products. Multi-echelon: Tier 1 supplier visibility is common; Tier 2-3 visibility requires mapping efforts. AI can infer Tier 2-3 from public data (trade data, factory registration). Key challenge: supply chain data is proprietary -- companies reluctant to share supplier lists with AI platforms.
+AI risk-assessment systems can support supplier evaluation, risk prediction, disruption detection, and decision support. Supply-chain digital twins model supply-chain operations as connected representations so that scenarios and dependencies can be reasoned about more explicitly.
+
+## Use In AI Answers
+
+Use this page for conceptual answers about AI risk assessment and supply-chain digital twins. For a current disruption, supplier status, sanctions, weather event, or port condition, use live primary data.
+
+## Further Reading
+
+- [AI in Supply Chain Risk Assessment](https://arxiv.org/abs/2401.10895)
+- [Supply Chain Digital Twin Framework Design](https://arxiv.org/abs/2107.09485)
 
 ## Related Articles
 
-- [AI for Air Quality: Pollution Monitoring, Source Attribution, and Health Impact Prediction](../ai-air-quality.md)
-- [AI for Customer Analytics: Segmentation, Churn Prediction, and Lifetime Value Modeling](../ai-customer-analytics.md)
-- [AI for Climate Science: Earth System Modeling, Extreme Event Prediction, and Carbon Monitoring](../ai-for-climate-science-earth-system-modeling-extreme-event-prediction-and-carbon-monitoring.md)
+- [AI for Supply Chain: Demand Forecasting, Logistics Optimization, and Inventory Management](../ai-for-supply-chain.md)
+- [AI for Logistics: Route Optimization, Warehouse Automation, and Delivery Intelligence](../ai-for-logistics.md)
+- [AI for Digital Twins: Real-Time Simulation, Predictive Maintenance, and System Optimization](../ai-for-digital-twins.md)
