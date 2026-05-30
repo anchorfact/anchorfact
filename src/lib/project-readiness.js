@@ -65,6 +65,10 @@ function nextActionsForFocus(focus) {
       {
         area: 'measurement',
         action: 'Keep representative AI evals aligned with real usage before broad expansion.'
+      },
+      {
+        area: 'direction_choice',
+        action: 'Use failed evals, production integrity, or content-health signals to justify the next project change.'
       }
     ]
   };
@@ -136,8 +140,8 @@ export function buildProjectReadiness({
   if (publicAuditActionableCount > 0) nextFocus = 'repair_public_audit';
   else if (sourceGapArticles > 0 || claimMappingRatio < 1) nextFocus = 'complete_public_source_coverage';
   else if (staleDocsCount > 0) nextFocus = 'refresh_stale_docs';
-  else if (draftRepairCandidateCount > 0) nextFocus = 'prioritize_draft_repair_queue';
   else if (lowConfidenceRatio >= 0.1) nextFocus = 'raise_public_confidence_selectively';
+  else if (draftRepairCandidateCount > 0 && score < 95) nextFocus = 'prioritize_draft_repair_queue';
 
   return {
     score_100: score,

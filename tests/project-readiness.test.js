@@ -64,5 +64,25 @@ test('buildProjectReadiness selects draft repair only after public surface is cl
   assert(readiness.next_actions.some(action => action.action.includes('one or two low-risk drafts')), 'draft repair guidance should stay deliberately small');
 });
 
+test('buildProjectReadiness avoids content stacking once the project is excellent', () => {
+  const readiness = buildProjectReadiness({
+    publicArticles: 630,
+    publicAuditActionableCount: 0,
+    publicSourceCoverage: { full: 630, partial: 0, zero: 0 },
+    publicClaimMapping: { total: 1933, mapped: 1933, ratio: 1 },
+    publicLowConfidenceCount: 43,
+    staleDocsCount: 0,
+    draftRepairCandidateCount: 150,
+    draftRepairExcludedCount: 201
+  });
+
+  assertEq(readiness.score_100, 95);
+  assertEq(readiness.grade, 'excellent');
+  assertEq(readiness.next_focus, 'maintain_and_measure_ai_usage');
+  assert(readiness.signals.draft_repair_candidate_count > 0, 'draft queue should remain visible');
+  assert(readiness.next_actions.some(action => action.area === 'measurement'), 'excellent-state guidance should keep evaluation first');
+  assert(!readiness.next_actions.some(action => action.area === 'draft_asset_pipeline'), 'excellent-state guidance should not default to draft expansion');
+});
+
 console.log(`\n${passed} passed, ${failed} failed`);
 process.exit(failed > 0 ? 1 : 0);
