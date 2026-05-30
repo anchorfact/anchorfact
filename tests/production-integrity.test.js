@@ -5,7 +5,7 @@ import {
   renderIntegrityMarkdown,
   runProductionIntegrity
 } from '../scripts/production-integrity.js';
-import { REQUIRED_SECURITY_HEADERS, evalCallRoutes, exampleWorkflowRoutes, fetchRoute, hasCanonicalSlug, readJsonRoute } from '../src/smoke-production.js';
+import { REQUIRED_SECURITY_HEADERS, evalCallRoutes, exampleWorkflowRoutes, fetchRoute, hasCanonicalSlug, readJsonRoute, repairQueueBatchFailures } from '../src/smoke-production.js';
 
 let passed = 0, failed = 0;
 const tests = [];
@@ -428,6 +428,21 @@ test('production smoke can extract safe executable eval routes', () => {
   });
 
   assertEq(routes, ['/api/evidence?q=gaussian&limit=3', '/graph.json']);
+});
+
+test('production smoke validates conservative content-health repair batches', () => {
+  assertEq(repairQueueBatchFailures({
+    candidate_count: 3,
+    next_batch_size: 2,
+    next_batch: [{ canonical_slug: 'ai/a' }, { canonical_slug: 'ai/b' }]
+  }), []);
+
+  const failures = repairQueueBatchFailures({
+    candidate_count: 3,
+    next_batch_size: 3,
+    next_batch: [{ canonical_slug: 'ai/a' }, { canonical_slug: 'ai/b' }, { canonical_slug: 'ai/c' }]
+  });
+  assert(failures.some(failure => failure.includes('expected 2')), 'legacy 3+ repair batches should fail smoke');
 });
 
 for (const { name, fn } of tests) {

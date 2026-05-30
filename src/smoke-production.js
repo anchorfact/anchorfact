@@ -131,6 +131,30 @@ export function hasCanonicalSlug(items, slug) {
   return Array.isArray(items) && items.some(item => item?.canonical_slug === slug);
 }
 
+export function repairQueueBatchFailures(repairQueue = {}) {
+  const failures = [];
+  const candidateCount = repairQueue.candidate_count;
+  const nextBatchSize = repairQueue.next_batch_size;
+  const nextBatch = repairQueue.next_batch;
+
+  if (!Number.isInteger(candidateCount) || candidateCount < 0) {
+    failures.push('content-health repair queue candidate count is missing');
+  }
+  if (!Array.isArray(nextBatch)) {
+    failures.push('content-health repair queue next batch is missing');
+  }
+
+  const expectedBatchSize = Math.min(2, Math.max(0, Number.isInteger(candidateCount) ? candidateCount : 0));
+  if (!Number.isInteger(nextBatchSize) || nextBatchSize !== expectedBatchSize) {
+    failures.push(`content-health repair queue next batch size expected ${expectedBatchSize}, got ${nextBatchSize ?? '(missing)'}`);
+  }
+  if (Array.isArray(nextBatch) && Number.isInteger(nextBatchSize) && nextBatch.length !== nextBatchSize) {
+    failures.push(`content-health repair queue next batch length expected ${nextBatchSize}, got ${nextBatch.length}`);
+  }
+
+  return failures;
+}
+
 function headerIncludes(result, name, expected, failures) {
   const actual = result.headers[name.toLowerCase()] || '';
   assertOk(actual.toLowerCase().includes(expected.toLowerCase()), `${result.route} header ${name} expected to include ${expected}, got ${actual || '(missing)'}`, failures);
@@ -375,9 +399,7 @@ export async function main() {
     failures,
   );
   const repairQueue = contentHealth.draft?.repair_queue || {};
-  assertOk(Number.isInteger(repairQueue.candidate_count) && repairQueue.candidate_count >= 0, 'content-health repair queue candidate count is missing', failures);
-  assertOk(Array.isArray(repairQueue.next_batch), 'content-health repair queue next batch is missing', failures);
-  assertOk(repairQueue.next_batch.length === Math.min(5, repairQueue.candidate_count), 'content-health repair queue next batch size does not match candidate count', failures);
+  failures.push(...repairQueueBatchFailures(repairQueue));
   assertOk(
     Array.isArray(repairQueue.selection_policy)
       && repairQueue.selection_policy.some(policy => String(policy).includes('repair_complexity')),
