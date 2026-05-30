@@ -387,6 +387,14 @@ def _high_stakes_personal_advice_intent(normalized: str) -> bool:
         r"\b(?:diagnose|treat|treatment|dosage|dose|prescribe|take|sue|lawsuit|appeal|buy|sell|invest|retire|retirement)\b",
         normalized,
     ) is not None
+    medication_domain = re.search(
+        r"\b(?:aspirin|ibuprofen|acetaminophen|metformin|semaglutide|insulin|antibiotic|antibiotics|antidepressant|antidepressants|ssri|ssris|opioid|opioids|blood thinner|blood thinners|medication|medicine|prescription)\b",
+        normalized,
+    ) is not None
+    medication_safety_lookup = re.search(
+        r"\b(?:safe|safety|side effects?|withdrawal|contraindications?|interactions?|during pregnancy|while pregnant|pregnan(?:t|cy)|dosage|dose|stop(?:ping)?|taper(?:ing)?)\b",
+        normalized,
+    ) is not None
     medical_domain = re.search(
         r"\b(?:aspirin|ibuprofen|acetaminophen|metformin|semaglutide|insulin|antibiotic|antibiotics|antidepressant|antidepressants|ssri|ssris|opioid|opioids|blood thinner|blood thinners|chest pain|symptoms?|diagnos(?:e|is)|treat(?:ment)?|dosage|dose|medication|medicine|prescription|depression|anxiety|suicid(?:e|al)|cancer|doctor|hospital|pain|pregnan(?:t|cy)|infection|blood pressure)\b",
         normalized,
@@ -399,7 +407,8 @@ def _high_stakes_personal_advice_intent(normalized: str) -> bool:
         r"\b(?:invest|investment|buy|sell|stock|stocks|crypto|bitcoin|portfolio|loan|mortgage|tax|retire|retirement|insurance)\b",
         normalized,
     ) is not None
-    return (medical_domain or legal_domain or financial_domain) and (personal_advice or direct_advice)
+    high_risk_medication_lookup = medication_domain and medication_safety_lookup
+    return high_risk_medication_lookup or ((medical_domain or legal_domain or financial_domain) and (personal_advice or direct_advice))
 
 
 def _harmful_operational_request_intent(normalized: str) -> bool:

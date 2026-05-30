@@ -324,7 +324,14 @@ test('buildPlanApiPayload rejects high-stakes personal advice even with lexical 
   assert(payload.unsupported_intent_reasons.includes('high_stakes_personal_advice'), 'personal medical advice should carry a high-stakes reason');
   assert(payload.fallback_guidance.some(item => item.includes('professional')), 'high-stakes advice should direct agents to authoritative professional sources');
 
-  for (const query of ['can I stop taking antidepressants', 'is semaglutide safe for me']) {
+  for (const query of [
+    'can I stop taking antidepressants',
+    'is semaglutide safe for me',
+    'SSRI side effects',
+    'semaglutide side effects',
+    'metformin during pregnancy',
+    'medication safety'
+  ]) {
     const medicationPayload = buildPlanApiPayload({
       query,
       searchIndex,
@@ -339,7 +346,7 @@ test('buildPlanApiPayload rejects high-stakes personal advice even with lexical 
   }
 
   const educational = buildPlanApiPayload({
-    query: 'medication safety',
+    query: 'mental health basics',
     searchIndex,
     topicsPayload,
     coveragePayload,
