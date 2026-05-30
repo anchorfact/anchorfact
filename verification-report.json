@@ -8,7 +8,7 @@
     "elapsed_ms": 635005,
     "elapsed_sec": "635.0",
     "concurrency": 3,
-    "manual_reviewed_articles": 576
+    "manual_reviewed_articles": 579
   },
   "articles": [
     {
@@ -1467,23 +1467,75 @@
       "file": "content/ai/ai-customer-service.md",
       "article_id": "ai-customer-service",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Large Language Models for Conversational Customer Service: A Survey of Methods, Deployment, and Evaluation",
-          "source_type": "academic_paper",
-          "results": [],
-          "all_verified": false
+          "source_title": "A Contemporary Review on Chatbots, AI-Powered Virtual Conversational Agents, ChatGPT: Applications, Open Challenges and Future Research Directions",
+          "source_type": "survey_paper",
+          "results": [
+            {
+              "method": "doi",
+              "identifier": "10.1016/j.cosrev.2024.100632",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted AI-first draft asset repair batch 70; sources were manually reviewed from DOI/arXiv primary URLs without running local verify-full.",
+                "title": "A Contemporary Review on Chatbots, AI-Powered Virtual Conversational Agents, ChatGPT: Applications, Open Challenges and Future Research Directions",
+                "publisher": "Elsevier",
+                "year": 2024
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         },
         {
-          "source_title": "AI-Powered Ticket Routing and Categorization: NLP for Intelligent Contact Center Operations (2024 Survey)",
+          "source_title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+          "source_type": "conference_paper",
+          "results": [
+            {
+              "method": "arxiv",
+              "identifier": "2005.11401",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted AI-first draft asset repair batch 70; sources were manually reviewed from DOI/arXiv primary URLs without running local verify-full.",
+                "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+                "venue": "NeurIPS",
+                "year": 2020
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "An Intelligent Real-Time Agent Assistant for Customer Service",
           "source_type": "academic_paper",
-          "results": [],
-          "all_verified": false
+          "results": [
+            {
+              "method": "arxiv",
+              "identifier": "1909.02851",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted AI-first draft asset repair batch 70; sources were manually reviewed from DOI/arXiv primary URLs without running local verify-full.",
+                "title": "An Intelligent Real-Time Agent Assistant for Customer Service",
+                "year": 2019
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-30"
     },
     {
       "file": "content/ai/ai-digital-forensics.md",
@@ -2101,23 +2153,76 @@
       "file": "content/ai/ai-employee-experience.md",
       "article_id": "ai-employee-experience",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "AI for Employee Experience: Onboarding Automation, Personalized Learning, and Internal Communication Analytics (2024-2025 Survey)",
-          "source_type": "academic_paper",
-          "results": [],
-          "all_verified": false
+          "source_title": "Artificial Intelligence in Tactical Human Resource Management: A Systematic Literature Review",
+          "source_type": "survey_paper",
+          "results": [
+            {
+              "method": "doi",
+              "identifier": "10.1016/j.jjimei.2021.100047",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted AI-first draft asset repair batch 70; sources were manually reviewed from DOI/arXiv primary URLs without running local verify-full.",
+                "title": "Artificial Intelligence in Tactical Human Resource Management: A Systematic Literature Review",
+                "publisher": "Elsevier",
+                "year": 2021
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         },
         {
-          "source_title": "NLP for Employee Engagement: Sentiment Analysis, Turnover Prediction, and Voice of Employee Analytics",
-          "source_type": "academic_paper",
-          "results": [],
-          "all_verified": false
+          "source_title": "Artificial Intelligence and Automation in Human Resource Development: A Systematic Review",
+          "source_type": "survey_paper",
+          "results": [
+            {
+              "method": "doi",
+              "identifier": "10.1177/15344843231224009",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted AI-first draft asset repair batch 70; sources were manually reviewed from DOI/arXiv primary URLs without running local verify-full.",
+                "title": "Artificial Intelligence and Automation in Human Resource Development: A Systematic Review",
+                "publisher": "SAGE",
+                "year": 2024
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "An Interdisciplinary Review of AI and HRM: Challenges and Future Directions",
+          "source_type": "survey_paper",
+          "results": [
+            {
+              "method": "doi",
+              "identifier": "10.1016/j.hrmr.2022.100924",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted AI-first draft asset repair batch 70; sources were manually reviewed from DOI/arXiv primary URLs without running local verify-full.",
+                "title": "An Interdisciplinary Review of AI and HRM: Challenges and Future Directions",
+                "publisher": "Elsevier",
+                "year": 2023
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-30"
     },
     {
       "file": "content/ai/ai-ethics-and-bias.md",
@@ -2189,23 +2294,76 @@
       "file": "content/ai/ai-fleet-management.md",
       "article_id": "ai-fleet-management",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "AI and Machine Learning for Fleet Management: Predictive Maintenance, Route Optimization, and Driver Safety (2024-2025 Comprehensive Survey)",
-          "source_type": "academic_paper",
-          "results": [],
-          "all_verified": false
+          "source_title": "IoT-Based Predictive Maintenance for Fleet Management",
+          "source_type": "conference_paper",
+          "results": [
+            {
+              "method": "doi",
+              "identifier": "10.1016/j.procs.2019.04.184",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted AI-first draft asset repair batch 70; sources were manually reviewed from DOI/arXiv primary URLs without running local verify-full.",
+                "title": "IoT-Based Predictive Maintenance for Fleet Management",
+                "publisher": "Elsevier",
+                "year": 2019
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         },
         {
-          "source_title": "Deep Learning for Vehicle Telematics: Driver Behavior Analysis, Fuel Efficiency, and Predictive Maintenance",
-          "source_type": "academic_paper",
-          "results": [],
-          "all_verified": false
+          "source_title": "Predictive Maintenance in the Automotive Sector: A Literature Review",
+          "source_type": "survey_paper",
+          "results": [
+            {
+              "method": "doi",
+              "identifier": "10.3390/mca27010002",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted AI-first draft asset repair batch 70; sources were manually reviewed from DOI/arXiv primary URLs without running local verify-full.",
+                "title": "Predictive Maintenance in the Automotive Sector: A Literature Review",
+                "publisher": "MDPI",
+                "year": 2022
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Machine Learning to Solve Vehicle Routing Problems: A Survey",
+          "source_type": "survey_paper",
+          "results": [
+            {
+              "method": "doi",
+              "identifier": "10.1109/TITS.2023.3334976",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted AI-first draft asset repair batch 70; sources were manually reviewed from DOI/arXiv primary URLs without running local verify-full.",
+                "title": "Machine Learning to Solve Vehicle Routing Problems: A Survey",
+                "publisher": "IEEE",
+                "year": 2024
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-30"
     },
     {
       "file": "content/ai/ai-for-accessibility.md",
