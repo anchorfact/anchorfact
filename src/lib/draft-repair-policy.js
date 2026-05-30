@@ -40,6 +40,24 @@ const STRICT_REVIEW_RULES = [
   }
 ];
 
+const PRIORITY_AREAS = [
+  {
+    area: 'core_ai',
+    priority: 0,
+    pattern: /^ai\//
+  },
+  {
+    area: 'technical_reference',
+    priority: 1,
+    pattern: /^computer-science\//
+  },
+  {
+    area: 'scientific_reference',
+    priority: 2,
+    pattern: /^science\//
+  }
+];
+
 function searchableText(article = {}) {
   return [
     article.canonical_slug,
@@ -61,6 +79,23 @@ export function repairComplexity(reasons = []) {
   return reasons.filter(reason => FATAL_DRAFT_REASONS.has(reason)).length;
 }
 
+export function draftRepairPriorityArea(article = {}) {
+  const slug = String(article.canonical_slug || '');
+  return PRIORITY_AREAS.find(item => item.pattern.test(slug))?.area || 'general_reference';
+}
+
+export function draftRepairPriority(article = {}) {
+  const slug = String(article.canonical_slug || '');
+  return PRIORITY_AREAS.find(item => item.pattern.test(slug))?.priority ?? 3;
+}
+
+export function draftRepairPriorityMetadata(article = {}) {
+  return {
+    repair_priority_area: draftRepairPriorityArea(article),
+    repair_priority: draftRepairPriority(article)
+  };
+}
+
 export function strictReviewReasons(article = {}) {
   const text = searchableText(article);
   return STRICT_REVIEW_RULES
@@ -69,7 +104,8 @@ export function strictReviewReasons(article = {}) {
 }
 
 export function compareDraftRepairCandidates(a, b) {
-  return a.repair_complexity - b.repair_complexity
+  return draftRepairPriority(a) - draftRepairPriority(b)
+    || a.repair_complexity - b.repair_complexity
     || (b.sources_total || 0) - (a.sources_total || 0)
     || String(a.canonical_slug).localeCompare(String(b.canonical_slug));
 }

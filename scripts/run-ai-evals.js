@@ -183,11 +183,16 @@ function evaluateJsonExpected(payload, expected, failures) {
       : 0;
     check(count >= expected.min_repair_queue_next_batch, failures, `draft repair queue next batch expected at least ${expected.min_repair_queue_next_batch}, got ${count}`);
   }
-  if (expected.repair_queue_policy_contains) {
+  const repairQueuePolicyRequirements = Array.isArray(expected.repair_queue_policy_contains)
+    ? expected.repair_queue_policy_contains
+    : [expected.repair_queue_policy_contains].filter(Boolean);
+  if (repairQueuePolicyRequirements.length > 0) {
     const policy = Array.isArray(payload?.draft?.repair_queue?.selection_policy)
       ? payload.draft.repair_queue.selection_policy.join(' ')
       : '';
-    check(policy.includes(expected.repair_queue_policy_contains), failures, `draft repair queue selection_policy should include ${expected.repair_queue_policy_contains}`);
+    for (const requiredPolicy of repairQueuePolicyRequirements) {
+      check(policy.includes(requiredPolicy), failures, `draft repair queue selection_policy should include ${requiredPolicy}`);
+    }
   }
   if (expected.max_public_source_tier_c !== undefined) {
     const count = payload?.public?.sources?.tier_distribution?.C ?? 0;

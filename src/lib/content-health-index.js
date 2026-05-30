@@ -7,6 +7,7 @@ import {
 import {
   autoRepairExclusionReasons,
   compareDraftRepairCandidates,
+  draftRepairPriorityMetadata,
   repairComplexity,
   strictReviewReasons
 } from './draft-repair-policy.js';
@@ -117,7 +118,8 @@ function draftRepairCandidates(manifest, limit = 25) {
       sources_verified: article.sources_verified ?? null,
       sources_total: article.sources_total ?? null,
       quality_reasons: reasons,
-      repair_complexity: repairComplexity(reasons)
+      repair_complexity: repairComplexity(reasons),
+      ...draftRepairPriorityMetadata(article)
     });
   }
   candidates.sort(compareDraftRepairCandidates);
@@ -159,6 +161,7 @@ function draftStrictReviewCandidates(manifest, limit = 25) {
       sources_total: article.sources_total ?? null,
       quality_reasons: reasons,
       repair_complexity: repairComplexity(reasons),
+      ...draftRepairPriorityMetadata(article),
       strict_review_reasons: strictReasons
     });
   }
@@ -207,6 +210,7 @@ function draftRepairQueue(manifest) {
       'Exclude placeholder and encoding-damaged drafts from automatic repair queues.',
       'Route encoding-damaged drafts to manual restoration or rewrite planning before source repair.',
       'Route high-stakes medical, crisis, safety, legal, civic, financial, and autonomy drafts to strict review before automatic repair.',
+      'Prioritize AI-agent utility areas first: core AI, computer-science references, then science references.',
       'Prioritize lower repair_complexity values first.',
       'Prefer drafts with more existing sources when complexity ties.',
       'Use canonical slug order as the final stable tie-breaker.'

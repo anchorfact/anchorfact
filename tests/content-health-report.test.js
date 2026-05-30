@@ -84,14 +84,15 @@ test('buildContentHealthReport summarizes public and draft health', () => {
 
   try {
     const manifest = {
-      article_count: 5,
+      article_count: 6,
       public_article_count: 2,
-      draft_article_count: 3,
+      draft_article_count: 4,
       claim_count: 2,
       articles: [
         publicArticle('ai/public-a', { confidence_level: 'high' }),
         publicArticle('science/public-b', { sources_verified: 1, sources_total: 2, quality_reasons: ['partial_source_verification'] }),
         draftArticle('ai/draft-a'),
+        draftArticle('business/brand-draft', { sources_total: 10 }),
         draftArticle('ai/ai-public-health', { sources_total: 4 }),
         draftArticle('game-development/encoding-damaged-draft', {
           sources_verified: 1,
@@ -104,6 +105,7 @@ test('buildContentHealthReport summarizes public and draft health', () => {
       ['ai/public-a', content('ai', 'academic_paper')],
       ['science/public-b', content('science', 'government_report')],
       ['ai/draft-a', content('ai', 'blog_post')],
+      ['business/brand-draft', content('business', 'blog_post')],
       ['ai/ai-public-health', content('ai', 'government_report')],
       ['game-development/encoding-damaged-draft', content('game-development', 'blog_post')]
     ]);
@@ -138,14 +140,17 @@ test('buildContentHealthReport summarizes public and draft health', () => {
     assertEq(report.snapshot.public, 2);
     assertEq(report.public.source_coverage.full, 1);
     assertEq(report.public.source_coverage.partial, 1);
-    assertEq(report.draft.source_coverage.zero, 2);
+    assertEq(report.draft.source_coverage.zero, 3);
     assertEq(report.public.source_tiers.A, 2);
-    assertEq(report.draft.source_tiers.B, 2);
+    assertEq(report.draft.source_tiers.B, 3);
     assertEq(report.public_audit.rows, 2);
     assert(report.project_readiness, 'should include project readiness guidance');
     assertEq(report.project_readiness.next_focus, 'repair_public_audit');
     assert(report.stale_docs.some(item => item.path === 'README.md'), 'should report stale docs');
     assert(report.draft.repair_candidates.some(item => item.canonical_slug === 'ai/draft-a'), 'should include draft candidate');
+    assertEq(report.draft.repair_candidates[0].canonical_slug, 'ai/draft-a');
+    assertEq(report.draft.repair_candidates[0].repair_priority_area, 'core_ai');
+    assert(report.draft.repair_candidates.findIndex(item => item.canonical_slug === 'ai/draft-a') < report.draft.repair_candidates.findIndex(item => item.canonical_slug === 'business/brand-draft'), 'AI utility draft should outrank a higher-source general draft');
     assert(!report.draft.repair_candidates.some(item => item.canonical_slug === 'ai/ai-public-health'), 'should not recommend high-stakes drafts for automatic repair');
     assert(report.draft.strict_review_candidates.some(item => item.canonical_slug === 'ai/ai-public-health'), 'should route high-stakes drafts to strict review');
     assertEq(report.draft.strict_review_candidate_count, 1);

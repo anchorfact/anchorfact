@@ -6,6 +6,7 @@ import { classifySourceTier } from '../src/lib/confidence.js';
 import {
   autoRepairExclusionReasons,
   compareDraftRepairCandidates,
+  draftRepairPriorityMetadata,
   repairComplexity,
   strictReviewReasons
 } from '../src/lib/draft-repair-policy.js';
@@ -220,7 +221,8 @@ export function buildContentHealthReport(data, options = {}) {
         sources_verified: article.sources_verified,
         sources_total: article.sources_total,
         quality_reasons: reasons,
-        repair_complexity: repairComplexity(reasons)
+        repair_complexity: repairComplexity(reasons),
+        ...draftRepairPriorityMetadata(article)
       };
       if (strictReasons.length > 0) {
         draftStrictReviewCandidates.push({

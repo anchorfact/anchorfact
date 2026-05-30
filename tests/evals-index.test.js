@@ -277,7 +277,7 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
   assertEq(healthEval.expected.trust_boundary, 'draft_entries_excluded_from_ai_entrypoints');
   assertEq(healthEval.expected.min_repair_queue_candidates, 1);
   assertEq(healthEval.expected.min_repair_queue_next_batch, 1);
-  assertEq(healthEval.expected.repair_queue_policy_contains, 'repair_complexity');
+  assertEq(healthEval.expected.repair_queue_policy_contains, ['AI-agent utility', 'repair_complexity']);
   assertEq(healthEval.expected.max_public_source_tier_c, 0);
 
   const benchmarkEval = payload.evals.find(evalCase => evalCase.id === 'coverage_query_benchmark_catalog');

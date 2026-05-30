@@ -172,7 +172,7 @@ test('runAiEvals executes JSON, Markdown, MCP, and provenance eval expectations'
               trust_boundary: 'draft_entries_excluded_from_ai_entrypoints',
               min_repair_queue_candidates: 1,
               min_repair_queue_next_batch: 1,
-              repair_queue_policy_contains: 'repair_complexity',
+              repair_queue_policy_contains: ['AI-agent utility', 'repair_complexity'],
               max_public_source_tier_c: 0
             }
           },
@@ -293,7 +293,10 @@ test('runAiEvals executes JSON, Markdown, MCP, and provenance eval expectations'
           repair_queue: {
             candidate_count: 1,
             next_batch: [{ canonical_slug: 'ai/draft-a' }],
-            selection_policy: ['Prioritize lower repair_complexity values first.']
+            selection_policy: [
+              'Prioritize AI-agent utility areas first.',
+              'Prioritize lower repair_complexity values first.'
+            ]
           }
         },
         machine_guidance: ['Use /api/context?q={query} for prompt assembly.'],
@@ -375,7 +378,7 @@ test('runAiEvals reports expectation failures', async () => {
               schema_version: 'anchorfact.content-health.v1',
               min_repair_queue_candidates: 1,
               min_repair_queue_next_batch: 1,
-              repair_queue_policy_contains: 'repair_complexity',
+              repair_queue_policy_contains: ['AI-agent utility', 'repair_complexity'],
               max_public_source_tier_c: 0
             }
           },

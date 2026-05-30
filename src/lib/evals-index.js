@@ -466,7 +466,7 @@ export function buildEvalsIndex({
         trust_boundary: 'draft_entries_excluded_from_ai_entrypoints',
         min_repair_queue_candidates: 1,
         min_repair_queue_next_batch: 1,
-        repair_queue_policy_contains: 'repair_complexity',
+        repair_queue_policy_contains: ['AI-agent utility', 'repair_complexity'],
         max_public_source_tier_c: 0
       }
     },
