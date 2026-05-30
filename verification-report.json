@@ -8,7 +8,7 @@
     "elapsed_ms": 635005,
     "elapsed_sec": "635.0",
     "concurrency": 3,
-    "manual_reviewed_articles": 585
+    "manual_reviewed_articles": 588
   },
   "articles": [
     {
@@ -15475,43 +15475,67 @@
       "file": "content/ai/post-training-alignment.md",
       "article_id": "post-training-alignment",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Direct Preference Optimization: Your Language Model is Secretly a Reward Model",
-          "source_type": "academic_paper",
+          "source_title": "Training Language Models to Follow Instructions with Human Feedback",
+          "source_type": "conference_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2305.18290",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2203.02155",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted AI-first draft asset repair batch 73; sources were manually reviewed from arXiv and official OpenAI URLs without running local verify-full."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "DeepSeek-R1 Technical Report",
+          "source_title": "Direct Preference Optimization: Your Language Model is Secretly a Reward Model",
+          "source_type": "conference_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2305.18290",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted AI-first draft asset repair batch 73; sources were manually reviewed from arXiv and official OpenAI URLs without running local verify-full."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Constitutional AI: Harmlessness from AI Feedback",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2501.12948",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2212.08073",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted AI-first draft asset repair batch 73; sources were manually reviewed from arXiv and official OpenAI URLs without running local verify-full."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 2
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-30"
     },
     {
       "file": "content/ai/program-synthesis-verification.md",
@@ -15865,44 +15889,67 @@
       "file": "content/ai/reasoning-models.md",
       "article_id": "reasoning-models",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Learning to Reason with LLMs (OpenAI o1)",
+          "source_title": "Learning to Reason with LLMs",
           "source_type": "official_report",
           "results": [
             {
               "method": "url",
               "identifier": "https://openai.com/index/learning-to-reason-with-llms/",
-              "verified": false,
+              "verified": true,
               "metadata": {
-                "status": 403,
-                "final_url": "https://openai.com/index/learning-to-reason-with-llms/"
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted AI-first draft asset repair batch 73; sources were manually reviewed from arXiv and official OpenAI URLs without running local verify-full."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
           "source_title": "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2501.12948",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2501.12948",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted AI-first draft asset repair batch 73; sources were manually reviewed from arXiv and official OpenAI URLs without running local verify-full."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2408.03314",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted AI-first draft asset repair batch 73; sources were manually reviewed from arXiv and official OpenAI URLs without running local verify-full."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 2
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-30"
     },
     {
       "file": "content/ai/recommender-systems.md",
@@ -16661,52 +16708,67 @@
       "file": "content/ai/state-space-models.md",
       "article_id": "state-space-models",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Mamba: Linear-Time Sequence Modeling with Selective State Spaces",
-          "source_type": "academic_paper",
+          "source_title": "Efficiently Modeling Long Sequences with Structured State Spaces",
+          "source_type": "conference_paper",
           "results": [
             {
-              "method": "doi",
-              "identifier": "10.48550/arXiv.2312.00752",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2111.00396",
+              "verified": true,
               "metadata": {
-                "error": "CrossRef returned 404"
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted AI-first draft asset repair batch 73; sources were manually reviewed from arXiv and official OpenAI URLs without running local verify-full."
               },
-              "match": false
-            },
-            {
-              "method": "arxiv",
-              "identifier": "2312.00752",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Mamba-2: Structured State Space Duality",
-          "source_type": "academic_paper",
+          "source_title": "Hungry Hungry Hippos: Towards Language Modeling with State Space Models",
+          "source_type": "conference_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2405.21060",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2212.14052",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted AI-first draft asset repair batch 73; sources were manually reviewed from arXiv and official OpenAI URLs without running local verify-full."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "Mamba: Linear-Time Sequence Modeling with Selective State Spaces",
+          "source_type": "conference_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2312.00752",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-05-30",
+                "note": "Targeted AI-first draft asset repair batch 73; sources were manually reviewed from arXiv and official OpenAI URLs without running local verify-full."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 2
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-30"
     },
     {
       "file": "content/ai/swarm-evolutionary-intelligence.md",
