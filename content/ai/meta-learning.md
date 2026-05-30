@@ -1,12 +1,12 @@
 ---
 id: meta-learning
-title: "Meta-Learning: Learning to Learn with MAML and Reptile"
+title: 'Meta-Learning: MAML, Reptile, and Prototypical Networks'
 schema_type: article
 category: ai
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-24"
+confidence: medium
+last_verified: '2026-05-30'
+created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
   - claude-4.5-sonnet
@@ -14,91 +14,62 @@ derived_from_human_seed: true
 conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
-completeness: 0.85
+completeness: 0.72
 atomic_facts:
   - id: af-meta-learning-1
-    statement: >-
-      MAML (Model-Agnostic Meta-Learning, Finn et al., ICML 2017) trains a model initialization that can adapt to any new task with just a few gradient steps — the inner loop fine-tunes on a specific
-      task while the outer loop optimizes the initialization for fast adaptation across tasks.
-    source_title: Finn et al., ICML (2017)
+    statement: 'MAML trains model parameters so that a small number of gradient updates on a new task can produce good task-specific performance.'
+    source_title: 'Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks'
     source_url: https://arxiv.org/abs/1703.03400
-    confidence: high
+    confidence: medium
   - id: af-meta-learning-2
-    statement: >-
-      Reptile (Nichol et al., 2018) simplifies MAML by using a first-order approximation — repeatedly sample a task, train on it for k steps, and move the initialization toward the final trained
-      weights — achieving comparable performance without requiring second-order derivatives.
-    source_title: Nichol et al., arXiv (2018)
+    statement: 'Reptile is a first-order meta-learning algorithm that repeatedly trains on sampled tasks and moves the initialization toward the task-trained weights.'
+    source_title: 'On First-Order Meta-Learning Algorithms'
     source_url: https://arxiv.org/abs/1803.02999
-    confidence: high
+    confidence: medium
+  - id: af-meta-learning-3
+    statement: 'Prototypical Networks learn an embedding space in which few-shot classification uses distances to class prototypes computed from support examples.'
+    source_title: 'Prototypical Networks for Few-shot Learning'
+    source_url: https://arxiv.org/abs/1703.05175
+    confidence: medium
 primary_sources:
   - id: ps-meta-learning-1
-    title: Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks (MAML)
-    type: academic_paper
+    title: 'Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks'
+    type: conference_paper
     year: 2017
     institution: ICML
     url: https://arxiv.org/abs/1703.03400
   - id: ps-meta-learning-2
-    title: On First-Order Meta-Learning Algorithms (Reptile)
+    title: 'On First-Order Meta-Learning Algorithms'
     type: academic_paper
     year: 2018
-    institution: OpenAI
+    institution: arXiv
     url: https://arxiv.org/abs/1803.02999
-known_gaps:
-  - Meta-learning for large-scale continual adaptation
-  - Cross-domain meta-learning (vision to text)
-disputed_statements: []
-secondary_sources:
-  - title: "Meta-Learning Approaches for Few-Shot Learning: A Survey of Recent Advances"
-    type: survey_paper
-    year: 2024
-    authors:
-      - multiple
-    institution: ACM Computing Surveys
-    url: https://doi.org/10.1145/3659943
-  - title: Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks (MAML)
+  - id: ps-meta-learning-3
+    title: 'Prototypical Networks for Few-shot Learning'
     type: conference_paper
     year: 2017
-    authors:
-      - Finn, Chelsea
-      - Abbeel, Pieter
-      - Levine, Sergey
-    institution: UC Berkeley / ICML
-    url: https://arxiv.org/abs/1703.03400
-  - title: Learning to Learn by Gradient Descent by Gradient Descent
-    type: conference_paper
-    year: 2016
-    authors:
-      - Andrychowicz, Marcin
-      - Denil, Misha
-      - Gomez, Sergio
-      - et al.
-    institution: Google DeepMind / NeurIPS
-    url: https://arxiv.org/abs/1606.04474
-  - title: "Meta-Learning for Few-Shot Open Task Recognition: Beyond Fixed-Design Benchmarks"
-    type: journal_article
-    year: 2025
-    authors:
-      - multiple
-    institution: Nature Scientific Reports
-    url: https://doi.org/10.1038/s41598-026-36291-x
-updated: "2026-05-24"
+    institution: NeurIPS
+    url: https://arxiv.org/abs/1703.05175
+known_gaps:
+  - Meta-learning performance depends strongly on the task distribution used for meta-training.
+  - Few-shot benchmark success does not automatically transfer to open-ended deployment tasks.
+disputed_statements: []
+secondary_sources: []
+updated: '2026-05-30'
 ---
+
 ## TL;DR
-Meta-learning trains models to learn efficiently. Given a distribution of tasks, the meta-learner acquires knowledge that accelerates learning on new tasks — the model "learns how to learn." MAML finds optimal initializations; Reptile simplifies the process.
+
+Meta-learning trains systems so they can adapt quickly to new tasks. MAML and Reptile focus on learning useful initial parameters, while Prototypical Networks learn an embedding space for few-shot classification.
 
 ## Core Explanation
-Few-shot learning: classify images of a new species from only 5 examples. Meta-learning solution: train on many classification tasks (different species each time) so the model learns a representation and adaptation strategy that generalizes to novel categories. MAML's inner loop (task-specific fine-tuning) and outer loop (meta-optimization across tasks) create a bi-level optimization.
 
-## Detailed Analysis
-Beyond MAML: (1) Metric-based meta-learning — Prototypical Networks learn an embedding where each class has a prototype (mean of support examples), classification by nearest prototype; (2) Matching Networks with attention over support set; (3) Meta-RL — RL^2 and PEARL train policies that adapt behavior from trial-and-error in new environments. ANIL shows MAML's power comes from feature reuse, not rapid learning.
+The core setup is a distribution of related tasks. A meta-learner sees many training tasks, then is evaluated on new tasks from the same family with only a small support set. This differs from ordinary supervised learning because the objective is fast adaptation, not only high accuracy on one fixed dataset.
 
-## Further Reading
-- Chelsea Finn: Meta-Learning Tutorial (ICML)
-- learn2learn PyTorch Library
-- Few-shot Learning Survey (Wang et al.)
+Gradient-based methods such as MAML and Reptile optimize an initialization that can move quickly after a few updates. Metric-based methods such as Prototypical Networks instead learn a representation where examples from the same class are close to a class prototype.
 
 ## Related Articles
 
 - [Few-Shot Learning: Prototypical Networks, MAML, and In-Context Adaptation](../few-shot-learning.md)
-- [Learning How to Learn](../../self-improvement/learning-how-to-learn.md)
-- [Adversarial Machine Learning: Attacks, Defenses, and Robustness Engineering](../adversarial-machine-learning.md)
+- [Transfer Learning: Fine-Tuning and Feature Reuse](../transfer-learning.md)
+- [Reinforcement Learning: Agents, Rewards, and Policies](../reinforcement-learning.md)
