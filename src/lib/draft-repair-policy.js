@@ -36,7 +36,7 @@ const STRICT_REVIEW_RULES = [
   },
   {
     name: 'financial_or_insurance',
-    pattern: /\b(insurance|insurtech|credit|loan|mortgage|algorithmic[-\s]?trading|personal[-\s]?finance|financial)\b/i
+    pattern: /\b(insurance|insurtech|underwriting|credit|loan|mortgage|payments?|fraud|chargebacks?|merchant[-\s]?risk|algorithmic[-\s]?trading|personal[-\s]?finance|financial|robo[-\s]?advisors?)\b/i
   }
 ];
 
