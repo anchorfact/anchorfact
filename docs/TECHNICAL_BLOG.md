@@ -67,13 +67,18 @@ The verification step is incremental. It checks file modification times and only
 
 We ship a **Model Context Protocol (MCP) Server** — a Python stdio server that Claude Desktop and other MCP-compatible agents can connect to directly. The server is backed by `dist/manifest.json`, indexes public articles only, and uses canonical slugs rather than legacy flat IDs.
 
-The server provides four tools:
-- `anchorfact_search` — BM25 full-text search with confidence boosting
-- `anchorfact_get_article` — Retrieve an article by canonical slug, canonical URL, or JSON-LD `@id`
-- `anchorfact_cite_claim` — Return citation-ready JSON or Markdown for one public claim
-- `anchorfact_list_categories` — List all 11 knowledge domains and article counts
+The server now exposes nine focused tools:
+- `anchorfact_plan_query` — decide whether AnchorFact has plausible coverage and what to call next
+- `anchorfact_search` — BM25 public article search with confidence-aware ranking
+- `anchorfact_context` — one-call prompt context with answer policy, evidence packs, citation-ready claims, and corpus health
+- `anchorfact_content_health` — machine-readable public/draft/source health and repair-queue summary
+- `anchorfact_get_article` — retrieve a public article by canonical slug, canonical URL, or JSON-LD `@id`
+- `anchorfact_resolve_reference` — resolve one public claim, article, source id, source URL, or canonical reference
+- `anchorfact_resolve_references` — resolve a small batch of mixed public references
+- `anchorfact_cite_claim` — return citation-ready JSON or Markdown for one public claim
+- `anchorfact_list_categories` — list the public knowledge domains and article counts
 
-This means an AI agent can query AnchorFact the same way it queries a file system or a database — through a structured protocol, not web scraping.
+This means an AI agent can query AnchorFact the same way it queries a file system or a database — through a structured protocol, not web scraping. The recommended path is narrow on purpose: use `/api/context` or `anchorfact_context` when assembling an answer, then resolve or cite individual claims only when needed.
 
 ---
 
@@ -91,9 +96,9 @@ This means an AI agent can query AnchorFact the same way it queries a file syste
 
 ## What's Next
 
-- **Semantic search** via local embedding models (no external API dependency)
-- **AI citation tracking** — monitoring which AI platforms are citing AnchorFact
-- **Community contributions** — accepting PRs with the same verification pipeline
+- **Measure real AI usefulness first** — keep the representative benchmark, live evals, and production integrity green before adding surfaces
+- **Promote drafts selectively** — repair only topics that improve likely AI query coverage and still pass the full public audit
+- **Protect canonical trust** — make signed provenance, artifact hashes, and the official domain the hard-to-copy part of the project
 
 ---
 

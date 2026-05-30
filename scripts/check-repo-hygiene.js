@@ -247,6 +247,10 @@ const STALE_METRIC_PATTERNS = [
   /1543 published claims/i,
   /1543 claims from production smoke/i,
   /Published claims surface\s*\|\s*1543/i,
+  /\bserver provides four tools\b/i,
+  /\bMCP server provides four tools\b/i,
+  /\bacross 14 representative queries\b/i,
+  /\b14 representative queries\b/i,
   /876 articles/i,
   /total_articles["\s:]+805/i
 ];

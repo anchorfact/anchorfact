@@ -85,5 +85,21 @@ test('textHygieneFailures accepts current production claim metrics', () => {
   assertEq(failures, []);
 });
 
+test('textHygieneFailures catches stale MCP tool-count narrative', () => {
+  const failures = textHygieneFailures(
+    'docs/TECHNICAL_BLOG.md',
+    'The server provides four tools:'
+  );
+  assert(failures.some(failure => failure.includes('stale launch metrics')), 'stale MCP tool count should fail hygiene');
+});
+
+test('textHygieneFailures catches stale AI benchmark case counts', () => {
+  const failures = textHygieneFailures(
+    'docs/SITE_MODULE_QUALITY_AUDIT_2026-05-28.md',
+    'The current benchmark passes at 100/100 across 14 representative queries.'
+  );
+  assert(failures.some(failure => failure.includes('stale launch metrics')), 'stale benchmark case count should fail hygiene');
+});
+
 console.log(`\n${passed} passed, ${failed} failed`);
 process.exit(failed > 0 ? 1 : 0);

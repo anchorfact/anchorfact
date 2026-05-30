@@ -121,11 +121,11 @@ The representative query benchmark now has a local usefulness runner:
 context assembly path used by AI consumers, checking not only top-result routing
 but also citation-ready claims, source URLs, source depth, and confidence.
 
-The current benchmark passes at 100/100 across 14 representative queries and
-reports no improvement candidates. The prior thin cases,
-`history/ancient-egypt` and `business/stock-market-basics`, were strengthened
-from low-confidence single-source entries to medium-confidence multi-source
-evidence packs.
+The current benchmark passes at 100/100 across 17 representative queries and
+reports no improvement candidates. It now covers citation-ready public topics,
+natural-language AI intent routing, AnchorFact API usage guidance, and explicit
+fallback behavior for live or time-sensitive requests that require external
+sources.
 
 ### Verification Data
 
@@ -177,9 +177,10 @@ signed trust chain after deployment.
 
 `docs/CONTENT_STANDARD.md`, `docs/QUALITY_STANDARD.md`, README, launch
 readiness, and the repair logs describe the practical content workflow well.
-Repository hygiene now also checks documentation for stale launch metrics, so
-future count changes should update docs, smoke expectations, and production
-integrity expectations together.
+Repository hygiene now also checks documentation for stale launch metrics,
+obsolete MCP tool-count narratives, and old benchmark case counts, so future
+count or interface changes should update docs, smoke expectations, production
+integrity expectations, and project-facing narratives together.
 
 ## Recommended Optimization Path
 
