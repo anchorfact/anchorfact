@@ -1,6 +1,6 @@
 # How We Built an AI-Native Knowledge Base with Verifiable Trust
 
-> AnchorFact: 1000 articles, 628 public entries, 1929 public claims, and a public trust model for machine-readable citations.
+> AnchorFact: 1000 articles, 629 public entries, 1931 public claims, and a public trust model for machine-readable citations.
 
 ---
 

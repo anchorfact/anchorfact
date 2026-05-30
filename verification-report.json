@@ -6274,14 +6274,16 @@
             {
               "method": "arxiv",
               "identifier": "2209.11163",
-              "verified": false,
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "title": "GET3D: A Generative Model of High Quality 3D Textured Shapes Learned from Images",
+                "manual_reviewed": true,
+                "manual_review_note": "Verified against arXiv metadata and article abstract after prior automated check hit arXiv 429."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
           "source_title": "DreamFusion: Text-to-3D using 2D Diffusion (Google Research)",
@@ -6290,18 +6292,23 @@
             {
               "method": "arxiv",
               "identifier": "2209.14988",
-              "verified": false,
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "title": "DreamFusion: Text-to-3D using 2D Diffusion",
+                "manual_reviewed": true,
+                "manual_review_note": "Verified against arXiv metadata and article abstract after prior automated check hit arXiv 429."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 2
+      "sources_verified": 2,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-05-30",
+      "manual_review_note": "Content narrowed to two source-mapped text-to-3D facts; prior failures were arXiv 429 responses."
     },
     {
       "file": "content/ai/ai-for-visualization.md",
