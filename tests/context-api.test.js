@@ -409,6 +409,24 @@ test('buildContextApiPayload suppresses lexical evidence for live unsupported in
   assertEq(weather.payload.citation_ready_claims, []);
   assert(weather.payload.unsupported_intent_reasons.includes('live_or_time_sensitive'), 'location weather should carry a live intent reason');
 
+  const pricing = buildContextApiPayload(payloadArgs({ query: 'OpenAI API pricing' }));
+  assertEq(pricing.payload.coverage_status, 'unsupported');
+  assertEq(pricing.payload.should_use_anchorfact, false);
+  assertEq(pricing.payload.answer_policy.can_answer_with_anchorfact, false);
+  assertEq(pricing.payload.answer_policy.answer_mode, 'external_sources_required');
+  assertEq(pricing.payload.evidence_pack_count, 0);
+  assertEq(pricing.payload.citation_ready_claims, []);
+  assert(pricing.payload.unsupported_intent_reasons.includes('live_or_time_sensitive'), 'product pricing lookup should carry a live intent reason');
+
+  const softwareVersion = buildContextApiPayload(payloadArgs({ query: 'Node.js LTS version' }));
+  assertEq(softwareVersion.payload.coverage_status, 'unsupported');
+  assertEq(softwareVersion.payload.should_use_anchorfact, false);
+  assertEq(softwareVersion.payload.answer_policy.can_answer_with_anchorfact, false);
+  assertEq(softwareVersion.payload.answer_policy.answer_mode, 'external_sources_required');
+  assertEq(softwareVersion.payload.evidence_pack_count, 0);
+  assertEq(softwareVersion.payload.citation_ready_claims, []);
+  assert(softwareVersion.payload.unsupported_intent_reasons.includes('live_or_time_sensitive'), 'software version lookup should carry a live intent reason');
+
   const staticWeather = buildContextApiPayload(payloadArgs({ query: 'weather forecasting' }));
   assertEq(staticWeather.payload.coverage_status, 'supported');
   assertEq(staticWeather.payload.should_use_anchorfact, true);

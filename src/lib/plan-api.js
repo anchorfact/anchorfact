@@ -173,10 +173,27 @@ function implicitLiveFactIntent(normalized) {
   const flightLookup = /\b(?:flight status|flight tracker|flight delay|flight delays|arrival time|departure time|boarding gate|gate number)\b/.test(normalized);
   const currentRoleLookup = /\b(?:(?:who is|who s|name|current)\s+)?(?:the\s+)?(?:ceo|chief executive|president|prime minister|mayor|governor|chair|chairperson|leader|director)\s+(?:of|for)\b/.test(normalized);
   const historicalContext = /\b(?:was|were|former|during|history|historical|ancient|medieval|renaissance|napoleonic|revolution|war|century|1[5-9]\d{2}|20[01]\d)\b/.test(normalized);
+  const productPricingLookup =
+    /\b(?:pricing|prices?|costs?|plans?|free tier|paid tier|subscription)\b/.test(normalized)
+    && /\b(?:openai|chatgpt|claude|anthropic|cloudflare|api|apis|workers?|pages|vercel|aws|azure|google cloud|gcp)\b/.test(normalized);
+  const financialRateOrPredictionLookup =
+    (
+      /\b(?:rates?|price prediction|prediction|forecast|forecasting)\b/.test(normalized)
+      && /\b(?:mortgage|interest|loan|bitcoin|crypto|stock|stocks|market|exchange rate|currency)\b/.test(normalized)
+    )
+    || /\b(?:mortgage rates?|interest rates?|exchange rates?)\b/.test(normalized);
+  const staticSoftwareVersionKnowledge = /\b(?:software versioning|semantic versioning|version control|api versioning|event loop|architecture|basics|fundamentals)\b/.test(normalized);
+  const softwareCurrentVersionLookup =
+    /\b(?:version|versions|lts|release date|released|compatibility|compatible)\b/.test(normalized)
+    && /\b(?:node js|nodejs|python|cuda|postgresql|postgres|npm|react|typescript|go|rust|java|linux|ubuntu|debian)\b/.test(normalized)
+    && !staticSoftwareVersionKnowledge;
   return weatherLookup
     || temperatureLookup
     || timeLookup
     || flightLookup
+    || productPricingLookup
+    || financialRateOrPredictionLookup
+    || softwareCurrentVersionLookup
     || (currentRoleLookup && !historicalContext);
 }
 

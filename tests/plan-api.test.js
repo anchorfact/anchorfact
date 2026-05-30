@@ -26,7 +26,7 @@ const searchIndex = {
   schema_version: 'anchorfact.search-index.v1',
   generated: '2026-05-29T00:00:00.000Z',
   provenance_url: 'https://anchorfact.org/provenance.json',
-  article_count: 2,
+  article_count: 13,
   records: [
     {
       canonical_slug: 'ai/gaussian-splatting',
@@ -131,6 +131,71 @@ const searchIndex = {
       keywords: ['statistics', 'probability'],
       routes: { jsonld: 'https://anchorfact.org/science/statistics/index.json' },
       search_text: 'statistics probability inference uncertainty'
+    },
+    {
+      canonical_slug: 'computer-science/api-rate-limiting',
+      title: 'API Rate Limiting',
+      url: 'https://anchorfact.org/computer-science/api-rate-limiting/',
+      description: 'Stable API throttling and quota-control patterns.',
+      confidence_level: 'medium',
+      source_coverage: { verified: 2, total: 2, ratio: 1 },
+      claim_count: 2,
+      claim_ids: ['https://anchorfact.org/fact/f10'],
+      keywords: ['api', 'rate', 'limiting', 'throttling'],
+      routes: { jsonld: 'https://anchorfact.org/computer-science/api-rate-limiting/index.json' },
+      search_text: 'api rate limiting throttling quota control'
+    },
+    {
+      canonical_slug: 'computer-science/software-versioning',
+      title: 'Software Versioning Basics',
+      url: 'https://anchorfact.org/computer-science/software-versioning/',
+      description: 'Stable semantic versioning and release numbering concepts.',
+      confidence_level: 'medium',
+      source_coverage: { verified: 2, total: 2, ratio: 1 },
+      claim_count: 2,
+      claim_ids: ['https://anchorfact.org/fact/f11'],
+      keywords: ['software', 'versioning', 'basics', 'semantic'],
+      routes: { jsonld: 'https://anchorfact.org/computer-science/software-versioning/index.json' },
+      search_text: 'software versioning basics semantic versioning release numbering'
+    },
+    {
+      canonical_slug: 'business/stock-market-basics',
+      title: 'Stock Market Basics',
+      url: 'https://anchorfact.org/business/stock-market-basics/',
+      description: 'Foundational market structure and exchange concepts.',
+      confidence_level: 'medium',
+      source_coverage: { verified: 2, total: 2, ratio: 1 },
+      claim_count: 2,
+      claim_ids: ['https://anchorfact.org/fact/f12'],
+      keywords: ['stock', 'market', 'basics'],
+      routes: { jsonld: 'https://anchorfact.org/business/stock-market-basics/index.json' },
+      search_text: 'stock market basics exchanges shares equity investing education'
+    },
+    {
+      canonical_slug: 'business/cryptocurrency',
+      title: 'Cryptocurrency',
+      url: 'https://anchorfact.org/business/cryptocurrency/',
+      description: 'Foundational cryptocurrency concepts.',
+      confidence_level: 'medium',
+      source_coverage: { verified: 2, total: 2, ratio: 1 },
+      claim_count: 2,
+      claim_ids: ['https://anchorfact.org/fact/f13'],
+      keywords: ['bitcoin', 'cryptocurrency', 'explained'],
+      routes: { jsonld: 'https://anchorfact.org/business/cryptocurrency/index.json' },
+      search_text: 'bitcoin explained cryptocurrency blockchain digital assets'
+    },
+    {
+      canonical_slug: 'computer-science/nodejs',
+      title: 'Node.js',
+      url: 'https://anchorfact.org/computer-science/nodejs/',
+      description: 'Stable Node.js runtime architecture concepts.',
+      confidence_level: 'medium',
+      source_coverage: { verified: 2, total: 2, ratio: 1 },
+      claim_count: 2,
+      claim_ids: ['https://anchorfact.org/fact/f14'],
+      keywords: ['nodejs', 'node', 'event', 'loop'],
+      routes: { jsonld: 'https://anchorfact.org/computer-science/nodejs/index.json' },
+      search_text: 'nodejs node js event loop runtime architecture'
     }
   ]
 };
@@ -280,7 +345,15 @@ test('buildPlanApiPayload rejects live, local, and time-sensitive questions even
     'time in Tokyo',
     'flight status AA100',
     'who is the CEO of OpenAI',
-    'president of France'
+    'president of France',
+    'OpenAI API pricing',
+    'ChatGPT API price',
+    'Cloudflare pricing',
+    'mortgage rates',
+    'Bitcoin price prediction',
+    'Node.js LTS version',
+    'Python version release date',
+    'CUDA version compatibility'
   ]) {
     const implicitLivePayload = buildPlanApiPayload({
       query,
@@ -295,7 +368,15 @@ test('buildPlanApiPayload rejects live, local, and time-sensitive questions even
     assert(implicitLivePayload.unsupported_intent_reasons.includes('live_or_time_sensitive'), `${query} should carry a live/current intent reason`);
   }
 
-  for (const query of ['weather forecasting', 'time management']) {
+  for (const query of [
+    'weather forecasting',
+    'time management',
+    'API rate limiting',
+    'software versioning basics',
+    'stock market basics',
+    'Bitcoin explained',
+    'Node.js event loop'
+  ]) {
     const staticPayload = buildPlanApiPayload({
       query,
       searchIndex,

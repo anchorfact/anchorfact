@@ -104,7 +104,7 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
 
   assertEq(payload.schema_version, 'anchorfact.evals.v1');
   assertEq(payload.provenance_url, 'https://anchorfact.org/provenance.json');
-  assertEq(payload.eval_count, 47);
+  assertEq(payload.eval_count, 51);
   assertEq(payload.evals.map(evalCase => evalCase.id), [
     'api_discovery',
     'openapi_context_contract',
@@ -137,6 +137,10 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
     'unsupported_weak_medical_management_match',
     'unsupported_harmful_operational_request',
     'unsupported_live_stock_price',
+    'unsupported_product_pricing_lookup',
+    'unsupported_financial_rate_lookup',
+    'unsupported_financial_price_prediction',
+    'unsupported_software_current_version_lookup',
     'unsupported_live_weather_location',
     'unsupported_current_leadership_fact',
     'context_pack_json',
@@ -281,6 +285,22 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
   assertEq(liveRefusalEval.expected.max_citation_ready_claims, 0);
   assertEq(liveRefusalEval.expected.unsupported_intent_reasons, ['live_or_time_sensitive']);
 
+  for (const [id, encodedQuery] of [
+    ['unsupported_product_pricing_lookup', 'OpenAI+API+pricing'],
+    ['unsupported_financial_rate_lookup', 'mortgage+rates'],
+    ['unsupported_financial_price_prediction', 'Bitcoin+price+prediction'],
+    ['unsupported_software_current_version_lookup', 'Node.js+LTS+version']
+  ]) {
+    const dynamicLookupEval = payload.evals.find(evalCase => evalCase.id === id);
+    assert(dynamicLookupEval.call.path.includes(`/api/context?q=${encodedQuery}&limit=3`), `${id} should use the context API`);
+    assertEq(dynamicLookupEval.expected.coverage_status, 'unsupported', id);
+    assertEq(dynamicLookupEval.expected.should_use_anchorfact, false, id);
+    assertEq(dynamicLookupEval.expected.answer_policy_can_answer, false, id);
+    assertEq(dynamicLookupEval.expected.answer_policy_mode, 'external_sources_required', id);
+    assertEq(dynamicLookupEval.expected.max_citation_ready_claims, 0, id);
+    assertEq(dynamicLookupEval.expected.unsupported_intent_reasons, ['live_or_time_sensitive'], id);
+  }
+
   const liveWeatherEval = payload.evals.find(evalCase => evalCase.id === 'unsupported_live_weather_location');
   assert(liveWeatherEval.call.path.includes('/api/context?q=weather+Paris&limit=3'), 'implicit weather refusal eval should use the context API');
   assertEq(liveWeatherEval.expected.coverage_status, 'unsupported');
@@ -362,7 +382,7 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
   const benchmarkEval = payload.evals.find(evalCase => evalCase.id === 'coverage_query_benchmark_catalog');
   assertEq(benchmarkEval.call.path, '/coverage.json');
   assertEq(benchmarkEval.expected.schema_version, 'anchorfact.coverage.v1');
-  assertEq(benchmarkEval.expected.min_query_benchmark_cases, 28);
+  assertEq(benchmarkEval.expected.min_query_benchmark_cases, 32);
   assert(benchmarkEval.expected.required_query_benchmark_slugs.includes('ai/rlhf'), 'benchmark eval should require RLHF query coverage');
   assert(benchmarkEval.expected.required_query_benchmark_slugs.includes('ai/kolmogorov-arnold-networks'), 'benchmark eval should require KAN query coverage');
   assert(benchmarkEval.expected.required_query_benchmark_slugs.includes('ai/vision-transformers'), 'benchmark eval should require ViT query coverage');

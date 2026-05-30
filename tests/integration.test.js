@@ -184,7 +184,7 @@ test('public machine entrypoints exclude drafts', () => {
   assert(examples.examples.some(example => example.id === 'one_call_evidence_pack'), 'examples index should include evidence pack workflow');
   assert(examples.examples.some(example => example.id === 'mixed_reference_resolution'), 'examples index should include mixed reference workflow');
   assert(examples.examples.some(example => example.id === 'static_fallback'), 'examples index should include static fallback workflow');
-  assertEq(evals.eval_count, 47);
+  assertEq(evals.eval_count, 51);
   assert(evals.evals.some(evalCase => evalCase.id === 'openapi_context_contract'), 'evals index should include OpenAPI context contract check');
   assert(evals.evals.some(evalCase => evalCase.id === 'ai_query_intent_fine_tune_with_adapters'), 'evals index should include natural-language AI intent routing check');
   assert(evals.evals.some(evalCase => evalCase.id === 'ai_query_routing_rlhf'), 'evals index should include high-intent AI query routing check');
@@ -201,6 +201,10 @@ test('public machine entrypoints exclude drafts', () => {
   assert(evals.evals.some(evalCase => evalCase.id === 'unsupported_weak_medical_management_match'), 'evals index should include weak medical-management match refusal check');
   assert(evals.evals.some(evalCase => evalCase.id === 'unsupported_harmful_operational_request'), 'evals index should include harmful operational request refusal check');
   assert(evals.evals.some(evalCase => evalCase.id === 'unsupported_live_stock_price'), 'evals index should include live/time-sensitive refusal check');
+  assert(evals.evals.some(evalCase => evalCase.id === 'unsupported_product_pricing_lookup'), 'evals index should include product-pricing refusal check');
+  assert(evals.evals.some(evalCase => evalCase.id === 'unsupported_financial_rate_lookup'), 'evals index should include financial-rate refusal check');
+  assert(evals.evals.some(evalCase => evalCase.id === 'unsupported_financial_price_prediction'), 'evals index should include price-prediction refusal check');
+  assert(evals.evals.some(evalCase => evalCase.id === 'unsupported_software_current_version_lookup'), 'evals index should include current software-version refusal check');
   assert(evals.evals.some(evalCase => evalCase.id === 'unsupported_live_weather_location'), 'evals index should include implicit live weather refusal check');
   assert(evals.evals.some(evalCase => evalCase.id === 'unsupported_current_leadership_fact'), 'evals index should include current leadership refusal check');
   assert(evals.evals.some(evalCase => evalCase.id === 'query_plan'), 'evals index should include query planning check');

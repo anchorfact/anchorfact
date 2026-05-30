@@ -274,6 +274,8 @@ dist = Path(r'''${pyPath(distDir)}''')
 status, payload = build_plan_payload(dist, 'fixture evidence', 2)
 site_status, site_help = build_plan_payload(dist, 'how to cite a fixture claim from AnchorFact', 2)
 unsupported_status, unsupported = build_plan_payload(dist, 'lunar dentistry', 2)
+pricing_status, pricing = build_plan_payload(dist, 'OpenAI API pricing', 2)
+version_status, version = build_plan_payload(dist, 'Node.js LTS version', 2)
 missing_status, missing = build_plan_payload(dist, '', 2)
 print(json.dumps({
     "status": status,
@@ -294,6 +296,12 @@ print(json.dumps({
     "unsupported_coverage": unsupported.get("coverage_status"),
     "unsupported_should_use": unsupported.get("should_use_anchorfact"),
     "unsupported_guidance": unsupported.get("fallback_guidance", []),
+    "pricing_status": pricing_status,
+    "pricing_coverage": pricing.get("coverage_status"),
+    "pricing_reasons": pricing.get("unsupported_intent_reasons", []),
+    "version_status": version_status,
+    "version_coverage": version.get("coverage_status"),
+    "version_reasons": version.get("unsupported_intent_reasons", []),
     "missing_status": missing_status,
     "missing_code": missing.get("error", {}).get("code"),
 }))
@@ -319,6 +327,12 @@ print(json.dumps({
   assertEq(result.unsupported_coverage, 'unsupported');
   assertEq(result.unsupported_should_use, false);
   assertEq(result.unsupported_guidance.some(item => item.includes('external primary')), true);
+  assertEq(result.pricing_status, 200);
+  assertEq(result.pricing_coverage, 'unsupported');
+  assertEq(result.pricing_reasons.includes('live_or_time_sensitive'), true);
+  assertEq(result.version_status, 200);
+  assertEq(result.version_coverage, 'unsupported');
+  assertEq(result.version_reasons.includes('live_or_time_sensitive'), true);
   assertEq(result.missing_status, 400);
   assertEq(result.missing_code, 'missing_or_invalid_query');
 });

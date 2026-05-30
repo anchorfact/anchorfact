@@ -465,11 +465,34 @@ def _implicit_live_fact_intent(normalized: str) -> bool:
         r"\b(?:was|were|former|during|history|historical|ancient|medieval|renaissance|napoleonic|revolution|war|century|1[5-9]\d{2}|20[01]\d)\b",
         normalized,
     ) is not None
+    product_pricing_lookup = (
+        re.search(r"\b(?:pricing|prices?|costs?|plans?|free tier|paid tier|subscription)\b", normalized) is not None
+        and re.search(r"\b(?:openai|chatgpt|claude|anthropic|cloudflare|api|apis|workers?|pages|vercel|aws|azure|google cloud|gcp)\b", normalized) is not None
+    )
+    financial_rate_or_prediction_lookup = (
+        (
+            re.search(r"\b(?:rates?|price prediction|prediction|forecast|forecasting)\b", normalized) is not None
+            and re.search(r"\b(?:mortgage|interest|loan|bitcoin|crypto|stock|stocks|market|exchange rate|currency)\b", normalized) is not None
+        )
+        or re.search(r"\b(?:mortgage rates?|interest rates?|exchange rates?)\b", normalized) is not None
+    )
+    static_software_version_knowledge = re.search(
+        r"\b(?:software versioning|semantic versioning|version control|api versioning|event loop|architecture|basics|fundamentals)\b",
+        normalized,
+    ) is not None
+    software_current_version_lookup = (
+        re.search(r"\b(?:version|versions|lts|release date|released|compatibility|compatible)\b", normalized) is not None
+        and re.search(r"\b(?:node js|nodejs|python|cuda|postgresql|postgres|npm|react|typescript|go|rust|java|linux|ubuntu|debian)\b", normalized) is not None
+        and not static_software_version_knowledge
+    )
     return (
         weather_lookup
         or temperature_lookup
         or time_lookup
         or flight_lookup
+        or product_pricing_lookup
+        or financial_rate_or_prediction_lookup
+        or software_current_version_lookup
         or (current_role_lookup and not historical_context)
     )
 

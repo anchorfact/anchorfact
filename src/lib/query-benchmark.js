@@ -213,6 +213,46 @@ export const QUERY_BENCHMARK_CASES = [
     intent: 'Live market-price questions should be rejected for AnchorFact citation and routed to current authoritative sources.'
   },
   {
+    id: 'unsupported_product_pricing_lookup',
+    category: 'unsupported_intent',
+    query: 'OpenAI API pricing',
+    expected_coverage_status: 'unsupported',
+    expected_answer_mode: 'external_sources_required',
+    expected_can_answer: false,
+    expected_unsupported_reasons: ['live_or_time_sensitive'],
+    intent: 'Product pricing changes over time and should not cite nearby API architecture content.'
+  },
+  {
+    id: 'unsupported_financial_rate_lookup',
+    category: 'unsupported_intent',
+    query: 'mortgage rates',
+    expected_coverage_status: 'unsupported',
+    expected_answer_mode: 'external_sources_required',
+    expected_can_answer: false,
+    expected_unsupported_reasons: ['live_or_time_sensitive'],
+    intent: 'Financial rate lookups should use current authoritative market sources, not static economic background articles.'
+  },
+  {
+    id: 'unsupported_financial_price_prediction',
+    category: 'unsupported_intent',
+    query: 'Bitcoin price prediction',
+    expected_coverage_status: 'unsupported',
+    expected_answer_mode: 'external_sources_required',
+    expected_can_answer: false,
+    expected_unsupported_reasons: ['live_or_time_sensitive'],
+    intent: 'Speculative current price prediction queries should not cite static cryptocurrency or AI prediction articles.'
+  },
+  {
+    id: 'unsupported_software_current_version_lookup',
+    category: 'unsupported_intent',
+    query: 'Node.js LTS version',
+    expected_coverage_status: 'unsupported',
+    expected_answer_mode: 'external_sources_required',
+    expected_can_answer: false,
+    expected_unsupported_reasons: ['live_or_time_sensitive'],
+    intent: 'Current software version lookups should use live project release sources, not static technology explainers.'
+  },
+  {
     id: 'unsupported_live_weather_location',
     category: 'unsupported_intent',
     query: 'weather Paris',
