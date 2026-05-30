@@ -61,7 +61,10 @@ export async function fetchRoute(baseUrl, route, options = {}) {
   let result = null;
 
   for (let attempt = 1; attempt <= maxAttempts; attempt++) {
-    const response = await fetchLiveText(fetch, url);
+    const response = await fetchLiveText(fetch, url, {
+      retries: routeRetries,
+      retryDelayMs: routeRetryDelayMs
+    });
     result = {
       route,
       url: url.href,

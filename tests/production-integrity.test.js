@@ -209,6 +209,16 @@ test('runProductionIntegrity retries transient AI eval suite failures once', asy
   assertEq(evalCalls, 2);
   assert(delays.length >= 2, 'should wait after smoke and before retrying failed AI evals');
   assertEq(report.ai_evals.attempts, 2);
+  assertEq(report.ai_evals.attempt_history.length, 2);
+  assertEq(report.ai_evals.attempt_history[0].ok, false);
+  assert(report.ai_evals.attempt_history[0].failed_results[0].id === 'query_routing_http_status_codes', 'first attempt should preserve failed eval id');
+  assert(report.ai_evals.attempt_history[0].failed_results[0].failures[0].includes('503'), 'first attempt should preserve failed eval reason');
+  assertEq(report.ai_evals.attempt_history[1].ok, true);
+
+  const markdown = renderIntegrityMarkdown(report);
+  assert(markdown.includes('## AI Eval Attempts'), 'markdown should include attempt history section');
+  assert(markdown.includes('attempt 1: fail'), 'markdown should show failed first attempt');
+  assert(markdown.includes('query_routing_http_status_codes'), 'markdown should name the failed eval');
 });
 
 test('production smoke fetches routes with CI-friendly live headers', async () => {
@@ -329,6 +339,45 @@ test('production smoke retries transient 5xx route responses', async () => {
     const result = await fetchRoute('https://anchorfact.org', '/api/evidence?q=gaussian', { routeRetryDelayMs: 0 });
     assertEq(result.status, 200);
     assertEq(calls, 2);
+  } finally {
+    globalThis.fetch = originalFetch;
+  }
+});
+
+test('production smoke applies configured retry count to transient 5xx route responses', async () => {
+  const originalFetch = globalThis.fetch;
+  let calls = 0;
+  globalThis.fetch = async (url) => {
+    calls++;
+    if (calls <= 3) {
+      return {
+        status: 503,
+        ok: false,
+        url: String(url),
+        headers: new Map([['content-type', 'application/json; charset=utf-8']]),
+        async text() {
+          return '{"error":"temporary edge failure"}';
+        }
+      };
+    }
+    return {
+      status: 200,
+      ok: true,
+      url: String(url),
+      headers: new Map([['content-type', 'application/json; charset=utf-8']]),
+      async text() {
+        return '{"schema_version":"anchorfact.evidence-api.v1"}';
+      }
+    };
+  };
+
+  try {
+    const result = await fetchRoute('https://anchorfact.org', '/api/evidence?q=gaussian', {
+      routeRetries: 4,
+      routeRetryDelayMs: 0
+    });
+    assertEq(result.status, 200);
+    assertEq(calls, 4);
   } finally {
     globalThis.fetch = originalFetch;
   }

@@ -36,6 +36,28 @@ function commandOutput(error, field) {
   return Buffer.isBuffer(value) ? value.toString('utf8') : String(value || '');
 }
 
+function failedEvalResults(aiEvals) {
+  return (aiEvals?.results || [])
+    .filter(result => result && result.ok !== true)
+    .map(result => ({
+      id: result.id || null,
+      route: result.route || null,
+      failures: result.failures || []
+    }));
+}
+
+function summarizeAiEvalAttempt(aiEvals, attempt) {
+  return {
+    attempt,
+    ok: aiEvals?.ok === true,
+    eval_count: aiEvals?.eval_count ?? null,
+    passed: aiEvals?.passed ?? null,
+    failed: aiEvals?.failed ?? null,
+    failures: aiEvals?.failures || [],
+    failed_results: failedEvalResults(aiEvals)
+  };
+}
+
 export function runProductionSmoke({
   baseUrl = OFFICIAL_SITE,
   expectedCounts = DEFAULT_EXPECTED_COUNTS,
@@ -117,7 +139,8 @@ export function buildIntegrityReport({
       eval_count: aiEvals?.eval_count ?? null,
       passed: aiEvals?.passed ?? null,
       failed: aiEvals?.failed ?? null,
-      attempts: aiEvals?.attempts ?? null
+      attempts: aiEvals?.attempts ?? null,
+      attempt_history: aiEvals?.attempt_history || []
     },
     failures,
     smoke_stdout: smoke?.ok ? '' : (smoke?.stdout || ''),
@@ -131,6 +154,19 @@ export function renderIntegrityMarkdown(report) {
     .join('\n') || '- none';
   const failures = report.failures.length
     ? report.failures.map(failure => `- ${failure}`).join('\n')
+    : '- none';
+  const attemptHistory = report.ai_evals?.attempt_history || [];
+  const attemptLines = attemptHistory.length
+    ? attemptHistory
+        .map((attempt) => {
+          const failedIds = (attempt.failed_results || [])
+            .map(result => result.id)
+            .filter(Boolean)
+            .join(', ');
+          const failedSuffix = failedIds ? `; failed: ${failedIds}` : '';
+          return `- attempt ${attempt.attempt}: ${attempt.ok ? 'pass' : 'fail'} (${attempt.passed ?? 0}/${attempt.eval_count ?? 0})${failedSuffix}`;
+        })
+        .join('\n')
     : '- none';
 
   return `# AnchorFact Production Integrity - ${report.ok ? 'PASS' : 'FAIL'}
@@ -158,6 +194,10 @@ Base URL: ${report.base_url}
 ## Artifact Hashes
 
 ${artifacts}
+
+## AI Eval Attempts
+
+${attemptLines}
 
 ## Failures
 
@@ -216,10 +256,12 @@ export async function runProductionIntegrity({
   if (afterSmokeDelayMs > 0) await wait(afterSmokeDelayMs);
 
   let aiEvals = null;
+  const attemptHistory = [];
   const maxAiEvalAttempts = Math.max(1, Number(aiEvalAttempts) || 1);
   for (let attempt = 1; attempt <= maxAiEvalAttempts; attempt++) {
     const evalReport = await evalRunner({ baseUrl, ...evalOptions });
-    aiEvals = { ...evalReport, attempts: attempt };
+    attemptHistory.push(summarizeAiEvalAttempt(evalReport, attempt));
+    aiEvals = { ...evalReport, attempts: attempt, attempt_history: [...attemptHistory] };
     if (aiEvals.ok || attempt === maxAiEvalAttempts) break;
     if (aiEvalRetryDelayMs > 0) await wait(aiEvalRetryDelayMs);
   }

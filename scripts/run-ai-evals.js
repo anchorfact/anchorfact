@@ -271,7 +271,7 @@ export async function fetchEvalRoute(baseUrl, route, fetchImpl = globalThis.fetc
   let result = null;
 
   for (let attempt = 1; attempt <= maxAttempts; attempt++) {
-    const response = await fetchLiveText(fetchImpl, new URL(route, baseUrl));
+    const response = await fetchLiveText(fetchImpl, new URL(route, baseUrl), { retries, retryDelayMs });
     result = {
       route,
       status: response.status,
