@@ -61,6 +61,7 @@ test('buildProjectReadiness selects draft repair only after public surface is cl
   assertEq(readiness.next_focus, 'prioritize_draft_repair_queue');
   assertEq(readiness.signals.public_claim_mapping_ratio, 1);
   assert(readiness.next_actions.some(action => action.area === 'draft_asset_pipeline'), 'should recommend measured draft repair');
+  assert(readiness.next_actions.some(action => action.action.includes('one or two low-risk drafts')), 'draft repair guidance should stay deliberately small');
 });
 
 console.log(`\n${passed} passed, ${failed} failed`);

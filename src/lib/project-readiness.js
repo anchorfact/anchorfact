@@ -48,7 +48,7 @@ function nextActionsForFocus(focus) {
     prioritize_draft_repair_queue: [
       {
         area: 'draft_asset_pipeline',
-        action: 'Repair the next small draft batch from the existing queue, then promote only entries that pass public audit.'
+        action: 'Repair one or two low-risk drafts from the existing queue, then promote only entries that pass public audit.'
       },
       {
         area: 'measurement',

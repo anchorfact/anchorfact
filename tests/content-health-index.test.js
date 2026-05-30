@@ -178,10 +178,11 @@ test('buildContentHealthIndex publishes signed corpus health guidance', () => {
   assertEq(payload.draft.repair_queue.candidate_count, 3);
   assertEq(payload.draft.repair_queue.excluded_count, 2);
   assertEq(payload.draft.repair_queue.strict_review_count, 3);
+  assertEq(payload.draft.repair_queue.next_batch_size, 2);
   assertEq(payload.draft.repair_queue.next_batch[0].canonical_slug, 'ai/draft-a');
   assertEq(payload.draft.repair_queue.next_batch[0].repair_priority_area, 'core_ai');
   assertEq(payload.draft.repair_queue.next_batch[1].canonical_slug, 'computer-science/api-draft');
-  assertEq(payload.draft.repair_queue.next_batch[2].canonical_slug, 'business/brand-draft');
+  assert(!payload.draft.repair_queue.next_batch.some(candidate => candidate.canonical_slug === 'business/brand-draft'), 'general drafts should wait behind the measured 1-2 item batch');
   assert(!payload.draft.repair_queue.next_batch.some(candidate => candidate.canonical_slug === 'ai/ai-public-health'), 'high-stakes drafts should stay out of automatic repair queues');
   assert(payload.draft.repair_queue.strict_review_next_batch.some(candidate => candidate.canonical_slug === 'ai/ai-public-health'), 'repair queue should expose strict-review drafts separately');
   assert(payload.draft.repair_queue.strict_review_next_batch.some(candidate => candidate.canonical_slug === 'ai/ai-for-fraud-prevention'), 'repair queue should expose financial-risk drafts separately');
@@ -193,6 +194,7 @@ test('buildContentHealthIndex publishes signed corpus health guidance', () => {
   assert(payload.draft.repair_queue.strict_review_reason_distribution.some(reason => reason.name === 'physical_safety_or_autonomy'), 'repair queue should summarize physical-safety strict-review reasons');
   assert(payload.draft.repair_queue.selection_policy.some(item => item.includes('encoding-damaged')), 'repair queue should explain encoding-damaged exclusions');
   assert(payload.draft.repair_queue.selection_policy.some(item => item.includes('high-stakes')), 'repair queue should explain high-stakes strict review routing');
+  assert(payload.draft.repair_queue.selection_policy.some(item => item.includes('one or two')), 'repair queue should explain conservative batch sizing');
   assert(payload.draft.repair_queue.selection_policy.some(item => item.includes('AI-agent utility')), 'repair queue should explain AI-first priority order');
   assert(payload.draft.repair_queue.selection_policy.some(item => item.includes('repair_complexity')), 'repair queue should explain priority order');
   assert(payload.draft.repair_queue.quality_reason_distribution.some(reason => reason.name === 'no_verified_sources'), 'repair queue should summarize reasons');
