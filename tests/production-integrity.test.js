@@ -206,6 +206,30 @@ test('checkProductionEdgeCache verifies static artifacts warm to cache hits and 
   assertEq(perPathCalls.get('/api/context?q=gaussian&limit=1'), 1);
 });
 
+test('checkProductionEdgeCache retries transient dynamic control network failures', async () => {
+  let calls = 0;
+  const result = await checkProductionEdgeCache({
+    baseUrl: 'https://anchorfact.org',
+    staticArtifacts: [],
+    dynamicControls: ['/api/context?q=gaussian&limit=1'],
+    routeRetryDelayMs: 0,
+    fetchImpl: async () => {
+      calls++;
+      if (calls <= 3) throw new Error('temporary edge connection failure');
+      return edgeResponse({
+        cacheStatus: 'DYNAMIC',
+        age: '0',
+        cacheControl: 'public, max-age=0, must-revalidate'
+      });
+    }
+  });
+
+  assertEq(result.ok, true);
+  assertEq(result.failures, []);
+  assertEq(calls, 4);
+  assertEq(result.dynamic_controls[0].status, 200);
+});
+
 test('checkProductionEdgeCache fails when a static artifact remains dynamic', async () => {
   const result = await checkProductionEdgeCache({
     baseUrl: 'https://anchorfact.org',

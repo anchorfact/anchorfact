@@ -42,6 +42,9 @@ export const DEFAULT_EDGE_CACHE_DYNAMIC_CONTROLS = [
   '/api/context?q=gaussian&limit=1',
   ...SIGNED_MACHINE_ARTIFACT_PATHS
 ];
+export const DEFAULT_EDGE_CACHE_ROUTE_RETRIES = 4;
+export const DEFAULT_EDGE_CACHE_RETRY_DELAY_MS = 500;
+export const DEFAULT_EDGE_CACHE_REQUEST_TIMEOUT_MS = 5000;
 export const DEFAULT_INTEGRITY_EVAL_OPTIONS = {
   routeRetries: 4,
   routeRetryDelayMs: 750,
@@ -136,7 +139,10 @@ export async function checkProductionEdgeCache({
   staticArtifacts = DEFAULT_EDGE_CACHE_STATIC_ARTIFACTS,
   dynamicControls = DEFAULT_EDGE_CACHE_DYNAMIC_CONTROLS,
   fetchImpl = globalThis.fetch,
-  staticAttempts = 2
+  staticAttempts = 2,
+  routeRetries = DEFAULT_EDGE_CACHE_ROUTE_RETRIES,
+  routeRetryDelayMs = DEFAULT_EDGE_CACHE_RETRY_DELAY_MS,
+  requestTimeoutMs = DEFAULT_EDGE_CACHE_REQUEST_TIMEOUT_MS
 } = {}) {
   const failures = [];
   const staticResults = [];
@@ -147,8 +153,9 @@ export async function checkProductionEdgeCache({
     for (let attempt = 1; attempt <= maxStaticAttempts; attempt++) {
       const response = await fetchLiveText(fetchImpl, routeUrl(baseUrl, path), {
         method: 'HEAD',
-        retries: 1,
-        retryDelayMs: 250
+        retries: routeRetries,
+        retryDelayMs: routeRetryDelayMs,
+        timeoutMs: requestTimeoutMs
       });
       attempts.push(cacheAttempt(path, response));
       const cacheStatus = attempts[attempts.length - 1].cf_cache_status;
@@ -170,8 +177,9 @@ export async function checkProductionEdgeCache({
   for (const path of dynamicControls) {
     const response = await fetchLiveText(fetchImpl, routeUrl(baseUrl, path), {
       method: 'HEAD',
-      retries: 1,
-      retryDelayMs: 250
+      retries: routeRetries,
+      retryDelayMs: routeRetryDelayMs,
+      timeoutMs: requestTimeoutMs
     });
     const result = { path, ...cacheAttempt(path, response) };
     if (!result.ok) {

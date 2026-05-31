@@ -1,6 +1,7 @@
 const DEFAULT_MONITOR_USER_AGENT =
   'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36';
 
+export const DEFAULT_FETCH_TIMEOUT_MS = 20000;
 const DEFAULT_RETRIES = 2;
 const DEFAULT_RETRY_DELAY_MS = 250;
 const RETRYABLE_STATUSES = new Set([408, 425, 429, 500, 502, 503, 504]);
@@ -20,6 +21,7 @@ export function liveFetchOptions(options = {}) {
     retries: _retries,
     retryDelayMs: _retryDelayMs,
     retryStatuses: _retryStatuses,
+    timeoutMs: _timeoutMs,
     ...rest
   } = options;
   return {
@@ -45,14 +47,27 @@ export async function fetchLiveText(fetchImpl, url, options = {}) {
   const {
     retries = DEFAULT_RETRIES,
     retryDelayMs = DEFAULT_RETRY_DELAY_MS,
-    retryStatuses = RETRYABLE_STATUSES
+    retryStatuses = RETRYABLE_STATUSES,
+    timeoutMs = DEFAULT_FETCH_TIMEOUT_MS
   } = options;
   const maxAttempts = Math.max(1, Number(retries) + 1);
   let lastError = null;
 
   for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+    const timeoutEnabled = Number.isFinite(timeoutMs)
+      && timeoutMs > 0
+      && typeof AbortController !== 'undefined'
+      && !options.signal;
+    const controller = timeoutEnabled ? new AbortController() : null;
+    const timeoutId = controller
+      ? setTimeout(() => controller.abort(), timeoutMs)
+      : null;
+    const attemptOptions = controller
+      ? { ...options, signal: controller.signal }
+      : options;
+
     try {
-      const response = await fetchImpl(url, liveFetchOptions(options));
+      const response = await fetchImpl(url, liveFetchOptions(attemptOptions));
       const text = await response.text();
       const retryableStatus = retryStatuses.has?.(response.status) || retryStatuses.includes?.(response.status);
       if (retryableStatus && attempt < maxAttempts) {
@@ -73,6 +88,8 @@ export async function fetchLiveText(fetchImpl, url, options = {}) {
         await sleep(retryDelayMs * attempt);
         continue;
       }
+    } finally {
+      if (timeoutId) clearTimeout(timeoutId);
     }
   }
 

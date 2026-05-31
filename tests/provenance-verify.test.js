@@ -612,6 +612,35 @@ test('fetchLiveText reports exhausted network failures without throwing', async 
   assert(result.error.includes('connect timeout'), 'network failure should include root cause');
 });
 
+test('fetchLiveText aborts stalled route fetches and retries', async () => {
+  let calls = 0;
+  let aborted = false;
+  const result = await fetchLiveText(async (_url, options = {}) => {
+    calls++;
+    if (calls === 1) {
+      if (!options.signal) throw new Error('missing abort signal');
+      options.signal.addEventListener('abort', () => {
+        aborted = true;
+      }, { once: true });
+      return new Promise((_resolve, reject) => {
+        options.signal.addEventListener('abort', () => {
+          reject(new Error('aborted by timeout'));
+        }, { once: true });
+      });
+    }
+    return new FakeResponse(200, 'ok', 'text/plain; charset=utf-8');
+  }, 'https://anchorfact.org/provenance.json', {
+    retries: 1,
+    retryDelayMs: 0,
+    timeoutMs: 1
+  });
+
+  assertEq(calls, 2, 'fetch should retry after aborting the stalled attempt');
+  assertEq(aborted, true, 'fetch should abort the stalled attempt');
+  assertEq(result.ok, true, 'retry result should pass');
+  assertEq(result.text, 'ok', 'retry result body');
+});
+
 for (const { name, fn } of tests) {
   try {
     await fn();
