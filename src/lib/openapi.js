@@ -506,6 +506,7 @@ export function buildOpenApiContract({
         ApiIndex: schemaVersioned('API index', API_INDEX_SCHEMA_VERSION, {
           read_only: { type: 'boolean' },
           recommended_sequence: { type: 'array', items: { type: 'string' } },
+          primary_entrypoints: { type: 'array', items: { type: 'object' } },
           endpoints: { type: 'array', items: { type: 'object' } },
           static_fallbacks: { type: 'array', items: { type: 'object' } }
         }),

@@ -221,6 +221,7 @@ export function buildEvalsIndex({
         required_paths: [
           '/api/plan',
           '/api/evidence',
+          '/api/context',
           '/api/search',
           '/api/article',
           '/api/claim',
@@ -228,7 +229,8 @@ export function buildEvalsIndex({
           '/api/source',
           '/api/resolve',
           '/api/resolve-batch'
-        ]
+        ],
+        required_primary_entrypoint_ids: ['context', 'evidence', 'plan']
       }
     },
     {

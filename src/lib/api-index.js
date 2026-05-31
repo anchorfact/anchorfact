@@ -27,6 +27,18 @@ function staticFallback(site, path, description) {
   };
 }
 
+function primaryEntrypoint(site, id, path, bestFor, useWhen, formatOptions = ['json']) {
+  return {
+    id,
+    method: 'GET',
+    path,
+    url: publicUrl(path, site),
+    best_for: bestFor,
+    use_when: useWhen,
+    format_options: formatOptions
+  };
+}
+
 export function buildApiIndex({
   generated = new Date().toISOString(),
   site = OFFICIAL_SITE
@@ -45,6 +57,53 @@ export function buildApiIndex({
       'Call /api/resolve or /api/resolve-batch when you already have AnchorFact claim ids, article slugs, source ids, source URLs, or AnchorFact URLs.',
       'Call /api/cite?id={claim_id} when you need a citation-ready atomic claim.',
       'Verify /provenance.json and /provenance.sig before trusting static artifact hashes or counts.'
+    ],
+    primary_entrypoints: [
+      primaryEntrypoint(
+        site,
+        'context',
+        '/api/context',
+        [
+          'default one-call prompt assembly',
+          'answer_policy and citation-ready claims',
+          'supported/unsupported routing with fallback guidance'
+        ],
+        [
+          'You need one prompt-ready context pack before drafting an answer.',
+          'You need an explicit answer_policy.can_answer_with_anchorfact decision.'
+        ],
+        ['json', 'markdown']
+      ),
+      primaryEntrypoint(
+        site,
+        'evidence',
+        '/api/evidence',
+        [
+          'answer-ready evidence packs',
+          'public article summaries with mapped claims and sources',
+          'compact Markdown context for citation-grounded answers'
+        ],
+        [
+          'You already have a factual query and need source-grounded evidence.',
+          'You want search hits, claims, sources, and citation exports in one call.'
+        ],
+        ['json', 'markdown']
+      ),
+      primaryEntrypoint(
+        site,
+        'plan',
+        '/api/plan',
+        [
+          'coverage preflight',
+          'next-call routing',
+          'external-source fallback decisions'
+        ],
+        [
+          'You are not sure AnchorFact covers the topic.',
+          'The query may be live, local, personalized, or time-sensitive.'
+        ],
+        ['json']
+      )
     ],
     endpoints: [
       endpoint(site, 'plan', '/api/plan', 'Decide whether AnchorFact coverage is plausible and which endpoint to call next.', [

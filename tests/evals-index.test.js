@@ -164,6 +164,7 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
   assertEq(apiDiscoveryEval.expected.schema_version, 'anchorfact.api-index.v1');
   assert(apiDiscoveryEval.expected.required_paths.includes('/api/evidence'), 'API discovery eval should require evidence endpoint');
   assert(apiDiscoveryEval.expected.required_paths.includes('/api/resolve-batch'), 'API discovery eval should require batch resolver endpoint');
+  assertEq(apiDiscoveryEval.expected.required_primary_entrypoint_ids, ['context', 'evidence', 'plan']);
 
   const openapiEval = payload.evals.find(evalCase => evalCase.id === 'openapi_context_contract');
   assertEq(openapiEval.call.path, '/openapi.json');

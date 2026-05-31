@@ -28,6 +28,11 @@ test('buildApiIndex publishes the machine API discovery contract', () => {
   assertEq(payload.provenance_url, 'https://anchorfact.org/provenance.json');
   assertEq(payload.read_only, true);
   assert(payload.recommended_sequence.some(step => step.includes('/api/plan')), 'sequence should start with planning guidance');
+  assertEq(payload.primary_entrypoints.map(entrypoint => entrypoint.id), ['context', 'evidence', 'plan']);
+  assertEq(payload.primary_entrypoints[0].path, '/api/context');
+  assert(payload.primary_entrypoints[0].best_for.some(item => item.includes('one-call prompt')), 'context should be the default prompt path');
+  assert(payload.primary_entrypoints[1].format_options.includes('markdown'), 'evidence should advertise markdown output');
+  assert(payload.primary_entrypoints[2].use_when.some(item => item.includes('not sure')), 'plan should remain the uncertainty preflight');
 
   const endpointPaths = payload.endpoints.map(endpoint => endpoint.path);
   for (const path of [

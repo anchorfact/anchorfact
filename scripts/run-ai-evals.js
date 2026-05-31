@@ -257,6 +257,12 @@ function evaluateJsonExpected(payload, expected, failures) {
       check(paths.has(path), failures, `payload should include endpoint path ${path}`);
     }
   }
+  if (Array.isArray(expected.required_primary_entrypoint_ids)) {
+    const entrypoints = new Set((payload?.primary_entrypoints || []).map(entrypoint => entrypoint?.id));
+    for (const id of expected.required_primary_entrypoint_ids) {
+      check(entrypoints.has(id), failures, `payload should include primary entrypoint ${id}`);
+    }
+  }
   if (expected.required_schema_properties && typeof expected.required_schema_properties === 'object') {
     for (const [schemaName, properties] of Object.entries(expected.required_schema_properties)) {
       const schemaProperties = payload?.components?.schemas?.[schemaName]?.properties || {};

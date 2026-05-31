@@ -54,7 +54,8 @@ test('runAiEvals executes JSON, Markdown, MCP, and provenance eval expectations'
               status: 200,
               content_type: 'application/json',
               schema_version: 'anchorfact.api-index.v1',
-              required_paths: ['/api/plan', '/api/evidence', '/api/context']
+              required_paths: ['/api/plan', '/api/evidence', '/api/context'],
+              required_primary_entrypoint_ids: ['context', 'evidence', 'plan']
             }
           },
           {
@@ -202,6 +203,11 @@ test('runAiEvals executes JSON, Markdown, MCP, and provenance eval expectations'
       }),
       '/api': jsonResponse({
         schema_version: 'anchorfact.api-index.v1',
+        primary_entrypoints: [
+          { id: 'context' },
+          { id: 'evidence' },
+          { id: 'plan' }
+        ],
         endpoints: [{ path: '/api/plan' }, { path: '/api/evidence' }, { path: '/api/context' }]
       }),
       '/openapi.json': jsonResponse({
@@ -438,6 +444,36 @@ test('runAiEvals reports expectation failures', async () => {
   assert(report.results[3].failures.some(failure => failure.includes('repair queue')), 'repair queue mismatch should be reported');
   assert(report.results[3].failures.some(failure => failure.includes('C-tier source')), 'C-tier source drift should be reported');
   assert(report.results[4].failures.some(failure => failure.includes('query benchmark')), 'query benchmark mismatch should be reported');
+});
+
+test('runAiEvals reports missing primary API entrypoints', async () => {
+  const report = await runAiEvals({
+    baseUrl: 'https://anchorfact.org',
+    generatedAt: '2026-05-29T00:00:00.000Z',
+    fetchImpl: fetchFixture({
+      '/evals.json': jsonResponse({
+        evals: [
+          {
+            id: 'api_discovery',
+            call: { method: 'GET', path: '/api' },
+            expected: {
+              status: 200,
+              content_type: 'application/json',
+              schema_version: 'anchorfact.api-index.v1',
+              required_primary_entrypoint_ids: ['context', 'evidence', 'plan']
+            }
+          }
+        ]
+      }),
+      '/api': jsonResponse({
+        schema_version: 'anchorfact.api-index.v1',
+        primary_entrypoints: [{ id: 'context' }, { id: 'evidence' }]
+      })
+    })
+  });
+
+  assertEq(report.ok, false);
+  assert(report.results[0].failures.some(failure => failure.includes('primary entrypoint plan')), 'failure should name the missing primary entrypoint');
 });
 
 test('runAiEvals reports top-ranked canonical slug drift for query routing evals', async () => {
