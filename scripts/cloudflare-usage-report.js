@@ -31,6 +31,29 @@ const MACHINE_ARTIFACT_PATHS = new Set([
   '/provenance.sig'
 ]);
 
+const DISCOVERY_ENTRYPOINT_PATHS = new Set([
+  '/robots.txt',
+  '/llms.txt',
+  '/api',
+  '/agent.json',
+  '/.well-known/anchorfact.json',
+  '/openapi.json',
+  '/mcp.json'
+]);
+
+const PRIMARY_API_PATHS = new Set([
+  '/api/context',
+  '/api/evidence',
+  '/api/plan',
+  '/api/cite',
+  '/api/resolve',
+  '/api/resolve-batch',
+  '/api/search',
+  '/api/article',
+  '/api/claim',
+  '/api/source'
+]);
+
 const AI_USER_AGENT_RULES = [
   ['openai_gptbot', /GPTBot/i],
   ['openai_chatgpt_user', /ChatGPT-User/i],
@@ -71,6 +94,29 @@ function topEntries(map, limit = 20) {
     .map(([name, count]) => ({ name, count }));
 }
 
+function ratio(part, total, digits = 4) {
+  const numerator = Number(part || 0);
+  const denominator = Number(total || 0);
+  if (!denominator) return 0;
+  return Number((numerator / denominator).toFixed(digits));
+}
+
+function sumRows(rows, predicate) {
+  return rows.reduce((sum, row) => sum + (predicate(row) ? Number(row.count || 0) : 0), 0);
+}
+
+function topObservedPaths(rows, predicate, limit = 10) {
+  const counts = {};
+  for (const row of rows) {
+    if (!predicate(row)) continue;
+    increment(counts, row.dimensions?.clientRequestPath || 'unknown', Number(row.count || 0));
+  }
+  return topEntries(counts, limit).map(item => ({
+    path: item.name,
+    requests: item.count
+  }));
+}
+
 function bytesToHuman(bytes) {
   const value = Number(bytes || 0);
   if (value >= 1024 * 1024 * 1024) return `${(value / 1024 / 1024 / 1024).toFixed(2)} GB`;
@@ -109,6 +155,14 @@ export function classifyPath(path = '') {
   if (normalized === '/robots.txt' || normalized === '/sitemap.xml') return 'crawler_control';
   if (normalized === '/' || normalized.endsWith('/') || normalized.endsWith('.html')) return 'human_page';
   return 'other';
+}
+
+function isDiscoveryEntrypoint(path = '') {
+  return DISCOVERY_ENTRYPOINT_PATHS.has(String(path || '/'));
+}
+
+function isPrimaryApiPath(path = '') {
+  return PRIMARY_API_PATHS.has(String(path || '/'));
 }
 
 export function buildCloudflareUsageSummary(data, options = {}) {
@@ -181,9 +235,19 @@ export function buildCloudflareUsageSummary(data, options = {}) {
 
   const apiRequests = pathCategories.api || 0;
   const machineArtifactRequests = pathCategories.machine_artifact || 0;
+  const articleArtifactRequests = pathCategories.article_artifact || 0;
+  const crawlerControlRequests = pathCategories.crawler_control || 0;
   const aiRequests = userAgentCategories.ai_bot || 0;
   const syntheticRequests = userAgentCategories.synthetic_monitor || 0;
-  const scannerRequests = (userAgentCategories.scanner || 0) + (pathCategories.security_probe || 0);
+  const browserLikeRequests = userAgentCategories.browser || 0;
+  const scannerRequests = Math.max(userAgentCategories.scanner || 0, pathCategories.security_probe || 0);
+  const discoveryEntrypointRequests = sumRows(topPaths, row => isDiscoveryEntrypoint(row.dimensions?.clientRequestPath));
+  const primaryApiRequests = sumRows(topPaths, row => isPrimaryApiPath(row.dimensions?.clientRequestPath));
+  const productSurfaceRequests = apiRequests + machineArtifactRequests + articleArtifactRequests + crawlerControlRequests;
+  const aiPathRows = pathUa.filter(row => classifyUserAgent(row.dimensions?.userAgent).category === 'ai_bot');
+  const observedAiDiscoveryRequests = sumRows(aiPathRows, row => isDiscoveryEntrypoint(row.dimensions?.clientRequestPath));
+  const observedAiPrimaryApiRequests = sumRows(aiPathRows, row => isPrimaryApiPath(row.dimensions?.clientRequestPath));
+  const observedAiArticleArtifactRequests = sumRows(aiPathRows, row => classifyPath(row.dimensions?.clientRequestPath) === 'article_artifact');
 
   const recommendations = [];
   if (apiRequests > 0) {
@@ -194,6 +258,9 @@ export function buildCloudflareUsageSummary(data, options = {}) {
   }
   if (aiRequests > 0 && aiRequests < apiRequests) {
     recommendations.push('Treat AI crawler discovery as present but early; improve agent-facing discovery before broad content expansion.');
+  }
+  if (observedAiDiscoveryRequests > 0) {
+    recommendations.push('Track discovery-to-primary-API adoption over 24-48 hour windows before changing the agent entrypoint contract again.');
   }
   if (scannerRequests > 0) {
     recommendations.push('Keep WAF/security hygiene on the roadmap; WordPress/env probes are noise, not product demand.');
@@ -214,6 +281,35 @@ export function buildCloudflareUsageSummary(data, options = {}) {
       requests: totalRequests,
       bytes: totalBytes,
       bytes_human: bytesToHuman(totalBytes)
+    },
+    usage_scorecard: {
+      product_surface_requests: productSurfaceRequests,
+      product_surface_share: ratio(productSurfaceRequests, totalRequests),
+      api_requests: apiRequests,
+      api_share: ratio(apiRequests, totalRequests),
+      primary_api_requests: primaryApiRequests,
+      discovery_entrypoint_requests: discoveryEntrypointRequests,
+      machine_artifact_requests: machineArtifactRequests,
+      article_artifact_requests: articleArtifactRequests,
+      crawler_control_requests: crawlerControlRequests,
+      identified_ai_requests: aiRequests,
+      identified_ai_share: ratio(aiRequests, totalRequests),
+      synthetic_monitor_requests: syntheticRequests,
+      synthetic_monitor_share: ratio(syntheticRequests, totalRequests),
+      browser_like_requests: browserLikeRequests,
+      browser_like_share: ratio(browserLikeRequests, totalRequests),
+      scanner_or_probe_requests: scannerRequests
+    },
+    discovery_adoption: {
+      observed_all_discovery_entrypoint_requests: discoveryEntrypointRequests,
+      observed_all_primary_api_requests: primaryApiRequests,
+      observed_ai_discovery_requests: observedAiDiscoveryRequests,
+      observed_ai_primary_api_requests: observedAiPrimaryApiRequests,
+      observed_ai_article_artifact_requests: observedAiArticleArtifactRequests,
+      observed_ai_primary_to_discovery_ratio: ratio(observedAiPrimaryApiRequests, observedAiDiscoveryRequests, 2),
+      top_ai_discovery_paths: topObservedPaths(aiPathRows, row => isDiscoveryEntrypoint(row.dimensions?.clientRequestPath), 8),
+      top_ai_primary_api_paths: topObservedPaths(aiPathRows, row => isPrimaryApiPath(row.dimensions?.clientRequestPath), 8),
+      top_ai_article_artifact_paths: topObservedPaths(aiPathRows, row => classifyPath(row.dimensions?.clientRequestPath) === 'article_artifact', 8)
     },
     observed_top_path_categories: topEntries(pathCategories, 20),
     observed_top_user_agent_categories: topEntries(userAgentCategories, 20),
@@ -256,6 +352,17 @@ export function renderCloudflareUsageReport(report) {
   lines.push(`- Top path categories: ${report.observed_top_path_categories.map(item => `${item.name}=${item.count}`).join(', ') || 'none'}`);
   lines.push(`- Top UA categories: ${report.observed_top_user_agent_categories.map(item => `${item.name}=${item.count}`).join(', ') || 'none'}`);
   lines.push('');
+  lines.push(`## Usage Scorecard`);
+  lines.push('');
+  lines.push(`- Product-surface requests: ${report.usage_scorecard.product_surface_requests} (${(report.usage_scorecard.product_surface_share * 100).toFixed(1)}%)`);
+  lines.push(`- API requests: ${report.usage_scorecard.api_requests}`);
+  lines.push(`- Primary API requests: ${report.usage_scorecard.primary_api_requests}`);
+  lines.push(`- Discovery entrypoint requests: ${report.usage_scorecard.discovery_entrypoint_requests}`);
+  lines.push(`- Identified AI requests: ${report.usage_scorecard.identified_ai_requests} (${(report.usage_scorecard.identified_ai_share * 100).toFixed(1)}%)`);
+  lines.push(`- Synthetic monitor requests: ${report.usage_scorecard.synthetic_monitor_requests}`);
+  lines.push(`- Browser-like/manual requests: ${report.usage_scorecard.browser_like_requests}`);
+  lines.push(`- Scanner/probe requests: ${report.usage_scorecard.scanner_or_probe_requests}`);
+  lines.push('');
   lines.push(`## Product Signals`);
   lines.push('');
   for (const item of report.top_api_paths.slice(0, 8)) {
@@ -269,6 +376,25 @@ export function renderCloudflareUsageReport(report) {
     lines.push(`- ${item.path}: ${item.requests} requests, ${bytesToHuman(item.bytes)}`);
   }
   if (report.top_machine_artifacts.length === 0) lines.push('- No machine artifacts observed in the top path sample.');
+  lines.push('');
+  lines.push(`## Discovery Adoption`);
+  lines.push('');
+  lines.push(`- All discovery entrypoint requests: ${report.discovery_adoption.observed_all_discovery_entrypoint_requests}`);
+  lines.push(`- All primary API requests: ${report.discovery_adoption.observed_all_primary_api_requests}`);
+  lines.push(`- Identified AI discovery requests: ${report.discovery_adoption.observed_ai_discovery_requests}`);
+  lines.push(`- Identified AI primary API requests: ${report.discovery_adoption.observed_ai_primary_api_requests}`);
+  lines.push(`- Identified AI article artifact requests: ${report.discovery_adoption.observed_ai_article_artifact_requests}`);
+  lines.push(`- Identified AI primary/discovery ratio: ${report.discovery_adoption.observed_ai_primary_to_discovery_ratio}`);
+  if (report.discovery_adoption.top_ai_discovery_paths.length > 0) {
+    lines.push('');
+    lines.push('Top identified AI discovery paths:');
+    for (const item of report.discovery_adoption.top_ai_discovery_paths) lines.push(`- ${item.path}: ${item.requests}`);
+  }
+  if (report.discovery_adoption.top_ai_primary_api_paths.length > 0) {
+    lines.push('');
+    lines.push('Top identified AI primary API paths:');
+    for (const item of report.discovery_adoption.top_ai_primary_api_paths) lines.push(`- ${item.path}: ${item.requests}`);
+  }
   lines.push('');
   lines.push(`## AI Discovery`);
   lines.push('');

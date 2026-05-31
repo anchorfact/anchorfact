@@ -86,6 +86,10 @@ test('buildCloudflareUsageSummary derives product, AI discovery, and security re
       topPaths: [
         pathRow('/api/evidence', 220, 900000),
         pathRow('/api/context', 90, 350000),
+        pathRow('/api', 50, 120000),
+        pathRow('/llms.txt', 45, 500000),
+        pathRow('/robots.txt', 35, 30000),
+        pathRow('/agent.json', 25, 120000),
         pathRow('/graph.json', 40, 10000000),
         pathRow('/search-index.json', 30, 8000000),
         pathRow('/wp-admin/install.php', 25, 100000),
@@ -99,6 +103,10 @@ test('buildCloudflareUsageSummary derives product, AI discovery, and security re
         uaRow('Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/125.0.0.0 Safari/537.36', 600)
       ],
       pathUa: [
+        pathUaRow('/robots.txt', 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; GPTBot/1.4; +https://openai.com/gptbot)', 12),
+        pathUaRow('/llms.txt', 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; GPTBot/1.4; +https://openai.com/gptbot)', 10),
+        pathUaRow('/api/context', 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; GPTBot/1.4; +https://openai.com/gptbot)', 8),
+        pathUaRow('/api/evidence', 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; ClaudeBot/1.0; +claudebot@anthropic.com)', 7),
         pathUaRow('/ai/example/index.ttl', 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; GPTBot/1.4; +https://openai.com/gptbot)', 2)
       ],
       statusCodes: [{ count: 970, dimensions: { edgeResponseStatus: 200 } }],
@@ -115,6 +123,17 @@ test('buildCloudflareUsageSummary derives product, AI discovery, and security re
   }, { generatedAt: '2026-05-31T00:00:00.000Z' });
 
   assertEq(summary.totals.requests, 1000);
+  assertEq(summary.usage_scorecard.product_surface_requests, 535);
+  assertEq(summary.usage_scorecard.api_requests, 360);
+  assertEq(summary.usage_scorecard.discovery_entrypoint_requests, 155);
+  assertEq(summary.usage_scorecard.identified_ai_requests, 60);
+  assertEq(summary.usage_scorecard.synthetic_monitor_requests, 70);
+  assertEq(summary.usage_scorecard.browser_like_requests, 600);
+  assertEq(summary.discovery_adoption.observed_ai_discovery_requests, 22);
+  assertEq(summary.discovery_adoption.observed_ai_primary_api_requests, 15);
+  assertEq(summary.discovery_adoption.observed_ai_article_artifact_requests, 2);
+  assert(summary.discovery_adoption.top_ai_discovery_paths.some(item => item.path === '/robots.txt'), 'should report AI discovery paths');
+  assert(summary.discovery_adoption.top_ai_primary_api_paths.some(item => item.path === '/api/context'), 'should report AI primary API paths');
   assert(summary.top_api_paths.some(item => item.path === '/api/evidence'), 'should report API product signal');
   assert(summary.top_machine_artifacts.some(item => item.path === '/graph.json'), 'should report machine artifact signal');
   assert(summary.security_probe_paths.some(item => item.path === '/wp-admin/install.php'), 'should report security probes');
@@ -134,6 +153,8 @@ test('renderCloudflareUsageReport emits readable Markdown sections', () => {
   }, { generatedAt: '2026-05-31T00:00:00.000Z' });
   const markdown = renderCloudflareUsageReport(report);
   assert(markdown.includes('## Product Signals'), 'should render product section');
+  assert(markdown.includes('## Usage Scorecard'), 'should render usage scorecard section');
+  assert(markdown.includes('## Discovery Adoption'), 'should render discovery adoption section');
   assert(markdown.includes('/api/context'), 'should render API paths');
   assert(markdown.includes('## AI Discovery'), 'should render AI section');
   assert(markdown.includes('anthropic_claudebot'), 'should render classified AI agents');
