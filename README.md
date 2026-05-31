@@ -129,6 +129,10 @@ For the same local read-only check, run:
 npm run production:integrity
 ```
 
+## Production Usage Signals
+
+`npm run usage:cloudflare` reads Cloudflare GraphQL analytics and emits a short report that separates product API usage, signed machine artifact reads, AI crawler discovery, synthetic monitor traffic, and security probe noise. It is read-only and requires a local `CLOUDFLARE_API_TOKEN` with `Zone:Read` and `Analytics:Read`; do not commit tokens or generated reports unless a report is intentionally being published for review.
+
 ## Content Model
 
 Content lives in `content/` as Markdown with YAML frontmatter.
@@ -250,6 +254,7 @@ Public hygiene checks are shared by the compiler, quality gate, and audit script
 | `npm run verify:provenance` | Verifies live provenance identity, artifact checksums, counts, source commit, and optional signature. |
 | `npm run verify:provenance:signed` | Verifies live provenance with the pinned trusted public key. |
 | `npm run production:integrity` | Runs production smoke, AI evals, trusted signed provenance verification, and edge cache-policy checks, then emits an integrity report. |
+| `npm run usage:cloudflare` | Reads Cloudflare analytics with a local token and reports API, artifact, AI crawler, monitor, and security-noise usage signals. |
 | `npm run audit-public-sample` | Regenerates the 20-article public content audit report. |
 | `npm run audit-public-full` | Fails if any public article has an actionable audit recommendation. |
 | `npm run repo:hygiene` | Checks for stale root snapshots, mojibake, old launch metrics, and tracked generated files. |

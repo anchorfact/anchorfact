@@ -1,0 +1,457 @@
+#!/usr/bin/env node
+import { mkdirSync, writeFileSync } from 'fs';
+import { dirname, resolve } from 'path';
+import { pathToFileURL } from 'url';
+
+const CLOUDFLARE_API_BASE = 'https://api.cloudflare.com/client/v4';
+const GRAPHQL_ENDPOINT = `${CLOUDFLARE_API_BASE}/graphql`;
+const DEFAULT_ZONE_NAME = 'anchorfact.org';
+const DEFAULT_LOOKBACK_MINUTES = 23 * 60 + 50;
+const DEFAULT_DAILY_DAYS = 7;
+const MAX_ADAPTIVE_LOOKBACK_MINUTES = 23 * 60 + 50;
+
+const MACHINE_ARTIFACT_PATHS = new Set([
+  '/agent.json',
+  '/.well-known/anchorfact.json',
+  '/openapi.json',
+  '/manifest.json',
+  '/llms.txt',
+  '/claims.json',
+  '/topics.json',
+  '/capabilities.json',
+  '/content-health.json',
+  '/coverage.json',
+  '/examples.json',
+  '/graph.json',
+  '/evals.json',
+  '/mcp.json',
+  '/search-index.json',
+  '/sources.json',
+  '/provenance.json',
+  '/provenance.sig'
+]);
+
+const AI_USER_AGENT_RULES = [
+  ['openai_gptbot', /GPTBot/i],
+  ['openai_chatgpt_user', /ChatGPT-User/i],
+  ['openai_searchbot', /OAI-SearchBot/i],
+  ['anthropic_claudebot', /ClaudeBot/i],
+  ['perplexity_bot', /PerplexityBot/i],
+  ['google_vertex_bot', /Google-CloudVertexBot/i]
+];
+
+const SEARCH_BOT_RULES = [
+  ['googlebot', /Googlebot/i],
+  ['googleother', /GoogleOther/i],
+  ['applebot', /Applebot/i],
+  ['bingbot', /bingbot/i],
+  ['baiduspider', /Baiduspider/i],
+  ['yandexbot', /YandexBot/i]
+];
+
+const SYNTHETIC_MONITOR_RULES = [
+  ['anchorfact_monitor', /codex-anchorfact-monitor/i],
+  ['anchorfact_cache_check', /Codex AnchorFact Cache/i]
+];
+
+const SCANNER_RULES = [
+  ['wordpress_probe', /wp-admin|xmlrpc|wordpress/i],
+  ['exposure_scan', /\.env|Cortex-Xpanse|visionheight|researchscan|Palo Alto Networks/i]
+];
+
+function increment(map, key, amount = 1) {
+  const normalized = key || 'unknown';
+  map[normalized] = (map[normalized] || 0) + amount;
+}
+
+function topEntries(map, limit = 20) {
+  return Object.entries(map)
+    .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+    .slice(0, limit)
+    .map(([name, count]) => ({ name, count }));
+}
+
+function bytesToHuman(bytes) {
+  const value = Number(bytes || 0);
+  if (value >= 1024 * 1024 * 1024) return `${(value / 1024 / 1024 / 1024).toFixed(2)} GB`;
+  if (value >= 1024 * 1024) return `${(value / 1024 / 1024).toFixed(2)} MB`;
+  if (value >= 1024) return `${(value / 1024).toFixed(2)} KB`;
+  return `${value} B`;
+}
+
+export function classifyUserAgent(userAgent = '') {
+  const ua = String(userAgent || '');
+  for (const [label, pattern] of SYNTHETIC_MONITOR_RULES) {
+    if (pattern.test(ua)) return { category: 'synthetic_monitor', label };
+  }
+  for (const [label, pattern] of AI_USER_AGENT_RULES) {
+    if (pattern.test(ua)) return { category: 'ai_bot', label };
+  }
+  for (const [label, pattern] of SEARCH_BOT_RULES) {
+    if (pattern.test(ua)) return { category: 'search_bot', label };
+  }
+  for (const [label, pattern] of SCANNER_RULES) {
+    if (pattern.test(ua)) return { category: 'scanner', label };
+  }
+  if (/bot|crawler|spider|scan/i.test(ua)) return { category: 'crawler', label: 'generic_crawler' };
+  if (/Mozilla\/5\.0/i.test(ua)) return { category: 'browser', label: 'browser_like' };
+  if (!ua) return { category: 'unknown', label: 'missing_user_agent' };
+  return { category: 'other', label: 'other' };
+}
+
+export function classifyPath(path = '') {
+  const normalized = String(path || '/');
+  if (/\/(?:wp-admin|wp-login|xmlrpc\.php)(?:\/|$)/i.test(normalized)) return 'security_probe';
+  if (/\/(?:\.env|\.git|admin|phpmyadmin|config)(?:\/|$|[.?])/i.test(normalized)) return 'security_probe';
+  if (normalized.startsWith('/api')) return 'api';
+  if (MACHINE_ARTIFACT_PATHS.has(normalized)) return 'machine_artifact';
+  if (/\/index\.(?:json|txt|ttl)$/i.test(normalized)) return 'article_artifact';
+  if (normalized === '/robots.txt' || normalized === '/sitemap.xml') return 'crawler_control';
+  if (normalized === '/' || normalized.endsWith('/') || normalized.endsWith('.html')) return 'human_page';
+  return 'other';
+}
+
+export function buildCloudflareUsageSummary(data, options = {}) {
+  const zone = data.zone || {};
+  const topPaths = zone.topPaths || [];
+  const topUAs = zone.topUAs || [];
+  const pathUa = zone.pathUa || [];
+  const statusCodes = zone.statusCodes || [];
+  const methods = zone.methods || [];
+  const countries = zone.countries || [];
+  const daily = zone.daily || [];
+  const totalRequests = Number(zone.totals?.[0]?.count || 0);
+  const totalBytes = Number(zone.totals?.[0]?.sum?.edgeResponseBytes || 0);
+  const pathCategories = {};
+  const userAgentCategories = {};
+  const aiAgents = {};
+  const searchAgents = {};
+  const scannerAgents = {};
+
+  for (const row of topPaths) {
+    increment(pathCategories, classifyPath(row.dimensions?.clientRequestPath), row.count);
+  }
+
+  for (const row of topUAs) {
+    const classified = classifyUserAgent(row.dimensions?.userAgent);
+    increment(userAgentCategories, classified.category, row.count);
+    if (classified.category === 'ai_bot') increment(aiAgents, classified.label, row.count);
+    if (classified.category === 'search_bot') increment(searchAgents, classified.label, row.count);
+    if (classified.category === 'scanner') increment(scannerAgents, classified.label, row.count);
+  }
+
+  const topApiPaths = topPaths
+    .filter(row => classifyPath(row.dimensions?.clientRequestPath) === 'api')
+    .slice(0, 12)
+    .map(row => ({
+      path: row.dimensions.clientRequestPath,
+      requests: row.count,
+      bytes: row.sum?.edgeResponseBytes || 0
+    }));
+
+  const topMachineArtifacts = topPaths
+    .filter(row => classifyPath(row.dimensions?.clientRequestPath) === 'machine_artifact')
+    .slice(0, 12)
+    .map(row => ({
+      path: row.dimensions.clientRequestPath,
+      requests: row.count,
+      bytes: row.sum?.edgeResponseBytes || 0
+    }));
+
+  const securityProbePaths = topPaths
+    .filter(row => classifyPath(row.dimensions?.clientRequestPath) === 'security_probe')
+    .slice(0, 10)
+    .map(row => ({
+      path: row.dimensions.clientRequestPath,
+      requests: row.count,
+      bytes: row.sum?.edgeResponseBytes || 0
+    }));
+
+  const aiPathEvidence = pathUa
+    .filter(row => classifyUserAgent(row.dimensions?.userAgent).category === 'ai_bot')
+    .slice(0, 20)
+    .map(row => ({
+      path: row.dimensions.clientRequestPath,
+      method: row.dimensions.clientRequestHTTPMethodName,
+      status: row.dimensions.edgeResponseStatus,
+      user_agent_label: classifyUserAgent(row.dimensions.userAgent).label,
+      requests: row.count,
+      bytes: row.sum?.edgeResponseBytes || 0
+    }));
+
+  const apiRequests = pathCategories.api || 0;
+  const machineArtifactRequests = pathCategories.machine_artifact || 0;
+  const aiRequests = userAgentCategories.ai_bot || 0;
+  const syntheticRequests = userAgentCategories.synthetic_monitor || 0;
+  const scannerRequests = (userAgentCategories.scanner || 0) + (pathCategories.security_probe || 0);
+
+  const recommendations = [];
+  if (apiRequests > 0) {
+    recommendations.push('Keep API and MCP answer paths as the primary product surface; /api/evidence and /api/context are already real traffic magnets.');
+  }
+  if (machineArtifactRequests > 0) {
+    recommendations.push('Keep signed machine artifacts observable and integrity-checked; defer durable caching until versioned artifact URLs or deploy-time purging exist.');
+  }
+  if (aiRequests > 0 && aiRequests < apiRequests) {
+    recommendations.push('Treat AI crawler discovery as present but early; improve agent-facing discovery before broad content expansion.');
+  }
+  if (scannerRequests > 0) {
+    recommendations.push('Keep WAF/security hygiene on the roadmap; WordPress/env probes are noise, not product demand.');
+  }
+  if (syntheticRequests > 0) {
+    recommendations.push('Separate synthetic monitor traffic from product usage in future scorecards.');
+  }
+
+  return {
+    generated: options.generatedAt || new Date().toISOString(),
+    window: data.window || {},
+    source: {
+      provider: 'cloudflare_graphql_analytics',
+      zone_name: data.zoneName || DEFAULT_ZONE_NAME,
+      zone_id: data.zoneId || null
+    },
+    totals: {
+      requests: totalRequests,
+      bytes: totalBytes,
+      bytes_human: bytesToHuman(totalBytes)
+    },
+    observed_top_path_categories: topEntries(pathCategories, 20),
+    observed_top_user_agent_categories: topEntries(userAgentCategories, 20),
+    ai_agents: topEntries(aiAgents, 20),
+    search_agents: topEntries(searchAgents, 20),
+    scanner_agents: topEntries(scannerAgents, 20),
+    top_api_paths: topApiPaths,
+    top_machine_artifacts: topMachineArtifacts,
+    security_probe_paths: securityProbePaths,
+    ai_path_evidence: aiPathEvidence,
+    status_codes: statusCodes.map(row => ({ status: row.dimensions?.edgeResponseStatus, requests: row.count })),
+    methods: methods.map(row => ({ method: row.dimensions?.clientRequestHTTPMethodName, requests: row.count })),
+    countries: countries.map(row => ({ country: row.dimensions?.clientCountryName, requests: row.count })),
+    daily: daily.map(row => ({
+      date: row.dimensions?.date,
+      requests: row.sum?.requests || 0,
+      bytes: row.sum?.bytes || 0,
+      cached_requests: row.sum?.cachedRequests || 0,
+      cached_bytes: row.sum?.cachedBytes || 0,
+      page_views: row.sum?.pageViews || 0,
+      threats: row.sum?.threats || 0,
+      uniques: row.uniq?.uniques || 0
+    })),
+    recommendations
+  };
+}
+
+export function renderCloudflareUsageReport(report) {
+  const lines = [];
+  lines.push(`# AnchorFact Cloudflare Usage Report`);
+  lines.push('');
+  lines.push(`Generated: ${report.generated}`);
+  lines.push(`Window: ${report.window.since || 'unknown'} to ${report.window.until || 'unknown'}`);
+  lines.push(`Zone: ${report.source.zone_name}`);
+  lines.push('');
+  lines.push(`## Summary`);
+  lines.push('');
+  lines.push(`- Requests: ${report.totals.requests}`);
+  lines.push(`- Transfer: ${report.totals.bytes_human}`);
+  lines.push(`- Top path categories: ${report.observed_top_path_categories.map(item => `${item.name}=${item.count}`).join(', ') || 'none'}`);
+  lines.push(`- Top UA categories: ${report.observed_top_user_agent_categories.map(item => `${item.name}=${item.count}`).join(', ') || 'none'}`);
+  lines.push('');
+  lines.push(`## Product Signals`);
+  lines.push('');
+  for (const item of report.top_api_paths.slice(0, 8)) {
+    lines.push(`- ${item.path}: ${item.requests} requests, ${bytesToHuman(item.bytes)}`);
+  }
+  if (report.top_api_paths.length === 0) lines.push('- No API paths observed in the top path sample.');
+  lines.push('');
+  lines.push(`## Machine Artifacts`);
+  lines.push('');
+  for (const item of report.top_machine_artifacts.slice(0, 8)) {
+    lines.push(`- ${item.path}: ${item.requests} requests, ${bytesToHuman(item.bytes)}`);
+  }
+  if (report.top_machine_artifacts.length === 0) lines.push('- No machine artifacts observed in the top path sample.');
+  lines.push('');
+  lines.push(`## AI Discovery`);
+  lines.push('');
+  if (report.ai_agents.length > 0) {
+    for (const item of report.ai_agents) lines.push(`- ${item.name}: ${item.count} requests`);
+  } else {
+    lines.push('- No AI-specific user agents observed in the top user-agent sample.');
+  }
+  if (report.ai_path_evidence.length > 0) {
+    lines.push('');
+    lines.push('Observed AI paths:');
+    for (const item of report.ai_path_evidence.slice(0, 8)) {
+      lines.push(`- ${item.user_agent_label} ${item.method} ${item.path} -> ${item.status} (${item.requests})`);
+    }
+  }
+  lines.push('');
+  lines.push(`## Security Noise`);
+  lines.push('');
+  for (const item of report.security_probe_paths) {
+    lines.push(`- ${item.path}: ${item.requests} requests, ${bytesToHuman(item.bytes)}`);
+  }
+  if (report.security_probe_paths.length === 0) lines.push('- No obvious security probes observed in the top path sample.');
+  lines.push('');
+  lines.push(`## Recommendations`);
+  lines.push('');
+  for (const item of report.recommendations) lines.push(`- ${item}`);
+  if (report.recommendations.length === 0) lines.push('- No strong recommendation from this sample.');
+  lines.push('');
+  return `${lines.join('\n')}\n`;
+}
+
+function graphqlUsageQuery() {
+  return `query Usage($zoneTag: string, $filter: ZoneHttpRequestsAdaptiveGroupsFilter_InputObject, $dailyFilter: ZoneHttpRequests1dGroupsFilter_InputObject) {
+  viewer {
+    zones(filter: { zoneTag: $zoneTag }) {
+      totals: httpRequestsAdaptiveGroups(limit: 1, filter: $filter) { count sum { edgeResponseBytes } }
+      topPaths: httpRequestsAdaptiveGroups(limit: 100, filter: $filter, orderBy: [count_DESC]) { count sum { edgeResponseBytes } dimensions { clientRequestPath } }
+      topUAs: httpRequestsAdaptiveGroups(limit: 100, filter: $filter, orderBy: [count_DESC]) { count dimensions { userAgent } }
+      pathUa: httpRequestsAdaptiveGroups(limit: 100, filter: $filter, orderBy: [count_DESC]) { count sum { edgeResponseBytes } dimensions { clientRequestPath userAgent edgeResponseStatus clientRequestHTTPMethodName } }
+      statusCodes: httpRequestsAdaptiveGroups(limit: 20, filter: $filter, orderBy: [count_DESC]) { count dimensions { edgeResponseStatus } }
+      methods: httpRequestsAdaptiveGroups(limit: 10, filter: $filter, orderBy: [count_DESC]) { count dimensions { clientRequestHTTPMethodName } }
+      countries: httpRequestsAdaptiveGroups(limit: 20, filter: $filter, orderBy: [count_DESC]) { count dimensions { clientCountryName } }
+      daily: httpRequests1dGroups(limit: 14, filter: $dailyFilter, orderBy: [date_ASC]) {
+        dimensions { date }
+        sum { requests bytes cachedRequests cachedBytes pageViews threats }
+        uniq { uniques }
+      }
+    }
+  }
+}`;
+}
+
+async function cloudflareJson(fetchImpl, path, token, init = {}) {
+  const response = await fetchImpl(`${CLOUDFLARE_API_BASE}${path}`, {
+    ...init,
+    headers: {
+      Authorization: `Bearer ${token}`,
+      'Content-Type': 'application/json',
+      ...(init.headers || {})
+    }
+  });
+  const json = await response.json();
+  if (!response.ok || json.success === false) {
+    const message = json.errors?.map(error => error.message).join('; ') || `Cloudflare request failed with ${response.status}`;
+    throw new Error(message);
+  }
+  return json;
+}
+
+async function findZone(fetchImpl, token, zoneName) {
+  const json = await cloudflareJson(fetchImpl, `/zones?name=${encodeURIComponent(zoneName)}&per_page=5`, token);
+  const zones = json.result || [];
+  if (zones.length === 0) throw new Error(`Cloudflare zone not found for ${zoneName}`);
+  return zones[0];
+}
+
+export async function fetchCloudflareUsageReport(options = {}) {
+  const token = options.token || process.env.CLOUDFLARE_API_TOKEN || process.env.CF_API_TOKEN;
+  if (!token) throw new Error('CLOUDFLARE_API_TOKEN is required');
+  const fetchImpl = options.fetchImpl || globalThis.fetch;
+  if (!fetchImpl) throw new Error('fetch is required');
+  const zoneName = options.zoneName || DEFAULT_ZONE_NAME;
+  const zone = options.zoneId ? { id: options.zoneId, name: zoneName } : await findZone(fetchImpl, token, zoneName);
+  const lookbackMinutes = Math.min(
+    Number(options.lookbackMinutes || DEFAULT_LOOKBACK_MINUTES),
+    MAX_ADAPTIVE_LOOKBACK_MINUTES
+  );
+  const dailyDays = Math.max(1, Number(options.dailyDays || DEFAULT_DAILY_DAYS));
+  const until = options.until || new Date();
+  const since = new Date(until.getTime() - lookbackMinutes * 60 * 1000);
+  const dailySince = new Date(until.getTime() - dailyDays * 24 * 60 * 60 * 1000);
+  const variables = {
+    zoneTag: zone.id,
+    filter: {
+      datetime_geq: since.toISOString(),
+      datetime_lt: until.toISOString()
+    },
+    dailyFilter: {
+      date_geq: dailySince.toISOString().slice(0, 10),
+      date_leq: until.toISOString().slice(0, 10)
+    }
+  };
+  const response = await fetchImpl(GRAPHQL_ENDPOINT, {
+    method: 'POST',
+    headers: {
+      Authorization: `Bearer ${token}`,
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ query: graphqlUsageQuery(), variables })
+  });
+  const json = await response.json();
+  if (!response.ok || json.errors) {
+    const message = json.errors?.map(error => error.message).join('; ') || `Cloudflare GraphQL request failed with ${response.status}`;
+    throw new Error(message);
+  }
+  const graphZone = json.data?.viewer?.zones?.[0];
+  if (!graphZone) throw new Error(`Cloudflare GraphQL returned no zone data for ${zoneName}`);
+  return buildCloudflareUsageSummary({
+    zone: graphZone,
+    zoneId: zone.id,
+    zoneName: zone.name || zoneName,
+    window: {
+      since: variables.filter.datetime_geq,
+      until: variables.filter.datetime_lt,
+      adaptive_lookback_minutes: lookbackMinutes,
+      daily_since: variables.dailyFilter.date_geq,
+      daily_until: variables.dailyFilter.date_leq
+    }
+  }, { generatedAt: options.generatedAt });
+}
+
+function parseArgs(argv) {
+  const args = {
+    zoneName: DEFAULT_ZONE_NAME,
+    json: false
+  };
+  for (let index = 0; index < argv.length; index++) {
+    const arg = argv[index];
+    if (arg === '--json') args.json = true;
+    else if (arg === '--zone') args.zoneName = argv[++index];
+    else if (arg === '--zone-id') args.zoneId = argv[++index];
+    else if (arg === '--lookback-minutes') args.lookbackMinutes = Number(argv[++index]);
+    else if (arg === '--daily-days') args.dailyDays = Number(argv[++index]);
+    else if (arg === '--write') args.write = argv[++index];
+    else if (arg === '--write-json') args.writeJson = argv[++index];
+    else if (arg === '--help') args.help = true;
+    else throw new Error(`Unknown argument: ${arg}`);
+  }
+  return args;
+}
+
+function usage() {
+  return `Usage: npm run usage:cloudflare -- [--json] [--zone anchorfact.org] [--zone-id id] [--lookback-minutes 1430] [--daily-days 7] [--write report.md] [--write-json report.json]
+
+Required environment:
+  CLOUDFLARE_API_TOKEN  Cloudflare API token with Zone:Read and Analytics:Read for the target zone.
+`;
+}
+
+async function main(argv = process.argv.slice(2)) {
+  const args = parseArgs(argv);
+  if (args.help) {
+    console.log(usage());
+    return;
+  }
+  const report = await fetchCloudflareUsageReport(args);
+  const markdown = renderCloudflareUsageReport(report);
+  if (args.write) {
+    const out = resolve(args.write);
+    mkdirSync(dirname(out), { recursive: true });
+    writeFileSync(out, markdown);
+  }
+  if (args.writeJson) {
+    const out = resolve(args.writeJson);
+    mkdirSync(dirname(out), { recursive: true });
+    writeFileSync(out, `${JSON.stringify(report, null, 2)}\n`);
+  }
+  process.stdout.write(args.json ? `${JSON.stringify(report, null, 2)}\n` : markdown);
+}
+
+if (import.meta.url === pathToFileURL(process.argv[1]).href) {
+  main().catch(error => {
+    console.error(`Cloudflare usage report failed: ${error.message}`);
+    process.exit(1);
+  });
+}
