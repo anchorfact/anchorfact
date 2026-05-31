@@ -1,11 +1,13 @@
 #!/usr/bin/env node
 import { createHash } from 'crypto';
 import { pathToFileURL } from 'url';
+import { mapWithConcurrency, positiveInteger } from './lib/concurrency.js';
 import { fetchLiveText } from './lib/live-http.js';
 
 const DEFAULT_BASE_URL = 'https://anchorfact.org/';
 const DEFAULT_ROUTE_RETRIES = 2;
 const DEFAULT_ROUTE_RETRY_DELAY_MS = 250;
+const DEFAULT_ROUTE_CONCURRENCY = 4;
 const DEFAULT_JSON_RETRIES = 2;
 const DEFAULT_JSON_RETRY_DELAY_MS = 250;
 
@@ -57,11 +59,12 @@ export async function fetchRoute(baseUrl, route, options = {}) {
   const url = new URL(route, baseUrl);
   const routeRetries = Number.isFinite(options.routeRetries) ? options.routeRetries : DEFAULT_ROUTE_RETRIES;
   const routeRetryDelayMs = Number.isFinite(options.routeRetryDelayMs) ? options.routeRetryDelayMs : DEFAULT_ROUTE_RETRY_DELAY_MS;
+  const fetchImpl = typeof options.fetchImpl === 'function' ? options.fetchImpl : fetch;
   const maxAttempts = Math.max(1, routeRetries + 1);
   let result = null;
 
   for (let attempt = 1; attempt <= maxAttempts; attempt++) {
-    const response = await fetchLiveText(fetch, url, {
+    const response = await fetchLiveText(fetchImpl, url, {
       retries: routeRetries,
       retryDelayMs: routeRetryDelayMs
     });
@@ -84,6 +87,16 @@ export async function fetchRoute(baseUrl, route, options = {}) {
   }
 
   return result;
+}
+
+export async function fetchRoutes(baseUrl, routes, options = {}) {
+  const routeConcurrency = positiveInteger(options.routeConcurrency, DEFAULT_ROUTE_CONCURRENCY);
+  const fetchedRoutes = await mapWithConcurrency(routes, routeConcurrency, async (route) => fetchRoute(baseUrl, route, options));
+  const results = {};
+  for (let index = 0; index < routes.length; index++) {
+    results[routes[index]] = fetchedRoutes[index];
+  }
+  return results;
 }
 
 export async function readJsonRoute(baseUrl, route, results, options = {}) {
@@ -210,8 +223,8 @@ export async function main() {
   const routes = ['/', '/robots.txt', '/sitemap.xml', '/agent.json', '/.well-known/anchorfact.json', '/openapi.json', '/manifest.json', '/llms.txt', '/claims.json', '/topics.json', '/capabilities.json', '/content-health.json', '/coverage.json', '/examples.json', '/graph.json', '/evals.json', '/mcp.json', '/api', '/api/plan?q=gaussian&limit=2', '/api/evidence?q=gaussian&limit=2', '/api/evidence?q=gaussian&limit=1&format=markdown', '/api/context?q=gaussian&limit=2', '/api/context?q=gaussian&limit=1&format=markdown', '/api/resolve?ref=f1', '/api/resolve-batch?ref=f1&ref=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079', '/api/resolve-batch?ref=f1&ref=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079&format=markdown', '/api/search?q=gaussian&limit=2', '/api/article?slug=ai/3d-generation-gaussian-splatting', '/api/claim?id=f1', '/api/cite?id=f1', '/api/cite?id=f1&format=markdown', '/api/source?url=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079', '/search-index.json', '/sources.json', '/provenance.json', '/provenance.sig', '/drafts.html'];
   const results = {};
 
+  Object.assign(results, await fetchRoutes(baseUrl, routes));
   for (const route of routes) {
-    results[route] = await fetchRoute(baseUrl, route);
     assertOk(results[route].status === 200, `${route} returned ${results[route].status}`, failures);
   }
 
@@ -252,18 +265,14 @@ export async function main() {
   const draftsHtml = results['/drafts.html'].body;
   const exampleRoutes = exampleWorkflowRoutes(examples);
   assertOk(exampleRoutes.length >= 4, '/examples.json exposes too few executable workflow calls', failures);
+  Object.assign(results, await fetchRoutes(baseUrl, exampleRoutes.filter(route => !results[route])));
   for (const route of exampleRoutes) {
-    if (!results[route]) {
-      results[route] = await fetchRoute(baseUrl, route);
-    }
     assertOk(results[route].status === 200, `example workflow route ${route} returned ${results[route].status}`, failures);
   }
   const evalRoutes = evalCallRoutes(evals);
   assertOk(evalRoutes.length >= 4, '/evals.json exposes too few executable checks', failures);
+  Object.assign(results, await fetchRoutes(baseUrl, evalRoutes.filter(route => !results[route])));
   for (const route of evalRoutes) {
-    if (!results[route]) {
-      results[route] = await fetchRoute(baseUrl, route);
-    }
     assertOk(results[route].status === 200, `eval route ${route} returned ${results[route].status}`, failures);
   }
 

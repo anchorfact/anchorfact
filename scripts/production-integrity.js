@@ -4,6 +4,7 @@ import { mkdirSync, readFileSync, writeFileSync } from 'fs';
 import { dirname, resolve } from 'path';
 import { pathToFileURL } from 'url';
 import { OFFICIAL_SITE } from '../src/lib/build-metadata.js';
+import { mapWithConcurrency, positiveInteger } from '../src/lib/concurrency.js';
 import { fetchLiveText } from '../src/lib/live-http.js';
 import { verifyLiveProvenance } from '../src/lib/provenance-verify.js';
 import { runAiEvals } from './run-ai-evals.js';
@@ -45,6 +46,7 @@ export const DEFAULT_EDGE_CACHE_DYNAMIC_CONTROLS = [
 export const DEFAULT_EDGE_CACHE_ROUTE_RETRIES = 4;
 export const DEFAULT_EDGE_CACHE_RETRY_DELAY_MS = 500;
 export const DEFAULT_EDGE_CACHE_REQUEST_TIMEOUT_MS = 5000;
+export const DEFAULT_EDGE_CACHE_DYNAMIC_CONCURRENCY = 4;
 export const DEFAULT_INTEGRITY_EVAL_OPTIONS = {
   routeRetries: 4,
   routeRetryDelayMs: 750,
@@ -142,11 +144,13 @@ export async function checkProductionEdgeCache({
   staticAttempts = 2,
   routeRetries = DEFAULT_EDGE_CACHE_ROUTE_RETRIES,
   routeRetryDelayMs = DEFAULT_EDGE_CACHE_RETRY_DELAY_MS,
-  requestTimeoutMs = DEFAULT_EDGE_CACHE_REQUEST_TIMEOUT_MS
+  requestTimeoutMs = DEFAULT_EDGE_CACHE_REQUEST_TIMEOUT_MS,
+  dynamicConcurrency = DEFAULT_EDGE_CACHE_DYNAMIC_CONCURRENCY
 } = {}) {
   const failures = [];
   const staticResults = [];
   const maxStaticAttempts = Math.max(1, Number(staticAttempts) || 1);
+  const maxDynamicConcurrency = positiveInteger(dynamicConcurrency, DEFAULT_EDGE_CACHE_DYNAMIC_CONCURRENCY);
 
   for (const path of staticArtifacts) {
     const attempts = [];
@@ -173,8 +177,7 @@ export async function checkProductionEdgeCache({
     });
   }
 
-  const dynamicResults = [];
-  for (const path of dynamicControls) {
+  const dynamicChecks = await mapWithConcurrency(dynamicControls, maxDynamicConcurrency, async (path) => {
     const response = await fetchLiveText(fetchImpl, routeUrl(baseUrl, path), {
       method: 'HEAD',
       retries: routeRetries,
@@ -182,22 +185,29 @@ export async function checkProductionEdgeCache({
       timeoutMs: requestTimeoutMs
     });
     const result = { path, ...cacheAttempt(path, response) };
+    const resultFailures = [];
     if (!result.ok) {
-      failures.push(`${path} returned status ${result.status}; expected a successful dynamic control response`);
+      resultFailures.push(`${path} returned status ${result.status}; expected a successful dynamic control response`);
     }
     if (!result.cf_cache_status) {
-      failures.push(`${path} did not return a cf-cache-status header`);
+      resultFailures.push(`${path} did not return a cf-cache-status header`);
     } else if (EDGE_CACHE_HIT_STATUSES.has(result.cf_cache_status)) {
-      failures.push(`${path} returned cache status ${result.cf_cache_status}; dynamic controls must remain uncached`);
+      resultFailures.push(`${path} returned cache status ${result.cf_cache_status}; dynamic controls must remain uncached`);
     }
     if (!isRevalidatedCacheControl(result.cache_control)) {
-      failures.push(`${path} cache-control must be revalidated by clients, got ${result.cache_control || '(missing)'}`);
+      resultFailures.push(`${path} cache-control must be revalidated by clients, got ${result.cache_control || '(missing)'}`);
     }
     result.ok = result.ok
       && Boolean(result.cf_cache_status)
       && !EDGE_CACHE_HIT_STATUSES.has(result.cf_cache_status)
       && isRevalidatedCacheControl(result.cache_control);
-    dynamicResults.push(result);
+    return { result, failures: resultFailures };
+  });
+
+  const dynamicResults = [];
+  for (const check of dynamicChecks) {
+    dynamicResults.push(check.result);
+    failures.push(...check.failures);
   }
 
   return {

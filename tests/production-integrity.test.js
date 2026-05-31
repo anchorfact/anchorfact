@@ -7,7 +7,7 @@ import {
   renderIntegrityMarkdown,
   runProductionIntegrity
 } from '../scripts/production-integrity.js';
-import { REQUIRED_SECURITY_HEADERS, evalCallRoutes, exampleWorkflowRoutes, fetchRoute, hasCanonicalSlug, readJsonRoute, repairQueueBatchFailures } from '../src/smoke-production.js';
+import { REQUIRED_SECURITY_HEADERS, evalCallRoutes, exampleWorkflowRoutes, fetchRoute, fetchRoutes, hasCanonicalSlug, readJsonRoute, repairQueueBatchFailures } from '../src/smoke-production.js';
 
 let passed = 0, failed = 0;
 const tests = [];
@@ -230,6 +230,33 @@ test('checkProductionEdgeCache retries transient dynamic control network failure
   assertEq(result.dynamic_controls[0].status, 200);
 });
 
+test('checkProductionEdgeCache limits dynamic control concurrency and preserves result order', async () => {
+  let active = 0;
+  let maxActive = 0;
+  const dynamicControls = ['/first.json', '/second.json', '/third.json', '/fourth.json'];
+  const result = await checkProductionEdgeCache({
+    baseUrl: 'https://anchorfact.org',
+    staticArtifacts: [],
+    dynamicControls,
+    dynamicConcurrency: 2,
+    fetchImpl: async () => {
+      active++;
+      maxActive = Math.max(maxActive, active);
+      await new Promise(resolve => setTimeout(resolve, 5));
+      active--;
+      return edgeResponse({
+        cacheStatus: 'DYNAMIC',
+        age: '0',
+        cacheControl: 'public, max-age=0, must-revalidate'
+      });
+    }
+  });
+
+  assertEq(result.ok, true);
+  assertEq(result.dynamic_controls.map(item => item.path), dynamicControls);
+  assertEq(maxActive, 2);
+});
+
 test('checkProductionEdgeCache fails when a static artifact remains dynamic', async () => {
   const result = await checkProductionEdgeCache({
     baseUrl: 'https://anchorfact.org',
@@ -418,6 +445,35 @@ test('production smoke fetches routes with CI-friendly live headers', async () =
   assert(calls[0].options.redirect === 'follow', 'smoke fetch should follow redirects');
   assert(calls[0].options.headers['User-Agent'].includes('Mozilla/5.0'), 'smoke fetch should send a browser-compatible user agent');
   assert(calls[0].options.headers.Accept.includes('application/json'), 'smoke fetch should accept JSON');
+});
+
+test('production smoke fetches route groups with bounded concurrency and stable keys', async () => {
+  let active = 0;
+  let maxActive = 0;
+  const routes = ['/one.json', '/two.json', '/three.json', '/four.json'];
+  const results = await fetchRoutes('https://anchorfact.org', routes, {
+    routeConcurrency: 2,
+    routeRetries: 0,
+    fetchImpl: async (url) => {
+      active++;
+      maxActive = Math.max(maxActive, active);
+      await new Promise(resolve => setTimeout(resolve, 5));
+      active--;
+      return {
+        status: 200,
+        ok: true,
+        url: String(url),
+        headers: new Map([['content-type', 'application/json; charset=utf-8']]),
+        async text() {
+          return '{"ok":true}';
+        }
+      };
+    }
+  });
+
+  assertEq(Object.keys(results), routes);
+  assertEq(Object.values(results).every(result => result.status === 200), true);
+  assertEq(maxActive, 2);
 });
 
 test('production smoke retries transient route fetch failures', async () => {
