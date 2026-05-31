@@ -121,7 +121,7 @@ npm run verify:provenance:signed
 
 ## Production Integrity Monitor
 
-The scheduled `Production Integrity` workflow runs daily and can also be started manually from GitHub Actions. It is read-only: it runs production smoke, executes AI evals, requires signed trusted provenance, confirms security response headers, artifact hashes and counts, verifies that signed machine artifacts and API routes stay dynamically revalidated at the Cloudflare edge, and uploads a short integrity report artifact.
+The scheduled `Production Integrity` workflow runs daily and can also be started manually from GitHub Actions. It is read-only: it runs production smoke, executes AI evals, requires signed trusted provenance, confirms security response headers, artifact hashes and counts, verifies that signed machine artifacts and API routes stay dynamically revalidated at the Cloudflare edge, and uploads a short integrity report artifact. Non-versioned signed artifacts use `max-age=0, must-revalidate`; durable caching should be added only with versioned artifact URLs or deployment-time cache purging.
 
 For the same local read-only check, run:
 

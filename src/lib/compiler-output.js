@@ -278,6 +278,33 @@ Provenance: https://anchorfact.org/provenance.json
 }
 
 function writeHeaders(distDir) {
+  const revalidatedMachineArtifacts = [
+    ['/agent.json', 'application/json'],
+    ['/.well-known/anchorfact.json', 'application/json'],
+    ['/openapi.json', 'application/json'],
+    ['/manifest.json', 'application/json'],
+    ['/llms.txt', 'text/plain'],
+    ['/claims.json', 'application/json'],
+    ['/topics.json', 'application/json'],
+    ['/capabilities.json', 'application/json'],
+    ['/content-health.json', 'application/json'],
+    ['/coverage.json', 'application/json'],
+    ['/examples.json', 'application/json'],
+    ['/graph.json', 'application/json'],
+    ['/evals.json', 'application/json'],
+    ['/mcp.json', 'application/json'],
+    ['/search-index.json', 'application/json'],
+    ['/sources.json', 'application/json'],
+    ['/provenance.json', 'application/json'],
+    ['/provenance.sig', 'application/json']
+  ];
+  const machineArtifactHeaders = revalidatedMachineArtifacts
+    .map(([path, contentType]) => `${path}
+  Access-Control-Allow-Origin: *
+  Content-Type: ${contentType}; charset=utf-8
+  Cache-Control: public, max-age=0, must-revalidate`)
+    .join('\n\n');
+
   const headersFile = `# _headers - AnchorFact AI-optimized headers with security hardening
 /*
   X-Content-Type-Options: nosniff
@@ -295,90 +322,7 @@ function writeHeaders(distDir) {
   Content-Type: text/turtle; charset=utf-8
   Cache-Control: public, max-age=86400
 
-/claims.json
-  Access-Control-Allow-Origin: *
-  Content-Type: application/json; charset=utf-8
-  Cache-Control: public, max-age=3600
-
-/topics.json
-  Access-Control-Allow-Origin: *
-  Content-Type: application/json; charset=utf-8
-  Cache-Control: public, max-age=3600
-
-/capabilities.json
-  Access-Control-Allow-Origin: *
-  Content-Type: application/json; charset=utf-8
-  Cache-Control: public, max-age=3600
-
-/content-health.json
-  Access-Control-Allow-Origin: *
-  Content-Type: application/json; charset=utf-8
-  Cache-Control: public, max-age=3600
-
-/coverage.json
-  Access-Control-Allow-Origin: *
-  Content-Type: application/json; charset=utf-8
-  Cache-Control: public, max-age=3600
-
-/examples.json
-  Access-Control-Allow-Origin: *
-  Content-Type: application/json; charset=utf-8
-  Cache-Control: public, max-age=3600
-
-/graph.json
-  Access-Control-Allow-Origin: *
-  Content-Type: application/json; charset=utf-8
-  Cache-Control: public, max-age=3600
-
-/evals.json
-  Access-Control-Allow-Origin: *
-  Content-Type: application/json; charset=utf-8
-  Cache-Control: public, max-age=3600
-
-/mcp.json
-  Access-Control-Allow-Origin: *
-  Content-Type: application/json; charset=utf-8
-  Cache-Control: public, max-age=3600
-
-/search-index.json
-  Access-Control-Allow-Origin: *
-  Content-Type: application/json; charset=utf-8
-  Cache-Control: public, max-age=3600
-
-/sources.json
-  Access-Control-Allow-Origin: *
-  Content-Type: application/json; charset=utf-8
-  Cache-Control: public, max-age=3600
-
-/agent.json
-  Access-Control-Allow-Origin: *
-  Content-Type: application/json; charset=utf-8
-  Cache-Control: public, max-age=3600
-
-/openapi.json
-  Access-Control-Allow-Origin: *
-  Content-Type: application/json; charset=utf-8
-  Cache-Control: public, max-age=3600
-
-/.well-known/anchorfact.json
-  Access-Control-Allow-Origin: *
-  Content-Type: application/json; charset=utf-8
-  Cache-Control: public, max-age=3600
-
-/manifest.json
-  Access-Control-Allow-Origin: *
-  Content-Type: application/json; charset=utf-8
-  Cache-Control: public, max-age=3600
-
-/provenance.json
-  Access-Control-Allow-Origin: *
-  Content-Type: application/json; charset=utf-8
-  Cache-Control: public, max-age=0, must-revalidate
-
-/provenance.sig
-  Access-Control-Allow-Origin: *
-  Content-Type: application/json; charset=utf-8
-  Cache-Control: public, max-age=0, must-revalidate
+${machineArtifactHeaders}
 
 /drafts
   X-Robots-Tag: noindex, nofollow

@@ -55,7 +55,12 @@ function provenanceResult(overrides = {}) {
   };
 }
 
-function edgeResponse({ status = 200, cacheStatus = 'HIT', age = '1' } = {}) {
+function edgeResponse({
+  status = 200,
+  cacheStatus = 'HIT',
+  age = '1',
+  cacheControl = 'public, max-age=3600'
+} = {}) {
   return {
     status,
     ok: status >= 200 && status < 300,
@@ -63,7 +68,7 @@ function edgeResponse({ status = 200, cacheStatus = 'HIT', age = '1' } = {}) {
     headers: new Map([
       ['cf-cache-status', cacheStatus],
       ['age', age],
-      ['cache-control', 'public, max-age=3600']
+      ['cache-control', cacheControl]
     ]),
     async text() {
       return '';
@@ -188,7 +193,7 @@ test('checkProductionEdgeCache verifies static artifacts warm to cache hits and 
       const count = (perPathCalls.get(path) || 0) + 1;
       perPathCalls.set(path, count);
       calls.push({ path, method: options.method });
-      if (path.startsWith('/api/')) return edgeResponse({ cacheStatus: 'DYNAMIC', age: '0' });
+      if (path.startsWith('/api/')) return edgeResponse({ cacheStatus: 'DYNAMIC', age: '0', cacheControl: 'public, max-age=0, must-revalidate' });
       return edgeResponse({ cacheStatus: count === 1 ? 'MISS' : 'HIT', age: count === 1 ? '0' : '1' });
     }
   });
@@ -209,7 +214,7 @@ test('checkProductionEdgeCache fails when a static artifact remains dynamic', as
     fetchImpl: async (url) => {
       const parsed = new URL(String(url));
       return parsed.pathname.startsWith('/api/')
-        ? edgeResponse({ cacheStatus: 'DYNAMIC', age: '0' })
+        ? edgeResponse({ cacheStatus: 'DYNAMIC', age: '0', cacheControl: 'public, max-age=0, must-revalidate' })
         : edgeResponse({ cacheStatus: 'DYNAMIC', age: '0' });
     }
   });
@@ -227,7 +232,7 @@ test('checkProductionEdgeCache fails when an API control is edge cached', async 
     fetchImpl: async (url) => {
       const parsed = new URL(String(url));
       return parsed.pathname.startsWith('/api/')
-        ? edgeResponse({ cacheStatus: 'HIT', age: '5' })
+        ? edgeResponse({ cacheStatus: 'HIT', age: '5', cacheControl: 'public, max-age=0, must-revalidate' })
         : edgeResponse({ cacheStatus: 'HIT', age: '5' });
     }
   });
@@ -235,6 +240,23 @@ test('checkProductionEdgeCache fails when an API control is edge cached', async 
   assertEq(result.ok, false);
   assert(result.failures.some(failure => failure.includes('/api/context')), 'dynamic control failure should name the API route');
   assertEq(result.dynamic_controls[0].cf_cache_status, 'HIT');
+});
+
+test('checkProductionEdgeCache fails when a dynamic control remains client-cacheable', async () => {
+  const result = await checkProductionEdgeCache({
+    baseUrl: 'https://anchorfact.org',
+    staticArtifacts: [],
+    dynamicControls: ['/graph.json'],
+    fetchImpl: async () => edgeResponse({
+      cacheStatus: 'DYNAMIC',
+      age: '0',
+      cacheControl: 'public, max-age=3600'
+    })
+  });
+
+  assertEq(result.ok, false);
+  assert(result.failures.some(failure => failure.includes('must be revalidated by clients')), 'dynamic cache-control failure should be explicit');
+  assertEq(result.dynamic_controls[0].cache_control, 'public, max-age=3600');
 });
 
 test('default edge cache controls keep signed provenance dynamic', () => {

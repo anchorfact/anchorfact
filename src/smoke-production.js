@@ -207,7 +207,7 @@ export async function main() {
   const expectedDraft = readExpectedInt('EXPECTED_DRAFT_ARTICLES');
   const expectedClaims = readExpectedInt('EXPECTED_CLAIMS');
 
-  const routes = ['/', '/robots.txt', '/sitemap.xml', '/agent.json', '/.well-known/anchorfact.json', '/openapi.json', '/manifest.json', '/llms.txt', '/claims.json', '/topics.json', '/capabilities.json', '/content-health.json', '/coverage.json', '/examples.json', '/graph.json', '/evals.json', '/mcp.json', '/api', '/api/plan?q=gaussian&limit=2', '/api/evidence?q=gaussian&limit=2', '/api/evidence?q=gaussian&limit=1&format=markdown', '/api/context?q=gaussian&limit=2', '/api/context?q=gaussian&limit=1&format=markdown', '/api/resolve?ref=f1', '/api/resolve-batch?ref=f1&ref=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079', '/api/resolve-batch?ref=f1&ref=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079&format=markdown', '/api/search?q=gaussian&limit=2', '/api/article?slug=ai/3d-generation-gaussian-splatting', '/api/claim?id=f1', '/api/cite?id=f1', '/api/cite?id=f1&format=markdown', '/api/source?url=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079', '/search-index.json', '/sources.json', '/provenance.json', '/drafts.html'];
+  const routes = ['/', '/robots.txt', '/sitemap.xml', '/agent.json', '/.well-known/anchorfact.json', '/openapi.json', '/manifest.json', '/llms.txt', '/claims.json', '/topics.json', '/capabilities.json', '/content-health.json', '/coverage.json', '/examples.json', '/graph.json', '/evals.json', '/mcp.json', '/api', '/api/plan?q=gaussian&limit=2', '/api/evidence?q=gaussian&limit=2', '/api/evidence?q=gaussian&limit=1&format=markdown', '/api/context?q=gaussian&limit=2', '/api/context?q=gaussian&limit=1&format=markdown', '/api/resolve?ref=f1', '/api/resolve-batch?ref=f1&ref=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079', '/api/resolve-batch?ref=f1&ref=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079&format=markdown', '/api/search?q=gaussian&limit=2', '/api/article?slug=ai/3d-generation-gaussian-splatting', '/api/claim?id=f1', '/api/cite?id=f1', '/api/cite?id=f1&format=markdown', '/api/source?url=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079', '/search-index.json', '/sources.json', '/provenance.json', '/provenance.sig', '/drafts.html'];
   const results = {};
 
   for (const route of routes) {
@@ -559,12 +559,10 @@ export async function main() {
   headerIncludes(results['/.well-known/anchorfact.json'], 'Access-Control-Allow-Origin', '*', failures);
   headerIncludes(results['/openapi.json'], 'Access-Control-Allow-Origin', '*', failures);
   headerIncludes(results['/manifest.json'], 'Access-Control-Allow-Origin', '*', failures);
-  headerIncludes(results['/manifest.json'], 'Cache-Control', 'max-age=3600', failures);
   headerIncludes(results['/claims.json'], 'Access-Control-Allow-Origin', '*', failures);
   headerIncludes(results['/topics.json'], 'Access-Control-Allow-Origin', '*', failures);
   headerIncludes(results['/capabilities.json'], 'Access-Control-Allow-Origin', '*', failures);
   headerIncludes(results['/content-health.json'], 'Access-Control-Allow-Origin', '*', failures);
-  headerIncludes(results['/content-health.json'], 'Cache-Control', 'max-age=3600', failures);
   headerIncludes(results['/coverage.json'], 'Access-Control-Allow-Origin', '*', failures);
   headerIncludes(results['/examples.json'], 'Access-Control-Allow-Origin', '*', failures);
   headerIncludes(results['/graph.json'], 'Access-Control-Allow-Origin', '*', failures);
@@ -592,7 +590,28 @@ export async function main() {
   headerIncludes(results['/search-index.json'], 'Access-Control-Allow-Origin', '*', failures);
   headerIncludes(results['/sources.json'], 'Access-Control-Allow-Origin', '*', failures);
   headerIncludes(results['/provenance.json'], 'Access-Control-Allow-Origin', '*', failures);
-  headerIncludes(results['/provenance.json'], 'Cache-Control', 'max-age=0, must-revalidate', failures);
+  for (const route of [
+    '/agent.json',
+    '/.well-known/anchorfact.json',
+    '/openapi.json',
+    '/manifest.json',
+    '/llms.txt',
+    '/claims.json',
+    '/topics.json',
+    '/capabilities.json',
+    '/content-health.json',
+    '/coverage.json',
+    '/examples.json',
+    '/graph.json',
+    '/evals.json',
+    '/mcp.json',
+    '/search-index.json',
+    '/sources.json',
+    '/provenance.json',
+    '/provenance.sig'
+  ]) {
+    headerIncludes(results[route], 'Cache-Control', 'max-age=0, must-revalidate', failures);
+  }
   headerIncludes(results['/drafts.html'], 'X-Robots-Tag', 'noindex', failures);
 
   const firstPublicArticle = Array.isArray(manifest.articles)

@@ -123,6 +123,14 @@ function cacheStatusList(attempts) {
     .join(' -> ');
 }
 
+function isRevalidatedCacheControl(value) {
+  const normalized = String(value || '').toLowerCase();
+  return normalized.includes('no-store')
+    || normalized.includes('no-cache')
+    || normalized.includes('max-age=0')
+    || normalized.includes('must-revalidate');
+}
+
 export async function checkProductionEdgeCache({
   baseUrl = OFFICIAL_SITE,
   staticArtifacts = DEFAULT_EDGE_CACHE_STATIC_ARTIFACTS,
@@ -172,9 +180,15 @@ export async function checkProductionEdgeCache({
     if (!result.cf_cache_status) {
       failures.push(`${path} did not return a cf-cache-status header`);
     } else if (EDGE_CACHE_HIT_STATUSES.has(result.cf_cache_status)) {
-      failures.push(`${path} returned cache status ${result.cf_cache_status}; API routes must remain uncached`);
+      failures.push(`${path} returned cache status ${result.cf_cache_status}; dynamic controls must remain uncached`);
     }
-    result.ok = result.ok && Boolean(result.cf_cache_status) && !EDGE_CACHE_HIT_STATUSES.has(result.cf_cache_status);
+    if (!isRevalidatedCacheControl(result.cache_control)) {
+      failures.push(`${path} cache-control must be revalidated by clients, got ${result.cache_control || '(missing)'}`);
+    }
+    result.ok = result.ok
+      && Boolean(result.cf_cache_status)
+      && !EDGE_CACHE_HIT_STATUSES.has(result.cf_cache_status)
+      && isRevalidatedCacheControl(result.cache_control);
     dynamicResults.push(result);
   }
 

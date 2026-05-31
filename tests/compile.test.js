@@ -697,6 +697,26 @@ test('provenance.sig is generated when a signing key is configured', () => {
 
 test('_headers is generated for Cloudflare Pages static output', () => {
   const headers = readFileSync(join(distDir, '_headers'), 'utf-8');
+  const revalidatedMachineArtifacts = [
+    '/agent.json',
+    '/.well-known/anchorfact.json',
+    '/openapi.json',
+    '/manifest.json',
+    '/claims.json',
+    '/topics.json',
+    '/capabilities.json',
+    '/content-health.json',
+    '/coverage.json',
+    '/examples.json',
+    '/graph.json',
+    '/evals.json',
+    '/mcp.json',
+    '/search-index.json',
+    '/sources.json',
+    '/llms.txt',
+    '/provenance.json',
+    '/provenance.sig'
+  ];
   assert(headers.includes('/*\n  X-Content-Type-Options: nosniff'), '_headers should include global security headers');
   assert(headers.includes('/agent.json\n  Access-Control-Allow-Origin: *'), '_headers should expose agent profile CORS');
   assert(headers.includes('/.well-known/anchorfact.json\n  Access-Control-Allow-Origin: *'), '_headers should expose well-known agent profile CORS');
@@ -714,8 +734,11 @@ test('_headers is generated for Cloudflare Pages static output', () => {
   assert(headers.includes('/sources.json\n  Access-Control-Allow-Origin: *'), '_headers should expose sources CORS');
   assert(headers.includes('/provenance.json\n  Access-Control-Allow-Origin: *'), '_headers should expose provenance CORS');
   assert(headers.includes('/provenance.sig\n  Access-Control-Allow-Origin: *'), '_headers should expose provenance signature CORS');
-  assert(headers.includes('/provenance.json\n  Access-Control-Allow-Origin: *\n  Content-Type: application/json; charset=utf-8\n  Cache-Control: public, max-age=0, must-revalidate'), '_headers should keep provenance revalidated');
-  assert(headers.includes('/provenance.sig\n  Access-Control-Allow-Origin: *\n  Content-Type: application/json; charset=utf-8\n  Cache-Control: public, max-age=0, must-revalidate'), '_headers should keep provenance signatures revalidated');
+  for (const path of revalidatedMachineArtifacts) {
+    assert(headers.includes(`${path}\n  Access-Control-Allow-Origin: *`), `_headers should expose ${path} CORS`);
+    assert(headers.includes(`${path}\n  Access-Control-Allow-Origin: *\n  Content-Type:`), `_headers should set ${path} content type`);
+    assert(headers.includes(`${path}\n  Access-Control-Allow-Origin: *\n  Content-Type: ${path.endsWith('.txt') ? 'text/plain' : 'application/json'}; charset=utf-8\n  Cache-Control: public, max-age=0, must-revalidate`), `_headers should keep ${path} revalidated`);
+  }
   assert(headers.includes('/*/index.json\n  Access-Control-Allow-Origin: *'), '_headers should expose article JSON-LD CORS');
   assert(headers.includes('/drafts\n  X-Robots-Tag: noindex, nofollow'), '_headers should noindex extensionless drafts route');
   assert(headers.includes('/drafts.html\n  X-Robots-Tag: noindex, nofollow'), '_headers should noindex drafts.html route');
