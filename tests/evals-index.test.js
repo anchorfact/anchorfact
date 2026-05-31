@@ -104,9 +104,11 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
 
   assertEq(payload.schema_version, 'anchorfact.evals.v1');
   assertEq(payload.provenance_url, 'https://anchorfact.org/provenance.json');
-  assertEq(payload.eval_count, 51);
+  assertEq(payload.eval_count, 53);
   assertEq(payload.evals.map(evalCase => evalCase.id), [
     'api_discovery',
+    'llms_txt_primary_entrypoints',
+    'robots_txt_ai_entrypoints',
     'openapi_context_contract',
     'query_plan',
     'unsupported_query_plan',
@@ -165,6 +167,19 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
   assert(apiDiscoveryEval.expected.required_paths.includes('/api/evidence'), 'API discovery eval should require evidence endpoint');
   assert(apiDiscoveryEval.expected.required_paths.includes('/api/resolve-batch'), 'API discovery eval should require batch resolver endpoint');
   assertEq(apiDiscoveryEval.expected.required_primary_entrypoint_ids, ['context', 'evidence', 'plan']);
+
+  const llmsDiscoveryEval = payload.evals.find(evalCase => evalCase.id === 'llms_txt_primary_entrypoints');
+  assertEq(llmsDiscoveryEval.call.path, '/llms.txt');
+  assertEq(llmsDiscoveryEval.expected.content_type, 'text/plain');
+  assert(llmsDiscoveryEval.expected.contains_text.includes('/api/context?q={query}'), 'llms discovery eval should require context entrypoint');
+  assert(llmsDiscoveryEval.expected.contains_text.includes('/api/evidence?q={query}'), 'llms discovery eval should require evidence entrypoint');
+  assert(llmsDiscoveryEval.expected.contains_text.includes('/api/plan?q={query}'), 'llms discovery eval should require plan entrypoint');
+
+  const robotsDiscoveryEval = payload.evals.find(evalCase => evalCase.id === 'robots_txt_ai_entrypoints');
+  assertEq(robotsDiscoveryEval.call.path, '/robots.txt');
+  assertEq(robotsDiscoveryEval.expected.content_type, 'text/plain');
+  assert(robotsDiscoveryEval.expected.contains_text.includes('AI-Context'), 'robots discovery eval should require AI context hint');
+  assert(robotsDiscoveryEval.expected.contains_text.includes('AI-Evidence'), 'robots discovery eval should require AI evidence hint');
 
   const openapiEval = payload.evals.find(evalCase => evalCase.id === 'openapi_context_contract');
   assertEq(openapiEval.call.path, '/openapi.json');

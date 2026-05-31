@@ -234,6 +234,34 @@ export function buildEvalsIndex({
       }
     },
     {
+      id: 'llms_txt_primary_entrypoints',
+      intent: 'Confirm llms.txt gives first-time AI crawlers the primary context, evidence, and coverage entrypoints before the article index.',
+      call: call('/llms.txt', site),
+      expected: {
+        status: 200,
+        content_type: 'text/plain',
+        contains_text: [
+          'Recommended AI Entry Points',
+          '/api/context?q={query}',
+          '/api/evidence?q={query}',
+          '/api/plan?q={query}'
+        ]
+      }
+    },
+    {
+      id: 'robots_txt_ai_entrypoints',
+      intent: 'Confirm robots.txt exposes non-breaking AI hint fields for the primary read-only entrypoints.',
+      call: call('/robots.txt', site),
+      expected: {
+        status: 200,
+        content_type: 'text/plain',
+        contains_text: [
+          'AI-Context',
+          'AI-Evidence'
+        ]
+      }
+    },
+    {
       id: 'openapi_context_contract',
       intent: 'Confirm OpenAPI describes the context answer policy and compact citation claim contract.',
       call: call('/openapi.json', site),

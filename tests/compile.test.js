@@ -171,6 +171,12 @@ test('public entrypoints exclude draft articles', () => {
   assert(llmsTxt.includes('Citation API'), 'llms.txt should include citation API');
   assert(llmsTxt.includes('Claim API'), 'llms.txt should include claim API');
   assert(llmsTxt.includes('Source API'), 'llms.txt should include source API');
+  assert(llmsTxt.includes('## Recommended AI Entry Points'), 'llms.txt should lead with recommended AI entry points');
+  assert(llmsTxt.includes('/api/context?q={query}'), 'llms.txt should advertise the default context entrypoint');
+  assert(llmsTxt.includes('/api/evidence?q={query}'), 'llms.txt should advertise the evidence entrypoint');
+  assert(llmsTxt.includes('/api/plan?q={query}'), 'llms.txt should advertise the coverage planning entrypoint');
+  assert(llmsTxt.includes('/api/cite?id={claim_id}'), 'llms.txt should advertise the citation entrypoint');
+  assert(llmsTxt.indexOf('## Recommended AI Entry Points') < llmsTxt.indexOf('## Public Knowledge Base'), 'llms.txt should show recommended AI entry points before the article index');
   assert(sitemap.includes('/agent.json'), 'sitemap should include agent profile');
   assert(sitemap.includes('/openapi.json'), 'sitemap should include OpenAPI contract');
   assert(sitemap.includes('/api'), 'sitemap should include API index');
@@ -191,6 +197,10 @@ test('public entrypoints exclude draft articles', () => {
   assert(robotsTxt.includes('Health: https://anchorfact.org/content-health.json'), 'robots.txt should advertise content health');
   assert(robotsTxt.includes('MCP: https://anchorfact.org/mcp.json'), 'robots.txt should advertise MCP manifest');
   assert(robotsTxt.includes('Provenance: https://anchorfact.org/provenance.json'), 'robots.txt should advertise provenance');
+  assert(robotsTxt.includes('AI-Context: https://anchorfact.org/api/context?q={query}'), 'robots.txt should advertise AI context hint');
+  assert(robotsTxt.includes('AI-Evidence: https://anchorfact.org/api/evidence?q={query}'), 'robots.txt should advertise AI evidence hint');
+  assert(robotsTxt.includes('AI-Plan: https://anchorfact.org/api/plan?q={query}'), 'robots.txt should advertise AI planning hint');
+  assert(robotsTxt.includes('AI-Cite: https://anchorfact.org/api/cite?id={claim_id}'), 'robots.txt should advertise AI citation hint');
   assert(indexHtml.includes('Public Fixture'), 'index should include public article');
   assert(!indexHtml.includes('Draft Fixture</a></span>'), 'index public list should exclude draft article');
   assert(llmsTxt.includes('Public Fixture'), 'llms.txt should include public article');
@@ -217,7 +227,7 @@ test('agent profile describes the machine contract', () => {
   assertEq(agent.current_snapshot.examples, 7);
   assert(agent.current_snapshot.graph_nodes >= 1, 'agent profile should expose graph node count');
   assert(agent.current_snapshot.graph_edges >= 1, 'agent profile should expose graph edge count');
-  assertEq(agent.current_snapshot.evals, 51);
+  assertEq(agent.current_snapshot.evals, 53);
   assertEq(agent.current_snapshot.mcp_tools, 9);
   assert(agent.current_snapshot.unique_sources >= 1, 'agent profile should expose source count');
   assertEq(agent.endpoints.claims.url, 'https://anchorfact.org/claims.json');
@@ -274,6 +284,19 @@ test('agent profile describes the machine contract', () => {
   assert(agent.recommended_workflow.some(step => step.includes('/api/claim')), 'agent workflow should mention claim API');
   assert(agent.recommended_workflow.some(step => step.includes('/api/source')), 'agent workflow should mention source API');
   assert(agent.recommended_workflow.some(step => step.includes('/sources.json')), 'agent workflow should mention source index');
+  const provenanceWorkflowIndex = agent.recommended_workflow.findIndex(step => step.includes('/provenance.json'));
+  const contextWorkflowIndex = agent.recommended_workflow.findIndex(step => step.includes('/api/context'));
+  const evidenceWorkflowIndex = agent.recommended_workflow.findIndex(step => step.includes('/api/evidence'));
+  const planWorkflowIndex = agent.recommended_workflow.findIndex(step => step.includes('/api/plan'));
+  const citeWorkflowIndex = agent.recommended_workflow.findIndex(step => step.includes('/api/cite'));
+  const resolveWorkflowIndex = agent.recommended_workflow.findIndex(step => step.includes('/api/resolve?'));
+  assert(provenanceWorkflowIndex > -1, 'agent workflow should include provenance verification');
+  assert(contextWorkflowIndex > provenanceWorkflowIndex, 'agent workflow should verify provenance before default context retrieval');
+  assert(evidenceWorkflowIndex > contextWorkflowIndex, 'agent workflow should make context the default before evidence packs');
+  assert(planWorkflowIndex > evidenceWorkflowIndex, 'agent workflow should place plan after context and evidence');
+  assert(agent.recommended_workflow[planWorkflowIndex].includes('not sure'), 'agent workflow should reserve plan for uncertain coverage decisions');
+  assert(citeWorkflowIndex > planWorkflowIndex, 'agent workflow should put citation follow-ups after primary entrypoints');
+  assert(resolveWorkflowIndex > planWorkflowIndex, 'agent workflow should put resolve follow-ups after primary entrypoints');
   assertEq(wellKnown, agent, 'well-known alias should match agent.json');
 });
 
@@ -472,9 +495,11 @@ test('evals.json describes executable AI integration checks', () => {
   const evals = JSON.parse(readFileSync(join(distDir, 'evals.json'), 'utf-8'));
   assertEq(evals.schema_version, 'anchorfact.evals.v1');
   assertEq(evals.provenance_url, 'https://anchorfact.org/provenance.json');
-  assertEq(evals.eval_count, 51);
+  assertEq(evals.eval_count, 53);
   assertEq(evals.evals.map(evalCase => evalCase.id), [
     'api_discovery',
+    'llms_txt_primary_entrypoints',
+    'robots_txt_ai_entrypoints',
     'openapi_context_contract',
     'query_plan',
     'unsupported_query_plan',
@@ -527,6 +552,15 @@ test('evals.json describes executable AI integration checks', () => {
     'signed_provenance_static_artifacts'
   ]);
   assert(evals.evals.some(evalCase => evalCase.call.path === '/api'), 'evals should include API discovery checks');
+  const llmsDiscoveryEval = evals.evals.find(evalCase => evalCase.id === 'llms_txt_primary_entrypoints');
+  assertEq(llmsDiscoveryEval.call.path, '/llms.txt');
+  assert(llmsDiscoveryEval.expected.contains_text.includes('/api/context?q={query}'), 'llms discovery eval should require context entrypoint');
+  assert(llmsDiscoveryEval.expected.contains_text.includes('/api/evidence?q={query}'), 'llms discovery eval should require evidence entrypoint');
+  assert(llmsDiscoveryEval.expected.contains_text.includes('/api/plan?q={query}'), 'llms discovery eval should require plan entrypoint');
+  const robotsDiscoveryEval = evals.evals.find(evalCase => evalCase.id === 'robots_txt_ai_entrypoints');
+  assertEq(robotsDiscoveryEval.call.path, '/robots.txt');
+  assert(robotsDiscoveryEval.expected.contains_text.includes('AI-Context'), 'robots discovery eval should require AI context hint');
+  assert(robotsDiscoveryEval.expected.contains_text.includes('AI-Evidence'), 'robots discovery eval should require AI evidence hint');
   assert(evals.evals.some(evalCase => evalCase.id === 'openapi_context_contract'), 'evals should include OpenAPI context contract check');
   assert(evals.evals.some(evalCase => evalCase.id === 'ai_query_routing_rlhf'), 'evals should include high-intent AI query routing checks');
   assert(evals.evals.some(evalCase => evalCase.id === 'query_routing_climate_change'), 'evals should include cross-domain query routing checks');

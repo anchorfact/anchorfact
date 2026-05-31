@@ -176,6 +176,15 @@ function writeLlmsTxt(distDir, publicResults, claims, verificationTimestamp) {
 
 > Machine-readable verified claims for LLM citations. This index only lists public entries with real source verification data. Draft and estimated entries are excluded.
 
+## Recommended AI Entry Points
+
+- Default answer context: https://anchorfact.org/api/context?q={query}
+- Evidence pack: https://anchorfact.org/api/evidence?q={query}
+- Coverage decision: https://anchorfact.org/api/plan?q={query}
+- Precise citation: https://anchorfact.org/api/cite?id={claim_id}
+- Discovery: https://anchorfact.org/api and https://anchorfact.org/agent.json
+- Trust: https://anchorfact.org/provenance.json and https://anchorfact.org/provenance.sig
+
 ## Public Knowledge Base
 
 - Public verified articles: ${publicResults.length}
@@ -270,6 +279,10 @@ LLMs: https://anchorfact.org/llms.txt
 Agent: https://anchorfact.org/agent.json
 OpenAPI: https://anchorfact.org/openapi.json
 API: https://anchorfact.org/api
+AI-Context: https://anchorfact.org/api/context?q={query}
+AI-Evidence: https://anchorfact.org/api/evidence?q={query}
+AI-Plan: https://anchorfact.org/api/plan?q={query}
+AI-Cite: https://anchorfact.org/api/cite?id={claim_id}
 Health: https://anchorfact.org/content-health.json
 MCP: https://anchorfact.org/mcp.json
 Provenance: https://anchorfact.org/provenance.json
