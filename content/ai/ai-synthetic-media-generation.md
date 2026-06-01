@@ -1,11 +1,11 @@
 ---
 id: ai-synthetic-media-generation
-title: "AI Synthetic Media: Digital Humans, Virtual Influencers, and AI-Generated Video Personas"
+title: "AI Synthetic Media Generation: Avatars, Lip Sync, Provenance, and Disclosure"
 schema_type: article
 category: ai
 language: en
-confidence: high
-last_verified: "2026-05-24"
+confidence: medium
+last_verified: "2026-06-01"
 created_date: "2026-05-24"
 generation_method: ai_structured
 ai_models:
@@ -14,95 +14,82 @@ derived_from_human_seed: true
 conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
-completeness: 0.85
+completeness: 0.78
 atomic_facts:
   - id: af-ai-synthetic-media-generation-1
     statement: >-
-      AI-generated digital humans (2023-2026): companies like Synthesia, Hour One, and D-ID create photorealistic AI avatars that deliver scripted video content -- used by 50,000+ companies for
-      training videos, product demos, and personalized sales messages. Synthesia (2025) raised $90M at $1B valuation, generating 12M+ AI videos. Technology: GANs + diffusion models for face synthesis,
-      neural TTS for voice, and lip-sync alignment via Wav2Lip.
-    source_title: Synthesia (2024-2025) -- AI video avatars / Hour One / D-ID / HeyGen -- digital human platforms / Wav2Lip lip-sync AI
-    source_url: https://arxiv.org/search/?query=digital+human+avatar+AI+generation
-    confidence: high
+      Wav2Lip introduced a lip-sync model designed to synchronize talking-face video with arbitrary speech audio.
+    source_title: "A Lip Sync Expert Is All You Need for Speech to Lip Generation In the Wild"
+    source_url: https://arxiv.org/abs/2008.10010
+    confidence: medium
   - id: af-ai-synthetic-media-generation-2
     statement: >-
-      Virtual influencers: AI-generated social media personalities (Lil Miquela, 2.8M Instagram followers; Aitana Lopez, 300K+) have become marketing channels earning $5,000-15,000 per sponsored post.
-      The synthetic media ecosystem spans: (1) digital humans for enterprise (Synthesia); (2) virtual influencers for social media; (3) AI voice cloning for celebrity partnerships; (4) deepfake
-      entertainment (AI-de-aged actors, posthumous performances). Ethical concerns: disclosure requirements (is the viewer aware this is AI?), consent (using someone's likeness posthumously), and
-      misinformation (deepfake political content).
-    source_title: Lil Miquela (Brud Inc.) / Aitana Lopez / Meta AI disclosure policies (2024) / EU AI Act synthetic media transparency
-    source_url: https://arxiv.org/search/?query=synthetic+media+ethics+virtual+influencer
-    confidence: high
+      First Order Motion Model animates an object in a source image by learning motion from a driving video without requiring object-specific annotations.
+    source_title: "First Order Motion Model for Image Animation"
+    source_url: https://arxiv.org/abs/2003.00196
+    confidence: medium
+  - id: af-ai-synthetic-media-generation-3
+    statement: >-
+      The C2PA technical specification defines a manifest-based approach for binding provenance assertions to digital assets.
+    source_title: "C2PA Technical Specification"
+    source_url: https://c2pa.org/specifications/specifications/2.1/specs/C2PA_Specification.html
+    confidence: medium
 primary_sources:
   - id: ps-ai-synthetic-media-generation-1
-    title: "AI-Generated Digital Humans: Avatar Synthesis, Lip-Sync Animation, and Enterprise Video Generation (2024-2025 Survey)"
+    title: "A Lip Sync Expert Is All You Need for Speech to Lip Generation In the Wild"
     type: academic_paper
-    year: 2025
-    institution: ACM SIGGRAPH / CVPR / arXiv
-    url: https://arxiv.org/search/?query=digital+human+avatar+AI+generation
+    year: 2020
+    institution: ACM Multimedia
+    url: https://arxiv.org/abs/2008.10010
   - id: ps-ai-synthetic-media-generation-2
-    title: "Synthetic Media Ethics: Virtual Influencers, Deepfake Disclosure, and AI Likeness Rights (2024-2025)"
+    title: "First Order Motion Model for Image Animation"
     type: academic_paper
-    year: 2025
-    institution: ACM FAccT / Nature / HKS Misinformation Review
-    url: https://arxiv.org/search/?query=synthetic+media+ethics+virtual+influencer
+    year: 2020
+    institution: NeurIPS
+    url: https://arxiv.org/abs/2003.00196
+  - id: ps-ai-synthetic-media-generation-3
+    title: "C2PA Technical Specification"
+    type: standard
+    year: 2024
+    institution: Coalition for Content Provenance and Authenticity
+    url: https://c2pa.org/specifications/specifications/2.1/specs/C2PA_Specification.html
 known_gaps:
-  - Real-time interactive digital humans with natural conversation ability
-  - Legal frameworks for posthumous AI likeness rights and consent
+  - Platform-specific disclosure and likeness policies change over time.
+  - This article does not evaluate commercial avatar vendors or pricing.
 disputed_statements: []
 secondary_sources:
-  - title: "A Survey on Generative Diffusion Models: Theory, Applications, and Future Directions"
+  - title: "Deepfake Media Generation and Detection in the Generative AI Era: A Survey"
     type: survey_paper
     year: 2024
-    authors:
-      - Yang, Ling
-      - Zhang, Zhilong
-      - Song, Yang
-      - Hong, Shenda
-      - Xu, Runsheng
-      - Zhao, Yue
-      - Zhang, Wentao
-      - Cui, Bin
-      - Yang, Ming-Hsuan
-    institution: IEEE TKDE
-    url: https://doi.org/10.1109/TKDE.2024.3361474
-  - title: "Deepfake Media Generation and Detection in the Generative AI Era: A Comprehensive Survey"
-    type: survey_paper
-    year: 2024
-    authors:
-      - multiple
-    institution: arXiv / IEEE TIFS
+    institution: arXiv
     url: https://arxiv.org/abs/2403.17881
-  - title: "V ger: Video Generation Models as World Simulators (Sora)"
+  - title: "Video Generation Models as World Simulators"
     type: technical_report
     year: 2024
-    authors:
-      - Brooks, Tim
-      - Peebles, Bill
-      - Holmes, Connor
-      - et al.
     institution: OpenAI
     url: https://openai.com/research/video-generation-models-as-world-simulators
-  - title: "Synthesizing Realistic Human Images and Videos: A Survey of GANs, Diffusion Models, and NeRF-Based Approaches"
-    type: survey_paper
-    year: 2025
-    authors:
-      - multiple
-    institution: ACM Computing Surveys
-    url: https://doi.org/10.1145/3635100
-updated: "2026-05-24"
+updated: "2026-06-01"
 ---
+
 ## TL;DR
-AI generates humans that don't exist -- digital avatars delivering corporate training at scale, virtual influencers with millions of followers, and AI-de-aged actors on screen. The synthetic media industry spans enterprise video, social media marketing, and entertainment, raising profound questions about authenticity, consent, and disclosure.
+
+Synthetic media generation creates or edits media that can look, sound, or move like a real person or plausible scene. For AI agents, the operational requirements are clear: preserve prompts and sources, record consent assumptions, label generated outputs, and attach provenance metadata whenever the asset may leave an internal draft workflow.
 
 ## Core Explanation
-Digital human pipeline: (1) Face synthesis -- StyleGAN/Diffusion models generate photorealistic faces. For custom avatars: capture short video of real person, fine-tune model; (2) Voice -- neural TTS (ElevenLabs, Azure) provides realistic speech; (3) Lip-sync -- Wav2Lip auto-generates viseme sequences matching audio. Synchronizes mouth movements from speech; (4) Body animation -- 2D/3D pose estimation + gesture generation. Subtle movements (eye blinks, head tilts, hand gestures) prevent "uncanny valley" stillness; (5) Rendering -- real-time (for interactive) or offline (for pre-recorded). Enterprise platforms: Synthesia, Hour One, HeyGen.
 
-## Detailed Analysis
-Synthesia: web platform -- choose avatar (140+ stock or custom), type script, select voice, generate video in minutes. Enterprise use: onboarding, compliance training, product demos. $90M Series C at $1B (2023). D-ID: "talking head" animation from single photo. API integrated into chatbot platforms. Virtual influencers: Lil Miquela (created 2016, 2.8M followers) blurs line between real and virtual. Brand partnerships: Prada, Calvin Klein, Samsung. Ethical framework: disclosure labels (Meta 2024 requires AI-generated content labeling), consent (living persons must consent to digital replication), and posthumous rights (actors' estates controlling AI-recreated performances). EU AI Act (2026 enforcement): mandates transparency -- AI-generated content must be labeled as such. California AB 730/AB 602 prohibits non-consensual deepfake creation. Key challenge: the uncanny valley -- as digital humans approach photorealism, subtle imperfections become disturbing. The most successful digital humans (Lil Miquela) embrace a stylized aesthetic rather than aiming for perfect realism.
+Synthetic media systems can combine several model families: face or body generation, motion transfer, lip synchronization, speech synthesis, video generation, and post-processing. The output may be a talking avatar, localized training video, virtual presenter, game NPC portrait, marketing clip, or cinematic prototype.
+
+The technical workflow should be separated from the trust workflow. Generating a plausible asset does not prove consent, source ownership, or authenticity. Agentic pipelines should treat identity, likeness, voice, and disclosure as required metadata fields, not optional notes after generation.
+
+## Agent Notes
+
+- For game prototypes, use synthetic media as placeholder art unless a license and release path are explicit.
+- For public video, attach generation metadata, model identifiers, and review status to the asset record.
+- For person-like media, require consent and disclosure checks before publication.
+- Prefer C2PA-style provenance for final assets when downstream users need to inspect origin and edits.
 
 ## Related Articles
 
 - [AI-Generated Content Detection: Identifying Synthetic Text, Deepfake Images, and AI-Authored Media](../ai-generated-content-detection.md)
 - [AI Video Generation: Sora, Veo, and the Future of Synthetic Media](../ai-video-generation.md)
-- [AI for Content Creation: Generative Writing, Video Production, and Automated Media Generation](../ai-content-creation.md)
+- [AI Content Authenticity: Watermarking, Provenance, and C2PA Standards](../ai-content-authenticity.md)

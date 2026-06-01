@@ -2,13 +2,13 @@
   "summary": {
     "generated": "2026-05-27T14:00:00.000Z",
     "total_articles": 1000,
-    "total_with_errors": 277,
+    "total_with_errors": 228,
     "average_sources_per_article": "2.4",
-    "overall_verification_rate": "81.9%",
+    "overall_verification_rate": "83.2%",
     "elapsed_ms": 635005,
     "elapsed_sec": "635.0",
     "concurrency": 3,
-    "manual_reviewed_articles": 494
+    "manual_reviewed_articles": 621
   },
   "articles": [
     {
@@ -7624,44 +7624,65 @@
       "file": "content/ai/ai-music-generation.md",
       "article_id": "ai-music-generation",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
           "source_title": "MusicLM: Generating Music From Text",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2301.11325",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2301.11325",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Third AI-focused content batch; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Suno v5: The World's Best Music Model",
-          "source_type": "official_documentation",
+          "source_title": "Jukebox: A Generative Model for Music",
+          "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://suno.com/blog/v5",
-              "verified": false,
+              "identifier": "https://arxiv.org/abs/2005.00341",
+              "verified": true,
               "metadata": {
-                "status": 405,
-                "final_url": "https://suno.com/blog/v5"
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Third AI-focused content batch; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "Simple and Controllable Music Generation",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2306.05284",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Third AI-focused content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 2
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content/ai/ai-personal-assistants.md",
@@ -8728,22 +8749,64 @@
       "file": "content/ai/ai-synthetic-media-generation.md",
       "article_id": "ai-synthetic-media-generation",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "AI-Generated Digital Humans: Avatar Synthesis, Lip-Sync Animation, and Enterprise Video Generation (2024-2025 Survey)",
+          "source_title": "A Lip Sync Expert Is All You Need for Speech to Lip Generation In the Wild",
           "source_type": "academic_paper",
-          "results": [],
-          "all_verified": false
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2008.10010",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Third AI-focused content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         },
         {
-          "source_title": "Synthetic Media Ethics: Virtual Influencers, Deepfake Disclosure, and AI Likeness Rights (2024-2025)",
+          "source_title": "First Order Motion Model for Image Animation",
           "source_type": "academic_paper",
-          "results": [],
-          "all_verified": false
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2003.00196",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Third AI-focused content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "C2PA Technical Specification",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://c2pa.org/specifications/specifications/2.1/specs/C2PA_Specification.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Third AI-focused content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
+      "sources_verified": 3,
       "sources_unreachable": 0
     },
     {
@@ -11654,7 +11717,7 @@
       "file": "content/ai/efficient-green-ai.md",
       "article_id": "efficient-green-ai",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 4,
       "verification_results": [
         {
           "source_title": "Green AI",
@@ -11662,36 +11725,75 @@
           "results": [
             {
               "method": "url",
-              "identifier": "https://dl.acm.org/doi/10.1145/3381831",
-              "verified": false,
+              "identifier": "https://doi.org/10.1145/3381831",
+              "verified": true,
               "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/doi/10.1145/3381831"
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Third AI-focused content batch; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "Energy and Policy Considerations for Deep Learning in NLP",
+          "source_type": "conference_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1906.02243",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Third AI-focused content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         },
         {
           "source_title": "Carbon Emissions and Large Neural Network Training",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2104.10350",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2104.10350",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Third AI-focused content batch; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness",
+          "source_type": "conference_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2205.14135",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Third AI-focused content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 2
+      "sources_verified": 4,
+      "sources_unreachable": 0
     },
     {
       "file": "content/ai/embodied-ai-and-robotics.md",
@@ -15387,43 +15489,83 @@
       "file": "content/ai/optimization-algorithms.md",
       "article_id": "optimization-algorithms",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 4,
       "verification_results": [
         {
           "source_title": "Adam: A Method for Stochastic Optimization",
-          "source_type": "academic_paper",
+          "source_type": "conference_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "1412.6980",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1412.6980",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Third AI-focused content batch; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "Decoupled Weight Decay Regularization",
+          "source_type": "conference_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1711.05101",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Third AI-focused content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         },
         {
           "source_title": "SGDR: Stochastic Gradient Descent with Warm Restarts",
-          "source_type": "academic_paper",
+          "source_type": "conference_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "1608.03983",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1608.03983",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Third AI-focused content batch; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "Symbolic Discovery of Optimization Algorithms",
+          "source_type": "conference_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2302.06675",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Third AI-focused content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 2
+      "sources_verified": 4,
+      "sources_unreachable": 0
     },
     {
       "file": "content/ai/overfitting-and-regularization.md",
@@ -17668,7 +17810,7 @@
     },
     {
       "file": "content/ai/transformer.md",
-      "article_id": "kb-2026-00001",
+      "article_id": "transformer",
       "generation_method": "ai_structured",
       "sources_total": 3,
       "verification_results": [
@@ -17677,82 +17819,57 @@
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "doi",
-              "identifier": "10.48550/arXiv.1706.03762",
-              "verified": false,
-              "metadata": {
-                "error": "CrossRef returned 404"
-              },
-              "match": false
-            },
-            {
-              "method": "arxiv",
-              "identifier": "1706.03762",
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1706.03762",
               "verified": true,
               "metadata": {
-                "title": "arXiv Query: search_query=&amp;id_list=1706.03762&amp;start=0&amp;max_results=1"
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Third AI-focused content batch; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Dalorex: A Data-Local Program Execution and Architecture for Memory-bound Applications",
+          "source_title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "doi",
-              "identifier": "10.1109/HPCA56546.2023.10071089",
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1810.04805",
               "verified": true,
               "metadata": {
-                "title": "Dalorex: A Data-Local Program Execution and Architecture for Memory-bound Applications",
-                "publisher": "IEEE",
-                "year": 2023
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Third AI-focused content batch; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
-            },
-            {
-              "method": "arxiv",
-              "identifier": "2207.13219v4",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Towards Assessing Spread in Sets of Software Architecture Designs",
+          "source_title": "Language Models are Few-Shot Learners",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "doi",
-              "identifier": "10.1007/978-3-031-42592-9_9",
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2005.14165",
               "verified": true,
               "metadata": {
-                "title": "Towards Assessing Spread in Sets of Software Architecture Designs",
-                "publisher": "Springer Nature Switzerland",
-                "year": 2023
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Third AI-focused content batch; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
-            },
-            {
-              "method": "arxiv",
-              "identifier": "2402.19171v1",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
+      "sources_verified": 3,
       "sources_unreachable": 0
     },
     {

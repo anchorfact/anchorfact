@@ -80,7 +80,7 @@ test('textHygieneFailures catches stale production claim metrics', () => {
 test('textHygieneFailures accepts current production claim metrics', () => {
   const failures = textHygieneFailures(
     'docs/LAUNCH_READINESS_2026-05-27.md',
-    'Snapshot: 638 public / 362 draft / 1966 claims.'
+    'Snapshot: 643 public / 357 draft / 1984 claims.'
   );
   assertEq(failures, []);
 });
@@ -91,6 +91,14 @@ test('textHygieneFailures ignores historical repair log metrics', () => {
     'Local rebuilt counts: 633 public / 367 draft / 1948 claims.'
   );
   assertEq(failures, []);
+});
+
+test('textHygieneFailures catches previous production snapshot metrics', () => {
+  const failures = textHygieneFailures(
+    'docs/LAUNCH_READINESS_2026-05-27.md',
+    'Snapshot: 638 public / 362 draft / 1966 claims.'
+  );
+  assert(failures.some(failure => failure.includes('stale launch metrics')), 'previous snapshot should fail hygiene');
 });
 
 test('textHygieneFailures catches stale MCP tool-count narrative', () => {

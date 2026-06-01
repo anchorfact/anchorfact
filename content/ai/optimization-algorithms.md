@@ -1,11 +1,11 @@
 ---
 id: optimization-algorithms
-title: Optimization Algorithms for Deep Learning
+title: "Optimization Algorithms for Deep Learning: SGD, Adam, AdamW, and Lion"
 schema_type: TechArticle
 category: ai
 language: en
-confidence: high
-last_verified: "2026-05-24"
+confidence: medium
+last_verified: "2026-06-01"
 created_date: "2026-05-24"
 generation_method: ai_structured
 ai_models:
@@ -14,97 +14,94 @@ derived_from_human_seed: true
 conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
+completeness: 0.82
 atomic_facts:
   - id: f1
     statement: >-
-      Adam (Kingma & Ba 2015, ICLR) combines momentum and adaptive learning rates per-parameter, becoming the most widely used optimizer in deep learning. It computes running averages of gradients
-      (m_t) and squared gradients (v_t).
-    source_title: "Kingma, Diederik P., and Jimmy Ba. Adam: A Method for Stochastic Optimization. ICLR 2015"
+      Adam combines first-moment and second-moment estimates of gradients to adapt per-parameter learning rates during stochastic optimization.
+    source_title: "Adam: A Method for Stochastic Optimization"
     source_url: https://arxiv.org/abs/1412.6980
-    confidence: high
+    confidence: medium
   - id: f2
     statement: >-
-      AdamW (Loshchilov & Hutter 2019, ICLR) fixes Adam's weight decay implementation by decoupling it from the adaptive gradient update, improving generalization and becoming the default optimizer
-      for Transformer training.
-    source_title: Loshchilov, Ilya, and Frank Hutter. Decoupled Weight Decay Regularization. ICLR 2019
+      AdamW decouples weight decay from the gradient-based update, addressing a mismatch between L2 regularization and adaptive optimizers.
+    source_title: "Decoupled Weight Decay Regularization"
     source_url: https://arxiv.org/abs/1711.05101
-    confidence: high
+    confidence: medium
   - id: f3
     statement: >-
-      Lion (Chen et al. 2023, Google) is a simpler optimizer using only sign operations, discovered through program search. It achieves 2-5× memory savings over AdamW while matching or exceeding its
-      performance.
-    source_title: Chen, Xiangning, et al. Symbolic Discovery of Optimization Algorithms. NeurIPS 2023
+      SGDR introduced cosine annealing learning-rate schedules with warm restarts for stochastic gradient descent.
+    source_title: "SGDR: Stochastic Gradient Descent with Warm Restarts"
+    source_url: https://arxiv.org/abs/1608.03983
+    confidence: medium
+  - id: f4
+    statement: >-
+      Lion is an optimizer discovered through symbolic program search that uses sign operations in its update rule.
+    source_title: "Symbolic Discovery of Optimization Algorithms"
     source_url: https://arxiv.org/abs/2302.06675
-    confidence: high
-completeness: 0.9
-known_gaps:
-  - Second-order methods (KFAC, Shampoo)
-  - Optimizer selection for specific architectures
-disputed_statements:
-  - statement: No major disputed statements identified
+    confidence: medium
 primary_sources:
-  - title: "Adam: A Method for Stochastic Optimization"
-    type: academic_paper
-    year: 2015
-    url: https://arxiv.org/abs/1412.6980
-    institution: ICLR
-  - title: "SGDR: Stochastic Gradient Descent with Warm Restarts"
-    type: academic_paper
-    year: 2017
-    url: https://arxiv.org/abs/1608.03983
-    institution: ICLR
-secondary_sources:
-  - title: "Gradient Descent Algorithm Survey: From SGD to Adam to Lion — A Practical Configuration Guide for Deep Learning"
-    type: survey_paper
-    year: 2025
-    authors:
-      - multiple
-    institution: arXiv
-    url: https://arxiv.org/abs/2511.20725
-  - title: "A Refined Lion Optimizer for Deep Learning: Faster Training with Lower Memory"
-    type: journal_article
-    year: 2025
-    authors:
-      - Chen, Xiangning
-      - Liang, Chen
-      - Huang, Da
-      - et al.
-    institution: Google / Nature Scientific Reports
-    url: https://doi.org/10.1038/s41598-025-07112-4
-  - title: "Adam: A Method for Stochastic Optimization (Seminal)"
+  - id: ps-optimization-algorithms-1
+    title: "Adam: A Method for Stochastic Optimization"
     type: conference_paper
     year: 2015
-    authors:
-      - Kingma, Diederik P.
-      - Ba, Jimmy
-    institution: ICLR / Google / University of Toronto
+    institution: ICLR
     url: https://arxiv.org/abs/1412.6980
-  - title: Decoupled Weight Decay Regularization (AdamW)
+  - id: ps-optimization-algorithms-2
+    title: "Decoupled Weight Decay Regularization"
     type: conference_paper
     year: 2019
-    authors:
-      - Loshchilov, Ilya
-      - Hutter, Frank
-    institution: ICLR / University of Freiburg
+    institution: ICLR
     url: https://arxiv.org/abs/1711.05101
-updated: "2026-05-24"
+  - id: ps-optimization-algorithms-3
+    title: "SGDR: Stochastic Gradient Descent with Warm Restarts"
+    type: conference_paper
+    year: 2017
+    institution: ICLR
+    url: https://arxiv.org/abs/1608.03983
+  - id: ps-optimization-algorithms-4
+    title: "Symbolic Discovery of Optimization Algorithms"
+    type: conference_paper
+    year: 2023
+    institution: NeurIPS
+    url: https://arxiv.org/abs/2302.06675
+known_gaps:
+  - Second-order and large-batch optimizers are outside this short article.
+  - Recommended hyperparameters depend on architecture, data, batch size, and training budget.
+disputed_statements: []
+secondary_sources:
+  - title: "An Overview of Gradient Descent Optimization Algorithms"
+    type: blog_post
+    year: 2016
+    institution: Independent
+    url: https://www.ruder.io/optimizing-gradient-descent/
+  - title: "torch.optim"
+    type: documentation
+    year: 2026
+    institution: PyTorch
+    url: https://pytorch.org/docs/stable/optim.html
+updated: "2026-06-01"
 ---
+
 ## TL;DR
-Optimization algorithms update neural network weights to minimize the loss function. Adam dominates practice, but SGD with momentum remains competitive when well-tuned.
+
+Optimizers are the update rules that turn gradients into model-parameter changes. For agent builders, optimizer details matter when training or fine-tuning models, but they also provide a useful general lesson: performance claims are meaningless without the learning rate schedule, batch size, model size, and evaluation setup.
 
 ## Core Explanation
-Gradient descent computes the average gradient over training data to update weights. SGD uses single examples or mini-batches for faster, noisier updates that often generalize better. Momentum accumulates past gradients to smooth updates and escape local minima. Adam adapts learning rates per-parameter.
 
-## Detailed Analysis
-AdamW (Loshchilov & Hutter, 2019) fixes Adam's weight decay implementation, making it the recommended variant. Learning rate warmup — gradually increasing from a small initial rate — prevents training instability in transformers. Gradient clipping prevents exploding gradients.
+Stochastic gradient descent updates parameters using gradients from mini-batches. Momentum smooths noisy updates by carrying part of the previous update forward. Adam adds adaptive per-parameter scaling based on moving averages of gradients and squared gradients. AdamW separates weight decay from the adaptive gradient update, which is why it is common in Transformer training recipes.
 
-## Further Reading
-- Ruder: An Overview of Gradient Descent Algorithms
-- Lilian Weng: Optimization for Deep Learning
-- PyTorch: torch.optim Documentation
+Learning-rate schedules can matter as much as the optimizer choice. Warmup can stabilize early training, cosine decay can reduce the learning rate smoothly, and restarts can periodically raise it again. A change in optimizer should be evaluated with its schedule, regularization, and batch-size assumptions, not as an isolated name.
+
+## Agent Notes
+
+- When comparing training runs, log optimizer, learning rate, schedule, batch size, weight decay, gradient clipping, and random seed.
+- For fine-tuning language models, start from the model provider's recommended optimizer settings before changing many variables at once.
+- Treat optimizer changes as experiments with an eval plan, not as guaranteed improvements.
+- If an agent proposes a training recipe, require reproducible configuration before accepting the result.
 
 ## Related Articles
 
-- [Deep Reinforcement Learning Algorithms: PPO, SAC, Dreamer, and Decision Transformer](../deep-reinforcement-learning-algorithms.md)
-- [AI for Signal Processing: Deep Learning for Wireless, Radar, and Biomedical Signals](../ai-for-signal-processing.md)
-- [Audio Source Separation: Demixing Speech, Music, and Environmental Sounds with Deep Learning](../audio-source-separation.md)
+- [Gradient Descent: The Workhorse of Machine Learning Optimization](../gradient-descent.md)
+- [Transformer Architecture](../transformer.md)
+- [Efficient and Green AI: Measuring Cost, Energy, and Deployment Tradeoffs](../efficient-green-ai.md)
