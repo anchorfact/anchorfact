@@ -4,81 +4,114 @@ title: "Code Review Best Practices"
 schema_type: "TechArticle"
 category: "computer-science"
 language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
+confidence: "medium"
+last_verified: "2026-06-01"
 created_date: "2026-05-22"
+updated: "2026-06-01"
 generation_method: "human_only"
-ai_models: ["claude-opus"]
 derived_from_human_seed: true
 conflict_of_interest: "none_declared"
 is_live_document: false
 data_period: "static"
 
 atomic_facts:
-  - id: "fact-computer-science-01"
-    statement: "Code review is the single most effective quality practice after testing"
-    source_title: "ACM Digital Library"
-    source_url: "https://dl.acm.org/"
+  - id: "fact-code-review-001"
+    statement: "Google's engineering practices say reviewers should generally favor approval once a change definitely improves the overall code health of the system, even if it is not perfect."
+    source_title: "The Standard of Code Review"
+    source_url: "https://google.github.io/eng-practices/review/reviewer/standard.html"
     confidence: "medium"
-  - id: "fact-computer-science-001"
-    statement: "Code review is systematic examination of code by peers before merging. Google's code review practice: every change reviewed, small CLs (200 lines ideal), 24-hour review turnaround. It catches bugs, spreads knowledge, and enforces standards. Code review is the single most effective quality practice after testing."
-    source_title: "ACM Digital Library"
-    source_url: "https://dl.acm.org/"
+  - id: "fact-code-review-002"
+    statement: "Google's code review guidance lists design, functionality, complexity, tests, naming, comments, style, consistency, documentation, and every line as review concerns."
+    source_title: "What to look for in a code review"
+    source_url: "https://google.github.io/eng-practices/review/reviewer/looking-for.html"
     confidence: "medium"
-  - id: "fact-computer-science-002"
-    statement: "Speed: small reviews (<200 lines) get thorough review; large reviews get pushback."
-    source_title: "ACM Digital Library"
-    source_url: "https://dl.acm.org/"
+  - id: "fact-code-review-003"
+    statement: "Google's code review speed guidance says one business day is the maximum time it should take to respond to a code review request."
+    source_title: "Speed of Code Reviews"
+    source_url: "https://google.github.io/eng-practices/review/reviewer/speed.html"
+    confidence: "medium"
+  - id: "fact-code-review-004"
+    statement: "Google's comment-writing guidance summarizes code review comments with the instruction to be kind."
+    source_title: "How to write code review comments"
+    source_url: "https://google.github.io/eng-practices/review/reviewer/comments.html"
+    confidence: "medium"
+  - id: "fact-code-review-005"
+    statement: "GitHub documentation says a pull request reviewer can submit comments, approve the changes, or request changes."
+    source_title: "Reviewing proposed changes in a pull request"
+    source_url: "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/reviewing-proposed-changes-in-a-pull-request"
     confidence: "medium"
 
-completeness: 0.88
-
+completeness: 0.84
 known_gaps:
-  - "Sources reconstructed during quality audit; primary source details were corrupted during batch generation"
-
-disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+  - "This article covers review discipline and workflow, not empirical defect-density studies or organization-specific review metrics."
+  - "Tool-specific policies can differ across GitHub, Gerrit, GitLab, and internal systems."
+disputed_statements: []
 
 primary_sources:
-  - title: "ACM Digital Library"
-    type: "repository"
+  - title: "The Standard of Code Review"
+    type: "professional_resource"
     year: 2026
-    url: "https://dl.acm.org/"
-    institution: "ACM"
-
-secondary_sources:
-  - title: "ACM Digital Library"
-    type: "repository"
+    url: "https://google.github.io/eng-practices/review/reviewer/standard.html"
+    institution: "Google"
+  - title: "What to look for in a code review"
+    type: "professional_resource"
     year: 2026
-    url: "https://dl.acm.org/"
-    institution: "ACM"
-  - title: "The C Programming Language (K&R, 2nd Ed)"
-    type: "textbook"
-    year: 1988
-    url: "https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html"
-    institution: "Prentice Hall"
-  - title: "Structure and Interpretation of Computer Programs (SICP)"
-    type: "textbook"
-    year: 1996
-    url: "https://mitpress.mit.edu/sites/default/files/sicp/"
-    institution: "MIT Press"
-
+    url: "https://google.github.io/eng-practices/review/reviewer/looking-for.html"
+    institution: "Google"
+  - title: "Speed of Code Reviews"
+    type: "professional_resource"
+    year: 2026
+    url: "https://google.github.io/eng-practices/review/reviewer/speed.html"
+    institution: "Google"
+  - title: "How to write code review comments"
+    type: "professional_resource"
+    year: 2026
+    url: "https://google.github.io/eng-practices/review/reviewer/comments.html"
+    institution: "Google"
+  - title: "Reviewing proposed changes in a pull request"
+    type: "documentation"
+    year: 2026
+    url: "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/reviewing-proposed-changes-in-a-pull-request"
+    institution: "GitHub"
+secondary_sources: []
 ---
-
-
-
 
 ## TL;DR
 
-Code review is systematic examination of code by peers before merging. Google's code review practice: every change reviewed, small CLs (200 lines ideal), 24-hour review turnaround. It catches bugs, spreads knowledge, and enforces standards. Code review is the single most effective quality practice after testing.
+Good code review protects code health while keeping useful work moving. Reviewers should check design, behavior, complexity, tests, readability, and documentation, then leave actionable comments that explain the reason for any requested change.
 
 ## Core Explanation
 
-Reviewer focus: design (is it well-architected?), functionality (does it work?), complexity (could it be simpler?), tests (are they adequate?), naming (clear?), comments (useful?). Be respectful — critique code, not the author. Speed: small reviews (<200 lines) get thorough review; large reviews get pushback. Automated checks (linter, formatter, tests) should run before human review.
+The review target is not perfection. The practical standard is whether the change improves the system and does not add unnecessary risk. For AI coding agents, this matters because the reviewer must verify the patch against the project contract rather than trust a plausible explanation from the agent.
+
+Use a compact review order:
+
+- read the goal and affected modules;
+- run or inspect relevant tests;
+- check design fit before line-level style;
+- verify error handling, data boundaries, and migration effects;
+- ask for simpler code when complexity is speculative;
+- separate blocking issues from optional improvements.
+
+## Source-Mapped Facts
+
+- Google's engineering practices say reviewers should generally favor approval once a change definitely improves the overall code health of the system, even if it is not perfect. ([source](https://google.github.io/eng-practices/review/reviewer/standard.html))
+- Google's code review guidance lists design, functionality, complexity, tests, naming, comments, style, consistency, documentation, and every line as review concerns. ([source](https://google.github.io/eng-practices/review/reviewer/looking-for.html))
+- Google's code review speed guidance says one business day is the maximum time it should take to respond to a code review request. ([source](https://google.github.io/eng-practices/review/reviewer/speed.html))
+- Google's comment-writing guidance summarizes code review comments with the instruction to be kind. ([source](https://google.github.io/eng-practices/review/reviewer/comments.html))
+- GitHub documentation says a pull request reviewer can submit comments, approve the changes, or request changes. ([source](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/reviewing-proposed-changes-in-a-pull-request))
+
+## AI Agent Review Notes
+
+When reviewing agent-generated patches, put extra weight on behavioral contracts. Confirm that the patch did not change unrelated files, generated artifacts, secrets, or deployment configuration. Require source citations when the patch depends on external API behavior, and prefer narrow follow-up patches over broad speculative cleanup.
 
 ## Further Reading
 
-- [Google Engineering Practices Documentation](undefined)
+- [The Standard of Code Review](https://google.github.io/eng-practices/review/reviewer/standard.html)
+- [What to look for in a code review](https://google.github.io/eng-practices/review/reviewer/looking-for.html)
+- [Speed of Code Reviews](https://google.github.io/eng-practices/review/reviewer/speed.html)
+- [How to write code review comments](https://google.github.io/eng-practices/review/reviewer/comments.html)
+- [Reviewing proposed changes in a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/reviewing-proposed-changes-in-a-pull-request)
 
 ## Related Articles
 

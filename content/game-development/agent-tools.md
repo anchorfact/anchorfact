@@ -5,7 +5,6 @@ schema_type: "TechArticle"
 category: "game-development"
 language: "en"
 confidence: "medium"
-status: "draft"
 last_verified: "2026-06-01"
 created_date: "2026-04-28"
 updated: "2026-06-01"
@@ -27,24 +26,29 @@ atomic_facts:
     source_url: "https://modelcontextprotocol.io/specification/draft/server/tools"
     confidence: "medium"
   - id: "fact-gd-agent-tools-003"
-    statement: "The Agent2Agent core specification starts interoperable agent work with AgentCard discovery before message sending, task polling, or streaming."
-    source_title: "Core Protocol Specification - Agent2Agent Protocol"
-    source_url: "https://agent2agent.info/specification/core/"
-    confidence: "medium"
-  - id: "fact-gd-agent-tools-004"
-    statement: "The Agent2Agent core specification treats Message as the interaction payload and Artifact as the output payload."
-    source_title: "Core Protocol Specification - Agent2Agent Protocol"
-    source_url: "https://agent2agent.info/specification/core/"
-    confidence: "medium"
-  - id: "fact-gd-agent-tools-005"
     statement: "OpenAI function calling documentation describes function calling as a way to connect models to external tools and systems."
     source_title: "Function Calling in the OpenAI API"
-    source_url: "https://help.openai.com/en/articles/8555517-function-calling-in-the-openai-api"
+    source_url: "https://platform.openai.com/docs/guides/function-calling"
     confidence: "medium"
-completeness: 0.78
+  - id: "fact-gd-agent-tools-004"
+    statement: "Unity's command-line documentation lists the -executeMethod argument for executing a static method after the Unity project opens."
+    source_title: "Unity Manual: Command-line interface"
+    source_url: "https://docs.unity3d.com/Manual/CommandLineArguments.html"
+    confidence: "medium"
+  - id: "fact-gd-agent-tools-005"
+    statement: "Unreal Engine documentation says Python in Unreal Editor can automate workflows, asset management tasks, procedural level layout, and editor control from Python-created UIs."
+    source_title: "Scripting the Unreal Editor Using Python"
+    source_url: "https://dev.epicgames.com/documentation/unreal-engine/scripting-the-unreal-editor-using-python"
+    confidence: "medium"
+  - id: "fact-gd-agent-tools-006"
+    statement: "Godot's editor plugin documentation describes editor plugins as a supported way to extend the Godot editor."
+    source_title: "Editor plugins - Godot Engine documentation"
+    source_url: "https://docs.godotengine.org/en/stable/tutorials/plugins/editor/index.html"
+    confidence: "medium"
+completeness: 0.84
 known_gaps:
-  - "This draft is intentionally limited to protocol-level facts; concrete Unity, Unreal, Godot, DCC, and asset-pipeline examples should be added in a later public batch."
-  - "Security hardening for local filesystem, shell, and asset write access is out of scope for this short source-mapped entry."
+  - "This article focuses on source-mapped tool surfaces; it does not prescribe a complete security model for filesystem, shell, marketplace asset, or production branch access."
+  - "Engine-specific APIs change over time, so automation scripts should be checked against the target engine version before production use."
 disputed_statements: []
 primary_sources:
   - title: "Tools - Model Context Protocol"
@@ -52,16 +56,26 @@ primary_sources:
     year: 2026
     url: "https://modelcontextprotocol.io/specification/draft/server/tools"
     institution: "Model Context Protocol"
-  - title: "Core Protocol Specification - Agent2Agent Protocol"
-    type: "standard"
-    year: 2026
-    url: "https://agent2agent.info/specification/core/"
-    institution: "Agent2Agent Protocol"
   - title: "Function Calling in the OpenAI API"
     type: "documentation"
     year: 2026
-    url: "https://help.openai.com/en/articles/8555517-function-calling-in-the-openai-api"
+    url: "https://platform.openai.com/docs/guides/function-calling"
     institution: "OpenAI"
+  - title: "Unity Manual: Command-line interface"
+    type: "documentation"
+    year: 2026
+    url: "https://docs.unity3d.com/Manual/CommandLineArguments.html"
+    institution: "Unity Technologies"
+  - title: "Scripting the Unreal Editor Using Python"
+    type: "documentation"
+    year: 2026
+    url: "https://dev.epicgames.com/documentation/unreal-engine/scripting-the-unreal-editor-using-python"
+    institution: "Epic Games"
+  - title: "Editor plugins - Godot Engine documentation"
+    type: "documentation"
+    year: 2026
+    url: "https://docs.godotengine.org/en/stable/tutorials/plugins/editor/index.html"
+    institution: "Godot Engine"
 secondary_sources: []
 ---
 
@@ -71,7 +85,7 @@ AI agent tools are most useful in game development when they expose narrow, revi
 
 ## Core Explanation
 
-The reliable pattern is not "let an agent make a whole game." It is a bounded tool loop. MCP covers model-invoked tools, A2A covers agent discovery and task exchange, and function calling covers schema-shaped calls into application systems.
+The reliable pattern is a bounded tool loop, not an autonomous "make the whole game" loop. MCP covers model-invoked tools, OpenAI function calling covers schema-shaped calls into application systems, and game engines expose automation surfaces that can be wrapped behind permissioned tools.
 
 For a game team, this maps cleanly onto practical work:
 
@@ -79,22 +93,31 @@ For a game team, this maps cleanly onto practical work:
 - generate an implementation plan for a gameplay feature;
 - call asset, build, test, or issue-tracker tools through explicit parameters;
 - return patches, test reports, design notes, or asset manifests as artifacts;
-- require human review before source files, scenes, prefabs, or paid assets are changed.
+- require human review before source files, scenes, prefabs, binary assets, or paid marketplace assets are changed.
 
 ## Source-Mapped Facts
 
 - The Model Context Protocol specification describes tools as interfaces that servers expose for language models to invoke. ([source](https://modelcontextprotocol.io/specification/draft/server/tools))
 - MCP tools are documented as model-controlled, meaning a model can discover and invoke them based on context and the user's prompt. ([source](https://modelcontextprotocol.io/specification/draft/server/tools))
-- The Agent2Agent core specification starts interoperable agent work with AgentCard discovery before message sending, task polling, or streaming. ([source](https://agent2agent.info/specification/core/))
-- The Agent2Agent core specification treats Message as the interaction payload and Artifact as the output payload. ([source](https://agent2agent.info/specification/core/))
-- OpenAI function calling documentation describes function calling as a way to connect models to external tools and systems. ([source](https://help.openai.com/en/articles/8555517-function-calling-in-the-openai-api))
+- OpenAI function calling documentation describes function calling as a way to connect models to external tools and systems. ([source](https://platform.openai.com/docs/guides/function-calling))
+- Unity's command-line documentation lists the -executeMethod argument for executing a static method after the Unity project opens. ([source](https://docs.unity3d.com/Manual/CommandLineArguments.html))
+- Unreal Engine documentation says Python in Unreal Editor can automate workflows, asset management tasks, procedural level layout, and editor control from Python-created UIs. ([source](https://dev.epicgames.com/documentation/unreal-engine/scripting-the-unreal-editor-using-python))
+- Godot's editor plugin documentation describes editor plugins as a supported way to extend the Godot editor. ([source](https://docs.godotengine.org/en/stable/tutorials/plugins/editor/index.html))
 
 ## Operational Notes for Game Teams
 
-Use agents for tasks that can be checked mechanically: generate tests, summarize engine documentation, prepare migration notes, or draft asset import rules. Avoid giving an agent broad write access to scenes, binary assets, paid marketplace files, or production branches without a review gate.
+Good agent tools are small enough to audit. A useful first set is read-only project search, engine documentation retrieval, test execution, static validation, build report generation, and patch proposal. Write tools should start behind a review gate and should return diffs or manifests before touching the working project.
+
+Engine automation is strongest when it is concrete:
+
+- Unity: wrap batch-mode or command-line actions around known static methods, such as build preparation, validation, or asset checks.
+- Unreal: wrap editor Python scripts for content production and asset pipeline tasks, but keep gameplay scripting out of that Python path.
+- Godot: expose editor plugin actions or project checks through a narrow plugin surface rather than broad filesystem access.
 
 ## Further Reading
 
 - [Tools - Model Context Protocol](https://modelcontextprotocol.io/specification/draft/server/tools)
-- [Core Protocol Specification - Agent2Agent Protocol](https://agent2agent.info/specification/core/)
-- [Function Calling in the OpenAI API](https://help.openai.com/en/articles/8555517-function-calling-in-the-openai-api)
+- [Function Calling in the OpenAI API](https://platform.openai.com/docs/guides/function-calling)
+- [Unity Manual: Command-line interface](https://docs.unity3d.com/Manual/CommandLineArguments.html)
+- [Scripting the Unreal Editor Using Python](https://dev.epicgames.com/documentation/unreal-engine/scripting-the-unreal-editor-using-python)
+- [Editor plugins - Godot Engine documentation](https://docs.godotengine.org/en/stable/tutorials/plugins/editor/index.html)

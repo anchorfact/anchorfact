@@ -1,8 +1,8 @@
 # AnchorFact Public Content Audit - 2026-06-01
 
-Generated: 2026-06-01T05:53:39.099Z
+Generated: 2026-06-01T06:21:16.776Z
 
-Snapshot: 648 public / 352 draft / 2001 claims.
+Snapshot: 653 public / 347 draft / 2027 claims.
 
 ## Summary
 
@@ -32,17 +32,17 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 | 7 | low_confidence_public | `history/age-of-exploration` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 | 8 | low_confidence_public | `history/byzantine-empire` | low | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 | 9 | low_confidence_public | `health/strength-training` | low | 1/1 (100.0%) | 4 | source=pass; claim=pass; summary=pass | keep_public |
-| 10 | risk_fallback | `science/plate-tectonics` | medium | 2/2 (100.0%) | 6 | source=pass; claim=pass; summary=pass | keep_public |
-| 11 | risk_fallback | `ai/gradient-descent` | medium | 2/2 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
-| 12 | risk_fallback | `ai/reinforcement-learning` | medium | 2/2 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
-| 13 | risk_fallback | `ai/tokenization-in-nlp` | medium | 3/3 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
-| 14 | risk_fallback | `arts/digital-art` | medium | 3/3 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
-| 15 | risk_fallback | `arts/world-literature` | medium | 2/2 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
-| 16 | risk_fallback | `computer-science/php-language` | medium | 5/5 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
-| 17 | risk_fallback | `computer-science/playwright` | medium | 5/5 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
-| 18 | risk_fallback | `game-development/ai-dialogue-prompts` | medium | 3/3 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
-| 19 | risk_fallback | `game-development/ai-generated-assets` | medium | 3/3 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
-| 20 | risk_fallback | `game-development/player-psychology` | medium | 3/3 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
+| 10 | risk_fallback | `game-development/agent-tools` | medium | 5/5 (100.0%) | 6 | source=pass; claim=pass; summary=pass | keep_public |
+| 11 | risk_fallback | `science/plate-tectonics` | medium | 2/2 (100.0%) | 6 | source=pass; claim=pass; summary=pass | keep_public |
+| 12 | risk_fallback | `ai/diffusion-models-ddpm-stable-diffusion-and-score-based-generative-modeling` | medium | 3/3 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
+| 13 | risk_fallback | `ai/gradient-descent` | medium | 2/2 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
+| 14 | risk_fallback | `ai/reinforcement-learning` | medium | 2/2 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
+| 15 | risk_fallback | `ai/tokenization-in-nlp` | medium | 3/3 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
+| 16 | risk_fallback | `arts/digital-art` | medium | 3/3 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
+| 17 | risk_fallback | `arts/world-literature` | medium | 2/2 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
+| 18 | risk_fallback | `computer-science/code-review-best-practices` | medium | 5/5 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
+| 19 | risk_fallback | `computer-science/php-language` | medium | 5/5 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
+| 20 | risk_fallback | `computer-science/playwright` | medium | 5/5 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 
 ## Article Findings
 
@@ -181,7 +181,22 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 10. Plate Tectonics
+### 10. AI Agent Tools for Game Development
+
+- canonical slug: `game-development/agent-tools`
+- canonical URL: https://anchorfact.org/game-development/agent-tools/
+- bucket: `risk_fallback`
+- confidence: `medium` (verified_sources, score 0.865)
+- verified source coverage: 5/5 (100.0%)
+- claims: 6 total, 0 capped, 0 missing evidence
+- quality reasons: none
+- source-title match: `pass`
+- claim-evidence match: `pass`
+- title-summary accuracy: `pass`
+- hygiene flags: none
+- recommendation: `keep_public`
+
+### 11. Plate Tectonics
 
 - canonical slug: `science/plate-tectonics`
 - canonical URL: https://anchorfact.org/science/plate-tectonics/
@@ -196,7 +211,22 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 11. Gradient Descent and Optimization
+### 12. Diffusion Models: DDPM, Stable Diffusion, and Score-Based Generative Modeling
+
+- canonical slug: `ai/diffusion-models-ddpm-stable-diffusion-and-score-based-generative-modeling`
+- canonical URL: https://anchorfact.org/ai/diffusion-models-ddpm-stable-diffusion-and-score-based-generative-modeling/
+- bucket: `risk_fallback`
+- confidence: `medium` (verified_sources, score 0.8)
+- verified source coverage: 3/3 (100.0%)
+- claims: 5 total, 0 capped, 0 missing evidence
+- quality reasons: none
+- source-title match: `pass`
+- claim-evidence match: `pass`
+- title-summary accuracy: `pass`
+- hygiene flags: none
+- recommendation: `keep_public`
+
+### 13. Gradient Descent and Optimization
 
 - canonical slug: `ai/gradient-descent`
 - canonical URL: https://anchorfact.org/ai/gradient-descent/
@@ -211,7 +241,7 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 12. Reinforcement Learning
+### 14. Reinforcement Learning
 
 - canonical slug: `ai/reinforcement-learning`
 - canonical URL: https://anchorfact.org/ai/reinforcement-learning/
@@ -226,7 +256,7 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 13. Tokenization in NLP
+### 15. Tokenization in NLP
 
 - canonical slug: `ai/tokenization-in-nlp`
 - canonical URL: https://anchorfact.org/ai/tokenization-in-nlp/
@@ -241,7 +271,7 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 14. Digital Art
+### 16. Digital Art
 
 - canonical slug: `arts/digital-art`
 - canonical URL: https://anchorfact.org/arts/digital-art/
@@ -256,7 +286,7 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 15. World Literature
+### 17. World Literature
 
 - canonical slug: `arts/world-literature`
 - canonical URL: https://anchorfact.org/arts/world-literature/
@@ -271,7 +301,22 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 16. PHP Language
+### 18. Code Review Best Practices
+
+- canonical slug: `computer-science/code-review-best-practices`
+- canonical URL: https://anchorfact.org/computer-science/code-review-best-practices/
+- bucket: `risk_fallback`
+- confidence: `medium` (verified_sources, score 0.725)
+- verified source coverage: 5/5 (100.0%)
+- claims: 5 total, 0 capped, 0 missing evidence
+- quality reasons: none
+- source-title match: `pass`
+- claim-evidence match: `pass`
+- title-summary accuracy: `pass`
+- hygiene flags: none
+- recommendation: `keep_public`
+
+### 19. PHP Language
 
 - canonical slug: `computer-science/php-language`
 - canonical URL: https://anchorfact.org/computer-science/php-language/
@@ -286,58 +331,13 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 17. Playwright
+### 20. Playwright
 
 - canonical slug: `computer-science/playwright`
 - canonical URL: https://anchorfact.org/computer-science/playwright/
 - bucket: `risk_fallback`
 - confidence: `medium` (verified_sources, score 0.725)
 - verified source coverage: 5/5 (100.0%)
-- claims: 5 total, 0 capped, 0 missing evidence
-- quality reasons: none
-- source-title match: `pass`
-- claim-evidence match: `pass`
-- title-summary accuracy: `pass`
-- hygiene flags: none
-- recommendation: `keep_public`
-
-### 18. AI Dialogue Prompting for Game NPCs
-
-- canonical slug: `game-development/ai-dialogue-prompts`
-- canonical URL: https://anchorfact.org/game-development/ai-dialogue-prompts/
-- bucket: `risk_fallback`
-- confidence: `medium` (verified_sources, score 0.725)
-- verified source coverage: 3/3 (100.0%)
-- claims: 5 total, 0 capped, 0 missing evidence
-- quality reasons: none
-- source-title match: `pass`
-- claim-evidence match: `pass`
-- title-summary accuracy: `pass`
-- hygiene flags: none
-- recommendation: `keep_public`
-
-### 19. AI-Generated Game Assets: Workflow, Disclosure, and Provenance
-
-- canonical slug: `game-development/ai-generated-assets`
-- canonical URL: https://anchorfact.org/game-development/ai-generated-assets/
-- bucket: `risk_fallback`
-- confidence: `medium` (verified_sources, score 0.865)
-- verified source coverage: 3/3 (100.0%)
-- claims: 5 total, 0 capped, 0 missing evidence
-- quality reasons: none
-- source-title match: `pass`
-- claim-evidence match: `pass`
-- title-summary accuracy: `pass`
-- hygiene flags: none
-- recommendation: `keep_public`
-
-### 20. Player Psychology for Game Design
-
-- canonical slug: `game-development/player-psychology`
-- canonical URL: https://anchorfact.org/game-development/player-psychology/
-- bucket: `risk_fallback`
-- confidence: `medium` (verified_sources, score 0.76)
-- verified source coverage: 3/3 (100.0%)
 - claims: 5 total, 0 capped, 0 missing evidence
 - quality reasons: none
 - source-title match: `pass`

@@ -2,13 +2,13 @@
   "summary": {
     "generated": "2026-05-27T14:00:00.000Z",
     "total_articles": 1000,
-    "total_with_errors": 223,
+    "total_with_errors": 221,
     "average_sources_per_article": "2.4",
-    "overall_verification_rate": "83.6%",
+    "overall_verification_rate": "83.9%",
     "elapsed_ms": 635005,
     "elapsed_sec": "635.0",
     "concurrency": 3,
-    "manual_reviewed_articles": 626
+    "manual_reviewed_articles": 630
   },
   "articles": [
     {
@@ -11603,44 +11603,68 @@
     {
       "file": "content/ai/diffusion-models-ddpm-stable-diffusion-and-score-based-generative-modeling.md",
       "article_id": "kb-2026-00001",
-      "generation_method": "ai_structured",
-      "sources_total": 2,
+      "generation_method": "human_only",
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Source 1 — Diffusion Models: DDPM, Stable Diffusion, and Score-Based Generative Modeling",
+          "source_title": "Denoising Diffusion Probabilistic Models",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2006.11239",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2006.11239",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI/game-development content batch; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Source 2 — Diffusion Models: DDPM, Stable Diffusion, and Score-Based Generative Modeling",
+          "source_title": "Score-Based Generative Modeling through Stochastic Differential Equations",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2207.12598",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2011.13456",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI/game-development content batch; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "High-Resolution Image Synthesis with Latent Diffusion Models",
+          "source_type": "conference_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2112.10752",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI/game-development content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 2
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-06-01"
     },
     {
       "file": "content/ai/diffusion-models.md",
@@ -23934,28 +23958,103 @@
       "file": "content/computer-science/code-review-best-practices.md",
       "article_id": "kb-2026-00235",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 5,
       "verification_results": [
         {
-          "source_title": "ACM Digital Library",
-          "source_type": "repository",
+          "source_title": "The Standard of Code Review",
+          "source_type": "professional_resource",
           "results": [
             {
               "method": "url",
-              "identifier": "https://dl.acm.org/",
-              "verified": false,
+              "identifier": "https://google.github.io/eng-practices/review/reviewer/standard.html",
+              "verified": true,
               "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/"
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI/game-development content batch; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "What to look for in a code review",
+          "source_type": "professional_resource",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://google.github.io/eng-practices/review/reviewer/looking-for.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI/game-development content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Speed of Code Reviews",
+          "source_type": "professional_resource",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://google.github.io/eng-practices/review/reviewer/speed.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI/game-development content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "How to write code review comments",
+          "source_type": "professional_resource",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://google.github.io/eng-practices/review/reviewer/comments.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI/game-development content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Reviewing proposed changes in a pull request",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/reviewing-proposed-changes-in-a-pull-request",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI/game-development content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 1
+      "sources_verified": 5,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-06-01"
     },
     {
       "file": "content/computer-science/columnar-databases-parquet-orc-and-analytical-workloads.md",
@@ -36949,7 +37048,7 @@
       "file": "content/game-development/agent-tools.md",
       "article_id": "kb-gd-002",
       "generation_method": "human_only",
-      "sources_total": 3,
+      "sources_total": 5,
       "verification_results": [
         {
           "source_title": "Tools - Model Context Protocol",
@@ -36962,25 +37061,7 @@
               "metadata": {
                 "manual_review": true,
                 "reviewed_at": "2026-06-01",
-                "note": "AI game-development content focus batch; local verify-full was not run for this bounded manual-review update."
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Core Protocol Specification - Agent2Agent Protocol",
-          "source_type": "standard",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://agent2agent.info/specification/core/",
-              "verified": true,
-              "metadata": {
-                "manual_review": true,
-                "reviewed_at": "2026-06-01",
-                "note": "AI game-development content focus batch; local verify-full was not run for this bounded manual-review update."
+                "note": "Focused AI/game-development content batch; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -36993,12 +37074,66 @@
           "results": [
             {
               "method": "url",
-              "identifier": "https://help.openai.com/en/articles/8555517-function-calling-in-the-openai-api",
+              "identifier": "https://platform.openai.com/docs/guides/function-calling",
               "verified": true,
               "metadata": {
                 "manual_review": true,
                 "reviewed_at": "2026-06-01",
-                "note": "AI game-development content focus batch; local verify-full was not run for this bounded manual-review update."
+                "note": "Focused AI/game-development content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Unity Manual: Command-line interface",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.unity3d.com/Manual/CommandLineArguments.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI/game-development content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Scripting the Unreal Editor Using Python",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://dev.epicgames.com/documentation/unreal-engine/scripting-the-unreal-editor-using-python",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI/game-development content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Editor plugins - Godot Engine documentation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.godotengine.org/en/stable/tutorials/plugins/editor/index.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI/game-development content batch; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -37006,7 +37141,7 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 3,
+      "sources_verified": 5,
       "sources_unreachable": 0,
       "manual_reviewed": true,
       "manual_reviewed_at": "2026-06-01"
@@ -38422,19 +38557,74 @@
       "file": "content/game-development/level-design.md",
       "article_id": "kb-gd-022",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 4,
       "verification_results": [
         {
-          "source_title": "游戏开发Wiki（个人知识库）",
-          "source_type": "knowledge_base",
+          "source_title": "Project Setup and Level Blockout in Unreal Engine",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.gdconf.com/",
+              "identifier": "https://dev.epicgames.com/documentation/en-us/unreal-engine/designer-01-project-setup-and-level-blockout-in-unreal-engine",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://gdconf.com/"
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI/game-development content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Unity Manual: ProBuilder",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.unity3d.com/Manual/com.unity.probuilder.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI/game-development content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Scripting the Unreal Editor Using Python",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://dev.epicgames.com/documentation/unreal-engine/scripting-the-unreal-editor-using-python",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI/game-development content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Editor plugins - Godot Engine documentation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.godotengine.org/en/stable/tutorials/plugins/editor/index.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI/game-development content batch; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -38442,8 +38632,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 4,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-06-01"
     },
     {
       "file": "content/game-development/monetization-strategy.md",
@@ -38864,19 +39056,74 @@
       "file": "content/game-development/procedural-content-generation.md",
       "article_id": "kb-gd-029",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 4,
       "verification_results": [
         {
-          "source_title": "游戏开发Wiki（个人知识库）",
-          "source_type": "knowledge_base",
+          "source_title": "Procedural Content Generation in Games",
+          "source_type": "textbook",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.gdconf.com/",
+              "identifier": "https://link.springer.com/book/10.1007/978-3-319-42716-4",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://gdconf.com/"
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI/game-development content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Search-Based Procedural Content Generation: A Taxonomy and Survey",
+          "source_type": "journal_article",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://doi.org/10.1109/TCIAIG.2011.2148116",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI/game-development content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "WaveFunctionCollapse",
+          "source_type": "software_repository",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://github.com/mxgmn/WaveFunctionCollapse",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI/game-development content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Scripting the Unreal Editor Using Python",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://dev.epicgames.com/documentation/unreal-engine/scripting-the-unreal-editor-using-python",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI/game-development content batch; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -38884,8 +39131,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 4,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-06-01"
     },
     {
       "file": "content/game-development/procedural-generation.md",
