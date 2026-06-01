@@ -1,8 +1,8 @@
 # AnchorFact Public Content Audit - 2026-06-01
 
-Generated: 2026-06-01T12:55:42.837Z
+Generated: 2026-06-01T17:00:40.694Z
 
-Snapshot: 690 public / 310 draft / 2205 claims.
+Snapshot: 696 public / 310 draft / 2224 claims.
 
 ## Summary
 

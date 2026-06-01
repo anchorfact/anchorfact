@@ -148,14 +148,25 @@ function fakeArtifacts() {
 
 console.log('AnchorFact API Readiness Report Tests\n');
 
-test('core query set defines 100 subscription-readiness probes across paid-use categories', () => {
-  assertEq(CORE_CORPUS_QUERIES.length, 100);
+test('core query set defines subscription-readiness probes across paid-use categories', () => {
+  assert(CORE_CORPUS_QUERIES.length >= 100, 'core query set should preserve the 100-query foundation');
+  assert(CORE_CORPUS_QUERIES.length <= 120, 'core query set should stay inside the 80-120 readiness-corpus range');
   const categories = new Set(CORE_CORPUS_QUERIES.map(query => query.category));
-  for (const category of ['agent_rag', 'api_mcp', 'security_governance', 'data_infrastructure', 'llm_evaluation']) {
+  for (const category of ['agent_execution_sources', 'agent_rag', 'api_mcp', 'security_governance', 'data_infrastructure', 'llm_evaluation', 'code_intelligence']) {
     assert(categories.has(category), `missing category ${category}`);
   }
   const slugs = CORE_CORPUS_QUERIES.map(query => query.expected_slug);
   assertEq(new Set(slugs).size, slugs.length, 'expected slugs should be unique');
+  for (const slug of [
+    'ai/agent-execution-knowledge-sources',
+    'computer-science/code-graphs-and-code-intelligence',
+    'computer-science/program-symbols-definitions-and-references',
+    'computer-science/abstract-syntax-trees-and-code-navigation',
+    'computer-science/control-flow-and-data-flow-analysis',
+    'computer-science/call-graphs-and-impact-analysis'
+  ]) {
+    assert(slugs.includes(slug), `missing agent/code-intelligence readiness slug ${slug}`);
+  }
 });
 
 test('core corpus evaluation enforces verified sources and source-mapped atomic facts', () => {

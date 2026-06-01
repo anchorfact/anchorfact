@@ -6,6 +6,8 @@ export const API_READINESS_SCHEMA_VERSION = 'anchorfact.api-readiness.v1';
 export const API_READINESS_TARGET_RATIO = 0.9;
 
 export const CORE_CORPUS_QUERIES = [
+  ['agent_execution_sources', 'ai/agent-execution-knowledge-sources', 'Agent Execution Knowledge Sources: What AI Agents Need to Look Up'],
+
   ['agent_rag', 'ai/advanced-rag-techniques', 'Advanced RAG: From Naive Retrieval to Agentic RAG'],
   ['agent_rag', 'ai/rag', 'Retrieval-Augmented Generation (RAG)'],
   ['agent_rag', 'ai/graphrag', 'GraphRAG'],
@@ -93,6 +95,12 @@ export const CORE_CORPUS_QUERIES = [
   ['developer_workflows', 'ai/ai-call-center', 'AI for Call Centers: Speech Analytics, Agent Assist, and Quality Review'],
   ['developer_workflows', 'ai/ai-employee-experience', 'AI for Employee Experience: HRM Workflows, Learning Support, and Governance'],
   ['developer_workflows', 'ai/ai-for-iot', 'AI for the Internet of Things: Federated Learning, TinyML, and Intelligent Edge Devices'],
+
+  ['code_intelligence', 'computer-science/code-graphs-and-code-intelligence', 'Code Graphs and Code Intelligence'],
+  ['code_intelligence', 'computer-science/program-symbols-definitions-and-references', 'Program Symbols, Definitions, and References'],
+  ['code_intelligence', 'computer-science/abstract-syntax-trees-and-code-navigation', 'Abstract Syntax Trees and Code Navigation'],
+  ['code_intelligence', 'computer-science/control-flow-and-data-flow-analysis', 'Control-Flow and Data-Flow Analysis'],
+  ['code_intelligence', 'computer-science/call-graphs-and-impact-analysis', 'Call Graphs and Impact Analysis'],
 
   ['retrieval_search', 'ai/ai-search-engines', 'AI-Powered Search: Perplexity, Google AI Overviews, and the Future'],
   ['retrieval_search', 'ai/ai-search-recommendation', 'AI for Search and Recommendation: Semantic Search, Collaborative Filtering, and Personalization Engines'],
