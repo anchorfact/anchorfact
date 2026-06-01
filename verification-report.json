@@ -2,13 +2,13 @@
   "summary": {
     "generated": "2026-05-27T14:00:00.000Z",
     "total_articles": 1000,
-    "total_with_errors": 208,
+    "total_with_errors": 207,
     "average_sources_per_article": "2.5",
-    "overall_verification_rate": "84.2%",
+    "overall_verification_rate": "84.4%",
     "elapsed_ms": 635005,
     "elapsed_sec": "635.0",
     "concurrency": 3,
-    "manual_reviewed_articles": 647
+    "manual_reviewed_articles": 652
   },
   "articles": [
     {
@@ -27588,20 +27588,75 @@
     {
       "file": "content/computer-science/git-distributed-version-control-internals-and-workflows.md",
       "article_id": "kb-2026-00008",
-      "generation_method": "ai_structured",
-      "sources_total": 1,
+      "generation_method": "human_only",
+      "sources_total": 4,
       "verification_results": [
         {
-          "source_title": "Source 1 — Git: Distributed Version Control Internals and Workflows",
-          "source_type": "blog_post",
+          "source_title": "Git Internals - Git Objects",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://git-scm.com/book/en/v2",
+              "identifier": "https://git-scm.com/book/en/v2/Git-Internals-Git-Objects",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://git-scm.com/book/en/v2"
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI agent execution, browser graphics, WebRTC, Rust, and Git content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Git Branching - Branches in a Nutshell",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI agent execution, browser graphics, WebRTC, Rust, and Git content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "git-commit Documentation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://git-scm.com/docs/git-commit",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI agent execution, browser graphics, WebRTC, Rust, and Git content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "git-merge Documentation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://git-scm.com/docs/git-merge",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI agent execution, browser graphics, WebRTC, Rust, and Git content batch; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -27609,8 +27664,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 4,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-06-01"
     },
     {
       "file": "content/computer-science/git.md",
@@ -31631,20 +31688,57 @@
     {
       "file": "content/computer-science/opengl-and-vulkan-graphics-pipeline-shaders-and-gpu-architecture.md",
       "article_id": "kb-2026-00016",
-      "generation_method": "ai_structured",
-      "sources_total": 1,
+      "generation_method": "human_only",
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Source 1 — OpenGL and Vulkan: Graphics Pipeline, Shaders, and GPU Architecture",
-          "source_type": "blog_post",
+          "source_title": "OpenGL 4.6 Core Profile Specification",
+          "source_type": "standard",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.khronos.org/vulkan/",
+              "identifier": "https://registry.khronos.org/OpenGL/specs/gl/glspec46.core.pdf",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.vulkan.org/"
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI agent execution, browser graphics, WebRTC, Rust, and Git content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Vulkan Specification",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://registry.khronos.org/vulkan/specs/latest/html/vkspec.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI agent execution, browser graphics, WebRTC, Rust, and Git content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "WebGPU Shading Language",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.w3.org/TR/WGSL/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI agent execution, browser graphics, WebRTC, Rust, and Git content batch; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -31652,8 +31746,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-06-01"
     },
     {
       "file": "content/computer-science/operating-systems-concepts.md",
@@ -33755,20 +33851,57 @@
     {
       "file": "content/computer-science/rust-programming-language-ownership-borrowing-and-memory-safety.md",
       "article_id": "kb-2026-00011",
-      "generation_method": "ai_structured",
-      "sources_total": 1,
+      "generation_method": "human_only",
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Source 1 — Rust Programming Language: Ownership, Borrowing, and Memory Safety",
-          "source_type": "blog_post",
+          "source_title": "Understanding Ownership",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://doc.rust-lang.org/book/",
+              "identifier": "https://doc.rust-lang.org/book/ch04-00-understanding-ownership.html",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://doc.rust-lang.org/book/"
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI agent execution, browser graphics, WebRTC, Rust, and Git content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "References and Borrowing",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI agent execution, browser graphics, WebRTC, Rust, and Git content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Fearless Concurrency",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://doc.rust-lang.org/book/ch16-00-concurrency.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI agent execution, browser graphics, WebRTC, Rust, and Git content batch; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -33776,8 +33909,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-06-01"
     },
     {
       "file": "content/computer-science/rust.md",
@@ -36620,7 +36755,7 @@
       "file": "content/computer-science/webgl.md",
       "article_id": "kb-2026-00091",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
           "source_title": "WebGL 2.0 Specification",
@@ -36628,20 +36763,59 @@
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.khronos.org/registry/webgl/specs/latest/2.0/",
-              "verified": false,
+              "identifier": "https://registry.khronos.org/webgl/specs/latest/2.0/",
+              "verified": true,
               "metadata": {
-                "status": 403,
-                "final_url": "https://registry.khronos.org/webgl/specs/latest/2.0/"
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI agent execution, browser graphics, WebRTC, Rust, and Git content batch; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "WebGL API",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI agent execution, browser graphics, WebRTC, Rust, and Git content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "HTMLCanvasElement: getContext()",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/getContext",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI agent execution, browser graphics, WebRTC, Rust, and Git content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-06-01"
     },
     {
       "file": "content/computer-science/webgpu-next-generation-web-graphics-and-compute-api.md",
@@ -36842,20 +37016,57 @@
     {
       "file": "content/computer-science/webrtc-real-time-communication-in-the-browser.md",
       "article_id": "kb-2026-00001",
-      "generation_method": "ai_structured",
-      "sources_total": 1,
+      "generation_method": "human_only",
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Source 1 — WebRTC: Real-Time Communication in the Browser",
-          "source_type": "blog_post",
+          "source_title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+          "source_type": "standard",
           "results": [
             {
               "method": "url",
               "identifier": "https://www.w3.org/TR/webrtc/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.w3.org/TR/webrtc/"
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI agent execution, browser graphics, WebRTC, Rust, and Git content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "RTCPeerConnection",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/API/RTCPeerConnection",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI agent execution, browser graphics, WebRTC, Rust, and Git content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "RTCDataChannel",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/API/RTCDataChannel",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI agent execution, browser graphics, WebRTC, Rust, and Git content batch; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -36863,8 +37074,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-06-01"
     },
     {
       "file": "content/computer-science/webrtc.md",

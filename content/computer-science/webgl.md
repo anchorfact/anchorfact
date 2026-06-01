@@ -4,77 +4,88 @@ title: "WebGL"
 schema_type: "TechArticle"
 category: "computer-science"
 language: "en"
-confidence: "high"
-last_verified: "2026-05-22"
+confidence: "medium"
+last_verified: "2026-06-01"
 created_date: "2026-05-22"
 generation_method: "human_only"
 derived_from_human_seed: true
 conflict_of_interest: "none_declared"
 is_live_document: false
 data_period: "static"
-
 atomic_facts:
-  - id: "fact-computer-science-001"
-    statement: "WebGL is a JavaScript API for rendering 2D and 3D graphics in browsers, based on OpenGL ES. WebGL 2.0 (2017) supports GLSL ES 3.00 shaders, multiple render targets, and integer-based texture formats. WebGPU (2023+) is its successor."
+  - id: "af-webgl-1"
+    statement: "The WebGL 2.0 specification defines WebGL as a web API for rendering interactive 2D and 3D graphics using OpenGL ES 3.0 style functionality through an HTML canvas."
     source_title: "WebGL 2.0 Specification"
-    source_url: "https://www.khronos.org/registry/webgl/specs/latest/2.0/"
+    source_url: "https://registry.khronos.org/webgl/specs/latest/2.0/"
     confidence: "medium"
-  - id: "fact-computer-science-002"
-    statement: "WebGL uses `getContext('webgl2')` on a canvas element."
-    source_title: "WebGL 2.0 Specification"
-    source_url: "https://www.khronos.org/registry/webgl/specs/latest/2.0/"
+  - id: "af-webgl-2"
+    statement: "A web page can request a WebGL rendering context from a canvas element through HTMLCanvasElement.getContext."
+    source_title: "HTMLCanvasElement: getContext()"
+    source_url: "https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/getContext"
     confidence: "medium"
-  - id: "fact-computer-science-003"
-    statement: "Key libraries: Three.js (high-level 3D), Babylon.js, PlayCanvas."
-    source_title: "WebGL 2.0 Specification"
-    source_url: "https://www.khronos.org/registry/webgl/specs/latest/2.0/"
+  - id: "af-webgl-3"
+    statement: "MDN describes WebGL as a JavaScript API for rendering high-performance interactive 3D and 2D graphics without plug-ins in compatible browsers."
+    source_title: "WebGL API"
+    source_url: "https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API"
     confidence: "medium"
-
-completeness: 0.88
-
+  - id: "af-webgl-4"
+    statement: "WebGL programs use shader programs and GPU resources, so agents building browser games need to manage buffers, textures, uniforms, and draw calls explicitly."
+    source_title: "WebGL API"
+    source_url: "https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API"
+    confidence: "medium"
+  - id: "af-webgl-5"
+    statement: "WebGL code is explicit renderer infrastructure: applications manage shaders, buffers, textures, state binding, and draw calls rather than receiving a full game engine or scene graph."
+    source_title: "WebGL API"
+    source_url: "https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API"
+    confidence: "medium"
+completeness: 0.82
 known_gaps:
-  - "Content verified during quality audit; citations cross-referenced with authoritative sources"
-
-disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
-
+  - Browser support, driver behavior, and performance should be checked against the target platform.
+  - This article covers WebGL concepts, not a full rendering-engine architecture.
+disputed_statements: []
 primary_sources:
-  - title: "WebGL 2.0 Specification"
+  - id: ps-webgl-1
+    title: "WebGL 2.0 Specification"
     type: "standard"
     year: 2017
-    url: "https://www.khronos.org/registry/webgl/specs/latest/2.0/"
     institution: "Khronos Group"
-
-secondary_sources:
-  - title: "MDN Web Docs — HTTP"
+    url: "https://registry.khronos.org/webgl/specs/latest/2.0/"
+  - id: ps-webgl-2
+    title: "WebGL API"
     type: "documentation"
     year: 2026
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTTP"
     institution: "Mozilla"
-  - title: "The C Programming Language (K&R, 2nd Ed)"
-    type: "textbook"
-    year: 1988
-    url: "https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html"
-    institution: "Prentice Hall"
-  - title: "Structure and Interpretation of Computer Programs (SICP)"
-    type: "textbook"
-    year: 1996
-    url: "https://mitpress.mit.edu/sites/default/files/sicp/"
-    institution: "MIT Press"
-
+    url: "https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API"
+  - id: ps-webgl-3
+    title: "HTMLCanvasElement: getContext()"
+    type: "documentation"
+    year: 2026
+    institution: "Mozilla"
+    url: "https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/getContext"
+secondary_sources: []
+updated: "2026-06-01"
 ---
-
-
-
 
 ## TL;DR
 
-WebGL is a JavaScript API for rendering 2D and 3D graphics in browsers, based on OpenGL ES. WebGL 2.0 (2017) supports GLSL ES 3.00 shaders, multiple render targets, and integer-based texture formats. WebGPU (2023+) is its successor.
+WebGL is the established browser API for programmable 2D and 3D graphics on a canvas. It is useful to AI coding agents that build web games, shader demos, visualization tools, or lightweight graphics previews, especially when WebGPU is unavailable.
 
 ## Core Explanation
 
-WebGL uses `getContext('webgl2')` on a canvas element. The pipeline: vertex shader processes vertices → rasterization → fragment shader colors pixels. Programs are compiled from GLSL source at runtime. Uniforms, attributes, and textures provide data to shaders. Key libraries: Three.js (high-level 3D), Babylon.js, PlayCanvas.
+WebGL exposes GPU rendering through JavaScript and an HTML canvas. The agent must create or obtain a rendering context, compile shaders, upload buffers and textures, bind state, and issue draw calls. This is lower-level than a game engine or scene graph, so generated code should be treated as renderer infrastructure rather than a complete game architecture.
+
+## Detailed Analysis
+
+For production work, WebGL choices should be driven by target browser support, shader complexity, asset size, frame budget, fallback requirements, and debugging strategy. Agents should avoid claiming that WebGL automatically provides physics, animation systems, asset import, or editor workflows; those must be built or supplied by a library.
 
 ## Further Reading
 
-- [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
+- [WebGL 2.0 Specification](https://registry.khronos.org/webgl/specs/latest/2.0/)
+- [MDN WebGL API](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API)
+- [HTMLCanvasElement.getContext](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/getContext)
+
+## Related Articles
+
+- [WebGPU: Next-Generation Web Graphics and Compute API](../webgpu-next-generation-web-graphics-and-compute-api.md)
+- [Rendering Pipeline](../../game-development/rendering-pipeline.md)
+- [Shader Programming](../../game-development/shader-programming.md)

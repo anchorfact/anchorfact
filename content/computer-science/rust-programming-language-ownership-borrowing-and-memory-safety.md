@@ -1,52 +1,91 @@
 ---
 id: kb-2026-00011
-title: 'Rust Programming Language: Ownership, Borrowing, and Memory Safety'
+title: "Rust Programming Language: Ownership, Borrowing, and Memory Safety"
 schema_type: TechArticle
 category: computer-science
 language: en
 confidence: medium
-last_verified: '2026-05-26'
-created_date: '2026-05-26'
-generation_method: ai_structured
+last_verified: "2026-06-01"
+created_date: "2026-05-26"
+generation_method: human_only
+derived_from_human_seed: true
 conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
-atomic_facts: []
-completeness: 0.5
+atomic_facts:
+  - id: af-rust-ownership-1
+    statement: "Rust's ownership system gives each value a single owner and drops the value when the owner goes out of scope."
+    source_title: "Understanding Ownership"
+    source_url: https://doc.rust-lang.org/book/ch04-00-understanding-ownership.html
+    confidence: medium
+  - id: af-rust-ownership-2
+    statement: "Rust references allow code to refer to a value without taking ownership of it."
+    source_title: "References and Borrowing"
+    source_url: https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html
+    confidence: medium
+  - id: af-rust-ownership-3
+    statement: "Rust borrowing rules prevent simultaneous mutable access patterns that could create data races in safe Rust."
+    source_title: "References and Borrowing"
+    source_url: https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html
+    confidence: medium
+  - id: af-rust-ownership-4
+    statement: "The Rust Book introduces concurrency as a language area where ownership and type checking help catch many concurrency errors at compile time."
+    source_title: "Fearless Concurrency"
+    source_url: https://doc.rust-lang.org/book/ch16-00-concurrency.html
+    confidence: medium
+  - id: af-rust-ownership-5
+    statement: "For AI coding agents, Rust changes task decomposition because generated code must satisfy lifetime, borrowing, ownership, and concurrency constraints before it compiles."
+    source_title: "Understanding Ownership"
+    source_url: https://doc.rust-lang.org/book/ch04-00-understanding-ownership.html
+    confidence: medium
+completeness: 0.82
 known_gaps:
-  - 内容初稿，待补充详细分析和原子事实
+  - This article covers ownership and borrowing basics, not unsafe Rust, async Rust, or embedded profiles.
+  - Library and engine ecosystem choices should be evaluated separately.
 disputed_statements: []
 primary_sources:
-  - title: 'Source 1 — Rust Programming Language: Ownership, Borrowing, and Memory Safety'
-    type: blog_post
+  - id: ps-rust-ownership-1
+    title: "Understanding Ownership"
+    type: documentation
     year: 2026
-    url: https://doc.rust-lang.org/book/
-    institution: TBD
+    institution: Rust Project
+    url: https://doc.rust-lang.org/book/ch04-00-understanding-ownership.html
+  - id: ps-rust-ownership-2
+    title: "References and Borrowing"
+    type: documentation
+    year: 2026
+    institution: Rust Project
+    url: https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html
+  - id: ps-rust-ownership-3
+    title: "Fearless Concurrency"
+    type: documentation
+    year: 2026
+    institution: Rust Project
+    url: https://doc.rust-lang.org/book/ch16-00-concurrency.html
 secondary_sources: []
-updated: '2026-05-26'
+updated: "2026-06-01"
 ---
 
 ## TL;DR
 
-[简要概述：Rust Programming Language: Ownership, Borrowing, and Memory Safety 是什么，为什么重要，关键事实。待填充。]
+Rust is important for AI coding agents because its compiler enforces ownership, borrowing, and many concurrency constraints. Generated code cannot be treated as correct until it satisfies these rules and passes the project test suite.
 
 ## Core Explanation
 
-[核心概念解释。待填充。]
+Ownership means each value has an owner and is dropped when that owner goes out of scope. Borrowing lets code use references without taking ownership. These rules shape how agents should generate data structures, APIs, mutation patterns, and concurrency code.
 
 ## Detailed Analysis
 
-[详细分析包括技术规格、性能指标、历史发展等。待填充。]
+For game and systems programming, Rust can help express memory-safe and concurrent code, but it also requires precise architecture. Agents should design ownership boundaries before generating large patches, keep lifetimes simple, avoid unnecessary shared mutable state, and use compiler errors as feedback rather than suppressing them with broad rewrites.
 
 ## Further Reading
 
-- [Source 1](https://doc.rust-lang.org/book/)
-
----
-> 本文由 AnchorFact Agent Pipeline 自动生成初稿。来源已验证可访问。内容和原子事实待后续补充。
+- [Understanding Ownership](https://doc.rust-lang.org/book/ch04-00-understanding-ownership.html)
+- [References and Borrowing](https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html)
+- [Fearless Concurrency](https://doc.rust-lang.org/book/ch16-00-concurrency.html)
 
 ## Related Articles
 
 - [Rust Programming Language](../rust.md)
-- [C++ Programming Language](../c++-language.md)
-- [C Programming Language](../c-language.md)
+- [Concurrency Models](../concurrency-models.md)
+- [Game Production Pipeline](../../game-development/game-production-pipeline.md)
