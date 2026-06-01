@@ -1,12 +1,13 @@
 ---
 id: "kb-gd-012"
-title: "game data analytics"
+title: "Game Data Analytics for AI-Assisted Teams"
 schema_type: "TechArticle"
 category: "game-development"
-language: "zh"
-confidence: "high"
-last_verified: "2026-04-28"
+language: "en"
+confidence: "medium"
+last_verified: "2026-06-01"
 created_date: "2026-04-28"
+updated: "2026-06-01"
 generation_method: "human_only"
 derived_from_human_seed: true
 conflict_of_interest: "none_declared"
@@ -14,213 +15,118 @@ is_live_document: false
 data_period: "static"
 
 atomic_facts:
-  - id: "fact-gd-001"
-    statement: "1 DAU / MAU / Stickiness  ``` DAU = 每日活跃用户数 MAU = 每月活跃用户数 Stickiness = DAU / MAU × 100% ```  - **Stickiness 目标：** > 20% 为优秀，> 15% 为良好 - Stickiness 反映了游戏对玩家的\"粘性\"  ### 2."
-    source_title: "游戏开发Wiki（个人知识库）"
-    source_url: "https://www.gdconf.com/"
+  - id: "fact-gd-data-analytics-001"
+    statement: "Unity Analytics documentation describes Unity Analytics as a tool for understanding player behavior and game performance."
+    source_title: "Unity Analytics"
+    source_url: "https://docs.unity.com/ugs/en-us/manual/analytics/manual/overview"
     confidence: "medium"
-  - id: "fact-gd-002"
-    statement: "2 留存率计算  ``` D1 留存 = 第 1 天回访用户 / 第 0 天新增用户 × 100% D7 留存 = 第 7 天回访用户 / 第 0 天新增用户 × 100% D30 留存 = 第 30 天回访用户 / 第 0 天新增用户 × 100% ```  **注意：** 留存率一定是按**新增 Cohort** 计算的，不是按整体活跃用户。"
-    source_title: "游戏开发Wiki（个人知识库）"
-    source_url: "https://www.gdconf.com/"
+  - id: "fact-gd-data-analytics-002"
+    statement: "Unity custom event documentation describes custom events as events that developers define to record specific player actions."
+    source_title: "Create a custom event"
+    source_url: "https://docs.unity.com/en-us/analytics/events/custom-event"
     confidence: "medium"
-  - id: "fact-gd-003"
-    statement: "3 LTV 计算  ``` LTV = ARPU × 平均用户生命周期  常见估算方式: LTV = D1 留存 × D7 留存贡献 + D7 留存 × D30 留存贡献 + ."
-    source_title: "游戏开发Wiki（个人知识库）"
-    source_url: "https://www.gdconf.com/"
+  - id: "fact-gd-data-analytics-003"
+    statement: "Google Analytics for Firebase documentation states that events provide insight on what is happening in an app."
+    source_title: "Log events"
+    source_url: "https://firebase.google.com/docs/analytics/events"
     confidence: "medium"
-  - id: "fact-gd-004"
-    statement: "4 关键平衡指标  | 指标 | 说明 | 预警阈值 | |------|------|----------| | 货币通胀率 | 玩家持有的货币增速 | > 15%/周 | | 付费深度 | 最大可消费金额 | 与用户群匹配 | | Gini 系数 | 付费公平性 | < 0."
-    source_title: "游戏开发Wiki（个人知识库）"
-    source_url: "https://www.gdconf.com/"
+  - id: "fact-gd-data-analytics-004"
+    statement: "Firebase A/B Testing documentation describes Firebase A/B Testing as a service for running, analyzing, and scaling product and marketing experiments."
+    source_title: "Firebase A/B Testing"
+    source_url: "https://firebase.google.com/docs/ab-testing"
     confidence: "medium"
-  - id: "fact-gd-005"
-    statement: "4 为健康 | | 消费集中度 | top 10% 玩家占总消费比 | < 70% 为健康 |  ---  ## 3."
-    source_title: "游戏开发Wiki（个人知识库）"
-    source_url: "https://www.gdconf.com/"
+  - id: "fact-gd-data-analytics-005"
+    statement: "OpenTelemetry documentation groups telemetry signals into traces, metrics, logs, and baggage."
+    source_title: "Signals"
+    source_url: "https://opentelemetry.io/docs/concepts/signals/"
     confidence: "medium"
 
-completeness: 0.85
-
+completeness: 0.82
 known_gaps:
-  - "This field is under active research and rapid development; some conclusions may evolve with new evidence or technological advances"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
-
-disputed_statements:
-  - statement: "The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the available evidence"
+  - "This article covers analytics concepts and official SDK surfaces; it does not compare commercial analytics vendors exhaustively."
+  - "Privacy, consent, and child-safety requirements depend on jurisdiction, audience, and platform policy."
+disputed_statements: []
 
 primary_sources:
-  - title: "游戏开发Wiki（个人知识库）"
-    type: "knowledge_base"
+  - title: "Unity Analytics"
+    type: "documentation"
     year: 2026
-    url: "https://www.gdconf.com/"
-    institution: "Game Developers Conference"
-
-secondary_sources:
-  - title: "GDC Vault"
-    type: "conference"
+    url: "https://docs.unity.com/ugs/en-us/manual/analytics/manual/overview"
+    institution: "Unity Technologies"
+  - title: "Create a custom event"
+    type: "documentation"
     year: 2026
-    url: "https://www.gdconf.com/"
-    institution: "GDC"
-  - title: "Game Engine Architecture (Jason Gregory, 3rd Ed)"
-    type: "textbook"
-    year: 2018
-    url: "https://www.gameenginebook.com/"
-    institution: "CRC Press"
-
+    url: "https://docs.unity.com/en-us/analytics/events/custom-event"
+    institution: "Unity Technologies"
+  - title: "Log events"
+    type: "documentation"
+    year: 2026
+    url: "https://firebase.google.com/docs/analytics/events"
+    institution: "Google Firebase"
+  - title: "Firebase A/B Testing"
+    type: "documentation"
+    year: 2026
+    url: "https://firebase.google.com/docs/ab-testing"
+    institution: "Google Firebase"
+  - title: "Signals"
+    type: "documentation"
+    year: 2026
+    url: "https://opentelemetry.io/docs/concepts/signals/"
+    institution: "OpenTelemetry"
+secondary_sources: []
 ---
 
+## TL;DR
 
+Game analytics converts play into evidence: events, funnels, retention signals, crashes, performance metrics, and experiment results. AI agents can help summarize those signals, but they should not invent causal conclusions without an experiment design or a clearly named data source.
 
+## Core Explanation
 
+For game teams, analytics should start with questions that affect product decisions:
 
-## 2. 核心指标定义与计算
+- Are players reaching the tutorial goal?
+- Where do players abandon a level?
+- Which UI screen causes failed purchases or configuration errors?
+- Does a balance change improve retention, completion, or fairness?
+- Is a build slower, crashier, or harder to complete than the previous build?
 
-### 2.1 DAU / MAU / Stickiness
+An AI coding or analysis agent is useful when it receives structured telemetry and a narrow question. It can map events to a funnel, find missing instrumentation, write a query, summarize an experiment, or propose a telemetry schema. It should clearly separate observed data from interpretation.
 
-```
-DAU = 每日活跃用户数
-MAU = 每月活跃用户数
-Stickiness = DAU / MAU × 100%
-```
+## Source-Mapped Facts
 
-- **Stickiness 目标：** > 20% 为优秀，> 15% 为良好
-- Stickiness 反映了游戏对玩家的"粘性"
+- Unity Analytics documentation describes Unity Analytics as a tool for understanding player behavior and game performance. ([source](https://docs.unity.com/ugs/en-us/manual/analytics/manual/overview))
+- Unity custom event documentation describes custom events as events that developers define to record specific player actions. ([source](https://docs.unity.com/en-us/analytics/events/custom-event))
+- Google Analytics for Firebase documentation states that events provide insight on what is happening in an app. ([source](https://firebase.google.com/docs/analytics/events))
+- Firebase A/B Testing documentation describes Firebase A/B Testing as a service for running, analyzing, and scaling product and marketing experiments. ([source](https://firebase.google.com/docs/ab-testing))
+- OpenTelemetry documentation groups telemetry signals into traces, metrics, logs, and baggage. ([source](https://opentelemetry.io/docs/concepts/signals/))
 
-### 2.2 留存率计算
+## AI-Agent Operating Notes
 
-```
-D1 留存 = 第 1 天回访用户 / 第 0 天新增用户 × 100%
-D7 留存 = 第 7 天回访用户 / 第 0 天新增用户 × 100%
-D30 留存 = 第 30 天回访用户 / 第 0 天新增用户 × 100%
-```
+Useful agent tasks:
 
-**注意：** 留存率一定是按**新增 Cohort** 计算的，不是按整体活跃用户。
+1. define event names and parameters for a feature before implementation;
+2. compare an event schema against a design document;
+3. summarize funnel drop-off from exported data;
+4. flag metrics that lack a denominator or time window;
+5. separate experiment outcomes from ordinary before-and-after comparisons.
 
-### 2.3 LTV 计算
+Unsafe shortcuts:
 
-```
-LTV = ARPU × 平均用户生命周期
+- treating correlation as causation;
+- optimizing only for monetization while ignoring player trust;
+- using personal data when aggregate or anonymous events are enough;
+- changing gameplay balance from a single noisy metric.
 
-常见估算方式:
-LTV = D1 留存 × D7 留存贡献 + D7 留存 × D30 留存贡献 + ...
-更简单: LTV ≈ ARPU × 1/流失率
-```
+## Further Reading
 
-### 2.4 关键平衡指标
-
-| 指标 | 说明 | 预警阈值 |
-|------|------|----------|
-| 货币通胀率 | 玩家持有的货币增速 | > 15%/周 |
-| 付费深度 | 最大可消费金额 | 与用户群匹配 |
-| Gini 系数 | 付费公平性 | < 0.4 为健康 |
-| 消费集中度 | top 10% 玩家占总消费比 | < 70% 为健康 |
-
----
-
-## 3. 数据驱动平衡工作流
-
-### 3.1 异常检测
-
-#### 经济异常
-- **通胀信号：** 玩家平均货币持有量连续 2 周增长率 > 15%
-- **通缩信号：** 货币流通速度下降 > 20%
-- **极端情况：** 少数玩家掌握了大量财富（Gini 系数 > 0.5）
-
-#### 数值异常
-- **膨胀：** 装备等级/怪物等级比值偏离设计值 > 30%
-- **失衡：** 某个技能/武器的使用率 > 60%，其他全低于 10%
-- **无用内容：** 某个机制/道具的使用率 < 1%
-
-#### 流失预警
-- 玩家连续 3 天游戏时长下降 > 30%
-- 玩家在某关卡卡住超过 3 天
-- 社交活跃度突然下降
-
-### 3.2 调优流程
-
-```
-1. 发现异常 ╾── 数据监控告警
-2. 分析根本原因 ╾── 细分数据、玩家访谈
-3. 提出假设 ╾── "如果我们调整 X，会发生 Y"
-4. 设计调整方案 ╾── 具体数值/机制改动
-5. A/B 测试验证 ╾── 对照组 vs 实验组
-6. 全量发布 ╾── 持续监控
-```
-
-### 3.3 A/B 测试要点
-
-- **单变量原则：** 一次只测一个改动
-- **样本量：** 每组至少 1000 用户
-- **测试周期：** 至少 7 天（排除周末效应）
-- **统计显著性：** p < 0.05
-
----
-
-## 4. 工具推荐
-
-### 4.1 免费/内置工具
-
-| 工具 | 适用平台 | 功能 |
-|------|----------|------|
-| **Unity Analytics** | Unity 游戏 | 事件埋点、DAU、留存 |
-| **Firebase** | 移动游戏 | 用户分群、A/B 测试、崩溃报告 |
-| **GameSparks** | 全平台 | 实时分析、云存档 |
-| **Appsflyer** | 移动端 | 归因分析、UA 追踪 |
-
-### 4.2 付费工具
-
-| 工具 | 价格 | 适用规模 |
-|------|------|----------|
-| **Amplitude** | 免费版 + 付费版 | 中小团队 |
-| **Mixpanel** | 按量计费 | 中大型团队 |
-| **Adjust** | 按量计费 | 移动端 UA |
-| **SensorTower** | 订阅制 | 竞品分析 |
-
-### 4.3 自建方案
-
-- **数据仓库：** BigQuery / Snowflake
-- **ETL：** Airflow / dbt
-- **可视化：** Looker / Metabase / Grafana
-- **实时管道：** Kafka + ClickHouse
-- **埋点 SDK：** 自建事件系统
-
----
-
-## 5. 数据分析团队工作流
-
-### 5.1 游戏上线前
-
-- 定义核心指标和北极星指标
-- 埋点方案设计
-- 平衡性数据模拟
-
-### 5.2 游戏上线后
-
-- 每日发布数据报表
-- 每周留存和收入分析
-- 每月深度用户行为分析
-- 每次版本更新做 A/B 测试
-
-### 5.3 迭代优化循环
-
-```
-数据 → 洞察 → 假设 → 实验 → 验证 → 产品化
-```
-
----
-
-## 参考来源
-
-- AARRR 模型: Dave McClure (500 Startups)
-- Nir Eyal: Hooked
-- Eric Ries: The Lean Startup
-- [参见：player-psychology.md#hook-模型与留存机制]
-- [参见：core-mechanics.md#经济系统]
-- [参见：templates/economy-balance-template.md]
+- [Unity Analytics](https://docs.unity.com/ugs/en-us/manual/analytics/manual/overview)
+- [Create a custom event](https://docs.unity.com/en-us/analytics/events/custom-event)
+- [Log events](https://firebase.google.com/docs/analytics/events)
+- [Firebase A/B Testing](https://firebase.google.com/docs/ab-testing)
+- [OpenTelemetry Signals](https://opentelemetry.io/docs/concepts/signals/)
 
 ## Related Articles
 
-- [AI for Data Visualization: Automated Chart Generation, Insight Discovery, and Visual Analytics](../../ai/ai-for-visualization.md)
-- [Cricket Strategy: Data Analytics and Match Modeling](../../sports/cricket-strategy-data-analytics-and-match-modeling.md)
-- [Football (Soccer) Analytics: Expected Goals (xG) and Tactical Data Science](../../sports/football-soccer-analytics-expected-goals-xg-and-tactical-data-science.md)
+- [Player Psychology](player-psychology.md)
+- [Game Balance Fundamentals](game-balance-fundamentals.md)
+- [Game Production Pipeline for AI-Assisted Teams](game-production-pipeline.md)
