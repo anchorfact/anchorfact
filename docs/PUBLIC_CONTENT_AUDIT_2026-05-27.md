@@ -1,8 +1,8 @@
 # AnchorFact Public Content Audit - 2026-06-01
 
-Generated: 2026-06-01T08:39:57.723Z
+Generated: 2026-06-01T09:21:06.347Z
 
-Snapshot: 678 public / 322 draft / 2152 claims.
+Snapshot: 683 public / 317 draft / 2176 claims.
 
 ## Summary
 
@@ -39,10 +39,10 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 | 14 | risk_fallback | `ai/ai-for-augmented-reality-real-time-object-detection-depth-estimation-and-scene-understanding` | medium | 5/5 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 | 15 | risk_fallback | `ai/diffusion-models-ddpm-stable-diffusion-and-score-based-generative-modeling` | medium | 3/3 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 | 16 | risk_fallback | `ai/gradient-descent` | medium | 2/2 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
-| 17 | risk_fallback | `ai/nerf-neural-radiance-fields-for-view-synthesis` | medium | 4/4 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
-| 18 | risk_fallback | `ai/reinforcement-learning` | medium | 2/2 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
-| 19 | risk_fallback | `ai/tokenization-in-nlp` | medium | 3/3 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
-| 20 | risk_fallback | `arts/digital-art` | medium | 3/3 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
+| 17 | risk_fallback | `ai/large-language-model-training-scaling-laws-data-curation-and-compute` | medium | 3/3 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
+| 18 | risk_fallback | `ai/multimodal-ai-vision-language-models-from-clip-to-gpt-4v` | medium | 3/3 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
+| 19 | risk_fallback | `ai/nerf-neural-radiance-fields-for-view-synthesis` | medium | 4/4 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
+| 20 | risk_fallback | `ai/reinforcement-learning` | medium | 2/2 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 
 ## Article Findings
 
@@ -286,7 +286,37 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 17. NeRF: Neural Radiance Fields for View Synthesis
+### 17. Large Language Model Training: Scaling Laws, Data Curation, and Compute
+
+- canonical slug: `ai/large-language-model-training-scaling-laws-data-curation-and-compute`
+- canonical URL: https://anchorfact.org/ai/large-language-model-training-scaling-laws-data-curation-and-compute/
+- bucket: `risk_fallback`
+- confidence: `medium` (verified_sources, score 0.8)
+- verified source coverage: 3/3 (100.0%)
+- claims: 5 total, 0 capped, 0 missing evidence
+- quality reasons: none
+- source-title match: `pass`
+- claim-evidence match: `pass`
+- title-summary accuracy: `pass`
+- hygiene flags: none
+- recommendation: `keep_public`
+
+### 18. Multimodal AI: Vision-Language Models from CLIP to GPT-4V
+
+- canonical slug: `ai/multimodal-ai-vision-language-models-from-clip-to-gpt-4v`
+- canonical URL: https://anchorfact.org/ai/multimodal-ai-vision-language-models-from-clip-to-gpt-4v/
+- bucket: `risk_fallback`
+- confidence: `medium` (verified_sources, score 0.82)
+- verified source coverage: 3/3 (100.0%)
+- claims: 5 total, 0 capped, 0 missing evidence
+- quality reasons: none
+- source-title match: `pass`
+- claim-evidence match: `pass`
+- title-summary accuracy: `pass`
+- hygiene flags: none
+- recommendation: `keep_public`
+
+### 19. NeRF: Neural Radiance Fields for View Synthesis
 
 - canonical slug: `ai/nerf-neural-radiance-fields-for-view-synthesis`
 - canonical URL: https://anchorfact.org/ai/nerf-neural-radiance-fields-for-view-synthesis/
@@ -301,43 +331,13 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 18. Reinforcement Learning
+### 20. Reinforcement Learning
 
 - canonical slug: `ai/reinforcement-learning`
 - canonical URL: https://anchorfact.org/ai/reinforcement-learning/
 - bucket: `risk_fallback`
 - confidence: `medium` (verified_sources, score 0.72)
 - verified source coverage: 2/2 (100.0%)
-- claims: 5 total, 0 capped, 0 missing evidence
-- quality reasons: none
-- source-title match: `pass`
-- claim-evidence match: `pass`
-- title-summary accuracy: `pass`
-- hygiene flags: none
-- recommendation: `keep_public`
-
-### 19. Tokenization in NLP
-
-- canonical slug: `ai/tokenization-in-nlp`
-- canonical URL: https://anchorfact.org/ai/tokenization-in-nlp/
-- bucket: `risk_fallback`
-- confidence: `medium` (verified_sources, score 0.76)
-- verified source coverage: 3/3 (100.0%)
-- claims: 5 total, 0 capped, 0 missing evidence
-- quality reasons: none
-- source-title match: `pass`
-- claim-evidence match: `pass`
-- title-summary accuracy: `pass`
-- hygiene flags: none
-- recommendation: `keep_public`
-
-### 20. Digital Art
-
-- canonical slug: `arts/digital-art`
-- canonical URL: https://anchorfact.org/arts/digital-art/
-- bucket: `risk_fallback`
-- confidence: `medium` (verified_sources, score 0.725)
-- verified source coverage: 3/3 (100.0%)
 - claims: 5 total, 0 capped, 0 missing evidence
 - quality reasons: none
 - source-title match: `pass`

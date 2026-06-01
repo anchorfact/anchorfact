@@ -66,10 +66,10 @@ test('buildProjectReadiness selects draft repair only after public surface is cl
 
 test('buildProjectReadiness avoids content stacking once the project is excellent', () => {
   const readiness = buildProjectReadiness({
-    publicArticles: 678,
+    publicArticles: 683,
     publicAuditActionableCount: 0,
-    publicSourceCoverage: { full: 678, partial: 0, zero: 0 },
-    publicClaimMapping: { total: 2152, mapped: 2152, ratio: 1 },
+    publicSourceCoverage: { full: 683, partial: 0, zero: 0 },
+    publicClaimMapping: { total: 2176, mapped: 2176, ratio: 1 },
     publicLowConfidenceCount: 43,
     staleDocsCount: 0,
     draftRepairCandidateCount: 150,
