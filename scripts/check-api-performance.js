@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { existsSync, readFileSync } from 'fs';
+import { existsSync, readFileSync, statSync } from 'fs';
 import { join } from 'path';
 import { performance } from 'perf_hooks';
 import { pathToFileURL } from 'url';
@@ -17,6 +17,18 @@ import { buildResolveBatchApiPayload } from '../src/lib/resolve-api.js';
 export const DEFAULT_DIST_DIR = 'dist';
 export const DEFAULT_RUNS = 30;
 export const DEFAULT_WARMUPS = 5;
+
+export const DEFAULT_ARTIFACT_SIZE_BUDGETS = [
+  { path: 'graph.json', baseline_bytes: 2997236, max_bytes: 4000000, purpose: 'offline relationship graph' },
+  { path: 'search-index.json', baseline_bytes: 1986169, max_bytes: 2700000, purpose: 'offline search fallback' },
+  { path: 'claims.json', baseline_bytes: 1738706, max_bytes: 2400000, purpose: 'offline claim corpus' },
+  { path: 'sources.json', baseline_bytes: 1175562, max_bytes: 1700000, purpose: 'offline source corpus' },
+  { path: 'manifest.json', baseline_bytes: 693188, max_bytes: 950000, purpose: 'public/draft article catalog' },
+  { path: 'llms.txt', baseline_bytes: 253376, max_bytes: 350000, purpose: 'crawler-facing public index' },
+  { path: 'openapi.json', baseline_bytes: 61580, max_bytes: 100000, purpose: 'machine contract schema' },
+  { path: 'agent.json', baseline_bytes: 17157, max_bytes: 40000, purpose: 'agent discovery profile' },
+  { path: 'artifact-summary.json', baseline_bytes: 0, max_bytes: 60000, purpose: 'artifact size discovery layer' }
+];
 
 export const DEFAULT_CASES = [
   {
@@ -154,6 +166,43 @@ export function evaluateBudget(summary, budget) {
   return failures;
 }
 
+export function loadArtifactSizes(distDir = DEFAULT_DIST_DIR, budgets = DEFAULT_ARTIFACT_SIZE_BUDGETS) {
+  return Object.fromEntries(budgets.map(budget => {
+    const path = join(distDir, budget.path);
+    return [budget.path, existsSync(path) ? statSync(path).size : null];
+  }));
+}
+
+export function evaluateArtifactSizeBudgets(
+  sizes,
+  budgets = DEFAULT_ARTIFACT_SIZE_BUDGETS
+) {
+  const artifacts = budgets.map(budget => {
+    const bytes = sizes?.[budget.path];
+    const ok = Number.isFinite(bytes) && bytes <= budget.max_bytes;
+    const failures = [];
+    if (!Number.isFinite(bytes)) {
+      failures.push(`${budget.path}: missing artifact`);
+    } else if (bytes > budget.max_bytes) {
+      failures.push(`${budget.path}: ${bytes} bytes > budget ${budget.max_bytes} bytes`);
+    }
+    return {
+      ...budget,
+      bytes,
+      headroom_bytes: Number.isFinite(bytes) ? budget.max_bytes - bytes : null,
+      ok,
+      failures
+    };
+  });
+  const failures = artifacts.flatMap(artifact => artifact.failures);
+  return {
+    ok: failures.length === 0,
+    budget_count: artifacts.length,
+    artifacts,
+    failures
+  };
+}
+
 function measureCase(testCase, artifacts, { runs, warmups }) {
   for (let index = 0; index < warmups; index++) {
     testCase.run(artifacts);
@@ -185,13 +234,17 @@ function measureCase(testCase, artifacts, { runs, warmups }) {
 
 export function buildApiPerformanceReport({
   artifacts,
+  artifactSizeBudget = null,
   cases = DEFAULT_CASES,
   runs = DEFAULT_RUNS,
   warmups = DEFAULT_WARMUPS,
   generatedAt = new Date().toISOString()
 }) {
   const results = cases.map(testCase => measureCase(testCase, artifacts, { runs, warmups }));
-  const failures = results.flatMap(result => result.failures.map(failure => `${result.id}: ${failure}`));
+  const caseFailures = results.flatMap(result => result.failures.map(failure => `${result.id}: ${failure}`));
+  const artifactFailures = (artifactSizeBudget?.failures || [])
+    .map(failure => `artifact_size_budget: ${failure}`);
+  const failures = [...caseFailures, ...artifactFailures];
   return {
     generated: generatedAt,
     ok: failures.length === 0,
@@ -201,6 +254,7 @@ export function buildApiPerformanceReport({
     passed: results.filter(result => result.ok).length,
     failed: results.filter(result => !result.ok).length,
     results,
+    artifact_size_budget: artifactSizeBudget,
     failures
   };
 }
@@ -216,6 +270,12 @@ export function renderApiPerformanceMarkdown(report) {
   const failures = report.failures.length
     ? report.failures.map(failure => `- ${failure}`).join('\n')
     : '- none';
+  const artifactBudget = report.artifact_size_budget;
+  const artifactLines = artifactBudget?.artifacts?.length
+    ? artifactBudget.artifacts.map(artifact =>
+      `- ${artifact.path}: ${artifact.ok ? 'pass' : 'fail'} bytes=${artifact.bytes ?? 'missing'} budget=${artifact.max_bytes} headroom=${artifact.headroom_bytes ?? 'n/a'}`
+    ).join('\n')
+    : '- not checked';
 
   return `# AnchorFact API Performance Budget - ${report.ok ? 'PASS' : 'FAIL'}
 
@@ -233,6 +293,13 @@ Generated: ${report.generated}
 ## Results
 
 ${resultLines}
+
+## Artifact Size Budget
+
+- status: ${artifactBudget ? (artifactBudget.ok ? 'pass' : 'fail') : 'not_checked'}
+- budgets: ${artifactBudget?.budget_count ?? 0}
+
+${artifactLines}
 
 ## Failures
 
@@ -269,8 +336,10 @@ function parseArgs(argv) {
 export function main(argv = process.argv.slice(2)) {
   const options = parseArgs(argv);
   const artifacts = loadApiPerformanceArtifacts(options.distDir);
+  const artifactSizeBudget = evaluateArtifactSizeBudgets(loadArtifactSizes(options.distDir));
   const report = buildApiPerformanceReport({
     artifacts,
+    artifactSizeBudget,
     runs: options.runs,
     warmups: options.warmups
   });

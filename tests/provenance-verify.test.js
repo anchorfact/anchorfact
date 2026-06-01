@@ -2,6 +2,7 @@
 import { generateKeyPairSync } from 'crypto';
 import {
   CLAIMS_SCHEMA_VERSION,
+  ARTIFACT_SUMMARY_SCHEMA_VERSION,
   CAPABILITIES_SCHEMA_VERSION,
   CONTENT_HEALTH_SCHEMA_VERSION,
   COVERAGE_SCHEMA_VERSION,
@@ -132,6 +133,7 @@ function buildFixture(overrides = {}) {
       '/graph.json': {},
       '/evals.json': {},
       '/mcp.json': {},
+      '/artifact-summary.json': {},
       '/search-index.json': {},
       '/sources.json': {},
       '/provenance.json': {}
@@ -280,6 +282,24 @@ function buildFixture(overrides = {}) {
     },
     tools: [{ name: 'anchorfact_search' }]
   };
+  const artifactSummary = {
+    schema_version: ARTIFACT_SUMMARY_SCHEMA_VERSION,
+    generated: '2026-05-29T00:00:00.000Z',
+    provenance_url: `${baseUrl}/provenance.json`,
+    total_bytes: 1234,
+    recommended_default_calls: [{ path: '/api/context?q={query}' }],
+    artifacts: [
+      {
+        path: '/graph.json',
+        bytes: 500,
+        bytes_human: '500 B',
+        category: 'offline_graph',
+        cache_posture: 'public, max-age=0, must-revalidate',
+        use_when: 'offline traversal',
+        recommended_alternative: '/api/context?q={query}'
+      }
+    ]
+  };
   const manifestText = JSON.stringify(manifest, null, 2);
   const claimsText = JSON.stringify(claims, null, 2);
   const agentText = JSON.stringify(agent, null, 2);
@@ -292,6 +312,7 @@ function buildFixture(overrides = {}) {
   const graphText = JSON.stringify(graph, null, 2);
   const evalsText = JSON.stringify(evals, null, 2);
   const mcpText = JSON.stringify(mcp, null, 2);
+  const artifactSummaryText = JSON.stringify(artifactSummary, null, 2);
   const searchText = JSON.stringify(search, null, 2);
   const sourcesText = JSON.stringify(sources, null, 2);
   const provenance = {
@@ -378,6 +399,11 @@ function buildFixture(overrides = {}) {
         sha256: sha256Text(mcpText),
         bytes: Buffer.byteLength(mcpText, 'utf8')
       },
+      artifact_summary_json: {
+        path: '/artifact-summary.json',
+        sha256: sha256Text(artifactSummaryText),
+        bytes: Buffer.byteLength(artifactSummaryText, 'utf8')
+      },
       search_index_json: {
         path: '/search-index.json',
         sha256: sha256Text(searchText),
@@ -431,6 +457,7 @@ function buildFixture(overrides = {}) {
     [`${baseUrl}/graph.json`]: { body: graphText },
     [`${baseUrl}/evals.json`]: { body: evalsText },
     [`${baseUrl}/mcp.json`]: { body: mcpText },
+    [`${baseUrl}/artifact-summary.json`]: { body: artifactSummaryText },
     [`${baseUrl}/search-index.json`]: { body: searchText },
     [`${baseUrl}/sources.json`]: { body: sourcesText },
     [`${baseUrl}/llms.txt`]: { body: llms, contentType: 'text/plain; charset=utf-8' },
@@ -465,6 +492,7 @@ test('verifyLiveProvenance accepts matching official live artifacts', async () =
   assertEq(result.failures, []);
   assertEq(result.artifacts.manifest_json.ok, true);
   assertEq(result.artifacts.content_health_json.ok, true);
+  assertEq(result.artifacts.artifact_summary_json.ok, true);
   assertEq(result.commit.ok, true);
   assertEq(result.signature.skipped, true);
 });

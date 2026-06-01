@@ -174,12 +174,14 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
   assert(llmsDiscoveryEval.expected.contains_text.includes('/api/context?q={query}'), 'llms discovery eval should require context entrypoint');
   assert(llmsDiscoveryEval.expected.contains_text.includes('/api/evidence?q={query}'), 'llms discovery eval should require evidence entrypoint');
   assert(llmsDiscoveryEval.expected.contains_text.includes('/api/plan?q={query}'), 'llms discovery eval should require plan entrypoint');
+  assert(llmsDiscoveryEval.expected.contains_text.includes('/artifact-summary.json'), 'llms discovery eval should require artifact summary');
 
   const robotsDiscoveryEval = payload.evals.find(evalCase => evalCase.id === 'robots_txt_ai_entrypoints');
   assertEq(robotsDiscoveryEval.call.path, '/robots.txt');
   assertEq(robotsDiscoveryEval.expected.content_type, 'text/plain');
   assert(robotsDiscoveryEval.expected.contains_text.includes('AI-Context'), 'robots discovery eval should require AI context hint');
   assert(robotsDiscoveryEval.expected.contains_text.includes('AI-Evidence'), 'robots discovery eval should require AI evidence hint');
+  assert(robotsDiscoveryEval.expected.contains_text.includes('Artifact-Summary'), 'robots discovery eval should require artifact summary hint');
 
   const openapiEval = payload.evals.find(evalCase => evalCase.id === 'openapi_context_contract');
   assertEq(openapiEval.call.path, '/openapi.json');
@@ -412,6 +414,7 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
   assert(provenanceEval.expected.required_artifacts.includes('content_health_json'), 'provenance eval should require content health artifact hash');
   assert(provenanceEval.expected.required_artifacts.includes('coverage_json'), 'provenance eval should require coverage artifact hash');
   assert(provenanceEval.expected.required_artifacts.includes('mcp_json'), 'provenance eval should require mcp artifact hash');
+  assert(provenanceEval.expected.required_artifacts.includes('artifact_summary_json'), 'provenance eval should require artifact summary hash');
 
   const mcpEval = payload.evals.find(evalCase => evalCase.id === 'mcp_tool_catalog');
   assertEq(mcpEval.call.path, '/mcp.json');

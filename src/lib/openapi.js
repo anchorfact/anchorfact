@@ -1,6 +1,7 @@
 import {
   AGENT_PROFILE_SCHEMA_VERSION,
   API_INDEX_SCHEMA_VERSION,
+  ARTIFACT_SUMMARY_SCHEMA_VERSION,
   ARTICLE_API_SCHEMA_VERSION,
   CAPABILITIES_SCHEMA_VERSION,
   CITE_API_SCHEMA_VERSION,
@@ -103,6 +104,7 @@ export function buildOpenApiContract({
       '/.well-known/anchorfact.json': getJson('Well-known alias for the AI agent discovery profile', 'AgentProfile'),
       '/openapi.json': getJson('This OpenAPI machine contract', 'OpenApiContract'),
       '/api': getJson('Compact live API discovery index', 'ApiIndex'),
+      '/artifact-summary.json': getJson('Lightweight static artifact size and alternative-call summary', 'ArtifactSummary'),
       '/manifest.json': getJson('Public and draft article manifest', 'Manifest'),
       '/claims.json': getJson('Public verified atomic claims', 'Claims'),
       '/topics.json': getJson('Public topic coverage map', 'Topics'),
@@ -509,6 +511,11 @@ export function buildOpenApiContract({
           primary_entrypoints: { type: 'array', items: { type: 'object' } },
           endpoints: { type: 'array', items: { type: 'object' } },
           static_fallbacks: { type: 'array', items: { type: 'object' } }
+        }),
+        ArtifactSummary: schemaVersioned('Artifact summary', ARTIFACT_SUMMARY_SCHEMA_VERSION, {
+          total_bytes: { type: 'integer' },
+          recommended_default_calls: { type: 'array', items: { type: 'object' } },
+          artifacts: { type: 'array', items: { type: 'object' } }
         }),
         Manifest: schemaVersioned('Manifest', MANIFEST_SCHEMA_VERSION, {
           article_count: { type: 'integer' },

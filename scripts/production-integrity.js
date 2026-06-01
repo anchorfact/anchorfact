@@ -33,6 +33,7 @@ export const SIGNED_MACHINE_ARTIFACT_PATHS = [
   '/examples.json',
   '/evals.json',
   '/mcp.json',
+  '/artifact-summary.json',
   '/sources.json',
   '/llms.txt',
   '/provenance.json',

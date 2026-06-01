@@ -219,9 +219,9 @@ export function buildEvalsIndex({
         content_type: 'application/json',
         schema_version: API_INDEX_SCHEMA_VERSION,
         required_paths: [
-          '/api/plan',
-          '/api/evidence',
           '/api/context',
+          '/api/evidence',
+          '/api/plan',
           '/api/search',
           '/api/article',
           '/api/claim',
@@ -244,7 +244,8 @@ export function buildEvalsIndex({
           'Recommended AI Entry Points',
           '/api/context?q={query}',
           '/api/evidence?q={query}',
-          '/api/plan?q={query}'
+          '/api/plan?q={query}',
+          '/artifact-summary.json'
         ]
       }
     },
@@ -257,7 +258,8 @@ export function buildEvalsIndex({
         content_type: 'text/plain',
         contains_text: [
           'AI-Context',
-          'AI-Evidence'
+          'AI-Evidence',
+          'Artifact-Summary'
         ]
       }
     },
@@ -557,6 +559,7 @@ export function buildEvalsIndex({
           'graph_json',
           'evals_json',
           'mcp_json',
+          'artifact_summary_json',
           'search_index_json',
           'sources_json',
           'llms_txt'

@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import {
   buildApiPerformanceReport,
+  evaluateArtifactSizeBudgets,
   evaluateBudget,
   percentile,
   renderApiPerformanceMarkdown,
@@ -83,6 +84,50 @@ test('buildApiPerformanceReport renders passing and failing budget reports', () 
   assert(markdown.includes('AnchorFact API Performance Budget - FAIL'), 'markdown should expose failure status');
   assert(markdown.includes('fast_case'), 'markdown should include passing cases');
   assert(markdown.includes('impossible_budget'), 'markdown should include failing cases');
+});
+
+test('artifact size budget passes current baseline headroom', () => {
+  const budget = [
+    { path: 'graph.json', baseline_bytes: 2997236, max_bytes: 4000000, purpose: 'offline graph' },
+    { path: 'artifact-summary.json', baseline_bytes: 0, max_bytes: 60000, purpose: 'summary' }
+  ];
+  const report = evaluateArtifactSizeBudgets({
+    'graph.json': 2997236,
+    'artifact-summary.json': 12000
+  }, budget);
+
+  assertEq(report.ok, true);
+  assertEq(report.failures, []);
+  assert(report.artifacts[0].headroom_bytes > 0, 'baseline should have regression headroom');
+});
+
+test('artifact size budget fails an oversized fixture without affecting case reporting', () => {
+  const artifactSizeBudget = evaluateArtifactSizeBudgets({
+    'graph.json': 5000001
+  }, [
+    { path: 'graph.json', baseline_bytes: 2997236, max_bytes: 4000000, purpose: 'offline graph' }
+  ]);
+  const report = buildApiPerformanceReport({
+    artifacts: {},
+    artifactSizeBudget,
+    cases: [
+      {
+        id: 'fast_case',
+        budget: { median_ms: 1000, p95_ms: 1000 },
+        run: () => ({ ok: true })
+      }
+    ],
+    runs: 1,
+    warmups: 0,
+    generatedAt: '2026-05-30T00:00:00.000Z'
+  });
+
+  assertEq(report.ok, false);
+  assertEq(report.failed, 0);
+  assert(report.failures.some(failure => failure.includes('artifact_size_budget')), 'artifact failure should be reported separately');
+  const markdown = renderApiPerformanceMarkdown(report);
+  assert(markdown.includes('## Artifact Size Budget'), 'markdown should include artifact budget section');
+  assert(markdown.includes('graph.json: fail'), 'markdown should show oversized artifact failure');
 });
 
 for (const { name, fn } of tests) {

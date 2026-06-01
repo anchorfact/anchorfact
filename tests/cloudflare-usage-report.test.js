@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 import {
+  AI_ADOPTION_TARGET_RATIO,
   buildCloudflareUsageSummary,
   classifyPath,
   classifyUserAgent,
@@ -81,6 +82,7 @@ test('classifyUserAgent separates synthetic monitors, AI bots, search bots, scan
 
 test('classifyPath identifies API, machine artifact, article artifact, and probe surfaces', () => {
   assertEq(classifyPath('/api/evidence'), 'api');
+  assertEq(classifyPath('/artifact-summary.json'), 'machine_artifact');
   assertEq(classifyPath('/graph.json'), 'machine_artifact');
   assertEq(classifyPath('/ai/ai-search-recommendation/index.ttl'), 'article_artifact');
   assertEq(classifyPath('/wp-admin/install.php'), 'security_probe');
@@ -153,6 +155,11 @@ test('buildCloudflareUsageSummary derives product, AI discovery, and security re
   assertEq(summary.adoption_scorecard.identified_ai_discovery_requests, 22);
   assertEq(summary.adoption_scorecard.identified_ai_primary_api_requests, 15);
   assertEq(summary.adoption_scorecard.identified_ai_primary_to_discovery_ratio, 0.68);
+  assertEq(summary.adoption_scorecard.identified_ai_primary_to_discovery_target_ratio, AI_ADOPTION_TARGET_RATIO);
+  assertEq(summary.adoption_scorecard.identified_ai_primary_to_discovery_current_ratio, 0.68);
+  assertEq(summary.adoption_scorecard.identified_ai_primary_to_discovery_gap_to_target, 0);
+  assertEq(summary.adoption_scorecard.identified_ai_primary_to_discovery_target_status, 'met');
+  assertEq(summary.adoption_scorecard.identified_ai_primary_to_discovery_target.status, 'met');
   assertEq(summary.adoption_health.status, 'pass');
   assertEq(summary.adoption_health.primary_api_status_requests, 295);
   assertEq(summary.adoption_health.primary_api_success_requests, 290);
@@ -188,6 +195,8 @@ test('renderCloudflareUsageReport emits readable Markdown sections', () => {
   assert(markdown.includes('Discovery entrypoint requests: 2'), 'should render discovery entrypoint requests from top-level scorecard');
   assert(markdown.includes('Identified AI requests: 2'), 'should render identified AI requests from top-level scorecard');
   assert(markdown.includes('Identified AI primary/discovery ratio: 0'), 'should render top-level discovery adoption ratio');
+  assert(markdown.includes('Report-only target ratio: 0.2'), 'should render report-only adoption target');
+  assert(markdown.includes('Target status: no_ai_discovery'), 'should render no discovery target status without failing');
   assert(markdown.includes('/api/context'), 'should render API paths');
   assert(markdown.includes('## AI Discovery'), 'should render AI section');
   assert(markdown.includes('anthropic_claudebot'), 'should render classified AI agents');
@@ -219,6 +228,29 @@ test('buildCloudflareUsageSummary marks bot route 5xx and primary API all-failed
   assertEq(summary.adoption_health.bot_route_5xx_or_522_requests, 7);
   assertEq(summary.adoption_health.ai_discovery_5xx_or_522_requests, 4);
   assert(summary.adoption_health.bot_route_5xx_or_522_paths.some(item => item.path === '/robots.txt' && item.status === '522'), 'should list failing bot route path');
+});
+
+test('buildCloudflareUsageSummary reports below-target AI adoption without failing health', () => {
+  const summary = buildCloudflareUsageSummary({
+    zone: {
+      totals: [{ count: 100, sum: { edgeResponseBytes: 2048 } }],
+      topPaths: [pathRow('/api/context', 5), pathRow('/robots.txt', 20)],
+      topUAs: [
+        uaRow('Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; OAI-SearchBot/1.0; +https://openai.com/searchbot)', 25)
+      ],
+      pathUa: [
+        pathUaRow('/robots.txt', 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; OAI-SearchBot/1.0; +https://openai.com/searchbot)', 20),
+        pathUaRow('/api/context', 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; OAI-SearchBot/1.0; +https://openai.com/searchbot)', 1)
+      ],
+      pathStatus: [pathStatusRow('/api/context', 200, 5)]
+    },
+    window: { since: '2026-05-30T00:00:00.000Z', until: '2026-05-31T00:00:00.000Z' }
+  }, { generatedAt: '2026-05-31T00:00:00.000Z' });
+
+  assertEq(summary.adoption_health.status, 'pass');
+  assertEq(summary.adoption_scorecard.identified_ai_primary_to_discovery_ratio, 0.05);
+  assertEq(summary.adoption_scorecard.identified_ai_primary_to_discovery_gap_to_target, 0.15);
+  assertEq(summary.adoption_scorecard.identified_ai_primary_to_discovery_target_status, 'below_target');
 });
 
 test('buildCloudflareUsageSummary prefers targeted route rows for low-frequency reliability signals', () => {
@@ -309,6 +341,9 @@ test('renderCloudflareAdoptionScorecard emits concise reliability and adoption m
   assert(markdown.includes('Discovery entrypoint requests: 2'), 'scorecard should include discovery entrypoints');
   assert(markdown.includes('Primary API requests: 4'), 'scorecard should include primary API requests');
   assert(markdown.includes('Identified AI requests: 2'), 'scorecard should include AI requests');
+  assert(markdown.includes('Report-only target ratio: 0.2'), 'scorecard should include target ratio');
+  assert(markdown.includes('Gap to target: 0.2'), 'scorecard should include target gap');
+  assert(markdown.includes('Target status: no_ai_discovery'), 'scorecard should show target status without changing pass status');
   assert(markdown.includes('Bot route 5xx/522 requests: 0'), 'scorecard should include bot route failures');
   assert(markdown.includes('Primary API success requests: 4'), 'scorecard should include primary API success count');
   assert(markdown.includes('anthropic_claudebot'), 'scorecard should include top AI agents');

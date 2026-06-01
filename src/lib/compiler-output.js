@@ -1,6 +1,7 @@
 import { mkdirSync, writeFileSync } from 'fs';
 import { join } from 'path';
 import { buildAgentProfile } from './agent-profile.js';
+import { buildArtifactSummary } from './artifact-summary.js';
 import { publicClaims } from './claims.js';
 import { buildOpenApiContract } from './openapi.js';
 import { buildSearchIndex } from './search-index.js';
@@ -69,10 +70,13 @@ function writeRootIndex(distDir, results, publicResults, draftResults, claims) {
   {"@context":"https://schema.org","@type":"WebSite","@id":"https://anchorfact.org","name":"AnchorFact","url":"https://anchorfact.org","description":"Machine-readable verified claims for LLM citations.","publisher":{"@type":"Organization","name":"AnchorFact"}}
   </script>
   <style>
-    body { font-family: system-ui, sans-serif; max-width: 860px; margin: 40px auto; padding: 0 20px; color: #1E293B; line-height: 1.6; }
-    h1 { color: #2563EB; font-size: 2rem; margin-bottom: 0.25em; }
-    .tagline { color: #64748B; font-size: 1.1rem; margin-bottom: 1em; }
+    body { font-family: system-ui, sans-serif; max-width: 920px; margin: 36px auto; padding: 0 20px; color: #1E293B; line-height: 1.6; }
+    h1 { color: #1D4ED8; font-size: 2rem; margin-bottom: 0.2em; }
+    .tagline { color: #475569; font-size: 1.08rem; margin-bottom: 1em; }
     .card { border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 20px; margin: 12px 0; }
+    .primary a { display: inline-block; margin: 6px 12px 6px 0; font-weight: 700; }
+    details { margin-top: 10px; }
+    summary { cursor: pointer; color: #334155; font-weight: 700; }
     .footer { color: #64748B; font-size: 0.85rem; margin-top: 3em; }
     .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.8em; margin-right: 4px; }
     .h { background: #DCFCE7; color: #166534; }
@@ -83,45 +87,50 @@ function writeRootIndex(distDir, results, publicResults, draftResults, claims) {
 </head>
 <body>
   <h1>AnchorFact</h1>
-  <p class="tagline">Machine-readable verified claims for LLM citations.</p>
+  <p class="tagline">Verified claims, evidence packs, and citation-ready context for AI agents.</p>
   <div class="card" style="background:#F8FAFC;">
-    <strong>Trust-first status</strong><br>
+    <strong>Live trust counts</strong><br>
     <strong>${publicResults.length}</strong> public verified articles &middot;
     <strong>${claims.length}</strong> public verified claims &middot;
     <strong>${draftResults.length}</strong> drafts excluded from AI entrypoints.
     <br><span style="font-size:0.9rem;color:#64748B;">Public articles require real source verification data and no placeholder content.</span>
   </div>
-  <div class="card">
-    <strong>For AIs</strong><br>
-    <a href="/agent.json">Agent profile</a> &middot;
-    <a href="/openapi.json">OpenAPI</a> &middot;
-    <a href="/api">API Index</a> &middot;
-    <a href="/capabilities.json">Capabilities</a> &middot;
-    <a href="/api/plan?q=gaussian">Plan API</a> &middot;
-    <a href="/api/evidence?q=gaussian">Evidence API</a> &middot;
-    <a href="/api/context?q=gaussian">Context API</a> &middot;
-    <a href="/api/resolve?ref=f1">Resolve API</a> &middot;
-    <a href="/api/resolve-batch?ref=f1&amp;ref=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079">Resolve Batch API</a> &middot;
-    <a href="/api/search?q=gaussian">Search API</a> &middot;
-    <a href="/api/article?slug=ai/3d-generation-gaussian-splatting">Article API</a> &middot;
-    <a href="/api/cite?id=f1">Citation API</a> &middot;
-    <a href="/api/claim?id=f1">Claim API</a> &middot;
-    <a href="/api/source?url=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079">Source API</a> &middot;
-    <a href="/llms.txt">llms.txt</a> &middot;
-    <a href="/manifest.json">Manifest</a> &middot;
-    <a href="/claims.json">Claims JSON</a> &middot;
-    <a href="/topics.json">Topics JSON</a> &middot;
-    <a href="/capabilities.json">Capabilities JSON</a> &middot;
-    <a href="/content-health.json">Content Health JSON</a> &middot;
-    <a href="/coverage.json">Coverage JSON</a> &middot;
-    <a href="/examples.json">Examples JSON</a> &middot;
-    <a href="/graph.json">Graph JSON</a> &middot;
-    <a href="/evals.json">Evals JSON</a> &middot;
-    <a href="/mcp.json">MCP JSON</a> &middot;
-    <a href="/search-index.json">Search Index</a> &middot;
-    <a href="/sources.json">Sources JSON</a> &middot;
-    <a href="/provenance.json">Provenance</a> &middot;
-    <a href="/dashboard.html">Dashboard</a>
+  <div class="card primary">
+    <strong>Default AI calls</strong><br>
+    <a href="/api/context?q=gaussian">/api/context</a>
+    <a href="/api/evidence?q=gaussian">/api/evidence</a>
+    <a href="/api/cite?id=f1">/api/cite</a>
+    <a href="/agent.json">/agent.json</a>
+    <a href="/provenance.json">/provenance.json</a>
+    <a href="/api">/api</a>
+    <details>
+      <summary>Full machine artifact catalog</summary>
+      <p>
+        <a href="/artifact-summary.json">Artifact Summary</a> &middot;
+        <a href="/openapi.json">OpenAPI</a> &middot;
+        <a href="/capabilities.json">Capabilities</a> &middot;
+        <a href="/api/plan?q=gaussian">Plan API</a> &middot;
+        <a href="/api/resolve?ref=f1">Resolve API</a> &middot;
+        <a href="/api/resolve-batch?ref=f1&amp;ref=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079">Resolve Batch API</a> &middot;
+        <a href="/api/search?q=gaussian">Search API</a> &middot;
+        <a href="/api/article?slug=ai/3d-generation-gaussian-splatting">Article API</a> &middot;
+        <a href="/api/claim?id=f1">Claim API</a> &middot;
+        <a href="/api/source?url=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079">Source API</a> &middot;
+        <a href="/llms.txt">llms.txt</a> &middot;
+        <a href="/manifest.json">Manifest</a> &middot;
+        <a href="/claims.json">Claims JSON</a> &middot;
+        <a href="/topics.json">Topics JSON</a> &middot;
+        <a href="/content-health.json">Content Health JSON</a> &middot;
+        <a href="/coverage.json">Coverage JSON</a> &middot;
+        <a href="/examples.json">Examples JSON</a> &middot;
+        <a href="/graph.json">Graph JSON</a> &middot;
+        <a href="/evals.json">Evals JSON</a> &middot;
+        <a href="/mcp.json">MCP JSON</a> &middot;
+        <a href="/search-index.json">Search Index</a> &middot;
+        <a href="/sources.json">Sources JSON</a> &middot;
+        <a href="/dashboard.html">Dashboard</a>
+      </p>
+    </details>
   </div>
   <div class="card">
     <strong>Public Verified Articles (${publicResults.length})</strong><br>
@@ -180,10 +189,11 @@ function writeLlmsTxt(distDir, publicResults, claims, verificationTimestamp) {
 
 - Default answer context: https://anchorfact.org/api/context?q={query}
 - Evidence pack: https://anchorfact.org/api/evidence?q={query}
-- Coverage decision: https://anchorfact.org/api/plan?q={query}
+- Coverage decision only when unsure: https://anchorfact.org/api/plan?q={query}
 - Precise citation: https://anchorfact.org/api/cite?id={claim_id}
 - Discovery: https://anchorfact.org/api and https://anchorfact.org/agent.json
 - Trust: https://anchorfact.org/provenance.json and https://anchorfact.org/provenance.sig
+- Artifact sizes and lightweight alternatives: https://anchorfact.org/artifact-summary.json
 
 ## Direct Answer Examples
 
@@ -205,6 +215,7 @@ ${entries || '_No public verified entries yet._'}
 - [Agent Profile](https://anchorfact.org/agent.json): Machine contract and recommended retrieval workflow.
 - [OpenAPI](https://anchorfact.org/openapi.json): Static read-only endpoint contract for tools.
 - [API Index](https://anchorfact.org/api): Compact live API discovery endpoint for agents.
+- [Artifact Summary](https://anchorfact.org/artifact-summary.json): Lightweight size and purpose map for large static machine artifacts.
 - [Capabilities](https://anchorfact.org/capabilities.json): AI task-to-endpoint routing guide with trust requirements and fallback artifacts.
 - [Content Health](https://anchorfact.org/content-health.json): Signed corpus health summary for AI trust decisions.
 - [Coverage](https://anchorfact.org/coverage.json): AI coverage and limits guide with topic, confidence, source tier, and verification distributions.
@@ -245,6 +256,7 @@ function writeSitemap(distDir, publicResults) {
     '<url><loc>https://anchorfact.org/agent.json</loc><changefreq>daily</changefreq><priority>0.9</priority></url>',
     '<url><loc>https://anchorfact.org/openapi.json</loc><changefreq>daily</changefreq><priority>0.9</priority></url>',
     '<url><loc>https://anchorfact.org/api</loc><changefreq>daily</changefreq><priority>0.9</priority></url>',
+    '<url><loc>https://anchorfact.org/artifact-summary.json</loc><changefreq>daily</changefreq><priority>0.9</priority></url>',
     '<url><loc>https://anchorfact.org/capabilities.json</loc><changefreq>daily</changefreq><priority>0.9</priority></url>',
     '<url><loc>https://anchorfact.org/content-health.json</loc><changefreq>daily</changefreq><priority>0.9</priority></url>',
     '<url><loc>https://anchorfact.org/coverage.json</loc><changefreq>daily</changefreq><priority>0.9</priority></url>',
@@ -288,8 +300,10 @@ OpenAPI: https://anchorfact.org/openapi.json
 API: https://anchorfact.org/api
 AI-Context: https://anchorfact.org/api/context?q={query}
 AI-Evidence: https://anchorfact.org/api/evidence?q={query}
-AI-Plan: https://anchorfact.org/api/plan?q={query}
 AI-Cite: https://anchorfact.org/api/cite?id={claim_id}
+AI-Plan: https://anchorfact.org/api/plan?q={query}
+AI-Plan-Use: coverage_uncertain_only
+Artifact-Summary: https://anchorfact.org/artifact-summary.json
 Health: https://anchorfact.org/content-health.json
 MCP: https://anchorfact.org/mcp.json
 Provenance: https://anchorfact.org/provenance.json
@@ -302,6 +316,7 @@ function writeHeaders(distDir) {
     ['/agent.json', 'application/json'],
     ['/.well-known/anchorfact.json', 'application/json'],
     ['/openapi.json', 'application/json'],
+    ['/artifact-summary.json', 'application/json'],
     ['/manifest.json', 'application/json'],
     ['/llms.txt', 'text/plain'],
     ['/claims.json', 'application/json'],
@@ -397,6 +412,10 @@ function writeAgentProfile(distDir, profile) {
   const wellKnownDir = join(distDir, '.well-known');
   mkdirSync(wellKnownDir, { recursive: true });
   writeFileSync(join(wellKnownDir, 'anchorfact.json'), agentText);
+}
+
+function writeArtifactSummary(distDir, summary) {
+  writeFileSync(join(distDir, 'artifact-summary.json'), JSON.stringify(summary, null, 2));
 }
 
 function writeFavicon(distDir) {
@@ -585,6 +604,11 @@ export function writeStaticOutputs(distDir, results, options = {}) {
   writeHeaders(distDir);
   writeDashboard(distDir, results, publicResults, draftResults, claims, options.verificationTimestamp);
   writeFavicon(distDir);
+  writeArtifactSummary(distDir, buildArtifactSummary({
+    generated,
+    distDir,
+    site: build.canonical_site
+  }));
   const provenance = buildProvenance({
     manifest,
     claimsPayload,

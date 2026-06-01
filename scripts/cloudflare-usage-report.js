@@ -10,11 +10,13 @@ const DEFAULT_LOOKBACK_MINUTES = 23 * 60 + 50;
 const DEFAULT_CURRENT_RELIABILITY_MINUTES = 120;
 const DEFAULT_DAILY_DAYS = 7;
 const MAX_ADAPTIVE_LOOKBACK_MINUTES = 23 * 60 + 50;
+export const AI_ADOPTION_TARGET_RATIO = 0.2;
 
 const MACHINE_ARTIFACT_PATHS = new Set([
   '/agent.json',
   '/.well-known/anchorfact.json',
   '/openapi.json',
+  '/artifact-summary.json',
   '/manifest.json',
   '/llms.txt',
   '/claims.json',
@@ -39,6 +41,7 @@ const DISCOVERY_ENTRYPOINT_PATHS = new Set([
   '/agent.json',
   '/.well-known/anchorfact.json',
   '/openapi.json',
+  '/artifact-summary.json',
   '/mcp.json'
 ]);
 
@@ -100,6 +103,21 @@ function ratio(part, total, digits = 4) {
   const denominator = Number(total || 0);
   if (!denominator) return 0;
   return Number((numerator / denominator).toFixed(digits));
+}
+
+function adoptionTargetScore(currentRatio, discoveryRequests, targetRatio = AI_ADOPTION_TARGET_RATIO) {
+  const current = Number(currentRatio || 0);
+  const target = Number(targetRatio || 0);
+  return {
+    target_ratio: target,
+    current_ratio: current,
+    gap_to_target: Number(Math.max(0, target - current).toFixed(4)),
+    status: Number(discoveryRequests || 0) === 0
+      ? 'no_ai_discovery'
+      : current >= target
+        ? 'met'
+        : 'below_target'
+  };
 }
 
 function sumRows(rows, predicate) {
@@ -342,6 +360,11 @@ export function buildCloudflareUsageSummary(data, options = {}) {
   const aiPathRows = targetedPathUa.filter(row => classifyUserAgent(row.dimensions?.userAgent).category === 'ai_bot');
   const observedAiDiscoveryRequests = sumRows(aiPathRows, row => isDiscoveryEntrypoint(row.dimensions?.clientRequestPath));
   const observedAiPrimaryApiRequests = sumRows(aiPathRows, row => isPrimaryApiPath(row.dimensions?.clientRequestPath));
+  const observedAiPrimaryToDiscoveryRatio = ratio(observedAiPrimaryApiRequests, observedAiDiscoveryRequests, 2);
+  const observedAiPrimaryToDiscoveryTarget = adoptionTargetScore(
+    observedAiPrimaryToDiscoveryRatio,
+    observedAiDiscoveryRequests
+  );
   const observedAiArticleArtifactRequests = sumRows(aiPathRows, row => classifyPath(row.dimensions?.clientRequestPath) === 'article_artifact');
   const primaryApiStatusRows = targetedPathStatus.filter(row => isPrimaryApiPath(row.dimensions?.clientRequestPath));
   const primaryApiStatusRequests = sumRows(primaryApiStatusRows, () => true);
@@ -440,7 +463,12 @@ export function buildCloudflareUsageSummary(data, options = {}) {
       identified_ai_requests: aiRequests,
       identified_ai_discovery_requests: observedAiDiscoveryRequests,
       identified_ai_primary_api_requests: observedAiPrimaryApiRequests,
-      identified_ai_primary_to_discovery_ratio: ratio(observedAiPrimaryApiRequests, observedAiDiscoveryRequests, 2),
+      identified_ai_primary_to_discovery_ratio: observedAiPrimaryToDiscoveryRatio,
+      identified_ai_primary_to_discovery_target_ratio: observedAiPrimaryToDiscoveryTarget.target_ratio,
+      identified_ai_primary_to_discovery_current_ratio: observedAiPrimaryToDiscoveryTarget.current_ratio,
+      identified_ai_primary_to_discovery_gap_to_target: observedAiPrimaryToDiscoveryTarget.gap_to_target,
+      identified_ai_primary_to_discovery_target_status: observedAiPrimaryToDiscoveryTarget.status,
+      identified_ai_primary_to_discovery_target: observedAiPrimaryToDiscoveryTarget,
       bot_route_5xx_or_522_requests: botRouteServerErrorRequests,
       scanner_or_probe_requests: scannerRequests,
       scanner_or_probe_share: ratio(scannerRequests, totalRequests)
@@ -454,7 +482,8 @@ export function buildCloudflareUsageSummary(data, options = {}) {
       observed_ai_discovery_requests: observedAiDiscoveryRequests,
       observed_ai_primary_api_requests: observedAiPrimaryApiRequests,
       observed_ai_article_artifact_requests: observedAiArticleArtifactRequests,
-      observed_ai_primary_to_discovery_ratio: ratio(observedAiPrimaryApiRequests, observedAiDiscoveryRequests, 2),
+      observed_ai_primary_to_discovery_ratio: observedAiPrimaryToDiscoveryRatio,
+      observed_ai_primary_to_discovery_target: observedAiPrimaryToDiscoveryTarget,
       top_ai_discovery_paths: topObservedPaths(aiPathRows, row => isDiscoveryEntrypoint(row.dimensions?.clientRequestPath), 8),
       top_ai_primary_api_paths: topObservedPaths(aiPathRows, row => isPrimaryApiPath(row.dimensions?.clientRequestPath), 8),
       top_ai_article_artifact_paths: topObservedPaths(aiPathRows, row => classifyPath(row.dimensions?.clientRequestPath) === 'article_artifact', 8)
@@ -543,6 +572,9 @@ export function renderCloudflareUsageReport(report) {
   lines.push(`- Identified AI primary API requests: ${report.discovery_adoption.observed_ai_primary_api_requests}`);
   lines.push(`- Identified AI article artifact requests: ${report.discovery_adoption.observed_ai_article_artifact_requests}`);
   lines.push(`- Identified AI primary/discovery ratio: ${report.discovery_adoption.observed_ai_primary_to_discovery_ratio}`);
+  lines.push(`- Report-only target ratio: ${report.discovery_adoption.observed_ai_primary_to_discovery_target?.target_ratio ?? 'n/a'}`);
+  lines.push(`- Gap to target: ${report.discovery_adoption.observed_ai_primary_to_discovery_target?.gap_to_target ?? 'n/a'}`);
+  lines.push(`- Target status: ${report.discovery_adoption.observed_ai_primary_to_discovery_target?.status || 'n/a'}`);
   if (report.discovery_adoption.top_ai_discovery_paths.length > 0) {
     lines.push('');
     lines.push('Top identified AI discovery paths:');
@@ -602,6 +634,9 @@ export function renderCloudflareAdoptionScorecard(report) {
   lines.push(`- Identified AI discovery requests: ${report.adoption_scorecard.identified_ai_discovery_requests}`);
   lines.push(`- Identified AI primary API requests: ${report.adoption_scorecard.identified_ai_primary_api_requests}`);
   lines.push(`- Identified AI primary/discovery ratio: ${report.adoption_scorecard.identified_ai_primary_to_discovery_ratio}`);
+  lines.push(`- Report-only target ratio: ${report.adoption_scorecard.identified_ai_primary_to_discovery_target_ratio}`);
+  lines.push(`- Gap to target: ${report.adoption_scorecard.identified_ai_primary_to_discovery_gap_to_target}`);
+  lines.push(`- Target status: ${report.adoption_scorecard.identified_ai_primary_to_discovery_target_status}`);
   lines.push(`- Bot route 5xx/522 requests: ${report.adoption_scorecard.bot_route_5xx_or_522_requests}`);
   lines.push(`- Scanner/probe requests: ${report.adoption_scorecard.scanner_or_probe_requests} (${(report.adoption_scorecard.scanner_or_probe_share * 100).toFixed(1)}%)`);
   lines.push('');

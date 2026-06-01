@@ -49,6 +49,7 @@ function provenanceResult(overrides = {}) {
     artifacts: {
       manifest_json: { sha256: 'a'.repeat(64) },
       claims_json: { sha256: 'b'.repeat(64) },
+      artifact_summary_json: { sha256: 'd'.repeat(64) },
       llms_txt: { sha256: 'c'.repeat(64) }
     },
     commit: { ok: true },
@@ -113,6 +114,7 @@ test('buildIntegrityReport summarizes a passing production check', () => {
   assertEq(report.checks.edge_cache, true);
   assertEq(report.checks.discovery, true);
   assertEq(report.artifacts.claims_json, 'b'.repeat(64));
+  assertEq(report.artifacts.artifact_summary_json, 'd'.repeat(64));
   const markdown = renderIntegrityMarkdown(report);
   assert(markdown.includes('AnchorFact Production Integrity - PASS'), 'markdown should show pass');
   assert(markdown.includes('signature: status=signed, ok=true, trusted=true'), 'markdown should include signature status');
@@ -383,6 +385,7 @@ test('default edge cache controls keep signed provenance dynamic', () => {
   assert(DEFAULT_EDGE_CACHE_DYNAMIC_CONTROLS.includes('/graph.json'), 'signed graph artifact should not be edge cached without versioned URLs');
   assert(DEFAULT_EDGE_CACHE_DYNAMIC_CONTROLS.includes('/search-index.json'), 'signed search artifact should not be edge cached without versioned URLs');
   assert(DEFAULT_EDGE_CACHE_DYNAMIC_CONTROLS.includes('/claims.json'), 'signed claims artifact should not be edge cached without versioned URLs');
+  assert(DEFAULT_EDGE_CACHE_DYNAMIC_CONTROLS.includes('/artifact-summary.json'), 'signed artifact summary should not be edge cached without versioned URLs');
 });
 
 test('checkProductionDiscovery verifies AI entrypoints with browser and AI user agents', async () => {

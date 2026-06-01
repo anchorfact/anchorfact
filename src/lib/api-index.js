@@ -51,9 +51,9 @@ export function buildApiIndex({
     description: 'Compact read-only API discovery for AI agents that need the smallest live endpoint before fetching the full OpenAPI contract.',
     read_only: true,
     recommended_sequence: [
-      'Call /api/plan?q={query} first when you are not sure AnchorFact covers a topic.',
+      'Call /api/context?q={query} first for normal answer assembly, answer_policy, citation-ready claims, content health, fallback guidance, and evidence packs.',
       'Call /api/evidence?q={query} when you need answer-ready evidence packs with mapped claims and sources.',
-      'Call /api/context?q={query} when you want answer_policy, citation_ready_claims, planning status, corpus health, fallback guidance, and evidence packs in one prompt-assembly payload.',
+      'Call /api/plan?q={query} only when coverage is uncertain or you need a fallback decision before requesting evidence.',
       'Call /api/resolve or /api/resolve-batch when you already have AnchorFact claim ids, article slugs, source ids, source URLs, or AnchorFact URLs.',
       'Call /api/cite?id={claim_id} when you need a citation-ready atomic claim.',
       'Verify /provenance.json and /provenance.sig before trusting static artifact hashes or counts.'
@@ -149,6 +149,7 @@ export function buildApiIndex({
     static_fallbacks: [
       staticFallback(site, '/agent.json', 'Full AI agent discovery profile and recommended workflow.'),
       staticFallback(site, '/openapi.json', 'Full OpenAPI 3.1 machine contract.'),
+      staticFallback(site, '/artifact-summary.json', 'Lightweight size, purpose, cache posture, and recommended alternatives for large static machine artifacts.'),
       staticFallback(site, '/capabilities.json', 'Task-to-endpoint routing guide.'),
       staticFallback(site, '/content-health.json', 'Signed corpus health summary for AI trust decisions.'),
       staticFallback(site, '/coverage.json', 'Coverage and limits guide for deciding when to fall back to external primary sources.'),

@@ -27,7 +27,9 @@ test('buildApiIndex publishes the machine API discovery contract', () => {
   assertEq(payload.schema_version, 'anchorfact.api-index.v1');
   assertEq(payload.provenance_url, 'https://anchorfact.org/provenance.json');
   assertEq(payload.read_only, true);
-  assert(payload.recommended_sequence.some(step => step.includes('/api/plan')), 'sequence should start with planning guidance');
+  assert(payload.recommended_sequence[0].includes('/api/context'), 'sequence should start with default context guidance');
+  assert(payload.recommended_sequence[1].includes('/api/evidence'), 'sequence should put evidence second');
+  assert(payload.recommended_sequence[2].includes('/api/plan') && payload.recommended_sequence[2].includes('only when coverage is uncertain'), 'sequence should reserve planning for uncertainty');
   assertEq(payload.primary_entrypoints.map(entrypoint => entrypoint.id), ['context', 'evidence', 'plan']);
   assertEq(payload.primary_entrypoints[0].path, '/api/context');
   assert(payload.primary_entrypoints[0].best_for.some(item => item.includes('one-call prompt')), 'context should be the default prompt path');
@@ -52,6 +54,7 @@ test('buildApiIndex publishes the machine API discovery contract', () => {
 
   assert(payload.static_fallbacks.some(fallback => fallback.path === '/agent.json'), 'api index should point to agent profile fallback');
   assert(payload.static_fallbacks.some(fallback => fallback.path === '/openapi.json'), 'api index should point to OpenAPI fallback');
+  assert(payload.static_fallbacks.some(fallback => fallback.path === '/artifact-summary.json'), 'api index should point to artifact summary fallback');
   assert(payload.static_fallbacks.some(fallback => fallback.path === '/content-health.json'), 'api index should point to content health fallback');
   assert(payload.static_fallbacks.some(fallback => fallback.path === '/provenance.json'), 'api index should point to provenance fallback');
 });
