@@ -38,15 +38,38 @@ export const SIGNED_MACHINE_ARTIFACT_PATHS = [
   '/provenance.json',
   '/provenance.sig'
 ];
+export const DEFAULT_EDGE_CACHE_API_CONTROLS = [
+  '/api',
+  '/api/context?q=gaussian&limit=1',
+  '/api/evidence?q=gaussian&limit=1',
+  '/api/plan?q=gaussian&limit=1'
+];
 export const DEFAULT_EDGE_CACHE_STATIC_ARTIFACTS = [];
 export const DEFAULT_EDGE_CACHE_DYNAMIC_CONTROLS = [
-  '/api/context?q=gaussian&limit=1',
+  ...DEFAULT_EDGE_CACHE_API_CONTROLS,
   ...SIGNED_MACHINE_ARTIFACT_PATHS
 ];
 export const DEFAULT_EDGE_CACHE_ROUTE_RETRIES = 4;
 export const DEFAULT_EDGE_CACHE_RETRY_DELAY_MS = 500;
 export const DEFAULT_EDGE_CACHE_REQUEST_TIMEOUT_MS = 5000;
 export const DEFAULT_EDGE_CACHE_DYNAMIC_CONCURRENCY = 4;
+export const DEFAULT_DISCOVERY_ROUTES = [
+  '/robots.txt',
+  '/llms.txt',
+  '/agent.json',
+  '/api'
+];
+export const DEFAULT_DISCOVERY_USER_AGENT_PROFILES = [
+  {
+    name: 'browser_monitor',
+    userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36'
+  },
+  {
+    name: 'openai_searchbot',
+    userAgent: 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; OAI-SearchBot/1.0; +https://openai.com/searchbot)'
+  }
+];
+export const DEFAULT_DISCOVERY_CONCURRENCY = 4;
 export const DEFAULT_INTEGRITY_EVAL_OPTIONS = {
   routeRetries: 4,
   routeRetryDelayMs: 750,
@@ -136,6 +159,32 @@ function isRevalidatedCacheControl(value) {
     || normalized.includes('must-revalidate');
 }
 
+function maxAgeSeconds(value) {
+  const match = String(value || '').toLowerCase().match(/(?:^|,)\s*max-age\s*=\s*(\d+)/);
+  return match ? Number.parseInt(match[1], 10) : null;
+}
+
+function isApiControl(route) {
+  return new URL(route, OFFICIAL_SITE).pathname.startsWith('/api');
+}
+
+function isApiClientCacheControlAllowed(value) {
+  if (isRevalidatedCacheControl(value)) return true;
+  const maxAge = maxAgeSeconds(value);
+  return Number.isFinite(maxAge) && maxAge <= 300;
+}
+
+function requiresRecommendedEntrypoints(route) {
+  const pathname = new URL(route, OFFICIAL_SITE).pathname;
+  return pathname === '/robots.txt' || pathname === '/llms.txt';
+}
+
+function missingRecommendedEntrypoints(text) {
+  const body = String(text || '');
+  return ['/api/context', '/api/evidence', '/api/plan']
+    .filter(entrypoint => !body.includes(entrypoint));
+}
+
 export async function checkProductionEdgeCache({
   baseUrl = OFFICIAL_SITE,
   staticArtifacts = DEFAULT_EDGE_CACHE_STATIC_ARTIFACTS,
@@ -178,13 +227,19 @@ export async function checkProductionEdgeCache({
   }
 
   const dynamicChecks = await mapWithConcurrency(dynamicControls, maxDynamicConcurrency, async (path) => {
+    const apiControl = isApiControl(path);
     const response = await fetchLiveText(fetchImpl, routeUrl(baseUrl, path), {
-      method: 'HEAD',
+      method: 'GET',
       retries: routeRetries,
       retryDelayMs: routeRetryDelayMs,
       timeoutMs: requestTimeoutMs
     });
-    const result = { path, ...cacheAttempt(path, response) };
+    const result = {
+      path,
+      method: 'GET',
+      contract: apiControl ? 'api_get' : 'signed_artifact_get',
+      ...cacheAttempt(path, response)
+    };
     const resultFailures = [];
     if (!result.ok) {
       resultFailures.push(`${path} returned status ${result.status}; expected a successful dynamic control response`);
@@ -194,13 +249,18 @@ export async function checkProductionEdgeCache({
     } else if (EDGE_CACHE_HIT_STATUSES.has(result.cf_cache_status)) {
       resultFailures.push(`${path} returned cache status ${result.cf_cache_status}; dynamic controls must remain uncached`);
     }
-    if (!isRevalidatedCacheControl(result.cache_control)) {
+    const cacheControlOk = apiControl
+      ? isApiClientCacheControlAllowed(result.cache_control)
+      : isRevalidatedCacheControl(result.cache_control);
+    if (!cacheControlOk && apiControl) {
+      resultFailures.push(`${path} API cache-control must be revalidated or no more than max-age=300, got ${result.cache_control || '(missing)'}`);
+    } else if (!cacheControlOk) {
       resultFailures.push(`${path} cache-control must be revalidated by clients, got ${result.cache_control || '(missing)'}`);
     }
     result.ok = result.ok
       && Boolean(result.cf_cache_status)
       && !EDGE_CACHE_HIT_STATUSES.has(result.cf_cache_status)
-      && isRevalidatedCacheControl(result.cache_control);
+      && cacheControlOk;
     return { result, failures: resultFailures };
   });
 
@@ -214,6 +274,72 @@ export async function checkProductionEdgeCache({
     ok: failures.length === 0,
     static_artifacts: staticResults,
     dynamic_controls: dynamicResults,
+    failures
+  };
+}
+
+export async function checkProductionDiscovery({
+  baseUrl = OFFICIAL_SITE,
+  routes = DEFAULT_DISCOVERY_ROUTES,
+  userAgentProfiles = DEFAULT_DISCOVERY_USER_AGENT_PROFILES,
+  fetchImpl = globalThis.fetch,
+  routeRetries = DEFAULT_EDGE_CACHE_ROUTE_RETRIES,
+  routeRetryDelayMs = DEFAULT_EDGE_CACHE_RETRY_DELAY_MS,
+  requestTimeoutMs = DEFAULT_EDGE_CACHE_REQUEST_TIMEOUT_MS,
+  concurrency = DEFAULT_DISCOVERY_CONCURRENCY
+} = {}) {
+  const checksToRun = [];
+  for (const profile of userAgentProfiles) {
+    for (const route of routes) {
+      checksToRun.push({ profile, route });
+    }
+  }
+
+  const maxConcurrency = positiveInteger(concurrency, DEFAULT_DISCOVERY_CONCURRENCY);
+  const checkResults = await mapWithConcurrency(checksToRun, maxConcurrency, async ({ profile, route }) => {
+    const response = await fetchLiveText(fetchImpl, routeUrl(baseUrl, route), {
+      method: 'GET',
+      retries: routeRetries,
+      retryDelayMs: routeRetryDelayMs,
+      timeoutMs: requestTimeoutMs,
+      headers: {
+        'User-Agent': profile.userAgent,
+        Accept: 'application/json,text/plain,text/html;q=0.9,*/*;q=0.8'
+      }
+    });
+    const result = {
+      route,
+      user_agent_profile: profile.name,
+      method: 'GET',
+      status: response.status,
+      ok: response.ok === true,
+      content_type: response.contentType || headerValue(response.headers, 'content-type') || null,
+      cache_control: headerValue(response.headers, 'cache-control') || null,
+      cf_cache_status: normalizeCacheStatus(headerValue(response.headers, 'cf-cache-status')) || null
+    };
+    const failures = [];
+    if (!result.ok) {
+      failures.push(`${profile.name} ${route} returned status ${result.status}; expected 200`);
+    }
+    if (result.ok && requiresRecommendedEntrypoints(route)) {
+      for (const missing of missingRecommendedEntrypoints(response.text)) {
+        failures.push(`${profile.name} ${route} is missing recommended entrypoint ${missing}`);
+      }
+    }
+    result.ok = result.ok && failures.length === 0;
+    return { result, failures };
+  });
+
+  const checks = [];
+  const failures = [];
+  for (const check of checkResults) {
+    checks.push(check.result);
+    failures.push(...check.failures);
+  }
+
+  return {
+    ok: failures.length === 0,
+    checks,
     failures
   };
 }
@@ -254,16 +380,19 @@ export function buildIntegrityReport({
   smoke,
   provenance,
   aiEvals,
-  edgeCache
+  edgeCache,
+  discovery
 }) {
   const failures = [];
   if (!smoke?.ok) failures.push('Production smoke failed');
   if (!provenance?.ok) failures.push('Signed provenance verification failed');
   if (!aiEvals?.ok) failures.push('AI evals failed');
   if (edgeCache?.ok === false) failures.push('Edge cache verification failed');
+  if (discovery?.ok === false) failures.push('AI discovery verification failed');
   for (const failure of provenance?.failures || []) failures.push(failure);
   for (const failure of aiEvals?.failures || []) failures.push(failure);
   for (const failure of edgeCache?.failures || []) failures.push(failure);
+  for (const failure of discovery?.failures || []) failures.push(failure);
   for (const result of aiEvals?.results || []) {
     for (const failure of result.failures || []) failures.push(`${result.id}: ${failure}`);
   }
@@ -297,13 +426,19 @@ export function buildIntegrityReport({
       ai_evals: aiEvals?.ok === true,
       signed_provenance: provenance?.ok === true,
       commit: provenance?.commit?.ok === true,
-      edge_cache: edgeCache?.ok !== false
+      edge_cache: edgeCache?.ok !== false,
+      discovery: discovery?.ok !== false
     },
     edge_cache: {
       ok: edgeCache?.ok !== false,
       static_artifacts: edgeCache?.static_artifacts || [],
       dynamic_controls: edgeCache?.dynamic_controls || [],
       failures: edgeCache?.failures || []
+    },
+    discovery: {
+      ok: discovery?.ok !== false,
+      checks: discovery?.checks || [],
+      failures: discovery?.failures || []
     },
     ai_evals: {
       eval_count: aiEvals?.eval_count ?? null,
@@ -348,7 +483,12 @@ export function renderIntegrityMarkdown(report) {
     : '- none';
   const dynamicCacheLines = (report.edge_cache?.dynamic_controls || []).length
     ? report.edge_cache.dynamic_controls
-        .map(result => `- ${result.path}: ${result.ok ? 'pass' : 'fail'} (${result.cf_cache_status || 'missing'})`)
+        .map(result => `- ${result.path}: ${result.ok ? 'pass' : 'fail'} (${result.method || 'GET'}, ${result.cf_cache_status || 'missing'}, ${result.cache_control || 'missing'})`)
+        .join('\n')
+    : '- none';
+  const discoveryLines = (report.discovery?.checks || []).length
+    ? report.discovery.checks
+        .map(result => `- ${result.user_agent_profile} ${result.route}: ${result.ok ? 'pass' : 'fail'} (${result.status})`)
         .join('\n')
     : '- none';
 
@@ -374,6 +514,7 @@ Base URL: ${report.base_url}
 - signed provenance: ${report.checks.signed_provenance ? 'pass' : 'fail'}
 - source commit: ${report.checks.commit ? 'pass' : 'fail'}
 - edge cache: ${report.checks.edge_cache ? 'pass' : 'fail'}
+- discovery: ${report.checks.discovery ? 'pass' : 'fail'}
 
 ## Artifact Hashes
 
@@ -388,6 +529,10 @@ ${staticCacheLines}
 Dynamic controls:
 
 ${dynamicCacheLines}
+
+## AI Discovery
+
+${discoveryLines}
 
 ## AI Eval Attempts
 
@@ -440,6 +585,7 @@ export async function runProductionIntegrity({
   evalOptions = DEFAULT_INTEGRITY_EVAL_OPTIONS,
   verifier = verifyLiveProvenance,
   edgeCacheChecker = checkProductionEdgeCache,
+  discoveryChecker = checkProductionDiscovery,
   generatedAt = isoNow(),
   afterSmokeDelayMs = DEFAULT_AFTER_SMOKE_DELAY_MS,
   aiEvalRetryDelayMs = DEFAULT_AI_EVAL_RETRY_DELAY_MS,
@@ -448,6 +594,7 @@ export async function runProductionIntegrity({
 } = {}) {
   const smoke = smokeRunner({ baseUrl, expectedCounts });
   const edgeCache = await edgeCacheChecker({ baseUrl });
+  const discovery = await discoveryChecker({ baseUrl });
   const wait = typeof sleepImpl === 'function' ? sleepImpl : sleep;
   if (afterSmokeDelayMs > 0) await wait(afterSmokeDelayMs);
 
@@ -477,7 +624,8 @@ export async function runProductionIntegrity({
     smoke,
     provenance,
     aiEvals,
-    edgeCache
+    edgeCache,
+    discovery
   });
 }
 

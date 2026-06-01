@@ -123,6 +123,7 @@ test('buildCloudflareUsageSummary derives product, AI discovery, and security re
   }, { generatedAt: '2026-05-31T00:00:00.000Z' });
 
   assertEq(summary.totals.requests, 1000);
+  assert(!Object.prototype.hasOwnProperty.call(summary, 'summary'), 'JSON report should expose top-level usage fields, not a legacy summary wrapper');
   assertEq(summary.usage_scorecard.product_surface_requests, 535);
   assertEq(summary.usage_scorecard.api_requests, 360);
   assertEq(summary.usage_scorecard.discovery_entrypoint_requests, 155);
@@ -155,6 +156,10 @@ test('renderCloudflareUsageReport emits readable Markdown sections', () => {
   assert(markdown.includes('## Product Signals'), 'should render product section');
   assert(markdown.includes('## Usage Scorecard'), 'should render usage scorecard section');
   assert(markdown.includes('## Discovery Adoption'), 'should render discovery adoption section');
+  assert(markdown.includes('Primary API requests: 4'), 'should render primary API requests from top-level scorecard');
+  assert(markdown.includes('Discovery entrypoint requests: 2'), 'should render discovery entrypoint requests from top-level scorecard');
+  assert(markdown.includes('Identified AI requests: 2'), 'should render identified AI requests from top-level scorecard');
+  assert(markdown.includes('Identified AI primary/discovery ratio: 0'), 'should render top-level discovery adoption ratio');
   assert(markdown.includes('/api/context'), 'should render API paths');
   assert(markdown.includes('## AI Discovery'), 'should render AI section');
   assert(markdown.includes('anthropic_claudebot'), 'should render classified AI agents');
