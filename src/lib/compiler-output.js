@@ -185,6 +185,13 @@ function writeLlmsTxt(distDir, publicResults, claims, verificationTimestamp) {
 - Discovery: https://anchorfact.org/api and https://anchorfact.org/agent.json
 - Trust: https://anchorfact.org/provenance.json and https://anchorfact.org/provenance.sig
 
+## Direct Answer Examples
+
+- Default prompt context: GET https://anchorfact.org/api/context?q=gaussian%20splatting&limit=3&format=markdown
+- Raw evidence pack: GET https://anchorfact.org/api/evidence?q=RLHF&limit=3&format=markdown
+- Coverage check when unsure: GET https://anchorfact.org/api/plan?q=quantum%20computing&limit=3
+- Exact claim citation: GET https://anchorfact.org/api/cite?id=f1&format=markdown
+
 ## Public Knowledge Base
 
 - Public verified articles: ${publicResults.length}

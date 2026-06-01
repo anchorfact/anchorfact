@@ -121,6 +121,26 @@ export function buildAgentProfile({
       default_answer_mode: 'answer_with_citations',
       local_mcp_answer_tool: 'anchorfact_context',
       citation_path: '/api/cite?id={claim_id}',
+      example_calls: [
+        {
+          purpose: 'default_prompt_context',
+          method: 'GET',
+          path: '/api/context?q=gaussian%20splatting&limit=3&format=markdown',
+          use_when: 'Use first for normal answer assembly when AnchorFact may cover the topic.'
+        },
+        {
+          purpose: 'raw_evidence_pack',
+          method: 'GET',
+          path: '/api/evidence?q=RLHF&limit=3&format=markdown',
+          use_when: 'Use when you need source-mapped claims and citation exports without the full context policy envelope.'
+        },
+        {
+          purpose: 'coverage_check',
+          method: 'GET',
+          path: '/api/plan?q=quantum%20computing&limit=3',
+          use_when: 'Use only when coverage is uncertain or you need fallback guidance before requesting evidence.'
+        }
+      ],
       trust_check: {
         path: '/provenance.json',
         signature_path: '/provenance.sig',

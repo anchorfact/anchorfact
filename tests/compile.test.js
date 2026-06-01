@@ -176,6 +176,8 @@ test('public entrypoints exclude draft articles', () => {
   assert(llmsTxt.includes('/api/evidence?q={query}'), 'llms.txt should advertise the evidence entrypoint');
   assert(llmsTxt.includes('/api/plan?q={query}'), 'llms.txt should advertise the coverage planning entrypoint');
   assert(llmsTxt.includes('/api/cite?id={claim_id}'), 'llms.txt should advertise the citation entrypoint');
+  assert(llmsTxt.includes('GET https://anchorfact.org/api/context?q=gaussian%20splatting&limit=3&format=markdown'), 'llms.txt should give AI crawlers an executable default context example');
+  assert(llmsTxt.includes('GET https://anchorfact.org/api/evidence?q=RLHF&limit=3&format=markdown'), 'llms.txt should give AI crawlers an executable evidence example');
   assert(llmsTxt.indexOf('## Recommended AI Entry Points') < llmsTxt.indexOf('## Public Knowledge Base'), 'llms.txt should show recommended AI entry points before the article index');
   assert(sitemap.includes('/agent.json'), 'sitemap should include agent profile');
   assert(sitemap.includes('/openapi.json'), 'sitemap should include OpenAPI contract');
@@ -257,6 +259,8 @@ test('agent profile describes the machine contract', () => {
   assertEq(agent.quick_start.default_answer_mode, 'answer_with_citations');
   assertEq(agent.quick_start.local_mcp_answer_tool, 'anchorfact_context');
   assertEq(agent.quick_start.citation_path, '/api/cite?id={claim_id}');
+  assert(agent.quick_start.example_calls.some(example => example.path === '/api/context?q=gaussian%20splatting&limit=3&format=markdown'), 'agent profile should expose an executable default context example');
+  assert(agent.quick_start.example_calls.some(example => example.path === '/api/evidence?q=RLHF&limit=3&format=markdown'), 'agent profile should expose an executable evidence example');
   assertEq(agent.quick_start.trust_check.path, '/provenance.json');
   assertEq(agent.quick_start.fallback_policy.unsupported_answer_mode, 'external_sources_required');
   assert(agent.quick_start.do_not_use.includes('draft entries'), 'quick start should warn against draft citation');

@@ -4,7 +4,8 @@ import {
   classifyPath,
   classifyUserAgent,
   renderCloudflareAdoptionScorecard,
-  renderCloudflareUsageReport
+  renderCloudflareUsageReport,
+  withCurrentReliability
 } from '../scripts/cloudflare-usage-report.js';
 
 let passed = 0, failed = 0;
@@ -248,6 +249,50 @@ test('buildCloudflareUsageSummary prefers targeted route rows for low-frequency 
   assert(summary.ai_path_evidence.some(item => item.path === '/robots.txt' && item.status === 522), 'AI path evidence should use targeted route rows');
 });
 
+test('withCurrentReliability separates current health from historical incidents', () => {
+  const longWindow = buildCloudflareUsageSummary({
+    zone: {
+      totals: [{ count: 2000, sum: { edgeResponseBytes: 4096 } }],
+      topPaths: [pathRow('/api/context', 900), pathRow('/robots.txt', 12)],
+      topUAs: [
+        uaRow('Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; OAI-SearchBot/1.0; +https://openai.com/searchbot)', 12)
+      ],
+      targetedPathUa: [
+        pathUaRow('/robots.txt', 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; OAI-SearchBot/1.0; +https://openai.com/searchbot)', 4, 522),
+        pathUaRow('/robots.txt', 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; OAI-SearchBot/1.0; +https://openai.com/searchbot)', 8, 200)
+      ],
+      targetedPathStatus: [
+        pathStatusRow('/api/context', 200, 900)
+      ]
+    },
+    window: { since: '2026-05-30T00:00:00.000Z', until: '2026-05-31T00:00:00.000Z', adaptive_lookback_minutes: 1430 }
+  }, { generatedAt: '2026-05-31T00:00:00.000Z' });
+  const currentWindow = buildCloudflareUsageSummary({
+    zone: {
+      totals: [{ count: 200, sum: { edgeResponseBytes: 1024 } }],
+      topPaths: [pathRow('/api/context', 100), pathRow('/robots.txt', 2)],
+      topUAs: [
+        uaRow('Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; OAI-SearchBot/1.0; +https://openai.com/searchbot)', 2)
+      ],
+      targetedPathUa: [
+        pathUaRow('/robots.txt', 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; OAI-SearchBot/1.0; +https://openai.com/searchbot)', 2, 200)
+      ],
+      targetedPathStatus: [
+        pathStatusRow('/api/context', 200, 100)
+      ]
+    },
+    window: { since: '2026-05-30T22:00:00.000Z', until: '2026-05-31T00:00:00.000Z', adaptive_lookback_minutes: 120 }
+  }, { generatedAt: '2026-05-31T00:00:00.000Z' });
+
+  const combined = withCurrentReliability(longWindow, currentWindow);
+  assertEq(combined.adoption_health.status, 'fail', 'long-window health should preserve historical failure evidence');
+  assertEq(combined.current_health.status, 'pass', 'current health should reflect recent reliability');
+  assertEq(combined.current_health.lookback_minutes, 120);
+  assertEq(combined.historical_incidents.status, 'observed');
+  assertEq(combined.historical_incidents.bot_route_5xx_or_522_requests, 4);
+  assert(combined.historical_incidents.bot_route_5xx_or_522_paths.some(item => item.path === '/robots.txt'), 'historical paths should remain visible');
+});
+
 test('renderCloudflareAdoptionScorecard emits concise reliability and adoption metrics', () => {
   const report = buildCloudflareUsageSummary({
     zone: {
@@ -268,6 +313,35 @@ test('renderCloudflareAdoptionScorecard emits concise reliability and adoption m
   assert(markdown.includes('Primary API success requests: 4'), 'scorecard should include primary API success count');
   assert(markdown.includes('anthropic_claudebot'), 'scorecard should include top AI agents');
   assert(markdown.includes('/api/context'), 'scorecard should include top API paths');
+});
+
+test('renderCloudflareAdoptionScorecard uses current health while preserving historical incidents', () => {
+  const longWindow = buildCloudflareUsageSummary({
+    zone: {
+      totals: [{ count: 100, sum: { edgeResponseBytes: 1024 } }],
+      topPaths: [pathRow('/api/context', 40), pathRow('/robots.txt', 4)],
+      topUAs: [uaRow('Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; OAI-SearchBot/1.0; +https://openai.com/searchbot)', 4)],
+      targetedPathUa: [pathUaRow('/robots.txt', 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; OAI-SearchBot/1.0; +https://openai.com/searchbot)', 4, 522)],
+      targetedPathStatus: [pathStatusRow('/api/context', 200, 40)]
+    },
+    window: { since: '2026-05-30T00:00:00.000Z', until: '2026-05-31T00:00:00.000Z', adaptive_lookback_minutes: 1430 }
+  }, { generatedAt: '2026-05-31T00:00:00.000Z' });
+  const currentWindow = buildCloudflareUsageSummary({
+    zone: {
+      totals: [{ count: 10, sum: { edgeResponseBytes: 512 } }],
+      topPaths: [pathRow('/api/context', 4), pathRow('/robots.txt', 2)],
+      topUAs: [uaRow('Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; OAI-SearchBot/1.0; +https://openai.com/searchbot)', 2)],
+      targetedPathUa: [pathUaRow('/robots.txt', 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; OAI-SearchBot/1.0; +https://openai.com/searchbot)', 2, 200)],
+      targetedPathStatus: [pathStatusRow('/api/context', 200, 4)]
+    },
+    window: { since: '2026-05-30T22:00:00.000Z', until: '2026-05-31T00:00:00.000Z', adaptive_lookback_minutes: 120 }
+  }, { generatedAt: '2026-05-31T00:00:00.000Z' });
+  const markdown = renderCloudflareAdoptionScorecard(withCurrentReliability(longWindow, currentWindow));
+
+  assert(markdown.includes('AnchorFact AI Adoption Scorecard - PASS'), 'scorecard heading should use current health');
+  assert(markdown.includes('Current status: pass'), 'scorecard should show current reliability');
+  assert(markdown.includes('Long-window status: fail'), 'scorecard should preserve historical long-window reliability');
+  assert(markdown.includes('Historical bot route 5xx/522 requests: 4'), 'scorecard should summarize historical incidents');
 });
 
 console.log(`\n${passed} passed, ${failed} failed`);

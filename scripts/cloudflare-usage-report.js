@@ -7,6 +7,7 @@ const CLOUDFLARE_API_BASE = 'https://api.cloudflare.com/client/v4';
 const GRAPHQL_ENDPOINT = `${CLOUDFLARE_API_BASE}/graphql`;
 const DEFAULT_ZONE_NAME = 'anchorfact.org';
 const DEFAULT_LOOKBACK_MINUTES = 23 * 60 + 50;
+const DEFAULT_CURRENT_RELIABILITY_MINUTES = 120;
 const DEFAULT_DAILY_DAYS = 7;
 const MAX_ADAPTIVE_LOOKBACK_MINUTES = 23 * 60 + 50;
 
@@ -203,6 +204,59 @@ function isBotLikeUserAgent(userAgent = '') {
   return category === 'ai_bot' || category === 'search_bot' || category === 'crawler';
 }
 
+function decorateHealthWindow(health, window = {}) {
+  return {
+    ...health,
+    lookback_minutes: Number(window.adaptive_lookback_minutes || window.lookback_minutes || 0) || null,
+    window: {
+      since: window.since || null,
+      until: window.until || null
+    }
+  };
+}
+
+function historicalIncidentsFrom(longHealth, currentHealth) {
+  const historicalBotRouteErrors = Math.max(
+    0,
+    Number(longHealth.bot_route_5xx_or_522_requests || 0) - Number(currentHealth.bot_route_5xx_or_522_requests || 0)
+  );
+  const historicalAiDiscoveryErrors = Math.max(
+    0,
+    Number(longHealth.ai_discovery_5xx_or_522_requests || 0) - Number(currentHealth.ai_discovery_5xx_or_522_requests || 0)
+  );
+  return {
+    status: historicalBotRouteErrors > 0 || historicalAiDiscoveryErrors > 0 ? 'observed' : 'none',
+    bot_route_5xx_or_522_requests: historicalBotRouteErrors,
+    ai_discovery_5xx_or_522_requests: historicalAiDiscoveryErrors,
+    bot_route_5xx_or_522_paths: historicalBotRouteErrors > 0
+      ? longHealth.bot_route_5xx_or_522_paths
+      : [],
+    note: historicalBotRouteErrors > 0 || historicalAiDiscoveryErrors > 0
+      ? 'Long-window failures remain visible for analysis, but current_health is the reliability signal used for alerts.'
+      : 'No historical bot-route failures remain after subtracting the current reliability window.'
+  };
+}
+
+export function withCurrentReliability(report, currentReport) {
+  const longHealth = decorateHealthWindow(report.adoption_health, report.window);
+  const currentHealth = decorateHealthWindow(
+    currentReport?.adoption_health || report.adoption_health,
+    currentReport?.window || report.window
+  );
+  return {
+    ...report,
+    window: {
+      ...report.window,
+      current_reliability_since: currentHealth.window.since,
+      current_reliability_until: currentHealth.window.until,
+      current_reliability_lookback_minutes: currentHealth.lookback_minutes
+    },
+    adoption_health: longHealth,
+    current_health: currentHealth,
+    historical_incidents: historicalIncidentsFrom(longHealth, currentHealth)
+  };
+}
+
 export function buildCloudflareUsageSummary(data, options = {}) {
   const zone = data.zone || {};
   const topPaths = zone.topPaths || [];
@@ -307,6 +361,27 @@ export function buildCloudflareUsageSummary(data, options = {}) {
   const botRouteServerErrorRequests = sumRows(botRouteErrorRows, () => true);
   const aiDiscoveryServerErrorRequests = sumRows(aiDiscoveryErrorRows, () => true);
   const adoptionHealthOk = botRouteServerErrorRequests === 0 && !primaryApiAllFailed;
+  const adoptionHealth = decorateHealthWindow({
+    ok: adoptionHealthOk,
+    status: adoptionHealthOk ? 'pass' : 'fail',
+    failure_reasons: [
+      botRouteServerErrorRequests > 0 ? 'bot_discovery_or_primary_route_5xx' : null,
+      primaryApiAllFailed ? 'primary_api_all_failed' : null
+    ].filter(Boolean),
+    bot_route_5xx_or_522_requests: botRouteServerErrorRequests,
+    ai_discovery_5xx_or_522_requests: aiDiscoveryServerErrorRequests,
+    bot_route_5xx_or_522_paths: topObservedPathStatuses(botRouteErrorRows, () => true, 10),
+    primary_api_status_requests: primaryApiStatusRequests,
+    primary_api_success_requests: primaryApiSuccessRequests,
+    primary_api_4xx_requests: primaryApiClientErrorRequests,
+    primary_api_5xx_or_522_requests: primaryApiServerErrorRequests,
+    primary_api_all_failed: primaryApiAllFailed,
+    top_primary_api_statuses: topObservedPathStatuses(primaryApiStatusRows, () => true, 10),
+    scanner_or_probe_share: ratio(scannerRequests, totalRequests),
+    decision_signal: adoptionHealthOk
+      ? 'Measure AI discovery-to-primary adoption before changing product surface.'
+      : 'Fix production route reliability before interpreting adoption volume.'
+  }, data.window || {});
 
   const recommendations = [];
   if (apiRequests > 0) {
@@ -370,27 +445,9 @@ export function buildCloudflareUsageSummary(data, options = {}) {
       scanner_or_probe_requests: scannerRequests,
       scanner_or_probe_share: ratio(scannerRequests, totalRequests)
     },
-    adoption_health: {
-      ok: adoptionHealthOk,
-      status: adoptionHealthOk ? 'pass' : 'fail',
-      failure_reasons: [
-        botRouteServerErrorRequests > 0 ? 'bot_discovery_or_primary_route_5xx' : null,
-        primaryApiAllFailed ? 'primary_api_all_failed' : null
-      ].filter(Boolean),
-      bot_route_5xx_or_522_requests: botRouteServerErrorRequests,
-      ai_discovery_5xx_or_522_requests: aiDiscoveryServerErrorRequests,
-      bot_route_5xx_or_522_paths: topObservedPathStatuses(botRouteErrorRows, () => true, 10),
-      primary_api_status_requests: primaryApiStatusRequests,
-      primary_api_success_requests: primaryApiSuccessRequests,
-      primary_api_4xx_requests: primaryApiClientErrorRequests,
-      primary_api_5xx_or_522_requests: primaryApiServerErrorRequests,
-      primary_api_all_failed: primaryApiAllFailed,
-      top_primary_api_statuses: topObservedPathStatuses(primaryApiStatusRows, () => true, 10),
-      scanner_or_probe_share: ratio(scannerRequests, totalRequests),
-      decision_signal: adoptionHealthOk
-        ? 'Measure AI discovery-to-primary adoption before changing product surface.'
-        : 'Fix production route reliability before interpreting adoption volume.'
-    },
+    adoption_health: adoptionHealth,
+    current_health: adoptionHealth,
+    historical_incidents: historicalIncidentsFrom(adoptionHealth, adoptionHealth),
     discovery_adoption: {
       observed_all_discovery_entrypoint_requests: discoveryEntrypointRequests,
       observed_all_primary_api_requests: primaryApiRequests,
@@ -430,6 +487,8 @@ export function buildCloudflareUsageSummary(data, options = {}) {
 
 export function renderCloudflareUsageReport(report) {
   const lines = [];
+  const currentHealth = report.current_health || report.adoption_health;
+  const historicalIncidents = report.historical_incidents || historicalIncidentsFrom(report.adoption_health, currentHealth);
   lines.push(`# AnchorFact Cloudflare Usage Report`);
   lines.push('');
   lines.push(`Generated: ${report.generated}`);
@@ -453,6 +512,14 @@ export function renderCloudflareUsageReport(report) {
   lines.push(`- Synthetic monitor requests: ${report.usage_scorecard.synthetic_monitor_requests}`);
   lines.push(`- Browser-like/manual requests: ${report.usage_scorecard.browser_like_requests}`);
   lines.push(`- Scanner/probe requests: ${report.usage_scorecard.scanner_or_probe_requests}`);
+  lines.push('');
+  lines.push(`## Reliability`);
+  lines.push('');
+  lines.push(`- Current status: ${currentHealth.status}`);
+  lines.push(`- Current window: ${currentHealth.window?.since || 'unknown'} to ${currentHealth.window?.until || 'unknown'} (${currentHealth.lookback_minutes || 'unknown'} minutes)`);
+  lines.push(`- Long-window status: ${report.adoption_health.status}`);
+  lines.push(`- Historical bot route 5xx/522 requests: ${historicalIncidents.bot_route_5xx_or_522_requests}`);
+  lines.push(`- Historical AI discovery 5xx/522 requests: ${historicalIncidents.ai_discovery_5xx_or_522_requests}`);
   lines.push('');
   lines.push(`## Product Signals`);
   lines.push('');
@@ -519,7 +586,9 @@ export function renderCloudflareUsageReport(report) {
 
 export function renderCloudflareAdoptionScorecard(report) {
   const lines = [];
-  lines.push(`# AnchorFact AI Adoption Scorecard - ${report.adoption_health.ok ? 'PASS' : 'FAIL'}`);
+  const currentHealth = report.current_health || report.adoption_health;
+  const historicalIncidents = report.historical_incidents || historicalIncidentsFrom(report.adoption_health, currentHealth);
+  lines.push(`# AnchorFact AI Adoption Scorecard - ${currentHealth.ok ? 'PASS' : 'FAIL'}`);
   lines.push('');
   lines.push(`Generated: ${report.generated}`);
   lines.push(`Window: ${report.window.since || 'unknown'} to ${report.window.until || 'unknown'}`);
@@ -538,24 +607,40 @@ export function renderCloudflareAdoptionScorecard(report) {
   lines.push('');
   lines.push(`## Reliability`);
   lines.push('');
-  lines.push(`- Status: ${report.adoption_health.status}`);
-  lines.push(`- Failure reasons: ${report.adoption_health.failure_reasons.join(', ') || 'none'}`);
-  lines.push(`- AI discovery 5xx/522 requests: ${report.adoption_health.ai_discovery_5xx_or_522_requests}`);
-  lines.push(`- Primary API observed status requests: ${report.adoption_health.primary_api_status_requests}`);
-  lines.push(`- Primary API success requests: ${report.adoption_health.primary_api_success_requests}`);
-  lines.push(`- Primary API 4xx requests: ${report.adoption_health.primary_api_4xx_requests}`);
-  lines.push(`- Primary API 5xx/522 requests: ${report.adoption_health.primary_api_5xx_or_522_requests}`);
-  if (report.adoption_health.bot_route_5xx_or_522_paths.length > 0) {
+  lines.push(`- Current status: ${currentHealth.status}`);
+  lines.push(`- Current window: ${currentHealth.window?.since || 'unknown'} to ${currentHealth.window?.until || 'unknown'} (${currentHealth.lookback_minutes || 'unknown'} minutes)`);
+  lines.push(`- Long-window status: ${report.adoption_health.status}`);
+  lines.push(`- Status: ${currentHealth.status}`);
+  lines.push(`- Failure reasons: ${currentHealth.failure_reasons.join(', ') || 'none'}`);
+  lines.push(`- AI discovery 5xx/522 requests: ${currentHealth.ai_discovery_5xx_or_522_requests}`);
+  lines.push(`- Primary API observed status requests: ${currentHealth.primary_api_status_requests}`);
+  lines.push(`- Primary API success requests: ${currentHealth.primary_api_success_requests}`);
+  lines.push(`- Primary API 4xx requests: ${currentHealth.primary_api_4xx_requests}`);
+  lines.push(`- Primary API 5xx/522 requests: ${currentHealth.primary_api_5xx_or_522_requests}`);
+  if (currentHealth.bot_route_5xx_or_522_paths.length > 0) {
     lines.push('');
     lines.push('Bot route 5xx/522 paths:');
-    for (const item of report.adoption_health.bot_route_5xx_or_522_paths) {
+    for (const item of currentHealth.bot_route_5xx_or_522_paths) {
       lines.push(`- ${item.path} -> ${item.status}: ${item.requests}`);
     }
   }
-  if (report.adoption_health.top_primary_api_statuses.length > 0) {
+  if (currentHealth.top_primary_api_statuses.length > 0) {
     lines.push('');
     lines.push('Primary API status sample:');
-    for (const item of report.adoption_health.top_primary_api_statuses) {
+    for (const item of currentHealth.top_primary_api_statuses) {
+      lines.push(`- ${item.path} -> ${item.status}: ${item.requests}`);
+    }
+  }
+  lines.push('');
+  lines.push(`## Historical Incidents`);
+  lines.push('');
+  lines.push(`- Status: ${historicalIncidents.status}`);
+  lines.push(`- Historical bot route 5xx/522 requests: ${historicalIncidents.bot_route_5xx_or_522_requests}`);
+  lines.push(`- Historical AI discovery 5xx/522 requests: ${historicalIncidents.ai_discovery_5xx_or_522_requests}`);
+  if (historicalIncidents.bot_route_5xx_or_522_paths.length > 0) {
+    lines.push('');
+    lines.push('Long-window bot route 5xx/522 paths:');
+    for (const item of historicalIncidents.bot_route_5xx_or_522_paths) {
       lines.push(`- ${item.path} -> ${item.status}: ${item.requests}`);
     }
   }
@@ -584,7 +669,7 @@ export function renderCloudflareAdoptionScorecard(report) {
   lines.push('');
   lines.push(`## Decision Signal`);
   lines.push('');
-  lines.push(`- ${report.adoption_health.decision_signal}`);
+  lines.push(`- ${currentHealth.decision_signal}`);
   lines.push('');
   return `${lines.join('\n')}\n`;
 }
@@ -637,23 +722,9 @@ async function findZone(fetchImpl, token, zoneName) {
   return zones[0];
 }
 
-export async function fetchCloudflareUsageReport(options = {}) {
-  const token = options.token || process.env.CLOUDFLARE_API_TOKEN || process.env.CF_API_TOKEN;
-  if (!token) throw new Error('CLOUDFLARE_API_TOKEN is required');
-  const fetchImpl = options.fetchImpl || globalThis.fetch;
-  if (!fetchImpl) throw new Error('fetch is required');
-  const zoneName = options.zoneName || DEFAULT_ZONE_NAME;
-  const zone = options.zoneId ? { id: options.zoneId, name: zoneName } : await findZone(fetchImpl, token, zoneName);
-  const lookbackMinutes = Math.min(
-    Number(options.lookbackMinutes || DEFAULT_LOOKBACK_MINUTES),
-    MAX_ADAPTIVE_LOOKBACK_MINUTES
-  );
-  const dailyDays = Math.max(1, Number(options.dailyDays || DEFAULT_DAILY_DAYS));
-  const until = options.until || new Date();
-  const since = new Date(until.getTime() - lookbackMinutes * 60 * 1000);
-  const dailySince = new Date(until.getTime() - dailyDays * 24 * 60 * 60 * 1000);
-  const variables = {
-    zoneTag: zone.id,
+function buildGraphqlVariables({ zoneId, since, until, dailySince }) {
+  return {
+    zoneTag: zoneId,
     filter: {
       datetime_geq: since.toISOString(),
       datetime_lt: until.toISOString()
@@ -673,6 +744,9 @@ export async function fetchCloudflareUsageReport(options = {}) {
       date_leq: until.toISOString().slice(0, 10)
     }
   };
+}
+
+async function fetchGraphqlZone(fetchImpl, token, variables, zoneName) {
   const response = await fetchImpl(GRAPHQL_ENDPOINT, {
     method: 'POST',
     headers: {
@@ -688,7 +762,32 @@ export async function fetchCloudflareUsageReport(options = {}) {
   }
   const graphZone = json.data?.viewer?.zones?.[0];
   if (!graphZone) throw new Error(`Cloudflare GraphQL returned no zone data for ${zoneName}`);
-  return buildCloudflareUsageSummary({
+  return graphZone;
+}
+
+export async function fetchCloudflareUsageReport(options = {}) {
+  const token = options.token || process.env.CLOUDFLARE_API_TOKEN || process.env.CF_API_TOKEN;
+  if (!token) throw new Error('CLOUDFLARE_API_TOKEN is required');
+  const fetchImpl = options.fetchImpl || globalThis.fetch;
+  if (!fetchImpl) throw new Error('fetch is required');
+  const zoneName = options.zoneName || DEFAULT_ZONE_NAME;
+  const zone = options.zoneId ? { id: options.zoneId, name: zoneName } : await findZone(fetchImpl, token, zoneName);
+  const lookbackMinutes = Math.min(
+    Number(options.lookbackMinutes || DEFAULT_LOOKBACK_MINUTES),
+    MAX_ADAPTIVE_LOOKBACK_MINUTES
+  );
+  const currentReliabilityMinutes = Math.min(
+    Math.max(1, Number(options.currentReliabilityMinutes || DEFAULT_CURRENT_RELIABILITY_MINUTES)),
+    lookbackMinutes
+  );
+  const dailyDays = Math.max(1, Number(options.dailyDays || DEFAULT_DAILY_DAYS));
+  const until = options.until || new Date();
+  const since = new Date(until.getTime() - lookbackMinutes * 60 * 1000);
+  const currentSince = new Date(until.getTime() - currentReliabilityMinutes * 60 * 1000);
+  const dailySince = new Date(until.getTime() - dailyDays * 24 * 60 * 60 * 1000);
+  const variables = buildGraphqlVariables({ zoneId: zone.id, since, until, dailySince });
+  const graphZone = await fetchGraphqlZone(fetchImpl, token, variables, zoneName);
+  const report = buildCloudflareUsageSummary({
     zone: graphZone,
     zoneId: zone.id,
     zoneName: zone.name || zoneName,
@@ -700,6 +799,28 @@ export async function fetchCloudflareUsageReport(options = {}) {
       daily_until: variables.dailyFilter.date_leq
     }
   }, { generatedAt: options.generatedAt });
+  if (currentReliabilityMinutes >= lookbackMinutes) return report;
+
+  const currentVariables = buildGraphqlVariables({
+    zoneId: zone.id,
+    since: currentSince,
+    until,
+    dailySince
+  });
+  const currentGraphZone = await fetchGraphqlZone(fetchImpl, token, currentVariables, zoneName);
+  const currentReport = buildCloudflareUsageSummary({
+    zone: currentGraphZone,
+    zoneId: zone.id,
+    zoneName: zone.name || zoneName,
+    window: {
+      since: currentVariables.filter.datetime_geq,
+      until: currentVariables.filter.datetime_lt,
+      adaptive_lookback_minutes: currentReliabilityMinutes,
+      daily_since: currentVariables.dailyFilter.date_geq,
+      daily_until: currentVariables.dailyFilter.date_leq
+    }
+  }, { generatedAt: options.generatedAt });
+  return withCurrentReliability(report, currentReport);
 }
 
 function parseArgs(argv) {
@@ -715,6 +836,7 @@ function parseArgs(argv) {
     else if (arg === '--zone') args.zoneName = argv[++index];
     else if (arg === '--zone-id') args.zoneId = argv[++index];
     else if (arg === '--lookback-minutes') args.lookbackMinutes = Number(argv[++index]);
+    else if (arg === '--current-reliability-minutes') args.currentReliabilityMinutes = Number(argv[++index]);
     else if (arg === '--daily-days') args.dailyDays = Number(argv[++index]);
     else if (arg === '--write') args.write = argv[++index];
     else if (arg === '--write-json') args.writeJson = argv[++index];
@@ -725,7 +847,7 @@ function parseArgs(argv) {
 }
 
 function usage() {
-  return `Usage: npm run usage:cloudflare -- [--json] [--adoption-scorecard] [--fail-on-reliability-break] [--zone anchorfact.org] [--zone-id id] [--lookback-minutes 1430] [--daily-days 7] [--write report.md] [--write-json report.json]
+  return `Usage: npm run usage:cloudflare -- [--json] [--adoption-scorecard] [--fail-on-reliability-break] [--zone anchorfact.org] [--zone-id id] [--lookback-minutes 1430] [--current-reliability-minutes 120] [--daily-days 7] [--write report.md] [--write-json report.json]
 
 Required environment:
   CLOUDFLARE_API_TOKEN  Cloudflare API token with Zone:Read and Analytics:Read for the target zone.
@@ -753,7 +875,7 @@ async function main(argv = process.argv.slice(2)) {
     writeFileSync(out, `${JSON.stringify(report, null, 2)}\n`);
   }
   process.stdout.write(args.json ? `${JSON.stringify(report, null, 2)}\n` : markdown);
-  if (args.failOnReliabilityBreak && !report.adoption_health.ok) {
+  if (args.failOnReliabilityBreak && !(report.current_health || report.adoption_health).ok) {
     process.exitCode = 1;
   }
 }
