@@ -3,6 +3,7 @@ import {
   buildCloudflareUsageSummary,
   classifyPath,
   classifyUserAgent,
+  renderCloudflareAdoptionScorecard,
   renderCloudflareUsageReport
 } from '../scripts/cloudflare-usage-report.js';
 
@@ -54,6 +55,16 @@ function pathUaRow(path, userAgent, count, status = 200) {
       clientRequestHTTPMethodName: 'GET'
     },
     sum: { edgeResponseBytes: 1000 }
+  };
+}
+
+function pathStatusRow(path, status, count) {
+  return {
+    count,
+    dimensions: {
+      clientRequestPath: path,
+      edgeResponseStatus: status
+    }
   };
 }
 
@@ -109,6 +120,11 @@ test('buildCloudflareUsageSummary derives product, AI discovery, and security re
         pathUaRow('/api/evidence', 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; ClaudeBot/1.0; +claudebot@anthropic.com)', 7),
         pathUaRow('/ai/example/index.ttl', 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; GPTBot/1.4; +https://openai.com/gptbot)', 2)
       ],
+      pathStatus: [
+        pathStatusRow('/api/evidence', 200, 200),
+        pathStatusRow('/api/context', 200, 90),
+        pathStatusRow('/api/plan', 404, 5)
+      ],
       statusCodes: [{ count: 970, dimensions: { edgeResponseStatus: 200 } }],
       methods: [{ count: 1000, dimensions: { clientRequestHTTPMethodName: 'GET' } }],
       countries: [{ count: 500, dimensions: { clientCountryName: 'US' } }],
@@ -130,6 +146,17 @@ test('buildCloudflareUsageSummary derives product, AI discovery, and security re
   assertEq(summary.usage_scorecard.identified_ai_requests, 60);
   assertEq(summary.usage_scorecard.synthetic_monitor_requests, 70);
   assertEq(summary.usage_scorecard.browser_like_requests, 600);
+  assertEq(summary.adoption_scorecard.discovery_entrypoint_requests, 155);
+  assertEq(summary.adoption_scorecard.primary_api_requests, 310);
+  assertEq(summary.adoption_scorecard.identified_ai_requests, 60);
+  assertEq(summary.adoption_scorecard.identified_ai_discovery_requests, 22);
+  assertEq(summary.adoption_scorecard.identified_ai_primary_api_requests, 15);
+  assertEq(summary.adoption_scorecard.identified_ai_primary_to_discovery_ratio, 0.68);
+  assertEq(summary.adoption_health.status, 'pass');
+  assertEq(summary.adoption_health.primary_api_status_requests, 295);
+  assertEq(summary.adoption_health.primary_api_success_requests, 290);
+  assertEq(summary.adoption_health.primary_api_4xx_requests, 5);
+  assertEq(summary.adoption_health.primary_api_5xx_or_522_requests, 0);
   assertEq(summary.discovery_adoption.observed_ai_discovery_requests, 22);
   assertEq(summary.discovery_adoption.observed_ai_primary_api_requests, 15);
   assertEq(summary.discovery_adoption.observed_ai_article_artifact_requests, 2);
@@ -163,6 +190,56 @@ test('renderCloudflareUsageReport emits readable Markdown sections', () => {
   assert(markdown.includes('/api/context'), 'should render API paths');
   assert(markdown.includes('## AI Discovery'), 'should render AI section');
   assert(markdown.includes('anthropic_claudebot'), 'should render classified AI agents');
+});
+
+test('buildCloudflareUsageSummary marks bot route 5xx and primary API all-failed as reliability failures', () => {
+  const summary = buildCloudflareUsageSummary({
+    zone: {
+      totals: [{ count: 30, sum: { edgeResponseBytes: 2048 } }],
+      topPaths: [pathRow('/api/context', 10), pathRow('/robots.txt', 10)],
+      topUAs: [
+        uaRow('Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; OAI-SearchBot/1.0; +https://openai.com/searchbot)', 10)
+      ],
+      pathUa: [
+        pathUaRow('/robots.txt', 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; OAI-SearchBot/1.0; +https://openai.com/searchbot)', 4, 522),
+        pathUaRow('/api/context', 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; OAI-SearchBot/1.0; +https://openai.com/searchbot)', 3, 500)
+      ],
+      pathStatus: [
+        pathStatusRow('/api/context', 500, 10),
+        pathStatusRow('/api/evidence', 522, 5)
+      ]
+    },
+    window: { since: '2026-05-30T00:00:00.000Z', until: '2026-05-31T00:00:00.000Z' }
+  }, { generatedAt: '2026-05-31T00:00:00.000Z' });
+
+  assertEq(summary.adoption_health.ok, false);
+  assert(summary.adoption_health.failure_reasons.includes('bot_discovery_or_primary_route_5xx'), 'bot route failure should be reported');
+  assert(summary.adoption_health.failure_reasons.includes('primary_api_all_failed'), 'primary API all-failed should be reported');
+  assertEq(summary.adoption_health.bot_route_5xx_or_522_requests, 7);
+  assertEq(summary.adoption_health.ai_discovery_5xx_or_522_requests, 4);
+  assert(summary.adoption_health.bot_route_5xx_or_522_paths.some(item => item.path === '/robots.txt' && item.status === '522'), 'should list failing bot route path');
+});
+
+test('renderCloudflareAdoptionScorecard emits concise reliability and adoption metrics', () => {
+  const report = buildCloudflareUsageSummary({
+    zone: {
+      totals: [{ count: 10, sum: { edgeResponseBytes: 1024 } }],
+      topPaths: [pathRow('/api/context', 4), pathRow('/agent.json', 2)],
+      topUAs: [uaRow('Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; ClaudeBot/1.0; +claudebot@anthropic.com)', 2)],
+      pathStatus: [pathStatusRow('/api/context', 200, 4)]
+    },
+    window: { since: '2026-05-30T00:00:00.000Z', until: '2026-05-31T00:00:00.000Z' }
+  }, { generatedAt: '2026-05-31T00:00:00.000Z' });
+  const markdown = renderCloudflareAdoptionScorecard(report);
+
+  assert(markdown.includes('AnchorFact AI Adoption Scorecard - PASS'), 'scorecard should show pass');
+  assert(markdown.includes('Discovery entrypoint requests: 2'), 'scorecard should include discovery entrypoints');
+  assert(markdown.includes('Primary API requests: 4'), 'scorecard should include primary API requests');
+  assert(markdown.includes('Identified AI requests: 2'), 'scorecard should include AI requests');
+  assert(markdown.includes('Bot route 5xx/522 requests: 0'), 'scorecard should include bot route failures');
+  assert(markdown.includes('Primary API success requests: 4'), 'scorecard should include primary API success count');
+  assert(markdown.includes('anthropic_claudebot'), 'scorecard should include top AI agents');
+  assert(markdown.includes('/api/context'), 'scorecard should include top API paths');
 });
 
 console.log(`\n${passed} passed, ${failed} failed`);

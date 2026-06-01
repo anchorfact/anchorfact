@@ -646,6 +646,44 @@ function checkProductionIntegrityWorkflow(failures) {
   }
 }
 
+function checkAiAdoptionScorecardWorkflow(failures) {
+  const path = '.github/workflows/ai-adoption-scorecard.yml';
+  if (!existsSync(path)) {
+    failures.push(`${path} is required for AI adoption measurement.`);
+    return;
+  }
+
+  const text = readFileSync(path, 'utf8');
+  const requiredPatterns = [
+    [/name:\s*AI Adoption Scorecard/, 'workflow name should be AI Adoption Scorecard'],
+    [/workflow_dispatch:/, 'workflow should support manual dispatch'],
+    [/cron:\s*'47 1 \* \* \*'/, 'workflow should run daily at the expected cron schedule'],
+    [/permissions:\s*\r?\n\s+contents:\s+read/, 'workflow should use read-only contents permission'],
+    [/CLOUDFLARE_API_TOKEN:\s*\$\{\{\s*secrets\.CLOUDFLARE_API_TOKEN\s*\}\}/, 'workflow should read Cloudflare token from GitHub Secrets'],
+    [/npm run usage:adoption/, 'workflow should run the AI adoption scorecard script'],
+    [/--lookback-minutes 1430/, 'workflow should retain a near-24-hour adoption scorecard window'],
+    [/--lookback-minutes 120/, 'workflow should use a short reliability alert window'],
+    [/--fail-on-reliability-break/, 'workflow should fail only on route reliability breakage'],
+    [/actions\/upload-artifact@v4/, 'workflow should upload the adoption scorecard artifact']
+  ];
+
+  for (const [pattern, message] of requiredPatterns) {
+    if (!pattern.test(text)) failures.push(`${path}: ${message}.`);
+  }
+
+  const forbiddenPatterns = [
+    [/contents:\s+write/, 'must not request contents write permission'],
+    [/verify-full/, 'must not run verify-full'],
+    [/\bcf[a-z]{2}_[A-Za-z0-9_-]{20,}\b/, 'must not embed a Cloudflare API token'],
+    [/\bgithub_pat_[A-Za-z0-9_]{20,}\b/, 'must not embed a GitHub personal access token'],
+    [/wrangler/i, 'must not deploy or mutate Cloudflare state']
+  ];
+
+  for (const [pattern, message] of forbiddenPatterns) {
+    if (pattern.test(text)) failures.push(`${path}: ${message}.`);
+  }
+}
+
 export function runRepoHygiene() {
   const failures = [];
   checkRootTempFiles(failures);
@@ -653,6 +691,7 @@ export function runRepoHygiene() {
   checkTextFiles(failures);
   checkFunctionEdgeImports(failures);
   checkProductionIntegrityWorkflow(failures);
+  checkAiAdoptionScorecardWorkflow(failures);
   return failures;
 }
 

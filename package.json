@@ -16,6 +16,7 @@
     "production-integrity": "node scripts/production-integrity.js",
     "production:integrity": "node scripts/production-integrity.js",
     "usage:cloudflare": "node scripts/cloudflare-usage-report.js",
+    "usage:adoption": "node scripts/cloudflare-usage-report.js --adoption-scorecard",
     "evals:prod": "node scripts/run-ai-evals.js",
     "benchmark:ai": "node scripts/run-ai-usefulness-benchmark.js",
     "api:perf": "node scripts/check-api-performance.js",

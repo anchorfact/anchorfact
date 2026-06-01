@@ -117,6 +117,39 @@ function topObservedPaths(rows, predicate, limit = 10) {
   }));
 }
 
+function topObservedPathStatuses(rows, predicate, limit = 10) {
+  const counts = {};
+  for (const row of rows) {
+    if (!predicate(row)) continue;
+    const path = row.dimensions?.clientRequestPath || 'unknown';
+    const status = row.dimensions?.edgeResponseStatus || 'unknown';
+    increment(counts, `${path} ${status}`, Number(row.count || 0));
+  }
+  return topEntries(counts, limit).map(item => {
+    const separator = item.name.lastIndexOf(' ');
+    return {
+      path: item.name.slice(0, separator),
+      status: item.name.slice(separator + 1),
+      requests: item.count
+    };
+  });
+}
+
+function isSuccessStatus(status) {
+  const value = Number(status);
+  return value >= 200 && value < 400;
+}
+
+function isClientErrorStatus(status) {
+  const value = Number(status);
+  return value >= 400 && value < 500;
+}
+
+function isServerErrorStatus(status) {
+  const value = Number(status);
+  return value >= 500 || value === 522;
+}
+
 function bytesToHuman(bytes) {
   const value = Number(bytes || 0);
   if (value >= 1024 * 1024 * 1024) return `${(value / 1024 / 1024 / 1024).toFixed(2)} GB`;
@@ -165,11 +198,17 @@ function isPrimaryApiPath(path = '') {
   return PRIMARY_API_PATHS.has(String(path || '/'));
 }
 
+function isBotLikeUserAgent(userAgent = '') {
+  const category = classifyUserAgent(userAgent).category;
+  return category === 'ai_bot' || category === 'search_bot' || category === 'crawler';
+}
+
 export function buildCloudflareUsageSummary(data, options = {}) {
   const zone = data.zone || {};
   const topPaths = zone.topPaths || [];
   const topUAs = zone.topUAs || [];
   const pathUa = zone.pathUa || [];
+  const pathStatus = zone.pathStatus || [];
   const statusCodes = zone.statusCodes || [];
   const methods = zone.methods || [];
   const countries = zone.countries || [];
@@ -248,6 +287,24 @@ export function buildCloudflareUsageSummary(data, options = {}) {
   const observedAiDiscoveryRequests = sumRows(aiPathRows, row => isDiscoveryEntrypoint(row.dimensions?.clientRequestPath));
   const observedAiPrimaryApiRequests = sumRows(aiPathRows, row => isPrimaryApiPath(row.dimensions?.clientRequestPath));
   const observedAiArticleArtifactRequests = sumRows(aiPathRows, row => classifyPath(row.dimensions?.clientRequestPath) === 'article_artifact');
+  const primaryApiStatusRows = pathStatus.filter(row => isPrimaryApiPath(row.dimensions?.clientRequestPath));
+  const primaryApiStatusRequests = sumRows(primaryApiStatusRows, () => true);
+  const primaryApiSuccessRequests = sumRows(primaryApiStatusRows, row => isSuccessStatus(row.dimensions?.edgeResponseStatus));
+  const primaryApiClientErrorRequests = sumRows(primaryApiStatusRows, row => isClientErrorStatus(row.dimensions?.edgeResponseStatus));
+  const primaryApiServerErrorRequests = sumRows(primaryApiStatusRows, row => isServerErrorStatus(row.dimensions?.edgeResponseStatus));
+  const primaryApiAllFailed = primaryApiStatusRequests > 0 && primaryApiSuccessRequests === 0;
+  const botRouteErrorRows = pathUa.filter(row => (
+    isBotLikeUserAgent(row.dimensions?.userAgent)
+    && (isDiscoveryEntrypoint(row.dimensions?.clientRequestPath) || isPrimaryApiPath(row.dimensions?.clientRequestPath))
+    && isServerErrorStatus(row.dimensions?.edgeResponseStatus)
+  ));
+  const aiDiscoveryErrorRows = aiPathRows.filter(row => (
+    isDiscoveryEntrypoint(row.dimensions?.clientRequestPath)
+    && isServerErrorStatus(row.dimensions?.edgeResponseStatus)
+  ));
+  const botRouteServerErrorRequests = sumRows(botRouteErrorRows, () => true);
+  const aiDiscoveryServerErrorRequests = sumRows(aiDiscoveryErrorRows, () => true);
+  const adoptionHealthOk = botRouteServerErrorRequests === 0 && !primaryApiAllFailed;
 
   const recommendations = [];
   if (apiRequests > 0) {
@@ -299,6 +356,38 @@ export function buildCloudflareUsageSummary(data, options = {}) {
       browser_like_requests: browserLikeRequests,
       browser_like_share: ratio(browserLikeRequests, totalRequests),
       scanner_or_probe_requests: scannerRequests
+    },
+    adoption_scorecard: {
+      discovery_entrypoint_requests: discoveryEntrypointRequests,
+      primary_api_requests: primaryApiRequests,
+      identified_ai_requests: aiRequests,
+      identified_ai_discovery_requests: observedAiDiscoveryRequests,
+      identified_ai_primary_api_requests: observedAiPrimaryApiRequests,
+      identified_ai_primary_to_discovery_ratio: ratio(observedAiPrimaryApiRequests, observedAiDiscoveryRequests, 2),
+      bot_route_5xx_or_522_requests: botRouteServerErrorRequests,
+      scanner_or_probe_requests: scannerRequests,
+      scanner_or_probe_share: ratio(scannerRequests, totalRequests)
+    },
+    adoption_health: {
+      ok: adoptionHealthOk,
+      status: adoptionHealthOk ? 'pass' : 'fail',
+      failure_reasons: [
+        botRouteServerErrorRequests > 0 ? 'bot_discovery_or_primary_route_5xx' : null,
+        primaryApiAllFailed ? 'primary_api_all_failed' : null
+      ].filter(Boolean),
+      bot_route_5xx_or_522_requests: botRouteServerErrorRequests,
+      ai_discovery_5xx_or_522_requests: aiDiscoveryServerErrorRequests,
+      bot_route_5xx_or_522_paths: topObservedPathStatuses(botRouteErrorRows, () => true, 10),
+      primary_api_status_requests: primaryApiStatusRequests,
+      primary_api_success_requests: primaryApiSuccessRequests,
+      primary_api_4xx_requests: primaryApiClientErrorRequests,
+      primary_api_5xx_or_522_requests: primaryApiServerErrorRequests,
+      primary_api_all_failed: primaryApiAllFailed,
+      top_primary_api_statuses: topObservedPathStatuses(primaryApiStatusRows, () => true, 10),
+      scanner_or_probe_share: ratio(scannerRequests, totalRequests),
+      decision_signal: adoptionHealthOk
+        ? 'Measure AI discovery-to-primary adoption before changing product surface.'
+        : 'Fix production route reliability before interpreting adoption volume.'
     },
     discovery_adoption: {
       observed_all_discovery_entrypoint_requests: discoveryEntrypointRequests,
@@ -426,6 +515,78 @@ export function renderCloudflareUsageReport(report) {
   return `${lines.join('\n')}\n`;
 }
 
+export function renderCloudflareAdoptionScorecard(report) {
+  const lines = [];
+  lines.push(`# AnchorFact AI Adoption Scorecard - ${report.adoption_health.ok ? 'PASS' : 'FAIL'}`);
+  lines.push('');
+  lines.push(`Generated: ${report.generated}`);
+  lines.push(`Window: ${report.window.since || 'unknown'} to ${report.window.until || 'unknown'}`);
+  lines.push(`Zone: ${report.source.zone_name}`);
+  lines.push('');
+  lines.push(`## Scorecard`);
+  lines.push('');
+  lines.push(`- Discovery entrypoint requests: ${report.adoption_scorecard.discovery_entrypoint_requests}`);
+  lines.push(`- Primary API requests: ${report.adoption_scorecard.primary_api_requests}`);
+  lines.push(`- Identified AI requests: ${report.adoption_scorecard.identified_ai_requests}`);
+  lines.push(`- Identified AI discovery requests: ${report.adoption_scorecard.identified_ai_discovery_requests}`);
+  lines.push(`- Identified AI primary API requests: ${report.adoption_scorecard.identified_ai_primary_api_requests}`);
+  lines.push(`- Identified AI primary/discovery ratio: ${report.adoption_scorecard.identified_ai_primary_to_discovery_ratio}`);
+  lines.push(`- Bot route 5xx/522 requests: ${report.adoption_scorecard.bot_route_5xx_or_522_requests}`);
+  lines.push(`- Scanner/probe requests: ${report.adoption_scorecard.scanner_or_probe_requests} (${(report.adoption_scorecard.scanner_or_probe_share * 100).toFixed(1)}%)`);
+  lines.push('');
+  lines.push(`## Reliability`);
+  lines.push('');
+  lines.push(`- Status: ${report.adoption_health.status}`);
+  lines.push(`- Failure reasons: ${report.adoption_health.failure_reasons.join(', ') || 'none'}`);
+  lines.push(`- AI discovery 5xx/522 requests: ${report.adoption_health.ai_discovery_5xx_or_522_requests}`);
+  lines.push(`- Primary API observed status requests: ${report.adoption_health.primary_api_status_requests}`);
+  lines.push(`- Primary API success requests: ${report.adoption_health.primary_api_success_requests}`);
+  lines.push(`- Primary API 4xx requests: ${report.adoption_health.primary_api_4xx_requests}`);
+  lines.push(`- Primary API 5xx/522 requests: ${report.adoption_health.primary_api_5xx_or_522_requests}`);
+  if (report.adoption_health.bot_route_5xx_or_522_paths.length > 0) {
+    lines.push('');
+    lines.push('Bot route 5xx/522 paths:');
+    for (const item of report.adoption_health.bot_route_5xx_or_522_paths) {
+      lines.push(`- ${item.path} -> ${item.status}: ${item.requests}`);
+    }
+  }
+  if (report.adoption_health.top_primary_api_statuses.length > 0) {
+    lines.push('');
+    lines.push('Primary API status sample:');
+    for (const item of report.adoption_health.top_primary_api_statuses) {
+      lines.push(`- ${item.path} -> ${item.status}: ${item.requests}`);
+    }
+  }
+  lines.push('');
+  lines.push(`## Top AI Agents`);
+  lines.push('');
+  if (report.ai_agents.length > 0) {
+    for (const item of report.ai_agents) lines.push(`- ${item.name}: ${item.count} requests`);
+  } else {
+    lines.push('- No AI-specific user agents observed in the top user-agent sample.');
+  }
+  lines.push('');
+  lines.push(`## Top API Paths`);
+  lines.push('');
+  for (const item of report.top_api_paths.slice(0, 8)) {
+    lines.push(`- ${item.path}: ${item.requests} requests, ${bytesToHuman(item.bytes)}`);
+  }
+  if (report.top_api_paths.length === 0) lines.push('- No API paths observed in the top path sample.');
+  lines.push('');
+  lines.push(`## Top Machine Artifacts`);
+  lines.push('');
+  for (const item of report.top_machine_artifacts.slice(0, 8)) {
+    lines.push(`- ${item.path}: ${item.requests} requests, ${bytesToHuman(item.bytes)}`);
+  }
+  if (report.top_machine_artifacts.length === 0) lines.push('- No machine artifacts observed in the top path sample.');
+  lines.push('');
+  lines.push(`## Decision Signal`);
+  lines.push('');
+  lines.push(`- ${report.adoption_health.decision_signal}`);
+  lines.push('');
+  return `${lines.join('\n')}\n`;
+}
+
 function graphqlUsageQuery() {
   return `query Usage($zoneTag: string, $filter: ZoneHttpRequestsAdaptiveGroupsFilter_InputObject, $dailyFilter: ZoneHttpRequests1dGroupsFilter_InputObject) {
   viewer {
@@ -434,6 +595,7 @@ function graphqlUsageQuery() {
       topPaths: httpRequestsAdaptiveGroups(limit: 100, filter: $filter, orderBy: [count_DESC]) { count sum { edgeResponseBytes } dimensions { clientRequestPath } }
       topUAs: httpRequestsAdaptiveGroups(limit: 100, filter: $filter, orderBy: [count_DESC]) { count dimensions { userAgent } }
       pathUa: httpRequestsAdaptiveGroups(limit: 100, filter: $filter, orderBy: [count_DESC]) { count sum { edgeResponseBytes } dimensions { clientRequestPath userAgent edgeResponseStatus clientRequestHTTPMethodName } }
+      pathStatus: httpRequestsAdaptiveGroups(limit: 100, filter: $filter, orderBy: [count_DESC]) { count dimensions { clientRequestPath edgeResponseStatus } }
       statusCodes: httpRequestsAdaptiveGroups(limit: 20, filter: $filter, orderBy: [count_DESC]) { count dimensions { edgeResponseStatus } }
       methods: httpRequestsAdaptiveGroups(limit: 10, filter: $filter, orderBy: [count_DESC]) { count dimensions { clientRequestHTTPMethodName } }
       countries: httpRequestsAdaptiveGroups(limit: 20, filter: $filter, orderBy: [count_DESC]) { count dimensions { clientCountryName } }
@@ -534,6 +696,8 @@ function parseArgs(argv) {
   for (let index = 0; index < argv.length; index++) {
     const arg = argv[index];
     if (arg === '--json') args.json = true;
+    else if (arg === '--adoption-scorecard') args.adoptionScorecard = true;
+    else if (arg === '--fail-on-reliability-break') args.failOnReliabilityBreak = true;
     else if (arg === '--zone') args.zoneName = argv[++index];
     else if (arg === '--zone-id') args.zoneId = argv[++index];
     else if (arg === '--lookback-minutes') args.lookbackMinutes = Number(argv[++index]);
@@ -547,7 +711,7 @@ function parseArgs(argv) {
 }
 
 function usage() {
-  return `Usage: npm run usage:cloudflare -- [--json] [--zone anchorfact.org] [--zone-id id] [--lookback-minutes 1430] [--daily-days 7] [--write report.md] [--write-json report.json]
+  return `Usage: npm run usage:cloudflare -- [--json] [--adoption-scorecard] [--fail-on-reliability-break] [--zone anchorfact.org] [--zone-id id] [--lookback-minutes 1430] [--daily-days 7] [--write report.md] [--write-json report.json]
 
 Required environment:
   CLOUDFLARE_API_TOKEN  Cloudflare API token with Zone:Read and Analytics:Read for the target zone.
@@ -561,7 +725,9 @@ async function main(argv = process.argv.slice(2)) {
     return;
   }
   const report = await fetchCloudflareUsageReport(args);
-  const markdown = renderCloudflareUsageReport(report);
+  const markdown = args.adoptionScorecard
+    ? renderCloudflareAdoptionScorecard(report)
+    : renderCloudflareUsageReport(report);
   if (args.write) {
     const out = resolve(args.write);
     mkdirSync(dirname(out), { recursive: true });
@@ -573,6 +739,9 @@ async function main(argv = process.argv.slice(2)) {
     writeFileSync(out, `${JSON.stringify(report, null, 2)}\n`);
   }
   process.stdout.write(args.json ? `${JSON.stringify(report, null, 2)}\n` : markdown);
+  if (args.failOnReliabilityBreak && !report.adoption_health.ok) {
+    process.exitCode = 1;
+  }
 }
 
 if (import.meta.url === pathToFileURL(process.argv[1]).href) {

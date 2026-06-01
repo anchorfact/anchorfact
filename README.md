@@ -133,6 +133,14 @@ npm run production:integrity
 
 `npm run usage:cloudflare` reads Cloudflare GraphQL analytics and emits a short report that separates product API usage, signed machine artifact reads, AI crawler discovery, synthetic monitor traffic, and security probe noise. It is read-only and requires a local `CLOUDFLARE_API_TOKEN` with `Zone:Read` and `Analytics:Read`; do not commit tokens or generated reports unless a report is intentionally being published for review.
 
+The scheduled `AI Adoption Scorecard` workflow runs daily and can also be started manually from GitHub Actions. It uploads a 1430-minute adoption artifact focused on discovery-to-primary-API adoption, identified AI agents, bot route 5xx/522 failures, top API/machine paths, and scanner noise. Low adoption volume is a product signal, not a CI failure; the workflow fails only on a short-window reliability alert, such as current bot discovery paths returning 5xx/522 or all observed primary API status samples failing.
+
+For the same local read-only scorecard, run:
+
+```bash
+npm run usage:adoption
+```
+
 ## Content Model
 
 Content lives in `content/` as Markdown with YAML frontmatter.
@@ -255,6 +263,7 @@ Public hygiene checks are shared by the compiler, quality gate, and audit script
 | `npm run verify:provenance:signed` | Verifies live provenance with the pinned trusted public key. |
 | `npm run production:integrity` | Runs production smoke, AI evals, trusted signed provenance verification, and edge cache-policy checks, then emits an integrity report. |
 | `npm run usage:cloudflare` | Reads Cloudflare analytics with a local token and reports API, artifact, AI crawler, monitor, and security-noise usage signals. |
+| `npm run usage:adoption` | Reads Cloudflare analytics with a local token and reports the AI adoption scorecard used by the scheduled workflow. |
 | `npm run audit-public-sample` | Regenerates the 20-article public content audit report. |
 | `npm run audit-public-full` | Fails if any public article has an actionable audit recommendation. |
 | `npm run repo:hygiene` | Checks for stale root snapshots, mojibake, old launch metrics, and tracked generated files. |
