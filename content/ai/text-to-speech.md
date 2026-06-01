@@ -1,12 +1,13 @@
 ---
 id: text-to-speech
-title: Text-to-Speech and Voice Synthesis
+title: "Text-to-Speech and Voice Synthesis"
 schema_type: TechArticle
 category: ai
 language: en
-confidence: high
-last_verified: "2026-05-24"
+confidence: medium
+last_verified: "2026-06-01"
 created_date: "2026-05-24"
+updated: "2026-06-01"
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -15,100 +16,61 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: f1
-    statement: >-
-      WaveNet (van den Oord et al. 2016, DeepMind) was the first generative model to produce raw audio waveforms directly, using dilated causal convolutions to achieve natural-sounding speech
-      synthesis that halved the gap to human speech.
-    source_title: "van den Oord, Aaron, et al. WaveNet: A Generative Model for Raw Audio. DeepMind 2016"
+  - id: fact-tts-001
+    statement: "WaveNet introduced a deep generative model that directly models raw audio waveforms."
+    source_title: "WaveNet: A Generative Model for Raw Audio"
     source_url: https://arxiv.org/abs/1609.03499
-    confidence: high
-  - id: f2
-    statement: >-
-      Tacotron 2 (Shen et al. 2018, Google) generates mel spectrograms from text using a sequence-to-sequence model with attention, then synthesizes audio via a modified WaveNet vocoder, approaching
-      human parity on MOS scores.
-    source_title: Shen, Jonathan, et al. Natural TTS Synthesis by Conditioning WaveNet on Mel Spectrogram Predictions. 2018
+    confidence: medium
+  - id: fact-tts-002
+    statement: "Tacotron 2 combines a sequence-to-sequence feature prediction network that maps text to mel spectrograms with a modified WaveNet vocoder."
+    source_title: "Natural TTS Synthesis by Conditioning WaveNet on Mel Spectrogram Predictions"
     source_url: https://arxiv.org/abs/1712.05884
-    confidence: high
-  - id: f3
-    statement: >-
-      VALL-E (Wang et al. 2023, Microsoft) treats TTS as a conditional language modeling task using discrete audio codec tokens, enabling zero-shot voice cloning from just 3 seconds of reference
-      audio.
-    source_title: Wang, Chengyi, et al. Neural Codec Language Models are Zero-Shot Text to Speech Synthesizers. 2023
+    confidence: medium
+  - id: fact-tts-003
+    statement: "VALL-E frames text-to-speech as conditional language modeling over discrete neural audio codec codes."
+    source_title: "Neural Codec Language Models are Zero-Shot Text to Speech Synthesizers"
     source_url: https://arxiv.org/abs/2301.02111
-    confidence: high
-completeness: 0.9
+    confidence: medium
+completeness: 0.82
 known_gaps:
-  - Zero-shot voice cloning ethics
-  - Paralinguistic feature generation (laughter, emotion)
-disputed_statements:
-  - statement: No major disputed statements identified
+  - "Voice cloning safety, consent, watermarking, and identity misuse controls are not covered in this compact source-mapped article."
+  - "Commercial text-to-speech product behavior changes quickly and should be verified against current vendor documentation."
+disputed_statements: []
 primary_sources:
-  - title: Natural TTS Synthesis by Conditioning WaveNet on Mel Spectrogram Predictions (Tacotron 2)
+  - title: "WaveNet: A Generative Model for Raw Audio"
+    type: academic_paper
+    year: 2016
+    url: https://arxiv.org/abs/1609.03499
+    institution: Google DeepMind
+  - title: "Natural TTS Synthesis by Conditioning WaveNet on Mel Spectrogram Predictions"
     type: academic_paper
     year: 2018
     url: https://arxiv.org/abs/1712.05884
-    institution: ICASSP/Google
-  - title: High Fidelity Neural Audio Compression (EnCodec)
+    institution: Google
+  - title: "Neural Codec Language Models are Zero-Shot Text to Speech Synthesizers"
     type: academic_paper
     year: 2023
-    url: https://arxiv.org/abs/2210.13438
-    institution: Meta AI
-secondary_sources:
-  - title: "NaturalSpeech: End-to-End Text-to-Speech Synthesis with Human-Level Quality"
-    type: conference_paper
-    year: 2024
-    authors:
-      - Tan, Xu
-      - Chen, Jiawei
-      - Liu, Haohe
-      - et al.
-    institution: Microsoft Research / ICML
-    url: https://arxiv.org/abs/2205.04421
-  - title: "WaveNet: A Generative Model for Raw Audio"
-    type: conference_paper
-    year: 2016
-    authors:
-      - van den Oord, Aäron
-      - Dieleman, Sander
-      - Zen, Heiga
-      - et al.
-    institution: Google DeepMind
-    url: https://arxiv.org/abs/1609.03499
-  - title: A Survey on Neural Text-to-Speech Synthesis
-    type: survey_paper
-    year: 2024
-    authors:
-      - multiple
-    institution: IEEE/ACM TASLP
-    url: https://doi.org/10.1109/TASLP.2024.3385267
-  - title: "Tacotron 2: Natural TTS Synthesis by Conditioning WaveNet on Mel Spectrogram Predictions"
-    type: conference_paper
-    year: 2018
-    authors:
-      - Shen, Jonathan
-      - Pang, Ruoming
-      - Weiss, Ron J.
-      - et al.
-    institution: Google
-    url: https://arxiv.org/abs/1712.05884
-updated: "2026-05-24"
+    url: https://arxiv.org/abs/2301.02111
+    institution: Microsoft
+secondary_sources: []
 ---
+
 ## TL;DR
-Modern TTS produces speech indistinguishable from human recordings, with voice cloning from one-minute samples and emotional expressiveness that captures laughter, whispers, and nuanced prosody.
+
+Modern text-to-speech systems moved from waveform modeling to spectrogram pipelines and then to codec-token language modeling. For agentic media workflows, the safe claim is architectural: generated speech depends on model design, reference audio, and downstream review.
 
 ## Core Explanation
-Two-stage pipeline: text-to-spectrogram (Tacotron, FastSpeech) → spectrogram-to-waveform (WaveNet, HiFi-GAN). End-to-end models (VITS, Voicebox) unify these stages. Mel spectrograms compress audio into time-frequency representations suitable for neural processing.
 
-## Detailed Analysis
-FastSpeech 2 (Microsoft) enables parallel, non-autoregressive generation for real-time synthesis. Voicebox (Meta, 2023) approaches TTS as an in-context learning task — conditioning on a short audio sample to generate speech in any voice, including multilingual transfer.
+AI coding or media agents may use TTS for narration prototypes, accessibility previews, NPC voice mockups, or automated video drafts. Production use needs consent, licensing, review, and abuse controls; these operational constraints are separate from the model architecture facts below.
+
+## Source-Mapped Facts
+
+- WaveNet introduced a deep generative model that directly models raw audio waveforms. ([source](https://arxiv.org/abs/1609.03499))
+- Tacotron 2 combines a sequence-to-sequence feature prediction network that maps text to mel spectrograms with a modified WaveNet vocoder. ([source](https://arxiv.org/abs/1712.05884))
+- VALL-E frames text-to-speech as conditional language modeling over discrete neural audio codec codes. ([source](https://arxiv.org/abs/2301.02111))
 
 ## Further Reading
-- Hugging Face: Text-to-Speech Models
-- Coqui.ai TTS
-- ISCA Speech Synthesis Workshop
 
-## Related Articles
-
-- [AI Podcast Generation: Text-to-Speech Narration, AI Hosts, and Automated Audio Content](../ai-podcast-generation.md)
-- [AI for Call Centers: Speech Analytics, Real-Time Agent Assist, and Sentiment Detection](../ai-call-center.md)
-- [AI for Audio Processing: Speech Recognition, Music Generation, and Sound Understanding](../ai-for-audio-processing-speech-recognition-music-generation-and-sound-understanding.md)
+- [WaveNet](https://arxiv.org/abs/1609.03499)
+- [Tacotron 2](https://arxiv.org/abs/1712.05884)
+- [VALL-E](https://arxiv.org/abs/2301.02111)

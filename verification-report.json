@@ -8,7 +8,7 @@
     "elapsed_ms": 635005,
     "elapsed_sec": "635.0",
     "concurrency": 3,
-    "manual_reviewed_articles": 489
+    "manual_reviewed_articles": 494
   },
   "articles": [
     {
@@ -12030,43 +12030,85 @@
       "file": "content/ai/foundation-models.md",
       "article_id": "foundation-models",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 4,
       "verification_results": [
         {
           "source_title": "On the Opportunities and Risks of Foundation Models",
-          "source_type": "academic_paper",
+          "source_type": "research_report",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2108.07258",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2108.07258",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Second AI-focused content batch; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Scaling Laws for Neural Language Models",
+          "source_title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2001.08361",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1810.04805",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Second AI-focused content batch; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "Training Compute-Optimal Large Language Models",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2203.15556",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Second AI-focused content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GPT-4 Technical Report",
+          "source_type": "technical_report",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2303.08774",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Second AI-focused content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 2
+      "sources_verified": 4,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-06-01"
     },
     {
       "file": "content/ai/generative-adversarial-networks-gan.md",
@@ -12839,43 +12881,67 @@
       "file": "content/ai/instruction-tuning.md",
       "article_id": "instruction-tuning",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Finetuned Language Models Are Zero-Shot Learners (FLAN)",
+          "source_title": "Finetuned Language Models Are Zero-Shot Learners",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2109.01652",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2109.01652",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Second AI-focused content batch; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Self-Instruct: Aligning Language Models with Self-Generated Instructions",
+          "source_title": "Scaling Instruction-Finetuned Language Models",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2212.10560",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2210.11416",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Second AI-focused content batch; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "Training Language Models to Follow Instructions with Human Feedback",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2203.02155",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Second AI-focused content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 2
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-06-01"
     },
     {
       "file": "content/ai/knowledge-distillation.md",
@@ -17190,43 +17256,67 @@
       "file": "content/ai/text-to-speech.md",
       "article_id": "text-to-speech",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Natural TTS Synthesis by Conditioning WaveNet on Mel Spectrogram Predictions (Tacotron 2)",
+          "source_title": "WaveNet: A Generative Model for Raw Audio",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "1712.05884",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1609.03499",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Second AI-focused content batch; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "High Fidelity Neural Audio Compression (EnCodec)",
+          "source_title": "Natural TTS Synthesis by Conditioning WaveNet on Mel Spectrogram Predictions",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2210.13438",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1712.05884",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Second AI-focused content batch; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "Neural Codec Language Models are Zero-Shot Text to Speech Synthesizers",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2301.02111",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Second AI-focused content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 2
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-06-01"
     },
     {
       "file": "content/ai/text-to-sql.md",
@@ -17298,75 +17388,67 @@
       "file": "content/ai/time-series-forecasting.md",
       "article_id": "time-series-forecasting",
       "generation_method": "ai_structured",
-      "sources_total": 4,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "N-BEATS: Neural basis expansion analysis for interpretable time series forecasting",
+          "source_title": "N-BEATS: Neural Basis Expansion Analysis for Interpretable Time Series Forecasting",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "1905.10437",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1905.10437",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Second AI-focused content batch; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
           "source_title": "Informer: Beyond Efficient Transformer for Long Sequence Time-Series Forecasting",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2012.07436",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2012.07436",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Second AI-focused content batch; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Changing Data Sources in the Age of Machine Learning for Official Statistics",
-          "source_type": "academic_paper",
+          "source_title": "Learning Skillful Medium-Range Global Weather Forecasting",
+          "source_type": "journal_article",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2306.04338v1",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://doi.org/10.1126/science.adi2336",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Second AI-focused content batch; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
-        },
-        {
-          "source_title": "DOME: Recommendations for supervised machine learning validation in biology",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "arxiv",
-              "identifier": "2006.16189v4",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 4
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-06-01"
     },
     {
       "file": "content/ai/tokenization-in-nlp.md",
@@ -34799,28 +34881,85 @@
       "file": "content/computer-science/testing-pyramid.md",
       "article_id": "kb-2026-00178",
       "generation_method": "ai_assisted",
-      "sources_total": 1,
+      "sources_total": 4,
       "verification_results": [
         {
-          "source_title": "Succeeding with Agile (Mike Cohn)",
-          "source_type": "book",
+          "source_title": "Test Pyramid",
+          "source_type": "professional_resource",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.mountaingoatsoftware.com/books/succeeding-with-agile",
-              "verified": false,
+              "identifier": "https://martinfowler.com/bliki/TestPyramid.html",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://www.mountaingoatsoftware.com/books/succeeding-with-agile"
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Second AI-focused content batch; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "The Practical Test Pyramid",
+          "source_type": "professional_resource",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://martinfowler.com/articles/practical-test-pyramid.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Second AI-focused content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Just Say No to More End-to-End Tests",
+          "source_type": "blog_post",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://testing.googleblog.com/2015/04/just-say-no-to-more-end-to-end-tests.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Second AI-focused content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Best Practices - Playwright",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://playwright.dev/docs/best-practices",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Second AI-focused content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 1
+      "sources_verified": 4,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-06-01"
     },
     {
       "file": "content/computer-science/the-actor-model-concurrency-through-message-passing.md",

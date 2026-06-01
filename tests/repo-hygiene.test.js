@@ -80,7 +80,15 @@ test('textHygieneFailures catches stale production claim metrics', () => {
 test('textHygieneFailures accepts current production claim metrics', () => {
   const failures = textHygieneFailures(
     'docs/LAUNCH_READINESS_2026-05-27.md',
-    'Snapshot: 633 public / 367 draft / 1948 claims.'
+    'Snapshot: 638 public / 362 draft / 1966 claims.'
+  );
+  assertEq(failures, []);
+});
+
+test('textHygieneFailures ignores historical repair log metrics', () => {
+  const failures = textHygieneFailures(
+    'docs/PUBLIC_CONTENT_REPAIR_2026-06-01-77.md',
+    'Local rebuilt counts: 633 public / 367 draft / 1948 claims.'
   );
   assertEq(failures, []);
 });

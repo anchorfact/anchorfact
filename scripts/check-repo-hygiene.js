@@ -52,6 +52,17 @@ const MOJIBAKE_PATTERNS = [
 ];
 
 const STALE_METRIC_PATTERNS = [
+  /633 public/i,
+  /633 public entries/i,
+  /Public eligible articles\s*\|\s*633/i,
+  /Public articles\s*\|\s*633/i,
+  /EXPECTED_PUBLIC_ARTICLES=633/i,
+  /367 draft/i,
+  /Draft articles\s*\|\s*367/i,
+  /EXPECTED_DRAFT_ARTICLES=367/i,
+  /1948 claims/i,
+  /Public claims\s*\|\s*1948/i,
+  /EXPECTED_CLAIMS=1948/i,
   /630 public/i,
   /630 public entries/i,
   /Public eligible articles\s*\|\s*630/i,
@@ -606,7 +617,7 @@ export function textHygieneFailures(relativePath, text) {
     || relativePath === 'DESIGN.md'
     || relativePath === 'PROMOTION.md'
     || relativePath === 'SECURITY.md'
-    || relativePath.startsWith('docs/')
+    || (relativePath.startsWith('docs/') && !relativePath.startsWith('docs/PUBLIC_CONTENT_REPAIR_'))
     || relativePath.startsWith('.github/')
   );
 
