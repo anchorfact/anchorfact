@@ -209,6 +209,8 @@ export function buildCloudflareUsageSummary(data, options = {}) {
   const topUAs = zone.topUAs || [];
   const pathUa = zone.pathUa || [];
   const pathStatus = zone.pathStatus || [];
+  const targetedPathUa = zone.targetedPathUa || pathUa;
+  const targetedPathStatus = zone.targetedPathStatus || pathStatus;
   const statusCodes = zone.statusCodes || [];
   const methods = zone.methods || [];
   const countries = zone.countries || [];
@@ -260,7 +262,7 @@ export function buildCloudflareUsageSummary(data, options = {}) {
       bytes: row.sum?.edgeResponseBytes || 0
     }));
 
-  const aiPathEvidence = pathUa
+  const aiPathEvidence = targetedPathUa
     .filter(row => classifyUserAgent(row.dimensions?.userAgent).category === 'ai_bot')
     .slice(0, 20)
     .map(row => ({
@@ -283,17 +285,17 @@ export function buildCloudflareUsageSummary(data, options = {}) {
   const discoveryEntrypointRequests = sumRows(topPaths, row => isDiscoveryEntrypoint(row.dimensions?.clientRequestPath));
   const primaryApiRequests = sumRows(topPaths, row => isPrimaryApiPath(row.dimensions?.clientRequestPath));
   const productSurfaceRequests = apiRequests + machineArtifactRequests + articleArtifactRequests + crawlerControlRequests;
-  const aiPathRows = pathUa.filter(row => classifyUserAgent(row.dimensions?.userAgent).category === 'ai_bot');
+  const aiPathRows = targetedPathUa.filter(row => classifyUserAgent(row.dimensions?.userAgent).category === 'ai_bot');
   const observedAiDiscoveryRequests = sumRows(aiPathRows, row => isDiscoveryEntrypoint(row.dimensions?.clientRequestPath));
   const observedAiPrimaryApiRequests = sumRows(aiPathRows, row => isPrimaryApiPath(row.dimensions?.clientRequestPath));
   const observedAiArticleArtifactRequests = sumRows(aiPathRows, row => classifyPath(row.dimensions?.clientRequestPath) === 'article_artifact');
-  const primaryApiStatusRows = pathStatus.filter(row => isPrimaryApiPath(row.dimensions?.clientRequestPath));
+  const primaryApiStatusRows = targetedPathStatus.filter(row => isPrimaryApiPath(row.dimensions?.clientRequestPath));
   const primaryApiStatusRequests = sumRows(primaryApiStatusRows, () => true);
   const primaryApiSuccessRequests = sumRows(primaryApiStatusRows, row => isSuccessStatus(row.dimensions?.edgeResponseStatus));
   const primaryApiClientErrorRequests = sumRows(primaryApiStatusRows, row => isClientErrorStatus(row.dimensions?.edgeResponseStatus));
   const primaryApiServerErrorRequests = sumRows(primaryApiStatusRows, row => isServerErrorStatus(row.dimensions?.edgeResponseStatus));
   const primaryApiAllFailed = primaryApiStatusRequests > 0 && primaryApiSuccessRequests === 0;
-  const botRouteErrorRows = pathUa.filter(row => (
+  const botRouteErrorRows = targetedPathUa.filter(row => (
     isBotLikeUserAgent(row.dimensions?.userAgent)
     && (isDiscoveryEntrypoint(row.dimensions?.clientRequestPath) || isPrimaryApiPath(row.dimensions?.clientRequestPath))
     && isServerErrorStatus(row.dimensions?.edgeResponseStatus)
@@ -588,7 +590,7 @@ export function renderCloudflareAdoptionScorecard(report) {
 }
 
 function graphqlUsageQuery() {
-  return `query Usage($zoneTag: string, $filter: ZoneHttpRequestsAdaptiveGroupsFilter_InputObject, $dailyFilter: ZoneHttpRequests1dGroupsFilter_InputObject) {
+  return `query Usage($zoneTag: string, $filter: ZoneHttpRequestsAdaptiveGroupsFilter_InputObject, $targetedRouteFilter: ZoneHttpRequestsAdaptiveGroupsFilter_InputObject, $primaryApiFilter: ZoneHttpRequestsAdaptiveGroupsFilter_InputObject, $dailyFilter: ZoneHttpRequests1dGroupsFilter_InputObject) {
   viewer {
     zones(filter: { zoneTag: $zoneTag }) {
       totals: httpRequestsAdaptiveGroups(limit: 1, filter: $filter) { count sum { edgeResponseBytes } }
@@ -596,6 +598,8 @@ function graphqlUsageQuery() {
       topUAs: httpRequestsAdaptiveGroups(limit: 100, filter: $filter, orderBy: [count_DESC]) { count dimensions { userAgent } }
       pathUa: httpRequestsAdaptiveGroups(limit: 100, filter: $filter, orderBy: [count_DESC]) { count sum { edgeResponseBytes } dimensions { clientRequestPath userAgent edgeResponseStatus clientRequestHTTPMethodName } }
       pathStatus: httpRequestsAdaptiveGroups(limit: 100, filter: $filter, orderBy: [count_DESC]) { count dimensions { clientRequestPath edgeResponseStatus } }
+      targetedPathUa: httpRequestsAdaptiveGroups(limit: 1000, filter: $targetedRouteFilter, orderBy: [count_DESC]) { count sum { edgeResponseBytes } dimensions { clientRequestPath userAgent edgeResponseStatus clientRequestHTTPMethodName } }
+      targetedPathStatus: httpRequestsAdaptiveGroups(limit: 1000, filter: $primaryApiFilter, orderBy: [count_DESC]) { count dimensions { clientRequestPath edgeResponseStatus } }
       statusCodes: httpRequestsAdaptiveGroups(limit: 20, filter: $filter, orderBy: [count_DESC]) { count dimensions { edgeResponseStatus } }
       methods: httpRequestsAdaptiveGroups(limit: 10, filter: $filter, orderBy: [count_DESC]) { count dimensions { clientRequestHTTPMethodName } }
       countries: httpRequestsAdaptiveGroups(limit: 20, filter: $filter, orderBy: [count_DESC]) { count dimensions { clientCountryName } }
@@ -653,6 +657,16 @@ export async function fetchCloudflareUsageReport(options = {}) {
     filter: {
       datetime_geq: since.toISOString(),
       datetime_lt: until.toISOString()
+    },
+    targetedRouteFilter: {
+      datetime_geq: since.toISOString(),
+      datetime_lt: until.toISOString(),
+      clientRequestPath_in: Array.from(new Set([...DISCOVERY_ENTRYPOINT_PATHS, ...PRIMARY_API_PATHS]))
+    },
+    primaryApiFilter: {
+      datetime_geq: since.toISOString(),
+      datetime_lt: until.toISOString(),
+      clientRequestPath_in: Array.from(PRIMARY_API_PATHS)
     },
     dailyFilter: {
       date_geq: dailySince.toISOString().slice(0, 10),

@@ -220,6 +220,34 @@ test('buildCloudflareUsageSummary marks bot route 5xx and primary API all-failed
   assert(summary.adoption_health.bot_route_5xx_or_522_paths.some(item => item.path === '/robots.txt' && item.status === '522'), 'should list failing bot route path');
 });
 
+test('buildCloudflareUsageSummary prefers targeted route rows for low-frequency reliability signals', () => {
+  const summary = buildCloudflareUsageSummary({
+    zone: {
+      totals: [{ count: 2000, sum: { edgeResponseBytes: 4096 } }],
+      topPaths: [pathRow('/api/context', 900), pathRow('/robots.txt', 1)],
+      topUAs: [
+        uaRow('Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; OAI-SearchBot/1.0; +https://openai.com/searchbot)', 1)
+      ],
+      pathUa: [],
+      pathStatus: [],
+      targetedPathUa: [
+        pathUaRow('/robots.txt', 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; OAI-SearchBot/1.0; +https://openai.com/searchbot)', 1, 522),
+        pathUaRow('/api/context', 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; OAI-SearchBot/1.0; +https://openai.com/searchbot)', 1, 200)
+      ],
+      targetedPathStatus: [
+        pathStatusRow('/api/context', 200, 900)
+      ]
+    },
+    window: { since: '2026-05-30T00:00:00.000Z', until: '2026-05-31T00:00:00.000Z' }
+  }, { generatedAt: '2026-05-31T00:00:00.000Z' });
+
+  assertEq(summary.adoption_health.ok, false);
+  assertEq(summary.adoption_health.bot_route_5xx_or_522_requests, 1);
+  assertEq(summary.adoption_health.primary_api_success_requests, 900);
+  assertEq(summary.discovery_adoption.observed_ai_primary_api_requests, 1);
+  assert(summary.ai_path_evidence.some(item => item.path === '/robots.txt' && item.status === 522), 'AI path evidence should use targeted route rows');
+});
+
 test('renderCloudflareAdoptionScorecard emits concise reliability and adoption metrics', () => {
   const report = buildCloudflareUsageSummary({
     zone: {
