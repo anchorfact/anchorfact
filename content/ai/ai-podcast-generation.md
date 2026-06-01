@@ -1,11 +1,11 @@
 ---
 id: ai-podcast-generation
-title: "AI Podcast Generation: Text-to-Speech Narration, AI Hosts, and Automated Audio Content"
+title: "AI Podcast Generation: Source-Grounded Scripts, TTS, Transcription, and Review"
 schema_type: article
 category: ai
 language: en
-confidence: high
-last_verified: "2026-05-24"
+confidence: medium
+last_verified: "2026-06-01"
 created_date: "2026-05-24"
 generation_method: ai_structured
 ai_models:
@@ -14,83 +14,77 @@ derived_from_human_seed: true
 conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
-completeness: 0.85
+completeness: 0.78
 atomic_facts:
   - id: af-ai-podcast-generation-1
     statement: >-
-      AI podcast and audio content generation (2023-2026): NotebookLM Audio Overview (Google, 2024) generates conversational AI-host podcast episodes from uploaded documents, with two AI hosts
-      discussing the content in a natural, engaging dialogue. ElevenLabs (2024-2025) provides voice cloning and AI narration used by publishers like Storytel. Descript (2023-2025) enables AI-powered
-      audio editing via text-based interface, with AI voice regeneration for corrections.
-    source_title: Google NotebookLM Audio Overview (2024) / ElevenLabs AI narration / Descript AI audio editing / Wondercraft AI / Podcastle AI
-    source_url: https://arxiv.org/search/?query=AI+podcast+generation+text+to+speech+narration
-    confidence: high
+      NotebookLM Audio Overviews generate deep-dive discussions between AI hosts that summarize key topics in uploaded sources.
+    source_title: "Generate Audio Overview in NotebookLM"
+    source_url: https://support.google.com/notebooklm/answer/16212820
+    confidence: medium
   - id: af-ai-podcast-generation-2
     statement: >-
-      The AI podcasting ecosystem (2024-2026): Wondercraft AI and Podcastle provide end-to-end podcast creation from text scripts, including voice selection, background music generation, and audio
-      mastering. AI podcasting challenges traditional audio production: what took hours of recording and editing now takes minutes. Spotify (2024-2025) launched AI-powered features including AI DJ
-      (personalized music + commentary) and AI voice translation for podcasts.
-    source_title: Wondercraft AI (2025) / Podcastle AI / Spotify AI DJ / Spotify voice translation / Riverside AI editing
-    source_url: https://arxiv.org/search/?query=conversational+AI+audio+podcast+generation
-    confidence: high
+      Tacotron 2 maps character embeddings to mel-scale spectrograms and uses a modified WaveNet vocoder to synthesize time-domain speech waveforms.
+    source_title: "Natural TTS Synthesis by Conditioning WaveNet on Mel Spectrogram Predictions"
+    source_url: https://arxiv.org/abs/1712.05884
+    confidence: medium
+  - id: af-ai-podcast-generation-3
+    statement: >-
+      Whisper was trained on 680,000 hours of multilingual and multitask supervised audio data for robust speech recognition.
+    source_title: "Robust Speech Recognition via Large-Scale Weak Supervision"
+    source_url: https://arxiv.org/abs/2212.04356
+    confidence: medium
 primary_sources:
   - id: ps-ai-podcast-generation-1
-    title: "AI-Powered Audio Content Creation: Podcast Generation, Text-to-Speech Narration, and Automated Audio Production (2024-2025 Survey)"
-    type: academic_paper
+    title: "Generate Audio Overview in NotebookLM"
+    type: documentation
     year: 2025
-    institution: Interspeech / ICASSP / arXiv
-    url: https://arxiv.org/search/?query=AI+podcast+generation+text+to+speech+narration
+    institution: Google
+    url: https://support.google.com/notebooklm/answer/16212820
   - id: ps-ai-podcast-generation-2
-    title: "Conversational AI for Audio Content: Multi-Speaker Dialogue Generation and Narrative Podcast Production"
+    title: "Natural TTS Synthesis by Conditioning WaveNet on Mel Spectrogram Predictions"
     type: academic_paper
-    year: 2025
-    institution: ACL / NAACL / arXiv
-    url: https://arxiv.org/search/?query=conversational+AI+audio+podcast+generation
+    year: 2017
+    institution: Google
+    url: https://arxiv.org/abs/1712.05884
+  - id: ps-ai-podcast-generation-3
+    title: "Robust Speech Recognition via Large-Scale Weak Supervision"
+    type: academic_paper
+    year: 2022
+    institution: OpenAI
+    url: https://arxiv.org/abs/2212.04356
 known_gaps:
-  - AI-generated journalistic integrity -- accuracy, sourcing, factuality
-  - Long-form narrative audio content with emotional arc and pacing
+  - Voice cloning consent, host disclosure, and publisher policy vary by jurisdiction and platform.
+  - Long-form editorial quality still requires human review of script, source fidelity, and final audio.
 disputed_statements: []
 secondary_sources:
-  - title: "A Survey on AI-Generated Audio Content: From Speech Synthesis to Podcast Generation"
-    type: survey_paper
+  - title: "NotebookLM now lets you listen to a conversation about your sources"
+    type: official_report
     year: 2024
-    authors:
-      - multiple
-    institution: IEEE/ACM TASLP
-    url: https://doi.org/10.1109/TASLP.2024.3385267
-  - title: "NotebookLM Audio Overviews: AI-Powered Podcast Generation from Documents (Google)"
-    type: report
-    year: 2024
-    authors:
-      - Google Research
-    institution: Google Labs
+    institution: Google
     url: https://blog.google/technology/ai/notebooklm-audio-overviews/
-  - title: "Neural Text-to-Speech Synthesis: A Comprehensive Survey"
-    type: survey_paper
-    year: 2024
-    authors:
-      - multiple
-    institution: ACM Computing Surveys
-    url: https://doi.org/10.1145/3635100
-  - title: "ElevenLabs and the Rise of AI Voice Generation: How Generative Audio Is Reshaping Media Production"
-    type: report
-    year: 2025
-    authors:
-      - a16z Research
-    institution: Andreessen Horowitz
-    url: https://a16z.com/ai-voice-generation-2025/
-updated: "2026-05-24"
+updated: "2026-06-01"
 ---
+
 ## TL;DR
-AI generates podcasts -- from NotebookLM's AI hosts discussing uploaded documents to ElevenLabs narrating audiobooks to Spotify's AI DJ. The podcast creation pipeline is being compressed from hours of recording/editing to minutes of AI generation.
+
+AI podcast generation is not just text-to-speech. A reliable pipeline starts with source selection, produces a cited script, renders voices, transcribes or audits the result, and blocks publication until factuality, consent, and disclosure checks pass.
 
 ## Core Explanation
-Podcast AI: (1) Script generation -- LLM converts documents/outlines into podcast scripts; (2) Voice -- neural TTS (ElevenLabs, Azure, Play.ht) generates natural narration (100+ voice options, emotional range: excitement, sadness, suspense); (3) Multi-speaker -- AI generates turn-taking conversation between hosts (NotebookLM Audio Overview); (4) Audio editing -- Descript: edit audio by editing text transcript. Remove filler words, regenerate sentences; (5) Music + SFX -- AI generates background music (Suno, Udio).
 
-## Detailed Analysis
-NotebookLM Audio Overview (2024): viral feature. Upload documents -> two AI hosts have 10-minute conversation about content. Use case: students converting lecture notes to study podcasts, researchers sharing papers. ElevenLabs Projects (2025): long-form narration with voice cloning. Authors and publishers creating audiobooks. Storytel AI narration partnership. Descript: edit audio like a doc. Overdub: AI voice clone reads corrections. Studio Sound: AI removes background noise, equalizes. Wondercraft: end-to-end podcast studio. Write script -> select AI voice from 200+ -> add music -> publish. Spotify AI DJ (2023-2025): personalized music + AI voice commentary (Xavier "X" Jernigan voice clone). Spotify voice translation (2024): translate podcasts to other languages while preserving original speaker's voice characteristics.
+Podcast automation usually combines several stages: document summarization, outline planning, host-script generation, text-to-speech, audio mastering, transcription, and human review. The risk is that a fluent episode can still misstate the sources, imply endorsement, clone a voice without consent, or hide that the hosts are synthetic.
+
+For agent workflows, the transcript is a control surface. Agents can compare the final transcript against source notes, flag unsupported claims, and preserve citations separately from the audio file.
+
+## Agent Notes
+
+- Keep the source bundle and generated script with the final audio artifact.
+- Require a transcript review before publishing any factual episode.
+- Label AI voices and synthetic hosts in public-facing material.
+- For internal study audio, prefer source-grounded summaries over improvised conversational claims.
 
 ## Related Articles
 
+- [Text-to-Speech: Neural Voice Synthesis and Audio Codec Language Models](../text-to-speech.md)
+- [AI Music and Audio Generation: Text Prompts, Audio Tokens, and Controllable Composition](../ai-music-generation.md)
 - [AI for Content Creation: Generative Writing, Video Production, and Automated Media Generation](../ai-content-creation.md)
-- [AI for Audio Processing: Speech Recognition, Music Generation, and Sound Understanding](../ai-for-audio-processing-speech-recognition-music-generation-and-sound-understanding.md)
-- [AI for Social Media: Misinformation Detection, Hate Speech Moderation, and Content Safety](../ai-for-social-media.md)

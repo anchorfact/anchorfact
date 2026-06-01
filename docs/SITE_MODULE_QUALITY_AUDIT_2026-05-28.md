@@ -5,11 +5,11 @@
 AnchorFact is healthy at the deployment, machine-contract, and test-gate level.
 The current `main` branch is clean and synchronized with `origin/main`, CI is
 green for the latest pushed commit, production integrity monitoring passes, and
-the live public surface is stable at 643 public articles, 357 draft articles,
-and 1984 published claims.
+the live public surface is stable at 648 public articles, 352 draft articles,
+and 2001 published claims.
 
 The public evidence debt described in the original version of this audit has
-been cleared. The current full public audit reports 643 `keep_public` rows and
+been cleared. The current full public audit reports 648 `keep_public` rows and
 0 `repair_sources`, `downgrade_confidence`, or `move_to_draft` rows. The next
 quality gains should come from productizing the AI-facing machine contract,
 hardening monitoring and documentation hygiene, and turning the draft pool into
@@ -22,8 +22,8 @@ No local `verify-full` run was performed for this audit.
 | Area | Current status | Assessment |
 | --- | --- | --- |
 | Repository state | `main...origin/main`, no local changes before this report | Healthy |
-| Public surface | 643 public / 357 draft | Stable |
-| Published claims surface | 1984 claims from production smoke and provenance | Stable |
+| Public surface | 648 public / 352 draft | Stable |
+| Published claims surface | 2001 claims from production smoke and provenance | Stable |
 | Local tests | `npm.cmd test` passed | Healthy |
 | Quality gate | `npm.cmd run quality` passed | Healthy |
 | Production smoke | `npm.cmd run smoke:prod` passed | Healthy |
@@ -32,8 +32,8 @@ No local `verify-full` run was performed for this audit.
 | Full verifier | Not run locally by policy | Deferred |
 
 The signed `/content-health.json` artifact is the current machine-readable
-source of truth for health metrics. It reports full source coverage for all 643
-public articles, 1984/1984 mapped public claims, and 1679 public sources.
+source of truth for health metrics. It reports full source coverage for all 648
+public articles, 2001/2001 mapped public claims, and 1693 public sources.
 
 ## Website and Public Surface
 
@@ -67,11 +67,11 @@ Current public-health counters from the signed content health artifact:
 
 | Signal | Public count |
 | --- | ---: |
-| Full verified source coverage | 643 |
+| Full verified source coverage | 648 |
 | Partial source coverage | 0 |
 | Zero source coverage | 0 |
-| Public claim mappings | 1984 / 1984 |
-| Public sources | 1679 |
+| Public claim mappings | 2001 / 2001 |
+| Public sources | 1693 |
 
 Recommended content posture remains conservative. Public content should expand
 only when it can keep the current standard: source-mapped facts, explicit
@@ -191,7 +191,7 @@ integrity expectations, and project-facing narratives together.
 
 2. Turn the draft pool into a ranked repair queue.
    Use `/content-health.json` repair candidates to pick small batches from the
-   357 draft articles, especially the lower-complexity candidates, without
+   352 draft articles, especially the lower-complexity candidates, without
    automatically publishing anything weak.
 
 3. Improve benchmark candidates before broad expansion.

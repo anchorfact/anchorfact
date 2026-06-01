@@ -1,11 +1,11 @@
 ---
 id: ai-remote-work
-title: "AI for Remote Work: Virtual Collaboration, Productivity Analytics, and Distributed Team Intelligence"
+title: "AI for Remote Work: Meeting Recaps, Workspace Search, and Async Coordination"
 schema_type: article
 category: ai
 language: en
-confidence: high
-last_verified: "2026-05-24"
+confidence: medium
+last_verified: "2026-06-01"
 created_date: "2026-05-24"
 generation_method: ai_structured
 ai_models:
@@ -14,83 +14,89 @@ derived_from_human_seed: true
 conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
-completeness: 0.85
+completeness: 0.78
 atomic_facts:
   - id: af-ai-remote-work-1
     statement: >-
-      AI remote work tools (2023-2026): Zoom AI Companion (2024) generates meeting summaries, action items, and smart chapters. Microsoft Teams Copilot provides real-time transcription, translation,
-      and intelligent recap. Slack AI (2024) surfaces relevant conversations, summarizes channels, and answers workspace questions. Notion AI serves as a team knowledge base with Q&A over all team
-      documents.
-    source_title: Zoom AI Companion (2024-2025) / Microsoft Teams Copilot / Slack AI (2024) / Notion AI / Loom AI
-    source_url: https://arxiv.org/search/?query=remote+work+AI+collaboration+productivity
-    confidence: high
+      Zoom Smart Recording with AI Companion can automatically divide cloud recordings into smart chapters, highlight important information, and create next steps.
+    source_title: "Enabling Smart Recording with AI Companion"
+    source_url: https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0058511
+    confidence: medium
   - id: af-ai-remote-work-2
     statement: >-
-      AI productivity analytics (2024-2026): Microsoft Viva Insights and ActivTrak use ML to analyze work patterns -- meeting load, focus time, collaboration networks, and burnout risk indicators.
-      Hybrid work optimization: AI recommends office days based on team co-location and meeting schedules. AI-powered asynchronous communication: Loom AI auto-generates video summaries and chapters,
-      reducing meeting needs.
-    source_title: Microsoft Viva Insights / ActivTrak / RescueTime / Clockwise AI scheduling / Loom AI video summaries
-    source_url: https://arxiv.org/search/?query=workplace+analytics+AI+productivity
-    confidence: high
+      Slack AI can summarize channels, direct messages, and threads, and its answers are based on messages a user can access in the Slack workspace.
+    source_title: "Tips for working with AI in Slack"
+    source_url: https://slack.com/help/articles/27918234552979-Tips-for-working-with-AI-in-Slack
+    confidence: medium
+  - id: af-ai-remote-work-3
+    statement: >-
+      Microsoft Copilot in Teams meetings can suggest action items and answer questions during or after a meeting.
+    source_title: "Use Copilot in Microsoft Teams meetings"
+    source_url: https://support.microsoft.com/en-us/copilot-teams
+    confidence: medium
+  - id: af-ai-remote-work-4
+    statement: >-
+      Microsoft's New Future of Work Report 2025 frames AI as a way to bridge gaps of time, distance, and scale when systems are built correctly.
+    source_title: "New Future of Work Report 2025"
+    source_url: https://www.microsoft.com/en-us/research/publication/new-future-of-work-report-2025/
+    confidence: medium
 primary_sources:
   - id: ps-ai-remote-work-1
-    title: "AI-Powered Remote Work: Virtual Collaboration, Meeting Intelligence, and Distributed Team Productivity (2024-2025 Survey)"
-    type: academic_paper
-    year: 2025
-    institution: ACM CSCW / CHI / arXiv
-    url: https://arxiv.org/search/?query=remote+work+AI+collaboration+productivity
+    title: "Enabling Smart Recording with AI Companion"
+    type: documentation
+    year: 2026
+    institution: Zoom
+    url: https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0058511
   - id: ps-ai-remote-work-2
-    title: "Workplace Analytics and AI: Productivity Measurement, Burnout Prediction, and Hybrid Work Optimization"
-    type: academic_paper
+    title: "Tips for working with AI in Slack"
+    type: documentation
+    year: 2026
+    institution: Slack
+    url: https://slack.com/help/articles/27918234552979-Tips-for-working-with-AI-in-Slack
+  - id: ps-ai-remote-work-3
+    title: "Use Copilot in Microsoft Teams meetings"
+    type: documentation
+    year: 2026
+    institution: Microsoft
+    url: https://support.microsoft.com/en-us/copilot-teams
+  - id: ps-ai-remote-work-4
+    title: "New Future of Work Report 2025"
+    type: research_report
     year: 2025
-    institution: Academy of Management / Organization Science / arXiv
-    url: https://arxiv.org/search/?query=workplace+analytics+AI+productivity
+    institution: Microsoft Research
+    url: https://www.microsoft.com/en-us/research/publication/new-future-of-work-report-2025/
 known_gaps:
-  - AI facilitation of creative collaboration (brainstorming, design sprints) in remote settings
-  - Privacy-preserving productivity analytics -- measuring without surveilling
+  - This article does not compare vendor privacy defaults or enterprise licensing.
+  - Workplace analytics can become surveillance if access, aggregation, and employee consent are not constrained.
 disputed_statements: []
 secondary_sources:
-  - title: "Microsoft New Future of Work Report 2025: AI Bridging Gaps of Time, Distance, and Scale"
-    type: report
-    year: 2025
-    authors:
-      - Microsoft Research
+  - title: "Summaries, Highlights, and Action items: Design, implementation and evaluation of an LLM-powered meeting recap system"
+    type: academic_paper
+    year: 2023
     institution: Microsoft
-    url: https://www.microsoft.com/en-us/research/publication/new-future-of-work-report-2025/
-  - title: "Superagency in the Workplace: Empowering People to Unlock AI's Full Potential at Work (McKinsey 2025)"
-    type: report
-    year: 2025
-    authors:
-      - McKinsey & Company
-    institution: McKinsey Global Institute
-    url: https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/superagency-in-the-workplace
-  - title: "AI at Work 2025: Momentum Builds, But Gaps Remain (BCG Global Survey, 11 Countries)"
-    type: report
-    year: 2025
-    authors:
-      - BCG
-    institution: Boston Consulting Group
-    url: https://www.bcg.com/publications/2025/ai-at-work-momentum-builds-but-gaps-remain
-  - title: "EY Work Reimagined Survey 2025: Companies Missing Out on 40% of AI Productivity Gains"
-    type: report
-    year: 2025
-    authors:
-      - EY
-    institution: Ernst & Young
-    url: https://www.ey.com/en_gl/newsroom/2025/11/ey-survey-reveals-companies-are-missing-out-on-up-to-40-percent-of-ai-productivity-gains
-updated: "2026-05-24"
+    url: https://arxiv.org/abs/2307.15793
+updated: "2026-06-01"
 ---
+
 ## TL;DR
-AI is the infrastructure layer of remote work -- summarizing meetings, surfacing knowledge, optimizing schedules, and connecting distributed teams. From Zoom AI Companion to Slack AI to Microsoft Viva, AI tools make remote and hybrid work more productive than office-only models.
+
+AI remote-work tooling is most valuable when it reduces coordination cost: meeting summaries, action items, workspace search, thread summaries, and asynchronous updates. The product risk is not only hallucination; it is also hidden surveillance, overbroad data access, and unclear ownership of generated commitments.
 
 ## Core Explanation
-Remote work AI: (1) Meeting intelligence -- transcription (Whisper, Azure), summarization, action item extraction, and smart chapters. Zoom AI Companion and Teams Copilot provide these natively; (2) Knowledge management -- Slack AI surfaces relevant past conversations; Notion AI Q&A over team wiki; Google Workspace Duet AI for document-based queries; (3) Scheduling -- Clockwise AI auto-schedules meetings optimizing for focus time and time zones. Calendar analytics identify meeting overload; (4) Async communication -- Loom AI generates video summaries and chapters. LLM-based async updates replace status meetings.
 
-## Detailed Analysis
-Zoom AI Companion (2024): free for paid accounts, leveraging GPT-4o. Features: meeting summary (email after call), smart recording chapters, catch-me-up (late joiners ask AI what they missed), and whiteboard generation. Microsoft Teams Copilot: combines meeting recap + action items + real-time translation. Integrated across Outlook, Teams, and Office. Slack AI: search answers with citations ("summarize the Q3 launch discussion"), channel summaries (daily digest), thread summaries. Notion AI: Q&A over connected knowledge base. "What is the PTO policy?" -> AI retrieves and summarizes from team wiki. Microsoft Viva: aggregate productivity analytics. Privacy-preserving: anonymized at team level (not individual surveillance). Key tension: productivity monitoring vs. employee trust. EU regulation restricts algorithmic management (must be transparent, challengeable).
+Remote teams generate high volumes of transcripts, chats, docs, decisions, and action items. AI tools can compress this history into summaries and next steps, but the system must preserve citations or links back to original messages when work decisions depend on the summary.
+
+Agents should treat collaboration data as permissioned. A workspace answer should only use data the requesting user can access, and generated summaries should distinguish decisions, proposals, blockers, and open questions.
+
+## Agent Notes
+
+- Summaries should link back to original meetings, threads, or documents.
+- Action items need owner, deadline, source, and confidence fields.
+- Do not infer employee performance from private activity traces without explicit policy and review.
+- For async teams, prefer concise decision logs over another meeting summary with no owner.
 
 ## Related Articles
 
 - [AI for Team Collaboration: Smart Meetings, Knowledge Sharing, and Collaborative Intelligence](../ai-team-collaboration.md)
-- [AI for Location Intelligence: Geospatial Analytics, POI Recommendation, and Site Selection](../ai-location-intelligence.md)
-- [AI for Beauty and Fashion: Virtual Try-On, Personalized Styling, and Trend Prediction](../ai-beauty-fashion.md)
+- [AI Personal Assistants: Tool Use, Memory Boundaries, and Safe Task Automation](../ai-personal-assistants.md)
+- [AI Writing Assistants: Text Generation, Editing, and Writing Workflow Support](../ai-writing-assistants.md)

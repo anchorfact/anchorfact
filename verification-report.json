@@ -2,13 +2,13 @@
   "summary": {
     "generated": "2026-05-27T14:00:00.000Z",
     "total_articles": 1000,
-    "total_with_errors": 228,
+    "total_with_errors": 223,
     "average_sources_per_article": "2.4",
-    "overall_verification_rate": "83.2%",
+    "overall_verification_rate": "83.6%",
     "elapsed_ms": 635005,
     "elapsed_sec": "635.0",
     "concurrency": 3,
-    "manual_reviewed_articles": 621
+    "manual_reviewed_articles": 626
   },
   "articles": [
     {
@@ -7602,22 +7602,64 @@
       "file": "content/ai/ai-music-composition.md",
       "article_id": "ai-music-composition",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Generative AI for Music Composition: Text-to-Music, Style Transfer, and Creative Audio Synthesis (2024-2025 Survey)",
+          "source_title": "DeepBach: a Steerable Model for Bach Chorales Generation",
           "source_type": "academic_paper",
-          "results": [],
-          "all_verified": false
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1612.01010",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Fourth AI-focused content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         },
         {
-          "source_title": "Deep Learning for Music Generation: Autoregressive, Diffusion, and GAN Approaches from Jukebox to Suno",
+          "source_title": "Music Transformer: Generating Music with Long-Term Structure",
           "source_type": "academic_paper",
-          "results": [],
-          "all_verified": false
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1809.04281",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Fourth AI-focused content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "A Hierarchical Latent Vector Model for Learning Long-Term Structure in Music",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1803.05428",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Fourth AI-focused content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
+      "sources_verified": 3,
       "sources_unreachable": 0
     },
     {
@@ -7688,22 +7730,64 @@
       "file": "content/ai/ai-personal-assistants.md",
       "article_id": "ai-personal-assistants",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "AI Personal Assistants: From Reactive Q&A to Proactive Task Automation with Agentic LLMs (2024-2025 Survey)",
+          "source_title": "ReAct: Synergizing Reasoning and Acting in Language Models",
           "source_type": "academic_paper",
-          "results": [],
-          "all_verified": false
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2210.03629",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Fourth AI-focused content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         },
         {
-          "source_title": "On-Device Large Language Models for Privacy-Preserving Personal AI Assistants (Apple Intelligence, 2024)",
+          "source_title": "Toolformer: Language Models Can Teach Themselves to Use Tools",
           "source_type": "academic_paper",
-          "results": [],
-          "all_verified": false
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2302.04761",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Fourth AI-focused content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Introducing Apple's On-Device and Server Foundation Models",
+          "source_type": "official_report",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://machinelearning.apple.com/research/introducing-apple-foundation-models",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Fourth AI-focused content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
+      "sources_verified": 3,
       "sources_unreachable": 0
     },
     {
@@ -7732,22 +7816,64 @@
       "file": "content/ai/ai-podcast-generation.md",
       "article_id": "ai-podcast-generation",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "AI-Powered Audio Content Creation: Podcast Generation, Text-to-Speech Narration, and Automated Audio Production (2024-2025 Survey)",
-          "source_type": "academic_paper",
-          "results": [],
-          "all_verified": false
+          "source_title": "Generate Audio Overview in NotebookLM",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://support.google.com/notebooklm/answer/16212820",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Fourth AI-focused content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         },
         {
-          "source_title": "Conversational AI for Audio Content: Multi-Speaker Dialogue Generation and Narrative Podcast Production",
+          "source_title": "Natural TTS Synthesis by Conditioning WaveNet on Mel Spectrogram Predictions",
           "source_type": "academic_paper",
-          "results": [],
-          "all_verified": false
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1712.05884",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Fourth AI-focused content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Robust Speech Recognition via Large-Scale Weak Supervision",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2212.04356",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Fourth AI-focused content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
+      "sources_verified": 3,
       "sources_unreachable": 0
     },
     {
@@ -8103,22 +8229,82 @@
       "file": "content/ai/ai-remote-work.md",
       "article_id": "ai-remote-work",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 4,
       "verification_results": [
         {
-          "source_title": "AI-Powered Remote Work: Virtual Collaboration, Meeting Intelligence, and Distributed Team Productivity (2024-2025 Survey)",
-          "source_type": "academic_paper",
-          "results": [],
-          "all_verified": false
+          "source_title": "Enabling Smart Recording with AI Companion",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0058511",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Fourth AI-focused content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         },
         {
-          "source_title": "Workplace Analytics and AI: Productivity Measurement, Burnout Prediction, and Hybrid Work Optimization",
-          "source_type": "academic_paper",
-          "results": [],
-          "all_verified": false
+          "source_title": "Tips for working with AI in Slack",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://slack.com/help/articles/27918234552979-Tips-for-working-with-AI-in-Slack",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Fourth AI-focused content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Use Copilot in Microsoft Teams meetings",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://support.microsoft.com/en-us/copilot-teams",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Fourth AI-focused content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "New Future of Work Report 2025",
+          "source_type": "research_report",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.microsoft.com/en-us/research/publication/new-future-of-work-report-2025/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Fourth AI-focused content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
+      "sources_verified": 4,
       "sources_unreachable": 0
     },
     {
@@ -8571,22 +8757,82 @@
       "file": "content/ai/ai-sports-analytics.md",
       "article_id": "ai-sports-analytics",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 4,
       "verification_results": [
         {
-          "source_title": "AI in Sports Analytics: Computer Vision Player Tracking, Performance Prediction, and Tactical Optimization (2024-2025 Comprehensive Review)",
-          "source_type": "academic_paper",
-          "results": [],
-          "all_verified": false
+          "source_title": "A Survey of Deep Learning in Sports Applications: Perception, Comprehension, and Decision",
+          "source_type": "survey_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2307.03353",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Fourth AI-focused content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         },
         {
-          "source_title": "Reinforcement Learning for Sports Tactics: Opponent Modeling, Strategy Optimization, and Decision Support (2023-2025)",
-          "source_type": "academic_paper",
-          "results": [],
-          "all_verified": false
+          "source_title": "TacticAI: an AI assistant for football tactics",
+          "source_type": "journal_article",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.nature.com/articles/s41467-024-45965-x",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Fourth AI-focused content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "TacticAI: AI assistant for football tactics",
+          "source_type": "official_report",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://deepmind.google/discover/blog/tacticai-ai-assistant-for-football-tactics/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Fourth AI-focused content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Outs Above Average (OAA)",
+          "source_type": "reference",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.mlb.com/glossary/statcast/outs-above-average/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Fourth AI-focused content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
+      "sources_verified": 4,
       "sources_unreachable": 0
     },
     {

@@ -1,11 +1,11 @@
 ---
 id: ai-personal-assistants
-title: "AI Personal Assistants: Task Automation, Proactive Intelligence, and Agentic Personal AI"
+title: "AI Personal Assistants: Tool Use, Memory Boundaries, and Safe Task Automation"
 schema_type: article
 category: ai
 language: en
-confidence: high
-last_verified: "2026-05-24"
+confidence: medium
+last_verified: "2026-06-01"
 created_date: "2026-05-24"
 generation_method: ai_structured
 ai_models:
@@ -14,83 +14,77 @@ derived_from_human_seed: true
 conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
-completeness: 0.85
+completeness: 0.8
 atomic_facts:
   - id: af-ai-personal-assistants-1
     statement: >-
-      AI personal assistants (2024-2026): Apple Intelligence (2024) integrates on-device LLM for Siri, enabling cross-app task automation ("find the photos from last weekend's hike and add them to a
-      note"). Google Assistant with Bard/Gemini (2024) provides conversational AI with web access and app control. ChatGPT with memory (2024) retains user preferences across sessions. Rabbit R1 (2024)
-      and Humane AI Pin (2024) represent the "AI-native device" category, though with limited initial success.
-    source_title: Apple Intelligence / Siri LLM (2024-2025) / Google Gemini Assistant / ChatGPT memory / Rabbit R1 / Humane AI Pin
-    source_url: https://arxiv.org/search/?query=AI+personal+assistant+agentic+task+automation
-    confidence: high
+      ReAct prompts language models to interleave reasoning traces and task-specific actions so the model can update plans while interacting with external environments.
+    source_title: "ReAct: Synergizing Reasoning and Acting in Language Models"
+    source_url: https://arxiv.org/abs/2210.03629
+    confidence: medium
   - id: af-ai-personal-assistants-2
     statement: >-
-      The agentic personal AI frontier (2025-2026): AI assistants are evolving from reactive (user asks, AI answers) to proactive (AI initiates tasks): detecting calendar conflicts and suggesting
-      resolutions, pre-ordering groceries based on consumption patterns, and autonomously handling multi-step tasks ("book a flight, add to calendar, notify team, order airport parking"). Microsoft
-      Copilot (2025) and Google Project Mariner (2025) demonstrate web-browsing agents that complete multi-step online tasks autonomously.
-    source_title: Microsoft Copilot agentic capabilities (2025) / Google Project Mariner (2025) / Anthropic Computer Use (2024) / OpenAI Operator (2025)
-    source_url: https://arxiv.org/search/?query=on+device+LLM+personal+assistant
-    confidence: high
+      Toolformer trains a language model to decide which APIs to call, when to call them, what arguments to pass, and how to incorporate returned results.
+    source_title: "Toolformer: Language Models Can Teach Themselves to Use Tools"
+    source_url: https://arxiv.org/abs/2302.04761
+    confidence: medium
+  - id: af-ai-personal-assistants-3
+    statement: >-
+      Apple describes Apple Intelligence as using both an approximately 3-billion-parameter on-device language model and a larger server-based model available through Private Cloud Compute.
+    source_title: "Introducing Apple's On-Device and Server Foundation Models"
+    source_url: https://machinelearning.apple.com/research/introducing-apple-foundation-models
+    confidence: medium
 primary_sources:
   - id: ps-ai-personal-assistants-1
-    title: "AI Personal Assistants: From Reactive Q&A to Proactive Task Automation with Agentic LLMs (2024-2025 Survey)"
+    title: "ReAct: Synergizing Reasoning and Acting in Language Models"
     type: academic_paper
-    year: 2025
-    institution: ACM CHI / arXiv
-    url: https://arxiv.org/search/?query=AI+personal+assistant+agentic+task+automation
+    year: 2022
+    institution: Princeton University / Google Research
+    url: https://arxiv.org/abs/2210.03629
   - id: ps-ai-personal-assistants-2
-    title: On-Device Large Language Models for Privacy-Preserving Personal AI Assistants (Apple Intelligence, 2024)
+    title: "Toolformer: Language Models Can Teach Themselves to Use Tools"
     type: academic_paper
-    year: 2025
-    institution: Apple Machine Learning Research / arXiv
-    url: https://arxiv.org/search/?query=on+device+LLM+personal+assistant
+    year: 2023
+    institution: Meta AI
+    url: https://arxiv.org/abs/2302.04761
+  - id: ps-ai-personal-assistants-3
+    title: "Introducing Apple's On-Device and Server Foundation Models"
+    type: official_report
+    year: 2024
+    institution: Apple Machine Learning Research
+    url: https://machinelearning.apple.com/research/introducing-apple-foundation-models
 known_gaps:
-  - Trust calibration -- users understanding AI assistant capabilities and limitations
-  - Long-term memory and relationship building across months and years
+  - This article does not rank consumer assistant products.
+  - Long-term memory, consent, and user-control defaults remain product-specific.
 disputed_statements: []
 secondary_sources:
-  - title: "A Survey on Intelligent Personal Assistants: From Rule-Based Systems to Large Language Model Agents"
-    type: survey_paper
+  - title: "Apple Intelligence Foundation Language Models"
+    type: technical_report
     year: 2024
-    authors:
-      - multiple
-    institution: ACM Computing Surveys
-    url: https://doi.org/10.1145/3635100
-  - title: "Siri, Alexa, Google Assistant: A Comparative Review of AI-Powered Virtual Assistants — Capabilities, Architectures, and Privacy"
-    type: survey_paper
-    year: 2024
-    authors:
-      - multiple
-    institution: IEEE Access
-    url: https://doi.org/10.1109/ACCESS.2024.3415265
-  - title: "Large Language Models as Personal Assistants: A Survey of Capabilities, Limitations, and Ethical Considerations"
-    type: survey_paper
-    year: 2025
-    authors:
-      - multiple
-    institution: arXiv
-    url: https://arxiv.org/abs/2501.12345
-  - title: "The Next Generation of AI Assistants: From Task Execution to Proactive Reasoning (Apple Intelligence, Gemini, Copilot)"
-    type: report
-    year: 2024
-    authors:
-      - Gartner Research
-    institution: Gartner
-    url: https://www.gartner.com/en/documents/ai-assistants-2025
-updated: "2026-05-24"
+    institution: Apple
+    url: https://arxiv.org/abs/2407.21075
+updated: "2026-06-01"
 ---
+
 ## TL;DR
-AI personal assistants are evolving from voice command executors to proactive, agentic companions that anticipate needs and autonomously complete tasks. Apple Intelligence, Google Gemini, and ChatGPT represent the new generation of personal AI that works across apps, retains memory, and acts on your behalf.
+
+An AI personal assistant is useful when it can plan, call tools, remember only appropriate context, and stop for confirmation before irreversible actions. For agent builders, the key design questions are authority, memory scope, tool permissions, audit logs, and escalation rules.
 
 ## Core Explanation
-Personal AI capabilities: (1) Conversational -- natural language Q&A with context awareness. Memory: remembers user preferences, past conversations, and personal details; (2) App integration -- cross-app task automation ("book a dinner reservation, add to calendar, text partner the details"). Apple Intelligence uses App Intents framework; (3) Proactive -- anticipates needs: calendar conflict resolution, departure time alerts based on traffic, suggesting replies to messages; (4) Agentic -- autonomous web browsing and task completion. Computer Use (Anthropic) and Operator (OpenAI) control mouse/keyboard to complete online tasks.
 
-## Detailed Analysis
-Apple Intelligence (2024): on-device processing for privacy. 3B parameter on-device LLM for basic tasks, server-side compute for complex. Features: Writing Tools (proofread, rewrite, summarize system-wide), Image Playground (gen AI images), Genmoji (custom emoji), and ChatGPT integration for world knowledge. Google Gemini: deeply integrated with Gmail, Calendar, Drive, Maps. Context-aware: "Find the hotel confirmation email, summarize check-in times, and estimate driving time from my office." Anthropic Computer Use (2024): Claude controls computer screen -- moves mouse, clicks buttons, types text -- to complete tasks. OpenAI Operator (2025): similar capability, integrated with ChatGPT. Key challenge: reliability -- agentic AI that makes mistakes (wrong flight booking, incorrect money transfer) causes real harm. Safety guardrails: spending limits, confirmation for high-stakes actions, and user-in-the-loop for irreversible operations.
+Modern assistants move beyond voice commands by combining language models with tools: calendars, email, browser actions, files, search, reminders, and app APIs. The assistant should not be treated as a free-form chatbot with unlimited authority. It should have a task boundary, allowed tools, required confirmations, and a recoverable record of actions.
+
+Memory should be explicit. Stable preferences, temporary task context, and sensitive personal data need different retention rules. A useful assistant can remember output style or scheduling preferences, but it should not silently retain credentials, financial data, or private messages without user control.
+
+## Agent Notes
+
+- Separate "can answer" from "can act"; acting requires permission and a reversible plan when possible.
+- Require confirmation for payments, account changes, external messages, bookings, and deletions.
+- Log tool calls, inputs, outputs, and final decisions so users can audit what happened.
+- Keep memory inspectable and editable; hidden personal memory is a trust risk.
 
 ## Related Articles
 
-- [AI for Chip Design: Reinforcement Learning Placement, EDA Automation, and Semiconductor Intelligence](../ai-for-chip-design.md)
-- [AI for Regulatory Technology (RegTech): Compliance Automation, AML, and Regulatory Intelligence](../ai-for-regtech-compliance.md)
+- [Agentic AI: Autonomous Agent Architectures, Planning, and Tool-Integrated Reasoning](../agentic-ai.md)
+- [AI Agents: Tool Use, Planning, Memory, and Autonomous Task Execution](../ai-agents.md)
 - [AI for Smart Homes: Ambient Intelligence, Energy Optimization, and Predictive Home Automation](../ai-for-smart-homes.md)
