@@ -220,7 +220,7 @@ export async function main() {
   const expectedDraft = readExpectedInt('EXPECTED_DRAFT_ARTICLES');
   const expectedClaims = readExpectedInt('EXPECTED_CLAIMS');
 
-  const routes = ['/', '/robots.txt', '/sitemap.xml', '/agent.json', '/.well-known/anchorfact.json', '/openapi.json', '/artifact-summary.json', '/manifest.json', '/llms.txt', '/claims.json', '/topics.json', '/capabilities.json', '/content-health.json', '/coverage.json', '/examples.json', '/graph.json', '/evals.json', '/mcp.json', '/api', '/api/plan?q=gaussian&limit=2', '/api/evidence?q=gaussian&limit=2', '/api/evidence?q=gaussian&limit=1&format=markdown', '/api/context?q=gaussian&limit=2', '/api/context?q=gaussian&limit=1&format=markdown', '/api/resolve?ref=f1', '/api/resolve-batch?ref=f1&ref=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079', '/api/resolve-batch?ref=f1&ref=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079&format=markdown', '/api/search?q=gaussian&limit=2', '/api/article?slug=ai/3d-generation-gaussian-splatting', '/api/claim?id=f1', '/api/cite?id=f1', '/api/cite?id=f1&format=markdown', '/api/source?url=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079', '/search-index.json', '/sources.json', '/provenance.json', '/provenance.sig', '/drafts.html'];
+  const routes = ['/', '/api-access/', '/robots.txt', '/sitemap.xml', '/agent.json', '/.well-known/anchorfact.json', '/openapi.json', '/artifact-summary.json', '/manifest.json', '/llms.txt', '/claims.json', '/topics.json', '/capabilities.json', '/content-health.json', '/coverage.json', '/examples.json', '/graph.json', '/evals.json', '/mcp.json', '/api', '/api/plan?q=gaussian&limit=2', '/api/evidence?q=gaussian&limit=2', '/api/evidence?q=gaussian&limit=1&format=markdown', '/api/context?q=gaussian&limit=2', '/api/context?q=gaussian&limit=1&format=markdown', '/api/resolve?ref=f1', '/api/resolve-batch?ref=f1&ref=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079', '/api/resolve-batch?ref=f1&ref=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079&format=markdown', '/api/search?q=gaussian&limit=2', '/api/article?slug=ai/3d-generation-gaussian-splatting', '/api/claim?id=f1', '/api/cite?id=f1', '/api/cite?id=f1&format=markdown', '/api/source?url=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079', '/search-index.json', '/sources.json', '/provenance.json', '/provenance.sig', '/drafts.html'];
   const results = {};
 
   Object.assign(results, await fetchRoutes(baseUrl, routes));
@@ -263,6 +263,7 @@ export async function main() {
   const robotsText = results['/robots.txt'].body;
   const sitemapText = results['/sitemap.xml'].body;
   const llmsText = results['/llms.txt'].body;
+  const apiAccessHtml = results['/api-access/'].body;
   const draftsHtml = results['/drafts.html'].body;
   const exampleRoutes = exampleWorkflowRoutes(examples);
   assertOk(exampleRoutes.length >= 4, '/examples.json exposes too few executable workflow calls', failures);
@@ -291,6 +292,7 @@ export async function main() {
   assertOk(wellKnownAgentProfile.schema_version === agentProfile.schema_version, 'well-known agent profile schema does not match /agent.json', failures);
   assertOk(wellKnownAgentProfile.generated === agentProfile.generated, 'well-known agent profile generated timestamp does not match /agent.json', failures);
   assertOk(agentProfile.endpoints?.openapi?.url === new URL('/openapi.json', baseUrl).href, 'agent profile OpenAPI endpoint does not match base URL', failures);
+  assertOk(agentProfile.endpoints?.api_access?.url === new URL('/api-access/', baseUrl).href, 'agent profile API access endpoint does not match base URL', failures);
   assertOk(agentProfile.endpoints?.artifact_summary?.url === new URL('/artifact-summary.json', baseUrl).href, 'agent profile artifact summary endpoint does not match base URL', failures);
   assertOk(agentProfile.endpoints?.capabilities?.url === new URL('/capabilities.json', baseUrl).href, 'agent profile capabilities endpoint does not match base URL', failures);
   assertOk(agentProfile.endpoints?.content_health?.url === new URL('/content-health.json', baseUrl).href, 'agent profile content health endpoint does not match base URL', failures);
@@ -306,6 +308,7 @@ export async function main() {
   assertOk(agentProfile.endpoints?.claim_api?.path === '/api/claim?id={claim_id}', 'agent profile claim API endpoint template is missing', failures);
   assertOk(agentProfile.endpoints?.source_api?.path === '/api/source?id={source_id}', 'agent profile source API endpoint template is missing', failures);
   assertOk(agentProfile.quick_start?.default_answer_path === '/api/context?q={query}', 'agent profile quick start default answer path is missing', failures);
+  assertOk(agentProfile.quick_start?.free_api_access_path === '/api-access/', 'agent profile quick start API access path is missing', failures);
   assertOk(agentProfile.quick_start?.local_mcp_answer_tool === 'anchorfact_context', 'agent profile quick start MCP answer tool is missing', failures);
   assertOk(agentProfile.quick_start?.fallback_policy?.unsupported_answer_mode === 'external_sources_required', 'agent profile quick start fallback policy is missing', failures);
   assertOk(agentProfile.quick_start?.trust_check?.path === '/provenance.json', 'agent profile quick start provenance path is missing', failures);
@@ -344,11 +347,17 @@ export async function main() {
   assertOk(artifactSummary.provenance_url === new URL('/provenance.json', baseUrl).href, `artifact summary provenance_url expected ${new URL('/provenance.json', baseUrl).href}, got ${artifactSummary.provenance_url || '(missing)'}`, failures);
   assertOk(Array.isArray(artifactSummary.recommended_default_calls) && artifactSummary.recommended_default_calls.some(call => call.path === '/api/context?q={query}'), '/artifact-summary.json is missing default context call', failures);
   assertOk(Array.isArray(artifactSummary.artifacts) && artifactSummary.artifacts.some(artifact => artifact.path === '/graph.json'), '/artifact-summary.json is missing graph artifact', failures);
+  assertOk(apiAccessHtml.includes('Free API'), '/api-access/ should describe free API access', failures);
+  assertOk(apiAccessHtml.includes('no API key'), '/api-access/ should state that no API key is required today', failures);
+  assertOk(apiAccessHtml.includes('/api/context?q={query}') || apiAccessHtml.includes('/api/context?q='), '/api-access/ should link default context API', failures);
+  assertOk(apiAccessHtml.includes('/api/evidence?q={query}') || apiAccessHtml.includes('/api/evidence?q='), '/api-access/ should link evidence API', failures);
+  assertOk(apiAccessHtml.includes('/api/cite?id={claim_id}') || apiAccessHtml.includes('/api/cite?id='), '/api-access/ should link citation API', failures);
   assertOk(robotsText.includes('Sitemap: https://anchorfact.org/sitemap.xml'), '/robots.txt does not advertise sitemap.xml', failures);
   assertOk(robotsText.includes('LLMs: https://anchorfact.org/llms.txt'), '/robots.txt does not advertise llms.txt', failures);
   assertOk(robotsText.includes('Agent: https://anchorfact.org/agent.json'), '/robots.txt does not advertise agent.json', failures);
   assertOk(robotsText.includes('OpenAPI: https://anchorfact.org/openapi.json'), '/robots.txt does not advertise openapi.json', failures);
   assertOk(robotsText.includes('API: https://anchorfact.org/api'), '/robots.txt does not advertise API index', failures);
+  assertOk(robotsText.includes('API-Access: https://anchorfact.org/api-access/'), '/robots.txt does not advertise /api-access/', failures);
   assertOk(robotsText.includes('Artifact-Summary: https://anchorfact.org/artifact-summary.json'), '/robots.txt does not advertise artifact-summary.json', failures);
   assertOk(robotsText.includes('MCP: https://anchorfact.org/mcp.json'), '/robots.txt does not advertise mcp.json', failures);
   assertOk(robotsText.includes('Provenance: https://anchorfact.org/provenance.json'), '/robots.txt does not advertise provenance.json', failures);
@@ -356,6 +365,7 @@ export async function main() {
   assertOk(sitemapText.includes('https://anchorfact.org/agent.json'), '/sitemap.xml does not include agent.json', failures);
   assertOk(sitemapText.includes('https://anchorfact.org/llms.txt'), '/sitemap.xml does not include llms.txt', failures);
   assertOk(sitemapText.includes('https://anchorfact.org/api'), '/sitemap.xml does not include API index', failures);
+  assertOk(sitemapText.includes('https://anchorfact.org/api-access/'), '/sitemap.xml does not include /api-access/', failures);
   assertOk(sitemapText.includes('https://anchorfact.org/artifact-summary.json'), '/sitemap.xml does not include artifact-summary.json', failures);
   assertOk(sitemapText.includes('https://anchorfact.org/mcp.json'), '/sitemap.xml does not include mcp.json', failures);
   assertOk(sitemapText.includes('https://anchorfact.org/provenance.json'), '/sitemap.xml does not include provenance.json', failures);
@@ -368,6 +378,7 @@ export async function main() {
   assertOk(agentProfile.endpoints?.api_index?.path === '/api', 'agent profile API index endpoint is missing', failures);
   assertOk(apiIndex.schema_version === 'anchorfact.api-index.v1', `api index schema_version expected anchorfact.api-index.v1, got ${apiIndex.schema_version || '(missing)'}`, failures);
   assertOk(Array.isArray(apiIndex.static_fallbacks) && apiIndex.static_fallbacks.some(fallback => fallback.path === '/content-health.json'), '/api static fallbacks are missing /content-health.json', failures);
+  assertOk(Array.isArray(apiIndex.static_fallbacks) && apiIndex.static_fallbacks.some(fallback => fallback.path === '/api-access/'), '/api static fallbacks are missing /api-access/', failures);
   assertOk(Array.isArray(apiIndex.static_fallbacks) && apiIndex.static_fallbacks.some(fallback => fallback.path === '/artifact-summary.json'), '/api static fallbacks are missing /artifact-summary.json', failures);
   const apiIndexPaths = new Set((apiIndex.endpoints || []).map(endpoint => endpoint?.path));
   for (const path of ['/api/plan', '/api/evidence', '/api/context', '/api/resolve', '/api/resolve-batch', '/api/search', '/api/article', '/api/claim', '/api/cite', '/api/source']) {

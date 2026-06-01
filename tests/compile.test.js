@@ -129,9 +129,11 @@ test('public entrypoints exclude draft articles', () => {
   const llmsTxt = readFileSync(join(distDir, 'llms.txt'), 'utf-8');
   const sitemap = readFileSync(join(distDir, 'sitemap.xml'), 'utf-8');
   const robotsTxt = readFileSync(join(distDir, 'robots.txt'), 'utf-8');
+  const apiAccessHtml = readFileSync(join(distDir, 'api-access', 'index.html'), 'utf-8');
   assert(indexHtml.includes('/agent.json'), 'index should link to agent profile');
   assert(indexHtml.includes('/openapi.json'), 'index should link to OpenAPI contract');
   assert(indexHtml.includes('/api'), 'index should link to API index');
+  assert(indexHtml.includes('/api-access/'), 'index should link to API access guide');
   assert(indexHtml.includes('/artifact-summary.json'), 'index should link to artifact summary');
   assert(indexHtml.includes('Default AI calls'), 'index should put machine-first calls near the top');
   assert(indexHtml.indexOf('/api/context?q=') < indexHtml.indexOf('Full machine artifact catalog'), 'index should show context before the full artifact catalog');
@@ -158,6 +160,7 @@ test('public entrypoints exclude draft articles', () => {
   assert(llmsTxt.includes('Agent Profile'), 'llms.txt should include agent profile');
   assert(llmsTxt.includes('OpenAPI'), 'llms.txt should include OpenAPI contract');
   assert(llmsTxt.includes('API Index'), 'llms.txt should include API index');
+  assert(llmsTxt.includes('API Access'), 'llms.txt should include API access guide');
   assert(llmsTxt.includes('Artifact Summary'), 'llms.txt should include artifact summary');
   assert(llmsTxt.includes('Capabilities'), 'llms.txt should include capabilities router');
   assert(llmsTxt.includes('Content Health'), 'llms.txt should include content health');
@@ -182,6 +185,7 @@ test('public entrypoints exclude draft articles', () => {
   assert(llmsTxt.includes('/api/evidence?q={query}'), 'llms.txt should advertise the evidence entrypoint');
   assert(llmsTxt.includes('/api/plan?q={query}'), 'llms.txt should advertise the coverage planning entrypoint');
   assert(llmsTxt.includes('/api/cite?id={claim_id}'), 'llms.txt should advertise the citation entrypoint');
+  assert(llmsTxt.includes('https://anchorfact.org/api-access/'), 'llms.txt should advertise API access guide');
   assert(llmsTxt.includes('/artifact-summary.json'), 'llms.txt should advertise artifact summary');
   assert(llmsTxt.includes('GET https://anchorfact.org/api/context?q=gaussian%20splatting&limit=3&format=markdown'), 'llms.txt should give AI crawlers an executable default context example');
   assert(llmsTxt.includes('GET https://anchorfact.org/api/evidence?q=RLHF&limit=3&format=markdown'), 'llms.txt should give AI crawlers an executable evidence example');
@@ -189,6 +193,7 @@ test('public entrypoints exclude draft articles', () => {
   assert(sitemap.includes('/agent.json'), 'sitemap should include agent profile');
   assert(sitemap.includes('/openapi.json'), 'sitemap should include OpenAPI contract');
   assert(sitemap.includes('/api'), 'sitemap should include API index');
+  assert(sitemap.includes('/api-access/'), 'sitemap should include API access guide');
   assert(sitemap.includes('/artifact-summary.json'), 'sitemap should include artifact summary');
   assert(sitemap.includes('/capabilities.json'), 'sitemap should include capabilities router');
   assert(sitemap.includes('/content-health.json'), 'sitemap should include content health');
@@ -204,6 +209,7 @@ test('public entrypoints exclude draft articles', () => {
   assert(robotsTxt.includes('Agent: https://anchorfact.org/agent.json'), 'robots.txt should advertise agent profile');
   assert(robotsTxt.includes('OpenAPI: https://anchorfact.org/openapi.json'), 'robots.txt should advertise OpenAPI contract');
   assert(robotsTxt.includes('API: https://anchorfact.org/api'), 'robots.txt should advertise API index');
+  assert(robotsTxt.includes('API-Access: https://anchorfact.org/api-access/'), 'robots.txt should advertise API access guide');
   assert(robotsTxt.includes('Artifact-Summary: https://anchorfact.org/artifact-summary.json'), 'robots.txt should advertise artifact summary');
   assert(robotsTxt.includes('Health: https://anchorfact.org/content-health.json'), 'robots.txt should advertise content health');
   assert(robotsTxt.includes('MCP: https://anchorfact.org/mcp.json'), 'robots.txt should advertise MCP manifest');
@@ -213,6 +219,15 @@ test('public entrypoints exclude draft articles', () => {
   assert(robotsTxt.includes('AI-Plan: https://anchorfact.org/api/plan?q={query}'), 'robots.txt should advertise AI planning hint');
   assert(robotsTxt.includes('AI-Plan-Use: coverage_uncertain_only'), 'robots.txt should reserve planning for uncertain coverage');
   assert(robotsTxt.includes('AI-Cite: https://anchorfact.org/api/cite?id={claim_id}'), 'robots.txt should advertise AI citation hint');
+  assert(apiAccessHtml.includes('Free API'), 'api access page should describe free API access');
+  assert(apiAccessHtml.includes('no API key'), 'api access page should state no API key is required');
+  assert(apiAccessHtml.includes('payment'), 'api access page should say payment is not required today');
+  assert(apiAccessHtml.includes('/api/context?q={query}'), 'api access page should list context first');
+  assert(apiAccessHtml.indexOf('/api/context?q={query}') < apiAccessHtml.indexOf('/api/evidence?q={query}'), 'api access page should order context before evidence');
+  assert(apiAccessHtml.includes('/api/evidence?q={query}'), 'api access page should list evidence');
+  assert(apiAccessHtml.includes('/api/cite?id={claim_id}'), 'api access page should list cite');
+  assert(apiAccessHtml.includes('/provenance.json'), 'api access page should include provenance verification');
+  assert(!/stripe|checkout|subscribe now|pricing table/i.test(apiAccessHtml), 'api access page should not include paid checkout language');
   assert(indexHtml.includes('Public Fixture'), 'index should include public article');
   assert(!indexHtml.includes('Draft Fixture</a></span>'), 'index public list should exclude draft article');
   assert(llmsTxt.includes('Public Fixture'), 'llms.txt should include public article');
@@ -254,6 +269,7 @@ test('agent profile describes the machine contract', () => {
   assertEq(agent.endpoints.mcp.url, 'https://anchorfact.org/mcp.json');
   assertEq(agent.endpoints.openapi.url, 'https://anchorfact.org/openapi.json');
   assertEq(agent.endpoints.api_index.path, '/api');
+  assertEq(agent.endpoints.api_access.path, '/api-access/');
   assertEq(agent.endpoints.artifact_summary.url, 'https://anchorfact.org/artifact-summary.json');
   assertEq(agent.endpoints.plan_api.path, '/api/plan?q={query}');
   assertEq(agent.endpoints.evidence_api.path, '/api/evidence?q={query}');
@@ -270,6 +286,7 @@ test('agent profile describes the machine contract', () => {
   assertEq(agent.quick_start.default_answer_path, '/api/context?q={query}');
   assertEq(agent.quick_start.default_answer_mode, 'answer_with_citations');
   assertEq(agent.quick_start.local_mcp_answer_tool, 'anchorfact_context');
+  assertEq(agent.quick_start.free_api_access_path, '/api-access/');
   assertEq(agent.quick_start.citation_path, '/api/cite?id={claim_id}');
   assert(agent.quick_start.example_calls.some(example => example.path === '/api/context?q=gaussian%20splatting&limit=3&format=markdown'), 'agent profile should expose an executable default context example');
   assert(agent.quick_start.example_calls.some(example => example.path === '/api/evidence?q=RLHF&limit=3&format=markdown'), 'agent profile should expose an executable evidence example');
@@ -279,6 +296,7 @@ test('agent profile describes the machine contract', () => {
   assert(agent.quick_start.steps.some(step => step.id === 'assemble_context' && step.path === '/api/context?q={query}'), 'quick start should make context the default answer path');
   assert(agent.quick_start.steps.some(step => step.id === 'verify_provenance' && step.path === '/provenance.json'), 'quick start should make provenance verification explicit');
   assert(agent.recommended_workflow.some(step => step.includes('/openapi.json')), 'agent workflow should mention OpenAPI');
+  assert(agent.recommended_workflow.some(step => step.includes('/api-access/')), 'agent workflow should mention API access guide');
   assert(agent.recommended_workflow.some(step => step.includes('/artifact-summary.json')), 'agent workflow should mention artifact summary');
   assert(agent.recommended_workflow.some(step => step.includes('/provenance.json')), 'agent workflow should mention provenance');
   assert(agent.recommended_workflow.some(step => step.includes('/topics.json')), 'agent workflow should mention topics index');
@@ -818,6 +836,7 @@ test('_headers is generated for Cloudflare Pages static output', () => {
     assert(headers.includes(`${path}\n  Access-Control-Allow-Origin: *\n  Content-Type: ${path.endsWith('.txt') ? 'text/plain' : 'application/json'}; charset=utf-8\n  Cache-Control: public, max-age=0, must-revalidate`), `_headers should keep ${path} revalidated`);
   }
   assert(headers.includes('/*/index.json\n  Access-Control-Allow-Origin: *'), '_headers should expose article JSON-LD CORS');
+  assert(headers.includes('/api-access/\n  Cache-Control: public, max-age=0, must-revalidate'), '_headers should keep API access page revalidated');
   assert(headers.includes('/drafts\n  X-Robots-Tag: noindex, nofollow'), '_headers should noindex extensionless drafts route');
   assert(headers.includes('/drafts.html\n  X-Robots-Tag: noindex, nofollow'), '_headers should noindex drafts.html route');
 });

@@ -120,6 +120,7 @@ test('public machine entrypoints exclude drafts', () => {
   const sitemap = readFileSync(join(distDir, 'sitemap.xml'), 'utf-8');
   assertEq(agent.current_snapshot.public_articles, 1);
   assertEq(agent.endpoints.openapi.url, 'https://anchorfact.org/openapi.json');
+  assertEq(agent.endpoints.api_access.path, '/api-access/');
   assertEq(agent.endpoints.capabilities.url, 'https://anchorfact.org/capabilities.json');
   assertEq(agent.endpoints.content_health.url, 'https://anchorfact.org/content-health.json');
   assertEq(agent.endpoints.coverage.url, 'https://anchorfact.org/coverage.json');

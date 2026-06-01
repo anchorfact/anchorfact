@@ -180,6 +180,7 @@ Only public articles contribute publishable facts to `/claims.json`.
 | `/evals.json` | Executable golden integration checks consumed by `npm run evals:prod` and the production integrity monitor. |
 | `/mcp.json` | Signed local MCP installation manifest and tool metadata. |
 | `/api` | Compact live API discovery endpoint for agents that need the smallest endpoint index before fetching OpenAPI. |
+| `/api-access/` | Free API access guide with recommended call order, examples, limits, and provenance verification steps. |
 | `/api/plan?q=...` | Read-only Cloudflare Pages Function that tells AI agents whether AnchorFact coverage is plausible, which endpoint to call next, or when to fall back to external sources. |
 | `/api/evidence?q=...` | Read-only Cloudflare Pages Function for one-call public evidence packs with search hits, article summaries, claims, sources, and citation exports. Add `format=markdown` for answer-ready text context. |
 | `/api/context?q=...` | Read-only Cloudflare Pages Function for one-call prompt context with `answer_policy`, `citation_ready_claims`, planning status, fallback guidance, content health summary, evidence packs, and citation guardrails. Add `format=markdown` for prompt-ready text. |
@@ -210,6 +211,28 @@ npm run verify:provenance:signed
 The pinned production provenance public key lives at `keys/provenance.pub.pem`; its SHA-256 fingerprint is `eb2ff7aa5be8441bba29b6e35874ac06b04d944caf0b22be72933d8383bc4968`.
 
 Forks can run the same verifier with `--allow-unofficial --skip-commit` while they establish their own source repository and release identity. Signed forks should use their own signing keys and publish their own public key.
+
+## API Access
+
+AnchorFact's public API is free and read-only today. It does not require an API key, login, payment, or subscription.
+
+Recommended order for AI integrations:
+
+```bash
+curl "https://anchorfact.org/api/context?q=gaussian%20splatting&limit=3&format=markdown"
+curl "https://anchorfact.org/api/evidence?q=RLHF&limit=3&format=markdown"
+curl "https://anchorfact.org/api/cite?id=f1&format=markdown"
+curl "https://anchorfact.org/provenance.json"
+```
+
+Use `/api/context` first for answer assembly, `/api/evidence` second for raw source-mapped evidence packs, and `/api/cite` when dereferencing a specific claim. Use `/api/plan` only when coverage is uncertain. Paid beta work is intentionally deferred until the readiness gates are met: 14 days of clean production integrity and audits, at least 90% core query citation readiness, AI primary/discovery ratio at or above 0.2 for 7 days, and real external design-partner demand.
+
+Run the local report-only readiness scorecard with:
+
+```bash
+npm run build
+npm run api:readiness
+```
 
 ## MCP and Local API
 

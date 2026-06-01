@@ -82,6 +82,7 @@ test('classifyUserAgent separates synthetic monitors, AI bots, search bots, scan
 
 test('classifyPath identifies API, machine artifact, article artifact, and probe surfaces', () => {
   assertEq(classifyPath('/api/evidence'), 'api');
+  assertEq(classifyPath('/api-access/'), 'developer_docs');
   assertEq(classifyPath('/artifact-summary.json'), 'machine_artifact');
   assertEq(classifyPath('/graph.json'), 'machine_artifact');
   assertEq(classifyPath('/ai/ai-search-recommendation/index.ttl'), 'article_artifact');
@@ -100,6 +101,7 @@ test('buildCloudflareUsageSummary derives product, AI discovery, and security re
       topPaths: [
         pathRow('/api/evidence', 220, 900000),
         pathRow('/api/context', 90, 350000),
+        pathRow('/api-access/', 30, 90000),
         pathRow('/api', 50, 120000),
         pathRow('/llms.txt', 45, 500000),
         pathRow('/robots.txt', 35, 30000),
@@ -119,6 +121,7 @@ test('buildCloudflareUsageSummary derives product, AI discovery, and security re
       pathUa: [
         pathUaRow('/robots.txt', 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; GPTBot/1.4; +https://openai.com/gptbot)', 12),
         pathUaRow('/llms.txt', 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; GPTBot/1.4; +https://openai.com/gptbot)', 10),
+        pathUaRow('/api-access/', 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; GPTBot/1.4; +https://openai.com/gptbot)', 4),
         pathUaRow('/api/context', 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; GPTBot/1.4; +https://openai.com/gptbot)', 8),
         pathUaRow('/api/evidence', 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; ClaudeBot/1.0; +claudebot@anthropic.com)', 7),
         pathUaRow('/ai/example/index.ttl', 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; GPTBot/1.4; +https://openai.com/gptbot)', 2)
@@ -143,8 +146,12 @@ test('buildCloudflareUsageSummary derives product, AI discovery, and security re
 
   assertEq(summary.totals.requests, 1000);
   assert(!Object.prototype.hasOwnProperty.call(summary, 'summary'), 'JSON report should expose top-level usage fields, not a legacy summary wrapper');
-  assertEq(summary.usage_scorecard.product_surface_requests, 535);
+  assertEq(summary.usage_scorecard.product_surface_requests, 565);
   assertEq(summary.usage_scorecard.api_requests, 360);
+  assertEq(summary.usage_scorecard.api_access_page_requests, 30);
+  assertEq(summary.usage_scorecard.developer_docs_requests, 150);
+  assertEq(summary.usage_scorecard.core_api_requests, 310);
+  assertEq(summary.usage_scorecard.core_api_to_developer_docs_ratio, 2.07);
   assertEq(summary.usage_scorecard.discovery_entrypoint_requests, 155);
   assertEq(summary.usage_scorecard.identified_ai_requests, 60);
   assertEq(summary.usage_scorecard.synthetic_monitor_requests, 70);
@@ -154,6 +161,9 @@ test('buildCloudflareUsageSummary derives product, AI discovery, and security re
   assertEq(summary.adoption_scorecard.identified_ai_requests, 60);
   assertEq(summary.adoption_scorecard.identified_ai_discovery_requests, 22);
   assertEq(summary.adoption_scorecard.identified_ai_primary_api_requests, 15);
+  assertEq(summary.adoption_scorecard.identified_ai_api_access_page_requests, 4);
+  assertEq(summary.adoption_scorecard.identified_ai_developer_docs_requests, 14);
+  assertEq(summary.adoption_scorecard.identified_ai_core_api_requests, 15);
   assertEq(summary.adoption_scorecard.identified_ai_primary_to_discovery_ratio, 0.68);
   assertEq(summary.adoption_scorecard.identified_ai_primary_to_discovery_target_ratio, AI_ADOPTION_TARGET_RATIO);
   assertEq(summary.adoption_scorecard.identified_ai_primary_to_discovery_current_ratio, 0.68);
@@ -167,10 +177,18 @@ test('buildCloudflareUsageSummary derives product, AI discovery, and security re
   assertEq(summary.adoption_health.primary_api_5xx_or_522_requests, 0);
   assertEq(summary.discovery_adoption.observed_ai_discovery_requests, 22);
   assertEq(summary.discovery_adoption.observed_ai_primary_api_requests, 15);
+  assertEq(summary.discovery_adoption.observed_ai_api_access_page_requests, 4);
+  assertEq(summary.discovery_adoption.observed_ai_developer_docs_requests, 14);
+  assertEq(summary.discovery_adoption.observed_ai_core_api_requests, 15);
+  assertEq(summary.discovery_adoption.observed_all_api_access_page_requests, 30);
+  assertEq(summary.discovery_adoption.observed_all_developer_docs_requests, 150);
+  assertEq(summary.discovery_adoption.observed_all_core_api_requests, 310);
   assertEq(summary.discovery_adoption.observed_ai_article_artifact_requests, 2);
   assert(summary.discovery_adoption.top_ai_discovery_paths.some(item => item.path === '/robots.txt'), 'should report AI discovery paths');
   assert(summary.discovery_adoption.top_ai_primary_api_paths.some(item => item.path === '/api/context'), 'should report AI primary API paths');
+  assert(summary.discovery_adoption.top_ai_developer_docs_paths.some(item => item.path === '/api-access/'), 'should report AI developer docs paths');
   assert(summary.top_api_paths.some(item => item.path === '/api/evidence'), 'should report API product signal');
+  assert(summary.top_developer_docs_paths.some(item => item.path === '/api-access/'), 'should report API access funnel signal');
   assert(summary.top_machine_artifacts.some(item => item.path === '/graph.json'), 'should report machine artifact signal');
   assert(summary.security_probe_paths.some(item => item.path === '/wp-admin/install.php'), 'should report security probes');
   assert(summary.ai_agents.some(item => item.name === 'openai_gptbot'), 'should classify OpenAI crawler traffic');
@@ -190,9 +208,12 @@ test('renderCloudflareUsageReport emits readable Markdown sections', () => {
   const markdown = renderCloudflareUsageReport(report);
   assert(markdown.includes('## Product Signals'), 'should render product section');
   assert(markdown.includes('## Usage Scorecard'), 'should render usage scorecard section');
+  assert(markdown.includes('## API Access Funnel'), 'should render API access funnel section');
   assert(markdown.includes('## Discovery Adoption'), 'should render discovery adoption section');
   assert(markdown.includes('Primary API requests: 4'), 'should render primary API requests from top-level scorecard');
   assert(markdown.includes('Discovery entrypoint requests: 2'), 'should render discovery entrypoint requests from top-level scorecard');
+  assert(markdown.includes('Developer docs requests: 2'), 'should render developer docs requests');
+  assert(markdown.includes('Core API requests: 4'), 'should render core API requests');
   assert(markdown.includes('Identified AI requests: 2'), 'should render identified AI requests from top-level scorecard');
   assert(markdown.includes('Identified AI primary/discovery ratio: 0'), 'should render top-level discovery adoption ratio');
   assert(markdown.includes('Report-only target ratio: 0.2'), 'should render report-only adoption target');

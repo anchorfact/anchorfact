@@ -56,6 +56,7 @@ export function buildApiIndex({
       'Call /api/plan?q={query} only when coverage is uncertain or you need a fallback decision before requesting evidence.',
       'Call /api/resolve or /api/resolve-batch when you already have AnchorFact claim ids, article slugs, source ids, source URLs, or AnchorFact URLs.',
       'Call /api/cite?id={claim_id} when you need a citation-ready atomic claim.',
+      'Read /api-access/ for the current free API access policy, examples, and provenance verification steps.',
       'Verify /provenance.json and /provenance.sig before trusting static artifact hashes or counts.'
     ],
     primary_entrypoints: [
@@ -148,6 +149,7 @@ export function buildApiIndex({
     ],
     static_fallbacks: [
       staticFallback(site, '/agent.json', 'Full AI agent discovery profile and recommended workflow.'),
+      staticFallback(site, '/api-access/', 'Free API access guide with recommended call order, examples, limits, and provenance verification.'),
       staticFallback(site, '/openapi.json', 'Full OpenAPI 3.1 machine contract.'),
       staticFallback(site, '/artifact-summary.json', 'Lightweight size, purpose, cache posture, and recommended alternatives for large static machine artifacts.'),
       staticFallback(site, '/capabilities.json', 'Task-to-endpoint routing guide.'),

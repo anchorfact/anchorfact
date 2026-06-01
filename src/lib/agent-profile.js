@@ -122,6 +122,7 @@ export function buildAgentProfile({
       default_answer_path: '/api/context?q={query}',
       default_answer_mode: 'answer_with_citations',
       local_mcp_answer_tool: 'anchorfact_context',
+      free_api_access_path: '/api-access/',
       citation_path: '/api/cite?id={claim_id}',
       example_calls: [
         {
@@ -195,6 +196,7 @@ export function buildAgentProfile({
       'Use /api/resolve?ref={reference} when you have an AnchorFact claim id, article slug, source id, or source URL and need the matching public payload.',
       'Use /api/resolve-batch?ref={reference}&ref={reference} when you need to dereference several mixed AnchorFact references in one call.',
       'Fetch /api as a compact API index when you need the smallest live endpoint discovery payload.',
+      'Fetch /api-access/ for free API usage examples, current no-key access policy, limits, and provenance verification steps.',
       'Fetch /agent.json to discover the current machine contract.',
       'Fetch /openapi.json when integrating with tools that prefer a standard endpoint contract.',
       'Fetch /artifact-summary.json before downloading large static artifacts; prefer /api/context and /api/evidence for normal agent answer paths.',
@@ -222,6 +224,7 @@ export function buildAgentProfile({
       well_known_agent_profile: endpoint('/.well-known/anchorfact.json', 'Stable well-known alias for the agent discovery document.'),
       openapi: endpoint('/openapi.json', 'OpenAPI 3.1 description of the static read-only machine contract.'),
       api_index: endpoint('/api', 'Compact live API discovery index for AI agents.'),
+      api_access: endpoint('/api-access/', 'Free API access guide with recommended call order, examples, limits, and provenance verification.', 'text/html'),
       artifact_summary: endpoint('/artifact-summary.json', 'Lightweight size, purpose, cache posture, and default-call alternatives for major static machine artifacts.'),
       llms_txt: endpoint('/llms.txt', 'Public verified article index optimized for LLM crawlers.', 'text/plain'),
       manifest: endpoint('/manifest.json', 'Full article index with public/draft status, confidence, and verification metadata.'),
