@@ -4,11 +4,11 @@
     "total_articles": 1000,
     "total_with_errors": 221,
     "average_sources_per_article": "2.4",
-    "overall_verification_rate": "84.0%",
+    "overall_verification_rate": "84.1%",
     "elapsed_ms": 635005,
     "elapsed_sec": "635.0",
     "concurrency": 3,
-    "manual_reviewed_articles": 637
+    "manual_reviewed_articles": 642
   },
   "articles": [
     {
@@ -37410,19 +37410,92 @@
       "file": "content/game-development/cloud-xr-development.md",
       "article_id": "kb-gd-007",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 5,
       "verification_results": [
         {
-          "source_title": "游戏开发Wiki（个人知识库）",
-          "source_type": "knowledge_base",
+          "source_title": "OpenXR Overview",
+          "source_type": "standard",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.gdconf.com/",
+              "identifier": "https://www.khronos.org/openxr/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://gdconf.com/"
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI/game-production content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "WebRTC API",
+          "source_type": "reference",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI/game-production content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "NVIDIA CloudXR SDK Overview",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.nvidia.com/cloudxr-sdk/latest/overview/overview.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI/game-production content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "NVIDIA CloudXR Runtime",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.nvidia.com/cloudxr-sdk/latest/usr_guide/cloudxr_runtime/index.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI/game-production content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Unity XR Interaction Toolkit",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.unity3d.com/Packages/com.unity.xr.interaction.toolkit@3.1/manual/index.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI/game-production content batch; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -37430,7 +37503,7 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
+      "sources_verified": 5,
       "sources_unreachable": 0
     },
     {
@@ -37975,19 +38048,56 @@
       "file": "content/game-development/game-design-principles.md",
       "article_id": "kb-gd-013",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "游戏开发Wiki（个人知识库）",
-          "source_type": "knowledge_base",
+          "source_title": "MDA: A Formal Approach to Game Design and Game Research",
+          "source_type": "conference_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.gdconf.com/",
+              "identifier": "https://users.cs.northwestern.edu/~hunicke/MDA.pdf",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://gdconf.com/"
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI/game-production content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GameFlow: A Model for Evaluating Player Enjoyment in Games",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://doi.org/10.1145/1077246.1077253",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI/game-production content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "The Case for Dynamic Difficulty Adjustment in Games",
+          "source_type": "conference_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://doi.org/10.1145/1178477.1178573",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI/game-production content batch; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -37995,7 +38105,7 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
+      "sources_verified": 3,
       "sources_unreachable": 0
     },
     {
@@ -38029,19 +38139,92 @@
       "file": "content/game-development/game-engine-comparison.md",
       "article_id": "kb-gd-015",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 5,
       "verification_results": [
         {
-          "source_title": "游戏开发Wiki（个人知识库）",
-          "source_type": "knowledge_base",
+          "source_title": "Unity Manual: GameObjects",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.gdconf.com/",
+              "identifier": "https://docs.unity3d.com/Manual/GameObjects.html",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://gdconf.com/"
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI/game-production content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Unity Manual: Scripting",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.unity3d.com/Manual/scripting.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI/game-production content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Blueprints Visual Scripting in Unreal Engine",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://dev.epicgames.com/documentation/en-us/unreal-engine/blueprints-visual-scripting-in-unreal-engine",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI/game-production content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Programming with C++ in Unreal Engine",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://dev.epicgames.com/documentation/en-us/unreal-engine/programming-with-cplusplus-in-unreal-engine",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI/game-production content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Godot Docs: Nodes and scenes",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.godotengine.org/en/stable/getting_started/step_by_step/nodes_and_scenes.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI/game-production content batch; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -38049,7 +38232,7 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
+      "sources_verified": 5,
       "sources_unreachable": 0
     },
     {
@@ -38930,19 +39113,92 @@
       "file": "content/game-development/multiplayer-game-design.md",
       "article_id": "kb-gd-024",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 5,
       "verification_results": [
         {
-          "source_title": "游戏开发Wiki（个人知识库）",
-          "source_type": "knowledge_base",
+          "source_title": "User Datagram Protocol",
+          "source_type": "standard",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.gdconf.com/",
+              "identifier": "https://www.rfc-editor.org/rfc/rfc768",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://gdconf.com/"
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI/game-production content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Source Multiplayer Networking",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.valvesoftware.com/wiki/Source_Multiplayer_Networking",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI/game-production content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Networking Overview for Unreal Engine",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://dev.epicgames.com/documentation/en-us/unreal-engine/networking-overview-for-unreal-engine",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI/game-production content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Netcode for GameObjects",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.unity3d.com/Packages/com.unity.netcode.gameobjects@2.6/manual/index.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI/game-production content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Steam Datagram Relay",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://partner.steamgames.com/doc/features/multiplayer/steamdatagramrelay",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI/game-production content batch; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -38950,7 +39206,7 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
+      "sources_verified": 5,
       "sources_unreachable": 0
     },
     {
@@ -40050,19 +40306,92 @@
       "file": "content/game-development/ugc-mod-systems.md",
       "article_id": "kb-gd-035",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 5,
       "verification_results": [
         {
-          "source_title": "游戏开发Wiki（个人知识库）",
-          "source_type": "knowledge_base",
+          "source_title": "Steam Workshop Implementation Guide",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.gdconf.com/",
+              "identifier": "https://partner.steamgames.com/doc/features/workshop/implementation",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://gdconf.com/"
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI/game-production content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "ISteamUGC Interface",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://partner.steamgames.com/doc/api/ISteamUGC",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI/game-production content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "mod.io REST API Reference",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.mod.io/restapiref/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI/game-production content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Publishing Experiences and Places",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://create.roblox.com/docs/production/publishing/publish-experiences-and-places",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI/game-production content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "C2PA Specifications",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://c2pa.org/specifications/specifications/2.1/index.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI/game-production content batch; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -40070,7 +40399,7 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
+      "sources_verified": 5,
       "sources_unreachable": 0
     },
     {

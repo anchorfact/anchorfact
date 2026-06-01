@@ -80,7 +80,7 @@ test('textHygieneFailures catches stale production claim metrics', () => {
 test('textHygieneFailures accepts current production claim metrics', () => {
   const failures = textHygieneFailures(
     'docs/LAUNCH_READINESS_2026-05-27.md',
-    'Snapshot: 658 public / 342 draft / 2052 claims.'
+    'Snapshot: 663 public / 337 draft / 2077 claims.'
   );
   assertEq(failures, []);
 });
@@ -96,7 +96,7 @@ test('textHygieneFailures ignores historical repair log metrics', () => {
 test('textHygieneFailures catches previous production snapshot metrics', () => {
   const failures = textHygieneFailures(
     'docs/LAUNCH_READINESS_2026-05-27.md',
-    'Snapshot: 653 public / 347 draft / 2027 claims.'
+    'Snapshot: 658 public / 342 draft / 2052 claims.'
   );
   assert(failures.some(failure => failure.includes('stale launch metrics')), 'previous snapshot should fail hygiene');
 });
