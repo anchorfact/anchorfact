@@ -1,70 +1,100 @@
 ---
 id: "kb-gd-002"
-title: "AI Agent 游戏开发工具"
+title: "AI Agent Tools for Game Development"
 schema_type: "TechArticle"
 category: "game-development"
-language: "zh"
+language: "en"
 confidence: "medium"
 status: "draft"
-last_verified: "2026-04-28"
+last_verified: "2026-06-01"
 created_date: "2026-04-28"
+updated: "2026-06-01"
 generation_method: "human_only"
 derived_from_human_seed: true
 conflict_of_interest: "none_declared"
 is_live_document: false
 data_period: "static"
 
+atomic_facts:
+  - id: "fact-gd-agent-tools-001"
+    statement: "The Model Context Protocol specification describes tools as interfaces that servers expose for language models to invoke."
+    source_title: "Tools - Model Context Protocol"
+    source_url: "https://modelcontextprotocol.io/specification/draft/server/tools"
+    confidence: "medium"
+  - id: "fact-gd-agent-tools-002"
+    statement: "MCP tools are documented as model-controlled, meaning a model can discover and invoke them based on context and the user's prompt."
+    source_title: "Tools - Model Context Protocol"
+    source_url: "https://modelcontextprotocol.io/specification/draft/server/tools"
+    confidence: "medium"
+  - id: "fact-gd-agent-tools-003"
+    statement: "The Agent2Agent core specification starts interoperable agent work with AgentCard discovery before message sending, task polling, or streaming."
+    source_title: "Core Protocol Specification - Agent2Agent Protocol"
+    source_url: "https://agent2agent.info/specification/core/"
+    confidence: "medium"
+  - id: "fact-gd-agent-tools-004"
+    statement: "The Agent2Agent core specification treats Message as the interaction payload and Artifact as the output payload."
+    source_title: "Core Protocol Specification - Agent2Agent Protocol"
+    source_url: "https://agent2agent.info/specification/core/"
+    confidence: "medium"
+  - id: "fact-gd-agent-tools-005"
+    statement: "OpenAI function calling documentation describes function calling as a way to connect models to external tools and systems."
+    source_title: "Function Calling in the OpenAI API"
+    source_url: "https://help.openai.com/en/articles/8555517-function-calling-in-the-openai-api"
+    confidence: "medium"
+completeness: 0.78
+known_gaps:
+  - "This draft is intentionally limited to protocol-level facts; concrete Unity, Unreal, Godot, DCC, and asset-pipeline examples should be added in a later public batch."
+  - "Security hardening for local filesystem, shell, and asset write access is out of scope for this short source-mapped entry."
+disputed_statements: []
 primary_sources:
-  - title: "Model Context Protocol Specification"
+  - title: "Tools - Model Context Protocol"
     type: "standard"
-    year: 2025
-    url: "https://modelcontextprotocol.io/specification/"
-    institution: "Model Context Protocol"
-  - title: "Google Agent2Agent Protocol"
-    type: "standard"
-    year: 2025
-    url: "https://google.github.io/A2A/"
-    institution: "Google"
-  - title: "Game Developers Conference"
-    type: "industry_publication"
     year: 2026
-    url: "https://gdconf.com/"
-    institution: "Informa TechTarget"
+    url: "https://modelcontextprotocol.io/specification/draft/server/tools"
+    institution: "Model Context Protocol"
+  - title: "Core Protocol Specification - Agent2Agent Protocol"
+    type: "standard"
+    year: 2026
+    url: "https://agent2agent.info/specification/core/"
+    institution: "Agent2Agent Protocol"
+  - title: "Function Calling in the OpenAI API"
+    type: "documentation"
+    year: 2026
+    url: "https://help.openai.com/en/articles/8555517-function-calling-in-the-openai-api"
+    institution: "OpenAI"
+secondary_sources: []
 ---
 
 ## TL;DR
 
-AI agent tools can help game teams draft design documents, generate implementation plans, inspect code, write tests, and coordinate asset pipelines. This draft keeps the topic visible while the article is repaired and source-checked.
+AI agent tools are most useful in game development when they expose narrow, reviewable operations: read project context, plan a change, call engine or asset tools through explicit schemas, and return inspectable artifacts.
 
-## Core Claim
+## Core Explanation
 
-AI agents are most useful in game development when they are treated as workflow participants rather than autonomous replacements for designers, programmers, artists, or producers. The strongest use cases are bounded tasks with clear inputs, reviewable outputs, and explicit handoff points.
+The reliable pattern is not "let an agent make a whole game." It is a bounded tool loop. MCP covers model-invoked tools, A2A covers agent discovery and task exchange, and function calling covers schema-shaped calls into application systems.
 
-## Useful Tool Categories
+For a game team, this maps cleanly onto practical work:
 
-### Coding and Technical Design
+- inspect a Unity, Unreal, or Godot project before editing;
+- generate an implementation plan for a gameplay feature;
+- call asset, build, test, or issue-tracker tools through explicit parameters;
+- return patches, test reports, design notes, or asset manifests as artifacts;
+- require human review before source files, scenes, prefabs, or paid assets are changed.
 
-Agents can turn a feature brief into implementation steps, propose engine-level architecture, inspect existing gameplay code, and generate tests. These workflows work best when the agent receives the current repository context and produces small, reviewable changes.
+## Source-Mapped Facts
 
-### Design Documentation
+- The Model Context Protocol specification describes tools as interfaces that servers expose for language models to invoke. ([source](https://modelcontextprotocol.io/specification/draft/server/tools))
+- MCP tools are documented as model-controlled, meaning a model can discover and invoke them based on context and the user's prompt. ([source](https://modelcontextprotocol.io/specification/draft/server/tools))
+- The Agent2Agent core specification starts interoperable agent work with AgentCard discovery before message sending, task polling, or streaming. ([source](https://agent2agent.info/specification/core/))
+- The Agent2Agent core specification treats Message as the interaction payload and Artifact as the output payload. ([source](https://agent2agent.info/specification/core/))
+- OpenAI function calling documentation describes function calling as a way to connect models to external tools and systems. ([source](https://help.openai.com/en/articles/8555517-function-calling-in-the-openai-api))
 
-Agents can help structure game design documents, system specs, balancing notes, quest outlines, and content checklists. Human review remains essential because tone, player fantasy, pacing, and production constraints are design judgments.
+## Operational Notes for Game Teams
 
-### QA and Test Planning
+Use agents for tasks that can be checked mechanically: generate tests, summarize engine documentation, prepare migration notes, or draft asset import rules. Avoid giving an agent broad write access to scenes, binary assets, paid marketplace files, or production branches without a review gate.
 
-Agents can draft test matrices, generate edge-case checklists, and convert bug reports into reproduction steps. They should not be treated as a substitute for engine-level automated tests or human playtesting.
+## Further Reading
 
-### Multi-Agent Coordination
-
-Protocols such as MCP and A2A point toward a future where tools, agents, and data sources can communicate through explicit contracts. For game teams, this matters because art, audio, design, code, and production systems often live in different tools.
-
-## Current Draft Limitations
-
-This page was repaired after an encoding failure in an earlier draft. It should remain draft-only until the sources are re-verified and the examples are expanded with concrete engine workflows.
-
-## Known Risks
-
-- Agents can hallucinate engine APIs and asset pipeline details.
-- Generated design text can become generic without strong creative direction.
-- Multi-agent workflows add coordination overhead if task boundaries are unclear.
-- Tool access must be scoped carefully when agents can modify source files or assets.
+- [Tools - Model Context Protocol](https://modelcontextprotocol.io/specification/draft/server/tools)
+- [Core Protocol Specification - Agent2Agent Protocol](https://agent2agent.info/specification/core/)
+- [Function Calling in the OpenAI API](https://help.openai.com/en/articles/8555517-function-calling-in-the-openai-api)

@@ -8,7 +8,7 @@
     "elapsed_ms": 635005,
     "elapsed_sec": "635.0",
     "concurrency": 3,
-    "manual_reviewed_articles": 591
+    "manual_reviewed_articles": 489
   },
   "articles": [
     {
@@ -36447,19 +36447,56 @@
       "file": "content/game-development/agent-tools.md",
       "article_id": "kb-gd-002",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "游戏开发Wiki（个人知识库）",
-          "source_type": "knowledge_base",
+          "source_title": "Tools - Model Context Protocol",
+          "source_type": "standard",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.gdconf.com/",
+              "identifier": "https://modelcontextprotocol.io/specification/draft/server/tools",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://gdconf.com/"
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "AI game-development content focus batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Core Protocol Specification - Agent2Agent Protocol",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://agent2agent.info/specification/core/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "AI game-development content focus batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Function Calling in the OpenAI API",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://help.openai.com/en/articles/8555517-function-calling-in-the-openai-api",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "AI game-development content focus batch; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -36467,26 +36504,65 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-06-01"
     },
     {
       "file": "content/game-development/ai-dialogue-prompts.md",
       "article_id": "kb-gd-003",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "游戏开发Wiki（个人知识库）",
-          "source_type": "knowledge_base",
+          "source_title": "Prompting Best Practices - Claude API Docs",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.gdconf.com/",
+              "identifier": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/use-xml-tags",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://gdconf.com/"
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "AI game-development content focus batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Function Calling in the OpenAI API",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://help.openai.com/en/articles/8555517-function-calling-in-the-openai-api",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "AI game-development content focus batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Moderation - OpenAI API",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://platform.openai.com/docs/guides/moderation/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "AI game-development content focus batch; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -36494,26 +36570,65 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-06-01"
     },
     {
       "file": "content/game-development/ai-generated-assets.md",
       "article_id": "kb-gd-004",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "游戏开发Wiki（个人知识库）",
-          "source_type": "knowledge_base",
+          "source_title": "High-Resolution Image Synthesis with Latent Diffusion Models",
+          "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.gdconf.com/",
+              "identifier": "https://arxiv.org/abs/2112.10752",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://gdconf.com/"
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "AI game-development content focus batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Submission Guidelines - Unity Asset Store",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://assetstore.unity.com/publishing/submission-guidelines",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "AI game-development content focus batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "C2PA Specifications",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://spec.c2pa.org/specifications/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "AI game-development content focus batch; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -36521,8 +36636,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-06-01"
     },
     {
       "file": "content/game-development/animation-state-machines.md",
@@ -37517,7 +37634,7 @@
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Edit Mode vs. Play Mode tests",
+          "source_title": "Edit Mode vs. Play Mode Tests",
           "source_type": "documentation",
           "results": [
             {
@@ -37526,8 +37643,8 @@
               "verified": true,
               "metadata": {
                 "manual_review": true,
-                "reviewed_at": "2026-05-28",
-                "note": "Second targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
+                "reviewed_at": "2026-06-01",
+                "note": "AI game-development content focus batch; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -37535,7 +37652,7 @@
           "all_verified": true
         },
         {
-          "source_title": "Unit tests",
+          "source_title": "Unit Tests - Unity Build Automation",
           "source_type": "documentation",
           "results": [
             {
@@ -37544,8 +37661,8 @@
               "verified": true,
               "metadata": {
                 "manual_review": true,
-                "reviewed_at": "2026-05-28",
-                "note": "Second targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
+                "reviewed_at": "2026-06-01",
+                "note": "AI game-development content focus batch; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -37553,17 +37670,17 @@
           "all_verified": true
         },
         {
-          "source_title": "Automation System Overview",
+          "source_title": "Automation System User Guide in Unreal Engine",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://dev.epicgames.com/documentation/en-us/unreal-engine/automation-system-overview?application_version=4.27",
+              "identifier": "https://dev.epicgames.com/documentation/en-us/unreal-engine/automation-system-user-guide-in-unreal-engine?application_version=5.6",
               "verified": true,
               "metadata": {
                 "manual_review": true,
-                "reviewed_at": "2026-05-28",
-                "note": "Second targeted public evidence repair pass; shell verifier network was not used for this bounded manual-review update."
+                "reviewed_at": "2026-06-01",
+                "note": "AI game-development content focus batch; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -37574,7 +37691,7 @@
       "sources_verified": 3,
       "sources_unreachable": 0,
       "manual_reviewed": true,
-      "manual_reviewed_at": "2026-05-28"
+      "manual_reviewed_at": "2026-06-01"
     },
     {
       "file": "content/game-development/game-ui-ux-design.md",
@@ -38179,19 +38296,56 @@
       "file": "content/game-development/player-psychology.md",
       "article_id": "kb-gd-028",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "游戏开发Wiki（个人知识库）",
-          "source_type": "knowledge_base",
+          "source_title": "The Motivational Pull of Video Games: A Self-Determination Theory Approach",
+          "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.gdconf.com/",
+              "identifier": "https://doi.org/10.1007/s11031-006-9051-8",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://gdconf.com/"
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "AI game-development content focus batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GameFlow: A Model for Evaluating Player Enjoyment in Games",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://doi.org/10.1145/1077246.1077253",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "AI game-development content focus batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "The Case for Dynamic Difficulty Adjustment in Games",
+          "source_type": "conference_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://doi.org/10.1145/1178477.1178573",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "AI game-development content focus batch; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -38199,8 +38353,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-06-01"
     },
     {
       "file": "content/game-development/procedural-content-generation.md",

@@ -1,8 +1,8 @@
-# AnchorFact Public Content Audit - 2026-05-30
+# AnchorFact Public Content Audit - 2026-06-01
 
-Generated: 2026-05-30T07:52:41.209Z
+Generated: 2026-06-01T04:45:41.237Z
 
-Snapshot: 630 public / 370 draft / 1933 claims.
+Snapshot: 633 public / 367 draft / 1948 claims.
 
 ## Summary
 
@@ -40,9 +40,9 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 | 15 | risk_fallback | `arts/world-literature` | medium | 2/2 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 | 16 | risk_fallback | `computer-science/php-language` | medium | 5/5 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 | 17 | risk_fallback | `computer-science/playwright` | medium | 5/5 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
-| 18 | risk_fallback | `history/computer-history` | medium | 1/1 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
-| 19 | risk_fallback | `history/great-depression` | medium | 2/2 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
-| 20 | risk_fallback | `sports/olympic-games-history` | medium | 2/2 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
+| 18 | risk_fallback | `game-development/ai-dialogue-prompts` | medium | 3/3 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
+| 19 | risk_fallback | `game-development/ai-generated-assets` | medium | 3/3 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
+| 20 | risk_fallback | `game-development/player-psychology` | medium | 3/3 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 
 ## Article Findings
 
@@ -301,13 +301,13 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 18. Computer History
+### 18. AI Dialogue Prompting for Game NPCs
 
-- canonical slug: `history/computer-history`
-- canonical URL: https://anchorfact.org/history/computer-history/
+- canonical slug: `game-development/ai-dialogue-prompts`
+- canonical URL: https://anchorfact.org/game-development/ai-dialogue-prompts/
 - bucket: `risk_fallback`
-- confidence: `medium` (verified_sources, score 0.625)
-- verified source coverage: 1/1 (100.0%)
+- confidence: `medium` (verified_sources, score 0.725)
+- verified source coverage: 3/3 (100.0%)
 - claims: 5 total, 0 capped, 0 missing evidence
 - quality reasons: none
 - source-title match: `pass`
@@ -316,13 +316,13 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 19. Great Depression
+### 19. AI-Generated Game Assets: Workflow, Disclosure, and Provenance
 
-- canonical slug: `history/great-depression`
-- canonical URL: https://anchorfact.org/history/great-depression/
+- canonical slug: `game-development/ai-generated-assets`
+- canonical URL: https://anchorfact.org/game-development/ai-generated-assets/
 - bucket: `risk_fallback`
-- confidence: `medium` (verified_sources, score 0.685)
-- verified source coverage: 2/2 (100.0%)
+- confidence: `medium` (verified_sources, score 0.865)
+- verified source coverage: 3/3 (100.0%)
 - claims: 5 total, 0 capped, 0 missing evidence
 - quality reasons: none
 - source-title match: `pass`
@@ -331,13 +331,13 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 20. Olympic Games History
+### 20. Player Psychology for Game Design
 
-- canonical slug: `sports/olympic-games-history`
-- canonical URL: https://anchorfact.org/sports/olympic-games-history/
+- canonical slug: `game-development/player-psychology`
+- canonical URL: https://anchorfact.org/game-development/player-psychology/
 - bucket: `risk_fallback`
-- confidence: `medium` (verified_sources, score 0.815)
-- verified source coverage: 2/2 (100.0%)
+- confidence: `medium` (verified_sources, score 0.76)
+- verified source coverage: 3/3 (100.0%)
 - claims: 5 total, 0 capped, 0 missing evidence
 - quality reasons: none
 - source-title match: `pass`
