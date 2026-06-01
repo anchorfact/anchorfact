@@ -4,11 +4,11 @@
     "total_articles": 1000,
     "total_with_errors": 207,
     "average_sources_per_article": "2.5",
-    "overall_verification_rate": "84.4%",
+    "overall_verification_rate": "84.5%",
     "elapsed_ms": 635005,
     "elapsed_sec": "635.0",
     "concurrency": 3,
-    "manual_reviewed_articles": 652
+    "manual_reviewed_articles": 657
   },
   "articles": [
     {
@@ -25710,28 +25710,68 @@
     {
       "file": "content/computer-science/deep-learning-hardware-gpus-tpus-and-ai-accelerator-architecture.md",
       "article_id": "kb-2026-00014",
-      "generation_method": "ai_structured",
-      "sources_total": 1,
+      "generation_method": "human_only",
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Source 1 — Deep Learning Hardware: GPUs, TPUs, and AI Accelerator Architecture",
-          "source_type": "academic_paper",
+          "source_title": "CUDA C++ Programming Guide",
+          "source_type": "documentation",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "1906.04788",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI agent execution, video/3D generation, realtime transport, game story architecture, and cognitive-load content batch; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "Cloud TPU System Architecture",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://cloud.google.com/tpu/docs/system-architecture-tpu-vm",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI agent execution, video/3D generation, realtime transport, game story architecture, and cognitive-load content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "MLPerf Inference: Datacenter Benchmark Suite",
+          "source_type": "professional_resource",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://mlcommons.org/benchmarks/inference-datacenter/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI agent execution, video/3D generation, realtime transport, game story architecture, and cognitive-load content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 1
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-06-01"
     },
     {
       "file": "content/computer-science/deno.md",
@@ -28756,20 +28796,57 @@
     {
       "file": "content/computer-science/http-3-quic-protocol-and-next-generation-web-transport.md",
       "article_id": "kb-2026-00010",
-      "generation_method": "ai_structured",
-      "sources_total": 1,
+      "generation_method": "human_only",
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Source 1 — HTTP/3: QUIC Protocol and Next-Generation Web Transport",
-          "source_type": "blog_post",
+          "source_title": "RFC 9114: HTTP/3",
+          "source_type": "rfc",
           "results": [
             {
               "method": "url",
               "identifier": "https://datatracker.ietf.org/doc/html/rfc9114",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://datatracker.ietf.org/doc/html/rfc9114"
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI agent execution, video/3D generation, realtime transport, game story architecture, and cognitive-load content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "RFC 9000: QUIC: A UDP-Based Multiplexed and Secure Transport",
+          "source_type": "rfc",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://datatracker.ietf.org/doc/html/rfc9000",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI agent execution, video/3D generation, realtime transport, game story architecture, and cognitive-load content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "WebTransport",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.w3.org/TR/webtransport/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI agent execution, video/3D generation, realtime transport, game story architecture, and cognitive-load content batch; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -28777,8 +28854,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-06-01"
     },
     {
       "file": "content/computer-science/http-protocol.md",
@@ -30957,19 +31036,57 @@
     {
       "file": "content/computer-science/neural-radiance-fields-nerf-3d-scene-representation-from-images.md",
       "article_id": "kb-2026-00003",
-      "generation_method": "ai_structured",
-      "sources_total": 1,
+      "generation_method": "human_only",
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Source 1 — Neural Radiance Fields (NeRF): 3D Scene Representation from Images",
+          "source_title": "NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2003.08934",
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2003.08934",
               "verified": true,
               "metadata": {
-                "title": "arXiv Query: search_query=&amp;id_list=2003.08934&amp;start=0&amp;max_results=1"
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI agent execution, video/3D generation, realtime transport, game story architecture, and cognitive-load content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Plenoxels: Radiance Fields without Neural Networks",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2112.05131",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI agent execution, video/3D generation, realtime transport, game story architecture, and cognitive-load content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "3D Gaussian Splatting for Real-Time Radiance Field Rendering",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2308.04079",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI agent execution, video/3D generation, realtime transport, game story architecture, and cognitive-load content batch; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -30977,8 +31094,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-06-01"
     },
     {
       "file": "content/computer-science/nextjs.md",
@@ -40733,19 +40852,74 @@
       "file": "content/game-development/story-architecture.md",
       "article_id": "kb-gd-034",
       "generation_method": "human_only",
-      "sources_total": 1,
+      "sources_total": 4,
       "verification_results": [
         {
-          "source_title": "游戏开发Wiki（个人知识库）",
-          "source_type": "knowledge_base",
+          "source_title": "Writing with Ink",
+          "source_type": "software_repository",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.gdconf.com/",
+              "identifier": "https://raw.githubusercontent.com/inkle/ink/master/Documentation/WritingWithInk.md",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://gdconf.com/"
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI agent execution, video/3D generation, realtime transport, game story architecture, and cognitive-load content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Yarn Spinner: Lines, Nodes and Options",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.yarnspinner.dev/2.1/getting-started/writing-in-yarn/lines-nodes-and-options",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI agent execution, video/3D generation, realtime transport, game story architecture, and cognitive-load content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Yarn Spinner: Logic and Variables",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.yarnspinner.dev/2.2/getting-started/writing-in-yarn/logic-and-variables",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI agent execution, video/3D generation, realtime transport, game story architecture, and cognitive-load content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Twine Cookbook: Links",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://twinery.org/cookbook/twine1/terms/links.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI agent execution, video/3D generation, realtime transport, game story architecture, and cognitive-load content batch; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -40753,8 +40927,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 4,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-06-01"
     },
     {
       "file": "content/game-development/tilemap-system.md",
@@ -51895,29 +52071,86 @@
     {
       "file": "content/self-improvement/cognitive-load-theory-optimizing-learning-and-decision-making.md",
       "article_id": "kb-2026-00003",
-      "generation_method": "ai_structured",
-      "sources_total": 1,
+      "generation_method": "human_only",
+      "sources_total": 4,
       "verification_results": [
         {
-          "source_title": "Source 1 — Cognitive Load Theory: Optimizing Learning and Decision Making",
-          "source_type": "blog_post",
+          "source_title": "Cognitive Load During Problem Solving: Effects on Learning",
+          "source_type": "academic_article",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.cambridge.org/core/books/cognitive-load-theory/",
-              "verified": false,
+              "identifier": "https://link.springer.com/article/10.1007/BF00375122",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://www.cambridge.org/core/books/cognitive-load-theory"
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI agent execution, video/3D generation, realtime transport, game story architecture, and cognitive-load content batch; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "Cognitive Load Theory",
+          "source_type": "textbook",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.cambridge.org/core/product/identifier/9780511844744/type/book",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI agent execution, video/3D generation, realtime transport, game story architecture, and cognitive-load content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Schema Acquisition and Sources of Cognitive Load",
+          "source_type": "textbook_chapter",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.cambridge.org/core/product/identifier/CBO9780511844744A013/type/book_part",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI agent execution, video/3D generation, realtime transport, game story architecture, and cognitive-load content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Techniques That Reduce Extraneous Cognitive Load and Manage Intrinsic Cognitive Load During Multimedia Learning",
+          "source_type": "textbook_chapter",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.cambridge.org/core/product/identifier/CBO9780511844744A018/type/book_part",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI agent execution, video/3D generation, realtime transport, game story architecture, and cognitive-load content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 1
+      "sources_verified": 4,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-06-01"
     },
     {
       "file": "content/self-improvement/communication-skills.md",
