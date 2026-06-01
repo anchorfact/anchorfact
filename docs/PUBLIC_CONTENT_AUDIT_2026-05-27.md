@@ -1,8 +1,8 @@
 # AnchorFact Public Content Audit - 2026-06-01
 
-Generated: 2026-06-01T07:32:53.671Z
+Generated: 2026-06-01T07:55:41.782Z
 
-Snapshot: 663 public / 337 draft / 2077 claims.
+Snapshot: 668 public / 332 draft / 2102 claims.
 
 ## Summary
 
@@ -34,15 +34,15 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 | 9 | low_confidence_public | `health/strength-training` | low | 1/1 (100.0%) | 4 | source=pass; claim=pass; summary=pass | keep_public |
 | 10 | risk_fallback | `game-development/agent-tools` | medium | 5/5 (100.0%) | 6 | source=pass; claim=pass; summary=pass | keep_public |
 | 11 | risk_fallback | `science/plate-tectonics` | medium | 2/2 (100.0%) | 6 | source=pass; claim=pass; summary=pass | keep_public |
-| 12 | risk_fallback | `ai/diffusion-models-ddpm-stable-diffusion-and-score-based-generative-modeling` | medium | 3/3 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
-| 13 | risk_fallback | `ai/gradient-descent` | medium | 2/2 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
-| 14 | risk_fallback | `ai/reinforcement-learning` | medium | 2/2 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
-| 15 | risk_fallback | `ai/tokenization-in-nlp` | medium | 3/3 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
-| 16 | risk_fallback | `arts/digital-art` | medium | 3/3 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
-| 17 | risk_fallback | `arts/world-literature` | medium | 2/2 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
-| 18 | risk_fallback | `computer-science/code-review-best-practices` | medium | 5/5 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
-| 19 | risk_fallback | `computer-science/php-language` | medium | 5/5 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
-| 20 | risk_fallback | `computer-science/playwright` | medium | 5/5 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
+| 12 | risk_fallback | `ai/ai-for-art-and-creativity-gans-diffusion-and-computational-aesthetics` | medium | 5/5 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
+| 13 | risk_fallback | `ai/ai-for-audio-processing-speech-recognition-music-generation-and-sound-understanding` | medium | 4/4 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
+| 14 | risk_fallback | `ai/ai-for-augmented-reality-real-time-object-detection-depth-estimation-and-scene-understanding` | medium | 5/5 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
+| 15 | risk_fallback | `ai/diffusion-models-ddpm-stable-diffusion-and-score-based-generative-modeling` | medium | 3/3 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
+| 16 | risk_fallback | `ai/gradient-descent` | medium | 2/2 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
+| 17 | risk_fallback | `ai/nerf-neural-radiance-fields-for-view-synthesis` | medium | 4/4 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
+| 18 | risk_fallback | `ai/reinforcement-learning` | medium | 2/2 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
+| 19 | risk_fallback | `ai/tokenization-in-nlp` | medium | 3/3 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
+| 20 | risk_fallback | `arts/digital-art` | medium | 3/3 (100.0%) | 5 | source=pass; claim=pass; summary=pass | keep_public |
 
 ## Article Findings
 
@@ -211,7 +211,52 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 12. Diffusion Models: DDPM, Stable Diffusion, and Score-Based Generative Modeling
+### 12. AI for Art and Creativity: GANs, Diffusion, and Computational Aesthetics
+
+- canonical slug: `ai/ai-for-art-and-creativity-gans-diffusion-and-computational-aesthetics`
+- canonical URL: https://anchorfact.org/ai/ai-for-art-and-creativity-gans-diffusion-and-computational-aesthetics/
+- bucket: `risk_fallback`
+- confidence: `medium` (verified_sources, score 0.855)
+- verified source coverage: 5/5 (100.0%)
+- claims: 5 total, 0 capped, 0 missing evidence
+- quality reasons: none
+- source-title match: `pass`
+- claim-evidence match: `pass`
+- title-summary accuracy: `pass`
+- hygiene flags: none
+- recommendation: `keep_public`
+
+### 13. AI for Audio Processing: Speech Recognition, Music Generation, and Sound Understanding
+
+- canonical slug: `ai/ai-for-audio-processing-speech-recognition-music-generation-and-sound-understanding`
+- canonical URL: https://anchorfact.org/ai/ai-for-audio-processing-speech-recognition-music-generation-and-sound-understanding/
+- bucket: `risk_fallback`
+- confidence: `medium` (verified_sources, score 0.82)
+- verified source coverage: 4/4 (100.0%)
+- claims: 5 total, 0 capped, 0 missing evidence
+- quality reasons: none
+- source-title match: `pass`
+- claim-evidence match: `pass`
+- title-summary accuracy: `pass`
+- hygiene flags: none
+- recommendation: `keep_public`
+
+### 14. AI for Augmented Reality: Real-Time Object Detection, Depth Estimation, and Scene Understanding
+
+- canonical slug: `ai/ai-for-augmented-reality-real-time-object-detection-depth-estimation-and-scene-understanding`
+- canonical URL: https://anchorfact.org/ai/ai-for-augmented-reality-real-time-object-detection-depth-estimation-and-scene-understanding/
+- bucket: `risk_fallback`
+- confidence: `medium` (verified_sources, score 0.83)
+- verified source coverage: 5/5 (100.0%)
+- claims: 5 total, 0 capped, 0 missing evidence
+- quality reasons: none
+- source-title match: `pass`
+- claim-evidence match: `pass`
+- title-summary accuracy: `pass`
+- hygiene flags: none
+- recommendation: `keep_public`
+
+### 15. Diffusion Models: DDPM, Stable Diffusion, and Score-Based Generative Modeling
 
 - canonical slug: `ai/diffusion-models-ddpm-stable-diffusion-and-score-based-generative-modeling`
 - canonical URL: https://anchorfact.org/ai/diffusion-models-ddpm-stable-diffusion-and-score-based-generative-modeling/
@@ -226,7 +271,7 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 13. Gradient Descent and Optimization
+### 16. Gradient Descent and Optimization
 
 - canonical slug: `ai/gradient-descent`
 - canonical URL: https://anchorfact.org/ai/gradient-descent/
@@ -241,7 +286,22 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 14. Reinforcement Learning
+### 17. NeRF: Neural Radiance Fields for View Synthesis
+
+- canonical slug: `ai/nerf-neural-radiance-fields-for-view-synthesis`
+- canonical URL: https://anchorfact.org/ai/nerf-neural-radiance-fields-for-view-synthesis/
+- bucket: `risk_fallback`
+- confidence: `medium` (verified_sources, score 0.82)
+- verified source coverage: 4/4 (100.0%)
+- claims: 5 total, 0 capped, 0 missing evidence
+- quality reasons: none
+- source-title match: `pass`
+- claim-evidence match: `pass`
+- title-summary accuracy: `pass`
+- hygiene flags: none
+- recommendation: `keep_public`
+
+### 18. Reinforcement Learning
 
 - canonical slug: `ai/reinforcement-learning`
 - canonical URL: https://anchorfact.org/ai/reinforcement-learning/
@@ -256,7 +316,7 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 15. Tokenization in NLP
+### 19. Tokenization in NLP
 
 - canonical slug: `ai/tokenization-in-nlp`
 - canonical URL: https://anchorfact.org/ai/tokenization-in-nlp/
@@ -271,73 +331,13 @@ The sample is selected from public manifest entries only. Buckets are fixed at 8
 - hygiene flags: none
 - recommendation: `keep_public`
 
-### 16. Digital Art
+### 20. Digital Art
 
 - canonical slug: `arts/digital-art`
 - canonical URL: https://anchorfact.org/arts/digital-art/
 - bucket: `risk_fallback`
 - confidence: `medium` (verified_sources, score 0.725)
 - verified source coverage: 3/3 (100.0%)
-- claims: 5 total, 0 capped, 0 missing evidence
-- quality reasons: none
-- source-title match: `pass`
-- claim-evidence match: `pass`
-- title-summary accuracy: `pass`
-- hygiene flags: none
-- recommendation: `keep_public`
-
-### 17. World Literature
-
-- canonical slug: `arts/world-literature`
-- canonical URL: https://anchorfact.org/arts/world-literature/
-- bucket: `risk_fallback`
-- confidence: `medium` (verified_sources, score 0.685)
-- verified source coverage: 2/2 (100.0%)
-- claims: 5 total, 0 capped, 0 missing evidence
-- quality reasons: none
-- source-title match: `pass`
-- claim-evidence match: `pass`
-- title-summary accuracy: `pass`
-- hygiene flags: none
-- recommendation: `keep_public`
-
-### 18. Code Review Best Practices
-
-- canonical slug: `computer-science/code-review-best-practices`
-- canonical URL: https://anchorfact.org/computer-science/code-review-best-practices/
-- bucket: `risk_fallback`
-- confidence: `medium` (verified_sources, score 0.725)
-- verified source coverage: 5/5 (100.0%)
-- claims: 5 total, 0 capped, 0 missing evidence
-- quality reasons: none
-- source-title match: `pass`
-- claim-evidence match: `pass`
-- title-summary accuracy: `pass`
-- hygiene flags: none
-- recommendation: `keep_public`
-
-### 19. PHP Language
-
-- canonical slug: `computer-science/php-language`
-- canonical URL: https://anchorfact.org/computer-science/php-language/
-- bucket: `risk_fallback`
-- confidence: `medium` (verified_sources, score 0.725)
-- verified source coverage: 5/5 (100.0%)
-- claims: 5 total, 0 capped, 0 missing evidence
-- quality reasons: none
-- source-title match: `pass`
-- claim-evidence match: `pass`
-- title-summary accuracy: `pass`
-- hygiene flags: none
-- recommendation: `keep_public`
-
-### 20. Playwright
-
-- canonical slug: `computer-science/playwright`
-- canonical URL: https://anchorfact.org/computer-science/playwright/
-- bucket: `risk_fallback`
-- confidence: `medium` (verified_sources, score 0.725)
-- verified source coverage: 5/5 (100.0%)
 - claims: 5 total, 0 capped, 0 missing evidence
 - quality reasons: none
 - source-title match: `pass`

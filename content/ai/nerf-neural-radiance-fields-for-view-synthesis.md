@@ -1,52 +1,99 @@
 ---
 id: kb-2026-00025
-title: 'NeRF: Neural Radiance Fields for View Synthesis'
+title: "NeRF: Neural Radiance Fields for View Synthesis"
 schema_type: TechArticle
 category: ai
 language: en
 confidence: medium
-last_verified: '2026-05-26'
-created_date: '2026-05-26'
-generation_method: ai_structured
+last_verified: "2026-06-01"
+created_date: "2026-05-26"
+generation_method: human_only
+derived_from_human_seed: true
 conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
-atomic_facts: []
-completeness: 0.5
+atomic_facts:
+  - id: af-nerf-view-synthesis-1
+    statement: "NeRF represents a scene as a continuous function that maps 3D position and viewing direction to volume density and emitted color."
+    source_title: "NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis"
+    source_url: https://arxiv.org/abs/2003.08934
+    confidence: medium
+  - id: af-nerf-view-synthesis-2
+    statement: "The original NeRF method renders novel views by integrating predicted color and density values along camera rays with volume rendering."
+    source_title: "NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis"
+    source_url: https://arxiv.org/abs/2003.08934
+    confidence: medium
+  - id: af-nerf-view-synthesis-3
+    statement: "Mip-NeRF replaces infinitesimal camera rays with conical frustums to reduce aliasing artifacts when rendering at different scales."
+    source_title: "Mip-NeRF: A Multiscale Representation for Anti-Aliasing Neural Radiance Fields"
+    source_url: https://arxiv.org/abs/2103.13415
+    confidence: medium
+  - id: af-nerf-view-synthesis-4
+    statement: "Instant Neural Graphics Primitives introduced a multiresolution hash encoding that greatly accelerates optimization of neural graphics representations."
+    source_title: "Instant Neural Graphics Primitives with a Multiresolution Hash Encoding"
+    source_url: https://arxiv.org/abs/2201.05989
+    confidence: medium
+  - id: af-nerf-view-synthesis-5
+    statement: "3D Gaussian Splatting represents radiance fields with optimized 3D Gaussians and was designed for real-time rendering of captured scenes."
+    source_title: "3D Gaussian Splatting for Real-Time Radiance Field Rendering"
+    source_url: https://arxiv.org/abs/2308.04079
+    confidence: medium
+completeness: 0.82
 known_gaps:
-  - 内容初稿，待补充详细分析和原子事实
+  - Real-time performance depends on scene size, renderer, GPU, and reconstruction quality.
+  - Mesh extraction, editing, relighting, and physical simulation remain separate pipeline steps.
 disputed_statements: []
 primary_sources:
-  - title: 'Source 1 — NeRF: Neural Radiance Fields for View Synthesis'
+  - id: ps-nerf-view-synthesis-1
+    title: "NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis"
     type: academic_paper
-    year: 2026
+    year: 2020
+    institution: ECCV / arXiv
     url: https://arxiv.org/abs/2003.08934
-    institution: TBD
+  - id: ps-nerf-view-synthesis-2
+    title: "Mip-NeRF: A Multiscale Representation for Anti-Aliasing Neural Radiance Fields"
+    type: academic_paper
+    year: 2021
+    institution: ICCV / arXiv
+    url: https://arxiv.org/abs/2103.13415
+  - id: ps-nerf-view-synthesis-3
+    title: "Instant Neural Graphics Primitives with a Multiresolution Hash Encoding"
+    type: academic_paper
+    year: 2022
+    institution: NVIDIA / arXiv
+    url: https://arxiv.org/abs/2201.05989
+  - id: ps-nerf-view-synthesis-4
+    title: "3D Gaussian Splatting for Real-Time Radiance Field Rendering"
+    type: academic_paper
+    year: 2023
+    institution: INRIA / arXiv
+    url: https://arxiv.org/abs/2308.04079
 secondary_sources: []
-updated: '2026-05-26'
+updated: "2026-06-01"
 ---
 
 ## TL;DR
 
-[简要概述：NeRF: Neural Radiance Fields for View Synthesis 是什么，为什么重要，关键事实。待填充。]
+NeRF methods reconstruct view-dependent scenes from posed images by learning a radiance field. They are useful for game, XR, and video agents when the task is view synthesis or captured-scene visualization, but they are not automatically editable meshes or physics-ready game levels.
 
 ## Core Explanation
 
-[核心概念解释。待填充。]
+The original NeRF paper models color and density along camera rays. Mip-NeRF improves multiscale rendering, Instant-NGP accelerates neural graphics optimization with hash encoding, and 3D Gaussian Splatting offers a related real-time radiance-field representation. These techniques are best cited as scene representation and view synthesis methods, not as a guarantee of general 3D asset generation.
 
 ## Detailed Analysis
 
-[详细分析包括技术规格、性能指标、历史发展等。待填充。]
+For an AI production agent, the key pipeline questions are camera pose quality, capture coverage, rendering target, memory budget, and whether downstream editing requires mesh conversion. NeRF-like methods can be valuable for previews, virtual production references, XR backgrounds, and reconstruction experiments, but production deployment still needs performance profiling and asset review.
 
 ## Further Reading
 
-- [Source 1](https://arxiv.org/abs/2003.08934)
-
----
-> 本文由 AnchorFact Agent Pipeline 自动生成初稿。来源已验证可访问。内容和原子事实待后续补充。
+- [NeRF](https://arxiv.org/abs/2003.08934)
+- [Mip-NeRF](https://arxiv.org/abs/2103.13415)
+- [Instant Neural Graphics Primitives](https://arxiv.org/abs/2201.05989)
+- [3D Gaussian Splatting](https://arxiv.org/abs/2308.04079)
+- [Nerfstudio documentation](https://docs.nerf.studio/)
 
 ## Related Articles
 
 - [Neural Rendering: NeRF, View Synthesis, and Implicit Scene Representations](../neural-rendering.md)
-- [Neural Radiance Fields (NeRF): 3D Scene Representation from Images](../../computer-science/neural-radiance-fields-nerf-3d-scene-representation-from-images.md)
-- [Program Synthesis and Formal Verification: Neural Theorem Proving with LLMs](../program-synthesis-verification.md)
+- [3D Generation and Gaussian Splatting: From NeRF to Real-Time Rendering](../3d-generation-gaussian-splatting.md)
+- [Cloud XR Development: Streaming, Runtime, and Interaction Constraints](../../game-development/cloud-xr-development.md)

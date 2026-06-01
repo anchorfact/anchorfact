@@ -2,13 +2,13 @@
   "summary": {
     "generated": "2026-05-27T14:00:00.000Z",
     "total_articles": 1000,
-    "total_with_errors": 221,
-    "average_sources_per_article": "2.4",
-    "overall_verification_rate": "84.1%",
+    "total_with_errors": 208,
+    "average_sources_per_article": "2.5",
+    "overall_verification_rate": "84.2%",
     "elapsed_ms": 635005,
     "elapsed_sec": "635.0",
     "concurrency": 3,
-    "manual_reviewed_articles": 642
+    "manual_reviewed_articles": 647
   },
   "articles": [
     {
@@ -2600,28 +2600,104 @@
     {
       "file": "content/ai/ai-for-art-and-creativity-gans-diffusion-and-computational-aesthetics.md",
       "article_id": "kb-2026-00003",
-      "generation_method": "ai_structured",
-      "sources_total": 1,
+      "generation_method": "human_only",
+      "sources_total": 5,
       "verification_results": [
         {
-          "source_title": "Source 1 — AI for Art and Creativity: GANs, Diffusion, and Computational Aesthetics",
+          "source_title": "Generative Adversarial Nets",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2306.03227",
-              "verified": false,
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1406.2661",
+              "verified": true,
               "metadata": {
-                "error": "arXiv returned 429"
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI media, AR, and WebGPU content batch; local verify-full was not run for this bounded manual-review update."
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "Denoising Diffusion Probabilistic Models",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2006.11239",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI media, AR, and WebGPU content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "High-Resolution Image Synthesis with Latent Diffusion Models",
+          "source_type": "conference_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2112.10752",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI media, AR, and WebGPU content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Learning Transferable Visual Models From Natural Language Supervision",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2103.00020",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI media, AR, and WebGPU content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "C2PA Technical Specification",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://spec.c2pa.org/specifications/specifications/2.1/specs/C2PA_Specification.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI media, AR, and WebGPU content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 1
+      "sources_verified": 5,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-06-01"
     },
     {
       "file": "content/ai/ai-for-astronomy.md",
@@ -2671,19 +2747,75 @@
     {
       "file": "content/ai/ai-for-audio-processing-speech-recognition-music-generation-and-sound-understanding.md",
       "article_id": "kb-2026-00002",
-      "generation_method": "ai_structured",
-      "sources_total": 1,
+      "generation_method": "human_only",
+      "sources_total": 4,
       "verification_results": [
         {
-          "source_title": "Source 1 — AI for Audio Processing: Speech Recognition, Music Generation, and Sound Understanding",
+          "source_title": "Robust Speech Recognition via Large-Scale Weak Supervision",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2105.01703",
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2212.04356",
               "verified": true,
               "metadata": {
-                "title": "arXiv Query: search_query=&amp;id_list=2105.01703&amp;start=0&amp;max_results=1"
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI media, AR, and WebGPU content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "AST: Audio Spectrogram Transformer",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2104.01778",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI media, AR, and WebGPU content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "AudioLM: a Language Modeling Approach to Audio Generation",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2209.03143",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI media, AR, and WebGPU content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "MusicLM: Generating Music From Text",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2301.11325",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI media, AR, and WebGPU content batch; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -2691,8 +2823,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 4,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-06-01"
     },
     {
       "file": "content/ai/ai-for-audio-processing.md",
@@ -2743,19 +2877,93 @@
     {
       "file": "content/ai/ai-for-augmented-reality-real-time-object-detection-depth-estimation-and-scene-understanding.md",
       "article_id": "kb-2026-00004",
-      "generation_method": "ai_structured",
-      "sources_total": 1,
+      "generation_method": "human_only",
+      "sources_total": 5,
       "verification_results": [
         {
-          "source_title": "Source 1 — AI for Augmented Reality: Real-Time Object Detection, Depth Estimation, and Scene Understanding",
+          "source_title": "ARCore Depth API",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.google.com/ar/develop/depth",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI media, AR, and WebGPU content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Working with anchors",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.google.com/ar/develop/anchors",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI media, AR, and WebGPU content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "MediaPipe Object Detector",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://ai.google.dev/edge/mediapipe/solutions/vision/object_detector",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI media, AR, and WebGPU content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Segment Anything",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2304.08485",
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2304.02643",
               "verified": true,
               "metadata": {
-                "title": "arXiv Query: search_query=&amp;id_list=2304.08485&amp;start=0&amp;max_results=1"
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI media, AR, and WebGPU content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Towards Robust Monocular Depth Estimation: Mixing Datasets for Zero-shot Cross-dataset Transfer",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/1907.01341",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI media, AR, and WebGPU content batch; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -2763,8 +2971,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 5,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-06-01"
     },
     {
       "file": "content/ai/ai-for-augmented-reality.md",
@@ -15157,19 +15367,75 @@
     {
       "file": "content/ai/nerf-neural-radiance-fields-for-view-synthesis.md",
       "article_id": "kb-2026-00025",
-      "generation_method": "ai_structured",
-      "sources_total": 1,
+      "generation_method": "human_only",
+      "sources_total": 4,
       "verification_results": [
         {
-          "source_title": "Source 1 — NeRF: Neural Radiance Fields for View Synthesis",
+          "source_title": "NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "arxiv",
-              "identifier": "2003.08934",
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2003.08934",
               "verified": true,
               "metadata": {
-                "title": "arXiv Query: search_query=&amp;id_list=2003.08934&amp;start=0&amp;max_results=1"
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI media, AR, and WebGPU content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Mip-NeRF: A Multiscale Representation for Anti-Aliasing Neural Radiance Fields",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2103.13415",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI media, AR, and WebGPU content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Instant Neural Graphics Primitives with a Multiresolution Hash Encoding",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2201.05989",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI media, AR, and WebGPU content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "3D Gaussian Splatting for Real-Time Radiance Field Rendering",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arxiv.org/abs/2308.04079",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI media, AR, and WebGPU content batch; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -15177,8 +15443,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 4,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-06-01"
     },
     {
       "file": "content/ai/network-intrusion-detection.md",
@@ -36378,20 +36646,57 @@
     {
       "file": "content/computer-science/webgpu-next-generation-web-graphics-and-compute-api.md",
       "article_id": "kb-2026-00004",
-      "generation_method": "ai_structured",
-      "sources_total": 1,
+      "generation_method": "human_only",
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Source 1 — WebGPU: Next-Generation Web Graphics and Compute API",
-          "source_type": "blog_post",
+          "source_title": "WebGPU",
+          "source_type": "standard",
           "results": [
             {
               "method": "url",
               "identifier": "https://www.w3.org/TR/webgpu/",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://www.w3.org/TR/webgpu/"
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI media, AR, and WebGPU content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "WebGPU Shading Language",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.w3.org/TR/WGSL/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI media, AR, and WebGPU content batch; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "WebGPU API",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/API/WebGPU_API",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-01",
+                "note": "Focused AI media, AR, and WebGPU content batch; local verify-full was not run for this bounded manual-review update."
               },
               "match": true
             }
@@ -36399,8 +36704,10 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-06-01"
     },
     {
       "file": "content/computer-science/webgpu.md",
