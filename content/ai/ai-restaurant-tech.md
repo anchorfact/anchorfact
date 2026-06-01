@@ -5,7 +5,7 @@ schema_type: article
 category: ai
 language: en
 confidence: high
-last_verified: "2026-05-24"
+last_verified: "2026-06-01"
 created_date: "2026-05-24"
 generation_method: ai_structured
 ai_models:
@@ -18,33 +18,35 @@ completeness: 0.85
 atomic_facts:
   - id: af-ai-restaurant-tech-1
     statement: >-
-      AI restaurant technology (2023-2026): (1) Voice AI ordering -- companies like SoundHound, ConverseNow, and Valyant AI deploy conversational AI for drive-thru and phone ordering at White Castle,
-      Panera, and Checkers, handling 80%+ of orders without human intervention; (2) Computer vision kitchen -- PreciTaste and Agot AI use overhead cameras to monitor food preparation, ensure order
-      accuracy, and predict when food will be ready; (3) Dynamic menu pricing -- AI adjusts prices based on demand, time, weather, and inventory.
-    source_title: SoundHound voice AI ordering / ConverseNow / Valyant AI / PreciTaste kitchen AI / Agot AI / Presto Voice AI
-    source_url: https://arxiv.org/search/?query=restaurant+AI+voice+ordering+kitchen+automation
-    confidence: high
+      Research on AI and robotics in restaurants describes mobile apps, kiosks, chatbots, and service robots as technologies that can change guest-facing ordering and service while automating
+      selected restaurant operations, but it frames restaurants as high-contact services where automation must be balanced with human service quality.
+    source_title: "AI and robotics in the European restaurant sector: Assessing potentials for process innovation in a high-contact service industry"
+    source_url: https://doi.org/10.1007/s12525-020-00443-2
+    source_doi: 10.1007/s12525-020-00443-2
+    confidence: medium
   - id: af-ai-restaurant-tech-2
     statement: >-
-      AI restaurant personalization (2024-2026): CRM AI (Toast, Lunchbox, Olo) analyzes order history to recommend items, predict future orders, and personalize loyalty offers. McDonald's Dynamic
-      Yield (acquired 2019, sold 2021 but technology retained) personalizes drive-thru menu boards based on weather (ice cream on hot days), time of day (coffee in morning), and trending items,
-      increasing average check by 3-7%.
-    source_title: McDonald's Dynamic Yield / Toast AI / Lunchbox / Olo / SevenRooms restaurant CRM AI
-    source_url: https://arxiv.org/search/?query=drive+thru+AI+voice+ordering
-    confidence: high
+      A systematic review of service robots in restaurant businesses found that 2018-2023 research focused heavily on customer acceptance, satisfaction, revisit intention, trust, perceived risk,
+      preference, and human-robot interaction, with fewer studies on chef-service robots, future development, and operational quality.
+    source_title: "Artificial intelligence in restaurant businesses: a systematic review on service robots"
+    source_url: https://doi.org/10.1108/WHATT-03-2024-0058
+    source_doi: 10.1108/WHATT-03-2024-0058
+    confidence: medium
 primary_sources:
   - id: ps-ai-restaurant-tech-1
-    title: "AI in Restaurant Technology: Voice Ordering, Kitchen Automation, and Personalization (2024-2025 Survey)"
-    type: academic_paper
-    year: 2025
-    institution: Cornell Hospitality Quarterly / arXiv
-    url: https://arxiv.org/search/?query=restaurant+AI+voice+ordering+kitchen+automation
+    title: "AI and robotics in the European restaurant sector: Assessing potentials for process innovation in a high-contact service industry"
+    type: journal_article
+    year: 2020
+    institution: Electronic Markets
+    doi: 10.1007/s12525-020-00443-2
+    url: https://doi.org/10.1007/s12525-020-00443-2
   - id: ps-ai-restaurant-tech-2
-    title: "Conversational AI for Quick-Service Restaurants: Drive-Thru Automation and Multi-Language Order Processing"
-    type: academic_paper
-    year: 2025
-    institution: Interspeech / ACL Industry / arXiv
-    url: https://arxiv.org/search/?query=drive+thru+AI+voice+ordering
+    title: "Artificial intelligence in restaurant businesses: a systematic review on service robots"
+    type: journal_article
+    year: 2024
+    institution: Worldwide Hospitality and Tourism Themes
+    doi: 10.1108/WHATT-03-2024-0058
+    url: https://doi.org/10.1108/WHATT-03-2024-0058
 known_gaps:
   - End-to-end autonomous restaurant with no human staff
   - AI food quality inspection (taste, texture, presentation)
@@ -78,16 +80,16 @@ secondary_sources:
       - National Restaurant Association / McKinsey
     institution: NRA / McKinsey
     url: https://restaurant.org/research-reports/state-of-restaurant-technology/
-updated: "2026-05-24"
+updated: "2026-06-01"
 ---
 ## TL;DR
-AI is taking your order, cooking your food, and personalizing your meal -- from voice AI at drive-thrus to computer vision in kitchens. McDonald's, White Castle, and Sweetgreen deploy AI across ordering, preparation, and personalization, transforming the restaurant experience.
+AI restaurant technology applies conversational interfaces, kiosks, service robots, computer vision, forecasting, and recommendation systems to ordering, service, kitchen coordination, staffing, and marketing. The reliable evidence points to targeted process automation and decision support, not fully autonomous restaurants.
 
 ## Core Explanation
-Restaurant AI: (1) Ordering -- voice AI (SoundHound, ConverseNow) handles drive-thru and phone orders. Understands natural speech ("I'll have a number 3, no pickles, extra cheese, and a large Coke"). Handles accents, background noise, and menu modifications; (2) Kitchen -- computer vision tracks food preparation, ensuring order accuracy (did the cook forget no pickles?) and predicting completion time. Thermal cameras monitor food safety; (3) Personalization -- AI CRM recommends items based on order history. Dynamic menu boards adapt to context.
+Restaurant AI stack: (1) Guest interaction -- chatbots, kiosks, voice ordering, menu recommendation, and loyalty personalization; (2) Service automation -- robots for reception, delivery, bussing, or constrained food-service tasks; (3) Kitchen and operations -- demand forecasting, prep timing, inventory support, computer vision checks, and labor planning; (4) Management -- analytics for menu design, throughput, pricing experiments, and customer feedback. Adoption depends on task fit, service expectations, integration with POS and kitchen systems, and the tolerance of guests and staff for automation.
 
 ## Detailed Analysis
-White Castle (2021-2025): MasterCard AI-powered drive-thru (SoundHound) deployed at select locations. Averages 90% order accuracy. Panera (2022): OpenCity Tori voice AI for phone orders. Sweetgreen (2023): Infinite Kitchen -- robotic bowl assembly using computer vision. McDonald's Dynamic Yield: personalizes drive-thru menu in real-time. Features: suggest items based on what's in the order so far, trending items (social proof), weather-based suggestions. Result: 3-7% average check increase. Toast: restaurant POS + AI platform used by 100K+ restaurants. AI features: menu optimization (identify underperforming items), labor scheduling (predict traffic for staffing). Key challenge: voice AI with non-native accents and strong regional dialects. Continuous training on diverse speech data.
+The best near-term uses are narrow, measurable workflows: taking routine orders, routing online orders into kitchen queues, forecasting rush periods, recommending add-ons, checking whether a station is behind, and surfacing repeat-customer preferences to staff. Service robots and conversational systems can help with throughput, but restaurant service remains a high-contact setting, so deployments need handoff paths, staff override, accessibility support, privacy controls, and measurement of customer trust rather than only labor savings or order volume.
 
 ## Related Articles
 

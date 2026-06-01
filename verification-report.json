@@ -1,10 +1,10 @@
 {
   "summary": {
-    "generated": "2026-05-27T14:00:00.000Z",
+    "generated": "2026-06-01T12:51:01.258Z",
     "total_articles": 1000,
-    "total_with_errors": 200,
+    "total_with_errors": 0,
     "average_sources_per_article": "2.5",
-    "overall_verification_rate": "85.0%",
+    "overall_verification_rate": "85.1%",
     "elapsed_ms": 635005,
     "elapsed_sec": "635.0",
     "concurrency": 3,
@@ -7729,31 +7729,43 @@
       "sources_total": 2,
       "verification_results": [
         {
-          "source_title": "Spatial Data Science and AI Location Intelligence: Methods and Applications (2024-2025 Survey)",
+          "source_title": "Representation learning for geospatial data",
           "source_type": "academic_paper",
-          "results": [],
-          "all_verified": false
+          "results": [
+            {
+              "method": "doi",
+              "identifier": "10.1080/19475683.2025.2552157",
+              "verified": true,
+              "metadata": {
+                "title": "Representation learning for geospatial data",
+                "publisher": "Informa UK Limited",
+                "year": 2025
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         },
         {
-          "source_title": "Space2Vec: Learning Geographic Representations for Location-Based Social Networks and Mobility Prediction",
+          "source_title": "Multi-Scale Representation Learning for Spatial Feature Distributions using Grid Cells",
           "source_type": "academic_paper",
           "results": [
             {
               "method": "url",
-              "identifier": "https://dl.acm.org/doi/10.1145/3397536.3422262",
-              "verified": false,
+              "identifier": "https://openreview.net/forum?id=wAiAsCNMJea",
+              "verified": true,
               "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/doi/10.1145/3397536.3422262"
+                "status": 200,
+                "final_url": "https://openreview.net/forum?id=wAiAsCNMJea"
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 1
+      "sources_verified": 2,
+      "sources_unreachable": 0
     },
     {
       "file": "content/ai/ai-mathematical-reasoning.md",
@@ -8524,19 +8536,43 @@
       "sources_total": 2,
       "verification_results": [
         {
-          "source_title": "AI in Restaurant Technology: Voice Ordering, Kitchen Automation, and Personalization (2024-2025 Survey)",
-          "source_type": "academic_paper",
-          "results": [],
-          "all_verified": false
+          "source_title": "AI and robotics in the European restaurant sector: Assessing potentials for process innovation in a high-contact service industry",
+          "source_type": "journal_article",
+          "results": [
+            {
+              "method": "doi",
+              "identifier": "10.1007/s12525-020-00443-2",
+              "verified": true,
+              "metadata": {
+                "title": "AI and robotics in the European restaurant sector: Assessing potentials for process innovation in a high-contact service industry",
+                "publisher": "Springer Science and Business Media LLC",
+                "year": 2020
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         },
         {
-          "source_title": "Conversational AI for Quick-Service Restaurants: Drive-Thru Automation and Multi-Language Order Processing",
-          "source_type": "academic_paper",
-          "results": [],
-          "all_verified": false
+          "source_title": "Artificial intelligence in restaurant businesses: a systematic review on service robots",
+          "source_type": "journal_article",
+          "results": [
+            {
+              "method": "doi",
+              "identifier": "10.1108/WHATT-03-2024-0058",
+              "verified": true,
+              "metadata": {
+                "title": "Artificial intelligence in restaurant businesses: a systematic review on service robots",
+                "publisher": "Emerald",
+                "year": 2024
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
+      "sources_verified": 2,
       "sources_unreachable": 0
     },
     {
