@@ -469,7 +469,15 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'computer-science/api-request-signing-and-hmac-authentication',
     'computer-science/data-mesh-domain-ownership-and-data-products',
     'computer-science/code-index-formats-lsif-and-scip',
-    'ai/dense-retrieval-bi-encoders-and-dual-encoders'
+    'ai/dense-retrieval-bi-encoders-and-dual-encoders',
+    'ai/agent-workspace-filesystem-and-path-context',
+    'ai/agent-terminal-output-and-exit-status',
+    'ai/browser-devtools-protocol-for-agents',
+    'computer-science/accessibility-tree-and-aria-for-ui-agents',
+    'computer-science/package-lockfiles-and-reproducible-installs',
+    'computer-science/semantic-versioning-and-version-constraints',
+    'computer-science/data-profiling-and-column-statistics',
+    'computer-science/data-access-audit-logs-and-query-history'
   ]) {
     assert(slugs.includes(slug), `missing agent/code-intelligence readiness slug ${slug}`);
   }

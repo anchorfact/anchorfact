@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-02T14:55:03.089Z",
-    "total_articles": 1315,
+    "generated": "2026-06-02T15:31:43.538Z",
+    "total_articles": 1323,
     "total_with_errors": 0,
     "average_sources_per_article": "2.6",
-    "overall_verification_rate": "90.3%",
-    "elapsed_ms": 161879,
-    "elapsed_sec": "161.9",
+    "overall_verification_rate": "90.4%",
+    "elapsed_ms": 146479,
+    "elapsed_sec": "146.5",
     "concurrency": 3
   },
   "articles": [
@@ -5043,6 +5043,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\agent-terminal-output-and-exit-status.md",
+      "article_id": "agent-terminal-output-and-exit-status",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Python subprocess",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.python.org/3/library/subprocess.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.python.org/3/library/subprocess.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Node.js child_process",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://nodejs.org/api/child_process.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://nodejs.org/api/child_process.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GitHub Actions Exit Codes",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/actions/how-tos/create-and-publish-actions/set-exit-codes",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/actions/how-tos/create-and-publish-actions/set-exit-codes"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\agent-ticket-and-issue-tracker-lookup.md",
       "article_id": "agent-ticket-and-issue-tracker-lookup",
       "generation_method": "ai_structured",
@@ -5886,6 +5947,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://docs.cloud.google.com/iam/docs/workload-identity-federation"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-workspace-filesystem-and-path-context.md",
+      "article_id": "agent-workspace-filesystem-and-path-context",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "GitHub Actions Variables",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/actions/reference/workflows-and-actions/variables",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/actions/reference/workflows-and-actions/variables"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Docker Bind Mounts",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.docker.com/engine/storage/bind-mounts/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.docker.com/engine/storage/bind-mounts/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Kubernetes Volumes",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kubernetes.io/docs/concepts/storage/volumes/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://kubernetes.io/docs/concepts/storage/volumes/"
               },
               "match": true
             }
@@ -16283,6 +16405,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\browser-devtools-protocol-for-agents.md",
+      "article_id": "browser-devtools-protocol-for-agents",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Chrome DevTools Protocol",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://chromedevtools.github.io/devtools-protocol/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://chromedevtools.github.io/devtools-protocol/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Puppeteer CDPSession",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://pptr.dev/api/puppeteer.cdpsession",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://pptr.dev/api/puppeteer.cdpsession"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Playwright CDPSession",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://playwright.dev/docs/api/class-cdpsession",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://playwright.dev/docs/api/class-cdpsession"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content/ai/causal-inference-ai.md",
       "article_id": "causal-inference-ai",
       "generation_method": "ai_structured",
@@ -17551,6 +17734,67 @@
       "sources_unreachable": 0,
       "manual_reviewed": true,
       "manual_reviewed_at": "2026-05-30"
+    },
+    {
+      "file": "content\\ai\\dense-retrieval-bi-encoders-and-dual-encoders.md",
+      "article_id": "dense-retrieval-bi-encoders-and-dual-encoders",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Hugging Face Sentence Transformers",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://huggingface.co/docs/hub/en/sentence-transformers",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://huggingface.co/docs/hub/en/sentence-transformers"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Pinecone Semantic Search",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.pinecone.io/guides/search/semantic-search",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.pinecone.io/guides/search/semantic-search"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Pinecone Models Overview",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.pinecone.io/models/overview",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.pinecone.io/models/overview"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content/ai/diffusion-models-ddpm-stable-diffusion-and-score-based-generative-modeling.md",
@@ -34015,6 +34259,67 @@
       "manual_reviewed_at": "2026-06-02"
     },
     {
+      "file": "content\\computer-science\\accessibility-tree-and-aria-for-ui-agents.md",
+      "article_id": "accessibility-tree-and-aria-for-ui-agents",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Chrome DevTools Accessibility Reference",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.chrome.com/docs/devtools/accessibility/reference",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developer.chrome.com/docs/devtools/accessibility/reference?hl=nl"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Chrome DevTools Protocol Accessibility Domain",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://chromedevtools.github.io/devtools-protocol/tot/Accessibility/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://chromedevtools.github.io/devtools-protocol/tot/Accessibility/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "WAI-ARIA 1.2",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.w3.org/TR/wai-aria-1.2/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.w3.org/TR/wai-aria-1.2/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content/computer-science/actor-critic-methods-a2c-a3c-ppo-and-deep-reinforcement-learning.md",
       "article_id": "kb-2026-00019",
       "generation_method": "human_only",
@@ -36081,6 +36386,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://jsonapi.org/profiles/ethanresnick/cursor-pagination/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\api-request-signing-and-hmac-authentication.md",
+      "article_id": "api-request-signing-and-hmac-authentication",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Azure Communication Services Authentication",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://learn.microsoft.com/en-us/rest/api/communication/authentication",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.microsoft.com/en-us/rest/api/communication/authentication"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Azure Communication Services HMAC Header Tutorial",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://learn.microsoft.com/en-us/azure/communication-services/tutorials/hmac-header-tutorial",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.microsoft.com/en-us/azure/communication-services/tutorials/hmac-header-tutorial"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GitHub Validating Webhook Deliveries",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/webhooks/using-webhooks/validating-webhook-deliveries",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/webhooks/using-webhooks/validating-webhook-deliveries"
               },
               "match": true
             }
@@ -40011,6 +40377,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\data-access-audit-logs-and-query-history.md",
+      "article_id": "data-access-audit-logs-and-query-history",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "BigQuery Audit Logs",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://cloud.google.com/bigquery/docs/reference/auditlogs/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/bigquery/docs/reference/auditlogs"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Cloud Audit Logs",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.cloud.google.com/logging/docs/audit",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/logging/docs/audit"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "BigQuery INFORMATION_SCHEMA JOBS",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.cloud.google.com/bigquery/docs/information-schema-jobs",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/bigquery/docs/information-schema-jobs"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\data-backfills-and-replay-pipelines.md",
       "article_id": "data-backfills-and-replay-pipelines",
       "generation_method": "ai_structured",
@@ -41403,6 +41830,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://docs.prefect.io/v3/concepts/flows"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\data-profiling-and-column-statistics.md",
+      "article_id": "data-profiling-and-column-statistics",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Dataplex Data Profiling Overview",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.cloud.google.com/dataplex/docs/data-profiling-overview",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/dataplex/docs/data-profiling-overview"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "BigQuery Data Profile Scan",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.cloud.google.com/bigquery/docs/data-profile-scan",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/bigquery/docs/data-profile-scan"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "BigQuery INFORMATION_SCHEMA COLUMNS",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://cloud.google.com/bigquery/docs/information-schema-columns",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/bigquery/docs/information-schema-columns"
               },
               "match": true
             }
@@ -47585,6 +48073,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://doc.rust-lang.org/cargo/reference/resolver.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\package-lockfiles-and-reproducible-installs.md",
+      "article_id": "package-lockfiles-and-reproducible-installs",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "npm package-lock.json",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.npmjs.com/cli/v11/configuring-npm/package-lock-json",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.npmjs.com/cli/v11/configuring-npm/package-lock-json/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "npm ci",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.npmjs.com/cli/v11/commands/npm-ci",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.npmjs.com/cli/v11/commands/npm-ci/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "pnpm Lockfiles",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://pnpm.io/next/git",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://pnpm.io/next/git"
               },
               "match": true
             }
@@ -69060,67 +69609,6 @@
       "sources_unreachable": 1
     },
     {
-      "file": "content\\ai\\dense-retrieval-bi-encoders-and-dual-encoders.md",
-      "article_id": "dense-retrieval-bi-encoders-and-dual-encoders",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "Hugging Face Sentence Transformers",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://huggingface.co/docs/hub/en/sentence-transformers",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://huggingface.co/docs/hub/en/sentence-transformers"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Pinecone Semantic Search",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.pinecone.io/guides/search/semantic-search",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.pinecone.io/guides/search/semantic-search"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Pinecone Models Overview",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.pinecone.io/models/overview",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.pinecone.io/models/overview"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
-    },
-    {
       "file": "content\\arts\\history-of-printing.md",
       "article_id": "kb-2026-00479",
       "generation_method": "ai_assisted",
@@ -69297,10 +69785,7 @@
               "method": "url",
               "identifier": "https://press.princeton.edu/books/paperback/9780691170817/the-theory-of-games-and-economic-behavior",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://press.princeton.edu/books/paperback/9780691170817/the-theory-of-games-and-economic-behavior"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -69324,10 +69809,7 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/library/view/the-art-of/9781098102593/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.oreilly.com/library/view/the-art-of/9781098102593/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -69390,67 +69872,6 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 1
-    },
-    {
-      "file": "content\\computer-science\\api-request-signing-and-hmac-authentication.md",
-      "article_id": "api-request-signing-and-hmac-authentication",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "Azure Communication Services Authentication",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://learn.microsoft.com/en-us/rest/api/communication/authentication",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://learn.microsoft.com/en-us/rest/api/communication/authentication"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Azure Communication Services HMAC Header Tutorial",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://learn.microsoft.com/en-us/azure/communication-services/tutorials/hmac-header-tutorial",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://learn.microsoft.com/en-us/azure/communication-services/tutorials/hmac-header-tutorial"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "GitHub Validating Webhook Deliveries",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.github.com/en/webhooks/using-webhooks/validating-webhook-deliveries",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.github.com/en/webhooks/using-webhooks/validating-webhook-deliveries"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\bloom-filters-space-efficient-probabilistic-data-structures.md",
@@ -69652,7 +70073,10 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/head-first-design-patterns/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.oreilly.com/head-first-design-patterns/"
+              },
               "match": false
             }
           ],
@@ -69852,10 +70276,7 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/websec/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.oreilly.com/websec/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -69974,10 +70395,7 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/lakehouse/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.oreilly.com/lakehouse/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -70812,7 +71230,10 @@
               "method": "url",
               "identifier": "https://www.mheducation.com/fourier/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.mheducation.com/fourier"
+              },
               "match": false
             }
           ],
@@ -70978,10 +71399,7 @@
               "method": "url",
               "identifier": "https://mitpress.mit.edu/books/introduction-algorithms-5th-edition",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://mitpress.mit.edu/books/introduction-algorithms-5th-edition"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -71039,10 +71457,7 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/grpc/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.oreilly.com/grpc/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -71591,10 +72006,7 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/linux-kernel/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.oreilly.com/linux-kernel/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -71899,7 +72311,10 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/head-first-design-patterns/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.oreilly.com/head-first-design-patterns/"
+              },
               "match": false
             }
           ],
@@ -72011,7 +72426,10 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/websec/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.oreilly.com/websec/"
+              },
               "match": false
             }
           ],
@@ -72204,7 +72622,10 @@
               "method": "url",
               "identifier": "https://www.packtpub.com/redis/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 403,
+                "final_url": "https://www.packtpub.com/redis/"
+              },
               "match": false
             }
           ],
@@ -72523,6 +72944,67 @@
       "sources_unreachable": 1
     },
     {
+      "file": "content\\computer-science\\semantic-versioning-and-version-constraints.md",
+      "article_id": "semantic-versioning-and-version-constraints",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Semantic Versioning 2.0.0",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://semver.org/spec/v2.0.0.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://semver.org/spec/v2.0.0.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Python Version Specifiers",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://packaging.python.org/en/latest/specifications/version-specifiers/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://packaging.python.org/en/latest/specifications/version-specifiers/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Cargo SemVer Compatibility",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://doc.rust-lang.org/cargo/reference/semver.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://doc.rust-lang.org/cargo/reference/semver.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\set-theory.md",
       "article_id": "kb-2026-00192",
       "generation_method": "human_only",
@@ -72790,7 +73272,10 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/websec/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.oreilly.com/websec/"
+              },
               "match": false
             }
           ],
@@ -73051,7 +73536,10 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/systemd/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.oreilly.com/systemd/"
+              },
               "match": false
             }
           ],
@@ -73400,7 +73888,10 @@
               "method": "url",
               "identifier": "https://mitpress.mit.edu/books/types-and-programming-languages",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 403,
+                "final_url": "https://mitpress.mit.edu/books/types-and-programming-languages"
+              },
               "match": false
             }
           ],
