@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-02T14:17:46.221Z",
-    "total_articles": 1307,
+    "generated": "2026-06-02T14:55:03.089Z",
+    "total_articles": 1315,
     "total_with_errors": 0,
     "average_sources_per_article": "2.6",
-    "overall_verification_rate": "90.2%",
-    "elapsed_ms": 177859,
-    "elapsed_sec": "177.9",
+    "overall_verification_rate": "90.3%",
+    "elapsed_ms": 161879,
+    "elapsed_sec": "161.9",
     "concurrency": 3
   },
   "articles": [
@@ -1791,6 +1791,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://docs.docker.com/reference/cli/docker/container/logs/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-context-compaction-and-summarization.md",
+      "article_id": "agent-context-compaction-and-summarization",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "LangGraph Add Memory",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.langchain.com/oss/javascript/langgraph/add-memory",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.langchain.com/oss/javascript/langgraph/add-memory"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "LangChain Short-Term Memory",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.langchain.com/oss/python/langchain/short-term-memory",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.langchain.com/oss/python/langchain/short-term-memory"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "LangMem Short-Term Memory API",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://langchain-ai.github.io/langmem/reference/short_term/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://langchain-ai.github.io/langmem/reference/short_term/"
               },
               "match": true
             }
@@ -4189,6 +4250,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\agent-run-heartbeats-and-lease-renewal.md",
+      "article_id": "agent-run-heartbeats-and-lease-renewal",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Kubernetes Leases",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kubernetes.io/docs/concepts/architecture/leases/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://kubernetes.io/docs/concepts/architecture/leases/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Amazon SQS Visibility Timeout",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-visibility-timeout.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-visibility-timeout.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Celery Worker Heartbeat",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.celeryq.dev/en/latest/internals/reference/celery.worker.heartbeat.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.celeryq.dev/en/latest/internals/reference/celery.worker.heartbeat.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\agent-runbooks-and-incident-response.md",
       "article_id": "agent-runbooks-and-incident-response",
       "generation_method": "ai_structured",
@@ -5581,6 +5703,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://docs.langchain.com/langsmith/evaluation-approaches"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-trajectory-evaluation-and-step-level-traces.md",
+      "article_id": "agent-trajectory-evaluation-and-step-level-traces",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "LangChain Agent Evals",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.langchain.com/oss/python/langchain/evals",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.langchain.com/oss/python/langchain/test/evals"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "LangSmith Evaluation Approaches",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.langchain.com/langsmith/evaluation-approaches",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.langchain.com/langsmith/evaluation-approaches"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenTelemetry Trace API",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://opentelemetry.io/docs/specs/otel/trace/api",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://opentelemetry.io/docs/specs/otel/trace/api/"
               },
               "match": true
             }
@@ -20885,6 +21068,68 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\llm-evaluation-metric-templates-and-scorecards.md",
+      "article_id": "llm-evaluation-metric-templates-and-scorecards",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Vertex AI Define Evaluation Metrics",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/determine-eval",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/determine-eval"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Holistic Evaluation of Language Models",
+          "source_type": "paper",
+          "results": [
+            {
+              "method": "doi",
+              "identifier": "10.1111/nyas.15007",
+              "verified": true,
+              "metadata": {
+                "title": "Holistic Evaluation of Language Models",
+                "publisher": "Wiley",
+                "year": 2023
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Vertex AI Managed Rubric Metrics",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/rubric-metric-details",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/rubric-metric-details?hl=fr"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\llm-evaluation-multilingual-and-localization-tests.md",
       "article_id": "llm-evaluation-multilingual-and-localization-tests",
       "generation_method": "ai_structured",
@@ -25662,6 +25907,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://docs.weaviate.io/weaviate/manage-objects/update"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\rag-long-context-reordering-and-lost-in-the-middle.md",
+      "article_id": "rag-long-context-reordering-and-lost-in-the-middle",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Lost in the Middle",
+          "source_type": "paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://aclanthology.org/2024.tacl-1.9/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://aclanthology.org/2024.tacl-1.9/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Haystack Choosing the Right Ranker",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.haystack.deepset.ai/docs/choosing-the-right-ranker",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.haystack.deepset.ai/docs/choosing-the-right-ranker"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "LangChain Retrieval",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.langchain.com/oss/python/langchain/retrieval",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.langchain.com/oss/python/langchain/retrieval"
               },
               "match": true
             }
@@ -38181,6 +38487,67 @@
       "manual_reviewed_at": "2026-06-02"
     },
     {
+      "file": "content\\computer-science\\code-index-formats-lsif-and-scip.md",
+      "article_id": "code-index-formats-lsif-and-scip",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "LSIF 0.6 Specification",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://microsoft.github.io/language-server-protocol/specifications/lsif/0.6.0/specification/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://microsoft.github.io/language-server-protocol/specifications/lsif/0.6.0/specification/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Sourcegraph Writing an Indexer",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://sourcegraph.com/docs/code-search/code-navigation/writing_an_indexer",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://sourcegraph.com/docs/code-navigation/writing-an-indexer"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "SCIP Repository",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://github.com/sourcegraph/scip",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://github.com/scip-code/scip"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\code-merge-conflicts-and-conflict-markers-for-agents.md",
       "article_id": "code-merge-conflicts-and-conflict-markers-for-agents",
       "generation_method": "ai_structured",
@@ -40609,6 +40976,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://docs.snowflake.com/en/user-guide/views-materialized"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\data-mesh-domain-ownership-and-data-products.md",
+      "article_id": "data-mesh-domain-ownership-and-data-products",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Google Cloud What Is Data Mesh",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://cloud.google.com/discover/what-is-data-mesh",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://cloud.google.com/discover/what-is-data-mesh"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Google Cloud Build Data Products in a Data Mesh",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.cloud.google.com/architecture/build-data-products-data-mesh",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/architecture/build-data-products-data-mesh"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Dataplex Data Products Overview",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.cloud.google.com/dataplex/docs/data-products-overview",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/dataplex/docs/data-products-overview"
               },
               "match": true
             }
@@ -68632,22 +69060,22 @@
       "sources_unreachable": 1
     },
     {
-      "file": "content\\ai\\llm-evaluation-metric-templates-and-scorecards.md",
-      "article_id": "llm-evaluation-metric-templates-and-scorecards",
+      "file": "content\\ai\\dense-retrieval-bi-encoders-and-dual-encoders.md",
+      "article_id": "dense-retrieval-bi-encoders-and-dual-encoders",
       "generation_method": "ai_structured",
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Vertex AI Define Evaluation Metrics",
+          "source_title": "Hugging Face Sentence Transformers",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/determine-eval",
+              "identifier": "https://huggingface.co/docs/hub/en/sentence-transformers",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/determine-eval"
+                "final_url": "https://huggingface.co/docs/hub/en/sentence-transformers"
               },
               "match": true
             }
@@ -68655,17 +69083,16 @@
           "all_verified": true
         },
         {
-          "source_title": "Holistic Evaluation of Language Models",
-          "source_type": "paper",
+          "source_title": "Pinecone Semantic Search",
+          "source_type": "documentation",
           "results": [
             {
-              "method": "doi",
-              "identifier": "10.1111/nyas.15007",
+              "method": "url",
+              "identifier": "https://docs.pinecone.io/guides/search/semantic-search",
               "verified": true,
               "metadata": {
-                "title": "Holistic Evaluation of Language Models",
-                "publisher": "Wiley",
-                "year": 2023
+                "status": 200,
+                "final_url": "https://docs.pinecone.io/guides/search/semantic-search"
               },
               "match": true
             }
@@ -68673,16 +69100,16 @@
           "all_verified": true
         },
         {
-          "source_title": "Vertex AI Managed Rubric Metrics",
+          "source_title": "Pinecone Models Overview",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/rubric-metric-details",
+              "identifier": "https://docs.pinecone.io/models/overview",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/rubric-metric-details?hl=fr"
+                "final_url": "https://docs.pinecone.io/models/overview"
               },
               "match": true
             }
@@ -68963,6 +69390,67 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 1
+    },
+    {
+      "file": "content\\computer-science\\api-request-signing-and-hmac-authentication.md",
+      "article_id": "api-request-signing-and-hmac-authentication",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Azure Communication Services Authentication",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://learn.microsoft.com/en-us/rest/api/communication/authentication",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.microsoft.com/en-us/rest/api/communication/authentication"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Azure Communication Services HMAC Header Tutorial",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://learn.microsoft.com/en-us/azure/communication-services/tutorials/hmac-header-tutorial",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.microsoft.com/en-us/azure/communication-services/tutorials/hmac-header-tutorial"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GitHub Validating Webhook Deliveries",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/webhooks/using-webhooks/validating-webhook-deliveries",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/webhooks/using-webhooks/validating-webhook-deliveries"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\bloom-filters-space-efficient-probabilistic-data-structures.md",
@@ -69486,7 +69974,10 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/lakehouse/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.oreilly.com/lakehouse/"
+              },
               "match": false
             }
           ],
@@ -69703,7 +70194,10 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.ddos",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://doi.org/10.1145/acmcs.2025.ddos"
+              },
               "match": false
             }
           ],
@@ -70318,10 +70812,7 @@
               "method": "url",
               "identifier": "https://www.mheducation.com/fourier/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.mheducation.com/fourier"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -71100,7 +71591,10 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/linux-kernel/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.oreilly.com/linux-kernel/"
+              },
               "match": false
             }
           ],
@@ -71195,7 +71689,10 @@
               "method": "url",
               "identifier": "https://www.informit.com/patterns-eaa/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.informit.com/404.aspx?aspxerrorpath=/patterns-eaa"
+              },
               "match": false
             }
           ],
@@ -71707,10 +72204,7 @@
               "method": "url",
               "identifier": "https://www.packtpub.com/redis/",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.packtpub.com/redis/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -71971,7 +72465,10 @@
               "method": "url",
               "identifier": "https://nostarch.com/rust/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 403,
+                "final_url": "https://nostarch.com/rust-programming-language-2nd-edition"
+              },
               "match": false
             }
           ],
@@ -72110,7 +72607,10 @@
               "method": "url",
               "identifier": "https://www.informit.com/design-patterns/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.informit.com/404.aspx?aspxerrorpath=/design-patterns"
+              },
               "match": false
             }
           ],
@@ -72168,7 +72668,10 @@
               "method": "url",
               "identifier": "https://www.mheducation.com/software-engineering/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.mheducation.com/software-engineering"
+              },
               "match": false
             }
           ],
@@ -72182,7 +72685,10 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.sdlc",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://doi.org/10.1145/acmcs.2025.sdlc"
+              },
               "match": false
             }
           ],
@@ -72223,7 +72729,10 @@
               "method": "url",
               "identifier": "https://www.informit.com/clean-architecture/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.informit.com/404.aspx?aspxerrorpath=/clean-architecture"
+              },
               "match": false
             }
           ],
@@ -72281,10 +72790,7 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/websec/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.oreilly.com/websec/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -72545,10 +73051,7 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/systemd/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.oreilly.com/systemd/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -72589,7 +73092,10 @@
               "method": "url",
               "identifier": "https://www.rfc-editor.org/rfc/rfc791",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.rfc-editor.org/rfc/rfc791"
+              },
               "match": false
             }
           ],
@@ -72603,7 +73109,10 @@
               "method": "url",
               "identifier": "https://www.rfc-editor.org/rfc/rfc793",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.rfc-editor.org/rfc/rfc793"
+              },
               "match": false
             }
           ],
@@ -72617,7 +73126,10 @@
               "method": "url",
               "identifier": "https://www.rfc-editor.org/rfc/rfc768",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.rfc-editor.org/rfc/rfc768"
+              },
               "match": false
             }
           ],
@@ -73951,7 +74463,10 @@
               "method": "url",
               "identifier": "https://www.iaea.org/publications",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 403,
+                "final_url": "https://www.iaea.org/publications"
+              },
               "match": false
             }
           ],
@@ -74002,7 +74517,10 @@
               "method": "url",
               "identifier": "https://www.iaea.org/publications",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 403,
+                "final_url": "https://www.iaea.org/publications"
+              },
               "match": false
             }
           ],
@@ -74320,10 +74838,7 @@
               "method": "url",
               "identifier": "https://www.hatchards.co.uk/book/jonathan-wilson/inverting-the-pyramid/9781409128649",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.hatchards.co.uk/book/jonathan-wilson/inverting-the-pyramid/9781409128649"
-              },
+              "metadata": {},
               "match": false
             }
           ],
