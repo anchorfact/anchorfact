@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-02T23:09:48.682Z",
-    "total_articles": 1464,
+    "generated": "2026-06-02T23:29:36.444Z",
+    "total_articles": 1474,
     "total_with_errors": 0,
     "average_sources_per_article": "2.6",
     "overall_verification_rate": "91.2%",
-    "elapsed_ms": 96350,
-    "elapsed_sec": "96.3",
+    "elapsed_ms": 102657,
+    "elapsed_sec": "102.7",
     "concurrency": 3
   },
   "articles": [
@@ -76472,6 +76472,138 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\agent-kubernetes-api-resources-and-discovery.md",
+      "article_id": "agent-kubernetes-api-resources-and-discovery",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Kubernetes API Concepts",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kubernetes.io/docs/reference/using-api/api-concepts/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://kubernetes.io/docs/reference/using-api/api-concepts/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "kubectl api-resources",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_api-resources/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_api-resources/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-postgresql-pg-stat-activity-and-query-cancellation.md",
+      "article_id": "agent-postgresql-pg-stat-activity-and-query-cancellation",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "PostgreSQL Monitoring Statistics",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.postgresql.org/docs/current/monitoring-stats.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.postgresql.org/docs/current/monitoring-stats.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "PostgreSQL Server Signaling Functions",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.postgresql.org/docs/current/functions-admin.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.postgresql.org/docs/current/functions-admin.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-systemd-journald-and-unit-state.md",
+      "article_id": "agent-systemd-journald-and-unit-state",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "journalctl Linux Manual Page",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://man7.org/linux/man-pages/man1/journalctl.1%40%40systemd.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://man7.org/linux/man-pages/man1/journalctl.1%40%40systemd.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "systemctl Linux Manual Page",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://man7.org/linux/man-pages/man1/systemctl.1.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://man7.org/linux/man-pages/man1/systemctl.1.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\ai-for-genomics-variant-calling-gene-expression-prediction-and-protein-dna-binding.md",
       "article_id": "kb-2026-00005",
       "generation_method": "ai_structured",
@@ -76494,6 +76626,136 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 1
+    },
+    {
+      "file": "content\\ai\\llm-evaluation-gaia-assistant-benchmark.md",
+      "article_id": "llm-evaluation-gaia-assistant-benchmark",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "GAIA Paper",
+          "source_type": "paper",
+          "results": [
+            {
+              "method": "arxiv",
+              "identifier": "2311.12983",
+              "verified": true,
+              "metadata": {
+                "title": "arXiv Query: search_query=&amp;id_list=2311.12983&amp;start=0&amp;max_results=1"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Hugging Face GAIA Dataset",
+          "source_type": "dataset",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://huggingface.co/datasets/gaia-benchmark/GAIA",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://huggingface.co/datasets/gaia-benchmark/GAIA"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\llm-evaluation-tau-bench-tool-agent-benchmarks.md",
+      "article_id": "llm-evaluation-tau-bench-tool-agent-benchmarks",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "tau-bench Paper",
+          "source_type": "paper",
+          "results": [
+            {
+              "method": "arxiv",
+              "identifier": "2406.12045",
+              "verified": true,
+              "metadata": {
+                "title": "arXiv Query: search_query=&amp;id_list=2406.12045&amp;start=0&amp;max_results=1"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "tau-bench Repository",
+          "source_type": "repository",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://github.com/sierra-research/tau-bench",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://github.com/sierra-research/tau-bench"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\retrieval-opensearch-profile-and-explain-debugging.md",
+      "article_id": "retrieval-opensearch-profile-and-explain-debugging",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "OpenSearch Profile API",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.opensearch.org/docs/latest/api-reference/search-apis/profile/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.opensearch.org/latest/api-reference/search-apis/profile/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenSearch Explain API",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.opensearch.org/latest/api-reference/search-apis/explain/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.opensearch.org/latest/api-reference/search-apis/explain/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
     },
     {
       "file": "content\\arts\\history-of-printing.md",
@@ -76770,6 +77032,50 @@
       "sources_unreachable": 1
     },
     {
+      "file": "content\\computer-science\\api-protobuf-json-mapping-and-field-names.md",
+      "article_id": "api-protobuf-json-mapping-and-field-names",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Protocol Buffers ProtoJSON Format",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://protobuf.dev/programming-guides/json/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://protobuf.dev/programming-guides/json/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Protocol Buffers Proto3 Language Guide",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://protobuf.dev/programming-guides/proto3/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://protobuf.dev/programming-guides/proto3/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\bloom-filters-space-efficient-probabilistic-data-structures.md",
       "article_id": "kb-2026-00029",
       "generation_method": "ai_structured",
@@ -76937,6 +77243,50 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 3
+    },
+    {
+      "file": "content\\computer-science\\code-git-worktrees-and-detached-head-state-for-agents.md",
+      "article_id": "code-git-worktrees-and-detached-head-state-for-agents",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Git Worktree Documentation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://git-scm.com/docs/git-worktree",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://git-scm.com/docs/git-worktree"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Git Checkout Documentation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://git-scm.com/docs/git-checkout",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://git-scm.com/docs/git-checkout"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\command-pattern.md",
@@ -77264,6 +77614,67 @@
       "sources_unreachable": 3
     },
     {
+      "file": "content\\computer-science\\data-dbt-artifacts-manifest-catalog-and-run-results.md",
+      "article_id": "data-dbt-artifacts-manifest-catalog-and-run-results",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "dbt Manifest JSON File",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.getdbt.com/reference/artifacts/manifest-json",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.getdbt.com/reference/artifacts/manifest-json"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "dbt Catalog JSON File",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.getdbt.com/reference/artifacts/catalog-json",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.getdbt.com/reference/artifacts/catalog-json"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "dbt Run Results JSON File",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.getdbt.com/reference/artifacts/run-results-json",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.getdbt.com/reference/artifacts/run-results-json"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\data-lake-architecture.md",
       "article_id": "kb-2026-00254",
       "generation_method": "ai_structured",
@@ -77323,6 +77734,50 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 3
+    },
+    {
+      "file": "content\\computer-science\\data-schema-registry-subjects-and-compatibility.md",
+      "article_id": "data-schema-registry-subjects-and-compatibility",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Confluent Schema Registry Fundamentals",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.confluent.io/platform/current/schema-registry/fundamentals/index.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.confluent.io/platform/current/schema-registry/fundamentals/index.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Confluent Schema Evolution",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.confluent.io/platform/current/schema-registry/fundamentals/schema-evolution.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.confluent.io/platform/current/schema-registry/fundamentals/schema-evolution.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\data-warehousing.md",

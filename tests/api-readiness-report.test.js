@@ -150,7 +150,7 @@ console.log('AnchorFact API Readiness Report Tests\n');
 
 test('core query set defines subscription-readiness probes across paid-use categories', () => {
   assert(CORE_CORPUS_QUERIES.length >= 100, 'core query set should preserve the 100-query foundation');
-  assert(CORE_CORPUS_QUERIES.length <= 570, 'core query set should stay inside the expanded readiness-corpus range');
+  assert(CORE_CORPUS_QUERIES.length <= 580, 'core query set should stay inside the expanded readiness-corpus range');
   const categories = new Set(CORE_CORPUS_QUERIES.map(query => query.category));
   for (const category of ['agent_execution_sources', 'agent_rag', 'api_mcp', 'security_governance', 'data_infrastructure', 'llm_evaluation', 'developer_workflows', 'code_intelligence']) {
     assert(categories.has(category), `missing category ${category}`);
@@ -534,6 +534,9 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'ai/agent-kubernetes-custom-resources-and-finalizers',
     'ai/agent-redis-slowlog-and-keyspace-notifications',
     'ai/agent-opentelemetry-tail-sampling-and-trace-retention',
+    'ai/agent-systemd-journald-and-unit-state',
+    'ai/agent-kubernetes-api-resources-and-discovery',
+    'ai/agent-postgresql-pg-stat-activity-and-query-cancellation',
     'ai/browser-devtools-protocol-for-agents',
     'computer-science/accessibility-tree-and-aria-for-ui-agents',
     'computer-science/package-lockfiles-and-reproducible-installs',
@@ -543,6 +546,8 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'computer-science/data-dbt-source-freshness-and-sources-json',
     'computer-science/data-dbt-exposures-and-downstream-dependencies',
     'computer-science/data-great-expectations-validation-definitions-and-checkpoints',
+    'computer-science/data-dbt-artifacts-manifest-catalog-and-run-results',
+    'computer-science/data-schema-registry-subjects-and-compatibility',
     'ai/agent-browser-cookies-storage-and-session-state',
     'computer-science/dom-locators-and-accessible-names-for-ui-agents',
     'ai/rag-incremental-indexing-and-vector-upserts',
@@ -552,6 +557,7 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'ai/retrieval-elasticsearch-point-in-time-and-search-after',
     'ai/retrieval-milvus-collections-and-vector-indexes',
     'ai/retrieval-opensearch-neural-search-and-search-pipelines',
+    'ai/retrieval-opensearch-profile-and-explain-debugging',
     'ai/retrieval-vespa-nearest-neighbor-and-weakand',
     'ai/retrieval-vespa-rank-profiles-and-phased-ranking',
     'ai/llm-evaluation-benchmark-harnesses-and-task-registries',
@@ -561,6 +567,8 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'ai/llm-evaluation-swe-bench-verified-code-agent-benchmarks',
     'ai/llm-evaluation-mle-bench-machine-learning-engineering',
     'ai/llm-evaluation-lm-eval-harness-task-yaml',
+    'ai/llm-evaluation-tau-bench-tool-agent-benchmarks',
+    'ai/llm-evaluation-gaia-assistant-benchmark',
     'computer-science/openapi-operation-ids-and-links-for-agent-navigation',
     'computer-science/data-policy-tags-and-sensitive-column-governance',
     'computer-science/data-iceberg-branches-tags-and-write-audit-publish',
@@ -579,6 +587,7 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'computer-science/api-openapi-arazzo-workflows-and-overlays',
     'computer-science/api-grpc-health-checking-for-agent-clients',
     'computer-science/api-protobuf-field-presence-and-unknown-fields',
+    'computer-science/api-protobuf-json-mapping-and-field-names',
     'computer-science/api-oauth-token-revocation-and-refresh-tokens',
     'computer-science/api-grpc-status-codes-and-error-details',
     'computer-science/api-grpc-deadlines-and-cancellation',
@@ -595,6 +604,7 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'computer-science/code-typescript-module-resolution-and-path-mapping',
     'computer-science/code-git-submodules-and-sparse-checkout-for-agents',
     'computer-science/code-package-url-and-cpe-identifiers',
+    'computer-science/code-git-worktrees-and-detached-head-state-for-agents',
     'computer-science/lsp-rename-and-workspace-edits-for-code-agents',
     'ai/agent-secret-scanning-and-output-redaction',
     'ai/retrieval-payload-indexes-and-filter-performance',

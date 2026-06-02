@@ -105,7 +105,7 @@ const STALE_METRIC_PATTERNS = [
   /2176 claims from production smoke/i,
   /Public claims\s*\|\s*2176/i,
   /EXPECTED_CLAIMS=2176/i,
-  /678 public/i,
+  /\b678 public\b/i,
   /678 public entries/i,
   /Public eligible articles\s*\|\s*678/i,
   /Public articles\s*\|\s*678/i,
