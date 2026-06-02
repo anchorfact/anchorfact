@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-02T16:38:59.504Z",
-    "total_articles": 1339,
+    "generated": "2026-06-02T17:03:47.289Z",
+    "total_articles": 1347,
     "total_with_errors": 0,
     "average_sources_per_article": "2.6",
-    "overall_verification_rate": "90.5%",
-    "elapsed_ms": 101669,
-    "elapsed_sec": "101.7",
+    "overall_verification_rate": "90.6%",
+    "elapsed_ms": 108495,
+    "elapsed_sec": "108.5",
     "concurrency": 3
   },
   "articles": [
@@ -47170,6 +47170,50 @@
       "manual_reviewed_at": "2026-05-28"
     },
     {
+      "file": "content\\computer-science\\lsp-rename-and-workspace-edits-for-code-agents.md",
+      "article_id": "lsp-rename-and-workspace-edits-for-code-agents",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "LSP 3.17 Specification",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://microsoft.github.io/language-server-protocol/specifications/lsp/3.17/specification/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://microsoft.github.io/language-server-protocol/specifications/lsp/3.17/specification/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Language Server Protocol Overview",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://microsoft.github.io/language-server-protocol/overviews/lsp/overview/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://microsoft.github.io/language-server-protocol/overviews/lsp/overview/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content/computer-science/mapreduce-distributed-data-processing-paradigm.md",
       "article_id": "kb-2026-00024",
       "generation_method": "ai_structured",
@@ -70544,6 +70588,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\agent-secret-scanning-and-output-redaction.md",
+      "article_id": "agent-secret-scanning-and-output-redaction",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "GitHub Secret Scanning",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/code-security/concepts/secret-security/about-secret-scanning",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/code-security/concepts/secret-security/about-secret-scanning"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GitLab Secret Detection",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.gitlab.com/user/application_security/secret_detection/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.gitlab.com/user/application_security/secret_detection/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Google Cloud Sensitive Data Protection De-identification",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.cloud.google.com/sensitive-data-protection/docs/deidentify-sensitive-data",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/sensitive-data-protection/docs/deidentify-sensitive-data"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\ai-for-genomics-variant-calling-gene-expression-prediction-and-protein-dna-binding.md",
       "article_id": "kb-2026-00005",
       "generation_method": "ai_structured",
@@ -70566,6 +70671,128 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 1
+    },
+    {
+      "file": "content\\ai\\llm-evaluation-ab-tests-and-online-experiments.md",
+      "article_id": "llm-evaluation-ab-tests-and-online-experiments",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "statsmodels proportions_ztest",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.statsmodels.org/stable/generated/statsmodels.stats.proportion.proportions_ztest.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.statsmodels.org/stable/generated/statsmodels.stats.proportion.proportions_ztest.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "statsmodels TTestIndPower.solve_power",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.statsmodels.org/stable/generated/statsmodels.stats.power.TTestIndPower.solve_power.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.statsmodels.org/stable/generated/statsmodels.stats.power.TTestIndPower.solve_power.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "SciPy false_discovery_control",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.false_discovery_control.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.false_discovery_control.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\retrieval-payload-indexes-and-filter-performance.md",
+      "article_id": "retrieval-payload-indexes-and-filter-performance",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Qdrant Indexing",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://qdrant.tech/documentation/manage-data/indexing/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://qdrant.tech/documentation/manage-data/indexing/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Pinecone Filter by Metadata",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.pinecone.io/guides/search/filter-by-metadata",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.pinecone.io/guides/search/filter-by-metadata"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Weaviate Filters",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.weaviate.io/weaviate/search/filters",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.weaviate.io/weaviate/search/filters"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content\\arts\\history-of-printing.md",
@@ -70775,7 +71002,7 @@
               "identifier": "https://www.oreilly.com/library/view/the-art-of/9781098102593/",
               "verified": false,
               "metadata": {
-                "status": 404,
+                "status": 502,
                 "final_url": "https://www.oreilly.com/library/view/the-art-of/9781098102593/"
               },
               "match": false
@@ -70840,6 +71067,67 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 1
+    },
+    {
+      "file": "content\\computer-science\\api-retry-backoff-and-client-rate-control.md",
+      "article_id": "api-retry-backoff-and-client-rate-control",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Google AIP-194 Automatic Retry",
+          "source_type": "design_standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://google.aip.dev/194",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://google.aip.dev/194"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "AWS SDK Retry Behavior",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.aws.amazon.com/sdkref/latest/guide/feature-retry-behavior.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.aws.amazon.com/sdkref/latest/guide/feature-retry-behavior.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "RFC 9110 HTTP Semantics",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://datatracker.ietf.org/doc/html/rfc9110#section-10.2.3",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://datatracker.ietf.org/doc/html/rfc9110"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\bloom-filters-space-efficient-probabilistic-data-structures.md",
@@ -71009,6 +71297,111 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 3
+    },
+    {
+      "file": "content\\computer-science\\code-generated-files-and-vendored-code-detection.md",
+      "article_id": "code-generated-files-and-vendored-code-detection",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "GitHub Customizing Changed Files",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/repositories/working-with-files/managing-files/customizing-how-changed-files-appear-on-github",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/repositories/working-with-files/managing-files/customizing-how-changed-files-appear-on-github"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Git gitattributes",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://git-scm.com/docs/gitattributes",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://git-scm.com/docs/gitattributes"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\code-license-compliance-and-dependency-metadata.md",
+      "article_id": "code-license-compliance-and-dependency-metadata",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "npm package.json License Field",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.npmjs.com/cli/v11/configuring-npm/package-json#license",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.npmjs.com/cli/v11/configuring-npm/package-json/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "SPDX Package Information",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://spdx.github.io/spdx-spec/v2.3/package-information/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://spdx.github.io/spdx-spec/v2.3/package-information/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GitHub Licensing a Repository",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\command-pattern.md",
@@ -71334,6 +71727,67 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 3
+    },
+    {
+      "file": "content\\computer-science\\data-column-pruning-and-file-statistics.md",
+      "article_id": "data-column-pruning-and-file-statistics",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "BigQuery Performance Best Practices",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.cloud.google.com/bigquery/docs/best-practices-performance-compute",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/bigquery/docs/best-practices-performance-compute?hl=he"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Apache Parquet Metadata",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://parquet.apache.org/docs/file-format/metadata/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://parquet.apache.org/docs/file-format/metadata/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Apache Iceberg Performance",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://iceberg.apache.org/docs/latest/performance/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://iceberg.apache.org/docs/latest/performance/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\data-lake-architecture.md",
@@ -73027,50 +73481,6 @@
       "sources_unreachable": 1
     },
     {
-      "file": "content\\computer-science\\lsp-rename-and-workspace-edits-for-code-agents.md",
-      "article_id": "lsp-rename-and-workspace-edits-for-code-agents",
-      "generation_method": "ai_structured",
-      "sources_total": 2,
-      "verification_results": [
-        {
-          "source_title": "LSP 3.17 Specification",
-          "source_type": "standard",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://microsoft.github.io/language-server-protocol/specifications/lsp/3.17/specification/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://microsoft.github.io/language-server-protocol/specifications/lsp/3.17/specification/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Language Server Protocol Overview",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://microsoft.github.io/language-server-protocol/overviews/lsp/overview/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://microsoft.github.io/language-server-protocol/overviews/lsp/overview/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
-    },
-    {
       "file": "content\\computer-science\\message-queues.md",
       "article_id": "kb-2026-00246",
       "generation_method": "human_only",
@@ -73367,6 +73777,50 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 3
+    },
+    {
+      "file": "content\\computer-science\\openapi-examples-and-schema-examples-for-agents.md",
+      "article_id": "openapi-examples-and-schema-examples-for-agents",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "OpenAPI Specification 3.1.1",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://spec.openapis.org/oas/v3.1.1.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://spec.openapis.org/oas/v3.1.1.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "JSON Schema Annotations",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://json-schema.org/understanding-json-schema/reference/annotations",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://json-schema.org/understanding-json-schema/reference/annotations"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\osi-model.md",
@@ -74766,10 +75220,7 @@
               "method": "url",
               "identifier": "https://mitpress.mit.edu/books/introduction-algorithms-5th-edition",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://mitpress.mit.edu/books/introduction-algorithms-5th-edition"
-              },
+              "metadata": {},
               "match": false
             }
           ],
