@@ -5,7 +5,7 @@ schema_type: Article
 category: geography
 language: en
 confidence: high
-last_verified: '2026-05-26'
+last_verified: '2026-06-02'
 created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
@@ -16,110 +16,58 @@ is_live_document: false
 data_period: static
 atomic_facts:
   - id: fact-geo-cz-001
-    statement: 'Köppen-Geiger system (1884, updated Peel 2007): 5 main climate groups (Tropical, Dry, Temperate, Continental, Polar).'
-    source_title: Peel, Finlayson & McMahon, Köppen-Geiger world map (HESS 2007)
-    source_url: https://doi.org/10.5194/hess-11-1633-2007
-    confidence: high
+    statement: 'Britannica describes the Koppen climate classification as a widely used system for classifying world climates.'
+    source_title: Koppen climate classification | Definition, System, & Map | Britannica
+    source_url: https://www.britannica.com/science/Koppen-climate-classification
   - id: fact-geo-cz-002
-    statement: 'Tropical rainforests: ~6% land area but >50% of terrestrial species (Conservation International 2024).'
-    source_title: 'IPCC AR6 WG2: Climate Change 2022 Impacts'
-    source_url: https://www.ipcc.ch/report/ar6/wg2/
-    confidence: high
+    statement: 'Britannica defines a biome as the largest geographic biotic unit, consisting of major communities of plants and animals with similar life forms and environmental conditions.'
+    source_title: Biome | Definition, Map, Types, Examples, & Facts | Britannica
+    source_url: https://www.britannica.com/science/biome
   - id: fact-geo-cz-003
-    statement: 'Permafrost carbon feedback: thawing releases CH4/CO2, amplifying warming (Schuur, Nature 2015).'
-    source_title: Schuur et al. Permafrost carbon feedback (Nature 2015)
-    source_url: https://doi.org/10.1038/nature14338
-    confidence: high
+    statement: 'IPCC AR6 Working Group II assesses climate-change impacts, adaptation, and vulnerability across ecosystems and human systems.'
+    source_title: 'Climate Change 2022: Impacts, Adaptation and Vulnerability | Climate Change 2022: Impacts, Adaptation and Vulnerability'
+    source_url: https://www.ipcc.ch/report/ar6/wg2/
 completeness: 0.9
 known_gaps:
-  - Climate change biome shift predictions
-  - Microclimate classification refinement
-disputed_statements:
-  - statement: No major disputed statements identified
+  - Biome boundaries and climate zones can shift with climate change and should be checked against current datasets for live applications.
+disputed_statements: []
 primary_sources:
-  - title: 'Biogeography: Introduction to Space, Time, and Life'
-    type: textbook
-    year: 2022
-    url: https://www.wiley.com/en-us/Biogeography-p-9781119464730
-    institution: Wiley
-  - title: Koppen Climate Classification
+  - title: Koppen climate classification | Definition, System, & Map | Britannica
     type: reference
-    year: 2024
-    url: https://www.climate.gov/koppen-climate-classification
-    institution: NOAA
-  - title: Solar magnetic fields and terrestrial climate
-    authors:
-      - Katya Georgieva
-      - Yury Nagovitsyn
-      - Boian Kirov
-    year: 2014
-    url: https://arxiv.org/abs/1411.6030v1
-    type: academic_paper
-    institution: arXiv
-secondary_sources:
-  - title: Fundamentals of the Physical Environment (Smithson, Addison, Atkinson, 4th Edition)
-    type: textbook
-    year: 2008
-    authors:
-      - Smithson, Peter
-      - Addison, Ken
-      - Atkinson, Ken
-    institution: Routledge
-    url: https://doi.org/10.4324/9780203934029
-  - title: 'The Global Climate System: Patterns, Processes, and Teleconnections (Bridgman & Oliver)'
-    type: textbook
-    year: 2006
-    authors:
-      - Bridgman, Howard A.
-      - Oliver, John E.
-    institution: Cambridge University Press
-    url: https://doi.org/10.1017/CBO9780511817984
-  - title: 'Köppen Climate Classification: Updated World Map of the Köppen-Geiger Climate Classification (Peel et al.)'
-    type: journal_article
-    year: 2007
-    authors:
-      - Peel, Murray C.
-      - Finlayson, Brian L.
-      - McMahon, Thomas A.
-    institution: Hydrology & Earth System Sciences
-    url: https://doi.org/10.5194/hess-11-1633-2007
-  - title: 'IPCC Special Report: Climate Change and Land (SRCCL)'
+    year: 2026
+    url: https://www.britannica.com/science/Koppen-climate-classification
+    institution: Encyclopaedia Britannica
+  - title: Biome | Definition, Map, Types, Examples, & Facts | Britannica
+    type: reference
+    year: 2026
+    url: https://www.britannica.com/science/biome
+    institution: Encyclopaedia Britannica
+  - title: 'Climate Change 2022: Impacts, Adaptation and Vulnerability | Climate Change 2022: Impacts, Adaptation and Vulnerability'
     type: report
-    year: 2019
-    authors:
-      - IPCC
+    year: 2022
+    url: https://www.ipcc.ch/report/ar6/wg2/
     institution: Intergovernmental Panel on Climate Change
-    url: https://www.ipcc.ch/srccl/
-  - title: 'Köppen Climate Classification: Updated High-Resolution Maps for the 2020-2040 Period (2025)'
-    type: article
-    year: 2025
-    authors:
-      - multiple
-    institution: Nature Scientific Data
-    url: https://doi.org/10.1038/s41597-2025-koppen
-  - title: 'Biome Shifts Under Climate Change: Projections to 2100 (IPCC AR6 / Nature 2025)'
-    type: article
-    year: 2025
-    authors:
-      - multiple
-    institution: Nature Climate Change
-    url: https://doi.org/10.1038/s41558-2025-biome
-updated: '2026-05-24'
+secondary_sources: []
+updated: '2026-06-02'
 ---
 
 ## TL;DR
-Earth's surface is divided into distinct climate zones and biomes with characteristic temperature, precipitation, and vegetation patterns. These zones are shifting poleward at unprecedented rates due to anthropogenic climate change.
+
+Climate zones group places by climate patterns, while biomes group large ecological communities shaped by climate, soils, plants, and animals. Climate classification and biome mapping are related, but they are not the same abstraction.
 
 ## Core Explanation
-The Koppen system uses three-letter codes (e.g., Cfa = humid subtropical). The latitudinal climate gradient is modified by altitude (environmental lapse rate: ~6.5 C/km), ocean currents, and continentality.
+
+The Koppen climate classification is a commonly used climate classification system. Biomes describe broad ecological communities with similar life forms and environmental conditions. Climate change can shift the conditions that support a biome, so static educational summaries should not be used as live boundary maps.
 
 ## Detailed Analysis
-Climate change shifts biome boundaries: boreal forests advance into tundra (Arctic greening), deserts expand into semi-arid zones, tropical species migrate upslope. The treeline advances uphill at ~5-10m/decade.
+
+For agent retrieval, this topic is useful because users often ask climate-zone questions and biome questions interchangeably. The safer answer pattern is to distinguish climate classification from ecological biome classification, cite a stable reference for the definition, and use current datasets only when the user asks for up-to-date boundaries or regional status.
 
 ## Further Reading
-- IPCC Sixth Assessment Report: Biomes
-- World Wildlife Fund: Terrestrial Ecoregions
-- Nature Climate Change
+
+- [Koppen climate classification](https://www.britannica.com/science/Koppen-climate-classification)
+- [Biome](https://www.britannica.com/science/biome)
+- [IPCC AR6 WGII](https://www.ipcc.ch/report/ar6/wg2/)
 
 ## Related Articles
 

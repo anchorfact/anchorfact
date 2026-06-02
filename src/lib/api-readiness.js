@@ -10,6 +10,8 @@ export const CORE_CORPUS_QUERIES = [
 
   ['agent_rag', 'ai/advanced-rag-techniques', 'Advanced RAG: From Naive Retrieval to Agentic RAG'],
   ['agent_rag', 'ai/rag', 'Retrieval-Augmented Generation (RAG)'],
+  ['agent_rag', 'ai/rag-evaluation', 'RAG Evaluation'],
+  ['agent_rag', 'ai/hybrid-retrieval-and-reranking', 'Hybrid Retrieval and Reranking'],
   ['agent_rag', 'ai/graphrag', 'GraphRAG'],
   ['agent_rag', 'ai/vector-databases', 'Vector Databases: Approximate Nearest Neighbor Search, Embedding Storage, and Retrieval at Scale'],
   ['agent_rag', 'ai/multimodal-search', 'Multimodal Search: Cross-Modal Retrieval, Product Search, and Multimodal Embeddings'],
@@ -20,6 +22,9 @@ export const CORE_CORPUS_QUERIES = [
   ['agent_rag', 'ai/neurosymbolic-ai', 'Neuro-Symbolic AI: Bridging Learning and Reasoning'],
 
   ['api_mcp', 'ai/mcp', 'Model Context Protocol (MCP)'],
+  ['api_mcp', 'ai/ai-tool-use-and-function-calling', 'AI Tool Use and Function Calling'],
+  ['api_mcp', 'ai/agent-memory-and-session-state', 'Agent Memory and Session State'],
+  ['api_mcp', 'computer-science/openapi-for-agent-tools', 'OpenAPI for Agent Tools'],
   ['api_mcp', 'ai/ai-agents', 'AI Agents: Tool-Using Model Systems'],
   ['api_mcp', 'ai/agentic-ai', 'Agentic AI: Autonomous Agent Architectures, Planning, and Tool-Integrated Reasoning'],
   ['api_mcp', 'ai/ai-agent-frameworks', 'AI Agent Frameworks: LangChain, AutoGen, and CrewAI'],
@@ -43,6 +48,8 @@ export const CORE_CORPUS_QUERIES = [
 
   ['data_infrastructure', 'ai/data-centric-ai', 'Data-Centric AI: The Systematic Engineering of Training Data'],
   ['data_infrastructure', 'ai/data-governance', 'AI Data Governance: Metadata Management, Data Catalogs, and AI-Ready Data Quality'],
+  ['data_infrastructure', 'computer-science/data-catalogs-and-metadata-lineage', 'Data Catalogs and Metadata Lineage'],
+  ['data_infrastructure', 'computer-science/lakehouse-table-formats', 'Lakehouse Table Formats'],
   ['data_infrastructure', 'ai/data-preprocessing', 'Data Preprocessing'],
   ['data_infrastructure', 'ai/ai-for-data-curation', 'AI for Data Curation: Web-Scale Filtering, Deduplication, and Quality Scoring for LLM Training'],
   ['data_infrastructure', 'ai/ai-training-data-curation', 'AI Training Data Curation: Quality at Scale'],
@@ -53,6 +60,8 @@ export const CORE_CORPUS_QUERIES = [
   ['data_infrastructure', 'ai/federated-learning', 'Federated Learning'],
 
   ['llm_evaluation', 'ai/ai-benchmarks-and-evaluation', 'AI Benchmarks: MMLU, SWE-bench, and How We Measure Intelligence'],
+  ['llm_evaluation', 'ai/llm-as-judge-evaluation', 'LLM-as-Judge Evaluation'],
+  ['llm_evaluation', 'ai/agent-benchmarks', 'Agent Benchmarks'],
   ['llm_evaluation', 'ai/model-evaluation-metrics', 'Model Evaluation Metrics'],
   ['llm_evaluation', 'ai/long-context-models', 'Long-Context Language Models: Memory, Retrieval, and Evaluation'],
   ['llm_evaluation', 'ai/reasoning-models', 'AI Reasoning Models: Test-Time Compute and RL Training'],
@@ -101,6 +110,7 @@ export const CORE_CORPUS_QUERIES = [
   ['code_intelligence', 'computer-science/abstract-syntax-trees-and-code-navigation', 'Abstract Syntax Trees and Code Navigation'],
   ['code_intelligence', 'computer-science/control-flow-and-data-flow-analysis', 'Control-Flow and Data-Flow Analysis'],
   ['code_intelligence', 'computer-science/call-graphs-and-impact-analysis', 'Call Graphs and Impact Analysis'],
+  ['code_intelligence', 'computer-science/language-server-protocol-for-code-agents', 'Language Server Protocol for Code Agents'],
 
   ['retrieval_search', 'ai/ai-search-engines', 'AI-Powered Search: Perplexity, Google AI Overviews, and the Future'],
   ['retrieval_search', 'ai/ai-search-recommendation', 'AI for Search and Recommendation: Semantic Search, Collaborative Filtering, and Personalization Engines'],

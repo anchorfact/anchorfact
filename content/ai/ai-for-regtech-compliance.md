@@ -5,7 +5,7 @@ schema_type: article
 category: ai
 language: en
 confidence: high
-last_verified: '2026-05-26'
+last_verified: '2026-06-02'
 created_date: '2026-05-24'
 generation_method: ai_structured
 ai_models:
@@ -18,42 +18,27 @@ completeness: 0.85
 atomic_facts:
   - id: af-ai-for-regtech-compliance-1
     statement: >-
-      AI-powered anti-money laundering (AML) systems process billions of financial transactions daily, using graph neural networks (GNNs) to detect complex money laundering rings -- circular
-      transactions, layering, and shell company networks -- that rule-based systems miss. GNN models (GraphSAGE, GAT) trained on transaction networks achieve 40-60% higher detection rates for complex
-      laundering patterns compared to traditional threshold-based monitoring while reducing false positive rates from 95% to 60-70%.
-    source_title: FinCEN AI/ML in AML reports (2024-2025) / FATF Guidance on AI in AML/CFT / arxiv 2024 survey on GNN for financial crime detection
-    source_url: https://arxiv.org/abs/2504.00000
-    confidence: high
+      An ACL Findings 2025 paper studies AI and NLP methods for automated regulatory compliance, focusing on data-protection regulations and the challenge of translating complex rules into actionable
+      compliance support.
+    source_title: 'From Complexity to Clarity: AI/NLP''s Role in Regulatory Compliance'
+    source_url: https://aclanthology.org/2025.findings-acl.1366/
   - id: af-ai-for-regtech-compliance-2
     statement: >-
-      Regulatory intelligence AI -- NLP models that continuously monitor, ingest, and analyze regulatory changes across jurisdictions (SEC, FCA, ESMA, MAS, etc.) -- enables financial institutions to
-      automate compliance gap analysis, policy updates, and regulatory reporting. Large language models (GPT-4, Claude) are being deployed to summarize regulatory documents, extract obligations, map
-      requirements to internal controls, and generate compliance reports, reducing compliance analyst workload by 30-50% according to industry estimates.
-    source_title: Deloitte/EY/PwC AI in RegTech reports (2024-2025) / RegTech market reports (Juniper Research, $33B by 2026) / NLP for regulatory document analysis
-    source_url: https://www.emerald.com/insight/publication/issn/1358-1988
-    confidence: high
+      The ACL Findings 2025 compliance paper frames automated regulatory compliance as a task that can use NLP to extract, interpret, and operationalize rules from legal and policy documents.
+    source_title: 'From Complexity to Clarity: AI/NLP''s Role in Regulatory Compliance'
+    source_url: https://aclanthology.org/2025.findings-acl.1366/
+  - id: af-ai-for-regtech-compliance-3
+    statement: >-
+      The ACL Findings 2025 compliance paper identifies regulatory compliance as a document-heavy domain where NLP systems must handle complex, jurisdiction-specific requirements.
+    source_title: 'From Complexity to Clarity: AI/NLP''s Role in Regulatory Compliance'
+    source_url: https://aclanthology.org/2025.findings-acl.1366/
 primary_sources:
   - id: ps-ai-for-regtech-compliance-1
-    title: 'Graph Neural Networks for Anti-Money Laundering: A Comprehensive Survey of Methods, Datasets, and Practical Deployment'
+    title: 'From Complexity to Clarity: AI/NLP''s Role in Regulatory Compliance'
     type: academic_paper
     year: 2025
-    institution: arXiv / ACM Transactions on Knowledge Discovery from Data
-    url: https://arxiv.org/abs/2504.00000
-  - id: ps-ai-for-regtech-compliance-2
-    title: 'AI-Powered Regulatory Technology (RegTech): NLP and LLM Applications in Compliance Automation and Regulatory Intelligence'
-    type: academic_paper
-    year: 2025
-    institution: Journal of Financial Regulation and Compliance / Springer
-    url: https://www.emerald.com/insight/publication/issn/1358-1988
-  - title: A Hybrid Approach to Information Retrieval and Answer Generation for Regulatory Texts
-    authors:
-      - Jhon Rayo
-      - Raul de la Rosa
-      - Mario Garrido
-    year: 2025
-    url: https://arxiv.org/abs/2502.16767v1
-    type: academic_paper
-    institution: arXiv
+    institution: ACL Anthology
+    url: https://aclanthology.org/2025.findings-acl.1366/
 known_gaps:
   - Explainable AI for regulatory decisions -- providing auditable, human-interpretable reasons for AML alerts
   - Cross-border regulatory harmonization -- AI systems that navigate conflicting regulations across jurisdictions

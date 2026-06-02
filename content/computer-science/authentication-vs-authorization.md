@@ -5,7 +5,7 @@ schema_type: TechArticle
 category: computer-science
 language: en
 confidence: high
-last_verified: '2026-05-25'
+last_verified: '2026-06-02'
 created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
@@ -16,91 +16,55 @@ is_live_document: false
 data_period: static
 atomic_facts:
   - id: fact-computer-science-001
-    statement: >-
-      Authentication verifies identity (who you are), while authorization determines permissions (what you can do). Authentication factors: something you know (password), have (token), are
-      (biometrics). Multi-Factor Authentication (MFA) requires two or more factors. Authorization models: RBAC (Role-Based Access Control), ABAC (Attribute-Based), ReBAC (Re
-    source_title: ACM Digital Library
-    source_url: https://dl.acm.org/
-    confidence: medium
+    statement: 'NIST SP 800-63B defines requirements and recommendations for using authenticators to establish that a claimant controls one or more authenticators associated with a subscriber account.'
+    source_title: NIST SP 800-63B
+    source_url: https://pages.nist.gov/800-63-4/sp800-63b.html
   - id: fact-computer-science-002
-    statement: OAuth 2.0 and OpenID Connect (OIDC) are the modern standards for delegated authentication/authorization.
-    source_title: ACM Digital Library
-    source_url: https://dl.acm.org/
-    confidence: medium
+    statement: 'RFC 6749 defines OAuth 2.0 as an authorization framework that lets a third-party application obtain limited access to an HTTP service.'
+    source_title: RFC 6749 - The OAuth 2.0 Authorization Framework
+    source_url: https://datatracker.ietf.org/doc/html/rfc6749
   - id: fact-computer-science-003
-    statement: 'Key principle: never roll your own authentication — use battle-tested libraries and follow current NIST guidelines.'
-    source_title: ACM Digital Library
-    source_url: https://dl.acm.org/
-    confidence: medium
+    statement: 'NIST describes role-based access control as controlling access to resources by assigning users to roles and assigning permissions to those roles.'
+    source_title: Role Based Access Control | CSRC
+    source_url: https://csrc.nist.gov/projects/role-based-access-control
 completeness: 0.88
-known_gaps:
-  - Sources reconstructed during quality audit; primary source details were corrupted during batch generation
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
+known_gaps: []
+disputed_statements: []
 primary_sources:
-  - title: ACM Digital Library
-    type: repository
-    year: 2026
-    url: https://dl.acm.org/
-    institution: ACM
-  - title: Intent-Aware Authorization for Zero Trust CI/CD
-    authors:
-      - Surya Teja Avirneni
+  - title: NIST SP 800-63B
+    type: standard
     year: 2025
-    url: https://arxiv.org/abs/2504.14777v1
-    type: academic_paper
-    institution: arXiv
-  - title: Authentication, Authorization, and Selective Disclosure for IoT data sharing using Verifiable Credentials and Zero-Knowledge Proofs
-    authors:
-      - Nikos Fotiou
-      - Iakovos Pittaras
-      - Spiros Chadoulos
-      - Vasilios A. Siris
-      - George C. Polyzos
-      - Nikolaos Ipiotis
-      - Stratos Keranidis
-    year: 2022
-    url: https://arxiv.org/abs/2209.00586v1
-    type: academic_paper
-    institution: arXiv
-secondary_sources:
-  - title: ACM Digital Library
-    type: repository
+    url: https://pages.nist.gov/800-63-4/sp800-63b.html
+    institution: National Institute of Standards and Technology
+  - title: RFC 6749 - The OAuth 2.0 Authorization Framework
+    type: standard
+    year: 2012
+    url: https://datatracker.ietf.org/doc/html/rfc6749
+    institution: Internet Engineering Task Force
+  - title: Role Based Access Control | CSRC
+    type: reference
     year: 2026
-    url: https://dl.acm.org/
-    institution: ACM
-  - title: The C Programming Language (K&R, 2nd Ed)
-    type: textbook
-    year: 1988
-    url: https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html
-    institution: Prentice Hall
-  - title: Structure and Interpretation of Computer Programs (SICP)
-    type: textbook
-    year: 1996
-    url: https://mitpress.mit.edu/sites/default/files/sicp/
-    institution: MIT Press
+    url: https://csrc.nist.gov/projects/role-based-access-control
+    institution: National Institute of Standards and Technology
+secondary_sources: []
 ---
-
-
-
-
 
 ## TL;DR
 
-Authentication verifies identity (who you are), while authorization determines permissions (what you can do). Authentication factors: something you know (password), have (token), are (biometrics). Multi-Factor Authentication (MFA) requires two or more factors. Authorization models: RBAC (Role-Based Access Control), ABAC (Attribute-Based), ReBAC (Relationship-Based).
+Authentication establishes who or what is making a request. Authorization determines what that authenticated party is allowed to do. Modern identity systems usually combine authenticators, sessions or tokens, and authorization policy checks.
 
 ## Core Explanation
 
-Session management: after authentication, a session token (cookie, JWT) maintains state across requests. OAuth 2.0 and OpenID Connect (OIDC) are the modern standards for delegated authentication/authorization. Key principle: never roll your own authentication — use battle-tested libraries and follow current NIST guidelines.
+NIST authentication guidance focuses on authenticators and assurance levels. OAuth 2.0 is an authorization framework for delegated access to HTTP services, while OpenID Connect layers identity assertions on top of OAuth 2.0. Role-based access control is one common authorization model: users are assigned to roles, and roles carry permissions.
 
 ## Further Reading
 
--
+- [NIST SP 800-63B](https://pages.nist.gov/800-63-4/sp800-63b.html)
+- [RFC 6749 - The OAuth 2.0 Authorization Framework](https://datatracker.ietf.org/doc/html/rfc6749)
+- [NIST Role Based Access Control](https://csrc.nist.gov/projects/role-based-access-control)
 
 ## Related Articles
 
 - [AI for Digital Forensics: Deepfake Provenance, Evidence Authentication, and Digital Crime Investigation](../../ai/ai-digital-forensics.md)
 - [AI Identity Verification: Document Authentication, Liveness Detection, and KYC Compliance](../../ai/ai-identity-verification.md)
-- [JWT: JSON Web Tokens — Authentication, Claims, and Security](../jwt-json-web-tokens-authentication-claims-and-security.md)
+- [JWT: JSON Web Tokens - Authentication, Claims, and Security](../jwt-json-web-tokens-authentication-claims-and-security.md)

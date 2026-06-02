@@ -5,7 +5,7 @@ schema_type: article
 category: ai
 language: en
 confidence: high
-last_verified: "2026-05-24"
+last_verified: "2026-06-02"
 created_date: "2026-05-24"
 generation_method: ai_structured
 ai_models:
@@ -18,34 +18,32 @@ completeness: 0.85
 atomic_facts:
   - id: af-ai-for-algorithmic-trading-1
     statement: >-
-      AI-driven algorithmic trading has grown from simple statistical arbitrage to sophisticated deep reinforcement learning agents that learn optimal trading policies (when to buy, sell, hold)
-      directly from market data. Deep Q-Networks (DQN), Proximal Policy Optimization (PPO), and Soft Actor-Critic (SAC) applied to order execution and portfolio management have demonstrated improved
-      risk-adjusted returns (Sharpe ratio improvements of 0.2-0.5 over baseline strategies) in backtesting environments, with models learning to exploit market microstructure patterns invisible to
-      human traders.
-    source_title: JPMorgan AI Research (2023-2025) / Two Sigma machine learning in finance / NeurIPS FinRL competition / Deep Reinforcement Learning for Trading surveys (2024-2025)
-    source_url: https://arxiv.org/abs/2503.00000
-    confidence: high
+      The FinRL repository describes FinRL as an open-source financial reinforcement learning framework.
+    source_title: GitHub - AI4Finance-Foundation/FinRL
+    source_url: https://github.com/AI4Finance-Foundation/FinRL
   - id: af-ai-for-algorithmic-trading-2
     statement: >-
-      Alternative data -- satellite imagery (retail parking lot fullness, oil tank levels, crop yields), credit card transactions, social media sentiment, shipping data, and web scraping -- is
-      processed by NLP and computer vision AI models to generate predictive signals for trading. Hedge funds (Renaissance Technologies, Two Sigma, Citadel) and investment banks collectively spend
-      $2-3B annually on alternative data, with AI being the essential processing engine.
-    source_title: AlternativeData.org reports (2023-2025) / JPMorgan "Big Data and AI Strategies" / QuantConnect / Bloomberg Alternative Data
-    source_url: https://jfds.pm-research.com/
-    confidence: high
+      The FinRL-Meta repository describes FinRL-Meta as dynamic datasets and market environments for FinRL.
+    source_title: GitHub - AI4Finance-Foundation/FinRL-Meta
+    source_url: https://github.com/AI4Finance-Foundation/FinRL-Meta
+  - id: af-ai-for-algorithmic-trading-3
+    statement: >-
+      FinRL-Meta positions its data layer and environment layer as shared infrastructure for financial reinforcement learning experiments.
+    source_title: GitHub - AI4Finance-Foundation/FinRL-Meta
+    source_url: https://github.com/AI4Finance-Foundation/FinRL-Meta
 primary_sources:
   - id: ps-ai-for-algorithmic-trading-1
-    title: "Deep Reinforcement Learning for Automated Trading: A Comprehensive Survey of Methods, Benchmarks, and Practical Deployment"
-    type: academic_paper
-    year: 2025
-    institution: arXiv / IEEE Transactions on Neural Networks and Learning Systems
-    url: https://arxiv.org/abs/2503.00000
+    title: GitHub - AI4Finance-Foundation/FinRL
+    type: software_repository
+    year: 2026
+    institution: AI4Finance Foundation
+    url: https://github.com/AI4Finance-Foundation/FinRL
   - id: ps-ai-for-algorithmic-trading-2
-    title: "Alternative Data and Machine Learning in Quantitative Finance: From Web Scraping to Alpha Generation"
-    type: academic_paper
-    year: 2025
-    institution: Journal of Financial Data Science / Portfolio Management Research
-    url: https://jfds.pm-research.com/
+    title: GitHub - AI4Finance-Foundation/FinRL-Meta
+    type: software_repository
+    year: 2026
+    institution: AI4Finance Foundation
+    url: https://github.com/AI4Finance-Foundation/FinRL-Meta
 known_gaps:
   - Reliable out-of-sample performance -- bridging the gap between backtesting and live trading
   - Multi-agent market simulation with realistic price impact and strategic behavior

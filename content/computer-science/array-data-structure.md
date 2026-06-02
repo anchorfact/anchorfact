@@ -5,7 +5,7 @@ schema_type: TechArticle
 category: computer-science
 language: en
 confidence: high
-last_verified: '2026-05-25'
+last_verified: '2026-06-02'
 created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
@@ -16,86 +16,46 @@ is_live_document: false
 data_period: static
 atomic_facts:
   - id: fact-computer-science-01
-    statement: It is the most fundamental data structure
-    source_title: ACM Digital Library
-    source_url: https://dl.acm.org/
-    confidence: medium
+    statement: 'The Java Language Specification defines arrays as objects whose components contain values of the array component type.'
+    source_title: Chapter 10. Arrays
+    source_url: https://docs.oracle.com/javase/specs/jls/se21/html/jls-10.html
   - id: fact-computer-science-001
-    statement: >-
-      An array is a contiguous block of memory storing elements of the same type, accessible by index in O(1) time. It is the most fundamental data structure. Dynamic arrays (JavaScript Array, C++
-      vector) use geometric expansion for amortized O(1) append.
-    source_title: ACM Digital Library
-    source_url: https://dl.acm.org/
-    confidence: medium
+    statement: 'The Java Language Specification states that array components are referenced by integer indices from 0 to n - 1, where n is the array length.'
+    source_title: Chapter 10. Arrays
+    source_url: https://docs.oracle.com/javase/specs/jls/se21/html/jls-10.html
   - id: fact-computer-science-002
-    statement: Cache locality makes arrays fast — each cache miss loads 64 bytes (16 ints on 64-bit).
-    source_title: ACM Digital Library
-    source_url: https://dl.acm.org/
-    confidence: medium
+    statement: 'The Java SE API describes ArrayList as a resizable-array implementation of the List interface.'
+    source_title: ArrayList (Java SE 21 & JDK 21)
+    source_url: https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/ArrayList.html
 completeness: 0.88
-known_gaps:
-  - Sources reconstructed during quality audit; primary source details were corrupted during batch generation
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
+known_gaps: []
+disputed_statements: []
 primary_sources:
-  - title: ACM Digital Library
-    type: repository
-    year: 2026
-    url: https://dl.acm.org/
-    institution: ACM
-  - title: Data Encoding for Byzantine-Resilient Distributed Optimization
-    authors:
-      - Deepesh Data
-      - Linqi Song
-      - Suhas Diggavi
-    year: 2019
-    url: https://arxiv.org/abs/1907.02664v2
-    type: academic_paper
-    institution: arXiv
-  - title: Byzantine-Resilient SGD in High Dimensions on Heterogeneous Data
-    authors:
-      - Deepesh Data
-      - Suhas Diggavi
-    year: 2020
-    url: https://arxiv.org/abs/2005.07866v1
-    type: academic_paper
-    institution: arXiv
-secondary_sources:
-  - title: ACM Digital Library
-    type: repository
-    year: 2026
-    url: https://dl.acm.org/
-    institution: ACM
-  - title: The C Programming Language (K&R, 2nd Ed)
-    type: textbook
-    year: 1988
-    url: https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html
-    institution: Prentice Hall
-  - title: Structure and Interpretation of Computer Programs (SICP)
-    type: textbook
-    year: 1996
-    url: https://mitpress.mit.edu/sites/default/files/sicp/
-    institution: MIT Press
+  - title: Chapter 10. Arrays
+    type: language_specification
+    year: 2023
+    url: https://docs.oracle.com/javase/specs/jls/se21/html/jls-10.html
+    institution: Oracle
+  - title: ArrayList (Java SE 21 & JDK 21)
+    type: api_documentation
+    year: 2023
+    url: https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/ArrayList.html
+    institution: Oracle
+secondary_sources: []
 ---
-
-
-
-
 
 ## TL;DR
 
-An array is a contiguous block of memory storing elements of the same type, accessible by index in O(1) time. It is the most fundamental data structure. Dynamic arrays (JavaScript Array, C++ vector) use geometric expansion for amortized O(1) append.
+An array is an indexed collection whose elements are accessed by integer positions. Java's ArrayList is a standard-library example of a resizable-array implementation.
 
 ## Core Explanation
 
-Key operations: access O(1), search O(n). Dynamic arrays amortize resizing by doubling capacity. Multi-dimensional arrays stored in row-major (C) or column-major (Fortran). Cache locality makes arrays fast — each cache miss loads 64 bytes (16 ints on 64-bit). Drawbacks: fixed size (static) or expensive resize (dynamic).
+Arrays are one of the most common ways to represent ordered collections because an element can be referred to by its integer index. Language specifications define the exact indexing and element-type rules for a given language. Dynamic arrays or resizable-array implementations add growth behavior on top of the indexed collection idea.
 
 ## Further Reading
 
-- [Introduction to Algorithms (CLRS)](undefined)
-- [Algorithms (4th Edition)](undefined)
+- [Java Language Specification: Arrays](https://docs.oracle.com/javase/specs/jls/se21/html/jls-10.html)
+- [Java SE API: ArrayList](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/ArrayList.html)
 
 ## Related Articles
 

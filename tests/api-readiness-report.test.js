@@ -159,11 +159,21 @@ test('core query set defines subscription-readiness probes across paid-use categ
   assertEq(new Set(slugs).size, slugs.length, 'expected slugs should be unique');
   for (const slug of [
     'ai/agent-execution-knowledge-sources',
+    'ai/ai-tool-use-and-function-calling',
+    'ai/agent-memory-and-session-state',
+    'ai/rag-evaluation',
+    'ai/hybrid-retrieval-and-reranking',
+    'ai/llm-as-judge-evaluation',
+    'ai/agent-benchmarks',
+    'computer-science/openapi-for-agent-tools',
+    'computer-science/data-catalogs-and-metadata-lineage',
+    'computer-science/lakehouse-table-formats',
     'computer-science/code-graphs-and-code-intelligence',
     'computer-science/program-symbols-definitions-and-references',
     'computer-science/abstract-syntax-trees-and-code-navigation',
     'computer-science/control-flow-and-data-flow-analysis',
-    'computer-science/call-graphs-and-impact-analysis'
+    'computer-science/call-graphs-and-impact-analysis',
+    'computer-science/language-server-protocol-for-code-agents'
   ]) {
     assert(slugs.includes(slug), `missing agent/code-intelligence readiness slug ${slug}`);
   }

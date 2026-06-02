@@ -5,7 +5,7 @@ schema_type: TechArticle
 category: computer-science
 language: en
 confidence: high
-last_verified: '2026-05-25'
+last_verified: '2026-06-02'
 created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
@@ -17,86 +17,53 @@ data_period: static
 atomic_facts:
   - id: fact-computer-science-001
     statement: >-
-      Agile (2001) prioritizes: Individuals over processes, Working software over documentation, Customer collaboration over contract negotiation, Responding to change over following a plan.
-      Frameworks: Scrum, Kanban, XP (Extreme Programming). Agile is not 'no planning' — it's continuous planning.
-    source_title: ACM Digital Library
-    source_url: https://dl.acm.org/
-    confidence: medium
+      The Agile Manifesto values individuals and interactions, working software, customer collaboration, and responding to change over their corresponding process-heavy alternatives.
+    source_title: Manifesto for Agile Software Development
+    source_url: https://agilemanifesto.org/iso/en/manifesto.html
   - id: fact-computer-science-002
-    statement: 'Scrum: Product Owner (prioritizes backlog), Scrum Master (facilitates), Development Team.'
-    source_title: ACM Digital Library
-    source_url: https://dl.acm.org/
-    confidence: medium
+    statement: 'The Scrum Guide defines Scrum accountabilities including Developers, Product Owner, and Scrum Master.'
+    source_title: Scrum Guide | Scrum Guides
+    source_url: https://scrumguides.org/scrum-guide.html
   - id: fact-computer-science-003
-    statement: 'Sprints: 1-4 weeks, daily standups (15 min), sprint review (demo), retrospective (improve process).'
-    source_title: ACM Digital Library
-    source_url: https://dl.acm.org/
-    confidence: medium
+    statement: 'The Scrum Guide defines five Scrum events: Sprint, Sprint Planning, Daily Scrum, Sprint Review, and Sprint Retrospective.'
+    source_title: Scrum Guide | Scrum Guides
+    source_url: https://scrumguides.org/scrum-guide.html
   - id: fact-computer-science-004
-    statement: 'Kanban: visual board (To Do → In Progress → Done), WIP limits, continuous delivery.'
-    source_title: ACM Digital Library
-    source_url: https://dl.acm.org/
-    confidence: medium
+    statement: 'The Kanban Guide describes Kanban practices including defining and visualizing workflow, limiting work in progress, making policies explicit, feedback loops, and improving collaboratively.'
+    source_title: latest | The Kanban Guide | Kanban Guides
+    source_url: https://kanbanguides.org/the-kanban-guide/
 completeness: 0.88
-known_gaps:
-  - Sources reconstructed during quality audit; primary source details were corrupted during batch generation
-disputed_statements:
-  - statement: >-
-      The superiority of agile methodologies over traditional approaches is contested: critics point to agile's unsuitability for large-scale systems and safety-critical software, while proponents
-      emphasize adaptability
+known_gaps: []
+disputed_statements: []
 primary_sources:
-  - title: ACM Digital Library
-    type: repository
-    year: 2026
-    url: https://dl.acm.org/
-    institution: ACM
-  - title: Combining Envelope Methodology and Aster Models for Variance Reduction in Life History Analyses
-    authors:
-      - Daniel J. Eck
-      - Charles J. Geyer
-      - R. Dennis Cook
-    year: 2017
-    url: https://arxiv.org/abs/1701.07910v2
-    type: academic_paper
-    institution: arXiv
-  - title: Reversible Logic Based Concurrent Error Detection Methodology For Emerging Nanocircuits
-    authors:
-      - Himanshu Thapliyal
-      - Nagarajan Ranganathan
-    year: 2011
-    url: https://arxiv.org/abs/1101.4222v1
-    type: academic_paper
-    institution: arXiv
-secondary_sources:
-  - title: ACM Digital Library
-    type: repository
-    year: 2026
-    url: https://dl.acm.org/
-    institution: ACM
-  - title: The C Programming Language (K&R, 2nd Ed)
-    type: textbook
-    year: 1988
-    url: https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html
-    institution: Prentice Hall
-  - title: Structure and Interpretation of Computer Programs (SICP)
-    type: textbook
-    year: 1996
-    url: https://mitpress.mit.edu/sites/default/files/sicp/
-    institution: MIT Press
+  - title: Manifesto for Agile Software Development
+    type: documentation
+    year: 2001
+    url: https://agilemanifesto.org/iso/en/manifesto.html
+    institution: Agile Manifesto
+  - title: Scrum Guide | Scrum Guides
+    type: documentation
+    year: 2020
+    url: https://scrumguides.org/scrum-guide.html
+    institution: Scrum Guides
+  - title: latest | The Kanban Guide | Kanban Guides
+    type: documentation
+    year: 2025
+    url: https://kanbanguides.org/the-kanban-guide/
+    institution: Kanban Guides
+secondary_sources: []
 ---
-
-
-
-
 
 ## TL;DR
 
-Agile (2001) prioritizes: Individuals over processes, Working software over documentation, Customer collaboration over contract negotiation, Responding to change over following a plan. Frameworks: Scrum, Kanban, XP (Extreme Programming). Agile is not 'no planning' — it's continuous planning.
+Agile methodology emphasizes adaptive planning, short feedback loops, and frequent delivery of working software. The Agile Manifesto is the shared value statement, while Scrum and Kanban are common frameworks used to organize agile work.
 
 ## Core Explanation
 
-Scrum: Product Owner (prioritizes backlog), Scrum Master (facilitates), Development Team. Sprints: 1-4 weeks, daily standups (15 min), sprint review (demo), retrospective (improve process). Kanban: visual board (To Do → In Progress → Done), WIP limits, continuous delivery. Agile at scale: SAFe, LeSS, Spotify model (squads/tribes).
+The Agile Manifesto states four value preferences: individuals and interactions, working software, customer collaboration, and responding to change. Scrum gives teams named accountabilities, events, and artifacts for iterative delivery. Kanban focuses on visualizing work, limiting work in progress, managing flow, and improving the workflow collaboratively.
 
 ## Further Reading
 
-- [Manifesto for Agile Software Development](undefined)
+- [Manifesto for Agile Software Development](https://agilemanifesto.org/iso/en/manifesto.html)
+- [Scrum Guide](https://scrumguides.org/scrum-guide.html)
+- [The Kanban Guide](https://kanbanguides.org/the-kanban-guide/)

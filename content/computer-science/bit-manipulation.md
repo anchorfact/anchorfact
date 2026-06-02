@@ -5,7 +5,7 @@ schema_type: TechArticle
 category: computer-science
 language: en
 confidence: high
-last_verified: '2026-05-25'
+last_verified: '2026-06-02'
 created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
@@ -16,97 +16,46 @@ is_live_document: false
 data_period: static
 atomic_facts:
   - id: fact-computer-science-001
-    statement: >-
-      Bit manipulation operates directly on binary representations using bitwise operators: AND (&), OR (|), XOR (^), NOT (~), left shift (<<), right shift (>>). Used for optimization, cryptography,
-      compression, hardware interfacing, and low-memory algorithms.
-    source_title: ACM Digital Library
-    source_url: https://dl.acm.org/
-    confidence: medium
+    statement: 'Microsoft C documentation describes the bitwise operators as operators that perform bitwise AND, exclusive OR, inclusive OR, and one''s-complement operations.'
+    source_title: C Bitwise Operators
+    source_url: https://learn.microsoft.com/en-us/cpp/c-language/c-bitwise-operators
   - id: fact-computer-science-002
-    statement: 'Common tricks: n & (n-1) clears lowest set bit (used in popcount).'
-    source_title: ACM Digital Library
-    source_url: https://dl.acm.org/
-    confidence: medium
+    statement: 'Microsoft C documentation states that bitwise operators require operands with integral types.'
+    source_title: C Bitwise Operators
+    source_url: https://learn.microsoft.com/en-us/cpp/c-language/c-bitwise-operators
   - id: fact-computer-science-003
-    statement: Fast multiplication/division by powers of 2 via shift (compiler optimization).
-    source_title: ACM Digital Library
-    source_url: https://dl.acm.org/
-    confidence: medium
+    statement: 'Microsoft C# documentation lists bitwise complement, shift, logical AND, logical exclusive OR, and logical OR operators for integral numeric types.'
+    source_title: 'Bitwise and shift operators - C# reference'
+    source_url: https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/bitwise-and-shift-operators
 completeness: 0.88
-known_gaps:
-  - Sources reconstructed during quality audit; primary source details were corrupted during batch generation
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
+known_gaps: []
+disputed_statements: []
 primary_sources:
-  - title: ACM Digital Library
-    type: repository
-    year: 2026
-    url: https://dl.acm.org/
-    institution: ACM
-  - title: 'Humanoid Manipulation Interface: Humanoid Whole-Body Manipulation from Robot-Free Demonstrations'
-    authors:
-      - Ruiqian Nai
-      - Boyuan Zheng
-      - Junming Zhao
-      - Haodong Zhu
-      - Sicong Dai
-      - Zunhao Chen
-      - Yihang Hu
-      - Yingdong Hu
-      - Tong Zhang
-      - Chuan Wen
-      - Yang Gao
-    year: 2026
-    url: https://arxiv.org/abs/2602.06643v2
-    type: academic_paper
-    institution: arXiv
-  - title: 'Dexterous Cable Manipulation: Taxonomy, Multi-Fingered Hand Design, and Long-Horizon Manipulation'
-    authors:
-      - Sun Zhaole
-      - Xiao Gao
-      - Xiaofeng Mao
-      - Jihong Zhu
-      - Aude Billard
-      - Robert B. Fisher
+  - title: C Bitwise Operators
+    type: documentation
+    year: 2024
+    url: https://learn.microsoft.com/en-us/cpp/c-language/c-bitwise-operators
+    institution: Microsoft Learn
+  - title: 'Bitwise and shift operators - C# reference'
+    type: documentation
     year: 2025
-    url: https://arxiv.org/abs/2502.00396v2
-    type: academic_paper
-    institution: arXiv
-secondary_sources:
-  - title: ACM Digital Library
-    type: repository
-    year: 2026
-    url: https://dl.acm.org/
-    institution: ACM
-  - title: The C Programming Language (K&R, 2nd Ed)
-    type: textbook
-    year: 1988
-    url: https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html
-    institution: Prentice Hall
-  - title: Structure and Interpretation of Computer Programs (SICP)
-    type: textbook
-    year: 1996
-    url: https://mitpress.mit.edu/sites/default/files/sicp/
-    institution: MIT Press
+    url: https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/bitwise-and-shift-operators
+    institution: Microsoft Learn
+secondary_sources: []
 ---
-
-
-
-
 
 ## TL;DR
 
-Bit manipulation operates directly on binary representations using bitwise operators: AND (&), OR (|), XOR (^), NOT (~), left shift (<<), right shift (>>). Used for optimization, cryptography, compression, hardware interfacing, and low-memory algorithms.
+Bit manipulation works directly with the binary representation of integral values. Common operators include bitwise AND, OR, XOR, complement, and shifts.
 
 ## Core Explanation
 
-Common tricks: n & (n-1) clears lowest set bit (used in popcount). n & 1 checks odd/even. XOR swap: a^=b; b^=a; a^=b. x XOR x = 0, x XOR 0 = x. Bitmask: single integer stores 32 boolean flags. Fast multiplication/division by powers of 2 via shift (compiler optimization).
+Bitwise operations are useful when data is naturally represented as flags, masks, packed integers, low-level protocol fields, or hardware registers. The important engineering constraint is type discipline: language documentation usually restricts these operators to integral numeric types and defines how operands are converted before the operation.
 
 ## Further Reading
 
-- [Hacker's Delight (2nd Edition)](undefined)
+- [C Bitwise Operators](https://learn.microsoft.com/en-us/cpp/c-language/c-bitwise-operators)
+- [Bitwise and shift operators - C# reference](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/bitwise-and-shift-operators)
 
 ## Related Articles
 

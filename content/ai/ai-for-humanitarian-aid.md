@@ -5,7 +5,7 @@ schema_type: article
 category: ai
 language: en
 confidence: high
-last_verified: "2026-05-24"
+last_verified: "2026-06-02"
 created_date: "2026-05-24"
 generation_method: ai_structured
 ai_models:
@@ -18,33 +18,39 @@ completeness: 0.85
 atomic_facts:
   - id: af-ai-for-humanitarian-aid-1
     statement: >-
-      Elsevier International Journal of Disaster Risk Reduction (March 2026) published a comprehensive review mapping the AI technology landscape across all four phases of the disaster management
-      cycle -- mitigation, preparedness, response, and recovery. Deep learning for satellite imagery damage assessment and NLP for social media crisis mapping were identified as the most mature AI
-      applications.
-    source_title: International Journal of Disaster Risk Reduction (Elsevier, 2026) -- doi:10.1016/j.ijdrr.2026.105801
-    source_url: https://www.sciencedirect.com/science/article/pii/S0166497225002470
-    confidence: high
+      The xBD dataset paper presents a large-scale building damage assessment dataset for humanitarian assistance and disaster recovery research, with 850,736 building annotations across 45,362
+      square kilometers of imagery.
+    source_title: 'xBD: A Dataset for Assessing Building Damage from Satellite Imagery'
+    source_url: https://arxiv.org/abs/1911.09296
   - id: af-ai-for-humanitarian-aid-2
     statement: >-
-      The UN Global Pulse PulseSatellite project with Google Research deployed AI-powered satellite imagery analysis for humanitarian disaster assessment, reducing damage assessment time from weeks to
-      hours. Google's open-source Skai framework for post-disaster building damage assessment achieved 85-92% accuracy across multiple disaster types.
-    source_title: UN Global Pulse PulseSatellite (2024) / Google Research Skai framework / ReliefWeb
-    source_url: https://ieeexplore.ieee.org/document/11297255
-    confidence: high
+      Google Research describes SKAI as a machine-learning-based tool for automatic building damage assessments on aerial imagery of disaster sites.
+    source_title: google-research/skai
+    source_url: https://github.com/google-research/skai
+  - id: af-ai-for-humanitarian-aid-3
+    statement: >-
+      UN Global Pulse describes PulseSatellite use cases including damage assessment, flood assessment, fire detection, settlement mapping, and transportation-network damage assessment.
+    source_title: 'PulseSatellite: Using Human-AI Collaborations to Analyse Satellite Imagery in Disasters'
+    source_url: https://www.unglobalpulse.org/project/pulsesatellite-using-human-ai-collaborations-to-analyse-satellite-imagery-in-disasters/
 primary_sources:
   - id: ps-ai-for-humanitarian-aid-1
-    title: "Artificial intelligence in humanitarian aid: A review and future directions"
+    title: 'xBD: A Dataset for Assessing Building Damage from Satellite Imagery'
     type: academic_paper
-    year: 2026
-    institution: International Journal of Disaster Risk Reduction (Elsevier)
-    doi: 10.1016/j.ijdrr.2026.105801
-    url: https://www.sciencedirect.com/science/article/pii/S0166497225002470
+    year: 2019
+    institution: arXiv
+    url: https://arxiv.org/abs/1911.09296
   - id: ps-ai-for-humanitarian-aid-2
-    title: AI-Driven Multi-Satellite Data Fusion for Real-Time Disaster Assessment
-    type: academic_paper
-    year: 2025
-    institution: IEEE
-    url: https://ieeexplore.ieee.org/document/11297255
+    title: google-research/skai
+    type: software_repository
+    year: 2024
+    institution: Google Research
+    url: https://github.com/google-research/skai
+  - id: ps-ai-for-humanitarian-aid-3
+    title: 'PulseSatellite: Using Human-AI Collaborations to Analyse Satellite Imagery in Disasters'
+    type: project_page
+    year: 2024
+    institution: UN Global Pulse
+    url: https://www.unglobalpulse.org/project/pulsesatellite-using-human-ai-collaborations-to-analyse-satellite-imagery-in-disasters/
 known_gaps:
   - Anticipatory action -- triggering humanitarian funding before a forecasted disaster strikes based on AI predictions
   - Equitable AI -- ensuring AI-driven aid allocation does not systematically disadvantage marginalized groups
