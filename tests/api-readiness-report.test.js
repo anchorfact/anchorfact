@@ -150,7 +150,7 @@ console.log('AnchorFact API Readiness Report Tests\n');
 
 test('core query set defines subscription-readiness probes across paid-use categories', () => {
   assert(CORE_CORPUS_QUERIES.length >= 100, 'core query set should preserve the 100-query foundation');
-  assert(CORE_CORPUS_QUERIES.length <= 420, 'core query set should stay inside the expanded readiness-corpus range');
+  assert(CORE_CORPUS_QUERIES.length <= 430, 'core query set should stay inside the expanded readiness-corpus range');
   const categories = new Set(CORE_CORPUS_QUERIES.map(query => query.category));
   for (const category of ['agent_execution_sources', 'agent_rag', 'api_mcp', 'security_governance', 'data_infrastructure', 'llm_evaluation', 'developer_workflows', 'code_intelligence']) {
     assert(categories.has(category), `missing category ${category}`);
@@ -477,7 +477,15 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'computer-science/package-lockfiles-and-reproducible-installs',
     'computer-science/semantic-versioning-and-version-constraints',
     'computer-science/data-profiling-and-column-statistics',
-    'computer-science/data-access-audit-logs-and-query-history'
+    'computer-science/data-access-audit-logs-and-query-history',
+    'ai/agent-browser-cookies-storage-and-session-state',
+    'computer-science/dom-locators-and-accessible-names-for-ui-agents',
+    'ai/rag-incremental-indexing-and-vector-upserts',
+    'ai/vector-store-namespaces-and-tenant-isolation',
+    'ai/llm-evaluation-benchmark-harnesses-and-task-registries',
+    'computer-science/openapi-operation-ids-and-links-for-agent-navigation',
+    'computer-science/data-policy-tags-and-sensitive-column-governance',
+    'computer-science/package-manager-workspaces-and-monorepo-dependencies'
   ]) {
     assert(slugs.includes(slug), `missing agent/code-intelligence readiness slug ${slug}`);
   }

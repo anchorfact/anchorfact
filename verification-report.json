@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-02T15:31:43.538Z",
-    "total_articles": 1323,
+    "generated": "2026-06-02T15:55:24.660Z",
+    "total_articles": 1331,
     "total_with_errors": 0,
     "average_sources_per_article": "2.6",
     "overall_verification_rate": "90.4%",
-    "elapsed_ms": 146479,
-    "elapsed_sec": "146.5",
+    "elapsed_ms": 142440,
+    "elapsed_sec": "142.4",
     "concurrency": 3
   },
   "articles": [
@@ -20641,6 +20641,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\llm-evaluation-benchmark-harnesses-and-task-registries.md",
+      "article_id": "llm-evaluation-benchmark-harnesses-and-task-registries",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Hugging Face Evaluate Quick Tour",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://huggingface.co/docs/evaluate/en/a_quick_tour",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://huggingface.co/docs/evaluate/en/a_quick_tour"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "LM Evaluation Harness Groups and Benchmarks",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://lm-evaluation-harness.readthedocs.io/writing_tasks/groups_and_benchmarks/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://lm-evaluation-harness.readthedocs.io/writing_tasks/groups_and_benchmarks/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "CRFM HELM Code Structure",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://crfm-helm.readthedocs.io/en/latest/code/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://crfm-helm.readthedocs.io/en/latest/code/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\llm-evaluation-calibration-and-thresholds.md",
       "article_id": "llm-evaluation-calibration-and-thresholds",
       "generation_method": "ai_structured",
@@ -30273,6 +30334,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://www.elastic.co/docs/deploy-manage/distributed-architecture/clusters-nodes-shards"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\vector-store-namespaces-and-tenant-isolation.md",
+      "article_id": "vector-store-namespaces-and-tenant-isolation",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Pinecone Indexing Overview",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.pinecone.io/guides/index-data/indexing-overview",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.pinecone.io/guides/index-data/indexing-overview"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Qdrant Multitenancy",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://qdrant.tech/documentation/manage-data/multitenancy/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://qdrant.tech/documentation/manage-data/multitenancy/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Weaviate Multi-Tenancy",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.weaviate.io/weaviate/manage-collections/multi-tenancy",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.weaviate.io/weaviate/manage-collections/multi-tenancy"
               },
               "match": true
             }
@@ -41841,6 +41963,50 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\data-policy-tags-and-sensitive-column-governance.md",
+      "article_id": "data-policy-tags-and-sensitive-column-governance",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "BigQuery Column-Level Access Control",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.cloud.google.com/bigquery/docs/column-level-security",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/bigquery/docs/column-level-security?hl=es-419"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "BigQuery INFORMATION_SCHEMA COLUMNS",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.cloud.google.com/bigquery/docs/information-schema-columns",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/bigquery/docs/information-schema-columns"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\data-profiling-and-column-statistics.md",
       "article_id": "data-profiling-and-column-statistics",
       "generation_method": "ai_structured",
@@ -43327,6 +43493,67 @@
       "sources_unreachable": 0,
       "manual_reviewed": true,
       "manual_reviewed_at": "2026-05-28"
+    },
+    {
+      "file": "content\\computer-science\\dom-locators-and-accessible-names-for-ui-agents.md",
+      "article_id": "dom-locators-and-accessible-names-for-ui-agents",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Playwright Locators",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://playwright.dev/docs/locators",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://playwright.dev/docs/locators"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "W3C Accessible Name and Description Computation",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.w3.org/TR/accname-1.2/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.w3.org/TR/accname-1.2/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "WAI-ARIA 1.2",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.w3.org/TR/wai-aria-1.2/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.w3.org/TR/wai-aria-1.2/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content/computer-science/electron.md",
@@ -47830,6 +48057,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\openapi-operation-ids-and-links-for-agent-navigation.md",
+      "article_id": "openapi-operation-ids-and-links-for-agent-navigation",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "OpenAPI Specification 3.1.1",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://spec.openapis.org/oas/v3.1.1.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://spec.openapis.org/oas/v3.1.1.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenAPI Learn API Endpoints",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://learn.openapis.org/specification/paths.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.openapis.org/specification/paths.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenAPI Learn Links",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://learn.openapis.org/specification/links.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.openapis.org/specification/links.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content/computer-science/opengl-and-vulkan-graphics-pipeline-shaders-and-gpu-architecture.md",
       "article_id": "kb-2026-00016",
       "generation_method": "human_only",
@@ -48134,6 +48422,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://pnpm.io/next/git"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\package-manager-workspaces-and-monorepo-dependencies.md",
+      "article_id": "package-manager-workspaces-and-monorepo-dependencies",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "npm Workspaces",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.npmjs.com/cli/v11/using-npm/workspaces/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.npmjs.com/cli/v11/using-npm/workspaces/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "pnpm Workspace",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://pnpm.io/workspaces",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://pnpm.io/workspaces"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Yarn Workspaces",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://yarnpkg.com/features/workspaces",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://yarnpkg.com/features/workspaces"
               },
               "match": true
             }
@@ -50403,6 +50752,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://tree-sitter.github.io/tree-sitter/4-code-navigation.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\semantic-versioning-and-version-constraints.md",
+      "article_id": "semantic-versioning-and-version-constraints",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Semantic Versioning 2.0.0",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://semver.org/spec/v2.0.0.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://semver.org/spec/v2.0.0.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Python Version Specifiers",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://packaging.python.org/en/latest/specifications/version-specifiers/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://packaging.python.org/en/latest/specifications/version-specifiers/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Cargo SemVer Compatibility",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://doc.rust-lang.org/cargo/reference/semver.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://doc.rust-lang.org/cargo/reference/semver.html"
               },
               "match": true
             }
@@ -69585,6 +69995,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\agent-browser-cookies-storage-and-session-state.md",
+      "article_id": "agent-browser-cookies-storage-and-session-state",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "RFC 6265 HTTP State Management",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://httpwg.org/specs/rfc6265.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://httpwg.org/specs/rfc6265.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "WHATWG HTML Web Storage",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://html.spec.whatwg.org/multipage/webstorage.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://html.spec.whatwg.org/multipage/webstorage.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Playwright BrowserContext",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://playwright.dev/docs/api/class-browsercontext",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://playwright.dev/docs/api/class-browsercontext"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\ai-for-genomics-variant-calling-gene-expression-prediction-and-protein-dna-binding.md",
       "article_id": "kb-2026-00005",
       "generation_method": "ai_structured",
@@ -69607,6 +70078,67 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 1
+    },
+    {
+      "file": "content\\ai\\rag-incremental-indexing-and-vector-upserts.md",
+      "article_id": "rag-incremental-indexing-and-vector-upserts",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Pinecone Upsert Vectors",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.pinecone.io/reference/api/2024-07/data-plane/upsert",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.pinecone.io/reference/api/2024-07/data-plane/upsert"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Qdrant Points",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://qdrant.tech/documentation/manage-data/points/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://qdrant.tech/documentation/manage-data/points/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Pinecone Indexing Overview",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.pinecone.io/guides/index-data/indexing-overview",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.pinecone.io/guides/index-data/indexing-overview"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content\\arts\\history-of-printing.md",
@@ -69649,7 +70181,10 @@
               "method": "url",
               "identifier": "https://www.phaidon.com/store/art/the-story-of-modern-art-9780714831398/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.phaidon.com/en-int/store/art/the-story-of-modern-art-9780714831398"
+              },
               "match": false
             }
           ],
@@ -69785,7 +70320,10 @@
               "method": "url",
               "identifier": "https://press.princeton.edu/books/paperback/9780691170817/the-theory-of-games-and-economic-behavior",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://press.princeton.edu/books/paperback/9780691170817/the-theory-of-games-and-economic-behavior"
+              },
               "match": false
             }
           ],
@@ -69809,7 +70347,10 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/library/view/the-art-of/9781098102593/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.oreilly.com/library/view/the-art-of/9781098102593/"
+              },
               "match": false
             }
           ],
@@ -70073,10 +70614,7 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/head-first-design-patterns/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.oreilly.com/head-first-design-patterns/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -70276,7 +70814,10 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/websec/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.oreilly.com/websec/"
+              },
               "match": false
             }
           ],
@@ -71399,7 +71940,10 @@
               "method": "url",
               "identifier": "https://mitpress.mit.edu/books/introduction-algorithms-5th-edition",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 403,
+                "final_url": "https://mitpress.mit.edu/books/introduction-algorithms-5th-edition"
+              },
               "match": false
             }
           ],
@@ -72006,7 +72550,10 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/linux-kernel/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.oreilly.com/linux-kernel/"
+              },
               "match": false
             }
           ],
@@ -72101,10 +72648,7 @@
               "method": "url",
               "identifier": "https://www.informit.com/patterns-eaa/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.informit.com/404.aspx?aspxerrorpath=/patterns-eaa"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -72426,10 +72970,7 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/websec/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.oreilly.com/websec/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -72942,67 +73483,6 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 1
-    },
-    {
-      "file": "content\\computer-science\\semantic-versioning-and-version-constraints.md",
-      "article_id": "semantic-versioning-and-version-constraints",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "Semantic Versioning 2.0.0",
-          "source_type": "standard",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://semver.org/spec/v2.0.0.html",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://semver.org/spec/v2.0.0.html"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Python Version Specifiers",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://packaging.python.org/en/latest/specifications/version-specifiers/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://packaging.python.org/en/latest/specifications/version-specifiers/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Cargo SemVer Compatibility",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://doc.rust-lang.org/cargo/reference/semver.html",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://doc.rust-lang.org/cargo/reference/semver.html"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\set-theory.md",
@@ -73800,10 +74280,7 @@
               "method": "url",
               "identifier": "https://mitpress.mit.edu/books/introduction-algorithms-5th-edition",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://mitpress.mit.edu/books/introduction-algorithms-5th-edition"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -73888,10 +74365,7 @@
               "method": "url",
               "identifier": "https://mitpress.mit.edu/books/types-and-programming-languages",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://mitpress.mit.edu/books/types-and-programming-languages"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -74900,10 +75374,7 @@
               "method": "url",
               "identifier": "https://www.cdc.gov/eis/field-epi-manual/",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.cdc.gov/eis/field-epi-manual/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -75329,7 +75800,10 @@
               "method": "url",
               "identifier": "https://www.hatchards.co.uk/book/jonathan-wilson/inverting-the-pyramid/9781409128649",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 403,
+                "final_url": "https://www.hatchards.co.uk/book/jonathan-wilson/inverting-the-pyramid/9781409128649"
+              },
               "match": false
             }
           ],
