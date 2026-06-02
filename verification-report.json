@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-02T18:29:28.501Z",
-    "total_articles": 1371,
+    "generated": "2026-06-02T18:45:05.687Z",
+    "total_articles": 1379,
     "total_with_errors": 0,
     "average_sources_per_article": "2.6",
     "overall_verification_rate": "90.7%",
-    "elapsed_ms": 95798,
-    "elapsed_sec": "95.8",
+    "elapsed_ms": 102148,
+    "elapsed_sec": "102.1",
     "concurrency": 3
   },
   "articles": [
@@ -26745,6 +26745,51 @@
         }
       ],
       "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\rag-hypothetical-document-embeddings-hyde.md",
+      "article_id": "rag-hypothetical-document-embeddings-hyde",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Precise Zero-Shot Dense Retrieval without Relevance Labels",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "doi",
+              "identifier": "10.18653/v1/2023.acl-long.99",
+              "verified": true,
+              "metadata": {
+                "title": "Precise Zero-Shot Dense Retrieval without Relevance Labels",
+                "publisher": "Association for Computational Linguistics",
+                "year": 2023
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "LlamaIndex Query Transformations",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.llamaindex.ai/en/stable/optimizing/advanced_retrieval/query_transformations/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.llamaindex.ai/python/framework/optimizing/advanced_retrieval/query_transformations/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
       "sources_unreachable": 0
     },
     {
@@ -72173,6 +72218,50 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\agent-pull-request-review-comments-and-unresolved-threads.md",
+      "article_id": "agent-pull-request-review-comments-and-unresolved-threads",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "GitHub About Pull Request Reviews",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/about-pull-request-reviews",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/about-pull-request-reviews"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GitHub GraphQL API Reference",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/graphql/reference",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/graphql/reference"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\ai-for-genomics-variant-calling-gene-expression-prediction-and-protein-dna-binding.md",
       "article_id": "kb-2026-00005",
       "generation_method": "ai_structured",
@@ -72197,23 +72286,22 @@
       "sources_unreachable": 1
     },
     {
-      "file": "content\\ai\\rag-hypothetical-document-embeddings-hyde.md",
-      "article_id": "rag-hypothetical-document-embeddings-hyde",
+      "file": "content\\ai\\llm-evaluation-judge-bias-and-randomization.md",
+      "article_id": "llm-evaluation-judge-bias-and-randomization",
       "generation_method": "ai_structured",
       "sources_total": 2,
       "verification_results": [
         {
-          "source_title": "Precise Zero-Shot Dense Retrieval without Relevance Labels",
+          "source_title": "Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena",
           "source_type": "academic_paper",
           "results": [
             {
-              "method": "doi",
-              "identifier": "10.18653/v1/2023.acl-long.99",
+              "method": "url",
+              "identifier": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/91f18a1287b398d378ef22505bf41832-Abstract-Datasets_and_Benchmarks.html",
               "verified": true,
               "metadata": {
-                "title": "Precise Zero-Shot Dense Retrieval without Relevance Labels",
-                "publisher": "Association for Computational Linguistics",
-                "year": 2023
+                "status": 200,
+                "final_url": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/91f18a1287b398d378ef22505bf41832-Abstract-Datasets_and_Benchmarks.html"
               },
               "match": true
             }
@@ -72221,16 +72309,60 @@
           "all_verified": true
         },
         {
-          "source_title": "LlamaIndex Query Transformations",
+          "source_title": "Large Language Models are not Fair Evaluators",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://aclanthology.org/2024.acl-long.511/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://aclanthology.org/2024.acl-long.511/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\retrieval-sparse-vectors-and-learned-sparse-retrieval.md",
+      "article_id": "retrieval-sparse-vectors-and-learned-sparse-retrieval",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Qdrant Vectors Documentation",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.llamaindex.ai/en/stable/optimizing/advanced_retrieval/query_transformations/",
+              "identifier": "https://qdrant.tech/documentation/manage-data/vectors/",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://developers.llamaindex.ai/python/framework/optimizing/advanced_retrieval/query_transformations/"
+                "final_url": "https://qdrant.tech/documentation/manage-data/vectors/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Pinecone Hybrid Search",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.pinecone.io/guides/search/hybrid-search",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.pinecone.io/guides/search/hybrid-search"
               },
               "match": true
             }
@@ -72516,6 +72648,94 @@
       "sources_unreachable": 1
     },
     {
+      "file": "content\\computer-science\\api-graphql-operation-names-and-variables-for-agents.md",
+      "article_id": "api-graphql-operation-names-and-variables-for-agents",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "GraphQL Specification October 2021",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://spec.graphql.org/October2021/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://spec.graphql.org/October2021/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GraphQL Queries Documentation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://graphql.org/learn/queries/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://graphql.org/learn/queries/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\api-openapi-discriminators-and-polymorphic-schemas.md",
+      "article_id": "api-openapi-discriminators-and-polymorphic-schemas",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "OpenAPI Specification 3.1.1",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://spec.openapis.org/oas/v3.1.1.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://spec.openapis.org/oas/v3.1.1.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Redocly OpenAPI Discriminator",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://redocly.com/learn/openapi/discriminator",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://redocly.com/learn/openapi/discriminator"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\bloom-filters-space-efficient-probabilistic-data-structures.md",
       "article_id": "kb-2026-00029",
       "generation_method": "ai_structured",
@@ -72683,6 +72903,50 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 3
+    },
+    {
+      "file": "content\\computer-science\\code-lsp-inlay-hints-and-code-lens.md",
+      "article_id": "code-lsp-inlay-hints-and-code-lens",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Language Server Protocol Specification 3.17",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://microsoft.github.io/language-server-protocol/specifications/lsp/3.17/specification/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://microsoft.github.io/language-server-protocol/specifications/lsp/3.17/specification/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Language Server Protocol Overview",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://microsoft.github.io/language-server-protocol/overviews/lsp/overview/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://microsoft.github.io/language-server-protocol/overviews/lsp/overview/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\command-pattern.md",
@@ -73008,6 +73272,94 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 3
+    },
+    {
+      "file": "content\\computer-science\\data-airflow-deferrable-operators-and-triggerer.md",
+      "article_id": "data-airflow-deferrable-operators-and-triggerer",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Airflow Deferrable Operators and Triggers",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://airflow.apache.org/docs/apache-airflow/stable/authoring-and-scheduling/deferring.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://airflow.apache.org/docs/apache-airflow/stable/authoring-and-scheduling/deferring.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Airflow Deferrable Operators and Triggers 2.4.3",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://airflow.apache.org/docs/apache-airflow/2.4.3/authoring-and-scheduling/deferring.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://airflow.apache.org/docs/apache-airflow/2.4.3/authoring-and-scheduling/deferring.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\data-iceberg-partition-evolution-and-hidden-partitioning.md",
+      "article_id": "data-iceberg-partition-evolution-and-hidden-partitioning",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Apache Iceberg Partitioning",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://iceberg.apache.org/docs/1.7.1/partitioning/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://iceberg.apache.org/docs/1.7.1/partitioning/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Apache Iceberg Specification",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://iceberg.apache.org/spec/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://iceberg.apache.org/spec/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\data-lake-architecture.md",

@@ -150,7 +150,7 @@ console.log('AnchorFact API Readiness Report Tests\n');
 
 test('core query set defines subscription-readiness probes across paid-use categories', () => {
   assert(CORE_CORPUS_QUERIES.length >= 100, 'core query set should preserve the 100-query foundation');
-  assert(CORE_CORPUS_QUERIES.length <= 470, 'core query set should stay inside the expanded readiness-corpus range');
+  assert(CORE_CORPUS_QUERIES.length <= 480, 'core query set should stay inside the expanded readiness-corpus range');
   const categories = new Set(CORE_CORPUS_QUERIES.map(query => query.category));
   for (const category of ['agent_execution_sources', 'agent_rag', 'api_mcp', 'security_governance', 'data_infrastructure', 'llm_evaluation', 'developer_workflows', 'code_intelligence']) {
     assert(categories.has(category), `missing category ${category}`);
@@ -186,6 +186,7 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'ai/retrieval-metadata-filtering',
     'ai/retrieval-indexing-and-document-parsing',
     'ai/sparse-retrieval-and-bm25',
+    'ai/retrieval-sparse-vectors-and-learned-sparse-retrieval',
     'ai/reciprocal-rank-fusion',
     'ai/retrieval-caching-and-semantic-cache',
     'ai/rag-query-routing',
@@ -199,6 +200,7 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'ai/retrieval-access-control-and-permission-filtering',
     'ai/prompt-injection-defenses-for-tool-using-agents',
     'ai/llm-as-judge-evaluation',
+    'ai/llm-evaluation-judge-bias-and-randomization',
     'ai/agent-benchmarks',
     'ai/evaluation-datasets-and-golden-tests-for-llms',
     'ai/evaluation-rubrics-and-grader-design',
@@ -232,6 +234,7 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'computer-science/data-contracts-for-pipelines',
     'computer-science/data-pipeline-orchestration',
     'computer-science/data-airflow-datasets-and-data-aware-scheduling',
+    'computer-science/data-airflow-deferrable-operators-and-triggerer',
     'computer-science/data-freshness-and-slas',
     'computer-science/schema-registry-for-event-streaming',
     'computer-science/openlineage-for-data-pipelines',
@@ -253,6 +256,7 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'computer-science/configuration-and-environment-variable-discovery',
     'ai/agent-runbooks-and-incident-response',
     'ai/agent-incident-postmortems-and-root-cause-analysis',
+    'ai/agent-pull-request-review-comments-and-unresolved-threads',
     'ai/agent-service-level-objectives-and-error-budgets',
     'ai/agent-feature-flags-and-remote-configuration',
     'ai/agent-ci-logs-and-deployment-history',
@@ -308,6 +312,7 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'computer-science/call-graphs-and-impact-analysis',
     'computer-science/language-server-protocol-for-code-agents',
     'computer-science/code-language-server-hover-signature-and-completion-context',
+    'computer-science/code-lsp-inlay-hints-and-code-lens',
     'computer-science/software-bill-of-materials-and-dependency-graphs',
     'computer-science/tree-sitter-parsers-for-code-intelligence',
     'computer-science/package-dependency-resolution-for-code-agents',
@@ -394,6 +399,7 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'computer-science/data-column-level-lineage-and-impact-analysis',
     'computer-science/data-time-travel-and-snapshot-isolation',
     'computer-science/data-iceberg-metadata-tables-and-manifests',
+    'computer-science/data-iceberg-partition-evolution-and-hidden-partitioning',
     'computer-science/data-iceberg-snapshot-expiration-and-orphan-files',
     'computer-science/data-change-data-feed-and-incremental-table-reads',
     'computer-science/data-outbox-pattern-and-change-publishing',
@@ -504,6 +510,8 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'computer-science/openapi-security-schemes-and-oauth-scopes-for-agents',
     'computer-science/api-resource-names-and-canonical-identifiers-for-agents',
     'computer-science/api-graphql-persisted-queries-and-operation-safelists',
+    'computer-science/api-graphql-operation-names-and-variables-for-agents',
+    'computer-science/api-openapi-discriminators-and-polymorphic-schemas',
     'computer-science/data-partition-pruning-and-query-scanning',
     'computer-science/code-search-query-syntax-for-repository-agents',
     'computer-science/lsp-rename-and-workspace-edits-for-code-agents',
