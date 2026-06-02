@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-02T05:43:02.999Z",
-    "total_articles": 1128,
+    "generated": "2026-06-02T06:05:37.806Z",
+    "total_articles": 1140,
     "total_with_errors": 0,
     "average_sources_per_article": "2.6",
-    "overall_verification_rate": "88.4%",
-    "elapsed_ms": 110877,
-    "elapsed_sec": "110.9",
+    "overall_verification_rate": "88.6%",
+    "elapsed_ms": 114311,
+    "elapsed_sec": "114.3",
     "concurrency": 3
   },
   "articles": [
@@ -632,6 +632,128 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://kubernetes.io/docs/concepts/workloads/controllers/deployment/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-container-image-registry-and-tags.md",
+      "article_id": "agent-container-image-registry-and-tags",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Docker Image Tag",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.docker.com/engine/reference/commandline/tag/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.docker.com/reference/cli/docker/image/tag/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Docker Hub Image Tags",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.docker.com/docker-hub/repos/manage/hub-images/tags/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.docker.com/docker-hub/repos/manage/hub-images/tags/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GitHub Container Registry",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/packages/getting-started-with-github-container-registry/about-github-container-registry",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-database-migration-history.md",
+      "article_id": "agent-database-migration-history",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Flyway Schema History Table",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://documentation.red-gate.com/flyway/flyway-concepts/migrations/flyway-schema-history-table",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://documentation.red-gate.com/flyway/flyway-concepts/migrations/flyway-schema-history-table"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Liquibase Core Concepts",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.liquibase.org/get-started/core-usage/liquibase-core-concepts-author-database-changes",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.liquibase.org/get-started/core-usage/liquibase-core-concepts-author-database-changes"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Prisma Migration Histories",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.prisma.io/docs/orm/prisma-migrate/understanding-prisma-migrate/migration-histories",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.prisma.io/docs/orm/prisma-migrate/understanding-prisma-migrate/migration-histories"
               },
               "match": true
             }
@@ -1555,6 +1677,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://www.atlassian.com/incident-management/kpis/sla-vs-slo-vs-sli"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-service-ownership-and-on-call-schedules.md",
+      "article_id": "agent-service-ownership-and-on-call-schedules",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Backstage Software Catalog",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://backstage.io/docs/features/software-catalog/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://backstage.io/docs/features/software-catalog/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "PagerDuty Escalation Policies and Schedules",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://support.pagerduty.com/main/docs/escalation-policies-and-schedules",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://support.pagerduty.com/main/docs/escalation-policies-and-schedules"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Opsgenie Manage On-Call Schedules and Rotations",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://support.atlassian.com/opsgenie/docs/manage-on-call-schedules-and-rotations/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://support.atlassian.com/opsgenie/docs/manage-on-call-schedules-and-rotations/"
               },
               "match": true
             }
@@ -16925,6 +17108,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\llm-sampling-parameters-in-evaluation.md",
+      "article_id": "llm-sampling-parameters-in-evaluation",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Azure OpenAI REST API Reference",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://learn.microsoft.com/en-us/azure/foundry/openai/reference",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.microsoft.com/en-us/azure/foundry/openai/reference"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Anthropic Messages API",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.anthropic.com/en/api/messages",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://platform.claude.com/docs/en/api/messages"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Gemini API Text Generation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://ai.google.dev/gemini-api/docs/text-generation",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://ai.google.dev/gemini-api/docs/text-generation?hl=tr"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content/ai/llms.md",
       "article_id": "kb-2026-00005",
       "generation_method": "ai_structured",
@@ -21312,6 +21556,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\retrieval-query-logs-and-search-observability.md",
+      "article_id": "retrieval-query-logs-and-search-observability",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Azure AI Search Monitor Queries",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://learn.microsoft.com/en-us/azure/search/search-monitor-queries",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.microsoft.com/en-us/azure/search/search-monitor-queries"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Elasticsearch Slow Logs",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.elastic.co/docs/deploy-manage/monitor/logging-configuration/slow-logs",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.elastic.co/docs/deploy-manage/monitor/logging-configuration/slow-logs"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenSearch Logs",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.opensearch.org/latest/install-and-configure/configuring-opensearch/logs/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.opensearch.org/latest/install-and-configure/configuring-opensearch/logs/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\retrieval-query-rewriting.md",
       "article_id": "retrieval-query-rewriting",
       "generation_method": "ai_structured",
@@ -22954,6 +23259,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://www.elastic.co/docs/reference/elasticsearch/mapping-reference/dense-vector"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\vector-index-sharding-and-replication.md",
+      "article_id": "vector-index-sharding-and-replication",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Qdrant Distributed Deployment",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://qdrant.tech/documentation/guides/distributed_deployment/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://qdrant.tech/documentation/operations/distributed_deployment/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Weaviate Cluster Architecture",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.weaviate.io/weaviate/concepts/replication-architecture/cluster-architecture",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.weaviate.io/weaviate/concepts/replication-architecture/cluster-architecture"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Elasticsearch Nodes and Shards",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.elastic.co/guide/en/elasticsearch/reference/current/nodes-shards.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.elastic.co/docs/deploy-manage/distributed-architecture/clusters-nodes-shards"
               },
               "match": true
             }
@@ -27736,6 +28102,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\api-idempotency-keys.md",
+      "article_id": "api-idempotency-keys",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Stripe Idempotent Requests",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.stripe.com/api/idempotent_requests",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.stripe.com/api/idempotent_requests"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Adyen API Idempotency",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.adyen.com/development-resources/api-idempotency",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.adyen.com/development-resources/api-idempotency"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "RFC 9110 HTTP Semantics",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://datatracker.ietf.org/doc/html/rfc9110#section-9.2.2",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://datatracker.ietf.org/doc/html/rfc9110"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\api-pagination-and-rate-limits.md",
       "article_id": "api-pagination-and-rate-limits",
       "generation_method": "ai_structured",
@@ -30252,6 +30679,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\data-backfills-and-replay-pipelines.md",
+      "article_id": "data-backfills-and-replay-pipelines",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Apache Airflow Backfill",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/backfill.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/backfill.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Dagster Backfilling Data",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.dagster.io/guides/build/partitions-and-backfills/backfilling-data",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.dagster.io/guides/build/partitions-and-backfills/backfilling-data"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "dbt Incremental Models",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.getdbt.com/docs/build/incremental-models",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.getdbt.com/docs/build/incremental-models"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\data-catalogs-and-metadata-lineage.md",
       "article_id": "data-catalogs-and-metadata-lineage",
       "generation_method": "ai_structured",
@@ -30618,6 +31106,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\debug-symbols-and-symbolication-for-code-agents.md",
+      "article_id": "debug-symbols-and-symbolication-for-code-agents",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "LLVM Source Level Debugging",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://llvm.org/docs/SourceLevelDebugging.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://llvm.org/docs/SourceLevelDebugging.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Sentry Debug Information Files",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.sentry.dev/cli/dif/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.sentry.dev/cli/dif/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "LLVM PDB Debug Info on Windows",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://blog.llvm.org/2017/08/llvm-on-windows-now-supports-pdb-debug.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://blog.llvm.org/2017/08/llvm-on-windows-now-supports-pdb-debug.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content/computer-science/deep-learning-hardware-gpus-tpus-and-ai-accelerator-architecture.md",
       "article_id": "kb-2026-00014",
       "generation_method": "human_only",
@@ -30869,6 +31418,67 @@
                 "manual_review": true,
                 "reviewed_at": "2026-05-28",
                 "note": "Fifteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\distributed-tracing-and-correlation-context.md",
+      "article_id": "distributed-tracing-and-correlation-context",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "W3C Trace Context",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.w3.org/TR/trace-context/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.w3.org/TR/trace-context/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenTelemetry Baggage",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://opentelemetry.io/docs/concepts/signals/baggage/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://opentelemetry.io/docs/concepts/signals/baggage/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "W3C Baggage",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.w3.org/TR/baggage/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.w3.org/TR/baggage/"
               },
               "match": true
             }
@@ -35951,6 +36561,67 @@
       "manual_reviewed_at": "2026-05-28"
     },
     {
+      "file": "content\\computer-science\\package-vulnerability-advisories-for-code-agents.md",
+      "article_id": "package-vulnerability-advisories-for-code-agents",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "GitHub Dependabot Alerts",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/code-security/dependabot/dependabot-alerts/about-dependabot-alerts",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/code-security/concepts/supply-chain-security/about-dependabot-alerts"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "npm Audit",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.npmjs.com/cli/v8/commands/npm-audit/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.npmjs.com/cli/v8/commands/npm-audit/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OSV API",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://google.github.io/osv.dev/api/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://google.github.io/osv.dev/api/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content/computer-science/packer.md",
       "article_id": "kb-2026-00318",
       "generation_method": "human_only",
@@ -37588,6 +38259,67 @@
       "sources_unreachable": 0,
       "manual_reviewed": true,
       "manual_reviewed_at": "2026-05-28"
+    },
+    {
+      "file": "content\\computer-science\\runtime-feature-detection-and-compatibility.md",
+      "article_id": "runtime-feature-detection-and-compatibility",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "MDN Feature Detection",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing/Feature_detection",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Testing/Feature_detection"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "MDN Browser Detection Using the User Agent",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Browser_detection_using_the_user_agent",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Browser_detection_using_the_user_agent"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "web.dev Baseline",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://web.dev/baseline",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://web.dev/baseline?hl=zh-cn"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content/computer-science/rust-programming-language-ownership-borrowing-and-memory-safety.md",
@@ -57020,22 +57752,22 @@
       "sources_unreachable": 0
     },
     {
-      "file": "content\\ai\\agent-container-image-registry-and-tags.md",
-      "article_id": "agent-container-image-registry-and-tags",
+      "file": "content\\ai\\agent-cloud-resource-inventory.md",
+      "article_id": "agent-cloud-resource-inventory",
       "generation_method": "ai_structured",
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Docker Image Tag",
+          "source_title": "Google Cloud Asset Inventory Overview",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.docker.com/engine/reference/commandline/tag/",
+              "identifier": "https://cloud.google.com/asset-inventory/docs/overview",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://docs.docker.com/reference/cli/docker/image/tag/"
+                "final_url": "https://docs.cloud.google.com/asset-inventory/docs/asset-inventory-overview"
               },
               "match": true
             }
@@ -57043,16 +57775,16 @@
           "all_verified": true
         },
         {
-          "source_title": "Docker Hub Image Tags",
+          "source_title": "Azure Resource Graph Overview",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.docker.com/docker-hub/repos/manage/hub-images/tags/",
+              "identifier": "https://learn.microsoft.com/en-us/azure/governance/resource-graph/overview",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://docs.docker.com/docker-hub/repos/manage/hub-images/tags/"
+                "final_url": "https://learn.microsoft.com/en-us/azure/governance/resource-graph/overview"
               },
               "match": true
             }
@@ -57060,16 +57792,16 @@
           "all_verified": true
         },
         {
-          "source_title": "GitHub Container Registry",
+          "source_title": "AWS Resource Explorer",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.github.com/packages/getting-started-with-github-container-registry/about-github-container-registry",
+              "identifier": "https://docs.aws.amazon.com/resource-explorer/latest/userguide/what-is-resource-explorer.html",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry"
+                "final_url": "https://docs.aws.amazon.com/resource-explorer/latest/userguide/"
               },
               "match": true
             }
@@ -57081,22 +57813,22 @@
       "sources_unreachable": 0
     },
     {
-      "file": "content\\ai\\agent-database-migration-history.md",
-      "article_id": "agent-database-migration-history",
+      "file": "content\\ai\\agent-evaluation-harnesses-and-test-runs.md",
+      "article_id": "agent-evaluation-harnesses-and-test-runs",
       "generation_method": "ai_structured",
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Flyway Schema History Table",
+          "source_title": "LangSmith Evaluation Concepts",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://documentation.red-gate.com/flyway/flyway-concepts/migrations/flyway-schema-history-table",
+              "identifier": "https://docs.langchain.com/langsmith/evaluation-concepts",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://documentation.red-gate.com/flyway/flyway-concepts/migrations/flyway-schema-history-table"
+                "final_url": "https://docs.langchain.com/langsmith/evaluation-concepts"
               },
               "match": true
             }
@@ -57104,16 +57836,16 @@
           "all_verified": true
         },
         {
-          "source_title": "Liquibase Core Concepts",
+          "source_title": "Promptfoo Command Line",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.liquibase.org/get-started/core-usage/liquibase-core-concepts-author-database-changes",
+              "identifier": "https://www.promptfoo.dev/docs/usage/command-line/",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://www.liquibase.org/get-started/core-usage/liquibase-core-concepts-author-database-changes"
+                "final_url": "https://www.promptfoo.dev/docs/usage/command-line/"
               },
               "match": true
             }
@@ -57121,16 +57853,16 @@
           "all_verified": true
         },
         {
-          "source_title": "Prisma Migration Histories",
-          "source_type": "documentation",
+          "source_title": "OpenAI Evals",
+          "source_type": "repository",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.prisma.io/docs/orm/prisma-migrate/understanding-prisma-migrate/migration-histories",
+              "identifier": "https://github.com/openai/evals",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://www.prisma.io/docs/orm/prisma-migrate/understanding-prisma-migrate/migration-histories"
+                "final_url": "https://github.com/openai/evals"
               },
               "match": true
             }
@@ -57142,22 +57874,22 @@
       "sources_unreachable": 0
     },
     {
-      "file": "content\\ai\\agent-service-ownership-and-on-call-schedules.md",
-      "article_id": "agent-service-ownership-and-on-call-schedules",
+      "file": "content\\ai\\agent-infrastructure-as-code-state-and-drift.md",
+      "article_id": "agent-infrastructure-as-code-state-and-drift",
       "generation_method": "ai_structured",
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Backstage Software Catalog",
+          "source_title": "Terraform State",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://backstage.io/docs/features/software-catalog/",
+              "identifier": "https://developer.hashicorp.com/terraform/language/state",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://backstage.io/docs/features/software-catalog/"
+                "final_url": "https://developer.hashicorp.com/terraform/language/state"
               },
               "match": true
             }
@@ -57165,16 +57897,16 @@
           "all_verified": true
         },
         {
-          "source_title": "PagerDuty Escalation Policies and Schedules",
+          "source_title": "AWS CloudFormation Drift Detection",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://support.pagerduty.com/main/docs/escalation-policies-and-schedules",
+              "identifier": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-stack-drift.html",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://support.pagerduty.com/main/docs/escalation-policies-and-schedules"
+                "final_url": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-stack-drift.html"
               },
               "match": true
             }
@@ -57182,16 +57914,77 @@
           "all_verified": true
         },
         {
-          "source_title": "Opsgenie Manage On-Call Schedules and Rotations",
+          "source_title": "Pulumi Detecting and Reconciling Drift",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://support.atlassian.com/opsgenie/docs/manage-on-call-schedules-and-rotations/",
+              "identifier": "https://www.pulumi.com/docs/iac/operations/stack-management/drift/",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://support.atlassian.com/opsgenie/docs/manage-on-call-schedules-and-rotations/"
+                "final_url": "https://www.pulumi.com/docs/iac/operations/stack-management/drift/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-secrets-rotation-and-credential-expiry.md",
+      "article_id": "agent-secrets-rotation-and-credential-expiry",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "AWS Secrets Manager Rotation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.aws.amazon.com/secretsmanager/latest/userguide/rotating-secrets.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.aws.amazon.com/secretsmanager/latest/userguide/rotating-secrets.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Google Secret Manager Rotation Recommendations",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://cloud.google.com/secret-manager/docs/rotation-recommendations",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/secret-manager/docs/rotation-recommendations"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "HashiCorp Vault Leases",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.hashicorp.com/vault/docs/concepts/lease",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developer.hashicorp.com/vault/docs/concepts/lease"
               },
               "match": true
             }
@@ -57227,22 +58020,22 @@
       "sources_unreachable": 1
     },
     {
-      "file": "content\\ai\\llm-sampling-parameters-in-evaluation.md",
-      "article_id": "llm-sampling-parameters-in-evaluation",
+      "file": "content\\ai\\llm-evaluation-dataset-versioning.md",
+      "article_id": "llm-evaluation-dataset-versioning",
       "generation_method": "ai_structured",
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Azure OpenAI REST API Reference",
+          "source_title": "lakeFS Concepts and Model",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://learn.microsoft.com/en-us/azure/foundry/openai/reference",
+              "identifier": "https://docs.lakefs.io/understand/model/",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://learn.microsoft.com/en-us/azure/foundry/openai/reference"
+                "final_url": "https://docs.lakefs.io/understand/model/"
               },
               "match": true
             }
@@ -57250,16 +58043,16 @@
           "all_verified": true
         },
         {
-          "source_title": "Anthropic Messages API",
+          "source_title": "DVC Versioning Data and Models",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.anthropic.com/en/api/messages",
+              "identifier": "https://dvc.org/doc/use-cases/versioning-data-and-models",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://platform.claude.com/docs/en/api/messages"
+                "final_url": "https://doc.dvc.org/example-scenarios/versioning-data-and-models"
               },
               "match": true
             }
@@ -57267,16 +58060,16 @@
           "all_verified": true
         },
         {
-          "source_title": "Gemini API Text Generation",
+          "source_title": "GitHub About Git LFS",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://ai.google.dev/gemini-api/docs/text-generation",
+              "identifier": "https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-git-large-file-storage",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://ai.google.dev/gemini-api/docs/text-generation?hl=tr"
+                "final_url": "https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-git-large-file-storage"
               },
               "match": true
             }
@@ -57288,11 +58081,106 @@
       "sources_unreachable": 0
     },
     {
-      "file": "content\\ai\\retrieval-query-logs-and-search-observability.md",
-      "article_id": "retrieval-query-logs-and-search-observability",
+      "file": "content\\ai\\rag-index-evaluation-with-recall-at-k.md",
+      "article_id": "rag-index-evaluation-with-recall-at-k",
       "generation_method": "ai_structured",
       "sources_total": 3,
       "verification_results": [
+        {
+          "source_title": "Ragas Context Recall",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.ragas.io/en/v0.2.0/concepts/metrics/available_metrics/context_recall/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.ragas.io/en/v0.2.0/concepts/metrics/available_metrics/context_recall/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "LlamaIndex Retrieval Evaluation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.llamaindex.ai/en/stable/examples/evaluation/retrieval/retriever_eval/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.llamaindex.ai/python/examples/evaluation/retrieval/retriever_eval/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Azure AI Search Vector Ranking",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://learn.microsoft.com/en-us/azure/search/vector-search-ranking",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.microsoft.com/en-us/azure/search/vector-search-ranking"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\retrieval-feedback-signals-and-click-logs.md",
+      "article_id": "retrieval-feedback-signals-and-click-logs",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Algolia Click and Conversion Events",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.algolia.com/doc/guides/insights-and-analytics/click-analytics",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.algolia.com/doc/guides/sending-events"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Elasticsearch Behavioral Analytics APIs",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.elastic.co/docs/api/doc/elasticsearch/group/endpoint-analytics",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.elastic.co/docs/api/doc/elasticsearch/group/endpoint-analytics"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
         {
           "source_title": "Azure AI Search Monitor Queries",
           "source_type": "documentation",
@@ -57304,101 +58192,6 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://learn.microsoft.com/en-us/azure/search/search-monitor-queries"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Elasticsearch Slow Logs",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.elastic.co/docs/deploy-manage/monitor/logging-configuration/slow-logs",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://www.elastic.co/docs/deploy-manage/monitor/logging-configuration/slow-logs"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "OpenSearch Logs",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.opensearch.org/latest/install-and-configure/configuring-opensearch/logs/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.opensearch.org/latest/install-and-configure/configuring-opensearch/logs/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
-    },
-    {
-      "file": "content\\ai\\vector-index-sharding-and-replication.md",
-      "article_id": "vector-index-sharding-and-replication",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "Qdrant Distributed Deployment",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://qdrant.tech/documentation/guides/distributed_deployment/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://qdrant.tech/documentation/operations/distributed_deployment/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Weaviate Cluster Architecture",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.weaviate.io/weaviate/concepts/replication-architecture/cluster-architecture",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.weaviate.io/weaviate/concepts/replication-architecture/cluster-architecture"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Elasticsearch Nodes and Shards",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.elastic.co/guide/en/elasticsearch/reference/current/nodes-shards.html",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://www.elastic.co/docs/deploy-manage/distributed-architecture/clusters-nodes-shards"
               },
               "match": true
             }
@@ -57684,22 +58477,22 @@
       "sources_unreachable": 1
     },
     {
-      "file": "content\\computer-science\\api-idempotency-keys.md",
-      "article_id": "api-idempotency-keys",
+      "file": "content\\computer-science\\api-pagination-cursors-and-continuation-tokens.md",
+      "article_id": "api-pagination-cursors-and-continuation-tokens",
       "generation_method": "ai_structured",
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Stripe Idempotent Requests",
+          "source_title": "Stripe Pagination",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.stripe.com/api/idempotent_requests",
+              "identifier": "https://docs.stripe.com/api/pagination",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://docs.stripe.com/api/idempotent_requests"
+                "final_url": "https://docs.stripe.com/api/pagination"
               },
               "match": true
             }
@@ -57707,16 +58500,16 @@
           "all_verified": true
         },
         {
-          "source_title": "Adyen API Idempotency",
+          "source_title": "Microsoft Graph Paging",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.adyen.com/development-resources/api-idempotency",
+              "identifier": "https://learn.microsoft.com/en-us/graph/paging",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://docs.adyen.com/development-resources/api-idempotency"
+                "final_url": "https://learn.microsoft.com/en-us/graph/paging"
               },
               "match": true
             }
@@ -57724,16 +58517,16 @@
           "all_verified": true
         },
         {
-          "source_title": "RFC 9110 HTTP Semantics",
-          "source_type": "standard",
+          "source_title": "JSON:API Cursor Pagination Profile",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://datatracker.ietf.org/doc/html/rfc9110#section-9.2.2",
+              "identifier": "https://jsonapi.org/profiles/ethanresnick/cursor-pagination/",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://datatracker.ietf.org/doc/html/rfc9110"
+                "final_url": "https://jsonapi.org/profiles/ethanresnick/cursor-pagination/"
               },
               "match": true
             }
@@ -57912,6 +58705,67 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 3
+    },
+    {
+      "file": "content\\computer-science\\code-search-indexing-and-trigram-search.md",
+      "article_id": "code-search-indexing-and-trigram-search",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Sourcegraph Architecture",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://sourcegraph.com/docs/admin/architecture",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://sourcegraph.com/docs/admin/architecture"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "PostgreSQL pg_trgm",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.postgresql.org/docs/current/pgtrgm.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.postgresql.org/docs/current/pgtrgm.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Sourcegraph Code Search Details",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://sourcegraph.com/docs/code_search/explanations/search_details",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://sourcegraph.com/docs/code-search/features"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\command-pattern.md",
@@ -58239,67 +59093,6 @@
       "sources_unreachable": 3
     },
     {
-      "file": "content\\computer-science\\data-backfills-and-replay-pipelines.md",
-      "article_id": "data-backfills-and-replay-pipelines",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "Apache Airflow Backfill",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/backfill.html",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/backfill.html"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Dagster Backfilling Data",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.dagster.io/guides/build/partitions-and-backfills/backfilling-data",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.dagster.io/guides/build/partitions-and-backfills/backfilling-data"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "dbt Incremental Models",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.getdbt.com/docs/build/incremental-models",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.getdbt.com/docs/build/incremental-models"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
-    },
-    {
       "file": "content\\computer-science\\data-lake-architecture.md",
       "article_id": "kb-2026-00254",
       "generation_method": "ai_structured",
@@ -58359,6 +59152,128 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 3
+    },
+    {
+      "file": "content\\computer-science\\data-partitioning-and-clustering.md",
+      "article_id": "data-partitioning-and-clustering",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "BigQuery Partitioned Tables",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://cloud.google.com/bigquery/docs/partitioned-tables",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/bigquery/docs/partitioned-tables"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "BigQuery Clustered Tables",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://cloud.google.com/bigquery/docs/clustered-tables",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/bigquery/docs/clustered-tables?hl=es"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Snowflake Clustering Keys",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.snowflake.com/en/user-guide/tables-clustering-keys",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.snowflake.com/en/user-guide/tables-clustering-keys"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\data-retention-and-ttl-policies.md",
+      "article_id": "data-retention-and-ttl-policies",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "DynamoDB Time to Live",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/TTL.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/TTL.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "MongoDB TTL Indexes",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.mongodb.com/docs/manual/core/index-ttl/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.mongodb.com/docs/manual/core/index-ttl/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "BigQuery Managing Tables",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://cloud.google.com/bigquery/docs/managing-tables#update-table-expiration",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/bigquery/docs/managing-tables"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\data-warehousing.md",
@@ -58564,67 +59479,6 @@
       "sources_unreachable": 3
     },
     {
-      "file": "content\\computer-science\\debug-symbols-and-symbolication-for-code-agents.md",
-      "article_id": "debug-symbols-and-symbolication-for-code-agents",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "LLVM Source Level Debugging",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://llvm.org/docs/SourceLevelDebugging.html",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://llvm.org/docs/SourceLevelDebugging.html"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Sentry Debug Information Files",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.sentry.dev/cli/dif/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.sentry.dev/cli/dif/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "LLVM PDB Debug Info on Windows",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://blog.llvm.org/2017/08/llvm-on-windows-now-supports-pdb-debug.html",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://blog.llvm.org/2017/08/llvm-on-windows-now-supports-pdb-debug.html"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
-    },
-    {
       "file": "content\\computer-science\\decorator-pattern.md",
       "article_id": "kb-2026-00145",
       "generation_method": "ai_structured",
@@ -58826,67 +59680,6 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 1
-    },
-    {
-      "file": "content\\computer-science\\distributed-tracing-and-correlation-context.md",
-      "article_id": "distributed-tracing-and-correlation-context",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "W3C Trace Context",
-          "source_type": "standard",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.w3.org/TR/trace-context/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://www.w3.org/TR/trace-context/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "OpenTelemetry Baggage",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://opentelemetry.io/docs/concepts/signals/baggage/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://opentelemetry.io/docs/concepts/signals/baggage/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "W3C Baggage",
-          "source_type": "standard",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.w3.org/TR/baggage/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://www.w3.org/TR/baggage/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\docker-networking.md",
@@ -60411,6 +61204,67 @@
       "sources_unreachable": 3
     },
     {
+      "file": "content\\computer-science\\open-telemetry-semantic-conventions.md",
+      "article_id": "open-telemetry-semantic-conventions",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "OpenTelemetry Semantic Conventions",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://opentelemetry.io/docs/specs/semconv/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://opentelemetry.io/docs/specs/semconv/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenTelemetry Resource Semantic Conventions",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://opentelemetry.io/docs/specs/semconv/resource/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://opentelemetry.io/docs/specs/semconv/resource/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenTelemetry Trace Semantic Conventions",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://opentelemetry.io/docs/specs/semconv/general/trace/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://opentelemetry.io/docs/specs/semconv/general/trace/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\osi-model.md",
       "article_id": "kb-2026-00184",
       "generation_method": "human_only",
@@ -60524,67 +61378,6 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 3
-    },
-    {
-      "file": "content\\computer-science\\package-vulnerability-advisories-for-code-agents.md",
-      "article_id": "package-vulnerability-advisories-for-code-agents",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "GitHub Dependabot Alerts",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.github.com/en/code-security/dependabot/dependabot-alerts/about-dependabot-alerts",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.github.com/en/code-security/concepts/supply-chain-security/about-dependabot-alerts"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "npm Audit",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.npmjs.com/cli/v8/commands/npm-audit/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.npmjs.com/cli/v8/commands/npm-audit/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "OSV API",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://google.github.io/osv.dev/api/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://google.github.io/osv.dev/api/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\paxos-algorithm-consensus-in-distributed-systems.md",
@@ -60984,67 +61777,6 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 3
-    },
-    {
-      "file": "content\\computer-science\\runtime-feature-detection-and-compatibility.md",
-      "article_id": "runtime-feature-detection-and-compatibility",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "MDN Feature Detection",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing/Feature_detection",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Testing/Feature_detection"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "MDN Browser Detection Using the User Agent",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Browser_detection_using_the_user_agent",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Browser_detection_using_the_user_agent"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "web.dev Baseline",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://web.dev/baseline",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://web.dev/baseline?hl=zh-cn"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\rust.md",

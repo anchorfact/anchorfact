@@ -150,7 +150,7 @@ console.log('AnchorFact API Readiness Report Tests\n');
 
 test('core query set defines subscription-readiness probes across paid-use categories', () => {
   assert(CORE_CORPUS_QUERIES.length >= 100, 'core query set should preserve the 100-query foundation');
-  assert(CORE_CORPUS_QUERIES.length <= 235, 'core query set should stay inside the expanded readiness-corpus range');
+  assert(CORE_CORPUS_QUERIES.length <= 250, 'core query set should stay inside the expanded readiness-corpus range');
   const categories = new Set(CORE_CORPUS_QUERIES.map(query => query.category));
   for (const category of ['agent_execution_sources', 'agent_rag', 'api_mcp', 'security_governance', 'data_infrastructure', 'llm_evaluation', 'developer_workflows', 'code_intelligence']) {
     assert(categories.has(category), `missing category ${category}`);
@@ -258,6 +258,9 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'ai/agent-service-ownership-and-on-call-schedules',
     'ai/agent-container-image-registry-and-tags',
     'ai/agent-database-migration-history',
+    'ai/agent-infrastructure-as-code-state-and-drift',
+    'ai/agent-secrets-rotation-and-credential-expiry',
+    'ai/agent-cloud-resource-inventory',
     'computer-science/repository-permissions-and-code-agent-access',
     'ai/agent-checkpointing-and-resumable-workflows',
     'computer-science/code-graphs-and-code-intelligence',
@@ -276,13 +279,22 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'computer-science/source-maps-and-stack-trace-deobfuscation',
     'computer-science/debug-symbols-and-symbolication-for-code-agents',
     'computer-science/package-vulnerability-advisories-for-code-agents',
+    'computer-science/code-search-indexing-and-trigram-search',
     'ai/vector-index-sharding-and-replication',
     'ai/retrieval-query-logs-and-search-observability',
+    'ai/retrieval-feedback-signals-and-click-logs',
+    'ai/rag-index-evaluation-with-recall-at-k',
     'ai/llm-sampling-parameters-in-evaluation',
+    'ai/llm-evaluation-dataset-versioning',
+    'ai/agent-evaluation-harnesses-and-test-runs',
     'computer-science/api-idempotency-keys',
     'computer-science/distributed-tracing-and-correlation-context',
     'computer-science/data-backfills-and-replay-pipelines',
-    'computer-science/runtime-feature-detection-and-compatibility'
+    'computer-science/data-retention-and-ttl-policies',
+    'computer-science/data-partitioning-and-clustering',
+    'computer-science/runtime-feature-detection-and-compatibility',
+    'computer-science/api-pagination-cursors-and-continuation-tokens',
+    'computer-science/open-telemetry-semantic-conventions'
   ]) {
     assert(slugs.includes(slug), `missing agent/code-intelligence readiness slug ${slug}`);
   }
