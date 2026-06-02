@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-02T17:37:59.686Z",
-    "total_articles": 1355,
+    "generated": "2026-06-02T18:04:23.568Z",
+    "total_articles": 1363,
     "total_with_errors": 0,
     "average_sources_per_article": "2.6",
-    "overall_verification_rate": "90.6%",
-    "elapsed_ms": 96744,
-    "elapsed_sec": "96.7",
+    "overall_verification_rate": "90.7%",
+    "elapsed_ms": 99677,
+    "elapsed_sec": "99.7",
     "concurrency": 3
   },
   "articles": [
@@ -945,6 +945,50 @@
         }
       ],
       "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-browser-traces-and-playwright-test-artifacts.md",
+      "article_id": "agent-browser-traces-and-playwright-test-artifacts",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Playwright Trace Viewer",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://playwright.dev/docs/trace-viewer",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://playwright.dev/docs/trace-viewer"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GitHub Actions Workflow Artifacts",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/actions/how-tos/writing-workflows/choosing-what-your-workflow-does/storing-and-sharing-data-from-a-workflow",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/actions/tutorials/store-and-share-data"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
       "sources_unreachable": 0
     },
     {
@@ -2348,6 +2392,50 @@
         }
       ],
       "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-deployment-rollouts-and-rollback-history.md",
+      "article_id": "agent-deployment-rollouts-and-rollback-history",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Kubernetes Update a Deployment Without Downtime",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kubernetes.io/docs/tasks/run-application/update-deployment-rolling/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://kubernetes.io/docs/tasks/run-application/update-deployment-rolling/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GitHub REST Deployments API",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/rest/deployments/deployments?apiVersion=2022-11-28",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/rest/deployments/deployments?apiVersion=2022-11-28"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
       "sources_unreachable": 0
     },
     {
@@ -20946,6 +21034,50 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\llm-evaluation-assertions-and-test-cases.md",
+      "article_id": "llm-evaluation-assertions-and-test-cases",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Promptfoo Assertions and Metrics",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.promptfoo.dev/docs/configuration/expected-outputs/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.promptfoo.dev/docs/configuration/expected-outputs/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Ragas Available Metrics",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.ragas.io/en/stable/concepts/metrics/available_metrics/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.ragas.io/en/stable/concepts/metrics/available_metrics/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\llm-evaluation-benchmark-harnesses-and-task-registries.md",
       "article_id": "llm-evaluation-benchmark-harnesses-and-task-registries",
       "generation_method": "ai_structured",
@@ -28384,6 +28516,50 @@
         }
       ],
       "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\retrieval-inverted-index-analyzers-and-token-filters.md",
+      "article_id": "retrieval-inverted-index-analyzers-and-token-filters",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Elasticsearch Text Analysis",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.elastic.co/docs/manage-data/data-store/text-analysis",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.elastic.co/docs/manage-data/data-store/text-analysis"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Lucene Analyzer API",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://lucene.apache.org/core/10_3_1/core/org/apache/lucene/analysis/Analyzer.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://lucene.apache.org/core/10_3_1/core/org/apache/lucene/analysis/Analyzer.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
       "sources_unreachable": 0
     },
     {
@@ -37129,6 +37305,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\api-openapi-callbacks-and-webhook-definitions.md",
+      "article_id": "api-openapi-callbacks-and-webhook-definitions",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "OpenAPI Providing Callbacks",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://learn.openapis.org/specification/callbacks",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.openapis.org/specification/callbacks"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenAPI Providing Webhooks",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://learn.openapis.org/specification/webhooks",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.openapis.org/specification/webhooks"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenAPI Specification v3.1.1",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://spec.openapis.org/oas/v3.1.1.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://spec.openapis.org/oas/v3.1.1.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\api-pagination-and-rate-limits.md",
       "article_id": "api-pagination-and-rate-limits",
       "generation_method": "ai_structured",
@@ -42190,6 +42427,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\data-dbt-source-freshness-and-sources-json.md",
+      "article_id": "data-dbt-source-freshness-and-sources-json",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "dbt Source Command",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.getdbt.com/reference/commands/source",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.getdbt.com/reference/commands/source"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "dbt Freshness Property",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.getdbt.com/reference/resource-properties/freshness",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.getdbt.com/reference/resource-properties/freshness"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "dbt Sources JSON File",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.getdbt.com/reference/artifacts/sources-json",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.getdbt.com/reference/artifacts/sources-json"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\data-deduplication-and-entity-resolution.md",
       "article_id": "data-deduplication-and-entity-resolution",
       "generation_method": "ai_structured",
@@ -42519,6 +42817,50 @@
         }
       ],
       "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\data-iceberg-snapshot-expiration-and-orphan-files.md",
+      "article_id": "data-iceberg-snapshot-expiration-and-orphan-files",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Apache Iceberg Maintenance",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://iceberg.apache.org/docs/latest/maintenance/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://iceberg.apache.org/docs/latest/maintenance/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Apache Iceberg Specification",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://iceberg.apache.org/spec/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://iceberg.apache.org/spec/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
       "sources_unreachable": 0
     },
     {
@@ -44221,6 +44563,50 @@
       "sources_unreachable": 0,
       "manual_reviewed": true,
       "manual_reviewed_at": "2026-05-28"
+    },
+    {
+      "file": "content\\computer-science\\dev-containers-and-reproducible-agent-workspaces.md",
+      "article_id": "dev-containers-and-reproducible-agent-workspaces",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Development Containers Overview",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://containers.dev/overview",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://containers.dev/overview"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Development Containers Metadata Reference",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://containers.dev/implementors/json_reference/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://containers.dev/implementors/json_reference/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
     },
     {
       "file": "content/computer-science/device-orientation-api.md",
@@ -71902,6 +72288,50 @@
       "sources_unreachable": 3
     },
     {
+      "file": "content\\computer-science\\code-ci-problem-matchers-and-annotations-for-agents.md",
+      "article_id": "code-ci-problem-matchers-and-annotations-for-agents",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "ADR 0276: Problem Matchers",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://github.com/actions/runner/blob/main/docs/adrs/0276-problem-matchers.md",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://github.com/actions/runner/blob/main/docs/adrs/0276-problem-matchers.md"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GitHub Actions Workflow Commands",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-commands",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-commands"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\command-pattern.md",
       "article_id": "kb-2026-00147",
       "generation_method": "ai_structured",
@@ -72638,50 +73068,6 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 1
-    },
-    {
-      "file": "content\\computer-science\\dev-containers-and-reproducible-agent-workspaces.md",
-      "article_id": "dev-containers-and-reproducible-agent-workspaces",
-      "generation_method": "ai_structured",
-      "sources_total": 2,
-      "verification_results": [
-        {
-          "source_title": "Development Containers Overview",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://containers.dev/overview",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://containers.dev/overview"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Development Containers Metadata Reference",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://containers.dev/implementors/json_reference/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://containers.dev/implementors/json_reference/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\digital-signal-processing-sampling-fourier-transform-and-filter-design.md",
@@ -74344,10 +74730,7 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/websec/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.oreilly.com/websec/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
