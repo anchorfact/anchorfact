@@ -150,7 +150,7 @@ console.log('AnchorFact API Readiness Report Tests\n');
 
 test('core query set defines subscription-readiness probes across paid-use categories', () => {
   assert(CORE_CORPUS_QUERIES.length >= 100, 'core query set should preserve the 100-query foundation');
-  assert(CORE_CORPUS_QUERIES.length <= 380, 'core query set should stay inside the expanded readiness-corpus range');
+  assert(CORE_CORPUS_QUERIES.length <= 390, 'core query set should stay inside the expanded readiness-corpus range');
   const categories = new Set(CORE_CORPUS_QUERIES.map(query => query.category));
   for (const category of ['agent_execution_sources', 'agent_rag', 'api_mcp', 'security_governance', 'data_infrastructure', 'llm_evaluation', 'developer_workflows', 'code_intelligence']) {
     assert(categories.has(category), `missing category ${category}`);
@@ -434,7 +434,18 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'computer-science/api-delta-sync-and-change-tokens',
     'computer-science/api-field-masks-and-partial-response',
     'computer-science/data-column-masking-and-dynamic-data-masking',
-    'computer-science/code-merge-conflicts-and-conflict-markers-for-agents'
+    'computer-science/code-merge-conflicts-and-conflict-markers-for-agents',
+    'ai/agent-log-correlation-ids-and-trace-context',
+    'ai/agent-message-ordering-and-deduplication',
+    'ai/rag-metadata-filters-and-filterable-vector-search',
+    'ai/rag-query-rewriting-and-expansion',
+    'ai/llm-evaluation-rubrics-and-grading-schemas',
+    'ai/agent-api-pagination-cursors-and-page-tokens',
+    'computer-science/api-versioning-and-deprecation-policies',
+    'computer-science/api-idempotency-keys-and-safe-retries',
+    'computer-science/data-quality-expectations-and-validation-rules',
+    'computer-science/data-contracts-and-schema-evolution',
+    'computer-science/code-tree-sitter-incremental-parsing-for-agents'
   ]) {
     assert(slugs.includes(slug), `missing agent/code-intelligence readiness slug ${slug}`);
   }

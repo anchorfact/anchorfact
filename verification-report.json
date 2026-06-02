@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-02T12:00:52.043Z",
-    "total_articles": 1280,
+    "generated": "2026-06-02T12:37:05.500Z",
+    "total_articles": 1291,
     "total_with_errors": 0,
     "average_sources_per_article": "2.6",
-    "overall_verification_rate": "90.0%",
-    "elapsed_ms": 157644,
-    "elapsed_sec": "157.6",
+    "overall_verification_rate": "90.1%",
+    "elapsed_ms": 207094,
+    "elapsed_sec": "207.1",
     "concurrency": 3
   },
   "articles": [
@@ -452,6 +452,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://www.envoyproxy.io/docs/envoy/latest/intro/arch_overview/http/http_routing"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-api-pagination-cursors-and-page-tokens.md",
+      "article_id": "agent-api-pagination-cursors-and-page-tokens",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Google AIP-158 Pagination",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://google.aip.dev/158",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://google.aip.dev/158"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GitHub REST API Pagination",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/rest/using-the-rest-api/using-pagination-in-the-rest-api",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/rest/using-the-rest-api/using-pagination-in-the-rest-api"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Stripe API Pagination",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.stripe.com/api/pagination",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.stripe.com/api/pagination"
               },
               "match": true
             }
@@ -3158,6 +3219,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-custom-probe-overview"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-log-correlation-ids-and-trace-context.md",
+      "article_id": "agent-log-correlation-ids-and-trace-context",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "OpenTelemetry Context Specification",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://opentelemetry.io/docs/specs/otel/context/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://opentelemetry.io/docs/specs/otel/context/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenTelemetry Context Propagation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://opentelemetry.io/docs/concepts/context-propagation/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://opentelemetry.io/docs/concepts/context-propagation/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenTelemetry Logs Data Model",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://opentelemetry.io/docs/specs/otel/logs/data-model/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://opentelemetry.io/docs/specs/otel/logs/data-model/"
               },
               "match": true
             }
@@ -20823,6 +20945,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\llm-evaluation-rubrics-and-grading-schemas.md",
+      "article_id": "llm-evaluation-rubrics-and-grading-schemas",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Vertex AI Define Evaluation Metrics",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/determine-eval",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/determine-eval"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Vertex AI Metric Prompt Templates",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/metrics-templates",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/metrics-templates"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenAI Evals Guide",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.openai.com/api/docs/guides/evals",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.openai.com/api/docs/guides/evals"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\llm-evaluation-structured-output-validity.md",
       "article_id": "llm-evaluation-structured-output-validity",
       "generation_method": "ai_structured",
@@ -25124,6 +25307,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\rag-metadata-filters-and-filterable-vector-search.md",
+      "article_id": "rag-metadata-filters-and-filterable-vector-search",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Pinecone Metadata Filtering",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.pinecone.io/guides/search/filter-by-metadata",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.pinecone.io/guides/search/filter-by-metadata"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Qdrant Filtering",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://qdrant.tech/documentation/search/filtering/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://qdrant.tech/documentation/search/filtering/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Weaviate Filters",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.weaviate.io/weaviate/search/filters",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.weaviate.io/weaviate/search/filters"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\rag-ocr-and-layout-aware-document-parsing.md",
       "article_id": "rag-ocr-and-layout-aware-document-parsing",
       "generation_method": "ai_structured",
@@ -25235,6 +25479,66 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://learn.microsoft.com/en-us/azure/search/search-agentic-retrieval-how-to-create"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\rag-query-rewriting-and-expansion.md",
+      "article_id": "rag-query-rewriting-and-expansion",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Query2doc",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "arxiv",
+              "identifier": "2303.07678",
+              "verified": true,
+              "metadata": {
+                "title": "arXiv Query: search_query=&amp;id_list=2303.07678&amp;start=0&amp;max_results=1"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Haystack Hypothetical Document Embeddings",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.haystack.deepset.ai/docs/hypothetical-document-embeddings-hyde",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.haystack.deepset.ai/docs/hypothetical-document-embeddings-hyde"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "LlamaIndex Query Transformations",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.llamaindex.ai/python/examples/query_transformations/query_transform_cookbook/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.llamaindex.ai/python/examples/query_transformations/query_transform_cookbook/"
               },
               "match": true
             }
@@ -33789,6 +34093,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\api-field-masks-and-partial-response.md",
+      "article_id": "api-field-masks-and-partial-response",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Google AIP-157 Field Masks",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://google.aip.dev/157",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://google.aip.dev/157"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Google Drive API Partial Response",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.google.com/drive/api/guides/performance#partial",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.google.com/workspace/drive/api/guides/performance"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Google AIP-161 Field Masks",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://google.aip.dev/161",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://google.aip.dev/161"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content/computer-science/api-gateway.md",
       "article_id": "kb-2026-00159",
       "generation_method": "ai_structured",
@@ -34068,6 +34433,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/retry"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\api-idempotency-keys-and-safe-retries.md",
+      "article_id": "api-idempotency-keys-and-safe-retries",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Stripe Idempotent Requests",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.stripe.com/api/idempotent_requests",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.stripe.com/api/idempotent_requests"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Google AIP-155 Request Identification",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://google.aip.dev/155",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://google.aip.dev/155"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Amazon EC2 API Idempotency",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.aws.amazon.com/ec2/latest/devguide/ec2-api-idempotency.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.aws.amazon.com/ec2/latest/devguide/ec2-api-idempotency.html"
               },
               "match": true
             }
@@ -35044,6 +35470,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://datatracker.ietf.org/doc/html/rfc8288"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\api-versioning-and-deprecation-policies.md",
+      "article_id": "api-versioning-and-deprecation-policies",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "GitHub REST API Versions",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/rest/about-the-rest-api/api-versions",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/rest/about-the-rest-api/api-versions"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Stripe API Versioning",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.stripe.com/api/versioning",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.stripe.com/api/versioning"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Google AIP-185 API Versioning",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://google.aip.dev/185",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://google.aip.dev/185"
               },
               "match": true
             }
@@ -37247,6 +37734,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\code-tree-sitter-incremental-parsing-for-agents.md",
+      "article_id": "code-tree-sitter-incremental-parsing-for-agents",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Tree-sitter Using Parsers",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://tree-sitter.github.io/tree-sitter/using-parsers/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://tree-sitter.github.io/tree-sitter/using-parsers/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Tree-sitter Advanced Parsing",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://tree-sitter.github.io/tree-sitter/using-parsers/3-advanced-parsing.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://tree-sitter.github.io/tree-sitter/using-parsers/3-advanced-parsing.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Tree-sitter Query Syntax",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://tree-sitter.github.io/tree-sitter/using-parsers/queries/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://tree-sitter.github.io/tree-sitter/using-parsers/queries/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\code-unified-diffs-and-patch-application-for-agents.md",
       "article_id": "code-unified-diffs-and-patch-application-for-agents",
       "generation_method": "ai_structured",
@@ -38608,6 +39156,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\data-contracts-and-schema-evolution.md",
+      "article_id": "data-contracts-and-schema-evolution",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Confluent Schema Evolution",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.confluent.io/platform/7.7/schema-registry/fundamentals/schema-evolution.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.confluent.io/platform/7.7/schema-registry/fundamentals/schema-evolution.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "AWS Glue Schema Registry",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.aws.amazon.com/glue/latest/dg/schema-registry.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.aws.amazon.com/glue/latest/dg/schema-registry.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "dbt Model Contracts",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.getdbt.com/docs/mesh/govern/model-contracts",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.getdbt.com/docs/mesh/govern/model-contracts"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\data-contracts-for-pipelines.md",
       "article_id": "data-contracts-for-pipelines",
       "generation_method": "ai_structured",
@@ -39390,6 +39999,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://docs.prefect.io/v3/concepts/flows"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\data-quality-expectations-and-validation-rules.md",
+      "article_id": "data-quality-expectations-and-validation-rules",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Great Expectations Run Validations",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.greatexpectations.io/docs/core/run_validations/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.greatexpectations.io/docs/core/run_validations/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "dbt Data Tests",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.getdbt.com/docs/build/data-tests",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.getdbt.com/docs/build/data-tests"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "SodaCL Overview",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.soda.io/soda-documentation/soda-v3/soda-cl-overview",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.soda.io/soda-documentation/soda-v3/soda-cl-overview"
               },
               "match": true
             }
@@ -66962,6 +67632,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\agent-message-ordering-and-deduplication.md",
+      "article_id": "agent-message-ordering-and-deduplication",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Google Pub/Sub Exactly-Once Delivery",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.cloud.google.com/pubsub/docs/exactly-once-delivery",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/pubsub/docs/exactly-once-delivery"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Google Pub/Sub Message Ordering",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.cloud.google.com/pubsub/docs/ordering",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/pubsub/docs/ordering"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Amazon SQS Message Group ID",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/using-messagegroupid-property.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/using-messagegroupid-property.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\ai-for-genomics-variant-calling-gene-expression-prediction-and-protein-dna-binding.md",
       "article_id": "kb-2026-00005",
       "generation_method": "ai_structured",
@@ -67026,10 +67757,7 @@
               "method": "url",
               "identifier": "https://www.phaidon.com/store/art/the-story-of-modern-art-9780714831398/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.phaidon.com/en-int/store/art/the-story-of-modern-art-9780714831398"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -67165,10 +67893,7 @@
               "method": "url",
               "identifier": "https://press.princeton.edu/books/paperback/9780691170817/the-theory-of-games-and-economic-behavior",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://press.princeton.edu/books/paperback/9780691170817/the-theory-of-games-and-economic-behavior"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -67192,7 +67917,10 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/library/view/the-art-of/9781098102593/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.oreilly.com/library/view/the-art-of/9781098102593/"
+              },
               "match": false
             }
           ],
@@ -67216,7 +67944,10 @@
               "method": "url",
               "identifier": "https://www.ilo.org/global/statistics-and-databases/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.ilo.org/global/statistics-and-databases/"
+              },
               "match": false
             }
           ],
@@ -67252,67 +67983,6 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 1
-    },
-    {
-      "file": "content\\computer-science\\api-field-masks-and-partial-response.md",
-      "article_id": "api-field-masks-and-partial-response",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "Google AIP-157 Field Masks",
-          "source_type": "standard",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://google.aip.dev/157",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://google.aip.dev/157"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Google Drive API Partial Response",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://developers.google.com/drive/api/guides/performance#partial",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://developers.google.com/workspace/drive/api/guides/performance"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Google AIP-161 Field Masks",
-          "source_type": "standard",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://google.aip.dev/161",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://google.aip.dev/161"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\bloom-filters-space-efficient-probabilistic-data-structures.md",
@@ -67453,10 +68123,7 @@
               "method": "url",
               "identifier": "https://www.informit.com/clean-code/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.informit.com/404.aspx?aspxerrorpath=/clean-code"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -67599,10 +68266,7 @@
               "method": "url",
               "identifier": "https://www.informit.com/concurrency/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.informit.com/404.aspx?aspxerrorpath=/concurrency"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -67714,10 +68378,7 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/websec/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.oreilly.com/websec/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -67775,10 +68436,7 @@
               "method": "url",
               "identifier": "https://nostarch.com/websec/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://nostarch.com/websec/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -67836,10 +68494,7 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/lakehouse/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.oreilly.com/lakehouse/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -67995,10 +68650,7 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.db",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.db"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -68056,10 +68708,7 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.ddos",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.ddos"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -68117,10 +68766,7 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.structural",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.structural"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -68542,7 +69188,10 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.es",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://doi.org/10.1145/acmcs.2025.es"
+              },
               "match": false
             }
           ],
@@ -68600,10 +69249,7 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.creational",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.creational"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -69060,10 +69706,7 @@
               "method": "url",
               "identifier": "https://www.rfc-editor.org/rfc/rfc8446",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.rfc-editor.org/rfc/rfc8446"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -69189,10 +69832,7 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/linux-netsec/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.oreilly.com/linux-netsec/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -69565,10 +70205,7 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.mvc",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.mvc"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -69626,10 +70263,7 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.nosql",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.nosql"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -69697,10 +70331,7 @@
               "method": "url",
               "identifier": "https://www.informit.com/oo-design/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.informit.com/404.aspx?aspxerrorpath=/oo-design"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -69758,10 +70389,7 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/head-first-design-patterns/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.oreilly.com/head-first-design-patterns/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -69775,10 +70403,7 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.observer",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.observer"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -69887,10 +70512,7 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.appsec",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.appsec"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -70066,7 +70688,10 @@
               "method": "url",
               "identifier": "https://www.packtpub.com/redis/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 403,
+                "final_url": "https://www.packtpub.com/redis/"
+              },
               "match": false
             }
           ],
@@ -70080,7 +70705,10 @@
               "method": "url",
               "identifier": "https://doi.org/10.1109/ms.2025.redis",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://doi.org/10.1109/ms.2025.redis"
+              },
               "match": false
             }
           ],
@@ -70219,10 +70847,7 @@
               "method": "url",
               "identifier": "https://www.informit.com/ddd/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.informit.com/404.aspx?aspxerrorpath=/ddd"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -70321,10 +70946,7 @@
               "method": "url",
               "identifier": "https://nostarch.com/rust/",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://nostarch.com/rust-programming-language-2nd-edition"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -70646,10 +71268,7 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/websec/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.oreilly.com/websec/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -70778,7 +71397,10 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.behavioral",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://doi.org/10.1145/acmcs.2025.behavioral"
+              },
               "match": false
             }
           ],
@@ -70819,10 +71441,7 @@
               "method": "url",
               "identifier": "https://doi.org/10.1017/cbo.2025.strings",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1017/cbo.2025.strings"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -70836,10 +71455,7 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.strings",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.strings"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -70921,7 +71537,10 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.systemd",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://doi.org/10.1145/acmcs.2025.systemd"
+              },
               "match": false
             }
           ],
@@ -71253,10 +71872,7 @@
               "method": "url",
               "identifier": "https://mitpress.mit.edu/books/types-and-programming-languages",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://mitpress.mit.edu/books/types-and-programming-languages"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -71412,10 +72028,7 @@
               "method": "url",
               "identifier": "https://www.worldwildlife.org/places/amazon",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.worldwildlife.org/places/amazon"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -71439,10 +72052,7 @@
               "method": "url",
               "identifier": "https://www.worldwildlife.org/places/coral-triangle",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.worldwildlife.org/places/coral-triangle"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -71927,10 +72537,7 @@
               "method": "url",
               "identifier": "https://aucpress.com/pyramids/",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://aucpress.com/pyramids/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -72373,10 +72980,7 @@
               "method": "url",
               "identifier": "https://www.iaea.org/publications",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.iaea.org/publications"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -72613,10 +73217,7 @@
               "method": "url",
               "identifier": "https://www.wiley.com/en-us/Volcanoes%3A+Global+Perspectives%2C+2nd+Edition-p-9781119477532",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.wiley.com/en-us/Volcanoes%3A+Global+Perspectives%2C+2nd+Edition-p-9781119477532"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -72694,10 +73295,7 @@
               "method": "url",
               "identifier": "https://www.hatchards.co.uk/book/jonathan-wilson/inverting-the-pyramid/9781409128649",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.hatchards.co.uk/book/jonathan-wilson/inverting-the-pyramid/9781409128649"
-              },
+              "metadata": {},
               "match": false
             }
           ],
