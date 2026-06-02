@@ -150,7 +150,7 @@ console.log('AnchorFact API Readiness Report Tests\n');
 
 test('core query set defines subscription-readiness probes across paid-use categories', () => {
   assert(CORE_CORPUS_QUERIES.length >= 100, 'core query set should preserve the 100-query foundation');
-  assert(CORE_CORPUS_QUERIES.length <= 430, 'core query set should stay inside the expanded readiness-corpus range');
+  assert(CORE_CORPUS_QUERIES.length <= 440, 'core query set should stay inside the expanded readiness-corpus range');
   const categories = new Set(CORE_CORPUS_QUERIES.map(query => query.category));
   for (const category of ['agent_execution_sources', 'agent_rag', 'api_mcp', 'security_governance', 'data_infrastructure', 'llm_evaluation', 'developer_workflows', 'code_intelligence']) {
     assert(categories.has(category), `missing category ${category}`);
@@ -485,7 +485,15 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'ai/llm-evaluation-benchmark-harnesses-and-task-registries',
     'computer-science/openapi-operation-ids-and-links-for-agent-navigation',
     'computer-science/data-policy-tags-and-sensitive-column-governance',
-    'computer-science/package-manager-workspaces-and-monorepo-dependencies'
+    'computer-science/package-manager-workspaces-and-monorepo-dependencies',
+    'ai/agent-event-logs-and-state-replay',
+    'ai/vector-index-parameters-and-recall-latency-tuning',
+    'ai/llm-evaluation-statistical-power-and-minimum-detectable-effects',
+    'computer-science/openapi-security-schemes-and-oauth-scopes-for-agents',
+    'computer-science/api-resource-names-and-canonical-identifiers-for-agents',
+    'computer-science/data-partition-pruning-and-query-scanning',
+    'computer-science/code-search-query-syntax-for-repository-agents',
+    'computer-science/lsp-rename-and-workspace-edits-for-code-agents'
   ]) {
     assert(slugs.includes(slug), `missing agent/code-intelligence readiness slug ${slug}`);
   }

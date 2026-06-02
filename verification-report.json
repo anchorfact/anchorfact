@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-02T15:55:24.660Z",
-    "total_articles": 1331,
+    "generated": "2026-06-02T16:38:59.504Z",
+    "total_articles": 1339,
     "total_with_errors": 0,
     "average_sources_per_article": "2.6",
-    "overall_verification_rate": "90.4%",
-    "elapsed_ms": 142440,
-    "elapsed_sec": "142.4",
+    "overall_verification_rate": "90.5%",
+    "elapsed_ms": 101669,
+    "elapsed_sec": "101.7",
     "concurrency": 3
   },
   "articles": [
@@ -876,6 +876,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://developer.chrome.com/docs/devtools/network/reference?hl=en"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-browser-cookies-storage-and-session-state.md",
+      "article_id": "agent-browser-cookies-storage-and-session-state",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "RFC 6265 HTTP State Management",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://httpwg.org/specs/rfc6265.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://httpwg.org/specs/rfc6265.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "WHATWG HTML Web Storage",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://html.spec.whatwg.org/multipage/webstorage.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://html.spec.whatwg.org/multipage/webstorage.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Playwright BrowserContext",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://playwright.dev/docs/api/class-browsercontext",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://playwright.dev/docs/api/class-browsercontext"
               },
               "match": true
             }
@@ -2645,6 +2706,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://github.com/openai/evals"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-event-logs-and-state-replay.md",
+      "article_id": "agent-event-logs-and-state-replay",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Temporal Events and Event History",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.temporal.io/workflow-execution/event",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.temporal.io/workflow-execution/event"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "LangGraph Persistence",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.langchain.com/oss/python/langgraph/persistence",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.langchain.com/oss/python/langgraph/persistence"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenTelemetry Traces",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://opentelemetry.io/docs/concepts/signals/traces/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://opentelemetry.io/docs/concepts/signals/traces/"
               },
               "match": true
             }
@@ -21800,6 +21922,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\llm-evaluation-statistical-power-and-minimum-detectable-effects.md",
+      "article_id": "llm-evaluation-statistical-power-and-minimum-detectable-effects",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "statsmodels Statistics",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.statsmodels.org/stable/stats.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.statsmodels.org/stable/stats.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "statsmodels TTestPower.solve_power",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.statsmodels.org/stable/generated/statsmodels.stats.power.TTestPower.solve_power.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.statsmodels.org/stable/generated/statsmodels.stats.power.TTestPower.solve_power.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "SciPy ttest_rel",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.ttest_rel.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.ttest_rel.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\llm-evaluation-structured-output-validity.md",
       "article_id": "llm-evaluation-structured-output-validity",
       "generation_method": "ai_structured",
@@ -26101,6 +26284,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\rag-incremental-indexing-and-vector-upserts.md",
+      "article_id": "rag-incremental-indexing-and-vector-upserts",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Pinecone Upsert Vectors",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.pinecone.io/reference/api/2024-07/data-plane/upsert",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.pinecone.io/reference/api/2024-07/data-plane/upsert"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Qdrant Points",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://qdrant.tech/documentation/manage-data/points/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://qdrant.tech/documentation/manage-data/points/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Pinecone Indexing Overview",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.pinecone.io/guides/index-data/indexing-overview",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.pinecone.io/guides/index-data/indexing-overview"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\rag-index-evaluation-with-recall-at-k.md",
       "article_id": "rag-index-evaluation-with-recall-at-k",
       "generation_method": "ai_structured",
@@ -30221,6 +30465,67 @@
       "sources_unreachable": 0,
       "manual_reviewed": true,
       "manual_reviewed_at": "2026-05-28"
+    },
+    {
+      "file": "content\\ai\\vector-index-parameters-and-recall-latency-tuning.md",
+      "article_id": "vector-index-parameters-and-recall-latency-tuning",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Weaviate Vector Index",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.weaviate.io/weaviate/config-refs/indexing/vector-index",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.weaviate.io/weaviate/config-refs/indexing/vector-index"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Pinecone Create Index",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.pinecone.io/reference/create_index/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.pinecone.io/reference/api/2024-07/control-plane/create_index"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Qdrant Indexing",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://qdrant.tech/documentation/manage-data/indexing/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://qdrant.tech/documentation/manage-data/indexing/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content\\ai\\vector-index-quantization-for-retrieval.md",
@@ -36580,6 +36885,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\api-resource-names-and-canonical-identifiers-for-agents.md",
+      "article_id": "api-resource-names-and-canonical-identifiers-for-agents",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Google AIP-122 Resource Names",
+          "source_type": "design_standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://google.aip.dev/122",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://google.aip.dev/122"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "RFC 6570 URI Template",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://datatracker.ietf.org/doc/html/rfc6570",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://datatracker.ietf.org/doc/html/rfc6570"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenAPI API Endpoints",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://learn.openapis.org/specification/paths.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.openapis.org/specification/paths.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\api-schema-code-generation.md",
       "article_id": "api-schema-code-generation",
       "generation_method": "ai_structured",
@@ -39321,6 +39687,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\code-search-query-syntax-for-repository-agents.md",
+      "article_id": "code-search-query-syntax-for-repository-agents",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "GitHub Code Search Syntax",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/search-github/github-code-search/understanding-github-code-search-syntax"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Sourcegraph Search Query Syntax",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://sourcegraph.com/docs/code-search/queries",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://sourcegraph.com/docs/code-search/queries"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GitLab Advanced Search",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.gitlab.com/user/search/advanced_search/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.gitlab.com/user/search/advanced_search/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\code-semantic-tokens-and-symbol-classification.md",
       "article_id": "code-semantic-tokens-and-symbol-classification",
       "generation_method": "ai_structured",
@@ -41769,6 +42196,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://eventuate.io/docs/manual/eventuate-tram/latest/about-eventuate-tram.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\data-partition-pruning-and-query-scanning.md",
+      "article_id": "data-partition-pruning-and-query-scanning",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "BigQuery Query Partitioned Tables",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.cloud.google.com/bigquery/docs/querying-partitioned-tables",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/bigquery/docs/querying-partitioned-tables"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Apache Iceberg Partitioning",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://iceberg.apache.org/docs/latest/partitioning/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://iceberg.apache.org/docs/latest/partitioning/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Spark Parquet Partition Discovery",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://spark.apache.org/docs/4.0.0/sql-data-sources-parquet.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://spark.apache.org/docs/4.0.0/sql-data-sources-parquet.html"
               },
               "match": true
             }
@@ -48107,6 +48595,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://learn.openapis.org/specification/links.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\openapi-security-schemes-and-oauth-scopes-for-agents.md",
+      "article_id": "openapi-security-schemes-and-oauth-scopes-for-agents",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "OpenAPI Specification 3.1.1",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://spec.openapis.org/oas/v3.1.1.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://spec.openapis.org/oas/v3.1.1.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "RFC 6749 OAuth 2.0",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://datatracker.ietf.org/doc/html/rfc6749",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://datatracker.ietf.org/doc/html/rfc6749"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "RFC 6750 Bearer Token Usage",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://datatracker.ietf.org/doc/html/rfc6750",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://datatracker.ietf.org/doc/html/rfc6750"
               },
               "match": true
             }
@@ -69995,67 +70544,6 @@
       "sources_unreachable": 0
     },
     {
-      "file": "content\\ai\\agent-browser-cookies-storage-and-session-state.md",
-      "article_id": "agent-browser-cookies-storage-and-session-state",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "RFC 6265 HTTP State Management",
-          "source_type": "standard",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://httpwg.org/specs/rfc6265.html",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://httpwg.org/specs/rfc6265.html"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "WHATWG HTML Web Storage",
-          "source_type": "standard",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://html.spec.whatwg.org/multipage/webstorage.html",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://html.spec.whatwg.org/multipage/webstorage.html"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Playwright BrowserContext",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://playwright.dev/docs/api/class-browsercontext",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://playwright.dev/docs/api/class-browsercontext"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
-    },
-    {
       "file": "content\\ai\\ai-for-genomics-variant-calling-gene-expression-prediction-and-protein-dna-binding.md",
       "article_id": "kb-2026-00005",
       "generation_method": "ai_structured",
@@ -70078,67 +70566,6 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 1
-    },
-    {
-      "file": "content\\ai\\rag-incremental-indexing-and-vector-upserts.md",
-      "article_id": "rag-incremental-indexing-and-vector-upserts",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "Pinecone Upsert Vectors",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.pinecone.io/reference/api/2024-07/data-plane/upsert",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.pinecone.io/reference/api/2024-07/data-plane/upsert"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Qdrant Points",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://qdrant.tech/documentation/manage-data/points/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://qdrant.tech/documentation/manage-data/points/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Pinecone Indexing Overview",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.pinecone.io/guides/index-data/indexing-overview",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.pinecone.io/guides/index-data/indexing-overview"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
     },
     {
       "file": "content\\arts\\history-of-printing.md",
@@ -70614,7 +71041,10 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/head-first-design-patterns/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.oreilly.com/head-first-design-patterns/"
+              },
               "match": false
             }
           ],
@@ -70936,7 +71366,10 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/lakehouse/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.oreilly.com/lakehouse/"
+              },
               "match": false
             }
           ],
@@ -72001,7 +72434,10 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/grpc/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.oreilly.com/grpc/"
+              },
               "match": false
             }
           ],
@@ -72591,6 +73027,50 @@
       "sources_unreachable": 1
     },
     {
+      "file": "content\\computer-science\\lsp-rename-and-workspace-edits-for-code-agents.md",
+      "article_id": "lsp-rename-and-workspace-edits-for-code-agents",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "LSP 3.17 Specification",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://microsoft.github.io/language-server-protocol/specifications/lsp/3.17/specification/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://microsoft.github.io/language-server-protocol/specifications/lsp/3.17/specification/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Language Server Protocol Overview",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://microsoft.github.io/language-server-protocol/overviews/lsp/overview/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://microsoft.github.io/language-server-protocol/overviews/lsp/overview/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\message-queues.md",
       "article_id": "kb-2026-00246",
       "generation_method": "human_only",
@@ -72648,7 +73128,10 @@
               "method": "url",
               "identifier": "https://www.informit.com/patterns-eaa/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.informit.com/404.aspx?aspxerrorpath=/patterns-eaa"
+              },
               "match": false
             }
           ],
@@ -72970,7 +73453,10 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/websec/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.oreilly.com/websec/"
+              },
               "match": false
             }
           ],
@@ -74280,7 +74766,10 @@
               "method": "url",
               "identifier": "https://mitpress.mit.edu/books/introduction-algorithms-5th-edition",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 403,
+                "final_url": "https://mitpress.mit.edu/books/introduction-algorithms-5th-edition"
+              },
               "match": false
             }
           ],
@@ -74365,7 +74854,10 @@
               "method": "url",
               "identifier": "https://mitpress.mit.edu/books/types-and-programming-languages",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 403,
+                "final_url": "https://mitpress.mit.edu/books/types-and-programming-languages"
+              },
               "match": false
             }
           ],
@@ -75374,7 +75866,10 @@
               "method": "url",
               "identifier": "https://www.cdc.gov/eis/field-epi-manual/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 403,
+                "final_url": "https://www.cdc.gov/eis/field-epi-manual/"
+              },
               "match": false
             }
           ],
