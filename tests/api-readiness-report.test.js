@@ -150,7 +150,7 @@ console.log('AnchorFact API Readiness Report Tests\n');
 
 test('core query set defines subscription-readiness probes across paid-use categories', () => {
   assert(CORE_CORPUS_QUERIES.length >= 100, 'core query set should preserve the 100-query foundation');
-  assert(CORE_CORPUS_QUERIES.length <= 480, 'core query set should stay inside the expanded readiness-corpus range');
+  assert(CORE_CORPUS_QUERIES.length <= 490, 'core query set should stay inside the expanded readiness-corpus range');
   const categories = new Set(CORE_CORPUS_QUERIES.map(query => query.category));
   for (const category of ['agent_execution_sources', 'agent_rag', 'api_mcp', 'security_governance', 'data_infrastructure', 'llm_evaluation', 'developer_workflows', 'code_intelligence']) {
     assert(categories.has(category), `missing category ${category}`);
@@ -201,6 +201,7 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'ai/prompt-injection-defenses-for-tool-using-agents',
     'ai/llm-as-judge-evaluation',
     'ai/llm-evaluation-judge-bias-and-randomization',
+    'ai/llm-evaluation-arena-style-pairwise-ranking',
     'ai/agent-benchmarks',
     'ai/evaluation-datasets-and-golden-tests-for-llms',
     'ai/evaluation-rubrics-and-grader-design',
@@ -338,6 +339,7 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'ai/retrieval-result-deduplication-and-collapsing',
     'ai/retrieval-snippets-and-highlighted-evidence',
     'ai/retrieval-score-normalization-and-fusion',
+    'ai/retrieval-hybrid-search-score-weighting-and-alpha',
     'ai/retrieval-parent-document-and-small-to-big-indexing',
     'ai/retrieval-late-interaction-and-colbert',
     'ai/retrieval-multivector-indexing',
@@ -452,6 +454,7 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'computer-science/data-column-masking-and-dynamic-data-masking',
     'computer-science/code-merge-conflicts-and-conflict-markers-for-agents',
     'ai/agent-log-correlation-ids-and-trace-context',
+    'ai/agent-opentelemetry-baggage-and-context-propagation',
     'ai/agent-message-ordering-and-deduplication',
     'ai/rag-metadata-filters-and-filterable-vector-search',
     'ai/rag-query-rewriting-and-expansion',
@@ -496,6 +499,8 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'computer-science/data-profiling-and-column-statistics',
     'computer-science/data-access-audit-logs-and-query-history',
     'computer-science/data-dbt-source-freshness-and-sources-json',
+    'computer-science/data-dbt-exposures-and-downstream-dependencies',
+    'computer-science/data-great-expectations-validation-definitions-and-checkpoints',
     'ai/agent-browser-cookies-storage-and-session-state',
     'computer-science/dom-locators-and-accessible-names-for-ui-agents',
     'ai/rag-incremental-indexing-and-vector-upserts',
@@ -511,7 +516,9 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'computer-science/api-resource-names-and-canonical-identifiers-for-agents',
     'computer-science/api-graphql-persisted-queries-and-operation-safelists',
     'computer-science/api-graphql-operation-names-and-variables-for-agents',
+    'computer-science/api-graphql-query-cost-and-depth-limits',
     'computer-science/api-openapi-discriminators-and-polymorphic-schemas',
+    'computer-science/api-openapi-parameter-serialization-style-and-explode',
     'computer-science/data-partition-pruning-and-query-scanning',
     'computer-science/code-search-query-syntax-for-repository-agents',
     'computer-science/lsp-rename-and-workspace-edits-for-code-agents',
@@ -526,6 +533,7 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'computer-science/data-column-pruning-and-file-statistics',
     'computer-science/code-license-compliance-and-dependency-metadata',
     'computer-science/code-generated-files-and-vendored-code-detection',
+    'computer-science/code-snapshot-testing-and-golden-files-for-agents',
     'ai/agent-cloud-audit-logs-and-iam-change-history',
     'ai/retrieval-score-thresholds-and-no-answer-fallbacks',
     'ai/llm-evaluation-run-metadata-and-reproducibility',

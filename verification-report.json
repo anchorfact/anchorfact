@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-02T18:45:05.687Z",
-    "total_articles": 1379,
+    "generated": "2026-06-02T19:13:27.937Z",
+    "total_articles": 1387,
     "total_with_errors": 0,
     "average_sources_per_article": "2.6",
-    "overall_verification_rate": "90.7%",
-    "elapsed_ms": 102148,
-    "elapsed_sec": "102.1",
+    "overall_verification_rate": "90.8%",
+    "elapsed_ms": 127903,
+    "elapsed_sec": "127.9",
     "concurrency": 3
   },
   "articles": [
@@ -4277,6 +4277,50 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\agent-opentelemetry-baggage-and-context-propagation.md",
+      "article_id": "agent-opentelemetry-baggage-and-context-propagation",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "OpenTelemetry Baggage",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://opentelemetry.io/docs/concepts/signals/baggage/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://opentelemetry.io/docs/concepts/signals/baggage/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "W3C Baggage",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.w3.org/TR/baggage/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.w3.org/TR/baggage/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\agent-package-registry-and-version-lookup.md",
       "article_id": "agent-package-registry-and-version-lookup",
       "generation_method": "ai_structured",
@@ -4440,6 +4484,50 @@
         }
       ],
       "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-pull-request-review-comments-and-unresolved-threads.md",
+      "article_id": "agent-pull-request-review-comments-and-unresolved-threads",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "GitHub About Pull Request Reviews",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/about-pull-request-reviews",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/about-pull-request-reviews"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GitHub GraphQL API Reference",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/graphql/reference",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/graphql/reference"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
       "sources_unreachable": 0
     },
     {
@@ -21793,6 +21881,50 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\llm-evaluation-judge-bias-and-randomization.md",
+      "article_id": "llm-evaluation-judge-bias-and-randomization",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/91f18a1287b398d378ef22505bf41832-Abstract-Datasets_and_Benchmarks.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/91f18a1287b398d378ef22505bf41832-Abstract-Datasets_and_Benchmarks.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Large Language Models are not Fair Evaluators",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://aclanthology.org/2024.acl-long.511/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://aclanthology.org/2024.acl-long.511/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\llm-evaluation-judge-prompt-rubrics-and-scorecards.md",
       "article_id": "llm-evaluation-judge-prompt-rubrics-and-scorecards",
       "generation_method": "ai_structured",
@@ -28530,6 +28662,50 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\retrieval-hybrid-search-score-weighting-and-alpha.md",
+      "article_id": "retrieval-hybrid-search-score-weighting-and-alpha",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Weaviate Hybrid Search",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.weaviate.io/weaviate/search/hybrid",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.weaviate.io/weaviate/search/hybrid"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Qdrant Hybrid and Multi-Stage Queries",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://qdrant.tech/documentation/search/hybrid-queries/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://qdrant.tech/documentation/search/hybrid-queries/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\retrieval-index-aliases-and-zero-downtime-reindexing.md",
       "article_id": "retrieval-index-aliases-and-zero-downtime-reindexing",
       "generation_method": "ai_structured",
@@ -29608,6 +29784,50 @@
         }
       ],
       "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\retrieval-sparse-vectors-and-learned-sparse-retrieval.md",
+      "article_id": "retrieval-sparse-vectors-and-learned-sparse-retrieval",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Qdrant Vectors Documentation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://qdrant.tech/documentation/manage-data/vectors/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://qdrant.tech/documentation/manage-data/vectors/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Pinecone Hybrid Search",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.pinecone.io/guides/search/hybrid-search",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.pinecone.io/guides/search/hybrid-search"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
       "sources_unreachable": 0
     },
     {
@@ -36523,6 +36743,50 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\api-graphql-operation-names-and-variables-for-agents.md",
+      "article_id": "api-graphql-operation-names-and-variables-for-agents",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "GraphQL Specification October 2021",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://spec.graphql.org/October2021/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://spec.graphql.org/October2021/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GraphQL Queries Documentation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://graphql.org/learn/queries/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://graphql.org/learn/queries/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\api-graphql-persisted-queries-and-operation-safelists.md",
       "article_id": "api-graphql-persisted-queries-and-operation-safelists",
       "generation_method": "ai_structured",
@@ -36556,6 +36820,50 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://www.apollographql.com/docs/react/data/persisted-queries"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\api-graphql-query-cost-and-depth-limits.md",
+      "article_id": "api-graphql-query-cost-and-depth-limits",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "GraphQL Security",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://graphql.org/learn/security/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://graphql.org/learn/security/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Apollo Router Request Limits",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.apollographql.com/docs/graphos/routing/security/request-limits",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.apollographql.com/docs/graphos/routing/security/request-limits"
               },
               "match": true
             }
@@ -37532,6 +37840,111 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://spec.openapis.org/oas/v3.1.1.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\api-openapi-discriminators-and-polymorphic-schemas.md",
+      "article_id": "api-openapi-discriminators-and-polymorphic-schemas",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "OpenAPI Specification 3.1.1",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://spec.openapis.org/oas/v3.1.1.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://spec.openapis.org/oas/v3.1.1.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Redocly OpenAPI Discriminator",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://redocly.com/learn/openapi/discriminator",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://redocly.com/learn/openapi/discriminator"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\api-openapi-parameter-serialization-style-and-explode.md",
+      "article_id": "api-openapi-parameter-serialization-style-and-explode",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "OpenAPI Specification 3.1.1",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://spec.openapis.org/oas/v3.1.1.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://spec.openapis.org/oas/v3.1.1.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenAPI Parameters",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://learn.openapis.org/specification/parameters.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.openapis.org/specification/parameters.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Swagger Parameter Serialization",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://swagger.io/docs/specification/v3_0/serialization/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://swagger.io/docs/specification/v3_0/serialization/"
               },
               "match": true
             }
@@ -40585,6 +40998,50 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\code-lsp-inlay-hints-and-code-lens.md",
+      "article_id": "code-lsp-inlay-hints-and-code-lens",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Language Server Protocol Specification 3.17",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://microsoft.github.io/language-server-protocol/specifications/lsp/3.17/specification/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://microsoft.github.io/language-server-protocol/specifications/lsp/3.17/specification/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Language Server Protocol Overview",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://microsoft.github.io/language-server-protocol/overviews/lsp/overview/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://microsoft.github.io/language-server-protocol/overviews/lsp/overview/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\code-merge-conflicts-and-conflict-markers-for-agents.md",
       "article_id": "code-merge-conflicts-and-conflict-markers-for-agents",
       "generation_method": "ai_structured",
@@ -41042,6 +41499,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://pygments.org/docs/tokens/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\code-snapshot-testing-and-golden-files-for-agents.md",
+      "article_id": "code-snapshot-testing-and-golden-files-for-agents",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Jest Snapshot Testing",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://jestjs.io/docs/snapshot-testing",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://jestjs.io/docs/snapshot-testing"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Playwright Visual Comparisons",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://playwright.dev/docs/test-snapshots",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://playwright.dev/docs/test-snapshots"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Playwright ARIA Snapshots",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://playwright.dev/docs/aria-snapshots",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://playwright.dev/docs/aria-snapshots"
               },
               "match": true
             }
@@ -42275,6 +42793,50 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\data-airflow-deferrable-operators-and-triggerer.md",
+      "article_id": "data-airflow-deferrable-operators-and-triggerer",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Airflow Deferrable Operators and Triggers",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://airflow.apache.org/docs/apache-airflow/stable/authoring-and-scheduling/deferring.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://airflow.apache.org/docs/apache-airflow/stable/authoring-and-scheduling/deferring.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Airflow Deferrable Operators and Triggers 2.4.3",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://airflow.apache.org/docs/apache-airflow/2.4.3/authoring-and-scheduling/deferring.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://airflow.apache.org/docs/apache-airflow/2.4.3/authoring-and-scheduling/deferring.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\data-backfills-and-replay-pipelines.md",
       "article_id": "data-backfills-and-replay-pipelines",
       "generation_method": "ai_structured",
@@ -42824,6 +43386,50 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\data-dbt-exposures-and-downstream-dependencies.md",
+      "article_id": "data-dbt-exposures-and-downstream-dependencies",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "dbt Exposures",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.getdbt.com/docs/build/exposures",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.getdbt.com/docs/build/exposures"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "dbt Manifest JSON File",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.getdbt.com/reference/artifacts/manifest-json",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.getdbt.com/reference/artifacts/manifest-json"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\data-dbt-source-freshness-and-sources-json.md",
       "article_id": "data-dbt-source-freshness-and-sources-json",
       "generation_method": "ai_structured",
@@ -43112,6 +43718,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\data-great-expectations-validation-definitions-and-checkpoints.md",
+      "article_id": "data-great-expectations-validation-definitions-and-checkpoints",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Great Expectations Run Validations",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.greatexpectations.io/docs/core/run_validations/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.greatexpectations.io/docs/core/run_validations/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Great Expectations Create a Validation Definition",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.greatexpectations.io/docs/core/run_validations/create_a_validation_definition",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.greatexpectations.io/docs/core/run_validations/create_a_validation_definition/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Great Expectations Checkpoint Class",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.greatexpectations.io/docs/reference/api/Checkpoint_class",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.greatexpectations.io/docs/reference/api/checkpoint_class/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\data-hudi-timeline-and-incremental-queries.md",
       "article_id": "data-hudi-timeline-and-incremental-queries",
       "generation_method": "ai_structured",
@@ -43214,6 +43881,50 @@
         }
       ],
       "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\data-iceberg-partition-evolution-and-hidden-partitioning.md",
+      "article_id": "data-iceberg-partition-evolution-and-hidden-partitioning",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Apache Iceberg Partitioning",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://iceberg.apache.org/docs/1.7.1/partitioning/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://iceberg.apache.org/docs/1.7.1/partitioning/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Apache Iceberg Specification",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://iceberg.apache.org/spec/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://iceberg.apache.org/spec/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
       "sources_unreachable": 0
     },
     {
@@ -72218,50 +72929,6 @@
       "sources_unreachable": 0
     },
     {
-      "file": "content\\ai\\agent-pull-request-review-comments-and-unresolved-threads.md",
-      "article_id": "agent-pull-request-review-comments-and-unresolved-threads",
-      "generation_method": "ai_structured",
-      "sources_total": 2,
-      "verification_results": [
-        {
-          "source_title": "GitHub About Pull Request Reviews",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/about-pull-request-reviews",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/about-pull-request-reviews"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "GitHub GraphQL API Reference",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.github.com/en/graphql/reference",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.github.com/en/graphql/reference"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
-    },
-    {
       "file": "content\\ai\\ai-for-genomics-variant-calling-gene-expression-prediction-and-protein-dna-binding.md",
       "article_id": "kb-2026-00005",
       "generation_method": "ai_structured",
@@ -72286,11 +72953,28 @@
       "sources_unreachable": 1
     },
     {
-      "file": "content\\ai\\llm-evaluation-judge-bias-and-randomization.md",
-      "article_id": "llm-evaluation-judge-bias-and-randomization",
+      "file": "content\\ai\\llm-evaluation-arena-style-pairwise-ranking.md",
+      "article_id": "llm-evaluation-arena-style-pairwise-ranking",
       "generation_method": "ai_structured",
       "sources_total": 2,
       "verification_results": [
+        {
+          "source_title": "Chatbot Arena",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://proceedings.mlr.press/v235/chiang24b.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://proceedings.mlr.press/v235/chiang24b.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
         {
           "source_title": "Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena",
           "source_type": "academic_paper",
@@ -72302,67 +72986,6 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/91f18a1287b398d378ef22505bf41832-Abstract-Datasets_and_Benchmarks.html"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Large Language Models are not Fair Evaluators",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://aclanthology.org/2024.acl-long.511/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://aclanthology.org/2024.acl-long.511/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
-    },
-    {
-      "file": "content\\ai\\retrieval-sparse-vectors-and-learned-sparse-retrieval.md",
-      "article_id": "retrieval-sparse-vectors-and-learned-sparse-retrieval",
-      "generation_method": "ai_structured",
-      "sources_total": 2,
-      "verification_results": [
-        {
-          "source_title": "Qdrant Vectors Documentation",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://qdrant.tech/documentation/manage-data/vectors/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://qdrant.tech/documentation/manage-data/vectors/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Pinecone Hybrid Search",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.pinecone.io/guides/search/hybrid-search",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.pinecone.io/guides/search/hybrid-search"
               },
               "match": true
             }
@@ -72648,94 +73271,6 @@
       "sources_unreachable": 1
     },
     {
-      "file": "content\\computer-science\\api-graphql-operation-names-and-variables-for-agents.md",
-      "article_id": "api-graphql-operation-names-and-variables-for-agents",
-      "generation_method": "ai_structured",
-      "sources_total": 2,
-      "verification_results": [
-        {
-          "source_title": "GraphQL Specification October 2021",
-          "source_type": "standard",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://spec.graphql.org/October2021/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://spec.graphql.org/October2021/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "GraphQL Queries Documentation",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://graphql.org/learn/queries/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://graphql.org/learn/queries/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
-    },
-    {
-      "file": "content\\computer-science\\api-openapi-discriminators-and-polymorphic-schemas.md",
-      "article_id": "api-openapi-discriminators-and-polymorphic-schemas",
-      "generation_method": "ai_structured",
-      "sources_total": 2,
-      "verification_results": [
-        {
-          "source_title": "OpenAPI Specification 3.1.1",
-          "source_type": "standard",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://spec.openapis.org/oas/v3.1.1.html",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://spec.openapis.org/oas/v3.1.1.html"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Redocly OpenAPI Discriminator",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://redocly.com/learn/openapi/discriminator",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://redocly.com/learn/openapi/discriminator"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
-    },
-    {
       "file": "content\\computer-science\\bloom-filters-space-efficient-probabilistic-data-structures.md",
       "article_id": "kb-2026-00029",
       "generation_method": "ai_structured",
@@ -72903,50 +73438,6 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 3
-    },
-    {
-      "file": "content\\computer-science\\code-lsp-inlay-hints-and-code-lens.md",
-      "article_id": "code-lsp-inlay-hints-and-code-lens",
-      "generation_method": "ai_structured",
-      "sources_total": 2,
-      "verification_results": [
-        {
-          "source_title": "Language Server Protocol Specification 3.17",
-          "source_type": "standard",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://microsoft.github.io/language-server-protocol/specifications/lsp/3.17/specification/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://microsoft.github.io/language-server-protocol/specifications/lsp/3.17/specification/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Language Server Protocol Overview",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://microsoft.github.io/language-server-protocol/overviews/lsp/overview/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://microsoft.github.io/language-server-protocol/overviews/lsp/overview/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\command-pattern.md",
@@ -73272,94 +73763,6 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 3
-    },
-    {
-      "file": "content\\computer-science\\data-airflow-deferrable-operators-and-triggerer.md",
-      "article_id": "data-airflow-deferrable-operators-and-triggerer",
-      "generation_method": "ai_structured",
-      "sources_total": 2,
-      "verification_results": [
-        {
-          "source_title": "Airflow Deferrable Operators and Triggers",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://airflow.apache.org/docs/apache-airflow/stable/authoring-and-scheduling/deferring.html",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://airflow.apache.org/docs/apache-airflow/stable/authoring-and-scheduling/deferring.html"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Airflow Deferrable Operators and Triggers 2.4.3",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://airflow.apache.org/docs/apache-airflow/2.4.3/authoring-and-scheduling/deferring.html",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://airflow.apache.org/docs/apache-airflow/2.4.3/authoring-and-scheduling/deferring.html"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
-    },
-    {
-      "file": "content\\computer-science\\data-iceberg-partition-evolution-and-hidden-partitioning.md",
-      "article_id": "data-iceberg-partition-evolution-and-hidden-partitioning",
-      "generation_method": "ai_structured",
-      "sources_total": 2,
-      "verification_results": [
-        {
-          "source_title": "Apache Iceberg Partitioning",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://iceberg.apache.org/docs/1.7.1/partitioning/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://iceberg.apache.org/docs/1.7.1/partitioning/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Apache Iceberg Specification",
-          "source_type": "standard",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://iceberg.apache.org/spec/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://iceberg.apache.org/spec/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\data-lake-architecture.md",
@@ -76765,10 +77168,7 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.algo",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.algo"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -76836,10 +77236,7 @@
               "method": "url",
               "identifier": "https://mitpress.mit.edu/books/types-and-programming-languages",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://mitpress.mit.edu/books/types-and-programming-languages"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -76941,10 +77338,7 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.vpn",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.vpn"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -76995,10 +77389,7 @@
               "method": "url",
               "identifier": "https://www.worldwildlife.org/places/amazon",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.worldwildlife.org/places/amazon"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -77022,10 +77413,7 @@
               "method": "url",
               "identifier": "https://www.worldwildlife.org/places/coral-triangle",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.worldwildlife.org/places/coral-triangle"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -77229,10 +77617,7 @@
               "method": "url",
               "identifier": "https://www.cdc.gov/eis/field-epi-manual/",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.cdc.gov/eis/field-epi-manual/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -77256,10 +77641,7 @@
               "method": "url",
               "identifier": "https://www.wiley.com/en-us/How+the+Immune+System+Works%2C+6th+Edition-p-9781119542124",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.wiley.com/en-us/How+the+Immune+System+Works%2C+6th+Edition-p-9781119542124"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -77902,10 +78284,7 @@
               "method": "url",
               "identifier": "https://www.iaea.org/publications",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.iaea.org/publications"
-              },
+              "metadata": {},
               "match": false
             }
           ],
