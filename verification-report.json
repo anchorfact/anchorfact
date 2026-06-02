@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-02T06:34:56.900Z",
-    "total_articles": 1152,
+    "generated": "2026-06-02T07:18:36.855Z",
+    "total_articles": 1164,
     "total_with_errors": 0,
     "average_sources_per_article": "2.6",
-    "overall_verification_rate": "88.7%",
-    "elapsed_ms": 113521,
-    "elapsed_sec": "113.5",
+    "overall_verification_rate": "88.8%",
+    "elapsed_ms": 106248,
+    "elapsed_sec": "106.2",
     "concurrency": 3
   },
   "articles": [
@@ -399,6 +399,67 @@
         }
       ],
       "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-api-rate-limit-headers-and-retry-after.md",
+      "article_id": "agent-api-rate-limit-headers-and-retry-after",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "RFC 9110 HTTP Semantics",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://datatracker.ietf.org/doc/html/rfc9110#section-10.2.3",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://datatracker.ietf.org/doc/html/rfc9110"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "RFC 6585 Additional HTTP Status Codes",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://datatracker.ietf.org/doc/html/rfc6585#section-4",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://datatracker.ietf.org/doc/html/rfc6585"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GitHub REST API Rate Limits",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
       "sources_unreachable": 0
     },
     {
@@ -826,6 +887,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\agent-database-query-plans-and-slow-query-logs.md",
+      "article_id": "agent-database-query-plans-and-slow-query-logs",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "PostgreSQL Using EXPLAIN",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.postgresql.org/docs/current/using-explain.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.postgresql.org/docs/current/using-explain.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "MySQL EXPLAIN Output Format",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://dev.mysql.com/doc/refman/8.4/en/explain-output.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://dev.mysql.com/doc/refman/8.4/en/explain-output.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "MySQL Slow Query Log",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://dev.mysql.com/doc/refman/8.4/en/slow-query-log.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://dev.mysql.com/doc/refman/8.4/en/slow-query-log.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\agent-durable-execution.md",
       "article_id": "agent-durable-execution",
       "generation_method": "ai_structured",
@@ -876,6 +998,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-overview?tabs=python-v2"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-error-budget-burn-rate-alerts.md",
+      "article_id": "agent-error-budget-burn-rate-alerts",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Google SRE Workbook Alerting on SLOs",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://sre.google/workbook/alerting-on-slos/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://sre.google/workbook/alerting-on-slos/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Google Cloud Alerting on Burn Rate",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.cloud.google.com/stackdriver/docs/solutions/slo-monitoring/alerting-on-budget-burn-rate",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/stackdriver/docs/solutions/slo-monitoring/alerting-on-budget-burn-rate"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Grafana Cloud Burn Rate Notifications",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://grafana.com/docs/grafana-cloud/alerting-and-irm/slo/set-up/configure-burn-rate-notifications/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://grafana.com/docs/grafana-cloud/alerting-and-irm/slo/set-up/configure-burn-rate-notifications/"
               },
               "match": true
             }
@@ -1217,6 +1400,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\agent-feature-store-and-online-offline-consistency.md",
+      "article_id": "agent-feature-store-and-online-offline-consistency",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Feast Offline Store Overview",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.feast.dev/reference/offline-stores/overview",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.feast.dev/reference/offline-stores/overview"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Hopsworks Feature Group Write APIs",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.hopsworks.ai/latest/concepts/fs/feature_group/write_apis/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.hopsworks.ai/latest/concepts/fs/feature_group/write_apis/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Tecton Materializing Features",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.tecton.ai/docs/materializing-features",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.tecton.ai/docs/materializing-features"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\agent-human-in-the-loop-approval.md",
       "article_id": "agent-human-in-the-loop-approval",
       "generation_method": "ai_structured",
@@ -1339,6 +1583,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\agent-kubernetes-events-and-pod-health.md",
+      "article_id": "agent-kubernetes-events-and-pod-health",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Kubernetes Pod Lifecycle",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Kubernetes Liveness, Readiness, and Startup Probes",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kubernetes.io/docs/concepts/configuration/liveness-readiness-startup-probes/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://kubernetes.io/docs/concepts/workloads/pods/probes/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Kubernetes Debug Running Pods",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kubernetes.io/docs/tasks/debug/debug-application/debug-running-pod/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://kubernetes.io/docs/tasks/debug/debug-application/debug-running-pod/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\agent-memory-and-session-state.md",
       "article_id": "agent-memory-and-session-state",
       "generation_method": "ai_structured",
@@ -1389,6 +1694,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://modelcontextprotocol.io/specification/2024-11-05/server/tools"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-message-queue-dead-letter-queues.md",
+      "article_id": "agent-message-queue-dead-letter-queues",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Amazon SQS Dead-Letter Queues",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-dead-letter-queues.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-dead-letter-queues.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Google Pub/Sub Dead-Letter Topics",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://cloud.google.com/pubsub/docs/dead-letter-topics",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/pubsub/docs/dead-letter-topics?hl=zh-cn"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "RabbitMQ Dead Letter Exchanges",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.rabbitmq.com/docs/dlx",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.rabbitmq.com/docs/dlx"
               },
               "match": true
             }
@@ -1749,6 +2115,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\agent-scheduler-cron-and-workflow-runs.md",
+      "article_id": "agent-scheduler-cron-and-workflow-runs",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Kubernetes CronJob",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GitHub Actions Scheduled Events",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/actions/reference/events-that-trigger-workflows#schedule",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Apache Airflow DAGs",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/dags.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/dags.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\agent-secret-management-and-credential-isolation.md",
       "article_id": "agent-secret-management-and-credential-isolation",
       "generation_method": "ai_structured",
@@ -1921,6 +2348,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://www.atlassian.com/incident-management/kpis/sla-vs-slo-vs-sli"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-service-mesh-traffic-policy.md",
+      "article_id": "agent-service-mesh-traffic-policy",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Istio Traffic Management",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://istio.io/latest/docs/concepts/traffic-management/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://istio.io/latest/docs/concepts/traffic-management/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Istio VirtualService Reference",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://istio.io/latest/docs/reference/config/networking/virtual-service/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://istio.io/latest/docs/reference/config/networking/virtual-service/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Istio DestinationRule Reference",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://istio.io/latest/docs/reference/config/networking/destination-rule/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://istio.io/latest/docs/reference/config/networking/destination-rule/"
               },
               "match": true
             }
@@ -15217,6 +15705,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\evaluation-sampling-and-confidence-intervals.md",
+      "article_id": "evaluation-sampling-and-confidence-intervals",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "SciPy Bootstrap",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.bootstrap.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.bootstrap.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "statsmodels Proportion Confidence Interval",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.statsmodels.org/stable/generated/statsmodels.stats.proportion.proportion_confint.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.statsmodels.org/stable/generated/statsmodels.stats.proportion.proportion_confint.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "scikit-learn Cross-Validation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://scikit-learn.org/stable/modules/cross_validation.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://scikit-learn.org/stable/modules/cross_validation.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content/ai/explainable-ai-xai.md",
       "article_id": "kb-2026-00277",
       "generation_method": "ai_structured",
@@ -17164,6 +17713,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\llm-evaluation-calibration-and-thresholds.md",
+      "article_id": "llm-evaluation-calibration-and-thresholds",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "scikit-learn Probability Calibration",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://scikit-learn.org/stable/modules/calibration.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://scikit-learn.org/stable/modules/calibration.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Promptfoo Command Line",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.promptfoo.dev/docs/usage/command-line/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.promptfoo.dev/docs/usage/command-line/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "LangSmith Evaluation Concepts",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.langchain.com/langsmith/evaluation-concepts",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.langchain.com/langsmith/evaluation-concepts"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\llm-evaluation-dataset-versioning.md",
       "article_id": "llm-evaluation-dataset-versioning",
       "generation_method": "ai_structured",
@@ -17214,6 +17824,128 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-git-large-file-storage"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\llm-evaluation-inter-annotator-agreement.md",
+      "article_id": "llm-evaluation-inter-annotator-agreement",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Label Studio Statistics",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://labelstud.io/guide/stats.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.humansignal.com/guide/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Argilla Annotation Metrics",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.v1.argilla.io/en/v2.2.0/reference/python/python_annotation_metrics.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.v1.argilla.io/en/v2.2.0/reference/python/python_annotation_metrics.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Prodigy Inter-Annotator Agreement",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://prodi.gy/docs/api-components#iaa",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://prodi.gy/docs/api-components"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\llm-evaluation-production-canaries.md",
+      "article_id": "llm-evaluation-production-canaries",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "LangSmith Evaluation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.langchain.com/langsmith/evaluation",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.langchain.com/langsmith/evaluation"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Arize AX Evaluate",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arize.com/docs/ax/evaluate",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://arize.com/docs/ax/evaluate/human-review"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Argo Rollouts Canary",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://argoproj.github.io/argo-rollouts/features/canary/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://argoproj.github.io/argo-rollouts/features/canary/"
               },
               "match": true
             }
@@ -20553,6 +21285,67 @@
       "manual_reviewed_at": "2026-05-28"
     },
     {
+      "file": "content\\ai\\rag-answer-grounding-and-citation-coverage.md",
+      "article_id": "rag-answer-grounding-and-citation-coverage",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Ragas Faithfulness",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.ragas.io/en/v0.2.0/concepts/metrics/available_metrics/faithfulness/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.ragas.io/en/v0.2.0/concepts/metrics/available_metrics/faithfulness/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "LangSmith RAG Evaluation Tutorial",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.langchain.com/langsmith/evaluate-rag-tutorial",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.langchain.com/langsmith/evaluate-rag-tutorial"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Azure AI Foundry RAG Evaluators",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/evaluation-evaluators/rag-evaluators",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/evaluation-evaluators/rag-evaluators"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\rag-chunking-and-context-window-management.md",
       "article_id": "rag-chunking-and-context-window-management",
       "generation_method": "ai_structured",
@@ -20664,6 +21457,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://developers.llamaindex.ai/python/examples/query_engine/citation_query_engine/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\rag-context-window-packing-and-token-budgets.md",
+      "article_id": "rag-context-window-packing-and-token-budgets",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Anthropic Token Counting",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://platform.claude.com/docs/en/build-with-claude/token-counting",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://platform.claude.com/docs/en/build-with-claude/token-counting"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Gemini API Token Counting",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://ai.google.dev/gemini-api/docs/tokens",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://ai.google.dev/gemini-api/docs/tokens?hl=fa"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "LangChain trim_messages",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://reference.langchain.com/v0.3/python/core/messages/langchain_core.messages.utils.trim_messages.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://reference.langchain.com/python/langchain-core/messages/utils/trim_messages"
               },
               "match": true
             }
@@ -21800,6 +22654,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\retrieval-embedding-drift-and-index-quality.md",
+      "article_id": "retrieval-embedding-drift-and-index-quality",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Arize Embedding Drift",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arize.com/docs/ax/machine-learning/computer-vision/how-to-cv/embedding-drift",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://arize.com/docs/ax/machine-learning/computer-vision/how-to-cv/embedding-drift"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Evidently Data Drift",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.evidentlyai.com/metrics/explainer_drift",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.evidentlyai.com/metrics/explainer_drift"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Pinecone Monitoring",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.pinecone.io/guides/operations/monitoring",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.pinecone.io/guides/production/monitoring"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\retrieval-feedback-signals-and-click-logs.md",
       "article_id": "retrieval-feedback-signals-and-click-logs",
       "generation_method": "ai_structured",
@@ -21972,6 +22887,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://docs.weaviate.io/weaviate/search/filters"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\retrieval-metadata-schema-and-facets.md",
+      "article_id": "retrieval-metadata-schema-and-facets",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Algolia Faceting",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.algolia.com/doc/guides/managing-results/refine-results/faceting",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.algolia.com/doc/guides/managing-results/refine-results/faceting"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Azure AI Search Faceted Navigation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://learn.microsoft.com/en-us/azure/search/search-faceted-navigation-examples",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.microsoft.com/en-us/azure/search/search-faceted-navigation-examples"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Meilisearch Search with Facet Filters",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.meilisearch.com/docs/learn/filtering_and_sorting/search_with_facet_filters",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.meilisearch.com/docs/capabilities/filtering_sorting_faceting/how_to/filter_with_facets"
               },
               "match": true
             }
@@ -28590,6 +29566,128 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\api-oauth-token-introspection.md",
+      "article_id": "api-oauth-token-introspection",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "RFC 7662 OAuth 2.0 Token Introspection",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://datatracker.ietf.org/doc/html/rfc7662",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://datatracker.ietf.org/doc/html/rfc7662"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Duende IdentityServer Introspection Endpoint",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.duendesoftware.com/identityserver/reference/endpoints/introspection/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.duendesoftware.com/identityserver/reference/endpoints/introspection/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Keycloak OIDC Layers",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.keycloak.org/securing-apps/oidc-layers",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.keycloak.org/securing-apps/oidc-layers"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\api-openapi-breaking-change-detection.md",
+      "article_id": "api-openapi-breaking-change-detection",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "OpenAPI Initiative What Is OpenAPI",
+          "source_type": "specification",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.openapis.org/what-is-openapi",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.openapis.org/what-is-openapi"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Bump API Change Management",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.bump.sh/help/api-change-management/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.bump.sh/help/api-change-management/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Speakeasy CLI OpenAPI",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.speakeasy.com/docs/speakeasy-cli/openapi",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.speakeasy.com/docs/speakeasy-reference/cli/openapi"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\api-pagination-and-rate-limits.md",
       "article_id": "api-pagination-and-rate-limits",
       "generation_method": "ai_structured",
@@ -28823,6 +29921,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://datatracker.ietf.org/doc/html/rfc8594"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\api-webhook-signature-verification.md",
+      "article_id": "api-webhook-signature-verification",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Stripe Webhook Signature Verification",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.stripe.com/webhooks/signature",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.stripe.com/webhooks/signature"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GitHub Validating Webhook Deliveries",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/webhooks/using-webhooks/validating-webhook-deliveries",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/webhooks/using-webhooks/validating-webhook-deliveries"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Slack Verifying Requests",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.slack.dev/authentication/verifying-requests-from-slack/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.slack.dev/authentication/verifying-requests-from-slack/"
               },
               "match": true
             }
@@ -31411,6 +32570,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\data-deduplication-and-entity-resolution.md",
+      "article_id": "data-deduplication-and-entity-resolution",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "AWS Entity Resolution",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.aws.amazon.com/entityresolution/latest/userguide/what-is-service.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.aws.amazon.com/entityresolution/latest/userguide/what-is-service.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Splink Documentation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://moj-analytical-services.github.io/splink/index.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://moj-analytical-services.github.io/splink/index.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenRefine Cluster and Edit",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://openrefine.org/docs/manual/cellediting#cluster-and-edit",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://openrefine.org/docs/manual/cellediting"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\data-freshness-and-slas.md",
       "article_id": "data-freshness-and-slas",
       "generation_method": "ai_structured",
@@ -31472,6 +32692,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\data-lake-object-storage-layouts.md",
+      "article_id": "data-lake-object-storage-layouts",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Amazon S3 Object Keys",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-keys.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-keys.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Apache Iceberg Partitioning",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://iceberg.apache.org/docs/1.7.1/partitioning/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://iceberg.apache.org/docs/1.7.1/partitioning/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Delta Lake Best Practices",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.delta.io/best-practices/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.delta.io/best-practices/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\data-partitioning-and-clustering.md",
       "article_id": "data-partitioning-and-clustering",
       "generation_method": "ai_structured",
@@ -31522,6 +32803,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://docs.snowflake.com/en/user-guide/tables-clustering-keys"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\data-pipeline-checkpointing-and-exactly-once-semantics.md",
+      "article_id": "data-pipeline-checkpointing-and-exactly-once-semantics",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Apache Flink Operations",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://flink.apache.org/what-is-flink/flink-operations/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://flink.apache.org/what-is-flink/flink-operations/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Apache Kafka Design",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kafka.apache.org/41/design/design/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://kafka.apache.org/41/design/design/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Kafka Producer Configuration",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kafka.apache.org/41/generated/producer_config.html#producer_config_transactional.id",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://kafka.apache.org/41/generated/producer_config.html"
               },
               "match": true
             }
@@ -39250,6 +40592,67 @@
       "sources_unreachable": 0,
       "manual_reviewed": true,
       "manual_reviewed_at": "2026-05-28"
+    },
+    {
+      "file": "content\\computer-science\\schema-drift-and-data-observability.md",
+      "article_id": "schema-drift-and-data-observability",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Evidently Data Drift",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.evidentlyai.com/metrics/explainer_drift",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.evidentlyai.com/metrics/explainer_drift"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Soda Schema Checks",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.soda.io/soda-cl/schema.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.soda.io/soda-documentation/soda-v3/sodacl-reference/schema"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Great Expectations Table Columns Expectation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://greatexpectations.io/expectations/expect_table_columns_to_match_set/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://greatexpectations.io/expectations/expect_table_columns_to_match_set/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\schema-evolution-for-data-pipelines.md",
@@ -58484,250 +59887,6 @@
       "sources_unreachable": 0
     },
     {
-      "file": "content\\ai\\agent-kubernetes-events-and-pod-health.md",
-      "article_id": "agent-kubernetes-events-and-pod-health",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "Kubernetes Pod Lifecycle",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Kubernetes Liveness, Readiness, and Startup Probes",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://kubernetes.io/docs/concepts/configuration/liveness-readiness-startup-probes/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://kubernetes.io/docs/concepts/workloads/pods/probes/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Kubernetes Debug Running Pods",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://kubernetes.io/docs/tasks/debug/debug-application/debug-running-pod/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://kubernetes.io/docs/tasks/debug/debug-application/debug-running-pod/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
-    },
-    {
-      "file": "content\\ai\\agent-message-queue-dead-letter-queues.md",
-      "article_id": "agent-message-queue-dead-letter-queues",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "Amazon SQS Dead-Letter Queues",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-dead-letter-queues.html",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-dead-letter-queues.html"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Google Pub/Sub Dead-Letter Topics",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://cloud.google.com/pubsub/docs/dead-letter-topics",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.cloud.google.com/pubsub/docs/dead-letter-topics?hl=zh-cn"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "RabbitMQ Dead Letter Exchanges",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.rabbitmq.com/docs/dlx",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://www.rabbitmq.com/docs/dlx"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
-    },
-    {
-      "file": "content\\ai\\agent-scheduler-cron-and-workflow-runs.md",
-      "article_id": "agent-scheduler-cron-and-workflow-runs",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "Kubernetes CronJob",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "GitHub Actions Scheduled Events",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.github.com/en/actions/reference/events-that-trigger-workflows#schedule",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Apache Airflow DAGs",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/dags.html",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/dags.html"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
-    },
-    {
-      "file": "content\\ai\\agent-service-mesh-traffic-policy.md",
-      "article_id": "agent-service-mesh-traffic-policy",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "Istio Traffic Management",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://istio.io/latest/docs/concepts/traffic-management/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://istio.io/latest/docs/concepts/traffic-management/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Istio VirtualService Reference",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://istio.io/latest/docs/reference/config/networking/virtual-service/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://istio.io/latest/docs/reference/config/networking/virtual-service/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Istio DestinationRule Reference",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://istio.io/latest/docs/reference/config/networking/destination-rule/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://istio.io/latest/docs/reference/config/networking/destination-rule/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
-    },
-    {
       "file": "content\\ai\\ai-for-genomics-variant-calling-gene-expression-prediction-and-protein-dna-binding.md",
       "article_id": "kb-2026-00005",
       "generation_method": "ai_structured",
@@ -58750,250 +59909,6 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 1
-    },
-    {
-      "file": "content\\ai\\evaluation-sampling-and-confidence-intervals.md",
-      "article_id": "evaluation-sampling-and-confidence-intervals",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "SciPy Bootstrap",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.bootstrap.html",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.bootstrap.html"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "statsmodels Proportion Confidence Interval",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.statsmodels.org/stable/generated/statsmodels.stats.proportion.proportion_confint.html",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://www.statsmodels.org/stable/generated/statsmodels.stats.proportion.proportion_confint.html"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "scikit-learn Cross-Validation",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://scikit-learn.org/stable/modules/cross_validation.html",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://scikit-learn.org/stable/modules/cross_validation.html"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
-    },
-    {
-      "file": "content\\ai\\llm-evaluation-inter-annotator-agreement.md",
-      "article_id": "llm-evaluation-inter-annotator-agreement",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "Label Studio Statistics",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://labelstud.io/guide/stats.html",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.humansignal.com/guide/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Argilla Annotation Metrics",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.v1.argilla.io/en/v2.2.0/reference/python/python_annotation_metrics.html",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.v1.argilla.io/en/v2.2.0/reference/python/python_annotation_metrics.html"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Prodigy Inter-Annotator Agreement",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://prodi.gy/docs/api-components#iaa",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://prodi.gy/docs/api-components"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
-    },
-    {
-      "file": "content\\ai\\rag-answer-grounding-and-citation-coverage.md",
-      "article_id": "rag-answer-grounding-and-citation-coverage",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "Ragas Faithfulness",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.ragas.io/en/v0.2.0/concepts/metrics/available_metrics/faithfulness/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.ragas.io/en/v0.2.0/concepts/metrics/available_metrics/faithfulness/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "LangSmith RAG Evaluation Tutorial",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.langchain.com/langsmith/evaluate-rag-tutorial",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.langchain.com/langsmith/evaluate-rag-tutorial"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Azure AI Foundry RAG Evaluators",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/evaluation-evaluators/rag-evaluators",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/evaluation-evaluators/rag-evaluators"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
-    },
-    {
-      "file": "content\\ai\\retrieval-embedding-drift-and-index-quality.md",
-      "article_id": "retrieval-embedding-drift-and-index-quality",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "Arize Embedding Drift",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://arize.com/docs/ax/machine-learning/computer-vision/how-to-cv/embedding-drift",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://arize.com/docs/ax/machine-learning/computer-vision/how-to-cv/embedding-drift"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Evidently Data Drift",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.evidentlyai.com/metrics/explainer_drift",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.evidentlyai.com/metrics/explainer_drift"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Pinecone Monitoring",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.pinecone.io/guides/operations/monitoring",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.pinecone.io/guides/production/monitoring"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
     },
     {
       "file": "content\\arts\\history-of-printing.md",
@@ -59270,22 +60185,22 @@
       "sources_unreachable": 1
     },
     {
-      "file": "content\\computer-science\\api-oauth-token-introspection.md",
-      "article_id": "api-oauth-token-introspection",
+      "file": "content\\computer-science\\api-grpc-reflection-and-protobuf-schemas.md",
+      "article_id": "api-grpc-reflection-and-protobuf-schemas",
       "generation_method": "ai_structured",
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "RFC 7662 OAuth 2.0 Token Introspection",
-          "source_type": "standard",
+          "source_title": "gRPC Server Reflection",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://datatracker.ietf.org/doc/html/rfc7662",
+              "identifier": "https://grpc.io/docs/guides/reflection/",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://datatracker.ietf.org/doc/html/rfc7662"
+                "final_url": "https://grpc.io/docs/guides/reflection/"
               },
               "match": true
             }
@@ -59293,16 +60208,16 @@
           "all_verified": true
         },
         {
-          "source_title": "Duende IdentityServer Introspection Endpoint",
+          "source_title": "Protocol Buffers Overview",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.duendesoftware.com/identityserver/reference/endpoints/introspection/",
+              "identifier": "https://protobuf.dev/overview/",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://docs.duendesoftware.com/identityserver/reference/endpoints/introspection/"
+                "final_url": "https://protobuf.dev/overview/"
               },
               "match": true
             }
@@ -59310,77 +60225,16 @@
           "all_verified": true
         },
         {
-          "source_title": "Keycloak OIDC Layers",
+          "source_title": "Protocol Buffers Proto3 Guide",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.keycloak.org/securing-apps/oidc-layers",
+              "identifier": "https://protobuf.dev/programming-guides/proto3/",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://www.keycloak.org/securing-apps/oidc-layers"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
-    },
-    {
-      "file": "content\\computer-science\\api-webhook-signature-verification.md",
-      "article_id": "api-webhook-signature-verification",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "Stripe Webhook Signature Verification",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.stripe.com/webhooks/signature",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.stripe.com/webhooks/signature"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "GitHub Validating Webhook Deliveries",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.github.com/en/webhooks/using-webhooks/validating-webhook-deliveries",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.github.com/en/webhooks/using-webhooks/validating-webhook-deliveries"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Slack Verifying Requests",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.slack.dev/authentication/verifying-requests-from-slack/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.slack.dev/authentication/verifying-requests-from-slack/"
+                "final_url": "https://protobuf.dev/programming-guides/proto3/"
               },
               "match": true
             }
@@ -59884,67 +60738,6 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 3
-    },
-    {
-      "file": "content\\computer-science\\data-deduplication-and-entity-resolution.md",
-      "article_id": "data-deduplication-and-entity-resolution",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "AWS Entity Resolution",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.aws.amazon.com/entityresolution/latest/userguide/what-is-service.html",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.aws.amazon.com/entityresolution/latest/userguide/what-is-service.html"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Splink Documentation",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://moj-analytical-services.github.io/splink/index.html",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://moj-analytical-services.github.io/splink/index.html"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "OpenRefine Cluster and Edit",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://openrefine.org/docs/manual/cellediting#cluster-and-edit",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://openrefine.org/docs/manual/cellediting"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\data-lake-architecture.md",
@@ -62511,67 +63304,6 @@
       "sources_unreachable": 3
     },
     {
-      "file": "content\\computer-science\\schema-drift-and-data-observability.md",
-      "article_id": "schema-drift-and-data-observability",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "Evidently Data Drift",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.evidentlyai.com/metrics/explainer_drift",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.evidentlyai.com/metrics/explainer_drift"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Soda Schema Checks",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.soda.io/soda-cl/schema.html",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.soda.io/soda-documentation/soda-v3/sodacl-reference/schema"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Great Expectations Table Columns Expectation",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://greatexpectations.io/expectations/expect_table_columns_to_match_set/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://greatexpectations.io/expectations/expect_table_columns_to_match_set/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
-    },
-    {
       "file": "content\\computer-science\\scrum-framework.md",
       "article_id": "kb-2026-00231",
       "generation_method": "human_only",
@@ -65011,10 +65743,7 @@
               "method": "url",
               "identifier": "https://worldathletics.org/competition/technical-rules",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://worldathletics.org/competition/technical-rules"
-              },
+              "metadata": {},
               "match": false
             }
           ],
