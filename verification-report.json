@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-02T19:13:27.937Z",
-    "total_articles": 1387,
+    "generated": "2026-06-02T19:37:42.785Z",
+    "total_articles": 1395,
     "total_with_errors": 0,
     "average_sources_per_article": "2.6",
     "overall_verification_rate": "90.8%",
-    "elapsed_ms": 127903,
-    "elapsed_sec": "127.9",
+    "elapsed_ms": 103802,
+    "elapsed_sec": "103.8",
     "concurrency": 3
   },
   "articles": [
@@ -21163,6 +21163,50 @@
         }
       ],
       "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\llm-evaluation-arena-style-pairwise-ranking.md",
+      "article_id": "llm-evaluation-arena-style-pairwise-ranking",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Chatbot Arena",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://proceedings.mlr.press/v235/chiang24b.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://proceedings.mlr.press/v235/chiang24b.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/91f18a1287b398d378ef22505bf41832-Abstract-Datasets_and_Benchmarks.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/91f18a1287b398d378ef22505bf41832-Abstract-Datasets_and_Benchmarks.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
       "sources_unreachable": 0
     },
     {
@@ -72929,6 +72973,50 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\agent-metrics-cardinality-and-label-explosion.md",
+      "article_id": "agent-metrics-cardinality-and-label-explosion",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Prometheus Instrumentation - Do Not Overuse Labels",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://prometheus.io/docs/practices/instrumentation/#do-not-overuse-labels",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://prometheus.io/docs/practices/instrumentation/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenTelemetry Metrics Data Model",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://opentelemetry.io/docs/specs/otel/metrics/data-model/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://opentelemetry.io/docs/specs/otel/metrics/data-model/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\ai-for-genomics-variant-calling-gene-expression-prediction-and-protein-dna-binding.md",
       "article_id": "kb-2026-00005",
       "generation_method": "ai_structured",
@@ -72953,22 +73041,22 @@
       "sources_unreachable": 1
     },
     {
-      "file": "content\\ai\\llm-evaluation-arena-style-pairwise-ranking.md",
-      "article_id": "llm-evaluation-arena-style-pairwise-ranking",
+      "file": "content\\ai\\llm-evaluation-exact-match-fuzzy-match-and-code-graders.md",
+      "article_id": "llm-evaluation-exact-match-fuzzy-match-and-code-graders",
       "generation_method": "ai_structured",
       "sources_total": 2,
       "verification_results": [
         {
-          "source_title": "Chatbot Arena",
-          "source_type": "academic_paper",
+          "source_title": "OpenAI Graders",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://proceedings.mlr.press/v235/chiang24b.html",
+              "identifier": "https://platform.openai.com/docs/guides/graders/",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://proceedings.mlr.press/v235/chiang24b.html"
+                "final_url": "https://developers.openai.com/api/docs/guides/graders"
               },
               "match": true
             }
@@ -72976,16 +73064,60 @@
           "all_verified": true
         },
         {
-          "source_title": "Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena",
-          "source_type": "academic_paper",
+          "source_title": "OpenAI Evals Templates",
+          "source_type": "repository_documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/91f18a1287b398d378ef22505bf41832-Abstract-Datasets_and_Benchmarks.html",
+              "identifier": "https://github.com/openai/evals/blob/main/docs/eval-templates.md",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/91f18a1287b398d378ef22505bf41832-Abstract-Datasets_and_Benchmarks.html"
+                "final_url": "https://github.com/openai/evals/blob/main/docs/eval-templates.md"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\retrieval-semantic-ranker-captions-and-answers.md",
+      "article_id": "retrieval-semantic-ranker-captions-and-answers",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Semantic Ranking in Azure AI Search",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://learn.microsoft.com/en-us/azure/search/semantic-search-overview",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.microsoft.com/en-us/azure/search/semantic-search-overview"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Configure Semantic Ranker and Return Captions and Answers",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://learn.microsoft.com/en-us/azure/search/semantic-how-to-query-request",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.microsoft.com/en-us/azure/search/semantic-how-to-query-request"
               },
               "match": true
             }
@@ -73271,6 +73403,111 @@
       "sources_unreachable": 1
     },
     {
+      "file": "content\\computer-science\\api-content-negotiation-and-media-types-for-agents.md",
+      "article_id": "api-content-negotiation-and-media-types-for-agents",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "RFC 9110 - Accept",
+          "source_type": "technical_standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://datatracker.ietf.org/doc/html/rfc9110#name-accept",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://datatracker.ietf.org/doc/html/rfc9110"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "RFC 9110 - Content-Type",
+          "source_type": "technical_standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://datatracker.ietf.org/doc/html/rfc9110#name-content-type",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://datatracker.ietf.org/doc/html/rfc9110"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "MDN Content Negotiation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Content_negotiation",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Content_negotiation"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\api-grpc-health-checking-for-agent-clients.md",
+      "article_id": "api-grpc-health-checking-for-agent-clients",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "gRPC Health Checking",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://grpc.io/docs/guides/health-checking/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://grpc.io/docs/guides/health-checking/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Kubernetes Liveness, Readiness, and Startup Probes",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/#define-a-grpc-liveness-probe",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\bloom-filters-space-efficient-probabilistic-data-structures.md",
       "article_id": "kb-2026-00029",
       "generation_method": "ai_structured",
@@ -73438,6 +73675,50 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 3
+    },
+    {
+      "file": "content\\computer-science\\code-taint-tracking-and-data-flow-security-for-agents.md",
+      "article_id": "code-taint-tracking-and-data-flow-security-for-agents",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "CodeQL Data Flow Analysis",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://codeql.github.com/docs/writing-codeql-queries/about-data-flow-analysis/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://codeql.github.com/docs/writing-codeql-queries/about-data-flow-analysis/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Semgrep Taint Analysis",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://semgrep.dev/docs/writing-rules/data-flow/taint-mode/overview",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://semgrep.dev/docs/writing-rules/data-flow/taint-mode/overview"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\command-pattern.md",
@@ -73763,6 +74044,94 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 3
+    },
+    {
+      "file": "content\\computer-science\\data-airbyte-connector-state-and-incremental-syncs.md",
+      "article_id": "data-airbyte-connector-state-and-incremental-syncs",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Airbyte Protocol",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.airbyte.com/platform/understanding-airbyte/airbyte-protocol",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.airbyte.com/platform/understanding-airbyte/airbyte-protocol"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Airbyte Incremental Sync",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.airbyte.com/platform/connector-development/connector-builder-ui/incremental-sync",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.airbyte.com/platform/connector-development/connector-builder-ui/incremental-sync"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\data-apache-arrow-columnar-interchange.md",
+      "article_id": "data-apache-arrow-columnar-interchange",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Apache Arrow Overview",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arrow.apache.org/overview/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://arrow.apache.org/overview/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Apache Arrow Columnar Format",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arrow.apache.org/docs/format/Columnar.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://arrow.apache.org/docs/format/Columnar.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\data-lake-architecture.md",
@@ -77168,7 +77537,10 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.algo",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://doi.org/10.1145/acmcs.2025.algo"
+              },
               "match": false
             }
           ],
@@ -77236,7 +77608,10 @@
               "method": "url",
               "identifier": "https://mitpress.mit.edu/books/types-and-programming-languages",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 403,
+                "final_url": "https://mitpress.mit.edu/books/types-and-programming-languages"
+              },
               "match": false
             }
           ],
@@ -77338,7 +77713,10 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.vpn",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://doi.org/10.1145/acmcs.2025.vpn"
+              },
               "match": false
             }
           ],
@@ -77389,7 +77767,10 @@
               "method": "url",
               "identifier": "https://www.worldwildlife.org/places/amazon",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 403,
+                "final_url": "https://www.worldwildlife.org/places/amazon"
+              },
               "match": false
             }
           ],
@@ -77413,7 +77794,10 @@
               "method": "url",
               "identifier": "https://www.worldwildlife.org/places/coral-triangle",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 403,
+                "final_url": "https://www.worldwildlife.org/places/coral-triangle"
+              },
               "match": false
             }
           ],
@@ -77617,7 +78001,10 @@
               "method": "url",
               "identifier": "https://www.cdc.gov/eis/field-epi-manual/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 403,
+                "final_url": "https://www.cdc.gov/eis/field-epi-manual/"
+              },
               "match": false
             }
           ],
@@ -77641,7 +78028,10 @@
               "method": "url",
               "identifier": "https://www.wiley.com/en-us/How+the+Immune+System+Works%2C+6th+Edition-p-9781119542124",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.wiley.com/en-us/How+the+Immune+System+Works%2C+6th+Edition-p-9781119542124"
+              },
               "match": false
             }
           ],
@@ -78284,7 +78674,10 @@
               "method": "url",
               "identifier": "https://www.iaea.org/publications",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 403,
+                "final_url": "https://www.iaea.org/publications"
+              },
               "match": false
             }
           ],
@@ -78602,10 +78995,7 @@
               "method": "url",
               "identifier": "https://psycnet.apa.org/",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://psycnet.apa.org/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
