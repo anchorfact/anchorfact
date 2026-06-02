@@ -150,7 +150,7 @@ console.log('AnchorFact API Readiness Report Tests\n');
 
 test('core query set defines subscription-readiness probes across paid-use categories', () => {
   assert(CORE_CORPUS_QUERIES.length >= 100, 'core query set should preserve the 100-query foundation');
-  assert(CORE_CORPUS_QUERIES.length <= 400, 'core query set should stay inside the expanded readiness-corpus range');
+  assert(CORE_CORPUS_QUERIES.length <= 410, 'core query set should stay inside the expanded readiness-corpus range');
   const categories = new Set(CORE_CORPUS_QUERIES.map(query => query.category));
   for (const category of ['agent_execution_sources', 'agent_rag', 'api_mcp', 'security_governance', 'data_infrastructure', 'llm_evaluation', 'developer_workflows', 'code_intelligence']) {
     assert(categories.has(category), `missing category ${category}`);
@@ -453,7 +453,15 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'ai/llm-evaluation-golden-datasets-and-regression-tests',
     'computer-science/data-freshness-slas-and-lateness-windows',
     'computer-science/code-static-analysis-rules-and-semgrep-patterns',
-    'computer-science/code-dependency-graphs-and-vulnerability-advisories'
+    'computer-science/code-dependency-graphs-and-vulnerability-advisories',
+    'ai/agent-api-authentication-schemes-and-bearer-tokens',
+    'computer-science/api-conditional-requests-etags-and-cache-validation',
+    'computer-science/api-cors-preflight-and-browser-agent-requests',
+    'ai/rag-chunking-strategies-and-token-aware-splitting',
+    'ai/rag-reranker-score-calibration-and-thresholds',
+    'ai/llm-evaluation-metric-templates-and-scorecards',
+    'computer-science/data-observability-anomaly-detection-and-incidents',
+    'computer-science/code-sbom-and-software-supply-chain-inventory'
   ]) {
     assert(slugs.includes(slug), `missing agent/code-intelligence readiness slug ${slug}`);
   }

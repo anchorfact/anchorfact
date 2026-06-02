@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-02T13:23:48.730Z",
-    "total_articles": 1299,
+    "generated": "2026-06-02T14:17:46.221Z",
+    "total_articles": 1307,
     "total_with_errors": 0,
     "average_sources_per_article": "2.6",
     "overall_verification_rate": "90.2%",
-    "elapsed_ms": 211882,
-    "elapsed_sec": "211.9",
+    "elapsed_ms": 177859,
+    "elapsed_sec": "177.9",
     "concurrency": 3
   },
   "articles": [
@@ -399,6 +399,67 @@
         }
       ],
       "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-api-authentication-schemes-and-bearer-tokens.md",
+      "article_id": "agent-api-authentication-schemes-and-bearer-tokens",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Stripe API Authentication",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.stripe.com/api/authentication",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.stripe.com/api/authentication"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Google Cloud Authentication",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.cloud.google.com/docs/authentication",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/docs/authentication?hl=it"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenAPI Security Scheme Object",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://spec.openapis.org/oas/v3.1.0#security-scheme-object",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://spec.openapis.org/oas/v3.1.0"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
       "sources_unreachable": 0
     },
     {
@@ -24883,6 +24944,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\rag-chunking-strategies-and-token-aware-splitting.md",
+      "article_id": "rag-chunking-strategies-and-token-aware-splitting",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Haystack DocumentSplitter",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.haystack.deepset.ai/docs/documentsplitter",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.haystack.deepset.ai/docs/documentsplitter"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "LlamaIndex Node Parsers",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.llamaindex.ai/en/stable/module_guides/loading/node_parsers/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.llamaindex.ai/python/framework/module_guides/loading/node_parsers/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Docker Agent RAG",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.docker.com/ai/docker-agent/rag/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.docker.com/ai/docker-agent/rag/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\rag-citation-and-source-attribution.md",
       "article_id": "rag-citation-and-source-attribution",
       "generation_method": "ai_structured",
@@ -25905,6 +26027,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://docs.langchain.com/langsmith/evaluation-concepts"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\rag-reranker-score-calibration-and-thresholds.md",
+      "article_id": "rag-reranker-score-calibration-and-thresholds",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Cohere Reranking",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.cohere.com/docs/reranking-with-cohere",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cohere.com/docs/reranking-with-cohere"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Pinecone Rerank Results",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.pinecone.io/guides/search/rerank-results",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.pinecone.io/guides/search/rerank-results"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Voyage AI Reranker",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.voyageai.com/docs/reranker",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.voyageai.com/docs/reranker"
               },
               "match": true
             }
@@ -34093,6 +34276,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\api-conditional-requests-etags-and-cache-validation.md",
+      "article_id": "api-conditional-requests-etags-and-cache-validation",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Google Cloud Storage Request Preconditions",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.cloud.google.com/storage/docs/request-preconditions",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/storage/docs/request-preconditions"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Amazon S3 Conditional Requests",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/conditional-requests.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/conditional-requests.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GitHub REST API Best Practices",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/rest/using-the-rest-api/best-practices-for-using-the-rest-api",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/rest/using-the-rest-api/best-practices-for-using-the-rest-api"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\api-contract-testing-and-mock-servers.md",
       "article_id": "api-contract-testing-and-mock-servers",
       "generation_method": "ai_structured",
@@ -34143,6 +34387,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://stoplight.io/open-source/prism"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\api-cors-preflight-and-browser-agent-requests.md",
+      "article_id": "api-cors-preflight-and-browser-agent-requests",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "MDN CORS",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CORS",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CORS"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "MDN Using Fetch",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Cloudflare Workers CORS Headers",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.cloudflare.com/workers/examples/cors-header-proxy/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.cloudflare.com/workers/examples/cors-header-proxy/"
               },
               "match": true
             }
@@ -37688,6 +37993,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\code-dependency-graphs-and-vulnerability-advisories.md",
+      "article_id": "code-dependency-graphs-and-vulnerability-advisories",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "deps.dev API",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.deps.dev/api/v3/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.deps.dev/api/v3/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "npm audit",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.npmjs.com/cli/v11/commands/npm-audit",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.npmjs.com/cli/v11/commands/npm-audit/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OSV Query API",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://google.github.io/osv.dev/post-v1-query/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://google.github.io/osv.dev/post-v1-query/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\code-git-blame-and-commit-history-for-agents.md",
       "article_id": "code-git-blame-and-commit-history-for-agents",
       "generation_method": "ai_structured",
@@ -37976,6 +38342,67 @@
       "sources_unreachable": 0,
       "manual_reviewed": true,
       "manual_reviewed_at": "2026-06-01"
+    },
+    {
+      "file": "content\\computer-science\\code-sbom-and-software-supply-chain-inventory.md",
+      "article_id": "code-sbom-and-software-supply-chain-inventory",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "CycloneDX 1.6 JSON Reference",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://cyclonedx.org/docs/1.6/json/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://cyclonedx.org/docs/1.6/json/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "SPDX 3.0.1 Sbom Class",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://spdx.github.io/spdx-spec/v3.0.1/model/Software/Classes/Sbom/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://spdx.github.io/spdx-spec/v3.0.1/model/Software/Classes/Sbom/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GitHub SBOM REST API",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/rest/dependency-graph/sboms?apiVersion=2022-11-28",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/rest/dependency-graph/sboms?apiVersion=2022-11-28"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\code-search-indexing-and-trigram-search.md",
@@ -40182,6 +40609,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://docs.snowflake.com/en/user-guide/views-materialized"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\data-observability-anomaly-detection-and-incidents.md",
+      "article_id": "data-observability-anomaly-detection-and-incidents",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Datadog Anomaly Monitor",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.datadoghq.com/monitors/types/anomaly/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.datadoghq.com/monitors/types/anomaly/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "SodaCL Overview",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.soda.io/soda-documentation/soda-v3/soda-cl-overview",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.soda.io/soda-documentation/soda-v3/soda-cl-overview"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Dagster Asset Checks",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.dagster.io/guides/test/asset-checks",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.dagster.io/guides/test/asset-checks"
               },
               "match": true
             }
@@ -68144,6 +68632,68 @@
       "sources_unreachable": 1
     },
     {
+      "file": "content\\ai\\llm-evaluation-metric-templates-and-scorecards.md",
+      "article_id": "llm-evaluation-metric-templates-and-scorecards",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Vertex AI Define Evaluation Metrics",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/determine-eval",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/determine-eval"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Holistic Evaluation of Language Models",
+          "source_type": "paper",
+          "results": [
+            {
+              "method": "doi",
+              "identifier": "10.1111/nyas.15007",
+              "verified": true,
+              "metadata": {
+                "title": "Holistic Evaluation of Language Models",
+                "publisher": "Wiley",
+                "year": 2023
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Vertex AI Managed Rubric Metrics",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/rubric-metric-details",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/rubric-metric-details?hl=fr"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\arts\\history-of-printing.md",
       "article_id": "kb-2026-00479",
       "generation_method": "ai_assisted",
@@ -68320,7 +68870,10 @@
               "method": "url",
               "identifier": "https://press.princeton.edu/books/paperback/9780691170817/the-theory-of-games-and-economic-behavior",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://press.princeton.edu/books/paperback/9780691170817/the-theory-of-games-and-economic-behavior"
+              },
               "match": false
             }
           ],
@@ -68550,7 +69103,10 @@
               "method": "url",
               "identifier": "https://www.informit.com/clean-code/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.informit.com/404.aspx?aspxerrorpath=/clean-code"
+              },
               "match": false
             }
           ],
@@ -68564,7 +69120,10 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.code",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://doi.org/10.1145/acmcs.2025.code"
+              },
               "match": false
             }
           ],
@@ -68573,67 +69132,6 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 3
-    },
-    {
-      "file": "content\\computer-science\\code-dependency-graphs-and-vulnerability-advisories.md",
-      "article_id": "code-dependency-graphs-and-vulnerability-advisories",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "deps.dev API",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.deps.dev/api/v3/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.deps.dev/api/v3/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "npm audit",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.npmjs.com/cli/v11/commands/npm-audit",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.npmjs.com/cli/v11/commands/npm-audit/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "OSV Query API",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://google.github.io/osv.dev/post-v1-query/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://google.github.io/osv.dev/post-v1-query/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\command-pattern.md",
@@ -68768,7 +69266,10 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.concurrency",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://doi.org/10.1145/acmcs.2025.concurrency"
+              },
               "match": false
             }
           ],
@@ -68863,7 +69364,10 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/websec/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.oreilly.com/websec/"
+              },
               "match": false
             }
           ],
@@ -69138,7 +69642,10 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.db",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://doi.org/10.1145/acmcs.2025.db"
+              },
               "match": false
             }
           ],
@@ -69196,10 +69703,7 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.ddos",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.ddos"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -69240,7 +69744,10 @@
               "method": "url",
               "identifier": "https://www.informit.com/design-patterns/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.informit.com/404.aspx?aspxerrorpath=/design-patterns"
+              },
               "match": false
             }
           ],
@@ -69254,7 +69761,10 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.structural",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://doi.org/10.1145/acmcs.2025.structural"
+              },
               "match": false
             }
           ],
@@ -69659,7 +70169,10 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/eda/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.oreilly.com/eda/"
+              },
               "match": false
             }
           ],
@@ -69673,7 +70186,10 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.es",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://doi.org/10.1145/acmcs.2025.es"
+              },
               "match": false
             }
           ],
@@ -69731,7 +70247,10 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.creational",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://doi.org/10.1145/acmcs.2025.creational"
+              },
               "match": false
             }
           ],
@@ -69968,7 +70487,10 @@
               "method": "url",
               "identifier": "https://mitpress.mit.edu/books/introduction-algorithms-5th-edition",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 403,
+                "final_url": "https://mitpress.mit.edu/books/introduction-algorithms-5th-edition"
+              },
               "match": false
             }
           ],
@@ -70185,7 +70707,10 @@
               "method": "url",
               "identifier": "https://www.rfc-editor.org/rfc/rfc8446",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.rfc-editor.org/rfc/rfc8446"
+              },
               "match": false
             }
           ],
@@ -70199,7 +70724,10 @@
               "method": "url",
               "identifier": "https://www.rfc-editor.org/rfc/rfc5246",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.rfc-editor.org/rfc/rfc5246"
+              },
               "match": false
             }
           ],
@@ -70409,7 +70937,10 @@
               "method": "url",
               "identifier": "https://mitpress.mit.edu/books/types-and-programming-languages",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 403,
+                "final_url": "https://mitpress.mit.edu/books/types-and-programming-languages"
+              },
               "match": false
             }
           ],
@@ -70423,10 +70954,7 @@
               "method": "url",
               "identifier": "https://www.collegepublications.co.uk/lambda/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.collegepublications.co.uk/lambda/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -70572,10 +71100,7 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/linux-kernel/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.oreilly.com/linux-kernel/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -70670,10 +71195,7 @@
               "method": "url",
               "identifier": "https://www.informit.com/patterns-eaa/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.informit.com/404.aspx?aspxerrorpath=/patterns-eaa"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -70880,10 +71402,7 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/head-first-design-patterns/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.oreilly.com/head-first-design-patterns/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -70995,10 +71514,7 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/websec/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.oreilly.com/websec/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -71208,7 +71724,10 @@
               "method": "url",
               "identifier": "https://doi.org/10.1109/ms.2025.redis",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://doi.org/10.1109/ms.2025.redis"
+              },
               "match": false
             }
           ],
@@ -71330,7 +71849,10 @@
               "method": "url",
               "identifier": "https://www.informit.com/patterns-eaa/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.informit.com/404.aspx?aspxerrorpath=/patterns-eaa"
+              },
               "match": false
             }
           ],
@@ -71344,7 +71866,10 @@
               "method": "url",
               "identifier": "https://www.informit.com/ddd/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.informit.com/404.aspx?aspxerrorpath=/ddd"
+              },
               "match": false
             }
           ],
@@ -71385,7 +71910,10 @@
               "method": "url",
               "identifier": "https://www.informit.com/sysadmin/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.informit.com/404.aspx?aspxerrorpath=/sysadmin"
+              },
               "match": false
             }
           ],
@@ -71457,7 +71985,10 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.rust",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://doi.org/10.1145/acmcs.2025.rust"
+              },
               "match": false
             }
           ],
@@ -71579,10 +72110,7 @@
               "method": "url",
               "identifier": "https://www.informit.com/design-patterns/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.informit.com/404.aspx?aspxerrorpath=/design-patterns"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -71640,10 +72168,7 @@
               "method": "url",
               "identifier": "https://www.mheducation.com/software-engineering/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.mheducation.com/software-engineering"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -71657,10 +72182,7 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.sdlc",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.sdlc"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -71701,10 +72223,7 @@
               "method": "url",
               "identifier": "https://www.informit.com/clean-architecture/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.informit.com/404.aspx?aspxerrorpath=/clean-architecture"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -71762,7 +72281,10 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/websec/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.oreilly.com/websec/"
+              },
               "match": false
             }
           ],
@@ -71776,7 +72298,10 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.sqli",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://doi.org/10.1145/acmcs.2025.sqli"
+              },
               "match": false
             }
           ],
@@ -72020,7 +72545,10 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/systemd/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.oreilly.com/systemd/"
+              },
               "match": false
             }
           ],
@@ -72061,10 +72589,7 @@
               "method": "url",
               "identifier": "https://www.rfc-editor.org/rfc/rfc791",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.rfc-editor.org/rfc/rfc791"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -72078,10 +72603,7 @@
               "method": "url",
               "identifier": "https://www.rfc-editor.org/rfc/rfc793",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.rfc-editor.org/rfc/rfc793"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -72095,10 +72617,7 @@
               "method": "url",
               "identifier": "https://www.rfc-editor.org/rfc/rfc768",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.rfc-editor.org/rfc/rfc768"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -72183,7 +72702,10 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.testing",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://doi.org/10.1145/acmcs.2025.testing"
+              },
               "match": false
             }
           ],
@@ -72278,7 +72800,10 @@
               "method": "url",
               "identifier": "https://mitpress.mit.edu/books/introduction-algorithms-5th-edition",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 403,
+                "final_url": "https://mitpress.mit.edu/books/introduction-algorithms-5th-edition"
+              },
               "match": false
             }
           ],
@@ -72465,7 +72990,10 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.vpn",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://doi.org/10.1145/acmcs.2025.vpn"
+              },
               "match": false
             }
           ],
@@ -72543,7 +73071,10 @@
               "method": "url",
               "identifier": "https://www.worldwildlife.org/places/coral-triangle",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 403,
+                "final_url": "https://www.worldwildlife.org/places/coral-triangle"
+              },
               "match": false
             }
           ],
@@ -72774,7 +73305,10 @@
               "method": "url",
               "identifier": "https://www.wiley.com/en-us/How+the+Immune+System+Works%2C+6th+Edition-p-9781119542124",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.wiley.com/en-us/How+the+Immune+System+Works%2C+6th+Edition-p-9781119542124"
+              },
               "match": false
             }
           ],
@@ -72822,7 +73356,10 @@
               "method": "url",
               "identifier": "https://www.simonandschuster.com/books/Why-We-Sleep/Matthew-Walker/9781501144325",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 403,
+                "final_url": "https://www.simonandschuster.com/books/Why-We-Sleep/Matthew-Walker/9781501144325"
+              },
               "match": false
             }
           ],
@@ -73022,7 +73559,10 @@
               "method": "url",
               "identifier": "https://aucpress.com/pyramids/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 403,
+                "final_url": "https://aucpress.com/pyramids/"
+              },
               "match": false
             }
           ],
@@ -73411,10 +73951,7 @@
               "method": "url",
               "identifier": "https://www.iaea.org/publications",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.iaea.org/publications"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -73702,7 +74239,10 @@
               "method": "url",
               "identifier": "https://www.wiley.com/en-us/Volcanoes%3A+Global+Perspectives%2C+2nd+Edition-p-9781119477532",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.wiley.com/en-us/Volcanoes%3A+Global+Perspectives%2C+2nd+Edition-p-9781119477532"
+              },
               "match": false
             }
           ],
@@ -73824,7 +74364,10 @@
               "method": "url",
               "identifier": "https://www.simonandschuster.com/winning-ugly/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 403,
+                "final_url": "https://www.simonandschuster.com/winning-ugly/"
+              },
               "match": false
             }
           ],
@@ -73839,7 +74382,7 @@
               "identifier": "https://www.penguinrandomhouse.com/inner-tennis/",
               "verified": false,
               "metadata": {
-                "status": 500,
+                "status": 404,
                 "final_url": "https://www.penguinrandomhouse.com/inner-tennis/"
               },
               "match": false
