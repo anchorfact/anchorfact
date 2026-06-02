@@ -150,7 +150,7 @@ console.log('AnchorFact API Readiness Report Tests\n');
 
 test('core query set defines subscription-readiness probes across paid-use categories', () => {
   assert(CORE_CORPUS_QUERIES.length >= 100, 'core query set should preserve the 100-query foundation');
-  assert(CORE_CORPUS_QUERIES.length <= 205, 'core query set should stay inside the expanded readiness-corpus range');
+  assert(CORE_CORPUS_QUERIES.length <= 220, 'core query set should stay inside the expanded readiness-corpus range');
   const categories = new Set(CORE_CORPUS_QUERIES.map(query => query.category));
   for (const category of ['agent_execution_sources', 'agent_rag', 'api_mcp', 'security_governance', 'data_infrastructure', 'llm_evaluation', 'code_intelligence']) {
     assert(categories.has(category), `missing category ${category}`);
@@ -191,6 +191,8 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'ai/rag-contextual-compression',
     'ai/rag-query-decomposition',
     'ai/rag-index-freshness-and-reindexing',
+    'ai/rag-result-diversity-and-mmr',
+    'ai/embedding-model-upgrades-and-reindexing-risk',
     'ai/prompt-injection-defenses-for-tool-using-agents',
     'ai/llm-as-judge-evaluation',
     'ai/agent-benchmarks',
@@ -202,6 +204,8 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'ai/llm-regression-testing',
     'ai/pairwise-llm-evaluation',
     'ai/human-feedback-and-annotation-queues-for-llms',
+    'ai/prompt-versioning-and-evaluation-traces',
+    'ai/llm-cost-and-latency-evaluation',
     'ai/evaluation-data-contamination',
     'computer-science/openapi-for-agent-tools',
     'ai/mcp-resources-and-prompts',
@@ -212,6 +216,7 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'computer-science/api-schema-code-generation',
     'computer-science/webhooks-and-event-driven-apis',
     'computer-science/asyncapi-and-event-api-schemas',
+    'computer-science/api-health-checks-and-readiness-probes',
     'computer-science/data-catalogs-and-metadata-lineage',
     'computer-science/lakehouse-table-formats',
     'computer-science/schema-evolution-for-data-pipelines',
@@ -221,6 +226,7 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'computer-science/data-freshness-and-slas',
     'computer-science/schema-registry-for-event-streaming',
     'computer-science/openlineage-for-data-pipelines',
+    'computer-science/debezium-change-data-capture-for-pipelines',
     'computer-science/feature-stores-for-ml-pipelines',
     'ai/hnsw-vector-indexing',
     'ai/rag-citation-and-source-attribution',
@@ -235,6 +241,11 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'ai/agent-release-notes-and-changelog-lookup',
     'ai/agent-status-pages-and-incident-feeds',
     'computer-science/configuration-and-environment-variable-discovery',
+    'ai/agent-runbooks-and-incident-response',
+    'ai/agent-service-level-objectives-and-error-budgets',
+    'ai/agent-feature-flags-and-remote-configuration',
+    'ai/agent-ci-logs-and-deployment-history',
+    'computer-science/repository-permissions-and-code-agent-access',
     'computer-science/code-graphs-and-code-intelligence',
     'computer-science/program-symbols-definitions-and-references',
     'computer-science/abstract-syntax-trees-and-code-navigation',
@@ -246,7 +257,8 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'computer-science/package-dependency-resolution-for-code-agents',
     'computer-science/static-analysis-rules-and-codeql',
     'computer-science/test-coverage-for-code-agents',
-    'computer-science/mutation-testing-for-code-agents'
+    'computer-science/mutation-testing-for-code-agents',
+    'computer-science/build-graphs-and-incremental-build-systems'
   ]) {
     assert(slugs.includes(slug), `missing agent/code-intelligence readiness slug ${slug}`);
   }

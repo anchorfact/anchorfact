@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-02T04:16:49.922Z",
-    "total_articles": 1092,
+    "generated": "2026-06-02T04:43:03.948Z",
+    "total_articles": 1104,
     "total_with_errors": 0,
     "average_sources_per_article": "2.5",
-    "overall_verification_rate": "88.0%",
-    "elapsed_ms": 113825,
-    "elapsed_sec": "113.8",
+    "overall_verification_rate": "88.1%",
+    "elapsed_ms": 142500,
+    "elapsed_sec": "142.5",
     "concurrency": 3
   },
   "articles": [
@@ -449,6 +449,67 @@
               "verified": true,
               "metadata": {
                 "title": "arXiv Query: search_query=&amp;id_list=2310.06770&amp;start=0&amp;max_results=1"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-ci-logs-and-deployment-history.md",
+      "article_id": "agent-ci-logs-and-deployment-history",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "GitHub Actions Workflow Run Logs",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/actions/how-tos/monitor-workflows/use-workflow-run-logs",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/actions/how-tos/monitor-workflows/use-workflow-run-logs"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GitLab CI Jobs",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.gitlab.com/ci/jobs/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.gitlab.com/ci/jobs/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Kubernetes Deployments",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kubernetes.io/docs/concepts/workloads/controllers/deployment/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://kubernetes.io/docs/concepts/workloads/controllers/deployment/"
               },
               "match": true
             }
@@ -16005,6 +16066,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\llm-cost-and-latency-evaluation.md",
+      "article_id": "llm-cost-and-latency-evaluation",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "OpenAI Latency Optimization",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.openai.com/api/docs/guides/latency-optimization",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.openai.com/api/docs/guides/latency-optimization"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Anthropic Reduce Latency",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/reduce-latency",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/reduce-latency"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenAI Cookbook Token Counting",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.openai.com/cookbook/examples/how_to_count_tokens_with_tiktoken",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.openai.com/cookbook/examples/how_to_count_tokens_with_tiktoken"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content/ai/llm-inference-optimization.md",
       "article_id": "llm-inference-optimization",
       "generation_method": "ai_structured",
@@ -19018,6 +19140,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\prompt-versioning-and-evaluation-traces.md",
+      "article_id": "prompt-versioning-and-evaluation-traces",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Promptfoo Configuration Guide",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.promptfoo.dev/docs/configuration/guide/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.promptfoo.dev/docs/configuration/guide/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenAI Evals",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.openai.com/api/docs/guides/evals",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.openai.com/api/docs/guides/evals"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "LangSmith Evaluation Approaches",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.langchain.com/langsmith/evaluation-approaches",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.langchain.com/langsmith/evaluation-approaches"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content/ai/protein-structure-prediction.md",
       "article_id": "protein-structure-prediction",
       "generation_method": "ai_structured",
@@ -19624,6 +19807,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://docs.langchain.com/langsmith/evaluation-concepts"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\rag-result-diversity-and-mmr.md",
+      "article_id": "rag-result-diversity-and-mmr",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Qdrant Search Relevance",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://qdrant.tech/documentation/concepts/search-relevance/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://qdrant.tech/documentation/concepts/search-relevance/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "LangChain Weaviate Vector Store",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.langchain.com/oss/python/integrations/vectorstores/weaviate/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.langchain.com/oss/python/integrations/vectorstores/weaviate/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Qdrant Search",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://qdrant.tech/documentation/concepts/search/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://qdrant.tech/documentation/concepts/search/"
               },
               "match": true
             }
@@ -26516,6 +26760,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\api-health-checks-and-readiness-probes.md",
+      "article_id": "api-health-checks-and-readiness-probes",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Kubernetes Liveness, Readiness, and Startup Probes",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "AWS Target Group Health Checks",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.aws.amazon.com/elasticloadbalancing/latest/application/target-group-health-checks.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/application/target-group-health-checks.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Google Cloud Health Check Concepts",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.cloud.google.com/load-balancing/docs/health-check-concepts",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/load-balancing/docs/health-check-concepts"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\api-idempotency-and-retry-semantics.md",
       "article_id": "api-idempotency-and-retry-semantics",
       "generation_method": "ai_structured",
@@ -27341,6 +27646,67 @@
       "sources_unreachable": 0,
       "manual_reviewed": true,
       "manual_reviewed_at": "2026-05-28"
+    },
+    {
+      "file": "content\\computer-science\\build-graphs-and-incremental-build-systems.md",
+      "article_id": "build-graphs-and-incremental-build-systems",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Bazel BUILD Files",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://bazel.build/concepts/build-ref?hl=en",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://bazel.build/concepts/build-ref?hl=en"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Bazel Dependencies",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://bazel.build/concepts/dependencies?hl=en",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://bazel.build/concepts/dependencies?hl=en"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Gradle Incremental Build",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.gradle.org/current/userguide/incremental_build.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.gradle.org/current/userguide/incremental_build.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content/computer-science/bun-runtime.md",
@@ -29326,6 +29692,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://github.com/awslabs/deequ"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\debezium-change-data-capture-for-pipelines.md",
+      "article_id": "debezium-change-data-capture-for-pipelines",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Debezium Tutorial",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://debezium.io/documentation/reference/stable/tutorial.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://debezium.io/documentation/reference/stable/tutorial.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Debezium MySQL Connector",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://debezium.io/documentation/reference/stable/connectors/mysql.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://debezium.io/documentation/reference/stable/connectors/mysql.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Debezium Signaling",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://debezium.io/documentation/reference/stable/configuration/signalling.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://debezium.io/documentation/reference/stable/configuration/signalling.html"
               },
               "match": true
             }
@@ -35869,6 +36296,67 @@
       "sources_unreachable": 0,
       "manual_reviewed": true,
       "manual_reviewed_at": "2026-05-28"
+    },
+    {
+      "file": "content\\computer-science\\repository-permissions-and-code-agent-access.md",
+      "article_id": "repository-permissions-and-code-agent-access",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "GitHub Repository Roles",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/repository-roles-for-an-organization",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/repository-roles-for-an-organization"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GitHub App Permissions",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/apps/creating-github-apps/registering-a-github-app/choosing-permissions-for-a-github-app",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/apps/creating-github-apps/registering-a-github-app/choosing-permissions-for-a-github-app"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GitLab Permissions",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.gitlab.com/user/permissions/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.gitlab.com/user/permissions/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content/computer-science/resizeobserver.md",
@@ -55556,6 +56044,189 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\agent-feature-flags-and-remote-configuration.md",
+      "article_id": "agent-feature-flags-and-remote-configuration",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "OpenFeature Evaluation API",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://openfeature.dev/docs/reference/concepts/evaluation-api/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://openfeature.dev/docs/reference/concepts/evaluation-api/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Kubernetes Feature Gates",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Firebase Remote Config",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://firebase.google.com/docs/remote-config",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://firebase.google.com/docs/remote-config?hl=de"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-runbooks-and-incident-response.md",
+      "article_id": "agent-runbooks-and-incident-response",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Google SRE Managing Incidents",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://sre.google/sre-book/managing-incidents/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://sre.google/sre-book/managing-incidents/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "NIST Computer Security Incident Handling Guide",
+          "source_type": "government_report",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://csrc.nist.gov/pubs/sp/800/61/r2/final",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://csrc.nist.gov/pubs/sp/800/61/r2/final"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Atlassian Incident Response",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.atlassian.com/incident-management/incident-response",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.atlassian.com/incident-management/incident-response"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-service-level-objectives-and-error-budgets.md",
+      "article_id": "agent-service-level-objectives-and-error-budgets",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Google Cloud SLO Monitoring",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.cloud.google.com/stackdriver/docs/solutions/slo-monitoring",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/stackdriver/docs/solutions/slo-monitoring"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Prometheus Alerting Rules",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://prometheus.io/docs/practices/alerting/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://prometheus.io/docs/practices/alerting/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Atlassian SLA vs SLO vs SLI",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.atlassian.com/incident-management/kpis/sla-vs-slo-vs-sli",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.atlassian.com/incident-management/kpis/sla-vs-slo-vs-sli"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\ai-for-genomics-variant-calling-gene-expression-prediction-and-protein-dna-binding.md",
       "article_id": "kb-2026-00005",
       "generation_method": "ai_structured",
@@ -55578,6 +56249,67 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 1
+    },
+    {
+      "file": "content\\ai\\embedding-model-upgrades-and-reindexing-risk.md",
+      "article_id": "embedding-model-upgrades-and-reindexing-risk",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "OpenAI Embeddings Guide",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.openai.com/api/docs/guides/embeddings",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.openai.com/api/docs/guides/embeddings"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Gemini API Embeddings",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://ai.google.dev/gemini-api/docs/embeddings",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://ai.google.dev/gemini-api/docs/embeddings"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Pinecone text-embedding-3-large",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.pinecone.io/models/text-embedding-3-large",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.pinecone.io/models/text-embedding-3-large"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content\\arts\\history-of-printing.md",
@@ -55620,7 +56352,10 @@
               "method": "url",
               "identifier": "https://www.phaidon.com/store/art/the-story-of-modern-art-9780714831398/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.phaidon.com/en-int/store/art/the-story-of-modern-art-9780714831398"
+              },
               "match": false
             }
           ],
@@ -55756,10 +56491,7 @@
               "method": "url",
               "identifier": "https://press.princeton.edu/books/paperback/9780691170817/the-theory-of-games-and-economic-behavior",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://press.princeton.edu/books/paperback/9780691170817/the-theory-of-games-and-economic-behavior"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -56050,10 +56782,7 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/head-first-design-patterns/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.oreilly.com/head-first-design-patterns/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -56314,10 +57043,7 @@
               "method": "url",
               "identifier": "https://nostarch.com/websec/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://nostarch.com/websec/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -56375,10 +57101,7 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/lakehouse/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.oreilly.com/lakehouse/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -57382,10 +58105,7 @@
               "method": "url",
               "identifier": "https://mitpress.mit.edu/books/introduction-algorithms-5th-edition",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://mitpress.mit.edu/books/introduction-algorithms-5th-edition"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -57602,10 +58322,7 @@
               "method": "url",
               "identifier": "https://www.rfc-editor.org/rfc/rfc8446",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.rfc-editor.org/rfc/rfc8446"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -57619,10 +58336,7 @@
               "method": "url",
               "identifier": "https://www.rfc-editor.org/rfc/rfc5246",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.rfc-editor.org/rfc/rfc5246"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -57832,7 +58546,10 @@
               "method": "url",
               "identifier": "https://mitpress.mit.edu/books/types-and-programming-languages",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 403,
+                "final_url": "https://mitpress.mit.edu/books/types-and-programming-languages"
+              },
               "match": false
             }
           ],
@@ -57992,10 +58709,7 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/linux-kernel/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.oreilly.com/linux-kernel/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -58107,10 +58821,7 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.mvc",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.mvc"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -59728,7 +60439,10 @@
               "method": "url",
               "identifier": "https://mitpress.mit.edu/books/introduction-algorithms-5th-edition",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 403,
+                "final_url": "https://mitpress.mit.edu/books/introduction-algorithms-5th-edition"
+              },
               "match": false
             }
           ],
@@ -60311,10 +61025,7 @@
               "method": "url",
               "identifier": "https://www.stadion.com/stretching-scientifically-book/",
               "verified": false,
-              "metadata": {
-                "status": 405,
-                "final_url": "https://www.stadion.com/stretching-scientifically-book/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
