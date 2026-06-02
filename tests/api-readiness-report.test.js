@@ -150,7 +150,7 @@ console.log('AnchorFact API Readiness Report Tests\n');
 
 test('core query set defines subscription-readiness probes across paid-use categories', () => {
   assert(CORE_CORPUS_QUERIES.length >= 100, 'core query set should preserve the 100-query foundation');
-  assert(CORE_CORPUS_QUERIES.length <= 500, 'core query set should stay inside the expanded readiness-corpus range');
+  assert(CORE_CORPUS_QUERIES.length <= 525, 'core query set should stay inside the expanded readiness-corpus range');
   const categories = new Set(CORE_CORPUS_QUERIES.map(query => query.category));
   for (const category of ['agent_execution_sources', 'agent_rag', 'api_mcp', 'security_governance', 'data_infrastructure', 'llm_evaluation', 'developer_workflows', 'code_intelligence']) {
     assert(categories.has(category), `missing category ${category}`);
@@ -199,6 +199,7 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'ai/cross-encoder-reranking-for-retrieval',
     'ai/retrieval-access-control-and-permission-filtering',
     'ai/retrieval-field-boosting-and-multi-match-search',
+    'ai/retrieval-lucene-segments-refresh-and-near-real-time-search',
     'ai/prompt-injection-defenses-for-tool-using-agents',
     'ai/llm-as-judge-evaluation',
     'ai/llm-evaluation-judge-bias-and-randomization',
@@ -206,6 +207,7 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'ai/agent-benchmarks',
     'ai/evaluation-datasets-and-golden-tests-for-llms',
     'ai/evaluation-rubrics-and-grader-design',
+    'ai/llm-evaluation-ifeval-instruction-following-benchmarks',
     'ai/code-generation-evaluation-pass-at-k',
     'ai/online-llm-evaluation-and-feedback-loops',
     'ai/rag-groundedness-and-faithfulness-evaluation',
@@ -232,6 +234,7 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'computer-science/api-contract-testing-and-mock-servers',
     'computer-science/api-prefer-header-return-minimal-and-respond-async',
     'computer-science/api-websocket-subprotocol-negotiation-for-agents',
+    'computer-science/api-json-rpc-request-ids-and-error-objects',
     'computer-science/data-catalogs-and-metadata-lineage',
     'computer-science/lakehouse-table-formats',
     'computer-science/schema-evolution-for-data-pipelines',
@@ -248,6 +251,8 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'computer-science/feature-stores-for-ml-pipelines',
     'computer-science/data-avro-schema-resolution-and-object-container-files',
     'computer-science/data-orc-stripes-and-column-statistics',
+    'computer-science/data-parquet-page-indexes-and-bloom-filters',
+    'computer-science/data-iceberg-delete-files-and-row-level-deletes',
     'ai/hnsw-vector-indexing',
     'ai/rag-citation-and-source-attribution',
     'ai/agent-secret-management-and-credential-isolation',
@@ -272,12 +277,14 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'ai/agent-execution-dry-runs-and-plan-previews',
     'ai/agent-service-ownership-and-on-call-schedules',
     'ai/agent-container-image-registry-and-tags',
+    'ai/agent-docker-build-cache-and-layer-invalidation',
     'ai/agent-database-migration-history',
     'ai/agent-infrastructure-as-code-state-and-drift',
     'ai/agent-secrets-rotation-and-credential-expiry',
     'ai/agent-cloud-resource-inventory',
     'ai/agent-kubernetes-events-and-pod-health',
     'ai/agent-kubernetes-horizontal-pod-autoscaler-and-scale-events',
+    'ai/agent-kubernetes-pod-disruption-budgets-and-evictions',
     'ai/agent-service-mesh-traffic-policy',
     'ai/agent-message-queue-dead-letter-queues',
     'ai/agent-scheduler-cron-and-workflow-runs',
@@ -437,6 +444,7 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'computer-science/data-cdc-lag-and-replication-slots',
     'computer-science/code-debug-adapter-protocol-for-agents',
     'computer-science/code-semantic-tokens-and-symbol-classification',
+    'computer-science/code-textmate-grammars-and-syntax-token-scopes',
     'ai/agent-database-backups-and-point-in-time-restore',
     'ai/agent-cloud-metrics-and-time-series-alerts',
     'ai/agent-container-image-digests-and-attestations',
