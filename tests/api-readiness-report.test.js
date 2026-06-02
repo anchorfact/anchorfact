@@ -424,7 +424,17 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'computer-science/data-semantic-layer-and-metrics-definitions',
     'computer-science/data-row-level-security-and-policy-tags',
     'computer-science/code-unified-diffs-and-patch-application-for-agents',
-    'computer-science/code-git-blame-and-commit-history-for-agents'
+    'computer-science/code-git-blame-and-commit-history-for-agents',
+    'ai/agent-kubernetes-persistent-volumes-and-storage-classes',
+    'ai/agent-kubernetes-network-policies-and-ingress-rules',
+    'ai/agent-cache-ttl-evictions-and-hit-rates',
+    'ai/rag-document-deletion-and-tombstone-handling',
+    'ai/rag-metadata-enrichment-and-entity-extraction',
+    'ai/llm-evaluation-hallucination-and-factuality-benchmarks',
+    'computer-science/api-delta-sync-and-change-tokens',
+    'computer-science/api-field-masks-and-partial-response',
+    'computer-science/data-column-masking-and-dynamic-data-masking',
+    'computer-science/code-merge-conflicts-and-conflict-markers-for-agents'
   ]) {
     assert(slugs.includes(slug), `missing agent/code-intelligence readiness slug ${slug}`);
   }

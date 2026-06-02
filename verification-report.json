@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-02T11:35:23.352Z",
-    "total_articles": 1270,
+    "generated": "2026-06-02T12:00:52.043Z",
+    "total_articles": 1280,
     "total_with_errors": 0,
     "average_sources_per_article": "2.6",
-    "overall_verification_rate": "89.9%",
-    "elapsed_ms": 146873,
-    "elapsed_sec": "146.9",
+    "overall_verification_rate": "90.0%",
+    "elapsed_ms": 157644,
+    "elapsed_sec": "157.6",
     "concurrency": 3
   },
   "articles": [
@@ -693,6 +693,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://developer.chrome.com/docs/devtools/network/reference?hl=en"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-cache-ttl-evictions-and-hit-rates.md",
+      "article_id": "agent-cache-ttl-evictions-and-hit-rates",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Redis Key Eviction",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://redis.io/docs/latest/develop/reference/eviction/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://redis.io/docs/latest/develop/reference/eviction/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Redis INFO Command",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://redis.io/docs/latest/commands/info/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://redis.io/docs/latest/commands/info/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Amazon ElastiCache Redis Metrics",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/CacheMetrics.Redis.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/CacheMetrics.Redis.html"
               },
               "match": true
             }
@@ -2853,6 +2914,128 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://kubernetes.io/docs/tasks/debug/debug-application/debug-running-pod/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-kubernetes-network-policies-and-ingress-rules.md",
+      "article_id": "agent-kubernetes-network-policies-and-ingress-rules",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Kubernetes Network Policies",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kubernetes.io/docs/concepts/services-networking/network-policies/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://kubernetes.io/docs/concepts/services-networking/network-policies/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Kubernetes Ingress",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kubernetes.io/docs/concepts/services-networking/ingress/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://kubernetes.io/docs/concepts/services-networking/ingress/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Kubernetes Gateway API",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kubernetes.io/docs/concepts/services-networking/gateway/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://kubernetes.io/docs/concepts/services-networking/gateway/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-kubernetes-persistent-volumes-and-storage-classes.md",
+      "article_id": "agent-kubernetes-persistent-volumes-and-storage-classes",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Kubernetes Persistent Volumes",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kubernetes.io/docs/concepts/storage/persistent-volumes/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://kubernetes.io/docs/concepts/storage/persistent-volumes/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Kubernetes Storage Classes",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kubernetes.io/docs/concepts/storage/storage-classes/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://kubernetes.io/docs/concepts/storage/storage-classes/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Kubernetes Volume Snapshots",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kubernetes.io/docs/concepts/storage/volume-snapshots/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://kubernetes.io/docs/concepts/storage/volume-snapshots/"
               },
               "match": true
             }
@@ -20092,6 +20275,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\llm-evaluation-hallucination-and-factuality-benchmarks.md",
+      "article_id": "llm-evaluation-hallucination-and-factuality-benchmarks",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "TruthfulQA Paper",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://aclanthology.org/2022.acl-long.229/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://aclanthology.org/2022.acl-long.229/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "FEVER Paper",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://aclanthology.org/N18-1074/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://aclanthology.org/N18-1074/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "HaluEval Paper",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://aclanthology.org/2023.emnlp-main.397/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://aclanthology.org/2023.emnlp-main.397/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\llm-evaluation-human-review-and-adjudication.md",
       "article_id": "llm-evaluation-human-review-and-adjudication",
       "generation_method": "ai_structured",
@@ -24517,6 +24761,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\rag-document-deletion-and-tombstone-handling.md",
+      "article_id": "rag-document-deletion-and-tombstone-handling",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Qdrant Points",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://qdrant.tech/documentation/concepts/points/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://qdrant.tech/documentation/concepts/points/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Weaviate Delete Objects",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.weaviate.io/weaviate/manage-objects/delete",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.weaviate.io/weaviate/manage-objects/delete"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Elasticsearch Delete API",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.elastic.co/docs/api/doc/elasticsearch/operation/operation-delete",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.elastic.co/docs/api/doc/elasticsearch/operation/operation-delete"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\rag-evaluation.md",
       "article_id": "rag-evaluation",
       "generation_method": "ai_structured",
@@ -24747,6 +25052,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://docs.weaviate.io/weaviate/manage-objects/update"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\rag-metadata-enrichment-and-entity-extraction.md",
+      "article_id": "rag-metadata-enrichment-and-entity-extraction",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "LlamaIndex Metadata Extractor",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.llamaindex.ai/python/framework/module_guides/loading/documents_and_nodes/usage_metadata_extractor/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.llamaindex.ai/python/framework/module_guides/loading/documents_and_nodes/usage_metadata_extractor/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Elasticsearch Enrich Processor",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.elastic.co/guide/en/elasticsearch/reference/current/enrich-processor.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.elastic.co/docs/reference/enrich-processor/enrich-processor"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Stanford CoreNLP Named Entity Recognition",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://stanfordnlp.github.io/CoreNLP/ner.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://stanfordnlp.github.io/CoreNLP/ner.html"
               },
               "match": true
             }
@@ -24991,6 +25357,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://qdrant.tech/documentation/concepts/search/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\rag-vector-store-snapshots-and-recovery.md",
+      "article_id": "rag-vector-store-snapshots-and-recovery",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Qdrant Snapshots",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://qdrant.tech/documentation/concepts/snapshots/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://qdrant.tech/documentation/operations/snapshots/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Weaviate Backups",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.weaviate.io/weaviate/configuration/backups",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.weaviate.io/deploy/configuration/backups"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Pinecone Restore an Index",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.pinecone.io/guides/manage-data/restore-an-index",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.pinecone.io/guides/manage-data/restore-an-index"
               },
               "match": true
             }
@@ -33179,6 +33606,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\api-delta-sync-and-change-tokens.md",
+      "article_id": "api-delta-sync-and-change-tokens",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Microsoft Graph Delta Query",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://learn.microsoft.com/en-us/graph/delta-query-overview",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.microsoft.com/en-us/graph/delta-query-overview"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Google Drive API Changes",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.google.com/workspace/drive/api/guides/manage-changes",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.google.com/workspace/drive/api/guides/manage-changes"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Google Calendar API Incremental Sync",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.google.com/workspace/calendar/api/guides/sync",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.google.com/workspace/calendar/api/guides/sync"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\api-discovery-and-service-catalogs.md",
       "article_id": "api-discovery-and-service-catalogs",
       "generation_method": "ai_structured",
@@ -36474,6 +36962,67 @@
       "manual_reviewed_at": "2026-06-02"
     },
     {
+      "file": "content\\computer-science\\code-merge-conflicts-and-conflict-markers-for-agents.md",
+      "article_id": "code-merge-conflicts-and-conflict-markers-for-agents",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Git Merge Documentation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://git-scm.com/docs/git-merge",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://git-scm.com/docs/git-merge"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Git Rerere Documentation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://git-scm.com/docs/git-rerere",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://git-scm.com/docs/git-rerere"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Git Merge-File Documentation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://git-scm.com/docs/git-merge-file",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://git-scm.com/docs/git-merge-file"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content/computer-science/code-review-best-practices.md",
       "article_id": "kb-2026-00235",
       "generation_method": "human_only",
@@ -37987,6 +38536,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/data-lineage"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\data-column-masking-and-dynamic-data-masking.md",
+      "article_id": "data-column-masking-and-dynamic-data-masking",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Snowflake Column-Level Security",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.snowflake.com/en/user-guide/security-column-intro",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.snowflake.com/en/user-guide/security-column-intro"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "BigQuery Column-Level Security",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.cloud.google.com/bigquery/docs/column-level-security-intro",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/bigquery/docs/column-level-security-intro"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "SQL Server Dynamic Data Masking",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://learn.microsoft.com/en-us/sql/relational-databases/security/dynamic-data-masking?view=sql-server-ver17",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.microsoft.com/en-us/sql/relational-databases/security/dynamic-data-masking?view=sql-server-ver17"
               },
               "match": true
             }
@@ -66376,67 +66986,6 @@
       "sources_unreachable": 1
     },
     {
-      "file": "content\\ai\\rag-vector-store-snapshots-and-recovery.md",
-      "article_id": "rag-vector-store-snapshots-and-recovery",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "Qdrant Snapshots",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://qdrant.tech/documentation/concepts/snapshots/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://qdrant.tech/documentation/operations/snapshots/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Weaviate Backups",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.weaviate.io/weaviate/configuration/backups",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.weaviate.io/deploy/configuration/backups"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Pinecone Restore an Index",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.pinecone.io/guides/manage-data/restore-an-index",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.pinecone.io/guides/manage-data/restore-an-index"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
-    },
-    {
       "file": "content\\arts\\history-of-printing.md",
       "article_id": "kb-2026-00479",
       "generation_method": "ai_assisted",
@@ -66477,7 +67026,10 @@
               "method": "url",
               "identifier": "https://www.phaidon.com/store/art/the-story-of-modern-art-9780714831398/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.phaidon.com/en-int/store/art/the-story-of-modern-art-9780714831398"
+              },
               "match": false
             }
           ],
@@ -66664,10 +67216,7 @@
               "method": "url",
               "identifier": "https://www.ilo.org/global/statistics-and-databases/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.ilo.org/global/statistics-and-databases/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -66703,6 +67252,67 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 1
+    },
+    {
+      "file": "content\\computer-science\\api-field-masks-and-partial-response.md",
+      "article_id": "api-field-masks-and-partial-response",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Google AIP-157 Field Masks",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://google.aip.dev/157",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://google.aip.dev/157"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Google Drive API Partial Response",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.google.com/drive/api/guides/performance#partial",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.google.com/workspace/drive/api/guides/performance"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Google AIP-161 Field Masks",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://google.aip.dev/161",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://google.aip.dev/161"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\bloom-filters-space-efficient-probabilistic-data-structures.md",
@@ -66904,10 +67514,7 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/head-first-design-patterns/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.oreilly.com/head-first-design-patterns/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -67229,7 +67836,10 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/lakehouse/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.oreilly.com/lakehouse/"
+              },
               "match": false
             }
           ],
@@ -67932,10 +68542,7 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.es",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.es"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -68064,7 +68671,10 @@
               "method": "url",
               "identifier": "https://www.mheducation.com/fourier/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.mheducation.com/fourier"
+              },
               "match": false
             }
           ],
@@ -68565,10 +69175,7 @@
               "method": "url",
               "identifier": "https://nostarch.com/firewalls/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://nostarch.com/firewalls/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -68680,7 +69287,10 @@
               "method": "url",
               "identifier": "https://mitpress.mit.edu/books/types-and-programming-languages",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 403,
+                "final_url": "https://mitpress.mit.edu/books/types-and-programming-languages"
+              },
               "match": false
             }
           ],
@@ -68694,10 +69304,7 @@
               "method": "url",
               "identifier": "https://www.collegepublications.co.uk/lambda/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.collegepublications.co.uk/lambda/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -68843,7 +69450,10 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/linux-kernel/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.oreilly.com/linux-kernel/"
+              },
               "match": false
             }
           ],
@@ -69456,10 +70066,7 @@
               "method": "url",
               "identifier": "https://www.packtpub.com/redis/",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.packtpub.com/redis/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -69473,10 +70080,7 @@
               "method": "url",
               "identifier": "https://doi.org/10.1109/ms.2025.redis",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1109/ms.2025.redis"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -69676,10 +70280,7 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.sync",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.sync"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -70218,7 +70819,10 @@
               "method": "url",
               "identifier": "https://doi.org/10.1017/cbo.2025.strings",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://doi.org/10.1017/cbo.2025.strings"
+              },
               "match": false
             }
           ],
@@ -70232,7 +70836,10 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.strings",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://doi.org/10.1145/acmcs.2025.strings"
+              },
               "match": false
             }
           ],
@@ -70314,10 +70921,7 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.systemd",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.systemd"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -71042,7 +71646,10 @@
               "method": "url",
               "identifier": "https://www.cdc.gov/eis/field-epi-manual/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 403,
+                "final_url": "https://www.cdc.gov/eis/field-epi-manual/"
+              },
               "match": false
             }
           ],
@@ -71658,7 +72265,10 @@
               "method": "url",
               "identifier": "https://www.cdc.gov/eis/field-epi-manual/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 403,
+                "final_url": "https://www.cdc.gov/eis/field-epi-manual/"
+              },
               "match": false
             }
           ],
