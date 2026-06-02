@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-02T08:11:19.077Z",
-    "total_articles": 1188,
+    "generated": "2026-06-02T08:40:12.988Z",
+    "total_articles": 1201,
     "total_with_errors": 0,
     "average_sources_per_article": "2.6",
-    "overall_verification_rate": "89.1%",
-    "elapsed_ms": 102657,
-    "elapsed_sec": "102.7",
+    "overall_verification_rate": "89.2%",
+    "elapsed_ms": 104812,
+    "elapsed_sec": "104.8",
     "concurrency": 3
   },
   "articles": [
@@ -876,6 +876,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://docs.aws.amazon.com/resource-explorer/latest/userguide/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-codeowners-and-review-rules.md",
+      "article_id": "agent-codeowners-and-review-rules",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "GitHub About Code Owners",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GitLab Code Owners",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.gitlab.com/user/project/codeowners/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.gitlab.com/user/project/codeowners/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Bitbucket Cloud Code Owners",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://support.atlassian.com/bitbucket-cloud/docs/set-up-and-use-code-owners/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://support.atlassian.com/bitbucket-cloud/docs/set-up-and-use-code-owners/"
               },
               "match": true
             }
@@ -2121,6 +2182,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://www.rabbitmq.com/docs/dlx"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-oauth-app-registrations-and-consent.md",
+      "article_id": "agent-oauth-app-registrations-and-consent",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "GitHub Authorizing OAuth Apps",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/authorizing-oauth-apps",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/authorizing-oauth-apps"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Google Configure OAuth Consent",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.google.com/workspace/guides/configure-oauth-consent",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.google.com/workspace/guides/configure-oauth-consent?hl=fa"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Microsoft Entra User and Admin Consent",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/user-admin-consent-overview",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/user-admin-consent-overview"
               },
               "match": true
             }
@@ -3690,6 +3812,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://docs.langchain.com/langsmith/evaluation-approaches"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-webhook-delivery-and-retry-logs.md",
+      "article_id": "agent-webhook-delivery-and-retry-logs",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "GitHub Handling Failed Webhook Deliveries",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/webhooks/using-webhooks/handling-failed-webhook-deliveries",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/webhooks/using-webhooks/handling-failed-webhook-deliveries"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Stripe Process Undelivered Webhook Events",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.stripe.com/webhooks/process-undelivered-events",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.stripe.com/webhooks/process-undelivered-events"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Shopify Troubleshoot Webhooks",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://shopify.dev/docs/apps/build/webhooks/troubleshooting-webhooks",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://shopify.dev/docs/apps/build/webhooks/troubleshoot"
               },
               "match": true
             }
@@ -18384,6 +18567,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\llm-evaluation-golden-datasets-and-sampling.md",
+      "article_id": "llm-evaluation-golden-datasets-and-sampling",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "LangSmith Evaluation Concepts",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.langchain.com/langsmith/evaluation-concepts",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.langchain.com/langsmith/evaluation-concepts"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Google Cloud Evaluation Dataset",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://cloud.google.com/vertex-ai/generative-ai/docs/models/evaluation-dataset?hl=en",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/evaluation-dataset?hl=en"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Vertex AI Evaluation API",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://cloud.google.com/vertex-ai/generative-ai/docs/model-reference/evaluation?hl=en",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/model-reference/evaluation?hl=en"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\llm-evaluation-inter-annotator-agreement.md",
       "article_id": "llm-evaluation-inter-annotator-agreement",
       "generation_method": "ai_structured",
@@ -23752,6 +23996,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\retrieval-parent-document-and-small-to-big-indexing.md",
+      "article_id": "retrieval-parent-document-and-small-to-big-indexing",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "LangChain ParentDocumentRetriever",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://reference.langchain.com/python/langchain-classic/retrievers/parent_document_retriever/ParentDocumentRetriever",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://reference.langchain.com/python/langchain-classic/retrievers/parent_document_retriever/ParentDocumentRetriever"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "MongoDB Atlas Parent Document Retrieval",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.mongodb.com/docs/atlas/ai-integrations/langchain/parent-document-retrieval/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.mongodb.com/docs/atlas/ai-integrations/langchain/parent-document-retrieval/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "LlamaIndex Sentence Window Node Parser",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.llamaindex.ai/en/stable/api_reference/node_parsers/sentence_window/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.llamaindex.ai/python/framework-api-reference/node_parsers/sentence_window/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\retrieval-query-expansion-and-synonyms.md",
       "article_id": "retrieval-query-expansion-and-synonyms",
       "generation_method": "ai_structured",
@@ -23985,6 +24290,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://www.meilisearch.com/docs/capabilities/full_text_search/how_to/configure_distinct_attribute"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\retrieval-score-normalization-and-fusion.md",
+      "article_id": "retrieval-score-normalization-and-fusion",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "OpenSearch Normalization Processor",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.opensearch.org/docs/latest/search-plugins/search-pipelines/normalization-processor/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.opensearch.org/latest/search-plugins/search-pipelines/normalization-processor/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Elasticsearch Reciprocal Rank Fusion",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.elastic.co/docs/reference/elasticsearch/rest-apis/reciprocal-rank-fusion/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.elastic.co/docs/reference/elasticsearch/rest-apis/reciprocal-rank-fusion"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Weaviate Hybrid Search",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://weaviate.io/developers/weaviate/search/hybrid",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.weaviate.io/weaviate/search/hybrid"
               },
               "match": true
             }
@@ -30191,6 +30557,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\api-cors-preflight-and-origin-policies.md",
+      "article_id": "api-cors-preflight-and-origin-policies",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "MDN Access-Control-Allow-Origin",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Access-Control-Allow-Origin",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Access-Control-Allow-Origin"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "MDN Cross-Origin Resource Sharing",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CORS",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CORS"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "MDN Preflight Request",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Glossary/Preflight_request",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developer.mozilla.org/en-US/docs/Glossary/Preflight_request"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\api-discovery-and-service-catalogs.md",
       "article_id": "api-discovery-and-service-catalogs",
       "generation_method": "ai_structured",
@@ -31152,6 +31579,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\api-webhook-delivery-idempotency-and-replay.md",
+      "article_id": "api-webhook-delivery-idempotency-and-replay",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "GitHub Handling Failed Webhook Deliveries",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/webhooks/using-webhooks/handling-failed-webhook-deliveries",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/webhooks/using-webhooks/handling-failed-webhook-deliveries"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Stripe Process Undelivered Webhook Events",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.stripe.com/webhooks/process-undelivered-events",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.stripe.com/webhooks/process-undelivered-events"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Stripe Webhook Duplicate Events",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.stripe.com/webhooks#handle-duplicate-events",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.stripe.com/webhooks"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\api-webhook-signature-verification.md",
       "article_id": "api-webhook-signature-verification",
       "generation_method": "ai_structured",
@@ -31794,6 +32282,67 @@
       "sources_unreachable": 0,
       "manual_reviewed": true,
       "manual_reviewed_at": "2026-05-28"
+    },
+    {
+      "file": "content\\computer-science\\build-graph-and-affected-test-selection-for-code-agents.md",
+      "article_id": "build-graph-and-affected-test-selection-for-code-agents",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Bazel Query Guide",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://bazel.build/query/guide?hl=en",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://bazel.build/query/guide?hl=en"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Nx Affected",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://nx.dev/ci/features/affected",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://nx.dev/docs/features/ci-features/affected"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Pants Targets and BUILD Files",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.pantsbuild.org/stable/docs/using-pants/key-concepts/targets-and-build-files",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.pantsbuild.org/stable/docs/using-pants/key-concepts/targets-and-build-files"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\build-graphs-and-incremental-build-systems.md",
@@ -33912,6 +34461,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\data-incremental-models-and-stateful-transforms.md",
+      "article_id": "data-incremental-models-and-stateful-transforms",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "dbt Incremental Models",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.getdbt.com/docs/build/incremental-models",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.getdbt.com/docs/build/incremental-models"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Apache Beam State and Timers",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://beam.apache.org/documentation/programming-guide/#state-and-timers",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://beam.apache.org/documentation/programming-guide/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Spark Structured Streaming Checkpointing",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html#recovering-from-failures-with-checkpointing",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\data-lake-compaction-and-small-files.md",
       "article_id": "data-lake-compaction-and-small-files",
       "generation_method": "ai_structured",
@@ -34023,6 +34633,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://docs.delta.io/best-practices/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\data-materialized-view-refresh-and-staleness.md",
+      "article_id": "data-materialized-view-refresh-and-staleness",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "PostgreSQL REFRESH MATERIALIZED VIEW",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.postgresql.org/docs/current/sql-refreshmaterializedview.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.postgresql.org/docs/current/sql-refreshmaterializedview.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "BigQuery Materialized Views Introduction",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://cloud.google.com/bigquery/docs/materialized-views-intro",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/bigquery/docs/materialized-views-intro"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Snowflake Materialized Views",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.snowflake.com/en/user-guide/views-materialized",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.snowflake.com/en/user-guide/views-materialized"
               },
               "match": true
             }
@@ -38015,6 +38686,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://hudi.apache.org/docs/hudi_stack/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\language-server-protocol-diagnostics-and-code-actions.md",
+      "article_id": "language-server-protocol-diagnostics-and-code-actions",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "LSP Publish Diagnostics",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://microsoft.github.io/language-server-protocol/specifications/lsp/3.17/specification/#textDocument_publishDiagnostics",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://microsoft.github.io/language-server-protocol/specifications/lsp/3.17/specification/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "LSP Code Action Request",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://microsoft.github.io/language-server-protocol/specifications/lsp/3.17/specification/#textDocument_codeAction",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://microsoft.github.io/language-server-protocol/specifications/lsp/3.17/specification/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "LSP Diagnostic Type",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://microsoft.github.io/language-server-protocol/specifications/lsp/3.17/specification/#diagnostic",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://microsoft.github.io/language-server-protocol/specifications/lsp/3.17/specification/"
               },
               "match": true
             }
@@ -61351,6 +62083,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\agent-email-authentication-records.md",
+      "article_id": "agent-email-authentication-records",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Google Workspace Set Up SPF",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://knowledge.workspace.google.com/admin/security/set-up-spf?hl=en",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://knowledge.workspace.google.com/admin/security/set-up-spf?hl=en"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Google Workspace Set Up DKIM",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://knowledge.workspace.google.com/admin/security/set-up-dkim?hl=en",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://knowledge.workspace.google.com/admin/security/set-up-dkim?hl=en"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "RFC 7489 DMARC",
+          "source_type": "rfc",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://datatracker.ietf.org/doc/html/rfc7489",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://datatracker.ietf.org/doc/html/rfc7489"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\ai-for-genomics-variant-calling-gene-expression-prediction-and-protein-dna-binding.md",
       "article_id": "kb-2026-00005",
       "generation_method": "ai_structured",
@@ -61649,22 +62442,22 @@
       "sources_unreachable": 1
     },
     {
-      "file": "content\\computer-science\\api-cors-preflight-and-origin-policies.md",
-      "article_id": "api-cors-preflight-and-origin-policies",
+      "file": "content\\computer-science\\api-scim-user-provisioning.md",
+      "article_id": "api-scim-user-provisioning",
       "generation_method": "ai_structured",
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "MDN Access-Control-Allow-Origin",
-          "source_type": "documentation",
+          "source_title": "RFC 7643 SCIM Core Schema",
+          "source_type": "rfc",
           "results": [
             {
               "method": "url",
-              "identifier": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Access-Control-Allow-Origin",
+              "identifier": "https://datatracker.ietf.org/doc/html/rfc7643",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Access-Control-Allow-Origin"
+                "final_url": "https://datatracker.ietf.org/doc/html/rfc7643"
               },
               "match": true
             }
@@ -61672,16 +62465,16 @@
           "all_verified": true
         },
         {
-          "source_title": "MDN Cross-Origin Resource Sharing",
-          "source_type": "documentation",
+          "source_title": "RFC 7644 SCIM Protocol",
+          "source_type": "rfc",
           "results": [
             {
               "method": "url",
-              "identifier": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CORS",
+              "identifier": "https://datatracker.ietf.org/doc/html/rfc7644",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CORS"
+                "final_url": "https://datatracker.ietf.org/doc/html/rfc7644"
               },
               "match": true
             }
@@ -61689,16 +62482,16 @@
           "all_verified": true
         },
         {
-          "source_title": "MDN Preflight Request",
+          "source_title": "Microsoft Entra SCIM Provisioning",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://developer.mozilla.org/en-US/docs/Glossary/Preflight_request",
+              "identifier": "https://learn.microsoft.com/en-us/entra/identity/app-provisioning/use-scim-to-provision-users-and-groups",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://developer.mozilla.org/en-US/docs/Glossary/Preflight_request"
+                "final_url": "https://learn.microsoft.com/en-us/entra/identity/app-provisioning/use-scim-to-provision-users-and-groups"
               },
               "match": true
             }
@@ -66071,10 +66864,7 @@
               "method": "url",
               "identifier": "https://www.cdc.gov/eis/field-epi-manual/",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.cdc.gov/eis/field-epi-manual/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
