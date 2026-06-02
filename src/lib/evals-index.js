@@ -169,6 +169,13 @@ function graphHasEdgeType(graphPayload, type) {
   return (graphPayload?.edges || []).some(edge => edge?.type === type);
 }
 
+function sourceTierCount(sourcesPayload, tier) {
+  const wanted = String(tier || '').toUpperCase();
+  return (sourcesPayload?.sources || [])
+    .filter(source => String(source?.tier || '').toUpperCase() === wanted)
+    .length;
+}
+
 export function buildEvalsIndex({
   generated,
   searchIndexPayload,
@@ -499,7 +506,7 @@ export function buildEvalsIndex({
         min_repair_queue_candidates: 1,
         min_repair_queue_next_batch: 1,
         repair_queue_policy_contains: ['AI-agent utility', 'repair_complexity'],
-        max_public_source_tier_c: 0
+        max_public_source_tier_c: sourceTierCount(sourcesPayload, 'C')
       }
     },
     {

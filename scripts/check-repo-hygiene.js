@@ -52,6 +52,20 @@ const MOJIBAKE_PATTERNS = [
 ];
 
 const STALE_METRIC_PATTERNS = [
+  /696 public/i,
+  /696 public entries/i,
+  /Public eligible articles\s*\|\s*696/i,
+  /Public articles\s*\|\s*696/i,
+  /EXPECTED_PUBLIC_ARTICLES=696/i,
+  /310 draft/i,
+  /Draft articles\s*\|\s*310/i,
+  /EXPECTED_DRAFT_ARTICLES=310/i,
+  /2224 claims/i,
+  /2224 public claims/i,
+  /2224 published claims/i,
+  /2224 claims from production smoke/i,
+  /Public claims\s*\|\s*2224/i,
+  /EXPECTED_CLAIMS=2224/i,
   /690 public/i,
   /690 public entries/i,
   /Public eligible articles\s*\|\s*690/i,
