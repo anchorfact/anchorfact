@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-02T09:58:14.612Z",
-    "total_articles": 1227,
+    "generated": "2026-06-02T10:25:34.426Z",
+    "total_articles": 1240,
     "total_with_errors": 0,
     "average_sources_per_article": "2.6",
-    "overall_verification_rate": "89.5%",
-    "elapsed_ms": 132603,
-    "elapsed_sec": "132.6",
+    "overall_verification_rate": "89.6%",
+    "elapsed_ms": 138391,
+    "elapsed_sec": "138.4",
     "concurrency": 3
   },
   "articles": [
@@ -399,6 +399,67 @@
         }
       ],
       "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-api-gateway-routes-and-upstream-mapping.md",
+      "article_id": "agent-api-gateway-routes-and-upstream-mapping",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Amazon API Gateway Integration Types",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-api-integration-types.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-api-integration-types.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Kong Gateway Routes",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.konghq.com/gateway/entities/route/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developer.konghq.com/gateway/entities/route/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Envoy HTTP Routing",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.envoyproxy.io/docs/envoy/latest/intro/arch_overview/http/http_routing",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.envoyproxy.io/docs/envoy/latest/intro/arch_overview/http/http_routing"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
       "sources_unreachable": 0
     },
     {
@@ -1009,6 +1070,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\agent-cloud-kms-keys-and-encryption-context.md",
+      "article_id": "agent-cloud-kms-keys-and-encryption-context",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "AWS KMS Encryption Context",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.aws.amazon.com/kms/latest/developerguide/encrypt_context.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.aws.amazon.com/kms/latest/developerguide/encrypt_context.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Google Cloud KMS Additional Authenticated Data",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.cloud.google.com/kms/docs/additional-authenticated-data",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/kms/docs/additional-authenticated-data"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Azure Key Vault About Keys",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://learn.microsoft.com/en-us/azure/key-vault/keys/about-keys",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.microsoft.com/en-us/azure/key-vault/keys/about-keys"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\agent-cloud-quotas-and-service-limits.md",
       "article_id": "agent-cloud-quotas-and-service-limits",
       "generation_method": "ai_structured",
@@ -1303,6 +1425,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://docs.docker.com/reference/cli/docker/container/logs/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-database-connection-pools-and-timeouts.md",
+      "article_id": "agent-database-connection-pools-and-timeouts",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "PostgreSQL Connections and Authentication",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.postgresql.org/docs/current/runtime-config-connection.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.postgresql.org/docs/current/runtime-config-connection.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "PgBouncer Configuration",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.pgbouncer.org/config",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.pgbouncer.org/config"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "HikariCP Configuration",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://github.com/brettwooldridge/HikariCP#frequently-used",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://github.com/brettwooldridge/HikariCP"
               },
               "match": true
             }
@@ -2426,6 +2609,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://kubernetes.io/docs/tasks/debug/debug-application/debug-running-pod/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-kubernetes-resource-requests-limits-and-oomkills.md",
+      "article_id": "agent-kubernetes-resource-requests-limits-and-oomkills",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Kubernetes Resource Management for Pods and Containers",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Kubernetes Assign Memory Resources",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kubernetes.io/docs/tasks/configure-pod-container/assign-memory-resource/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://kubernetes.io/docs/tasks/configure-pod-container/assign-memory-resource/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Kubernetes Node-Pressure Eviction",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-eviction/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-eviction/"
               },
               "match": true
             }
@@ -19482,6 +19726,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\llm-evaluation-structured-output-validity.md",
+      "article_id": "llm-evaluation-structured-output-validity",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "OpenAI Structured Model Outputs",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.openai.com/api/docs/guides/structured-outputs",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.openai.com/api/docs/guides/structured-outputs"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "JSON Schema Core",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://json-schema.org/draft/2020-12/json-schema-core",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://json-schema.org/draft/2020-12/json-schema-core"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Pydantic JSON Schema",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.pydantic.dev/latest/concepts/json_schema/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://pydantic.dev/docs/validation/latest/concepts/json_schema/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\llm-evaluation-traces-and-feedback-labels.md",
       "article_id": "llm-evaluation-traces-and-feedback-labels",
       "generation_method": "ai_structured",
@@ -24484,6 +24789,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\retrieval-evidence-ids-and-citation-stability.md",
+      "article_id": "retrieval-evidence-ids-and-citation-stability",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "W3C Web Annotation Data Model",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.w3.org/TR/annotation-model/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.w3.org/TR/annotation-model/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "W3C PROV Overview",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.w3.org/TR/prov-overview/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.w3.org/TR/prov-overview/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "RFC 3986 Uniform Resource Identifier",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.rfc-editor.org/info/rfc3986",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.rfc-editor.org/info/rfc3986/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\retrieval-federated-search-and-source-routing.md",
       "article_id": "retrieval-federated-search-and-source-routing",
       "generation_method": "ai_structured",
@@ -25023,6 +25389,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://developers.llamaindex.ai/python/framework-api-reference/node_parsers/sentence_window/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\retrieval-passage-boundaries-and-overlap-windows.md",
+      "article_id": "retrieval-passage-boundaries-and-overlap-windows",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "LangChain Recursive Text Splitter",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.langchain.com/oss/python/integrations/splitters/recursive_text_splitter",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.langchain.com/oss/python/integrations/splitters/recursive_text_splitter"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "LlamaIndex Node Parser Usage Pattern",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.llamaindex.ai/python/framework/module_guides/loading/node_parsers/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.llamaindex.ai/python/framework/module_guides/loading/node_parsers/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Haystack DocumentSplitter",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.haystack.deepset.ai/docs/documentsplitter",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.haystack.deepset.ai/docs/documentsplitter"
               },
               "match": true
             }
@@ -32129,6 +32556,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\api-multipart-upload-and-resumable-transfers.md",
+      "article_id": "api-multipart-upload-and-resumable-transfers",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Amazon S3 Multipart Upload Overview",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/mpuoverview.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/mpuoverview.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Google Cloud Storage Resumable Uploads",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.cloud.google.com/storage/docs/resumable-uploads",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/storage/docs/resumable-uploads?hl=ja"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "tus Resumable Upload Protocol",
+          "source_type": "specification",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://tus.io/protocols/resumable-upload",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://tus.io/protocols/resumable-upload"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\api-mutual-tls-client-certificate-authentication.md",
       "article_id": "api-mutual-tls-client-certificate-authentication",
       "generation_method": "ai_structured",
@@ -34275,6 +34763,128 @@
       "manual_reviewed_at": "2026-05-28"
     },
     {
+      "file": "content\\computer-science\\code-codemods-and-ast-transforms-for-agents.md",
+      "article_id": "code-codemods-and-ast-transforms-for-agents",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "jscodeshift API Reference",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://jscodeshift.com/build/api-reference/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://jscodeshift.com/build/api-reference/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Babel Core Documentation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://babeljs.io/docs/babel-core",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://babeljs.io/docs/babel-core"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "ast-grep Rewrite Code",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://ast-grep.github.io/guide/rewrite-code.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://ast-grep.github.io/guide/rewrite-code.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\code-compile-commands-and-language-toolchains.md",
+      "article_id": "code-compile-commands-and-language-toolchains",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Clang JSON Compilation Database",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://clang.llvm.org/docs/JSONCompilationDatabase.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://clang.llvm.org/docs/JSONCompilationDatabase.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "CMake CMAKE_EXPORT_COMPILE_COMMANDS",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://cmake.org/cmake/help/latest/variable/CMAKE_EXPORT_COMPILE_COMMANDS.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://cmake.org/cmake/help/latest/variable/CMAKE_EXPORT_COMPILE_COMMANDS.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "clangd Compile Commands",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://clangd.llvm.org/design/compile-commands",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://clangd.llvm.org/design/compile-commands"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content/computer-science/code-graphs-and-code-intelligence.md",
       "article_id": "code-graphs-and-code-intelligence",
       "generation_method": "ai_structured",
@@ -36170,6 +36780,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\data-outbox-pattern-and-change-publishing.md",
+      "article_id": "data-outbox-pattern-and-change-publishing",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Debezium Outbox Event Router",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://debezium.io/documentation/reference/stable/transformations/outbox-event-router.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://debezium.io/documentation/reference/stable/transformations/outbox-event-router.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "AWS Transactional Outbox Pattern",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/transactional-outbox.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/transactional-outbox.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Eventuate Tram Overview",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://eventuate.io/docs/manual/eventuate-tram/latest/about-eventuate-tram.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://eventuate.io/docs/manual/eventuate-tram/latest/about-eventuate-tram.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\data-partitioning-and-clustering.md",
       "article_id": "data-partitioning-and-clustering",
       "generation_method": "ai_structured",
@@ -36525,6 +37196,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://learn.microsoft.com/en-us/purview/sit-sensitive-information-type-learn-about"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\data-table-maintenance-vacuum-and-retention.md",
+      "article_id": "data-table-maintenance-vacuum-and-retention",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Delta Lake Table Utility Commands",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.delta.io/delta-utility/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.delta.io/delta-utility/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Apache Iceberg Maintenance",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://iceberg.apache.org/docs/latest/maintenance/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://iceberg.apache.org/docs/latest/maintenance/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Apache Hudi Cleaning",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://hudi.apache.org/docs/cleaning/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://hudi.apache.org/docs/cleaning/"
               },
               "match": true
             }
@@ -63755,6 +64487,67 @@
       "sources_unreachable": 1
     },
     {
+      "file": "content\\ai\\llm-evaluation-judge-prompt-rubrics-and-scorecards.md",
+      "article_id": "llm-evaluation-judge-prompt-rubrics-and-scorecards",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "OpenAI Working with Evals",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.openai.com/api/docs/guides/evals",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.openai.com/api/docs/guides/evals"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenAI Graders",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.openai.com/api/docs/guides/graders",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.openai.com/api/docs/guides/graders"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Braintrust Evaluate Systematically",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.braintrust.dev/docs/evaluate",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.braintrust.dev/docs/evaluate"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\arts\\history-of-printing.md",
       "article_id": "kb-2026-00479",
       "generation_method": "ai_assisted",
@@ -63795,7 +64588,10 @@
               "method": "url",
               "identifier": "https://www.phaidon.com/store/art/the-story-of-modern-art-9780714831398/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.phaidon.com/en-int/store/art/the-story-of-modern-art-9780714831398"
+              },
               "match": false
             }
           ],
@@ -63931,10 +64727,7 @@
               "method": "url",
               "identifier": "https://press.princeton.edu/books/paperback/9780691170817/the-theory-of-games-and-economic-behavior",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://press.princeton.edu/books/paperback/9780691170817/the-theory-of-games-and-economic-behavior"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -64024,6 +64817,67 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 1
+    },
+    {
+      "file": "content\\computer-science\\api-oauth-device-authorization-flow.md",
+      "article_id": "api-oauth-device-authorization-flow",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "RFC 8628 OAuth 2.0 Device Authorization Grant",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://datatracker.ietf.org/doc/html/rfc8628",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://datatracker.ietf.org/doc/html/rfc8628"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Google OAuth for Limited-Input Devices",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.google.com/identity/protocols/oauth2/limited-input-device",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.google.com/identity/protocols/oauth2/limited-input-device"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GitHub OAuth Device Flow",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/authorizing-oauth-apps#device-flow",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/authorizing-oauth-apps"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\bloom-filters-space-efficient-probabilistic-data-structures.md",
@@ -64193,67 +65047,6 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 3
-    },
-    {
-      "file": "content\\computer-science\\code-codemods-and-ast-transforms-for-agents.md",
-      "article_id": "code-codemods-and-ast-transforms-for-agents",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "jscodeshift API Reference",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://jscodeshift.com/build/api-reference/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://jscodeshift.com/build/api-reference/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Babel Core Documentation",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://babeljs.io/docs/babel-core",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://babeljs.io/docs/babel-core"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "ast-grep Rewrite Code",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://ast-grep.github.io/guide/rewrite-code.html",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://ast-grep.github.io/guide/rewrite-code.html"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\command-pattern.md",
@@ -64489,10 +65282,7 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/websec/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.oreilly.com/websec/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -65970,10 +66760,7 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/linux-netsec/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.oreilly.com/linux-netsec/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -66068,7 +66855,10 @@
               "method": "url",
               "identifier": "https://mitpress.mit.edu/books/types-and-programming-languages",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 403,
+                "final_url": "https://mitpress.mit.edu/books/types-and-programming-languages"
+              },
               "match": false
             }
           ],
@@ -66648,10 +67438,7 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/websec/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.oreilly.com/websec/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -66844,10 +67631,7 @@
               "method": "url",
               "identifier": "https://www.packtpub.com/redis/",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.packtpub.com/redis/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -67741,10 +68525,7 @@
               "method": "url",
               "identifier": "https://www.rfc-editor.org/rfc/rfc791",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.rfc-editor.org/rfc/rfc791"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -67758,10 +68539,7 @@
               "method": "url",
               "identifier": "https://www.rfc-editor.org/rfc/rfc793",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.rfc-editor.org/rfc/rfc793"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -67775,10 +68553,7 @@
               "method": "url",
               "identifier": "https://www.rfc-editor.org/rfc/rfc768",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.rfc-editor.org/rfc/rfc768"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -68442,7 +69217,10 @@
               "method": "url",
               "identifier": "https://www.cdc.gov/eis/field-epi-manual/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 403,
+                "final_url": "https://www.cdc.gov/eis/field-epi-manual/"
+              },
               "match": false
             }
           ],
@@ -68896,7 +69674,10 @@
               "method": "url",
               "identifier": "https://pubs.geoscienceworld.org/gsa/geology/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 403,
+                "final_url": "https://pubs.geoscienceworld.org/gsa/geology/"
+              },
               "match": false
             }
           ],
@@ -69484,10 +70265,7 @@
               "method": "url",
               "identifier": "https://www.hatchards.co.uk/book/jonathan-wilson/inverting-the-pyramid/9781409128649",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.hatchards.co.uk/book/jonathan-wilson/inverting-the-pyramid/9781409128649"
-              },
+              "metadata": {},
               "match": false
             }
           ],

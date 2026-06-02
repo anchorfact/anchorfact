@@ -150,7 +150,7 @@ console.log('AnchorFact API Readiness Report Tests\n');
 
 test('core query set defines subscription-readiness probes across paid-use categories', () => {
   assert(CORE_CORPUS_QUERIES.length >= 100, 'core query set should preserve the 100-query foundation');
-  assert(CORE_CORPUS_QUERIES.length <= 340, 'core query set should stay inside the expanded readiness-corpus range');
+  assert(CORE_CORPUS_QUERIES.length <= 355, 'core query set should stay inside the expanded readiness-corpus range');
   const categories = new Set(CORE_CORPUS_QUERIES.map(query => query.category));
   for (const category of ['agent_execution_sources', 'agent_rag', 'api_mcp', 'security_governance', 'data_infrastructure', 'llm_evaluation', 'developer_workflows', 'code_intelligence']) {
     assert(categories.has(category), `missing category ${category}`);
@@ -289,6 +289,10 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'ai/agent-container-logs-exit-codes-and-restarts',
     'ai/agent-ci-cache-and-build-artifacts',
     'ai/agent-environment-variables-and-runtime-configuration',
+    'ai/agent-cloud-kms-keys-and-encryption-context',
+    'ai/agent-database-connection-pools-and-timeouts',
+    'ai/agent-kubernetes-resource-requests-limits-and-oomkills',
+    'ai/agent-api-gateway-routes-and-upstream-mapping',
     'computer-science/repository-permissions-and-code-agent-access',
     'ai/agent-checkpointing-and-resumable-workflows',
     'computer-science/code-graphs-and-code-intelligence',
@@ -326,6 +330,8 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'ai/retrieval-multivector-indexing',
     'ai/retrieval-index-aliases-and-zero-downtime-reindexing',
     'ai/retrieval-federated-search-and-source-routing',
+    'ai/retrieval-passage-boundaries-and-overlap-windows',
+    'ai/retrieval-evidence-ids-and-citation-stability',
     'ai/llm-sampling-parameters-in-evaluation',
     'ai/llm-evaluation-dataset-versioning',
     'ai/agent-evaluation-harnesses-and-test-runs',
@@ -341,6 +347,8 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'ai/llm-evaluation-error-taxonomy-and-failure-labels',
     'ai/llm-evaluation-prompt-versioning-and-experiment-tracking',
     'ai/llm-evaluation-human-review-and-adjudication',
+    'ai/llm-evaluation-judge-prompt-rubrics-and-scorecards',
+    'ai/llm-evaluation-structured-output-validity',
     'computer-science/api-idempotency-keys',
     'computer-science/distributed-tracing-and-correlation-context',
     'computer-science/api-openapi-breaking-change-detection',
@@ -355,6 +363,8 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'computer-science/api-mutual-tls-client-certificate-authentication',
     'computer-science/api-service-discovery-and-dns-srv-records',
     'computer-science/api-websocket-heartbeats-and-close-codes',
+    'computer-science/api-multipart-upload-and-resumable-transfers',
+    'computer-science/api-oauth-device-authorization-flow',
     'computer-science/data-backfills-and-replay-pipelines',
     'computer-science/data-retention-and-ttl-policies',
     'computer-science/data-partitioning-and-clustering',
@@ -377,11 +387,14 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'computer-science/data-time-travel-and-snapshot-isolation',
     'computer-science/data-iceberg-metadata-tables-and-manifests',
     'computer-science/data-change-data-feed-and-incremental-table-reads',
+    'computer-science/data-outbox-pattern-and-change-publishing',
+    'computer-science/data-table-maintenance-vacuum-and-retention',
     'computer-science/language-server-protocol-diagnostics-and-code-actions',
     'computer-science/build-graph-and-affected-test-selection-for-code-agents',
     'computer-science/static-analysis-sarif-results-for-code-agents',
     'computer-science/test-coverage-maps-for-code-agents',
-    'computer-science/code-codemods-and-ast-transforms-for-agents'
+    'computer-science/code-codemods-and-ast-transforms-for-agents',
+    'computer-science/code-compile-commands-and-language-toolchains'
   ]) {
     assert(slugs.includes(slug), `missing agent/code-intelligence readiness slug ${slug}`);
   }
