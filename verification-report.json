@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-02T11:07:06.747Z",
-    "total_articles": 1255,
+    "generated": "2026-06-02T11:35:23.352Z",
+    "total_articles": 1270,
     "total_with_errors": 0,
     "average_sources_per_article": "2.6",
-    "overall_verification_rate": "89.8%",
-    "elapsed_ms": 131845,
-    "elapsed_sec": "131.8",
+    "overall_verification_rate": "89.9%",
+    "elapsed_ms": 146873,
+    "elapsed_sec": "146.9",
     "concurrency": 3
   },
   "articles": [
@@ -1131,6 +1131,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\agent-cloud-metrics-and-time-series-alerts.md",
+      "article_id": "agent-cloud-metrics-and-time-series-alerts",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "OpenTelemetry Metrics",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://opentelemetry.io/docs/concepts/signals/metrics/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://opentelemetry.io/docs/concepts/signals/metrics/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Prometheus Alerting Rules",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://prometheus.io/docs/prometheus/latest/configuration/alerting_rules/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://prometheus.io/docs/prometheus/latest/configuration/alerting_rules/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Amazon CloudWatch Metrics",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/working_with_metrics.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/working_with_metrics.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\agent-cloud-quotas-and-service-limits.md",
       "article_id": "agent-cloud-quotas-and-service-limits",
       "generation_method": "ai_structured",
@@ -1314,6 +1375,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\agent-container-image-digests-and-attestations.md",
+      "article_id": "agent-container-image-digests-and-attestations",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "OCI Image Descriptor Specification",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://specs.opencontainers.org/image-spec/descriptor/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://specs.opencontainers.org/image-spec/descriptor/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Sigstore Cosign Signing Overview",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.sigstore.dev/cosign/signing/overview/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.sigstore.dev/cosign/signing/overview/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "SLSA Provenance Specification",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://slsa.dev/spec/v1.0/provenance",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://slsa.dev/spec/v1.0/provenance"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\agent-container-image-registry-and-tags.md",
       "article_id": "agent-container-image-registry-and-tags",
       "generation_method": "ai_structured",
@@ -1425,6 +1547,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://docs.docker.com/reference/cli/docker/container/logs/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-database-backups-and-point-in-time-restore.md",
+      "article_id": "agent-database-backups-and-point-in-time-restore",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "PostgreSQL Continuous Archiving and Point-in-Time Recovery",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.postgresql.org/docs/current/continuous-archiving.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.postgresql.org/docs/current/continuous-archiving.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Amazon RDS Point-in-Time Recovery",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PIT.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PIT.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Google Cloud SQL Point-in-Time Recovery",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.cloud.google.com/sql/docs/mysql/backup-recovery/pitr",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/sql/docs/mysql/backup-recovery/pitr"
               },
               "match": true
             }
@@ -2914,6 +3097,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://www.rabbitmq.com/docs/dlx"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-message-visibility-timeouts-and-ack-deadlines.md",
+      "article_id": "agent-message-visibility-timeouts-and-ack-deadlines",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Amazon SQS Visibility Timeout",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-visibility-timeout.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-visibility-timeout.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Google Pub/Sub Lease Management",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://cloud.google.com/pubsub/docs/lease-management",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/pubsub/docs/lease-management"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "RabbitMQ Consumer Acknowledgements",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.rabbitmq.com/docs/confirms",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.rabbitmq.com/docs/confirms"
               },
               "match": true
             }
@@ -20031,6 +20275,128 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\llm-evaluation-multilingual-and-localization-tests.md",
+      "article_id": "llm-evaluation-multilingual-and-localization-tests",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "FLORES-200 Paper",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://aclanthology.org/2022.acl-long.248/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://aclanthology.org/2022.acl-long.248/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "XTREME Benchmark Paper",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://proceedings.mlr.press/v119/hu20b.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://proceedings.mlr.press/v119/hu20b.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Google Research XTREME Repository",
+          "source_type": "software",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://github.com/google-research/xtreme",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://github.com/google-research/xtreme"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\llm-evaluation-privacy-and-pii-leakage-tests.md",
+      "article_id": "llm-evaluation-privacy-and-pii-leakage-tests",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "OWASP LLM06 Sensitive Information Disclosure",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://genai.owasp.org/llmrisk/llm06-sensitive-information-disclosure/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://genai.owasp.org/llmrisk/llm062025-excessive-agency/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Microsoft Presidio",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://microsoft.github.io/presidio/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://microsoft.github.io/presidio/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "NIST SP 800-122",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://csrc.nist.gov/pubs/sp/800/122/final",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://csrc.nist.gov/pubs/sp/800/122/final"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\llm-evaluation-production-canaries.md",
       "article_id": "llm-evaluation-production-canaries",
       "generation_method": "ai_structured",
@@ -24381,6 +24747,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://docs.weaviate.io/weaviate/manage-objects/update"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\rag-ocr-and-layout-aware-document-parsing.md",
+      "article_id": "rag-ocr-and-layout-aware-document-parsing",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Azure Document Intelligence Layout Model",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/prebuilt/layout?view=doc-intel-4.0.0",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/prebuilt/layout?view=doc-intel-4.0.0"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Amazon Textract Detecting Text",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.aws.amazon.com/textract/latest/dg/how-it-works-detecting.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.aws.amazon.com/textract/latest/dg/how-it-works-detecting.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Google Document AI Overview",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://cloud.google.com/document-ai/docs/overview",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/document-ai/docs/overview"
               },
               "match": true
             }
@@ -32508,6 +32935,128 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\api-batch-requests-and-bulk-operations.md",
+      "article_id": "api-batch-requests-and-bulk-operations",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "JSON API Atomic Operations",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://jsonapi.org/ext/atomic/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://jsonapi.org/ext/atomic/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Google Cloud Storage Batch Requests",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.cloud.google.com/storage/docs/batch",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/storage/docs/batch?hl=ja"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Google Calendar API Batch Requests",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.google.com/workspace/calendar/api/guides/batch",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.google.com/workspace/calendar/api/guides/batch"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\api-circuit-breakers-and-client-side-resilience.md",
+      "article_id": "api-circuit-breakers-and-client-side-resilience",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Azure Circuit Breaker Pattern",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://learn.microsoft.com/en-us/azure/architecture/patterns/circuit-breaker",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/circuit-breaker"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Envoy Circuit Breaking",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.envoyproxy.io/docs/envoy/latest/intro/arch_overview/upstream/circuit_breaking",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.envoyproxy.io/docs/envoy/latest/intro/arch_overview/upstream/circuit_breaking"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Polly Circuit Breaker Strategy",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.pollydocs.org/strategies/circuit-breaker.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.pollydocs.org/strategies/circuit-breaker.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\api-contract-testing-and-mock-servers.md",
       "article_id": "api-contract-testing-and-mock-servers",
       "generation_method": "ai_structured",
@@ -33835,6 +34384,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\api-server-sent-events-and-streaming-responses.md",
+      "article_id": "api-server-sent-events-and-streaming-responses",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "MDN Server-Sent Events",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "HTML Living Standard Server-Sent Events",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://html.spec.whatwg.org/multipage/server-sent-events.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://html.spec.whatwg.org/multipage/server-sent-events.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenAI Streaming Responses",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.openai.com/api/docs/guides/streaming-responses",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.openai.com/api/docs/guides/streaming-responses"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\api-service-discovery-and-dns-srv-records.md",
       "article_id": "api-service-discovery-and-dns-srv-records",
       "generation_method": "ai_structured",
@@ -34068,6 +34678,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://docs.stripe.com/webhooks"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\api-webhook-event-types-and-versioned-payloads.md",
+      "article_id": "api-webhook-event-types-and-versioned-payloads",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "GitHub Webhook Events and Payloads",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/webhooks/webhook-events-and-payloads",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/webhooks/webhook-events-and-payloads"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Stripe Event Types",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.stripe.com/api/events/types",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.stripe.com/api/events/types"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Slack Events API",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://api.slack.com/apis/events-api",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.slack.dev/apis/events-api/"
               },
               "match": true
             }
@@ -35676,6 +36347,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\code-git-blame-and-commit-history-for-agents.md",
+      "article_id": "code-git-blame-and-commit-history-for-agents",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Git Blame Documentation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://git-scm.com/docs/git-blame",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://git-scm.com/docs/git-blame"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Git Log Documentation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://git-scm.com/docs/git-log",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://git-scm.com/docs/git-log"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Git Rev-List Documentation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://git-scm.com/docs/git-rev-list",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://git-scm.com/docs/git-rev-list"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content/computer-science/code-graphs-and-code-intelligence.md",
       "article_id": "code-graphs-and-code-intelligence",
       "generation_method": "ai_structured",
@@ -35955,6 +36687,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://pygments.org/docs/tokens/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\code-unified-diffs-and-patch-application-for-agents.md",
+      "article_id": "code-unified-diffs-and-patch-application-for-agents",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Git Diff Format",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://git-scm.com/docs/diff-format",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://git-scm.com/docs/diff-format"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Git Format-Patch Documentation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://git-scm.com/docs/git-format-patch",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://git-scm.com/docs/git-format-patch"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Git Apply Documentation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://git-scm.com/docs/git-apply",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://git-scm.com/docs/git-apply"
               },
               "match": true
             }
@@ -38109,6 +38902,128 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://docs.cloud.google.com/bigquery/docs/managing-tables"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\data-row-level-security-and-policy-tags.md",
+      "article_id": "data-row-level-security-and-policy-tags",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "PostgreSQL Row Security Policies",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.postgresql.org/docs/current/ddl-rowsecurity.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.postgresql.org/docs/current/ddl-rowsecurity.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "BigQuery Row-Level Security",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://cloud.google.com/bigquery/docs/row-level-security-intro",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/bigquery/docs/row-level-security-intro?hl=pt"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Snowflake Row Access Policies",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.snowflake.com/en/user-guide/security-row-intro",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.snowflake.com/en/user-guide/security-row-intro"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\data-semantic-layer-and-metrics-definitions.md",
+      "article_id": "data-semantic-layer-and-metrics-definitions",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "dbt Semantic Layer",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.getdbt.com/docs/use-dbt-semantic-layer/dbt-sl",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.getdbt.com/docs/use-dbt-semantic-layer/dbt-sl"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Cube Documentation Introduction",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.cube.dev/docs/introduction",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cube.dev/docs/introduction"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "LookML Terms and Concepts",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://cloud.google.com/looker/docs/lookml-terms-and-concepts",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/looker/docs/lookml-terms-and-concepts?hl=it"
               },
               "match": true
             }
@@ -65461,6 +66376,67 @@
       "sources_unreachable": 1
     },
     {
+      "file": "content\\ai\\rag-vector-store-snapshots-and-recovery.md",
+      "article_id": "rag-vector-store-snapshots-and-recovery",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Qdrant Snapshots",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://qdrant.tech/documentation/concepts/snapshots/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://qdrant.tech/documentation/operations/snapshots/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Weaviate Backups",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.weaviate.io/weaviate/configuration/backups",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.weaviate.io/deploy/configuration/backups"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Pinecone Restore an Index",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.pinecone.io/guides/manage-data/restore-an-index",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.pinecone.io/guides/manage-data/restore-an-index"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\arts\\history-of-printing.md",
       "article_id": "kb-2026-00479",
       "generation_method": "ai_assisted",
@@ -65501,10 +66477,7 @@
               "method": "url",
               "identifier": "https://www.phaidon.com/store/art/the-story-of-modern-art-9780714831398/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.phaidon.com/en-int/store/art/the-story-of-modern-art-9780714831398"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -65730,67 +66703,6 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 1
-    },
-    {
-      "file": "content\\computer-science\\api-batch-requests-and-bulk-operations.md",
-      "article_id": "api-batch-requests-and-bulk-operations",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "JSON API Atomic Operations",
-          "source_type": "standard",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://jsonapi.org/ext/atomic/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://jsonapi.org/ext/atomic/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Google Cloud Storage Batch Requests",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.cloud.google.com/storage/docs/batch",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.cloud.google.com/storage/docs/batch?hl=ja"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Google Calendar API Batch Requests",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://developers.google.com/workspace/calendar/api/guides/batch",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://developers.google.com/workspace/calendar/api/guides/batch"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\bloom-filters-space-efficient-probabilistic-data-structures.md",
@@ -66317,10 +67229,7 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/lakehouse/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.oreilly.com/lakehouse/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -67155,10 +68064,7 @@
               "method": "url",
               "identifier": "https://www.mheducation.com/fourier/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.mheducation.com/fourier"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -67788,7 +68694,10 @@
               "method": "url",
               "identifier": "https://www.collegepublications.co.uk/lambda/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.collegepublications.co.uk/lambda/"
+              },
               "match": false
             }
           ],
@@ -67846,7 +68755,10 @@
               "method": "url",
               "identifier": "https://my.siam.org/Store/Product/viewproduct/?ProductId=37827",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 403,
+                "final_url": "https://my.siam.org/Store/Product/viewproduct/?ProductId=37827"
+              },
               "match": false
             }
           ],
@@ -69133,7 +70045,10 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/websec/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.oreilly.com/websec/"
+              },
               "match": false
             }
           ],
@@ -69262,10 +70177,7 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.behavioral",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.behavioral"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -69306,10 +70218,7 @@
               "method": "url",
               "identifier": "https://doi.org/10.1017/cbo.2025.strings",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1017/cbo.2025.strings"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -69323,10 +70232,7 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.strings",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.strings"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -69394,10 +70300,7 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/systemd/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.oreilly.com/systemd/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -70400,7 +71303,10 @@
               "method": "url",
               "identifier": "https://thamesandhudson.com/the-complete-pyramids-9780500285473",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.thamesandhudson.com/the-complete-pyramids-9780500285473"
+              },
               "match": false
             }
           ],
@@ -70431,7 +71337,10 @@
               "method": "url",
               "identifier": "https://thamesandhudson.com/giza/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.thamesandhudson.com/giza"
+              },
               "match": false
             }
           ],
@@ -70749,10 +71658,7 @@
               "method": "url",
               "identifier": "https://www.cdc.gov/eis/field-epi-manual/",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.cdc.gov/eis/field-epi-manual/"
-              },
+              "metadata": {},
               "match": false
             }
           ],

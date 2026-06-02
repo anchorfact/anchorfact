@@ -150,7 +150,7 @@ console.log('AnchorFact API Readiness Report Tests\n');
 
 test('core query set defines subscription-readiness probes across paid-use categories', () => {
   assert(CORE_CORPUS_QUERIES.length >= 100, 'core query set should preserve the 100-query foundation');
-  assert(CORE_CORPUS_QUERIES.length <= 355, 'core query set should stay inside the expanded readiness-corpus range');
+  assert(CORE_CORPUS_QUERIES.length <= 380, 'core query set should stay inside the expanded readiness-corpus range');
   const categories = new Set(CORE_CORPUS_QUERIES.map(query => query.category));
   for (const category of ['agent_execution_sources', 'agent_rag', 'api_mcp', 'security_governance', 'data_infrastructure', 'llm_evaluation', 'developer_workflows', 'code_intelligence']) {
     assert(categories.has(category), `missing category ${category}`);
@@ -409,7 +409,22 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'computer-science/data-orchestration-assets-and-event-driven-schedules',
     'computer-science/data-cdc-lag-and-replication-slots',
     'computer-science/code-debug-adapter-protocol-for-agents',
-    'computer-science/code-semantic-tokens-and-symbol-classification'
+    'computer-science/code-semantic-tokens-and-symbol-classification',
+    'ai/agent-database-backups-and-point-in-time-restore',
+    'ai/agent-cloud-metrics-and-time-series-alerts',
+    'ai/agent-container-image-digests-and-attestations',
+    'ai/agent-message-visibility-timeouts-and-ack-deadlines',
+    'ai/rag-ocr-and-layout-aware-document-parsing',
+    'ai/rag-vector-store-snapshots-and-recovery',
+    'ai/llm-evaluation-multilingual-and-localization-tests',
+    'ai/llm-evaluation-privacy-and-pii-leakage-tests',
+    'computer-science/api-server-sent-events-and-streaming-responses',
+    'computer-science/api-webhook-event-types-and-versioned-payloads',
+    'computer-science/api-circuit-breakers-and-client-side-resilience',
+    'computer-science/data-semantic-layer-and-metrics-definitions',
+    'computer-science/data-row-level-security-and-policy-tags',
+    'computer-science/code-unified-diffs-and-patch-application-for-agents',
+    'computer-science/code-git-blame-and-commit-history-for-agents'
   ]) {
     assert(slugs.includes(slug), `missing agent/code-intelligence readiness slug ${slug}`);
   }
