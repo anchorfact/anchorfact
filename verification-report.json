@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-02T07:18:36.855Z",
-    "total_articles": 1164,
+    "generated": "2026-06-02T07:42:37.837Z",
+    "total_articles": 1176,
     "total_with_errors": 0,
     "average_sources_per_article": "2.6",
-    "overall_verification_rate": "88.8%",
-    "elapsed_ms": 106248,
-    "elapsed_sec": "106.2",
+    "overall_verification_rate": "89.0%",
+    "elapsed_ms": 102263,
+    "elapsed_sec": "102.3",
     "concurrency": 3
   },
   "articles": [
@@ -693,6 +693,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://kubernetes.io/docs/concepts/workloads/controllers/deployment/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-cloud-billing-and-cost-anomaly-signals.md",
+      "article_id": "agent-cloud-billing-and-cost-anomaly-signals",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "AWS Cost Anomaly Detection",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.aws.amazon.com/cost-management/latest/userguide/manage-ad.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.aws.amazon.com/cost-management/latest/userguide/manage-ad.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Google Cloud Manage Cost Anomalies",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.cloud.google.com/billing/docs/how-to/manage-anomalies",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/billing/docs/how-to/manage-anomalies?hl=pt-br"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Azure Cost Alerts",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/cost-mgt-alerts-monitor-usage-spending",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/cost-mgt-alerts-monitor-usage-spending"
               },
               "match": true
             }
@@ -1522,6 +1583,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\agent-iam-policy-simulation-and-access-troubleshooting.md",
+      "article_id": "agent-iam-policy-simulation-and-access-troubleshooting",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "AWS IAM Policy Simulator",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_testing-policies.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_testing-policies.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Google Cloud Policy Troubleshooter",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://cloud.google.com/policy-intelligence/docs/troubleshoot-access",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/policy-intelligence/docs/troubleshoot-access"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Azure RBAC Troubleshooting",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://learn.microsoft.com/en-us/azure/role-based-access-control/troubleshooting",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.microsoft.com/en-us/azure/role-based-access-control/troubleshooting"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\agent-infrastructure-as-code-state-and-drift.md",
       "article_id": "agent-infrastructure-as-code-state-and-drift",
       "generation_method": "ai_structured",
@@ -1929,6 +2051,67 @@
         }
       ],
       "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-queue-backlog-and-consumer-lag.md",
+      "article_id": "agent-queue-backlog-and-consumer-lag",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Amazon SQS CloudWatch Metrics",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-available-cloudwatch-metrics.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-available-cloudwatch-metrics.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Confluent Kafka Monitoring",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.confluent.io/platform/current/kafka/monitoring.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.confluent.io/platform/current/kafka/monitoring.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "RabbitMQ Consumers",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.rabbitmq.com/docs/consumers",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.rabbitmq.com/docs/consumers"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
       "sources_unreachable": 0
     },
     {
@@ -17957,6 +18140,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\llm-evaluation-traces-and-feedback-labels.md",
+      "article_id": "llm-evaluation-traces-and-feedback-labels",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "OpenTelemetry Generative AI Semantic Conventions",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://opentelemetry.io/docs/specs/semconv/gen-ai/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://opentelemetry.io/docs/specs/semconv/gen-ai/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "LangSmith Observability Quickstart",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.langchain.com/langsmith/observability-quickstart",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.langchain.com/langsmith/observability-quickstart"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Phoenix LLM Traces",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arize.com/docs/phoenix/tracing/llm-traces",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://arize.com/docs/phoenix/tracing/llm-traces"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content/ai/llm-inference-optimization.md",
       "article_id": "llm-inference-optimization",
       "generation_method": "ai_structured",
@@ -18134,6 +18378,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://www.promptfoo.dev/docs/intro/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\llm-safety-evaluation-and-policy-test-suites.md",
+      "article_id": "llm-safety-evaluation-and-policy-test-suites",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Azure AI Foundry Risk and Safety Evaluators",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/evaluation-evaluators/risk-safety-evaluators",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/evaluation-evaluators/risk-safety-evaluators"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenAI Safety Best Practices",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://platform.openai.com/docs/guides/safety-best-practices",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.openai.com/api/docs/guides/safety-best-practices"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Promptfoo Red Teaming",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.promptfoo.dev/docs/red-team/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.promptfoo.dev/docs/red-team/"
               },
               "match": true
             }
@@ -22704,6 +23009,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://docs.pinecone.io/guides/production/monitoring"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\retrieval-evaluation-with-ndcg-and-mrr.md",
+      "article_id": "retrieval-evaluation-with-ndcg-and-mrr",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "scikit-learn ndcg_score",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://scikit-learn.org/stable/modules/generated/sklearn.metrics.ndcg_score.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://scikit-learn.org/stable/modules/generated/sklearn.metrics.ndcg_score.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Elasticsearch Ranking Evaluation API",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.elastic.co/guide/en/elasticsearch/reference/current/search-rank-eval.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.elastic.co/docs/api/doc/elasticsearch/operation/operation-rank-eval"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "TorchMetrics Retrieval MRR",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://torchmetrics.readthedocs.io/en/v0.11.0/retrieval/mrr.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://torchmetrics.readthedocs.io/en/v0.11.0/retrieval/mrr.html"
               },
               "match": true
             }
@@ -29383,6 +29749,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\api-grpc-reflection-and-protobuf-schemas.md",
+      "article_id": "api-grpc-reflection-and-protobuf-schemas",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "gRPC Server Reflection",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://grpc.io/docs/guides/reflection/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://grpc.io/docs/guides/reflection/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Protocol Buffers Overview",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://protobuf.dev/overview/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://protobuf.dev/overview/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Protocol Buffers Proto3 Guide",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://protobuf.dev/programming-guides/proto3/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://protobuf.dev/programming-guides/proto3/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\api-health-checks-and-readiness-probes.md",
       "article_id": "api-health-checks-and-readiness-probes",
       "generation_method": "ai_structured",
@@ -29555,6 +29982,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://datatracker.ietf.org/doc/html/rfc9110"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\api-json-schema-validation-and-compatibility.md",
+      "article_id": "api-json-schema-validation-and-compatibility",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "JSON Schema Overview",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://json-schema.org/overview/what-is-jsonschema",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://json-schema.org/overview/what-is-jsonschema"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "JSON Schema Core 2020-12",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://json-schema.org/draft/2020-12/json-schema-core",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://json-schema.org/draft/2020-12/json-schema-core"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Ajv JSON Schema",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://ajv.js.org/json-schema.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://ajv.js.org/json-schema.html"
               },
               "match": true
             }
@@ -32692,6 +33180,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\data-lake-compaction-and-small-files.md",
+      "article_id": "data-lake-compaction-and-small-files",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Delta Lake Optimizations",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.delta.io/latest/optimizations-oss.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.delta.io/optimizations-oss/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Apache Iceberg Spark Procedures",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://iceberg.apache.org/docs/1.7.1/spark-procedures/#rewrite_data_files",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://iceberg.apache.org/docs/1.7.1/spark-procedures/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Apache Hudi File Sizing",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://hudi.apache.org/docs/file_sizing",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://hudi.apache.org/docs/file_sizing/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\data-lake-object-storage-layouts.md",
       "article_id": "data-lake-object-storage-layouts",
       "generation_method": "ai_structured",
@@ -33047,6 +33596,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://docs.cloud.google.com/bigquery/docs/managing-tables"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\data-warehouse-query-history-and-job-metadata.md",
+      "article_id": "data-warehouse-query-history-and-job-metadata",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "BigQuery INFORMATION_SCHEMA JOBS",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://cloud.google.com/bigquery/docs/information-schema-jobs",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/bigquery/docs/information-schema-jobs"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Snowflake QUERY_HISTORY",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.snowflake.com/en/sql-reference/account-usage/query_history",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.snowflake.com/en/sql-reference/account-usage/query_history"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Amazon Athena Query History",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.aws.amazon.com/athena/latest/ug/querying-query-history.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.aws.amazon.com/athena/latest/ug/"
               },
               "match": true
             }
@@ -59887,6 +60497,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\agent-cdn-cache-headers-and-invalidation.md",
+      "article_id": "agent-cdn-cache-headers-and-invalidation",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "RFC 9111 HTTP Caching",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://datatracker.ietf.org/doc/html/rfc9111",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://datatracker.ietf.org/doc/html/rfc9111"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Cloudflare Purge Cache",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.cloudflare.com/cache/how-to/purge-cache/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.cloudflare.com/cache/how-to/purge-cache/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Amazon CloudFront Invalidation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Invalidation.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Invalidation.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\ai-for-genomics-variant-calling-gene-expression-prediction-and-protein-dna-binding.md",
       "article_id": "kb-2026-00005",
       "generation_method": "ai_structured",
@@ -59909,6 +60580,67 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 1
+    },
+    {
+      "file": "content\\ai\\retrieval-query-expansion-and-synonyms.md",
+      "article_id": "retrieval-query-expansion-and-synonyms",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Azure AI Search Synonyms",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://learn.microsoft.com/en-us/azure/search/search-synonyms",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.microsoft.com/en-us/azure/search/search-synonyms"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Algolia Synonyms",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.algolia.com/doc/guides/managing-results/optimize-search-results/adding-synonyms/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.algolia.com/doc/guides/managing-results/optimize-search-results/adding-synonyms"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Meilisearch Synonyms",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.meilisearch.com/docs/learn/relevancy/synonyms",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.meilisearch.com/docs/capabilities/full_text_search/relevancy/synonyms"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content\\arts\\history-of-printing.md",
@@ -60185,22 +60917,22 @@
       "sources_unreachable": 1
     },
     {
-      "file": "content\\computer-science\\api-grpc-reflection-and-protobuf-schemas.md",
-      "article_id": "api-grpc-reflection-and-protobuf-schemas",
+      "file": "content\\computer-science\\api-http-caching-etags-and-conditional-requests.md",
+      "article_id": "api-http-caching-etags-and-conditional-requests",
       "generation_method": "ai_structured",
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "gRPC Server Reflection",
-          "source_type": "documentation",
+          "source_title": "RFC 9110 ETag",
+          "source_type": "standard",
           "results": [
             {
               "method": "url",
-              "identifier": "https://grpc.io/docs/guides/reflection/",
+              "identifier": "https://datatracker.ietf.org/doc/html/rfc9110#section-8.8.3",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://grpc.io/docs/guides/reflection/"
+                "final_url": "https://datatracker.ietf.org/doc/html/rfc9110"
               },
               "match": true
             }
@@ -60208,16 +60940,16 @@
           "all_verified": true
         },
         {
-          "source_title": "Protocol Buffers Overview",
-          "source_type": "documentation",
+          "source_title": "RFC 9110 If-None-Match",
+          "source_type": "standard",
           "results": [
             {
               "method": "url",
-              "identifier": "https://protobuf.dev/overview/",
+              "identifier": "https://datatracker.ietf.org/doc/html/rfc9110#section-13.1.2",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://protobuf.dev/overview/"
+                "final_url": "https://datatracker.ietf.org/doc/html/rfc9110"
               },
               "match": true
             }
@@ -60225,16 +60957,16 @@
           "all_verified": true
         },
         {
-          "source_title": "Protocol Buffers Proto3 Guide",
+          "source_title": "GitHub REST API Best Practices",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://protobuf.dev/programming-guides/proto3/",
+              "identifier": "https://docs.github.com/en/rest/using-the-rest-api/best-practices-for-using-the-rest-api",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://protobuf.dev/programming-guides/proto3/"
+                "final_url": "https://docs.github.com/en/rest/using-the-rest-api/best-practices-for-using-the-rest-api"
               },
               "match": true
             }
@@ -65743,7 +66475,10 @@
               "method": "url",
               "identifier": "https://worldathletics.org/competition/technical-rules",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://worldathletics.org/competition/technical-rules"
+              },
               "match": false
             }
           ],
