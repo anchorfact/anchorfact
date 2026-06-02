@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-02T02:28:00.875Z",
-    "total_articles": 1050,
+    "generated": "2026-06-02T03:02:33.145Z",
+    "total_articles": 1059,
     "total_with_errors": 0,
     "average_sources_per_article": "2.5",
-    "overall_verification_rate": "87.4%",
-    "elapsed_ms": 106489,
-    "elapsed_sec": "106.5",
+    "overall_verification_rate": "87.5%",
+    "elapsed_ms": 103422,
+    "elapsed_sec": "103.4",
     "concurrency": 3
   },
   "articles": [
@@ -460,6 +460,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\agent-durable-execution.md",
+      "article_id": "agent-durable-execution",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Temporal Workflow",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.temporal.io/workflows",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.temporal.io/workflows"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "LangGraph Persistence",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.langchain.com/oss/python/langgraph/persistence",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.langchain.com/oss/python/langgraph/persistence"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Durable Functions Overview",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-overview?tabs=python-v2",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-overview?tabs=python-v2"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content/ai/agent-execution-knowledge-sources.md",
       "article_id": "agent-execution-knowledge-sources",
       "generation_method": "ai_structured",
@@ -834,6 +895,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\agent-secret-management-and-credential-isolation.md",
+      "article_id": "agent-secret-management-and-credential-isolation",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Secrets Management - OWASP Cheat Sheet Series",
+          "source_type": "security_guidance",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Secrets Engines - Vault",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.hashicorp.com/vault/docs/secrets",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developer.hashicorp.com/vault/docs/secrets"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Secrets - Kubernetes",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kubernetes.io/docs/concepts/configuration/secret/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://kubernetes.io/docs/concepts/configuration/secret/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\agent-tool-authorization-and-permissions.md",
       "article_id": "agent-tool-authorization-and-permissions",
       "generation_method": "ai_structured",
@@ -945,6 +1067,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://www.w3.org/TR/trace-context/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-tool-retry-and-idempotency.md",
+      "article_id": "agent-tool-retry-and-idempotency",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Idempotent Requests - Stripe API",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.stripe.com/api/idempotent_requests",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.stripe.com/api/idempotent_requests"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Retry Policies - Temporal",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.temporal.io/encyclopedia/retry-policies",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.temporal.io/encyclopedia/retry-policies"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Handling Errors in Step Functions Workflows",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.aws.amazon.com/step-functions/latest/dg/concepts-error-handling.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.aws.amazon.com/step-functions/latest/dg/concepts-error-handling.html"
               },
               "match": true
             }
@@ -13143,6 +13326,67 @@
       "manual_reviewed_at": "2026-05-28"
     },
     {
+      "file": "content\\ai\\evaluation-data-contamination.md",
+      "article_id": "evaluation-data-contamination",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "MMLU-CF",
+          "source_type": "code_repository",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://github.com/microsoft/MMLU-CF",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://github.com/microsoft/MMLU-CF"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "LiveBench",
+          "source_type": "code_repository",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://github.com/livebench/livebench",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://github.com/livebench/livebench"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "CLEAN-EVAL - ACL Anthology",
+          "source_type": "research_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://aclanthology.org/2024.findings-naacl.53/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://aclanthology.org/2024.findings-naacl.53/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\evaluation-datasets-and-golden-tests-for-llms.md",
       "article_id": "evaluation-datasets-and-golden-tests-for-llms",
       "generation_method": "ai_structured",
@@ -14117,6 +14361,67 @@
       "sources_unreachable": 0,
       "manual_reviewed": true,
       "manual_reviewed_at": "2026-05-27"
+    },
+    {
+      "file": "content\\ai\\hnsw-vector-indexing.md",
+      "article_id": "hnsw-vector-indexing",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Indexing - Qdrant",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://qdrant.tech/documentation/manage-data/indexing/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://qdrant.tech/documentation/manage-data/indexing/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "pgvector HNSW Documentation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://github.com/pgvector/pgvector#hnsw",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://github.com/pgvector/pgvector"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "k-NN Index - OpenSearch Documentation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.opensearch.org/latest/search-plugins/knn/knn-index/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.opensearch.org/latest/search-plugins/knn/knn-index/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content/ai/human-computer-interaction.md",
@@ -15546,6 +15851,67 @@
       "sources_unreachable": 0,
       "manual_reviewed": true,
       "manual_reviewed_at": "2026-05-28"
+    },
+    {
+      "file": "content\\ai\\mcp-resources-and-prompts.md",
+      "article_id": "mcp-resources-and-prompts",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Resources - Model Context Protocol",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://modelcontextprotocol.io/specification/2025-06-18/server/resources",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://modelcontextprotocol.io/specification/2025-06-18/server/resources"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Prompts - Model Context Protocol",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://modelcontextprotocol.io/specification/2025-06-18/server/prompts",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://modelcontextprotocol.io/specification/2025-06-18/server/prompts"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Roots - Model Context Protocol",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://modelcontextprotocol.io/specification/2025-06-18/client/roots",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://modelcontextprotocol.io/specification/2025-06-18/client/roots"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content/ai/mcp.md",
@@ -17676,6 +18042,67 @@
       "manual_reviewed_at": "2026-05-30"
     },
     {
+      "file": "content\\ai\\prompt-injection-defenses-for-tool-using-agents.md",
+      "article_id": "prompt-injection-defenses-for-tool-using-agents",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "LLM Prompt Injection Prevention Cheat Sheet",
+          "source_type": "security_guidance",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://cheatsheetseries.owasp.org/cheatsheets/LLM_Prompt_Injection_Prevention_Cheat_Sheet.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://cheatsheetseries.owasp.org/cheatsheets/LLM_Prompt_Injection_Prevention_Cheat_Sheet.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "LLM01 Prompt Injection - OWASP GenAI Security Project",
+          "source_type": "security_guidance",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://genai.owasp.org/llmrisk/llm01-prompt-injection/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://genai.owasp.org/llmrisk/llm01-prompt-injection/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Prompt Shields in Azure AI Content Safety",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://learn.microsoft.com/en-us/azure/ai-services/content-safety/concepts/jailbreak-detection",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.microsoft.com/en-us/azure/ai-services/content-safety/concepts/jailbreak-detection"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content/ai/protein-structure-prediction.md",
       "article_id": "protein-structure-prediction",
       "generation_method": "ai_structured",
@@ -17858,6 +18285,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://developers.llamaindex.ai/python/framework/module_guides/loading/node_parsers/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\rag-citation-and-source-attribution.md",
+      "article_id": "rag-citation-and-source-attribution",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "File Search - OpenAI API",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.openai.com/api/docs/guides/tools-file-search",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.openai.com/api/docs/guides/tools-file-search"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Evaluation Concepts - LangSmith",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.langchain.com/langsmith/evaluation-concepts",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.langchain.com/langsmith/evaluation-concepts"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "CitationQueryEngine - LlamaIndex",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.llamaindex.ai/python/examples/query_engine/citation_query_engine/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.llamaindex.ai/python/examples/query_engine/citation_query_engine/"
               },
               "match": true
             }
@@ -18057,6 +18545,67 @@
       "sources_unreachable": 0,
       "manual_reviewed": true,
       "manual_reviewed_at": "2026-05-30"
+    },
+    {
+      "file": "content\\ai\\reciprocal-rank-fusion.md",
+      "article_id": "reciprocal-rank-fusion",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Reciprocal Rank Fusion - Elasticsearch",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.elastic.co/docs/reference/elasticsearch/rest-apis/reciprocal-rank-fusion",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.elastic.co/docs/reference/elasticsearch/rest-apis/reciprocal-rank-fusion"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Hybrid Search Scoring - Azure AI Search",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://learn.microsoft.com/en-us/azure/search/hybrid-search-ranking",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.microsoft.com/en-us/azure/search/hybrid-search-ranking"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Reciprocal Rank Fusion - OpenSearch",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.opensearch.org/docs/latest/search-plugins/search-pipelines/reciprocal-rank-fusion/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.opensearch.org/latest/404.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content/ai/recommender-systems.md",
@@ -18898,6 +19447,67 @@
       "sources_unreachable": 0,
       "manual_reviewed": true,
       "manual_reviewed_at": "2026-05-28"
+    },
+    {
+      "file": "content\\ai\\sparse-retrieval-and-bm25.md",
+      "article_id": "sparse-retrieval-and-bm25",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Similarity Settings - Elasticsearch",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.elastic.co/docs/reference/elasticsearch/index-settings/similarity",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.elastic.co/docs/reference/elasticsearch/index-settings/similarity"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "BM25Similarity - Apache Lucene",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://lucene.apache.org/core/9_10_0/core/org/apache/lucene/search/similarities/BM25Similarity.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://lucene.apache.org/core/9_10_0/core/org/apache/lucene/search/similarities/BM25Similarity.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Keyword Search BM25 - Weaviate",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.weaviate.io/weaviate/concepts/search/keyword-search",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.weaviate.io/weaviate/concepts/search/keyword-search"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content/ai/speaker-recognition.md",
@@ -24396,6 +25006,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\api-error-models-and-problem-details.md",
+      "article_id": "api-error-models-and-problem-details",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "RFC 9457 - Problem Details for HTTP APIs",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://datatracker.ietf.org/doc/html/rfc9457",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://datatracker.ietf.org/doc/html/rfc9457"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "AIP-193 Errors",
+          "source_type": "design_standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://google.aip.dev/193",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://google.aip.dev/193"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Errors - Stripe API",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.stripe.com/api/errors",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.stripe.com/api/errors"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content/computer-science/api-gateway.md",
       "article_id": "kb-2026-00159",
       "generation_method": "ai_structured",
@@ -24553,6 +25224,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://datatracker.ietf.org/doc/html/rfc6585"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\api-schema-code-generation.md",
+      "article_id": "api-schema-code-generation",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "OpenAPI Specification",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://spec.openapis.org/oas/latest.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://spec.openapis.org/oas/latest.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Usage - OpenAPI Generator",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://openapi-generator.tech/docs/usage/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://openapi-generator.tech/docs/usage/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Welcome to Kiota - Microsoft Learn",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://learn.microsoft.com/en-us/openapi/kiota/overview",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.microsoft.com/en-us/openapi/kiota/overview"
               },
               "match": true
             }
@@ -26836,6 +27568,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\data-contracts-for-pipelines.md",
+      "article_id": "data-contracts-for-pipelines",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Model Contracts - dbt Developer Hub",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.getdbt.com/docs/mesh/govern/model-contracts",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.getdbt.com/docs/mesh/govern/model-contracts"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Write a Data Contract - Soda Documentation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.soda.io/data-contracts/data-contracts-write",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.soda.io/soda-documentation/soda-v3/data-contracts/data-contracts-write"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Data Contracts - OpenMetadata Documentation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.open-metadata.org/v1.12.x/api-reference/data-contracts",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.open-metadata.org/v1.12.x/api-reference/data-contracts"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\data-quality-validation-for-ml-pipelines.md",
       "article_id": "data-quality-validation-for-ml-pipelines",
       "generation_method": "ai_structured",
@@ -27923,6 +28716,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\feature-stores-for-ml-pipelines.md",
+      "article_id": "feature-stores-for-ml-pipelines",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Feast Concepts Overview",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.feast.dev/getting-started/concepts/overview",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.feast.dev/getting-started/concepts/overview"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "About Vertex AI Feature Store",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://cloud.google.com/vertex-ai/docs/featurestore/latest/overview",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/vertex-ai/docs/featurestore/latest/overview?hl=ja"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "SageMaker Feature Store",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.aws.amazon.com/sagemaker/latest/dg/feature-store.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.aws.amazon.com/sagemaker/latest/dg/feature-store.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content/computer-science/fetch-api.md",
       "article_id": "fetch-api",
       "generation_method": "human_only",
@@ -28696,6 +29550,67 @@
         }
       ],
       "sources_verified": 1,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\graphql-introspection-for-agent-tools.md",
+      "article_id": "graphql-introspection-for-agent-tools",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "GraphQL Specification - Schema Introspection",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://spec.graphql.org/October2021/#sec-Introspection",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://spec.graphql.org/October2021/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Introspection - GraphQL",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://graphql.org/learn/introspection/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://graphql.org/learn/introspection/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Schemas and Types - GraphQL",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://graphql.org/learn/schema/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://graphql.org/learn/schema/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
       "sources_unreachable": 0
     },
     {
@@ -31796,6 +32711,67 @@
       "sources_unreachable": 0,
       "manual_reviewed": true,
       "manual_reviewed_at": "2026-05-28"
+    },
+    {
+      "file": "content\\computer-science\\package-dependency-resolution-for-code-agents.md",
+      "article_id": "package-dependency-resolution-for-code-agents",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "About Semantic Versioning - npm Docs",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.npmjs.com/about-semantic-versioning/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.npmjs.com/about-semantic-versioning/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Dependency Resolution - pip",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://pip.pypa.io/en/stable/topics/dependency-resolution/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://pip.pypa.io/en/stable/topics/dependency-resolution/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Dependency Resolution - The Cargo Book",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://doc.rust-lang.org/cargo/reference/resolver.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://doc.rust-lang.org/cargo/reference/resolver.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content/computer-science/package-managers-npm-yarn-pnpm.md",
@@ -52445,128 +53421,6 @@
       "sources_unreachable": 0
     },
     {
-      "file": "content\\ai\\agent-durable-execution.md",
-      "article_id": "agent-durable-execution",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "Temporal Workflow",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.temporal.io/workflows",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.temporal.io/workflows"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "LangGraph Persistence",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.langchain.com/oss/python/langgraph/persistence",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.langchain.com/oss/python/langgraph/persistence"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Durable Functions Overview",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-overview?tabs=python-v2",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-overview?tabs=python-v2"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
-    },
-    {
-      "file": "content\\ai\\agent-tool-retry-and-idempotency.md",
-      "article_id": "agent-tool-retry-and-idempotency",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "Idempotent Requests - Stripe API",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.stripe.com/api/idempotent_requests",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.stripe.com/api/idempotent_requests"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Retry Policies - Temporal",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.temporal.io/encyclopedia/retry-policies",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.temporal.io/encyclopedia/retry-policies"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Handling Errors in Step Functions Workflows",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.aws.amazon.com/step-functions/latest/dg/concepts-error-handling.html",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.aws.amazon.com/step-functions/latest/dg/concepts-error-handling.html"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
-    },
-    {
       "file": "content\\ai\\ai-for-genomics-variant-calling-gene-expression-prediction-and-protein-dna-binding.md",
       "article_id": "kb-2026-00005",
       "generation_method": "ai_structured",
@@ -52591,144 +53445,22 @@
       "sources_unreachable": 1
     },
     {
-      "file": "content\\ai\\evaluation-data-contamination.md",
-      "article_id": "evaluation-data-contamination",
+      "file": "content\\ai\\ml-experiment-tracking.md",
+      "article_id": "ml-experiment-tracking",
       "generation_method": "ai_structured",
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "MMLU-CF",
-          "source_type": "code_repository",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://github.com/microsoft/MMLU-CF",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://github.com/microsoft/MMLU-CF"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "LiveBench",
-          "source_type": "code_repository",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://github.com/livebench/livebench",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://github.com/livebench/livebench"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "CLEAN-EVAL - ACL Anthology",
-          "source_type": "research_paper",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://aclanthology.org/2024.findings-naacl.53/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://aclanthology.org/2024.findings-naacl.53/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
-    },
-    {
-      "file": "content\\ai\\prompt-injection-defenses-for-tool-using-agents.md",
-      "article_id": "prompt-injection-defenses-for-tool-using-agents",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "LLM Prompt Injection Prevention Cheat Sheet",
-          "source_type": "security_guidance",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://cheatsheetseries.owasp.org/cheatsheets/LLM_Prompt_Injection_Prevention_Cheat_Sheet.html",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://cheatsheetseries.owasp.org/cheatsheets/LLM_Prompt_Injection_Prevention_Cheat_Sheet.html"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "LLM01 Prompt Injection - OWASP GenAI Security Project",
-          "source_type": "security_guidance",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://genai.owasp.org/llmrisk/llm01-prompt-injection/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://genai.owasp.org/llmrisk/llm01-prompt-injection/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Prompt Shields in Azure AI Content Safety",
+          "source_title": "Get Started with TensorBoard",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://learn.microsoft.com/en-us/azure/ai-services/content-safety/concepts/jailbreak-detection",
+              "identifier": "https://www.tensorflow.org/tensorboard/get_started",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://learn.microsoft.com/en-us/azure/ai-services/content-safety/concepts/jailbreak-detection"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
-    },
-    {
-      "file": "content\\ai\\reciprocal-rank-fusion.md",
-      "article_id": "reciprocal-rank-fusion",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "Reciprocal Rank Fusion - Elasticsearch",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.elastic.co/docs/reference/elasticsearch/rest-apis/reciprocal-rank-fusion",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://www.elastic.co/docs/reference/elasticsearch/rest-apis/reciprocal-rank-fusion"
+                "final_url": "https://www.tensorflow.org/tensorboard/get_started"
               },
               "match": true
             }
@@ -52736,16 +53468,16 @@
           "all_verified": true
         },
         {
-          "source_title": "Hybrid Search Scoring - Azure AI Search",
+          "source_title": "Experiments Overview - Weights and Biases",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://learn.microsoft.com/en-us/azure/search/hybrid-search-ranking",
+              "identifier": "https://docs.wandb.ai/models/track",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://learn.microsoft.com/en-us/azure/search/hybrid-search-ranking"
+                "final_url": "https://docs.wandb.ai/models/track"
               },
               "match": true
             }
@@ -52753,77 +53485,16 @@
           "all_verified": true
         },
         {
-          "source_title": "Reciprocal Rank Fusion - OpenSearch",
+          "source_title": "Introduction to Vertex AI Experiments",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.opensearch.org/docs/latest/search-plugins/search-pipelines/reciprocal-rank-fusion/",
+              "identifier": "https://docs.cloud.google.com/vertex-ai/docs/experiments/intro-vertex-ai-experiments",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://docs.opensearch.org/latest/404.html"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
-    },
-    {
-      "file": "content\\ai\\sparse-retrieval-and-bm25.md",
-      "article_id": "sparse-retrieval-and-bm25",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "Similarity Settings - Elasticsearch",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.elastic.co/docs/reference/elasticsearch/index-settings/similarity",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://www.elastic.co/docs/reference/elasticsearch/index-settings/similarity"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "BM25Similarity - Apache Lucene",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://lucene.apache.org/core/9_10_0/core/org/apache/lucene/search/similarities/BM25Similarity.html",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://lucene.apache.org/core/9_10_0/core/org/apache/lucene/search/similarities/BM25Similarity.html"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Keyword Search BM25 - Weaviate",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.weaviate.io/weaviate/concepts/search/keyword-search",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.weaviate.io/weaviate/concepts/search/keyword-search"
+                "final_url": "https://docs.cloud.google.com/vertex-ai/docs/experiments/intro-vertex-ai-experiments?hl=id"
               },
               "match": true
             }
@@ -52875,10 +53546,7 @@
               "method": "url",
               "identifier": "https://www.phaidon.com/store/art/the-story-of-modern-art-9780714831398/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.phaidon.com/en-int/store/art/the-story-of-modern-art-9780714831398"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -53107,67 +53775,6 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 1
-    },
-    {
-      "file": "content\\computer-science\\api-error-models-and-problem-details.md",
-      "article_id": "api-error-models-and-problem-details",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "RFC 9457 - Problem Details for HTTP APIs",
-          "source_type": "standard",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://datatracker.ietf.org/doc/html/rfc9457",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://datatracker.ietf.org/doc/html/rfc9457"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "AIP-193 Errors",
-          "source_type": "design_standard",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://google.aip.dev/193",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://google.aip.dev/193"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Errors - Stripe API",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.stripe.com/api/errors",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.stripe.com/api/errors"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\bloom-filters-space-efficient-probabilistic-data-structures.md",
@@ -54475,67 +55082,6 @@
       "sources_unreachable": 3
     },
     {
-      "file": "content\\computer-science\\feature-stores-for-ml-pipelines.md",
-      "article_id": "feature-stores-for-ml-pipelines",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "Feast Concepts Overview",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.feast.dev/getting-started/concepts/overview",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.feast.dev/getting-started/concepts/overview"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "About Vertex AI Feature Store",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://cloud.google.com/vertex-ai/docs/featurestore/latest/overview",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.cloud.google.com/vertex-ai/docs/featurestore/latest/overview?hl=ja"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "SageMaker Feature Store",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.aws.amazon.com/sagemaker/latest/dg/feature-store.html",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.aws.amazon.com/sagemaker/latest/dg/feature-store.html"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
-    },
-    {
       "file": "content\\computer-science\\firewall.md",
       "article_id": "kb-2026-00121",
       "generation_method": "human_only",
@@ -55829,67 +56375,6 @@
       "sources_unreachable": 3
     },
     {
-      "file": "content\\computer-science\\package-dependency-resolution-for-code-agents.md",
-      "article_id": "package-dependency-resolution-for-code-agents",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "About Semantic Versioning - npm Docs",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.npmjs.com/about-semantic-versioning/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.npmjs.com/about-semantic-versioning/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Dependency Resolution - pip",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://pip.pypa.io/en/stable/topics/dependency-resolution/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://pip.pypa.io/en/stable/topics/dependency-resolution/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Dependency Resolution - The Cargo Book",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://doc.rust-lang.org/cargo/reference/resolver.html",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://doc.rust-lang.org/cargo/reference/resolver.html"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
-    },
-    {
       "file": "content\\computer-science\\paxos-algorithm-consensus-in-distributed-systems.md",
       "article_id": "kb-2026-00027",
       "generation_method": "ai_structured",
@@ -56226,6 +56711,67 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 3
+    },
+    {
+      "file": "content\\computer-science\\robots-txt-and-agent-web-access.md",
+      "article_id": "robots-txt-and-agent-web-access",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "RFC 9309 - Robots Exclusion Protocol",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://datatracker.ietf.org/doc/html/rfc9309",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://datatracker.ietf.org/doc/html/rfc9309"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "How Google Interprets the robots.txt Specification",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.google.com/crawling/docs/robots-txt/robots-txt-spec",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.google.com/crawling/docs/robots-txt/robots-txt-spec"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Introduction to robots.txt - Google Search Central",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.google.com/search/docs/crawling-indexing/robots/intro",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.google.com/search/docs/crawling-indexing/robots/intro?hl=ru"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\rsync.md",

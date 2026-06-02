@@ -7,6 +7,7 @@ export const API_READINESS_TARGET_RATIO = 0.9;
 
 export const CORE_CORPUS_QUERIES = [
   ['agent_execution_sources', 'ai/agent-execution-knowledge-sources', 'Agent Execution Knowledge Sources: What AI Agents Need to Look Up'],
+  ['agent_execution_sources', 'computer-science/robots-txt-and-agent-web-access', 'Robots.txt and Agent Web Access'],
 
   ['agent_rag', 'ai/advanced-rag-techniques', 'Advanced RAG: From Naive Retrieval to Agentic RAG'],
   ['agent_rag', 'ai/rag', 'Retrieval-Augmented Generation (RAG)'],
@@ -19,6 +20,8 @@ export const CORE_CORPUS_QUERIES = [
   ['agent_rag', 'ai/retrieval-indexing-and-document-parsing', 'Retrieval Indexing and Document Parsing'],
   ['agent_rag', 'ai/sparse-retrieval-and-bm25', 'Sparse Retrieval and BM25'],
   ['agent_rag', 'ai/reciprocal-rank-fusion', 'Reciprocal Rank Fusion'],
+  ['agent_rag', 'ai/hnsw-vector-indexing', 'HNSW Vector Indexing'],
+  ['agent_rag', 'ai/rag-citation-and-source-attribution', 'RAG Citation and Source Attribution'],
   ['agent_rag', 'ai/graphrag', 'GraphRAG'],
   ['agent_rag', 'ai/vector-databases', 'Vector Databases: Approximate Nearest Neighbor Search, Embedding Storage, and Retrieval at Scale'],
   ['agent_rag', 'ai/multimodal-search', 'Multimodal Search: Cross-Modal Retrieval, Product Search, and Multimodal Embeddings'],
@@ -40,7 +43,9 @@ export const CORE_CORPUS_QUERIES = [
   ['api_mcp', 'ai/agent-tool-result-provenance', 'Agent Tool Result Provenance'],
   ['api_mcp', 'ai/agent-tool-retry-and-idempotency', 'Agent Tool Retry and Idempotency'],
   ['api_mcp', 'ai/agent-durable-execution', 'Agent Durable Execution'],
+  ['api_mcp', 'ai/mcp-resources-and-prompts', 'MCP Resources and Prompts'],
   ['api_mcp', 'computer-science/openapi-for-agent-tools', 'OpenAPI for Agent Tools'],
+  ['api_mcp', 'computer-science/graphql-introspection-for-agent-tools', 'GraphQL Introspection for Agent Tools'],
   ['api_mcp', 'ai/ai-agents', 'AI Agents: Tool-Using Model Systems'],
   ['api_mcp', 'ai/agentic-ai', 'Agentic AI: Autonomous Agent Architectures, Planning, and Tool-Integrated Reasoning'],
   ['api_mcp', 'ai/ai-agent-frameworks', 'AI Agent Frameworks: LangChain, AutoGen, and CrewAI'],
@@ -53,6 +58,7 @@ export const CORE_CORPUS_QUERIES = [
 
   ['security_governance', 'ai/ai-red-teaming-and-safety', 'AI Red Teaming: Security Testing for Language Models'],
   ['security_governance', 'ai/prompt-injection-defenses-for-tool-using-agents', 'Prompt Injection Defenses for Tool-Using Agents'],
+  ['security_governance', 'ai/agent-secret-management-and-credential-isolation', 'Agent Secret Management and Credential Isolation'],
   ['security_governance', 'ai/ai-governance-and-policy', 'AI Governance: Risk Frameworks, Audits, and International Cooperation'],
   ['security_governance', 'ai/ai-in-cybersecurity', 'AI in Cybersecurity: Threat Detection and LLM-Powered Defense'],
   ['security_governance', 'ai/ai-for-network-security', 'AI for Network Security: Intelligent Firewalls, DDoS Mitigation, and Zero-Trust Architectures'],
@@ -69,6 +75,7 @@ export const CORE_CORPUS_QUERIES = [
   ['data_infrastructure', 'computer-science/lakehouse-table-formats', 'Lakehouse Table Formats'],
   ['data_infrastructure', 'computer-science/schema-evolution-for-data-pipelines', 'Schema Evolution for Data Pipelines'],
   ['data_infrastructure', 'computer-science/data-quality-validation-for-ml-pipelines', 'Data Quality Validation for ML Pipelines'],
+  ['data_infrastructure', 'computer-science/data-contracts-for-pipelines', 'Data Contracts for Pipelines'],
   ['data_infrastructure', 'computer-science/feature-stores-for-ml-pipelines', 'Feature Stores for ML Pipelines'],
   ['data_infrastructure', 'ai/data-preprocessing', 'Data Preprocessing'],
   ['data_infrastructure', 'ai/ai-for-data-curation', 'AI for Data Curation: Web-Scale Filtering, Deduplication, and Quality Scoring for LLM Training'],
@@ -85,6 +92,7 @@ export const CORE_CORPUS_QUERIES = [
   ['llm_evaluation', 'ai/evaluation-datasets-and-golden-tests-for-llms', 'Evaluation Datasets and Golden Tests for LLMs'],
   ['llm_evaluation', 'ai/evaluation-rubrics-and-grader-design', 'Evaluation Rubrics and Grader Design'],
   ['llm_evaluation', 'ai/code-generation-evaluation-pass-at-k', 'Code Generation Evaluation with pass@k'],
+  ['llm_evaluation', 'ai/ml-experiment-tracking', 'ML Experiment Tracking'],
   ['llm_evaluation', 'ai/evaluation-data-contamination', 'Evaluation Data Contamination'],
   ['llm_evaluation', 'ai/model-evaluation-metrics', 'Model Evaluation Metrics'],
   ['llm_evaluation', 'ai/long-context-models', 'Long-Context Language Models: Memory, Retrieval, and Evaluation'],
@@ -131,6 +139,7 @@ export const CORE_CORPUS_QUERIES = [
   ['developer_workflows', 'computer-science/api-pagination-and-rate-limits', 'API Pagination and Rate Limits'],
   ['developer_workflows', 'computer-science/api-versioning-and-deprecation', 'API Versioning and Deprecation'],
   ['developer_workflows', 'computer-science/api-error-models-and-problem-details', 'API Error Models and Problem Details'],
+  ['developer_workflows', 'computer-science/api-schema-code-generation', 'API Schema Code Generation'],
 
   ['code_intelligence', 'computer-science/code-graphs-and-code-intelligence', 'Code Graphs and Code Intelligence'],
   ['code_intelligence', 'computer-science/program-symbols-definitions-and-references', 'Program Symbols, Definitions, and References'],
