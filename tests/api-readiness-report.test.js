@@ -193,6 +193,9 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'ai/rag-index-freshness-and-reindexing',
     'ai/rag-result-diversity-and-mmr',
     'ai/embedding-model-upgrades-and-reindexing-risk',
+    'ai/vector-index-quantization-for-retrieval',
+    'ai/cross-encoder-reranking-for-retrieval',
+    'ai/retrieval-access-control-and-permission-filtering',
     'ai/prompt-injection-defenses-for-tool-using-agents',
     'ai/llm-as-judge-evaluation',
     'ai/agent-benchmarks',
@@ -206,6 +209,8 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'ai/human-feedback-and-annotation-queues-for-llms',
     'ai/prompt-versioning-and-evaluation-traces',
     'ai/llm-cost-and-latency-evaluation',
+    'ai/llm-red-teaming-and-adversarial-evaluation',
+    'ai/agent-tool-use-evaluation',
     'ai/evaluation-data-contamination',
     'computer-science/openapi-for-agent-tools',
     'ai/mcp-resources-and-prompts',
@@ -217,6 +222,7 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'computer-science/webhooks-and-event-driven-apis',
     'computer-science/asyncapi-and-event-api-schemas',
     'computer-science/api-health-checks-and-readiness-probes',
+    'computer-science/api-contract-testing-and-mock-servers',
     'computer-science/data-catalogs-and-metadata-lineage',
     'computer-science/lakehouse-table-formats',
     'computer-science/schema-evolution-for-data-pipelines',
@@ -227,6 +233,7 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'computer-science/schema-registry-for-event-streaming',
     'computer-science/openlineage-for-data-pipelines',
     'computer-science/debezium-change-data-capture-for-pipelines',
+    'computer-science/streaming-watermarks-and-late-data',
     'computer-science/feature-stores-for-ml-pipelines',
     'ai/hnsw-vector-indexing',
     'ai/rag-citation-and-source-attribution',
@@ -245,7 +252,11 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'ai/agent-service-level-objectives-and-error-budgets',
     'ai/agent-feature-flags-and-remote-configuration',
     'ai/agent-ci-logs-and-deployment-history',
+    'ai/agent-ticket-and-issue-tracker-lookup',
+    'ai/agent-audit-logs-and-activity-feeds',
+    'ai/agent-execution-dry-runs-and-plan-previews',
     'computer-science/repository-permissions-and-code-agent-access',
+    'ai/agent-checkpointing-and-resumable-workflows',
     'computer-science/code-graphs-and-code-intelligence',
     'computer-science/program-symbols-definitions-and-references',
     'computer-science/abstract-syntax-trees-and-code-navigation',
@@ -258,7 +269,8 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'computer-science/static-analysis-rules-and-codeql',
     'computer-science/test-coverage-for-code-agents',
     'computer-science/mutation-testing-for-code-agents',
-    'computer-science/build-graphs-and-incremental-build-systems'
+    'computer-science/build-graphs-and-incremental-build-systems',
+    'computer-science/source-maps-and-stack-trace-deobfuscation'
   ]) {
     assert(slugs.includes(slug), `missing agent/code-intelligence readiness slug ${slug}`);
   }

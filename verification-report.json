@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-02T04:43:03.948Z",
-    "total_articles": 1104,
+    "generated": "2026-06-02T05:17:46.098Z",
+    "total_articles": 1116,
     "total_with_errors": 0,
-    "average_sources_per_article": "2.5",
-    "overall_verification_rate": "88.1%",
-    "elapsed_ms": 142500,
-    "elapsed_sec": "142.5",
+    "average_sources_per_article": "2.6",
+    "overall_verification_rate": "88.3%",
+    "elapsed_ms": 117884,
+    "elapsed_sec": "117.9",
     "concurrency": 3
   },
   "articles": [
@@ -402,6 +402,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\agent-audit-logs-and-activity-feeds.md",
+      "article_id": "agent-audit-logs-and-activity-feeds",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "GitHub Reviewing the Audit Log",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/enterprise-cloud@latest/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/reviewing-the-audit-log-for-your-organization",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/enterprise-cloud@latest/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/reviewing-the-audit-log-for-your-organization"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GitLab Audit Events",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.gitlab.com/user/compliance/audit_events/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.gitlab.com/user/compliance/audit_events/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Cloudflare Review Audit Logs",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.cloudflare.com/fundamentals/account/account-security/review-audit-logs/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.cloudflare.com/fundamentals/account/account-security/review-audit-logs/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\agent-benchmarks.md",
       "article_id": "agent-benchmarks",
       "generation_method": "ai_structured",
@@ -449,6 +510,67 @@
               "verified": true,
               "metadata": {
                 "title": "arXiv Query: search_query=&amp;id_list=2310.06770&amp;start=0&amp;max_results=1"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-checkpointing-and-resumable-workflows.md",
+      "article_id": "agent-checkpointing-and-resumable-workflows",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "LangGraph Persistence",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.langchain.com/oss/python/langgraph/persistence",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.langchain.com/oss/python/langgraph/persistence"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Temporal Workflows",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.temporal.io/workflows",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.temporal.io/workflows"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Azure Logic Apps Overview",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-overview",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-overview"
               },
               "match": true
             }
@@ -643,6 +765,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\agent-execution-dry-runs-and-plan-previews.md",
+      "article_id": "agent-execution-dry-runs-and-plan-previews",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Terraform Plan Command",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.hashicorp.com/terraform/cli/commands/plan",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developer.hashicorp.com/terraform/cli/commands/plan"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Kubernetes API Concepts",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kubernetes.io/docs/reference/using-api/api-concepts/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://kubernetes.io/docs/reference/using-api/api-concepts/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Azure ARM What-If",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/deploy-what-if",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/deploy-what-if"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content/ai/agent-execution-knowledge-sources.md",
       "article_id": "agent-execution-knowledge-sources",
       "generation_method": "ai_structured",
@@ -727,6 +910,67 @@
       "sources_unreachable": 0,
       "manual_reviewed": true,
       "manual_reviewed_at": "2026-06-02"
+    },
+    {
+      "file": "content\\ai\\agent-feature-flags-and-remote-configuration.md",
+      "article_id": "agent-feature-flags-and-remote-configuration",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "OpenFeature Evaluation API",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://openfeature.dev/docs/reference/concepts/evaluation-api/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://openfeature.dev/docs/reference/concepts/evaluation-api/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Kubernetes Feature Gates",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Firebase Remote Config",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://firebase.google.com/docs/remote-config",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://firebase.google.com/docs/remote-config?hl=de"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content\\ai\\agent-human-in-the-loop-approval.md",
@@ -1078,6 +1322,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\agent-runbooks-and-incident-response.md",
+      "article_id": "agent-runbooks-and-incident-response",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Google SRE Managing Incidents",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://sre.google/sre-book/managing-incidents/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://sre.google/sre-book/managing-incidents/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "NIST Computer Security Incident Handling Guide",
+          "source_type": "government_report",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://csrc.nist.gov/pubs/sp/800/61/r2/final",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://csrc.nist.gov/pubs/sp/800/61/r2/final"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Atlassian Incident Response",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.atlassian.com/incident-management/incident-response",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.atlassian.com/incident-management/incident-response"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\agent-runtime-sandboxing.md",
       "article_id": "agent-runtime-sandboxing",
       "generation_method": "ai_structured",
@@ -1189,6 +1494,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://kubernetes.io/docs/concepts/configuration/secret/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-service-level-objectives-and-error-budgets.md",
+      "article_id": "agent-service-level-objectives-and-error-budgets",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Google Cloud SLO Monitoring",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.cloud.google.com/stackdriver/docs/solutions/slo-monitoring",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/stackdriver/docs/solutions/slo-monitoring"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Prometheus Alerting Rules",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://prometheus.io/docs/practices/alerting/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://prometheus.io/docs/practices/alerting/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Atlassian SLA vs SLO vs SLI",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.atlassian.com/incident-management/kpis/sla-vs-slo-vs-sli",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.atlassian.com/incident-management/kpis/sla-vs-slo-vs-sli"
               },
               "match": true
             }
@@ -1372,6 +1738,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://docs.cloud.google.com/tasks/docs/dual-overview"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-ticket-and-issue-tracker-lookup.md",
+      "article_id": "agent-ticket-and-issue-tracker-lookup",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "GitHub About Issues",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/issues/tracking-your-work-with-issues/learning-about-issues/about-issues",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/issues/tracking-your-work-with-issues/learning-about-issues/about-issues"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GitLab Issues",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.gitlab.com/user/project/issues/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.gitlab.com/user/project/issues/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Atlassian Jira Issues Overview",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.atlassian.com/software/jira/guides/issues/overview",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.atlassian.com/software/jira/guides/issues/overview"
               },
               "match": true
             }
@@ -1799,6 +2226,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://docs.aws.amazon.com/lambda/latest/dg/configuration-timeout.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-tool-use-evaluation.md",
+      "article_id": "agent-tool-use-evaluation",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "OpenAI Agent Evals",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://platform.openai.com/docs/guides/agent-evals",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.openai.com/api/docs/guides/agent-evals"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenAI Trace Grading",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://platform.openai.com/docs/guides/trace-grading",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.openai.com/api/docs/guides/trace-grading"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "LangSmith Evaluation Approaches",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.langchain.com/langsmith/evaluation-approaches",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.langchain.com/langsmith/evaluation-approaches"
               },
               "match": true
             }
@@ -13013,6 +13501,67 @@
       "manual_reviewed_at": "2026-05-28"
     },
     {
+      "file": "content\\ai\\cross-encoder-reranking-for-retrieval.md",
+      "article_id": "cross-encoder-reranking-for-retrieval",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Weaviate Reranking",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.weaviate.io/weaviate/concepts/reranking",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.weaviate.io/weaviate/concepts/reranking"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Pinecone Rerank Results",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.pinecone.io/guides/search/rerank-results",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.pinecone.io/guides/search/rerank-results"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Elastic Semantic Reranking",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.elastic.co/docs/solutions/search/ranking/semantic-reranking",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.elastic.co/docs/solutions/search/ranking/semantic-reranking"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content/ai/data-centric-ai.md",
       "article_id": "data-centric-ai",
       "generation_method": "ai_structured",
@@ -13920,6 +14469,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://github.com/pgvector/pgvector"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\embedding-model-upgrades-and-reindexing-risk.md",
+      "article_id": "embedding-model-upgrades-and-reindexing-risk",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "OpenAI Embeddings Guide",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.openai.com/api/docs/guides/embeddings",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.openai.com/api/docs/guides/embeddings"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Gemini API Embeddings",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://ai.google.dev/gemini-api/docs/embeddings",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://ai.google.dev/gemini-api/docs/embeddings"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Pinecone text-embedding-3-large",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.pinecone.io/models/text-embedding-3-large",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.pinecone.io/models/text-embedding-3-large"
               },
               "match": true
             }
@@ -16191,6 +16801,67 @@
       "sources_unreachable": 0,
       "manual_reviewed": true,
       "manual_reviewed_at": "2026-05-28"
+    },
+    {
+      "file": "content\\ai\\llm-red-teaming-and-adversarial-evaluation.md",
+      "article_id": "llm-red-teaming-and-adversarial-evaluation",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "NIST AI Risk Management Framework",
+          "source_type": "government_reference",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.nist.gov/itl/ai-risk-management-framework",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.nist.gov/itl/ai-risk-management-framework"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Google AI Red Team",
+          "source_type": "official_blog",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://blog.google/technology/safety-security/googles-ai-red-team-the-ethical-hackers-making-ai-safer/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://blog.google/innovation-and-ai/technology/safety-security/googles-ai-red-team-the-ethical-hackers-making-ai-safer/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OWASP Top 10 for LLM Applications",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://genai.owasp.org/llm-top-10/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://genai.owasp.org/llm-top-10/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content\\ai\\llm-regression-testing.md",
@@ -20397,6 +21068,67 @@
       "manual_reviewed_at": "2026-05-28"
     },
     {
+      "file": "content\\ai\\retrieval-access-control-and-permission-filtering.md",
+      "article_id": "retrieval-access-control-and-permission-filtering",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Azure AI Search Document-Level Access Control",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://learn.microsoft.com/en-us/azure/search/search-document-level-access-overview",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.microsoft.com/en-us/azure/search/search-document-level-access-overview"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Pinecone Filter by Metadata",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.pinecone.io/guides/search/filter-by-metadata",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.pinecone.io/guides/search/filter-by-metadata"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Elastic Document and Field Level Security",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.elastic.co/docs/deploy-manage/users-roles/cluster-or-deployment-auth/controlling-access-at-document-field-level",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.elastic.co/docs/deploy-manage/users-roles/cluster-or-deployment-auth/controlling-access-at-document-field-level"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\retrieval-caching-and-semantic-cache.md",
       "article_id": "retrieval-caching-and-semantic-cache",
       "generation_method": "ai_structured",
@@ -22170,6 +22902,67 @@
       "sources_unreachable": 0,
       "manual_reviewed": true,
       "manual_reviewed_at": "2026-05-28"
+    },
+    {
+      "file": "content\\ai\\vector-index-quantization-for-retrieval.md",
+      "article_id": "vector-index-quantization-for-retrieval",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Qdrant Quantization",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://qdrant.tech/documentation/manage-data/quantization/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://qdrant.tech/documentation/manage-data/quantization/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenSearch Vector Quantization",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.opensearch.org/latest/vector-search/optimizing-storage/knn-vector-quantization/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.opensearch.org/latest/vector-search/optimizing-storage/knn-vector-quantization/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Elasticsearch Dense Vector",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.elastic.co/guide/en/elasticsearch/reference/current/dense-vector.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.elastic.co/docs/reference/elasticsearch/mapping-reference/dense-vector"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content/ai/video-understanding.md",
@@ -37516,6 +38309,67 @@
       "manual_reviewed_at": "2026-05-28"
     },
     {
+      "file": "content\\computer-science\\source-maps-and-stack-trace-deobfuscation.md",
+      "article_id": "source-maps-and-stack-trace-deobfuscation",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "ECMA-426 Source Map",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://tc39.es/ecma426/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://tc39.es/ecma426/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Chrome DevTools Source Maps",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.chrome.com/docs/devtools/javascript/source-maps/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developer.chrome.com/docs/devtools/javascript/source-maps/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "webpack Devtool",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://webpack.js.org/configuration/devtool/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://webpack.js.org/configuration/devtool/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content/computer-science/spring-boot.md",
       "article_id": "kb-2026-00291",
       "generation_method": "human_only",
@@ -37767,6 +38621,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://eslint.org/docs/latest/extend/custom-rules"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\streaming-watermarks-and-late-data.md",
+      "article_id": "streaming-watermarks-and-late-data",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Apache Beam Basics",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://beam.apache.org/documentation/basics/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://beam.apache.org/documentation/basics/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Kafka Streams Core Concepts",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kafka.apache.org/30/streams/core-concepts/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://kafka.apache.org/30/streams/core-concepts/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Google Cloud Dataflow Streaming Pipelines",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.cloud.google.com/dataflow/docs/concepts/streaming-pipelines",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/dataflow/docs/concepts/streaming-pipelines"
               },
               "match": true
             }
@@ -56044,189 +56959,6 @@
       "sources_unreachable": 0
     },
     {
-      "file": "content\\ai\\agent-feature-flags-and-remote-configuration.md",
-      "article_id": "agent-feature-flags-and-remote-configuration",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "OpenFeature Evaluation API",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://openfeature.dev/docs/reference/concepts/evaluation-api/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://openfeature.dev/docs/reference/concepts/evaluation-api/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Kubernetes Feature Gates",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Firebase Remote Config",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://firebase.google.com/docs/remote-config",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://firebase.google.com/docs/remote-config?hl=de"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
-    },
-    {
-      "file": "content\\ai\\agent-runbooks-and-incident-response.md",
-      "article_id": "agent-runbooks-and-incident-response",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "Google SRE Managing Incidents",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://sre.google/sre-book/managing-incidents/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://sre.google/sre-book/managing-incidents/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "NIST Computer Security Incident Handling Guide",
-          "source_type": "government_report",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://csrc.nist.gov/pubs/sp/800/61/r2/final",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://csrc.nist.gov/pubs/sp/800/61/r2/final"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Atlassian Incident Response",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.atlassian.com/incident-management/incident-response",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://www.atlassian.com/incident-management/incident-response"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
-    },
-    {
-      "file": "content\\ai\\agent-service-level-objectives-and-error-budgets.md",
-      "article_id": "agent-service-level-objectives-and-error-budgets",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "Google Cloud SLO Monitoring",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.cloud.google.com/stackdriver/docs/solutions/slo-monitoring",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.cloud.google.com/stackdriver/docs/solutions/slo-monitoring"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Prometheus Alerting Rules",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://prometheus.io/docs/practices/alerting/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://prometheus.io/docs/practices/alerting/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Atlassian SLA vs SLO vs SLI",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.atlassian.com/incident-management/kpis/sla-vs-slo-vs-sli",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://www.atlassian.com/incident-management/kpis/sla-vs-slo-vs-sli"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
-    },
-    {
       "file": "content\\ai\\ai-for-genomics-variant-calling-gene-expression-prediction-and-protein-dna-binding.md",
       "article_id": "kb-2026-00005",
       "generation_method": "ai_structured",
@@ -56249,67 +56981,6 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 1
-    },
-    {
-      "file": "content\\ai\\embedding-model-upgrades-and-reindexing-risk.md",
-      "article_id": "embedding-model-upgrades-and-reindexing-risk",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "OpenAI Embeddings Guide",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://developers.openai.com/api/docs/guides/embeddings",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://developers.openai.com/api/docs/guides/embeddings"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Gemini API Embeddings",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://ai.google.dev/gemini-api/docs/embeddings",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://ai.google.dev/gemini-api/docs/embeddings"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Pinecone text-embedding-3-large",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.pinecone.io/models/text-embedding-3-large",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.pinecone.io/models/text-embedding-3-large"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
     },
     {
       "file": "content\\arts\\history-of-printing.md",
@@ -56352,10 +57023,7 @@
               "method": "url",
               "identifier": "https://www.phaidon.com/store/art/the-story-of-modern-art-9780714831398/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.phaidon.com/en-int/store/art/the-story-of-modern-art-9780714831398"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -56583,6 +57251,67 @@
       "sources_unreachable": 1
     },
     {
+      "file": "content\\computer-science\\api-contract-testing-and-mock-servers.md",
+      "article_id": "api-contract-testing-and-mock-servers",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Pact When to Use",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.pact.io/getting_started/what_is_pact_good_for",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.pact.io/getting_started/what_is_pact_good_for"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Pact JavaScript Consumer Tests",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.pact.io/implementation_guides/javascript/docs/consumer",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.pact.io/implementation_guides/javascript/docs/consumer"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Stoplight Prism",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://stoplight.io/open-source/prism",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://stoplight.io/open-source/prism"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\bloom-filters-space-efficient-probabilistic-data-structures.md",
       "article_id": "kb-2026-00029",
       "generation_method": "ai_structured",
@@ -56782,7 +57511,10 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/head-first-design-patterns/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.oreilly.com/head-first-design-patterns/"
+              },
               "match": false
             }
           ],
@@ -57043,7 +57775,10 @@
               "method": "url",
               "identifier": "https://nostarch.com/websec/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://nostarch.com/websec/"
+              },
               "match": false
             }
           ],
@@ -58105,7 +58840,10 @@
               "method": "url",
               "identifier": "https://mitpress.mit.edu/books/introduction-algorithms-5th-edition",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 403,
+                "final_url": "https://mitpress.mit.edu/books/introduction-algorithms-5th-edition"
+              },
               "match": false
             }
           ],
@@ -58322,7 +59060,10 @@
               "method": "url",
               "identifier": "https://www.rfc-editor.org/rfc/rfc8446",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.rfc-editor.org/rfc/rfc8446"
+              },
               "match": false
             }
           ],
@@ -58336,7 +59077,10 @@
               "method": "url",
               "identifier": "https://www.rfc-editor.org/rfc/rfc5246",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.rfc-editor.org/rfc/rfc5246"
+              },
               "match": false
             }
           ],
@@ -58709,7 +59453,10 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/linux-kernel/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.oreilly.com/linux-kernel/"
+              },
               "match": false
             }
           ],
@@ -58821,7 +59568,10 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.mvc",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://doi.org/10.1145/acmcs.2025.mvc"
+              },
               "match": false
             }
           ],
@@ -59011,10 +59761,7 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/head-first-design-patterns/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.oreilly.com/head-first-design-patterns/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -61025,7 +61772,10 @@
               "method": "url",
               "identifier": "https://www.stadion.com/stretching-scientifically-book/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 405,
+                "final_url": "https://www.stadion.com/stretching-scientifically-book/"
+              },
               "match": false
             }
           ],
@@ -61181,10 +61931,7 @@
               "method": "url",
               "identifier": "https://thamesandhudson.com/the-complete-pyramids-9780500285473",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.thamesandhudson.com/the-complete-pyramids-9780500285473"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -61536,7 +62283,10 @@
               "method": "url",
               "identifier": "https://www.cdc.gov/eis/field-epi-manual/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 403,
+                "final_url": "https://www.cdc.gov/eis/field-epi-manual/"
+              },
               "match": false
             }
           ],
