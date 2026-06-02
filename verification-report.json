@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-02T05:17:46.098Z",
-    "total_articles": 1116,
+    "generated": "2026-06-02T05:43:02.999Z",
+    "total_articles": 1128,
     "total_with_errors": 0,
     "average_sources_per_article": "2.6",
-    "overall_verification_rate": "88.3%",
-    "elapsed_ms": 117884,
-    "elapsed_sec": "117.9",
+    "overall_verification_rate": "88.4%",
+    "elapsed_ms": 110877,
+    "elapsed_sec": "110.9",
     "concurrency": 3
   },
   "articles": [
@@ -27374,6 +27374,67 @@
                 "manual_review": true,
                 "reviewed_at": "2026-05-28",
                 "note": "Fourteenth targeted public evidence repair pass; local verify-full was not run for this bounded manual-review update."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\api-contract-testing-and-mock-servers.md",
+      "article_id": "api-contract-testing-and-mock-servers",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Pact When to Use",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.pact.io/getting_started/what_is_pact_good_for",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.pact.io/getting_started/what_is_pact_good_for"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Pact JavaScript Consumer Tests",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.pact.io/implementation_guides/javascript/docs/consumer",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.pact.io/implementation_guides/javascript/docs/consumer"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Stoplight Prism",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://stoplight.io/open-source/prism",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://stoplight.io/open-source/prism"
               },
               "match": true
             }
@@ -56959,6 +57020,189 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\agent-container-image-registry-and-tags.md",
+      "article_id": "agent-container-image-registry-and-tags",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Docker Image Tag",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.docker.com/engine/reference/commandline/tag/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.docker.com/reference/cli/docker/image/tag/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Docker Hub Image Tags",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.docker.com/docker-hub/repos/manage/hub-images/tags/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.docker.com/docker-hub/repos/manage/hub-images/tags/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GitHub Container Registry",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/packages/getting-started-with-github-container-registry/about-github-container-registry",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-database-migration-history.md",
+      "article_id": "agent-database-migration-history",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Flyway Schema History Table",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://documentation.red-gate.com/flyway/flyway-concepts/migrations/flyway-schema-history-table",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://documentation.red-gate.com/flyway/flyway-concepts/migrations/flyway-schema-history-table"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Liquibase Core Concepts",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.liquibase.org/get-started/core-usage/liquibase-core-concepts-author-database-changes",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.liquibase.org/get-started/core-usage/liquibase-core-concepts-author-database-changes"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Prisma Migration Histories",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.prisma.io/docs/orm/prisma-migrate/understanding-prisma-migrate/migration-histories",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.prisma.io/docs/orm/prisma-migrate/understanding-prisma-migrate/migration-histories"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-service-ownership-and-on-call-schedules.md",
+      "article_id": "agent-service-ownership-and-on-call-schedules",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Backstage Software Catalog",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://backstage.io/docs/features/software-catalog/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://backstage.io/docs/features/software-catalog/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "PagerDuty Escalation Policies and Schedules",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://support.pagerduty.com/main/docs/escalation-policies-and-schedules",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://support.pagerduty.com/main/docs/escalation-policies-and-schedules"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Opsgenie Manage On-Call Schedules and Rotations",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://support.atlassian.com/opsgenie/docs/manage-on-call-schedules-and-rotations/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://support.atlassian.com/opsgenie/docs/manage-on-call-schedules-and-rotations/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\ai-for-genomics-variant-calling-gene-expression-prediction-and-protein-dna-binding.md",
       "article_id": "kb-2026-00005",
       "generation_method": "ai_structured",
@@ -56981,6 +57225,189 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 1
+    },
+    {
+      "file": "content\\ai\\llm-sampling-parameters-in-evaluation.md",
+      "article_id": "llm-sampling-parameters-in-evaluation",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Azure OpenAI REST API Reference",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://learn.microsoft.com/en-us/azure/foundry/openai/reference",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.microsoft.com/en-us/azure/foundry/openai/reference"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Anthropic Messages API",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.anthropic.com/en/api/messages",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://platform.claude.com/docs/en/api/messages"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Gemini API Text Generation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://ai.google.dev/gemini-api/docs/text-generation",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://ai.google.dev/gemini-api/docs/text-generation?hl=tr"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\retrieval-query-logs-and-search-observability.md",
+      "article_id": "retrieval-query-logs-and-search-observability",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Azure AI Search Monitor Queries",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://learn.microsoft.com/en-us/azure/search/search-monitor-queries",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.microsoft.com/en-us/azure/search/search-monitor-queries"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Elasticsearch Slow Logs",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.elastic.co/docs/deploy-manage/monitor/logging-configuration/slow-logs",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.elastic.co/docs/deploy-manage/monitor/logging-configuration/slow-logs"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenSearch Logs",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.opensearch.org/latest/install-and-configure/configuring-opensearch/logs/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.opensearch.org/latest/install-and-configure/configuring-opensearch/logs/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\vector-index-sharding-and-replication.md",
+      "article_id": "vector-index-sharding-and-replication",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Qdrant Distributed Deployment",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://qdrant.tech/documentation/guides/distributed_deployment/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://qdrant.tech/documentation/operations/distributed_deployment/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Weaviate Cluster Architecture",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.weaviate.io/weaviate/concepts/replication-architecture/cluster-architecture",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.weaviate.io/weaviate/concepts/replication-architecture/cluster-architecture"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Elasticsearch Nodes and Shards",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.elastic.co/guide/en/elasticsearch/reference/current/nodes-shards.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.elastic.co/docs/deploy-manage/distributed-architecture/clusters-nodes-shards"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content\\arts\\history-of-printing.md",
@@ -57023,7 +57450,10 @@
               "method": "url",
               "identifier": "https://www.phaidon.com/store/art/the-story-of-modern-art-9780714831398/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.phaidon.com/en-int/store/art/the-story-of-modern-art-9780714831398"
+              },
               "match": false
             }
           ],
@@ -57159,7 +57589,10 @@
               "method": "url",
               "identifier": "https://press.princeton.edu/books/paperback/9780691170817/the-theory-of-games-and-economic-behavior",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://press.princeton.edu/books/paperback/9780691170817/the-theory-of-games-and-economic-behavior"
+              },
               "match": false
             }
           ],
@@ -57251,22 +57684,22 @@
       "sources_unreachable": 1
     },
     {
-      "file": "content\\computer-science\\api-contract-testing-and-mock-servers.md",
-      "article_id": "api-contract-testing-and-mock-servers",
+      "file": "content\\computer-science\\api-idempotency-keys.md",
+      "article_id": "api-idempotency-keys",
       "generation_method": "ai_structured",
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Pact When to Use",
+          "source_title": "Stripe Idempotent Requests",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.pact.io/getting_started/what_is_pact_good_for",
+              "identifier": "https://docs.stripe.com/api/idempotent_requests",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://docs.pact.io/getting_started/what_is_pact_good_for"
+                "final_url": "https://docs.stripe.com/api/idempotent_requests"
               },
               "match": true
             }
@@ -57274,16 +57707,16 @@
           "all_verified": true
         },
         {
-          "source_title": "Pact JavaScript Consumer Tests",
+          "source_title": "Adyen API Idempotency",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.pact.io/implementation_guides/javascript/docs/consumer",
+              "identifier": "https://docs.adyen.com/development-resources/api-idempotency",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://docs.pact.io/implementation_guides/javascript/docs/consumer"
+                "final_url": "https://docs.adyen.com/development-resources/api-idempotency"
               },
               "match": true
             }
@@ -57291,16 +57724,16 @@
           "all_verified": true
         },
         {
-          "source_title": "Stoplight Prism",
-          "source_type": "documentation",
+          "source_title": "RFC 9110 HTTP Semantics",
+          "source_type": "standard",
           "results": [
             {
               "method": "url",
-              "identifier": "https://stoplight.io/open-source/prism",
+              "identifier": "https://datatracker.ietf.org/doc/html/rfc9110#section-9.2.2",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://stoplight.io/open-source/prism"
+                "final_url": "https://datatracker.ietf.org/doc/html/rfc9110"
               },
               "match": true
             }
@@ -57806,6 +58239,67 @@
       "sources_unreachable": 3
     },
     {
+      "file": "content\\computer-science\\data-backfills-and-replay-pipelines.md",
+      "article_id": "data-backfills-and-replay-pipelines",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Apache Airflow Backfill",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/backfill.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/backfill.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Dagster Backfilling Data",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.dagster.io/guides/build/partitions-and-backfills/backfilling-data",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.dagster.io/guides/build/partitions-and-backfills/backfilling-data"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "dbt Incremental Models",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.getdbt.com/docs/build/incremental-models",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.getdbt.com/docs/build/incremental-models"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\data-lake-architecture.md",
       "article_id": "kb-2026-00254",
       "generation_method": "ai_structured",
@@ -57836,7 +58330,10 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/lakehouse/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.oreilly.com/lakehouse/"
+              },
               "match": false
             }
           ],
@@ -58067,6 +58564,67 @@
       "sources_unreachable": 3
     },
     {
+      "file": "content\\computer-science\\debug-symbols-and-symbolication-for-code-agents.md",
+      "article_id": "debug-symbols-and-symbolication-for-code-agents",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "LLVM Source Level Debugging",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://llvm.org/docs/SourceLevelDebugging.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://llvm.org/docs/SourceLevelDebugging.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Sentry Debug Information Files",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.sentry.dev/cli/dif/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.sentry.dev/cli/dif/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "LLVM PDB Debug Info on Windows",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://blog.llvm.org/2017/08/llvm-on-windows-now-supports-pdb-debug.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://blog.llvm.org/2017/08/llvm-on-windows-now-supports-pdb-debug.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\decorator-pattern.md",
       "article_id": "kb-2026-00145",
       "generation_method": "ai_structured",
@@ -58268,6 +58826,67 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 1
+    },
+    {
+      "file": "content\\computer-science\\distributed-tracing-and-correlation-context.md",
+      "article_id": "distributed-tracing-and-correlation-context",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "W3C Trace Context",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.w3.org/TR/trace-context/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.w3.org/TR/trace-context/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenTelemetry Baggage",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://opentelemetry.io/docs/concepts/signals/baggage/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://opentelemetry.io/docs/concepts/signals/baggage/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "W3C Baggage",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.w3.org/TR/baggage/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.w3.org/TR/baggage/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\docker-networking.md",
@@ -59761,7 +60380,10 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/head-first-design-patterns/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.oreilly.com/head-first-design-patterns/"
+              },
               "match": false
             }
           ],
@@ -59902,6 +60524,67 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 3
+    },
+    {
+      "file": "content\\computer-science\\package-vulnerability-advisories-for-code-agents.md",
+      "article_id": "package-vulnerability-advisories-for-code-agents",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "GitHub Dependabot Alerts",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/code-security/dependabot/dependabot-alerts/about-dependabot-alerts",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/code-security/concepts/supply-chain-security/about-dependabot-alerts"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "npm Audit",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.npmjs.com/cli/v8/commands/npm-audit/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.npmjs.com/cli/v8/commands/npm-audit/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OSV API",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://google.github.io/osv.dev/api/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://google.github.io/osv.dev/api/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\paxos-algorithm-consensus-in-distributed-systems.md",
@@ -60301,6 +60984,67 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 3
+    },
+    {
+      "file": "content\\computer-science\\runtime-feature-detection-and-compatibility.md",
+      "article_id": "runtime-feature-detection-and-compatibility",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "MDN Feature Detection",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing/Feature_detection",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Testing/Feature_detection"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "MDN Browser Detection Using the User Agent",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Browser_detection_using_the_user_agent",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Browser_detection_using_the_user_agent"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "web.dev Baseline",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://web.dev/baseline",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://web.dev/baseline?hl=zh-cn"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\rust.md",
@@ -61931,7 +62675,10 @@
               "method": "url",
               "identifier": "https://thamesandhudson.com/the-complete-pyramids-9780500285473",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.thamesandhudson.com/the-complete-pyramids-9780500285473"
+              },
               "match": false
             }
           ],

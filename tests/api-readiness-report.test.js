@@ -150,9 +150,9 @@ console.log('AnchorFact API Readiness Report Tests\n');
 
 test('core query set defines subscription-readiness probes across paid-use categories', () => {
   assert(CORE_CORPUS_QUERIES.length >= 100, 'core query set should preserve the 100-query foundation');
-  assert(CORE_CORPUS_QUERIES.length <= 220, 'core query set should stay inside the expanded readiness-corpus range');
+  assert(CORE_CORPUS_QUERIES.length <= 235, 'core query set should stay inside the expanded readiness-corpus range');
   const categories = new Set(CORE_CORPUS_QUERIES.map(query => query.category));
-  for (const category of ['agent_execution_sources', 'agent_rag', 'api_mcp', 'security_governance', 'data_infrastructure', 'llm_evaluation', 'code_intelligence']) {
+  for (const category of ['agent_execution_sources', 'agent_rag', 'api_mcp', 'security_governance', 'data_infrastructure', 'llm_evaluation', 'developer_workflows', 'code_intelligence']) {
     assert(categories.has(category), `missing category ${category}`);
   }
   const slugs = CORE_CORPUS_QUERIES.map(query => query.expected_slug);
@@ -255,6 +255,9 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'ai/agent-ticket-and-issue-tracker-lookup',
     'ai/agent-audit-logs-and-activity-feeds',
     'ai/agent-execution-dry-runs-and-plan-previews',
+    'ai/agent-service-ownership-and-on-call-schedules',
+    'ai/agent-container-image-registry-and-tags',
+    'ai/agent-database-migration-history',
     'computer-science/repository-permissions-and-code-agent-access',
     'ai/agent-checkpointing-and-resumable-workflows',
     'computer-science/code-graphs-and-code-intelligence',
@@ -270,7 +273,16 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'computer-science/test-coverage-for-code-agents',
     'computer-science/mutation-testing-for-code-agents',
     'computer-science/build-graphs-and-incremental-build-systems',
-    'computer-science/source-maps-and-stack-trace-deobfuscation'
+    'computer-science/source-maps-and-stack-trace-deobfuscation',
+    'computer-science/debug-symbols-and-symbolication-for-code-agents',
+    'computer-science/package-vulnerability-advisories-for-code-agents',
+    'ai/vector-index-sharding-and-replication',
+    'ai/retrieval-query-logs-and-search-observability',
+    'ai/llm-sampling-parameters-in-evaluation',
+    'computer-science/api-idempotency-keys',
+    'computer-science/distributed-tracing-and-correlation-context',
+    'computer-science/data-backfills-and-replay-pipelines',
+    'computer-science/runtime-feature-detection-and-compatibility'
   ]) {
     assert(slugs.includes(slug), `missing agent/code-intelligence readiness slug ${slug}`);
   }
