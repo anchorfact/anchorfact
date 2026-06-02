@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-02T01:25:32.930Z",
-    "total_articles": 1024,
+    "generated": "2026-06-02T01:46:44.980Z",
+    "total_articles": 1032,
     "total_with_errors": 0,
     "average_sources_per_article": "2.5",
-    "overall_verification_rate": "87.0%",
-    "elapsed_ms": 99387,
-    "elapsed_sec": "99.4",
+    "overall_verification_rate": "87.1%",
+    "elapsed_ms": 100033,
+    "elapsed_sec": "100.0",
     "concurrency": 3
   },
   "articles": [
@@ -665,6 +665,50 @@
         }
       ],
       "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-planning-and-task-decomposition.md",
+      "article_id": "agent-planning-and-task-decomposition",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Agents - Docs by LangChain",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.langchain.com/oss/python/langchain/agents",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.langchain.com/oss/python/langchain/agents"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Agents - OpenAI Agents SDK",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://openai.github.io/openai-agents-python/agents/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://openai.github.io/openai-agents-python/agents/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
       "sources_unreachable": 0
     },
     {
@@ -12645,6 +12689,67 @@
       "manual_reviewed_at": "2026-05-28"
     },
     {
+      "file": "content\\ai\\evaluation-datasets-and-golden-tests-for-llms.md",
+      "article_id": "evaluation-datasets-and-golden-tests-for-llms",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "GitHub - openai/evals",
+          "source_type": "software_repository",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://github.com/openai/evals",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://github.com/openai/evals"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Holistic Evaluation of Language Models (HELM)",
+          "source_type": "benchmark",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://crfm.stanford.edu/helm/latest/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://crfm.stanford.edu/helm/latest/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GitHub - google/BIG-bench",
+          "source_type": "benchmark_repository",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://github.com/google/BIG-bench",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://github.com/google/BIG-bench"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content/ai/explainable-ai-xai.md",
       "article_id": "kb-2026-00277",
       "generation_method": "ai_structured",
@@ -17186,6 +17291,67 @@
       "sources_unreachable": 0,
       "manual_reviewed": true,
       "manual_reviewed_at": "2026-05-28"
+    },
+    {
+      "file": "content\\ai\\rag-chunking-and-context-window-management.md",
+      "article_id": "rag-chunking-and-context-window-management",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Text splitters",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.langchain.com/oss/python/integrations/splitters/index",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.langchain.com/oss/python/integrations/splitters/index"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Splitting recursively - Text splitter integration guide - Docs by LangChain",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.langchain.com/oss/python/integrations/splitters/recursive_text_splitter",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.langchain.com/oss/python/integrations/splitters/recursive_text_splitter"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Node Parser Usage Pattern | Developer Documentation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.llamaindex.ai/en/stable/module_guides/loading/node_parsers/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.llamaindex.ai/python/framework/module_guides/loading/node_parsers/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content\\ai\\rag-evaluation.md",
@@ -23575,6 +23741,67 @@
         }
       ],
       "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\api-idempotency-and-retry-semantics.md",
+      "article_id": "api-idempotency-and-retry-semantics",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "RFC 9110",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://datatracker.ietf.org/doc/html/rfc9110",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://datatracker.ietf.org/doc/html/rfc9110"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Idempotent requests",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.stripe.com/api/idempotent_requests",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.stripe.com/api/idempotent_requests"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Retry pattern",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://learn.microsoft.com/en-us/azure/architecture/patterns/retry",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/retry"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
       "sources_unreachable": 0
     },
     {
@@ -51154,22 +51381,22 @@
       "sources_unreachable": 0
     },
     {
-      "file": "content\\ai\\agent-planning-and-task-decomposition.md",
-      "article_id": "agent-planning-and-task-decomposition",
+      "file": "content\\ai\\agent-tool-authorization-and-permissions.md",
+      "article_id": "agent-tool-authorization-and-permissions",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Agents - Docs by LangChain",
-          "source_type": "documentation",
+          "source_title": "Authorization - Model Context Protocol",
+          "source_type": "specification",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.langchain.com/oss/python/langchain/agents",
+              "identifier": "https://modelcontextprotocol.io/specification/2025-06-18/basic/authorization",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://docs.langchain.com/oss/python/langchain/agents"
+                "final_url": "https://modelcontextprotocol.io/specification/2025-06-18/basic/authorization"
               },
               "match": true
             }
@@ -51177,16 +51404,33 @@
           "all_verified": true
         },
         {
-          "source_title": "Agents - OpenAI Agents SDK",
-          "source_type": "documentation",
+          "source_title": "RFC 6749 - The OAuth 2.0 Authorization Framework",
+          "source_type": "standard",
           "results": [
             {
               "method": "url",
-              "identifier": "https://openai.github.io/openai-agents-python/agents/",
+              "identifier": "https://datatracker.ietf.org/doc/html/rfc6749",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://openai.github.io/openai-agents-python/agents/"
+                "final_url": "https://datatracker.ietf.org/doc/html/rfc6749"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "RFC 8707 - Resource Indicators for OAuth 2.0",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://datatracker.ietf.org/doc/html/rfc8707",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://datatracker.ietf.org/doc/html/rfc8707"
               },
               "match": true
             }
@@ -51194,7 +51438,68 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 2,
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-tool-schema-validation.md",
+      "article_id": "agent-tool-schema-validation",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Tools - Model Context Protocol",
+          "source_type": "specification",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://modelcontextprotocol.io/specification/2025-06-18/server/tools",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://modelcontextprotocol.io/specification/2025-06-18/server/tools"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "JSON Schema Validation - Draft 2020-12",
+          "source_type": "specification",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://json-schema.org/draft/2020-12/json-schema-validation",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://json-schema.org/draft/2020-12/json-schema-validation"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Function calling - OpenAI API",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://platform.openai.com/docs/guides/function-calling?api-mode=chat",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.openai.com/api/docs/guides/function-calling"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
       "sources_unreachable": 0
     },
     {
@@ -51234,34 +51539,37 @@
             {
               "method": "url",
               "identifier": "https://www.nature.com/articles/s41586-023-06412-2",
-              "verified": false,
-              "metadata": {},
-              "match": false
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.nature.com/articles/s41586-023-06412-2"
+              },
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 1
+      "sources_verified": 1,
+      "sources_unreachable": 0
     },
     {
-      "file": "content\\ai\\evaluation-datasets-and-golden-tests-for-llms.md",
-      "article_id": "evaluation-datasets-and-golden-tests-for-llms",
+      "file": "content\\ai\\embedding-model-selection-and-vector-distance.md",
+      "article_id": "embedding-model-selection-and-vector-distance",
       "generation_method": "ai_structured",
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "GitHub - openai/evals",
-          "source_type": "software_repository",
+          "source_title": "Vector embeddings - OpenAI API",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://github.com/openai/evals",
+              "identifier": "https://platform.openai.com/docs/guides/embeddings",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://github.com/openai/evals"
+                "final_url": "https://developers.openai.com/api/docs/guides/embeddings"
               },
               "match": true
             }
@@ -51269,8 +51577,86 @@
           "all_verified": true
         },
         {
-          "source_title": "Holistic Evaluation of Language Models (HELM)",
-          "source_type": "benchmark",
+          "source_title": "Search - Qdrant",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://qdrant.tech/documentation/search/search/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://qdrant.tech/documentation/search/search/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "pgvector",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://github.com/pgvector/pgvector",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://github.com/pgvector/pgvector"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\evaluation-rubrics-and-grader-design.md",
+      "article_id": "evaluation-rubrics-and-grader-design",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Graders - OpenAI API",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://platform.openai.com/docs/guides/graders/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.openai.com/api/docs/guides/graders"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Evaluation concepts - LangSmith",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.langchain.com/langsmith/evaluation-concepts",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.langchain.com/langsmith/evaluation-concepts"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Holistic Evaluation of Language Models",
+          "source_type": "benchmark_documentation",
           "results": [
             {
               "method": "url",
@@ -51284,45 +51670,28 @@
             }
           ],
           "all_verified": true
-        },
-        {
-          "source_title": "GitHub - google/BIG-bench",
-          "source_type": "benchmark_repository",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://github.com/google/BIG-bench",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://github.com/google/BIG-bench"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
         }
       ],
       "sources_verified": 3,
       "sources_unreachable": 0
     },
     {
-      "file": "content\\ai\\rag-chunking-and-context-window-management.md",
-      "article_id": "rag-chunking-and-context-window-management",
+      "file": "content\\ai\\retrieval-query-rewriting.md",
+      "article_id": "retrieval-query-rewriting",
       "generation_method": "ai_structured",
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Text splitters",
+          "source_title": "Query Transformations - LlamaIndex",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.langchain.com/oss/python/integrations/splitters/index",
+              "identifier": "https://docs.llamaindex.ai/en/stable/optimizing/advanced_retrieval/query_transformations/",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://docs.langchain.com/oss/python/integrations/splitters/index"
+                "final_url": "https://developers.llamaindex.ai/python/framework/optimizing/advanced_retrieval/query_transformations/"
               },
               "match": true
             }
@@ -51330,16 +51699,16 @@
           "all_verified": true
         },
         {
-          "source_title": "Splitting recursively - Text splitter integration guide - Docs by LangChain",
+          "source_title": "Query fusion - LlamaIndex",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.langchain.com/oss/python/integrations/splitters/recursive_text_splitter",
+              "identifier": "https://docs.llamaindex.ai/en/stable/api_reference/retrievers/query_fusion/",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://docs.langchain.com/oss/python/integrations/splitters/recursive_text_splitter"
+                "final_url": "https://developers.llamaindex.ai/python/framework-api-reference/retrievers/query_fusion/"
               },
               "match": true
             }
@@ -51347,16 +51716,16 @@
           "all_verified": true
         },
         {
-          "source_title": "Node Parser Usage Pattern | Developer Documentation",
+          "source_title": "Retrieval - Docs by LangChain",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.llamaindex.ai/en/stable/module_guides/loading/node_parsers/",
+              "identifier": "https://docs.langchain.com/oss/python/langchain/retrieval",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://developers.llamaindex.ai/python/framework/module_guides/loading/node_parsers/"
+                "final_url": "https://docs.langchain.com/oss/python/langchain/retrieval"
               },
               "match": true
             }
@@ -51642,56 +52011,56 @@
       "sources_unreachable": 1
     },
     {
-      "file": "content\\computer-science\\api-idempotency-and-retry-semantics.md",
-      "article_id": "api-idempotency-and-retry-semantics",
+      "file": "content\\computer-science\\api-pagination-and-rate-limits.md",
+      "article_id": "api-pagination-and-rate-limits",
       "generation_method": "ai_structured",
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "RFC 9110",
+          "source_title": "Using pagination in the REST API - GitHub Docs",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/rest/using-the-rest-api/using-pagination-in-the-rest-api",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/rest/using-the-rest-api/using-pagination-in-the-rest-api"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Rate limits - Stripe Documentation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.stripe.com/rate-limits",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.stripe.com/rate-limits"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "RFC 6585 - Additional HTTP Status Codes",
           "source_type": "standard",
           "results": [
             {
               "method": "url",
-              "identifier": "https://datatracker.ietf.org/doc/html/rfc9110",
+              "identifier": "https://datatracker.ietf.org/doc/html/rfc6585",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://datatracker.ietf.org/doc/html/rfc9110"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Idempotent requests",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.stripe.com/api/idempotent_requests",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.stripe.com/api/idempotent_requests"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Retry pattern",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://learn.microsoft.com/en-us/azure/architecture/patterns/retry",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/retry"
+                "final_url": "https://datatracker.ietf.org/doc/html/rfc6585"
               },
               "match": true
             }
@@ -54761,6 +55130,67 @@
       "sources_unreachable": 3
     },
     {
+      "file": "content\\computer-science\\schema-evolution-for-data-pipelines.md",
+      "article_id": "schema-evolution-for-data-pipelines",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Apache Avro Specification",
+          "source_type": "specification",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://avro.apache.org/docs/1.12.0/specification/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://avro.apache.org/docs/1.12.0/specification/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Language Guide (proto 3) - Protocol Buffers",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://protobuf.dev/programming-guides/proto3/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://protobuf.dev/programming-guides/proto3/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Schema Evolution and Compatibility for Schema Registry",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.confluent.io/platform/current/schema-registry/fundamentals/schema-evolution.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.confluent.io/platform/current/schema-registry/fundamentals/schema-evolution.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\scrum-framework.md",
       "article_id": "kb-2026-00231",
       "generation_method": "human_only",
@@ -54901,6 +55331,67 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 3
+    },
+    {
+      "file": "content\\computer-science\\software-bill-of-materials-and-dependency-graphs.md",
+      "article_id": "software-bill-of-materials-and-dependency-graphs",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "About the dependency graph - GitHub Docs",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/about-the-dependency-graph",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/code-security/concepts/supply-chain-security/about-the-dependency-graph"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Specifications - SPDX",
+          "source_type": "specification",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://spdx.dev/use/specifications/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://spdx.dev/use/specifications/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "CycloneDX 1.6 JSON Schema",
+          "source_type": "specification",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/bom-1.6.schema.json",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://raw.githubusercontent.com/CycloneDX/specification/master/schema/bom-1.6.schema.json"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\software-development-life-cycle-sdlc.md",

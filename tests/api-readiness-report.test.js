@@ -150,7 +150,7 @@ console.log('AnchorFact API Readiness Report Tests\n');
 
 test('core query set defines subscription-readiness probes across paid-use categories', () => {
   assert(CORE_CORPUS_QUERIES.length >= 100, 'core query set should preserve the 100-query foundation');
-  assert(CORE_CORPUS_QUERIES.length <= 120, 'core query set should stay inside the 80-120 readiness-corpus range');
+  assert(CORE_CORPUS_QUERIES.length <= 140, 'core query set should stay inside the expanded readiness-corpus range');
   const categories = new Set(CORE_CORPUS_QUERIES.map(query => query.category));
   for (const category of ['agent_execution_sources', 'agent_rag', 'api_mcp', 'security_governance', 'data_infrastructure', 'llm_evaluation', 'code_intelligence']) {
     assert(categories.has(category), `missing category ${category}`);
@@ -163,21 +163,29 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'ai/agent-memory-and-session-state',
     'ai/agent-observability-and-tracing',
     'ai/agent-planning-and-task-decomposition',
+    'ai/agent-tool-schema-validation',
+    'ai/agent-tool-authorization-and-permissions',
     'ai/rag-evaluation',
     'ai/hybrid-retrieval-and-reranking',
     'ai/rag-chunking-and-context-window-management',
+    'ai/retrieval-query-rewriting',
+    'ai/embedding-model-selection-and-vector-distance',
     'ai/llm-as-judge-evaluation',
     'ai/agent-benchmarks',
     'ai/evaluation-datasets-and-golden-tests-for-llms',
+    'ai/evaluation-rubrics-and-grader-design',
     'computer-science/openapi-for-agent-tools',
+    'computer-science/api-pagination-and-rate-limits',
     'computer-science/data-catalogs-and-metadata-lineage',
     'computer-science/lakehouse-table-formats',
+    'computer-science/schema-evolution-for-data-pipelines',
     'computer-science/code-graphs-and-code-intelligence',
     'computer-science/program-symbols-definitions-and-references',
     'computer-science/abstract-syntax-trees-and-code-navigation',
     'computer-science/control-flow-and-data-flow-analysis',
     'computer-science/call-graphs-and-impact-analysis',
-    'computer-science/language-server-protocol-for-code-agents'
+    'computer-science/language-server-protocol-for-code-agents',
+    'computer-science/software-bill-of-materials-and-dependency-graphs'
   ]) {
     assert(slugs.includes(slug), `missing agent/code-intelligence readiness slug ${slug}`);
   }
