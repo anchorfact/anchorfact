@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-02T22:46:11.584Z",
-    "total_articles": 1454,
+    "generated": "2026-06-02T23:09:48.682Z",
+    "total_articles": 1464,
     "total_with_errors": 0,
     "average_sources_per_article": "2.6",
-    "overall_verification_rate": "91.1%",
-    "elapsed_ms": 95701,
-    "elapsed_sec": "95.7",
+    "overall_verification_rate": "91.2%",
+    "elapsed_ms": 96350,
+    "elapsed_sec": "96.3",
     "concurrency": 3
   },
   "articles": [
@@ -3704,6 +3704,50 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\agent-kubernetes-custom-resources-and-finalizers.md",
+      "article_id": "agent-kubernetes-custom-resources-and-finalizers",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Kubernetes Custom Resources",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Kubernetes Finalizers",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kubernetes.io/docs/concepts/overview/working-with-objects/finalizers/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://kubernetes.io/docs/concepts/overview/working-with-objects/finalizers/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\agent-kubernetes-ephemeral-containers-and-debugging.md",
       "article_id": "agent-kubernetes-ephemeral-containers-and-debugging",
       "generation_method": "ai_structured",
@@ -4954,6 +4998,50 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\agent-opentelemetry-tail-sampling-and-trace-retention.md",
+      "article_id": "agent-opentelemetry-tail-sampling-and-trace-retention",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "OpenTelemetry Sampling",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://opentelemetry.io/docs/concepts/sampling/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://opentelemetry.io/docs/concepts/sampling/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenTelemetry Collector Processors",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://opentelemetry.io/docs/collector/components/processor/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://opentelemetry.io/docs/collector/components/processor/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\agent-package-registry-and-version-lookup.md",
       "article_id": "agent-package-registry-and-version-lookup",
       "generation_method": "ai_structured",
@@ -5266,6 +5354,50 @@
         }
       ],
       "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-redis-slowlog-and-keyspace-notifications.md",
+      "article_id": "agent-redis-slowlog-and-keyspace-notifications",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Redis SLOWLOG GET",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://redis.io/docs/latest/commands/slowlog-get/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://redis.io/docs/latest/commands/slowlog-get/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Redis Keyspace Notifications",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://redis.io/docs/latest/develop/pubsub/keyspace-notifications/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://redis.io/docs/latest/develop/pubsub/keyspace-notifications/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
       "sources_unreachable": 0
     },
     {
@@ -22927,6 +23059,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\llm-evaluation-lm-eval-harness-task-yaml.md",
+      "article_id": "llm-evaluation-lm-eval-harness-task-yaml",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "lm-evaluation-harness New Task Guide",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://github.com/EleutherAI/lm-evaluation-harness/blob/main/docs/new_task_guide.md",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://github.com/EleutherAI/lm-evaluation-harness/blob/main/docs/new_task_guide.md"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "lm-evaluation-harness Task Guide",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://github.com/EleutherAI/lm-evaluation-harness/blob/main/docs/task_guide.md",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://github.com/EleutherAI/lm-evaluation-harness/blob/main/docs/task_guide.md"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "lm-evaluation-harness Interface",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://github.com/EleutherAI/lm-evaluation-harness/blob/main/docs/interface.md",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://github.com/EleutherAI/lm-evaluation-harness/blob/main/docs/interface.md"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\llm-evaluation-metric-templates-and-scorecards.md",
       "article_id": "llm-evaluation-metric-templates-and-scorecards",
       "generation_method": "ai_structured",
@@ -22986,6 +23179,50 @@
         }
       ],
       "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\llm-evaluation-mle-bench-machine-learning-engineering.md",
+      "article_id": "llm-evaluation-mle-bench-machine-learning-engineering",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "OpenAI MLE-bench Repository",
+          "source_type": "repository",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://github.com/openai/mle-bench",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://github.com/openai/mle-bench"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "MLE-bench OpenReview Paper",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://openreview.net/forum?id=6s5uXNWGIh",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://openreview.net/forum?id=6s5uXNWGIh"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
       "sources_unreachable": 0
     },
     {
@@ -31414,6 +31651,50 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\retrieval-vespa-rank-profiles-and-phased-ranking.md",
+      "article_id": "retrieval-vespa-rank-profiles-and-phased-ranking",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Vespa Ranking",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.vespa.ai/en/basics/ranking.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.vespa.ai/en/basics/ranking.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Vespa Phased Ranking",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.vespa.ai/en/ranking/phased-ranking.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.vespa.ai/en/ranking/phased-ranking.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content/ai/rlhf.md",
       "article_id": "kb-2026-00007",
       "generation_method": "ai_structured",
@@ -38387,6 +38668,50 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\api-graphql-federation-and-subgraph-schemas.md",
+      "article_id": "api-graphql-federation-and-subgraph-schemas",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Apollo Federation Subgraph Specification",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.apollographql.com/docs/graphos/schema-design/federated-schemas/reference/subgraph-spec",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.apollographql.com/docs/graphos/schema-design/federated-schemas/reference/subgraph-spec"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Apollo Federation Directives Reference",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.apollographql.com/docs/graphos/schema-design/federated-schemas/reference/directives",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.apollographql.com/docs/graphos/schema-design/federated-schemas/reference/directives"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\api-graphql-operation-names-and-variables-for-agents.md",
       "article_id": "api-graphql-operation-names-and-variables-for-agents",
       "generation_method": "ai_structured",
@@ -40195,6 +40520,50 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Prefer"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\api-protobuf-field-presence-and-unknown-fields.md",
+      "article_id": "api-protobuf-field-presence-and-unknown-fields",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Protocol Buffers Field Presence",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://protobuf.dev/programming-guides/field_presence/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://protobuf.dev/programming-guides/field_presence/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Protocol Buffers Proto3 Language Guide",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://protobuf.dev/programming-guides/proto3/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://protobuf.dev/programming-guides/proto3/"
               },
               "match": true
             }
@@ -43319,6 +43688,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\code-package-url-and-cpe-identifiers.md",
+      "article_id": "code-package-url-and-cpe-identifiers",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "ECMA Package-URL Specification",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://ecma-tc54.github.io/ECMA-427/multipage/purl-specification.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://ecma-tc54.github.io/ECMA-427/multipage/purl-specification.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "TC54 Package-URL",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://tc54.org/purl/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://tc54.org/purl/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "MITRE CPE Specifications",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://cpe.mitre.org/specification/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://cpe.mitre.org/specification/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content/computer-science/code-review-best-practices.md",
       "article_id": "kb-2026-00235",
       "generation_method": "human_only",
@@ -45707,6 +46137,50 @@
         }
       ],
       "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\data-clickhouse-mergetree-parts-and-mutations.md",
+      "article_id": "data-clickhouse-mergetree-parts-and-mutations",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "ClickHouse MergeTree Table Engine",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://clickhouse.com/docs/engines/table-engines/mergetree-family/mergetree",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://clickhouse.com/docs/engines/table-engines/mergetree-family/mergetree"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "ClickHouse system.mutations",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://clickhouse.com/docs/operations/system-tables/mutations",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://clickhouse.com/docs/operations/system-tables/mutations"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
       "sources_unreachable": 0
     },
     {
@@ -48319,6 +48793,50 @@
         }
       ],
       "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\data-trino-explain-plans-and-cost-estimates.md",
+      "article_id": "data-trino-explain-plans-and-cost-estimates",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Trino EXPLAIN",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://trino.io/docs/current/sql/explain.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://trino.io/docs/current/sql/explain.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Trino Cost in EXPLAIN",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://trino.io/docs/current/optimizer/cost-in-explain.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://trino.io/docs/current/optimizer/cost-in-explain.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
       "sources_unreachable": 0
     },
     {
@@ -76250,50 +76768,6 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 1
-    },
-    {
-      "file": "content\\computer-science\\api-graphql-federation-and-subgraph-schemas.md",
-      "article_id": "api-graphql-federation-and-subgraph-schemas",
-      "generation_method": "ai_structured",
-      "sources_total": 2,
-      "verification_results": [
-        {
-          "source_title": "Apollo Federation Subgraph Specification",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.apollographql.com/docs/graphos/schema-design/federated-schemas/reference/subgraph-spec",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://www.apollographql.com/docs/graphos/schema-design/federated-schemas/reference/subgraph-spec"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Apollo Federation Directives Reference",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.apollographql.com/docs/graphos/schema-design/federated-schemas/reference/directives",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://www.apollographql.com/docs/graphos/schema-design/federated-schemas/reference/directives"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\bloom-filters-space-efficient-probabilistic-data-structures.md",

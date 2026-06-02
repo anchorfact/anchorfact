@@ -150,7 +150,7 @@ console.log('AnchorFact API Readiness Report Tests\n');
 
 test('core query set defines subscription-readiness probes across paid-use categories', () => {
   assert(CORE_CORPUS_QUERIES.length >= 100, 'core query set should preserve the 100-query foundation');
-  assert(CORE_CORPUS_QUERIES.length <= 560, 'core query set should stay inside the expanded readiness-corpus range');
+  assert(CORE_CORPUS_QUERIES.length <= 570, 'core query set should stay inside the expanded readiness-corpus range');
   const categories = new Set(CORE_CORPUS_QUERIES.map(query => query.category));
   for (const category of ['agent_execution_sources', 'agent_rag', 'api_mcp', 'security_governance', 'data_infrastructure', 'llm_evaluation', 'developer_workflows', 'code_intelligence']) {
     assert(categories.has(category), `missing category ${category}`);
@@ -531,6 +531,9 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'ai/dense-retrieval-bi-encoders-and-dual-encoders',
     'ai/agent-workspace-filesystem-and-path-context',
     'ai/agent-terminal-output-and-exit-status',
+    'ai/agent-kubernetes-custom-resources-and-finalizers',
+    'ai/agent-redis-slowlog-and-keyspace-notifications',
+    'ai/agent-opentelemetry-tail-sampling-and-trace-retention',
     'ai/browser-devtools-protocol-for-agents',
     'computer-science/accessibility-tree-and-aria-for-ui-agents',
     'computer-science/package-lockfiles-and-reproducible-installs',
@@ -550,11 +553,14 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'ai/retrieval-milvus-collections-and-vector-indexes',
     'ai/retrieval-opensearch-neural-search-and-search-pipelines',
     'ai/retrieval-vespa-nearest-neighbor-and-weakand',
+    'ai/retrieval-vespa-rank-profiles-and-phased-ranking',
     'ai/llm-evaluation-benchmark-harnesses-and-task-registries',
     'ai/llm-evaluation-helm-scenarios-and-metrics',
     'ai/llm-evaluation-osworld-computer-use-benchmarks',
     'ai/llm-evaluation-webarena-web-agent-benchmarks',
     'ai/llm-evaluation-swe-bench-verified-code-agent-benchmarks',
+    'ai/llm-evaluation-mle-bench-machine-learning-engineering',
+    'ai/llm-evaluation-lm-eval-harness-task-yaml',
     'computer-science/openapi-operation-ids-and-links-for-agent-navigation',
     'computer-science/data-policy-tags-and-sensitive-column-governance',
     'computer-science/data-iceberg-branches-tags-and-write-audit-publish',
@@ -572,6 +578,7 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'computer-science/api-openapi-parameter-serialization-style-and-explode',
     'computer-science/api-openapi-arazzo-workflows-and-overlays',
     'computer-science/api-grpc-health-checking-for-agent-clients',
+    'computer-science/api-protobuf-field-presence-and-unknown-fields',
     'computer-science/api-oauth-token-revocation-and-refresh-tokens',
     'computer-science/api-grpc-status-codes-and-error-details',
     'computer-science/api-grpc-deadlines-and-cancellation',
@@ -582,9 +589,12 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'computer-science/data-parquet-row-groups-and-statistics',
     'computer-science/data-airflow-task-instances-and-xcom',
     'computer-science/data-spark-adaptive-query-execution-and-explain-plans',
+    'computer-science/data-trino-explain-plans-and-cost-estimates',
+    'computer-science/data-clickhouse-mergetree-parts-and-mutations',
     'computer-science/code-search-query-syntax-for-repository-agents',
     'computer-science/code-typescript-module-resolution-and-path-mapping',
     'computer-science/code-git-submodules-and-sparse-checkout-for-agents',
+    'computer-science/code-package-url-and-cpe-identifiers',
     'computer-science/lsp-rename-and-workspace-edits-for-code-agents',
     'ai/agent-secret-scanning-and-output-redaction',
     'ai/retrieval-payload-indexes-and-filter-performance',
