@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-02T09:14:43.471Z",
-    "total_articles": 1214,
+    "generated": "2026-06-02T09:58:14.612Z",
+    "total_articles": 1227,
     "total_with_errors": 0,
     "average_sources_per_article": "2.6",
-    "overall_verification_rate": "89.4%",
-    "elapsed_ms": 107006,
-    "elapsed_sec": "107.0",
+    "overall_verification_rate": "89.5%",
+    "elapsed_ms": 132603,
+    "elapsed_sec": "132.6",
     "concurrency": 3
   },
   "articles": [
@@ -765,6 +765,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\agent-ci-cache-and-build-artifacts.md",
+      "article_id": "agent-ci-cache-and-build-artifacts",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "GitHub Actions Dependency Caching",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/actions/reference/workflows-and-actions/dependency-caching",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/actions/reference/workflows-and-actions/dependency-caching"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GitHub Actions Store and Share Data",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/actions/tutorials/store-and-share-data",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/actions/tutorials/store-and-share-data"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GitLab Job Artifacts",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.gitlab.com/ci/jobs/job_artifacts/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.gitlab.com/ci/jobs/job_artifacts/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\agent-ci-logs-and-deployment-history.md",
       "article_id": "agent-ci-logs-and-deployment-history",
       "generation_method": "ai_structured",
@@ -948,6 +1009,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\agent-cloud-quotas-and-service-limits.md",
+      "article_id": "agent-cloud-quotas-and-service-limits",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "AWS Service Quotas",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Google Cloud Quotas",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://cloud.google.com/docs/quotas",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/docs/quotas"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Azure Quotas Overview",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://learn.microsoft.com/en-us/azure/quotas/quotas-overview",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.microsoft.com/en-us/azure/quotas/quotas-overview"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\agent-cloud-resource-inventory.md",
       "article_id": "agent-cloud-resource-inventory",
       "generation_method": "ai_structured",
@@ -1120,6 +1242,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-container-logs-exit-codes-and-restarts.md",
+      "article_id": "agent-container-logs-exit-codes-and-restarts",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Kubernetes Pod Lifecycle",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Kubernetes Logging Architecture",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kubernetes.io/docs/concepts/cluster-administration/logging/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://kubernetes.io/docs/concepts/cluster-administration/logging/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Docker Container Logs",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.docker.com/reference/cli/docker/container/logs/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.docker.com/reference/cli/docker/container/logs/"
               },
               "match": true
             }
@@ -1486,6 +1669,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://datatracker.ietf.org/doc/html/rfc7489"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-environment-variables-and-runtime-configuration.md",
+      "article_id": "agent-environment-variables-and-runtime-configuration",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Twelve-Factor App Config",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://12factor.net/config",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://12factor.net/config"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Kubernetes ConfigMaps",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kubernetes.io/docs/concepts/configuration/configmap/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://kubernetes.io/docs/concepts/configuration/configmap/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Docker Container Environment Variables",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.docker.com/engine/containers/run/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.docker.com/engine/containers/run/"
               },
               "match": true
             }
@@ -18994,6 +19238,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\llm-evaluation-human-review-and-adjudication.md",
+      "article_id": "llm-evaluation-human-review-and-adjudication",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "LangSmith Annotation Queues",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.langchain.com/langsmith/annotation-queues",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.langchain.com/langsmith/annotation-queues"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Arize AX Human Review",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arize.com/docs/ax/evaluate/human-review",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://arize.com/docs/ax/evaluate/human-review"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Label Studio LLM-as-Judge Agent Evaluation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://labelstud.io/learningcenter/how-to-use-llm-as-judge-for-agent-evaluation/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://labelstud.io/learningcenter/how-to-use-llm-as-judge-for-agent-evaluation/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\llm-evaluation-inter-annotator-agreement.md",
       "article_id": "llm-evaluation-inter-annotator-agreement",
       "generation_method": "ai_structured",
@@ -19105,6 +19410,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://argoproj.github.io/argo-rollouts/features/canary/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\llm-evaluation-prompt-versioning-and-experiment-tracking.md",
+      "article_id": "llm-evaluation-prompt-versioning-and-experiment-tracking",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "LangSmith Manage Prompts",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.langchain.com/langsmith/manage-prompts",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.langchain.com/langsmith/manage-prompts"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Langfuse Prompt Version Control",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://langfuse.com/docs/prompt-management/features/prompt-version-control",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://langfuse.com/docs/prompt-management/features/prompt-version-control"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Arize Phoenix Create a Prompt",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arize.com/docs/phoenix/prompt-engineering/how-to-prompts/create-a-prompt",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://arize.com/docs/phoenix/prompt-engineering/how-to-prompts/create-a-prompt"
               },
               "match": true
             }
@@ -24118,6 +24484,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\retrieval-federated-search-and-source-routing.md",
+      "article_id": "retrieval-federated-search-and-source-routing",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Elastic Cross-Cluster Search",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.elastic.co/docs/explore-analyze/cross-cluster-search",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.elastic.co/docs/explore-analyze/cross-cluster-search"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenSearch Cross-Cluster Search",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.opensearch.org/latest/search-plugins/cross-cluster-search/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.opensearch.org/latest/search-plugins/cross-cluster-search/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "SolrCloud Distributed Requests",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://solr.apache.org/guide/solr/latest/deployment-guide/solrcloud-distributed-requests.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://solr.apache.org/guide/solr/latest/deployment-guide/solrcloud-distributed-requests.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\retrieval-feedback-signals-and-click-logs.md",
       "article_id": "retrieval-feedback-signals-and-click-logs",
       "generation_method": "ai_structured",
@@ -24168,6 +24595,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://learn.microsoft.com/en-us/azure/search/search-monitor-queries"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\retrieval-index-aliases-and-zero-downtime-reindexing.md",
+      "article_id": "retrieval-index-aliases-and-zero-downtime-reindexing",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Elasticsearch Aliases",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.elastic.co/docs/manage-data/data-store/aliases",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.elastic.co/docs/manage-data/data-store/aliases"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenSearch Index Aliases",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.opensearch.org/latest/im-plugin/index-alias/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.opensearch.org/latest/im-plugin/index-alias/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Apache Solr Aliases",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://solr.apache.org/guide/solr/latest/deployment-guide/aliases.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://solr.apache.org/guide/solr/latest/deployment-guide/aliases.html"
               },
               "match": true
             }
@@ -24231,6 +24719,68 @@
                 "final_url": "https://tika.apache.org/3.2.1/gettingstarted.html"
               },
               "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\retrieval-late-interaction-and-colbert.md",
+      "article_id": "retrieval-late-interaction-and-colbert",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "ColBERT Late Interaction Retrieval",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "arxiv",
+              "identifier": "2004.12832",
+              "verified": true,
+              "metadata": {
+                "title": "arXiv Query: search_query=&amp;id_list=2004.12832&amp;start=0&amp;max_results=1"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "ColBERTv2 Efficient and Effective Retrieval",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "doi",
+              "identifier": "10.18653/v1/2022.naacl-main.272",
+              "verified": true,
+              "metadata": {
+                "title": "ColBERTv2: Effective and Efficient Retrieval via Lightweight Late Interaction",
+                "publisher": "Association for Computational Linguistics",
+                "year": 2022
+              },
+              "match": false
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "PLAID Late Interaction Retrieval Engine",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "doi",
+              "identifier": "10.1145/3511808.3557325",
+              "verified": true,
+              "metadata": {
+                "title": "PLAID",
+                "publisher": "ACM",
+                "year": 2022
+              },
+              "match": false
             }
           ],
           "all_verified": true
@@ -32067,6 +32617,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\api-service-discovery-and-dns-srv-records.md",
+      "article_id": "api-service-discovery-and-dns-srv-records",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "RFC 2782 DNS SRV",
+          "source_type": "rfc",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.rfc-editor.org/info/rfc2782/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.rfc-editor.org/info/rfc2782/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Kubernetes DNS for Services and Pods",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Consul DNS Interface",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.hashicorp.com/consul/docs/discover/dns",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developer.hashicorp.com/consul/docs/discover/dns"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\api-sunset-and-deprecation-headers.md",
       "article_id": "api-sunset-and-deprecation-headers",
       "generation_method": "ai_structured",
@@ -32300,6 +32911,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://docs.slack.dev/authentication/verifying-requests-from-slack/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\api-websocket-heartbeats-and-close-codes.md",
+      "article_id": "api-websocket-heartbeats-and-close-codes",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "RFC 6455 WebSocket Protocol",
+          "source_type": "rfc",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://datatracker.ietf.org/doc/html/rfc6455",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://datatracker.ietf.org/doc/html/rfc6455"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "MDN CloseEvent Code",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/API/CloseEvent",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developer.mozilla.org/en-US/docs/Web/API/CloseEvent"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "websockets Keepalive and Latency",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://websockets.readthedocs.io/en/stable/topics/keepalive.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://websockets.readthedocs.io/en/stable/topics/keepalive.html"
               },
               "match": true
             }
@@ -34888,6 +35560,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\data-change-data-feed-and-incremental-table-reads.md",
+      "article_id": "data-change-data-feed-and-incremental-table-reads",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Delta Lake Change Data Feed",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.delta.io/delta-change-data-feed/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.delta.io/delta-change-data-feed/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Databricks Delta Change Data Feed",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.databricks.com/aws/en/delta/delta-change-data-feed",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.databricks.com/aws/en/delta/delta-change-data-feed"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Apache Hudi SQL Queries",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://hudi.apache.org/docs/sql_queries/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://hudi.apache.org/docs/sql_queries/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\data-column-level-lineage-and-impact-analysis.md",
       "article_id": "data-column-level-lineage-and-impact-analysis",
       "generation_method": "ai_structured",
@@ -35121,6 +35854,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://airflow.apache.org/docs/apache-airflow/stable/howto/deadline-alerts.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\data-iceberg-metadata-tables-and-manifests.md",
+      "article_id": "data-iceberg-metadata-tables-and-manifests",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "StarRocks Iceberg Metadata Tables",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.starrocks.io/docs/data_source/catalog/iceberg/iceberg_meta_table/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.starrocks.io/docs/data_source/catalog/iceberg/iceberg_meta_table/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Apache Iceberg MetadataTableType",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://iceberg.apache.org/javadoc/latest/org/apache/iceberg/MetadataTableType.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://iceberg.apache.org/javadoc/latest/org/apache/iceberg/MetadataTableType.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Trino Iceberg Connector",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://trino.io/docs/current/connector/iceberg.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://trino.io/docs/current/connector/iceberg.html"
               },
               "match": true
             }
@@ -62961,68 +63755,6 @@
       "sources_unreachable": 1
     },
     {
-      "file": "content\\ai\\retrieval-late-interaction-and-colbert.md",
-      "article_id": "retrieval-late-interaction-and-colbert",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "ColBERT Late Interaction Retrieval",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "arxiv",
-              "identifier": "2004.12832",
-              "verified": true,
-              "metadata": {
-                "title": "arXiv Query: search_query=&amp;id_list=2004.12832&amp;start=0&amp;max_results=1"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "ColBERTv2 Efficient and Effective Retrieval",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "doi",
-              "identifier": "10.18653/v1/2022.naacl-main.272",
-              "verified": true,
-              "metadata": {
-                "title": "ColBERTv2: Effective and Efficient Retrieval via Lightweight Late Interaction",
-                "publisher": "Association for Computational Linguistics",
-                "year": 2022
-              },
-              "match": false
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "PLAID Late Interaction Retrieval Engine",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "doi",
-              "identifier": "10.1145/3511808.3557325",
-              "verified": true,
-              "metadata": {
-                "title": "PLAID",
-                "publisher": "ACM",
-                "year": 2022
-              },
-              "match": false
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
-    },
-    {
       "file": "content\\arts\\history-of-printing.md",
       "article_id": "kb-2026-00479",
       "generation_method": "ai_assisted",
@@ -63063,10 +63795,7 @@
               "method": "url",
               "identifier": "https://www.phaidon.com/store/art/the-story-of-modern-art-9780714831398/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.phaidon.com/en-int/store/art/the-story-of-modern-art-9780714831398"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -63464,6 +64193,67 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 3
+    },
+    {
+      "file": "content\\computer-science\\code-codemods-and-ast-transforms-for-agents.md",
+      "article_id": "code-codemods-and-ast-transforms-for-agents",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "jscodeshift API Reference",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://jscodeshift.com/build/api-reference/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://jscodeshift.com/build/api-reference/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Babel Core Documentation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://babeljs.io/docs/babel-core",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://babeljs.io/docs/babel-core"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "ast-grep Rewrite Code",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://ast-grep.github.io/guide/rewrite-code.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://ast-grep.github.io/guide/rewrite-code.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\command-pattern.md",
@@ -65278,10 +66068,7 @@
               "method": "url",
               "identifier": "https://mitpress.mit.edu/books/types-and-programming-languages",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://mitpress.mit.edu/books/types-and-programming-languages"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -65749,10 +66536,7 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/head-first-design-patterns/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.oreilly.com/head-first-design-patterns/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -66649,7 +67433,10 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/websec/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.oreilly.com/websec/"
+              },
               "match": false
             }
           ],
@@ -67655,10 +68442,7 @@
               "method": "url",
               "identifier": "https://www.cdc.gov/eis/field-epi-manual/",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.cdc.gov/eis/field-epi-manual/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -68112,10 +68896,7 @@
               "method": "url",
               "identifier": "https://pubs.geoscienceworld.org/gsa/geology/",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://pubs.geoscienceworld.org/gsa/geology/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
