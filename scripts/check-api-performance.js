@@ -19,10 +19,10 @@ export const DEFAULT_RUNS = 30;
 export const DEFAULT_WARMUPS = 5;
 
 export const DEFAULT_ARTIFACT_SIZE_BUDGETS = [
-  { path: 'graph.json', baseline_bytes: 2997236, max_bytes: 5100000, purpose: 'offline relationship graph' },
+  { path: 'graph.json', baseline_bytes: 2997236, max_bytes: 5175000, purpose: 'offline relationship graph' },
   { path: 'search-index.json', baseline_bytes: 1986169, max_bytes: 3325000, purpose: 'offline search fallback' },
-  { path: 'claims.json', baseline_bytes: 1738706, max_bytes: 2925000, purpose: 'offline claim corpus' },
-  { path: 'sources.json', baseline_bytes: 1175562, max_bytes: 1925000, purpose: 'offline source corpus' },
+  { path: 'claims.json', baseline_bytes: 1738706, max_bytes: 2975000, purpose: 'offline claim corpus' },
+  { path: 'sources.json', baseline_bytes: 1175562, max_bytes: 1975000, purpose: 'offline source corpus' },
   { path: 'manifest.json', baseline_bytes: 693188, max_bytes: 1050000, purpose: 'public/draft article catalog' },
   { path: 'llms.txt', baseline_bytes: 253376, max_bytes: 400000, purpose: 'crawler-facing public index' },
   { path: 'openapi.json', baseline_bytes: 61580, max_bytes: 100000, purpose: 'machine contract schema' },

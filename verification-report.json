@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-02T21:27:30.707Z",
-    "total_articles": 1432,
+    "generated": "2026-06-02T22:02:14.717Z",
+    "total_articles": 1443,
     "total_with_errors": 0,
     "average_sources_per_article": "2.6",
-    "overall_verification_rate": "91.0%",
-    "elapsed_ms": 94703,
-    "elapsed_sec": "94.7",
+    "overall_verification_rate": "91.1%",
+    "elapsed_ms": 96584,
+    "elapsed_sec": "96.6",
     "concurrency": 3
   },
   "articles": [
@@ -3284,6 +3284,50 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\agent-github-actions-environments-and-deployment-review.md",
+      "article_id": "agent-github-actions-environments-and-deployment-review",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "GitHub Manage Environments",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/actions/how-tos/deploy/configure-and-manage-deployments/manage-environments",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/actions/how-tos/deploy/configure-and-manage-deployments/manage-environments"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GitHub Review Deployments",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/actions/how-tos/deploy/configure-and-manage-deployments/review-deployments",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/actions/how-tos/deploy/configure-and-manage-deployments/review-deployments"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\agent-github-actions-run-attempts-and-job-summaries.md",
       "article_id": "agent-github-actions-run-attempts-and-job-summaries",
       "generation_method": "ai_structured",
@@ -3765,6 +3809,50 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\agent-kubernetes-init-containers-and-sidecar-containers.md",
+      "article_id": "agent-kubernetes-init-containers-and-sidecar-containers",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Kubernetes Init Containers",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kubernetes.io/docs/concepts/workloads/pods/init-containers/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://kubernetes.io/docs/concepts/workloads/pods/init-containers/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Kubernetes Sidecar Containers",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kubernetes.io/docs/concepts/workloads/pods/sidecar-containers/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://kubernetes.io/docs/concepts/workloads/pods/sidecar-containers/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\agent-kubernetes-network-policies-and-ingress-rules.md",
       "article_id": "agent-kubernetes-network-policies-and-ingress-rules",
       "generation_method": "ai_structured",
@@ -3964,6 +4052,50 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://kubernetes.io/docs/concepts/workloads/pods/pod-condition/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-kubernetes-rbac-and-subjectaccessreviews.md",
+      "article_id": "agent-kubernetes-rbac-and-subjectaccessreviews",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Kubernetes RBAC",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kubernetes.io/docs/reference/access-authn-authz/rbac/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://kubernetes.io/docs/reference/access-authn-authz/rbac/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Kubernetes Authorization",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kubernetes.io/docs/reference/access-authn-authz/authorization/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://kubernetes.io/docs/reference/access-authn-authz/authorization/"
               },
               "match": true
             }
@@ -27370,6 +27502,50 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\rag-document-content-hashes-and-reindex-triggers.md",
+      "article_id": "rag-document-content-hashes-and-reindex-triggers",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "LlamaIndex Ingestion Pipeline",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.llamaindex.ai/python/framework/module_guides/loading/ingestion_pipeline/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.llamaindex.ai/python/framework/module_guides/loading/ingestion_pipeline/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "LangChain RecordManager API Reference",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://api.python.langchain.com/en/latest/core/indexing/langchain_core.indexing.base.RecordManager.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://reference.langchain.com/?lang=python"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\rag-document-deletion-and-tombstone-handling.md",
       "article_id": "rag-document-deletion-and-tombstone-handling",
       "generation_method": "ai_structured",
@@ -29088,6 +29264,50 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\retrieval-elasticsearch-point-in-time-and-search-after.md",
+      "article_id": "retrieval-elasticsearch-point-in-time-and-search-after",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Elasticsearch Paginate Search Results",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.elastic.co/docs/reference/elasticsearch/rest-apis/paginate-search-results",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.elastic.co/docs/reference/elasticsearch/rest-apis/paginate-search-results"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Elasticsearch Open Point in Time API",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.elastic.co/docs/api/doc/elasticsearch/operation/operation-open-point-in-time",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.elastic.co/docs/api/doc/elasticsearch/operation/operation-open-point-in-time"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\retrieval-embedding-drift-and-index-quality.md",
       "article_id": "retrieval-embedding-drift-and-index-quality",
       "generation_method": "ai_structured",
@@ -30727,6 +30947,50 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://docs.pinecone.io/guides/search/hybrid-search"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\retrieval-vespa-nearest-neighbor-and-weakand.md",
+      "article_id": "retrieval-vespa-nearest-neighbor-and-weakand",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Vespa YQL Reference",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.vespa.ai/en/reference/querying/yql.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.vespa.ai/en/reference/querying/yql.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Vespa WAND",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.vespa.ai/en/ranking/wand.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.vespa.ai/en/ranking/wand.html"
               },
               "match": true
             }
@@ -37843,6 +38107,50 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\api-grpc-deadlines-and-cancellation.md",
+      "article_id": "api-grpc-deadlines-and-cancellation",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "gRPC Deadlines",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://grpc.io/docs/guides/deadlines/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://grpc.io/docs/guides/deadlines/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "gRPC Cancellation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://grpc.io/docs/guides/cancellation/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://grpc.io/docs/guides/cancellation/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\api-grpc-health-checking-for-agent-clients.md",
       "article_id": "api-grpc-health-checking-for-agent-clients",
       "generation_method": "ai_structured",
@@ -38609,6 +38917,50 @@
         }
       ],
       "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\api-mcp-sampling-and-elicitation.md",
+      "article_id": "api-mcp-sampling-and-elicitation",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "MCP Sampling",
+          "source_type": "specification",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://modelcontextprotocol.io/specification/2025-06-18/client/sampling",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://modelcontextprotocol.io/specification/2025-06-18/client/sampling"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "MCP Elicitation",
+          "source_type": "specification",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://modelcontextprotocol.io/specification/2025-06-18/client/elicitation",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://modelcontextprotocol.io/specification/2025-06-18/client/elicitation"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
       "sources_unreachable": 0
     },
     {
@@ -42086,6 +42438,50 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\code-git-submodules-and-sparse-checkout-for-agents.md",
+      "article_id": "code-git-submodules-and-sparse-checkout-for-agents",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Git Book Submodules",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://git-scm.com/book/en/v2/Git-Tools-Submodules",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://git-scm.com/book/en/v2/Git-Tools-Submodules"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Git Sparse Checkout",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://git-scm.com/docs/git-sparse-checkout",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://git-scm.com/docs/git-sparse-checkout"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content/computer-science/code-graphs-and-code-intelligence.md",
       "article_id": "code-graphs-and-code-intelligence",
       "generation_method": "ai_structured",
@@ -44421,6 +44817,50 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\data-airflow-task-instances-and-xcom.md",
+      "article_id": "data-airflow-task-instances-and-xcom",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Apache Airflow Tasks",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/tasks.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/tasks.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Apache Airflow XComs",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/xcoms.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/xcoms.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\data-apache-arrow-columnar-interchange.md",
       "article_id": "data-apache-arrow-columnar-interchange",
       "generation_method": "ai_structured",
@@ -44584,6 +45024,50 @@
         }
       ],
       "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\data-bigquery-job-statistics-and-query-plans.md",
+      "article_id": "data-bigquery-job-statistics-and-query-plans",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "BigQuery Query Plan and Timeline",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.cloud.google.com/bigquery/docs/query-plan-explanation",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/bigquery/docs/query-plan-explanation"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "BigQuery INFORMATION_SCHEMA JOBS View",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://cloud.google.com/bigquery/docs/information-schema-jobs",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/bigquery/docs/information-schema-jobs"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
       "sources_unreachable": 0
     },
     {
@@ -46413,6 +46897,50 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\data-parquet-row-groups-and-statistics.md",
+      "article_id": "data-parquet-row-groups-and-statistics",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Apache Parquet Concepts",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://parquet.apache.org/docs/concepts/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://parquet.apache.org/docs/concepts/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Apache Parquet Page Index",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://parquet.apache.org/docs/file-format/pageindex/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://parquet.apache.org/docs/file-format/pageindex/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\data-partition-pruning-and-query-scanning.md",
       "article_id": "data-partition-pruning-and-query-scanning",
       "generation_method": "ai_structured",
@@ -47125,6 +47653,50 @@
         }
       ],
       "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\data-spark-adaptive-query-execution-and-explain-plans.md",
+      "article_id": "data-spark-adaptive-query-execution-and-explain-plans",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Spark SQL Performance Tuning",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://spark.apache.org/docs/latest/sql-performance-tuning.html#adaptive-query-execution",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://spark.apache.org/docs/latest/sql-performance-tuning.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Spark SQL EXPLAIN",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://spark.apache.org/docs/latest/sql-ref-syntax-qry-explain.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://spark.apache.org/docs/latest/sql-ref-syntax-qry-explain.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
       "sources_unreachable": 0
     },
     {
@@ -74906,22 +75478,21 @@
       "sources_unreachable": 1
     },
     {
-      "file": "content\\ai\\rag-document-content-hashes-and-reindex-triggers.md",
-      "article_id": "rag-document-content-hashes-and-reindex-triggers",
+      "file": "content\\ai\\llm-evaluation-osworld-computer-use-benchmarks.md",
+      "article_id": "llm-evaluation-osworld-computer-use-benchmarks",
       "generation_method": "ai_structured",
       "sources_total": 2,
       "verification_results": [
         {
-          "source_title": "LlamaIndex Ingestion Pipeline",
-          "source_type": "documentation",
+          "source_title": "OSWorld Benchmark Paper",
+          "source_type": "academic_paper",
           "results": [
             {
-              "method": "url",
-              "identifier": "https://developers.llamaindex.ai/python/framework/module_guides/loading/ingestion_pipeline/",
+              "method": "arxiv",
+              "identifier": "2404.07972",
               "verified": true,
               "metadata": {
-                "status": 200,
-                "final_url": "https://developers.llamaindex.ai/python/framework/module_guides/loading/ingestion_pipeline/"
+                "title": "arXiv Query: search_query=&amp;id_list=2404.07972&amp;start=0&amp;max_results=1"
               },
               "match": true
             }
@@ -74929,16 +75500,16 @@
           "all_verified": true
         },
         {
-          "source_title": "LangChain RecordManager API Reference",
-          "source_type": "documentation",
+          "source_title": "OSWorld Repository",
+          "source_type": "software_repository",
           "results": [
             {
               "method": "url",
-              "identifier": "https://api.python.langchain.com/en/latest/core/indexing/langchain_core.indexing.base.RecordManager.html",
+              "identifier": "https://github.com/xlang-ai/OSWorld",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://reference.langchain.com/?lang=python"
+                "final_url": "https://github.com/xlang-ai/OSWorld"
               },
               "match": true
             }
@@ -75718,50 +76289,6 @@
       "sources_unreachable": 3
     },
     {
-      "file": "content\\computer-science\\data-bigquery-job-statistics-and-query-plans.md",
-      "article_id": "data-bigquery-job-statistics-and-query-plans",
-      "generation_method": "ai_structured",
-      "sources_total": 2,
-      "verification_results": [
-        {
-          "source_title": "BigQuery Query Plan and Timeline",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.cloud.google.com/bigquery/docs/query-plan-explanation",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.cloud.google.com/bigquery/docs/query-plan-explanation"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "BigQuery INFORMATION_SCHEMA JOBS View",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://cloud.google.com/bigquery/docs/information-schema-jobs",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.cloud.google.com/bigquery/docs/information-schema-jobs"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
-    },
-    {
       "file": "content\\computer-science\\data-lake-architecture.md",
       "article_id": "kb-2026-00254",
       "generation_method": "ai_structured",
@@ -75821,50 +76348,6 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 3
-    },
-    {
-      "file": "content\\computer-science\\data-parquet-row-groups-and-statistics.md",
-      "article_id": "data-parquet-row-groups-and-statistics",
-      "generation_method": "ai_structured",
-      "sources_total": 2,
-      "verification_results": [
-        {
-          "source_title": "Apache Parquet Concepts",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://parquet.apache.org/docs/concepts/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://parquet.apache.org/docs/concepts/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Apache Parquet Page Index",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://parquet.apache.org/docs/file-format/pageindex/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://parquet.apache.org/docs/file-format/pageindex/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\data-warehousing.md",
