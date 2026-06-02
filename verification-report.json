@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-02T08:40:12.988Z",
-    "total_articles": 1201,
+    "generated": "2026-06-02T09:14:43.471Z",
+    "total_articles": 1214,
     "total_with_errors": 0,
     "average_sources_per_article": "2.6",
-    "overall_verification_rate": "89.2%",
-    "elapsed_ms": 104812,
-    "elapsed_sec": "104.8",
+    "overall_verification_rate": "89.4%",
+    "elapsed_ms": 107006,
+    "elapsed_sec": "107.0",
     "concurrency": 3
   },
   "articles": [
@@ -582,6 +582,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\agent-browser-console-network-and-har-logs.md",
+      "article_id": "agent-browser-console-network-and-har-logs",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Chrome DevTools Console",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.chrome.com/docs/devtools/console?hl=en",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developer.chrome.com/docs/devtools/console?hl=en"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Chrome DevTools Network Panel",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.chrome.com/docs/devtools/network?hl=en",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developer.chrome.com/docs/devtools/network?hl=en"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Chrome DevTools Save as HAR",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.chrome.com/docs/devtools/network/reference?hl=en#save-as-har",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developer.chrome.com/docs/devtools/network/reference?hl=en"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\agent-cdn-cache-headers-and-invalidation.md",
       "article_id": "agent-cdn-cache-headers-and-invalidation",
       "generation_method": "ai_structured",
@@ -815,6 +876,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://learn.microsoft.com/en-us/azure/cost-management-billing/costs/cost-mgt-alerts-monitor-usage-spending"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-cloud-firewall-and-security-group-rules.md",
+      "article_id": "agent-cloud-firewall-and-security-group-rules",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "AWS VPC Security Groups",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.aws.amazon.com/vpc/latest/userguide/vpc-security-groups.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.aws.amazon.com/vpc/latest/userguide/vpc-security-groups.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Google Cloud Firewall Rules",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://cloud.google.com/firewall/docs/firewalls?hl=en",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/firewall/docs/firewalls?hl=en"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Azure Network Security Groups",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://learn.microsoft.com/en-us/azure/virtual-network/network-security-groups-overview",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.microsoft.com/en-us/azure/virtual-network/network-security-groups-overview"
               },
               "match": true
             }
@@ -1303,6 +1425,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-overview?tabs=python-v2"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-email-authentication-records.md",
+      "article_id": "agent-email-authentication-records",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Google Workspace Set Up SPF",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://knowledge.workspace.google.com/admin/security/set-up-spf?hl=en",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://knowledge.workspace.google.com/admin/security/set-up-spf?hl=en"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Google Workspace Set Up DKIM",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://knowledge.workspace.google.com/admin/security/set-up-dkim?hl=en",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://knowledge.workspace.google.com/admin/security/set-up-dkim?hl=en"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "RFC 7489 DMARC",
+          "source_type": "rfc",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://datatracker.ietf.org/doc/html/rfc7489",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://datatracker.ietf.org/doc/html/rfc7489"
               },
               "match": true
             }
@@ -2254,6 +2437,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\agent-object-storage-bucket-policies-and-access.md",
+      "article_id": "agent-object-storage-bucket-policies-and-access",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Amazon S3 Bucket Policies",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Google Cloud Storage IAM",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://cloud.google.com/storage/docs/access-control/iam",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/storage/docs/access-control/iam"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Azure Blob Access with Microsoft Entra ID",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://learn.microsoft.com/en-us/azure/storage/blobs/authorize-access-azure-active-directory",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.microsoft.com/en-us/azure/storage/blobs/authorize-access-azure-active-directory"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\agent-observability-and-tracing.md",
       "article_id": "agent-observability-and-tracing",
       "generation_method": "ai_structured",
@@ -2653,6 +2897,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://csrc.nist.gov/pubs/sp/800/190/final"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-saml-sso-and-identity-provider-logs.md",
+      "article_id": "agent-saml-sso-and-identity-provider-logs",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Microsoft SAML Single Sign-On Protocol",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://learn.microsoft.com/en-us/entra/identity-platform/single-sign-on-saml-protocol",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.microsoft.com/en-us/entra/identity-platform/single-sign-on-saml-protocol"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Microsoft Entra Sign-In Logs",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://learn.microsoft.com/en-us/entra/identity/monitoring-health/concept-sign-ins",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.microsoft.com/en-us/entra/identity/monitoring-health/concept-sign-ins"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Okta User Sign-In Events in System Log",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://support.okta.com/help/s/article/User-Signin-and-Recovery-Events-in-the-Okta-System-Log?language=en_US",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://support.okta.com/help/s/article/User-Signin-and-Recovery-Events-in-the-Okta-System-Log?language=en_US"
               },
               "match": true
             }
@@ -18567,6 +18872,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\llm-evaluation-error-taxonomy-and-failure-labels.md",
+      "article_id": "llm-evaluation-error-taxonomy-and-failure-labels",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "LangSmith Evaluation Concepts",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.langchain.com/langsmith/evaluation-concepts",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.langchain.com/langsmith/evaluation-concepts"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Ragas Available Metrics",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.ragas.io/en/stable/concepts/metrics/available_metrics/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.ragas.io/en/stable/concepts/metrics/available_metrics/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Arize AX Human Review",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arize.com/docs/ax/evaluate",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://arize.com/docs/ax/evaluate/human-review"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\llm-evaluation-golden-datasets-and-sampling.md",
       "article_id": "llm-evaluation-golden-datasets-and-sampling",
       "generation_method": "ai_structured",
@@ -23985,6 +24351,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://www.meilisearch.com/docs/capabilities/filtering_sorting_faceting/how_to/filter_with_facets"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\retrieval-multivector-indexing.md",
+      "article_id": "retrieval-multivector-indexing",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Qdrant Multivectors",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://qdrant.tech/documentation/manage-data/vectors/#multivectors",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://qdrant.tech/documentation/manage-data/vectors/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Qdrant Multivectors and Late Interaction",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://qdrant.tech/documentation/tutorials-search-engineering/using-multivector-representations/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://qdrant.tech/documentation/tutorials-search-engineering/using-multivector-representations/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Vespa Nearest Neighbor Search",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.vespa.ai/en/nearest-neighbor-search.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.vespa.ai/en/nearest-neighbor-search.html"
               },
               "match": true
             }
@@ -31152,6 +31579,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\api-mutual-tls-client-certificate-authentication.md",
+      "article_id": "api-mutual-tls-client-certificate-authentication",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "RFC 8705 OAuth 2.0 Mutual TLS",
+          "source_type": "rfc",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://datatracker.ietf.org/doc/html/rfc8705",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://datatracker.ietf.org/doc/html/rfc8705"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Amazon API Gateway Mutual TLS",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.aws.amazon.com/apigateway/latest/developerguide/rest-api-mutual-tls.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.aws.amazon.com/apigateway/latest/developerguide/rest-api-mutual-tls.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Cloudflare API Shield Mutual TLS",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.cloudflare.com/api-shield/security/mtls/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.cloudflare.com/api-shield/security/mtls/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\api-oauth-token-introspection.md",
       "article_id": "api-oauth-token-introspection",
       "generation_method": "ai_structured",
@@ -31202,6 +31690,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://www.keycloak.org/securing-apps/oidc-layers"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\api-oidc-discovery-and-jwks.md",
+      "article_id": "api-oidc-discovery-and-jwks",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "OpenID Connect Discovery 1.0",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://openid.net/specs/openid-connect-discovery-1_0.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://openid.net/specs/openid-connect-discovery-1_0.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "RFC 7517 JSON Web Key",
+          "source_type": "rfc",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://datatracker.ietf.org/doc/html/rfc7517",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://datatracker.ietf.org/doc/html/rfc7517"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Auth0 JSON Web Key Sets",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://auth0.com/docs/secure/tokens/json-web-tokens/json-web-key-sets",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://auth0.com/docs/secure/tokens/json-web-tokens/json-web-key-sets"
               },
               "match": true
             }
@@ -31446,6 +31995,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://learn.microsoft.com/en-us/openapi/kiota/overview"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\api-scim-user-provisioning.md",
+      "article_id": "api-scim-user-provisioning",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "RFC 7643 SCIM Core Schema",
+          "source_type": "rfc",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://datatracker.ietf.org/doc/html/rfc7643",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://datatracker.ietf.org/doc/html/rfc7643"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "RFC 7644 SCIM Protocol",
+          "source_type": "rfc",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://datatracker.ietf.org/doc/html/rfc7644",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://datatracker.ietf.org/doc/html/rfc7644"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Microsoft Entra SCIM Provisioning",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://learn.microsoft.com/en-us/entra/identity/app-provisioning/use-scim-to-provision-users-and-groups",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.microsoft.com/en-us/entra/identity/app-provisioning/use-scim-to-provision-users-and-groups"
               },
               "match": true
             }
@@ -34278,6 +34888,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\data-column-level-lineage-and-impact-analysis.md",
+      "article_id": "data-column-level-lineage-and-impact-analysis",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "OpenLineage Column Lineage Facet",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://openlineage.io/docs/spec/facets/dataset-facets/column_lineage_facet/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://openlineage.io/docs/spec/facets/dataset-facets/column_lineage_facet/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenMetadata Column-Level Lineage",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.open-metadata.org/v1.11.x/how-to-guides/data-lineage/column",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.open-metadata.org/v1.11.x/how-to-guides/data-lineage/column"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Databricks Unity Catalog Lineage",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/data-lineage",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.databricks.com/aws/en/data-governance/unity-catalog/data-lineage"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\data-contracts-for-pipelines.md",
       "article_id": "data-contracts-for-pipelines",
       "generation_method": "ai_structured",
@@ -35060,6 +35731,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://learn.microsoft.com/en-us/purview/sit-sensitive-information-type-learn-about"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\data-time-travel-and-snapshot-isolation.md",
+      "article_id": "data-time-travel-and-snapshot-isolation",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Delta Lake Time Travel",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.delta.io/latest/delta-batch.html#query-an-older-snapshot-of-a-table-time-travel",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.delta.io/delta-batch/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Apache Iceberg Time Travel",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://iceberg.apache.org/docs/latest/spark-queries/#time-travel",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://iceberg.apache.org/docs/latest/spark-queries/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Snowflake Time Travel",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.snowflake.com/en/user-guide/data-time-travel",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.snowflake.com/en/user-guide/data-time-travel"
               },
               "match": true
             }
@@ -43756,6 +44488,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\static-analysis-sarif-results-for-code-agents.md",
+      "article_id": "static-analysis-sarif-results-for-code-agents",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "SARIF 2.1.0 Specification",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.oasis-open.org/sarif/sarif/v2.1.0/sarif-v2.1.0.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.oasis-open.org/sarif/sarif/v2.1.0/sarif-v2.1.0.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GitHub Uploading SARIF Files",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/code-security/code-scanning/integrating-with-code-scanning/uploading-a-sarif-file-to-github",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/code-security/how-tos/find-and-fix-code-vulnerabilities/integrate-with-existing-tools/uploading-a-sarif-file-to-github"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "CodeQL CLI SARIF Output",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/code-security/reference/code-scanning/codeql/codeql-cli/sarif-output",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/code-security/reference/code-scanning/codeql/codeql-cli/sarif-output"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\streaming-watermarks-and-late-data.md",
       "article_id": "streaming-watermarks-and-late-data",
       "generation_method": "ai_structured",
@@ -44286,6 +45079,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://www.jacoco.org/jacoco/trunk/doc/counters.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\test-coverage-maps-for-code-agents.md",
+      "article_id": "test-coverage-maps-for-code-agents",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Node.js Test Runner Coverage",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://nodejs.org/api/test.html#collecting-code-coverage",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://nodejs.org/api/test.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "coverage.py JSON Report",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://coverage.readthedocs.io/en/latest/commands/cmd_json.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://coverage.readthedocs.io/en/latest/commands/cmd_json.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Jest Coverage Reporters",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://jestjs.io/docs/configuration#coveragereporters-arraystring--string-options",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://jestjs.io/docs/configuration"
               },
               "match": true
             }
@@ -62083,67 +62937,6 @@
       "sources_unreachable": 0
     },
     {
-      "file": "content\\ai\\agent-email-authentication-records.md",
-      "article_id": "agent-email-authentication-records",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "Google Workspace Set Up SPF",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://knowledge.workspace.google.com/admin/security/set-up-spf?hl=en",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://knowledge.workspace.google.com/admin/security/set-up-spf?hl=en"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Google Workspace Set Up DKIM",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://knowledge.workspace.google.com/admin/security/set-up-dkim?hl=en",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://knowledge.workspace.google.com/admin/security/set-up-dkim?hl=en"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "RFC 7489 DMARC",
-          "source_type": "rfc",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://datatracker.ietf.org/doc/html/rfc7489",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://datatracker.ietf.org/doc/html/rfc7489"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
-    },
-    {
       "file": "content\\ai\\ai-for-genomics-variant-calling-gene-expression-prediction-and-protein-dna-binding.md",
       "article_id": "kb-2026-00005",
       "generation_method": "ai_structured",
@@ -62166,6 +62959,68 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 1
+    },
+    {
+      "file": "content\\ai\\retrieval-late-interaction-and-colbert.md",
+      "article_id": "retrieval-late-interaction-and-colbert",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "ColBERT Late Interaction Retrieval",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "arxiv",
+              "identifier": "2004.12832",
+              "verified": true,
+              "metadata": {
+                "title": "arXiv Query: search_query=&amp;id_list=2004.12832&amp;start=0&amp;max_results=1"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "ColBERTv2 Efficient and Effective Retrieval",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "doi",
+              "identifier": "10.18653/v1/2022.naacl-main.272",
+              "verified": true,
+              "metadata": {
+                "title": "ColBERTv2: Effective and Efficient Retrieval via Lightweight Late Interaction",
+                "publisher": "Association for Computational Linguistics",
+                "year": 2022
+              },
+              "match": false
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "PLAID Late Interaction Retrieval Engine",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "doi",
+              "identifier": "10.1145/3511808.3557325",
+              "verified": true,
+              "metadata": {
+                "title": "PLAID",
+                "publisher": "ACM",
+                "year": 2022
+              },
+              "match": false
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content\\arts\\history-of-printing.md",
@@ -62440,67 +63295,6 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 1
-    },
-    {
-      "file": "content\\computer-science\\api-scim-user-provisioning.md",
-      "article_id": "api-scim-user-provisioning",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "RFC 7643 SCIM Core Schema",
-          "source_type": "rfc",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://datatracker.ietf.org/doc/html/rfc7643",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://datatracker.ietf.org/doc/html/rfc7643"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "RFC 7644 SCIM Protocol",
-          "source_type": "rfc",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://datatracker.ietf.org/doc/html/rfc7644",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://datatracker.ietf.org/doc/html/rfc7644"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Microsoft Entra SCIM Provisioning",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://learn.microsoft.com/en-us/entra/identity/app-provisioning/use-scim-to-provision-users-and-groups",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://learn.microsoft.com/en-us/entra/identity/app-provisioning/use-scim-to-provision-users-and-groups"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\bloom-filters-space-efficient-probabilistic-data-structures.md",
@@ -65855,10 +66649,7 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/websec/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.oreilly.com/websec/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -66864,7 +67655,10 @@
               "method": "url",
               "identifier": "https://www.cdc.gov/eis/field-epi-manual/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 403,
+                "final_url": "https://www.cdc.gov/eis/field-epi-manual/"
+              },
               "match": false
             }
           ],

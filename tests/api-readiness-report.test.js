@@ -150,7 +150,7 @@ console.log('AnchorFact API Readiness Report Tests\n');
 
 test('core query set defines subscription-readiness probes across paid-use categories', () => {
   assert(CORE_CORPUS_QUERIES.length >= 100, 'core query set should preserve the 100-query foundation');
-  assert(CORE_CORPUS_QUERIES.length <= 310, 'core query set should stay inside the expanded readiness-corpus range');
+  assert(CORE_CORPUS_QUERIES.length <= 325, 'core query set should stay inside the expanded readiness-corpus range');
   const categories = new Set(CORE_CORPUS_QUERIES.map(query => query.category));
   for (const category of ['agent_execution_sources', 'agent_rag', 'api_mcp', 'security_governance', 'data_infrastructure', 'llm_evaluation', 'developer_workflows', 'code_intelligence']) {
     assert(categories.has(category), `missing category ${category}`);
@@ -281,6 +281,10 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'ai/agent-oauth-app-registrations-and-consent',
     'ai/agent-email-authentication-records',
     'ai/agent-codeowners-and-review-rules',
+    'ai/agent-cloud-firewall-and-security-group-rules',
+    'ai/agent-object-storage-bucket-policies-and-access',
+    'ai/agent-saml-sso-and-identity-provider-logs',
+    'ai/agent-browser-console-network-and-har-logs',
     'computer-science/repository-permissions-and-code-agent-access',
     'ai/agent-checkpointing-and-resumable-workflows',
     'computer-science/code-graphs-and-code-intelligence',
@@ -314,6 +318,8 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'ai/retrieval-snippets-and-highlighted-evidence',
     'ai/retrieval-score-normalization-and-fusion',
     'ai/retrieval-parent-document-and-small-to-big-indexing',
+    'ai/retrieval-late-interaction-and-colbert',
+    'ai/retrieval-multivector-indexing',
     'ai/llm-sampling-parameters-in-evaluation',
     'ai/llm-evaluation-dataset-versioning',
     'ai/agent-evaluation-harnesses-and-test-runs',
@@ -326,6 +332,7 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'ai/llm-evaluation-ci-gates-and-regression-alerts',
     'ai/llm-production-quality-monitoring-and-drift',
     'ai/llm-evaluation-golden-datasets-and-sampling',
+    'ai/llm-evaluation-error-taxonomy-and-failure-labels',
     'computer-science/api-idempotency-keys',
     'computer-science/distributed-tracing-and-correlation-context',
     'computer-science/api-openapi-breaking-change-detection',
@@ -336,6 +343,8 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'computer-science/api-sunset-and-deprecation-headers',
     'computer-science/api-scim-user-provisioning',
     'computer-science/api-webhook-delivery-idempotency-and-replay',
+    'computer-science/api-oidc-discovery-and-jwks',
+    'computer-science/api-mutual-tls-client-certificate-authentication',
     'computer-science/data-backfills-and-replay-pipelines',
     'computer-science/data-retention-and-ttl-policies',
     'computer-science/data-partitioning-and-clustering',
@@ -354,8 +363,12 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'computer-science/data-warehouse-partition-pruning-and-clustering',
     'computer-science/data-materialized-view-refresh-and-staleness',
     'computer-science/data-incremental-models-and-stateful-transforms',
+    'computer-science/data-column-level-lineage-and-impact-analysis',
+    'computer-science/data-time-travel-and-snapshot-isolation',
     'computer-science/language-server-protocol-diagnostics-and-code-actions',
-    'computer-science/build-graph-and-affected-test-selection-for-code-agents'
+    'computer-science/build-graph-and-affected-test-selection-for-code-agents',
+    'computer-science/static-analysis-sarif-results-for-code-agents',
+    'computer-science/test-coverage-maps-for-code-agents'
   ]) {
     assert(slugs.includes(slug), `missing agent/code-intelligence readiness slug ${slug}`);
   }
