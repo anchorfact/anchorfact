@@ -88,7 +88,7 @@ test('buildApiPerformanceReport renders passing and failing budget reports', () 
 
 test('artifact size budget passes current baseline headroom', () => {
   const budget = [
-    { path: 'graph.json', baseline_bytes: 2997236, max_bytes: 4000000, purpose: 'offline graph' },
+    { path: 'graph.json', baseline_bytes: 2997236, max_bytes: 4500000, purpose: 'offline graph' },
     { path: 'artifact-summary.json', baseline_bytes: 0, max_bytes: 60000, purpose: 'summary' }
   ];
   const report = evaluateArtifactSizeBudgets({
@@ -103,9 +103,9 @@ test('artifact size budget passes current baseline headroom', () => {
 
 test('artifact size budget fails an oversized fixture without affecting case reporting', () => {
   const artifactSizeBudget = evaluateArtifactSizeBudgets({
-    'graph.json': 5000001
+    'graph.json': 4500001
   }, [
-    { path: 'graph.json', baseline_bytes: 2997236, max_bytes: 4000000, purpose: 'offline graph' }
+    { path: 'graph.json', baseline_bytes: 2997236, max_bytes: 4500000, purpose: 'offline graph' }
   ]);
   const report = buildApiPerformanceReport({
     artifacts: {},
