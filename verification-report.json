@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-02T07:42:37.837Z",
-    "total_articles": 1176,
+    "generated": "2026-06-02T08:11:19.077Z",
+    "total_articles": 1188,
     "total_with_errors": 0,
     "average_sources_per_article": "2.6",
-    "overall_verification_rate": "89.0%",
-    "elapsed_ms": 102263,
-    "elapsed_sec": "102.3",
+    "overall_verification_rate": "89.1%",
+    "elapsed_ms": 102657,
+    "elapsed_sec": "102.7",
     "concurrency": 3
   },
   "articles": [
@@ -582,6 +582,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\agent-cdn-cache-headers-and-invalidation.md",
+      "article_id": "agent-cdn-cache-headers-and-invalidation",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "RFC 9111 HTTP Caching",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://datatracker.ietf.org/doc/html/rfc9111",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://datatracker.ietf.org/doc/html/rfc9111"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Cloudflare Purge Cache",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.cloudflare.com/cache/how-to/purge-cache/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.cloudflare.com/cache/how-to/purge-cache/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Amazon CloudFront Invalidation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Invalidation.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Invalidation.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\agent-checkpointing-and-resumable-workflows.md",
       "article_id": "agent-checkpointing-and-resumable-workflows",
       "generation_method": "ai_structured",
@@ -887,6 +948,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\agent-database-locks-and-deadlocks.md",
+      "article_id": "agent-database-locks-and-deadlocks",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "PostgreSQL Explicit Locking",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.postgresql.org/docs/current/explicit-locking.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.postgresql.org/docs/current/explicit-locking.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "PostgreSQL Monitoring Locks",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.postgresql.org/docs/current/monitoring-locks.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.postgresql.org/docs/current/monitoring-locks.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "SQL Server Deadlocks Guide",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://learn.microsoft.com/en-us/sql/relational-databases/sql-server-deadlocks-guide?view=sql-server-ver17",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.microsoft.com/en-us/sql/relational-databases/sql-server-deadlocks-guide?view=sql-server-ver17"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\agent-database-migration-history.md",
       "article_id": "agent-database-migration-history",
       "generation_method": "ai_structured",
@@ -998,6 +1120,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://dev.mysql.com/doc/refman/8.4/en/slow-query-log.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-dns-records-and-propagation.md",
+      "article_id": "agent-dns-records-and-propagation",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Cloudflare Create DNS Records",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.cloudflare.com/dns/manage-dns-records/how-to/create-dns-records/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.cloudflare.com/dns/manage-dns-records/how-to/create-dns-records/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Amazon Route 53 Record Types",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/ResourceRecordTypes.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/ResourceRecordTypes.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Google Cloud DNS Records",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://cloud.google.com/dns/docs/records",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/dns/docs/records"
               },
               "match": true
             }
@@ -1755,6 +1938,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://kubernetes.io/docs/tasks/debug/debug-application/debug-running-pod/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-load-balancer-health-checks.md",
+      "article_id": "agent-load-balancer-health-checks",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "AWS ALB Target Health Checks",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.aws.amazon.com/elasticloadbalancing/latest/application/target-group-health-checks.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/application/target-group-health-checks.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Google Cloud Health Check Concepts",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://cloud.google.com/load-balancing/docs/health-check-concepts",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/load-balancing/docs/health-check-concepts?hl=zh-tw"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Azure Load Balancer Health Probes",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-custom-probe-overview",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-custom-probe-overview"
               },
               "match": true
             }
@@ -2897,6 +3141,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://www.atlassian.com/software/jira/guides/issues/overview"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-tls-certificates-and-expiry.md",
+      "article_id": "agent-tls-certificates-and-expiry",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Let's Encrypt FAQ",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://letsencrypt.org/docs/faq/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://letsencrypt.org/docs/faq/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "AWS ACM Managed Renewal",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.aws.amazon.com/acm/latest/userguide/managed-renewal.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.aws.amazon.com/acm/latest/userguide/managed-renewal.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Cloudflare Universal SSL",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.cloudflare.com/ssl/edge-certificates/universal-ssl/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.cloudflare.com/ssl/edge-certificates/universal-ssl/"
               },
               "match": true
             }
@@ -17957,6 +18262,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\llm-evaluation-ci-gates-and-regression-alerts.md",
+      "article_id": "llm-evaluation-ci-gates-and-regression-alerts",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Promptfoo CI/CD",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.promptfoo.dev/docs/integrations/ci-cd/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.promptfoo.dev/docs/integrations/ci-cd/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "LangSmith Evaluation Types",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.langchain.com/langsmith/evaluation-types",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.langchain.com/langsmith/evaluation-types"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "DeepEval CI/CD Unit Testing",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://deepeval.com/docs/evaluation-unit-testing-in-ci-cd",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://deepeval.com/docs/evaluation-unit-testing-in-ci-cd"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\llm-evaluation-dataset-versioning.md",
       "article_id": "llm-evaluation-dataset-versioning",
       "generation_method": "ai_structured",
@@ -18265,6 +18631,67 @@
       "sources_unreachable": 0,
       "manual_reviewed": true,
       "manual_reviewed_at": "2026-05-28"
+    },
+    {
+      "file": "content\\ai\\llm-production-quality-monitoring-and-drift.md",
+      "article_id": "llm-production-quality-monitoring-and-drift",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Evidently Monitoring Overview",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.evidentlyai.com/docs/platform/monitoring_overview",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.evidentlyai.com/docs/platform/monitoring_overview"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Azure AI Foundry Monitor Applications",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://learn.microsoft.com/en-us/azure/ai-foundry/how-to/online-evaluation",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.microsoft.com/en-us/azure/ai-foundry/how-to/monitor-applications"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "LangSmith Evaluation Types",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.langchain.com/langsmith/evaluation-types",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.langchain.com/langsmith/evaluation-types"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content\\ai\\llm-red-teaming-and-adversarial-evaluation.md",
@@ -23325,6 +23752,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\retrieval-query-expansion-and-synonyms.md",
+      "article_id": "retrieval-query-expansion-and-synonyms",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Azure AI Search Synonyms",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://learn.microsoft.com/en-us/azure/search/search-synonyms",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.microsoft.com/en-us/azure/search/search-synonyms"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Algolia Synonyms",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.algolia.com/doc/guides/managing-results/optimize-search-results/adding-synonyms/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.algolia.com/doc/guides/managing-results/optimize-search-results/adding-synonyms"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Meilisearch Synonyms",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.meilisearch.com/docs/learn/relevancy/synonyms",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.meilisearch.com/docs/capabilities/full_text_search/relevancy/synonyms"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\retrieval-query-logs-and-search-observability.md",
       "article_id": "retrieval-query-logs-and-search-observability",
       "generation_method": "ai_structured",
@@ -23436,6 +23924,128 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://docs.langchain.com/oss/python/langchain/retrieval"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\retrieval-result-deduplication-and-collapsing.md",
+      "article_id": "retrieval-result-deduplication-and-collapsing",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Algolia Grouping",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.algolia.com/doc/guides/managing-results/refine-results/grouping/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.algolia.com/doc/guides/managing-results/refine-results/grouping"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Apache Solr Result Grouping",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://solr.apache.org/guide/solr/latest/query-guide/result-grouping.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://solr.apache.org/guide/solr/latest/query-guide/result-grouping.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Meilisearch Distinct Attribute",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.meilisearch.com/docs/learn/relevancy/distinct_attribute",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.meilisearch.com/docs/capabilities/full_text_search/how_to/configure_distinct_attribute"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\retrieval-snippets-and-highlighted-evidence.md",
+      "article_id": "retrieval-snippets-and-highlighted-evidence",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Algolia Highlighting and Snippeting",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.algolia.com/doc/guides/building-search-ui/ui-and-ux-patterns/highlighting-snippeting/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.algolia.com/doc/guides/building-search-ui/ui-and-ux-patterns/highlighting-snippeting/js"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Azure AI Search Hit Highlighting",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://learn.microsoft.com/en-us/azure/search/search-pagination-page-layout#hit-highlighting",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.microsoft.com/en-us/azure/search/search-pagination-page-layout"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Meilisearch Highlight Search Results",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.meilisearch.com/docs/capabilities/full_text_search/how_to/highlight_search_results",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.meilisearch.com/docs/capabilities/full_text_search/how_to/highlight_search_results"
               },
               "match": true
             }
@@ -29871,6 +30481,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\api-http-caching-etags-and-conditional-requests.md",
+      "article_id": "api-http-caching-etags-and-conditional-requests",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "RFC 9110 ETag",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://datatracker.ietf.org/doc/html/rfc9110#section-8.8.3",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://datatracker.ietf.org/doc/html/rfc9110"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "RFC 9110 If-None-Match",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://datatracker.ietf.org/doc/html/rfc9110#section-13.1.2",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://datatracker.ietf.org/doc/html/rfc9110"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GitHub REST API Best Practices",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/rest/using-the-rest-api/best-practices-for-using-the-rest-api",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/rest/using-the-rest-api/best-practices-for-using-the-rest-api"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\api-idempotency-and-retry-semantics.md",
       "article_id": "api-idempotency-and-retry-semantics",
       "generation_method": "ai_structured",
@@ -30348,6 +31019,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://learn.microsoft.com/en-us/openapi/kiota/overview"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\api-sunset-and-deprecation-headers.md",
+      "article_id": "api-sunset-and-deprecation-headers",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "RFC 8594 Sunset Header",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://datatracker.ietf.org/doc/html/rfc8594",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://datatracker.ietf.org/doc/html/rfc8594"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "RFC 9745 Deprecation Header",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://datatracker.ietf.org/doc/html/rfc9745",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://datatracker.ietf.org/doc/html/rfc9745"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "RFC 8288 Web Linking",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://datatracker.ietf.org/doc/html/rfc8288",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://datatracker.ietf.org/doc/html/rfc8288"
               },
               "match": true
             }
@@ -33596,6 +34328,128 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://docs.cloud.google.com/bigquery/docs/managing-tables"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\data-sensitive-data-discovery-and-classification.md",
+      "article_id": "data-sensitive-data-discovery-and-classification",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Amazon Macie Overview",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.aws.amazon.com/macie/latest/user/what-is-macie.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.aws.amazon.com/macie/latest/user/what-is-macie.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Google Cloud Sensitive Data Protection Concepts",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://cloud.google.com/sensitive-data-protection/docs/concepts",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/sensitive-data-protection/docs/sensitive-data-protection-overview?hl=zh-cn"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Microsoft Purview Sensitive Information Types",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://learn.microsoft.com/en-us/purview/sit-sensitive-information-type-learn-about",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.microsoft.com/en-us/purview/sit-sensitive-information-type-learn-about"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\data-warehouse-partition-pruning-and-clustering.md",
+      "article_id": "data-warehouse-partition-pruning-and-clustering",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "BigQuery Query Partitioned Tables",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://cloud.google.com/bigquery/docs/querying-partitioned-tables",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/bigquery/docs/querying-partitioned-tables"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Snowflake Clustering Keys",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.snowflake.com/en/user-guide/tables-clustering-keys",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.snowflake.com/en/user-guide/tables-clustering-keys"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Amazon Redshift Sort Keys",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.aws.amazon.com/redshift/latest/dg/t_Sorting_data.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.aws.amazon.com/redshift/latest/dg/t_Sorting_data.html"
               },
               "match": true
             }
@@ -60497,67 +61351,6 @@
       "sources_unreachable": 0
     },
     {
-      "file": "content\\ai\\agent-cdn-cache-headers-and-invalidation.md",
-      "article_id": "agent-cdn-cache-headers-and-invalidation",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "RFC 9111 HTTP Caching",
-          "source_type": "standard",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://datatracker.ietf.org/doc/html/rfc9111",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://datatracker.ietf.org/doc/html/rfc9111"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Cloudflare Purge Cache",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://developers.cloudflare.com/cache/how-to/purge-cache/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://developers.cloudflare.com/cache/how-to/purge-cache/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Amazon CloudFront Invalidation",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Invalidation.html",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Invalidation.html"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
-    },
-    {
       "file": "content\\ai\\ai-for-genomics-variant-calling-gene-expression-prediction-and-protein-dna-binding.md",
       "article_id": "kb-2026-00005",
       "generation_method": "ai_structured",
@@ -60580,67 +61373,6 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 1
-    },
-    {
-      "file": "content\\ai\\retrieval-query-expansion-and-synonyms.md",
-      "article_id": "retrieval-query-expansion-and-synonyms",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "Azure AI Search Synonyms",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://learn.microsoft.com/en-us/azure/search/search-synonyms",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://learn.microsoft.com/en-us/azure/search/search-synonyms"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Algolia Synonyms",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.algolia.com/doc/guides/managing-results/optimize-search-results/adding-synonyms/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://www.algolia.com/doc/guides/managing-results/optimize-search-results/adding-synonyms"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Meilisearch Synonyms",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.meilisearch.com/docs/learn/relevancy/synonyms",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://www.meilisearch.com/docs/capabilities/full_text_search/relevancy/synonyms"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
     },
     {
       "file": "content\\arts\\history-of-printing.md",
@@ -60917,56 +61649,56 @@
       "sources_unreachable": 1
     },
     {
-      "file": "content\\computer-science\\api-http-caching-etags-and-conditional-requests.md",
-      "article_id": "api-http-caching-etags-and-conditional-requests",
+      "file": "content\\computer-science\\api-cors-preflight-and-origin-policies.md",
+      "article_id": "api-cors-preflight-and-origin-policies",
       "generation_method": "ai_structured",
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "RFC 9110 ETag",
-          "source_type": "standard",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://datatracker.ietf.org/doc/html/rfc9110#section-8.8.3",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://datatracker.ietf.org/doc/html/rfc9110"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "RFC 9110 If-None-Match",
-          "source_type": "standard",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://datatracker.ietf.org/doc/html/rfc9110#section-13.1.2",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://datatracker.ietf.org/doc/html/rfc9110"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "GitHub REST API Best Practices",
+          "source_title": "MDN Access-Control-Allow-Origin",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.github.com/en/rest/using-the-rest-api/best-practices-for-using-the-rest-api",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Access-Control-Allow-Origin",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://docs.github.com/en/rest/using-the-rest-api/best-practices-for-using-the-rest-api"
+                "final_url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Access-Control-Allow-Origin"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "MDN Cross-Origin Resource Sharing",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CORS",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CORS"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "MDN Preflight Request",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Glossary/Preflight_request",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developer.mozilla.org/en-US/docs/Glossary/Preflight_request"
               },
               "match": true
             }

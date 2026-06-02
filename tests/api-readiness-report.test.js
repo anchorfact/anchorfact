@@ -150,7 +150,7 @@ console.log('AnchorFact API Readiness Report Tests\n');
 
 test('core query set defines subscription-readiness probes across paid-use categories', () => {
   assert(CORE_CORPUS_QUERIES.length >= 100, 'core query set should preserve the 100-query foundation');
-  assert(CORE_CORPUS_QUERIES.length <= 280, 'core query set should stay inside the expanded readiness-corpus range');
+  assert(CORE_CORPUS_QUERIES.length <= 295, 'core query set should stay inside the expanded readiness-corpus range');
   const categories = new Set(CORE_CORPUS_QUERIES.map(query => query.category));
   for (const category of ['agent_execution_sources', 'agent_rag', 'api_mcp', 'security_governance', 'data_infrastructure', 'llm_evaluation', 'developer_workflows', 'code_intelligence']) {
     assert(categories.has(category), `missing category ${category}`);
@@ -273,6 +273,10 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'ai/agent-cdn-cache-headers-and-invalidation',
     'ai/agent-cloud-billing-and-cost-anomaly-signals',
     'ai/agent-iam-policy-simulation-and-access-troubleshooting',
+    'ai/agent-dns-records-and-propagation',
+    'ai/agent-tls-certificates-and-expiry',
+    'ai/agent-database-locks-and-deadlocks',
+    'ai/agent-load-balancer-health-checks',
     'computer-science/repository-permissions-and-code-agent-access',
     'ai/agent-checkpointing-and-resumable-workflows',
     'computer-science/code-graphs-and-code-intelligence',
@@ -302,6 +306,8 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'ai/rag-context-window-packing-and-token-budgets',
     'ai/retrieval-query-expansion-and-synonyms',
     'ai/retrieval-evaluation-with-ndcg-and-mrr',
+    'ai/retrieval-result-deduplication-and-collapsing',
+    'ai/retrieval-snippets-and-highlighted-evidence',
     'ai/llm-sampling-parameters-in-evaluation',
     'ai/llm-evaluation-dataset-versioning',
     'ai/agent-evaluation-harnesses-and-test-runs',
@@ -311,12 +317,16 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'ai/llm-evaluation-production-canaries',
     'ai/llm-safety-evaluation-and-policy-test-suites',
     'ai/llm-evaluation-traces-and-feedback-labels',
+    'ai/llm-evaluation-ci-gates-and-regression-alerts',
+    'ai/llm-production-quality-monitoring-and-drift',
     'computer-science/api-idempotency-keys',
     'computer-science/distributed-tracing-and-correlation-context',
     'computer-science/api-openapi-breaking-change-detection',
     'computer-science/api-grpc-reflection-and-protobuf-schemas',
     'computer-science/api-http-caching-etags-and-conditional-requests',
     'computer-science/api-json-schema-validation-and-compatibility',
+    'computer-science/api-cors-preflight-and-origin-policies',
+    'computer-science/api-sunset-and-deprecation-headers',
     'computer-science/data-backfills-and-replay-pipelines',
     'computer-science/data-retention-and-ttl-policies',
     'computer-science/data-partitioning-and-clustering',
@@ -330,7 +340,9 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'computer-science/data-lake-object-storage-layouts',
     'computer-science/data-pipeline-checkpointing-and-exactly-once-semantics',
     'computer-science/data-lake-compaction-and-small-files',
-    'computer-science/data-warehouse-query-history-and-job-metadata'
+    'computer-science/data-warehouse-query-history-and-job-metadata',
+    'computer-science/data-sensitive-data-discovery-and-classification',
+    'computer-science/data-warehouse-partition-pruning-and-clustering'
   ]) {
     assert(slugs.includes(slug), `missing agent/code-intelligence readiness slug ${slug}`);
   }
