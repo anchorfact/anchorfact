@@ -150,7 +150,7 @@ console.log('AnchorFact API Readiness Report Tests\n');
 
 test('core query set defines subscription-readiness probes across paid-use categories', () => {
   assert(CORE_CORPUS_QUERIES.length >= 100, 'core query set should preserve the 100-query foundation');
-  assert(CORE_CORPUS_QUERIES.length <= 390, 'core query set should stay inside the expanded readiness-corpus range');
+  assert(CORE_CORPUS_QUERIES.length <= 400, 'core query set should stay inside the expanded readiness-corpus range');
   const categories = new Set(CORE_CORPUS_QUERIES.map(query => query.category));
   for (const category of ['agent_execution_sources', 'agent_rag', 'api_mcp', 'security_governance', 'data_infrastructure', 'llm_evaluation', 'developer_workflows', 'code_intelligence']) {
     assert(categories.has(category), `missing category ${category}`);
@@ -445,7 +445,15 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'computer-science/api-idempotency-keys-and-safe-retries',
     'computer-science/data-quality-expectations-and-validation-rules',
     'computer-science/data-contracts-and-schema-evolution',
-    'computer-science/code-tree-sitter-incremental-parsing-for-agents'
+    'computer-science/code-tree-sitter-incremental-parsing-for-agents',
+    'ai/agent-api-error-responses-and-error-models',
+    'computer-science/api-webhook-signature-verification-and-replay-protection',
+    'ai/rag-citation-spans-and-source-attribution',
+    'ai/rag-embedding-dimensions-and-index-compatibility',
+    'ai/llm-evaluation-golden-datasets-and-regression-tests',
+    'computer-science/data-freshness-slas-and-lateness-windows',
+    'computer-science/code-static-analysis-rules-and-semgrep-patterns',
+    'computer-science/code-dependency-graphs-and-vulnerability-advisories'
   ]) {
     assert(slugs.includes(slug), `missing agent/code-intelligence readiness slug ${slug}`);
   }

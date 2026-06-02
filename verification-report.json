@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-02T12:37:05.500Z",
-    "total_articles": 1291,
+    "generated": "2026-06-02T13:23:48.730Z",
+    "total_articles": 1299,
     "total_with_errors": 0,
     "average_sources_per_article": "2.6",
-    "overall_verification_rate": "90.1%",
-    "elapsed_ms": 207094,
-    "elapsed_sec": "207.1",
+    "overall_verification_rate": "90.2%",
+    "elapsed_ms": 211882,
+    "elapsed_sec": "211.9",
     "concurrency": 3
   },
   "articles": [
@@ -399,6 +399,67 @@
         }
       ],
       "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-api-error-responses-and-error-models.md",
+      "article_id": "agent-api-error-responses-and-error-models",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Stripe API Errors",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.stripe.com/api/errors",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.stripe.com/api/errors"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "JSON:API Error Objects",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://jsonapi.org/format/#errors",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://jsonapi.org/format/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GitHub REST API Troubleshooting",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/rest/using-the-rest-api/troubleshooting-the-rest-api",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/rest/using-the-rest-api/troubleshooting-the-rest-api"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
       "sources_unreachable": 0
     },
     {
@@ -3341,6 +3402,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://modelcontextprotocol.io/specification/2024-11-05/server/tools"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-message-ordering-and-deduplication.md",
+      "article_id": "agent-message-ordering-and-deduplication",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Google Pub/Sub Exactly-Once Delivery",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.cloud.google.com/pubsub/docs/exactly-once-delivery",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/pubsub/docs/exactly-once-delivery"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Google Pub/Sub Message Ordering",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.cloud.google.com/pubsub/docs/ordering",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/pubsub/docs/ordering"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Amazon SQS Message Group ID",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/using-messagegroupid-property.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/using-messagegroupid-property.html"
               },
               "match": true
             }
@@ -20336,6 +20458,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\llm-evaluation-golden-datasets-and-regression-tests.md",
+      "article_id": "llm-evaluation-golden-datasets-and-regression-tests",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "OpenAI Evaluation Getting Started",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://platform.openai.com/docs/guides/evaluation-getting-started",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.openai.com/api/docs/guides/evaluation-getting-started"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Vertex AI Evaluation Dataset",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/models/evaluation-dataset",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/evaluation-dataset"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "LangSmith Evaluation Types",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.langchain.com/langsmith/evaluation-types",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.langchain.com/langsmith/evaluation-types"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\llm-evaluation-golden-datasets-and-sampling.md",
       "article_id": "llm-evaluation-golden-datasets-and-sampling",
       "generation_method": "ai_structured",
@@ -24761,6 +24944,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\rag-citation-spans-and-source-attribution.md",
+      "article_id": "rag-citation-spans-and-source-attribution",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "LlamaIndex Citation Query Engine",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.llamaindex.ai/en/stable/api_reference/query_engine/citation/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.llamaindex.ai/python/framework-api-reference/query_engine/citation/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenAI File Search",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://platform.openai.com/docs/guides/tools-file-search/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.openai.com/api/docs/guides/tools-file-search"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Haystack AnswerBuilder",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.haystack.deepset.ai/docs/answerbuilder",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.haystack.deepset.ai/docs/answerbuilder"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\rag-connector-sync-state-and-document-loaders.md",
       "article_id": "rag-connector-sync-state-and-document-loaders",
       "generation_method": "ai_structured",
@@ -24994,6 +25238,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://www.elastic.co/docs/api/doc/elasticsearch/operation/operation-delete"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\rag-embedding-dimensions-and-index-compatibility.md",
+      "article_id": "rag-embedding-dimensions-and-index-compatibility",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Pinecone Create Index",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.pinecone.io/reference/create_index/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.pinecone.io/reference/api/2024-07/control-plane/create_index"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Qdrant Vectors",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://qdrant.tech/documentation/manage-data/vectors/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://qdrant.tech/documentation/manage-data/vectors/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Weaviate Vector Index",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.weaviate.io/weaviate/concepts/vector-index",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.weaviate.io/weaviate/concepts/vector-index"
               },
               "match": true
             }
@@ -35725,6 +36030,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\api-webhook-signature-verification-and-replay-protection.md",
+      "article_id": "api-webhook-signature-verification-and-replay-protection",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Stripe Webhook Signature Verification",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.stripe.com/webhooks/signature",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.stripe.com/webhooks/signature"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GitHub Webhook Signature Validation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/webhooks/using-webhooks/validating-webhook-deliveries",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/webhooks/using-webhooks/validating-webhook-deliveries"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Shopify Verify Webhook Deliveries",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://shopify.dev/docs/apps/build/webhooks/verify-deliveries",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://shopify.dev/docs/apps/build/webhooks/verify-deliveries"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\api-webhook-signature-verification.md",
       "article_id": "api-webhook-signature-verification",
       "generation_method": "ai_structured",
@@ -37734,6 +38100,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\code-static-analysis-rules-and-semgrep-patterns.md",
+      "article_id": "code-static-analysis-rules-and-semgrep-patterns",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Semgrep Rule Syntax",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://semgrep.dev/docs/writing-rules/rule-syntax",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://semgrep.dev/docs/writing-rules/rule-syntax"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "CodeQL Queries",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://codeql.github.com/docs/writing-codeql-queries/about-codeql-queries/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://codeql.github.com/docs/writing-codeql-queries/about-codeql-queries/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "ESLint Custom Rules",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://eslint.org/docs/latest/extend/custom-rules",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://eslint.org/docs/latest/extend/custom-rules"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\code-tree-sitter-incremental-parsing-for-agents.md",
       "article_id": "code-tree-sitter-incremental-parsing-for-agents",
       "generation_method": "ai_structured",
@@ -39389,6 +39816,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://airflow.apache.org/docs/apache-airflow/stable/howto/deadline-alerts.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\data-freshness-slas-and-lateness-windows.md",
+      "article_id": "data-freshness-slas-and-lateness-windows",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Great Expectations Freshness",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.greatexpectations.io/docs/reference/learn/data_quality_use_cases/freshness",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.greatexpectations.io/docs/reference/learn/data_quality_use_cases/freshness/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Dagster Asset Freshness Policies",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.dagster.io/guides/observe/asset-freshness-policies",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.dagster.io/guides/observe/asset-freshness-policies"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "dbt Source Freshness",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.getdbt.com/docs/build/sources#source-data-freshness",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.getdbt.com/docs/build/sources"
               },
               "match": true
             }
@@ -67632,67 +68120,6 @@
       "sources_unreachable": 0
     },
     {
-      "file": "content\\ai\\agent-message-ordering-and-deduplication.md",
-      "article_id": "agent-message-ordering-and-deduplication",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "Google Pub/Sub Exactly-Once Delivery",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.cloud.google.com/pubsub/docs/exactly-once-delivery",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.cloud.google.com/pubsub/docs/exactly-once-delivery"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Google Pub/Sub Message Ordering",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.cloud.google.com/pubsub/docs/ordering",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.cloud.google.com/pubsub/docs/ordering"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Amazon SQS Message Group ID",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/using-messagegroupid-property.html",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/using-messagegroupid-property.html"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
-    },
-    {
       "file": "content\\ai\\ai-for-genomics-variant-calling-gene-expression-prediction-and-protein-dna-binding.md",
       "article_id": "kb-2026-00005",
       "generation_method": "ai_structured",
@@ -68137,10 +68564,7 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.code",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.code"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -68149,6 +68573,67 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 3
+    },
+    {
+      "file": "content\\computer-science\\code-dependency-graphs-and-vulnerability-advisories.md",
+      "article_id": "code-dependency-graphs-and-vulnerability-advisories",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "deps.dev API",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.deps.dev/api/v3/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.deps.dev/api/v3/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "npm audit",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.npmjs.com/cli/v11/commands/npm-audit",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.npmjs.com/cli/v11/commands/npm-audit/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OSV Query API",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://google.github.io/osv.dev/post-v1-query/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://google.github.io/osv.dev/post-v1-query/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\command-pattern.md",
@@ -68266,7 +68751,10 @@
               "method": "url",
               "identifier": "https://www.informit.com/concurrency/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.informit.com/404.aspx?aspxerrorpath=/concurrency"
+              },
               "match": false
             }
           ],
@@ -68280,10 +68768,7 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.concurrency",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.concurrency"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -68436,7 +68921,10 @@
               "method": "url",
               "identifier": "https://nostarch.com/websec/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://nostarch.com/websec/"
+              },
               "match": false
             }
           ],
@@ -68708,7 +69196,10 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.ddos",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://doi.org/10.1145/acmcs.2025.ddos"
+              },
               "match": false
             }
           ],
@@ -68749,10 +69240,7 @@
               "method": "url",
               "identifier": "https://www.informit.com/design-patterns/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.informit.com/404.aspx?aspxerrorpath=/design-patterns"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -69171,10 +69659,7 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/eda/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.oreilly.com/eda/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -69188,10 +69673,7 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.es",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.es"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -69486,10 +69968,7 @@
               "method": "url",
               "identifier": "https://mitpress.mit.edu/books/introduction-algorithms-5th-edition",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://mitpress.mit.edu/books/introduction-algorithms-5th-edition"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -69720,10 +70199,7 @@
               "method": "url",
               "identifier": "https://www.rfc-editor.org/rfc/rfc5246",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.rfc-editor.org/rfc/rfc5246"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -69818,7 +70294,10 @@
               "method": "url",
               "identifier": "https://nostarch.com/firewalls/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://nostarch.com/firewalls/"
+              },
               "match": false
             }
           ],
@@ -69832,7 +70311,10 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/linux-netsec/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.oreilly.com/linux-netsec/"
+              },
               "match": false
             }
           ],
@@ -69927,10 +70409,7 @@
               "method": "url",
               "identifier": "https://mitpress.mit.edu/books/types-and-programming-languages",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://mitpress.mit.edu/books/types-and-programming-languages"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -69944,7 +70423,10 @@
               "method": "url",
               "identifier": "https://www.collegepublications.co.uk/lambda/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.collegepublications.co.uk/lambda/"
+              },
               "match": false
             }
           ],
@@ -70205,7 +70687,10 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.mvc",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://doi.org/10.1145/acmcs.2025.mvc"
+              },
               "match": false
             }
           ],
@@ -70263,7 +70748,10 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.nosql",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://doi.org/10.1145/acmcs.2025.nosql"
+              },
               "match": false
             }
           ],
@@ -70331,7 +70819,10 @@
               "method": "url",
               "identifier": "https://www.informit.com/oo-design/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.informit.com/404.aspx?aspxerrorpath=/oo-design"
+              },
               "match": false
             }
           ],
@@ -70389,7 +70880,10 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/head-first-design-patterns/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.oreilly.com/head-first-design-patterns/"
+              },
               "match": false
             }
           ],
@@ -70403,7 +70897,10 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.observer",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://doi.org/10.1145/acmcs.2025.observer"
+              },
               "match": false
             }
           ],
@@ -70498,7 +70995,10 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/websec/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.oreilly.com/websec/"
+              },
               "match": false
             }
           ],
@@ -70512,7 +71012,10 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.appsec",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://doi.org/10.1145/acmcs.2025.appsec"
+              },
               "match": false
             }
           ],
@@ -70705,10 +71208,7 @@
               "method": "url",
               "identifier": "https://doi.org/10.1109/ms.2025.redis",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1109/ms.2025.redis"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -70830,10 +71330,7 @@
               "method": "url",
               "identifier": "https://www.informit.com/patterns-eaa/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.informit.com/404.aspx?aspxerrorpath=/patterns-eaa"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -70888,10 +71385,7 @@
               "method": "url",
               "identifier": "https://www.informit.com/sysadmin/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.informit.com/404.aspx?aspxerrorpath=/sysadmin"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -70905,7 +71399,10 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.sync",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://doi.org/10.1145/acmcs.2025.sync"
+              },
               "match": false
             }
           ],
@@ -70960,10 +71457,7 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.rust",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.rust"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -71282,10 +71776,7 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.sqli",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.sqli"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -71441,7 +71932,10 @@
               "method": "url",
               "identifier": "https://doi.org/10.1017/cbo.2025.strings",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://doi.org/10.1017/cbo.2025.strings"
+              },
               "match": false
             }
           ],
@@ -71455,7 +71949,10 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.strings",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://doi.org/10.1145/acmcs.2025.strings"
+              },
               "match": false
             }
           ],
@@ -71686,10 +72183,7 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.testing",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.testing"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -71784,10 +72278,7 @@
               "method": "url",
               "identifier": "https://mitpress.mit.edu/books/introduction-algorithms-5th-edition",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://mitpress.mit.edu/books/introduction-algorithms-5th-edition"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -71974,10 +72465,7 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.vpn",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.vpn"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -72028,7 +72516,10 @@
               "method": "url",
               "identifier": "https://www.worldwildlife.org/places/amazon",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 403,
+                "final_url": "https://www.worldwildlife.org/places/amazon"
+              },
               "match": false
             }
           ],
@@ -72283,10 +72774,7 @@
               "method": "url",
               "identifier": "https://www.wiley.com/en-us/How+the+Immune+System+Works%2C+6th+Edition-p-9781119542124",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.wiley.com/en-us/How+the+Immune+System+Works%2C+6th+Edition-p-9781119542124"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -72334,10 +72822,7 @@
               "method": "url",
               "identifier": "https://www.simonandschuster.com/books/Why-We-Sleep/Matthew-Walker/9781501144325",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.simonandschuster.com/books/Why-We-Sleep/Matthew-Walker/9781501144325"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -73295,7 +73780,10 @@
               "method": "url",
               "identifier": "https://www.hatchards.co.uk/book/jonathan-wilson/inverting-the-pyramid/9781409128649",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 403,
+                "final_url": "https://www.hatchards.co.uk/book/jonathan-wilson/inverting-the-pyramid/9781409128649"
+              },
               "match": false
             }
           ],
@@ -73336,10 +73824,7 @@
               "method": "url",
               "identifier": "https://www.simonandschuster.com/winning-ugly/",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.simonandschuster.com/winning-ugly/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -73354,7 +73839,7 @@
               "identifier": "https://www.penguinrandomhouse.com/inner-tennis/",
               "verified": false,
               "metadata": {
-                "status": 404,
+                "status": 500,
                 "final_url": "https://www.penguinrandomhouse.com/inner-tennis/"
               },
               "match": false
