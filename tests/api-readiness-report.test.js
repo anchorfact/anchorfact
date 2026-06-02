@@ -150,7 +150,7 @@ console.log('AnchorFact API Readiness Report Tests\n');
 
 test('core query set defines subscription-readiness probes across paid-use categories', () => {
   assert(CORE_CORPUS_QUERIES.length >= 100, 'core query set should preserve the 100-query foundation');
-  assert(CORE_CORPUS_QUERIES.length <= 450, 'core query set should stay inside the expanded readiness-corpus range');
+  assert(CORE_CORPUS_QUERIES.length <= 460, 'core query set should stay inside the expanded readiness-corpus range');
   const categories = new Set(CORE_CORPUS_QUERIES.map(query => query.category));
   for (const category of ['agent_execution_sources', 'agent_rag', 'api_mcp', 'security_governance', 'data_infrastructure', 'llm_evaluation', 'developer_workflows', 'code_intelligence']) {
     assert(categories.has(category), `missing category ${category}`);
@@ -501,7 +501,15 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'computer-science/api-retry-backoff-and-client-rate-control',
     'computer-science/data-column-pruning-and-file-statistics',
     'computer-science/code-license-compliance-and-dependency-metadata',
-    'computer-science/code-generated-files-and-vendored-code-detection'
+    'computer-science/code-generated-files-and-vendored-code-detection',
+    'ai/agent-cloud-audit-logs-and-iam-change-history',
+    'ai/retrieval-score-thresholds-and-no-answer-fallbacks',
+    'ai/llm-evaluation-run-metadata-and-reproducibility',
+    'computer-science/api-json-patch-and-merge-patch',
+    'computer-science/data-delta-lake-transaction-log-and-checkpoints',
+    'computer-science/data-hudi-timeline-and-incremental-queries',
+    'computer-science/dev-containers-and-reproducible-agent-workspaces',
+    'computer-science/code-search-pathspecs-and-ignore-files-for-agents'
   ]) {
     assert(slugs.includes(slug), `missing agent/code-intelligence readiness slug ${slug}`);
   }
