@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-02T03:49:31.560Z",
-    "total_articles": 1080,
+    "generated": "2026-06-02T04:16:49.922Z",
+    "total_articles": 1092,
     "total_with_errors": 0,
     "average_sources_per_article": "2.5",
-    "overall_verification_rate": "87.8%",
-    "elapsed_ms": 98463,
-    "elapsed_sec": "98.5",
+    "overall_verification_rate": "88.0%",
+    "elapsed_ms": 113825,
+    "elapsed_sec": "113.8",
     "concurrency": 3
   },
   "articles": [
@@ -956,6 +956,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\agent-release-notes-and-changelog-lookup.md",
+      "article_id": "agent-release-notes-and-changelog-lookup",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "GitHub About Releases",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GitLab Releases",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.gitlab.com/user/project/releases/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.gitlab.com/user/project/releases/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GitHub REST Releases",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/rest/releases/releases?apiVersion=2022-11-28",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/rest/releases/releases?apiVersion=2022-11-28"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\agent-runtime-sandboxing.md",
       "article_id": "agent-runtime-sandboxing",
       "generation_method": "ai_structured",
@@ -1139,6 +1200,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\agent-status-pages-and-incident-feeds.md",
+      "article_id": "agent-status-pages-and-incident-feeds",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "GitHub Status API",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.githubstatus.com/api",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.githubstatus.com/api"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Google Cloud Service Health Overview",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.cloud.google.com/service-health/docs/overview",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/service-health/docs/overview"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "What is AWS Health?",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.aws.amazon.com/health/latest/ug/what-is-aws-health.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.aws.amazon.com/health/latest/ug/what-is-aws-health.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\agent-task-queues-and-background-jobs.md",
       "article_id": "agent-task-queues-and-background-jobs",
       "generation_method": "ai_structured",
@@ -1189,6 +1311,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://docs.cloud.google.com/tasks/docs/dual-overview"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-token-budgeting-and-context-accounting.md",
+      "article_id": "agent-token-budgeting-and-context-accounting",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "OpenAI Cookbook Token Counting",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.openai.com/cookbook/examples/how_to_count_tokens_with_tiktoken",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.openai.com/cookbook/examples/how_to_count_tokens_with_tiktoken"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Anthropic Token Counting",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://platform.claude.com/docs/en/build-with-claude/token-counting",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://platform.claude.com/docs/en/build-with-claude/token-counting"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Gemini API Token Guide",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://ai.google.dev/gemini-api/docs/tokens",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://ai.google.dev/gemini-api/docs/tokens"
               },
               "match": true
             }
@@ -1494,6 +1677,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://developers.openai.com/api/docs/guides/function-calling"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-tool-timeouts-and-cancellation.md",
+      "article_id": "agent-tool-timeouts-and-cancellation",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "MCP Cancellation",
+          "source_type": "specification",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://modelcontextprotocol.io/specification/2025-06-18/basic/utilities/cancellation",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://modelcontextprotocol.io/specification/2025-06-18/basic/utilities/cancellation"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "AbortController",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/API/AbortController",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developer.mozilla.org/en-US/docs/Web/API/AbortController"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "AWS Lambda Timeout",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.aws.amazon.com/lambda/latest/dg/configuration-timeout.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.aws.amazon.com/lambda/latest/dg/configuration-timeout.html"
               },
               "match": true
             }
@@ -14856,6 +15100,67 @@
       "manual_reviewed_at": "2026-05-28"
     },
     {
+      "file": "content\\ai\\human-feedback-and-annotation-queues-for-llms.md",
+      "article_id": "human-feedback-and-annotation-queues-for-llms",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "LangSmith Annotation Queues",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.langchain.com/langsmith/annotation-queues",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.langchain.com/langsmith/annotation-queues"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Label Studio Machine Learning",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://labelstud.io/guide/ml",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://labelstud.io/guide/ml"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Argilla Annotate Records",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.argilla.io/latest/how_to_guides/annotate/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.argilla.io/latest/how_to_guides/annotate/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content/ai/human-pose-estimation.md",
       "article_id": "human-pose-estimation",
       "generation_method": "ai_structured",
@@ -18245,6 +18550,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\pairwise-llm-evaluation.md",
+      "article_id": "pairwise-llm-evaluation",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "LangSmith Evaluation Approaches",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.langchain.com/langsmith/evaluation-approaches",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.langchain.com/langsmith/evaluation-approaches"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenAI Evals",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.openai.com/api/docs/guides/evals",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.openai.com/api/docs/guides/evals"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Phoenix LLM Evals",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arize.com/docs/phoenix/evaluation/llm-evals",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://arize.com/docs/phoenix/evaluation/llm-evals"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content/ai/parameter-efficient-fine-tuning.md",
       "article_id": "parameter-efficient-fine-tuning",
       "generation_method": "ai_structured",
@@ -19075,6 +19441,128 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://arize.com/docs/phoenix/evaluation/pre-built-metrics/faithfulness"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\rag-index-freshness-and-reindexing.md",
+      "article_id": "rag-index-freshness-and-reindexing",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "LlamaIndex Document Management",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.llamaindex.ai/python/framework/module_guides/indexing/document_management/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.llamaindex.ai/python/framework/module_guides/indexing/document_management/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Pinecone Upsert Data",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.pinecone.io/guides/index-data/upsert-data",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.pinecone.io/guides/index-data/upsert-data"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Weaviate Update Objects",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.weaviate.io/weaviate/manage-objects/update",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.weaviate.io/weaviate/manage-objects/update"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\rag-query-decomposition.md",
+      "article_id": "rag-query-decomposition",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Azure AI Search Agentic Retrieval",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://learn.microsoft.com/en-us/azure/search/agentic-retrieval-overview",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.microsoft.com/en-us/azure/search/agentic-retrieval-overview"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "LlamaIndex Sub Question Query Engine",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.llamaindex.ai/python/examples/query_engine/sub_question_query_engine/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.llamaindex.ai/python/examples/query_engine/sub_question_query_engine/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Create a Knowledge Agent in Azure AI Search",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://learn.microsoft.com/en-us/azure/search/search-agentic-retrieval-how-to-create",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.microsoft.com/en-us/azure/search/search-agentic-retrieval-how-to-create"
               },
               "match": true
             }
@@ -27664,6 +28152,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\configuration-and-environment-variable-discovery.md",
+      "article_id": "configuration-and-environment-variable-discovery",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Kubernetes ConfigMaps",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kubernetes.io/docs/concepts/configuration/configmap/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://kubernetes.io/docs/concepts/configuration/configmap/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Docker Compose Environment Variables",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.docker.com/compose/how-tos/environment-variables/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.docker.com/compose/how-tos/environment-variables/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Node.js Environment Variables",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://nodejs.org/api/environment_variables.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://nodejs.org/api/environment_variables.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content/computer-science/consul-hashicorp.md",
       "article_id": "kb-2026-00320",
       "generation_method": "ai_structured",
@@ -32846,6 +33395,67 @@
       "manual_reviewed_at": "2026-05-30"
     },
     {
+      "file": "content\\computer-science\\mutation-testing-for-code-agents.md",
+      "article_id": "mutation-testing-for-code-agents",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "StrykerJS Introduction",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://stryker-mutator.io/docs/stryker-js/introduction/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://stryker-mutator.io/docs/stryker-js/introduction/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "PIT Basic Concepts",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://pitest.org/quickstart/basic_concepts/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://pitest.org/quickstart/basic_concepts/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "mutmut Documentation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://mutmut.readthedocs.io/en/latest/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://mutmut.readthedocs.io/en/latest/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content/computer-science/mutationobserver.md",
       "article_id": "mutationobserver",
       "generation_method": "human_only",
@@ -33804,6 +34414,67 @@
       "sources_unreachable": 0,
       "manual_reviewed": true,
       "manual_reviewed_at": "2026-06-01"
+    },
+    {
+      "file": "content\\computer-science\\openlineage-for-data-pipelines.md",
+      "article_id": "openlineage-for-data-pipelines",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "OpenLineage Object Model",
+          "source_type": "specification",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://openlineage.io/docs/spec/object-model/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://openlineage.io/docs/spec/object-model/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenLineage Airflow Integration",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://openlineage.io/docs/integrations/airflow/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://openlineage.io/docs/integrations/airflow/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenLineage Python Client",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://openlineage.io/docs/client/python/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://openlineage.io/docs/client/python/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content/computer-science/operating-systems-concepts.md",
@@ -35836,6 +36507,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\schema-registry-for-event-streaming.md",
+      "article_id": "schema-registry-for-event-streaming",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Confluent Schema Registry",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.confluent.io/platform/current/schema-registry/index.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.confluent.io/platform/current/schema-registry/index.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "AWS Glue Schema Registry",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.aws.amazon.com/glue/latest/dg/schema-registry.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.aws.amazon.com/glue/latest/dg/schema-registry.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Redpanda Schema Registry Overview",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.redpanda.com/streaming/current/manage/schema-reg/schema-reg-overview/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.redpanda.com/streaming/current/manage/schema-reg/schema-reg-overview/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\semantic-code-search-and-code-indexing.md",
       "article_id": "semantic-code-search-and-code-indexing",
       "generation_method": "ai_structured",
@@ -36975,6 +37707,67 @@
       "sources_unreachable": 0,
       "manual_reviewed": true,
       "manual_reviewed_at": "2026-05-28"
+    },
+    {
+      "file": "content\\computer-science\\test-coverage-for-code-agents.md",
+      "article_id": "test-coverage-for-code-agents",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "coverage.py Branch Coverage",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://coverage.readthedocs.io/en/latest/branch.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://coverage.readthedocs.io/en/latest/branch.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Node.js Test Runner Code Coverage",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://nodejs.org/api/test.html#collecting-code-coverage",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://nodejs.org/api/test.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "JaCoCo Coverage Counters",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.jacoco.org/jacoco/trunk/doc/counters.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.jacoco.org/jacoco/trunk/doc/counters.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content/computer-science/testing-pyramid.md",
@@ -54827,10 +55620,7 @@
               "method": "url",
               "identifier": "https://www.phaidon.com/store/art/the-story-of-modern-art-9780714831398/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.phaidon.com/en-int/store/art/the-story-of-modern-art-9780714831398"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -57042,10 +57832,7 @@
               "method": "url",
               "identifier": "https://mitpress.mit.edu/books/types-and-programming-languages",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://mitpress.mit.edu/books/types-and-programming-languages"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -58796,67 +59583,6 @@
       "sources_unreachable": 1
     },
     {
-      "file": "content\\computer-science\\test-coverage-for-code-agents.md",
-      "article_id": "test-coverage-for-code-agents",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "coverage.py Branch Coverage",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://coverage.readthedocs.io/en/latest/branch.html",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://coverage.readthedocs.io/en/latest/branch.html"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Node.js Test Runner Code Coverage",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://nodejs.org/api/test.html#collecting-code-coverage",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://nodejs.org/api/test.html"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "JaCoCo Coverage Counters",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.jacoco.org/jacoco/trunk/doc/counters.html",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://www.jacoco.org/jacoco/trunk/doc/counters.html"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
-    },
-    {
       "file": "content\\computer-science\\test-driven-development-tdd.md",
       "article_id": "kb-2026-00232",
       "generation_method": "ai_structured",
@@ -59002,10 +59728,7 @@
               "method": "url",
               "identifier": "https://mitpress.mit.edu/books/introduction-algorithms-5th-edition",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://mitpress.mit.edu/books/introduction-algorithms-5th-edition"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -59588,7 +60311,10 @@
               "method": "url",
               "identifier": "https://www.stadion.com/stretching-scientifically-book/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 405,
+                "final_url": "https://www.stadion.com/stretching-scientifically-book/"
+              },
               "match": false
             }
           ],
@@ -60099,10 +60825,7 @@
               "method": "url",
               "identifier": "https://www.cdc.gov/eis/field-epi-manual/",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.cdc.gov/eis/field-epi-manual/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
