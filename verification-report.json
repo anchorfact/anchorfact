@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-02T03:02:33.145Z",
-    "total_articles": 1059,
+    "generated": "2026-06-02T03:24:36.833Z",
+    "total_articles": 1069,
     "total_with_errors": 0,
     "average_sources_per_article": "2.5",
-    "overall_verification_rate": "87.5%",
-    "elapsed_ms": 103422,
-    "elapsed_sec": "103.4",
+    "overall_verification_rate": "87.7%",
+    "elapsed_ms": 106438,
+    "elapsed_sec": "106.4",
     "concurrency": 3
   },
   "articles": [
@@ -16218,6 +16218,67 @@
       "sources_unreachable": 0,
       "manual_reviewed": true,
       "manual_reviewed_at": "2026-05-30"
+    },
+    {
+      "file": "content\\ai\\ml-experiment-tracking.md",
+      "article_id": "ml-experiment-tracking",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Get Started with TensorBoard",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.tensorflow.org/tensorboard/get_started",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.tensorflow.org/tensorboard/get_started"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Experiments Overview - Weights and Biases",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.wandb.ai/models/track",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.wandb.ai/models/track"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Introduction to Vertex AI Experiments",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.cloud.google.com/vertex-ai/docs/experiments/intro-vertex-ai-experiments",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/vertex-ai/docs/experiments/intro-vertex-ai-experiments?hl=id"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content/ai/mlops-llmops.md",
@@ -34223,6 +34284,67 @@
       "sources_unreachable": 0,
       "manual_reviewed": true,
       "manual_reviewed_at": "2026-05-30"
+    },
+    {
+      "file": "content\\computer-science\\robots-txt-and-agent-web-access.md",
+      "article_id": "robots-txt-and-agent-web-access",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "RFC 9309 - Robots Exclusion Protocol",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://datatracker.ietf.org/doc/html/rfc9309",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://datatracker.ietf.org/doc/html/rfc9309"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "How Google Interprets the robots.txt Specification",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.google.com/crawling/docs/robots-txt/robots-txt-spec",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.google.com/crawling/docs/robots-txt/robots-txt-spec"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Introduction to robots.txt - Google Search Central",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.google.com/search/docs/crawling-indexing/robots/intro",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.google.com/search/docs/crawling-indexing/robots/intro?hl=ru"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content/computer-science/ruby-language.md",
@@ -53421,6 +53543,128 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\agent-task-queues-and-background-jobs.md",
+      "article_id": "agent-task-queues-and-background-jobs",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "What Is a Temporal Worker?",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.temporal.io/workers",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.temporal.io/workers"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Introduction to Celery",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.celeryq.dev/en/stable/getting-started/introduction.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.celeryq.dev/en/stable/getting-started/introduction.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Understand Cloud Tasks",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://cloud.google.com/tasks/docs/dual-overview",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/tasks/docs/dual-overview"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-tool-rate-limits-and-quotas.md",
+      "article_id": "agent-tool-rate-limits-and-quotas",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Rate Limits for the REST API - GitHub Docs",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Rate Limits - Stripe Documentation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.stripe.com/rate-limits",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.stripe.com/rate-limits"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Cloud Quotas Overview - Google Cloud",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://cloud.google.com/docs/quotas/overview",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/docs/quotas/overview"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\ai-for-genomics-variant-calling-gene-expression-prediction-and-protein-dna-binding.md",
       "article_id": "kb-2026-00005",
       "generation_method": "ai_structured",
@@ -53445,22 +53689,22 @@
       "sources_unreachable": 1
     },
     {
-      "file": "content\\ai\\ml-experiment-tracking.md",
-      "article_id": "ml-experiment-tracking",
+      "file": "content\\ai\\browser-automation-for-agents.md",
+      "article_id": "browser-automation-for-agents",
       "generation_method": "ai_structured",
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Get Started with TensorBoard",
+          "source_title": "Installation - Playwright",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.tensorflow.org/tensorboard/get_started",
+              "identifier": "https://playwright.dev/docs/intro",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://www.tensorflow.org/tensorboard/get_started"
+                "final_url": "https://playwright.dev/docs/intro"
               },
               "match": true
             }
@@ -53468,16 +53712,16 @@
           "all_verified": true
         },
         {
-          "source_title": "Experiments Overview - Weights and Biases",
+          "source_title": "The Selenium Browser Automation Project",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.wandb.ai/models/track",
+              "identifier": "https://www.selenium.dev/documentation/",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://docs.wandb.ai/models/track"
+                "final_url": "https://www.selenium.dev/documentation/"
               },
               "match": true
             }
@@ -53485,16 +53729,199 @@
           "all_verified": true
         },
         {
-          "source_title": "Introduction to Vertex AI Experiments",
+          "source_title": "Chrome DevTools Protocol",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.cloud.google.com/vertex-ai/docs/experiments/intro-vertex-ai-experiments",
+              "identifier": "https://chromedevtools.github.io/devtools-protocol/",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://docs.cloud.google.com/vertex-ai/docs/experiments/intro-vertex-ai-experiments?hl=id"
+                "final_url": "https://chromedevtools.github.io/devtools-protocol/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\online-llm-evaluation-and-feedback-loops.md",
+      "article_id": "online-llm-evaluation-and-feedback-loops",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Online Evaluations - LangSmith",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.langchain.com/langsmith/online-evaluations",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.langchain.com/langsmith/online-evaluations-llm-as-judge"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Working with Evals - OpenAI API",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://platform.openai.com/docs/guides/evals",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.openai.com/api/docs/guides/evals"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "LLM Evals - Phoenix",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arize.com/docs/phoenix/evaluation/llm-evals",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://arize.com/docs/phoenix/evaluation/llm-evals"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\rag-query-routing.md",
+      "article_id": "rag-query-routing",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Routers - LlamaIndex",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.llamaindex.ai/en/stable/module_guides/querying/router/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.llamaindex.ai/python/framework/module_guides/querying/router/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "ConditionalRouter - Haystack",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.haystack.deepset.ai/docs/conditionalrouter",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.haystack.deepset.ai/docs/conditionalrouter"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Evaluation Concepts - LangSmith",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.langchain.com/langsmith/evaluation-concepts",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.langchain.com/langsmith/evaluation-concepts"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\retrieval-caching-and-semantic-cache.md",
+      "article_id": "retrieval-caching-and-semantic-cache",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "LLM Cache - RedisVL",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://redis.io/docs/latest/develop/ai/redisvl/api/cache/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://redis.io/docs/latest/develop/ai/redisvl/api/cache/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Ingestion Pipeline - LlamaIndex",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.llamaindex.ai/en/stable/module_guides/loading/ingestion_pipeline/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.llamaindex.ai/python/framework/module_guides/loading/ingestion_pipeline/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Index Request Cache - OpenSearch Documentation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.opensearch.org/latest/search-plugins/caching/request-cache/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.opensearch.org/latest/search-plugins/caching/request-cache/"
               },
               "match": true
             }
@@ -53546,7 +53973,10 @@
               "method": "url",
               "identifier": "https://www.phaidon.com/store/art/the-story-of-modern-art-9780714831398/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.phaidon.com/en-int/store/art/the-story-of-modern-art-9780714831398"
+              },
               "match": false
             }
           ],
@@ -54330,6 +54760,67 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 3
+    },
+    {
+      "file": "content\\computer-science\\data-pipeline-orchestration.md",
+      "article_id": "data-pipeline-orchestration",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Dags - Apache Airflow Documentation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/dags.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/dags.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Software-Defined Assets - Dagster",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.dagster.io/guides/build/assets/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.dagster.io/guides/build/assets"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Flows - Prefect",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.prefect.io/v3/concepts/flows",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.prefect.io/v3/concepts/flows"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\data-warehousing.md",
@@ -56138,6 +56629,67 @@
       "sources_unreachable": 1
     },
     {
+      "file": "content\\computer-science\\oauth-scopes-for-agent-tools.md",
+      "article_id": "oauth-scopes-for-agent-tools",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "RFC 6749 - OAuth 2.0 Authorization Framework",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://datatracker.ietf.org/doc/html/rfc6749#section-3.3",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://datatracker.ietf.org/doc/html/rfc6749"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Scopes for OAuth Apps - GitHub Docs",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/scopes-for-oauth-apps",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/scopes-for-oauth-apps"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OAuth 2.0 Scopes for Google APIs",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.google.com/identity/protocols/oauth2/scopes",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.google.com/identity/protocols/oauth2/scopes?hl=es-419"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\object-oriented-programming-oop.md",
       "article_id": "kb-2026-00229",
       "generation_method": "ai_structured",
@@ -56713,67 +57265,6 @@
       "sources_unreachable": 3
     },
     {
-      "file": "content\\computer-science\\robots-txt-and-agent-web-access.md",
-      "article_id": "robots-txt-and-agent-web-access",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "RFC 9309 - Robots Exclusion Protocol",
-          "source_type": "standard",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://datatracker.ietf.org/doc/html/rfc9309",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://datatracker.ietf.org/doc/html/rfc9309"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "How Google Interprets the robots.txt Specification",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://developers.google.com/crawling/docs/robots-txt/robots-txt-spec",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://developers.google.com/crawling/docs/robots-txt/robots-txt-spec"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Introduction to robots.txt - Google Search Central",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://developers.google.com/search/docs/crawling-indexing/robots/intro",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://developers.google.com/search/docs/crawling-indexing/robots/intro?hl=ru"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
-    },
-    {
       "file": "content\\computer-science\\rsync.md",
       "article_id": "kb-2026-00262",
       "generation_method": "ai_structured",
@@ -57038,6 +57529,67 @@
       "sources_unreachable": 3
     },
     {
+      "file": "content\\computer-science\\sitemaps-and-structured-data-for-agent-discovery.md",
+      "article_id": "sitemaps-and-structured-data-for-agent-discovery",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Learn About Sitemaps - Google Search Central",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Introduction to Structured Data Markup",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data?hl=es-419"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Documentation - Schema.org",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://schema.org/docs/documents.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://schema.org/docs/documents.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\software-development-life-cycle-sdlc.md",
       "article_id": "kb-2026-00227",
       "generation_method": "ai_structured",
@@ -57273,6 +57825,67 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 1
+    },
+    {
+      "file": "content\\computer-science\\static-analysis-rules-and-codeql.md",
+      "article_id": "static-analysis-rules-and-codeql",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "About CodeQL Queries",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://codeql.github.com/docs/writing-codeql-queries/about-codeql-queries/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://codeql.github.com/docs/writing-codeql-queries/about-codeql-queries/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Write Rules - Semgrep",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://semgrep.dev/docs/writing-rules/overview",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://semgrep.dev/docs/writing-rules/overview"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Custom Rules - ESLint",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://eslint.org/docs/latest/extend/custom-rules",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://eslint.org/docs/latest/extend/custom-rules"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\strategy-pattern.md",
