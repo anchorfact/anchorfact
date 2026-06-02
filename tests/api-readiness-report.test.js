@@ -150,7 +150,7 @@ console.log('AnchorFact API Readiness Report Tests\n');
 
 test('core query set defines subscription-readiness probes across paid-use categories', () => {
   assert(CORE_CORPUS_QUERIES.length >= 100, 'core query set should preserve the 100-query foundation');
-  assert(CORE_CORPUS_QUERIES.length <= 540, 'core query set should stay inside the expanded readiness-corpus range');
+  assert(CORE_CORPUS_QUERIES.length <= 560, 'core query set should stay inside the expanded readiness-corpus range');
   const categories = new Set(CORE_CORPUS_QUERIES.map(query => query.category));
   for (const category of ['agent_execution_sources', 'agent_rag', 'api_mcp', 'security_governance', 'data_infrastructure', 'llm_evaluation', 'developer_workflows', 'code_intelligence']) {
     assert(categories.has(category), `missing category ${category}`);
@@ -281,6 +281,7 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'ai/agent-ci-logs-and-deployment-history',
     'ai/agent-ticket-and-issue-tracker-lookup',
     'ai/agent-audit-logs-and-activity-feeds',
+    'ai/agent-cloudwatch-logs-insights-and-log-groups',
     'ai/agent-execution-dry-runs-and-plan-previews',
     'ai/agent-service-ownership-and-on-call-schedules',
     'ai/agent-container-image-registry-and-tags',
@@ -298,6 +299,7 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'ai/agent-kubernetes-ephemeral-containers-and-debugging',
     'ai/agent-kubernetes-rbac-and-subjectaccessreviews',
     'ai/agent-kubernetes-init-containers-and-sidecar-containers',
+    'ai/agent-kubernetes-owner-references-and-replicaset-lineage',
     'ai/agent-helm-release-history-and-values-overrides',
     'ai/agent-github-actions-run-attempts-and-job-summaries',
     'ai/agent-github-actions-environments-and-deployment-review',
@@ -308,6 +310,7 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'ai/agent-error-budget-burn-rate-alerts',
     'ai/agent-feature-store-and-online-offline-consistency',
     'ai/agent-api-rate-limit-headers-and-retry-after',
+    'ai/agent-prometheus-promql-and-alert-labels',
     'ai/agent-queue-backlog-and-consumer-lag',
     'ai/agent-cdn-cache-headers-and-invalidation',
     'ai/agent-cloud-billing-and-cost-anomaly-signals',
@@ -541,14 +544,20 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'computer-science/dom-locators-and-accessible-names-for-ui-agents',
     'ai/rag-incremental-indexing-and-vector-upserts',
     'ai/rag-document-content-hashes-and-reindex-triggers',
+    'ai/rag-document-layout-and-table-extraction',
     'ai/vector-store-namespaces-and-tenant-isolation',
     'ai/retrieval-elasticsearch-point-in-time-and-search-after',
+    'ai/retrieval-milvus-collections-and-vector-indexes',
+    'ai/retrieval-opensearch-neural-search-and-search-pipelines',
     'ai/retrieval-vespa-nearest-neighbor-and-weakand',
     'ai/llm-evaluation-benchmark-harnesses-and-task-registries',
     'ai/llm-evaluation-helm-scenarios-and-metrics',
     'ai/llm-evaluation-osworld-computer-use-benchmarks',
+    'ai/llm-evaluation-webarena-web-agent-benchmarks',
+    'ai/llm-evaluation-swe-bench-verified-code-agent-benchmarks',
     'computer-science/openapi-operation-ids-and-links-for-agent-navigation',
     'computer-science/data-policy-tags-and-sensitive-column-governance',
+    'computer-science/data-iceberg-branches-tags-and-write-audit-publish',
     'computer-science/package-manager-workspaces-and-monorepo-dependencies',
     'ai/agent-event-logs-and-state-replay',
     'ai/vector-index-parameters-and-recall-latency-tuning',
@@ -558,8 +567,10 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'computer-science/api-graphql-persisted-queries-and-operation-safelists',
     'computer-science/api-graphql-operation-names-and-variables-for-agents',
     'computer-science/api-graphql-query-cost-and-depth-limits',
+    'computer-science/api-graphql-federation-and-subgraph-schemas',
     'computer-science/api-openapi-discriminators-and-polymorphic-schemas',
     'computer-science/api-openapi-parameter-serialization-style-and-explode',
+    'computer-science/api-openapi-arazzo-workflows-and-overlays',
     'computer-science/api-grpc-health-checking-for-agent-clients',
     'computer-science/api-oauth-token-revocation-and-refresh-tokens',
     'computer-science/api-grpc-status-codes-and-error-details',

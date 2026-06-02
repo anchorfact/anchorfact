@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-02T22:02:14.717Z",
-    "total_articles": 1443,
+    "generated": "2026-06-02T22:46:11.584Z",
+    "total_articles": 1454,
     "total_with_errors": 0,
     "average_sources_per_article": "2.6",
     "overall_verification_rate": "91.1%",
-    "elapsed_ms": 96584,
-    "elapsed_sec": "96.6",
+    "elapsed_ms": 95701,
+    "elapsed_sec": "95.7",
     "concurrency": 3
   },
   "articles": [
@@ -1721,6 +1721,50 @@
         }
       ],
       "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-cloudwatch-logs-insights-and-log-groups.md",
+      "article_id": "agent-cloudwatch-logs-insights-and-log-groups",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Analyzing Log Data with CloudWatch Logs Insights",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/AnalyzingLogData.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/AnalyzingLogData.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "CloudWatch Logs Insights Query Syntax",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_QuerySyntax.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_QuerySyntax.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
       "sources_unreachable": 0
     },
     {
@@ -3914,6 +3958,50 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\agent-kubernetes-owner-references-and-replicaset-lineage.md",
+      "article_id": "agent-kubernetes-owner-references-and-replicaset-lineage",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Kubernetes Owners and Dependents",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kubernetes.io/docs/concepts/overview/working-with-objects/owners-dependents/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://kubernetes.io/docs/concepts/overview/working-with-objects/owners-dependents/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Kubernetes ReplicaSet",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\agent-kubernetes-persistent-volumes-and-storage-classes.md",
       "article_id": "agent-kubernetes-persistent-volumes-and-storage-classes",
       "generation_method": "ai_structured",
@@ -4960,6 +5048,50 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://openai.github.io/openai-agents-python/agents/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-prometheus-promql-and-alert-labels.md",
+      "article_id": "agent-prometheus-promql-and-alert-labels",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Prometheus Querying Basics",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://prometheus.io/docs/prometheus/latest/querying/basics/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://prometheus.io/docs/prometheus/latest/querying/basics/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Prometheus Alerting Rules",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://prometheus.io/docs/prometheus/latest/configuration/alerting_rules/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://prometheus.io/docs/prometheus/latest/configuration/alerting_rules/"
               },
               "match": true
             }
@@ -22972,6 +23104,49 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\llm-evaluation-osworld-computer-use-benchmarks.md",
+      "article_id": "llm-evaluation-osworld-computer-use-benchmarks",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "OSWorld Benchmark Paper",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "arxiv",
+              "identifier": "2404.07972",
+              "verified": true,
+              "metadata": {
+                "title": "arXiv Query: search_query=&amp;id_list=2404.07972&amp;start=0&amp;max_results=1"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OSWorld Repository",
+          "source_type": "software_repository",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://github.com/xlang-ai/OSWorld",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://github.com/xlang-ai/OSWorld"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\llm-evaluation-privacy-and-pii-leakage-tests.md",
       "article_id": "llm-evaluation-privacy-and-pii-leakage-tests",
       "generation_method": "ai_structured",
@@ -23459,6 +23634,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\llm-evaluation-swe-bench-verified-code-agent-benchmarks.md",
+      "article_id": "llm-evaluation-swe-bench-verified-code-agent-benchmarks",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "SWE-bench Overview",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.swebench.com/SWE-bench/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.swebench.com/SWE-bench/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "SWE-bench Verified",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.swebench.com/verified.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.swebench.com/verified.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "SWE-bench FAQ",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.swebench.com/SWE-bench/faq/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.swebench.com/SWE-bench/faq/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\llm-evaluation-tool-call-accuracy-and-argument-validation.md",
       "article_id": "llm-evaluation-tool-call-accuracy-and-argument-validation",
       "generation_method": "ai_structured",
@@ -23561,6 +23797,50 @@
         }
       ],
       "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\llm-evaluation-webarena-web-agent-benchmarks.md",
+      "article_id": "llm-evaluation-webarena-web-agent-benchmarks",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "WebArena Paper PDF",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://webarena.dev/static/paper.pdf",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://webarena.dev/static/paper.pdf"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "WebArena Repository",
+          "source_type": "software_repository",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://github.com/web-arena-x/webarena",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://github.com/web-arena-x/webarena"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
       "sources_unreachable": 0
     },
     {
@@ -27607,6 +27887,50 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\rag-document-layout-and-table-extraction.md",
+      "article_id": "rag-document-layout-and-table-extraction",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Microsoft Document Intelligence Layout Model",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/prebuilt/layout?view=doc-intel-4.0.0",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/prebuilt/layout?view=doc-intel-4.0.0"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Amazon Textract Tables",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.aws.amazon.com/textract/latest/dg/how-it-works-tables.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.aws.amazon.com/textract/latest/dg/how-it-works-tables.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\rag-embedding-dimensions-and-index-compatibility.md",
       "article_id": "rag-embedding-dimensions-and-index-compatibility",
       "generation_method": "ai_structured",
@@ -30095,6 +30419,50 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\retrieval-milvus-collections-and-vector-indexes.md",
+      "article_id": "retrieval-milvus-collections-and-vector-indexes",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Milvus Collection Explained Documentation Source",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://github.com/milvus-io/milvus-docs/blob/v3.0.x/site/en/userGuide/collections/manage-collections.md",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://github.com/milvus-io/milvus-docs/blob/v3.0.x/site/en/userGuide/collections/manage-collections.md"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Milvus Index Vector Fields Documentation Source",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://github.com/milvus-io/milvus-docs/blob/v3.0.x/site/en/userGuide/manage-indexes/index-vector-fields.md",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://github.com/milvus-io/milvus-docs/blob/v3.0.x/site/en/userGuide/manage-indexes/index-vector-fields.md"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\retrieval-multivector-indexing.md",
       "article_id": "retrieval-multivector-indexing",
       "generation_method": "ai_structured",
@@ -30153,6 +30521,50 @@
         }
       ],
       "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\retrieval-opensearch-neural-search-and-search-pipelines.md",
+      "article_id": "retrieval-opensearch-neural-search-and-search-pipelines",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "OpenSearch AI Search",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.opensearch.org/latest/vector-search/ai-search/index/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.opensearch.org/latest/vector-search/ai-search/index/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenSearch Search Pipelines",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.opensearch.org/latest/search-plugins/search-pipelines/index/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.opensearch.org/latest/search-plugins/search-pipelines/index/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
       "sources_unreachable": 0
     },
     {
@@ -39313,6 +39725,50 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\api-openapi-arazzo-workflows-and-overlays.md",
+      "article_id": "api-openapi-arazzo-workflows-and-overlays",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Arazzo Specification",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://spec.openapis.org/arazzo/latest.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://spec.openapis.org/arazzo/latest.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenAPI Overlay Specification",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://spec.openapis.org/overlay/latest.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://spec.openapis.org/overlay/latest.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\api-openapi-breaking-change-detection.md",
       "article_id": "api-openapi-breaking-change-detection",
       "generation_method": "ai_structured",
@@ -46029,6 +46485,50 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://hudi.apache.org/docs/sql_queries/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\data-iceberg-branches-tags-and-write-audit-publish.md",
+      "article_id": "data-iceberg-branches-tags-and-write-audit-publish",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Apache Iceberg Branching and Tagging",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://iceberg.apache.org/docs/latest/branching/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://iceberg.apache.org/docs/latest/branching/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Apache Iceberg Spark Queries",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://iceberg.apache.org/docs/latest/spark-queries/#time-travel",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://iceberg.apache.org/docs/latest/spark-queries/"
               },
               "match": true
             }
@@ -75478,49 +75978,6 @@
       "sources_unreachable": 1
     },
     {
-      "file": "content\\ai\\llm-evaluation-osworld-computer-use-benchmarks.md",
-      "article_id": "llm-evaluation-osworld-computer-use-benchmarks",
-      "generation_method": "ai_structured",
-      "sources_total": 2,
-      "verification_results": [
-        {
-          "source_title": "OSWorld Benchmark Paper",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "arxiv",
-              "identifier": "2404.07972",
-              "verified": true,
-              "metadata": {
-                "title": "arXiv Query: search_query=&amp;id_list=2404.07972&amp;start=0&amp;max_results=1"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "OSWorld Repository",
-          "source_type": "software_repository",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://github.com/xlang-ai/OSWorld",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://github.com/xlang-ai/OSWorld"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
-    },
-    {
       "file": "content\\arts\\history-of-printing.md",
       "article_id": "kb-2026-00479",
       "generation_method": "ai_assisted",
@@ -75793,6 +76250,50 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 1
+    },
+    {
+      "file": "content\\computer-science\\api-graphql-federation-and-subgraph-schemas.md",
+      "article_id": "api-graphql-federation-and-subgraph-schemas",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Apollo Federation Subgraph Specification",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.apollographql.com/docs/graphos/schema-design/federated-schemas/reference/subgraph-spec",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.apollographql.com/docs/graphos/schema-design/federated-schemas/reference/subgraph-spec"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Apollo Federation Directives Reference",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.apollographql.com/docs/graphos/schema-design/federated-schemas/reference/directives",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.apollographql.com/docs/graphos/schema-design/federated-schemas/reference/directives"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\bloom-filters-space-efficient-probabilistic-data-structures.md",
