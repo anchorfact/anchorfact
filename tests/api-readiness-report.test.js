@@ -394,7 +394,22 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'computer-science/static-analysis-sarif-results-for-code-agents',
     'computer-science/test-coverage-maps-for-code-agents',
     'computer-science/code-codemods-and-ast-transforms-for-agents',
-    'computer-science/code-compile-commands-and-language-toolchains'
+    'computer-science/code-compile-commands-and-language-toolchains',
+    'ai/agent-workload-identity-and-service-accounts',
+    'ai/agent-object-storage-versioning-and-lifecycle-rules',
+    'ai/agent-proxy-and-load-balancer-access-logs',
+    'ai/agent-database-schema-introspection-and-system-catalogs',
+    'ai/agent-tool-risk-annotations-and-approval-boundaries',
+    'ai/rag-connector-sync-state-and-document-loaders',
+    'ai/retrieval-relevance-judgments-and-qrels',
+    'ai/llm-evaluation-dataset-cards-and-metadata',
+    'ai/llm-evaluation-refusal-and-overrefusal-testing',
+    'computer-science/api-long-running-operations-and-polling',
+    'computer-science/api-batch-requests-and-bulk-operations',
+    'computer-science/data-orchestration-assets-and-event-driven-schedules',
+    'computer-science/data-cdc-lag-and-replication-slots',
+    'computer-science/code-debug-adapter-protocol-for-agents',
+    'computer-science/code-semantic-tokens-and-symbol-classification'
   ]) {
     assert(slugs.includes(slug), `missing agent/code-intelligence readiness slug ${slug}`);
   }

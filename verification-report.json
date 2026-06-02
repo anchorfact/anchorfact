@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-02T10:25:34.426Z",
-    "total_articles": 1240,
+    "generated": "2026-06-02T11:07:06.747Z",
+    "total_articles": 1255,
     "total_with_errors": 0,
     "average_sources_per_article": "2.6",
-    "overall_verification_rate": "89.6%",
-    "elapsed_ms": 138391,
-    "elapsed_sec": "138.4",
+    "overall_verification_rate": "89.8%",
+    "elapsed_ms": 131845,
+    "elapsed_sec": "131.8",
     "concurrency": 3
   },
   "articles": [
@@ -1680,6 +1680,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\agent-database-schema-introspection-and-system-catalogs.md",
+      "article_id": "agent-database-schema-introspection-and-system-catalogs",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "PostgreSQL Information Schema",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.postgresql.org/docs/current/information-schema.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.postgresql.org/docs/current/information-schema.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "DuckDB Information Schema",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://duckdb.org/docs/stable/sql/meta/information_schema",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://duckdb.org/docs/stable/sql/meta/information_schema"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Snowflake Information Schema",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.snowflake.com/en/sql-reference/info-schema",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.snowflake.com/en/sql-reference/info-schema"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\agent-dns-records-and-propagation.md",
       "article_id": "agent-dns-records-and-propagation",
       "generation_method": "ai_structured",
@@ -2986,6 +3047,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\agent-object-storage-versioning-and-lifecycle-rules.md",
+      "article_id": "agent-object-storage-versioning-and-lifecycle-rules",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Amazon S3 Versioning",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/Versioning.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/Versioning.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Google Cloud Storage Object Lifecycle Management",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.cloud.google.com/storage/docs/lifecycle",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/storage/docs/lifecycle?hl=he"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Amazon S3 Object Lifecycle Management",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lifecycle-mgmt.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lifecycle-mgmt.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\agent-observability-and-tracing.md",
       "article_id": "agent-observability-and-tracing",
       "generation_method": "ai_structured",
@@ -3149,6 +3271,67 @@
         }
       ],
       "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-proxy-and-load-balancer-access-logs.md",
+      "article_id": "agent-proxy-and-load-balancer-access-logs",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "AWS Application Load Balancer Access Logs",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-access-logs.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-access-logs.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Envoy Access Logging",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.envoyproxy.io/docs/envoy/latest/configuration/observability/access_log/usage",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.envoyproxy.io/docs/envoy/latest/configuration/observability/access_log/usage"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Istio Envoy Access Logs",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://istio.io/latest/docs/tasks/observability/logs/access-log/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://istio.io/latest/docs/tasks/observability/logs/access-log/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
       "sources_unreachable": 0
     },
     {
@@ -4433,6 +4616,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\agent-tool-risk-annotations-and-approval-boundaries.md",
+      "article_id": "agent-tool-risk-annotations-and-approval-boundaries",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Model Context Protocol Tools Specification",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://modelcontextprotocol.io/specification/2025-06-18/server/tools",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://modelcontextprotocol.io/specification/2025-06-18/server/tools"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenAI Function Calling Guide",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.openai.com/api/docs/guides/function-calling",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.openai.com/api/docs/guides/function-calling"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Anthropic Tool Use Overview",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/overview",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/overview"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\agent-tool-schema-validation.md",
       "article_id": "agent-tool-schema-validation",
       "generation_method": "ai_structured",
@@ -4666,6 +4910,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://shopify.dev/docs/apps/build/webhooks/troubleshoot"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-workload-identity-and-service-accounts.md",
+      "article_id": "agent-workload-identity-and-service-accounts",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Kubernetes Service Accounts",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kubernetes.io/docs/concepts/security/service-accounts/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://kubernetes.io/docs/concepts/security/service-accounts/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Amazon EKS IAM Roles for Service Accounts",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.aws.amazon.com/eks/latest/userguide/iam-roles-for-service-accounts.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.aws.amazon.com/eks/latest/userguide/iam-roles-for-service-accounts.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Google Cloud Workload Identity Federation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.cloud.google.com/iam/docs/workload-identity-federation",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/iam/docs/workload-identity-federation"
               },
               "match": true
             }
@@ -19299,6 +19604,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\llm-evaluation-dataset-cards-and-metadata.md",
+      "article_id": "llm-evaluation-dataset-cards-and-metadata",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Hugging Face Dataset Cards",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://huggingface.co/docs/hub/datasets-cards",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://huggingface.co/docs/hub/datasets-cards"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "MLCommons Croissant Specification",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.mlcommons.org/croissant/docs/croissant-spec.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.mlcommons.org/croissant/docs/croissant-spec.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenAI Evals Guide",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.openai.com/api/docs/guides/evals",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.openai.com/api/docs/guides/evals"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\llm-evaluation-dataset-versioning.md",
       "article_id": "llm-evaluation-dataset-versioning",
       "generation_method": "ai_structured",
@@ -19604,6 +19970,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\llm-evaluation-judge-prompt-rubrics-and-scorecards.md",
+      "article_id": "llm-evaluation-judge-prompt-rubrics-and-scorecards",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "OpenAI Working with Evals",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.openai.com/api/docs/guides/evals",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.openai.com/api/docs/guides/evals"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenAI Graders",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.openai.com/api/docs/guides/graders",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.openai.com/api/docs/guides/graders"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Braintrust Evaluate Systematically",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.braintrust.dev/docs/evaluate",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.braintrust.dev/docs/evaluate"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\llm-evaluation-production-canaries.md",
       "article_id": "llm-evaluation-production-canaries",
       "generation_method": "ai_structured",
@@ -19715,6 +20142,66 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://arize.com/docs/phoenix/prompt-engineering/how-to-prompts/create-a-prompt"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\llm-evaluation-refusal-and-overrefusal-testing.md",
+      "article_id": "llm-evaluation-refusal-and-overrefusal-testing",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "OpenAI Model Spec",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://model-spec.openai.com/2025-12-18.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://model-spec.openai.com/2025-12-18.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "XSTest Paper",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://aclanthology.org/2024.naacl-long.301/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://aclanthology.org/2024.naacl-long.301/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "SORRY-Bench Paper",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "arxiv",
+              "identifier": "2406.14598",
+              "verified": true,
+              "metadata": {
+                "title": "arXiv Query: search_query=&amp;id_list=2406.14598&amp;start=0&amp;max_results=1"
               },
               "match": true
             }
@@ -23481,6 +23968,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\rag-connector-sync-state-and-document-loaders.md",
+      "article_id": "rag-connector-sync-state-and-document-loaders",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "LlamaIndex Data Connectors",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.llamaindex.ai/python/framework/module_guides/loading/connector/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.llamaindex.ai/python/framework/module_guides/loading/connector/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "LangChain Document Loaders",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.langchain.com/oss/python/integrations/document_loaders/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.langchain.com/oss/python/integrations/document_loaders/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Unstructured Partitioning",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.unstructured.io/open-source/core-functionality/partitioning",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.unstructured.io/open-source/core-functionality/partitioning"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\rag-context-window-packing-and-token-budgets.md",
       "article_id": "rag-context-window-packing-and-token-budgets",
       "generation_method": "ai_structured",
@@ -25633,6 +26181,66 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://docs.langchain.com/oss/python/langchain/retrieval"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\retrieval-relevance-judgments-and-qrels.md",
+      "article_id": "retrieval-relevance-judgments-and-qrels",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "NIST TREC Overview",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://trec.nist.gov/overview.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://trec.nist.gov/overview.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "NIST trec_eval",
+          "source_type": "software",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://trec.nist.gov/trec_eval/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://trec.nist.gov/trec_eval/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "BEIR Benchmark Paper",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "arxiv",
+              "identifier": "2104.08663",
+              "verified": true,
+              "metadata": {
+                "title": "arXiv Query: search_query=&amp;id_list=2104.08663&amp;start=0&amp;max_results=1"
               },
               "match": true
             }
@@ -32556,6 +33164,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\api-long-running-operations-and-polling.md",
+      "article_id": "api-long-running-operations-and-polling",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Google AIP-151 Long-running Operations",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://google.aip.dev/151",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://google.aip.dev/151"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Azure Asynchronous Request-Reply Pattern",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://learn.microsoft.com/en-us/azure/architecture/patterns/asynchronous-request-reply",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/asynchronous-request-reply"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Azure Resource Manager Async Operations",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/async-operations",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/async-operations"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\api-multipart-upload-and-resumable-transfers.md",
       "article_id": "api-multipart-upload-and-resumable-transfers",
       "generation_method": "ai_structured",
@@ -32667,6 +33336,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://developers.cloudflare.com/api-shield/security/mtls/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\api-oauth-device-authorization-flow.md",
+      "article_id": "api-oauth-device-authorization-flow",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "RFC 8628 OAuth 2.0 Device Authorization Grant",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://datatracker.ietf.org/doc/html/rfc8628",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://datatracker.ietf.org/doc/html/rfc8628"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Google OAuth for Limited-Input Devices",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.google.com/identity/protocols/oauth2/limited-input-device",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.google.com/identity/protocols/oauth2/limited-input-device"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GitHub OAuth Device Flow",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/authorizing-oauth-apps#device-flow",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/authorizing-oauth-apps"
               },
               "match": true
             }
@@ -34885,6 +35615,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\code-debug-adapter-protocol-for-agents.md",
+      "article_id": "code-debug-adapter-protocol-for-agents",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Debug Adapter Protocol Overview",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://microsoft.github.io/debug-adapter-protocol/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://microsoft.github.io/debug-adapter-protocol/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Debug Adapter Protocol Specification",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://microsoft.github.io/debug-adapter-protocol/specification",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://microsoft.github.io/debug-adapter-protocol/specification"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Debug Adapter Protocol JSON Schema",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://raw.githubusercontent.com/microsoft/debug-adapter-protocol/main/debugAdapterProtocol.json",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://raw.githubusercontent.com/microsoft/debug-adapter-protocol/main/debugAdapterProtocol.json"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content/computer-science/code-graphs-and-code-intelligence.md",
       "article_id": "code-graphs-and-code-intelligence",
       "generation_method": "ai_structured",
@@ -35103,6 +35894,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://sourcegraph.com/docs/code-search/features"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\code-semantic-tokens-and-symbol-classification.md",
+      "article_id": "code-semantic-tokens-and-symbol-classification",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Language Server Protocol Semantic Tokens",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://microsoft.github.io/language-server-protocol/specifications/lsp/3.17/specification/#semanticTokens",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://microsoft.github.io/language-server-protocol/specifications/lsp/3.17/specification/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Tree-sitter Syntax Highlighting",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://tree-sitter.github.io/tree-sitter/3-syntax-highlighting.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://tree-sitter.github.io/tree-sitter/3-syntax-highlighting.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Pygments Token Types",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://pygments.org/docs/tokens/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://pygments.org/docs/tokens/"
               },
               "match": true
             }
@@ -36170,6 +37022,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\data-cdc-lag-and-replication-slots.md",
+      "article_id": "data-cdc-lag-and-replication-slots",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Debezium Monitoring",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://debezium.io/documentation/reference/stable/operations/monitoring.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://debezium.io/documentation/reference/stable/operations/monitoring.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "PostgreSQL pg_replication_slots",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.postgresql.org/docs/current/view-pg-replication-slots.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.postgresql.org/docs/current/view-pg-replication-slots.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "MySQL SHOW REPLICA STATUS",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://dev.mysql.com/doc/refman/8.4/en/show-replica-status.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://dev.mysql.com/doc/refman/8.4/en/show-replica-status.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\data-change-data-feed-and-incremental-table-reads.md",
       "article_id": "data-change-data-feed-and-incremental-table-reads",
       "generation_method": "ai_structured",
@@ -36769,6 +37682,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://docs.snowflake.com/en/user-guide/views-materialized"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\data-orchestration-assets-and-event-driven-schedules.md",
+      "article_id": "data-orchestration-assets-and-event-driven-schedules",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Apache Airflow Asset Definitions",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://airflow.apache.org/docs/apache-airflow/stable/authoring-and-scheduling/assets.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://airflow.apache.org/docs/apache-airflow/stable/authoring-and-scheduling/assets.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Dagster Software-Defined Assets",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.dagster.io/guides/build/assets",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.dagster.io/guides/build/assets"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Prefect Assets",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.prefect.io/v3/concepts/assets",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.prefect.io/v3/concepts/assets"
               },
               "match": true
             }
@@ -64487,67 +65461,6 @@
       "sources_unreachable": 1
     },
     {
-      "file": "content\\ai\\llm-evaluation-judge-prompt-rubrics-and-scorecards.md",
-      "article_id": "llm-evaluation-judge-prompt-rubrics-and-scorecards",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "OpenAI Working with Evals",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://developers.openai.com/api/docs/guides/evals",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://developers.openai.com/api/docs/guides/evals"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "OpenAI Graders",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://developers.openai.com/api/docs/guides/graders",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://developers.openai.com/api/docs/guides/graders"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Braintrust Evaluate Systematically",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.braintrust.dev/docs/evaluate",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://www.braintrust.dev/docs/evaluate"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
-    },
-    {
       "file": "content\\arts\\history-of-printing.md",
       "article_id": "kb-2026-00479",
       "generation_method": "ai_assisted",
@@ -64727,7 +65640,10 @@
               "method": "url",
               "identifier": "https://press.princeton.edu/books/paperback/9780691170817/the-theory-of-games-and-economic-behavior",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://press.princeton.edu/books/paperback/9780691170817/the-theory-of-games-and-economic-behavior"
+              },
               "match": false
             }
           ],
@@ -64751,10 +65667,7 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/library/view/the-art-of/9781098102593/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.oreilly.com/library/view/the-art-of/9781098102593/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -64819,22 +65732,22 @@
       "sources_unreachable": 1
     },
     {
-      "file": "content\\computer-science\\api-oauth-device-authorization-flow.md",
-      "article_id": "api-oauth-device-authorization-flow",
+      "file": "content\\computer-science\\api-batch-requests-and-bulk-operations.md",
+      "article_id": "api-batch-requests-and-bulk-operations",
       "generation_method": "ai_structured",
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "RFC 8628 OAuth 2.0 Device Authorization Grant",
+          "source_title": "JSON API Atomic Operations",
           "source_type": "standard",
           "results": [
             {
               "method": "url",
-              "identifier": "https://datatracker.ietf.org/doc/html/rfc8628",
+              "identifier": "https://jsonapi.org/ext/atomic/",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://datatracker.ietf.org/doc/html/rfc8628"
+                "final_url": "https://jsonapi.org/ext/atomic/"
               },
               "match": true
             }
@@ -64842,16 +65755,16 @@
           "all_verified": true
         },
         {
-          "source_title": "Google OAuth for Limited-Input Devices",
+          "source_title": "Google Cloud Storage Batch Requests",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://developers.google.com/identity/protocols/oauth2/limited-input-device",
+              "identifier": "https://docs.cloud.google.com/storage/docs/batch",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://developers.google.com/identity/protocols/oauth2/limited-input-device"
+                "final_url": "https://docs.cloud.google.com/storage/docs/batch?hl=ja"
               },
               "match": true
             }
@@ -64859,16 +65772,16 @@
           "all_verified": true
         },
         {
-          "source_title": "GitHub OAuth Device Flow",
+          "source_title": "Google Calendar API Batch Requests",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/authorizing-oauth-apps#device-flow",
+              "identifier": "https://developers.google.com/workspace/calendar/api/guides/batch",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/authorizing-oauth-apps"
+                "final_url": "https://developers.google.com/workspace/calendar/api/guides/batch"
               },
               "match": true
             }
@@ -65282,7 +66195,10 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/websec/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.oreilly.com/websec/"
+              },
               "match": false
             }
           ],
@@ -66760,7 +67676,10 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/linux-netsec/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.oreilly.com/linux-netsec/"
+              },
               "match": false
             }
           ],
@@ -66855,10 +67774,7 @@
               "method": "url",
               "identifier": "https://mitpress.mit.edu/books/types-and-programming-languages",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://mitpress.mit.edu/books/types-and-programming-languages"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -66930,10 +67846,7 @@
               "method": "url",
               "identifier": "https://my.siam.org/Store/Product/viewproduct/?ProductId=37827",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://my.siam.org/Store/Product/viewproduct/?ProductId=37827"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -67018,10 +67931,7 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/linux-kernel/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.oreilly.com/linux-kernel/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -67326,7 +68236,10 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/head-first-design-patterns/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.oreilly.com/head-first-design-patterns/"
+              },
               "match": false
             }
           ],
@@ -67631,7 +68544,10 @@
               "method": "url",
               "identifier": "https://www.packtpub.com/redis/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 403,
+                "final_url": "https://www.packtpub.com/redis/"
+              },
               "match": false
             }
           ],
@@ -68217,10 +69133,7 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/websec/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.oreilly.com/websec/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -68525,7 +69438,10 @@
               "method": "url",
               "identifier": "https://www.rfc-editor.org/rfc/rfc791",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.rfc-editor.org/rfc/rfc791"
+              },
               "match": false
             }
           ],
@@ -68539,7 +69455,10 @@
               "method": "url",
               "identifier": "https://www.rfc-editor.org/rfc/rfc793",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.rfc-editor.org/rfc/rfc793"
+              },
               "match": false
             }
           ],
@@ -68553,7 +69472,10 @@
               "method": "url",
               "identifier": "https://www.rfc-editor.org/rfc/rfc768",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.rfc-editor.org/rfc/rfc768"
+              },
               "match": false
             }
           ],
@@ -69217,10 +70139,7 @@
               "method": "url",
               "identifier": "https://www.cdc.gov/eis/field-epi-manual/",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.cdc.gov/eis/field-epi-manual/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -69481,10 +70400,7 @@
               "method": "url",
               "identifier": "https://thamesandhudson.com/the-complete-pyramids-9780500285473",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.thamesandhudson.com/the-complete-pyramids-9780500285473"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -69515,10 +70431,7 @@
               "method": "url",
               "identifier": "https://thamesandhudson.com/giza/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.thamesandhudson.com/giza"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -70265,7 +71178,10 @@
               "method": "url",
               "identifier": "https://www.hatchards.co.uk/book/jonathan-wilson/inverting-the-pyramid/9781409128649",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 403,
+                "final_url": "https://www.hatchards.co.uk/book/jonathan-wilson/inverting-the-pyramid/9781409128649"
+              },
               "match": false
             }
           ],
