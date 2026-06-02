@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-02T20:49:07.226Z",
-    "total_articles": 1421,
+    "generated": "2026-06-02T21:27:30.707Z",
+    "total_articles": 1432,
     "total_with_errors": 0,
     "average_sources_per_article": "2.6",
     "overall_verification_rate": "91.0%",
-    "elapsed_ms": 99986,
-    "elapsed_sec": "100.0",
+    "elapsed_ms": 94703,
+    "elapsed_sec": "94.7",
     "concurrency": 3
   },
   "articles": [
@@ -1968,6 +1968,50 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\agent-container-security-context-seccomp-and-capabilities.md",
+      "article_id": "agent-container-security-context-seccomp-and-capabilities",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Kubernetes Configure a Security Context",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kubernetes.io/docs/tasks/configure-pod-container/security-context/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://kubernetes.io/docs/tasks/configure-pod-container/security-context/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Docker Seccomp Security Profiles",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.docker.com/engine/security/seccomp/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.docker.com/engine/security/seccomp/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\agent-context-compaction-and-summarization.md",
       "article_id": "agent-context-compaction-and-summarization",
       "generation_method": "ai_structured",
@@ -3240,6 +3284,111 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\agent-github-actions-run-attempts-and-job-summaries.md",
+      "article_id": "agent-github-actions-run-attempts-and-job-summaries",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "GitHub REST API Workflow Runs",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/rest/actions/workflow-runs/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/rest/actions/workflow-runs"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GitHub Actions Workflow Commands",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-commands"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-helm-release-history-and-values-overrides.md",
+      "article_id": "agent-helm-release-history-and-values-overrides",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Helm history",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://helm.sh/docs/helm/helm_history/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://helm.sh/docs/helm/helm_history/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Helm get values",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://helm.sh/docs/helm/helm_get_values/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://helm.sh/docs/helm/helm_get_values/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Helm status",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://helm.sh/docs/helm/helm_status/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://helm.sh/docs/helm/helm_status/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\agent-human-in-the-loop-approval.md",
       "article_id": "agent-human-in-the-loop-approval",
       "generation_method": "ai_structured",
@@ -3464,6 +3613,50 @@
         }
       ],
       "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-kubernetes-ephemeral-containers-and-debugging.md",
+      "article_id": "agent-kubernetes-ephemeral-containers-and-debugging",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Kubernetes Debug Running Pods",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kubernetes.io/docs/tasks/debug/debug-application/debug-running-pod/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://kubernetes.io/docs/tasks/debug/debug-application/debug-running-pod/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Kubernetes kubectl debug",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_debug/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_debug/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
       "sources_unreachable": 0
     },
     {
@@ -3727,6 +3920,50 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://kubernetes.io/docs/tasks/run-application/configure-pdb/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-kubernetes-probes-and-readiness-gates.md",
+      "article_id": "agent-kubernetes-probes-and-readiness-gates",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Kubernetes Liveness, Readiness, and Startup Probes",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kubernetes.io/docs/concepts/workloads/pods/probes/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://kubernetes.io/docs/concepts/workloads/pods/probes/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Kubernetes Pod Conditions",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kubernetes.io/docs/concepts/workloads/pods/pod-condition/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://kubernetes.io/docs/concepts/workloads/pods/pod-condition/"
               },
               "match": true
             }
@@ -5741,6 +5978,50 @@
         }
       ],
       "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-terraform-plan-output-and-resource-addresses.md",
+      "article_id": "agent-terraform-plan-output-and-resource-addresses",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Terraform Plan Command",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.hashicorp.com/terraform/cli/commands/plan",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developer.hashicorp.com/terraform/cli/commands/plan"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Terraform Resource Address Reference",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.hashicorp.com/terraform/cli/state/resource-addressing",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developer.hashicorp.com/terraform/cli/state/resource-addressing"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
       "sources_unreachable": 0
     },
     {
@@ -21491,6 +21772,50 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\llm-evaluation-berkeley-function-calling-leaderboard.md",
+      "article_id": "llm-evaluation-berkeley-function-calling-leaderboard",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Berkeley Function Calling Leaderboard README",
+          "source_type": "software_repository",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://raw.githubusercontent.com/ShishirPatil/gorilla/main/berkeley-function-call-leaderboard/README.md",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://raw.githubusercontent.com/ShishirPatil/gorilla/main/berkeley-function-call-leaderboard/README.md"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Berkeley Function Calling Leaderboard Blog",
+          "source_type": "research_project",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://gorilla.cs.berkeley.edu/blogs/8_berkeley_function_calling_leaderboard.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://gorilla.cs.berkeley.edu/blogs/8_berkeley_function_calling_leaderboard.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\llm-evaluation-calibration-and-thresholds.md",
       "article_id": "llm-evaluation-calibration-and-thresholds",
       "generation_method": "ai_structured",
@@ -22020,6 +22345,50 @@
         }
       ],
       "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\llm-evaluation-helm-scenarios-and-metrics.md",
+      "article_id": "llm-evaluation-helm-scenarios-and-metrics",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Stanford CRFM HELM Announcement",
+          "source_type": "academic_project",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://crfm.stanford.edu/2022/11/17/helm.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://crfm.stanford.edu/2022/11/17/helm.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Stanford CRFM HELM Capabilities",
+          "source_type": "academic_project",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://crfm.stanford.edu/2025/03/20/helm-capabilities.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://crfm.stanford.edu/2025/03/20/helm-capabilities.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
       "sources_unreachable": 0
     },
     {
@@ -30054,6 +30423,50 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\retrieval-score-explanations-and-term-vectors.md",
+      "article_id": "retrieval-score-explanations-and-term-vectors",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Elasticsearch Explain API",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.elastic.co/docs/api/doc/elasticsearch/operation/operation-explain",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.elastic.co/docs/api/doc/elasticsearch/operation/operation-explain"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Elasticsearch Term Vectors API",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.elastic.co/docs/api/doc/elasticsearch/operation/operation-termvectors",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.elastic.co/docs/api/doc/elasticsearch/operation/operation-termvectors"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\retrieval-score-normalization-and-fusion.md",
       "article_id": "retrieval-score-normalization-and-fusion",
       "generation_method": "ai_structured",
@@ -37535,6 +37948,50 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\api-grpc-status-codes-and-error-details.md",
+      "article_id": "api-grpc-status-codes-and-error-details",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "gRPC Status Codes",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://grpc.io/docs/guides/status-codes/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://grpc.io/docs/guides/status-codes/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "gRPC Error Handling",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://grpc.io/docs/guides/error/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://grpc.io/docs/guides/error/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\api-health-checks-and-readiness-probes.md",
       "article_id": "api-health-checks-and-readiness-probes",
       "generation_method": "ai_structured",
@@ -37654,6 +38111,50 @@
         }
       ],
       "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\api-http-message-signatures-and-signature-input.md",
+      "article_id": "api-http-message-signatures-and-signature-input",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "RFC 9421 HTTP Message Signatures",
+          "source_type": "rfc",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://datatracker.ietf.org/doc/rfc9421/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://datatracker.ietf.org/doc/rfc9421/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "RFC 9110 HTTP Semantics",
+          "source_type": "rfc",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://datatracker.ietf.org/doc/rfc9110/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://datatracker.ietf.org/doc/rfc9110/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
       "sources_unreachable": 0
     },
     {
@@ -37934,6 +38435,50 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://microsoft.github.io/language-server-protocol/specifications/lsp/3.17/specification/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\api-json-schema-dialects-and-vocabularies.md",
+      "article_id": "api-json-schema-dialects-and-vocabularies",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "JSON Schema 2020-12 Core",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://json-schema.org/draft/2020-12/json-schema-core",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://json-schema.org/draft/2020-12/json-schema-core"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "JSON Schema 2020-12 Validation",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://json-schema.org/draft/2020-12/json-schema-validation",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://json-schema.org/draft/2020-12/json-schema-validation"
               },
               "match": true
             }
@@ -38308,6 +38853,50 @@
         }
       ],
       "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\api-oauth-token-revocation-and-refresh-tokens.md",
+      "article_id": "api-oauth-token-revocation-and-refresh-tokens",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "RFC 7009 OAuth 2.0 Token Revocation",
+          "source_type": "rfc",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.rfc-editor.org/info/rfc7009",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.rfc-editor.org/info/rfc7009/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "RFC 9700 OAuth 2.0 Security Best Current Practice",
+          "source_type": "rfc",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.ietf.org/rfc/rfc9700.pdf",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.ietf.org/rfc/rfc9700.pdf"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
       "sources_unreachable": 0
     },
     {
@@ -42556,6 +43145,94 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\code-typescript-module-resolution-and-path-mapping.md",
+      "article_id": "code-typescript-module-resolution-and-path-mapping",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "TypeScript Modules Reference",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.typescriptlang.org/docs/handbook/modules/reference",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.typescriptlang.org/docs/handbook/modules/reference"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "TypeScript TSConfig paths",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.typescriptlang.org/tsconfig/paths.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.typescriptlang.org/tsconfig/paths.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\code-typescript-project-references-and-incremental-builds.md",
+      "article_id": "code-typescript-project-references-and-incremental-builds",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "TypeScript Project References",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.typescriptlang.org/docs/handbook/project-references.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.typescriptlang.org/docs/handbook/project-references.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "TypeScript tsconfig incremental",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.typescriptlang.org/tsconfig/incremental.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.typescriptlang.org/tsconfig/incremental.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\code-unified-diffs-and-patch-application-for-agents.md",
       "article_id": "code-unified-diffs-and-patch-application-for-agents",
       "generation_method": "ai_structured",
@@ -44608,6 +45285,50 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\data-flink-checkpoints-and-savepoints.md",
+      "article_id": "data-flink-checkpoints-and-savepoints",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Apache Flink Checkpoints",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://raw.githubusercontent.com/apache/flink/master/docs/content/docs/ops/state/checkpoints.md",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://raw.githubusercontent.com/apache/flink/master/docs/content/docs/ops/state/checkpoints.md"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Apache Flink Savepoints",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://raw.githubusercontent.com/apache/flink/master/docs/content/docs/ops/state/savepoints.md",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://raw.githubusercontent.com/apache/flink/master/docs/content/docs/ops/state/savepoints.md"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\data-freshness-and-slas.md",
       "article_id": "data-freshness-and-slas",
       "generation_method": "ai_structured",
@@ -45086,6 +45807,94 @@
         }
       ],
       "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\data-kafka-consumer-group-offsets-and-rebalancing.md",
+      "article_id": "data-kafka-consumer-group-offsets-and-rebalancing",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Apache Kafka KafkaConsumer Javadoc",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kafka.apache.org/38/javadoc/org/apache/kafka/clients/consumer/KafkaConsumer.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://kafka.apache.org/38/javadoc/org/apache/kafka/clients/consumer/KafkaConsumer.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Apache Kafka Consumer Configuration",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kafka.apache.org/documentation/#consumerconfigs_group.id",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://kafka.apache.org/documentation/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\data-kafka-log-compaction-and-tombstones.md",
+      "article_id": "data-kafka-log-compaction-and-tombstones",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Apache Kafka Log Compaction",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kafka.apache.org/documentation/#compaction",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://kafka.apache.org/documentation/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Apache Kafka Log Compaction Design",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kafka.apache.org/documentation/#design_compactionbasics",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://kafka.apache.org/documentation/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
       "sources_unreachable": 0
     },
     {
@@ -74073,94 +74882,6 @@
       "sources_unreachable": 0
     },
     {
-      "file": "content\\ai\\agent-container-security-context-seccomp-and-capabilities.md",
-      "article_id": "agent-container-security-context-seccomp-and-capabilities",
-      "generation_method": "ai_structured",
-      "sources_total": 2,
-      "verification_results": [
-        {
-          "source_title": "Kubernetes Configure a Security Context",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://kubernetes.io/docs/tasks/configure-pod-container/security-context/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://kubernetes.io/docs/tasks/configure-pod-container/security-context/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Docker Seccomp Security Profiles",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.docker.com/engine/security/seccomp/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.docker.com/engine/security/seccomp/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
-    },
-    {
-      "file": "content\\ai\\agent-terraform-plan-output-and-resource-addresses.md",
-      "article_id": "agent-terraform-plan-output-and-resource-addresses",
-      "generation_method": "ai_structured",
-      "sources_total": 2,
-      "verification_results": [
-        {
-          "source_title": "Terraform Plan Command",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://developer.hashicorp.com/terraform/cli/commands/plan",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://developer.hashicorp.com/terraform/cli/commands/plan"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Terraform Resource Address Reference",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://developer.hashicorp.com/terraform/cli/state/resource-addressing",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://developer.hashicorp.com/terraform/cli/state/resource-addressing"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
-    },
-    {
       "file": "content\\ai\\ai-for-genomics-variant-calling-gene-expression-prediction-and-protein-dna-binding.md",
       "article_id": "kb-2026-00005",
       "generation_method": "ai_structured",
@@ -74185,22 +74906,22 @@
       "sources_unreachable": 1
     },
     {
-      "file": "content\\ai\\llm-evaluation-berkeley-function-calling-leaderboard.md",
-      "article_id": "llm-evaluation-berkeley-function-calling-leaderboard",
+      "file": "content\\ai\\rag-document-content-hashes-and-reindex-triggers.md",
+      "article_id": "rag-document-content-hashes-and-reindex-triggers",
       "generation_method": "ai_structured",
       "sources_total": 2,
       "verification_results": [
         {
-          "source_title": "Berkeley Function Calling Leaderboard README",
-          "source_type": "software_repository",
+          "source_title": "LlamaIndex Ingestion Pipeline",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://raw.githubusercontent.com/ShishirPatil/gorilla/main/berkeley-function-call-leaderboard/README.md",
+              "identifier": "https://developers.llamaindex.ai/python/framework/module_guides/loading/ingestion_pipeline/",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://raw.githubusercontent.com/ShishirPatil/gorilla/main/berkeley-function-call-leaderboard/README.md"
+                "final_url": "https://developers.llamaindex.ai/python/framework/module_guides/loading/ingestion_pipeline/"
               },
               "match": true
             }
@@ -74208,60 +74929,16 @@
           "all_verified": true
         },
         {
-          "source_title": "Berkeley Function Calling Leaderboard Blog",
-          "source_type": "research_project",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://gorilla.cs.berkeley.edu/blogs/8_berkeley_function_calling_leaderboard.html",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://gorilla.cs.berkeley.edu/blogs/8_berkeley_function_calling_leaderboard.html"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
-    },
-    {
-      "file": "content\\ai\\retrieval-score-explanations-and-term-vectors.md",
-      "article_id": "retrieval-score-explanations-and-term-vectors",
-      "generation_method": "ai_structured",
-      "sources_total": 2,
-      "verification_results": [
-        {
-          "source_title": "Elasticsearch Explain API",
+          "source_title": "LangChain RecordManager API Reference",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.elastic.co/docs/api/doc/elasticsearch/operation/operation-explain",
+              "identifier": "https://api.python.langchain.com/en/latest/core/indexing/langchain_core.indexing.base.RecordManager.html",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://www.elastic.co/docs/api/doc/elasticsearch/operation/operation-explain"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Elasticsearch Term Vectors API",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.elastic.co/docs/api/doc/elasticsearch/operation/operation-termvectors",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://www.elastic.co/docs/api/doc/elasticsearch/operation/operation-termvectors"
+                "final_url": "https://reference.langchain.com/?lang=python"
               },
               "match": true
             }
@@ -74547,94 +75224,6 @@
       "sources_unreachable": 1
     },
     {
-      "file": "content\\computer-science\\api-http-message-signatures-and-signature-input.md",
-      "article_id": "api-http-message-signatures-and-signature-input",
-      "generation_method": "ai_structured",
-      "sources_total": 2,
-      "verification_results": [
-        {
-          "source_title": "RFC 9421 HTTP Message Signatures",
-          "source_type": "rfc",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://datatracker.ietf.org/doc/rfc9421/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://datatracker.ietf.org/doc/rfc9421/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "RFC 9110 HTTP Semantics",
-          "source_type": "rfc",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://datatracker.ietf.org/doc/rfc9110/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://datatracker.ietf.org/doc/rfc9110/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
-    },
-    {
-      "file": "content\\computer-science\\api-json-schema-dialects-and-vocabularies.md",
-      "article_id": "api-json-schema-dialects-and-vocabularies",
-      "generation_method": "ai_structured",
-      "sources_total": 2,
-      "verification_results": [
-        {
-          "source_title": "JSON Schema 2020-12 Core",
-          "source_type": "standard",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://json-schema.org/draft/2020-12/json-schema-core",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://json-schema.org/draft/2020-12/json-schema-core"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "JSON Schema 2020-12 Validation",
-          "source_type": "standard",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://json-schema.org/draft/2020-12/json-schema-validation",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://json-schema.org/draft/2020-12/json-schema-validation"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
-    },
-    {
       "file": "content\\computer-science\\bloom-filters-space-efficient-probabilistic-data-structures.md",
       "article_id": "kb-2026-00029",
       "generation_method": "ai_structured",
@@ -74802,50 +75391,6 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 3
-    },
-    {
-      "file": "content\\computer-science\\code-typescript-project-references-and-incremental-builds.md",
-      "article_id": "code-typescript-project-references-and-incremental-builds",
-      "generation_method": "ai_structured",
-      "sources_total": 2,
-      "verification_results": [
-        {
-          "source_title": "TypeScript Project References",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.typescriptlang.org/docs/handbook/project-references.html",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://www.typescriptlang.org/docs/handbook/project-references.html"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "TypeScript tsconfig incremental",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.typescriptlang.org/tsconfig/incremental.html",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://www.typescriptlang.org/tsconfig/incremental.html"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\command-pattern.md",
@@ -75173,22 +75718,22 @@
       "sources_unreachable": 3
     },
     {
-      "file": "content\\computer-science\\data-flink-checkpoints-and-savepoints.md",
-      "article_id": "data-flink-checkpoints-and-savepoints",
+      "file": "content\\computer-science\\data-bigquery-job-statistics-and-query-plans.md",
+      "article_id": "data-bigquery-job-statistics-and-query-plans",
       "generation_method": "ai_structured",
       "sources_total": 2,
       "verification_results": [
         {
-          "source_title": "Apache Flink Checkpoints",
+          "source_title": "BigQuery Query Plan and Timeline",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://raw.githubusercontent.com/apache/flink/master/docs/content/docs/ops/state/checkpoints.md",
+              "identifier": "https://docs.cloud.google.com/bigquery/docs/query-plan-explanation",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://raw.githubusercontent.com/apache/flink/master/docs/content/docs/ops/state/checkpoints.md"
+                "final_url": "https://docs.cloud.google.com/bigquery/docs/query-plan-explanation"
               },
               "match": true
             }
@@ -75196,104 +75741,16 @@
           "all_verified": true
         },
         {
-          "source_title": "Apache Flink Savepoints",
+          "source_title": "BigQuery INFORMATION_SCHEMA JOBS View",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://raw.githubusercontent.com/apache/flink/master/docs/content/docs/ops/state/savepoints.md",
+              "identifier": "https://cloud.google.com/bigquery/docs/information-schema-jobs",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://raw.githubusercontent.com/apache/flink/master/docs/content/docs/ops/state/savepoints.md"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
-    },
-    {
-      "file": "content\\computer-science\\data-kafka-consumer-group-offsets-and-rebalancing.md",
-      "article_id": "data-kafka-consumer-group-offsets-and-rebalancing",
-      "generation_method": "ai_structured",
-      "sources_total": 2,
-      "verification_results": [
-        {
-          "source_title": "Apache Kafka KafkaConsumer Javadoc",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://kafka.apache.org/38/javadoc/org/apache/kafka/clients/consumer/KafkaConsumer.html",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://kafka.apache.org/38/javadoc/org/apache/kafka/clients/consumer/KafkaConsumer.html"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Apache Kafka Consumer Configuration",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://kafka.apache.org/documentation/#consumerconfigs_group.id",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://kafka.apache.org/documentation/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
-    },
-    {
-      "file": "content\\computer-science\\data-kafka-log-compaction-and-tombstones.md",
-      "article_id": "data-kafka-log-compaction-and-tombstones",
-      "generation_method": "ai_structured",
-      "sources_total": 2,
-      "verification_results": [
-        {
-          "source_title": "Apache Kafka Log Compaction",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://kafka.apache.org/documentation/#compaction",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://kafka.apache.org/documentation/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Apache Kafka Log Compaction Design",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://kafka.apache.org/documentation/#design_compactionbasics",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://kafka.apache.org/documentation/"
+                "final_url": "https://docs.cloud.google.com/bigquery/docs/information-schema-jobs"
               },
               "match": true
             }
@@ -75364,6 +75821,50 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 3
+    },
+    {
+      "file": "content\\computer-science\\data-parquet-row-groups-and-statistics.md",
+      "article_id": "data-parquet-row-groups-and-statistics",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Apache Parquet Concepts",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://parquet.apache.org/docs/concepts/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://parquet.apache.org/docs/concepts/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Apache Parquet Page Index",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://parquet.apache.org/docs/file-format/pageindex/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://parquet.apache.org/docs/file-format/pageindex/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\data-warehousing.md",

@@ -150,7 +150,7 @@ console.log('AnchorFact API Readiness Report Tests\n');
 
 test('core query set defines subscription-readiness probes across paid-use categories', () => {
   assert(CORE_CORPUS_QUERIES.length >= 100, 'core query set should preserve the 100-query foundation');
-  assert(CORE_CORPUS_QUERIES.length <= 525, 'core query set should stay inside the expanded readiness-corpus range');
+  assert(CORE_CORPUS_QUERIES.length <= 540, 'core query set should stay inside the expanded readiness-corpus range');
   const categories = new Set(CORE_CORPUS_QUERIES.map(query => query.category));
   for (const category of ['agent_execution_sources', 'agent_rag', 'api_mcp', 'security_governance', 'data_infrastructure', 'llm_evaluation', 'developer_workflows', 'code_intelligence']) {
     assert(categories.has(category), `missing category ${category}`);
@@ -294,6 +294,10 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'ai/agent-kubernetes-events-and-pod-health',
     'ai/agent-kubernetes-horizontal-pod-autoscaler-and-scale-events',
     'ai/agent-kubernetes-pod-disruption-budgets-and-evictions',
+    'ai/agent-kubernetes-probes-and-readiness-gates',
+    'ai/agent-kubernetes-ephemeral-containers-and-debugging',
+    'ai/agent-helm-release-history-and-values-overrides',
+    'ai/agent-github-actions-run-attempts-and-job-summaries',
     'ai/agent-service-mesh-traffic-policy',
     'ai/agent-message-queue-dead-letter-queues',
     'ai/agent-scheduler-cron-and-workflow-runs',
@@ -533,8 +537,10 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'ai/agent-browser-cookies-storage-and-session-state',
     'computer-science/dom-locators-and-accessible-names-for-ui-agents',
     'ai/rag-incremental-indexing-and-vector-upserts',
+    'ai/rag-document-content-hashes-and-reindex-triggers',
     'ai/vector-store-namespaces-and-tenant-isolation',
     'ai/llm-evaluation-benchmark-harnesses-and-task-registries',
+    'ai/llm-evaluation-helm-scenarios-and-metrics',
     'computer-science/openapi-operation-ids-and-links-for-agent-navigation',
     'computer-science/data-policy-tags-and-sensitive-column-governance',
     'computer-science/package-manager-workspaces-and-monorepo-dependencies',
@@ -549,9 +555,14 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'computer-science/api-openapi-discriminators-and-polymorphic-schemas',
     'computer-science/api-openapi-parameter-serialization-style-and-explode',
     'computer-science/api-grpc-health-checking-for-agent-clients',
+    'computer-science/api-oauth-token-revocation-and-refresh-tokens',
+    'computer-science/api-grpc-status-codes-and-error-details',
     'computer-science/api-content-negotiation-and-media-types-for-agents',
     'computer-science/data-partition-pruning-and-query-scanning',
+    'computer-science/data-bigquery-job-statistics-and-query-plans',
+    'computer-science/data-parquet-row-groups-and-statistics',
     'computer-science/code-search-query-syntax-for-repository-agents',
+    'computer-science/code-typescript-module-resolution-and-path-mapping',
     'computer-science/lsp-rename-and-workspace-edits-for-code-agents',
     'ai/agent-secret-scanning-and-output-redaction',
     'ai/retrieval-payload-indexes-and-filter-performance',
