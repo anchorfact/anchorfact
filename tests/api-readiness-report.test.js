@@ -150,7 +150,7 @@ console.log('AnchorFact API Readiness Report Tests\n');
 
 test('core query set defines subscription-readiness probes across paid-use categories', () => {
   assert(CORE_CORPUS_QUERIES.length >= 100, 'core query set should preserve the 100-query foundation');
-  assert(CORE_CORPUS_QUERIES.length <= 460, 'core query set should stay inside the expanded readiness-corpus range');
+  assert(CORE_CORPUS_QUERIES.length <= 470, 'core query set should stay inside the expanded readiness-corpus range');
   const categories = new Set(CORE_CORPUS_QUERIES.map(query => query.category));
   for (const category of ['agent_execution_sources', 'agent_rag', 'api_mcp', 'security_governance', 'data_infrastructure', 'llm_evaluation', 'developer_workflows', 'code_intelligence']) {
     assert(categories.has(category), `missing category ${category}`);
@@ -181,6 +181,7 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'ai/hybrid-retrieval-and-reranking',
     'ai/rag-chunking-and-context-window-management',
     'ai/retrieval-query-rewriting',
+    'ai/rag-hypothetical-document-embeddings-hyde',
     'ai/embedding-model-selection-and-vector-distance',
     'ai/retrieval-metadata-filtering',
     'ai/retrieval-indexing-and-document-parsing',
@@ -211,6 +212,7 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'ai/llm-cost-and-latency-evaluation',
     'ai/llm-red-teaming-and-adversarial-evaluation',
     'ai/agent-tool-use-evaluation',
+    'ai/llm-evaluation-tool-call-accuracy-and-argument-validation',
     'ai/evaluation-data-contamination',
     'computer-science/openapi-for-agent-tools',
     'ai/mcp-resources-and-prompts',
@@ -229,6 +231,7 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'computer-science/data-quality-validation-for-ml-pipelines',
     'computer-science/data-contracts-for-pipelines',
     'computer-science/data-pipeline-orchestration',
+    'computer-science/data-airflow-datasets-and-data-aware-scheduling',
     'computer-science/data-freshness-and-slas',
     'computer-science/schema-registry-for-event-streaming',
     'computer-science/openlineage-for-data-pipelines',
@@ -249,6 +252,7 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'ai/agent-status-pages-and-incident-feeds',
     'computer-science/configuration-and-environment-variable-discovery',
     'ai/agent-runbooks-and-incident-response',
+    'ai/agent-incident-postmortems-and-root-cause-analysis',
     'ai/agent-service-level-objectives-and-error-budgets',
     'ai/agent-feature-flags-and-remote-configuration',
     'ai/agent-ci-logs-and-deployment-history',
@@ -303,11 +307,13 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'computer-science/control-flow-and-data-flow-analysis',
     'computer-science/call-graphs-and-impact-analysis',
     'computer-science/language-server-protocol-for-code-agents',
+    'computer-science/code-language-server-hover-signature-and-completion-context',
     'computer-science/software-bill-of-materials-and-dependency-graphs',
     'computer-science/tree-sitter-parsers-for-code-intelligence',
     'computer-science/package-dependency-resolution-for-code-agents',
     'computer-science/static-analysis-rules-and-codeql',
     'computer-science/test-coverage-for-code-agents',
+    'computer-science/code-junit-xml-test-reports-and-ci-failure-context',
     'computer-science/mutation-testing-for-code-agents',
     'computer-science/build-graphs-and-incremental-build-systems',
     'computer-science/source-maps-and-stack-trace-deobfuscation',
@@ -497,6 +503,7 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'ai/llm-evaluation-statistical-power-and-minimum-detectable-effects',
     'computer-science/openapi-security-schemes-and-oauth-scopes-for-agents',
     'computer-science/api-resource-names-and-canonical-identifiers-for-agents',
+    'computer-science/api-graphql-persisted-queries-and-operation-safelists',
     'computer-science/data-partition-pruning-and-query-scanning',
     'computer-science/code-search-query-syntax-for-repository-agents',
     'computer-science/lsp-rename-and-workspace-edits-for-code-agents',
@@ -506,6 +513,7 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'ai/llm-evaluation-ab-tests-and-online-experiments',
     'computer-science/openapi-examples-and-schema-examples-for-agents',
     'computer-science/api-openapi-callbacks-and-webhook-definitions',
+    'computer-science/api-openapi-servers-and-environment-selection-for-agents',
     'computer-science/api-retry-backoff-and-client-rate-control',
     'computer-science/data-column-pruning-and-file-statistics',
     'computer-science/code-license-compliance-and-dependency-metadata',

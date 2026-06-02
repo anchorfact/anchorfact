@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-02T18:04:23.568Z",
-    "total_articles": 1363,
+    "generated": "2026-06-02T18:29:28.501Z",
+    "total_articles": 1371,
     "total_with_errors": 0,
     "average_sources_per_article": "2.6",
     "overall_verification_rate": "90.7%",
-    "elapsed_ms": 99677,
-    "elapsed_sec": "99.7",
+    "elapsed_ms": 95798,
+    "elapsed_sec": "95.8",
     "concurrency": 3
   },
   "articles": [
@@ -3315,6 +3315,50 @@
         }
       ],
       "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-incident-postmortems-and-root-cause-analysis.md",
+      "article_id": "agent-incident-postmortems-and-root-cause-analysis",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Google SRE Book Postmortem Culture",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://sre.google/sre-book/postmortem-culture/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://sre.google/sre-book/postmortem-culture/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Google SRE Workbook Postmortem Culture",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://sre.google/workbook/postmortem-culture/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://sre.google/workbook/postmortem-culture/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
       "sources_unreachable": 0
     },
     {
@@ -22420,6 +22464,50 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\llm-evaluation-tool-call-accuracy-and-argument-validation.md",
+      "article_id": "llm-evaluation-tool-call-accuracy-and-argument-validation",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "MCP Tools Specification",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://modelcontextprotocol.io/specification/2025-06-18/server/tools",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://modelcontextprotocol.io/specification/2025-06-18/server/tools"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "JSON Schema Validation 2020-12",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://json-schema.org/draft/2020-12/json-schema-validation",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://json-schema.org/draft/2020-12/json-schema-validation"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\llm-evaluation-traces-and-feedback-labels.md",
       "article_id": "llm-evaluation-traces-and-feedback-labels",
       "generation_method": "ai_structured",
@@ -36390,6 +36478,50 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\api-graphql-persisted-queries-and-operation-safelists.md",
+      "article_id": "api-graphql-persisted-queries-and-operation-safelists",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Apollo GraphOS Safelisting with Persisted Queries",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.apollographql.com/docs/graphos/platform/security/persisted-queries",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.apollographql.com/docs/graphos/platform/security/persisted-queries"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Apollo Client Persisted Queries",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.apollographql.com/docs/react/data/persisted-queries",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.apollographql.com/docs/react/data/persisted-queries"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\api-grpc-reflection-and-protobuf-schemas.md",
       "article_id": "api-grpc-reflection-and-protobuf-schemas",
       "generation_method": "ai_structured",
@@ -37363,6 +37495,50 @@
         }
       ],
       "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\api-openapi-servers-and-environment-selection-for-agents.md",
+      "article_id": "api-openapi-servers-and-environment-selection-for-agents",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "OpenAPI API Servers",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://learn.openapis.org/specification/servers",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.openapis.org/specification/servers"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenAPI Specification v3.1.1",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://spec.openapis.org/oas/v3.1.1.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://spec.openapis.org/oas/v3.1.1.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
       "sources_unreachable": 0
     },
     {
@@ -39695,6 +39871,50 @@
       "manual_reviewed_at": "2026-05-28"
     },
     {
+      "file": "content\\computer-science\\code-ci-problem-matchers-and-annotations-for-agents.md",
+      "article_id": "code-ci-problem-matchers-and-annotations-for-agents",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "ADR 0276: Problem Matchers",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://github.com/actions/runner/blob/main/docs/adrs/0276-problem-matchers.md",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://github.com/actions/runner/blob/main/docs/adrs/0276-problem-matchers.md"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GitHub Actions Workflow Commands",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-commands",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-commands"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\code-codemods-and-ast-transforms-for-agents.md",
       "article_id": "code-codemods-and-ast-transforms-for-agents",
       "generation_method": "ai_structured",
@@ -40168,6 +40388,94 @@
         }
       ],
       "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\code-junit-xml-test-reports-and-ci-failure-context.md",
+      "article_id": "code-junit-xml-test-reports-and-ci-failure-context",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "GitLab Unit Test Reports",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.gitlab.com/ci/testing/unit_test_reports/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.gitlab.com/ci/testing/unit_test_reports/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "pytest Reference",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.pytest.org/en/stable/reference/reference.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.pytest.org/en/stable/reference/reference.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\code-language-server-hover-signature-and-completion-context.md",
+      "article_id": "code-language-server-hover-signature-and-completion-context",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Language Server Protocol Specification 3.17",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://microsoft.github.io/language-server-protocol/specifications/lsp/3.17/specification/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://microsoft.github.io/language-server-protocol/specifications/lsp/3.17/specification/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Language Server Protocol Overview",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://microsoft.github.io/language-server-protocol/overviews/lsp/overview/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://microsoft.github.io/language-server-protocol/overviews/lsp/overview/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
       "sources_unreachable": 0
     },
     {
@@ -41875,6 +42183,50 @@
         }
       ],
       "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\data-airflow-datasets-and-data-aware-scheduling.md",
+      "article_id": "data-airflow-datasets-and-data-aware-scheduling",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Airflow Data-Aware Scheduling",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://airflow.apache.org/docs/apache-airflow/stable/authoring-and-scheduling/datasets.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://airflow.apache.org/docs/apache-airflow/stable/authoring-and-scheduling/datasets.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Apache Airflow 2.4.0 Data Aware Release",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://airflow.apache.org/blog/airflow-2.4.0/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://airflow.apache.org/blog/airflow-2.4.0/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
       "sources_unreachable": 0
     },
     {
@@ -71845,6 +72197,51 @@
       "sources_unreachable": 1
     },
     {
+      "file": "content\\ai\\rag-hypothetical-document-embeddings-hyde.md",
+      "article_id": "rag-hypothetical-document-embeddings-hyde",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Precise Zero-Shot Dense Retrieval without Relevance Labels",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "doi",
+              "identifier": "10.18653/v1/2023.acl-long.99",
+              "verified": true,
+              "metadata": {
+                "title": "Precise Zero-Shot Dense Retrieval without Relevance Labels",
+                "publisher": "Association for Computational Linguistics",
+                "year": 2023
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "LlamaIndex Query Transformations",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.llamaindex.ai/en/stable/optimizing/advanced_retrieval/query_transformations/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.llamaindex.ai/python/framework/optimizing/advanced_retrieval/query_transformations/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\arts\\history-of-printing.md",
       "article_id": "kb-2026-00479",
       "generation_method": "ai_assisted",
@@ -72286,50 +72683,6 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 3
-    },
-    {
-      "file": "content\\computer-science\\code-ci-problem-matchers-and-annotations-for-agents.md",
-      "article_id": "code-ci-problem-matchers-and-annotations-for-agents",
-      "generation_method": "ai_structured",
-      "sources_total": 2,
-      "verification_results": [
-        {
-          "source_title": "ADR 0276: Problem Matchers",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://github.com/actions/runner/blob/main/docs/adrs/0276-problem-matchers.md",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://github.com/actions/runner/blob/main/docs/adrs/0276-problem-matchers.md"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "GitHub Actions Workflow Commands",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-commands",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-commands"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\command-pattern.md",
@@ -74730,7 +75083,10 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/websec/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.oreilly.com/websec/"
+              },
               "match": false
             }
           ],
