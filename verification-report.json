@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-02T03:24:36.833Z",
-    "total_articles": 1069,
+    "generated": "2026-06-02T03:49:31.560Z",
+    "total_articles": 1080,
     "total_with_errors": 0,
     "average_sources_per_article": "2.5",
-    "overall_verification_rate": "87.7%",
-    "elapsed_ms": 106438,
-    "elapsed_sec": "106.4",
+    "overall_verification_rate": "87.8%",
+    "elapsed_ms": 98463,
+    "elapsed_sec": "98.5",
     "concurrency": 3
   },
   "articles": [
@@ -521,6 +521,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\agent-error-logs-and-stack-traces.md",
+      "article_id": "agent-error-logs-and-stack-traces",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "OpenTelemetry Logs Data Model",
+          "source_type": "specification",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://opentelemetry.io/docs/specs/otel/logs/data-model/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://opentelemetry.io/docs/specs/otel/logs/data-model/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Sentry Issue Details",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.sentry.io/product/issues/issue-details/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.sentry.io/product/issues/issue-details/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Error.prototype.stack",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error/stack",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error/stack"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content/ai/agent-execution-knowledge-sources.md",
       "article_id": "agent-execution-knowledge-sources",
       "generation_method": "ai_structured",
@@ -790,6 +851,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\agent-package-registry-and-version-lookup.md",
+      "article_id": "agent-package-registry-and-version-lookup",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "npm-view",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.npmjs.com/cli/v11/commands/npm-view/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.npmjs.com/cli/v11/commands/npm-view/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "PyPI JSON API",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.pypi.org/api/json/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.pypi.org/api/json/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "RubyGems.org API",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://guides.rubygems.org/rubygems-org-api/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://guides.rubygems.org/rubygems-org-api/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\agent-planning-and-task-decomposition.md",
       "article_id": "agent-planning-and-task-decomposition",
       "generation_method": "ai_structured",
@@ -956,6 +1078,128 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\agent-state-machines-and-workflow-graphs.md",
+      "article_id": "agent-state-machines-and-workflow-graphs",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "LangGraph Graph API Overview",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.langchain.com/oss/python/langgraph/graph-api",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.langchain.com/oss/python/langgraph/graph-api"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Temporal Workflow",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.temporal.io/workflows",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.temporal.io/workflows"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "AWS Step Functions State Machines",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.aws.amazon.com/step-functions/latest/dg/concepts-statemachines.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.aws.amazon.com/step-functions/latest/dg/concepts-statemachines.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-task-queues-and-background-jobs.md",
+      "article_id": "agent-task-queues-and-background-jobs",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "What Is a Temporal Worker?",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.temporal.io/workers",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.temporal.io/workers"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Introduction to Celery",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.celeryq.dev/en/stable/getting-started/introduction.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.celeryq.dev/en/stable/getting-started/introduction.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Understand Cloud Tasks",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://cloud.google.com/tasks/docs/dual-overview",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/tasks/docs/dual-overview"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\agent-tool-authorization-and-permissions.md",
       "article_id": "agent-tool-authorization-and-permissions",
       "generation_method": "ai_structured",
@@ -1006,6 +1250,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://datatracker.ietf.org/doc/html/rfc8707"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-tool-rate-limits-and-quotas.md",
+      "article_id": "agent-tool-rate-limits-and-quotas",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Rate Limits for the REST API - GitHub Docs",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Rate Limits - Stripe Documentation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.stripe.com/rate-limits",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.stripe.com/rate-limits"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Cloud Quotas Overview - Google Cloud",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://cloud.google.com/docs/quotas/overview",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/docs/quotas/overview"
               },
               "match": true
             }
@@ -11525,6 +11830,67 @@
       "manual_reviewed_at": "2026-05-28"
     },
     {
+      "file": "content\\ai\\browser-automation-for-agents.md",
+      "article_id": "browser-automation-for-agents",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Installation - Playwright",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://playwright.dev/docs/intro",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://playwright.dev/docs/intro"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "The Selenium Browser Automation Project",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.selenium.dev/documentation/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.selenium.dev/documentation/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Chrome DevTools Protocol",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://chromedevtools.github.io/devtools-protocol/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://chromedevtools.github.io/devtools-protocol/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content/ai/causal-inference-ai.md",
       "article_id": "causal-inference-ai",
       "generation_method": "ai_structured",
@@ -15400,6 +15766,67 @@
       "manual_reviewed_at": "2026-05-28"
     },
     {
+      "file": "content\\ai\\llm-regression-testing.md",
+      "article_id": "llm-regression-testing",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "LangSmith Evaluation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.langchain.com/langsmith/evaluation",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.langchain.com/langsmith/evaluation"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenAI Evals",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.openai.com/api/docs/guides/evals",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.openai.com/api/docs/guides/evals"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Promptfoo Intro",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.promptfoo.dev/docs/intro/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.promptfoo.dev/docs/intro/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content/ai/llms.md",
       "article_id": "kb-2026-00005",
       "generation_method": "ai_structured",
@@ -17545,6 +17972,67 @@
       "manual_reviewed_at": "2026-05-28"
     },
     {
+      "file": "content\\ai\\online-llm-evaluation-and-feedback-loops.md",
+      "article_id": "online-llm-evaluation-and-feedback-loops",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Online Evaluations - LangSmith",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.langchain.com/langsmith/online-evaluations",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.langchain.com/langsmith/online-evaluations-llm-as-judge"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Working with Evals - OpenAI API",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://platform.openai.com/docs/guides/evals",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.openai.com/api/docs/guides/evals"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "LLM Evals - Phoenix",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arize.com/docs/phoenix/evaluation/llm-evals",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://arize.com/docs/phoenix/evaluation/llm-evals"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content/ai/open-source-ai-movement.md",
       "article_id": "open-source-ai-movement",
       "generation_method": "ai_structured",
@@ -18418,6 +18906,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\rag-contextual-compression.md",
+      "article_id": "rag-contextual-compression",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "LangChain Cross Encoder Reranker Integration",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.langchain.com/oss/python/integrations/document_transformers/cross_encoder_reranker",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.langchain.com/oss/python/integrations/document_transformers/cross_encoder_reranker"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "LlamaIndex Node Postprocessor",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.llamaindex.ai/python/framework/module_guides/querying/node_postprocessors/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.llamaindex.ai/python/framework/module_guides/querying/node_postprocessors/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Reranking with Cohere",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.cohere.com/v2/docs/reranking-with-cohere",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cohere.com/v2/docs/reranking-with-cohere"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\rag-evaluation.md",
       "article_id": "rag-evaluation",
       "generation_method": "ai_structured",
@@ -18465,6 +19014,128 @@
               "verified": true,
               "metadata": {
                 "title": "arXiv Query: search_query=&amp;id_list=2005.11401&amp;start=0&amp;max_results=1"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\rag-groundedness-and-faithfulness-evaluation.md",
+      "article_id": "rag-groundedness-and-faithfulness-evaluation",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Ragas Faithfulness",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.ragas.io/en/stable/concepts/metrics/available_metrics/faithfulness/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.ragas.io/en/stable/concepts/metrics/available_metrics/faithfulness/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "LlamaIndex Evaluating",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.llamaindex.ai/python/framework/module_guides/evaluating/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.llamaindex.ai/python/framework/module_guides/evaluating/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Phoenix Faithfulness",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arize.com/docs/phoenix/evaluation/pre-built-metrics/faithfulness",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://arize.com/docs/phoenix/evaluation/pre-built-metrics/faithfulness"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\rag-query-routing.md",
+      "article_id": "rag-query-routing",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Routers - LlamaIndex",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.llamaindex.ai/en/stable/module_guides/querying/router/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.llamaindex.ai/python/framework/module_guides/querying/router/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "ConditionalRouter - Haystack",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.haystack.deepset.ai/docs/conditionalrouter",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.haystack.deepset.ai/docs/conditionalrouter"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Evaluation Concepts - LangSmith",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.langchain.com/langsmith/evaluation-concepts",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.langchain.com/langsmith/evaluation-concepts"
               },
               "match": true
             }
@@ -18992,6 +19663,67 @@
       "sources_unreachable": 0,
       "manual_reviewed": true,
       "manual_reviewed_at": "2026-05-28"
+    },
+    {
+      "file": "content\\ai\\retrieval-caching-and-semantic-cache.md",
+      "article_id": "retrieval-caching-and-semantic-cache",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "LLM Cache - RedisVL",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://redis.io/docs/latest/develop/ai/redisvl/api/cache/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://redis.io/docs/latest/develop/ai/redisvl/api/cache/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Ingestion Pipeline - LlamaIndex",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.llamaindex.ai/en/stable/module_guides/loading/ingestion_pipeline/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.llamaindex.ai/python/framework/module_guides/loading/ingestion_pipeline/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Index Request Cache - OpenSearch Documentation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.opensearch.org/latest/search-plugins/caching/request-cache/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.opensearch.org/latest/search-plugins/caching/request-cache/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content\\ai\\retrieval-indexing-and-document-parsing.md",
@@ -20365,6 +21097,67 @@
       "sources_unreachable": 0,
       "manual_reviewed": true,
       "manual_reviewed_at": "2026-05-28"
+    },
+    {
+      "file": "content\\ai\\tool-call-streaming-and-incremental-results.md",
+      "article_id": "tool-call-streaming-and-incremental-results",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "OpenAI Streaming API Responses",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.openai.com/api/docs/guides/streaming-responses",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.openai.com/api/docs/guides/streaming-responses"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "MCP Progress",
+          "source_type": "specification",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://modelcontextprotocol.io/specification/2025-06-18/basic/utilities/progress",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://modelcontextprotocol.io/specification/2025-06-18/basic/utilities/progress"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Anthropic Streaming Messages",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://platform.claude.com/docs/en/build-with-claude/streaming",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://platform.claude.com/docs/en/build-with-claude/streaming"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content/ai/transfer-learning.md",
@@ -25067,6 +25860,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\api-discovery-and-service-catalogs.md",
+      "article_id": "api-discovery-and-service-catalogs",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Backstage Software Catalog",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://backstage.io/docs/features/software-catalog/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://backstage.io/docs/features/software-catalog/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Kubernetes API Concepts",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kubernetes.io/docs/reference/using-api/api-concepts/#api-discovery",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://kubernetes.io/docs/reference/using-api/api-concepts/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Service Directory Overview",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.cloud.google.com/service-directory/docs/overview",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/service-directory/docs/overview"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\api-error-models-and-problem-details.md",
       "article_id": "api-error-models-and-problem-details",
       "generation_method": "ai_structured",
@@ -25525,6 +26379,67 @@
         }
       ],
       "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\asyncapi-and-event-api-schemas.md",
+      "article_id": "asyncapi-and-event-api-schemas",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "AsyncAPI Specification 3.1.0",
+          "source_type": "specification",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.asyncapi.com/docs/reference/specification/v3.1.0",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.asyncapi.com/docs/reference/specification/v3.1.0"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "CloudEvents Specification 1.0.2",
+          "source_type": "specification",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://github.com/cloudevents/spec/blob/v1.0.2/cloudevents/spec.md",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://github.com/cloudevents/spec/blob/v1.0.2/cloudevents/spec.md"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "What is JSON Schema?",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://json-schema.org/overview/what-is-jsonschema",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://json-schema.org/overview/what-is-jsonschema"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
       "sources_unreachable": 0
     },
     {
@@ -27679,6 +28594,128 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://docs.open-metadata.org/v1.12.x/api-reference/data-contracts"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\data-freshness-and-slas.md",
+      "article_id": "data-freshness-and-slas",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "dbt Source Freshness",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.getdbt.com/docs/deploy/source-freshness",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.getdbt.com/docs/deploy/source-freshness"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Great Expectations Freshness",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.greatexpectations.io/docs/reference/learn/data_quality_use_cases/freshness/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.greatexpectations.io/docs/reference/learn/data_quality_use_cases/freshness/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Airflow Deadline Alerts",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://airflow.apache.org/docs/apache-airflow/stable/howto/deadline-alerts.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://airflow.apache.org/docs/apache-airflow/stable/howto/deadline-alerts.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\data-pipeline-orchestration.md",
+      "article_id": "data-pipeline-orchestration",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Dags - Apache Airflow Documentation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/dags.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/dags.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Software-Defined Assets - Dagster",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.dagster.io/guides/build/assets/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.dagster.io/guides/build/assets"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Flows - Prefect",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.prefect.io/v3/concepts/flows",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.prefect.io/v3/concepts/flows"
               },
               "match": true
             }
@@ -32509,6 +33546,67 @@
       "manual_review_note": "Focused AI agent execution, game/simulation reinforcement learning, Kubernetes/Docker/OAuth operational security content batch; sources were manually reviewed from arXiv, official Kubernetes/Docker/Istio documentation, and IETF RFCs; local verify-full was not run."
     },
     {
+      "file": "content\\computer-science\\oauth-scopes-for-agent-tools.md",
+      "article_id": "oauth-scopes-for-agent-tools",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "RFC 6749 - OAuth 2.0 Authorization Framework",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://datatracker.ietf.org/doc/html/rfc6749#section-3.3",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://datatracker.ietf.org/doc/html/rfc6749"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Scopes for OAuth Apps - GitHub Docs",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/scopes-for-oauth-apps",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/scopes-for-oauth-apps"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OAuth 2.0 Scopes for Google APIs",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.google.com/identity/protocols/oauth2/scopes",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.google.com/identity/protocols/oauth2/scopes?hl=es-419"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content/computer-science/oauth2.md",
       "article_id": "kb-2026-00075",
       "generation_method": "ai_structured",
@@ -34958,6 +36056,67 @@
       "manual_reviewed_at": "2026-05-28"
     },
     {
+      "file": "content\\computer-science\\sitemaps-and-structured-data-for-agent-discovery.md",
+      "article_id": "sitemaps-and-structured-data-for-agent-discovery",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Learn About Sitemaps - Google Search Central",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Introduction to Structured Data Markup",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data?hl=es-419"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Documentation - Schema.org",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://schema.org/docs/documents.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://schema.org/docs/documents.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content/computer-science/smtp-protocol.md",
       "article_id": "kb-2026-00187",
       "generation_method": "human_only",
@@ -35336,6 +36495,67 @@
       "sources_unreachable": 0,
       "manual_reviewed": true,
       "manual_reviewed_at": "2026-05-30"
+    },
+    {
+      "file": "content\\computer-science\\static-analysis-rules-and-codeql.md",
+      "article_id": "static-analysis-rules-and-codeql",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "About CodeQL Queries",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://codeql.github.com/docs/writing-codeql-queries/about-codeql-queries/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://codeql.github.com/docs/writing-codeql-queries/about-codeql-queries/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Write Rules - Semgrep",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://semgrep.dev/docs/writing-rules/overview",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://semgrep.dev/docs/writing-rules/overview"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Custom Rules - ESLint",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://eslint.org/docs/latest/extend/custom-rules",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://eslint.org/docs/latest/extend/custom-rules"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content/computer-science/svelte.md",
@@ -53543,128 +54763,6 @@
       "sources_unreachable": 0
     },
     {
-      "file": "content\\ai\\agent-task-queues-and-background-jobs.md",
-      "article_id": "agent-task-queues-and-background-jobs",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "What Is a Temporal Worker?",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.temporal.io/workers",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.temporal.io/workers"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Introduction to Celery",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.celeryq.dev/en/stable/getting-started/introduction.html",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.celeryq.dev/en/stable/getting-started/introduction.html"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Understand Cloud Tasks",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://cloud.google.com/tasks/docs/dual-overview",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.cloud.google.com/tasks/docs/dual-overview"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
-    },
-    {
-      "file": "content\\ai\\agent-tool-rate-limits-and-quotas.md",
-      "article_id": "agent-tool-rate-limits-and-quotas",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "Rate Limits for the REST API - GitHub Docs",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Rate Limits - Stripe Documentation",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.stripe.com/rate-limits",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.stripe.com/rate-limits"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Cloud Quotas Overview - Google Cloud",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://cloud.google.com/docs/quotas/overview",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.cloud.google.com/docs/quotas/overview"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
-    },
-    {
       "file": "content\\ai\\ai-for-genomics-variant-calling-gene-expression-prediction-and-protein-dna-binding.md",
       "article_id": "kb-2026-00005",
       "generation_method": "ai_structured",
@@ -53687,250 +54785,6 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 1
-    },
-    {
-      "file": "content\\ai\\browser-automation-for-agents.md",
-      "article_id": "browser-automation-for-agents",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "Installation - Playwright",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://playwright.dev/docs/intro",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://playwright.dev/docs/intro"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "The Selenium Browser Automation Project",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.selenium.dev/documentation/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://www.selenium.dev/documentation/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Chrome DevTools Protocol",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://chromedevtools.github.io/devtools-protocol/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://chromedevtools.github.io/devtools-protocol/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
-    },
-    {
-      "file": "content\\ai\\online-llm-evaluation-and-feedback-loops.md",
-      "article_id": "online-llm-evaluation-and-feedback-loops",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "Online Evaluations - LangSmith",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.langchain.com/langsmith/online-evaluations",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.langchain.com/langsmith/online-evaluations-llm-as-judge"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Working with Evals - OpenAI API",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://platform.openai.com/docs/guides/evals",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://developers.openai.com/api/docs/guides/evals"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "LLM Evals - Phoenix",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://arize.com/docs/phoenix/evaluation/llm-evals",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://arize.com/docs/phoenix/evaluation/llm-evals"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
-    },
-    {
-      "file": "content\\ai\\rag-query-routing.md",
-      "article_id": "rag-query-routing",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "Routers - LlamaIndex",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.llamaindex.ai/en/stable/module_guides/querying/router/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://developers.llamaindex.ai/python/framework/module_guides/querying/router/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "ConditionalRouter - Haystack",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.haystack.deepset.ai/docs/conditionalrouter",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.haystack.deepset.ai/docs/conditionalrouter"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Evaluation Concepts - LangSmith",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.langchain.com/langsmith/evaluation-concepts",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.langchain.com/langsmith/evaluation-concepts"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
-    },
-    {
-      "file": "content\\ai\\retrieval-caching-and-semantic-cache.md",
-      "article_id": "retrieval-caching-and-semantic-cache",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "LLM Cache - RedisVL",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://redis.io/docs/latest/develop/ai/redisvl/api/cache/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://redis.io/docs/latest/develop/ai/redisvl/api/cache/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Ingestion Pipeline - LlamaIndex",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.llamaindex.ai/en/stable/module_guides/loading/ingestion_pipeline/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://developers.llamaindex.ai/python/framework/module_guides/loading/ingestion_pipeline/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Index Request Cache - OpenSearch Documentation",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.opensearch.org/latest/search-plugins/caching/request-cache/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.opensearch.org/latest/search-plugins/caching/request-cache/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
     },
     {
       "file": "content\\arts\\history-of-printing.md",
@@ -54760,67 +55614,6 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 3
-    },
-    {
-      "file": "content\\computer-science\\data-pipeline-orchestration.md",
-      "article_id": "data-pipeline-orchestration",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "Dags - Apache Airflow Documentation",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/dags.html",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/dags.html"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Software-Defined Assets - Dagster",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.dagster.io/guides/build/assets/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.dagster.io/guides/build/assets"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Flows - Prefect",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.prefect.io/v3/concepts/flows",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.prefect.io/v3/concepts/flows"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\data-warehousing.md",
@@ -56629,67 +57422,6 @@
       "sources_unreachable": 1
     },
     {
-      "file": "content\\computer-science\\oauth-scopes-for-agent-tools.md",
-      "article_id": "oauth-scopes-for-agent-tools",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "RFC 6749 - OAuth 2.0 Authorization Framework",
-          "source_type": "standard",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://datatracker.ietf.org/doc/html/rfc6749#section-3.3",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://datatracker.ietf.org/doc/html/rfc6749"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Scopes for OAuth Apps - GitHub Docs",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/scopes-for-oauth-apps",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/scopes-for-oauth-apps"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "OAuth 2.0 Scopes for Google APIs",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://developers.google.com/identity/protocols/oauth2/scopes",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://developers.google.com/identity/protocols/oauth2/scopes?hl=es-419"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
-    },
-    {
       "file": "content\\computer-science\\object-oriented-programming-oop.md",
       "article_id": "kb-2026-00229",
       "generation_method": "ai_structured",
@@ -57529,67 +58261,6 @@
       "sources_unreachable": 3
     },
     {
-      "file": "content\\computer-science\\sitemaps-and-structured-data-for-agent-discovery.md",
-      "article_id": "sitemaps-and-structured-data-for-agent-discovery",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "Learn About Sitemaps - Google Search Central",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Introduction to Structured Data Markup",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data?hl=es-419"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Documentation - Schema.org",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://schema.org/docs/documents.html",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://schema.org/docs/documents.html"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
-    },
-    {
       "file": "content\\computer-science\\software-development-life-cycle-sdlc.md",
       "article_id": "kb-2026-00227",
       "generation_method": "ai_structured",
@@ -57825,67 +58496,6 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 1
-    },
-    {
-      "file": "content\\computer-science\\static-analysis-rules-and-codeql.md",
-      "article_id": "static-analysis-rules-and-codeql",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "About CodeQL Queries",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://codeql.github.com/docs/writing-codeql-queries/about-codeql-queries/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://codeql.github.com/docs/writing-codeql-queries/about-codeql-queries/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Write Rules - Semgrep",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://semgrep.dev/docs/writing-rules/overview",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://semgrep.dev/docs/writing-rules/overview"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Custom Rules - ESLint",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://eslint.org/docs/latest/extend/custom-rules",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://eslint.org/docs/latest/extend/custom-rules"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\strategy-pattern.md",
@@ -58184,6 +58794,67 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 1
+    },
+    {
+      "file": "content\\computer-science\\test-coverage-for-code-agents.md",
+      "article_id": "test-coverage-for-code-agents",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "coverage.py Branch Coverage",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://coverage.readthedocs.io/en/latest/branch.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://coverage.readthedocs.io/en/latest/branch.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Node.js Test Runner Code Coverage",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://nodejs.org/api/test.html#collecting-code-coverage",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://nodejs.org/api/test.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "JaCoCo Coverage Counters",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.jacoco.org/jacoco/trunk/doc/counters.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.jacoco.org/jacoco/trunk/doc/counters.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\test-driven-development-tdd.md",
@@ -58917,10 +59588,7 @@
               "method": "url",
               "identifier": "https://www.stadion.com/stretching-scientifically-book/",
               "verified": false,
-              "metadata": {
-                "status": 405,
-                "final_url": "https://www.stadion.com/stretching-scientifically-book/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
