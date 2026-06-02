@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-02T06:05:37.806Z",
-    "total_articles": 1140,
+    "generated": "2026-06-02T06:34:56.900Z",
+    "total_articles": 1152,
     "total_with_errors": 0,
     "average_sources_per_article": "2.6",
-    "overall_verification_rate": "88.6%",
-    "elapsed_ms": 114311,
-    "elapsed_sec": "114.3",
+    "overall_verification_rate": "88.7%",
+    "elapsed_ms": 113521,
+    "elapsed_sec": "113.5",
     "concurrency": 3
   },
   "articles": [
@@ -643,6 +643,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\agent-cloud-resource-inventory.md",
+      "article_id": "agent-cloud-resource-inventory",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Google Cloud Asset Inventory Overview",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://cloud.google.com/asset-inventory/docs/overview",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/asset-inventory/docs/asset-inventory-overview"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Azure Resource Graph Overview",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://learn.microsoft.com/en-us/azure/governance/resource-graph/overview",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.microsoft.com/en-us/azure/governance/resource-graph/overview"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "AWS Resource Explorer",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.aws.amazon.com/resource-explorer/latest/userguide/what-is-resource-explorer.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.aws.amazon.com/resource-explorer/latest/userguide/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\agent-container-image-registry-and-tags.md",
       "article_id": "agent-container-image-registry-and-tags",
       "generation_method": "ai_structured",
@@ -876,6 +937,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error/stack"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-evaluation-harnesses-and-test-runs.md",
+      "article_id": "agent-evaluation-harnesses-and-test-runs",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "LangSmith Evaluation Concepts",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.langchain.com/langsmith/evaluation-concepts",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.langchain.com/langsmith/evaluation-concepts"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Promptfoo Command Line",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.promptfoo.dev/docs/usage/command-line/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.promptfoo.dev/docs/usage/command-line/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenAI Evals",
+          "source_type": "repository",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://github.com/openai/evals",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://github.com/openai/evals"
               },
               "match": true
             }
@@ -1145,6 +1267,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://openai.github.io/openai-agents-python/guardrails/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-infrastructure-as-code-state-and-drift.md",
+      "article_id": "agent-infrastructure-as-code-state-and-drift",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Terraform State",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.hashicorp.com/terraform/language/state",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developer.hashicorp.com/terraform/language/state"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "AWS CloudFormation Drift Detection",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-stack-drift.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-stack-drift.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Pulumi Detecting and Reconciling Drift",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.pulumi.com/docs/iac/operations/stack-management/drift/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.pulumi.com/docs/iac/operations/stack-management/drift/"
               },
               "match": true
             }
@@ -1616,6 +1799,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://kubernetes.io/docs/concepts/configuration/secret/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-secrets-rotation-and-credential-expiry.md",
+      "article_id": "agent-secrets-rotation-and-credential-expiry",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "AWS Secrets Manager Rotation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.aws.amazon.com/secretsmanager/latest/userguide/rotating-secrets.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.aws.amazon.com/secretsmanager/latest/userguide/rotating-secrets.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Google Secret Manager Rotation Recommendations",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://cloud.google.com/secret-manager/docs/rotation-recommendations",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/secret-manager/docs/rotation-recommendations"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "HashiCorp Vault Leases",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.hashicorp.com/vault/docs/concepts/lease",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developer.hashicorp.com/vault/docs/concepts/lease"
               },
               "match": true
             }
@@ -16920,6 +17164,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\llm-evaluation-dataset-versioning.md",
+      "article_id": "llm-evaluation-dataset-versioning",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "lakeFS Concepts and Model",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.lakefs.io/understand/model/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.lakefs.io/understand/model/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "DVC Versioning Data and Models",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://dvc.org/doc/use-cases/versioning-data-and-models",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://doc.dvc.org/example-scenarios/versioning-data-and-models"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GitHub About Git LFS",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-git-large-file-storage",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-git-large-file-storage"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content/ai/llm-inference-optimization.md",
       "article_id": "llm-inference-optimization",
       "generation_method": "ai_structured",
@@ -20550,6 +20855,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\rag-index-evaluation-with-recall-at-k.md",
+      "article_id": "rag-index-evaluation-with-recall-at-k",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Ragas Context Recall",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.ragas.io/en/v0.2.0/concepts/metrics/available_metrics/context_recall/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.ragas.io/en/v0.2.0/concepts/metrics/available_metrics/context_recall/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "LlamaIndex Retrieval Evaluation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.llamaindex.ai/en/stable/examples/evaluation/retrieval/retriever_eval/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.llamaindex.ai/python/examples/evaluation/retrieval/retriever_eval/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Azure AI Search Vector Ranking",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://learn.microsoft.com/en-us/azure/search/vector-search-ranking",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.microsoft.com/en-us/azure/search/vector-search-ranking"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\rag-index-freshness-and-reindexing.md",
       "article_id": "rag-index-freshness-and-reindexing",
       "generation_method": "ai_structured",
@@ -21423,6 +21789,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://docs.opensearch.org/latest/search-plugins/caching/request-cache/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\retrieval-feedback-signals-and-click-logs.md",
+      "article_id": "retrieval-feedback-signals-and-click-logs",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Algolia Click and Conversion Events",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.algolia.com/doc/guides/insights-and-analytics/click-analytics",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.algolia.com/doc/guides/sending-events"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Elasticsearch Behavioral Analytics APIs",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.elastic.co/docs/api/doc/elasticsearch/group/endpoint-analytics",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.elastic.co/docs/api/doc/elasticsearch/group/endpoint-analytics"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Azure AI Search Monitor Queries",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://learn.microsoft.com/en-us/azure/search/search-monitor-queries",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.microsoft.com/en-us/azure/search/search-monitor-queries"
               },
               "match": true
             }
@@ -28224,6 +28651,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\api-pagination-cursors-and-continuation-tokens.md",
+      "article_id": "api-pagination-cursors-and-continuation-tokens",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Stripe Pagination",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.stripe.com/api/pagination",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.stripe.com/api/pagination"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Microsoft Graph Paging",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://learn.microsoft.com/en-us/graph/paging",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.microsoft.com/en-us/graph/paging"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "JSON:API Cursor Pagination Profile",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://jsonapi.org/profiles/ethanresnick/cursor-pagination/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://jsonapi.org/profiles/ethanresnick/cursor-pagination/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\api-schema-code-generation.md",
       "article_id": "api-schema-code-generation",
       "generation_method": "ai_structured",
@@ -29745,6 +30233,67 @@
       "manual_reviewed_at": "2026-06-01"
     },
     {
+      "file": "content\\computer-science\\code-search-indexing-and-trigram-search.md",
+      "article_id": "code-search-indexing-and-trigram-search",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Sourcegraph Architecture",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://sourcegraph.com/docs/admin/architecture",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://sourcegraph.com/docs/admin/architecture"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "PostgreSQL pg_trgm",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.postgresql.org/docs/current/pgtrgm.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.postgresql.org/docs/current/pgtrgm.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Sourcegraph Code Search Details",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://sourcegraph.com/docs/code_search/explanations/search_details",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://sourcegraph.com/docs/code-search/features"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content/computer-science/columnar-databases-parquet-orc-and-analytical-workloads.md",
       "article_id": "kb-2026-00021",
       "generation_method": "ai_structured",
@@ -30923,6 +31472,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\data-partitioning-and-clustering.md",
+      "article_id": "data-partitioning-and-clustering",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "BigQuery Partitioned Tables",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://cloud.google.com/bigquery/docs/partitioned-tables",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/bigquery/docs/partitioned-tables"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "BigQuery Clustered Tables",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://cloud.google.com/bigquery/docs/clustered-tables",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/bigquery/docs/clustered-tables?hl=es"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Snowflake Clustering Keys",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.snowflake.com/en/user-guide/tables-clustering-keys",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.snowflake.com/en/user-guide/tables-clustering-keys"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\data-pipeline-orchestration.md",
       "article_id": "data-pipeline-orchestration",
       "generation_method": "ai_structured",
@@ -31034,6 +31644,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://github.com/awslabs/deequ"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\data-retention-and-ttl-policies.md",
+      "article_id": "data-retention-and-ttl-policies",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "DynamoDB Time to Live",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/TTL.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/TTL.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "MongoDB TTL Indexes",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.mongodb.com/docs/manual/core/index-ttl/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.mongodb.com/docs/manual/core/index-ttl/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "BigQuery Managing Tables",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://cloud.google.com/bigquery/docs/managing-tables#update-table-expiration",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/bigquery/docs/managing-tables"
               },
               "match": true
             }
@@ -36178,6 +36849,67 @@
       "sources_unreachable": 0,
       "manual_reviewed": true,
       "manual_reviewed_at": "2026-05-30"
+    },
+    {
+      "file": "content\\computer-science\\open-telemetry-semantic-conventions.md",
+      "article_id": "open-telemetry-semantic-conventions",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "OpenTelemetry Semantic Conventions",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://opentelemetry.io/docs/specs/semconv/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://opentelemetry.io/docs/specs/semconv/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenTelemetry Resource Semantic Conventions",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://opentelemetry.io/docs/specs/semconv/resource/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://opentelemetry.io/docs/specs/semconv/resource/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenTelemetry Trace Semantic Conventions",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://opentelemetry.io/docs/specs/semconv/general/trace/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://opentelemetry.io/docs/specs/semconv/general/trace/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\openapi-for-agent-tools.md",
@@ -57752,22 +58484,22 @@
       "sources_unreachable": 0
     },
     {
-      "file": "content\\ai\\agent-cloud-resource-inventory.md",
-      "article_id": "agent-cloud-resource-inventory",
+      "file": "content\\ai\\agent-kubernetes-events-and-pod-health.md",
+      "article_id": "agent-kubernetes-events-and-pod-health",
       "generation_method": "ai_structured",
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Google Cloud Asset Inventory Overview",
+          "source_title": "Kubernetes Pod Lifecycle",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://cloud.google.com/asset-inventory/docs/overview",
+              "identifier": "https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://docs.cloud.google.com/asset-inventory/docs/asset-inventory-overview"
+                "final_url": "https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/"
               },
               "match": true
             }
@@ -57775,16 +58507,16 @@
           "all_verified": true
         },
         {
-          "source_title": "Azure Resource Graph Overview",
+          "source_title": "Kubernetes Liveness, Readiness, and Startup Probes",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://learn.microsoft.com/en-us/azure/governance/resource-graph/overview",
+              "identifier": "https://kubernetes.io/docs/concepts/configuration/liveness-readiness-startup-probes/",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://learn.microsoft.com/en-us/azure/governance/resource-graph/overview"
+                "final_url": "https://kubernetes.io/docs/concepts/workloads/pods/probes/"
               },
               "match": true
             }
@@ -57792,16 +58524,16 @@
           "all_verified": true
         },
         {
-          "source_title": "AWS Resource Explorer",
+          "source_title": "Kubernetes Debug Running Pods",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.aws.amazon.com/resource-explorer/latest/userguide/what-is-resource-explorer.html",
+              "identifier": "https://kubernetes.io/docs/tasks/debug/debug-application/debug-running-pod/",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://docs.aws.amazon.com/resource-explorer/latest/userguide/"
+                "final_url": "https://kubernetes.io/docs/tasks/debug/debug-application/debug-running-pod/"
               },
               "match": true
             }
@@ -57813,22 +58545,22 @@
       "sources_unreachable": 0
     },
     {
-      "file": "content\\ai\\agent-evaluation-harnesses-and-test-runs.md",
-      "article_id": "agent-evaluation-harnesses-and-test-runs",
+      "file": "content\\ai\\agent-message-queue-dead-letter-queues.md",
+      "article_id": "agent-message-queue-dead-letter-queues",
       "generation_method": "ai_structured",
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "LangSmith Evaluation Concepts",
+          "source_title": "Amazon SQS Dead-Letter Queues",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.langchain.com/langsmith/evaluation-concepts",
+              "identifier": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-dead-letter-queues.html",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://docs.langchain.com/langsmith/evaluation-concepts"
+                "final_url": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-dead-letter-queues.html"
               },
               "match": true
             }
@@ -57836,16 +58568,16 @@
           "all_verified": true
         },
         {
-          "source_title": "Promptfoo Command Line",
+          "source_title": "Google Pub/Sub Dead-Letter Topics",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.promptfoo.dev/docs/usage/command-line/",
+              "identifier": "https://cloud.google.com/pubsub/docs/dead-letter-topics",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://www.promptfoo.dev/docs/usage/command-line/"
+                "final_url": "https://docs.cloud.google.com/pubsub/docs/dead-letter-topics?hl=zh-cn"
               },
               "match": true
             }
@@ -57853,16 +58585,16 @@
           "all_verified": true
         },
         {
-          "source_title": "OpenAI Evals",
-          "source_type": "repository",
+          "source_title": "RabbitMQ Dead Letter Exchanges",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://github.com/openai/evals",
+              "identifier": "https://www.rabbitmq.com/docs/dlx",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://github.com/openai/evals"
+                "final_url": "https://www.rabbitmq.com/docs/dlx"
               },
               "match": true
             }
@@ -57874,22 +58606,22 @@
       "sources_unreachable": 0
     },
     {
-      "file": "content\\ai\\agent-infrastructure-as-code-state-and-drift.md",
-      "article_id": "agent-infrastructure-as-code-state-and-drift",
+      "file": "content\\ai\\agent-scheduler-cron-and-workflow-runs.md",
+      "article_id": "agent-scheduler-cron-and-workflow-runs",
       "generation_method": "ai_structured",
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Terraform State",
+          "source_title": "Kubernetes CronJob",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://developer.hashicorp.com/terraform/language/state",
+              "identifier": "https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://developer.hashicorp.com/terraform/language/state"
+                "final_url": "https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/"
               },
               "match": true
             }
@@ -57897,16 +58629,16 @@
           "all_verified": true
         },
         {
-          "source_title": "AWS CloudFormation Drift Detection",
+          "source_title": "GitHub Actions Scheduled Events",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-stack-drift.html",
+              "identifier": "https://docs.github.com/en/actions/reference/events-that-trigger-workflows#schedule",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-stack-drift.html"
+                "final_url": "https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows"
               },
               "match": true
             }
@@ -57914,16 +58646,16 @@
           "all_verified": true
         },
         {
-          "source_title": "Pulumi Detecting and Reconciling Drift",
+          "source_title": "Apache Airflow DAGs",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.pulumi.com/docs/iac/operations/stack-management/drift/",
+              "identifier": "https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/dags.html",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://www.pulumi.com/docs/iac/operations/stack-management/drift/"
+                "final_url": "https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/dags.html"
               },
               "match": true
             }
@@ -57935,22 +58667,22 @@
       "sources_unreachable": 0
     },
     {
-      "file": "content\\ai\\agent-secrets-rotation-and-credential-expiry.md",
-      "article_id": "agent-secrets-rotation-and-credential-expiry",
+      "file": "content\\ai\\agent-service-mesh-traffic-policy.md",
+      "article_id": "agent-service-mesh-traffic-policy",
       "generation_method": "ai_structured",
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "AWS Secrets Manager Rotation",
+          "source_title": "Istio Traffic Management",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.aws.amazon.com/secretsmanager/latest/userguide/rotating-secrets.html",
+              "identifier": "https://istio.io/latest/docs/concepts/traffic-management/",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://docs.aws.amazon.com/secretsmanager/latest/userguide/rotating-secrets.html"
+                "final_url": "https://istio.io/latest/docs/concepts/traffic-management/"
               },
               "match": true
             }
@@ -57958,16 +58690,16 @@
           "all_verified": true
         },
         {
-          "source_title": "Google Secret Manager Rotation Recommendations",
+          "source_title": "Istio VirtualService Reference",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://cloud.google.com/secret-manager/docs/rotation-recommendations",
+              "identifier": "https://istio.io/latest/docs/reference/config/networking/virtual-service/",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://docs.cloud.google.com/secret-manager/docs/rotation-recommendations"
+                "final_url": "https://istio.io/latest/docs/reference/config/networking/virtual-service/"
               },
               "match": true
             }
@@ -57975,16 +58707,16 @@
           "all_verified": true
         },
         {
-          "source_title": "HashiCorp Vault Leases",
+          "source_title": "Istio DestinationRule Reference",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://developer.hashicorp.com/vault/docs/concepts/lease",
+              "identifier": "https://istio.io/latest/docs/reference/config/networking/destination-rule/",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://developer.hashicorp.com/vault/docs/concepts/lease"
+                "final_url": "https://istio.io/latest/docs/reference/config/networking/destination-rule/"
               },
               "match": true
             }
@@ -58020,22 +58752,22 @@
       "sources_unreachable": 1
     },
     {
-      "file": "content\\ai\\llm-evaluation-dataset-versioning.md",
-      "article_id": "llm-evaluation-dataset-versioning",
+      "file": "content\\ai\\evaluation-sampling-and-confidence-intervals.md",
+      "article_id": "evaluation-sampling-and-confidence-intervals",
       "generation_method": "ai_structured",
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "lakeFS Concepts and Model",
+          "source_title": "SciPy Bootstrap",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.lakefs.io/understand/model/",
+              "identifier": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.bootstrap.html",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://docs.lakefs.io/understand/model/"
+                "final_url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.bootstrap.html"
               },
               "match": true
             }
@@ -58043,16 +58775,16 @@
           "all_verified": true
         },
         {
-          "source_title": "DVC Versioning Data and Models",
+          "source_title": "statsmodels Proportion Confidence Interval",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://dvc.org/doc/use-cases/versioning-data-and-models",
+              "identifier": "https://www.statsmodels.org/stable/generated/statsmodels.stats.proportion.proportion_confint.html",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://doc.dvc.org/example-scenarios/versioning-data-and-models"
+                "final_url": "https://www.statsmodels.org/stable/generated/statsmodels.stats.proportion.proportion_confint.html"
               },
               "match": true
             }
@@ -58060,16 +58792,16 @@
           "all_verified": true
         },
         {
-          "source_title": "GitHub About Git LFS",
+          "source_title": "scikit-learn Cross-Validation",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-git-large-file-storage",
+              "identifier": "https://scikit-learn.org/stable/modules/cross_validation.html",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-git-large-file-storage"
+                "final_url": "https://scikit-learn.org/stable/modules/cross_validation.html"
               },
               "match": true
             }
@@ -58081,22 +58813,22 @@
       "sources_unreachable": 0
     },
     {
-      "file": "content\\ai\\rag-index-evaluation-with-recall-at-k.md",
-      "article_id": "rag-index-evaluation-with-recall-at-k",
+      "file": "content\\ai\\llm-evaluation-inter-annotator-agreement.md",
+      "article_id": "llm-evaluation-inter-annotator-agreement",
       "generation_method": "ai_structured",
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Ragas Context Recall",
+          "source_title": "Label Studio Statistics",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.ragas.io/en/v0.2.0/concepts/metrics/available_metrics/context_recall/",
+              "identifier": "https://labelstud.io/guide/stats.html",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://docs.ragas.io/en/v0.2.0/concepts/metrics/available_metrics/context_recall/"
+                "final_url": "https://docs.humansignal.com/guide/"
               },
               "match": true
             }
@@ -58104,16 +58836,16 @@
           "all_verified": true
         },
         {
-          "source_title": "LlamaIndex Retrieval Evaluation",
+          "source_title": "Argilla Annotation Metrics",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.llamaindex.ai/en/stable/examples/evaluation/retrieval/retriever_eval/",
+              "identifier": "https://docs.v1.argilla.io/en/v2.2.0/reference/python/python_annotation_metrics.html",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://developers.llamaindex.ai/python/examples/evaluation/retrieval/retriever_eval/"
+                "final_url": "https://docs.v1.argilla.io/en/v2.2.0/reference/python/python_annotation_metrics.html"
               },
               "match": true
             }
@@ -58121,16 +58853,16 @@
           "all_verified": true
         },
         {
-          "source_title": "Azure AI Search Vector Ranking",
+          "source_title": "Prodigy Inter-Annotator Agreement",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://learn.microsoft.com/en-us/azure/search/vector-search-ranking",
+              "identifier": "https://prodi.gy/docs/api-components#iaa",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://learn.microsoft.com/en-us/azure/search/vector-search-ranking"
+                "final_url": "https://prodi.gy/docs/api-components"
               },
               "match": true
             }
@@ -58142,22 +58874,22 @@
       "sources_unreachable": 0
     },
     {
-      "file": "content\\ai\\retrieval-feedback-signals-and-click-logs.md",
-      "article_id": "retrieval-feedback-signals-and-click-logs",
+      "file": "content\\ai\\rag-answer-grounding-and-citation-coverage.md",
+      "article_id": "rag-answer-grounding-and-citation-coverage",
       "generation_method": "ai_structured",
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Algolia Click and Conversion Events",
+          "source_title": "Ragas Faithfulness",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.algolia.com/doc/guides/insights-and-analytics/click-analytics",
+              "identifier": "https://docs.ragas.io/en/v0.2.0/concepts/metrics/available_metrics/faithfulness/",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://www.algolia.com/doc/guides/sending-events"
+                "final_url": "https://docs.ragas.io/en/v0.2.0/concepts/metrics/available_metrics/faithfulness/"
               },
               "match": true
             }
@@ -58165,16 +58897,16 @@
           "all_verified": true
         },
         {
-          "source_title": "Elasticsearch Behavioral Analytics APIs",
+          "source_title": "LangSmith RAG Evaluation Tutorial",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.elastic.co/docs/api/doc/elasticsearch/group/endpoint-analytics",
+              "identifier": "https://docs.langchain.com/langsmith/evaluate-rag-tutorial",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://www.elastic.co/docs/api/doc/elasticsearch/group/endpoint-analytics"
+                "final_url": "https://docs.langchain.com/langsmith/evaluate-rag-tutorial"
               },
               "match": true
             }
@@ -58182,16 +58914,77 @@
           "all_verified": true
         },
         {
-          "source_title": "Azure AI Search Monitor Queries",
+          "source_title": "Azure AI Foundry RAG Evaluators",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://learn.microsoft.com/en-us/azure/search/search-monitor-queries",
+              "identifier": "https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/evaluation-evaluators/rag-evaluators",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://learn.microsoft.com/en-us/azure/search/search-monitor-queries"
+                "final_url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/evaluation-evaluators/rag-evaluators"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\retrieval-embedding-drift-and-index-quality.md",
+      "article_id": "retrieval-embedding-drift-and-index-quality",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Arize Embedding Drift",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arize.com/docs/ax/machine-learning/computer-vision/how-to-cv/embedding-drift",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://arize.com/docs/ax/machine-learning/computer-vision/how-to-cv/embedding-drift"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Evidently Data Drift",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.evidentlyai.com/metrics/explainer_drift",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.evidentlyai.com/metrics/explainer_drift"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Pinecone Monitoring",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.pinecone.io/guides/operations/monitoring",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.pinecone.io/guides/production/monitoring"
               },
               "match": true
             }
@@ -58477,22 +59270,22 @@
       "sources_unreachable": 1
     },
     {
-      "file": "content\\computer-science\\api-pagination-cursors-and-continuation-tokens.md",
-      "article_id": "api-pagination-cursors-and-continuation-tokens",
+      "file": "content\\computer-science\\api-oauth-token-introspection.md",
+      "article_id": "api-oauth-token-introspection",
       "generation_method": "ai_structured",
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Stripe Pagination",
-          "source_type": "documentation",
+          "source_title": "RFC 7662 OAuth 2.0 Token Introspection",
+          "source_type": "standard",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.stripe.com/api/pagination",
+              "identifier": "https://datatracker.ietf.org/doc/html/rfc7662",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://docs.stripe.com/api/pagination"
+                "final_url": "https://datatracker.ietf.org/doc/html/rfc7662"
               },
               "match": true
             }
@@ -58500,16 +59293,16 @@
           "all_verified": true
         },
         {
-          "source_title": "Microsoft Graph Paging",
+          "source_title": "Duende IdentityServer Introspection Endpoint",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://learn.microsoft.com/en-us/graph/paging",
+              "identifier": "https://docs.duendesoftware.com/identityserver/reference/endpoints/introspection/",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://learn.microsoft.com/en-us/graph/paging"
+                "final_url": "https://docs.duendesoftware.com/identityserver/reference/endpoints/introspection/"
               },
               "match": true
             }
@@ -58517,16 +59310,77 @@
           "all_verified": true
         },
         {
-          "source_title": "JSON:API Cursor Pagination Profile",
+          "source_title": "Keycloak OIDC Layers",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://jsonapi.org/profiles/ethanresnick/cursor-pagination/",
+              "identifier": "https://www.keycloak.org/securing-apps/oidc-layers",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://jsonapi.org/profiles/ethanresnick/cursor-pagination/"
+                "final_url": "https://www.keycloak.org/securing-apps/oidc-layers"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\api-webhook-signature-verification.md",
+      "article_id": "api-webhook-signature-verification",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Stripe Webhook Signature Verification",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.stripe.com/webhooks/signature",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.stripe.com/webhooks/signature"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GitHub Validating Webhook Deliveries",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/webhooks/using-webhooks/validating-webhook-deliveries",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/webhooks/using-webhooks/validating-webhook-deliveries"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Slack Verifying Requests",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.slack.dev/authentication/verifying-requests-from-slack/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.slack.dev/authentication/verifying-requests-from-slack/"
               },
               "match": true
             }
@@ -58705,67 +59559,6 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 3
-    },
-    {
-      "file": "content\\computer-science\\code-search-indexing-and-trigram-search.md",
-      "article_id": "code-search-indexing-and-trigram-search",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "Sourcegraph Architecture",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://sourcegraph.com/docs/admin/architecture",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://sourcegraph.com/docs/admin/architecture"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "PostgreSQL pg_trgm",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.postgresql.org/docs/current/pgtrgm.html",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://www.postgresql.org/docs/current/pgtrgm.html"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Sourcegraph Code Search Details",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://sourcegraph.com/docs/code_search/explanations/search_details",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://sourcegraph.com/docs/code-search/features"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\command-pattern.md",
@@ -59093,6 +59886,67 @@
       "sources_unreachable": 3
     },
     {
+      "file": "content\\computer-science\\data-deduplication-and-entity-resolution.md",
+      "article_id": "data-deduplication-and-entity-resolution",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "AWS Entity Resolution",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.aws.amazon.com/entityresolution/latest/userguide/what-is-service.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.aws.amazon.com/entityresolution/latest/userguide/what-is-service.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Splink Documentation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://moj-analytical-services.github.io/splink/index.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://moj-analytical-services.github.io/splink/index.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenRefine Cluster and Edit",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://openrefine.org/docs/manual/cellediting#cluster-and-edit",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://openrefine.org/docs/manual/cellediting"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\data-lake-architecture.md",
       "article_id": "kb-2026-00254",
       "generation_method": "ai_structured",
@@ -59152,128 +60006,6 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 3
-    },
-    {
-      "file": "content\\computer-science\\data-partitioning-and-clustering.md",
-      "article_id": "data-partitioning-and-clustering",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "BigQuery Partitioned Tables",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://cloud.google.com/bigquery/docs/partitioned-tables",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.cloud.google.com/bigquery/docs/partitioned-tables"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "BigQuery Clustered Tables",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://cloud.google.com/bigquery/docs/clustered-tables",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.cloud.google.com/bigquery/docs/clustered-tables?hl=es"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Snowflake Clustering Keys",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.snowflake.com/en/user-guide/tables-clustering-keys",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.snowflake.com/en/user-guide/tables-clustering-keys"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
-    },
-    {
-      "file": "content\\computer-science\\data-retention-and-ttl-policies.md",
-      "article_id": "data-retention-and-ttl-policies",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "DynamoDB Time to Live",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/TTL.html",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/TTL.html"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "MongoDB TTL Indexes",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.mongodb.com/docs/manual/core/index-ttl/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://www.mongodb.com/docs/manual/core/index-ttl/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "BigQuery Managing Tables",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://cloud.google.com/bigquery/docs/managing-tables#update-table-expiration",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.cloud.google.com/bigquery/docs/managing-tables"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\data-warehousing.md",
@@ -61204,67 +61936,6 @@
       "sources_unreachable": 3
     },
     {
-      "file": "content\\computer-science\\open-telemetry-semantic-conventions.md",
-      "article_id": "open-telemetry-semantic-conventions",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "OpenTelemetry Semantic Conventions",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://opentelemetry.io/docs/specs/semconv/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://opentelemetry.io/docs/specs/semconv/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "OpenTelemetry Resource Semantic Conventions",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://opentelemetry.io/docs/specs/semconv/resource/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://opentelemetry.io/docs/specs/semconv/resource/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "OpenTelemetry Trace Semantic Conventions",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://opentelemetry.io/docs/specs/semconv/general/trace/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://opentelemetry.io/docs/specs/semconv/general/trace/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
-    },
-    {
       "file": "content\\computer-science\\osi-model.md",
       "article_id": "kb-2026-00184",
       "generation_method": "human_only",
@@ -61838,6 +62509,67 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 3
+    },
+    {
+      "file": "content\\computer-science\\schema-drift-and-data-observability.md",
+      "article_id": "schema-drift-and-data-observability",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Evidently Data Drift",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.evidentlyai.com/metrics/explainer_drift",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.evidentlyai.com/metrics/explainer_drift"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Soda Schema Checks",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.soda.io/soda-cl/schema.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.soda.io/soda-documentation/soda-v3/sodacl-reference/schema"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Great Expectations Table Columns Expectation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://greatexpectations.io/expectations/expect_table_columns_to_match_set/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://greatexpectations.io/expectations/expect_table_columns_to_match_set/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\scrum-framework.md",

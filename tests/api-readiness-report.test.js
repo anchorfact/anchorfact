@@ -261,6 +261,10 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'ai/agent-infrastructure-as-code-state-and-drift',
     'ai/agent-secrets-rotation-and-credential-expiry',
     'ai/agent-cloud-resource-inventory',
+    'ai/agent-kubernetes-events-and-pod-health',
+    'ai/agent-service-mesh-traffic-policy',
+    'ai/agent-message-queue-dead-letter-queues',
+    'ai/agent-scheduler-cron-and-workflow-runs',
     'computer-science/repository-permissions-and-code-agent-access',
     'ai/agent-checkpointing-and-resumable-workflows',
     'computer-science/code-graphs-and-code-intelligence',
@@ -284,17 +288,25 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'ai/retrieval-query-logs-and-search-observability',
     'ai/retrieval-feedback-signals-and-click-logs',
     'ai/rag-index-evaluation-with-recall-at-k',
+    'ai/retrieval-embedding-drift-and-index-quality',
+    'ai/rag-answer-grounding-and-citation-coverage',
     'ai/llm-sampling-parameters-in-evaluation',
     'ai/llm-evaluation-dataset-versioning',
     'ai/agent-evaluation-harnesses-and-test-runs',
+    'ai/llm-evaluation-inter-annotator-agreement',
+    'ai/evaluation-sampling-and-confidence-intervals',
     'computer-science/api-idempotency-keys',
     'computer-science/distributed-tracing-and-correlation-context',
     'computer-science/data-backfills-and-replay-pipelines',
     'computer-science/data-retention-and-ttl-policies',
     'computer-science/data-partitioning-and-clustering',
+    'computer-science/data-deduplication-and-entity-resolution',
+    'computer-science/schema-drift-and-data-observability',
     'computer-science/runtime-feature-detection-and-compatibility',
     'computer-science/api-pagination-cursors-and-continuation-tokens',
-    'computer-science/open-telemetry-semantic-conventions'
+    'computer-science/open-telemetry-semantic-conventions',
+    'computer-science/api-webhook-signature-verification',
+    'computer-science/api-oauth-token-introspection'
   ]) {
     assert(slugs.includes(slug), `missing agent/code-intelligence readiness slug ${slug}`);
   }
