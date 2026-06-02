@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-02T00:57:28.889Z",
-    "total_articles": 1016,
+    "generated": "2026-06-02T01:25:32.930Z",
+    "total_articles": 1024,
     "total_with_errors": 0,
     "average_sources_per_article": "2.5",
-    "overall_verification_rate": "86.9%",
-    "elapsed_ms": 95802,
-    "elapsed_sec": "95.8",
+    "overall_verification_rate": "87.0%",
+    "elapsed_ms": 99387,
+    "elapsed_sec": "99.4",
     "concurrency": 3
   },
   "articles": [
@@ -596,6 +596,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://modelcontextprotocol.io/specification/2024-11-05/server/tools"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-observability-and-tracing.md",
+      "article_id": "agent-observability-and-tracing",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Tracing - OpenAI Agents SDK",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://openai.github.io/openai-agents-python/tracing/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://openai.github.io/openai-agents-python/tracing/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Traces",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://opentelemetry.io/docs/concepts/signals/traces/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://opentelemetry.io/docs/concepts/signals/traces/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Semantic conventions for generative client AI spans",
+          "source_type": "specification",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://opentelemetry.io/docs/specs/semconv/gen-ai/gen-ai-spans/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://opentelemetry.io/docs/specs/semconv/gen-ai/gen-ai-spans/"
               },
               "match": true
             }
@@ -24433,6 +24494,67 @@
       "errors": []
     },
     {
+      "file": "content\\computer-science\\change-data-capture.md",
+      "article_id": "change-data-capture",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Debezium documentation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://debezium.io/documentation/reference/stable/index.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://debezium.io/documentation/reference/stable/index.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "PostgreSQL logical decoding",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.postgresql.org/docs/current/logicaldecoding.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.postgresql.org/docs/current/logicaldecoding.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Kafka Connect",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.confluent.io/platform/current/connect/index.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.confluent.io/platform/current/connect/index.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content/computer-science/ci-cd-pipeline.md",
       "article_id": "kb-2026-00153",
       "generation_method": "ai_structured",
@@ -32349,6 +32471,67 @@
       "manual_reviewed_at": "2026-05-28"
     },
     {
+      "file": "content\\computer-science\\semantic-code-search-and-code-indexing.md",
+      "article_id": "semantic-code-search-and-code-indexing",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Sourcegraph Code Search",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://sourcegraph.com/docs/code-search",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://sourcegraph.com/docs/code-search"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Sourcegraph Precise Code Navigation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://sourcegraph.com/docs/code-navigation/precise-code-navigation",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://sourcegraph.com/docs/code-navigation/precise-code-navigation"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Tree-sitter Code Navigation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://tree-sitter.github.io/tree-sitter/4-code-navigation.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://tree-sitter.github.io/tree-sitter/4-code-navigation.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content/computer-science/server-sent-events-sse.md",
       "article_id": "kb-2026-00083",
       "generation_method": "human_only",
@@ -34160,6 +34343,67 @@
       "sources_unreachable": 0,
       "manual_reviewed": true,
       "manual_reviewed_at": "2026-05-28"
+    },
+    {
+      "file": "content\\computer-science\\webhooks-and-event-driven-apis.md",
+      "article_id": "webhooks-and-event-driven-apis",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Webhooks documentation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/webhooks",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/webhooks"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Webhooks",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.stripe.com/webhooks",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.stripe.com/webhooks"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "CloudEvents specification",
+          "source_type": "specification",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://github.com/cloudevents/spec/blob/v1.0.2/cloudevents/spec.md",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://github.com/cloudevents/spec/blob/v1.0.2/cloudevents/spec.md"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content/computer-science/webpack.md",
@@ -39054,6 +39298,33 @@
       "sources_unreachable": 0,
       "manual_reviewed": true,
       "manual_reviewed_at": "2026-05-28"
+    },
+    {
+      "file": "content\\geography\\global-deserts-formation-distribution-and-desertification.md",
+      "article_id": "kb-2026-00024",
+      "generation_method": "ai_structured",
+      "sources_total": 1,
+      "verification_results": [
+        {
+          "source_title": "Source 1 — Global Deserts: Formation, Distribution, and Desertification",
+          "source_type": "blog_post",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.usgs.gov/special-topics/",
+              "verified": true,
+              "metadata": {
+                "status": 202,
+                "final_url": "https://www.usgs.gov/special-topics/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 1,
+      "sources_unreachable": 0
     },
     {
       "file": "content/geography/great-lakes-hydrology-ecology-and-transboundary-management.md",
@@ -50616,6 +50887,33 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\sports\\swimming-strokes.md",
+      "article_id": "kb-2026-00450",
+      "generation_method": "ai_assisted",
+      "sources_total": 1,
+      "verification_results": [
+        {
+          "source_title": "Swimming Rules",
+          "source_type": "rulebook",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.worldaquatics.com/swimming/rules",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.worldaquatics.com/swimming/rules"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 1,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content/sports/swimming-training.md",
       "article_id": "kb-2026-00502",
       "generation_method": "ai_structured",
@@ -50856,6 +51154,50 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\agent-planning-and-task-decomposition.md",
+      "article_id": "agent-planning-and-task-decomposition",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Agents - Docs by LangChain",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.langchain.com/oss/python/langchain/agents",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.langchain.com/oss/python/langchain/agents"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Agents - OpenAI Agents SDK",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://openai.github.io/openai-agents-python/agents/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://openai.github.io/openai-agents-python/agents/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\ai-for-genomics-variant-calling-gene-expression-prediction-and-protein-dna-binding.md",
       "article_id": "kb-2026-00005",
       "generation_method": "ai_structured",
@@ -50902,6 +51244,128 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 1
+    },
+    {
+      "file": "content\\ai\\evaluation-datasets-and-golden-tests-for-llms.md",
+      "article_id": "evaluation-datasets-and-golden-tests-for-llms",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "GitHub - openai/evals",
+          "source_type": "software_repository",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://github.com/openai/evals",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://github.com/openai/evals"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Holistic Evaluation of Language Models (HELM)",
+          "source_type": "benchmark",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://crfm.stanford.edu/helm/latest/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://crfm.stanford.edu/helm/latest/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GitHub - google/BIG-bench",
+          "source_type": "benchmark_repository",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://github.com/google/BIG-bench",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://github.com/google/BIG-bench"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\rag-chunking-and-context-window-management.md",
+      "article_id": "rag-chunking-and-context-window-management",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Text splitters",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.langchain.com/oss/python/integrations/splitters/index",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.langchain.com/oss/python/integrations/splitters/index"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Splitting recursively - Text splitter integration guide - Docs by LangChain",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.langchain.com/oss/python/integrations/splitters/recursive_text_splitter",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.langchain.com/oss/python/integrations/splitters/recursive_text_splitter"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Node Parser Usage Pattern | Developer Documentation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.llamaindex.ai/en/stable/module_guides/loading/node_parsers/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.llamaindex.ai/python/framework/module_guides/loading/node_parsers/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content\\arts\\history-of-printing.md",
@@ -51176,6 +51640,67 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 1
+    },
+    {
+      "file": "content\\computer-science\\api-idempotency-and-retry-semantics.md",
+      "article_id": "api-idempotency-and-retry-semantics",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "RFC 9110",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://datatracker.ietf.org/doc/html/rfc9110",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://datatracker.ietf.org/doc/html/rfc9110"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Idempotent requests",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.stripe.com/api/idempotent_requests",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.stripe.com/api/idempotent_requests"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Retry pattern",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://learn.microsoft.com/en-us/azure/architecture/patterns/retry",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/retry"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\bloom-filters-space-efficient-probabilistic-data-structures.md",
@@ -55370,33 +55895,6 @@
       "sources_unreachable": 1
     },
     {
-      "file": "content\\geography\\global-deserts-formation-distribution-and-desertification.md",
-      "article_id": "kb-2026-00024",
-      "generation_method": "ai_structured",
-      "sources_total": 1,
-      "verification_results": [
-        {
-          "source_title": "Source 1 — Global Deserts: Formation, Distribution, and Desertification",
-          "source_type": "blog_post",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.usgs.gov/special-topics/",
-              "verified": true,
-              "metadata": {
-                "status": 202,
-                "final_url": "https://www.usgs.gov/special-topics/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
-    },
-    {
       "file": "content\\geography\\great-barrier-reef-ecology-coral-bleaching-and-conservation.md",
       "article_id": "kb-2026-00027",
       "generation_method": "ai_structured",
@@ -55671,7 +56169,10 @@
               "method": "url",
               "identifier": "https://www.stadion.com/stretching-scientifically-book/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 405,
+                "final_url": "https://www.stadion.com/stretching-scientifically-book/"
+              },
               "match": false
             }
           ],
@@ -56623,33 +57124,6 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 1
-    },
-    {
-      "file": "content\\sports\\swimming-strokes.md",
-      "article_id": "kb-2026-00450",
-      "generation_method": "ai_assisted",
-      "sources_total": 1,
-      "verification_results": [
-        {
-          "source_title": "Swimming Rules",
-          "source_type": "rulebook",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.worldaquatics.com/swimming/rules",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://www.worldaquatics.com/swimming/rules"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 1,
-      "sources_unreachable": 0
     },
     {
       "file": "content\\sports\\tennis-strategy.md",
