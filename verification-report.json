@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-02T20:30:09.513Z",
-    "total_articles": 1411,
+    "generated": "2026-06-02T20:49:07.226Z",
+    "total_articles": 1421,
     "total_with_errors": 0,
     "average_sources_per_article": "2.6",
-    "overall_verification_rate": "90.9%",
-    "elapsed_ms": 91321,
-    "elapsed_sec": "91.3",
+    "overall_verification_rate": "91.0%",
+    "elapsed_ms": 99986,
+    "elapsed_sec": "100.0",
     "concurrency": 3
   },
   "articles": [
@@ -22081,6 +22081,50 @@
         }
       ],
       "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\llm-evaluation-ifeval-instruction-following-benchmarks.md",
+      "article_id": "llm-evaluation-ifeval-instruction-following-benchmarks",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Google Research Instruction Following Eval README",
+          "source_type": "repository_documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://raw.githubusercontent.com/google-research/google-research/master/instruction_following_eval/README.md",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://raw.githubusercontent.com/google-research/google-research/master/instruction_following_eval/README.md"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Google Research IFEval Instruction Registry",
+          "source_type": "source_code",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://raw.githubusercontent.com/google-research/google-research/master/instruction_following_eval/instructions_registry.py",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://raw.githubusercontent.com/google-research/google-research/master/instruction_following_eval/instructions_registry.py"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
       "sources_unreachable": 0
     },
     {
@@ -74029,6 +74073,94 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\agent-container-security-context-seccomp-and-capabilities.md",
+      "article_id": "agent-container-security-context-seccomp-and-capabilities",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Kubernetes Configure a Security Context",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kubernetes.io/docs/tasks/configure-pod-container/security-context/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://kubernetes.io/docs/tasks/configure-pod-container/security-context/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Docker Seccomp Security Profiles",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.docker.com/engine/security/seccomp/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.docker.com/engine/security/seccomp/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-terraform-plan-output-and-resource-addresses.md",
+      "article_id": "agent-terraform-plan-output-and-resource-addresses",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Terraform Plan Command",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.hashicorp.com/terraform/cli/commands/plan",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developer.hashicorp.com/terraform/cli/commands/plan"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Terraform Resource Address Reference",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.hashicorp.com/terraform/cli/state/resource-addressing",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developer.hashicorp.com/terraform/cli/state/resource-addressing"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\ai-for-genomics-variant-calling-gene-expression-prediction-and-protein-dna-binding.md",
       "article_id": "kb-2026-00005",
       "generation_method": "ai_structured",
@@ -74053,22 +74185,22 @@
       "sources_unreachable": 1
     },
     {
-      "file": "content\\ai\\llm-evaluation-ifeval-instruction-following-benchmarks.md",
-      "article_id": "llm-evaluation-ifeval-instruction-following-benchmarks",
+      "file": "content\\ai\\llm-evaluation-berkeley-function-calling-leaderboard.md",
+      "article_id": "llm-evaluation-berkeley-function-calling-leaderboard",
       "generation_method": "ai_structured",
       "sources_total": 2,
       "verification_results": [
         {
-          "source_title": "Google Research Instruction Following Eval README",
-          "source_type": "repository_documentation",
+          "source_title": "Berkeley Function Calling Leaderboard README",
+          "source_type": "software_repository",
           "results": [
             {
               "method": "url",
-              "identifier": "https://raw.githubusercontent.com/google-research/google-research/master/instruction_following_eval/README.md",
+              "identifier": "https://raw.githubusercontent.com/ShishirPatil/gorilla/main/berkeley-function-call-leaderboard/README.md",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://raw.githubusercontent.com/google-research/google-research/master/instruction_following_eval/README.md"
+                "final_url": "https://raw.githubusercontent.com/ShishirPatil/gorilla/main/berkeley-function-call-leaderboard/README.md"
               },
               "match": true
             }
@@ -74076,16 +74208,60 @@
           "all_verified": true
         },
         {
-          "source_title": "Google Research IFEval Instruction Registry",
-          "source_type": "source_code",
+          "source_title": "Berkeley Function Calling Leaderboard Blog",
+          "source_type": "research_project",
           "results": [
             {
               "method": "url",
-              "identifier": "https://raw.githubusercontent.com/google-research/google-research/master/instruction_following_eval/instructions_registry.py",
+              "identifier": "https://gorilla.cs.berkeley.edu/blogs/8_berkeley_function_calling_leaderboard.html",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://raw.githubusercontent.com/google-research/google-research/master/instruction_following_eval/instructions_registry.py"
+                "final_url": "https://gorilla.cs.berkeley.edu/blogs/8_berkeley_function_calling_leaderboard.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\retrieval-score-explanations-and-term-vectors.md",
+      "article_id": "retrieval-score-explanations-and-term-vectors",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Elasticsearch Explain API",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.elastic.co/docs/api/doc/elasticsearch/operation/operation-explain",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.elastic.co/docs/api/doc/elasticsearch/operation/operation-explain"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Elasticsearch Term Vectors API",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.elastic.co/docs/api/doc/elasticsearch/operation/operation-termvectors",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.elastic.co/docs/api/doc/elasticsearch/operation/operation-termvectors"
               },
               "match": true
             }
@@ -74371,6 +74547,94 @@
       "sources_unreachable": 1
     },
     {
+      "file": "content\\computer-science\\api-http-message-signatures-and-signature-input.md",
+      "article_id": "api-http-message-signatures-and-signature-input",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "RFC 9421 HTTP Message Signatures",
+          "source_type": "rfc",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://datatracker.ietf.org/doc/rfc9421/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://datatracker.ietf.org/doc/rfc9421/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "RFC 9110 HTTP Semantics",
+          "source_type": "rfc",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://datatracker.ietf.org/doc/rfc9110/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://datatracker.ietf.org/doc/rfc9110/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\api-json-schema-dialects-and-vocabularies.md",
+      "article_id": "api-json-schema-dialects-and-vocabularies",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "JSON Schema 2020-12 Core",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://json-schema.org/draft/2020-12/json-schema-core",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://json-schema.org/draft/2020-12/json-schema-core"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "JSON Schema 2020-12 Validation",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://json-schema.org/draft/2020-12/json-schema-validation",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://json-schema.org/draft/2020-12/json-schema-validation"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\bloom-filters-space-efficient-probabilistic-data-structures.md",
       "article_id": "kb-2026-00029",
       "generation_method": "ai_structured",
@@ -74538,6 +74802,50 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 3
+    },
+    {
+      "file": "content\\computer-science\\code-typescript-project-references-and-incremental-builds.md",
+      "article_id": "code-typescript-project-references-and-incremental-builds",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "TypeScript Project References",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.typescriptlang.org/docs/handbook/project-references.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.typescriptlang.org/docs/handbook/project-references.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "TypeScript tsconfig incremental",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.typescriptlang.org/tsconfig/incremental.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.typescriptlang.org/tsconfig/incremental.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\command-pattern.md",
@@ -74863,6 +75171,138 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 3
+    },
+    {
+      "file": "content\\computer-science\\data-flink-checkpoints-and-savepoints.md",
+      "article_id": "data-flink-checkpoints-and-savepoints",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Apache Flink Checkpoints",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://raw.githubusercontent.com/apache/flink/master/docs/content/docs/ops/state/checkpoints.md",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://raw.githubusercontent.com/apache/flink/master/docs/content/docs/ops/state/checkpoints.md"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Apache Flink Savepoints",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://raw.githubusercontent.com/apache/flink/master/docs/content/docs/ops/state/savepoints.md",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://raw.githubusercontent.com/apache/flink/master/docs/content/docs/ops/state/savepoints.md"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\data-kafka-consumer-group-offsets-and-rebalancing.md",
+      "article_id": "data-kafka-consumer-group-offsets-and-rebalancing",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Apache Kafka KafkaConsumer Javadoc",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kafka.apache.org/38/javadoc/org/apache/kafka/clients/consumer/KafkaConsumer.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://kafka.apache.org/38/javadoc/org/apache/kafka/clients/consumer/KafkaConsumer.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Apache Kafka Consumer Configuration",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kafka.apache.org/documentation/#consumerconfigs_group.id",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://kafka.apache.org/documentation/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\data-kafka-log-compaction-and-tombstones.md",
+      "article_id": "data-kafka-log-compaction-and-tombstones",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Apache Kafka Log Compaction",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kafka.apache.org/documentation/#compaction",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://kafka.apache.org/documentation/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Apache Kafka Log Compaction Design",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kafka.apache.org/documentation/#design_compactionbasics",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://kafka.apache.org/documentation/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\data-lake-architecture.md",
@@ -76369,10 +76809,7 @@
               "method": "url",
               "identifier": "https://www.collegepublications.co.uk/lambda/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.collegepublications.co.uk/lambda/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
