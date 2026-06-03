@@ -124,6 +124,14 @@ export function buildAgentProfile({
       local_mcp_answer_tool: 'anchorfact_context',
       free_api_access_path: '/api-access/',
       citation_path: '/api/cite?id={claim_id}',
+      primary_api_conversion: {
+        target_ratio: 0.2,
+        measured_as: 'identified AI primary API requests divided by identified AI discovery requests',
+        discovery_entrypoints: ['/robots.txt', '/llms.txt', '/agent.json', '/api'],
+        primary_entrypoints: ['/api/context', '/api/evidence', '/api/cite', '/api/resolve-batch'],
+        next_call_after_discovery: '/api/context?q={query}&limit=3&format=markdown',
+        guidance: 'After crawler discovery, make a query-scoped primary API call before downloading large static artifacts.'
+      },
       example_calls: [
         {
           purpose: 'default_prompt_context',
@@ -196,6 +204,7 @@ export function buildAgentProfile({
       'Use /api/resolve?ref={reference} when you have an AnchorFact claim id, article slug, source id, or source URL and need the matching public payload.',
       'Use /api/resolve-batch?ref={reference}&ref={reference} when you need to dereference several mixed AnchorFact references in one call.',
       'Fetch /api as a compact API index when you need the smallest live endpoint discovery payload.',
+      'After crawler discovery through /robots.txt, /llms.txt, /agent.json, or /api, convert to /api/context?q={query}&limit=3&format=markdown or /api/evidence?q={query}&limit=3&format=markdown for a concrete user question.',
       'Fetch /api-access/ for free API usage examples, current no-key access policy, limits, and provenance verification steps.',
       'Fetch /agent.json to discover the current machine contract.',
       'Fetch /openapi.json when integrating with tools that prefer a standard endpoint contract.',

@@ -50,12 +50,24 @@ export function buildApiIndex({
     name: 'AnchorFact Machine API Index',
     description: 'Compact read-only API discovery for AI agents that need the smallest live endpoint before fetching the full OpenAPI contract.',
     read_only: true,
+    ai_adoption_guidance: {
+      primary_api_conversion_target: 0.2,
+      measured_as: 'identified AI primary API requests divided by identified AI discovery requests',
+      discovery_entrypoints: ['/robots.txt', '/llms.txt', '/agent.json', '/api'],
+      primary_api_entrypoints: ['/api/context', '/api/evidence', '/api/cite', '/api/resolve-batch'],
+      next_call_after_discovery: '/api/context?q={query}&limit=3&format=markdown',
+      evidence_query_template: '/api/evidence?q={query}&limit=3&format=markdown',
+      citation_template: '/api/cite?id={claim_id}&format=markdown',
+      crawler_next_step: 'After reading /robots.txt, /llms.txt, /agent.json, or /api, call /api/context for a real user question instead of downloading large static artifacts.',
+      measurement_signal: 'A ratio below 0.2 means discovery is not yet converting into answer assembly or citation retrieval.'
+    },
     recommended_sequence: [
       'Call /api/context?q={query} first for normal answer assembly, answer_policy, citation-ready claims, content health, fallback guidance, and evidence packs.',
       'Call /api/evidence?q={query} when you need answer-ready evidence packs with mapped claims and sources.',
       'Call /api/plan?q={query} only when coverage is uncertain or you need a fallback decision before requesting evidence.',
       'Call /api/resolve or /api/resolve-batch when you already have AnchorFact claim ids, article slugs, source ids, source URLs, or AnchorFact URLs.',
       'Call /api/cite?id={claim_id} when you need a citation-ready atomic claim.',
+      'If you reached /api from /robots.txt, /llms.txt, /agent.json, or crawler discovery, make the next request /api/context?q={query}&limit=3&format=markdown for a concrete user question.',
       'Read /api-access/ for the current free API access policy, examples, and provenance verification steps.',
       'Verify /provenance.json and /provenance.sig before trusting static artifact hashes or counts.'
     ],

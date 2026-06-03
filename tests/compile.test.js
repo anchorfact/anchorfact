@@ -288,6 +288,10 @@ test('agent profile describes the machine contract', () => {
   assertEq(agent.quick_start.local_mcp_answer_tool, 'anchorfact_context');
   assertEq(agent.quick_start.free_api_access_path, '/api-access/');
   assertEq(agent.quick_start.citation_path, '/api/cite?id={claim_id}');
+  assertEq(agent.quick_start.primary_api_conversion.target_ratio, 0.2);
+  assert(agent.quick_start.primary_api_conversion.discovery_entrypoints.includes('/llms.txt'), 'agent profile should identify AI discovery entrypoints');
+  assert(agent.quick_start.primary_api_conversion.primary_entrypoints.includes('/api/evidence'), 'agent profile should identify primary API entrypoints');
+  assert(agent.quick_start.primary_api_conversion.next_call_after_discovery.includes('/api/context'), 'agent profile should convert discovery to context');
   assert(agent.quick_start.example_calls.some(example => example.path === '/api/context?q=gaussian%20splatting&limit=3&format=markdown'), 'agent profile should expose an executable default context example');
   assert(agent.quick_start.example_calls.some(example => example.path === '/api/evidence?q=RLHF&limit=3&format=markdown'), 'agent profile should expose an executable evidence example');
   assertEq(agent.quick_start.trust_check.path, '/provenance.json');
@@ -370,6 +374,7 @@ test('openapi.json describes the static AI contract', () => {
   assert(openapi.paths['/{canonical_slug}/index.json'], 'OpenAPI should describe article JSON-LD template');
   assert(openapi.components.schemas.AgentProfile.properties.quick_start, 'OpenAPI should describe agent quick-start guidance');
   assert(openapi.components.schemas.AgentQuickStart.properties.default_answer_path, 'OpenAPI should define default answer path guidance');
+  assert(openapi.components.schemas.AgentQuickStart.properties.primary_api_conversion, 'OpenAPI should define primary API conversion guidance');
   assert(openapi.components.schemas.AgentQuickStart.properties.fallback_policy, 'OpenAPI should define fallback policy guidance');
   assert(openapi.components.schemas.Topics, 'OpenAPI should define Topics schema');
   assert(openapi.components.schemas.Capabilities, 'OpenAPI should define Capabilities schema');
@@ -379,7 +384,9 @@ test('openapi.json describes the static AI contract', () => {
   assert(openapi.components.schemas.Graph, 'OpenAPI should define Graph schema');
   assert(openapi.components.schemas.Evals, 'OpenAPI should define Evals schema');
   assert(openapi.components.schemas.ApiIndex, 'OpenAPI should define API index schema');
+  assert(openapi.components.schemas.ApiIndex.properties.ai_adoption_guidance, 'OpenAPI should define AI adoption guidance');
   assert(openapi.components.schemas.ArtifactSummary, 'OpenAPI should define artifact summary schema');
+  assert(openapi.components.schemas.ArtifactSummary.properties.artifact_growth_policy, 'OpenAPI should define artifact growth policy');
   assert(openapi.components.schemas.McpProfile, 'OpenAPI should define MCP schema');
   assert(openapi.components.schemas.SearchIndex, 'OpenAPI should define SearchIndex schema');
   assert(openapi.components.schemas.EvidenceApiResponse, 'OpenAPI should define EvidenceApiResponse schema');
@@ -403,6 +410,9 @@ test('artifact-summary.json describes large machine artifacts and lightweight al
   assertEq(summary.schema_version, 'anchorfact.artifact-summary.v1');
   assertEq(summary.provenance_url, 'https://anchorfact.org/provenance.json');
   assert(summary.total_bytes > 0, 'artifact summary should include total bytes');
+  assertEq(summary.artifact_growth_policy.default_for_agents, '/api/context?q={query}');
+  assertEq(summary.artifact_growth_policy.prefer_primary_apis, true);
+  assertEq(summary.artifact_growth_policy.large_artifact_threshold_bytes, 1048576);
   assert(summary.recommended_default_calls.some(call => call.path === '/api/context?q={query}'), 'artifact summary should recommend context first');
   assert(summary.recommended_default_calls.some(call => call.path === '/api/evidence?q={query}'), 'artifact summary should recommend evidence second');
   const graph = summary.artifacts.find(artifact => artifact.path === '/graph.json');
@@ -410,6 +420,10 @@ test('artifact-summary.json describes large machine artifacts and lightweight al
   assert(graph.bytes > 0, 'graph summary should include byte size');
   assertEq(graph.recommended_alternative, '/api/context?q={query}');
   assertEq(graph.cache_posture, 'public, max-age=0, must-revalidate');
+  assert(graph.budget_bytes > 0, 'graph summary should expose its size budget');
+  assert(Number.isFinite(graph.budget_headroom_bytes), 'graph summary should expose budget headroom');
+  assert(['within_budget', 'near_budget', 'over_budget'].includes(graph.budget_status), 'graph summary should classify budget status');
+  assert(graph.download_guidance.includes('/api/context'), 'graph summary should route normal agent calls to context');
   const search = summary.artifacts.find(artifact => artifact.path === '/search-index.json');
   assert(search, 'artifact summary should include search-index.json');
   assertEq(search.recommended_alternative, '/api/evidence?q={query}');

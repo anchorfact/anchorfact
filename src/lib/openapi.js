@@ -482,6 +482,18 @@ export function buildOpenApiContract({
             default_answer_mode: { enum: ['answer_with_citations'] },
             local_mcp_answer_tool: { const: 'anchorfact_context' },
             citation_path: { const: '/api/cite?id={claim_id}' },
+            primary_api_conversion: {
+              type: 'object',
+              properties: {
+                target_ratio: { type: 'number' },
+                measured_as: { type: 'string' },
+                discovery_entrypoints: { type: 'array', items: { type: 'string' } },
+                primary_entrypoints: { type: 'array', items: { type: 'string' } },
+                next_call_after_discovery: { type: 'string' },
+                guidance: { type: 'string' }
+              },
+              additionalProperties: true
+            },
             trust_check: {
               type: 'object',
               properties: {
@@ -507,6 +519,7 @@ export function buildOpenApiContract({
         },
         ApiIndex: schemaVersioned('API index', API_INDEX_SCHEMA_VERSION, {
           read_only: { type: 'boolean' },
+          ai_adoption_guidance: { type: 'object' },
           recommended_sequence: { type: 'array', items: { type: 'string' } },
           primary_entrypoints: { type: 'array', items: { type: 'object' } },
           endpoints: { type: 'array', items: { type: 'object' } },
@@ -514,6 +527,7 @@ export function buildOpenApiContract({
         }),
         ArtifactSummary: schemaVersioned('Artifact summary', ARTIFACT_SUMMARY_SCHEMA_VERSION, {
           total_bytes: { type: 'integer' },
+          artifact_growth_policy: { type: 'object' },
           recommended_default_calls: { type: 'array', items: { type: 'object' } },
           artifacts: { type: 'array', items: { type: 'object' } }
         }),
