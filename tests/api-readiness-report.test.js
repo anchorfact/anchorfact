@@ -7,6 +7,10 @@ import {
   evaluateCoreCorpus,
   renderApiReadinessMarkdown
 } from '../src/lib/api-readiness.js';
+import {
+  normalizeAdoptionScorecard,
+  normalizeProductionIntegrity
+} from '../scripts/api-readiness-report.js';
 
 let passed = 0, failed = 0;
 
@@ -730,6 +734,63 @@ test('renderApiReadinessMarkdown exposes target, gap context, and report-only st
   assert(markdown.includes('Report-only: true'), 'should render report-only status');
   assert(markdown.includes('Build should fail: false'), 'should state low readiness is not a build blocker');
   assert(markdown.includes('not_provided'), 'should show unprovided production/adoption inputs');
+});
+
+test('runtime scorecard inputs normalize Cloudflare adoption and production integrity reports', () => {
+  const adoption = normalizeAdoptionScorecard({
+    window: {
+      since: '2026-06-02T00:00:00.000Z',
+      until: '2026-06-03T00:00:00.000Z'
+    },
+    source: {
+      provider: 'cloudflare_graphql_analytics',
+      zone_name: 'anchorfact.org'
+    },
+    adoption_scorecard: {
+      discovery_entrypoint_requests: 155,
+      primary_api_requests: 310,
+      identified_ai_requests: 60,
+      identified_ai_discovery_requests: 20,
+      identified_ai_primary_api_requests: 1,
+      identified_ai_api_access_page_requests: 4,
+      identified_ai_developer_docs_requests: 14,
+      identified_ai_core_api_requests: 1,
+      identified_ai_primary_to_discovery_ratio: 0.05,
+      identified_ai_primary_to_discovery_target_ratio: 0.2,
+      identified_ai_primary_to_discovery_gap_to_target: 0.15,
+      identified_ai_primary_to_discovery_target_status: 'below_target',
+      bot_route_5xx_or_522_requests: 0,
+      scanner_or_probe_requests: 3,
+      scanner_or_probe_share: 0.03
+    }
+  });
+  const productionIntegrity = normalizeProductionIntegrity({
+    status: 'pass',
+    commit: 'abc123'
+  });
+  const report = buildApiReadinessReport({
+    artifacts: fakeArtifacts(),
+    querySet: [{ id: 'rag', category: 'agent_rag', expected_slug: 'ai/rag', query: 'Retrieval-Augmented Generation (RAG)' }],
+    adoptionScorecard: adoption,
+    productionIntegrity,
+    generatedAt: '2026-06-03T00:00:00.000Z'
+  });
+
+  assertEq(adoption.status, 'below_target');
+  assertEq(adoption.identified_ai_primary_to_discovery_current_ratio, 0.05);
+  assertEq(adoption.identified_ai_primary_to_discovery_target.status, 'below_target');
+  assertEq(productionIntegrity.status, 'pass');
+  assertEq(normalizeProductionIntegrity({ ok: false }).status, 'fail');
+  assertEq(report.production_health.status, 'pass');
+  assertEq(report.adoption_signal.status, 'below_target');
+  const adoptionGate = report.readiness_gates.find(gate => gate.id === 'ai_primary_discovery_ratio_7_day');
+  assertEq(adoptionGate.status, 'below_target');
+  assertEq(adoptionGate.current_ratio, 0.05);
+
+  const markdown = renderApiReadinessMarkdown(report);
+  assert(markdown.includes('Production health: pass'), 'should render production integrity status');
+  assert(markdown.includes('Adoption signal: below_target'), 'should render adoption status');
+  assert(markdown.includes('current=0.05'), 'should render current adoption ratio');
 });
 
 console.log(`\n${passed} passed, ${failed} failed`);

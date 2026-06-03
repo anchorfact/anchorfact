@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { mkdirSync, writeFileSync } from 'fs';
+import { mkdirSync, readFileSync, writeFileSync } from 'fs';
 import { dirname, resolve } from 'path';
 import { pathToFileURL } from 'url';
 import {
@@ -23,6 +23,8 @@ function parseArgs(argv) {
     json: false,
     write: null,
     writeJson: null,
+    adoptionJson: null,
+    productionIntegrityJson: null,
     runs: DEFAULT_RUNS,
     warmups: DEFAULT_WARMUPS,
     skipPerformance: false
@@ -38,6 +40,10 @@ function parseArgs(argv) {
       options.write = argv[++index] || null;
     } else if (arg === '--write-json') {
       options.writeJson = argv[++index] || null;
+    } else if (arg === '--adoption-json') {
+      options.adoptionJson = argv[++index] || null;
+    } else if (arg === '--production-integrity-json') {
+      options.productionIntegrityJson = argv[++index] || null;
     } else if (arg === '--runs') {
       options.runs = Number.parseInt(argv[++index], 10);
     } else if (arg === '--warmups') {
@@ -61,7 +67,7 @@ function parseArgs(argv) {
 }
 
 function usage() {
-  return `Usage: node scripts/api-readiness-report.js [--dist dist] [--json] [--write path] [--write-json path] [--runs n] [--warmups n] [--skip-performance]
+  return `Usage: node scripts/api-readiness-report.js [--dist dist] [--json] [--write path] [--write-json path] [--adoption-json path] [--production-integrity-json path] [--runs n] [--warmups n] [--skip-performance]
 
 Builds a report-only API subscription readiness scorecard. Low readiness does not fail CI; missing artifacts or invalid arguments still fail.
 `;
@@ -71,6 +77,82 @@ function writeOutput(path, content) {
   const out = resolve(path);
   mkdirSync(dirname(out), { recursive: true });
   writeFileSync(out, content);
+}
+
+function finiteNumber(value, fallback = 0) {
+  const number = Number(value);
+  return Number.isFinite(number) ? number : fallback;
+}
+
+function readJsonFile(path, label) {
+  try {
+    return JSON.parse(readFileSync(resolve(path), 'utf-8'));
+  } catch (error) {
+    throw new Error(`Unable to read ${label} JSON from ${path}: ${error.message}`);
+  }
+}
+
+export function normalizeAdoptionScorecard(payload) {
+  if (!payload || typeof payload !== 'object') return null;
+  const scorecard = payload.adoption_scorecard && typeof payload.adoption_scorecard === 'object'
+    ? payload.adoption_scorecard
+    : payload;
+  const target = scorecard.identified_ai_primary_to_discovery_target || {};
+  const currentRatio = finiteNumber(
+    scorecard.identified_ai_primary_to_discovery_current_ratio
+      ?? scorecard.identified_ai_primary_to_discovery_ratio
+      ?? target.current_ratio
+  );
+  const targetRatio = finiteNumber(
+    scorecard.identified_ai_primary_to_discovery_target_ratio
+      ?? target.target_ratio,
+    0.2
+  );
+  const gapToTarget = finiteNumber(
+    scorecard.identified_ai_primary_to_discovery_gap_to_target
+      ?? target.gap_to_target,
+    Math.max(0, targetRatio - currentRatio)
+  );
+  const status = scorecard.identified_ai_primary_to_discovery_target_status
+    || target.status
+    || 'not_measured_in_this_report';
+
+  return {
+    ...scorecard,
+    status,
+    window: scorecard.window || payload.window || null,
+    source: scorecard.source || payload.source || null,
+    discovery_entrypoint_requests: finiteNumber(scorecard.discovery_entrypoint_requests),
+    primary_api_requests: finiteNumber(scorecard.primary_api_requests),
+    identified_ai_requests: finiteNumber(scorecard.identified_ai_requests),
+    identified_ai_discovery_requests: finiteNumber(scorecard.identified_ai_discovery_requests),
+    identified_ai_primary_api_requests: finiteNumber(scorecard.identified_ai_primary_api_requests),
+    identified_ai_api_access_page_requests: finiteNumber(scorecard.identified_ai_api_access_page_requests),
+    identified_ai_developer_docs_requests: finiteNumber(scorecard.identified_ai_developer_docs_requests),
+    identified_ai_core_api_requests: finiteNumber(scorecard.identified_ai_core_api_requests),
+    identified_ai_primary_to_discovery_ratio: currentRatio,
+    identified_ai_primary_to_discovery_target_ratio: targetRatio,
+    identified_ai_primary_to_discovery_current_ratio: currentRatio,
+    identified_ai_primary_to_discovery_gap_to_target: gapToTarget,
+    identified_ai_primary_to_discovery_target_status: status,
+    identified_ai_primary_to_discovery_target: {
+      target_ratio: targetRatio,
+      current_ratio: currentRatio,
+      gap_to_target: gapToTarget,
+      status
+    },
+    bot_route_5xx_or_522_requests: finiteNumber(scorecard.bot_route_5xx_or_522_requests),
+    scanner_or_probe_requests: finiteNumber(scorecard.scanner_or_probe_requests),
+    scanner_or_probe_share: finiteNumber(scorecard.scanner_or_probe_share)
+  };
+}
+
+export function normalizeProductionIntegrity(payload) {
+  if (!payload || typeof payload !== 'object') return null;
+  return {
+    ...payload,
+    status: payload.status || (payload.ok === true ? 'pass' : payload.ok === false ? 'fail' : 'not_measured_in_this_report')
+  };
 }
 
 export function buildLocalApiReadinessReport(options = {}) {
@@ -105,7 +187,15 @@ export function main(argv = process.argv.slice(2)) {
     return;
   }
 
-  const report = buildLocalApiReadinessReport(options);
+  const report = buildLocalApiReadinessReport({
+    ...options,
+    adoptionScorecard: options.adoptionJson
+      ? normalizeAdoptionScorecard(readJsonFile(options.adoptionJson, 'adoption scorecard'))
+      : normalizeAdoptionScorecard(options.adoptionScorecard) || null,
+    productionIntegrity: options.productionIntegrityJson
+      ? normalizeProductionIntegrity(readJsonFile(options.productionIntegrityJson, 'production integrity'))
+      : normalizeProductionIntegrity(options.productionIntegrity) || null
+  });
   const json = `${JSON.stringify(report, null, 2)}\n`;
   const markdown = renderApiReadinessMarkdown(report);
 
