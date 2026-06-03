@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-03T00:03:27.755Z",
-    "total_articles": 1484,
+    "generated": "2026-06-03T00:31:52.837Z",
+    "total_articles": 1494,
     "total_with_errors": 0,
     "average_sources_per_article": "2.6",
     "overall_verification_rate": "91.3%",
-    "elapsed_ms": 95749,
-    "elapsed_sec": "95.7",
+    "elapsed_ms": 97006,
+    "elapsed_sec": "97.0",
     "concurrency": 3
   },
   "articles": [
@@ -4344,6 +4344,50 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\agent-linux-cgroups-and-pressure-stall-information.md",
+      "article_id": "agent-linux-cgroups-and-pressure-stall-information",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Linux Kernel Control Group v2 Documentation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.kernel.org/doc/html/latest/admin-guide/cgroup-v2.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.kernel.org/doc/html/latest/admin-guide/cgroup-v2.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Linux Kernel Pressure Stall Information Documentation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.kernel.org/doc/html/v6.10/accounting/psi.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.kernel.org/doc/html/v6.10/accounting/psi.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\agent-linux-disk-space-inodes-and-filesystem-pressure.md",
       "article_id": "agent-linux-disk-space-inodes-and-filesystem-pressure",
       "generation_method": "ai_structured",
@@ -4377,6 +4421,50 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://man7.org/linux/man-pages/man1/du.1.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-linux-dns-resolution-and-name-service-switch.md",
+      "article_id": "agent-linux-dns-resolution-and-name-service-switch",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "resolv.conf Linux Manual Page",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://man7.org/linux/man-pages/man5/resolv.conf.5.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://man7.org/linux/man-pages/man5/resolv.conf.5.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "nsswitch.conf Linux Manual Page",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://man7.org/linux/man-pages/man5/nsswitch.conf.5.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://man7.org/linux/man-pages/man5/nsswitch.conf.5.html"
               },
               "match": true
             }
@@ -31425,6 +31513,94 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\retrieval-pinecone-indexes-and-namespaces.md",
+      "article_id": "retrieval-pinecone-indexes-and-namespaces",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Pinecone Indexing Overview",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.pinecone.io/guides/index-data/indexing-overview",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.pinecone.io/guides/index-data/indexing-overview"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Pinecone Manage Namespaces",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.pinecone.io/guides/manage-data/manage-namespaces",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.pinecone.io/guides/manage-data/manage-namespaces"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\retrieval-qdrant-collections-and-payload-indexes.md",
+      "article_id": "retrieval-qdrant-collections-and-payload-indexes",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Qdrant Collections",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://qdrant.tech/documentation/concepts/collections/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://qdrant.tech/documentation/manage-data/collections/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Qdrant Indexing",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://qdrant.tech/documentation/manage-data/indexing/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://qdrant.tech/documentation/manage-data/indexing/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\retrieval-query-expansion-and-synonyms.md",
       "article_id": "retrieval-query-expansion-and-synonyms",
       "generation_method": "ai_structured",
@@ -38429,6 +38605,50 @@
         }
       ],
       "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\api-asyncapi-channels-operations-and-messages.md",
+      "article_id": "api-asyncapi-channels-operations-and-messages",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "AsyncAPI Specification 3.0.0",
+          "source_type": "specification",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.asyncapi.com/docs/reference/specification/v3.0.0",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.asyncapi.com/docs/reference/specification/v3.0.0"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "AsyncAPI Adding Messages",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.asyncapi.com/docs/concepts/asyncapi-document/adding-messages",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.asyncapi.com/docs/concepts/asyncapi-document/adding-messages"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
       "sources_unreachable": 0
     },
     {
@@ -49206,6 +49426,50 @@
         }
       ],
       "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\data-redshift-system-tables-and-query-monitoring.md",
+      "article_id": "data-redshift-system-tables-and-query-monitoring",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Amazon Redshift System Tables and Views Reference",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.aws.amazon.com/redshift/latest/dg/cm_chap_system-tables.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.aws.amazon.com/redshift/latest/dg/cm_chap_system-tables.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Query the System Tables and Views",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.aws.amazon.com/redshift/latest/gsg/t_querying_redshift_system_tables.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.aws.amazon.com/redshift/latest/gsg/t_querying_redshift_system_tables.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
       "sources_unreachable": 0
     },
     {
@@ -77424,6 +77688,50 @@
       "sources_unreachable": 1
     },
     {
+      "file": "content\\ai\\llm-evaluation-aider-polyglot-code-benchmark.md",
+      "article_id": "llm-evaluation-aider-polyglot-code-benchmark",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Aider LLM Leaderboards",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://aider.chat/docs/leaderboards/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://aider.chat/docs/leaderboards/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Aider Polyglot Benchmark",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://aider.chat/2024/12/21/polyglot.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://aider.chat/2024/12/21/polyglot.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\arts\\history-of-printing.md",
       "article_id": "kb-2026-00479",
       "generation_method": "ai_assisted",
@@ -77698,6 +78006,50 @@
       "sources_unreachable": 1
     },
     {
+      "file": "content\\computer-science\\api-graphql-defer-stream-and-incremental-delivery.md",
+      "article_id": "api-graphql-defer-stream-and-incremental-delivery",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "GraphQL Defer and Stream RFC",
+          "source_type": "specification",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://github.com/graphql/graphql-wg/blob/main/rfcs/DeferStream.md",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://github.com/graphql/graphql-wg/blob/main/rfcs/DeferStream.md"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GraphQL-over-HTTP Incremental Delivery RFC",
+          "source_type": "specification",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://github.com/graphql/graphql-over-http/blob/main/rfcs/IncrementalDelivery.md",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://github.com/graphql/graphql-over-http/blob/main/rfcs/IncrementalDelivery.md"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\bloom-filters-space-efficient-probabilistic-data-structures.md",
       "article_id": "kb-2026-00029",
       "generation_method": "ai_structured",
@@ -77865,6 +78217,50 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 3
+    },
+    {
+      "file": "content\\computer-science\\code-sarif-baseline-state-and-result-fingerprints.md",
+      "article_id": "code-sarif-baseline-state-and-result-fingerprints",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "SARIF Version 2.1.0 Specification",
+          "source_type": "specification",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.oasis-open.org/sarif/sarif/v2.1.0/sarif-v2.1.0.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.oasis-open.org/sarif/sarif/v2.1.0/sarif-v2.1.0.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "SARIF Version 2.1.0 OASIS Standard Page",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.oasis-open.org/standard/sarif-v2-1-0/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.oasis-open.org/standard/sarif-v2-1-0/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\command-pattern.md",
@@ -78190,6 +78586,50 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 3
+    },
+    {
+      "file": "content\\computer-science\\data-duckdb-query-profiling-and-explain-plans.md",
+      "article_id": "data-duckdb-query-profiling-and-explain-plans",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "DuckDB Profiling",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://duckdb.org/docs/current/dev/profiling",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://duckdb.org/docs/current/dev/profiling"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "DuckDB EXPLAIN ANALYZE Guide",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://duckdb.org/docs/current/guides/meta/explain_analyze",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://duckdb.org/docs/current/guides/meta/explain_analyze"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\data-lake-architecture.md",

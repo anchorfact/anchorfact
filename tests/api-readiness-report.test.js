@@ -150,7 +150,7 @@ console.log('AnchorFact API Readiness Report Tests\n');
 
 test('core query set defines subscription-readiness probes across paid-use categories', () => {
   assert(CORE_CORPUS_QUERIES.length >= 100, 'core query set should preserve the 100-query foundation');
-  assert(CORE_CORPUS_QUERIES.length <= 590, 'core query set should stay inside the expanded readiness-corpus range');
+  assert(CORE_CORPUS_QUERIES.length <= 600, 'core query set should stay inside the expanded readiness-corpus range');
   const categories = new Set(CORE_CORPUS_QUERIES.map(query => query.category));
   for (const category of ['agent_execution_sources', 'agent_rag', 'api_mcp', 'security_governance', 'data_infrastructure', 'llm_evaluation', 'developer_workflows', 'code_intelligence']) {
     assert(categories.has(category), `missing category ${category}`);
@@ -539,6 +539,8 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'ai/agent-postgresql-pg-stat-activity-and-query-cancellation',
     'ai/agent-linux-disk-space-inodes-and-filesystem-pressure',
     'ai/agent-linux-open-files-and-process-inspection',
+    'ai/agent-linux-dns-resolution-and-name-service-switch',
+    'ai/agent-linux-cgroups-and-pressure-stall-information',
     'ai/browser-devtools-protocol-for-agents',
     'computer-science/accessibility-tree-and-aria-for-ui-agents',
     'computer-science/package-lockfiles-and-reproducible-installs',
@@ -562,6 +564,8 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'ai/retrieval-opensearch-profile-and-explain-debugging',
     'ai/retrieval-azure-ai-search-indexers-and-data-sources',
     'ai/retrieval-weaviate-collection-schema-and-vectorizer-config',
+    'ai/retrieval-qdrant-collections-and-payload-indexes',
+    'ai/retrieval-pinecone-indexes-and-namespaces',
     'ai/retrieval-vespa-nearest-neighbor-and-weakand',
     'ai/retrieval-vespa-rank-profiles-and-phased-ranking',
     'ai/llm-evaluation-benchmark-harnesses-and-task-registries',
@@ -574,6 +578,7 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'ai/llm-evaluation-tau-bench-tool-agent-benchmarks',
     'ai/llm-evaluation-gaia-assistant-benchmark',
     'ai/llm-evaluation-terminal-bench-command-line-agent-benchmarks',
+    'ai/llm-evaluation-aider-polyglot-code-benchmark',
     'computer-science/openapi-operation-ids-and-links-for-agent-navigation',
     'computer-science/data-policy-tags-and-sensitive-column-governance',
     'computer-science/data-iceberg-branches-tags-and-write-audit-publish',
@@ -599,6 +604,8 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'computer-science/api-mcp-sampling-and-elicitation',
     'computer-science/api-mcp-roots-and-resource-discovery',
     'computer-science/api-mcp-tools-list-and-call-results',
+    'computer-science/api-graphql-defer-stream-and-incremental-delivery',
+    'computer-science/api-asyncapi-channels-operations-and-messages',
     'computer-science/api-content-negotiation-and-media-types-for-agents',
     'computer-science/data-partition-pruning-and-query-scanning',
     'computer-science/data-bigquery-job-statistics-and-query-plans',
@@ -609,6 +616,8 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'computer-science/data-clickhouse-mergetree-parts-and-mutations',
     'computer-science/data-databricks-unity-catalog-lineage-and-permissions',
     'computer-science/data-snowflake-streams-and-tasks-change-processing',
+    'computer-science/data-duckdb-query-profiling-and-explain-plans',
+    'computer-science/data-redshift-system-tables-and-query-monitoring',
     'computer-science/code-search-query-syntax-for-repository-agents',
     'computer-science/code-typescript-module-resolution-and-path-mapping',
     'computer-science/code-git-submodules-and-sparse-checkout-for-agents',
@@ -628,6 +637,7 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'computer-science/code-generated-files-and-vendored-code-detection',
     'computer-science/code-snapshot-testing-and-golden-files-for-agents',
     'computer-science/code-codeql-databases-and-query-packs',
+    'computer-science/code-sarif-baseline-state-and-result-fingerprints',
     'ai/agent-cloud-audit-logs-and-iam-change-history',
     'ai/retrieval-score-thresholds-and-no-answer-fallbacks',
     'ai/llm-evaluation-run-metadata-and-reproducibility',

@@ -15,7 +15,7 @@ Production is live on the apex domain.
 Run command:
 
 ```bash
-EXPECTED_PUBLIC_ARTICLES=1184 EXPECTED_DRAFT_ARTICLES=300 EXPECTED_CLAIMS=3708 npm run smoke:prod
+EXPECTED_PUBLIC_ARTICLES=1194 EXPECTED_DRAFT_ARTICLES=300 EXPECTED_CLAIMS=3742 npm run smoke:prod
 ```
 
 The smoke test checks:
@@ -32,9 +32,9 @@ Current trusted counts:
 
 | Metric | Expected |
 | --- | ---: |
-| Public articles | 1184 |
+| Public articles | 1194 |
 | Draft articles | 300 |
-| Public claims | 3708 |
+| Public claims | 3742 |
 | Draft index `noindex` | yes |
 
 ## Deployment Split
