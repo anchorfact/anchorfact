@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-03T00:31:52.837Z",
-    "total_articles": 1494,
+    "generated": "2026-06-03T00:56:52.956Z",
+    "total_articles": 1502,
     "total_with_errors": 0,
     "average_sources_per_article": "2.6",
-    "overall_verification_rate": "91.3%",
-    "elapsed_ms": 97006,
-    "elapsed_sec": "97.0",
+    "overall_verification_rate": "91.4%",
+    "elapsed_ms": 101524,
+    "elapsed_sec": "101.5",
     "concurrency": 3
   },
   "articles": [
@@ -22327,6 +22327,50 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\llm-evaluation-aider-polyglot-code-benchmark.md",
+      "article_id": "llm-evaluation-aider-polyglot-code-benchmark",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Aider LLM Leaderboards",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://aider.chat/docs/leaderboards/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://aider.chat/docs/leaderboards/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Aider Polyglot Benchmark",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://aider.chat/2024/12/21/polyglot.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://aider.chat/2024/12/21/polyglot.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\llm-evaluation-arena-style-pairwise-ranking.md",
       "article_id": "llm-evaluation-arena-style-pairwise-ranking",
       "generation_method": "ai_structured",
@@ -39369,6 +39413,50 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\api-graphql-defer-stream-and-incremental-delivery.md",
+      "article_id": "api-graphql-defer-stream-and-incremental-delivery",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "GraphQL Defer and Stream RFC",
+          "source_type": "specification",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://github.com/graphql/graphql-wg/blob/main/rfcs/DeferStream.md",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://github.com/graphql/graphql-wg/blob/main/rfcs/DeferStream.md"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GraphQL-over-HTTP Incremental Delivery RFC",
+          "source_type": "specification",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://github.com/graphql/graphql-over-http/blob/main/rfcs/IncrementalDelivery.md",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://github.com/graphql/graphql-over-http/blob/main/rfcs/IncrementalDelivery.md"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\api-graphql-federation-and-subgraph-schemas.md",
       "article_id": "api-graphql-federation-and-subgraph-schemas",
       "generation_method": "ai_structured",
@@ -44789,6 +44877,50 @@
       "manual_reviewed_at": "2026-06-01"
     },
     {
+      "file": "content\\computer-science\\code-sarif-baseline-state-and-result-fingerprints.md",
+      "article_id": "code-sarif-baseline-state-and-result-fingerprints",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "SARIF Version 2.1.0 Specification",
+          "source_type": "specification",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.oasis-open.org/sarif/sarif/v2.1.0/sarif-v2.1.0.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.oasis-open.org/sarif/sarif/v2.1.0/sarif-v2.1.0.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "SARIF Version 2.1.0 OASIS Standard Page",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.oasis-open.org/standard/sarif-v2-1-0/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.oasis-open.org/standard/sarif-v2-1-0/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\code-sbom-and-software-supply-chain-inventory.md",
       "article_id": "code-sbom-and-software-supply-chain-inventory",
       "generation_method": "ai_structured",
@@ -47731,6 +47863,50 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://docs.delta.io/delta-batch/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\data-duckdb-query-profiling-and-explain-plans.md",
+      "article_id": "data-duckdb-query-profiling-and-explain-plans",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "DuckDB Profiling",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://duckdb.org/docs/current/dev/profiling",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://duckdb.org/docs/current/dev/profiling"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "DuckDB EXPLAIN ANALYZE Guide",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://duckdb.org/docs/current/guides/meta/explain_analyze",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://duckdb.org/docs/current/guides/meta/explain_analyze"
               },
               "match": true
             }
@@ -77664,6 +77840,94 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\agent-linux-network-sockets-and-listening-ports.md",
+      "article_id": "agent-linux-network-sockets-and-listening-ports",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "ss Linux Manual Page",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://man7.org/linux/man-pages/man8/ss.8.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://man7.org/linux/man-pages/man8/ss.8.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "tcp Linux Manual Page",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://man7.org/linux/man-pages/man7/tcp.7.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://man7.org/linux/man-pages/man7/tcp.7.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-linux-routing-tables-and-ip-route-lookup.md",
+      "article_id": "agent-linux-routing-tables-and-ip-route-lookup",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "ip-route Linux Manual Page",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://man7.org/linux/man-pages/man8/ip-route.8.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://man7.org/linux/man-pages/man8/ip-route.8.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "ip Linux Manual Page",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://man7.org/linux/man-pages/man8/ip.8.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://man7.org/linux/man-pages/man8/ip.8.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\ai-for-genomics-variant-calling-gene-expression-prediction-and-protein-dna-binding.md",
       "article_id": "kb-2026-00005",
       "generation_method": "ai_structured",
@@ -77688,22 +77952,22 @@
       "sources_unreachable": 1
     },
     {
-      "file": "content\\ai\\llm-evaluation-aider-polyglot-code-benchmark.md",
-      "article_id": "llm-evaluation-aider-polyglot-code-benchmark",
+      "file": "content\\ai\\llm-evaluation-promptfoo-test-cases-and-assertions.md",
+      "article_id": "llm-evaluation-promptfoo-test-cases-and-assertions",
       "generation_method": "ai_structured",
       "sources_total": 2,
       "verification_results": [
         {
-          "source_title": "Aider LLM Leaderboards",
+          "source_title": "Promptfoo Configuration Guide",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://aider.chat/docs/leaderboards/",
+              "identifier": "https://www.promptfoo.dev/docs/configuration/guide/",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://aider.chat/docs/leaderboards/"
+                "final_url": "https://www.promptfoo.dev/docs/configuration/guide/"
               },
               "match": true
             }
@@ -77711,16 +77975,104 @@
           "all_verified": true
         },
         {
-          "source_title": "Aider Polyglot Benchmark",
+          "source_title": "Promptfoo Expected Outputs Documentation",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://aider.chat/2024/12/21/polyglot.html",
+              "identifier": "https://www.promptfoo.dev/docs/configuration/expected-outputs/",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://aider.chat/2024/12/21/polyglot.html"
+                "final_url": "https://www.promptfoo.dev/docs/configuration/expected-outputs/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\retrieval-chromadb-collections-and-persistent-clients.md",
+      "article_id": "retrieval-chromadb-collections-and-persistent-clients",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Chroma Manage Collections Documentation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.trychroma.com/docs/collections/manage-collections",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.trychroma.com/docs/collections/manage-collections"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Chroma Python Client Reference",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.trychroma.com/reference/python/client",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.trychroma.com/reference/python/client"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\retrieval-pgvector-hnsw-and-ivfflat-indexes.md",
+      "article_id": "retrieval-pgvector-hnsw-and-ivfflat-indexes",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "pgvector README",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://github.com/pgvector/pgvector",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://github.com/pgvector/pgvector"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "pgvector HNSW Documentation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://github.com/pgvector/pgvector#hnsw",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://github.com/pgvector/pgvector"
               },
               "match": true
             }
@@ -78006,22 +78358,22 @@
       "sources_unreachable": 1
     },
     {
-      "file": "content\\computer-science\\api-graphql-defer-stream-and-incremental-delivery.md",
-      "article_id": "api-graphql-defer-stream-and-incremental-delivery",
+      "file": "content\\computer-science\\api-a2a-agent-card-and-skills.md",
+      "article_id": "api-a2a-agent-card-and-skills",
       "generation_method": "ai_structured",
       "sources_total": 2,
       "verification_results": [
         {
-          "source_title": "GraphQL Defer and Stream RFC",
+          "source_title": "Agent2Agent Protocol Specification",
           "source_type": "specification",
           "results": [
             {
               "method": "url",
-              "identifier": "https://github.com/graphql/graphql-wg/blob/main/rfcs/DeferStream.md",
+              "identifier": "https://github.com/a2aproject/A2A/blob/main/docs/specification.md",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://github.com/graphql/graphql-wg/blob/main/rfcs/DeferStream.md"
+                "final_url": "https://github.com/a2aproject/A2A/blob/main/docs/specification.md"
               },
               "match": true
             }
@@ -78029,16 +78381,16 @@
           "all_verified": true
         },
         {
-          "source_title": "GraphQL-over-HTTP Incremental Delivery RFC",
-          "source_type": "specification",
+          "source_title": "A2A Agent Skills and Agent Card Tutorial",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://github.com/graphql/graphql-over-http/blob/main/rfcs/IncrementalDelivery.md",
+              "identifier": "https://a2a-protocol.org/dev/tutorials/python/3-agent-skills-and-card/",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://github.com/graphql/graphql-over-http/blob/main/rfcs/IncrementalDelivery.md"
+                "final_url": "https://a2a-protocol.org/dev/tutorials/python/3-agent-skills-and-card/"
               },
               "match": true
             }
@@ -78219,22 +78571,22 @@
       "sources_unreachable": 3
     },
     {
-      "file": "content\\computer-science\\code-sarif-baseline-state-and-result-fingerprints.md",
-      "article_id": "code-sarif-baseline-state-and-result-fingerprints",
+      "file": "content\\computer-science\\code-bazel-build-event-protocol-for-agents.md",
+      "article_id": "code-bazel-build-event-protocol-for-agents",
       "generation_method": "ai_structured",
       "sources_total": 2,
       "verification_results": [
         {
-          "source_title": "SARIF Version 2.1.0 Specification",
-          "source_type": "specification",
+          "source_title": "Bazel Build Event Protocol Documentation",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.oasis-open.org/sarif/sarif/v2.1.0/sarif-v2.1.0.html",
+              "identifier": "https://docs.bazel.build/versions/main/build-event-protocol.html",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://docs.oasis-open.org/sarif/sarif/v2.1.0/sarif-v2.1.0.html"
+                "final_url": "https://docs.bazel.build/versions/main/build-event-protocol.html"
               },
               "match": true
             }
@@ -78242,16 +78594,16 @@
           "all_verified": true
         },
         {
-          "source_title": "SARIF Version 2.1.0 OASIS Standard Page",
-          "source_type": "standard",
+          "source_title": "Bazel Build Event Service Protocol",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.oasis-open.org/standard/sarif-v2-1-0/",
+              "identifier": "https://bazel.build/remote/bep",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://www.oasis-open.org/standard/sarif-v2-1-0/"
+                "final_url": "https://bazel.build/remote/bep"
               },
               "match": true
             }
@@ -78588,22 +78940,22 @@
       "sources_unreachable": 3
     },
     {
-      "file": "content\\computer-science\\data-duckdb-query-profiling-and-explain-plans.md",
-      "article_id": "data-duckdb-query-profiling-and-explain-plans",
+      "file": "content\\computer-science\\data-bigquery-information-schema-jobs-and-query-history.md",
+      "article_id": "data-bigquery-information-schema-jobs-and-query-history",
       "generation_method": "ai_structured",
       "sources_total": 2,
       "verification_results": [
         {
-          "source_title": "DuckDB Profiling",
+          "source_title": "BigQuery INFORMATION_SCHEMA JOBS View",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://duckdb.org/docs/current/dev/profiling",
+              "identifier": "https://cloud.google.com/bigquery/docs/information-schema-jobs",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://duckdb.org/docs/current/dev/profiling"
+                "final_url": "https://docs.cloud.google.com/bigquery/docs/information-schema-jobs"
               },
               "match": true
             }
@@ -78611,16 +78963,16 @@
           "all_verified": true
         },
         {
-          "source_title": "DuckDB EXPLAIN ANALYZE Guide",
+          "source_title": "BigQuery INFORMATION_SCHEMA JOBS_TIMELINE View",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://duckdb.org/docs/current/guides/meta/explain_analyze",
+              "identifier": "https://cloud.google.com/bigquery/docs/information-schema-jobs-timeline",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://duckdb.org/docs/current/guides/meta/explain_analyze"
+                "final_url": "https://docs.cloud.google.com/bigquery/docs/information-schema-jobs-timeline?hl=id"
               },
               "match": true
             }
