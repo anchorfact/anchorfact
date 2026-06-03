@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-03T00:56:52.956Z",
-    "total_articles": 1502,
+    "generated": "2026-06-03T01:28:50.036Z",
+    "total_articles": 1510,
     "total_with_errors": 0,
     "average_sources_per_article": "2.6",
     "overall_verification_rate": "91.4%",
-    "elapsed_ms": 101524,
-    "elapsed_sec": "101.5",
+    "elapsed_ms": 95159,
+    "elapsed_sec": "95.2",
     "concurrency": 3
   },
   "articles": [
@@ -4476,6 +4476,50 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\agent-linux-network-sockets-and-listening-ports.md",
+      "article_id": "agent-linux-network-sockets-and-listening-ports",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "ss Linux Manual Page",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://man7.org/linux/man-pages/man8/ss.8.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://man7.org/linux/man-pages/man8/ss.8.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "tcp Linux Manual Page",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://man7.org/linux/man-pages/man7/tcp.7.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://man7.org/linux/man-pages/man7/tcp.7.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\agent-linux-open-files-and-process-inspection.md",
       "article_id": "agent-linux-open-files-and-process-inspection",
       "generation_method": "ai_structured",
@@ -4509,6 +4553,94 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://man7.org/linux/man-pages/man1/ps.1.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-linux-process-environment-and-procfs-environ.md",
+      "article_id": "agent-linux-process-environment-and-procfs-environ",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "proc_pid_environ Linux Manual Page",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://man7.org/linux/man-pages/man5/proc_pid_environ.5.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://man7.org/linux/man-pages/man5/proc_pid_environ.5.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "environ Linux Manual Page",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://man7.org/linux/man-pages/man7/environ.7.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://man7.org/linux/man-pages/man7/environ.7.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-linux-routing-tables-and-ip-route-lookup.md",
+      "article_id": "agent-linux-routing-tables-and-ip-route-lookup",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "ip-route Linux Manual Page",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://man7.org/linux/man-pages/man8/ip-route.8.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://man7.org/linux/man-pages/man8/ip-route.8.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "ip Linux Manual Page",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://man7.org/linux/man-pages/man8/ip.8.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://man7.org/linux/man-pages/man8/ip.8.html"
               },
               "match": true
             }
@@ -22808,6 +22940,50 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\llm-evaluation-deepeval-test-cases-and-metrics.md",
+      "article_id": "llm-evaluation-deepeval-test-cases-and-metrics",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "DeepEval Evaluation Test Cases",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://deepeval.com/docs/evaluation-test-cases",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://deepeval.com/docs/evaluation-test-cases"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "DeepEval Metrics Introduction",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://deepeval.com/docs/metrics-introduction",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://deepeval.com/docs/metrics-introduction"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\llm-evaluation-error-taxonomy-and-failure-labels.md",
       "article_id": "llm-evaluation-error-taxonomy-and-failure-labels",
       "generation_method": "ai_structured",
@@ -23959,6 +24135,50 @@
         }
       ],
       "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\llm-evaluation-promptfoo-test-cases-and-assertions.md",
+      "article_id": "llm-evaluation-promptfoo-test-cases-and-assertions",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Promptfoo Configuration Guide",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.promptfoo.dev/docs/configuration/guide/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.promptfoo.dev/docs/configuration/guide/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Promptfoo Expected Outputs Documentation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.promptfoo.dev/docs/configuration/expected-outputs/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.promptfoo.dev/docs/configuration/expected-outputs/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
       "sources_unreachable": 0
     },
     {
@@ -30350,6 +30570,94 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\retrieval-chromadb-collections-and-persistent-clients.md",
+      "article_id": "retrieval-chromadb-collections-and-persistent-clients",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Chroma Manage Collections Documentation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.trychroma.com/docs/collections/manage-collections",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.trychroma.com/docs/collections/manage-collections"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Chroma Python Client Reference",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.trychroma.com/reference/python/client",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.trychroma.com/reference/python/client"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\retrieval-elasticsearch-knn-vector-search-and-filters.md",
+      "article_id": "retrieval-elasticsearch-knn-vector-search-and-filters",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Elasticsearch kNN Search",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.elastic.co/guide/en/elasticsearch/reference/current/knn-search.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.elastic.co/docs/solutions/search/vector/knn"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Elasticsearch dense_vector Field Type",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.elastic.co/guide/en/elasticsearch/reference/current/dense-vector.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.elastic.co/docs/reference/elasticsearch/mapping-reference/dense-vector"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\retrieval-elasticsearch-point-in-time-and-search-after.md",
       "article_id": "retrieval-elasticsearch-point-in-time-and-search-after",
       "generation_method": "ai_structured",
@@ -31557,6 +31865,50 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\retrieval-pgvector-hnsw-and-ivfflat-indexes.md",
+      "article_id": "retrieval-pgvector-hnsw-and-ivfflat-indexes",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "pgvector README",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://github.com/pgvector/pgvector",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://github.com/pgvector/pgvector"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "pgvector HNSW Documentation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://github.com/pgvector/pgvector#hnsw",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://github.com/pgvector/pgvector"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\retrieval-pinecone-indexes-and-namespaces.md",
       "article_id": "retrieval-pinecone-indexes-and-namespaces",
       "generation_method": "ai_structured",
@@ -31825,6 +32177,50 @@
         }
       ],
       "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\retrieval-redis-vector-search-and-hnsw-indexes.md",
+      "article_id": "retrieval-redis-vector-search-and-hnsw-indexes",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Redis Vector Search",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://redis.io/docs/latest/develop/ai/search-and-query/vectors/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://redis.io/docs/latest/develop/ai/search-and-query/vectors/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Redis Indexing",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://redis.io/docs/latest/develop/ai/search-and-query/indexing/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://redis.io/docs/latest/develop/ai/search-and-query/indexing/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
       "sources_unreachable": 0
     },
     {
@@ -38652,6 +39048,50 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\api-a2a-agent-card-and-skills.md",
+      "article_id": "api-a2a-agent-card-and-skills",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Agent2Agent Protocol Specification",
+          "source_type": "specification",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://github.com/a2aproject/A2A/blob/main/docs/specification.md",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://github.com/a2aproject/A2A/blob/main/docs/specification.md"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "A2A Agent Skills and Agent Card Tutorial",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://a2a-protocol.org/dev/tutorials/python/3-agent-skills-and-card/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://a2a-protocol.org/dev/tutorials/python/3-agent-skills-and-card/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\api-asyncapi-channels-operations-and-messages.md",
       "article_id": "api-asyncapi-channels-operations-and-messages",
       "generation_method": "ai_structured",
@@ -41187,6 +41627,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://swagger.io/docs/specification/v3_0/serialization/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\api-openapi-request-body-media-types-and-encoding.md",
+      "article_id": "api-openapi-request-body-media-types-and-encoding",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "OpenAPI Specification Request Body Object",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://spec.openapis.org/oas/latest.html#request-body-object",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://spec.openapis.org/oas/latest.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenAPI Specification Media Type Object",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://spec.openapis.org/oas/latest.html#media-type-object",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://spec.openapis.org/oas/latest.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenAPI Specification Encoding Object",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://spec.openapis.org/oas/latest.html#encoding-object",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://spec.openapis.org/oas/latest.html"
               },
               "match": true
             }
@@ -43745,6 +44246,94 @@
       "sources_unreachable": 0,
       "manual_reviewed": true,
       "manual_reviewed_at": "2026-05-28"
+    },
+    {
+      "file": "content\\computer-science\\code-bazel-build-event-protocol-for-agents.md",
+      "article_id": "code-bazel-build-event-protocol-for-agents",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Bazel Build Event Protocol Documentation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.bazel.build/versions/main/build-event-protocol.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.bazel.build/versions/main/build-event-protocol.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Bazel Build Event Service Protocol",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://bazel.build/remote/bep",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://bazel.build/remote/bep"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\code-bazel-query-and-cquery-dependency-analysis.md",
+      "article_id": "code-bazel-query-and-cquery-dependency-analysis",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Bazel Query Language",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://bazel.build/query/language",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://bazel.build/query/language?hl=bn"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Bazel cquery",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://bazel.build/query/cquery",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://bazel.build/query/cquery"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\code-ci-problem-matchers-and-annotations-for-agents.md",
@@ -46983,6 +47572,50 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\data-bigquery-information-schema-jobs-and-query-history.md",
+      "article_id": "data-bigquery-information-schema-jobs-and-query-history",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "BigQuery INFORMATION_SCHEMA JOBS View",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://cloud.google.com/bigquery/docs/information-schema-jobs",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/bigquery/docs/information-schema-jobs"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "BigQuery INFORMATION_SCHEMA JOBS_TIMELINE View",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://cloud.google.com/bigquery/docs/information-schema-jobs-timeline",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/bigquery/docs/information-schema-jobs-timeline?hl=id"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\data-bigquery-job-statistics-and-query-plans.md",
       "article_id": "data-bigquery-job-statistics-and-query-plans",
       "generation_method": "ai_structured",
@@ -49934,6 +50567,50 @@
         }
       ],
       "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\data-snowflake-access-history-and-object-lineage.md",
+      "article_id": "data-snowflake-access-history-and-object-lineage",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Snowflake ACCESS_HISTORY View",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.snowflake.com/en/sql-reference/account-usage/access_history",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.snowflake.com/en/sql-reference/account-usage/access_history"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Snowflake Access History",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.snowflake.com/en/user-guide/access-history",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.snowflake.com/en/user-guide/access-history"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
       "sources_unreachable": 0
     },
     {
@@ -77840,22 +78517,22 @@
       "sources_unreachable": 0
     },
     {
-      "file": "content\\ai\\agent-linux-network-sockets-and-listening-ports.md",
-      "article_id": "agent-linux-network-sockets-and-listening-ports",
+      "file": "content\\ai\\agent-linux-packet-capture-and-tcpdump-filters.md",
+      "article_id": "agent-linux-packet-capture-and-tcpdump-filters",
       "generation_method": "ai_structured",
       "sources_total": 2,
       "verification_results": [
         {
-          "source_title": "ss Linux Manual Page",
+          "source_title": "Arch Linux tcpdump Manual Page",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://man7.org/linux/man-pages/man8/ss.8.html",
+              "identifier": "https://man.archlinux.org/man/tcpdump.1.en",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://man7.org/linux/man-pages/man8/ss.8.html"
+                "final_url": "https://man.archlinux.org/man/tcpdump.1.en"
               },
               "match": true
             }
@@ -77863,60 +78540,16 @@
           "all_verified": true
         },
         {
-          "source_title": "tcp Linux Manual Page",
+          "source_title": "Arch Linux pcap-filter Manual Page",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://man7.org/linux/man-pages/man7/tcp.7.html",
+              "identifier": "https://man.archlinux.org/man/pcap-filter.7.en",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://man7.org/linux/man-pages/man7/tcp.7.html"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
-    },
-    {
-      "file": "content\\ai\\agent-linux-routing-tables-and-ip-route-lookup.md",
-      "article_id": "agent-linux-routing-tables-and-ip-route-lookup",
-      "generation_method": "ai_structured",
-      "sources_total": 2,
-      "verification_results": [
-        {
-          "source_title": "ip-route Linux Manual Page",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://man7.org/linux/man-pages/man8/ip-route.8.html",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://man7.org/linux/man-pages/man8/ip-route.8.html"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "ip Linux Manual Page",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://man7.org/linux/man-pages/man8/ip.8.html",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://man7.org/linux/man-pages/man8/ip.8.html"
+                "final_url": "https://man.archlinux.org/man/pcap-filter.7.en"
               },
               "match": true
             }
@@ -77950,138 +78583,6 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 1
-    },
-    {
-      "file": "content\\ai\\llm-evaluation-promptfoo-test-cases-and-assertions.md",
-      "article_id": "llm-evaluation-promptfoo-test-cases-and-assertions",
-      "generation_method": "ai_structured",
-      "sources_total": 2,
-      "verification_results": [
-        {
-          "source_title": "Promptfoo Configuration Guide",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.promptfoo.dev/docs/configuration/guide/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://www.promptfoo.dev/docs/configuration/guide/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Promptfoo Expected Outputs Documentation",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.promptfoo.dev/docs/configuration/expected-outputs/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://www.promptfoo.dev/docs/configuration/expected-outputs/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
-    },
-    {
-      "file": "content\\ai\\retrieval-chromadb-collections-and-persistent-clients.md",
-      "article_id": "retrieval-chromadb-collections-and-persistent-clients",
-      "generation_method": "ai_structured",
-      "sources_total": 2,
-      "verification_results": [
-        {
-          "source_title": "Chroma Manage Collections Documentation",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.trychroma.com/docs/collections/manage-collections",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.trychroma.com/docs/collections/manage-collections"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Chroma Python Client Reference",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.trychroma.com/reference/python/client",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.trychroma.com/reference/python/client"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
-    },
-    {
-      "file": "content\\ai\\retrieval-pgvector-hnsw-and-ivfflat-indexes.md",
-      "article_id": "retrieval-pgvector-hnsw-and-ivfflat-indexes",
-      "generation_method": "ai_structured",
-      "sources_total": 2,
-      "verification_results": [
-        {
-          "source_title": "pgvector README",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://github.com/pgvector/pgvector",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://github.com/pgvector/pgvector"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "pgvector HNSW Documentation",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://github.com/pgvector/pgvector#hnsw",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://github.com/pgvector/pgvector"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
     },
     {
       "file": "content\\arts\\history-of-printing.md",
@@ -78358,50 +78859,6 @@
       "sources_unreachable": 1
     },
     {
-      "file": "content\\computer-science\\api-a2a-agent-card-and-skills.md",
-      "article_id": "api-a2a-agent-card-and-skills",
-      "generation_method": "ai_structured",
-      "sources_total": 2,
-      "verification_results": [
-        {
-          "source_title": "Agent2Agent Protocol Specification",
-          "source_type": "specification",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://github.com/a2aproject/A2A/blob/main/docs/specification.md",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://github.com/a2aproject/A2A/blob/main/docs/specification.md"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "A2A Agent Skills and Agent Card Tutorial",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://a2a-protocol.org/dev/tutorials/python/3-agent-skills-and-card/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://a2a-protocol.org/dev/tutorials/python/3-agent-skills-and-card/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
-    },
-    {
       "file": "content\\computer-science\\bloom-filters-space-efficient-probabilistic-data-structures.md",
       "article_id": "kb-2026-00029",
       "generation_method": "ai_structured",
@@ -78569,50 +79026,6 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 3
-    },
-    {
-      "file": "content\\computer-science\\code-bazel-build-event-protocol-for-agents.md",
-      "article_id": "code-bazel-build-event-protocol-for-agents",
-      "generation_method": "ai_structured",
-      "sources_total": 2,
-      "verification_results": [
-        {
-          "source_title": "Bazel Build Event Protocol Documentation",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.bazel.build/versions/main/build-event-protocol.html",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.bazel.build/versions/main/build-event-protocol.html"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Bazel Build Event Service Protocol",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://bazel.build/remote/bep",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://bazel.build/remote/bep"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\command-pattern.md",
@@ -78938,50 +79351,6 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 3
-    },
-    {
-      "file": "content\\computer-science\\data-bigquery-information-schema-jobs-and-query-history.md",
-      "article_id": "data-bigquery-information-schema-jobs-and-query-history",
-      "generation_method": "ai_structured",
-      "sources_total": 2,
-      "verification_results": [
-        {
-          "source_title": "BigQuery INFORMATION_SCHEMA JOBS View",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://cloud.google.com/bigquery/docs/information-schema-jobs",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.cloud.google.com/bigquery/docs/information-schema-jobs"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "BigQuery INFORMATION_SCHEMA JOBS_TIMELINE View",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://cloud.google.com/bigquery/docs/information-schema-jobs-timeline",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.cloud.google.com/bigquery/docs/information-schema-jobs-timeline?hl=id"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\data-lake-architecture.md",
@@ -81518,7 +81887,7 @@
               "identifier": "https://nostarch.com/rust/",
               "verified": false,
               "metadata": {
-                "status": 403,
+                "status": 502,
                 "final_url": "https://nostarch.com/rust-programming-language-2nd-edition"
               },
               "match": false

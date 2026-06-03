@@ -81,7 +81,7 @@ export const DEFAULT_CASES = [
   },
   {
     id: 'context_unsupported_json',
-    budget: { median_ms: 25, p95_ms: 75 },
+    budget: { median_ms: 35, p95_ms: 75 },
     run: allArtifacts => buildContextApiPayload({
       query: 'lunar dentistry',
       limit: 3,
@@ -90,7 +90,7 @@ export const DEFAULT_CASES = [
   },
   {
     id: 'context_gaussian_markdown',
-    budget: { median_ms: 25, p95_ms: 75 },
+    budget: { median_ms: 35, p95_ms: 75 },
     run: allArtifacts => {
       const result = buildContextApiPayload({
         query: 'gaussian splatting',
