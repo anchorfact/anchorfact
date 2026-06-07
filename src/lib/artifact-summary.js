@@ -21,6 +21,12 @@ export const MAJOR_MACHINE_ARTIFACTS = [
     recommended_alternative: '/api'
   },
   {
+    path: '/artifact-shards.json',
+    category: 'shard_registry',
+    use_when: 'Discover versioned shards for large static artifacts before bulk or offline downloads.',
+    recommended_alternative: '/api/context?q={query}'
+  },
+  {
     path: '/manifest.json',
     category: 'catalog',
     use_when: 'Inspect every public and draft article record with verification metadata.',
@@ -120,6 +126,12 @@ export const RECOMMENDED_DEFAULT_CALLS = [
 ];
 
 export const LARGE_ARTIFACT_THRESHOLD_BYTES = 1024 * 1024;
+export const SHARDED_ARTIFACT_PATHS = new Set([
+  '/claims.json',
+  '/search-index.json',
+  '/graph.json',
+  '/llms.txt'
+]);
 
 export const ARTIFACT_GROWTH_BUDGETS = {
   '/graph.json': 5500000,
@@ -130,7 +142,8 @@ export const ARTIFACT_GROWTH_BUDGETS = {
   '/llms.txt': 425000,
   '/openapi.json': 100000,
   '/agent.json': 40000,
-  '/artifact-summary.json': 60000
+  '/artifact-summary.json': 60000,
+  '/artifact-shards.json': 250000
 };
 
 const NEAR_BUDGET_HEADROOM_RATIO = 0.05;
@@ -195,6 +208,8 @@ export function buildArtifactSummary({
         budget_bytes: budgetBytes,
         budget_headroom_bytes: Number.isFinite(budgetBytes) ? budgetBytes - bytes : null,
         budget_status: budgetStatus(bytes, budgetBytes),
+        shard_registry_path: SHARDED_ARTIFACT_PATHS.has(artifact.path) ? '/artifact-shards.json' : null,
+        sharded: SHARDED_ARTIFACT_PATHS.has(artifact.path),
         download_guidance: downloadGuidance(artifact, bytes)
       };
     })
@@ -213,6 +228,7 @@ export function buildArtifactSummary({
       near_budget_headroom_bytes: NEAR_BUDGET_HEADROOM_BYTES,
       guidance: [
         'Use /api/context or /api/evidence for normal agent answer paths before downloading large JSON artifacts.',
+        'Use /artifact-shards.json before bulk reads of /graph.json, /search-index.json, /claims.json, or /llms.txt.',
         'Download /graph.json, /claims.json, /sources.json, /manifest.json, or /llms.txt only for offline indexing, audits, or bulk integration.',
         'Treat artifacts marked near_budget as growth-sensitive and prefer query-scoped APIs when adding agent workflows.'
       ]

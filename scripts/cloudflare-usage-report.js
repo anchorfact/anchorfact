@@ -17,6 +17,7 @@ const MACHINE_ARTIFACT_PATHS = new Set([
   '/.well-known/anchorfact.json',
   '/openapi.json',
   '/artifact-summary.json',
+  '/artifact-shards.json',
   '/manifest.json',
   '/llms.txt',
   '/claims.json',
@@ -42,6 +43,7 @@ const DISCOVERY_ENTRYPOINT_PATHS = new Set([
   '/.well-known/anchorfact.json',
   '/openapi.json',
   '/artifact-summary.json',
+  '/artifact-shards.json',
   '/mcp.json'
 ]);
 
@@ -61,6 +63,7 @@ const DEVELOPER_DOC_PATHS = new Set([
   '/mcp.json',
   '/llms.txt',
   '/artifact-summary.json',
+  '/artifact-shards.json',
   '/content-health.json',
   '/provenance.json'
 ]);

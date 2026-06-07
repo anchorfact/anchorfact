@@ -1,5 +1,6 @@
 import { createHash } from 'crypto';
 import {
+  ARTIFACT_SHARDS_SCHEMA_VERSION,
   CLAIMS_SCHEMA_VERSION,
   ARTIFACT_SUMMARY_SCHEMA_VERSION,
   CAPABILITIES_SCHEMA_VERSION,
@@ -25,7 +26,7 @@ import {
 } from './provenance-signature.js';
 import { fetchLiveText } from './live-http.js';
 
-const REQUIRED_ARTIFACTS = ['agent_json', 'openapi_json', 'manifest_json', 'claims_json', 'topics_json', 'capabilities_json', 'content_health_json', 'coverage_json', 'examples_json', 'graph_json', 'evals_json', 'mcp_json', 'artifact_summary_json', 'search_index_json', 'sources_json', 'llms_txt'];
+const REQUIRED_ARTIFACTS = ['agent_json', 'openapi_json', 'manifest_json', 'claims_json', 'topics_json', 'capabilities_json', 'content_health_json', 'coverage_json', 'examples_json', 'graph_json', 'evals_json', 'mcp_json', 'artifact_summary_json', 'artifact_shards_json', 'search_index_json', 'sources_json', 'llms_txt'];
 const OFFICIAL_GITHUB_COMMIT_API = 'https://api.github.com/repos/anchorfact/anchorfact/commits/';
 const OFFICIAL_GITHUB_COMMIT_PAGE = 'https://github.com/anchorfact/anchorfact/commit/';
 
@@ -328,6 +329,9 @@ export async function verifyLiveProvenance({
   const artifactSummary = artifacts.artifact_summary_json?.text
     ? parseJson(artifacts.artifact_summary_json.text, '/artifact-summary.json', failures) || {}
     : {};
+  const artifactShards = artifacts.artifact_shards_json?.text
+    ? parseJson(artifacts.artifact_shards_json.text, '/artifact-shards.json', failures) || {}
+    : {};
   const searchIndex = artifacts.search_index_json?.text
     ? parseJson(artifacts.search_index_json.text, '/search-index.json', failures) || {}
     : {};
@@ -345,6 +349,7 @@ export async function verifyLiveProvenance({
   checkEq(evals.schema_version, EVALS_SCHEMA_VERSION, 'evals schema_version', failures);
   checkEq(mcp.schema_version, MCP_SCHEMA_VERSION, 'mcp schema_version', failures);
   checkEq(artifactSummary.schema_version, ARTIFACT_SUMMARY_SCHEMA_VERSION, 'artifact summary schema_version', failures);
+  checkEq(artifactShards.schema_version, ARTIFACT_SHARDS_SCHEMA_VERSION, 'artifact shards schema_version', failures);
   checkEq(searchIndex.schema_version, SEARCH_INDEX_SCHEMA_VERSION, 'search index schema_version', failures);
   checkEq(manifest.provenance_url, publicUrl(PROVENANCE_PATH, normalizedBaseUrl), 'manifest provenance_url', failures);
   checkEq(claims.provenance_url, publicUrl(PROVENANCE_PATH, normalizedBaseUrl), 'claims provenance_url', failures);
@@ -357,7 +362,11 @@ export async function verifyLiveProvenance({
   checkEq(evals.provenance_url, publicUrl(PROVENANCE_PATH, normalizedBaseUrl), 'evals provenance_url', failures);
   checkEq(mcp.provenance_url, publicUrl(PROVENANCE_PATH, normalizedBaseUrl), 'mcp provenance_url', failures);
   checkEq(artifactSummary.provenance_url, publicUrl(PROVENANCE_PATH, normalizedBaseUrl), 'artifact summary provenance_url', failures);
+  checkEq(artifactShards.provenance_url, publicUrl(PROVENANCE_PATH, normalizedBaseUrl), 'artifact shards provenance_url', failures);
   checkEq(searchIndex.provenance_url, publicUrl(PROVENANCE_PATH, normalizedBaseUrl), 'search index provenance_url', failures);
+  if (!Array.isArray(artifactShards.artifacts) || artifactShards.artifacts.length === 0) {
+    failures.push('artifact shards registry has no artifacts');
+  }
   if (!Array.isArray(mcp.tools) || mcp.tools.length === 0) {
     failures.push('mcp tools list is empty');
   }

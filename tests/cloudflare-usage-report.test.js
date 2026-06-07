@@ -84,6 +84,7 @@ test('classifyPath identifies API, machine artifact, article artifact, and probe
   assertEq(classifyPath('/api/evidence'), 'api');
   assertEq(classifyPath('/api-access/'), 'developer_docs');
   assertEq(classifyPath('/artifact-summary.json'), 'machine_artifact');
+  assertEq(classifyPath('/artifact-shards.json'), 'machine_artifact');
   assertEq(classifyPath('/graph.json'), 'machine_artifact');
   assertEq(classifyPath('/ai/ai-search-recommendation/index.ttl'), 'article_artifact');
   assertEq(classifyPath('/wp-admin/install.php'), 'security_probe');

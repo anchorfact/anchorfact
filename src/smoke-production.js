@@ -220,7 +220,7 @@ export async function main() {
   const expectedDraft = readExpectedInt('EXPECTED_DRAFT_ARTICLES');
   const expectedClaims = readExpectedInt('EXPECTED_CLAIMS');
 
-  const routes = ['/', '/api-access/', '/robots.txt', '/sitemap.xml', '/agent.json', '/.well-known/anchorfact.json', '/openapi.json', '/artifact-summary.json', '/manifest.json', '/llms.txt', '/claims.json', '/topics.json', '/capabilities.json', '/content-health.json', '/coverage.json', '/examples.json', '/graph.json', '/evals.json', '/mcp.json', '/api', '/api/plan?q=gaussian&limit=2', '/api/evidence?q=gaussian&limit=2', '/api/evidence?q=gaussian&limit=1&format=markdown', '/api/context?q=gaussian&limit=2', '/api/context?q=gaussian&limit=1&format=markdown', '/api/resolve?ref=f1', '/api/resolve-batch?ref=f1&ref=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079', '/api/resolve-batch?ref=f1&ref=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079&format=markdown', '/api/search?q=gaussian&limit=2', '/api/article?slug=ai/3d-generation-gaussian-splatting', '/api/claim?id=f1', '/api/cite?id=f1', '/api/cite?id=f1&format=markdown', '/api/source?url=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079', '/search-index.json', '/sources.json', '/provenance.json', '/provenance.sig', '/drafts.html'];
+  const routes = ['/', '/api-access/', '/robots.txt', '/sitemap.xml', '/agent.json', '/.well-known/anchorfact.json', '/openapi.json', '/artifact-summary.json', '/artifact-shards.json', '/manifest.json', '/llms.txt', '/claims.json', '/topics.json', '/capabilities.json', '/content-health.json', '/coverage.json', '/examples.json', '/graph.json', '/evals.json', '/mcp.json', '/api', '/api/plan?q=gaussian&limit=2', '/api/evidence?q=gaussian&limit=2', '/api/evidence?q=gaussian&limit=1&format=markdown', '/api/context?q=gaussian&limit=2', '/api/context?q=gaussian&limit=1&format=markdown', '/api/resolve?ref=f1', '/api/resolve-batch?ref=f1&ref=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079', '/api/resolve-batch?ref=f1&ref=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079&format=markdown', '/api/search?q=gaussian&limit=2', '/api/article?slug=ai/3d-generation-gaussian-splatting', '/api/claim?id=f1', '/api/cite?id=f1', '/api/cite?id=f1&format=markdown', '/api/source?url=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079', '/search-index.json', '/sources.json', '/provenance.json', '/provenance.sig', '/drafts.html'];
   const results = {};
 
   Object.assign(results, await fetchRoutes(baseUrl, routes));
@@ -232,6 +232,7 @@ export async function main() {
   const wellKnownAgentProfile = await readJsonRoute(baseUrl, '/.well-known/anchorfact.json', results);
   const openapi = await readJsonRoute(baseUrl, '/openapi.json', results);
   const artifactSummary = await readJsonRoute(baseUrl, '/artifact-summary.json', results);
+  const artifactShards = await readJsonRoute(baseUrl, '/artifact-shards.json', results);
   const manifest = await readJsonRoute(baseUrl, '/manifest.json', results);
   const claims = await readJsonRoute(baseUrl, '/claims.json', results);
   const topics = await readJsonRoute(baseUrl, '/topics.json', results);
@@ -321,6 +322,7 @@ export async function main() {
   assertOk(openapi['x-provenance-url'] === new URL('/provenance.json', baseUrl).href, `openapi provenance url expected ${new URL('/provenance.json', baseUrl).href}, got ${openapi['x-provenance-url'] || '(missing)'}`, failures);
   assertOk(openapi.paths?.['/api/evidence'], 'openapi is missing /api/evidence path', failures);
   assertOk(openapi.paths?.['/api/context'], 'openapi is missing /api/context path', failures);
+  assertOk(openapi.components?.schemas?.MachineConsumptionGuidance, 'openapi is missing MachineConsumptionGuidance schema', failures);
   assertOk(openapi.paths?.['/api/resolve'], 'openapi is missing /api/resolve path', failures);
   assertOk(openapi.paths?.['/api/resolve-batch'], 'openapi is missing /api/resolve-batch path', failures);
   assertOk(openapi.paths?.['/api/plan'], 'openapi is missing /api/plan path', failures);
@@ -338,6 +340,7 @@ export async function main() {
   assertOk(openapi.paths?.['/evals.json'], 'openapi is missing /evals.json path', failures);
   assertOk(openapi.paths?.['/mcp.json'], 'openapi is missing /mcp.json path', failures);
   assertOk(openapi.paths?.['/artifact-summary.json'], 'openapi is missing /artifact-summary.json path', failures);
+  assertOk(openapi.paths?.['/artifact-shards.json'], 'openapi is missing /artifact-shards.json path', failures);
   assertOk(openapi.paths?.['/api'], 'openapi is missing /api path', failures);
   assertOk(openapi.paths?.['/search-index.json'], 'openapi is missing /search-index.json path', failures);
   assertOk(openapi.paths?.['/{canonical_slug}/index.json'], 'openapi is missing article JSON-LD path template', failures);
@@ -347,6 +350,12 @@ export async function main() {
   assertOk(artifactSummary.provenance_url === new URL('/provenance.json', baseUrl).href, `artifact summary provenance_url expected ${new URL('/provenance.json', baseUrl).href}, got ${artifactSummary.provenance_url || '(missing)'}`, failures);
   assertOk(Array.isArray(artifactSummary.recommended_default_calls) && artifactSummary.recommended_default_calls.some(call => call.path === '/api/context?q={query}'), '/artifact-summary.json is missing default context call', failures);
   assertOk(Array.isArray(artifactSummary.artifacts) && artifactSummary.artifacts.some(artifact => artifact.path === '/graph.json'), '/artifact-summary.json is missing graph artifact', failures);
+  assertOk(artifactSummary.artifacts.some(artifact => artifact.path === '/artifact-shards.json'), '/artifact-summary.json is missing artifact-shards artifact', failures);
+  assertOk(artifactSummary.artifacts.some(artifact => artifact.path === '/graph.json' && artifact.shard_registry_path === '/artifact-shards.json'), '/artifact-summary.json does not link graph to shard registry', failures);
+  assertOk(artifactShards.schema_version === 'anchorfact.artifact-shards.v1', `artifact shards schema_version expected anchorfact.artifact-shards.v1, got ${artifactShards.schema_version || '(missing)'}`, failures);
+  assertOk(artifactShards.provenance_url === new URL('/provenance.json', baseUrl).href, `artifact shards provenance_url expected ${new URL('/provenance.json', baseUrl).href}, got ${artifactShards.provenance_url || '(missing)'}`, failures);
+  assertOk(Array.isArray(artifactShards.artifacts) && artifactShards.artifacts.some(artifact => artifact.source_path === '/claims.json'), '/artifact-shards.json is missing claims shards', failures);
+  assertOk(Array.isArray(artifactShards.artifacts) && artifactShards.artifacts.some(artifact => artifact.source_path === '/graph.json' && artifact.collection === 'nodes'), '/artifact-shards.json is missing graph node shards', failures);
   assertOk(apiAccessHtml.includes('Free API'), '/api-access/ should describe free API access', failures);
   assertOk(apiAccessHtml.includes('no API key'), '/api-access/ should state that no API key is required today', failures);
   assertOk(apiAccessHtml.includes('/api/context?q={query}') || apiAccessHtml.includes('/api/context?q='), '/api-access/ should link default context API', failures);
@@ -359,6 +368,8 @@ export async function main() {
   assertOk(robotsText.includes('API: https://anchorfact.org/api'), '/robots.txt does not advertise API index', failures);
   assertOk(robotsText.includes('API-Access: https://anchorfact.org/api-access/'), '/robots.txt does not advertise /api-access/', failures);
   assertOk(robotsText.includes('Artifact-Summary: https://anchorfact.org/artifact-summary.json'), '/robots.txt does not advertise artifact-summary.json', failures);
+  assertOk(robotsText.includes('Artifact-Shards: https://anchorfact.org/artifact-shards.json'), '/robots.txt does not advertise artifact-shards.json', failures);
+  assertOk(robotsText.includes('Large-Artifact-Policy: prefer_api_context_or_evidence'), '/robots.txt does not advertise large artifact API preference', failures);
   assertOk(robotsText.includes('MCP: https://anchorfact.org/mcp.json'), '/robots.txt does not advertise mcp.json', failures);
   assertOk(robotsText.includes('Provenance: https://anchorfact.org/provenance.json'), '/robots.txt does not advertise provenance.json', failures);
   assertOk(robotsText.includes('Health: https://anchorfact.org/content-health.json'), '/robots.txt does not advertise content-health.json', failures);
@@ -367,6 +378,7 @@ export async function main() {
   assertOk(sitemapText.includes('https://anchorfact.org/api'), '/sitemap.xml does not include API index', failures);
   assertOk(sitemapText.includes('https://anchorfact.org/api-access/'), '/sitemap.xml does not include /api-access/', failures);
   assertOk(sitemapText.includes('https://anchorfact.org/artifact-summary.json'), '/sitemap.xml does not include artifact-summary.json', failures);
+  assertOk(sitemapText.includes('https://anchorfact.org/artifact-shards.json'), '/sitemap.xml does not include artifact-shards.json', failures);
   assertOk(sitemapText.includes('https://anchorfact.org/mcp.json'), '/sitemap.xml does not include mcp.json', failures);
   assertOk(sitemapText.includes('https://anchorfact.org/provenance.json'), '/sitemap.xml does not include provenance.json', failures);
   assertOk(sitemapText.includes('https://anchorfact.org/content-health.json'), '/sitemap.xml does not include content-health.json', failures);
@@ -380,6 +392,7 @@ export async function main() {
   assertOk(Array.isArray(apiIndex.static_fallbacks) && apiIndex.static_fallbacks.some(fallback => fallback.path === '/content-health.json'), '/api static fallbacks are missing /content-health.json', failures);
   assertOk(Array.isArray(apiIndex.static_fallbacks) && apiIndex.static_fallbacks.some(fallback => fallback.path === '/api-access/'), '/api static fallbacks are missing /api-access/', failures);
   assertOk(Array.isArray(apiIndex.static_fallbacks) && apiIndex.static_fallbacks.some(fallback => fallback.path === '/artifact-summary.json'), '/api static fallbacks are missing /artifact-summary.json', failures);
+  assertOk(Array.isArray(apiIndex.static_fallbacks) && apiIndex.static_fallbacks.some(fallback => fallback.path === '/artifact-shards.json'), '/api static fallbacks are missing /artifact-shards.json', failures);
   const apiIndexPaths = new Set((apiIndex.endpoints || []).map(endpoint => endpoint?.path));
   for (const path of ['/api/plan', '/api/evidence', '/api/context', '/api/resolve', '/api/resolve-batch', '/api/search', '/api/article', '/api/claim', '/api/cite', '/api/source']) {
     assertOk(apiIndexPaths.has(path), `/api is missing ${path}`, failures);
@@ -498,8 +511,11 @@ export async function main() {
   assertOk(Array.isArray(gaussianEvidencePack?.claims) && gaussianEvidencePack.claims.length >= 1, '/api/evidence returned no claims for expected pack', failures);
   assertOk(Array.isArray(gaussianEvidencePack?.citation_exports) && gaussianEvidencePack.citation_exports.length >= 1, '/api/evidence returned no citation exports for expected pack', failures);
   assertOk(Array.isArray(gaussianEvidencePack?.sources) && gaussianEvidencePack.sources.length >= 1, '/api/evidence returned no sources for expected pack', failures);
+  assertOk(evidenceApi.machine_consumption?.large_artifact_policy === 'prefer_query_scoped_apis', '/api/evidence is missing machine consumption guidance', failures);
+  assertOk(Array.isArray(evidenceApi.machine_consumption?.static_discovery) && evidenceApi.machine_consumption.static_discovery.some(call => call.path === '/artifact-shards.json'), '/api/evidence does not advertise artifact shards for bulk sync', failures);
   assertOk(evidenceMarkdown.includes('# AnchorFact Evidence Pack: gaussian'), '/api/evidence markdown response is missing heading', failures);
   assertOk(evidenceMarkdown.includes('Citation contract:'), '/api/evidence markdown response is missing citation contract', failures);
+  assertOk(evidenceMarkdown.includes('/artifact-shards.json'), '/api/evidence markdown response is missing artifact shard guidance', failures);
   assertOk(evidenceMarkdown.includes('3D Gaussian Splatting'), '/api/evidence markdown response is missing expected evidence text', failures);
   assertOk(contextApi.schema_version === 'anchorfact.context-api.v1', `context api schema_version expected anchorfact.context-api.v1, got ${contextApi.schema_version || '(missing)'}`, failures);
   assertOk(contextApi.coverage_status !== 'unsupported', '/api/context unexpectedly marked gaussian query unsupported', failures);
@@ -507,8 +523,11 @@ export async function main() {
   assertOk(hasCanonicalSlug(contextApi.evidence_packs, 'ai/3d-generation-gaussian-splatting'), '/api/context did not return expected gaussian pack', failures);
   assertOk(contextApi.content_health?.snapshot?.public_articles === contentHealth.snapshot?.public_articles, '/api/context content health public count does not match /content-health.json', failures);
   assertOk(contextApi.content_health?.trust_boundaries?.draft_entries_excluded_from_ai_entrypoints === true, '/api/context content health trust boundary is missing', failures);
+  assertOk(contextApi.machine_consumption?.large_artifact_policy === 'prefer_query_scoped_apis', '/api/context is missing machine consumption guidance', failures);
+  assertOk(Array.isArray(contextApi.machine_consumption?.avoid_for_single_query) && contextApi.machine_consumption.avoid_for_single_query.includes('/graph.json'), '/api/context does not discourage single-query graph downloads', failures);
   assertOk(contextMarkdown.includes('# AnchorFact Context: gaussian'), '/api/context markdown response is missing heading', failures);
   assertOk(contextMarkdown.includes('Corpus Health'), '/api/context markdown response is missing corpus health summary', failures);
+  assertOk(contextMarkdown.includes('/artifact-shards.json'), '/api/context markdown response is missing artifact shard guidance', failures);
   assertOk(contextMarkdown.includes('Citation contract:'), '/api/context markdown response is missing citation contract', failures);
   assertOk(contextMarkdown.includes('3D Gaussian Splatting'), '/api/context markdown response is missing expected evidence text', failures);
   assertOk(resolveApi.schema_version === 'anchorfact.resolve-api.v1', `resolve api schema_version expected anchorfact.resolve-api.v1, got ${resolveApi.schema_version || '(missing)'}`, failures);
@@ -578,6 +597,7 @@ export async function main() {
   assertOk(provenance.artifacts?.evals_json?.sha256 === sha256Text(results['/evals.json'].body), 'provenance evals hash does not match /evals.json', failures);
   assertOk(provenance.artifacts?.mcp_json?.sha256 === sha256Text(results['/mcp.json'].body), 'provenance mcp hash does not match /mcp.json', failures);
   assertOk(provenance.artifacts?.artifact_summary_json?.sha256 === sha256Text(results['/artifact-summary.json'].body), 'provenance artifact summary hash does not match /artifact-summary.json', failures);
+  assertOk(provenance.artifacts?.artifact_shards_json?.sha256 === sha256Text(results['/artifact-shards.json'].body), 'provenance artifact shards hash does not match /artifact-shards.json', failures);
   assertOk(provenance.artifacts?.search_index_json?.sha256 === sha256Text(results['/search-index.json'].body), 'provenance search index hash does not match /search-index.json', failures);
   assertOk(provenance.artifacts?.sources_json?.sha256 === sha256Text(results['/sources.json'].body), 'provenance sources hash does not match /sources.json', failures);
   assertOk(provenance.artifacts?.llms_txt?.sha256 === sha256Text(results['/llms.txt'].body), 'provenance llms hash does not match /llms.txt', failures);
@@ -591,6 +611,7 @@ export async function main() {
   headerIncludes(results['/.well-known/anchorfact.json'], 'Access-Control-Allow-Origin', '*', failures);
   headerIncludes(results['/openapi.json'], 'Access-Control-Allow-Origin', '*', failures);
   headerIncludes(results['/manifest.json'], 'Access-Control-Allow-Origin', '*', failures);
+  headerIncludes(results['/artifact-shards.json'], 'Access-Control-Allow-Origin', '*', failures);
   headerIncludes(results['/claims.json'], 'Access-Control-Allow-Origin', '*', failures);
   headerIncludes(results['/topics.json'], 'Access-Control-Allow-Origin', '*', failures);
   headerIncludes(results['/capabilities.json'], 'Access-Control-Allow-Origin', '*', failures);

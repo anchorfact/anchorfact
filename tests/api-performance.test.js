@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 import {
+  DEFAULT_ARTIFACT_SIZE_BUDGETS,
   buildApiPerformanceReport,
   evaluateArtifactSizeBudgets,
   evaluateBudget,
@@ -99,6 +100,12 @@ test('artifact size budget passes current baseline headroom', () => {
   assertEq(report.ok, true);
   assertEq(report.failures, []);
   assert(report.artifacts[0].headroom_bytes > 0, 'baseline should have regression headroom');
+});
+
+test('default artifact budget includes versioned shard registry headroom', () => {
+  const shardBudget = DEFAULT_ARTIFACT_SIZE_BUDGETS.find(item => item.path === 'artifact-shards.json');
+  assert(shardBudget, 'default artifact budget should include artifact-shards.json');
+  assertEq(shardBudget.max_bytes, 250000);
 });
 
 test('artifact size budget fails an oversized fixture without affecting case reporting', () => {

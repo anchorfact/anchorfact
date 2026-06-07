@@ -366,6 +366,11 @@ test('buildContextApiPayload combines planning and public evidence packs', () =>
   assertEq(result.payload.citation_ready_claims.length, 1);
   assertEq(result.payload.citation_ready_claims[0].claim_id, 'https://anchorfact.org/fact/f1');
   assertEq(result.payload.citation_ready_claims[0].cite_api_path, '/api/cite?id=f1');
+  assertEq(result.payload.machine_consumption.large_artifact_policy, 'prefer_query_scoped_apis');
+  assert(result.payload.machine_consumption.preferred_query_scoped_apis.some(call => call.path.includes('/api/context?q=gaussian+splatting')), 'context should advertise query-scoped context API');
+  assert(result.payload.machine_consumption.static_discovery.some(call => call.path === '/artifact-summary.json'), 'context should advertise artifact summary before bulk sync');
+  assert(result.payload.machine_consumption.static_discovery.some(call => call.path === '/artifact-shards.json'), 'context should advertise shard registry before bulk sync');
+  assert(result.payload.machine_consumption.avoid_for_single_query.includes('/claims.json'), 'context should discourage full claims download for one query');
   assertEq(result.payload.content_health.snapshot.public_articles, 1);
   assertEq(result.payload.content_health.public_claim_mapping.mapped, 1);
   assertEq(result.payload.content_health.trust_boundaries.draft_entries_excluded_from_ai_entrypoints, true);
@@ -520,6 +525,8 @@ test('renderContextMarkdown returns answer-ready context with guardrails', () =>
   assert(markdown.includes('Citation Ready Claims'), 'markdown should include compact citation claims');
   assert(markdown.includes('Corpus Health'), 'markdown should include corpus health summary');
   assert(markdown.includes('Public claims: 1'), 'markdown should include public claim count');
+  assert(markdown.includes('Machine Consumption'), 'markdown should include machine consumption guidance');
+  assert(markdown.includes('/artifact-shards.json'), 'markdown should include artifact shard guidance');
   assert(markdown.includes('Citation contract:'), 'markdown should include citation contract');
   assert(markdown.includes('3D Gaussian Splatting'), 'markdown should include evidence pack');
 });

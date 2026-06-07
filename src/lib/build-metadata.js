@@ -29,6 +29,8 @@ export const CAPABILITIES_SCHEMA_VERSION = 'anchorfact.capabilities.v1';
 export const CONTENT_HEALTH_SCHEMA_VERSION = 'anchorfact.content-health.v1';
 export const COVERAGE_SCHEMA_VERSION = 'anchorfact.coverage.v1';
 export const ARTIFACT_SUMMARY_SCHEMA_VERSION = 'anchorfact.artifact-summary.v1';
+export const ARTIFACT_SHARDS_SCHEMA_VERSION = 'anchorfact.artifact-shards.v1';
+export const ARTIFACT_SHARD_SCHEMA_VERSION = 'anchorfact.artifact-shard.v1';
 export const OPENAPI_SCHEMA_VERSION = 'anchorfact.openapi.v1';
 export const OFFICIAL_SOURCE_REPOSITORY = 'https://github.com/anchorfact/anchorfact';
 export const OFFICIAL_SITE = 'https://anchorfact.org';
@@ -155,6 +157,7 @@ export function buildProvenance({ manifest, claimsPayload, distDir, generated, b
       evals_json: artifactInfo(distDir, 'evals.json'),
       mcp_json: artifactInfo(distDir, 'mcp.json'),
       artifact_summary_json: artifactInfo(distDir, 'artifact-summary.json'),
+      artifact_shards_json: artifactInfo(distDir, 'artifact-shards.json'),
       search_index_json: artifactInfo(distDir, 'search-index.json'),
       sources_json: artifactInfo(distDir, 'sources.json'),
       llms_txt: artifactInfo(distDir, 'llms.txt')

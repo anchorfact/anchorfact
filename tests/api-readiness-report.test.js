@@ -7,6 +7,9 @@ import {
   evaluateCoreCorpus,
   renderApiReadinessMarkdown
 } from '../src/lib/api-readiness.js';
+import { CORE_CORPUS_QUERIES as QUERY_SET_CORPUS } from '../src/lib/api-readiness-query-set.js';
+import { evaluateContextReadiness as evaluateContextReadinessFromRunner } from '../src/lib/api-readiness-evaluator.js';
+import { renderApiReadinessMarkdown as renderApiReadinessMarkdownFromRenderer } from '../src/lib/api-readiness-renderer.js';
 import {
   normalizeAdoptionScorecard,
   normalizeProductionIntegrity
@@ -151,6 +154,18 @@ function fakeArtifacts() {
 }
 
 console.log('AnchorFact API Readiness Report Tests\n');
+
+test('api-readiness modules expose query set, runner, and renderer boundaries', () => {
+  assert(QUERY_SET_CORPUS === CORE_CORPUS_QUERIES, 'compat facade should re-export the query set module corpus');
+  assert(
+    evaluateContextReadinessFromRunner === evaluateContextReadiness,
+    'compat facade should re-export the evaluator module runner'
+  );
+  assert(
+    renderApiReadinessMarkdownFromRenderer === renderApiReadinessMarkdown,
+    'compat facade should re-export the renderer module function'
+  );
+});
 
 test('core query set defines subscription-readiness probes across paid-use categories', () => {
   assert(CORE_CORPUS_QUERIES.length >= 100, 'core query set should preserve the 100-query foundation');

@@ -2,6 +2,7 @@ import {
   buildEvidenceApiPayload,
   renderEvidenceMarkdown
 } from './evidence-api.js';
+import { buildMachineConsumptionGuidance } from './api-machine-guidance.js';
 import { buildPlanApiPayload } from './plan-api.js';
 
 export const CONTEXT_API_SCHEMA_VERSION = 'anchorfact.context-api.v1';
@@ -149,6 +150,11 @@ export function buildContextApiPayload({
       confidence: plan.confidence,
       answer_policy: answerPolicy,
       citation_contract: evidence.payload.citation_contract,
+      machine_consumption: buildMachineConsumptionGuidance({
+        query: normalizedQuery,
+        limit: normalizedLimit,
+        currentEndpoint: 'context'
+      }),
       citation_ready_claims: citationReadyClaims,
       content_health: compactContentHealth(contentHealthPayload),
       trust_requirements: plan.trust_requirements || [],
@@ -321,6 +327,13 @@ export function renderContextMarkdown(payload) {
     lines.push('');
   }
 
+  if (payload.machine_consumption?.large_artifact_policy) {
+    lines.push('## Machine Consumption', '');
+    lines.push(`- Policy: ${payload.machine_consumption.large_artifact_policy}`);
+    lines.push('- Bulk sync: /artifact-shards.json');
+    lines.push('');
+  }
+
   if (Array.isArray(payload.citation_ready_claims) && payload.citation_ready_claims.length > 0) {
     lines.push('## Citation Ready Claims', '');
     for (const claim of payload.citation_ready_claims) {
@@ -335,6 +348,7 @@ export function renderContextMarkdown(payload) {
     provenance_url: payload.provenance_url,
     query: payload.query,
     result_count: payload.evidence_pack_count || 0,
+    machine_consumption: payload.machine_consumption,
     packs: payload.evidence_packs || []
   }).trimEnd());
 

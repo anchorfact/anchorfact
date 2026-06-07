@@ -227,6 +227,10 @@ test('buildEvidenceApiPayload returns compact public evidence packs', () => {
   assertEq(result.payload.limit, 2);
   assertEq(result.payload.provenance_url, 'https://anchorfact.org/provenance.json');
   assertEq(result.payload.citation_contract.include_original_source_url, true);
+  assertEq(result.payload.machine_consumption.large_artifact_policy, 'prefer_query_scoped_apis');
+  assert(result.payload.machine_consumption.preferred_query_scoped_apis.some(call => call.path.includes('/api/evidence?q=gaussian+splatting')), 'evidence should advertise query-scoped evidence API');
+  assert(result.payload.machine_consumption.static_discovery.some(call => call.path === '/artifact-shards.json'), 'evidence should advertise shard registry for bulk sync');
+  assert(result.payload.machine_consumption.avoid_for_single_query.includes('/graph.json'), 'evidence should discourage graph bulk fetch for one query');
   assertEq(result.payload.result_count, 1);
   assertEq(result.payload.packs[0].canonical_slug, 'ai/gaussian-splatting');
   assertEq(result.payload.packs[0].article.status, 'public');
@@ -249,6 +253,7 @@ test('renderEvidenceMarkdown returns answer-ready citation context', () => {
   const markdown = renderEvidenceMarkdown(result.payload);
   assert(markdown.includes('# AnchorFact Evidence Pack: gaussian splatting'), 'markdown should include the query heading');
   assert(markdown.includes('Citation contract:'), 'markdown should include citation contract guidance');
+  assert(markdown.includes('/artifact-shards.json'), 'markdown should include machine bulk sync guidance');
   assert(markdown.includes('3D Gaussian Splatting represents scenes'), 'markdown should include claim text');
   assert(markdown.includes('https://arxiv.org/abs/2308.04079'), 'markdown should include source URL');
 });

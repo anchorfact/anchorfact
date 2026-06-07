@@ -2,6 +2,7 @@ import { mkdirSync, writeFileSync } from 'fs';
 import { join } from 'path';
 import { buildAgentProfile } from './agent-profile.js';
 import { buildArtifactSummary } from './artifact-summary.js';
+import { writeArtifactShardRegistry } from './artifact-shards.js';
 import { publicClaims } from './claims.js';
 import { buildOpenApiContract } from './openapi.js';
 import { buildSearchIndex } from './search-index.js';
@@ -108,6 +109,7 @@ function writeRootIndex(distDir, results, publicResults, draftResults, claims) {
       <summary>Full machine artifact catalog</summary>
       <p>
         <a href="/artifact-summary.json">Artifact Summary</a> &middot;
+        <a href="/artifact-shards.json">Artifact Shards</a> &middot;
         <a href="/openapi.json">OpenAPI</a> &middot;
         <a href="/capabilities.json">Capabilities</a> &middot;
         <a href="/api/plan?q=gaussian">Plan API</a> &middot;
@@ -269,6 +271,8 @@ function writeLlmsTxt(distDir, publicResults, claims, verificationTimestamp) {
 - Trust: https://anchorfact.org/provenance.json and https://anchorfact.org/provenance.sig
 - Free API access guide: https://anchorfact.org/api-access/
 - Artifact sizes and lightweight alternatives: https://anchorfact.org/artifact-summary.json
+- Artifact Shards: https://anchorfact.org/artifact-shards.json
+- Prefer /api/context or /api/evidence before downloading graph.json, search-index.json, claims.json, or the full article list in llms.txt.
 
 ## Direct Answer Examples
 
@@ -292,6 +296,7 @@ ${entries || '_No public verified entries yet._'}
 - [API Index](https://anchorfact.org/api): Compact live API discovery endpoint for agents.
 - [API Access](https://anchorfact.org/api-access/): Free API usage guide with recommended call order, examples, limits, and provenance verification.
 - [Artifact Summary](https://anchorfact.org/artifact-summary.json): Lightweight size and purpose map for large static machine artifacts.
+- [Artifact Shards](https://anchorfact.org/artifact-shards.json): Signed registry for versioned shards of large static artifacts.
 - [Capabilities](https://anchorfact.org/capabilities.json): AI task-to-endpoint routing guide with trust requirements and fallback artifacts.
 - [Content Health](https://anchorfact.org/content-health.json): Signed corpus health summary for AI trust decisions.
 - [Coverage](https://anchorfact.org/coverage.json): AI coverage and limits guide with topic, confidence, source tier, and verification distributions.
@@ -324,6 +329,7 @@ ${entries || '_No public verified entries yet._'}
 `;
 
   writeFileSync(join(distDir, 'llms.txt'), llmsTxt);
+  return llmsTxt;
 }
 
 function writeSitemap(distDir, publicResults) {
@@ -334,6 +340,7 @@ function writeSitemap(distDir, publicResults) {
     '<url><loc>https://anchorfact.org/api</loc><changefreq>daily</changefreq><priority>0.9</priority></url>',
     '<url><loc>https://anchorfact.org/api-access/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>',
     '<url><loc>https://anchorfact.org/artifact-summary.json</loc><changefreq>daily</changefreq><priority>0.9</priority></url>',
+    '<url><loc>https://anchorfact.org/artifact-shards.json</loc><changefreq>daily</changefreq><priority>0.9</priority></url>',
     '<url><loc>https://anchorfact.org/capabilities.json</loc><changefreq>daily</changefreq><priority>0.9</priority></url>',
     '<url><loc>https://anchorfact.org/content-health.json</loc><changefreq>daily</changefreq><priority>0.9</priority></url>',
     '<url><loc>https://anchorfact.org/coverage.json</loc><changefreq>daily</changefreq><priority>0.9</priority></url>',
@@ -381,7 +388,9 @@ AI-Evidence: https://anchorfact.org/api/evidence?q={query}
 AI-Cite: https://anchorfact.org/api/cite?id={claim_id}
 AI-Plan: https://anchorfact.org/api/plan?q={query}
 AI-Plan-Use: coverage_uncertain_only
+Large-Artifact-Policy: prefer_api_context_or_evidence
 Artifact-Summary: https://anchorfact.org/artifact-summary.json
+Artifact-Shards: https://anchorfact.org/artifact-shards.json
 Health: https://anchorfact.org/content-health.json
 MCP: https://anchorfact.org/mcp.json
 Provenance: https://anchorfact.org/provenance.json
@@ -395,6 +404,7 @@ function writeHeaders(distDir) {
     ['/.well-known/anchorfact.json', 'application/json'],
     ['/openapi.json', 'application/json'],
     ['/artifact-summary.json', 'application/json'],
+    ['/artifact-shards.json', 'application/json'],
     ['/manifest.json', 'application/json'],
     ['/llms.txt', 'text/plain'],
     ['/claims.json', 'application/json'],
@@ -436,6 +446,11 @@ function writeHeaders(distDir) {
   Cache-Control: public, max-age=86400
 
 ${machineArtifactHeaders}
+
+/artifacts/v1/*
+  Access-Control-Allow-Origin: *
+  Content-Type: application/json; charset=utf-8
+  Cache-Control: public, max-age=31536000, immutable
 
 /api-access/
   Cache-Control: public, max-age=0, must-revalidate
@@ -680,7 +695,17 @@ export function writeStaticOutputs(distDir, results, options = {}) {
   writeRootIndex(distDir, results, publicResults, draftResults, claims);
   writeDrafts(distDir, draftResults);
   writeApiAccessPage(distDir, publicResults, draftResults, claims);
-  writeLlmsTxt(distDir, publicResults, claims, options.verificationTimestamp);
+  const llmsText = writeLlmsTxt(distDir, publicResults, claims, options.verificationTimestamp);
+  writeArtifactShardRegistry({
+    distDir,
+    generated,
+    site: build.canonical_site,
+    build,
+    claimsPayload,
+    searchIndexPayload,
+    graphPayload,
+    llmsText
+  });
   writeSitemap(distDir, publicResults);
   writeRobots(distDir);
   writeHeaders(distDir);

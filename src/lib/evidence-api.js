@@ -1,4 +1,5 @@
 import { CITATION_CONTRACT, buildClaimCitationExports } from './citation-export.js';
+import { buildMachineConsumptionGuidance } from './api-machine-guidance.js';
 import { parseSearchParams, rankSearchRecords } from './search-api.js';
 
 export const EVIDENCE_API_SCHEMA_VERSION = 'anchorfact.evidence-api.v1';
@@ -164,6 +165,11 @@ export function buildEvidenceApiPayload({
       result_count: packs.length,
       provenance_url: searchIndex?.provenance_url || manifest?.provenance_url || claimsPayload?.provenance_url || sourcesPayload?.provenance_url || null,
       citation_contract: CITATION_CONTRACT,
+      machine_consumption: buildMachineConsumptionGuidance({
+        query: normalizedQuery,
+        limit: normalizedLimit,
+        currentEndpoint: 'evidence'
+      }),
       search_index_generated: searchIndex?.generated || null,
       search_index_schema_version: searchIndex?.schema_version || null,
       manifest_generated: manifest?.generated || null,
@@ -185,6 +191,11 @@ export function renderEvidenceMarkdown(payload) {
     'Citation contract: cite only public claims; include confidence, AnchorFact claim URL, and original source URL.',
     ''
   ];
+
+  if (payload.machine_consumption?.large_artifact_policy) {
+    lines.push(`Machine use: ${payload.machine_consumption.large_artifact_policy}; bulk sync via /artifact-shards.json.`);
+    lines.push('');
+  }
 
   if (!Array.isArray(payload.packs) || payload.packs.length === 0) {
     lines.push('_No public evidence packs matched this query._');

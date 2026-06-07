@@ -252,7 +252,8 @@ export function buildEvalsIndex({
           '/api/context?q={query}',
           '/api/evidence?q={query}',
           '/api/plan?q={query}',
-          '/artifact-summary.json'
+          '/artifact-summary.json',
+          '/artifact-shards.json'
         ]
       }
     },
@@ -266,7 +267,8 @@ export function buildEvalsIndex({
         contains_text: [
           'AI-Context',
           'AI-Evidence',
-          'Artifact-Summary'
+          'Artifact-Summary',
+          'Artifact-Shards'
         ]
       }
     },
@@ -282,8 +284,21 @@ export function buildEvalsIndex({
         required_schema_properties: {
           ContextApiResponse: [
             'answer_policy',
+            'machine_consumption',
             'citation_ready_claims',
             'evidence_pack_count'
+          ],
+          EvidenceApiResponse: [
+            'citation_contract',
+            'machine_consumption',
+            'packs'
+          ],
+          MachineConsumptionGuidance: [
+            'large_artifact_policy',
+            'preferred_query_scoped_apis',
+            'static_discovery',
+            'avoid_for_single_query',
+            'bulk_sync_policy'
           ],
           AnswerPolicy: [
             'can_answer_with_anchorfact',
@@ -567,6 +582,7 @@ export function buildEvalsIndex({
           'evals_json',
           'mcp_json',
           'artifact_summary_json',
+          'artifact_shards_json',
           'search_index_json',
           'sources_json',
           'llms_txt'

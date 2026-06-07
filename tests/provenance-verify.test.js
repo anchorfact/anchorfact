@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import { generateKeyPairSync } from 'crypto';
 import {
+  ARTIFACT_SHARDS_SCHEMA_VERSION,
   CLAIMS_SCHEMA_VERSION,
   ARTIFACT_SUMMARY_SCHEMA_VERSION,
   CAPABILITIES_SCHEMA_VERSION,
@@ -134,6 +135,7 @@ function buildFixture(overrides = {}) {
       '/evals.json': {},
       '/mcp.json': {},
       '/artifact-summary.json': {},
+      '/artifact-shards.json': {},
       '/search-index.json': {},
       '/sources.json': {},
       '/provenance.json': {}
@@ -300,6 +302,40 @@ function buildFixture(overrides = {}) {
       }
     ]
   };
+  const artifactShards = {
+    schema_version: ARTIFACT_SHARDS_SCHEMA_VERSION,
+    generated: '2026-05-29T00:00:00.000Z',
+    provenance_url: `${baseUrl}/provenance.json`,
+    version: '75b8761df7e7a92d63a204d456c2e553d299f48d',
+    default_for_agents: '/api/context?q={query}',
+    compatibility: {
+      full_artifacts_remain_available: true,
+      shard_registry_is_signed_by_provenance: true
+    },
+    large_artifact_strategy: {
+      prefer_query_scoped_apis: true,
+      primary_apis: ['/api/context?q={query}', '/api/evidence?q={query}']
+    },
+    artifacts: [
+      {
+        id: 'claims',
+        source_path: '/claims.json',
+        collection: 'claims',
+        item_kind: 'claim',
+        item_count: 3,
+        shard_count: 1,
+        recommended_api: '/api/cite?id={claim_id}',
+        shards: [
+          {
+            path: '/artifacts/v1/fixture/claims/claims-0001.json',
+            sha256: '0'.repeat(64),
+            bytes: 100,
+            item_count: 3
+          }
+        ]
+      }
+    ]
+  };
   const manifestText = JSON.stringify(manifest, null, 2);
   const claimsText = JSON.stringify(claims, null, 2);
   const agentText = JSON.stringify(agent, null, 2);
@@ -313,6 +349,7 @@ function buildFixture(overrides = {}) {
   const evalsText = JSON.stringify(evals, null, 2);
   const mcpText = JSON.stringify(mcp, null, 2);
   const artifactSummaryText = JSON.stringify(artifactSummary, null, 2);
+  const artifactShardsText = JSON.stringify(artifactShards, null, 2);
   const searchText = JSON.stringify(search, null, 2);
   const sourcesText = JSON.stringify(sources, null, 2);
   const provenance = {
@@ -404,6 +441,11 @@ function buildFixture(overrides = {}) {
         sha256: sha256Text(artifactSummaryText),
         bytes: Buffer.byteLength(artifactSummaryText, 'utf8')
       },
+      artifact_shards_json: {
+        path: '/artifact-shards.json',
+        sha256: sha256Text(artifactShardsText),
+        bytes: Buffer.byteLength(artifactShardsText, 'utf8')
+      },
       search_index_json: {
         path: '/search-index.json',
         sha256: sha256Text(searchText),
@@ -458,6 +500,7 @@ function buildFixture(overrides = {}) {
     [`${baseUrl}/evals.json`]: { body: evalsText },
     [`${baseUrl}/mcp.json`]: { body: mcpText },
     [`${baseUrl}/artifact-summary.json`]: { body: artifactSummaryText },
+    [`${baseUrl}/artifact-shards.json`]: { body: artifactShardsText },
     [`${baseUrl}/search-index.json`]: { body: searchText },
     [`${baseUrl}/sources.json`]: { body: sourcesText },
     [`${baseUrl}/llms.txt`]: { body: llms, contentType: 'text/plain; charset=utf-8' },
@@ -493,6 +536,7 @@ test('verifyLiveProvenance accepts matching official live artifacts', async () =
   assertEq(result.artifacts.manifest_json.ok, true);
   assertEq(result.artifacts.content_health_json.ok, true);
   assertEq(result.artifacts.artifact_summary_json.ok, true);
+  assertEq(result.artifacts.artifact_shards_json.ok, true);
   assertEq(result.commit.ok, true);
   assertEq(result.signature.skipped, true);
 });

@@ -1,6 +1,8 @@
 import {
   AGENT_PROFILE_SCHEMA_VERSION,
   API_INDEX_SCHEMA_VERSION,
+  ARTIFACT_SHARDS_SCHEMA_VERSION,
+  ARTIFACT_SHARD_SCHEMA_VERSION,
   ARTIFACT_SUMMARY_SCHEMA_VERSION,
   ARTICLE_API_SCHEMA_VERSION,
   CAPABILITIES_SCHEMA_VERSION,
@@ -105,6 +107,7 @@ export function buildOpenApiContract({
       '/openapi.json': getJson('This OpenAPI machine contract', 'OpenApiContract'),
       '/api': getJson('Compact live API discovery index', 'ApiIndex'),
       '/artifact-summary.json': getJson('Lightweight static artifact size and alternative-call summary', 'ArtifactSummary'),
+      '/artifact-shards.json': getJson('Signed versioned shard registry for large static artifacts', 'ArtifactShards'),
       '/manifest.json': getJson('Public and draft article manifest', 'Manifest'),
       '/claims.json': getJson('Public verified atomic claims', 'Claims'),
       '/topics.json': getJson('Public topic coverage map', 'Topics'),
@@ -531,6 +534,22 @@ export function buildOpenApiContract({
           recommended_default_calls: { type: 'array', items: { type: 'object' } },
           artifacts: { type: 'array', items: { type: 'object' } }
         }),
+        ArtifactShards: schemaVersioned('Artifact shard registry', ARTIFACT_SHARDS_SCHEMA_VERSION, {
+          version: { type: 'string' },
+          default_for_agents: { type: 'string' },
+          compatibility: { type: 'object' },
+          large_artifact_strategy: { type: 'object' },
+          artifacts: { type: 'array', items: { type: 'object' } }
+        }),
+        ArtifactShard: schemaVersioned('Artifact shard', ARTIFACT_SHARD_SCHEMA_VERSION, {
+          artifact_id: { type: 'string' },
+          source_path: { type: 'string' },
+          collection: { type: 'string' },
+          item_kind: { type: 'string' },
+          shard_index: { type: 'integer' },
+          shard_count: { type: 'integer' },
+          item_count: { type: 'integer' }
+        }),
         Manifest: schemaVersioned('Manifest', MANIFEST_SCHEMA_VERSION, {
           article_count: { type: 'integer' },
           public_article_count: { type: 'integer' },
@@ -623,6 +642,7 @@ export function buildOpenApiContract({
           limit: { type: 'integer' },
           result_count: { type: 'integer' },
           citation_contract: { type: 'object' },
+          machine_consumption: { $ref: '#/components/schemas/MachineConsumptionGuidance' },
           search_index_generated: { type: ['string', 'null'], format: 'date-time' },
           manifest_generated: { type: ['string', 'null'], format: 'date-time' },
           claims_generated: { type: ['string', 'null'], format: 'date-time' },
@@ -640,6 +660,7 @@ export function buildOpenApiContract({
             items: { enum: ['local_or_personalized', 'live_or_time_sensitive'] }
           },
           answer_policy: { $ref: '#/components/schemas/AnswerPolicy' },
+          machine_consumption: { $ref: '#/components/schemas/MachineConsumptionGuidance' },
           citation_ready_claims: {
             type: 'array',
             items: { $ref: '#/components/schemas/CitationReadyClaim' }
@@ -650,6 +671,26 @@ export function buildOpenApiContract({
           recommended_next_calls: { type: 'array', items: { type: 'object' } },
           fallback_guidance: { type: 'array', items: { type: 'string' } }
         }),
+        MachineConsumptionGuidance: {
+          type: 'object',
+          description: 'Crawler and agent guidance for using query-scoped APIs before bulk static artifact downloads.',
+          required: [
+            'large_artifact_policy',
+            'preferred_query_scoped_apis',
+            'static_discovery',
+            'avoid_for_single_query',
+            'bulk_sync_policy'
+          ],
+          properties: {
+            large_artifact_policy: { enum: ['prefer_query_scoped_apis'] },
+            current_endpoint: { type: ['string', 'null'] },
+            preferred_query_scoped_apis: { type: 'array', items: { type: 'object' } },
+            static_discovery: { type: 'array', items: { type: 'object' } },
+            avoid_for_single_query: { type: 'array', items: { type: 'string' } },
+            bulk_sync_policy: { type: 'string' }
+          },
+          additionalProperties: false
+        },
         AnswerPolicy: {
           type: 'object',
           description: 'Machine decision telling agents whether AnchorFact can support a cited answer for the current query.',
