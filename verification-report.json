@@ -1,7 +1,7 @@
 {
   "summary": {
-    "generated": "2026-06-03T01:28:50.036Z",
-    "total_articles": 1510,
+    "generated": "2026-06-07T16:30:00.000Z",
+    "total_articles": 1517,
     "total_with_errors": 0,
     "average_sources_per_article": "2.6",
     "overall_verification_rate": "91.4%",
@@ -84382,6 +84382,468 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 2
+    },
+    {
+      "file": "content/ai/agent-cli-help-output-and-man-pages.md",
+      "article_id": "agent-cli-help-output-and-man-pages",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "GNU Coding Standards --help",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.gnu.org/prep/standards/html_node/_002d_002dhelp.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-07",
+                "note": "Agent content growth batch 2; source manually checked and bounded to source-mapped claims."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Python argparse Documentation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.python.org/3/library/argparse.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-07",
+                "note": "Agent content growth batch 2; source manually checked and bounded to source-mapped claims."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "man Linux Manual Page",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://man7.org/linux/man-pages/man1/man.1.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-07",
+                "note": "Agent content growth batch 2; source manually checked and bounded to source-mapped claims."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-06-07"
+    },
+    {
+      "file": "content/ai/agent-parallel-tool-calls-and-dependency-ordering.md",
+      "article_id": "agent-parallel-tool-calls-and-dependency-ordering",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "OpenAI Function Calling",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://platform.openai.com/docs/guides/function-calling",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-07",
+                "note": "Agent content growth batch 2; source manually checked and bounded to source-mapped claims."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenAI Chat Completions API Reference",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://platform.openai.com/docs/api-reference/chat/create",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-07",
+                "note": "Agent content growth batch 2; source manually checked and bounded to source-mapped claims."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Anthropic Tool Use",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/implement-tool-use",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-07",
+                "note": "Agent content growth batch 2; source manually checked and bounded to source-mapped claims."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-06-07"
+    },
+    {
+      "file": "content/ai/agent-output-validation-and-repair-loops.md",
+      "article_id": "agent-output-validation-and-repair-loops",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "OpenAI Structured Outputs",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://platform.openai.com/docs/guides/structured-outputs",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-07",
+                "note": "Agent content growth batch 2; source manually checked and bounded to source-mapped claims."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "JSON Schema Validation Draft 2020-12",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://json-schema.org/draft/2020-12/json-schema-validation",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-07",
+                "note": "Agent content growth batch 2; source manually checked and bounded to source-mapped claims."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Model Context Protocol Tools Specification",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://modelcontextprotocol.io/specification/2024-11-05/server/tools",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-07",
+                "note": "Agent content growth batch 2; source manually checked and bounded to source-mapped claims."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-06-07"
+    },
+    {
+      "file": "content/ai/retrieval-document-versioning-and-source-snapshots.md",
+      "article_id": "retrieval-document-versioning-and-source-snapshots",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "LlamaIndex Document Management",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.llamaindex.ai/python/framework/module_guides/indexing/document_management/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-07",
+                "note": "Agent content growth batch 2; source manually checked and bounded to source-mapped claims."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Elasticsearch Point in Time API",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.elastic.co/guide/en/elasticsearch/reference/current/point-in-time-api.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-07",
+                "note": "Agent content growth batch 2; source manually checked and bounded to source-mapped claims."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "PROV-O The PROV Ontology",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.w3.org/TR/prov-o/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-07",
+                "note": "Agent content growth batch 2; source manually checked and bounded to source-mapped claims."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-06-07"
+    },
+    {
+      "file": "content/ai/llm-evaluation-slice-based-regression-analysis.md",
+      "article_id": "llm-evaluation-slice-based-regression-analysis",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "OpenAI Evals API Reference",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://platform.openai.com/docs/api-reference/evals",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-07",
+                "note": "Agent content growth batch 2; source manually checked and bounded to source-mapped claims."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Introducing TensorFlow Model Analysis",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://blog.tensorflow.org/2018/03/introducing-tensorflow-model-analysis.html",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-07",
+                "note": "Agent content growth batch 2; source manually checked and bounded to source-mapped claims."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Introducing SWE-bench Verified",
+          "source_type": "blog",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://openai.com/index/introducing-swe-bench-verified/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-07",
+                "note": "Agent content growth batch 2; source manually checked and bounded to source-mapped claims."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-06-07"
+    },
+    {
+      "file": "content/computer-science/data-lake-file-skipping-and-data-skipping-indexes.md",
+      "article_id": "data-lake-file-skipping-and-data-skipping-indexes",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Delta Lake File Skipping",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://delta-io.github.io/delta-rs/how-delta-lake-works/delta-lake-file-skipping/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-07",
+                "note": "Agent content growth batch 2; source manually checked and bounded to source-mapped claims."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Databricks Data Skipping",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.databricks.com/aws/en/delta/data-skipping",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-07",
+                "note": "Agent content growth batch 2; source manually checked and bounded to source-mapped claims."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Apache Parquet Bloom Filter",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://parquet.apache.org/docs/file-format/bloomfilter/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-07",
+                "note": "Agent content growth batch 2; source manually checked and bounded to source-mapped claims."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-06-07"
+    },
+    {
+      "file": "content/computer-science/code-lsp-workspace-symbols-and-reference-providers.md",
+      "article_id": "code-lsp-workspace-symbols-and-reference-providers",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Language Server Protocol Specification 3.17",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://microsoft.github.io/language-server-protocol/specifications/lsp/3.17/specification/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-07",
+                "note": "Agent content growth batch 2; source manually checked and bounded to source-mapped claims."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Language Server Protocol Overview",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://learn.microsoft.com/en-us/visualstudio/extensibility/language-server-protocol?view=visualstudio",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-07",
+                "note": "Agent content growth batch 2; source manually checked and bounded to source-mapped claims."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "VS Code Programmatic Language Features",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://code.visualstudio.com/api/language-extensions/programmatic-language-features",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-07",
+                "note": "Agent content growth batch 2; source manually checked and bounded to source-mapped claims."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-06-07"
     }
   ]
 }
