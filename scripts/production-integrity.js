@@ -169,6 +169,10 @@ function isApiControl(route) {
   return new URL(route, OFFICIAL_SITE).pathname.startsWith('/api');
 }
 
+function dynamicControlRequestMethod(route) {
+  return isApiControl(route) ? 'GET' : 'HEAD';
+}
+
 function isApiClientCacheControlAllowed(value) {
   if (isRevalidatedCacheControl(value)) return true;
   const maxAge = maxAgeSeconds(value);
@@ -229,16 +233,17 @@ export async function checkProductionEdgeCache({
 
   const dynamicChecks = await mapWithConcurrency(dynamicControls, maxDynamicConcurrency, async (path) => {
     const apiControl = isApiControl(path);
+    const method = dynamicControlRequestMethod(path);
     const response = await fetchLiveText(fetchImpl, routeUrl(baseUrl, path), {
-      method: 'GET',
+      method,
       retries: routeRetries,
       retryDelayMs: routeRetryDelayMs,
       timeoutMs: requestTimeoutMs
     });
     const result = {
       path,
-      method: 'GET',
-      contract: apiControl ? 'api_get' : 'signed_artifact_get',
+      method,
+      contract: apiControl ? 'api_get' : 'signed_artifact_head',
       ...cacheAttempt(path, response)
     };
     const resultFailures = [];

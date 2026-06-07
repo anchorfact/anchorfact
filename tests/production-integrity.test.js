@@ -338,7 +338,7 @@ test('checkProductionEdgeCache fails when an API control is edge cached', async 
   assertEq(result.dynamic_controls[0].cf_cache_status, 'HIT');
 });
 
-test('checkProductionEdgeCache uses GET for signed artifact controls and requires revalidation', async () => {
+test('checkProductionEdgeCache uses HEAD for signed artifact controls and requires revalidation', async () => {
   const calls = [];
   const result = await checkProductionEdgeCache({
     baseUrl: 'https://anchorfact.org',
@@ -354,7 +354,9 @@ test('checkProductionEdgeCache uses GET for signed artifact controls and require
     }
   });
 
-  assertEq(calls[0].method, 'GET');
+  assertEq(calls[0].method, 'HEAD');
+  assertEq(result.dynamic_controls[0].method, 'HEAD');
+  assertEq(result.dynamic_controls[0].contract, 'signed_artifact_head');
   assertEq(result.ok, false);
   assert(result.failures.some(failure => failure.includes('must be revalidated by clients')), 'signed artifact cache-control failure should be explicit');
 });
