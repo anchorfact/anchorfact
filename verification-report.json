@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-08T18:40:14.148Z",
-    "total_articles": 1535,
+    "generated": "2026-06-08T19:05:59.706Z",
+    "total_articles": 1543,
     "total_with_errors": 0,
     "average_sources_per_article": "2.6",
     "overall_verification_rate": "91.6%",
-    "elapsed_ms": 103535,
-    "elapsed_sec": "103.5",
+    "elapsed_ms": 104656,
+    "elapsed_sec": "104.7",
     "concurrency": 3
   },
   "articles": [
@@ -6699,6 +6699,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://developer.hashicorp.com/vault/docs/concepts/lease"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-service-catalogs-and-ownership-metadata.md",
+      "article_id": "agent-service-catalogs-and-ownership-metadata",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Backstage Software Catalog",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://backstage.io/docs/features/software-catalog/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://backstage.io/docs/features/software-catalog/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Backstage Descriptor Format",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://backstage.io/docs/features/software-catalog/descriptor-format/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://backstage.io/docs/features/software-catalog/descriptor-format/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Harness IDP Catalog Overview",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.harness.io/docs/internal-developer-portal/catalog/overview/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developer.harness.io/docs/internal-developer-portal/catalog/overview/"
               },
               "match": true
             }
@@ -25229,6 +25290,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\llm-evaluation-trace-sampling-and-annotation-queues.md",
+      "article_id": "llm-evaluation-trace-sampling-and-annotation-queues",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "LangSmith Evaluation Concepts",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.langchain.com/langsmith/evaluation-concepts",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.langchain.com/langsmith/evaluation-concepts"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "LangSmith Annotation Queues",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.langchain.com/langsmith/annotation-queues",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.langchain.com/langsmith/annotation-queues"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenTelemetry Sampling",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://opentelemetry.io/docs/concepts/sampling/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://opentelemetry.io/docs/concepts/sampling/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\llm-evaluation-traces-and-feedback-labels.md",
       "article_id": "llm-evaluation-traces-and-feedback-labels",
       "generation_method": "ai_structured",
@@ -29200,6 +29322,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://docs.unstructured.io/open-source/core-functionality/partitioning"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\rag-connector-throttling-and-crawl-rate-limits.md",
+      "article_id": "rag-connector-throttling-and-crawl-rate-limits",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Microsoft Graph Throttling",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://learn.microsoft.com/en-us/graph/throttling",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.microsoft.com/en-us/graph/throttling"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Google Drive API Limits",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.google.com/drive/api/guides/limits",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.google.com/workspace/drive/api/guides/limits"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Atlassian Cloud Rate Limiting",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.atlassian.com/cloud/confluence/rate-limiting/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developer.atlassian.com/cloud/confluence/rate-limiting/"
               },
               "match": true
             }
@@ -41687,6 +41870,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\api-mcp-authorization-and-oauth-protected-resources.md",
+      "article_id": "api-mcp-authorization-and-oauth-protected-resources",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "MCP Authorization",
+          "source_type": "technical_specification",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://modelcontextprotocol.io/specification/2025-06-18/basic/authorization",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://modelcontextprotocol.io/specification/2025-06-18/basic/authorization"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "RFC 8707 OAuth 2.0 Resource Indicators",
+          "source_type": "technical_specification",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://datatracker.ietf.org/doc/html/rfc8707",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://datatracker.ietf.org/doc/html/rfc8707"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "RFC 6750 OAuth 2.0 Bearer Token Usage",
+          "source_type": "technical_specification",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://datatracker.ietf.org/doc/html/rfc6750",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://datatracker.ietf.org/doc/html/rfc6750"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\api-mcp-roots-and-resource-discovery.md",
       "article_id": "api-mcp-roots-and-resource-discovery",
       "generation_method": "ai_structured",
@@ -50795,6 +51039,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\data-parameterized-sql-and-agent-generated-queries.md",
+      "article_id": "data-parameterized-sql-and-agent-generated-queries",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "BigQuery Parameterized Queries",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.cloud.google.com/bigquery/docs/parameterized-queries",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/bigquery/docs/parameterized-queries?hl=he"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Snowflake Bind Variables",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.snowflake.com/en/sql-reference/bind-variables",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.snowflake.com/en/sql-reference/bind-variables"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OWASP SQL Injection Prevention Cheat Sheet",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\data-parquet-page-indexes-and-bloom-filters.md",
       "article_id": "data-parquet-page-indexes-and-bloom-filters",
       "generation_method": "ai_structured",
@@ -52112,6 +52417,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://clickhouse.com/docs/development/architecture"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\data-warehouse-cost-controls-and-query-quotas.md",
+      "article_id": "data-warehouse-cost-controls-and-query-quotas",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "BigQuery Custom Quotas",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.cloud.google.com/bigquery/docs/custom-quotas",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/bigquery/docs/custom-quotas"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Snowflake Resource Monitors",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.snowflake.com/en/user-guide/resource-monitors",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.snowflake.com/en/user-guide/resource-monitors"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "AWS Budgets",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html"
               },
               "match": true
             }
@@ -79755,22 +80121,22 @@
       "sources_unreachable": 0
     },
     {
-      "file": "content\\ai\\agent-service-catalogs-and-ownership-metadata.md",
-      "article_id": "agent-service-catalogs-and-ownership-metadata",
+      "file": "content\\ai\\agent-branch-protection-and-required-status-checks.md",
+      "article_id": "agent-branch-protection-and-required-status-checks",
       "generation_method": "ai_structured",
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Backstage Software Catalog",
+          "source_title": "GitHub Managing Protected Branches",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://backstage.io/docs/features/software-catalog/",
+              "identifier": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://backstage.io/docs/features/software-catalog/"
+                "final_url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches"
               },
               "match": true
             }
@@ -79778,16 +80144,16 @@
           "all_verified": true
         },
         {
-          "source_title": "Backstage Descriptor Format",
+          "source_title": "GitHub Troubleshooting Required Status Checks",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://backstage.io/docs/features/software-catalog/descriptor-format/",
+              "identifier": "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/collaborating-on-repositories-with-code-quality-features/troubleshooting-required-status-checks",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://backstage.io/docs/features/software-catalog/descriptor-format/"
+                "final_url": "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/collaborating-on-repositories-with-code-quality-features/troubleshooting-required-status-checks"
               },
               "match": true
             }
@@ -79795,16 +80161,77 @@
           "all_verified": true
         },
         {
-          "source_title": "Harness IDP Catalog Overview",
+          "source_title": "GitLab Protected Branches",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://developer.harness.io/docs/internal-developer-portal/catalog/overview/",
+              "identifier": "https://docs.gitlab.com/user/project/repository/branches/protected/",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://developer.harness.io/docs/internal-developer-portal/catalog/overview/"
+                "final_url": "https://docs.gitlab.com/user/project/repository/branches/protected/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-runner-images-and-ci-environment-versions.md",
+      "article_id": "agent-runner-images-and-ci-environment-versions",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "GitHub-Hosted Runners",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/actions/reference/runners/github-hosted-runners",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/actions/reference/runners/github-hosted-runners"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GitHub Actions Runner Images",
+          "source_type": "software_repository",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://github.com/actions/runner-images",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://github.com/actions/runner-images"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GitLab Runner Executors",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.gitlab.com/runner/executors/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.gitlab.com/runner/executors/"
               },
               "match": true
             }
@@ -79840,22 +80267,22 @@
       "sources_unreachable": 1
     },
     {
-      "file": "content\\ai\\llm-evaluation-trace-sampling-and-annotation-queues.md",
-      "article_id": "llm-evaluation-trace-sampling-and-annotation-queues",
+      "file": "content\\ai\\retrieval-embedding-input-limits-and-truncation.md",
+      "article_id": "retrieval-embedding-input-limits-and-truncation",
       "generation_method": "ai_structured",
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "LangSmith Evaluation Concepts",
+          "source_title": "Cohere Embed API",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.langchain.com/langsmith/evaluation-concepts",
+              "identifier": "https://docs.cohere.com/v2/reference/embed",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://docs.langchain.com/langsmith/evaluation-concepts"
+                "final_url": "https://docs.cohere.com/v2/reference/embed"
               },
               "match": true
             }
@@ -79863,16 +80290,16 @@
           "all_verified": true
         },
         {
-          "source_title": "LangSmith Annotation Queues",
+          "source_title": "Vertex AI Text Embeddings API",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.langchain.com/langsmith/annotation-queues",
+              "identifier": "https://cloud.google.com/vertex-ai/generative-ai/docs/model-reference/text-embeddings-api",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://docs.langchain.com/langsmith/annotation-queues"
+                "final_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/reference/models/text-embeddings-api"
               },
               "match": true
             }
@@ -79880,16 +80307,16 @@
           "all_verified": true
         },
         {
-          "source_title": "OpenTelemetry Sampling",
+          "source_title": "Voyage AI Embeddings API",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://opentelemetry.io/docs/concepts/sampling/",
+              "identifier": "https://docs.voyageai.com/reference/embeddings-api",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://opentelemetry.io/docs/concepts/sampling/"
+                "final_url": "https://docs.voyageai.com/reference/embeddings-api"
               },
               "match": true
             }
@@ -79901,22 +80328,22 @@
       "sources_unreachable": 0
     },
     {
-      "file": "content\\ai\\rag-connector-throttling-and-crawl-rate-limits.md",
-      "article_id": "rag-connector-throttling-and-crawl-rate-limits",
+      "file": "content\\ai\\retrieval-multilingual-analyzers-and-language-detection.md",
+      "article_id": "retrieval-multilingual-analyzers-and-language-detection",
       "generation_method": "ai_structured",
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Microsoft Graph Throttling",
+          "source_title": "Elasticsearch Language Analyzers",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://learn.microsoft.com/en-us/graph/throttling",
+              "identifier": "https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-lang-analyzer.html",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://learn.microsoft.com/en-us/graph/throttling"
+                "final_url": "https://www.elastic.co/docs/reference/text-analysis/analysis-lang-analyzer"
               },
               "match": true
             }
@@ -79924,16 +80351,16 @@
           "all_verified": true
         },
         {
-          "source_title": "Google Drive API Limits",
+          "source_title": "Azure AI Search Analyzers",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://developers.google.com/drive/api/guides/limits",
+              "identifier": "https://learn.microsoft.com/en-us/azure/search/search-analyzers",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://developers.google.com/workspace/drive/api/guides/limits"
+                "final_url": "https://learn.microsoft.com/en-us/azure/search/search-analyzers"
               },
               "match": true
             }
@@ -79941,16 +80368,16 @@
           "all_verified": true
         },
         {
-          "source_title": "Atlassian Cloud Rate Limiting",
+          "source_title": "OpenSearch Language Analyzers",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://developer.atlassian.com/cloud/confluence/rate-limiting/",
+              "identifier": "https://docs.opensearch.org/docs/latest/analyzers/language-analyzers/",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://developer.atlassian.com/cloud/confluence/rate-limiting/"
+                "final_url": "https://docs.opensearch.org/latest/analyzers/language-analyzers/"
               },
               "match": true
             }
@@ -80234,67 +80661,6 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 1
-    },
-    {
-      "file": "content\\computer-science\\api-mcp-authorization-and-oauth-protected-resources.md",
-      "article_id": "api-mcp-authorization-and-oauth-protected-resources",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "MCP Authorization",
-          "source_type": "technical_specification",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://modelcontextprotocol.io/specification/2025-06-18/basic/authorization",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://modelcontextprotocol.io/specification/2025-06-18/basic/authorization"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "RFC 8707 OAuth 2.0 Resource Indicators",
-          "source_type": "technical_specification",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://datatracker.ietf.org/doc/html/rfc8707",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://datatracker.ietf.org/doc/html/rfc8707"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "RFC 6750 OAuth 2.0 Bearer Token Usage",
-          "source_type": "technical_specification",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://datatracker.ietf.org/doc/html/rfc6750",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://datatracker.ietf.org/doc/html/rfc6750"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\bloom-filters-space-efficient-probabilistic-data-structures.md",
@@ -80852,22 +81218,22 @@
       "sources_unreachable": 3
     },
     {
-      "file": "content\\computer-science\\data-parameterized-sql-and-agent-generated-queries.md",
-      "article_id": "data-parameterized-sql-and-agent-generated-queries",
+      "file": "content\\computer-science\\data-query-dry-runs-and-byte-estimates.md",
+      "article_id": "data-query-dry-runs-and-byte-estimates",
       "generation_method": "ai_structured",
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "BigQuery Parameterized Queries",
+          "source_title": "BigQuery Running Queries",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.cloud.google.com/bigquery/docs/parameterized-queries",
+              "identifier": "https://docs.cloud.google.com/bigquery/docs/running-queries",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://docs.cloud.google.com/bigquery/docs/parameterized-queries?hl=he"
+                "final_url": "https://docs.cloud.google.com/bigquery/docs/running-queries?hl=es"
               },
               "match": true
             }
@@ -80875,16 +81241,16 @@
           "all_verified": true
         },
         {
-          "source_title": "Snowflake Bind Variables",
+          "source_title": "BigQuery Cost Best Practices",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.snowflake.com/en/sql-reference/bind-variables",
+              "identifier": "https://docs.cloud.google.com/bigquery/docs/best-practices-costs",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://docs.snowflake.com/en/sql-reference/bind-variables"
+                "final_url": "https://docs.cloud.google.com/bigquery/docs/best-practices-costs"
               },
               "match": true
             }
@@ -80892,16 +81258,16 @@
           "all_verified": true
         },
         {
-          "source_title": "OWASP SQL Injection Prevention Cheat Sheet",
+          "source_title": "Amazon Athena EXPLAIN Statement",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html",
+              "identifier": "https://docs.aws.amazon.com/athena/latest/ug/athena-explain-statement.html",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html"
+                "final_url": "https://docs.aws.amazon.com/athena/latest/ug/athena-explain-statement.html"
               },
               "match": true
             }
@@ -80913,22 +81279,22 @@
       "sources_unreachable": 0
     },
     {
-      "file": "content\\computer-science\\data-warehouse-cost-controls-and-query-quotas.md",
-      "article_id": "data-warehouse-cost-controls-and-query-quotas",
+      "file": "content\\computer-science\\data-query-timeouts-and-cancellation-controls.md",
+      "article_id": "data-query-timeouts-and-cancellation-controls",
       "generation_method": "ai_structured",
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "BigQuery Custom Quotas",
+          "source_title": "PostgreSQL statement_timeout",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.cloud.google.com/bigquery/docs/custom-quotas",
+              "identifier": "https://www.postgresql.org/docs/current/runtime-config-client.html",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://docs.cloud.google.com/bigquery/docs/custom-quotas"
+                "final_url": "https://www.postgresql.org/docs/current/runtime-config-client.html"
               },
               "match": true
             }
@@ -80936,16 +81302,16 @@
           "all_verified": true
         },
         {
-          "source_title": "Snowflake Resource Monitors",
+          "source_title": "Snowflake SYSTEM$CANCEL_QUERY",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.snowflake.com/en/user-guide/resource-monitors",
+              "identifier": "https://docs.snowflake.com/en/sql-reference/functions/system_cancel_query",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://docs.snowflake.com/en/user-guide/resource-monitors"
+                "final_url": "https://docs.snowflake.com/en/sql-reference/functions/system_cancel_query"
               },
               "match": true
             }
@@ -80953,16 +81319,16 @@
           "all_verified": true
         },
         {
-          "source_title": "AWS Budgets",
+          "source_title": "BigQuery jobs.cancel",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html",
+              "identifier": "https://cloud.google.com/bigquery/docs/reference/rest/v2/jobs/cancel",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html"
+                "final_url": "https://docs.cloud.google.com/bigquery/docs/reference/rest/v2/jobs/cancel"
               },
               "match": true
             }
@@ -84213,6 +84579,128 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 3
+    },
+    {
+      "file": "content\\computer-science\\test-flakiness-history-and-quarantine-for-agents.md",
+      "article_id": "test-flakiness-history-and-quarantine-for-agents",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Playwright Test Retries",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://playwright.dev/docs/test-retries",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://playwright.dev/docs/test-retries"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GitLab Quarantining Tests",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.gitlab.com/development/testing_guide/quarantining_tests/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.gitlab.com/development/testing_guide/quarantining_tests/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "pytest Skip and xfail",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.pytest.org/en/stable/how-to/skipping.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.pytest.org/en/stable/how-to/skipping.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\test-snapshots-and-golden-files-for-code-agents.md",
+      "article_id": "test-snapshots-and-golden-files-for-code-agents",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Playwright Test Snapshots",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://playwright.dev/docs/test-snapshots",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://playwright.dev/docs/test-snapshots"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Playwright ARIA Snapshots",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://playwright.dev/docs/aria-snapshots",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://playwright.dev/docs/aria-snapshots"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Vitest Snapshot Testing",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://main.vitest.dev/guide/snapshot",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://main.vitest.dev/guide/snapshot"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\the-actor-model-concurrency-through-message-passing.md",
