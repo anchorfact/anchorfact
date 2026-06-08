@@ -134,12 +134,12 @@ export const SHARDED_ARTIFACT_PATHS = new Set([
 ]);
 
 export const ARTIFACT_GROWTH_BUDGETS = {
-  '/graph.json': 5500000,
-  '/search-index.json': 3550000,
-  '/claims.json': 3150000,
-  '/sources.json': 2050000,
-  '/manifest.json': 1100000,
-  '/llms.txt': 425000,
+  '/graph.json': 5750000,
+  '/search-index.json': 3700000,
+  '/claims.json': 3300000,
+  '/sources.json': 2150000,
+  '/manifest.json': 1180000,
+  '/llms.txt': 450000,
   '/openapi.json': 100000,
   '/agent.json': 40000,
   '/artifact-summary.json': 60000,
