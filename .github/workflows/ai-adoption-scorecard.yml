@@ -32,14 +32,14 @@ jobs:
 
       - name: Run AI adoption scorecard
         env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN || secrets.CLOUDFLARE_API }}
         run: |
           mkdir -p reports
           npm run usage:adoption -- --lookback-minutes 1430 --write reports/ai-adoption-scorecard.md --write-json reports/ai-adoption-scorecard.json
 
       - name: Run AI route reliability alert
         env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN || secrets.CLOUDFLARE_API }}
         run: |
           npm run usage:adoption -- --lookback-minutes 120 --write reports/ai-adoption-reliability.md --write-json reports/ai-adoption-reliability.json --fail-on-reliability-break
 

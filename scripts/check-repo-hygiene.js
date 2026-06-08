@@ -975,7 +975,7 @@ function checkAiAdoptionScorecardWorkflow(failures) {
     [/workflow_dispatch:/, 'workflow should support manual dispatch'],
     [/cron:\s*'47 1 \* \* \*'/, 'workflow should run daily at the expected cron schedule'],
     [/permissions:\s*\r?\n\s+contents:\s+read/, 'workflow should use read-only contents permission'],
-    [/CLOUDFLARE_API_TOKEN:\s*\$\{\{\s*secrets\.CLOUDFLARE_API_TOKEN\s*\}\}/, 'workflow should read Cloudflare token from GitHub Secrets'],
+    [/CLOUDFLARE_API_TOKEN:\s*\$\{\{\s*secrets\.CLOUDFLARE_API_TOKEN\s*\|\|\s*secrets\.CLOUDFLARE_API\s*\}\}/, 'workflow should read Cloudflare token from GitHub Secrets with the legacy secret fallback'],
     [/npm run usage:adoption/, 'workflow should run the AI adoption scorecard script'],
     [/--lookback-minutes 1430/, 'workflow should retain a near-24-hour adoption scorecard window'],
     [/--lookback-minutes 120/, 'workflow should use a short reliability alert window'],

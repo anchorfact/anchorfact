@@ -53,7 +53,7 @@ jobs:
 
       - name: Run AI adoption snapshot
         env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN || secrets.CLOUDFLARE_API }}
         run: npm run usage:adoption -- --lookback-minutes 1430 --write reports/ai-adoption-scorecard.md --write-json reports/ai-adoption-scorecard.json
 
       - name: Write API readiness scorecard
