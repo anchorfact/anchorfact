@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-08T20:29:08.675Z",
-    "total_articles": 1561,
+    "generated": "2026-06-08T20:47:00.257Z",
+    "total_articles": 1565,
     "total_with_errors": 0,
     "average_sources_per_article": "2.6",
     "overall_verification_rate": "91.7%",
-    "elapsed_ms": 101068,
-    "elapsed_sec": "101.1",
+    "elapsed_ms": 103150,
+    "elapsed_sec": "103.2",
     "concurrency": 3
   },
   "articles": [
@@ -41035,6 +41035,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\api-cloudflare-workers-execution-context.md",
+      "article_id": "api-cloudflare-workers-execution-context",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Cloudflare Workers Fetch Handler",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.cloudflare.com/workers/runtime-apis/handlers/fetch/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.cloudflare.com/workers/runtime-apis/handlers/fetch/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Cloudflare Workers Context",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.cloudflare.com/workers/runtime-apis/context/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.cloudflare.com/workers/runtime-apis/context/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Cloudflare Workers Limits",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.cloudflare.com/workers/platform/limits/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.cloudflare.com/workers/platform/limits/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\api-conditional-requests-etags-and-cache-validation.md",
       "article_id": "api-conditional-requests-etags-and-cache-validation",
       "generation_method": "ai_structured",
@@ -42206,6 +42267,67 @@
         }
       ],
       "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\api-http-ratelimit-fields-and-structured-fields.md",
+      "article_id": "api-http-ratelimit-fields-and-structured-fields",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "RFC 9333 RateLimit Fields",
+          "source_type": "rfc",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://datatracker.ietf.org/doc/html/rfc9333",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://datatracker.ietf.org/doc/html/rfc9333"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "RFC 8941 Structured Field Values",
+          "source_type": "rfc",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://datatracker.ietf.org/doc/html/rfc8941",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://datatracker.ietf.org/doc/html/rfc8941"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "RFC 9110 HTTP Semantics",
+          "source_type": "rfc",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://datatracker.ietf.org/doc/html/rfc9110",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://datatracker.ietf.org/doc/html/rfc9110"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
       "sources_unreachable": 0
     },
     {
@@ -52510,6 +52632,67 @@
         }
       ],
       "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\data-postgresql-explain-analyze-and-buffers.md",
+      "article_id": "data-postgresql-explain-analyze-and-buffers",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "PostgreSQL EXPLAIN",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.postgresql.org/docs/current/sql-explain.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.postgresql.org/docs/current/sql-explain.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "PostgreSQL Planner Statistics",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.postgresql.org/docs/current/planner-stats.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.postgresql.org/docs/current/planner-stats.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "PostgreSQL Runtime Query Planning",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.postgresql.org/docs/current/runtime-config-query.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.postgresql.org/docs/current/runtime-config-query.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
       "sources_unreachable": 0
     },
     {
@@ -64256,6 +64439,67 @@
       "sources_unreachable": 0,
       "manual_reviewed": true,
       "manual_reviewed_at": "2026-05-28"
+    },
+    {
+      "file": "content\\computer-science\\web-robots-meta-and-x-robots-tag-controls.md",
+      "article_id": "web-robots-meta-and-x-robots-tag-controls",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Google Robots Meta Tag",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.google.com/search/docs/crawling-indexing/robots-meta-tag",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.google.com/search/docs/crawling-indexing/robots-meta-tag?hl=fr"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "RFC 9309 Robots Exclusion Protocol",
+          "source_type": "rfc",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://datatracker.ietf.org/doc/html/rfc9309",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://datatracker.ietf.org/doc/html/rfc9309"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Google robots.txt Introduction",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.google.com/search/docs/crawling-indexing/robots/intro",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.google.com/search/docs/crawling-indexing/robots/intro"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content/computer-science/web-storage-api.md",
@@ -81463,6 +81707,128 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\agent-object-storage-presigned-urls-and-expiry.md",
+      "article_id": "agent-object-storage-presigned-urls-and-expiry",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Amazon S3 Presigned URLs",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-presigned-url.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-presigned-url.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Google Cloud Storage Signed URLs",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://cloud.google.com/storage/docs/access-control/signed-urls",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/storage/docs/access-control/signed-urls"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Azure Storage Shared Access Signatures",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://learn.microsoft.com/en-us/azure/storage/common/storage-sas-overview",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.microsoft.com/en-us/azure/storage/common/storage-sas-overview"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-opentelemetry-metrics-temporality-and-exemplars.md",
+      "article_id": "agent-opentelemetry-metrics-temporality-and-exemplars",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "OpenTelemetry Metrics",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://opentelemetry.io/docs/concepts/signals/metrics/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://opentelemetry.io/docs/concepts/signals/metrics/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenTelemetry Metrics Data Model",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://opentelemetry.io/docs/specs/otel/metrics/data-model/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://opentelemetry.io/docs/specs/otel/metrics/data-model/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenTelemetry Metrics SDK",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://opentelemetry.io/docs/specs/otel/metrics/sdk/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://opentelemetry.io/docs/specs/otel/metrics/sdk/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\ai-for-genomics-variant-calling-gene-expression-prediction-and-protein-dna-binding.md",
       "article_id": "kb-2026-00005",
       "generation_method": "ai_structured",
@@ -81761,83 +82127,22 @@
       "sources_unreachable": 1
     },
     {
-      "file": "content\\computer-science\\api-cloudflare-workers-execution-context.md",
-      "article_id": "api-cloudflare-workers-execution-context",
+      "file": "content\\computer-science\\api-oauth-pkce-and-public-clients.md",
+      "article_id": "api-oauth-pkce-and-public-clients",
       "generation_method": "ai_structured",
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Cloudflare Workers Fetch Handler",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://developers.cloudflare.com/workers/runtime-apis/handlers/fetch/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://developers.cloudflare.com/workers/runtime-apis/handlers/fetch/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Cloudflare Workers Context",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://developers.cloudflare.com/workers/runtime-apis/context/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://developers.cloudflare.com/workers/runtime-apis/context/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Cloudflare Workers Limits",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://developers.cloudflare.com/workers/platform/limits/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://developers.cloudflare.com/workers/platform/limits/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
-    },
-    {
-      "file": "content\\computer-science\\api-http-ratelimit-fields-and-structured-fields.md",
-      "article_id": "api-http-ratelimit-fields-and-structured-fields",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "RFC 9333 RateLimit Fields",
+          "source_title": "RFC 7636 OAuth PKCE",
           "source_type": "rfc",
           "results": [
             {
               "method": "url",
-              "identifier": "https://datatracker.ietf.org/doc/html/rfc9333",
+              "identifier": "https://datatracker.ietf.org/doc/html/rfc7636",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://datatracker.ietf.org/doc/html/rfc9333"
+                "final_url": "https://datatracker.ietf.org/doc/html/rfc7636"
               },
               "match": true
             }
@@ -81845,16 +82150,16 @@
           "all_verified": true
         },
         {
-          "source_title": "RFC 8941 Structured Field Values",
+          "source_title": "RFC 9700 OAuth 2.0 Security BCP",
           "source_type": "rfc",
           "results": [
             {
               "method": "url",
-              "identifier": "https://datatracker.ietf.org/doc/html/rfc8941",
+              "identifier": "https://datatracker.ietf.org/doc/html/rfc9700",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://datatracker.ietf.org/doc/html/rfc8941"
+                "final_url": "https://datatracker.ietf.org/doc/html/rfc9700"
               },
               "match": true
             }
@@ -81862,16 +82167,16 @@
           "all_verified": true
         },
         {
-          "source_title": "RFC 9110 HTTP Semantics",
+          "source_title": "RFC 8414 OAuth 2.0 Authorization Server Metadata",
           "source_type": "rfc",
           "results": [
             {
               "method": "url",
-              "identifier": "https://datatracker.ietf.org/doc/html/rfc9110",
+              "identifier": "https://datatracker.ietf.org/doc/html/rfc8414",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://datatracker.ietf.org/doc/html/rfc9110"
+                "final_url": "https://datatracker.ietf.org/doc/html/rfc8414"
               },
               "match": true
             }
@@ -82438,22 +82743,22 @@
       "sources_unreachable": 3
     },
     {
-      "file": "content\\computer-science\\data-postgresql-explain-analyze-and-buffers.md",
-      "article_id": "data-postgresql-explain-analyze-and-buffers",
+      "file": "content\\computer-science\\data-spark-structured-streaming-checkpoints-and-state-store.md",
+      "article_id": "data-spark-structured-streaming-checkpoints-and-state-store",
       "generation_method": "ai_structured",
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "PostgreSQL EXPLAIN",
+          "source_title": "Spark Structured Streaming Programming Guide",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.postgresql.org/docs/current/sql-explain.html",
+              "identifier": "https://spark.apache.org/docs/latest/streaming/apis-on-dataframes-and-datasets.html",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://www.postgresql.org/docs/current/sql-explain.html"
+                "final_url": "https://spark.apache.org/docs/latest/streaming/apis-on-dataframes-and-datasets.html"
               },
               "match": true
             }
@@ -82461,16 +82766,16 @@
           "all_verified": true
         },
         {
-          "source_title": "PostgreSQL Planner Statistics",
+          "source_title": "Spark Structured Streaming Additional Information",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.postgresql.org/docs/current/planner-stats.html",
+              "identifier": "https://spark.apache.org/docs/latest/streaming/additional-information.html",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://www.postgresql.org/docs/current/planner-stats.html"
+                "final_url": "https://spark.apache.org/docs/latest/streaming/additional-information.html"
               },
               "match": true
             }
@@ -82478,16 +82783,16 @@
           "all_verified": true
         },
         {
-          "source_title": "PostgreSQL Runtime Query Planning",
+          "source_title": "Spark Structured Streaming State Data Source Guide",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.postgresql.org/docs/current/runtime-config-query.html",
+              "identifier": "https://spark.apache.org/docs/latest/streaming/structured-streaming-state-data-source.html",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://www.postgresql.org/docs/current/runtime-config-query.html"
+                "final_url": "https://spark.apache.org/docs/latest/streaming/structured-streaming-state-data-source.html"
               },
               "match": true
             }
@@ -85235,10 +85540,7 @@
               "method": "url",
               "identifier": "https://www.informit.com/clean-architecture/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.informit.com/404.aspx?aspxerrorpath=/clean-architecture"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -86029,67 +86331,6 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 3
-    },
-    {
-      "file": "content\\computer-science\\web-robots-meta-and-x-robots-tag-controls.md",
-      "article_id": "web-robots-meta-and-x-robots-tag-controls",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "Google Robots Meta Tag",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://developers.google.com/search/docs/crawling-indexing/robots-meta-tag",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://developers.google.com/search/docs/crawling-indexing/robots-meta-tag?hl=fr"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "RFC 9309 Robots Exclusion Protocol",
-          "source_type": "rfc",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://datatracker.ietf.org/doc/html/rfc9309",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://datatracker.ietf.org/doc/html/rfc9309"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Google robots.txt Introduction",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://developers.google.com/search/docs/crawling-indexing/robots/intro",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://developers.google.com/search/docs/crawling-indexing/robots/intro"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\zero-trust-architecture.md",
