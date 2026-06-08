@@ -80,9 +80,17 @@ test('textHygieneFailures catches stale production claim metrics', () => {
 test('textHygieneFailures accepts current production claim metrics', () => {
   const failures = textHygieneFailures(
     'docs/LAUNCH_READINESS_2026-05-27.md',
-    'Snapshot: 1257 public / 300 draft / 3931 claims.'
+    'Snapshot: 1261 public / 300 draft / 3943 claims.'
   );
   assertEq(failures, []);
+});
+
+test('textHygieneFailures catches previous api-rate-limit and edge snapshot metrics', () => {
+  const failures = textHygieneFailures(
+    'docs/LAUNCH_READINESS_2026-05-27.md',
+    'Snapshot: 1257 public / 300 draft / 3931 claims.'
+  );
+  assert(failures.some(failure => failure.includes('stale launch metrics')), 'previous production snapshot should fail hygiene');
 });
 
 test('textHygieneFailures catches previous agent-command-and-dbt snapshot metrics', () => {
