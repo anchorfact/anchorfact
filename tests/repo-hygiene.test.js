@@ -80,9 +80,17 @@ test('textHygieneFailures catches stale production claim metrics', () => {
 test('textHygieneFailures accepts current production claim metrics', () => {
   const failures = textHygieneFailures(
     'docs/LAUNCH_READINESS_2026-05-27.md',
-    'Snapshot: 1265 public / 300 draft / 3955 claims.'
+    'Snapshot: 1268 public / 300 draft / 3964 claims.'
   );
   assertEq(failures, []);
+});
+
+test('textHygieneFailures catches previous kubernetes-oauth-snowflake snapshot metrics', () => {
+  const failures = textHygieneFailures(
+    'docs/LAUNCH_READINESS_2026-05-27.md',
+    'Snapshot: 1265 public / 300 draft / 3955 claims.'
+  );
+  assert(failures.some(failure => failure.includes('stale launch metrics')), 'previous production snapshot should fail hygiene');
 });
 
 test('textHygieneFailures catches previous object-storage-and-spark snapshot metrics', () => {
