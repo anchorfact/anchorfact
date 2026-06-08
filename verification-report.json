@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-08T19:05:59.706Z",
-    "total_articles": 1543,
+    "generated": "2026-06-08T19:39:30.951Z",
+    "total_articles": 1549,
     "total_with_errors": 0,
     "average_sources_per_article": "2.6",
     "overall_verification_rate": "91.6%",
-    "elapsed_ms": 104656,
-    "elapsed_sec": "104.7",
+    "elapsed_ms": 95833,
+    "elapsed_sec": "95.8",
     "concurrency": 3
   },
   "articles": [
@@ -826,6 +826,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\agent-branch-protection-and-required-status-checks.md",
+      "article_id": "agent-branch-protection-and-required-status-checks",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "GitHub Managing Protected Branches",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GitHub Troubleshooting Required Status Checks",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/collaborating-on-repositories-with-code-quality-features/troubleshooting-required-status-checks",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/collaborating-on-repositories-with-code-quality-features/troubleshooting-required-status-checks"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GitLab Protected Branches",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.gitlab.com/user/project/repository/branches/protected/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.gitlab.com/user/project/repository/branches/protected/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\agent-browser-console-network-and-har-logs.md",
       "article_id": "agent-browser-console-network-and-har-logs",
       "generation_method": "ai_structured",
@@ -937,6 +998,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://playwright.dev/docs/api/class-browsercontext"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-browser-locators-and-trace-evidence.md",
+      "article_id": "agent-browser-locators-and-trace-evidence",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Playwright Locators",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://playwright.dev/docs/locators",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://playwright.dev/docs/locators"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Playwright Trace Viewer",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://playwright.dev/docs/trace-viewer",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://playwright.dev/docs/trace-viewer"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Selenium Locator Strategies",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.selenium.dev/documentation/webdriver/elements/locators/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.selenium.dev/documentation/webdriver/elements/locators/"
               },
               "match": true
             }
@@ -4884,6 +5006,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\agent-mcp-oauth-authorization-discovery.md",
+      "article_id": "agent-mcp-oauth-authorization-discovery",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "MCP Authorization",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://modelcontextprotocol.io/specification/2025-06-18/basic/authorization",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://modelcontextprotocol.io/specification/2025-06-18/basic/authorization"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "RFC 8414 OAuth 2.0 Authorization Server Metadata",
+          "source_type": "rfc",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://datatracker.ietf.org/doc/html/rfc8414",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://datatracker.ietf.org/doc/html/rfc8414"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "RFC 9728 OAuth 2.0 Protected Resource Metadata",
+          "source_type": "rfc",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://datatracker.ietf.org/doc/html/rfc9728",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://datatracker.ietf.org/doc/html/rfc9728"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\agent-memory-and-session-state.md",
       "article_id": "agent-memory-and-session-state",
       "generation_method": "ai_structured",
@@ -6333,6 +6516,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://www.atlassian.com/incident-management/incident-response"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-runner-images-and-ci-environment-versions.md",
+      "article_id": "agent-runner-images-and-ci-environment-versions",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "GitHub-Hosted Runners",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/actions/reference/runners/github-hosted-runners",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/actions/reference/runners/github-hosted-runners"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GitHub Actions Runner Images",
+          "source_type": "software_repository",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://github.com/actions/runner-images",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://github.com/actions/runner-images"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GitLab Runner Executors",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.gitlab.com/runner/executors/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.gitlab.com/runner/executors/"
               },
               "match": true
             }
@@ -31747,6 +31991,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\retrieval-embedding-input-limits-and-truncation.md",
+      "article_id": "retrieval-embedding-input-limits-and-truncation",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Cohere Embed API",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.cohere.com/v2/reference/embed",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cohere.com/v2/reference/embed"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Vertex AI Text Embeddings API",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://cloud.google.com/vertex-ai/generative-ai/docs/model-reference/text-embeddings-api",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/reference/models/text-embeddings-api"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Voyage AI Embeddings API",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.voyageai.com/reference/embeddings-api",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.voyageai.com/reference/embeddings-api"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\retrieval-evaluation-with-ndcg-and-mrr.md",
       "article_id": "retrieval-evaluation-with-ndcg-and-mrr",
       "generation_method": "ai_structured",
@@ -32517,6 +32822,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\retrieval-multilingual-analyzers-and-language-detection.md",
+      "article_id": "retrieval-multilingual-analyzers-and-language-detection",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Elasticsearch Language Analyzers",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-lang-analyzer.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.elastic.co/docs/reference/text-analysis/analysis-lang-analyzer"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Azure AI Search Analyzers",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://learn.microsoft.com/en-us/azure/search/search-analyzers",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.microsoft.com/en-us/azure/search/search-analyzers"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenSearch Language Analyzers",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.opensearch.org/docs/latest/analyzers/language-analyzers/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.opensearch.org/latest/analyzers/language-analyzers/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\retrieval-multivector-indexing.md",
       "article_id": "retrieval-multivector-indexing",
       "generation_method": "ai_structured",
@@ -33153,6 +33519,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://docs.langchain.com/oss/python/langchain/retrieval"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\retrieval-query-synonyms-and-expansion-rules.md",
+      "article_id": "retrieval-query-synonyms-and-expansion-rules",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Elasticsearch Synonym Token Filter",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-synonym-tokenfilter.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.elastic.co/docs/reference/text-analysis/analysis-synonym-tokenfilter"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Azure AI Search Synonyms",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://learn.microsoft.com/en-us/azure/search/search-synonyms",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.microsoft.com/en-us/azure/search/search-synonyms"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenSearch Synonym Token Filter",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.opensearch.org/latest/analyzers/token-filters/synonym/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.opensearch.org/latest/analyzers/token-filters/synonym/"
               },
               "match": true
             }
@@ -42622,6 +43049,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\api-openapi-links-and-operation-chaining.md",
+      "article_id": "api-openapi-links-and-operation-chaining",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "OpenAPI 3.1.1 Link Object",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://spec.openapis.org/oas/v3.1.1.html#link-object",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://spec.openapis.org/oas/v3.1.1.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenAPI 3.1.1 Runtime Expressions",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://spec.openapis.org/oas/v3.1.1.html#runtime-expressions",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://spec.openapis.org/oas/v3.1.1.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Learn OpenAPI Links",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://learn.openapis.org/specification/links.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.openapis.org/specification/links.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\api-openapi-parameter-serialization-style-and-explode.md",
       "article_id": "api-openapi-parameter-serialization-style-and-explode",
       "generation_method": "ai_structured",
@@ -51659,6 +52147,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\data-query-dry-runs-and-byte-estimates.md",
+      "article_id": "data-query-dry-runs-and-byte-estimates",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "BigQuery Running Queries",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.cloud.google.com/bigquery/docs/running-queries",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/bigquery/docs/running-queries?hl=es"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "BigQuery Cost Best Practices",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.cloud.google.com/bigquery/docs/best-practices-costs",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/bigquery/docs/best-practices-costs"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Amazon Athena EXPLAIN Statement",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.aws.amazon.com/athena/latest/ug/athena-explain-statement.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.aws.amazon.com/athena/latest/ug/athena-explain-statement.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\data-query-result-caches-and-materialized-results.md",
       "article_id": "data-query-result-caches-and-materialized-results",
       "generation_method": "ai_structured",
@@ -51709,6 +52258,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://docs.databricks.com/aws/en/ldp/dbsql/materialized"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\data-query-timeouts-and-cancellation-controls.md",
+      "article_id": "data-query-timeouts-and-cancellation-controls",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "PostgreSQL statement_timeout",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.postgresql.org/docs/current/runtime-config-client.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.postgresql.org/docs/current/runtime-config-client.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Snowflake SYSTEM$CANCEL_QUERY",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.snowflake.com/en/sql-reference/functions/system_cancel_query",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.snowflake.com/en/sql-reference/functions/system_cancel_query"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "BigQuery jobs.cancel",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://cloud.google.com/bigquery/docs/reference/rest/v2/jobs/cancel",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/bigquery/docs/reference/rest/v2/jobs/cancel"
               },
               "match": true
             }
@@ -51875,6 +52485,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://docs.snowflake.com/en/user-guide/security-row-intro"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\data-schema-registry-compatibility-modes.md",
+      "article_id": "data-schema-registry-compatibility-modes",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Confluent Schema Evolution",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.confluent.io/platform/current/schema-registry/fundamentals/schema-evolution.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.confluent.io/platform/current/schema-registry/fundamentals/schema-evolution.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "AWS Glue Schema Registry",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.aws.amazon.com/glue/latest/dg/schema-registry.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.aws.amazon.com/glue/latest/dg/schema-registry.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Apicurio Registry Compatibility Modes",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.apicur.io/registry/docs/apicurio-registry/3.3.x/getting-started/assembly-registry-compatibility-modes.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.apicur.io/registry/docs/apicurio-registry/3.3.x/getting-started/assembly-registry-compatibility-modes.html"
               },
               "match": true
             }
@@ -62324,6 +62995,128 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://jestjs.io/docs/configuration"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\test-flakiness-history-and-quarantine-for-agents.md",
+      "article_id": "test-flakiness-history-and-quarantine-for-agents",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Playwright Test Retries",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://playwright.dev/docs/test-retries",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://playwright.dev/docs/test-retries"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GitLab Quarantining Tests",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.gitlab.com/development/testing_guide/quarantining_tests/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.gitlab.com/development/testing_guide/quarantining_tests/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "pytest Skip and xfail",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.pytest.org/en/stable/how-to/skipping.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.pytest.org/en/stable/how-to/skipping.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\test-snapshots-and-golden-files-for-code-agents.md",
+      "article_id": "test-snapshots-and-golden-files-for-code-agents",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Playwright Test Snapshots",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://playwright.dev/docs/test-snapshots",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://playwright.dev/docs/test-snapshots"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Playwright ARIA Snapshots",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://playwright.dev/docs/aria-snapshots",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://playwright.dev/docs/aria-snapshots"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Vitest Snapshot Testing",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://main.vitest.dev/guide/snapshot",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://main.vitest.dev/guide/snapshot"
               },
               "match": true
             }
@@ -80121,128 +80914,6 @@
       "sources_unreachable": 0
     },
     {
-      "file": "content\\ai\\agent-branch-protection-and-required-status-checks.md",
-      "article_id": "agent-branch-protection-and-required-status-checks",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "GitHub Managing Protected Branches",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "GitHub Troubleshooting Required Status Checks",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/collaborating-on-repositories-with-code-quality-features/troubleshooting-required-status-checks",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/collaborating-on-repositories-with-code-quality-features/troubleshooting-required-status-checks"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "GitLab Protected Branches",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.gitlab.com/user/project/repository/branches/protected/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.gitlab.com/user/project/repository/branches/protected/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
-    },
-    {
-      "file": "content\\ai\\agent-runner-images-and-ci-environment-versions.md",
-      "article_id": "agent-runner-images-and-ci-environment-versions",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "GitHub-Hosted Runners",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.github.com/en/actions/reference/runners/github-hosted-runners",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.github.com/en/actions/reference/runners/github-hosted-runners"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "GitHub Actions Runner Images",
-          "source_type": "software_repository",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://github.com/actions/runner-images",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://github.com/actions/runner-images"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "GitLab Runner Executors",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.gitlab.com/runner/executors/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.gitlab.com/runner/executors/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
-    },
-    {
       "file": "content\\ai\\ai-for-genomics-variant-calling-gene-expression-prediction-and-protein-dna-binding.md",
       "article_id": "kb-2026-00005",
       "generation_method": "ai_structured",
@@ -80267,22 +80938,22 @@
       "sources_unreachable": 1
     },
     {
-      "file": "content\\ai\\retrieval-embedding-input-limits-and-truncation.md",
-      "article_id": "retrieval-embedding-input-limits-and-truncation",
+      "file": "content\\ai\\llm-evaluation-datasets-and-regression-suites.md",
+      "article_id": "llm-evaluation-datasets-and-regression-suites",
       "generation_method": "ai_structured",
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Cohere Embed API",
+          "source_title": "OpenAI Working with Evals",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.cohere.com/v2/reference/embed",
+              "identifier": "https://platform.openai.com/docs/guides/evals",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://docs.cohere.com/v2/reference/embed"
+                "final_url": "https://developers.openai.com/api/docs/guides/evals"
               },
               "match": true
             }
@@ -80290,16 +80961,16 @@
           "all_verified": true
         },
         {
-          "source_title": "Vertex AI Text Embeddings API",
+          "source_title": "Azure Databricks MLflow Evaluation Dataset Reference",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://cloud.google.com/vertex-ai/generative-ai/docs/model-reference/text-embeddings-api",
+              "identifier": "https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/eval-monitor/concepts/eval-datasets",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/reference/models/text-embeddings-api"
+                "final_url": "https://learn.microsoft.com/en-us/azure/databricks/mlflow3/genai/eval-monitor/concepts/eval-datasets"
               },
               "match": true
             }
@@ -80307,77 +80978,16 @@
           "all_verified": true
         },
         {
-          "source_title": "Voyage AI Embeddings API",
+          "source_title": "LangSmith Evaluation",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.voyageai.com/reference/embeddings-api",
+              "identifier": "https://docs.langchain.com/langsmith/evaluation",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://docs.voyageai.com/reference/embeddings-api"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
-    },
-    {
-      "file": "content\\ai\\retrieval-multilingual-analyzers-and-language-detection.md",
-      "article_id": "retrieval-multilingual-analyzers-and-language-detection",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "Elasticsearch Language Analyzers",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-lang-analyzer.html",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://www.elastic.co/docs/reference/text-analysis/analysis-lang-analyzer"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Azure AI Search Analyzers",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://learn.microsoft.com/en-us/azure/search/search-analyzers",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://learn.microsoft.com/en-us/azure/search/search-analyzers"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "OpenSearch Language Analyzers",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.opensearch.org/docs/latest/analyzers/language-analyzers/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.opensearch.org/latest/analyzers/language-analyzers/"
+                "final_url": "https://docs.langchain.com/langsmith/evaluation"
               },
               "match": true
             }
@@ -81216,128 +81826,6 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 3
-    },
-    {
-      "file": "content\\computer-science\\data-query-dry-runs-and-byte-estimates.md",
-      "article_id": "data-query-dry-runs-and-byte-estimates",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "BigQuery Running Queries",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.cloud.google.com/bigquery/docs/running-queries",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.cloud.google.com/bigquery/docs/running-queries?hl=es"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "BigQuery Cost Best Practices",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.cloud.google.com/bigquery/docs/best-practices-costs",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.cloud.google.com/bigquery/docs/best-practices-costs"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Amazon Athena EXPLAIN Statement",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.aws.amazon.com/athena/latest/ug/athena-explain-statement.html",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.aws.amazon.com/athena/latest/ug/athena-explain-statement.html"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
-    },
-    {
-      "file": "content\\computer-science\\data-query-timeouts-and-cancellation-controls.md",
-      "article_id": "data-query-timeouts-and-cancellation-controls",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "PostgreSQL statement_timeout",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.postgresql.org/docs/current/runtime-config-client.html",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://www.postgresql.org/docs/current/runtime-config-client.html"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Snowflake SYSTEM$CANCEL_QUERY",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.snowflake.com/en/sql-reference/functions/system_cancel_query",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.snowflake.com/en/sql-reference/functions/system_cancel_query"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "BigQuery jobs.cancel",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://cloud.google.com/bigquery/docs/reference/rest/v2/jobs/cancel",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.cloud.google.com/bigquery/docs/reference/rest/v2/jobs/cancel"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\data-warehousing.md",
@@ -84579,128 +85067,6 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 3
-    },
-    {
-      "file": "content\\computer-science\\test-flakiness-history-and-quarantine-for-agents.md",
-      "article_id": "test-flakiness-history-and-quarantine-for-agents",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "Playwright Test Retries",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://playwright.dev/docs/test-retries",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://playwright.dev/docs/test-retries"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "GitLab Quarantining Tests",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.gitlab.com/development/testing_guide/quarantining_tests/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.gitlab.com/development/testing_guide/quarantining_tests/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "pytest Skip and xfail",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.pytest.org/en/stable/how-to/skipping.html",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.pytest.org/en/stable/how-to/skipping.html"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
-    },
-    {
-      "file": "content\\computer-science\\test-snapshots-and-golden-files-for-code-agents.md",
-      "article_id": "test-snapshots-and-golden-files-for-code-agents",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "Playwright Test Snapshots",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://playwright.dev/docs/test-snapshots",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://playwright.dev/docs/test-snapshots"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Playwright ARIA Snapshots",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://playwright.dev/docs/aria-snapshots",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://playwright.dev/docs/aria-snapshots"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Vitest Snapshot Testing",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://main.vitest.dev/guide/snapshot",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://main.vitest.dev/guide/snapshot"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\the-actor-model-concurrency-through-message-passing.md",
