@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-08T21:00:42.873Z",
-    "total_articles": 1568,
+    "generated": "2026-06-08T21:25:09.179Z",
+    "total_articles": 1573,
     "total_with_errors": 0,
     "average_sources_per_article": "2.6",
     "overall_verification_rate": "91.8%",
-    "elapsed_ms": 103298,
-    "elapsed_sec": "103.3",
+    "elapsed_ms": 101247,
+    "elapsed_sec": "101.2",
     "concurrency": 3
   },
   "articles": [
@@ -4170,6 +4170,67 @@
         }
       ],
       "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-kubernetes-jsonpath-field-selectors-and-watch.md",
+      "article_id": "agent-kubernetes-jsonpath-field-selectors-and-watch",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Kubernetes JSONPath Support",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kubernetes.io/docs/reference/kubectl/jsonpath/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://kubernetes.io/docs/reference/kubectl/jsonpath/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Kubernetes Field Selectors",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kubernetes.io/docs/concepts/overview/working-with-objects/field-selectors/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://kubernetes.io/docs/concepts/overview/working-with-objects/field-selectors/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Kubernetes API Concepts",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kubernetes.io/docs/reference/using-api/api-concepts/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://kubernetes.io/docs/reference/using-api/api-concepts/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
       "sources_unreachable": 0
     },
     {
@@ -43405,6 +43466,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\api-oauth-jwt-bearer-client-assertions.md",
+      "article_id": "api-oauth-jwt-bearer-client-assertions",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "RFC 7523 JWT Profile for OAuth 2.0",
+          "source_type": "rfc",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://datatracker.ietf.org/doc/html/rfc7523",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://datatracker.ietf.org/doc/html/rfc7523"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "RFC 7521 OAuth 2.0 Assertion Framework",
+          "source_type": "rfc",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://datatracker.ietf.org/doc/html/rfc7521",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://datatracker.ietf.org/doc/html/rfc7521"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "RFC 8414 OAuth 2.0 Authorization Server Metadata",
+          "source_type": "rfc",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://datatracker.ietf.org/doc/html/rfc8414",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://datatracker.ietf.org/doc/html/rfc8414"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\api-oauth-pkce-and-public-clients.md",
       "article_id": "api-oauth-pkce-and-public-clients",
       "generation_method": "ai_structured",
@@ -53679,6 +53801,67 @@
         }
       ],
       "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\data-snowflake-query-profile-and-query-tags.md",
+      "article_id": "data-snowflake-query-profile-and-query-tags",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Snowflake Query History",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.snowflake.com/en/user-guide/ui-snowsight-activity",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.snowflake.com/en/user-guide/ui-snowsight-activity"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Snowflake QUERY_HISTORY Account Usage View",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.snowflake.com/en/sql-reference/account-usage/query_history",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.snowflake.com/en/sql-reference/account-usage/query_history"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Snowflake QUERY_TAG Parameter",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.snowflake.com/en/sql-reference/parameters#query-tag",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.snowflake.com/en/sql-reference/parameters"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
       "sources_unreachable": 0
     },
     {
@@ -81951,22 +82134,22 @@
       "sources_unreachable": 0
     },
     {
-      "file": "content\\ai\\agent-kubernetes-jsonpath-field-selectors-and-watch.md",
-      "article_id": "agent-kubernetes-jsonpath-field-selectors-and-watch",
+      "file": "content\\ai\\agent-airflow-dags-and-task-instance-state.md",
+      "article_id": "agent-airflow-dags-and-task-instance-state",
       "generation_method": "ai_structured",
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Kubernetes JSONPath Support",
+          "source_title": "Airflow Dags",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://kubernetes.io/docs/reference/kubectl/jsonpath/",
+              "identifier": "https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/dags.html",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://kubernetes.io/docs/reference/kubectl/jsonpath/"
+                "final_url": "https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/dags.html"
               },
               "match": true
             }
@@ -81974,16 +82157,16 @@
           "all_verified": true
         },
         {
-          "source_title": "Kubernetes Field Selectors",
+          "source_title": "Airflow Tasks",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://kubernetes.io/docs/concepts/overview/working-with-objects/field-selectors/",
+              "identifier": "https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/tasks.html",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://kubernetes.io/docs/concepts/overview/working-with-objects/field-selectors/"
+                "final_url": "https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/tasks.html"
               },
               "match": true
             }
@@ -81991,16 +82174,277 @@
           "all_verified": true
         },
         {
-          "source_title": "Kubernetes API Concepts",
+          "source_title": "Airflow Dag Runs",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://kubernetes.io/docs/reference/using-api/api-concepts/",
+              "identifier": "https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/dag-run.html",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://kubernetes.io/docs/reference/using-api/api-concepts/"
+                "final_url": "https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/dag-run.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-data-quality-tests-freshness-and-metrics.md",
+      "article_id": "agent-data-quality-tests-freshness-and-metrics",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "dbt Data Tests",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.getdbt.com/docs/build/data-tests",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.getdbt.com/docs/build/data-tests"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "dbt Source Freshness",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.getdbt.com/docs/deploy/source-freshness",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.getdbt.com/docs/deploy/source-freshness"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenLineage Data Quality Metrics Facet",
+          "source_type": "specification",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://openlineage.io/docs/spec/facets/dataset-facets/data_quality_metrics/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://openlineage.io/docs/spec/facets/dataset-facets/data_quality_metrics/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-dbt-artifacts-manifest-run-results-and-sources-json.md",
+      "article_id": "agent-dbt-artifacts-manifest-run-results-and-sources-json",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "dbt Manifest JSON file",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.getdbt.com/reference/artifacts/manifest-json",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.getdbt.com/reference/artifacts/manifest-json"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "dbt Run results JSON file",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.getdbt.com/reference/artifacts/run-results-json",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.getdbt.com/reference/artifacts/run-results-json"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "dbt Sources JSON file",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.getdbt.com/reference/artifacts/sources-json",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.getdbt.com/reference/artifacts/sources-json"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-openapi-operation-ids-and-tool-contracts.md",
+      "article_id": "agent-openapi-operation-ids-and-tool-contracts",
+      "generation_method": "ai_structured",
+      "sources_total": 4,
+      "verification_results": [
+        {
+          "source_title": "OpenAPI Specification v3.1.1",
+          "source_type": "specification",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://spec.openapis.org/oas/v3.1.1.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://spec.openapis.org/oas/v3.1.1.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenAPI Specification v3.1.1 Operation Object",
+          "source_type": "specification",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://spec.openapis.org/oas/v3.1.1.html#operation-object",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://spec.openapis.org/oas/v3.1.1.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenAPI Specification v3.1.1 Request Body Object",
+          "source_type": "specification",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://spec.openapis.org/oas/v3.1.1.html#request-body-object",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://spec.openapis.org/oas/v3.1.1.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenAPI Specification v3.1.1 Responses Object",
+          "source_type": "specification",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://spec.openapis.org/oas/v3.1.1.html#responses-object",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://spec.openapis.org/oas/v3.1.1.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 4,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-openlineage-column-lineage-and-schema-facets.md",
+      "article_id": "agent-openlineage-column-lineage-and-schema-facets",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "OpenLineage Object Model",
+          "source_type": "specification",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://openlineage.io/docs/spec/object-model/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://openlineage.io/docs/spec/object-model/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenLineage Column Level Lineage Dataset Facet",
+          "source_type": "specification",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://openlineage.io/docs/spec/facets/dataset-facets/column_lineage_facet/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://openlineage.io/docs/spec/facets/dataset-facets/column_lineage_facet/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenLineage Schema Dataset Facet",
+          "source_type": "specification",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://openlineage.io/docs/spec/facets/dataset-facets/schema/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://openlineage.io/docs/spec/facets/dataset-facets/schema/"
               },
               "match": true
             }
@@ -82308,67 +82752,6 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 1
-    },
-    {
-      "file": "content\\computer-science\\api-oauth-jwt-bearer-client-assertions.md",
-      "article_id": "api-oauth-jwt-bearer-client-assertions",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "RFC 7523 JWT Profile for OAuth 2.0",
-          "source_type": "rfc",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://datatracker.ietf.org/doc/html/rfc7523",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://datatracker.ietf.org/doc/html/rfc7523"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "RFC 7521 OAuth 2.0 Assertion Framework",
-          "source_type": "rfc",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://datatracker.ietf.org/doc/html/rfc7521",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://datatracker.ietf.org/doc/html/rfc7521"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "RFC 8414 OAuth 2.0 Authorization Server Metadata",
-          "source_type": "rfc",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://datatracker.ietf.org/doc/html/rfc8414",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://datatracker.ietf.org/doc/html/rfc8414"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\bloom-filters-space-efficient-probabilistic-data-structures.md",
@@ -82924,67 +83307,6 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 3
-    },
-    {
-      "file": "content\\computer-science\\data-snowflake-query-profile-and-query-tags.md",
-      "article_id": "data-snowflake-query-profile-and-query-tags",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "Snowflake Query History",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.snowflake.com/en/user-guide/ui-snowsight-activity",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.snowflake.com/en/user-guide/ui-snowsight-activity"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Snowflake QUERY_HISTORY Account Usage View",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.snowflake.com/en/sql-reference/account-usage/query_history",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.snowflake.com/en/sql-reference/account-usage/query_history"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Snowflake QUERY_TAG Parameter",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.snowflake.com/en/sql-reference/parameters#query-tag",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.snowflake.com/en/sql-reference/parameters"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\data-warehousing.md",
@@ -86197,7 +86519,10 @@
               "method": "url",
               "identifier": "https://www.informit.com/tdd/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.informit.com/404.aspx?aspxerrorpath=/tdd"
+              },
               "match": false
             }
           ],
