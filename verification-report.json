@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-08T21:48:14.683Z",
-    "total_articles": 1578,
+    "generated": "2026-06-08T22:16:42.713Z",
+    "total_articles": 1581,
     "total_with_errors": 0,
     "average_sources_per_article": "2.6",
     "overall_verification_rate": "91.8%",
-    "elapsed_ms": 102804,
-    "elapsed_sec": "102.8",
+    "elapsed_ms": 99397,
+    "elapsed_sec": "99.4",
     "concurrency": 3
   },
   "articles": [
@@ -1973,6 +1973,155 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\agent-cloudflare-graphql-analytics-and-traffic-scorecards.md",
+      "article_id": "agent-cloudflare-graphql-analytics-and-traffic-scorecards",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Cloudflare GraphQL Analytics API",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.cloudflare.com/analytics/graphql-api/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.cloudflare.com/analytics/graphql-api/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Cloudflare GraphQL Analytics API Get Started",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.cloudflare.com/analytics/graphql-api/getting-started/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.cloudflare.com/analytics/graphql-api/getting-started/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-cloudflare-pages-deployments-and-build-logs.md",
+      "article_id": "agent-cloudflare-pages-deployments-and-build-logs",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Cloudflare Pages Build Configuration",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.cloudflare.com/pages/configuration/build-configuration/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.cloudflare.com/pages/configuration/build-configuration/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Cloudflare Pages Preview Deployments",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.cloudflare.com/pages/configuration/preview-deployments/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.cloudflare.com/pages/configuration/preview-deployments/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Cloudflare Pages Debugging and Logging",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.cloudflare.com/pages/functions/debugging-and-logging/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.cloudflare.com/pages/functions/debugging-and-logging/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-cloudflare-workers-tail-logs-and-source-maps.md",
+      "article_id": "agent-cloudflare-workers-tail-logs-and-source-maps",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Cloudflare Tail Workers",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.cloudflare.com/workers/observability/logs/tail-workers/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.cloudflare.com/workers/observability/logs/tail-workers/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Cloudflare Workers Source Maps and Stack Traces",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.cloudflare.com/workers/observability/source-maps/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.cloudflare.com/workers/observability/source-maps/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\agent-cloudwatch-logs-insights-and-log-groups.md",
       "article_id": "agent-cloudwatch-logs-insights-and-log-groups",
       "generation_method": "ai_structured",
@@ -3784,6 +3933,128 @@
         }
       ],
       "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-github-check-runs-and-commit-statuses.md",
+      "article_id": "agent-github-check-runs-and-commit-statuses",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "GitHub REST API Check Runs",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/rest/checks/runs?apiVersion=2022-11-28",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/rest/checks/runs?apiVersion=2022-11-28"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GitHub REST API Check Suites",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/rest/checks/suites?apiVersion=2022-11-28",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/rest/checks/suites?apiVersion=2022-11-28"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GitHub REST API Commit Statuses",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/rest/commits/statuses?apiVersion=2022-11-28",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/rest/commits/statuses?apiVersion=2022-11-28"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-github-merge-queue-and-auto-merge-state.md",
+      "article_id": "agent-github-merge-queue-and-auto-merge-state",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "GitHub Automatically Merging a Pull Request",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/automatically-merging-a-pull-request",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/automatically-merging-a-pull-request"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GitHub Managing a Merge Queue",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/configuring-pull-request-merges/managing-a-merge-queue",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/configuring-pull-request-merges/managing-a-merge-queue"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GitHub Actions merge_group Event",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#merge_group",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
       "sources_unreachable": 0
     },
     {
@@ -82456,22 +82727,22 @@
       "sources_unreachable": 0
     },
     {
-      "file": "content\\ai\\agent-cloudflare-graphql-analytics-and-traffic-scorecards.md",
-      "article_id": "agent-cloudflare-graphql-analytics-and-traffic-scorecards",
+      "file": "content\\ai\\agent-github-actions-oidc-claims-and-cloud-trust.md",
+      "article_id": "agent-github-actions-oidc-claims-and-cloud-trust",
       "generation_method": "ai_structured",
       "sources_total": 2,
       "verification_results": [
         {
-          "source_title": "Cloudflare GraphQL Analytics API",
+          "source_title": "GitHub Configuring OpenID Connect in Cloud Providers",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://developers.cloudflare.com/analytics/graphql-api/",
+              "identifier": "https://docs.github.com/en/actions/security-for-github-actions/security-hardening-your-deployments/configuring-openid-connect-in-cloud-providers",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://developers.cloudflare.com/analytics/graphql-api/"
+                "final_url": "https://docs.github.com/en/actions/how-tos/secure-your-work/security-harden-deployments/oidc-in-cloud-providers"
               },
               "match": true
             }
@@ -82479,16 +82750,16 @@
           "all_verified": true
         },
         {
-          "source_title": "Cloudflare GraphQL Analytics API Get Started",
+          "source_title": "GitHub OpenID Connect Reference",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://developers.cloudflare.com/analytics/graphql-api/getting-started/",
+              "identifier": "https://docs.github.com/en/actions/reference/security/oidc",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://developers.cloudflare.com/analytics/graphql-api/getting-started/"
+                "final_url": "https://docs.github.com/en/actions/reference/security/oidc"
               },
               "match": true
             }
@@ -82500,22 +82771,22 @@
       "sources_unreachable": 0
     },
     {
-      "file": "content\\ai\\agent-cloudflare-pages-deployments-and-build-logs.md",
-      "article_id": "agent-cloudflare-pages-deployments-and-build-logs",
+      "file": "content\\ai\\agent-github-actions-token-permissions-and-secrets.md",
+      "article_id": "agent-github-actions-token-permissions-and-secrets",
       "generation_method": "ai_structured",
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Cloudflare Pages Build Configuration",
+          "source_title": "GitHub Automatic Token Authentication",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://developers.cloudflare.com/pages/configuration/build-configuration/",
+              "identifier": "https://docs.github.com/en/actions/security-for-github-actions/security-guides/automatic-token-authentication",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://developers.cloudflare.com/pages/configuration/build-configuration/"
+                "final_url": "https://docs.github.com/en/actions/tutorials/authenticate-with-github_token"
               },
               "match": true
             }
@@ -82523,16 +82794,16 @@
           "all_verified": true
         },
         {
-          "source_title": "Cloudflare Pages Preview Deployments",
+          "source_title": "GitHub Workflow Syntax Permissions",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://developers.cloudflare.com/pages/configuration/preview-deployments/",
+              "identifier": "https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions#permissions",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://developers.cloudflare.com/pages/configuration/preview-deployments/"
+                "final_url": "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax"
               },
               "match": true
             }
@@ -82540,182 +82811,16 @@
           "all_verified": true
         },
         {
-          "source_title": "Cloudflare Pages Debugging and Logging",
+          "source_title": "GitHub Using Secrets in Actions",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://developers.cloudflare.com/pages/functions/debugging-and-logging/",
+              "identifier": "https://docs.github.com/en/actions/security-for-github-actions/security-guides/using-secrets-in-github-actions",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://developers.cloudflare.com/pages/functions/debugging-and-logging/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
-    },
-    {
-      "file": "content\\ai\\agent-cloudflare-workers-tail-logs-and-source-maps.md",
-      "article_id": "agent-cloudflare-workers-tail-logs-and-source-maps",
-      "generation_method": "ai_structured",
-      "sources_total": 2,
-      "verification_results": [
-        {
-          "source_title": "Cloudflare Tail Workers",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://developers.cloudflare.com/workers/observability/logs/tail-workers/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://developers.cloudflare.com/workers/observability/logs/tail-workers/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Cloudflare Workers Source Maps and Stack Traces",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://developers.cloudflare.com/workers/observability/source-maps/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://developers.cloudflare.com/workers/observability/source-maps/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
-    },
-    {
-      "file": "content\\ai\\agent-github-check-runs-and-commit-statuses.md",
-      "article_id": "agent-github-check-runs-and-commit-statuses",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "GitHub REST API Check Runs",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.github.com/en/rest/checks/runs?apiVersion=2022-11-28",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.github.com/en/rest/checks/runs?apiVersion=2022-11-28"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "GitHub REST API Check Suites",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.github.com/en/rest/checks/suites?apiVersion=2022-11-28",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.github.com/en/rest/checks/suites?apiVersion=2022-11-28"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "GitHub REST API Commit Statuses",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.github.com/en/rest/commits/statuses?apiVersion=2022-11-28",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.github.com/en/rest/commits/statuses?apiVersion=2022-11-28"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
-    },
-    {
-      "file": "content\\ai\\agent-github-merge-queue-and-auto-merge-state.md",
-      "article_id": "agent-github-merge-queue-and-auto-merge-state",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "GitHub Automatically Merging a Pull Request",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/automatically-merging-a-pull-request",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/automatically-merging-a-pull-request"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "GitHub Managing a Merge Queue",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/configuring-pull-request-merges/managing-a-merge-queue",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/configuring-pull-request-merges/managing-a-merge-queue"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "GitHub Actions merge_group Event",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#merge_group",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows"
+                "final_url": "https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/use-secrets"
               },
               "match": true
             }
@@ -83517,6 +83622,50 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 3
+    },
+    {
+      "file": "content\\computer-science\\data-kafka-connect-connector-status-and-task-errors.md",
+      "article_id": "data-kafka-connect-connector-status-and-task-errors",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Apache Kafka Connect Administration",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kafka.apache.org/43/kafka-connect/administration/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://kafka.apache.org/43/kafka-connect/administration/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Confluent Kafka Connect REST API",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.confluent.io/platform/current/connect/references/restapi.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.confluent.io/platform/current/connect/references/restapi.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\data-lake-architecture.md",
@@ -84776,7 +84925,10 @@
               "method": "url",
               "identifier": "https://www.rfc-editor.org/rfc/rfc8446",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.rfc-editor.org/rfc/rfc8446"
+              },
               "match": false
             }
           ],
@@ -84790,7 +84942,10 @@
               "method": "url",
               "identifier": "https://www.rfc-editor.org/rfc/rfc5246",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.rfc-editor.org/rfc/rfc5246"
+              },
               "match": false
             }
           ],
