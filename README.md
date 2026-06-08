@@ -234,6 +234,14 @@ npm run build
 npm run api:readiness
 ```
 
+The scheduled `Readiness Scorecard` workflow combines the daily production integrity snapshot, AI adoption scorecard, local API readiness report, and content health snapshot into one uploaded artifact. It also keeps a cached local history of daily readiness snapshots so the automated gates can be evaluated as windows instead of one-day checks:
+
+```bash
+npm run readiness:history -- --history-dir reports/readiness-history --api-readiness-json reports/api-readiness.json --content-health-json reports/content-health.json --save-current --write reports/readiness-window.md --write-json reports/readiness-window.json
+```
+
+When content health is excellent and API readiness is clean, do not repair or promote more draft content by default. Content work should resume only when public audit findings, API readiness failures, eval drift, query-routing misses, or production usage signals identify a concrete gap.
+
 ## MCP and Local API
 
 The Python MCP server and optional HTTP wrapper are backed by `dist/manifest.json`.

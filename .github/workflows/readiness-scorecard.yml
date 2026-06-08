@@ -1,0 +1,78 @@
+name: Readiness Scorecard
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 2 * * *'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: readiness-scorecard
+  cancel-in-progress: false
+
+jobs:
+  scorecard:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup Node
+        uses: actions/setup-node@v5
+        with:
+          node-version: '24'
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Restore readiness history
+        uses: actions/cache@v4
+        with:
+          path: reports/readiness-history
+          key: readiness-history-${{ github.run_id }}
+          restore-keys: readiness-history-
+
+      - name: Build static artifacts
+        run: npm run build
+
+      - name: Write content health snapshot
+        run: |
+          mkdir -p reports
+          npm run content:health -- --json --write reports/content-health.json
+
+      - name: Run production integrity snapshot
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: npm run production:integrity -- --write reports/production-integrity.md --write-json reports/production-integrity.json
+
+      - name: Run AI adoption snapshot
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: npm run usage:adoption -- --lookback-minutes 1430 --write reports/ai-adoption-scorecard.md --write-json reports/ai-adoption-scorecard.json
+
+      - name: Write API readiness scorecard
+        run: npm run api:readiness -- --adoption-json reports/ai-adoption-scorecard.json --production-integrity-json reports/production-integrity.json --write reports/api-readiness.md --write-json reports/api-readiness.json
+
+      - name: Write readiness window report
+        run: npm run readiness:history -- --history-dir reports/readiness-history --api-readiness-json reports/api-readiness.json --content-health-json reports/content-health.json --save-current --write reports/readiness-window.md --write-json reports/readiness-window.json
+
+      - name: Upload readiness scorecard
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: readiness-scorecard
+          path: |
+            reports/api-readiness.*
+            reports/readiness-window.*
+            reports/content-health.json
+            reports/production-integrity.*
+            reports/ai-adoption-scorecard.*
+            reports/readiness-history/*.json
+          if-no-files-found: warn
+          retention-days: 14

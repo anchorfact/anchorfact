@@ -1,0 +1,358 @@
+#!/usr/bin/env node
+import { existsSync, mkdirSync, readFileSync, readdirSync, statSync, writeFileSync } from 'fs';
+import { dirname, join, resolve } from 'path';
+import { pathToFileURL } from 'url';
+
+export const READINESS_SNAPSHOT_SCHEMA_VERSION = 'anchorfact.readiness-snapshot.v1';
+export const READINESS_WINDOW_SCHEMA_VERSION = 'anchorfact.readiness-window.v1';
+
+const DEFAULT_API_TARGET_RATIO = 0.9;
+const DEFAULT_ADOPTION_TARGET_RATIO = 0.2;
+const DAY_MS = 24 * 60 * 60 * 1000;
+
+function finiteNumber(value, fallback = 0) {
+  const number = Number(value);
+  return Number.isFinite(number) ? number : fallback;
+}
+
+function generatedDate(value) {
+  const date = new Date(value || Date.now());
+  if (Number.isNaN(date.getTime())) return new Date().toISOString().slice(0, 10);
+  return date.toISOString().slice(0, 10);
+}
+
+function dateOffset(dateText, offsetDays) {
+  const date = new Date(`${dateText}T00:00:00.000Z`);
+  return new Date(date.getTime() + offsetDays * DAY_MS).toISOString().slice(0, 10);
+}
+
+function readJson(path, label = 'JSON') {
+  try {
+    return JSON.parse(readFileSync(resolve(path), 'utf-8'));
+  } catch (error) {
+    throw new Error(`Unable to read ${label} from ${path}: ${error.message}`);
+  }
+}
+
+function writeText(path, text) {
+  const outputPath = resolve(path);
+  mkdirSync(dirname(outputPath), { recursive: true });
+  writeFileSync(outputPath, text);
+}
+
+function currentAdoptionRatio(adoption = {}) {
+  return finiteNumber(
+    adoption.identified_ai_primary_to_discovery_current_ratio
+      ?? adoption.identified_ai_primary_to_discovery_ratio
+      ?? adoption.identified_ai_primary_to_discovery_target?.current_ratio
+  );
+}
+
+function currentAdoptionStatus(adoption = {}) {
+  return adoption.identified_ai_primary_to_discovery_target_status
+    || adoption.identified_ai_primary_to_discovery_target?.status
+    || adoption.status
+    || 'not_measured';
+}
+
+export function normalizeReadinessSnapshot(input = {}) {
+  if (input.schema_version === READINESS_SNAPSHOT_SCHEMA_VERSION || input.production_integrity_status) {
+    const generated = input.generated || new Date().toISOString();
+    return {
+      schema_version: READINESS_SNAPSHOT_SCHEMA_VERSION,
+      generated,
+      date: input.date || generatedDate(generated),
+      source: input.source || 'history',
+      production_integrity_status: input.production_integrity_status || 'not_measured',
+      public_audit_actionable_count: finiteNumber(input.public_audit_actionable_count),
+      api_context_ratio: finiteNumber(input.api_context_ratio),
+      api_scorecard_failures: finiteNumber(input.api_scorecard_failures),
+      adoption_ratio: finiteNumber(input.adoption_ratio),
+      adoption_status: input.adoption_status || 'not_measured',
+      content_next_focus: input.content_next_focus || null
+    };
+  }
+
+  const apiReadiness = input.apiReadiness || input.api_readiness || {};
+  const contentHealth = input.contentHealth || input.content_health || {};
+  const generated = apiReadiness.generated || contentHealth.generated || input.generated || new Date().toISOString();
+  const adoption = apiReadiness.adoption_signal || {};
+  const apiScorecard = apiReadiness.api_scorecard || {};
+
+  return {
+    schema_version: READINESS_SNAPSHOT_SCHEMA_VERSION,
+    generated,
+    date: generatedDate(generated),
+    source: input.source || 'current',
+    production_integrity_status: apiReadiness.production_health?.status || 'not_measured',
+    public_audit_actionable_count: finiteNumber(contentHealth.public_audit?.actionable_count),
+    api_context_ratio: finiteNumber(apiScorecard.pass_ratio),
+    api_scorecard_failures: Array.isArray(apiScorecard.failures)
+      ? apiScorecard.failures.length
+      : finiteNumber(apiScorecard.failed),
+    adoption_ratio: currentAdoptionRatio(adoption),
+    adoption_status: currentAdoptionStatus(adoption),
+    content_next_focus: contentHealth.project_readiness?.next_focus || null
+  };
+}
+
+function walkJsonFiles(dir, files = []) {
+  if (!dir || !existsSync(dir)) return files;
+  for (const entry of readdirSync(dir)) {
+    const fullPath = join(dir, entry);
+    const stat = statSync(fullPath);
+    if (stat.isDirectory()) walkJsonFiles(fullPath, files);
+    else if (/\.json$/i.test(entry)) files.push(fullPath);
+  }
+  return files;
+}
+
+export function loadReadinessSnapshotsFromDir(dir) {
+  return walkJsonFiles(dir)
+    .map(path => normalizeReadinessSnapshot({ ...readJson(path, 'readiness snapshot'), source: path.replace(/\\/g, '/') }));
+}
+
+function latestSnapshotByDate(snapshots) {
+  const byDate = new Map();
+  for (const snapshot of snapshots.map(item => normalizeReadinessSnapshot(item))) {
+    const existing = byDate.get(snapshot.date);
+    if (!existing || String(snapshot.generated).localeCompare(String(existing.generated)) >= 0) {
+      byDate.set(snapshot.date, snapshot);
+    }
+  }
+  return [...byDate.values()].sort((a, b) => a.date.localeCompare(b.date));
+}
+
+function evaluateConsecutiveWindow({ snapshots, requiredDays, predicate, latestDate = null }) {
+  const byDate = new Map(latestSnapshotByDate(snapshots).map(snapshot => [snapshot.date, snapshot]));
+  const latest = latestDate || [...byDate.keys()].sort().at(-1) || generatedDate();
+  const failures = [];
+  const days = [];
+
+  for (let offset = requiredDays - 1; offset >= 0; offset--) {
+    const date = dateOffset(latest, -offset);
+    const snapshot = byDate.get(date) || null;
+    const ok = Boolean(snapshot && predicate(snapshot));
+    days.push({ date, ok });
+    if (!ok) failures.push(date);
+  }
+
+  return {
+    status: failures.length === 0 ? 'met' : 'not_met',
+    required_days: requiredDays,
+    observed_days: days.filter(day => day.ok).length,
+    latest_date: latest,
+    failures
+  };
+}
+
+function adoptionWindowPredicate(targetRatio) {
+  return snapshot => snapshot.adoption_ratio >= targetRatio
+    && !['below_target', 'fail', 'not_measured'].includes(snapshot.adoption_status);
+}
+
+function contentChangePolicy(current, apiTargetRatio) {
+  const triggers = [];
+  if (finiteNumber(current.public_audit_actionable_count) > 0) triggers.push('public_audit_actionable');
+  if (finiteNumber(current.api_scorecard_failures) > 0 || finiteNumber(current.api_context_ratio) < apiTargetRatio) {
+    triggers.push('api_scorecard_below_target');
+  }
+  if (current.content_next_focus === 'prioritize_draft_repair_queue') {
+    triggers.push('content_health_draft_repair_queue');
+  }
+
+  if (triggers.some(trigger => ['public_audit_actionable', 'api_scorecard_below_target'].includes(trigger))) {
+    return {
+      status: 'repair_metric_regression',
+      should_repair_content_now: true,
+      triggers,
+      guidance: 'Repair only the public audit or API readiness regression before expanding draft content.'
+    };
+  }
+
+  if (triggers.includes('content_health_draft_repair_queue')) {
+    return {
+      status: 'targeted_content_repair',
+      should_repair_content_now: true,
+      triggers,
+      guidance: 'Repair one or two low-risk drafts from the measured queue, then re-run public audit and readiness checks.'
+    };
+  }
+
+  return {
+    status: 'measure_first',
+    should_repair_content_now: false,
+    triggers,
+    guidance: 'Do not expand the corpus by default; wait for eval, routing, production, or usage signals to identify a concrete gap.'
+  };
+}
+
+export function buildReadinessWindowReport({
+  snapshots = [],
+  generatedAt = new Date().toISOString(),
+  productionIntegrityDays = 14,
+  publicAuditDays = 14,
+  adoptionDays = 7,
+  apiTargetRatio = DEFAULT_API_TARGET_RATIO,
+  adoptionTargetRatio = DEFAULT_ADOPTION_TARGET_RATIO
+} = {}) {
+  const normalized = latestSnapshotByDate(snapshots);
+  const current = normalized.at(-1) || normalizeReadinessSnapshot({ generated: generatedAt });
+  const latestDate = current.date;
+  const gates = {
+    production_integrity_14_day: evaluateConsecutiveWindow({
+      snapshots: normalized,
+      requiredDays: productionIntegrityDays,
+      latestDate,
+      predicate: snapshot => snapshot.production_integrity_status === 'pass'
+    }),
+    public_audit_14_day: evaluateConsecutiveWindow({
+      snapshots: normalized,
+      requiredDays: publicAuditDays,
+      latestDate,
+      predicate: snapshot => finiteNumber(snapshot.public_audit_actionable_count) === 0
+    }),
+    ai_primary_discovery_ratio_7_day: evaluateConsecutiveWindow({
+      snapshots: normalized,
+      requiredDays: adoptionDays,
+      latestDate,
+      predicate: adoptionWindowPredicate(adoptionTargetRatio)
+    })
+  };
+
+  return {
+    schema_version: READINESS_WINDOW_SCHEMA_VERSION,
+    generated: generatedAt,
+    targets: {
+      api_context_ratio: apiTargetRatio,
+      ai_primary_discovery_ratio: adoptionTargetRatio,
+      production_integrity_days: productionIntegrityDays,
+      public_audit_days: publicAuditDays,
+      adoption_days: adoptionDays
+    },
+    snapshot_count: normalized.length,
+    current_snapshot: current,
+    gates,
+    automated_gates_met: Object.values(gates).every(gate => gate.status === 'met'),
+    content_change_policy: contentChangePolicy(current, apiTargetRatio),
+    snapshots: normalized
+  };
+}
+
+export function renderReadinessWindowMarkdown(report) {
+  const lines = [];
+  lines.push('# AnchorFact Readiness Window Report');
+  lines.push('');
+  lines.push(`Generated: ${report.generated}`);
+  lines.push(`Snapshots: ${report.snapshot_count}`);
+  lines.push(`Current date: ${report.current_snapshot.date}`);
+  lines.push('');
+  lines.push('## Readiness Gates');
+  lines.push('');
+  for (const [id, gate] of Object.entries(report.gates)) {
+    lines.push(`- ${id}: ${gate.status} (${gate.observed_days}/${gate.required_days} days, latest=${gate.latest_date})`);
+  }
+  lines.push('');
+  lines.push('## Current Signals');
+  lines.push('');
+  lines.push(`- production_integrity_status: ${report.current_snapshot.production_integrity_status}`);
+  lines.push(`- public_audit_actionable_count: ${report.current_snapshot.public_audit_actionable_count}`);
+  lines.push(`- api_context_ratio: ${report.current_snapshot.api_context_ratio}`);
+  lines.push(`- api_scorecard_failures: ${report.current_snapshot.api_scorecard_failures}`);
+  lines.push(`- adoption_ratio: ${report.current_snapshot.adoption_ratio}`);
+  lines.push(`- adoption_status: ${report.current_snapshot.adoption_status}`);
+  lines.push('');
+  lines.push('## Content Change Policy');
+  lines.push('');
+  lines.push(`Content policy: ${report.content_change_policy.status}`);
+  lines.push(`Should repair content now: ${report.content_change_policy.should_repair_content_now}`);
+  lines.push(`Triggers: ${report.content_change_policy.triggers.join(', ') || 'none'}`);
+  lines.push(report.content_change_policy.guidance);
+  lines.push('');
+  return `${lines.join('\n')}\n`;
+}
+
+function parseArgs(argv) {
+  const options = {
+    historyDir: null,
+    apiReadinessJson: null,
+    contentHealthJson: null,
+    snapshotJson: null,
+    saveCurrent: false,
+    saveCurrentPath: null,
+    write: null,
+    writeJson: null,
+    json: false,
+    help: false
+  };
+
+  for (let index = 0; index < argv.length; index++) {
+    const arg = argv[index];
+    if (arg === '--history-dir') options.historyDir = argv[++index] || null;
+    else if (arg === '--api-readiness-json') options.apiReadinessJson = argv[++index] || null;
+    else if (arg === '--content-health-json') options.contentHealthJson = argv[++index] || null;
+    else if (arg === '--snapshot-json') options.snapshotJson = argv[++index] || null;
+    else if (arg === '--save-current') {
+      options.saveCurrent = true;
+      const next = argv[index + 1];
+      if (next && !next.startsWith('--')) options.saveCurrentPath = argv[++index];
+    } else if (arg === '--write') options.write = argv[++index] || null;
+    else if (arg === '--write-json') options.writeJson = argv[++index] || null;
+    else if (arg === '--json') options.json = true;
+    else if (arg === '--help' || arg === '-h') options.help = true;
+    else throw new Error(`Unknown option: ${arg}`);
+  }
+  return options;
+}
+
+function usage() {
+  return `Usage: node scripts/readiness-window-report.js [--history-dir reports/readiness-history] [--api-readiness-json reports/api-readiness.json] [--content-health-json reports/content-health.json] [--snapshot-json path] [--save-current [path]] [--write path] [--write-json path] [--json]
+
+Builds a report-only readiness window summary from daily readiness snapshots.
+`;
+}
+
+export function main(argv = process.argv.slice(2)) {
+  const options = parseArgs(argv);
+  if (options.help) {
+    process.stdout.write(usage());
+    return null;
+  }
+
+  const snapshots = options.historyDir ? loadReadinessSnapshotsFromDir(resolve(options.historyDir)) : [];
+  let current = null;
+  if (options.snapshotJson) current = normalizeReadinessSnapshot(readJson(options.snapshotJson, 'readiness snapshot'));
+  else if (options.apiReadinessJson || options.contentHealthJson) {
+    current = normalizeReadinessSnapshot({
+      apiReadiness: options.apiReadinessJson ? readJson(options.apiReadinessJson, 'API readiness report') : {},
+      contentHealth: options.contentHealthJson ? readJson(options.contentHealthJson, 'content health report') : {},
+      source: 'current'
+    });
+  }
+
+  if (current) {
+    snapshots.push(current);
+    if (options.saveCurrent) {
+      const savePath = options.saveCurrentPath
+        || join(options.historyDir || 'reports/readiness-history', `${current.date}.json`);
+      writeText(savePath, `${JSON.stringify(current, null, 2)}\n`);
+    }
+  }
+
+  const report = buildReadinessWindowReport({ snapshots });
+  const json = `${JSON.stringify(report, null, 2)}\n`;
+  const markdown = renderReadinessWindowMarkdown(report);
+  if (options.write) writeText(options.write, markdown);
+  if (options.writeJson) writeText(options.writeJson, json);
+  process.stdout.write(options.json ? json : markdown);
+  return report;
+}
+
+if (import.meta.url === pathToFileURL(process.argv[1]).href) {
+  try {
+    main();
+  } catch (error) {
+    console.error(error.message);
+    process.exitCode = 1;
+  }
+}
