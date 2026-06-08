@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-08T17:31:00.588Z",
-    "total_articles": 1523,
+    "generated": "2026-06-08T18:06:41.627Z",
+    "total_articles": 1529,
     "total_with_errors": 0,
     "average_sources_per_article": "2.6",
     "overall_verification_rate": "91.5%",
-    "elapsed_ms": 96061,
-    "elapsed_sec": "96.1",
+    "elapsed_ms": 95070,
+    "elapsed_sec": "95.1",
     "concurrency": 3
   },
   "articles": [
@@ -5416,6 +5416,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\agent-observation-screenshots-and-visual-state-evidence.md",
+      "article_id": "agent-observation-screenshots-and-visual-state-evidence",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Playwright Screenshots",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://playwright.dev/docs/screenshots",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://playwright.dev/docs/screenshots"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Chrome DevTools Protocol Page.captureScreenshot",
+          "source_type": "technical_specification",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://chromedevtools.github.io/devtools-protocol/tot/Page/#method-captureScreenshot",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://chromedevtools.github.io/devtools-protocol/tot/Page/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "W3C WebDriver Take Screenshot",
+          "source_type": "technical_specification",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.w3.org/TR/webdriver2/#take-screenshot",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.w3.org/TR/webdriver2/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\agent-opentelemetry-baggage-and-context-propagation.md",
       "article_id": "agent-opentelemetry-baggage-and-context-propagation",
       "generation_method": "ai_structured",
@@ -5738,6 +5799,67 @@
         }
       ],
       "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-policy-as-code-and-guardrail-configuration.md",
+      "article_id": "agent-policy-as-code-and-guardrail-configuration",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Open Policy Agent Philosophy",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.openpolicyagent.org/docs/philosophy",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.openpolicyagent.org/docs/philosophy"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Cedar Authorization",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.cedarpolicy.com/auth/authorization.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cedarpolicy.com/auth/authorization.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Kubernetes Validating Admission Policy",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kubernetes.io/docs/reference/access-authn-authz/validating-admission-policy/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://kubernetes.io/docs/reference/access-authn-authz/validating-admission-policy/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
       "sources_unreachable": 0
     },
     {
@@ -23060,6 +23182,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\llm-evaluation-conversation-transcript-coverage.md",
+      "article_id": "llm-evaluation-conversation-transcript-coverage",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "LangSmith Evaluation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.langchain.com/langsmith/evaluation",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.langchain.com/langsmith/evaluation"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Ragas Agent Metrics",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.ragas.io/en/stable/concepts/metrics/available_metrics/agents/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.ragas.io/en/stable/concepts/metrics/available_metrics/agents/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenAI Evals",
+          "source_type": "software_repository",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://github.com/openai/evals",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://github.com/openai/evals"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\llm-evaluation-dataset-cards-and-metadata.md",
       "article_id": "llm-evaluation-dataset-cards-and-metadata",
       "generation_method": "ai_structured",
@@ -28599,6 +28782,67 @@
       "sources_unreachable": 0,
       "manual_reviewed": true,
       "manual_reviewed_at": "2026-05-28"
+    },
+    {
+      "file": "content\\ai\\rag-acl-sync-and-permission-drift.md",
+      "article_id": "rag-acl-sync-and-permission-drift",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Azure AI Search Document-Level Access Control",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://learn.microsoft.com/en-us/azure/search/search-document-level-access-overview",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.microsoft.com/en-us/azure/search/search-document-level-access-overview"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Elastic Document and Field Level Security",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.elastic.co/docs/deploy-manage/users-roles/cluster-or-deployment-auth/controlling-access-at-document-field-level",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.elastic.co/docs/deploy-manage/users-roles/cluster-or-deployment-auth/controlling-access-at-document-field-level"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Microsoft Graph Delta Query",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://learn.microsoft.com/en-us/graph/delta-query-overview",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.microsoft.com/en-us/graph/delta-query-overview"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content\\ai\\rag-answer-grounding-and-citation-coverage.md",
@@ -48344,6 +48588,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\data-catalog-glossaries-and-column-definitions.md",
+      "article_id": "data-catalog-glossaries-and-column-definitions",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "OpenMetadata Glossary",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.open-metadata.org/latest/how-to-guides/data-governance/glossary",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.open-metadata.org/v1.12.x/how-to-guides/data-governance/glossary"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "DataHub Business Glossary Source",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.datahub.com/docs/generated/ingestion/sources/business-glossary",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.datahub.com/docs/generated/ingestion/sources/business-glossary"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "dbt Semantic Models",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.getdbt.com/docs/build/semantic-models",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.getdbt.com/docs/build/semantic-models"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\data-catalogs-and-metadata-lineage.md",
       "article_id": "data-catalogs-and-metadata-lineage",
       "generation_method": "ai_structured",
@@ -50977,6 +51282,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://github.com/awslabs/deequ"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\data-query-result-caches-and-materialized-results.md",
+      "article_id": "data-query-result-caches-and-materialized-results",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "BigQuery Cached Query Results",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://cloud.google.com/bigquery/docs/cached-results",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/bigquery/docs/cached-results"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Snowflake Persisted Query Results",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.snowflake.com/en/user-guide/querying-persisted-results",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.snowflake.com/en/user-guide/querying-persisted-results"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Databricks Materialized Views",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.databricks.com/aws/en/ldp/dbsql/materialized",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.databricks.com/aws/en/ldp/dbsql/materialized"
               },
               "match": true
             }
@@ -79328,67 +79694,6 @@
       "sources_unreachable": 0
     },
     {
-      "file": "content\\ai\\agent-policy-as-code-and-guardrail-configuration.md",
-      "article_id": "agent-policy-as-code-and-guardrail-configuration",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "Open Policy Agent Philosophy",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.openpolicyagent.org/docs/philosophy",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://www.openpolicyagent.org/docs/philosophy"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Cedar Authorization",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.cedarpolicy.com/auth/authorization.html",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.cedarpolicy.com/auth/authorization.html"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Kubernetes Validating Admission Policy",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://kubernetes.io/docs/reference/access-authn-authz/validating-admission-policy/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://kubernetes.io/docs/reference/access-authn-authz/validating-admission-policy/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
-    },
-    {
       "file": "content\\ai\\ai-for-genomics-variant-calling-gene-expression-prediction-and-protein-dna-binding.md",
       "article_id": "kb-2026-00005",
       "generation_method": "ai_structured",
@@ -79685,6 +79990,67 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 1
+    },
+    {
+      "file": "content\\computer-science\\api-sdk-generation-and-contract-drift.md",
+      "article_id": "api-sdk-generation-and-contract-drift",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "OpenAPI Specification",
+          "source_type": "technical_specification",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://spec.openapis.org/oas/latest.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://spec.openapis.org/oas/latest.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenAPI Generator Usage",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://openapi-generator.tech/docs/usage",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://openapi-generator.tech/docs/usage/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "oasdiff",
+          "source_type": "software_repository",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://github.com/oasdiff/oasdiff",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://github.com/oasdiff/oasdiff"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\bloom-filters-space-efficient-probabilistic-data-structures.md",
