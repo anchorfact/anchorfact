@@ -31,6 +31,10 @@ import {
   signingKeyInfoFromEnv
 } from './provenance-signature.js';
 
+function stringifyJson(data, { pretty = true } = {}) {
+  return pretty ? JSON.stringify(data, null, 2) : JSON.stringify(data);
+}
+
 function articleLink(result) {
   const slug = result._quality.canonicalSlug;
   const confidence = result._confidence;
@@ -543,7 +547,7 @@ export function writeStaticOutputs(distDir, results, options = {}) {
 
   writeFileSync(
     join(distDir, 'claims.json'),
-    JSON.stringify(claimsPayload, null, 2)
+    stringifyJson(claimsPayload, { pretty: false })
   );
   writeFileSync(
     join(distDir, 'openapi.json'),
@@ -561,7 +565,7 @@ export function writeStaticOutputs(distDir, results, options = {}) {
   });
   writeFileSync(
     join(distDir, 'search-index.json'),
-    JSON.stringify(searchIndexPayload, null, 2)
+    stringifyJson(searchIndexPayload, { pretty: false })
   );
   const sourcesPayload = buildSourceIndex({
     generated,
@@ -572,7 +576,7 @@ export function writeStaticOutputs(distDir, results, options = {}) {
   });
   writeFileSync(
     join(distDir, 'sources.json'),
-    JSON.stringify(sourcesPayload, null, 2)
+    stringifyJson(sourcesPayload, { pretty: false })
   );
   const topicsPayload = buildTopicsIndex({
     generated,
@@ -612,7 +616,7 @@ export function writeStaticOutputs(distDir, results, options = {}) {
   });
   writeFileSync(
     join(distDir, 'graph.json'),
-    JSON.stringify(graphPayload, null, 2)
+    stringifyJson(graphPayload, { pretty: false })
   );
   const evalsPayload = buildEvalsIndex({
     generated,
