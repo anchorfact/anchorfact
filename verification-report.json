@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-08T22:58:17.286Z",
-    "total_articles": 1588,
+    "generated": "2026-06-08T23:15:16.274Z",
+    "total_articles": 1592,
     "total_with_errors": 0,
     "average_sources_per_article": "2.6",
     "overall_verification_rate": "91.9%",
-    "elapsed_ms": 98713,
-    "elapsed_sec": "98.7",
+    "elapsed_ms": 101018,
+    "elapsed_sec": "101.0",
     "concurrency": 3
   },
   "articles": [
@@ -3980,6 +3980,50 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\agent-github-actions-reusable-workflows-and-call-chain.md",
+      "article_id": "agent-github-actions-reusable-workflows-and-call-chain",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "GitHub Reusing Workflows",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/actions/sharing-automations/reusing-workflows",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/actions/how-tos/reuse-automations/reuse-workflows"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GitHub Workflow Syntax workflow_call",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions#onworkflow_call",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\agent-github-actions-run-attempts-and-job-summaries.md",
       "article_id": "agent-github-actions-run-attempts-and-job-summaries",
       "generation_method": "ai_structured",
@@ -4013,6 +4057,50 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-commands"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-github-actions-self-hosted-runner-labels-and-groups.md",
+      "article_id": "agent-github-actions-self-hosted-runner-labels-and-groups",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "GitHub Choosing the Runner for a Job",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/actions/how-tos/write-workflows/choose-where-workflows-run/choose-the-runner-for-a-job",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/actions/how-tos/write-workflows/choose-where-workflows-run/choose-the-runner-for-a-job"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GitHub Using Self-Hosted Runners in a Workflow",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/actions/how-tos/manage-runners/self-hosted-runners/use-in-a-workflow",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/actions/how-tos/manage-runners/self-hosted-runners/use-in-a-workflow"
               },
               "match": true
             }
@@ -50784,6 +50872,50 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\data-airflow-pools-priority-weights-and-queued-tasks.md",
+      "article_id": "data-airflow-pools-priority-weights-and-queued-tasks",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Apache Airflow Pools",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://airflow.apache.org/docs/apache-airflow/stable/administration-and-deployment/pools.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://airflow.apache.org/docs/apache-airflow/stable/administration-and-deployment/pools.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Apache Airflow Priority Weights",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://airflow.apache.org/docs/apache-airflow/stable/administration-and-deployment/priority-weight.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://airflow.apache.org/docs/apache-airflow/stable/administration-and-deployment/priority-weight.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\data-airflow-task-instances-and-xcom.md",
       "article_id": "data-airflow-task-instances-and-xcom",
       "generation_method": "ai_structured",
@@ -51813,6 +51945,50 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://docs.getdbt.com/reference/artifacts/manifest-json"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\data-dbt-snapshots-and-slowly-changing-dimensions.md",
+      "article_id": "data-dbt-snapshots-and-slowly-changing-dimensions",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "dbt Snapshots",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.getdbt.com/docs/build/snapshots",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.getdbt.com/docs/build/snapshots"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "dbt Snapshot Strategy",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.getdbt.com/reference/resource-configs/strategy",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.getdbt.com/reference/resource-configs/strategy"
               },
               "match": true
             }
@@ -83008,22 +83184,22 @@
       "sources_unreachable": 0
     },
     {
-      "file": "content\\ai\\agent-github-actions-reusable-workflows-and-call-chain.md",
-      "article_id": "agent-github-actions-reusable-workflows-and-call-chain",
+      "file": "content\\ai\\agent-github-actions-matrix-strategy-and-fail-fast.md",
+      "article_id": "agent-github-actions-matrix-strategy-and-fail-fast",
       "generation_method": "ai_structured",
       "sources_total": 2,
       "verification_results": [
         {
-          "source_title": "GitHub Reusing Workflows",
+          "source_title": "GitHub Actions Run Job Variations",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.github.com/en/actions/sharing-automations/reusing-workflows",
+              "identifier": "https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/run-job-variations",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://docs.github.com/en/actions/how-tos/reuse-automations/reuse-workflows"
+                "final_url": "https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/run-job-variations"
               },
               "match": true
             }
@@ -83031,12 +83207,12 @@
           "all_verified": true
         },
         {
-          "source_title": "GitHub Workflow Syntax workflow_call",
+          "source_title": "GitHub Workflow Syntax for GitHub Actions",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions#onworkflow_call",
+              "identifier": "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax#jobsjob_idstrategy",
               "verified": true,
               "metadata": {
                 "status": 200,
@@ -83052,22 +83228,22 @@
       "sources_unreachable": 0
     },
     {
-      "file": "content\\ai\\agent-github-actions-self-hosted-runner-labels-and-groups.md",
-      "article_id": "agent-github-actions-self-hosted-runner-labels-and-groups",
+      "file": "content\\ai\\agent-kubernetes-jobs-backoff-and-completion.md",
+      "article_id": "agent-kubernetes-jobs-backoff-and-completion",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "GitHub Choosing the Runner for a Job",
+          "source_title": "Kubernetes Jobs",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.github.com/en/actions/how-tos/write-workflows/choose-where-workflows-run/choose-the-runner-for-a-job",
+              "identifier": "https://kubernetes.io/docs/concepts/workloads/controllers/job/",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://docs.github.com/en/actions/how-tos/write-workflows/choose-where-workflows-run/choose-the-runner-for-a-job"
+                "final_url": "https://kubernetes.io/docs/concepts/workloads/controllers/job/"
               },
               "match": true
             }
@@ -83075,16 +83251,33 @@
           "all_verified": true
         },
         {
-          "source_title": "GitHub Using Self-Hosted Runners in a Workflow",
+          "source_title": "Kubernetes Job v1 API Reference",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.github.com/en/actions/how-tos/manage-runners/self-hosted-runners/use-in-a-workflow",
+              "identifier": "https://kubernetes.io/docs/reference/kubernetes-api/batch/job-v1/",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://docs.github.com/en/actions/how-tos/manage-runners/self-hosted-runners/use-in-a-workflow"
+                "final_url": "https://kubernetes.io/docs/reference/kubernetes-api/batch/job-v1/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Kubernetes TTL-after-finished Controller",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kubernetes.io/docs/concepts/workloads/controllers/ttlafterfinished/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://kubernetes.io/docs/concepts/workloads/controllers/ttlafterfinished/"
               },
               "match": true
             }
@@ -83092,7 +83285,7 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 2,
+      "sources_verified": 3,
       "sources_unreachable": 0
     },
     {
@@ -83888,22 +84081,22 @@
       "sources_unreachable": 3
     },
     {
-      "file": "content\\computer-science\\data-airflow-pools-priority-weights-and-queued-tasks.md",
-      "article_id": "data-airflow-pools-priority-weights-and-queued-tasks",
+      "file": "content\\computer-science\\data-dbt-tests-severity-and-store-failures.md",
+      "article_id": "data-dbt-tests-severity-and-store-failures",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Apache Airflow Pools",
+          "source_title": "dbt Data Tests",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://airflow.apache.org/docs/apache-airflow/stable/administration-and-deployment/pools.html",
+              "identifier": "https://docs.getdbt.com/docs/build/data-tests",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://airflow.apache.org/docs/apache-airflow/stable/administration-and-deployment/pools.html"
+                "final_url": "https://docs.getdbt.com/docs/build/data-tests"
               },
               "match": true
             }
@@ -83911,43 +84104,16 @@
           "all_verified": true
         },
         {
-          "source_title": "Apache Airflow Priority Weights",
+          "source_title": "dbt Severity, error_if, and warn_if",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://airflow.apache.org/docs/apache-airflow/stable/administration-and-deployment/priority-weight.html",
+              "identifier": "https://docs.getdbt.com/reference/resource-configs/severity",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://airflow.apache.org/docs/apache-airflow/stable/administration-and-deployment/priority-weight.html"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
-    },
-    {
-      "file": "content\\computer-science\\data-dbt-snapshots-and-slowly-changing-dimensions.md",
-      "article_id": "data-dbt-snapshots-and-slowly-changing-dimensions",
-      "generation_method": "ai_structured",
-      "sources_total": 2,
-      "verification_results": [
-        {
-          "source_title": "dbt Snapshots",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.getdbt.com/docs/build/snapshots",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.getdbt.com/docs/build/snapshots"
+                "final_url": "https://docs.getdbt.com/reference/resource-configs/severity"
               },
               "match": true
             }
@@ -83955,16 +84121,16 @@
           "all_verified": true
         },
         {
-          "source_title": "dbt Snapshot Strategy",
+          "source_title": "dbt store_failures",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.getdbt.com/reference/resource-configs/strategy",
+              "identifier": "https://docs.getdbt.com/reference/resource-configs/store_failures",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://docs.getdbt.com/reference/resource-configs/strategy"
+                "final_url": "https://docs.getdbt.com/reference/resource-configs/store_failures"
               },
               "match": true
             }
@@ -83972,7 +84138,7 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 2,
+      "sources_verified": 3,
       "sources_unreachable": 0
     },
     {
@@ -84387,6 +84553,50 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 1
+    },
+    {
+      "file": "content\\computer-science\\dev-docker-compose-healthchecks-and-dependencies.md",
+      "article_id": "dev-docker-compose-healthchecks-and-dependencies",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Docker Compose Startup Order",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.docker.com/compose/how-tos/startup-order/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.docker.com/compose/how-tos/startup-order/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Compose Specification",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://compose-spec.github.io/compose-spec/spec.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://compose-spec.github.io/compose-spec/spec.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\digital-signal-processing-sampling-fourier-transform-and-filter-design.md",
