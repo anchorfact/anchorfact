@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-08T21:25:09.179Z",
-    "total_articles": 1573,
+    "generated": "2026-06-08T21:48:14.683Z",
+    "total_articles": 1578,
     "total_with_errors": 0,
     "average_sources_per_article": "2.6",
     "overall_verification_rate": "91.8%",
-    "elapsed_ms": 101247,
-    "elapsed_sec": "101.2",
+    "elapsed_ms": 102804,
+    "elapsed_sec": "102.8",
     "concurrency": 3
   },
   "articles": [
@@ -399,6 +399,67 @@
         }
       ],
       "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-airflow-dags-and-task-instance-state.md",
+      "article_id": "agent-airflow-dags-and-task-instance-state",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Airflow Dags",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/dags.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/dags.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Airflow Tasks",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/tasks.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/tasks.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Airflow Dag Runs",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/dag-run.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/dag-run.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
       "sources_unreachable": 0
     },
     {
@@ -2305,6 +2366,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\agent-data-quality-tests-freshness-and-metrics.md",
+      "article_id": "agent-data-quality-tests-freshness-and-metrics",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "dbt Data Tests",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.getdbt.com/docs/build/data-tests",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.getdbt.com/docs/build/data-tests"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "dbt Source Freshness",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.getdbt.com/docs/deploy/source-freshness",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.getdbt.com/docs/deploy/source-freshness"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenLineage Data Quality Metrics Facet",
+          "source_type": "specification",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://openlineage.io/docs/spec/facets/dataset-facets/data_quality_metrics/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://openlineage.io/docs/spec/facets/dataset-facets/data_quality_metrics/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\agent-database-backups-and-point-in-time-restore.md",
       "article_id": "agent-database-backups-and-point-in-time-restore",
       "generation_method": "ai_structured",
@@ -2660,6 +2782,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://docs.snowflake.com/en/sql-reference/info-schema"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-dbt-artifacts-manifest-run-results-and-sources-json.md",
+      "article_id": "agent-dbt-artifacts-manifest-run-results-and-sources-json",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "dbt Manifest JSON file",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.getdbt.com/reference/artifacts/manifest-json",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.getdbt.com/reference/artifacts/manifest-json"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "dbt Run results JSON file",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.getdbt.com/reference/artifacts/run-results-json",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.getdbt.com/reference/artifacts/run-results-json"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "dbt Sources JSON file",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.getdbt.com/reference/artifacts/sources-json",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.getdbt.com/reference/artifacts/sources-json"
               },
               "match": true
             }
@@ -5771,6 +5954,145 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://www.w3.org/TR/webdriver2/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-openapi-operation-ids-and-tool-contracts.md",
+      "article_id": "agent-openapi-operation-ids-and-tool-contracts",
+      "generation_method": "ai_structured",
+      "sources_total": 4,
+      "verification_results": [
+        {
+          "source_title": "OpenAPI Specification v3.1.1",
+          "source_type": "specification",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://spec.openapis.org/oas/v3.1.1.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://spec.openapis.org/oas/v3.1.1.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenAPI Specification v3.1.1 Operation Object",
+          "source_type": "specification",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://spec.openapis.org/oas/v3.1.1.html#operation-object",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://spec.openapis.org/oas/v3.1.1.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenAPI Specification v3.1.1 Request Body Object",
+          "source_type": "specification",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://spec.openapis.org/oas/v3.1.1.html#request-body-object",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://spec.openapis.org/oas/v3.1.1.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenAPI Specification v3.1.1 Responses Object",
+          "source_type": "specification",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://spec.openapis.org/oas/v3.1.1.html#responses-object",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://spec.openapis.org/oas/v3.1.1.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 4,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-openlineage-column-lineage-and-schema-facets.md",
+      "article_id": "agent-openlineage-column-lineage-and-schema-facets",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "OpenLineage Object Model",
+          "source_type": "specification",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://openlineage.io/docs/spec/object-model/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://openlineage.io/docs/spec/object-model/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenLineage Column Level Lineage Dataset Facet",
+          "source_type": "specification",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://openlineage.io/docs/spec/facets/dataset-facets/column_lineage_facet/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://openlineage.io/docs/spec/facets/dataset-facets/column_lineage_facet/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenLineage Schema Dataset Facet",
+          "source_type": "specification",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://openlineage.io/docs/spec/facets/dataset-facets/schema/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://openlineage.io/docs/spec/facets/dataset-facets/schema/"
               },
               "match": true
             }
@@ -82134,22 +82456,66 @@
       "sources_unreachable": 0
     },
     {
-      "file": "content\\ai\\agent-airflow-dags-and-task-instance-state.md",
-      "article_id": "agent-airflow-dags-and-task-instance-state",
+      "file": "content\\ai\\agent-cloudflare-graphql-analytics-and-traffic-scorecards.md",
+      "article_id": "agent-cloudflare-graphql-analytics-and-traffic-scorecards",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Cloudflare GraphQL Analytics API",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.cloudflare.com/analytics/graphql-api/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.cloudflare.com/analytics/graphql-api/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Cloudflare GraphQL Analytics API Get Started",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.cloudflare.com/analytics/graphql-api/getting-started/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.cloudflare.com/analytics/graphql-api/getting-started/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-cloudflare-pages-deployments-and-build-logs.md",
+      "article_id": "agent-cloudflare-pages-deployments-and-build-logs",
       "generation_method": "ai_structured",
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Airflow Dags",
+          "source_title": "Cloudflare Pages Build Configuration",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/dags.html",
+              "identifier": "https://developers.cloudflare.com/pages/configuration/build-configuration/",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/dags.html"
+                "final_url": "https://developers.cloudflare.com/pages/configuration/build-configuration/"
               },
               "match": true
             }
@@ -82157,16 +82523,16 @@
           "all_verified": true
         },
         {
-          "source_title": "Airflow Tasks",
+          "source_title": "Cloudflare Pages Preview Deployments",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/tasks.html",
+              "identifier": "https://developers.cloudflare.com/pages/configuration/preview-deployments/",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/tasks.html"
+                "final_url": "https://developers.cloudflare.com/pages/configuration/preview-deployments/"
               },
               "match": true
             }
@@ -82174,16 +82540,16 @@
           "all_verified": true
         },
         {
-          "source_title": "Airflow Dag Runs",
+          "source_title": "Cloudflare Pages Debugging and Logging",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/dag-run.html",
+              "identifier": "https://developers.cloudflare.com/pages/functions/debugging-and-logging/",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/dag-run.html"
+                "final_url": "https://developers.cloudflare.com/pages/functions/debugging-and-logging/"
               },
               "match": true
             }
@@ -82195,22 +82561,66 @@
       "sources_unreachable": 0
     },
     {
-      "file": "content\\ai\\agent-data-quality-tests-freshness-and-metrics.md",
-      "article_id": "agent-data-quality-tests-freshness-and-metrics",
+      "file": "content\\ai\\agent-cloudflare-workers-tail-logs-and-source-maps.md",
+      "article_id": "agent-cloudflare-workers-tail-logs-and-source-maps",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Cloudflare Tail Workers",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.cloudflare.com/workers/observability/logs/tail-workers/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.cloudflare.com/workers/observability/logs/tail-workers/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Cloudflare Workers Source Maps and Stack Traces",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.cloudflare.com/workers/observability/source-maps/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.cloudflare.com/workers/observability/source-maps/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-github-check-runs-and-commit-statuses.md",
+      "article_id": "agent-github-check-runs-and-commit-statuses",
       "generation_method": "ai_structured",
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "dbt Data Tests",
+          "source_title": "GitHub REST API Check Runs",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.getdbt.com/docs/build/data-tests",
+              "identifier": "https://docs.github.com/en/rest/checks/runs?apiVersion=2022-11-28",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://docs.getdbt.com/docs/build/data-tests"
+                "final_url": "https://docs.github.com/en/rest/checks/runs?apiVersion=2022-11-28"
               },
               "match": true
             }
@@ -82218,16 +82628,16 @@
           "all_verified": true
         },
         {
-          "source_title": "dbt Source Freshness",
+          "source_title": "GitHub REST API Check Suites",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.getdbt.com/docs/deploy/source-freshness",
+              "identifier": "https://docs.github.com/en/rest/checks/suites?apiVersion=2022-11-28",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://docs.getdbt.com/docs/deploy/source-freshness"
+                "final_url": "https://docs.github.com/en/rest/checks/suites?apiVersion=2022-11-28"
               },
               "match": true
             }
@@ -82235,16 +82645,16 @@
           "all_verified": true
         },
         {
-          "source_title": "OpenLineage Data Quality Metrics Facet",
-          "source_type": "specification",
+          "source_title": "GitHub REST API Commit Statuses",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://openlineage.io/docs/spec/facets/dataset-facets/data_quality_metrics/",
+              "identifier": "https://docs.github.com/en/rest/commits/statuses?apiVersion=2022-11-28",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://openlineage.io/docs/spec/facets/dataset-facets/data_quality_metrics/"
+                "final_url": "https://docs.github.com/en/rest/commits/statuses?apiVersion=2022-11-28"
               },
               "match": true
             }
@@ -82256,22 +82666,22 @@
       "sources_unreachable": 0
     },
     {
-      "file": "content\\ai\\agent-dbt-artifacts-manifest-run-results-and-sources-json.md",
-      "article_id": "agent-dbt-artifacts-manifest-run-results-and-sources-json",
+      "file": "content\\ai\\agent-github-merge-queue-and-auto-merge-state.md",
+      "article_id": "agent-github-merge-queue-and-auto-merge-state",
       "generation_method": "ai_structured",
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "dbt Manifest JSON file",
+          "source_title": "GitHub Automatically Merging a Pull Request",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.getdbt.com/reference/artifacts/manifest-json",
+              "identifier": "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/automatically-merging-a-pull-request",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://docs.getdbt.com/reference/artifacts/manifest-json"
+                "final_url": "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/automatically-merging-a-pull-request"
               },
               "match": true
             }
@@ -82279,16 +82689,16 @@
           "all_verified": true
         },
         {
-          "source_title": "dbt Run results JSON file",
+          "source_title": "GitHub Managing a Merge Queue",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.getdbt.com/reference/artifacts/run-results-json",
+              "identifier": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/configuring-pull-request-merges/managing-a-merge-queue",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://docs.getdbt.com/reference/artifacts/run-results-json"
+                "final_url": "https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/configuring-pull-request-merges/managing-a-merge-queue"
               },
               "match": true
             }
@@ -82296,155 +82706,16 @@
           "all_verified": true
         },
         {
-          "source_title": "dbt Sources JSON file",
+          "source_title": "GitHub Actions merge_group Event",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.getdbt.com/reference/artifacts/sources-json",
+              "identifier": "https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#merge_group",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://docs.getdbt.com/reference/artifacts/sources-json"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
-    },
-    {
-      "file": "content\\ai\\agent-openapi-operation-ids-and-tool-contracts.md",
-      "article_id": "agent-openapi-operation-ids-and-tool-contracts",
-      "generation_method": "ai_structured",
-      "sources_total": 4,
-      "verification_results": [
-        {
-          "source_title": "OpenAPI Specification v3.1.1",
-          "source_type": "specification",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://spec.openapis.org/oas/v3.1.1.html",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://spec.openapis.org/oas/v3.1.1.html"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "OpenAPI Specification v3.1.1 Operation Object",
-          "source_type": "specification",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://spec.openapis.org/oas/v3.1.1.html#operation-object",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://spec.openapis.org/oas/v3.1.1.html"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "OpenAPI Specification v3.1.1 Request Body Object",
-          "source_type": "specification",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://spec.openapis.org/oas/v3.1.1.html#request-body-object",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://spec.openapis.org/oas/v3.1.1.html"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "OpenAPI Specification v3.1.1 Responses Object",
-          "source_type": "specification",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://spec.openapis.org/oas/v3.1.1.html#responses-object",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://spec.openapis.org/oas/v3.1.1.html"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 4,
-      "sources_unreachable": 0
-    },
-    {
-      "file": "content\\ai\\agent-openlineage-column-lineage-and-schema-facets.md",
-      "article_id": "agent-openlineage-column-lineage-and-schema-facets",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "OpenLineage Object Model",
-          "source_type": "specification",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://openlineage.io/docs/spec/object-model/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://openlineage.io/docs/spec/object-model/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "OpenLineage Column Level Lineage Dataset Facet",
-          "source_type": "specification",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://openlineage.io/docs/spec/facets/dataset-facets/column_lineage_facet/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://openlineage.io/docs/spec/facets/dataset-facets/column_lineage_facet/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "OpenLineage Schema Dataset Facet",
-          "source_type": "specification",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://openlineage.io/docs/spec/facets/dataset-facets/schema/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://openlineage.io/docs/spec/facets/dataset-facets/schema/"
+                "final_url": "https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows"
               },
               "match": true
             }
@@ -84505,10 +84776,7 @@
               "method": "url",
               "identifier": "https://www.rfc-editor.org/rfc/rfc8446",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.rfc-editor.org/rfc/rfc8446"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -84522,10 +84790,7 @@
               "method": "url",
               "identifier": "https://www.rfc-editor.org/rfc/rfc5246",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.rfc-editor.org/rfc/rfc5246"
-              },
+              "metadata": {},
               "match": false
             }
           ],

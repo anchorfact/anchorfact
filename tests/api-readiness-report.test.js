@@ -169,7 +169,7 @@ test('api-readiness modules expose query set, runner, and renderer boundaries', 
 
 test('core query set defines subscription-readiness probes across paid-use categories', () => {
   assert(CORE_CORPUS_QUERIES.length >= 100, 'core query set should preserve the 100-query foundation');
-  assert(CORE_CORPUS_QUERIES.length <= 640, 'core query set should stay inside the continued readiness-corpus range');
+  assert(CORE_CORPUS_QUERIES.length <= 645, 'core query set should stay inside the continued readiness-corpus range');
   const categories = new Set(CORE_CORPUS_QUERIES.map(query => query.category));
   for (const category of ['agent_execution_sources', 'agent_rag', 'api_mcp', 'security_governance', 'data_infrastructure', 'llm_evaluation', 'developer_workflows', 'code_intelligence']) {
     assert(categories.has(category), `missing category ${category}`);
@@ -316,6 +316,9 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'ai/agent-ticket-and-issue-tracker-lookup',
     'ai/agent-audit-logs-and-activity-feeds',
     'ai/agent-cloudwatch-logs-insights-and-log-groups',
+    'ai/agent-cloudflare-pages-deployments-and-build-logs',
+    'ai/agent-cloudflare-workers-tail-logs-and-source-maps',
+    'ai/agent-cloudflare-graphql-analytics-and-traffic-scorecards',
     'ai/agent-execution-dry-runs-and-plan-previews',
     'ai/agent-service-ownership-and-on-call-schedules',
     'ai/agent-container-image-registry-and-tags',
@@ -337,6 +340,7 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'ai/agent-helm-release-history-and-values-overrides',
     'ai/agent-github-actions-run-attempts-and-job-summaries',
     'ai/agent-github-actions-environments-and-deployment-review',
+    'ai/agent-github-check-runs-and-commit-statuses',
     'ai/agent-service-mesh-traffic-policy',
     'ai/agent-message-queue-dead-letter-queues',
     'ai/agent-scheduler-cron-and-workflow-runs',
@@ -357,6 +361,7 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'ai/agent-oauth-app-registrations-and-consent',
     'ai/agent-email-authentication-records',
     'ai/agent-codeowners-and-review-rules',
+    'ai/agent-github-merge-queue-and-auto-merge-state',
     'ai/agent-cloud-firewall-and-security-group-rules',
     'ai/agent-object-storage-bucket-policies-and-access',
     'ai/agent-saml-sso-and-identity-provider-logs',
