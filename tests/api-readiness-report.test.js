@@ -169,7 +169,7 @@ test('api-readiness modules expose query set, runner, and renderer boundaries', 
 
 test('core query set defines subscription-readiness probes across paid-use categories', () => {
   assert(CORE_CORPUS_QUERIES.length >= 100, 'core query set should preserve the 100-query foundation');
-  assert(CORE_CORPUS_QUERIES.length <= 659, 'core query set should stay inside the continued readiness-corpus range');
+  assert(CORE_CORPUS_QUERIES.length <= 664, 'core query set should stay inside the continued readiness-corpus range');
   const categories = new Set(CORE_CORPUS_QUERIES.map(query => query.category));
   for (const category of ['agent_execution_sources', 'agent_rag', 'api_mcp', 'security_governance', 'data_infrastructure', 'llm_evaluation', 'developer_workflows', 'code_intelligence']) {
     assert(categories.has(category), `missing category ${category}`);
@@ -253,6 +253,7 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'ai/llm-evaluation-mteb-embedding-retrieval-benchmarks',
     'ai/llm-evaluation-promptfoo-test-cases-and-assertions',
     'ai/llm-evaluation-deepeval-test-cases-and-metrics',
+    'ai/llm-evaluation-inspect-ai-tasks-and-scorers',
     'ai/evaluation-data-contamination',
     'computer-science/openapi-for-agent-tools',
     'computer-science/api-a2a-agent-card-and-skills',
@@ -270,6 +271,7 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'computer-science/api-websocket-subprotocol-negotiation-for-agents',
     'computer-science/api-json-rpc-request-ids-and-error-objects',
     'computer-science/api-json-schema-dialects-and-vocabularies',
+    'computer-science/api-json-schema-additionalproperties-and-unevaluatedproperties',
     'computer-science/api-http-message-signatures-and-signature-input',
     'computer-science/api-openapi-request-body-media-types-and-encoding',
     'computer-science/data-catalogs-and-metadata-lineage',
@@ -610,6 +612,7 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'ai/retrieval-opensearch-neural-search-and-search-pipelines',
     'ai/retrieval-opensearch-profile-and-explain-debugging',
     'ai/retrieval-azure-ai-search-indexers-and-data-sources',
+    'ai/retrieval-azure-ai-search-vector-filter-modes',
     'ai/retrieval-weaviate-collection-schema-and-vectorizer-config',
     'ai/retrieval-qdrant-collections-and-payload-indexes',
     'ai/retrieval-pinecone-indexes-and-namespaces',
@@ -691,6 +694,7 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'ai/llm-evaluation-run-metadata-and-reproducibility',
     'computer-science/api-json-patch-and-merge-patch',
     'computer-science/data-delta-lake-transaction-log-and-checkpoints',
+    'computer-science/data-delta-lake-merge-and-upserts',
     'computer-science/data-hudi-timeline-and-incremental-queries',
     'computer-science/data-apache-arrow-columnar-interchange',
     'computer-science/data-airbyte-connector-state-and-incremental-syncs',
@@ -703,6 +707,7 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'ai/agent-github-actions-self-hosted-runner-labels-and-groups',
     'ai/agent-github-actions-matrix-strategy-and-fail-fast',
     'ai/agent-kubernetes-jobs-backoff-and-completion',
+    'ai/agent-github-actions-workflow-artifacts-and-retention',
     'ai/agent-github-actions-oidc-claims-and-cloud-trust',
     'computer-science/data-airflow-pools-priority-weights-and-queued-tasks',
     'computer-science/data-dbt-snapshots-and-slowly-changing-dimensions',

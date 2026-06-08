@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-08T23:15:16.274Z",
-    "total_articles": 1592,
+    "generated": "2026-06-08T23:37:02.911Z",
+    "total_articles": 1597,
     "total_with_errors": 0,
     "average_sources_per_article": "2.6",
     "overall_verification_rate": "91.9%",
-    "elapsed_ms": 101018,
-    "elapsed_sec": "101.0",
+    "elapsed_ms": 96413,
+    "elapsed_sec": "96.4",
     "concurrency": 3
   },
   "articles": [
@@ -3936,6 +3936,50 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\agent-github-actions-matrix-strategy-and-fail-fast.md",
+      "article_id": "agent-github-actions-matrix-strategy-and-fail-fast",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "GitHub Actions Run Job Variations",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/run-job-variations",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/run-job-variations"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GitHub Workflow Syntax for GitHub Actions",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax#jobsjob_idstrategy",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\agent-github-actions-oidc-claims-and-cloud-trust.md",
       "article_id": "agent-github-actions-oidc-claims-and-cloud-trust",
       "generation_method": "ai_structured",
@@ -4170,6 +4214,50 @@
         }
       ],
       "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-github-actions-workflow-artifacts-and-retention.md",
+      "article_id": "agent-github-actions-workflow-artifacts-and-retention",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "GitHub Actions Workflow Artifacts",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/actions/concepts/workflows-and-actions/workflow-artifacts",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/actions/concepts/workflows-and-actions/workflow-artifacts"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GitHub Actions Store and Share Data",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/actions/tutorials/store-and-share-data",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/actions/tutorials/store-and-share-data"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
       "sources_unreachable": 0
     },
     {
@@ -4861,6 +4949,67 @@
         }
       ],
       "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-kubernetes-jobs-backoff-and-completion.md",
+      "article_id": "agent-kubernetes-jobs-backoff-and-completion",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Kubernetes Jobs",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kubernetes.io/docs/concepts/workloads/controllers/job/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://kubernetes.io/docs/concepts/workloads/controllers/job/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Kubernetes Job v1 API Reference",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kubernetes.io/docs/reference/kubernetes-api/batch/job-v1/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://kubernetes.io/docs/reference/kubernetes-api/batch/job-v1/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Kubernetes TTL-after-finished Controller",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kubernetes.io/docs/concepts/workloads/controllers/ttlafterfinished/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://kubernetes.io/docs/concepts/workloads/controllers/ttlafterfinished/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
       "sources_unreachable": 0
     },
     {
@@ -25678,6 +25827,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\llm-evaluation-inspect-ai-tasks-and-scorers.md",
+      "article_id": "llm-evaluation-inspect-ai-tasks-and-scorers",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Inspect AI Tasks",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://inspect.aisi.org.uk/tasks.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://inspect.aisi.org.uk/tasks.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Inspect AI Datasets",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://inspect.aisi.org.uk/datasets.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://inspect.aisi.org.uk/datasets.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Inspect AI Standard Scorers",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://inspect.aisi.org.uk/standard-scorers.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://inspect.aisi.org.uk/standard-scorers.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\llm-evaluation-inter-annotator-agreement.md",
       "article_id": "llm-evaluation-inter-annotator-agreement",
       "generation_method": "ai_structured",
@@ -33083,6 +33293,50 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://learn.microsoft.com/en-us/rest/api/searchservice/indexers/create?view=rest-searchservice-2025-09-01"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\retrieval-azure-ai-search-vector-filter-modes.md",
+      "article_id": "retrieval-azure-ai-search-vector-filter-modes",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Azure AI Search Vector Filters",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://learn.microsoft.com/en-us/azure/search/vector-search-filters",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.microsoft.com/en-us/azure/search/vector-search-filters"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Azure AI Search Vector Query",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://learn.microsoft.com/en-us/azure/search/vector-search-how-to-query",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.microsoft.com/en-us/azure/search/vector-search-how-to-query"
               },
               "match": true
             }
@@ -43676,6 +43930,50 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\api-json-schema-additionalproperties-and-unevaluatedproperties.md",
+      "article_id": "api-json-schema-additionalproperties-and-unevaluatedproperties",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "JSON Schema Object Reference",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://json-schema.org/understanding-json-schema/reference/object",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://json-schema.org/understanding-json-schema/reference/object"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "JSON Schema 2020-12 Core",
+          "source_type": "specification",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://json-schema.org/draft/2020-12/json-schema-core",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://json-schema.org/draft/2020-12/json-schema-core"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\api-json-schema-conditional-validation.md",
       "article_id": "api-json-schema-conditional-validation",
       "generation_method": "ai_structured",
@@ -52122,6 +52420,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\data-dbt-tests-severity-and-store-failures.md",
+      "article_id": "data-dbt-tests-severity-and-store-failures",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "dbt Data Tests",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.getdbt.com/docs/build/data-tests",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.getdbt.com/docs/build/data-tests"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "dbt Severity, error_if, and warn_if",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.getdbt.com/reference/resource-configs/severity",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.getdbt.com/reference/resource-configs/severity"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "dbt store_failures",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.getdbt.com/reference/resource-configs/store_failures",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.getdbt.com/reference/resource-configs/store_failures"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\data-deduplication-and-entity-resolution.md",
       "article_id": "data-deduplication-and-entity-resolution",
       "generation_method": "ai_structured",
@@ -55778,6 +56137,50 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://containers.dev/implementors/json_reference/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\dev-docker-compose-healthchecks-and-dependencies.md",
+      "article_id": "dev-docker-compose-healthchecks-and-dependencies",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Docker Compose Startup Order",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.docker.com/compose/how-tos/startup-order/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.docker.com/compose/how-tos/startup-order/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Compose Specification",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://compose-spec.github.io/compose-spec/spec.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://compose-spec.github.io/compose-spec/spec.html"
               },
               "match": true
             }
@@ -83184,111 +83587,6 @@
       "sources_unreachable": 0
     },
     {
-      "file": "content\\ai\\agent-github-actions-matrix-strategy-and-fail-fast.md",
-      "article_id": "agent-github-actions-matrix-strategy-and-fail-fast",
-      "generation_method": "ai_structured",
-      "sources_total": 2,
-      "verification_results": [
-        {
-          "source_title": "GitHub Actions Run Job Variations",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/run-job-variations",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/run-job-variations"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "GitHub Workflow Syntax for GitHub Actions",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax#jobsjob_idstrategy",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
-    },
-    {
-      "file": "content\\ai\\agent-kubernetes-jobs-backoff-and-completion.md",
-      "article_id": "agent-kubernetes-jobs-backoff-and-completion",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "Kubernetes Jobs",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://kubernetes.io/docs/concepts/workloads/controllers/job/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://kubernetes.io/docs/concepts/workloads/controllers/job/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Kubernetes Job v1 API Reference",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://kubernetes.io/docs/reference/kubernetes-api/batch/job-v1/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://kubernetes.io/docs/reference/kubernetes-api/batch/job-v1/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Kubernetes TTL-after-finished Controller",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://kubernetes.io/docs/concepts/workloads/controllers/ttlafterfinished/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://kubernetes.io/docs/concepts/workloads/controllers/ttlafterfinished/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
-    },
-    {
       "file": "content\\ai\\ai-for-genomics-variant-calling-gene-expression-prediction-and-protein-dna-binding.md",
       "article_id": "kb-2026-00005",
       "generation_method": "ai_structured",
@@ -84081,22 +84379,22 @@
       "sources_unreachable": 3
     },
     {
-      "file": "content\\computer-science\\data-dbt-tests-severity-and-store-failures.md",
-      "article_id": "data-dbt-tests-severity-and-store-failures",
+      "file": "content\\computer-science\\data-delta-lake-merge-and-upserts.md",
+      "article_id": "data-delta-lake-merge-and-upserts",
       "generation_method": "ai_structured",
-      "sources_total": 3,
+      "sources_total": 2,
       "verification_results": [
         {
-          "source_title": "dbt Data Tests",
+          "source_title": "Delta Lake Update and Merge",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.getdbt.com/docs/build/data-tests",
+              "identifier": "https://docs.delta.io/delta-update/",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://docs.getdbt.com/docs/build/data-tests"
+                "final_url": "https://docs.delta.io/delta-update/"
               },
               "match": true
             }
@@ -84104,33 +84402,16 @@
           "all_verified": true
         },
         {
-          "source_title": "dbt Severity, error_if, and warn_if",
+          "source_title": "Databricks Delta Merge",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.getdbt.com/reference/resource-configs/severity",
+              "identifier": "https://docs.databricks.com/aws/en/delta/merge",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://docs.getdbt.com/reference/resource-configs/severity"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "dbt store_failures",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.getdbt.com/reference/resource-configs/store_failures",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.getdbt.com/reference/resource-configs/store_failures"
+                "final_url": "https://docs.databricks.com/aws/en/delta/merge"
               },
               "match": true
             }
@@ -84138,7 +84419,7 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 3,
+      "sources_verified": 2,
       "sources_unreachable": 0
     },
     {
@@ -84553,50 +84834,6 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 1
-    },
-    {
-      "file": "content\\computer-science\\dev-docker-compose-healthchecks-and-dependencies.md",
-      "article_id": "dev-docker-compose-healthchecks-and-dependencies",
-      "generation_method": "ai_structured",
-      "sources_total": 2,
-      "verification_results": [
-        {
-          "source_title": "Docker Compose Startup Order",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.docker.com/compose/how-tos/startup-order/",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.docker.com/compose/how-tos/startup-order/"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Compose Specification",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://compose-spec.github.io/compose-spec/spec.html",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://compose-spec.github.io/compose-spec/spec.html"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\digital-signal-processing-sampling-fourier-transform-and-filter-design.md",
