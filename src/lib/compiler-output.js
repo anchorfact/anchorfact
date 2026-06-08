@@ -254,7 +254,7 @@ function writeApiAccessPage(distDir, publicResults, draftResults, claims) {
 function writeLlmsTxt(distDir, publicResults, claims, verificationTimestamp) {
   const entries = publicResults.map(result => {
     const slug = result._quality.canonicalSlug;
-    return `- [${result.headline || slug}](https://anchorfact.org/${slug}/index.md): ${result.description || ''} [${result._confidence.level}; ${result._verificationData?.sources_verified || 0}/${result._verificationData?.sources_total || 0} sources verified]`;
+    return `- [${result.headline || slug}](https://anchorfact.org/${slug}/index.md) [${result._confidence.level}; ${result._verificationData?.sources_verified || 0}/${result._verificationData?.sources_total || 0} sources verified]`;
   }).join('\n');
 
   const llmsTxt = `# AnchorFact
