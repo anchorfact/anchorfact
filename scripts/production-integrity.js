@@ -10,9 +10,9 @@ import { verifyLiveProvenance } from '../src/lib/provenance-verify.js';
 import { runAiEvals } from './run-ai-evals.js';
 
 export const DEFAULT_EXPECTED_COUNTS = {
-  public: 1235,
+  public: 1243,
   draft: 300,
-  claims: 3865
+  claims: 3889
 };
 
 export const DEFAULT_PUBLIC_KEY_PATH = 'keys/provenance.pub.pem';
