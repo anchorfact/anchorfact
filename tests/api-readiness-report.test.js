@@ -169,7 +169,7 @@ test('api-readiness modules expose query set, runner, and renderer boundaries', 
 
 test('core query set defines subscription-readiness probes across paid-use categories', () => {
   assert(CORE_CORPUS_QUERIES.length >= 100, 'core query set should preserve the 100-query foundation');
-  assert(CORE_CORPUS_QUERIES.length <= 648, 'core query set should stay inside the continued readiness-corpus range');
+  assert(CORE_CORPUS_QUERIES.length <= 651, 'core query set should stay inside the continued readiness-corpus range');
   const categories = new Set(CORE_CORPUS_QUERIES.map(query => query.category));
   for (const category of ['agent_execution_sources', 'agent_rag', 'api_mcp', 'security_governance', 'data_infrastructure', 'llm_evaluation', 'developer_workflows', 'code_intelligence']) {
     assert(categories.has(category), `missing category ${category}`);
@@ -537,6 +537,7 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'computer-science/code-merge-conflicts-and-conflict-markers-for-agents',
     'ai/agent-log-correlation-ids-and-trace-context',
     'ai/agent-opentelemetry-baggage-and-context-propagation',
+    'ai/agent-opentelemetry-collector-pipelines-and-exporters',
     'ai/agent-metrics-cardinality-and-label-explosion',
     'ai/agent-message-ordering-and-deduplication',
     'ai/rag-metadata-filters-and-filterable-vector-search',
@@ -694,8 +695,10 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'computer-science/data-apache-arrow-columnar-interchange',
     'computer-science/data-airbyte-connector-state-and-incremental-syncs',
     'computer-science/data-kafka-connect-connector-status-and-task-errors',
+    'computer-science/data-kafka-connect-error-tolerance-and-dead-letter-queues',
     'computer-science/dev-containers-and-reproducible-agent-workspaces',
     'ai/agent-github-actions-token-permissions-and-secrets',
+    'ai/agent-github-actions-concurrency-and-cancelled-runs',
     'ai/agent-github-actions-oidc-claims-and-cloud-trust',
     'computer-science/code-search-pathspecs-and-ignore-files-for-agents',
     'computer-science/code-taint-tracking-and-data-flow-security-for-agents'

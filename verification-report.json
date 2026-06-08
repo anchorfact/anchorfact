@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-08T22:16:42.713Z",
-    "total_articles": 1581,
+    "generated": "2026-06-08T22:42:55.892Z",
+    "total_articles": 1584,
     "total_with_errors": 0,
     "average_sources_per_article": "2.6",
-    "overall_verification_rate": "91.8%",
-    "elapsed_ms": 99397,
-    "elapsed_sec": "99.4",
+    "overall_verification_rate": "91.9%",
+    "elapsed_ms": 97638,
+    "elapsed_sec": "97.6",
     "concurrency": 3
   },
   "articles": [
@@ -3848,6 +3848,50 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\agent-github-actions-concurrency-and-cancelled-runs.md",
+      "article_id": "agent-github-actions-concurrency-and-cancelled-runs",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "GitHub Actions Control Workflow Concurrency",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/actions/writing-workflows/choosing-what-your-workflow-does/control-the-concurrency-of-workflows-and-jobs",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/actions/how-tos/write-workflows/choose-when-workflows-run/control-workflow-concurrency"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GitHub Workflow Syntax Concurrency",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions#concurrency",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\agent-github-actions-environments-and-deployment-review.md",
       "article_id": "agent-github-actions-environments-and-deployment-review",
       "generation_method": "ai_structured",
@@ -3881,6 +3925,50 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://docs.github.com/en/actions/how-tos/deploy/configure-and-manage-deployments/review-deployments"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-github-actions-oidc-claims-and-cloud-trust.md",
+      "article_id": "agent-github-actions-oidc-claims-and-cloud-trust",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "GitHub Configuring OpenID Connect in Cloud Providers",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/actions/security-for-github-actions/security-hardening-your-deployments/configuring-openid-connect-in-cloud-providers",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/actions/how-tos/secure-your-work/security-harden-deployments/oidc-in-cloud-providers"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GitHub OpenID Connect Reference",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/actions/reference/security/oidc",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/actions/reference/security/oidc"
               },
               "match": true
             }
@@ -3933,6 +4021,67 @@
         }
       ],
       "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-github-actions-token-permissions-and-secrets.md",
+      "article_id": "agent-github-actions-token-permissions-and-secrets",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "GitHub Automatic Token Authentication",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/actions/security-for-github-actions/security-guides/automatic-token-authentication",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/actions/tutorials/authenticate-with-github_token"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GitHub Workflow Syntax Permissions",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions#permissions",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GitHub Using Secrets in Actions",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/actions/security-for-github-actions/security-guides/using-secrets-in-github-actions",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/use-secrets"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
       "sources_unreachable": 0
     },
     {
@@ -6408,6 +6557,50 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://www.w3.org/TR/baggage/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-opentelemetry-collector-pipelines-and-exporters.md",
+      "article_id": "agent-opentelemetry-collector-pipelines-and-exporters",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "OpenTelemetry Collector Configuration",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://opentelemetry.io/docs/collector/configuration/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://opentelemetry.io/docs/collector/configuration/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenTelemetry Collector Exporters",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://opentelemetry.io/docs/collector/components/exporter/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://opentelemetry.io/docs/collector/components/exporter/"
               },
               "match": true
             }
@@ -52471,6 +52664,50 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\data-kafka-connect-connector-status-and-task-errors.md",
+      "article_id": "data-kafka-connect-connector-status-and-task-errors",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Apache Kafka Connect Administration",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kafka.apache.org/43/kafka-connect/administration/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://kafka.apache.org/43/kafka-connect/administration/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Confluent Kafka Connect REST API",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.confluent.io/platform/current/connect/references/restapi.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.confluent.io/platform/current/connect/references/restapi.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\data-kafka-consumer-group-offsets-and-rebalancing.md",
       "article_id": "data-kafka-consumer-group-offsets-and-rebalancing",
       "generation_method": "ai_structured",
@@ -82727,111 +82964,6 @@
       "sources_unreachable": 0
     },
     {
-      "file": "content\\ai\\agent-github-actions-oidc-claims-and-cloud-trust.md",
-      "article_id": "agent-github-actions-oidc-claims-and-cloud-trust",
-      "generation_method": "ai_structured",
-      "sources_total": 2,
-      "verification_results": [
-        {
-          "source_title": "GitHub Configuring OpenID Connect in Cloud Providers",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.github.com/en/actions/security-for-github-actions/security-hardening-your-deployments/configuring-openid-connect-in-cloud-providers",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.github.com/en/actions/how-tos/secure-your-work/security-harden-deployments/oidc-in-cloud-providers"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "GitHub OpenID Connect Reference",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.github.com/en/actions/reference/security/oidc",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.github.com/en/actions/reference/security/oidc"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
-    },
-    {
-      "file": "content\\ai\\agent-github-actions-token-permissions-and-secrets.md",
-      "article_id": "agent-github-actions-token-permissions-and-secrets",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "GitHub Automatic Token Authentication",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.github.com/en/actions/security-for-github-actions/security-guides/automatic-token-authentication",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.github.com/en/actions/tutorials/authenticate-with-github_token"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "GitHub Workflow Syntax Permissions",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions#permissions",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "GitHub Using Secrets in Actions",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.github.com/en/actions/security-for-github-actions/security-guides/using-secrets-in-github-actions",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/use-secrets"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
-    },
-    {
       "file": "content\\ai\\ai-for-genomics-variant-calling-gene-expression-prediction-and-protein-dna-binding.md",
       "article_id": "kb-2026-00005",
       "generation_method": "ai_structured",
@@ -83624,22 +83756,22 @@
       "sources_unreachable": 3
     },
     {
-      "file": "content\\computer-science\\data-kafka-connect-connector-status-and-task-errors.md",
-      "article_id": "data-kafka-connect-connector-status-and-task-errors",
+      "file": "content\\computer-science\\data-kafka-connect-error-tolerance-and-dead-letter-queues.md",
+      "article_id": "data-kafka-connect-error-tolerance-and-dead-letter-queues",
       "generation_method": "ai_structured",
       "sources_total": 2,
       "verification_results": [
         {
-          "source_title": "Apache Kafka Connect Administration",
+          "source_title": "Confluent Kafka Connect Dead Letter Queue",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://kafka.apache.org/43/kafka-connect/administration/",
+              "identifier": "https://docs.confluent.io/platform/current/connect/concepts.html#dead-letter-queue",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://kafka.apache.org/43/kafka-connect/administration/"
+                "final_url": "https://docs.confluent.io/platform/current/connect/index.html"
               },
               "match": true
             }
@@ -83647,16 +83779,16 @@
           "all_verified": true
         },
         {
-          "source_title": "Confluent Kafka Connect REST API",
+          "source_title": "Apache Kafka Connect Configuration",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.confluent.io/platform/current/connect/references/restapi.html",
+              "identifier": "https://kafka.apache.org/43/configuration/kafka-connect-configs/",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://docs.confluent.io/platform/current/connect/references/restapi.html"
+                "final_url": "https://kafka.apache.org/43/configuration/kafka-connect-configs/"
               },
               "match": true
             }
