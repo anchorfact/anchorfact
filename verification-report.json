@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-08T18:06:41.627Z",
-    "total_articles": 1529,
+    "generated": "2026-06-08T18:40:14.148Z",
+    "total_articles": 1535,
     "total_with_errors": 0,
     "average_sources_per_article": "2.6",
-    "overall_verification_rate": "91.5%",
-    "elapsed_ms": 95070,
-    "elapsed_sec": "95.1",
+    "overall_verification_rate": "91.6%",
+    "elapsed_ms": 103535,
+    "elapsed_sec": "103.5",
     "concurrency": 3
   },
   "articles": [
@@ -43103,6 +43103,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\api-sdk-generation-and-contract-drift.md",
+      "article_id": "api-sdk-generation-and-contract-drift",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "OpenAPI Specification",
+          "source_type": "technical_specification",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://spec.openapis.org/oas/latest.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://spec.openapis.org/oas/latest.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenAPI Generator Usage",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://openapi-generator.tech/docs/usage",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://openapi-generator.tech/docs/usage/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "oasdiff",
+          "source_type": "software_repository",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://github.com/oasdiff/oasdiff",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://github.com/oasdiff/oasdiff"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\api-server-sent-events-and-streaming-responses.md",
       "article_id": "api-server-sent-events-and-streaming-responses",
       "generation_method": "ai_structured",
@@ -79694,6 +79755,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\agent-service-catalogs-and-ownership-metadata.md",
+      "article_id": "agent-service-catalogs-and-ownership-metadata",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Backstage Software Catalog",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://backstage.io/docs/features/software-catalog/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://backstage.io/docs/features/software-catalog/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Backstage Descriptor Format",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://backstage.io/docs/features/software-catalog/descriptor-format/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://backstage.io/docs/features/software-catalog/descriptor-format/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Harness IDP Catalog Overview",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.harness.io/docs/internal-developer-portal/catalog/overview/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developer.harness.io/docs/internal-developer-portal/catalog/overview/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\ai-for-genomics-variant-calling-gene-expression-prediction-and-protein-dna-binding.md",
       "article_id": "kb-2026-00005",
       "generation_method": "ai_structured",
@@ -79716,6 +79838,128 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 1
+    },
+    {
+      "file": "content\\ai\\llm-evaluation-trace-sampling-and-annotation-queues.md",
+      "article_id": "llm-evaluation-trace-sampling-and-annotation-queues",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "LangSmith Evaluation Concepts",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.langchain.com/langsmith/evaluation-concepts",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.langchain.com/langsmith/evaluation-concepts"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "LangSmith Annotation Queues",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.langchain.com/langsmith/annotation-queues",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.langchain.com/langsmith/annotation-queues"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenTelemetry Sampling",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://opentelemetry.io/docs/concepts/sampling/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://opentelemetry.io/docs/concepts/sampling/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\rag-connector-throttling-and-crawl-rate-limits.md",
+      "article_id": "rag-connector-throttling-and-crawl-rate-limits",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Microsoft Graph Throttling",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://learn.microsoft.com/en-us/graph/throttling",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.microsoft.com/en-us/graph/throttling"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Google Drive API Limits",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developers.google.com/drive/api/guides/limits",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developers.google.com/workspace/drive/api/guides/limits"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Atlassian Cloud Rate Limiting",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.atlassian.com/cloud/confluence/rate-limiting/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developer.atlassian.com/cloud/confluence/rate-limiting/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content\\arts\\history-of-printing.md",
@@ -79992,22 +80236,22 @@
       "sources_unreachable": 1
     },
     {
-      "file": "content\\computer-science\\api-sdk-generation-and-contract-drift.md",
-      "article_id": "api-sdk-generation-and-contract-drift",
+      "file": "content\\computer-science\\api-mcp-authorization-and-oauth-protected-resources.md",
+      "article_id": "api-mcp-authorization-and-oauth-protected-resources",
       "generation_method": "ai_structured",
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "OpenAPI Specification",
+          "source_title": "MCP Authorization",
           "source_type": "technical_specification",
           "results": [
             {
               "method": "url",
-              "identifier": "https://spec.openapis.org/oas/latest.html",
+              "identifier": "https://modelcontextprotocol.io/specification/2025-06-18/basic/authorization",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://spec.openapis.org/oas/latest.html"
+                "final_url": "https://modelcontextprotocol.io/specification/2025-06-18/basic/authorization"
               },
               "match": true
             }
@@ -80015,16 +80259,16 @@
           "all_verified": true
         },
         {
-          "source_title": "OpenAPI Generator Usage",
-          "source_type": "documentation",
+          "source_title": "RFC 8707 OAuth 2.0 Resource Indicators",
+          "source_type": "technical_specification",
           "results": [
             {
               "method": "url",
-              "identifier": "https://openapi-generator.tech/docs/usage",
+              "identifier": "https://datatracker.ietf.org/doc/html/rfc8707",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://openapi-generator.tech/docs/usage/"
+                "final_url": "https://datatracker.ietf.org/doc/html/rfc8707"
               },
               "match": true
             }
@@ -80032,16 +80276,16 @@
           "all_verified": true
         },
         {
-          "source_title": "oasdiff",
-          "source_type": "software_repository",
+          "source_title": "RFC 6750 OAuth 2.0 Bearer Token Usage",
+          "source_type": "technical_specification",
           "results": [
             {
               "method": "url",
-              "identifier": "https://github.com/oasdiff/oasdiff",
+              "identifier": "https://datatracker.ietf.org/doc/html/rfc6750",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://github.com/oasdiff/oasdiff"
+                "final_url": "https://datatracker.ietf.org/doc/html/rfc6750"
               },
               "match": true
             }
@@ -80606,6 +80850,128 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 3
+    },
+    {
+      "file": "content\\computer-science\\data-parameterized-sql-and-agent-generated-queries.md",
+      "article_id": "data-parameterized-sql-and-agent-generated-queries",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "BigQuery Parameterized Queries",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.cloud.google.com/bigquery/docs/parameterized-queries",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/bigquery/docs/parameterized-queries?hl=he"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Snowflake Bind Variables",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.snowflake.com/en/sql-reference/bind-variables",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.snowflake.com/en/sql-reference/bind-variables"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "OWASP SQL Injection Prevention Cheat Sheet",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\data-warehouse-cost-controls-and-query-quotas.md",
+      "article_id": "data-warehouse-cost-controls-and-query-quotas",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "BigQuery Custom Quotas",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.cloud.google.com/bigquery/docs/custom-quotas",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.cloud.google.com/bigquery/docs/custom-quotas"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Snowflake Resource Monitors",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.snowflake.com/en/user-guide/resource-monitors",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.snowflake.com/en/user-guide/resource-monitors"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "AWS Budgets",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\data-warehousing.md",
