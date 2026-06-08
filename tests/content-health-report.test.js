@@ -173,6 +173,38 @@ test('buildContentHealthReport summarizes public and draft health', () => {
   }
 });
 
+test('current production counts do not mark docs stale', () => {
+  const root = mkdtempSync(join(tmpdir(), 'anchorfact-health-'));
+  mkdirSync(join(root, 'docs'), { recursive: true });
+  writeFileSync(
+    join(root, 'README.md'),
+    'EXPECTED_PUBLIC_ARTICLES=1217 EXPECTED_DRAFT_ARTICLES=300 EXPECTED_CLAIMS=3811'
+  );
+  writeFileSync(
+    join(root, 'docs', 'LAUNCH_READINESS.md'),
+    'Current trusted counts: 1217 public / 300 draft / 3811 claims.'
+  );
+
+  try {
+    const report = buildContentHealthReport({
+      manifest: {
+        article_count: 1,
+        public_article_count: 1,
+        draft_article_count: 0,
+        claim_count: 1,
+        articles: [publicArticle('ai/public-a')]
+      },
+      claimsPayload: { claims: [{ article: 'https://anchorfact.org/ai/public-a/' }] },
+      verificationReport: { articles: [] },
+      contentBySlug: new Map([['ai/public-a', content('ai')]])
+    }, { root, generatedAt: '2026-06-08T00:00:00.000Z' });
+
+    assertEq(report.stale_docs, []);
+  } finally {
+    rmSync(root, { recursive: true, force: true });
+  }
+});
+
 test('renderContentHealthReport uses readable report sections', () => {
   const report = {
     generated: '2026-05-28T00:00:00.000Z',
