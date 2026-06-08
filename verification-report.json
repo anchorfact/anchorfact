@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-08T22:42:55.892Z",
-    "total_articles": 1584,
+    "generated": "2026-06-08T22:58:17.286Z",
+    "total_articles": 1588,
     "total_with_errors": 0,
     "average_sources_per_article": "2.6",
     "overall_verification_rate": "91.9%",
-    "elapsed_ms": 97638,
-    "elapsed_sec": "97.6",
+    "elapsed_ms": 98713,
+    "elapsed_sec": "98.7",
     "concurrency": 3
   },
   "articles": [
@@ -52708,6 +52708,50 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\data-kafka-connect-error-tolerance-and-dead-letter-queues.md",
+      "article_id": "data-kafka-connect-error-tolerance-and-dead-letter-queues",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Confluent Kafka Connect Dead Letter Queue",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.confluent.io/platform/current/connect/concepts.html#dead-letter-queue",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.confluent.io/platform/current/connect/index.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Apache Kafka Connect Configuration",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kafka.apache.org/43/configuration/kafka-connect-configs/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://kafka.apache.org/43/configuration/kafka-connect-configs/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\data-kafka-consumer-group-offsets-and-rebalancing.md",
       "article_id": "data-kafka-consumer-group-offsets-and-rebalancing",
       "generation_method": "ai_structured",
@@ -82964,6 +83008,94 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\agent-github-actions-reusable-workflows-and-call-chain.md",
+      "article_id": "agent-github-actions-reusable-workflows-and-call-chain",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "GitHub Reusing Workflows",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/actions/sharing-automations/reusing-workflows",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/actions/how-tos/reuse-automations/reuse-workflows"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GitHub Workflow Syntax workflow_call",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions#onworkflow_call",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-github-actions-self-hosted-runner-labels-and-groups.md",
+      "article_id": "agent-github-actions-self-hosted-runner-labels-and-groups",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "GitHub Choosing the Runner for a Job",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/actions/how-tos/write-workflows/choose-where-workflows-run/choose-the-runner-for-a-job",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/actions/how-tos/write-workflows/choose-where-workflows-run/choose-the-runner-for-a-job"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GitHub Using Self-Hosted Runners in a Workflow",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/actions/how-tos/manage-runners/self-hosted-runners/use-in-a-workflow",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/actions/how-tos/manage-runners/self-hosted-runners/use-in-a-workflow"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\ai-for-genomics-variant-calling-gene-expression-prediction-and-protein-dna-binding.md",
       "article_id": "kb-2026-00005",
       "generation_method": "ai_structured",
@@ -83756,22 +83888,22 @@
       "sources_unreachable": 3
     },
     {
-      "file": "content\\computer-science\\data-kafka-connect-error-tolerance-and-dead-letter-queues.md",
-      "article_id": "data-kafka-connect-error-tolerance-and-dead-letter-queues",
+      "file": "content\\computer-science\\data-airflow-pools-priority-weights-and-queued-tasks.md",
+      "article_id": "data-airflow-pools-priority-weights-and-queued-tasks",
       "generation_method": "ai_structured",
       "sources_total": 2,
       "verification_results": [
         {
-          "source_title": "Confluent Kafka Connect Dead Letter Queue",
+          "source_title": "Apache Airflow Pools",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.confluent.io/platform/current/connect/concepts.html#dead-letter-queue",
+              "identifier": "https://airflow.apache.org/docs/apache-airflow/stable/administration-and-deployment/pools.html",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://docs.confluent.io/platform/current/connect/index.html"
+                "final_url": "https://airflow.apache.org/docs/apache-airflow/stable/administration-and-deployment/pools.html"
               },
               "match": true
             }
@@ -83779,16 +83911,60 @@
           "all_verified": true
         },
         {
-          "source_title": "Apache Kafka Connect Configuration",
+          "source_title": "Apache Airflow Priority Weights",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://kafka.apache.org/43/configuration/kafka-connect-configs/",
+              "identifier": "https://airflow.apache.org/docs/apache-airflow/stable/administration-and-deployment/priority-weight.html",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://kafka.apache.org/43/configuration/kafka-connect-configs/"
+                "final_url": "https://airflow.apache.org/docs/apache-airflow/stable/administration-and-deployment/priority-weight.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\data-dbt-snapshots-and-slowly-changing-dimensions.md",
+      "article_id": "data-dbt-snapshots-and-slowly-changing-dimensions",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "dbt Snapshots",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.getdbt.com/docs/build/snapshots",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.getdbt.com/docs/build/snapshots"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "dbt Snapshot Strategy",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.getdbt.com/reference/resource-configs/strategy",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.getdbt.com/reference/resource-configs/strategy"
               },
               "match": true
             }
