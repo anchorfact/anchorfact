@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-08T19:53:00.822Z",
-    "total_articles": 1553,
+    "generated": "2026-06-08T20:16:04.155Z",
+    "total_articles": 1557,
     "total_with_errors": 0,
     "average_sources_per_article": "2.6",
     "overall_verification_rate": "91.7%",
-    "elapsed_ms": 99039,
-    "elapsed_sec": "99.0",
+    "elapsed_ms": 96005,
+    "elapsed_sec": "96.0",
     "concurrency": 3
   },
   "articles": [
@@ -6090,6 +6090,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\agent-process-diagnostic-reports-and-crash-evidence.md",
+      "article_id": "agent-process-diagnostic-reports-and-crash-evidence",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Node.js Diagnostic Report",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://nodejs.org/api/report.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://nodejs.org/api/report.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Python faulthandler",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.python.org/3/library/faulthandler.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.python.org/3/library/faulthandler.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Kubernetes Debug Pods",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kubernetes.io/docs/tasks/debug/debug-application/debug-pods/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://kubernetes.io/docs/tasks/debug/debug-application/debug-pods/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\agent-prometheus-promql-and-alert-labels.md",
       "article_id": "agent-prometheus-promql-and-alert-labels",
       "generation_method": "ai_structured",
@@ -6577,6 +6638,128 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://docs.gitlab.com/runner/executors/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-runtime-cpu-profiles-and-flame-graphs.md",
+      "article_id": "agent-runtime-cpu-profiles-and-flame-graphs",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Node.js Flame Graphs",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://nodejs.org/en/learn/diagnostics/flame-graphs",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://nodejs.org/learn/diagnostics/flame-graphs"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Python Profilers",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.python.org/3/library/profile.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.python.org/3/library/profile.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Go pprof",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://go.dev/blog/pprof",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://go.dev/blog/pprof"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-runtime-heap-snapshots-and-memory-leaks.md",
+      "article_id": "agent-runtime-heap-snapshots-and-memory-leaks",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Node.js Heap Snapshots",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://nodejs.org/en/learn/diagnostics/memory/using-heap-snapshot",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://nodejs.org/learn/diagnostics/memory/using-heap-snapshot"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Python tracemalloc",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.python.org/3/library/tracemalloc.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.python.org/3/library/tracemalloc.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Chrome DevTools Memory Problems",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.chrome.com/docs/devtools/memory-problems",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developer.chrome.com/docs/devtools/memory-problems"
               },
               "match": true
             }
@@ -42192,6 +42375,67 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\api-json-schema-conditional-validation.md",
+      "article_id": "api-json-schema-conditional-validation",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "JSON Schema Conditionals",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://json-schema.org/understanding-json-schema/reference/conditionals",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://json-schema.org/understanding-json-schema/reference/conditionals"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "JSON Schema 2020-12 Validation",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://json-schema.org/draft/2020-12/json-schema-validation",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://json-schema.org/draft/2020-12/json-schema-validation"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "JSON Schema 2020-12 Core",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://json-schema.org/draft/2020-12/json-schema-core",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://json-schema.org/draft/2020-12/json-schema-core"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\api-json-schema-dialects-and-vocabularies.md",
       "article_id": "api-json-schema-dialects-and-vocabularies",
       "generation_method": "ai_structured",
@@ -42723,6 +42967,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/authorizing-oauth-apps"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\api-oauth-dpop-proof-of-possession.md",
+      "article_id": "api-oauth-dpop-proof-of-possession",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "RFC 9449 OAuth DPoP",
+          "source_type": "rfc",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://datatracker.ietf.org/doc/html/rfc9449",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://datatracker.ietf.org/doc/html/rfc9449"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "RFC 6750 OAuth Bearer Token Usage",
+          "source_type": "rfc",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://datatracker.ietf.org/doc/html/rfc6750",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://datatracker.ietf.org/doc/html/rfc6750"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "RFC 9700 OAuth 2.0 Security Best Current Practice",
+          "source_type": "rfc",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://datatracker.ietf.org/doc/html/rfc9700",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://datatracker.ietf.org/doc/html/rfc9700"
               },
               "match": true
             }
@@ -50234,6 +50539,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://docs.getdbt.com/reference/artifacts/sources-json"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\data-dbt-state-selection-and-defer.md",
+      "article_id": "data-dbt-state-selection-and-defer",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "dbt State Selection",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.getdbt.com/reference/node-selection/methods#state",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.getdbt.com/reference/node-selection/methods"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "dbt Defer",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.getdbt.com/reference/node-selection/defer",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.getdbt.com/reference/node-selection/defer"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "dbt About State",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.getdbt.com/reference/node-selection/state-comparison-caveats",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.getdbt.com/reference/node-selection/state-comparison-caveats"
               },
               "match": true
             }
@@ -80975,22 +81341,22 @@
       "sources_unreachable": 0
     },
     {
-      "file": "content\\ai\\agent-process-diagnostic-reports-and-crash-evidence.md",
-      "article_id": "agent-process-diagnostic-reports-and-crash-evidence",
+      "file": "content\\ai\\agent-repository-task-runners-and-package-scripts.md",
+      "article_id": "agent-repository-task-runners-and-package-scripts",
       "generation_method": "ai_structured",
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Node.js Diagnostic Report",
+          "source_title": "npm Scripts",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://nodejs.org/api/report.html",
+              "identifier": "https://docs.npmjs.com/cli/v11/using-npm/scripts/",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://nodejs.org/api/report.html"
+                "final_url": "https://docs.npmjs.com/cli/v11/using-npm/scripts/"
               },
               "match": true
             }
@@ -80998,16 +81364,16 @@
           "all_verified": true
         },
         {
-          "source_title": "Python faulthandler",
+          "source_title": "Node.js child_process",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.python.org/3/library/faulthandler.html",
+              "identifier": "https://nodejs.org/api/child_process.html",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://docs.python.org/3/library/faulthandler.html"
+                "final_url": "https://nodejs.org/api/child_process.html"
               },
               "match": true
             }
@@ -81015,16 +81381,16 @@
           "all_verified": true
         },
         {
-          "source_title": "Kubernetes Debug Pods",
+          "source_title": "GitHub Actions Workflow Syntax",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://kubernetes.io/docs/tasks/debug/debug-application/debug-pods/",
+              "identifier": "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://kubernetes.io/docs/tasks/debug/debug-application/debug-pods/"
+                "final_url": "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax"
               },
               "match": true
             }
@@ -81036,22 +81402,22 @@
       "sources_unreachable": 0
     },
     {
-      "file": "content\\ai\\agent-runtime-cpu-profiles-and-flame-graphs.md",
-      "article_id": "agent-runtime-cpu-profiles-and-flame-graphs",
+      "file": "content\\ai\\agent-shell-quoting-and-cross-platform-commands.md",
+      "article_id": "agent-shell-quoting-and-cross-platform-commands",
       "generation_method": "ai_structured",
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Node.js Flame Graphs",
+          "source_title": "Node.js child_process",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://nodejs.org/en/learn/diagnostics/flame-graphs",
+              "identifier": "https://nodejs.org/api/child_process.html",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://nodejs.org/learn/diagnostics/flame-graphs"
+                "final_url": "https://nodejs.org/api/child_process.html"
               },
               "match": true
             }
@@ -81059,16 +81425,16 @@
           "all_verified": true
         },
         {
-          "source_title": "Python Profilers",
+          "source_title": "PowerShell about_Quoting_Rules",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.python.org/3/library/profile.html",
+              "identifier": "https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_quoting_rules?view=powershell-7.5",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://docs.python.org/3/library/profile.html"
+                "final_url": "https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_quoting_rules?view=powershell-7.5"
               },
               "match": true
             }
@@ -81076,77 +81442,16 @@
           "all_verified": true
         },
         {
-          "source_title": "Go pprof",
+          "source_title": "Python shlex",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://go.dev/blog/pprof",
+              "identifier": "https://docs.python.org/3/library/shlex.html",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://go.dev/blog/pprof"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
-    },
-    {
-      "file": "content\\ai\\agent-runtime-heap-snapshots-and-memory-leaks.md",
-      "article_id": "agent-runtime-heap-snapshots-and-memory-leaks",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "Node.js Heap Snapshots",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://nodejs.org/en/learn/diagnostics/memory/using-heap-snapshot",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://nodejs.org/learn/diagnostics/memory/using-heap-snapshot"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Python tracemalloc",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.python.org/3/library/tracemalloc.html",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.python.org/3/library/tracemalloc.html"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Chrome DevTools Memory Problems",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://developer.chrome.com/docs/devtools/memory-problems",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://developer.chrome.com/docs/devtools/memory-problems"
+                "final_url": "https://docs.python.org/3/library/shlex.html"
               },
               "match": true
             }
@@ -81454,67 +81759,6 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 1
-    },
-    {
-      "file": "content\\computer-science\\api-json-schema-conditional-validation.md",
-      "article_id": "api-json-schema-conditional-validation",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "JSON Schema Conditionals",
-          "source_type": "standard",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://json-schema.org/understanding-json-schema/reference/conditionals",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://json-schema.org/understanding-json-schema/reference/conditionals"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "JSON Schema 2020-12 Validation",
-          "source_type": "standard",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://json-schema.org/draft/2020-12/json-schema-validation",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://json-schema.org/draft/2020-12/json-schema-validation"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "JSON Schema 2020-12 Core",
-          "source_type": "standard",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://json-schema.org/draft/2020-12/json-schema-core",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://json-schema.org/draft/2020-12/json-schema-core"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\bloom-filters-space-efficient-probabilistic-data-structures.md",
