@@ -57,7 +57,7 @@ function writeManifest(distDir, results, publicResults, draftResults, claims, op
     verificationCount: options.verificationCount || 0
   });
 
-  writeFileSync(join(distDir, 'manifest.json'), JSON.stringify(manifest, null, 2));
+  writeFileSync(join(distDir, 'manifest.json'), stringifyJson(manifest, { pretty: false }));
   return manifest;
 }
 

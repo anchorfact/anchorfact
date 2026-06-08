@@ -788,7 +788,7 @@ test('claims.json includes only public atomic facts with evidence', () => {
 });
 
 test('large machine artifacts use compact JSON serialization', () => {
-  for (const artifact of ['claims.json', 'search-index.json', 'sources.json', 'graph.json']) {
+  for (const artifact of ['manifest.json', 'claims.json', 'search-index.json', 'sources.json', 'graph.json']) {
     const text = readFileSync(join(distDir, artifact), 'utf-8');
     JSON.parse(text);
     assert(!text.includes('\n  '), `${artifact} should be minified to preserve artifact budget`);
