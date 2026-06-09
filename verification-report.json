@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-09T00:06:38.691Z",
-    "total_articles": 1602,
+    "generated": "2026-06-09T00:31:21.540Z",
+    "total_articles": 1608,
     "total_with_errors": 0,
     "average_sources_per_article": "2.6",
-    "overall_verification_rate": "91.9%",
-    "elapsed_ms": 102517,
-    "elapsed_sec": "102.5",
+    "overall_verification_rate": "92.0%",
+    "elapsed_ms": 95350,
+    "elapsed_sec": "95.3",
     "concurrency": 3
   },
   "articles": [
@@ -3848,6 +3848,50 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\agent-github-actions-artifact-attestations-and-provenance.md",
+      "article_id": "agent-github-actions-artifact-attestations-and-provenance",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "GitHub Artifact Attestations for Builds",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/actions/security-for-github-actions/using-artifact-attestations/using-artifact-attestations-to-establish-provenance-for-builds",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/actions/how-tos/secure-your-work/use-artifact-attestations/use-artifact-attestations"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "actions/attest-build-provenance",
+          "source_type": "source_repository",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://github.com/actions/attest-build-provenance",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://github.com/actions/attest-build-provenance"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\agent-github-actions-concurrency-and-cancelled-runs.md",
       "article_id": "agent-github-actions-concurrency-and-cancelled-runs",
       "generation_method": "ai_structured",
@@ -3881,6 +3925,50 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-github-actions-environment-files-and-step-outputs.md",
+      "article_id": "agent-github-actions-environment-files-and-step-outputs",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "GitHub Actions Workflow Commands",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-commands",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-commands"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GitHub Actions Pass Job Outputs",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/pass-job-outputs",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/pass-job-outputs"
               },
               "match": true
             }
@@ -26379,6 +26467,50 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\llm-evaluation-phoenix-datasets-and-experiments.md",
+      "article_id": "llm-evaluation-phoenix-datasets-and-experiments",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Phoenix Datasets and Experiments",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arize.com/docs/phoenix/datasets-and-experiments",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://arize.com/docs/phoenix/datasets-and-experiments/tutorial/defining-the-dataset"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Phoenix Experiments",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://arize.com/docs/phoenix/datasets-and-experiments/how-to-experiments",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://arize.com/docs/phoenix/datasets-and-experiments/how-to-experiments"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\llm-evaluation-privacy-and-pii-leakage-tests.md",
       "article_id": "llm-evaluation-privacy-and-pii-leakage-tests",
       "generation_method": "ai_structured",
@@ -33851,6 +33983,50 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\retrieval-faiss-index-types-and-nprobe-tuning.md",
+      "article_id": "retrieval-faiss-index-types-and-nprobe-tuning",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "FAISS Indexes Wiki",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://github.com/facebookresearch/faiss/wiki/Faiss-indexes",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://github.com/facebookresearch/faiss/wiki/Faiss-indexes"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "FAISS Getting Started",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://github.com/facebookresearch/faiss/wiki/Getting-started",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://github.com/facebookresearch/faiss/wiki/Getting-started"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\retrieval-federated-search-and-source-routing.md",
       "article_id": "retrieval-federated-search-and-source-routing",
       "generation_method": "ai_structured",
@@ -35869,6 +36045,50 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://docs.weaviate.io/weaviate/manage-collections/vector-config"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\retrieval-weaviate-hybrid-search-and-fusion-strategies.md",
+      "article_id": "retrieval-weaviate-hybrid-search-and-fusion-strategies",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Weaviate Hybrid Search",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.weaviate.io/weaviate/search/hybrid",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.weaviate.io/weaviate/search/hybrid"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Weaviate Vector Similarity Search",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.weaviate.io/weaviate/search/similarity",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.weaviate.io/weaviate/search/similarity"
               },
               "match": true
             }
@@ -42346,6 +42566,50 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\api-cloudevents-http-binding-and-content-modes.md",
+      "article_id": "api-cloudevents-http-binding-and-content-modes",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "CloudEvents Specification 1.0.2",
+          "source_type": "specification",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://raw.githubusercontent.com/cloudevents/spec/v1.0.2/cloudevents/spec.md",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://raw.githubusercontent.com/cloudevents/spec/v1.0.2/cloudevents/spec.md"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "CloudEvents HTTP Protocol Binding",
+          "source_type": "specification",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://raw.githubusercontent.com/cloudevents/spec/v1.0.2/cloudevents/bindings/http-protocol-binding.md",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://raw.githubusercontent.com/cloudevents/spec/v1.0.2/cloudevents/bindings/http-protocol-binding.md"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\api-cloudflare-workers-execution-context.md",
       "article_id": "api-cloudflare-workers-execution-context",
       "generation_method": "ai_structured",
@@ -44068,6 +44332,50 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://json-schema.org/draft/2020-12/json-schema-validation"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\api-json-schema-ref-and-dynamic-anchors.md",
+      "article_id": "api-json-schema-ref-and-dynamic-anchors",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "JSON Schema Core 2020-12",
+          "source_type": "specification",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://json-schema.org/draft/2020-12/json-schema-core",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://json-schema.org/draft/2020-12/json-schema-core"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "JSON Schema Structuring Guide",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://json-schema.org/understanding-json-schema/structuring",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://json-schema.org/understanding-json-schema/structuring"
               },
               "match": true
             }
@@ -54454,6 +54762,94 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\data-postgresql-pg-stat-statements-and-query-fingerprints.md",
+      "article_id": "data-postgresql-pg-stat-statements-and-query-fingerprints",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "PostgreSQL pg_stat_statements",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.postgresql.org/docs/current/pgstatstatements.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.postgresql.org/docs/current/pgstatstatements.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "PostgreSQL Cumulative Statistics System",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.postgresql.org/docs/current/monitoring-stats.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.postgresql.org/docs/current/monitoring-stats.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\data-postgresql-row-level-security-policies.md",
+      "article_id": "data-postgresql-row-level-security-policies",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "PostgreSQL Row Security Policies",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.postgresql.org/docs/current/ddl-rowsecurity.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.postgresql.org/docs/current/ddl-rowsecurity.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "PostgreSQL CREATE POLICY",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.postgresql.org/docs/current/sql-createpolicy.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.postgresql.org/docs/current/sql-createpolicy.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\data-profiling-and-column-statistics.md",
       "article_id": "data-profiling-and-column-statistics",
       "generation_method": "ai_structured",
@@ -56181,6 +56577,50 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://containers.dev/implementors/json_reference/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\dev-docker-buildkit-cache-and-secret-mounts.md",
+      "article_id": "dev-docker-buildkit-cache-and-secret-mounts",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Docker Optimize Cache Usage",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.docker.com/build/cache/optimize/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.docker.com/build/cache/optimize/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Docker Build Secrets",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.docker.com/build/building/secrets/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.docker.com/build/building/secrets/"
               },
               "match": true
             }
@@ -83631,50 +84071,6 @@
       "sources_unreachable": 0
     },
     {
-      "file": "content\\ai\\agent-github-actions-artifact-attestations-and-provenance.md",
-      "article_id": "agent-github-actions-artifact-attestations-and-provenance",
-      "generation_method": "ai_structured",
-      "sources_total": 2,
-      "verification_results": [
-        {
-          "source_title": "GitHub Artifact Attestations for Builds",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://docs.github.com/en/actions/security-for-github-actions/using-artifact-attestations/using-artifact-attestations-to-establish-provenance-for-builds",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://docs.github.com/en/actions/how-tos/secure-your-work/use-artifact-attestations/use-artifact-attestations"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "actions/attest-build-provenance",
-          "source_type": "source_repository",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://github.com/actions/attest-build-provenance",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://github.com/actions/attest-build-provenance"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
-    },
-    {
       "file": "content\\ai\\ai-for-genomics-variant-calling-gene-expression-prediction-and-protein-dna-binding.md",
       "article_id": "kb-2026-00005",
       "generation_method": "ai_structured",
@@ -83699,22 +84095,22 @@
       "sources_unreachable": 1
     },
     {
-      "file": "content\\ai\\llm-evaluation-phoenix-datasets-and-experiments.md",
-      "article_id": "llm-evaluation-phoenix-datasets-and-experiments",
+      "file": "content\\ai\\llm-evaluation-weave-evaluations-and-scorers.md",
+      "article_id": "llm-evaluation-weave-evaluations-and-scorers",
       "generation_method": "ai_structured",
       "sources_total": 2,
       "verification_results": [
         {
-          "source_title": "Phoenix Datasets and Experiments",
+          "source_title": "Weave Evaluations",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://arize.com/docs/phoenix/datasets-and-experiments",
+              "identifier": "https://docs.wandb.ai/weave/guides/core-types/evaluations",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://arize.com/docs/phoenix/datasets-and-experiments/tutorial/defining-the-dataset"
+                "final_url": "https://docs.wandb.ai/weave/guides/core-types/evaluations"
               },
               "match": true
             }
@@ -83722,60 +84118,16 @@
           "all_verified": true
         },
         {
-          "source_title": "Phoenix Experiments",
+          "source_title": "Weave Scorers",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://arize.com/docs/phoenix/datasets-and-experiments/how-to-experiments",
+              "identifier": "https://docs.wandb.ai/weave/guides/evaluation/scorers",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://arize.com/docs/phoenix/datasets-and-experiments/how-to-experiments"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
-    },
-    {
-      "file": "content\\ai\\retrieval-faiss-index-types-and-nprobe-tuning.md",
-      "article_id": "retrieval-faiss-index-types-and-nprobe-tuning",
-      "generation_method": "ai_structured",
-      "sources_total": 2,
-      "verification_results": [
-        {
-          "source_title": "FAISS Indexes Wiki",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://github.com/facebookresearch/faiss/wiki/Faiss-indexes",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://github.com/facebookresearch/faiss/wiki/Faiss-indexes"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "FAISS Getting Started",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://github.com/facebookresearch/faiss/wiki/Getting-started",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://github.com/facebookresearch/faiss/wiki/Getting-started"
+                "final_url": "https://docs.wandb.ai/weave/guides/evaluation/scorers"
               },
               "match": true
             }
@@ -84059,50 +84411,6 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 1
-    },
-    {
-      "file": "content\\computer-science\\api-cloudevents-http-binding-and-content-modes.md",
-      "article_id": "api-cloudevents-http-binding-and-content-modes",
-      "generation_method": "ai_structured",
-      "sources_total": 2,
-      "verification_results": [
-        {
-          "source_title": "CloudEvents Specification 1.0.2",
-          "source_type": "specification",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://raw.githubusercontent.com/cloudevents/spec/v1.0.2/cloudevents/spec.md",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://raw.githubusercontent.com/cloudevents/spec/v1.0.2/cloudevents/spec.md"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "CloudEvents HTTP Protocol Binding",
-          "source_type": "specification",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://raw.githubusercontent.com/cloudevents/spec/v1.0.2/cloudevents/bindings/http-protocol-binding.md",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://raw.githubusercontent.com/cloudevents/spec/v1.0.2/cloudevents/bindings/http-protocol-binding.md"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\bloom-filters-space-efficient-probabilistic-data-structures.md",
@@ -84658,50 +84966,6 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 3
-    },
-    {
-      "file": "content\\computer-science\\data-postgresql-pg-stat-statements-and-query-fingerprints.md",
-      "article_id": "data-postgresql-pg-stat-statements-and-query-fingerprints",
-      "generation_method": "ai_structured",
-      "sources_total": 2,
-      "verification_results": [
-        {
-          "source_title": "PostgreSQL pg_stat_statements",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.postgresql.org/docs/current/pgstatstatements.html",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://www.postgresql.org/docs/current/pgstatstatements.html"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "PostgreSQL Cumulative Statistics System",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.postgresql.org/docs/current/monitoring-stats.html",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://www.postgresql.org/docs/current/monitoring-stats.html"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 2,
-      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\data-warehousing.md",

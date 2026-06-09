@@ -178,11 +178,11 @@ test('current production counts do not mark docs stale', () => {
   mkdirSync(join(root, 'docs'), { recursive: true });
   writeFileSync(
     join(root, 'README.md'),
-    'EXPECTED_PUBLIC_ARTICLES=1302 EXPECTED_DRAFT_ARTICLES=300 EXPECTED_CLAIMS=4094'
+    'EXPECTED_PUBLIC_ARTICLES=1308 EXPECTED_DRAFT_ARTICLES=300 EXPECTED_CLAIMS=4124'
   );
   writeFileSync(
     join(root, 'docs', 'LAUNCH_READINESS.md'),
-    'Current trusted counts: 1302 public / 300 draft / 4094 claims.'
+    'Current trusted counts: 1308 public / 300 draft / 4124 claims.'
   );
 
   try {
