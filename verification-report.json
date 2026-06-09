@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-09T00:31:21.540Z",
-    "total_articles": 1608,
+    "generated": "2026-06-09T00:53:10.118Z",
+    "total_articles": 1614,
     "total_with_errors": 0,
     "average_sources_per_article": "2.6",
     "overall_verification_rate": "92.0%",
-    "elapsed_ms": 95350,
-    "elapsed_sec": "95.3",
+    "elapsed_ms": 112801,
+    "elapsed_sec": "112.8",
     "concurrency": 3
   },
   "articles": [
@@ -3881,6 +3881,50 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://github.com/actions/attest-build-provenance"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-github-actions-cache-keys-and-restore-keys.md",
+      "article_id": "agent-github-actions-cache-keys-and-restore-keys",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "GitHub Actions Dependency Caching",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.github.com/en/actions/reference/workflows-and-actions/dependency-caching",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.github.com/en/actions/reference/workflows-and-actions/dependency-caching"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "actions/cache Repository",
+          "source_type": "source_repository",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://github.com/actions/cache",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://github.com/actions/cache"
               },
               "match": true
             }
@@ -27421,6 +27465,50 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\llm-evaluation-weave-evaluations-and-scorers.md",
+      "article_id": "llm-evaluation-weave-evaluations-and-scorers",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Weave Evaluations",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.wandb.ai/weave/guides/core-types/evaluations",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.wandb.ai/weave/guides/core-types/evaluations"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Weave Scorers",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.wandb.ai/weave/guides/evaluation/scorers",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.wandb.ai/weave/guides/evaluation/scorers"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\llm-evaluation-webarena-web-agent-benchmarks.md",
       "article_id": "llm-evaluation-webarena-web-agent-benchmarks",
       "generation_method": "ai_structured",
@@ -35145,6 +35233,50 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://docs.pinecone.io/guides/manage-data/manage-namespaces"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\retrieval-pinecone-metadata-filter-expressions.md",
+      "article_id": "retrieval-pinecone-metadata-filter-expressions",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Pinecone Filter by Metadata",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.pinecone.io/guides/search/filter-by-metadata",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.pinecone.io/guides/search/filter-by-metadata"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Pinecone Indexing Overview",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.pinecone.io/guides/index-data/indexing-overview",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.pinecone.io/guides/index-data/indexing-overview"
               },
               "match": true
             }
@@ -43834,6 +43966,50 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://datatracker.ietf.org/doc/rfc9110/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\api-http-range-requests-and-content-range.md",
+      "article_id": "api-http-range-requests-and-content-range",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "MDN HTTP Range Requests",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Range_requests",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Range_requests"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "RFC 9110 HTTP Semantics",
+          "source_type": "rfc",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://datatracker.ietf.org/doc/html/rfc9110",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://datatracker.ietf.org/doc/html/rfc9110"
               },
               "match": true
             }
@@ -54762,6 +54938,50 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\data-postgresql-logical-replication-publications-and-slots.md",
+      "article_id": "data-postgresql-logical-replication-publications-and-slots",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "PostgreSQL Logical Replication Publication",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.postgresql.org/docs/current/logical-replication-publication.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.postgresql.org/docs/current/logical-replication-publication.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "PostgreSQL pg_replication_slots",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.postgresql.org/docs/current/view-pg-replication-slots.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.postgresql.org/docs/current/view-pg-replication-slots.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\data-postgresql-pg-stat-statements-and-query-fingerprints.md",
       "article_id": "data-postgresql-pg-stat-statements-and-query-fingerprints",
       "generation_method": "ai_structured",
@@ -56665,6 +56885,50 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://compose-spec.github.io/compose-spec/spec.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\dev-kubernetes-server-side-apply-and-managed-fields.md",
+      "article_id": "dev-kubernetes-server-side-apply-and-managed-fields",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Kubernetes Server-Side Apply",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kubernetes.io/docs/reference/using-api/server-side-apply/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://kubernetes.io/docs/reference/using-api/server-side-apply/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Kubernetes ObjectMeta",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://kubernetes.io/docs/reference/kubernetes-api/common-definitions/object-meta/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://kubernetes.io/docs/reference/kubernetes-api/definitions/object-meta-v1-meta/"
               },
               "match": true
             }
@@ -84095,22 +84359,22 @@
       "sources_unreachable": 1
     },
     {
-      "file": "content\\ai\\llm-evaluation-weave-evaluations-and-scorers.md",
-      "article_id": "llm-evaluation-weave-evaluations-and-scorers",
+      "file": "content\\ai\\llm-evaluation-langfuse-datasets-experiments-and-scores.md",
+      "article_id": "llm-evaluation-langfuse-datasets-experiments-and-scores",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Weave Evaluations",
+          "source_title": "Langfuse Evaluation Concepts",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.wandb.ai/weave/guides/core-types/evaluations",
+              "identifier": "https://langfuse.com/docs/evaluation/concepts",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://docs.wandb.ai/weave/guides/core-types/evaluations"
+                "final_url": "https://langfuse.com/docs/evaluation/core-concepts"
               },
               "match": true
             }
@@ -84118,16 +84382,33 @@
           "all_verified": true
         },
         {
-          "source_title": "Weave Scorers",
+          "source_title": "Langfuse Scores Overview",
           "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://docs.wandb.ai/weave/guides/evaluation/scorers",
+              "identifier": "https://langfuse.com/docs/evaluation/scores/overview",
               "verified": true,
               "metadata": {
                 "status": 200,
-                "final_url": "https://docs.wandb.ai/weave/guides/evaluation/scorers"
+                "final_url": "https://langfuse.com/docs/evaluation/scores/overview"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Langfuse Experiments via SDK",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://langfuse.com/docs/evaluation/experiments/experiments-via-sdk",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://langfuse.com/docs/evaluation/experiments/experiments-via-sdk"
               },
               "match": true
             }
@@ -84135,7 +84416,7 @@
           "all_verified": true
         }
       ],
-      "sources_verified": 2,
+      "sources_verified": 3,
       "sources_unreachable": 0
     },
     {
@@ -88879,10 +89160,7 @@
               "method": "url",
               "identifier": "https://www.stadion.com/stretching-scientifically-book/",
               "verified": false,
-              "metadata": {
-                "status": 405,
-                "final_url": "https://www.stadion.com/stretching-scientifically-book/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -89038,10 +89316,7 @@
               "method": "url",
               "identifier": "https://thamesandhudson.com/the-complete-pyramids-9780500285473",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.thamesandhudson.com/the-complete-pyramids-9780500285473"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -89055,10 +89330,7 @@
               "method": "url",
               "identifier": "https://aucpress.com/pyramids/",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://aucpress.com/pyramids/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -89072,10 +89344,7 @@
               "method": "url",
               "identifier": "https://thamesandhudson.com/giza/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.thamesandhudson.com/giza"
-              },
+              "metadata": {},
               "match": false
             }
           ],

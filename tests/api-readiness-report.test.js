@@ -169,7 +169,7 @@ test('api-readiness modules expose query set, runner, and renderer boundaries', 
 
 test('core query set defines subscription-readiness probes across paid-use categories', () => {
   assert(CORE_CORPUS_QUERIES.length >= 100, 'core query set should preserve the 100-query foundation');
-  assert(CORE_CORPUS_QUERIES.length <= 675, 'core query set should stay inside the continued readiness-corpus range');
+  assert(CORE_CORPUS_QUERIES.length <= 681, 'core query set should stay inside the continued readiness-corpus range');
   const categories = new Set(CORE_CORPUS_QUERIES.map(query => query.category));
   for (const category of ['agent_execution_sources', 'agent_rag', 'api_mcp', 'security_governance', 'data_infrastructure', 'llm_evaluation', 'developer_workflows', 'code_intelligence']) {
     assert(categories.has(category), `missing category ${category}`);
@@ -202,6 +202,7 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'ai/agent-linux-packet-capture-and-tcpdump-filters',
     'ai/agent-github-actions-artifact-attestations-and-provenance',
     'ai/agent-github-actions-environment-files-and-step-outputs',
+    'ai/agent-github-actions-cache-keys-and-restore-keys',
     'ai/rag-evaluation',
     'ai/hybrid-retrieval-and-reranking',
     'ai/rag-chunking-and-context-window-management',
@@ -232,6 +233,7 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'ai/retrieval-redis-vector-search-and-hnsw-indexes',
     'ai/retrieval-faiss-index-types-and-nprobe-tuning',
     'ai/retrieval-weaviate-hybrid-search-and-fusion-strategies',
+    'ai/retrieval-pinecone-metadata-filter-expressions',
     'ai/prompt-injection-defenses-for-tool-using-agents',
     'ai/llm-as-judge-evaluation',
     'ai/llm-evaluation-judge-bias-and-randomization',
@@ -260,6 +262,7 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'ai/llm-evaluation-inspect-ai-tasks-and-scorers',
     'ai/llm-evaluation-phoenix-datasets-and-experiments',
     'ai/llm-evaluation-weave-evaluations-and-scorers',
+    'ai/llm-evaluation-langfuse-datasets-experiments-and-scores',
     'ai/evaluation-data-contamination',
     'computer-science/openapi-for-agent-tools',
     'computer-science/api-a2a-agent-card-and-skills',
@@ -282,6 +285,7 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'computer-science/api-http-message-signatures-and-signature-input',
     'computer-science/api-openapi-request-body-media-types-and-encoding',
     'computer-science/api-cloudevents-http-binding-and-content-modes',
+    'computer-science/api-http-range-requests-and-content-range',
     'computer-science/data-catalogs-and-metadata-lineage',
     'computer-science/lakehouse-table-formats',
     'computer-science/schema-evolution-for-data-pipelines',
@@ -306,7 +310,9 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'computer-science/data-snowflake-access-history-and-object-lineage',
     'computer-science/data-postgresql-pg-stat-statements-and-query-fingerprints',
     'computer-science/data-postgresql-row-level-security-policies',
+    'computer-science/data-postgresql-logical-replication-publications-and-slots',
     'computer-science/dev-docker-buildkit-cache-and-secret-mounts',
+    'computer-science/dev-kubernetes-server-side-apply-and-managed-fields',
     'ai/hnsw-vector-indexing',
     'ai/rag-citation-and-source-attribution',
     'ai/agent-secret-management-and-credential-isolation',

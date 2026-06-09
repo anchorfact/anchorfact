@@ -14,10 +14,14 @@ import { buildProjectReadiness } from '../src/lib/project-readiness.js';
 import { buildAuditRows, loadAuditData } from './audit-public-sample.js';
 
 const DEFAULT_STALE_PATTERNS = [
-  /EXPECTED_PUBLIC_ARTICLES=(?!1308\b)\d+/,
+  /EXPECTED_PUBLIC_ARTICLES=(?!1314\b)\d+/,
   /EXPECTED_DRAFT_ARTICLES=(?!300\b)\d+/,
-  /EXPECTED_CLAIMS=(?!4124\b)\d+/,
-  /\b(?!1308\b)\d+\s+public\s*\/\s*(?!300\b)\d+\s+draft\s*\/\s*(?!4124\b)\d+\s+claims/i,
+  /EXPECTED_CLAIMS=(?!4154\b)\d+/,
+  /\b(?!1314\b)\d+\s+public\s*\/\s*(?!300\b)\d+\s+draft\s*\/\s*(?!4154\b)\d+\s+claims/i,
+  /\b1608 articles\b/i,
+  /\b1308 public\b/i,
+  /\b4124 claims\b/i,
+  /\b3185 public sources\b/i,
   /\b1602 articles\b/i,
   /\b1302 public\b/i,
   /\b4094 claims\b/i,

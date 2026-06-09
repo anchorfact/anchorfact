@@ -1,6 +1,6 @@
 # How We Built an AI-Native Knowledge Base with Verifiable Trust
 
-> AnchorFact: 1608 articles, 1308 public entries, 4124 public claims, and a public trust model for machine-readable citations.
+> AnchorFact: 1614 articles, 1314 public entries, 4154 public claims, and a public trust model for machine-readable citations.
 
 ---
 
@@ -59,7 +59,7 @@ Our content pipeline runs entirely on AI agents:
 4. **Compilation** → Markdown → JSON-LD (Schema.org) + Turtle (RDF) + Plain Text + HTML
 5. **Deployment** → Cloudflare Pages, auto-deploy on git push
 
-The verification step is incremental. It checks file modification times and only re-verifies changed articles. The current verification snapshot covers 1608 articles and averages 2.6 sources per article. Incremental verification remains fast for unchanged files.
+The verification step is incremental. It checks file modification times and only re-verifies changed articles. The current verification snapshot covers 1614 articles and averages 2.6 sources per article. Incremental verification remains fast for unchanged files.
 
 ---
 
