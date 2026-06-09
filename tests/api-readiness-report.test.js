@@ -169,7 +169,7 @@ test('api-readiness modules expose query set, runner, and renderer boundaries', 
 
 test('core query set defines subscription-readiness probes across paid-use categories', () => {
   assert(CORE_CORPUS_QUERIES.length >= 100, 'core query set should preserve the 100-query foundation');
-  assert(CORE_CORPUS_QUERIES.length <= 681, 'core query set should stay inside the continued readiness-corpus range');
+  assert(CORE_CORPUS_QUERIES.length <= 688, 'core query set should stay inside the continued readiness-corpus range');
   const categories = new Set(CORE_CORPUS_QUERIES.map(query => query.category));
   for (const category of ['agent_execution_sources', 'agent_rag', 'api_mcp', 'security_governance', 'data_infrastructure', 'llm_evaluation', 'developer_workflows', 'code_intelligence']) {
     assert(categories.has(category), `missing category ${category}`);
@@ -357,9 +357,11 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'ai/agent-kubernetes-init-containers-and-sidecar-containers',
     'ai/agent-kubernetes-owner-references-and-replicaset-lineage',
     'ai/agent-helm-release-history-and-values-overrides',
+    'ai/agent-argocd-application-sync-and-health-status',
     'ai/agent-github-actions-run-attempts-and-job-summaries',
     'ai/agent-github-actions-environments-and-deployment-review',
     'ai/agent-github-check-runs-and-commit-statuses',
+    'ai/agent-gitlab-ci-job-artifacts-and-logs',
     'ai/agent-service-mesh-traffic-policy',
     'ai/agent-message-queue-dead-letter-queues',
     'ai/agent-scheduler-cron-and-workflow-runs',
@@ -434,6 +436,8 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'ai/retrieval-score-normalization-and-fusion',
     'ai/retrieval-hybrid-search-score-weighting-and-alpha',
     'ai/retrieval-semantic-ranker-captions-and-answers',
+    'ai/retrieval-chromadb-where-filters-and-query-results',
+    'ai/retrieval-lancedb-hybrid-search-and-full-text-indexes',
     'ai/retrieval-parent-document-and-small-to-big-indexing',
     'ai/retrieval-late-interaction-and-colbert',
     'ai/retrieval-multivector-indexing',
@@ -460,6 +464,7 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'ai/llm-evaluation-human-review-and-adjudication',
     'ai/llm-evaluation-judge-prompt-rubrics-and-scorecards',
     'ai/llm-evaluation-structured-output-validity',
+    'ai/llm-evaluation-braintrust-experiments-datasets-and-scorers',
     'computer-science/api-idempotency-keys',
     'computer-science/distributed-tracing-and-correlation-context',
     'computer-science/api-openapi-breaking-change-detection',
@@ -486,6 +491,7 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'computer-science/open-telemetry-semantic-conventions',
     'computer-science/api-webhook-signature-verification',
     'computer-science/api-oauth-token-introspection',
+    'computer-science/api-graphql-response-errors-and-nullability',
     'computer-science/data-lake-object-storage-layouts',
     'computer-science/data-pipeline-checkpointing-and-exactly-once-semantics',
     'computer-science/data-lake-compaction-and-small-files',
@@ -498,6 +504,7 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'computer-science/data-column-level-lineage-and-impact-analysis',
     'computer-science/data-time-travel-and-snapshot-isolation',
     'computer-science/data-iceberg-metadata-tables-and-manifests',
+    'computer-science/data-clickhouse-query-log-and-query-thread-log',
     'computer-science/data-iceberg-partition-evolution-and-hidden-partitioning',
     'computer-science/data-iceberg-snapshot-expiration-and-orphan-files',
     'computer-science/data-change-data-feed-and-incremental-table-reads',

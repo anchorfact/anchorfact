@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-09T00:53:10.118Z",
-    "total_articles": 1614,
+    "generated": "2026-06-09T01:30:12.653Z",
+    "total_articles": 1621,
     "total_with_errors": 0,
     "average_sources_per_article": "2.6",
     "overall_verification_rate": "92.0%",
-    "elapsed_ms": 112801,
-    "elapsed_sec": "112.8",
+    "elapsed_ms": 99141,
+    "elapsed_sec": "99.1",
     "concurrency": 3
   },
   "articles": [
@@ -757,6 +757,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-argocd-application-sync-and-health-status.md",
+      "article_id": "agent-argocd-application-sync-and-health-status",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Argo CD Overview",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://argo-cd.readthedocs.io/en/stable/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://argo-cd.readthedocs.io/en/stable/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Argo CD Status Badge",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://argo-cd.readthedocs.io/en/stable/user-guide/status-badge/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://argo-cd.readthedocs.io/en/stable/user-guide/status-badge/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Argo CD Resource Health",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://argo-cd.readthedocs.io/en/latest/operator-manual/health/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://argo-cd.readthedocs.io/en/latest/operator-manual/health/"
               },
               "match": true
             }
@@ -4504,6 +4565,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\agent-gitlab-ci-job-artifacts-and-logs.md",
+      "article_id": "agent-gitlab-ci-job-artifacts-and-logs",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "GitLab Job Artifacts",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.gitlab.com/ci/jobs/job_artifacts/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.gitlab.com/ci/jobs/job_artifacts/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GitLab CI/CD Job Logs",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.gitlab.com/ci/jobs/job_logs/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.gitlab.com/ci/jobs/job_logs/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GitLab CI/CD Jobs",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.gitlab.com/ci/jobs/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.gitlab.com/ci/jobs/"
               },
               "match": true
             }
@@ -25008,6 +25130,50 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\llm-evaluation-braintrust-experiments-datasets-and-scorers.md",
+      "article_id": "llm-evaluation-braintrust-experiments-datasets-and-scorers",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Braintrust Create Experiments",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.braintrust.dev/docs/evaluate/run-evaluations",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.braintrust.dev/docs/evaluate/run-evaluations"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Braintrust Scorers",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.braintrust.dev/docs/evaluate/write-scorers",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.braintrust.dev/docs/evaluate/write-scorers"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\ai\\llm-evaluation-calibration-and-thresholds.md",
       "article_id": "llm-evaluation-calibration-and-thresholds",
       "generation_method": "ai_structured",
@@ -26175,6 +26341,67 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://www.braintrust.dev/docs/evaluate"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\llm-evaluation-langfuse-datasets-experiments-and-scores.md",
+      "article_id": "llm-evaluation-langfuse-datasets-experiments-and-scores",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Langfuse Evaluation Concepts",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://langfuse.com/docs/evaluation/concepts",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://langfuse.com/docs/evaluation/core-concepts"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Langfuse Scores Overview",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://langfuse.com/docs/evaluation/scores/overview",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://langfuse.com/docs/evaluation/scores/overview"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Langfuse Experiments via SDK",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://langfuse.com/docs/evaluation/experiments/experiments-via-sdk",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://langfuse.com/docs/evaluation/experiments/experiments-via-sdk"
               },
               "match": true
             }
@@ -33673,6 +33900,50 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\retrieval-chromadb-where-filters-and-query-results.md",
+      "article_id": "retrieval-chromadb-where-filters-and-query-results",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Chroma Where Filters",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.trychroma.com/reference/where-filter",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.trychroma.com/reference/where-filter"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Chroma Usage Guide",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://github.com/chroma-core/docs/blob/main/docs/usage-guide.md",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://github.com/chroma-core/docs/blob/main/docs/usage-guide.md"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content/ai/retrieval-document-versioning-and-source-snapshots.md",
       "article_id": "retrieval-document-versioning-and-source-snapshots",
       "generation_method": "ai_structured",
@@ -34480,6 +34751,50 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://lucene.apache.org/core/10_3_1/core/org/apache/lucene/analysis/Analyzer.html"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\ai\\retrieval-lancedb-hybrid-search-and-full-text-indexes.md",
+      "article_id": "retrieval-lancedb-hybrid-search-and-full-text-indexes",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "LanceDB Hybrid Search",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.lancedb.com/search/hybrid-search",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.lancedb.com/search/hybrid-search"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "LanceDB Full-Text Search",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.lancedb.com/search/full-text-search",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.lancedb.com/search/full-text-search"
               },
               "match": true
             }
@@ -43618,6 +43933,84 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\computer-science\\api-graphql-response-errors-and-nullability.md",
+      "article_id": "api-graphql-response-errors-and-nullability",
+      "generation_method": "ai_structured",
+      "sources_total": 4,
+      "verification_results": [
+        {
+          "source_title": "GraphQL Specification Response Format",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://spec.graphql.org/October2021/#sec-Response-Format",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://spec.graphql.org/October2021/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GraphQL Specification Errors",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://spec.graphql.org/October2021/#sec-Errors",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://spec.graphql.org/October2021/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GraphQL Specification Non-Null",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://spec.graphql.org/October2021/#sec-Non-Null",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://spec.graphql.org/October2021/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "GraphQL Specification Handling Field Errors",
+          "source_type": "standard",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://spec.graphql.org/October2021/#sec-Handling-Field-Errors",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://spec.graphql.org/October2021/"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 4,
+      "sources_unreachable": 0
+    },
+    {
       "file": "content\\computer-science\\api-grpc-deadlines-and-cancellation.md",
       "article_id": "api-grpc-deadlines-and-cancellation",
       "generation_method": "ai_structured",
@@ -52273,6 +52666,50 @@
               "metadata": {
                 "status": 200,
                 "final_url": "https://clickhouse.com/docs/operations/system-tables/mutations"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0
+    },
+    {
+      "file": "content\\computer-science\\data-clickhouse-query-log-and-query-thread-log.md",
+      "article_id": "data-clickhouse-query-log-and-query-thread-log",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "ClickHouse system.query_log",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://clickhouse.com/docs/operations/system-tables/query_log",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://clickhouse.com/docs/operations/system-tables/query_log"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "ClickHouse system.query_thread_log",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://clickhouse.com/docs/operations/system-tables/query_thread_log",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://clickhouse.com/docs/operations/system-tables/query_thread_log"
               },
               "match": true
             }
@@ -84359,67 +84796,6 @@
       "sources_unreachable": 1
     },
     {
-      "file": "content\\ai\\llm-evaluation-langfuse-datasets-experiments-and-scores.md",
-      "article_id": "llm-evaluation-langfuse-datasets-experiments-and-scores",
-      "generation_method": "ai_structured",
-      "sources_total": 3,
-      "verification_results": [
-        {
-          "source_title": "Langfuse Evaluation Concepts",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://langfuse.com/docs/evaluation/concepts",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://langfuse.com/docs/evaluation/core-concepts"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Langfuse Scores Overview",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://langfuse.com/docs/evaluation/scores/overview",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://langfuse.com/docs/evaluation/scores/overview"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        },
-        {
-          "source_title": "Langfuse Experiments via SDK",
-          "source_type": "documentation",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://langfuse.com/docs/evaluation/experiments/experiments-via-sdk",
-              "verified": true,
-              "metadata": {
-                "status": 200,
-                "final_url": "https://langfuse.com/docs/evaluation/experiments/experiments-via-sdk"
-              },
-              "match": true
-            }
-          ],
-          "all_verified": true
-        }
-      ],
-      "sources_verified": 3,
-      "sources_unreachable": 0
-    },
-    {
       "file": "content\\arts\\history-of-printing.md",
       "article_id": "kb-2026-00479",
       "generation_method": "ai_assisted",
@@ -89160,7 +89536,10 @@
               "method": "url",
               "identifier": "https://www.stadion.com/stretching-scientifically-book/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 405,
+                "final_url": "https://www.stadion.com/stretching-scientifically-book/"
+              },
               "match": false
             }
           ],
@@ -89316,7 +89695,10 @@
               "method": "url",
               "identifier": "https://thamesandhudson.com/the-complete-pyramids-9780500285473",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.thamesandhudson.com/the-complete-pyramids-9780500285473"
+              },
               "match": false
             }
           ],
@@ -89330,7 +89712,10 @@
               "method": "url",
               "identifier": "https://aucpress.com/pyramids/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 403,
+                "final_url": "https://aucpress.com/pyramids/"
+              },
               "match": false
             }
           ],
@@ -89344,7 +89729,10 @@
               "method": "url",
               "identifier": "https://thamesandhudson.com/giza/",
               "verified": false,
-              "metadata": {},
+              "metadata": {
+                "status": 404,
+                "final_url": "https://www.thamesandhudson.com/giza"
+              },
               "match": false
             }
           ],
