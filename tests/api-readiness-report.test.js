@@ -169,7 +169,7 @@ test('api-readiness modules expose query set, runner, and renderer boundaries', 
 
 test('core query set defines subscription-readiness probes across paid-use categories', () => {
   assert(CORE_CORPUS_QUERIES.length >= 100, 'core query set should preserve the 100-query foundation');
-  assert(CORE_CORPUS_QUERIES.length <= 688, 'core query set should stay inside the continued readiness-corpus range');
+  assert(CORE_CORPUS_QUERIES.length <= 695, 'core query set should stay inside the continued readiness-corpus range');
   const categories = new Set(CORE_CORPUS_QUERIES.map(query => query.category));
   for (const category of ['agent_execution_sources', 'agent_rag', 'api_mcp', 'security_governance', 'data_infrastructure', 'llm_evaluation', 'developer_workflows', 'code_intelligence']) {
     assert(categories.has(category), `missing category ${category}`);
@@ -335,6 +335,7 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'ai/agent-ticket-and-issue-tracker-lookup',
     'ai/agent-audit-logs-and-activity-feeds',
     'ai/agent-cloudwatch-logs-insights-and-log-groups',
+    'ai/agent-datadog-log-explorer-and-monitor-alerts',
     'ai/agent-cloudflare-pages-deployments-and-build-logs',
     'ai/agent-cloudflare-workers-tail-logs-and-source-maps',
     'ai/agent-cloudflare-graphql-analytics-and-traffic-scorecards',
@@ -370,6 +371,7 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'ai/agent-feature-store-and-online-offline-consistency',
     'ai/agent-api-rate-limit-headers-and-retry-after',
     'ai/agent-prometheus-promql-and-alert-labels',
+    'ai/agent-grafana-loki-logql-and-alert-rules',
     'ai/agent-queue-backlog-and-consumer-lag',
     'ai/agent-cdn-cache-headers-and-invalidation',
     'ai/agent-cloud-billing-and-cost-anomaly-signals',
@@ -442,6 +444,7 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'ai/retrieval-late-interaction-and-colbert',
     'ai/retrieval-multivector-indexing',
     'ai/retrieval-index-aliases-and-zero-downtime-reindexing',
+    'ai/retrieval-elasticsearch-retrievers-and-rrf',
     'ai/retrieval-federated-search-and-source-routing',
     'ai/retrieval-passage-boundaries-and-overlap-windows',
     'ai/retrieval-evidence-ids-and-citation-stability',
@@ -465,6 +468,7 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'ai/llm-evaluation-judge-prompt-rubrics-and-scorecards',
     'ai/llm-evaluation-structured-output-validity',
     'ai/llm-evaluation-braintrust-experiments-datasets-and-scorers',
+    'ai/llm-evaluation-opik-traces-datasets-and-experiments',
     'computer-science/api-idempotency-keys',
     'computer-science/distributed-tracing-and-correlation-context',
     'computer-science/api-openapi-breaking-change-detection',
@@ -633,6 +637,7 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'ai/vector-store-namespaces-and-tenant-isolation',
     'ai/retrieval-elasticsearch-point-in-time-and-search-after',
     'ai/retrieval-milvus-collections-and-vector-indexes',
+    'ai/retrieval-milvus-partitions-and-consistency-levels',
     'ai/retrieval-opensearch-neural-search-and-search-pipelines',
     'ai/retrieval-opensearch-profile-and-explain-debugging',
     'ai/retrieval-azure-ai-search-indexers-and-data-sources',
@@ -677,6 +682,7 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'computer-science/api-grpc-deadlines-and-cancellation',
     'computer-science/api-mcp-sampling-and-elicitation',
     'computer-science/api-mcp-roots-and-resource-discovery',
+    'computer-science/api-mcp-cancellation-and-progress-notifications',
     'computer-science/api-mcp-tools-list-and-call-results',
     'computer-science/api-graphql-defer-stream-and-incremental-delivery',
     'computer-science/api-asyncapi-channels-operations-and-messages',
@@ -722,6 +728,7 @@ test('core query set defines subscription-readiness probes across paid-use categ
     'computer-science/data-hudi-timeline-and-incremental-queries',
     'computer-science/data-apache-arrow-columnar-interchange',
     'computer-science/data-airbyte-connector-state-and-incremental-syncs',
+    'computer-science/data-prefect-states-retries-and-flow-run-artifacts',
     'computer-science/data-kafka-connect-connector-status-and-task-errors',
     'computer-science/data-kafka-connect-error-tolerance-and-dead-letter-queues',
     'computer-science/dev-containers-and-reproducible-agent-workspaces',

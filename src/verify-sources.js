@@ -11,6 +11,7 @@ import { join } from 'path';
 import { load } from 'js-yaml';
 import { computeConfidence, classifySourceTier, computeFreshnessScore } from './lib/confidence.js';
 import { isCacheableVerificationResult } from './lib/verification-cache.js';
+import { verifyReachableUrl } from './lib/source-url-verifier.js';
 
 // ---- Rate Limiter ----
 const RATE_LIMIT_MS = 200; // 每秒 ≤ 5 请求
@@ -95,21 +96,7 @@ async function verifyArxiv(arxivId) {
 
 // ---- URL Reachability Check ----
 async function verifyUrl(url) {
-  await rateLimit();
-  try {
-    const controller = new AbortController();
-    const timeout = setTimeout(() => controller.abort(), 8000);
-    const res = await fetch(url, {
-      method: 'HEAD',
-      signal: controller.signal,
-      headers: { 'User-Agent': 'AnchorFact/0.2 (mailto:hello@anchorfact.org)' },
-      redirect: 'follow'
-    });
-    clearTimeout(timeout);
-    return { verified: res.status >= 200 && res.status < 400, status: res.status, final_url: res.url };
-  } catch (e) {
-    return { verified: false, error: e.message };
-  }
+  return verifyReachableUrl(url, { beforeAttempt: rateLimit });
 }
 
 // ---- Source Tier / Freshness — imported from lib/confidence.js ----
@@ -209,7 +196,13 @@ async function verifySource(source) {
       const r = await verifyUrl(ids.url);
       results.push({
         method: 'url', identifier: ids.url, verified: r.verified,
-        metadata: { status: r.status, final_url: r.final_url },
+        metadata: {
+          status: r.status,
+          final_url: r.final_url,
+          http_method: r.http_method,
+          fallback_from: r.fallback_from,
+          error: r.error
+        },
         match: r.verified
       });
     } catch (e) {

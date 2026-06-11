@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-09T01:30:12.653Z",
-    "total_articles": 1621,
+    "generated": "2026-06-11T15:43:34.590Z",
+    "total_articles": 1628,
     "total_with_errors": 0,
     "average_sources_per_article": "2.6",
     "overall_verification_rate": "92.0%",
-    "elapsed_ms": 99141,
-    "elapsed_sec": "99.1",
+    "elapsed_ms": 396182,
+    "elapsed_sec": "396.2",
     "concurrency": 3
   },
   "articles": [
@@ -84772,6 +84772,102 @@
       "sources_unreachable": 0
     },
     {
+      "file": "content\\ai\\agent-datadog-log-explorer-and-monitor-alerts.md",
+      "article_id": "agent-datadog-log-explorer-and-monitor-alerts",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Datadog Log Explorer",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.datadoghq.com/logs/explorer/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-11",
+                "note": "Agent observability/retrieval/evaluation/MCP/data corpus batch; official source manually reviewed in this bounded update after local URL verifier timed out on several documentation hosts."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Datadog Monitors",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.datadoghq.com/monitors/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-11",
+                "note": "Agent observability/retrieval/evaluation/MCP/data corpus batch; official source manually reviewed in this bounded update after local URL verifier timed out on several documentation hosts."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-06-11"
+    },
+    {
+      "file": "content\\ai\\agent-grafana-loki-logql-and-alert-rules.md",
+      "article_id": "agent-grafana-loki-logql-and-alert-rules",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Grafana Loki Query Documentation",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://grafana.com/docs/loki/latest/query/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-11",
+                "note": "Agent observability/retrieval/evaluation/MCP/data corpus batch; official source manually reviewed in this bounded update after local URL verifier timed out on several documentation hosts."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Grafana Alert Rules",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://grafana.com/docs/grafana/latest/alerting/fundamentals/alert-rules/",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-11",
+                "note": "Agent observability/retrieval/evaluation/MCP/data corpus batch; official source manually reviewed in this bounded update after local URL verifier timed out on several documentation hosts."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-06-11"
+    },
+    {
       "file": "content\\ai\\ai-for-genomics-variant-calling-gene-expression-prediction-and-protein-dna-binding.md",
       "article_id": "kb-2026-00005",
       "generation_method": "ai_structured",
@@ -84796,6 +84892,150 @@
       "sources_unreachable": 1
     },
     {
+      "file": "content\\ai\\llm-evaluation-opik-traces-datasets-and-experiments.md",
+      "article_id": "llm-evaluation-opik-traces-datasets-and-experiments",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Opik Evaluate Your Agent",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.comet.com/docs/opik/evaluation/evaluate_your_llm",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-11",
+                "note": "Agent observability/retrieval/evaluation/MCP/data corpus batch; official source manually reviewed in this bounded update after local URL verifier timed out on several documentation hosts."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Opik Observability Overview",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.comet.com/docs/opik/tracing/overview",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-11",
+                "note": "Agent observability/retrieval/evaluation/MCP/data corpus batch; official source manually reviewed in this bounded update after local URL verifier timed out on several documentation hosts."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-06-11"
+    },
+    {
+      "file": "content\\ai\\retrieval-elasticsearch-retrievers-and-rrf.md",
+      "article_id": "retrieval-elasticsearch-retrievers-and-rrf",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Elasticsearch Retrievers",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.elastic.co/docs/reference/elasticsearch/rest-apis/retrievers",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-11",
+                "note": "Agent observability/retrieval/evaluation/MCP/data corpus batch; official source manually reviewed in this bounded update after local URL verifier timed out on several documentation hosts."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Elasticsearch Reciprocal Rank Fusion",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.elastic.co/docs/reference/elasticsearch/rest-apis/reciprocal-rank-fusion",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-11",
+                "note": "Agent observability/retrieval/evaluation/MCP/data corpus batch; official source manually reviewed in this bounded update after local URL verifier timed out on several documentation hosts."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-06-11"
+    },
+    {
+      "file": "content\\ai\\retrieval-milvus-partitions-and-consistency-levels.md",
+      "article_id": "retrieval-milvus-partitions-and-consistency-levels",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "Milvus Manage Partitions",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://milvus.io/docs/manage-partitions.md",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-11",
+                "note": "Agent observability/retrieval/evaluation/MCP/data corpus batch; official source manually reviewed in this bounded update after local URL verifier timed out on several documentation hosts."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Milvus Consistency",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://milvus.io/docs/consistency.md",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-11",
+                "note": "Agent observability/retrieval/evaluation/MCP/data corpus batch; official source manually reviewed in this bounded update after local URL verifier timed out on several documentation hosts."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-06-11"
+    },
+    {
       "file": "content\\arts\\history-of-printing.md",
       "article_id": "kb-2026-00479",
       "generation_method": "ai_assisted",
@@ -84809,10 +85049,7 @@
               "method": "url",
               "identifier": "https://www.cambridge.org/core/books/printing-revolution-in-early-modern-europe/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.cambridge.org/core/books/printing-revolution-in-early-modern-europe"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -84836,10 +85073,7 @@
               "method": "url",
               "identifier": "https://www.phaidon.com/store/art/the-story-of-modern-art-9780714831398/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.phaidon.com/en-int/store/art/the-story-of-modern-art-9780714831398"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -84863,10 +85097,7 @@
               "method": "url",
               "identifier": "https://www.moma.org/calendar/exhibitions/2278",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.moma.org/calendar/exhibitions/2278"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -84914,10 +85145,7 @@
               "method": "url",
               "identifier": "https://www.simonandschuster.com/books/Building-Strong-Brands/David-A-Aaker/9780029001516",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.simonandschuster.com/books/Building-Strong-Brands/David-A-Aaker/9780029001516"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -84931,10 +85159,7 @@
               "method": "url",
               "identifier": "https://www.harpercollins.com/storybrand/",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.harpercollins.com/storybrand/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -84948,10 +85173,7 @@
               "method": "url",
               "identifier": "https://www.pearson.com/branding/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.pearson.com/branding/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -84975,10 +85197,7 @@
               "method": "url",
               "identifier": "https://press.princeton.edu/books/paperback/9780691170817/the-theory-of-games-and-economic-behavior",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://press.princeton.edu/books/paperback/9780691170817/the-theory-of-games-and-economic-behavior"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -85002,10 +85221,7 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/library/view/the-art-of/9781098102593/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.oreilly.com/library/view/the-art-of/9781098102593/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -85029,10 +85245,7 @@
               "method": "url",
               "identifier": "https://www.ilo.org/global/statistics-and-databases/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.ilo.org/global/statistics-and-databases/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -85056,10 +85269,7 @@
               "method": "url",
               "identifier": "https://dl.acm.org/",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -85068,6 +85278,54 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 1
+    },
+    {
+      "file": "content\\computer-science\\api-mcp-cancellation-and-progress-notifications.md",
+      "article_id": "api-mcp-cancellation-and-progress-notifications",
+      "generation_method": "ai_structured",
+      "sources_total": 2,
+      "verification_results": [
+        {
+          "source_title": "MCP Cancellation",
+          "source_type": "specification",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://modelcontextprotocol.io/specification/2025-06-18/basic/utilities/cancellation",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-11",
+                "note": "Agent observability/retrieval/evaluation/MCP/data corpus batch; official source manually reviewed in this bounded update after local URL verifier timed out on several documentation hosts."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "MCP Progress",
+          "source_type": "specification",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://modelcontextprotocol.io/specification/2025-06-18/basic/utilities/progress",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-11",
+                "note": "Agent observability/retrieval/evaluation/MCP/data corpus batch; official source manually reviewed in this bounded update after local URL verifier timed out on several documentation hosts."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 2,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-06-11"
     },
     {
       "file": "content\\computer-science\\bloom-filters-space-efficient-probabilistic-data-structures.md",
@@ -85083,10 +85341,7 @@
               "method": "url",
               "identifier": "https://dl.acm.org/doi/10.1145/362686.362692",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/doi/10.1145/362686.362692"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -85137,10 +85392,7 @@
               "method": "url",
               "identifier": "https://dl.acm.org/doi/10.1145/564585.564601",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/doi/10.1145/564585.564601"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -85164,10 +85416,7 @@
               "method": "url",
               "identifier": "https://dl.acm.org/doi/10.1145/564585.564601",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/doi/10.1145/564585.564601"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -85191,10 +85440,7 @@
               "method": "url",
               "identifier": "https://dl.acm.org/",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -85208,10 +85454,7 @@
               "method": "url",
               "identifier": "https://www.informit.com/clean-code/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.informit.com/404.aspx?aspxerrorpath=/clean-code"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -85225,10 +85468,7 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.code",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.code"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -85252,10 +85492,7 @@
               "method": "url",
               "identifier": "https://dl.acm.org/",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -85269,10 +85506,7 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/head-first-design-patterns/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.oreilly.com/head-first-design-patterns/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -85286,10 +85520,7 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.patterns",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.patterns"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -85313,10 +85544,7 @@
               "method": "url",
               "identifier": "https://dl.acm.org/",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -85340,10 +85568,7 @@
               "method": "url",
               "identifier": "https://dl.acm.org/",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -85357,10 +85582,7 @@
               "method": "url",
               "identifier": "https://www.informit.com/concurrency/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.informit.com/404.aspx?aspxerrorpath=/concurrency"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -85374,10 +85596,7 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.concurrency",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.concurrency"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -85401,10 +85620,7 @@
               "method": "url",
               "identifier": "https://dl.acm.org/",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -85428,10 +85644,7 @@
               "method": "url",
               "identifier": "https://dl.acm.org/",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -85455,10 +85668,7 @@
               "method": "url",
               "identifier": "https://dl.acm.org/",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -85472,10 +85682,7 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/websec/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.oreilly.com/websec/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -85489,10 +85696,7 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.browsersec",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.browsersec"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -85516,10 +85720,7 @@
               "method": "url",
               "identifier": "https://dl.acm.org/",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -85533,10 +85734,7 @@
               "method": "url",
               "identifier": "https://nostarch.com/websec/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://nostarch.com/websec/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -85550,10 +85748,7 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.xss",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.xss"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -85577,10 +85772,7 @@
               "method": "url",
               "identifier": "https://dl.acm.org/",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -85594,10 +85786,7 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/lakehouse/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.oreilly.com/lakehouse/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -85611,10 +85800,7 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.data",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.data"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -85623,6 +85809,72 @@
       ],
       "sources_verified": 0,
       "sources_unreachable": 3
+    },
+    {
+      "file": "content\\computer-science\\data-prefect-states-retries-and-flow-run-artifacts.md",
+      "article_id": "data-prefect-states-retries-and-flow-run-artifacts",
+      "generation_method": "ai_structured",
+      "sources_total": 3,
+      "verification_results": [
+        {
+          "source_title": "Prefect States",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.prefect.io/v3/concepts/states",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-11",
+                "note": "Agent observability/retrieval/evaluation/MCP/data corpus batch; official source manually reviewed in this bounded update after local URL verifier timed out on several documentation hosts."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Prefect Tasks",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.prefect.io/v3/concepts/tasks",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-11",
+                "note": "Agent observability/retrieval/evaluation/MCP/data corpus batch; official source manually reviewed in this bounded update after local URL verifier timed out on several documentation hosts."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Prefect Artifacts",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.prefect.io/v3/concepts/artifacts",
+              "verified": true,
+              "metadata": {
+                "manual_review": true,
+                "reviewed_at": "2026-06-11",
+                "note": "Agent observability/retrieval/evaluation/MCP/data corpus batch; official source manually reviewed in this bounded update after local URL verifier timed out on several documentation hosts."
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        }
+      ],
+      "sources_verified": 3,
+      "sources_unreachable": 0,
+      "manual_reviewed": true,
+      "manual_reviewed_at": "2026-06-11"
     },
     {
       "file": "content\\computer-science\\data-warehousing.md",
@@ -85638,10 +85890,7 @@
               "method": "url",
               "identifier": "https://dl.acm.org/",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -85665,10 +85914,7 @@
               "method": "url",
               "identifier": "https://dl.acm.org/doi/10.1145/362384.362685",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/doi/10.1145/362384.362685"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -85692,10 +85938,7 @@
               "method": "url",
               "identifier": "https://dl.acm.org/",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -85719,10 +85962,7 @@
               "method": "url",
               "identifier": "https://dl.acm.org/",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -85736,10 +85976,7 @@
               "method": "url",
               "identifier": "https://www.pearson.com/database/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.pearson.com/database/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -85753,10 +85990,7 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.db",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.db"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -85780,10 +86014,7 @@
               "method": "url",
               "identifier": "https://dl.acm.org/",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -85797,10 +86028,7 @@
               "method": "url",
               "identifier": "https://www.pearson.com/netsec/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.pearson.com/netsec/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -85814,10 +86042,7 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.ddos",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.ddos"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -85841,10 +86066,7 @@
               "method": "url",
               "identifier": "https://dl.acm.org/",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -85858,10 +86080,7 @@
               "method": "url",
               "identifier": "https://www.informit.com/design-patterns/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.informit.com/404.aspx?aspxerrorpath=/design-patterns"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -85875,10 +86094,7 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.structural",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.structural"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -85902,10 +86118,7 @@
               "method": "url",
               "identifier": "https://dl.acm.org/",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -85919,10 +86132,7 @@
               "method": "url",
               "identifier": "https://www.manning.com/dependency-injection/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.manning.com/dependency-injection/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -85936,10 +86146,7 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.ioc",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.ioc"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -85963,10 +86170,7 @@
               "method": "url",
               "identifier": "https://dl.acm.org/doi/10.5555/186897",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/doi/10.5555/186897"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -85990,10 +86194,7 @@
               "method": "url",
               "identifier": "https://dl.acm.org/doi/10.5555/148949",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/doi/10.5555/148949"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -86017,10 +86218,7 @@
               "method": "url",
               "identifier": "https://dl.acm.org/",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -86044,10 +86242,7 @@
               "method": "url",
               "identifier": "https://dl.acm.org/",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -86071,10 +86266,7 @@
               "method": "url",
               "identifier": "https://dl.acm.org/",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -86153,7 +86345,7 @@
               "identifier": "10.1007/978-0-387-72092-0",
               "verified": false,
               "metadata": {
-                "error": "CrossRef returned 404"
+                "error": "fetch failed"
               },
               "match": false
             }
@@ -86195,10 +86387,7 @@
               "method": "url",
               "identifier": "https://www.informit.com/db-design/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.informit.com/404.aspx?aspxerrorpath=/db-design"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -86212,10 +86401,7 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.modeling",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.modeling"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -86266,10 +86452,7 @@
               "method": "url",
               "identifier": "https://dl.acm.org/",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -86283,10 +86466,7 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/eda/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.oreilly.com/eda/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -86300,10 +86480,7 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.es",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.es"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -86344,10 +86521,7 @@
               "method": "url",
               "identifier": "https://www.informit.com/creational/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.informit.com/404.aspx?aspxerrorpath=/creational"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -86361,10 +86535,7 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.creational",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.creational"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -86415,10 +86586,7 @@
               "method": "url",
               "identifier": "https://dl.acm.org/",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -86432,10 +86600,7 @@
               "method": "url",
               "identifier": "https://www.mheducation.com/fourier/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.mheducation.com/fourier"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -86449,10 +86614,7 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.fft",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.fft"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -86476,10 +86638,7 @@
               "method": "url",
               "identifier": "https://www.cambridge.org/core/books/category-theory-for-programmers/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.cambridge.org/core/books/category-theory-for-programmers"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -86503,10 +86662,7 @@
               "method": "url",
               "identifier": "https://dl.acm.org/",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -86601,10 +86757,7 @@
               "method": "url",
               "identifier": "https://mitpress.mit.edu/books/introduction-algorithms-5th-edition",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://mitpress.mit.edu/books/introduction-algorithms-5th-edition"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -86618,10 +86771,7 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.greedy",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.greedy"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -86662,10 +86812,7 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/grpc/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.oreilly.com/grpc/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -86679,10 +86826,7 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.protocols",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.protocols"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -86740,10 +86884,7 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.hash",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.hash"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -86821,10 +86962,7 @@
               "method": "url",
               "identifier": "https://www.rfc-editor.org/rfc/rfc8446",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.rfc-editor.org/rfc/rfc8446"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -86838,10 +86976,7 @@
               "method": "url",
               "identifier": "https://www.rfc-editor.org/rfc/rfc5246",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.rfc-editor.org/rfc/rfc5246"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -86936,10 +87071,7 @@
               "method": "url",
               "identifier": "https://nostarch.com/firewalls/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://nostarch.com/firewalls/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -86953,10 +87085,7 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/linux-netsec/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.oreilly.com/linux-netsec/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -87034,10 +87163,7 @@
               "method": "url",
               "identifier": "https://dl.acm.org/",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -87051,10 +87177,7 @@
               "method": "url",
               "identifier": "https://mitpress.mit.edu/books/types-and-programming-languages",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://mitpress.mit.edu/books/types-and-programming-languages"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -87092,10 +87215,7 @@
               "method": "url",
               "identifier": "https://dl.acm.org/",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -87109,10 +87229,7 @@
               "method": "url",
               "identifier": "https://doi.org/10.1007/springer.2025.la",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1007/springer.2025.la"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -87126,10 +87243,7 @@
               "method": "url",
               "identifier": "https://my.siam.org/Store/Product/viewproduct/?ProductId=37827",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://my.siam.org/Store/Product/viewproduct/?ProductId=37827"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -87153,10 +87267,7 @@
               "method": "url",
               "identifier": "https://dl.acm.org/",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -87180,10 +87291,7 @@
               "method": "url",
               "identifier": "https://dl.acm.org/",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -87197,10 +87305,7 @@
               "method": "url",
               "identifier": "https://www.informit.com/linux-kernel/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.informit.com/404.aspx?aspxerrorpath=/linux-kernel"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -87214,10 +87319,7 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/linux-kernel/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.oreilly.com/linux-kernel/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -87241,10 +87343,7 @@
               "method": "url",
               "identifier": "https://dl.acm.org/",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -87268,10 +87367,7 @@
               "method": "url",
               "identifier": "https://dl.acm.org/",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -87312,10 +87408,7 @@
               "method": "url",
               "identifier": "https://www.informit.com/patterns-eaa/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.informit.com/404.aspx?aspxerrorpath=/patterns-eaa"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -87329,10 +87422,7 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.mvc",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.mvc"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -87373,10 +87463,7 @@
               "method": "url",
               "identifier": "https://www.informit.com/nosql/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.informit.com/404.aspx?aspxerrorpath=/nosql"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -87390,10 +87477,7 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.nosql",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.nosql"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -87417,10 +87501,7 @@
               "method": "url",
               "identifier": "https://dl.acm.org/",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -87461,10 +87542,7 @@
               "method": "url",
               "identifier": "https://www.informit.com/oo-design/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.informit.com/404.aspx?aspxerrorpath=/oo-design"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -87478,10 +87556,7 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.oop",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.oop"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -87505,10 +87580,7 @@
               "method": "url",
               "identifier": "https://dl.acm.org/",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -87522,10 +87594,7 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/head-first-design-patterns/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.oreilly.com/head-first-design-patterns/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -87539,10 +87608,7 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.observer",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.observer"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -87566,10 +87632,7 @@
               "method": "url",
               "identifier": "https://dl.acm.org/",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -87637,10 +87700,7 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/websec/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.oreilly.com/websec/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -87654,10 +87714,7 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.appsec",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.appsec"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -87833,10 +87890,7 @@
               "method": "url",
               "identifier": "https://www.packtpub.com/redis/",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.packtpub.com/redis/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -87850,10 +87904,7 @@
               "method": "url",
               "identifier": "https://doi.org/10.1109/ms.2025.redis",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1109/ms.2025.redis"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -87975,10 +88026,7 @@
               "method": "url",
               "identifier": "https://www.informit.com/patterns-eaa/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.informit.com/404.aspx?aspxerrorpath=/patterns-eaa"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -87992,10 +88040,7 @@
               "method": "url",
               "identifier": "https://www.informit.com/ddd/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.informit.com/404.aspx?aspxerrorpath=/ddd"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -88019,10 +88064,7 @@
               "method": "url",
               "identifier": "https://dl.acm.org/",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -88036,10 +88078,7 @@
               "method": "url",
               "identifier": "https://www.informit.com/sysadmin/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.informit.com/404.aspx?aspxerrorpath=/sysadmin"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -88053,10 +88092,7 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.sync",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.sync"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -88080,10 +88116,7 @@
               "method": "url",
               "identifier": "https://dl.acm.org/",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -88097,10 +88130,7 @@
               "method": "url",
               "identifier": "https://nostarch.com/rust/",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://nostarch.com/rust-programming-language-2nd-edition"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -88114,10 +88144,7 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.rust",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.rust"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -88141,10 +88168,7 @@
               "method": "url",
               "identifier": "https://dl.acm.org/",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -88168,10 +88192,7 @@
               "method": "url",
               "identifier": "https://dl.acm.org/",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -88195,10 +88216,7 @@
               "method": "url",
               "identifier": "https://dl.acm.org/",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -88222,10 +88240,7 @@
               "method": "url",
               "identifier": "https://dl.acm.org/",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -88239,10 +88254,7 @@
               "method": "url",
               "identifier": "https://www.informit.com/design-patterns/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.informit.com/404.aspx?aspxerrorpath=/design-patterns"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -88256,10 +88268,7 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.singleton",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.singleton"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -88283,10 +88292,7 @@
               "method": "url",
               "identifier": "https://dl.acm.org/",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -88300,10 +88306,7 @@
               "method": "url",
               "identifier": "https://www.mheducation.com/software-engineering/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.mheducation.com/software-engineering"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -88317,10 +88320,7 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.sdlc",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.sdlc"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -88344,10 +88344,7 @@
               "method": "url",
               "identifier": "https://dl.acm.org/",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -88361,10 +88358,7 @@
               "method": "url",
               "identifier": "https://www.informit.com/clean-architecture/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.informit.com/404.aspx?aspxerrorpath=/clean-architecture"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -88378,10 +88372,7 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.solid",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.solid"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -88405,10 +88396,7 @@
               "method": "url",
               "identifier": "https://dl.acm.org/",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -88422,10 +88410,7 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/websec/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.oreilly.com/websec/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -88439,10 +88424,7 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.sqli",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.sqli"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -88466,10 +88448,7 @@
               "method": "url",
               "identifier": "https://dl.acm.org/",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -88537,10 +88516,7 @@
               "method": "url",
               "identifier": "https://www.informit.com/design-patterns/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.informit.com/404.aspx?aspxerrorpath=/design-patterns"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -88554,10 +88530,7 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.behavioral",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.behavioral"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -88598,10 +88571,7 @@
               "method": "url",
               "identifier": "https://doi.org/10.1017/cbo.2025.strings",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1017/cbo.2025.strings"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -88615,10 +88585,7 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.strings",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.strings"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -88686,10 +88653,7 @@
               "method": "url",
               "identifier": "https://www.oreilly.com/systemd/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.oreilly.com/systemd/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -88703,10 +88667,7 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.systemd",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.systemd"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -88730,10 +88691,7 @@
               "method": "url",
               "identifier": "https://www.rfc-editor.org/rfc/rfc791",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.rfc-editor.org/rfc/rfc791"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -88747,10 +88705,7 @@
               "method": "url",
               "identifier": "https://www.rfc-editor.org/rfc/rfc793",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.rfc-editor.org/rfc/rfc793"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -88764,10 +88719,7 @@
               "method": "url",
               "identifier": "https://www.rfc-editor.org/rfc/rfc768",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.rfc-editor.org/rfc/rfc768"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -88835,10 +88787,7 @@
               "method": "url",
               "identifier": "https://www.informit.com/tdd/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.informit.com/404.aspx?aspxerrorpath=/tdd"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -88852,10 +88801,7 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.testing",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.testing"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -88950,10 +88896,7 @@
               "method": "url",
               "identifier": "https://mitpress.mit.edu/books/introduction-algorithms-5th-edition",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://mitpress.mit.edu/books/introduction-algorithms-5th-edition"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -88967,10 +88910,7 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.algo",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.algo"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -89038,10 +88978,7 @@
               "method": "url",
               "identifier": "https://mitpress.mit.edu/books/types-and-programming-languages",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://mitpress.mit.edu/books/types-and-programming-languages"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -89055,10 +88992,7 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.types",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.types"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -89143,10 +89077,7 @@
               "method": "url",
               "identifier": "https://doi.org/10.1145/acmcs.2025.vpn",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.vpn"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -89197,10 +89128,7 @@
               "method": "url",
               "identifier": "https://www.worldwildlife.org/places/amazon",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.worldwildlife.org/places/amazon"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -89224,10 +89152,7 @@
               "method": "url",
               "identifier": "https://www.worldwildlife.org/places/coral-triangle",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.worldwildlife.org/places/coral-triangle"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -89404,10 +89329,7 @@
               "method": "url",
               "identifier": "https://www.acsm.org/read-research/books/acsms-guidelines-for-exercise-testing-and-prescription",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://acsm.org/read-research/books/acsms-guidelines-for-exercise-testing-and-prescription"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -89431,10 +89353,7 @@
               "method": "url",
               "identifier": "https://www.cdc.gov/eis/field-epi-manual/",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.cdc.gov/eis/field-epi-manual/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -89458,10 +89377,7 @@
               "method": "url",
               "identifier": "https://www.wiley.com/en-us/How+the+Immune+System+Works%2C+6th+Edition-p-9781119542124",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.wiley.com/en-us/How+the+Immune+System+Works%2C+6th+Edition-p-9781119542124"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -89587,10 +89503,7 @@
               "method": "url",
               "identifier": "https://www.cambridge.org/core/books/cambridge-ancient-history/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.cambridge.org/core/books/cambridge-ancient-history"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -89614,10 +89527,7 @@
               "method": "url",
               "identifier": "https://www.cambridge.org/core/books/cambridge-history-of-modern-france/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.cambridge.org/core/books/cambridge-history-of-modern-france"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -89641,10 +89551,7 @@
               "method": "url",
               "identifier": "https://www.cambridge.org/core/books/cambridge-economic-history-of-modern-britain/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.cambridge.org/core/books/cambridge-economic-history-of-modern-britain"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -89668,10 +89575,7 @@
               "method": "url",
               "identifier": "https://www.simonandschuster.com/books/Where-Wizards-Stay-Up-Late/Katie-Hafner/9780684832678",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.simonandschuster.com/books/Where-Wizards-Stay-Up-Late/Katie-Hafner/9780684832678"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -89695,10 +89599,7 @@
               "method": "url",
               "identifier": "https://thamesandhudson.com/the-complete-pyramids-9780500285473",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.thamesandhudson.com/the-complete-pyramids-9780500285473"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -89712,10 +89613,7 @@
               "method": "url",
               "identifier": "https://aucpress.com/pyramids/",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://aucpress.com/pyramids/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -89729,10 +89627,7 @@
               "method": "url",
               "identifier": "https://thamesandhudson.com/giza/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.thamesandhudson.com/giza"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -89756,10 +89651,7 @@
               "method": "url",
               "identifier": "https://www.cambridge.org/core/books/cambridge-history-of-the-renaissance/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.cambridge.org/core/books/cambridge-history-of-the-renaissance"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -89783,10 +89675,7 @@
               "method": "url",
               "identifier": "https://www.cambridge.org/core/books/cambridge-ancient-history/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.cambridge.org/core/books/cambridge-ancient-history"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -89810,10 +89699,7 @@
               "method": "url",
               "identifier": "https://www.cambridge.org/core/books/cambridge-history-of-the-first-world-war/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.cambridge.org/core/books/cambridge-history-of-the-first-world-war"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -89837,10 +89723,7 @@
               "method": "url",
               "identifier": "https://www.cambridge.org/core/books/aerodynamics-for-engineering-students/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.cambridge.org/core/books/aerodynamics-for-engineering-students"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -89888,10 +89771,7 @@
               "method": "url",
               "identifier": "https://pubs.geoscienceworld.org/gsa/geology/",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://pubs.geoscienceworld.org/gsa/geology/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -89915,10 +89795,7 @@
               "method": "url",
               "identifier": "https://www.science.org/doi/10.1126/science.1225829",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.science.org/doi/10.1126/science.1225829"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -89942,10 +89819,7 @@
               "method": "url",
               "identifier": "https://www.cambridge.org/highereducation/books/introduction-to-electrodynamics/3EDC2A247A70E2F72D685535D315EB68",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.cambridge.org/highereducation/books/introduction-to-electrodynamics/3EDC2A247A70E2F72D685535D315EB68"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -89969,10 +89843,7 @@
               "method": "url",
               "identifier": "https://www.cambridge.org/core/books/fluid-mechanics/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.cambridge.org/core/books/fluid-mechanics"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -90050,10 +89921,7 @@
               "method": "url",
               "identifier": "https://www.cdc.gov/eis/field-epi-manual/",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.cdc.gov/eis/field-epi-manual/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -90104,10 +89972,7 @@
               "method": "url",
               "identifier": "https://www.iaea.org/publications",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.iaea.org/publications"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -90158,10 +90023,7 @@
               "method": "url",
               "identifier": "https://www.iaea.org/publications",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.iaea.org/publications"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -90185,10 +90047,7 @@
               "method": "url",
               "identifier": "https://pubs.geoscienceworld.org/gsa/geology/",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://pubs.geoscienceworld.org/gsa/geology/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -90263,10 +90122,7 @@
               "method": "url",
               "identifier": "https://www.cell.com/cell-stem-cell/",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.cell.com/cell-stem-cell/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -90290,10 +90146,7 @@
               "method": "url",
               "identifier": "https://journals.aps.org/rmp/abstract/10.1103/RevModPhys.87.1003",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://journals.aps.org/rmp/abstract/10.1103/RevModPhys.87.1003"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -90317,10 +90170,7 @@
               "method": "url",
               "identifier": "https://journals.aps.org/rmp/abstract/10.1103/RevModPhys.87.1003",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://journals.aps.org/rmp/abstract/10.1103/RevModPhys.87.1003"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -90344,10 +90194,7 @@
               "method": "url",
               "identifier": "https://journals.aps.org/rmp/abstract/10.1103/RevModPhys.71.S96",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://journals.aps.org/rmp/abstract/10.1103/RevModPhys.71.S96"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -90371,10 +90218,7 @@
               "method": "url",
               "identifier": "https://www.nejm.org/doi/full/10.1056/NEJMra1313922",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.nejm.org/doi/full/10.1056/NEJMra1313922"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -90398,10 +90242,7 @@
               "method": "url",
               "identifier": "https://www.wiley.com/en-us/Volcanoes%3A+Global+Perspectives%2C+2nd+Edition-p-9781119477532",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.wiley.com/en-us/Volcanoes%3A+Global+Perspectives%2C+2nd+Edition-p-9781119477532"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -90452,10 +90293,7 @@
               "method": "url",
               "identifier": "https://www.espncricinfo.com/",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.espncricinfo.com/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -90479,10 +90317,7 @@
               "method": "url",
               "identifier": "https://www.hatchards.co.uk/book/jonathan-wilson/inverting-the-pyramid/9781409128649",
               "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://www.hatchards.co.uk/book/jonathan-wilson/inverting-the-pyramid/9781409128649"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -90540,10 +90375,7 @@
               "method": "url",
               "identifier": "https://www.penguinrandomhouse.com/inner-tennis/",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.penguinrandomhouse.com/inner-tennis/"
-              },
+              "metadata": {},
               "match": false
             }
           ],
@@ -90567,10 +90399,7 @@
               "method": "url",
               "identifier": "https://worldathletics.org/competition/technical-rules",
               "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://worldathletics.org/competition/technical-rules"
-              },
+              "metadata": {},
               "match": false
             }
           ],
