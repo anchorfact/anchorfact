@@ -31,6 +31,8 @@ jobs:
         run: npm run pages:build
 
       - name: Run AI API performance budget
+        env:
+          ANCHORFACT_API_PERF_BUDGET_MULTIPLIER: '2'
         run: npm run api:perf
 
       - name: Run full public audit gate

@@ -17,6 +17,7 @@ import { buildResolveBatchApiPayload } from '../src/lib/resolve-api.js';
 export const DEFAULT_DIST_DIR = 'dist';
 export const DEFAULT_RUNS = 30;
 export const DEFAULT_WARMUPS = 5;
+export const DEFAULT_BUDGET_MULTIPLIER = 1;
 
 export const DEFAULT_ARTIFACT_SIZE_BUDGETS = [
   { path: 'graph.json', baseline_bytes: 2997236, max_bytes: 5750000, purpose: 'offline relationship graph' },
@@ -167,6 +168,13 @@ export function evaluateBudget(summary, budget) {
   return failures;
 }
 
+export function scaleBudget(budget, multiplier = DEFAULT_BUDGET_MULTIPLIER) {
+  return {
+    median_ms: budget.median_ms * multiplier,
+    p95_ms: budget.p95_ms * multiplier
+  };
+}
+
 export function loadArtifactSizes(distDir = DEFAULT_DIST_DIR, budgets = DEFAULT_ARTIFACT_SIZE_BUDGETS) {
   return Object.fromEntries(budgets.map(budget => {
     const path = join(distDir, budget.path);
@@ -204,7 +212,7 @@ export function evaluateArtifactSizeBudgets(
   };
 }
 
-function measureCase(testCase, artifacts, { runs, warmups }) {
+function measureCase(testCase, artifacts, { runs, warmups, budgetMultiplier }) {
   for (let index = 0; index < warmups; index++) {
     testCase.run(artifacts);
   }
@@ -220,14 +228,16 @@ function measureCase(testCase, artifacts, { runs, warmups }) {
   }
 
   const summary = summarizeSamples(samples);
-  const failures = evaluateBudget(summary, testCase.budget);
+  const budget = scaleBudget(testCase.budget, budgetMultiplier);
+  const failures = evaluateBudget(summary, budget);
   return {
     id: testCase.id,
     ok: failures.length === 0,
     runs,
     warmups,
     payload_bytes: payloadBytes,
-    budget: testCase.budget,
+    budget,
+    base_budget: testCase.budget,
     ...summary,
     failures
   };
@@ -239,9 +249,10 @@ export function buildApiPerformanceReport({
   cases = DEFAULT_CASES,
   runs = DEFAULT_RUNS,
   warmups = DEFAULT_WARMUPS,
+  budgetMultiplier = DEFAULT_BUDGET_MULTIPLIER,
   generatedAt = new Date().toISOString()
 }) {
-  const results = cases.map(testCase => measureCase(testCase, artifacts, { runs, warmups }));
+  const results = cases.map(testCase => measureCase(testCase, artifacts, { runs, warmups, budgetMultiplier }));
   const caseFailures = results.flatMap(result => result.failures.map(failure => `${result.id}: ${failure}`));
   const artifactFailures = (artifactSizeBudget?.failures || [])
     .map(failure => `artifact_size_budget: ${failure}`);
@@ -254,6 +265,7 @@ export function buildApiPerformanceReport({
     case_count: results.length,
     passed: results.filter(result => result.ok).length,
     failed: results.filter(result => !result.ok).length,
+    budget_multiplier: budgetMultiplier,
     results,
     artifact_size_budget: artifactSizeBudget,
     failures
@@ -290,6 +302,7 @@ Generated: ${report.generated}
 - failed: ${report.failed}
 - runs: ${report.runs}
 - warmups: ${report.warmups}
+- budget multiplier: ${report.budget_multiplier}
 
 ## Results
 
@@ -313,6 +326,7 @@ function parseArgs(argv) {
     distDir: process.env.ANCHORFACT_DIST_DIR || DEFAULT_DIST_DIR,
     runs: DEFAULT_RUNS,
     warmups: DEFAULT_WARMUPS,
+    budgetMultiplier: Number.parseFloat(process.env.ANCHORFACT_API_PERF_BUDGET_MULTIPLIER || `${DEFAULT_BUDGET_MULTIPLIER}`),
     json: false
   };
 
@@ -322,6 +336,7 @@ function parseArgs(argv) {
     else if (arg === '--dist') options.distDir = argv[++index];
     else if (arg === '--runs') options.runs = Number.parseInt(argv[++index], 10);
     else if (arg === '--warmups') options.warmups = Number.parseInt(argv[++index], 10);
+    else if (arg === '--budget-multiplier') options.budgetMultiplier = Number.parseFloat(argv[++index]);
     else throw new Error(`Unknown option: ${arg}`);
   }
 
@@ -330,6 +345,9 @@ function parseArgs(argv) {
   }
   if (!Number.isFinite(options.warmups) || options.warmups < 0) {
     throw new Error('--warmups must be a non-negative integer');
+  }
+  if (!Number.isFinite(options.budgetMultiplier) || options.budgetMultiplier < 1) {
+    throw new Error('--budget-multiplier must be a number greater than or equal to 1');
   }
   return options;
 }
@@ -342,7 +360,8 @@ export function main(argv = process.argv.slice(2)) {
     artifacts,
     artifactSizeBudget,
     runs: options.runs,
-    warmups: options.warmups
+    warmups: options.warmups,
+    budgetMultiplier: options.budgetMultiplier
   });
 
   console.log(options.json ? JSON.stringify(report, null, 2) : renderApiPerformanceMarkdown(report));

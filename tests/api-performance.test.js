@@ -6,6 +6,7 @@ import {
   evaluateBudget,
   percentile,
   renderApiPerformanceMarkdown,
+  scaleBudget,
   summarizeSamples
 } from '../scripts/check-api-performance.js';
 
@@ -49,6 +50,14 @@ test('evaluateBudget fails median and p95 regressions explicitly', () => {
   assertEq(failures.length, 2);
   assert(failures[0].includes('median'), 'first failure should mention median budget');
   assert(failures[1].includes('p95'), 'second failure should mention p95 budget');
+});
+
+test('scaleBudget applies a CI multiplier without mutating the base budget', () => {
+  const base = { median_ms: 25, p95_ms: 75 };
+  const scaled = scaleBudget(base, 2);
+
+  assertEq(scaled, { median_ms: 50, p95_ms: 150 });
+  assertEq(base, { median_ms: 25, p95_ms: 75 });
 });
 
 test('buildApiPerformanceReport renders passing and failing budget reports', () => {
