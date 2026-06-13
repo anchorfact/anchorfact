@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-13T15:21:32.363Z",
+    "generated": "2026-06-13T15:28:14.418Z",
     "total_articles": 1628,
     "total_with_errors": 0,
     "average_sources_per_article": "2.6",
     "overall_verification_rate": "92.3%",
-    "elapsed_ms": 1594,
-    "elapsed_sec": "1.6",
+    "elapsed_ms": 2171,
+    "elapsed_sec": "2.2",
     "concurrency": 3
   },
   "articles": [
@@ -19497,22 +19497,64 @@
       "file": "content/ai/ai-water-management.md",
       "article_id": "ai-water-management",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "Artificial Intelligence for Water Management: Leak Detection, Quality Monitoring, and Smart Distribution Networks (2024-2025 Survey)",
-          "source_type": "academic_paper",
-          "results": [],
-          "all_verified": false
+          "source_title": "Water Pipeline Leakage Detection Based on Machine Learning and Wireless Sensor Networks",
+          "source_type": "journal_article",
+          "results": [
+            {
+              "method": "doi",
+              "identifier": "10.3390/s19235086",
+              "verified": true,
+              "metadata": {
+                "title": "Water Pipeline Leakage Detection Based on Machine Learning and Wireless Sensor Networks",
+                "publisher": "MDPI AG",
+                "year": 2019
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         },
         {
-          "source_title": "Machine Learning for Smart Irrigation: Soil Moisture Prediction, Evapotranspiration Modeling, and Automated Scheduling",
-          "source_type": "academic_paper",
-          "results": [],
-          "all_verified": false
+          "source_title": "Machine Learning for Smart Irrigation in Agriculture: How Far along Are We?",
+          "source_type": "survey_paper",
+          "results": [
+            {
+              "method": "doi",
+              "identifier": "10.3390/info15060306",
+              "verified": true,
+              "metadata": {
+                "title": "Machine Learning for Smart Irrigation in Agriculture: How Far along Are We?",
+                "publisher": "MDPI AG",
+                "year": 2024
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "A review of the application of machine learning in water quality evaluation",
+          "source_type": "survey_paper",
+          "results": [
+            {
+              "method": "doi",
+              "identifier": "10.1016/j.eehl.2022.06.001",
+              "verified": true,
+              "metadata": {
+                "title": "A review of the application of machine learning in water quality evaluation",
+                "publisher": "Elsevier BV",
+                "year": 2022
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
+      "sources_verified": 3,
       "sources_unreachable": 0
     },
     {
