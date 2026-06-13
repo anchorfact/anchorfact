@@ -46,6 +46,15 @@ function writeText(path, text) {
   writeFileSync(outputPath, text);
 }
 
+function defaultCurrentInputPaths(root = process.cwd()) {
+  const apiReadinessJson = resolve(root, 'dist/api-readiness.json');
+  const contentHealthJson = resolve(root, 'dist/content-health.json');
+  return {
+    apiReadinessJson: existsSync(apiReadinessJson) ? apiReadinessJson : null,
+    contentHealthJson: existsSync(contentHealthJson) ? contentHealthJson : null
+  };
+}
+
 function currentAdoptionRatio(adoption = {}) {
   return optionalFiniteNumber(
     adoption.identified_ai_primary_to_discovery_current_ratio
@@ -91,7 +100,10 @@ export function normalizeReadinessSnapshot(input = {}) {
     date: generatedDate(generated),
     source: input.source || 'current',
     production_integrity_status: apiReadiness.production_health?.status || 'not_measured',
-    public_audit_actionable_count: optionalFiniteNumber(contentHealth.public_audit?.actionable_count),
+    public_audit_actionable_count: optionalFiniteNumber(
+      contentHealth.public_audit?.actionable_count
+        ?? contentHealth.project_readiness?.signals?.public_audit_actionable_count
+    ),
     api_context_ratio: optionalFiniteNumber(apiScorecard.pass_ratio),
     api_scorecard_failures: Array.isArray(apiScorecard.failures)
       ? apiScorecard.failures.length
@@ -329,6 +341,7 @@ function usage() {
   return `Usage: node scripts/readiness-window-report.js [--history-dir reports/readiness-history] [--api-readiness-json reports/api-readiness.json] [--content-health-json reports/content-health.json] [--snapshot-json path] [--save-current [path]] [--write path] [--write-json path] [--json]
 
 Builds a report-only readiness window summary from daily readiness snapshots.
+If no current snapshot or report paths are provided, dist/api-readiness.json and dist/content-health.json are used when present.
 `;
 }
 
@@ -348,6 +361,15 @@ export function main(argv = process.argv.slice(2)) {
       contentHealth: options.contentHealthJson ? readJson(options.contentHealthJson, 'content health report') : {},
       source: 'current'
     });
+  } else {
+    const defaultInputs = defaultCurrentInputPaths();
+    if (defaultInputs.apiReadinessJson || defaultInputs.contentHealthJson) {
+      current = normalizeReadinessSnapshot({
+        apiReadiness: defaultInputs.apiReadinessJson ? readJson(defaultInputs.apiReadinessJson, 'API readiness report') : {},
+        contentHealth: defaultInputs.contentHealthJson ? readJson(defaultInputs.contentHealthJson, 'content health report') : {},
+        source: 'dist'
+      });
+    }
   }
 
   if (current) {

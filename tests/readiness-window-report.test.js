@@ -1,6 +1,10 @@
 #!/usr/bin/env node
+import { mkdirSync, mkdtempSync, rmSync, writeFileSync } from 'fs';
+import { tmpdir } from 'os';
+import { join } from 'path';
 import {
   buildReadinessWindowReport,
+  main,
   normalizeReadinessSnapshot,
   renderReadinessWindowMarkdown
 } from '../scripts/readiness-window-report.js';
@@ -104,6 +108,50 @@ test('buildReadinessWindowReport treats missing current metrics as not measured'
   assert(markdown.includes('api_context_ratio: not_measured'), 'missing not_measured API ratio');
   assert(markdown.includes('api_scorecard_failures: not_measured'), 'missing not_measured API failures');
   assert(markdown.includes('adoption_ratio: not_measured'), 'missing not_measured adoption ratio');
+});
+
+test('main loads current dist readiness artifacts by default when present', () => {
+  const root = mkdtempSync(join(tmpdir(), 'anchorfact-readiness-'));
+  const originalCwd = process.cwd();
+  const originalWrite = process.stdout.write;
+  let output = '';
+
+  mkdirSync(join(root, 'dist'), { recursive: true });
+  writeFileSync(join(root, 'dist', 'api-readiness.json'), JSON.stringify({
+    generated: '2026-06-13T00:00:00.000Z',
+    production_health: { status: 'not_provided' },
+    api_scorecard: { pass_ratio: 1, failures: [] },
+    adoption_signal: { status: 'not_provided' }
+  }));
+  writeFileSync(join(root, 'dist', 'content-health.json'), JSON.stringify({
+    generated: '2026-06-13T00:00:00.000Z',
+    project_readiness: {
+      next_focus: 'maintain_and_measure_ai_usage',
+      signals: { public_audit_actionable_count: 0 }
+    }
+  }));
+
+  try {
+    process.chdir(root);
+    process.stdout.write = (chunk, encoding, callback) => {
+      output += String(chunk);
+      if (typeof encoding === 'function') encoding();
+      if (typeof callback === 'function') callback();
+      return true;
+    };
+    const report = main([]);
+
+    assertEq(report.snapshot_count, 1);
+    assertEq(report.current_snapshot.source, 'dist');
+    assertEq(report.current_snapshot.public_audit_actionable_count, 0);
+    assertEq(report.current_snapshot.api_context_ratio, 1);
+    assertEq(report.current_snapshot.api_scorecard_failures, 0);
+    assert(output.includes('api_context_ratio: 1'), 'missing auto-loaded API ratio in output');
+  } finally {
+    process.stdout.write = originalWrite;
+    process.chdir(originalCwd);
+    rmSync(root, { recursive: true, force: true });
+  }
 });
 
 test('buildReadinessWindowReport blocks content expansion when audit or API signals fail', () => {

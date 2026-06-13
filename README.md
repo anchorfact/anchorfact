@@ -240,6 +240,8 @@ npm run build
 npm run api:readiness
 ```
 
+After `npm run build`, `npm run readiness:history` automatically reads `dist/api-readiness.json` and `dist/content-health.json` when no current report paths are supplied, so local window reports include the latest build signals without writing a history snapshot.
+
 The scheduled `Readiness Scorecard` workflow combines the daily production integrity snapshot, AI adoption scorecard, local API readiness report, and content health snapshot into one uploaded artifact. It also keeps a cached local history of daily readiness snapshots so the automated gates can be evaluated as windows instead of one-day checks:
 
 ```bash
