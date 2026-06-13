@@ -229,6 +229,7 @@ export function buildMcpProfile({
       '/openapi.json',
       '/capabilities.json',
       '/coverage.json',
+      '/api-readiness.json',
       '/examples.json',
       '/evals.json',
       '/graph.json',

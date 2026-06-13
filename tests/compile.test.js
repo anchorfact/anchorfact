@@ -793,6 +793,7 @@ test('mcp.json describes local MCP installation and tools', () => {
   assert(mcp.related_public_artifacts.includes('/evals.json'), 'MCP profile should link evals');
   assert(mcp.related_public_artifacts.includes('/capabilities.json'), 'MCP profile should link capabilities');
   assert(mcp.related_public_artifacts.includes('/coverage.json'), 'MCP profile should link coverage');
+  assert(mcp.related_public_artifacts.includes('/api-readiness.json'), 'MCP profile should link API readiness');
 });
 
 test('sources.json describes deduplicated public evidence sources', () => {
