@@ -2,8 +2,8 @@
 import { execFileSync } from 'child_process';
 import { mkdirSync, readFileSync, writeFileSync } from 'fs';
 import { dirname, resolve } from 'path';
-import { pathToFileURL } from 'url';
 import { OFFICIAL_SITE } from '../src/lib/build-metadata.js';
+import { isDirectRun } from '../src/lib/cli-entrypoint.js';
 import { mapWithConcurrency, positiveInteger } from '../src/lib/concurrency.js';
 import { fetchLiveText } from '../src/lib/live-http.js';
 import { verifyLiveProvenance } from '../src/lib/provenance-verify.js';
@@ -660,7 +660,7 @@ export async function main(argv = process.argv.slice(2)) {
   return report;
 }
 
-if (import.meta.url === pathToFileURL(process.argv[1]).href) {
+if (isDirectRun(import.meta.url)) {
   main().catch((error) => {
     console.error(error);
     process.exitCode = 1;

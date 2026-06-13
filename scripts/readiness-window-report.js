@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import { existsSync, mkdirSync, readFileSync, readdirSync, statSync, writeFileSync } from 'fs';
 import { dirname, join, resolve } from 'path';
-import { pathToFileURL } from 'url';
+import { isDirectRun } from '../src/lib/cli-entrypoint.js';
 
 export const READINESS_SNAPSHOT_SCHEMA_VERSION = 'anchorfact.readiness-snapshot.v1';
 export const READINESS_WINDOW_SCHEMA_VERSION = 'anchorfact.readiness-window.v1';
@@ -498,7 +498,7 @@ export function main(argv = process.argv.slice(2)) {
   return report;
 }
 
-if (import.meta.url === pathToFileURL(process.argv[1]).href) {
+if (isDirectRun(import.meta.url)) {
   try {
     main();
   } catch (error) {

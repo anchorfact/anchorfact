@@ -2,7 +2,7 @@
 import { existsSync, readFileSync, statSync } from 'fs';
 import { join } from 'path';
 import { performance } from 'perf_hooks';
-import { pathToFileURL } from 'url';
+import { isDirectRun } from '../src/lib/cli-entrypoint.js';
 import {
   buildContextApiPayload,
   renderContextMarkdown
@@ -371,7 +371,7 @@ export function main(argv = process.argv.slice(2)) {
   return report;
 }
 
-if (import.meta.url === pathToFileURL(process.argv[1]).href) {
+if (isDirectRun(import.meta.url)) {
   try {
     main();
   } catch (error) {

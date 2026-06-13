@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'fs';
 import { dirname, resolve } from 'path';
-import { pathToFileURL } from 'url';
 import {
   buildApiReadinessReport,
   renderApiReadinessMarkdown
 } from '../src/lib/api-readiness.js';
+import { isDirectRun } from '../src/lib/cli-entrypoint.js';
 import {
   buildApiPerformanceReport,
   evaluateArtifactSizeBudgets,
@@ -279,7 +279,7 @@ export function main(argv = process.argv.slice(2)) {
   process.stdout.write(options.json ? json : markdown);
 }
 
-if (import.meta.url === pathToFileURL(process.argv[1]).href) {
+if (isDirectRun(import.meta.url)) {
   try {
     main();
   } catch (error) {

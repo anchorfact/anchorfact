@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-import { pathToFileURL } from 'url';
 import { OFFICIAL_SITE } from '../src/lib/build-metadata.js';
+import { isDirectRun } from '../src/lib/cli-entrypoint.js';
 import { fetchLiveText } from '../src/lib/live-http.js';
 
 const DEFAULT_ROUTE_RETRIES = 2;
@@ -454,7 +454,7 @@ export async function main(argv = process.argv.slice(2)) {
   return report;
 }
 
-if (import.meta.url === pathToFileURL(process.argv[1]).href) {
+if (isDirectRun(import.meta.url)) {
   main().catch((error) => {
     console.error(error);
     process.exitCode = 1;

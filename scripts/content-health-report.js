@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import { existsSync, mkdirSync, readFileSync, readdirSync, statSync, writeFileSync } from 'fs';
 import { dirname, join, resolve } from 'path';
-import { pathToFileURL } from 'url';
+import { isDirectRun } from '../src/lib/cli-entrypoint.js';
 import { classifySourceTier } from '../src/lib/confidence.js';
 import {
   autoRepairExclusionReasons,
@@ -560,6 +560,6 @@ export function main(argv = process.argv.slice(2)) {
   return report;
 }
 
-if (import.meta.url === pathToFileURL(process.argv[1]).href) {
+if (isDirectRun(import.meta.url)) {
   main();
 }

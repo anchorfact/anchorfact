@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import { mkdirSync, writeFileSync } from 'fs';
 import { dirname, resolve } from 'path';
-import { pathToFileURL } from 'url';
+import { isDirectRun } from '../src/lib/cli-entrypoint.js';
 
 const CLOUDFLARE_API_BASE = 'https://api.cloudflare.com/client/v4';
 const GRAPHQL_ENDPOINT = `${CLOUDFLARE_API_BASE}/graphql`;
@@ -1027,7 +1027,7 @@ async function main(argv = process.argv.slice(2)) {
   }
 }
 
-if (import.meta.url === pathToFileURL(process.argv[1]).href) {
+if (isDirectRun(import.meta.url)) {
   main().catch(error => {
     console.error(`Cloudflare usage report failed: ${error.message}`);
     process.exit(1);

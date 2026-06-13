@@ -2,7 +2,7 @@
 import { execFileSync } from 'child_process';
 import { existsSync, readFileSync, readdirSync, statSync } from 'fs';
 import { dirname, join, relative, resolve } from 'path';
-import { pathToFileURL } from 'url';
+import { isDirectRun } from '../src/lib/cli-entrypoint.js';
 
 const ROOT_TEMP_FILES = [
   '.quality-baseline.json',
@@ -1281,6 +1281,6 @@ export function main() {
   console.log('Repository hygiene check passed');
 }
 
-if (import.meta.url === pathToFileURL(process.argv[1]).href) {
+if (isDirectRun(import.meta.url)) {
   main();
 }

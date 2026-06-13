@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { pathToFileURL } from 'url';
+import { isDirectRun } from '../src/lib/cli-entrypoint.js';
 import { buildAuditRows, loadAuditData } from './audit-public-sample.js';
 
 function countByRecommendation(rows) {
@@ -78,6 +78,6 @@ export function main(argv = process.argv.slice(2)) {
   return summary;
 }
 
-if (import.meta.url === pathToFileURL(process.argv[1]).href) {
+if (isDirectRun(import.meta.url)) {
   main();
 }

@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'fs';
 import { dirname, join, resolve } from 'path';
-import { pathToFileURL } from 'url';
 import { load as loadYaml } from 'js-yaml';
 import { slugifyPath } from '../src/lib/article-quality.js';
+import { isDirectRun } from '../src/lib/cli-entrypoint.js';
 import { collectContentHygieneFlags } from '../src/lib/content-hygiene.js';
 
 const DEFAULT_OUTPUT = 'docs/PUBLIC_CONTENT_AUDIT_2026-05-27.md';
@@ -396,7 +396,7 @@ export function runAudit(args = {}) {
   return { rows, sample, outputPath };
 }
 
-if (import.meta.url === pathToFileURL(process.argv[1]).href) {
+if (isDirectRun(import.meta.url)) {
   const args = parseArgs(process.argv.slice(2));
   const result = runAudit(args);
   const unique = new Set(result.sample.map(row => row.canonical_slug)).size;

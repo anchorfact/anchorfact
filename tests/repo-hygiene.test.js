@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import { execFileSync } from 'child_process';
 import { mkdtempSync, mkdirSync, rmSync, writeFileSync } from 'fs';
 import { tmpdir } from 'os';
 import { join } from 'path';
@@ -38,6 +39,33 @@ function fixtureRoot(name) {
 }
 
 console.log('AnchorFact Repository Hygiene Tests\n');
+
+test('CLI modules can be imported from inline module tools', () => {
+  const importableCliModules = [
+    './scripts/api-readiness-report.js',
+    './scripts/audit-public-sample.js',
+    './scripts/check-api-performance.js',
+    './scripts/check-mcp-local.js',
+    './scripts/check-public-audit.js',
+    './scripts/check-repo-hygiene.js',
+    './scripts/cloudflare-usage-report.js',
+    './scripts/content-health-report.js',
+    './scripts/production-integrity.js',
+    './scripts/readiness-window-report.js',
+    './scripts/run-ai-evals.js',
+    './scripts/run-ai-usefulness-benchmark.js',
+    './src/smoke-production.js'
+  ];
+  const inlineScript = `
+    const modules = ${JSON.stringify(importableCliModules)};
+    for (const modulePath of modules) {
+      await import(modulePath);
+    }
+    console.log('cli imports ok');
+  `;
+  const output = execFileSync('node', ['--input-type=module', '-e', inlineScript], { encoding: 'utf8' });
+  assert(output.includes('cli imports ok'), 'inline CLI module imports should complete');
+});
 
 test('collectFunctionEdgeImportFailures accepts edge-safe function imports', () => {
   const root = fixtureRoot('safe');

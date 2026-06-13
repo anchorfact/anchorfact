@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import { createHash } from 'crypto';
-import { pathToFileURL } from 'url';
+import { isDirectRun } from './lib/cli-entrypoint.js';
 import { mapWithConcurrency, positiveInteger } from './lib/concurrency.js';
 import { fetchLiveText } from './lib/live-http.js';
 
@@ -830,8 +830,7 @@ export async function main() {
   }
 }
 
-const isDirectRun = typeof process.argv[1] === 'string' && import.meta.url === pathToFileURL(process.argv[1]).href;
-if (isDirectRun) {
+if (isDirectRun(import.meta.url)) {
   main().catch((error) => {
     console.error(error);
     process.exitCode = 1;

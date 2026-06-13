@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 import { existsSync, readFileSync } from 'fs';
 import { resolve } from 'path';
-import { pathToFileURL } from 'url';
 import {
   buildAiUsefulnessBenchmarkReport,
   renderAiUsefulnessBenchmarkMarkdown
 } from '../src/lib/ai-usefulness-benchmark.js';
+import { isDirectRun } from '../src/lib/cli-entrypoint.js';
 
 function readJson(path) {
   return JSON.parse(readFileSync(path, 'utf-8'));
@@ -66,7 +66,7 @@ export function main(argv = process.argv.slice(2)) {
   return report;
 }
 
-if (import.meta.url === pathToFileURL(process.argv[1]).href) {
+if (isDirectRun(import.meta.url)) {
   try {
     main();
   } catch (error) {
