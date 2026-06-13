@@ -4,9 +4,9 @@ title: Data Lake Architecture
 schema_type: TechArticle
 category: computer-science
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+confidence: medium
+last_verified: '2026-06-14'
+created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -15,90 +15,101 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-computer-science-001
+  - id: fact-computer-science-data-lake-001
     statement: >-
-      A Data Lake is a centralized repository storing raw data in native format (Parquet, Avro, JSON) on cheap object storage (S3, ADLS). Schema-on-read: apply schema when querying, not when storing.
-      Used for big data analytics, ML training, and data science. The Lakehouse architecture (Databricks, 2021) adds ACID transactions and data warehouse features
-    source_title: ACM Digital Library
-    source_url: https://dl.acm.org/
+      AWS Lake Formation terminology defines a data lake as persistent data stored in
+      Amazon S3 and managed through Lake Formation with a Data Catalog; it commonly
+      stores structured and unstructured data as well as raw and transformed data.
+    source_title: Lake Formation terminology
+    source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/how-it-works-terminology.html
     confidence: medium
-  - id: fact-computer-science-002
-    statement: "Lakehouse (Delta Lake, Iceberg, Hudi): ACID transactions on Parquet files in S3 — combine data lake flexibility with warehouse reliability."
-    source_title: ACM Digital Library
-    source_url: https://dl.acm.org/
+  - id: fact-computer-science-data-lake-002
+    statement: >-
+      Microsoft describes Azure Data Lake Storage as big-data analytics capabilities
+      built on Azure Blob Storage, implemented through Blob Storage with the hierarchical
+      namespace setting enabled.
+    source_title: Introduction to Azure Data Lake Storage
+    source_url: https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-introduction
     confidence: medium
-completeness: 0.88
+  - id: fact-computer-science-data-lake-003
+    statement: >-
+      Delta Lake documentation says Delta Lake provides ACID transactions, scalable
+      metadata handling, and unified streaming and batch processing on top of existing
+      data lakes such as S3, ADLS, GCS, and HDFS.
+    source_title: Welcome to the Delta Lake documentation
+    source_url: https://docs.delta.io/latest/index.html
+    confidence: medium
+  - id: fact-computer-science-data-lake-004
+    statement: >-
+      AWS Lake Formation documentation describes central governance, security, sharing,
+      and fine-grained access control for data lake data on Amazon S3 and metadata in
+      the AWS Glue Data Catalog.
+    source_title: What is AWS Lake Formation?
+    source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/what-is-lake-formation.html
+    confidence: medium
+completeness: 0.8
 known_gaps:
-  - Sources reconstructed during quality audit; primary source details were corrupted during batch generation
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
+  - >-
+    Coverage is limited to stable architectural layers and representative cloud/open-source
+    documentation; it does not compare every data lake service, query engine, or table format.
+disputed_statements: []
 primary_sources:
-  - title: ACM Digital Library
-    type: repository
+  - title: Lake Formation terminology
+    type: documentation
     year: 2026
-    url: https://dl.acm.org/
-    institution: ACM
-  - title: "Data Lakehouse: The Definitive Guide (2025 Edition)"
-    type: book
-    year: 2025
-    authors:
-      - multiple
-    institution: O'Reilly Media
-    url: https://www.oreilly.com/lakehouse/
-  - title: "Modern Data Architectures: A 2025 Systematic Review"
-    type: survey_paper
-    year: 2025
-    authors:
-      - multiple
-    institution: ACM Computing Surveys
-    url: https://doi.org/10.1145/acmcs.2025.data
-secondary_sources:
-  - title: ACM Digital Library
-    type: repository
+    url: https://docs.aws.amazon.com/lake-formation/latest/dg/how-it-works-terminology.html
+    institution: Amazon Web Services
+  - title: Introduction to Azure Data Lake Storage
+    type: documentation
     year: 2026
-    url: https://dl.acm.org/
-    institution: ACM
-  - title: The C Programming Language (K&R, 2nd Ed)
-    type: textbook
-    year: 1988
-    url: https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html
-    institution: Prentice Hall
-  - title: Structure and Interpretation of Computer Programs (SICP)
-    type: textbook
-    year: 1996
-    url: https://mitpress.mit.edu/sites/default/files/sicp/
-    institution: MIT Press
-  - title: "Data Lakehouse: Unifying Data Lakes and Warehouses — A 2025 Survey"
-    type: survey_paper
-    year: 2025
-    authors:
-      - multiple
-    institution: ACM Computing Surveys
-    url: https://doi.org/10.1145/acmcs.2025.lakehouse
-  - title: "Modern Data Architectures: From Lambda and Kappa to Data Mesh (2025)"
-    type: article
-    year: 2025
-    authors:
-      - multiple
-    institution: IEEE Data Engineering Bulletin
-    url: https://doi.org/10.1109/deb.2025.data
+    url: https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-introduction
+    institution: Microsoft
+  - title: Welcome to the Delta Lake documentation
+    type: documentation
+    year: 2026
+    url: https://docs.delta.io/latest/index.html
+    institution: Delta Lake
+  - title: What is AWS Lake Formation?
+    type: documentation
+    year: 2026
+    url: https://docs.aws.amazon.com/lake-formation/latest/dg/what-is-lake-formation.html
+    institution: Amazon Web Services
+secondary_sources: []
+updated: '2026-06-14'
 ---
+
 ## TL;DR
 
-A Data Lake is a centralized repository storing raw data in native format (Parquet, Avro, JSON) on cheap object storage (S3, ADLS). Schema-on-read: apply schema when querying, not when storing. Used for big data analytics, ML training, and data science. The Lakehouse architecture (Databricks, 2021) adds ACID transactions and data warehouse features on top of the data lake.
+Data lake architecture keeps heterogeneous data in scalable storage, tracks it through a
+catalog, and exposes it to analytics, machine learning, and governance services. Modern
+implementations usually separate raw object storage, metadata/catalog services, access
+controls, query engines, and an optional lakehouse table layer.
 
 ## Core Explanation
 
-Lakehouse (Delta Lake, Iceberg, Hudi): ACID transactions on Parquet files in S3 — combine data lake flexibility with warehouse reliability. Bronze-Silver-Gold medallion architecture: Bronze (raw ingested data), Silver (cleaned, deduplicated), Gold (aggregated, business-ready). Query engines: Spark, Presto/Trino, Dremio. Time travel: query data as it existed at any point in time.
+The repaired article narrows the concept to source-backed architecture layers. AWS Lake
+Formation documentation anchors the storage and catalog model: data lake data lives in
+Amazon S3, is managed with a Data Catalog, and can include structured, unstructured, raw,
+and transformed data. Microsoft documentation anchors the storage-service layer in Azure,
+where Data Lake Storage is built on Azure Blob Storage and enabled through hierarchical
+namespaces for analytics workloads.
+
+The lakehouse/table layer is separate from the base storage layer. Delta Lake documentation
+describes a table layer that adds ACID transactions, scalable metadata handling, and unified
+batch and streaming processing on top of existing data lakes such as S3, ADLS, GCS, and
+HDFS. Governance is another separate layer: AWS Lake Formation documents centralized
+governance, security, sharing, and fine-grained access controls over S3 data and Glue Data
+Catalog metadata.
 
 ## Further Reading
 
-- [The Data Lakehouse Platform (Databricks)](undefined)
+- [Lake Formation terminology](https://docs.aws.amazon.com/lake-formation/latest/dg/how-it-works-terminology.html)
+- [Introduction to Azure Data Lake Storage](https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-introduction)
+- [Welcome to the Delta Lake documentation](https://docs.delta.io/latest/index.html)
+- [What is AWS Lake Formation?](https://docs.aws.amazon.com/lake-formation/latest/dg/what-is-lake-formation.html)
 
 ## Related Articles
 
-- [AI for Data Curation: Web-Scale Filtering, Deduplication, and Quality Scoring for LLM Training](../../ai/ai-for-data-curation.md)
-- [AI for Tabular Data: Synthetic Generation, Diffusion Models, and Privacy-Preserving Structured Data](../../ai/ai-for-tabular-data.md)
-- [AI for Data Visualization: Automated Chart Generation, Insight Discovery, and Visual Analytics](../../ai/ai-for-visualization.md)
+- [Data Lake Object Storage Layouts](data-lake-object-storage-layouts.md)
+- [Data Catalogs and Metadata Lineage](data-catalogs-and-metadata-lineage.md)
+- [Data Delta Lake Transaction Log and Checkpoints](data-delta-lake-transaction-log-and-checkpoints.md)

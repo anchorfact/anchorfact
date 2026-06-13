@@ -1,11 +1,11 @@
 {
   "summary": {
-    "generated": "2026-06-13T16:00:30.671Z",
+    "generated": "2026-06-13T16:06:30.922Z",
     "total_articles": 1628,
     "total_with_errors": 0,
     "average_sources_per_article": "2.6",
     "overall_verification_rate": "92.8%",
-    "elapsed_ms": 974,
+    "elapsed_ms": 1019,
     "elapsed_sec": "1.0",
     "concurrency": 3
   },
@@ -85811,56 +85811,86 @@
       "sources_unreachable": 0
     },
     {
-      "file": "content\\computer-science\\data-lake-architecture.md",
+      "file": "content/computer-science/data-lake-architecture.md",
       "article_id": "kb-2026-00254",
       "generation_method": "ai_structured",
-      "sources_total": 3,
+      "sources_total": 4,
       "verification_results": [
         {
-          "source_title": "ACM Digital Library",
-          "source_type": "repository",
+          "source_title": "Lake Formation terminology",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://dl.acm.org/",
-              "verified": false,
-              "metadata": {},
-              "match": false
+              "identifier": "https://docs.aws.amazon.com/lake-formation/latest/dg/how-it-works-terminology.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.aws.amazon.com/lake-formation/latest/dg/how-it-works-terminology.html",
+                "http_method": "HEAD"
+              },
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Data Lakehouse: The Definitive Guide (2025 Edition)",
-          "source_type": "book",
+          "source_title": "Introduction to Azure Data Lake Storage",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.oreilly.com/lakehouse/",
-              "verified": false,
-              "metadata": {},
-              "match": false
+              "identifier": "https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-introduction",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-introduction",
+                "http_method": "HEAD"
+              },
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Modern Data Architectures: A 2025 Systematic Review",
-          "source_type": "survey_paper",
+          "source_title": "Welcome to the Delta Lake documentation",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://doi.org/10.1145/acmcs.2025.data",
-              "verified": false,
-              "metadata": {},
-              "match": false
+              "identifier": "https://docs.delta.io/latest/index.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.delta.io/index.html",
+                "http_method": "HEAD"
+              },
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "What is AWS Lake Formation?",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.aws.amazon.com/lake-formation/latest/dg/what-is-lake-formation.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.aws.amazon.com/lake-formation/latest/dg/what-is-lake-formation.html",
+                "http_method": "HEAD"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 3
+      "sources_verified": 4,
+      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\data-prefect-states-retries-and-flow-run-artifacts.md",
