@@ -1,5 +1,8 @@
 import assert from 'assert';
-import { isCacheableVerificationResult } from '../src/lib/verification-cache.js';
+import {
+  isCacheableVerificationResult,
+  shouldReuseCachedVerificationResult
+} from '../src/lib/verification-cache.js';
 
 let passed = 0;
 let failed = 0;
@@ -48,6 +51,32 @@ test('errored article verification results are not cacheable', () => {
     sources_total: 1,
     sources_verified: 0,
     sources_unreachable: 1
+  }), false);
+});
+
+test('targeted verification reuses non-target cached entries even when they would normally be retried', () => {
+  assert.equal(shouldReuseCachedVerificationResult({
+    cached: {
+      sources_total: 2,
+      sources_verified: 0,
+      sources_unreachable: 2
+    },
+    isTargetedRun: true,
+    isTargetFile: false,
+    fileModifiedAfterReport: true
+  }), true);
+});
+
+test('targeted verification refreshes the requested file', () => {
+  assert.equal(shouldReuseCachedVerificationResult({
+    cached: {
+      sources_total: 2,
+      sources_verified: 2,
+      sources_unreachable: 0
+    },
+    isTargetedRun: true,
+    isTargetFile: true,
+    fileModifiedAfterReport: false
   }), false);
 });
 

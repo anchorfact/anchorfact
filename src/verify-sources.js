@@ -7,10 +7,11 @@
  */
 
 import { readFileSync, writeFileSync, readdirSync, statSync, existsSync } from 'fs';
-import { join } from 'path';
+import { join, resolve } from 'path';
 import { load } from 'js-yaml';
 import { computeConfidence, classifySourceTier, computeFreshnessScore } from './lib/confidence.js';
-import { isCacheableVerificationResult } from './lib/verification-cache.js';
+import { shouldReuseCachedVerificationResult } from './lib/verification-cache.js';
+import { verifyArxiv as verifyArxivMetadata, verifyDoi as verifyDoiMetadata } from './lib/source-metadata-verifier.js';
 import { verifyReachableUrl } from './lib/source-url-verifier.js';
 
 // ---- Rate Limiter ----
@@ -44,54 +45,12 @@ async function runWithConcurrency(tasks, limit) {
   return results;
 }
 
-// ---- CrossRef DOI Verification ----
 async function verifyDoi(doi) {
-  const cleanDoi = doi.replace(/^https?:\/\/doi\.org\//i, '');
-  await rateLimit();
-  try {
-    const res = await fetch(`https://api.crossref.org/works/${encodeURIComponent(cleanDoi)}`, {
-      headers: { 'User-Agent': 'AnchorFact/0.2 (mailto:hello@anchorfact.org)' }
-    });
-    if (res.status === 200) {
-      const data = await res.json();
-      const msg = data.message;
-      return {
-        verified: true,
-        title: msg.title?.[0] || null,
-        publisher: msg.publisher || null,
-        year: msg.created?.['date-parts']?.[0]?.[0] || msg.issued?.['date-parts']?.[0]?.[0] || null,
-        type: msg.type || null
-      };
-    }
-    return { verified: false, error: `CrossRef returned ${res.status}` };
-  } catch (e) {
-    return { verified: false, error: e.message };
-  }
+  return verifyDoiMetadata(doi, { beforeAttempt: rateLimit });
 }
 
-// ---- arXiv ID Verification ----
 async function verifyArxiv(arxivId) {
-  const cleanId = arxivId.replace(/^arxiv:/i, '').replace(/^https?:\/\/arxiv\.org\/(abs|pdf)\//i, '');
-  await rateLimit();
-  try {
-    const res = await fetch(`https://export.arxiv.org/api/query?id_list=${encodeURIComponent(cleanId)}&max_results=1`);
-    if (res.status === 200) {
-      const text = await res.text();
-      if (text.includes('<title>') && !text.includes('No result')) {
-        const titleMatch = text.match(/<title>(.*?)<\/title>/);
-        const authorMatches = [...text.matchAll(/<author>[\s\S]*?<name>(.*?)<\/name>[\s\S]*?<\/author>/g)];
-        return {
-          verified: true,
-          title: titleMatch?.[1]?.trim() || null,
-          authors: authorMatches.map(m => m[1].trim()),
-          arxiv_id: cleanId
-        };
-      }
-    }
-    return { verified: false, error: `arXiv returned ${res.status}` };
-  } catch (e) {
-    return { verified: false, error: e.message };
-  }
+  return verifyArxivMetadata(arxivId, { beforeAttempt: rateLimit });
 }
 
 // ---- URL Reachability Check ----
@@ -230,7 +189,7 @@ async function verifyArticle(filePath) {
   }));
 
   return {
-    file: filePath,
+    file: normalizePathForVerify(filePath),
     article_id: frontmatter.id || null,
     generation_method: frontmatter.generation_method || 'unknown',
     sources_total: sources.length,
@@ -243,8 +202,13 @@ async function verifyArticle(filePath) {
 // ---- Verify All (parallel: batch concurrency) ----
 const CONCURRENCY = 3;
 
-async function verifyAll(contentDir, oldReportPath) {
+async function verifyAll(contentDir, oldReportPath, options = {}) {
   const articles = [];
+  const targetFiles = new Set((options.targetFiles || []).flatMap(path => {
+    const normalized = normalizePathForVerify(path);
+    return [normalized, normalizePathForVerify(resolve(path))];
+  }));
+  const isTargetedRun = targetFiles.size > 0;
 
   function walk(dir) {
     for (const entry of readdirSync(dir)) {
@@ -263,12 +227,14 @@ async function verifyAll(contentDir, oldReportPath) {
 
   // ---- 增量模式加载旧报告 ----
   let oldMap = new Map();
+  let oldArticles = [];
   let lastGenerated = null;
   if (oldReportPath && existsSync(oldReportPath)) {
     try {
       const old = JSON.parse(readFileSync(oldReportPath, 'utf-8'));
+      oldArticles = old.articles || [];
       lastGenerated = old.summary?.generated ? new Date(old.summary.generated) : null;
-      for (const a of old.articles || []) {
+      for (const a of oldArticles) {
         oldMap.set(normalizePathForVerify(a.file), a);
       }
     } catch (e) { /* ignore corrupted cache */ }
@@ -280,20 +246,31 @@ async function verifyAll(contentDir, oldReportPath) {
   for (const fp of articles) {
     const norm = normalizePathForVerify(fp);
     const cached = oldMap.get(norm);
-    if (cached && lastGenerated && isCacheableVerificationResult(cached)) {
-      try {
-        if (statSync(fp).mtime <= lastGenerated) {
-          cachedResults.push(cached);
-          continue;
-        }
-      } catch (e) { /* re-verify */ }
+    const isTargetFile = isTargetedRun
+      && (targetFiles.has(norm) || targetFiles.has(normalizePathForVerify(resolve(fp))));
+    let fileModifiedAfterReport = true;
+    try {
+      fileModifiedAfterReport = !lastGenerated || statSync(fp).mtime > lastGenerated;
+    } catch (e) { /* re-verify */ }
+
+    if (shouldReuseCachedVerificationResult({
+      cached,
+      isTargetedRun,
+      isTargetFile,
+      fileModifiedAfterReport
+    })) {
+      cachedResults.push(cached);
+      continue;
     }
+
+    if (isTargetedRun && !isTargetFile) continue;
     freshArticles.push(fp);
   }
 
   const fresh = freshArticles.length;
   const cached = cachedResults.length;
-  console.log(`Found ${articles.length} articles: ${fresh} to verify, ${cached} cached (concurrency=${CONCURRENCY})\n`);
+  const targetText = isTargetedRun ? `, ${targetFiles.size / 2} target file(s)` : '';
+  console.log(`Found ${articles.length} articles: ${fresh} to verify, ${cached} cached${targetText} (concurrency=${CONCURRENCY})\n`);
 
   let done = 0;
   const freshResults = new Array(freshArticles.length);
@@ -316,7 +293,29 @@ async function verifyAll(contentDir, oldReportPath) {
   });
 
   await runWithConcurrency(tasks, CONCURRENCY);
-  return [...cachedResults, ...freshResults.filter(Boolean)];
+  const cachedByFile = new Map(cachedResults.map(result => [normalizePathForVerify(result.file), result]));
+  const freshByFile = new Map(freshResults.filter(Boolean).map(result => [normalizePathForVerify(result.file), result]));
+
+  if (isTargetedRun && oldArticles.length > 0) {
+    const replaced = new Set();
+    const ordered = oldArticles.map(result => {
+      const key = normalizePathForVerify(result.file);
+      const fresh = freshByFile.get(key);
+      if (fresh) {
+        replaced.add(key);
+        return fresh;
+      }
+      return result;
+    });
+    for (const [key, result] of freshByFile) {
+      if (!replaced.has(key)) ordered.push(result);
+    }
+    return ordered;
+  }
+
+  return articles
+    .map(filePath => freshByFile.get(normalizePathForVerify(filePath)) || cachedByFile.get(normalizePathForVerify(filePath)))
+    .filter(Boolean);
 }
 
 function normalizePathForVerify(p) {
@@ -324,11 +323,33 @@ function normalizePathForVerify(p) {
 }
 
 // ---- CLI ----
-const incremental = process.argv.includes('--incremental') || process.argv.includes('-i');
+function parseArgs(argv) {
+  const args = {
+    incremental: false,
+    targetFiles: [],
+    positional: []
+  };
+
+  for (let index = 0; index < argv.length; index++) {
+    const arg = argv[index];
+    if (arg === '--incremental' || arg === '-i') {
+      args.incremental = true;
+    } else if (arg === '--file') {
+      const file = argv[++index];
+      if (file) args.targetFiles.push(file);
+    } else if (!arg.startsWith('-')) {
+      args.positional.push(arg);
+    }
+  }
+
+  return args;
+}
+
+const cliArgs = parseArgs(process.argv.slice(2));
+const incremental = cliArgs.incremental;
 // 过滤掉 flag 参数，取位置参数
-const args = process.argv.slice(2).filter(a => !a.startsWith('-'));
-const contentDir = args[0] || join(process.cwd(), 'content');
-const outputFile = args[1] || join(process.cwd(), 'verification-report.json');
+const contentDir = cliArgs.positional[0] || join(process.cwd(), 'content');
+const outputFile = cliArgs.positional[1] || join(process.cwd(), 'verification-report.json');
 
 const mode = incremental ? 'incremental' : 'full';
 const oldReport = incremental ? outputFile : null;
@@ -337,9 +358,12 @@ console.log(`  Mode: ${mode.toUpperCase()}`);
 console.log(`  Content: ${contentDir}`);
 console.log(`  Output:  ${outputFile}`);
 console.log(`  Concurrency: ${CONCURRENCY}\n`);
+if (cliArgs.targetFiles.length > 0) {
+  console.log(`  Target files: ${cliArgs.targetFiles.join(', ')}\n`);
+}
 
 const start = performance.now();
-const results = await verifyAll(contentDir, oldReport);
+const results = await verifyAll(contentDir, oldReport, { targetFiles: cliArgs.targetFiles });
 const elapsed = (performance.now() - start).toFixed(0);
 
 const totalSources = results.reduce((s, r) => s + r.sources_total, 0);
@@ -357,7 +381,7 @@ const summary = {
 };
 
 const report = { summary, articles: results };
-writeFileSync(outputFile, JSON.stringify(report, null, 2));
+writeFileSync(outputFile, `${JSON.stringify(report, null, 2)}\n`);
 
 console.log(`\n📋 Verification Report: ${outputFile}`);
 console.log(`   Articles: ${summary.total_articles}`);

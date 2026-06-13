@@ -11,3 +11,19 @@ export function isCacheableVerificationResult(result) {
 
   return true;
 }
+
+export function shouldReuseCachedVerificationResult({
+  cached,
+  isTargetedRun = false,
+  isTargetFile = false,
+  fileModifiedAfterReport = false
+} = {}) {
+  if (!cached) return false;
+
+  if (isTargetedRun) {
+    return !isTargetFile;
+  }
+
+  if (!isCacheableVerificationResult(cached)) return false;
+  return !fileModifiedAfterReport;
+}
