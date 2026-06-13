@@ -123,6 +123,23 @@ test('buildReadinessWindowReport marks gates met across required consecutive win
   assertEq(report.content_change_policy.should_repair_content_now, false);
 });
 
+test('buildReadinessWindowReport requires explicit met adoption status for readiness', () => {
+  const snapshots = Array.from({ length: 14 }, (_, index) => snapshot(index + 1));
+  snapshots[13] = snapshot(14, {
+    adoption_ratio: 0.24,
+    adoption_status: 'partial'
+  });
+  const report = buildReadinessWindowReport({
+    snapshots,
+    generatedAt: '2026-06-14T12:00:00.000Z'
+  });
+
+  assertEq(report.gates.ai_primary_discovery_ratio_7_day.status, 'not_met');
+  assert(report.readiness_blockers.automated_gate_ids.includes('ai_primary_discovery_ratio_7_day'), 'missing adoption blocker');
+  assertEq(report.automated_gates_met, false);
+  assertEq(report.paid_beta_ready, false);
+});
+
 test('buildReadinessWindowReport surfaces manual design partner gate separately from automated windows', () => {
   const snapshots = Array.from({ length: 14 }, (_, index) => snapshot(index + 1));
   snapshots[13] = snapshot(14, {

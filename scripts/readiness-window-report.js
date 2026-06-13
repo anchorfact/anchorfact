@@ -209,7 +209,7 @@ function adoptionWindowPredicate(targetRatio) {
     const adoptionRatio = optionalFiniteNumber(snapshot.adoption_ratio);
     return adoptionRatio !== null
       && adoptionRatio >= targetRatio
-      && !['below_target', 'fail', 'not_measured'].includes(snapshot.adoption_status);
+      && snapshot.adoption_status === 'met';
   };
 }
 
