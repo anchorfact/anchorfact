@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-13T16:06:30.922Z",
+    "generated": "2026-06-13T16:12:06.620Z",
     "total_articles": 1628,
     "total_with_errors": 0,
     "average_sources_per_article": "2.6",
-    "overall_verification_rate": "92.8%",
-    "elapsed_ms": 1019,
-    "elapsed_sec": "1.0",
+    "overall_verification_rate": "92.9%",
+    "elapsed_ms": 1792,
+    "elapsed_sec": "1.8",
     "concurrency": 3
   },
   "articles": [
@@ -86031,56 +86031,86 @@
       "sources_unreachable": 1
     },
     {
-      "file": "content\\computer-science\\database-normalization.md",
+      "file": "content/computer-science/database-normalization.md",
       "article_id": "kb-2026-00243",
       "generation_method": "ai_structured",
-      "sources_total": 3,
+      "sources_total": 4,
       "verification_results": [
         {
-          "source_title": "ACM Digital Library",
-          "source_type": "repository",
+          "source_title": "Description of the database normalization basics",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://dl.acm.org/",
-              "verified": false,
-              "metadata": {},
-              "match": false
+              "identifier": "https://learn.microsoft.com/en-us/troubleshoot/microsoft-365-apps/access/database-normalization-description",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.microsoft.com/en-us/troubleshoot/microsoft-365-apps/access/database-normalization-description",
+                "http_method": "HEAD"
+              },
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Database Systems: The Complete Book (4th Edition, 2025)",
-          "source_type": "book",
+          "source_title": "Normalization in database design",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.pearson.com/database/",
-              "verified": false,
-              "metadata": {},
-              "match": false
+              "identifier": "https://www.ibm.com/docs/en/db2-for-zos/12.0.0?topic=modeling-normalization-in-database-design",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.ibm.com/docs/en/db2-for-zos/12.0.0?topic=modeling-normalization-in-database-design",
+                "http_method": "HEAD"
+              },
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Relational vs NoSQL: Data Modeling in 2025",
-          "source_type": "survey_paper",
+          "source_title": "Summary of normalization rules",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://doi.org/10.1145/acmcs.2025.db",
-              "verified": false,
-              "metadata": {},
-              "match": false
+              "identifier": "https://www.ibm.com/docs/en/informix-servers/12.10?topic=SSGU8G_12.1.0/com.ibm.ddi.doc/ids_ddi_191.htm",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.ibm.com/docs/en/informix-servers/12.10.0?topic=SSGU8G_12.1.0/com.ibm.ddi.doc/ids_ddi_191.htm",
+                "http_method": "HEAD"
+              },
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "Data Warehouse Logical Design",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.oracle.com/en/database/oracle/oracle-database/26/dwhsg/data-warehouse-logical-design.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.oracle.com/en/database/oracle/oracle-database/26/dwhsg/data-warehouse-logical-design.html",
+                "http_method": "HEAD"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 3
+      "sources_verified": 4,
+      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\ddos-attack.md",
