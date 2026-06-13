@@ -838,10 +838,40 @@ export function buildOpenApiContract({
           },
           evidence_pack_count: { type: 'integer' },
           evidence_packs: { type: 'array', items: { type: 'object' } },
-          content_health: { type: ['object', 'null'] },
+          content_health: { $ref: '#/components/schemas/ContextApiContentHealth' },
           recommended_next_calls: { type: 'array', items: { type: 'object' } },
           fallback_guidance: { type: 'array', items: { type: 'string' } }
         }),
+        ContextApiContentHealth: {
+          type: ['object', 'null'],
+          description: 'Compact content-health summary embedded in /api/context without draft entry details.',
+          properties: {
+            schema_version: { type: ['string', 'null'] },
+            generated: { type: ['string', 'null'] },
+            provenance_url: { type: ['string', 'null'], format: 'uri' },
+            url: { type: 'string', format: 'uri' },
+            snapshot: { type: 'object' },
+            public_source_coverage: { type: ['object', 'null'] },
+            public_claim_mapping: { type: ['object', 'null'] },
+            draft_repair_queue: {
+              type: ['object', 'null'],
+              properties: {
+                candidate_count: { type: ['integer', 'null'] },
+                source_ready_candidate_count: { type: ['integer', 'null'] },
+                source_acquisition_candidate_count: { type: ['integer', 'null'] },
+                excluded_count: { type: ['integer', 'null'] },
+                strict_review_count: { type: ['integer', 'null'] },
+                next_batch_size: { type: ['integer', 'null'] },
+                source_ready_next_batch_size: { type: ['integer', 'null'] },
+                source_acquisition_next_batch_size: { type: ['integer', 'null'] }
+              },
+              additionalProperties: false
+            },
+            trust_boundaries: { type: 'object' },
+            machine_guidance: { type: 'array', items: { type: 'string' } }
+          },
+          additionalProperties: true
+        },
         MachineConsumptionGuidance: {
           type: 'object',
           description: 'Crawler and agent guidance for using query-scoped APIs before bulk static artifact downloads.',

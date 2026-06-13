@@ -175,6 +175,7 @@ export function buildContextApiPayload({
 
 function compactContentHealth(payload) {
   if (!payload || typeof payload !== 'object') return null;
+  const repairQueue = payload.draft?.repair_queue || null;
   return {
     schema_version: payload.schema_version || null,
     generated: payload.generated || null,
@@ -188,10 +189,25 @@ function compactContentHealth(payload) {
     },
     public_source_coverage: payload.public?.source_coverage || null,
     public_claim_mapping: payload.public?.claim_mapping || null,
+    draft_repair_queue: compactDraftRepairQueue(repairQueue),
     trust_boundaries: payload.trust_boundaries || {},
     machine_guidance: Array.isArray(payload.machine_guidance)
       ? payload.machine_guidance.slice(0, 4)
       : []
+  };
+}
+
+function compactDraftRepairQueue(queue) {
+  if (!queue || typeof queue !== 'object') return null;
+  return {
+    candidate_count: queue.candidate_count ?? null,
+    source_ready_candidate_count: queue.source_ready_candidate_count ?? null,
+    source_acquisition_candidate_count: queue.source_acquisition_candidate_count ?? null,
+    excluded_count: queue.excluded_count ?? null,
+    strict_review_count: queue.strict_review_count ?? null,
+    next_batch_size: queue.next_batch_size ?? null,
+    source_ready_next_batch_size: queue.source_ready_next_batch_size ?? null,
+    source_acquisition_next_batch_size: queue.source_acquisition_next_batch_size ?? null
   };
 }
 
@@ -307,6 +323,11 @@ export function renderContextMarkdown(payload) {
     lines.push(`- Public articles: ${health.snapshot?.public_articles ?? 'unknown'}`);
     lines.push(`- Public claims: ${health.snapshot?.public_claims ?? 'unknown'}`);
     lines.push(`- Draft articles excluded: ${health.trust_boundaries?.draft_entries_excluded_from_ai_entrypoints === true ? 'yes' : 'unknown'}`);
+    if (health.draft_repair_queue) {
+      lines.push(`- Draft repair candidates: ${health.draft_repair_queue.candidate_count ?? 'unknown'}`);
+      lines.push(`- Source-ready candidates: ${health.draft_repair_queue.source_ready_candidate_count ?? 'unknown'}`);
+      lines.push(`- Source acquisition candidates: ${health.draft_repair_queue.source_acquisition_candidate_count ?? 'unknown'}`);
+    }
     lines.push(`- Health artifact: ${health.url || '/content-health.json'}`);
     lines.push('');
   }

@@ -288,6 +288,18 @@ const contentHealthPayload = {
     source_coverage: { full: 1, partial: 0, zero: 0 },
     claim_mapping: { total: 1, mapped: 1, ratio: 1 }
   },
+  draft: {
+    repair_queue: {
+      candidate_count: 4,
+      source_ready_candidate_count: 1,
+      source_acquisition_candidate_count: 3,
+      excluded_count: 2,
+      strict_review_count: 1,
+      next_batch_size: 2,
+      source_ready_next_batch_size: 1,
+      source_acquisition_next_batch_size: 2
+    }
+  },
   machine_guidance: ['Use /api/context?q={query} for prompt assembly.'],
   trust_boundaries: {
     draft_entries_excluded_from_ai_entrypoints: true,
@@ -373,6 +385,10 @@ test('buildContextApiPayload combines planning and public evidence packs', () =>
   assert(result.payload.machine_consumption.avoid_for_single_query.includes('/claims.json'), 'context should discourage full claims download for one query');
   assertEq(result.payload.content_health.snapshot.public_articles, 1);
   assertEq(result.payload.content_health.public_claim_mapping.mapped, 1);
+  assertEq(result.payload.content_health.draft_repair_queue.candidate_count, 4);
+  assertEq(result.payload.content_health.draft_repair_queue.source_ready_candidate_count, 1);
+  assertEq(result.payload.content_health.draft_repair_queue.source_acquisition_candidate_count, 3);
+  assertEq(result.payload.content_health.draft_repair_queue.source_acquisition_next_batch_size, 2);
   assertEq(result.payload.content_health.trust_boundaries.draft_entries_excluded_from_ai_entrypoints, true);
   assert(result.payload.recommended_next_calls.some(call => call.path.includes('/api/evidence')), 'context should include evidence next call');
   assert(result.payload.evidence_packs[0].canonical_slug === 'ai/gaussian-splatting', 'context should include public evidence pack');
@@ -524,6 +540,7 @@ test('renderContextMarkdown returns answer-ready context with guardrails', () =>
   assert(markdown.includes('Can answer with AnchorFact: yes'), 'markdown should include answerability');
   assert(markdown.includes('Citation Ready Claims'), 'markdown should include compact citation claims');
   assert(markdown.includes('Corpus Health'), 'markdown should include corpus health summary');
+  assert(markdown.includes('Source acquisition candidates: 3'), 'markdown should include source acquisition queue count');
   assert(markdown.includes('Public claims: 1'), 'markdown should include public claim count');
   assert(markdown.includes('Machine Consumption'), 'markdown should include machine consumption guidance');
   assert(markdown.includes('/artifact-shards.json'), 'markdown should include artifact shard guidance');

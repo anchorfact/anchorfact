@@ -488,6 +488,7 @@ test('openapi.json describes the static AI contract', () => {
   assert(openapi.components.schemas.MachineConsumptionGuidance, 'OpenAPI should define MachineConsumptionGuidance schema');
   assert(openapi.components.schemas.EvidenceApiResponse.properties.machine_consumption, 'OpenAPI evidence schema should include machine consumption guidance');
   assert(openapi.components.schemas.ContextApiResponse.properties.content_health, 'OpenAPI context schema should include content health summary');
+  assert(openapi.components.schemas.ContextApiContentHealth.properties.draft_repair_queue, 'OpenAPI context content health schema should define draft repair queue summary');
   assert(openapi.components.schemas.ContextApiResponse.properties.answer_policy, 'OpenAPI context schema should include answer policy');
   assert(openapi.components.schemas.ContextApiResponse.properties.machine_consumption, 'OpenAPI context schema should include machine consumption guidance');
   assert(openapi.components.schemas.ContextApiResponse.properties.citation_ready_claims, 'OpenAPI context schema should include citation-ready claims');

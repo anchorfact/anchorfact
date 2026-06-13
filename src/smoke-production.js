@@ -653,6 +653,9 @@ export async function main() {
   assertOk(contextApi.evidence_pack_count > 0, '/api/context returned no evidence packs', failures);
   assertOk(hasCanonicalSlug(contextApi.evidence_packs, 'ai/3d-generation-gaussian-splatting'), '/api/context did not return expected gaussian pack', failures);
   assertOk(contextApi.content_health?.snapshot?.public_articles === contentHealth.snapshot?.public_articles, '/api/context content health public count does not match /content-health.json', failures);
+  assertOk(contextApi.content_health?.draft_repair_queue?.candidate_count === contentHealth.draft?.repair_queue?.candidate_count, '/api/context content health repair queue count does not match /content-health.json', failures);
+  assertOk(contextApi.content_health?.draft_repair_queue?.source_ready_candidate_count === contentHealth.draft?.repair_queue?.source_ready_candidate_count, '/api/context source-ready repair queue count does not match /content-health.json', failures);
+  assertOk(contextApi.content_health?.draft_repair_queue?.source_acquisition_candidate_count === contentHealth.draft?.repair_queue?.source_acquisition_candidate_count, '/api/context source acquisition repair queue count does not match /content-health.json', failures);
   assertOk(contextApi.content_health?.trust_boundaries?.draft_entries_excluded_from_ai_entrypoints === true, '/api/context content health trust boundary is missing', failures);
   assertOk(contextApi.machine_consumption?.large_artifact_policy === 'prefer_query_scoped_apis', '/api/context is missing machine consumption guidance', failures);
   assertOk(Array.isArray(contextApi.machine_consumption?.avoid_for_single_query) && contextApi.machine_consumption.avoid_for_single_query.includes('/graph.json'), '/api/context does not discourage single-query graph downloads', failures);
