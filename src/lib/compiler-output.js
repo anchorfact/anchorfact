@@ -1,6 +1,7 @@
 import { mkdirSync, writeFileSync } from 'fs';
 import { join } from 'path';
 import { buildAgentProfile } from './agent-profile.js';
+import { buildApiAccessPolicy } from './api-access.js';
 import { buildArtifactSummary } from './artifact-summary.js';
 import { writeArtifactShardRegistry } from './artifact-shards.js';
 import { buildApiReadinessReport } from './api-readiness.js';
@@ -72,78 +73,10 @@ function writeDrafts(distDir, draftResults) {
   writeFileSync(join(distDir, 'drafts.html'), html);
 }
 
-function writeApiAccessPage(distDir, publicResults, draftResults, claims) {
+function writeApiAccessPolicy(distDir, apiAccessPolicy) {
   const apiAccessDir = join(distDir, 'api-access');
   mkdirSync(apiAccessDir, { recursive: true });
-  const html = `<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>AnchorFact API Access</title>
-  <meta name="description" content="Free API access for citation-ready AI context from AnchorFact.">
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <style>
-    body { font-family: system-ui, sans-serif; max-width: 880px; margin: 36px auto; padding: 0 20px; color: #1E293B; line-height: 1.6; }
-    h1 { color: #1D4ED8; font-size: 2rem; margin-bottom: 0.2em; }
-    h2 { font-size: 1.2rem; margin-top: 1.5em; }
-    code, pre { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 6px; }
-    code { padding: 1px 4px; }
-    pre { padding: 12px; overflow-x: auto; }
-    a { color: #2563EB; text-decoration: none; }
-    .meta { color: #64748B; }
-    .notice { border: 1px solid #CBD5E1; border-radius: 8px; padding: 14px 16px; background: #F8FAFC; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; }
-    .metric { border: 1px solid #E2E8F0; border-radius: 8px; padding: 12px; }
-    .metric strong { display: block; font-size: 1.4rem; }
-  </style>
-</head>
-<body>
-  <h1>AnchorFact API Access</h1>
-  <p class="meta">Free API for citation-ready AI context, source-mapped evidence packs, and claim-level citations.</p>
-  <div class="notice">
-    <strong>Current access policy:</strong> no API key, payment, account, or subscription is required today.
-    Future paid beta work will only start after the published readiness gates are met.
-  </div>
-
-  <h2>Live Trust Counts</h2>
-  <div class="grid">
-    <div class="metric"><strong>${publicResults.length}</strong> public verified articles</div>
-    <div class="metric"><strong>${claims.length}</strong> public verified claims</div>
-    <div class="metric"><strong>${draftResults.length}</strong> drafts excluded from AI entrypoints</div>
-  </div>
-
-  <h2>Recommended Call Order</h2>
-  <ol>
-    <li><a href="/api/context?q=gaussian%20splatting&amp;limit=3&amp;format=markdown"><code>/api/context?q={query}</code></a> for normal answer assembly.</li>
-    <li><a href="/api/evidence?q=RLHF&amp;limit=3&amp;format=markdown"><code>/api/evidence?q={query}</code></a> for raw evidence packs.</li>
-    <li><a href="/api/cite?id=f1&amp;format=markdown"><code>/api/cite?id={claim_id}</code></a> for one claim-level citation.</li>
-    <li><a href="/provenance.json"><code>/provenance.json</code></a> and <a href="/provenance.sig"><code>/provenance.sig</code></a> for artifact hash and signature verification.</li>
-  </ol>
-
-  <h2>Copyable Examples</h2>
-  <pre>GET https://anchorfact.org/api/context?q=gaussian%20splatting&amp;limit=3&amp;format=markdown</pre>
-  <pre>GET https://anchorfact.org/api/evidence?q=RLHF&amp;limit=3&amp;format=markdown</pre>
-  <pre>GET https://anchorfact.org/api/cite?id=f1&amp;format=markdown</pre>
-  <pre>GET https://anchorfact.org/api/plan?q=quantum%20computing&amp;limit=3</pre>
-
-  <h2>Limits And Trust Boundary</h2>
-  <p>The API is read-only and public. Use AnchorFact only when <code>answer_policy.can_answer_with_anchorfact</code> is true, then cite claims returned by <code>/api/context</code>, <code>/api/evidence</code>, or <code>/api/cite</code>. For live prices, current events, local conditions, or personalized decisions, use external authoritative sources.</p>
-
-  <h2>Integration References</h2>
-  <p>
-    <a href="/api">API index</a> &middot;
-    <a href="/agent.json">agent.json</a> &middot;
-    <a href="/openapi.json">OpenAPI</a> &middot;
-    <a href="/examples.json">examples.json</a> &middot;
-    <a href="/mcp.json">mcp.json</a> &middot;
-    <a href="/artifact-summary.json">artifact-summary.json</a> &middot;
-    <a href="/api-readiness.json">api-readiness.json</a> &middot;
-    <a href="/content-health.json">content-health.json</a>
-  </p>
-  <p><a href="/index.json">Root machine index</a></p>
-</body>
-</html>`;
-  writeFileSync(join(apiAccessDir, 'index.html'), html);
+  writeFileSync(join(apiAccessDir, 'index.html'), stringifyJson(apiAccessPolicy, { pretty: false }));
 }
 
 function writeLlmsTxt(distDir, publicResults, claims, verificationTimestamp) {
@@ -165,7 +98,7 @@ function writeLlmsTxt(distDir, publicResults, claims, verificationTimestamp) {
 - Discovery: https://anchorfact.org/api and https://anchorfact.org/agent.json
 - Trust: https://anchorfact.org/provenance.json and https://anchorfact.org/provenance.sig
 - Root machine index: https://anchorfact.org/index.json
-- Free API access guide: https://anchorfact.org/api-access/
+- Free API access policy: https://anchorfact.org/api-access/
 - Artifact sizes and lightweight alternatives: https://anchorfact.org/artifact-summary.json
 - Artifact Shards: https://anchorfact.org/artifact-shards.json
 - API readiness gates: https://anchorfact.org/api-readiness.json
@@ -192,7 +125,7 @@ ${entries || '_No public verified entries yet._'}
 - [Root Machine Index](https://anchorfact.org/index.json): Compact directory for preferred machine entrypoints, trust policy, and signed static artifacts.
 - [OpenAPI](https://anchorfact.org/openapi.json): Static read-only endpoint contract for tools.
 - [API Index](https://anchorfact.org/api): Compact live API discovery endpoint for agents.
-- [API Access](https://anchorfact.org/api-access/): Free API usage guide with recommended call order, examples, limits, and provenance verification.
+- [API Access](https://anchorfact.org/api-access/): Machine-readable free API access policy with recommended call order, limits, and provenance verification.
 - [Artifact Summary](https://anchorfact.org/artifact-summary.json): Lightweight size and purpose map for large static machine artifacts.
 - [Artifact Shards](https://anchorfact.org/artifact-shards.json): Signed registry for versioned shards of large static artifacts.
 - [API Readiness](https://anchorfact.org/api-readiness.json): Machine-readable subscription-readiness gates, core corpus scorecard, and API citation readiness report.
@@ -308,6 +241,7 @@ function writeHeaders(distDir) {
     ['/agent.json', 'application/json'],
     ['/.well-known/anchorfact.json', 'application/json'],
     ['/openapi.json', 'application/json'],
+    ['/api-access/', 'application/json'],
     ['/artifact-summary.json', 'application/json'],
     ['/artifact-shards.json', 'application/json'],
     ['/api-readiness.json', 'application/json'],
@@ -357,9 +291,6 @@ ${machineArtifactHeaders}
   Access-Control-Allow-Origin: *
   Content-Type: application/json; charset=utf-8
   Cache-Control: public, max-age=31536000, immutable
-
-/api-access/
-  Cache-Control: public, max-age=0, must-revalidate
 
 /drafts
   X-Robots-Tag: noindex, nofollow
@@ -630,8 +561,14 @@ export function writeStaticOutputs(distDir, results, options = {}) {
     draftResults,
     verificationTimestamp: options.verificationTimestamp
   }));
+  writeApiAccessPolicy(distDir, buildApiAccessPolicy({
+    generated,
+    site: build.canonical_site,
+    publicResults,
+    draftResults,
+    claims
+  }));
   writeDrafts(distDir, draftResults);
-  writeApiAccessPage(distDir, publicResults, draftResults, claims);
   const llmsText = writeLlmsTxt(distDir, publicResults, claims, options.verificationTimestamp);
   writeArtifactShardRegistry({
     distDir,

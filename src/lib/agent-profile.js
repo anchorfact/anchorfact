@@ -1,5 +1,6 @@
 import {
   AGENT_PROFILE_SCHEMA_VERSION,
+  API_ACCESS_SCHEMA_VERSION,
   API_INDEX_SCHEMA_VERSION,
   API_READINESS_SCHEMA_VERSION,
   ARTIFACT_SHARDS_SCHEMA_VERSION,
@@ -99,6 +100,7 @@ export function buildAgentProfile({
     },
     schemas: {
       root_index: ROOT_INDEX_SCHEMA_VERSION,
+      api_access: API_ACCESS_SCHEMA_VERSION,
       manifest: MANIFEST_SCHEMA_VERSION,
       openapi: OPENAPI_SCHEMA_VERSION,
       api_index: API_INDEX_SCHEMA_VERSION,
@@ -217,7 +219,7 @@ export function buildAgentProfile({
       'Fetch /api as a compact API index when you need the smallest live endpoint discovery payload.',
       'Fetch /index.json as the compact root machine directory for preferred entrypoints, trust policy, and signed static artifact discovery.',
       'After crawler discovery through /, /robots.txt, /llms.txt, /index.json, /agent.json, or /api, convert to /api/context?q={query}&limit=3&format=markdown or /api/evidence?q={query}&limit=3&format=markdown for a concrete user question.',
-      'Fetch /api-access/ for free API usage examples, current no-key access policy, limits, and provenance verification steps.',
+      'Fetch /api-access/ for the machine-readable free API access policy, current no-key access state, limits, and provenance verification steps.',
       'Fetch /agent.json to discover the current machine contract.',
       'Fetch /openapi.json when integrating with tools that prefer a standard endpoint contract.',
       'Fetch /artifact-summary.json before downloading large static artifacts; prefer /api/context and /api/evidence for normal agent answer paths.',
@@ -249,7 +251,7 @@ export function buildAgentProfile({
       well_known_agent_profile: endpoint('/.well-known/anchorfact.json', 'Stable well-known alias for the agent discovery document.'),
       openapi: endpoint('/openapi.json', 'OpenAPI 3.1 description of the static read-only machine contract.'),
       api_index: endpoint('/api', 'Compact live API discovery index for AI agents.'),
-      api_access: endpoint('/api-access/', 'Free API access guide with recommended call order, examples, limits, and provenance verification.', 'text/html'),
+      api_access: endpoint('/api-access/', 'Machine-readable free API access policy with recommended call order, limits, and provenance verification.'),
       artifact_summary: endpoint('/artifact-summary.json', 'Lightweight size, purpose, cache posture, and default-call alternatives for major static machine artifacts.'),
       artifact_shards: endpoint('/artifact-shards.json', 'Signed registry of versioned shards for large static artifacts.'),
       api_readiness: endpoint('/api-readiness.json', 'Machine-readable readiness gates, core corpus scorecard, API citation readiness, and subscription-readiness status.'),

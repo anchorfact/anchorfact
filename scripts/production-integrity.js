@@ -27,6 +27,7 @@ export const SIGNED_MACHINE_ARTIFACT_PATHS = [
   '/claims.json',
   '/agent.json',
   '/openapi.json',
+  '/api-access/',
   '/manifest.json',
   '/topics.json',
   '/capabilities.json',

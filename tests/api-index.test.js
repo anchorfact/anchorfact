@@ -58,7 +58,9 @@ test('buildApiIndex publishes the machine API discovery contract', () => {
   }
 
   assert(payload.static_fallbacks.some(fallback => fallback.path === '/agent.json'), 'api index should point to agent profile fallback');
-  assert(payload.static_fallbacks.some(fallback => fallback.path === '/api-access/'), 'api index should point to API access guide');
+  const apiAccessFallback = payload.static_fallbacks.find(fallback => fallback.path === '/api-access/');
+  assert(apiAccessFallback, 'api index should point to API access policy');
+  assertEq(apiAccessFallback.media_type, 'application/json');
   assert(payload.static_fallbacks.some(fallback => fallback.path === '/openapi.json'), 'api index should point to OpenAPI fallback');
   assert(payload.static_fallbacks.some(fallback => fallback.path === '/artifact-summary.json'), 'api index should point to artifact summary fallback');
   assert(payload.static_fallbacks.some(fallback => fallback.path === '/artifact-shards.json'), 'api index should point to artifact shard fallback');

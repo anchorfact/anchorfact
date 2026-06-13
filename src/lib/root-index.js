@@ -12,6 +12,7 @@ export const ROOT_INDEX_STATIC_ARTIFACTS = [
   '/agent.json',
   '/.well-known/anchorfact.json',
   '/openapi.json',
+  '/api-access/',
   '/artifact-summary.json',
   '/artifact-shards.json',
   '/api-readiness.json',

@@ -19,10 +19,11 @@ function endpoint(site, id, path, description, query = []) {
   };
 }
 
-function staticFallback(site, path, description) {
+function staticFallback(site, path, description, mediaType = 'application/json') {
   return {
     path,
     url: publicUrl(path, site),
+    media_type: mediaType,
     description
   };
 }
@@ -68,7 +69,7 @@ export function buildApiIndex({
       'Call /api/resolve or /api/resolve-batch when you already have AnchorFact claim ids, article slugs, source ids, source URLs, or AnchorFact URLs.',
       'Call /api/cite?id={claim_id} when you need a citation-ready atomic claim.',
       'If you reached /api from /robots.txt, /llms.txt, /agent.json, or crawler discovery, make the next request /api/context?q={query}&limit=3&format=markdown for a concrete user question.',
-      'Read /api-access/ for the current free API access policy, examples, and provenance verification steps.',
+      'Read /api-access/ for the current machine-readable free API access policy, call order, and provenance verification steps.',
       'Verify /provenance.json and /provenance.sig before trusting static artifact hashes or counts.'
     ],
     primary_entrypoints: [
@@ -162,7 +163,7 @@ export function buildApiIndex({
     static_fallbacks: [
       staticFallback(site, '/index.json', 'Compact root machine directory for preferred entrypoints, trust policy, and signed artifacts.'),
       staticFallback(site, '/agent.json', 'Full AI agent discovery profile and recommended workflow.'),
-      staticFallback(site, '/api-access/', 'Free API access guide with recommended call order, examples, limits, and provenance verification.'),
+      staticFallback(site, '/api-access/', 'Machine-readable free API access policy with recommended call order, limits, and provenance verification.'),
       staticFallback(site, '/openapi.json', 'Full OpenAPI 3.1 machine contract.'),
       staticFallback(site, '/artifact-summary.json', 'Lightweight size, purpose, cache posture, and recommended alternatives for large static machine artifacts.'),
       staticFallback(site, '/artifact-shards.json', 'Signed registry of versioned shards for large static artifacts.'),

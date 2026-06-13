@@ -133,6 +133,7 @@ test('public machine entrypoints exclude drafts', () => {
   assertEq(agent.endpoints.root_index.url, 'https://anchorfact.org/index.json');
   assertEq(agent.endpoints.openapi.url, 'https://anchorfact.org/openapi.json');
   assertEq(agent.endpoints.api_access.path, '/api-access/');
+  assertEq(agent.endpoints.api_access.media_type, 'application/json');
   assertEq(agent.endpoints.capabilities.url, 'https://anchorfact.org/capabilities.json');
   assertEq(agent.endpoints.content_health.url, 'https://anchorfact.org/content-health.json');
   assertEq(agent.endpoints.coverage.url, 'https://anchorfact.org/coverage.json');
@@ -158,6 +159,7 @@ test('public machine entrypoints exclude drafts', () => {
   assertEq(agent.endpoints.article_jsonld_template.path_template, '/{canonical_slug}/index.json');
   assert(openapi.paths['/'], 'OpenAPI should expose root machine index alias');
   assert(openapi.paths['/index.json'], 'OpenAPI should expose root machine index');
+  assert(openapi.paths['/api-access/'], 'OpenAPI should expose API access policy');
   assert(openapi.paths['/{canonical_slug}/index.json'], 'OpenAPI should expose article JSON-LD template');
   assert(openapi.paths['/capabilities.json'], 'OpenAPI should expose capabilities endpoint');
   assert(openapi.paths['/content-health.json'], 'OpenAPI should expose content health endpoint');

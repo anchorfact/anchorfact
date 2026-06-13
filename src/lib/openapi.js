@@ -1,5 +1,6 @@
 import {
   AGENT_PROFILE_SCHEMA_VERSION,
+  API_ACCESS_SCHEMA_VERSION,
   API_INDEX_SCHEMA_VERSION,
   API_READINESS_SCHEMA_VERSION,
   ARTIFACT_SHARDS_SCHEMA_VERSION,
@@ -110,6 +111,7 @@ export function buildOpenApiContract({
       '/.well-known/anchorfact.json': getJson('Well-known alias for the AI agent discovery profile', 'AgentProfile'),
       '/openapi.json': getJson('This OpenAPI machine contract', 'OpenApiContract'),
       '/api': getJson('Compact live API discovery index', 'ApiIndex'),
+      '/api-access/': getJson('Machine-readable free API access policy and recommended call order', 'ApiAccess'),
       '/artifact-summary.json': getJson('Lightweight static artifact size and alternative-call summary', 'ArtifactSummary'),
       '/artifact-shards.json': getJson('Signed versioned shard registry for large static artifacts', 'ArtifactShards'),
       '/api-readiness.json': getJson('Machine-readable API readiness gates and scorecard', 'ApiReadiness'),
@@ -550,6 +552,15 @@ export function buildOpenApiContract({
           primary_entrypoints: { type: 'array', items: { type: 'object' } },
           endpoints: { type: 'array', items: { type: 'object' } },
           static_fallbacks: { type: 'array', items: { type: 'object' } }
+        }),
+        ApiAccess: schemaVersioned('API access policy', API_ACCESS_SCHEMA_VERSION, {
+          access_policy: { type: 'object' },
+          counts: { type: 'object' },
+          recommended_call_order: { type: 'array', items: { type: 'object' } },
+          answer_policy_path: { const: '/api/context?q={query}' },
+          unsupported_answer_mode: { enum: ['external_sources_required'] },
+          trust_check: { type: 'object' },
+          related_machine_contracts: { type: 'array', items: { type: 'string' } }
         }),
         ArtifactSummary: schemaVersioned('Artifact summary', ARTIFACT_SUMMARY_SCHEMA_VERSION, {
           total_bytes: { type: 'integer' },

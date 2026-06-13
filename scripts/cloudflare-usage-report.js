@@ -18,6 +18,8 @@ const MACHINE_ARTIFACT_PATHS = new Set([
   '/agent.json',
   '/.well-known/anchorfact.json',
   '/openapi.json',
+  '/api-access',
+  '/api-access/',
   '/artifact-summary.json',
   '/artifact-shards.json',
   '/api-readiness.json',
@@ -239,8 +241,8 @@ export function classifyPath(path = '') {
   const normalized = String(path || '/');
   if (/\/(?:wp-admin|wp-login|xmlrpc\.php)(?:\/|$)/i.test(normalized)) return 'security_probe';
   if (/\/(?:\.env|\.git|admin|phpmyadmin|config)(?:\/|$|[.?])/i.test(normalized)) return 'security_probe';
-  if (API_ACCESS_PATHS.has(normalized)) return 'developer_docs';
   if (MACHINE_ARTIFACT_PATHS.has(normalized)) return 'machine_artifact';
+  if (API_ACCESS_PATHS.has(normalized)) return 'developer_docs';
   if (normalized.startsWith('/api')) return 'api';
   if (/\/index\.(?:json|txt|ttl)$/i.test(normalized)) return 'article_artifact';
   if (normalized === '/robots.txt' || normalized === '/sitemap.xml') return 'crawler_control';

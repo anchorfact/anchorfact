@@ -83,7 +83,7 @@ test('classifyUserAgent separates synthetic monitors, AI bots, search bots, scan
 test('classifyPath identifies API, machine artifact, article artifact, and probe surfaces', () => {
   assertEq(classifyPath('/'), 'machine_artifact');
   assertEq(classifyPath('/api/evidence'), 'api');
-  assertEq(classifyPath('/api-access/'), 'developer_docs');
+  assertEq(classifyPath('/api-access/'), 'machine_artifact');
   assertEq(classifyPath('/index.json'), 'machine_artifact');
   assertEq(classifyPath('/artifact-summary.json'), 'machine_artifact');
   assertEq(classifyPath('/artifact-shards.json'), 'machine_artifact');
@@ -154,14 +154,14 @@ test('buildCloudflareUsageSummary derives product, AI discovery, and security re
 
   assertEq(summary.totals.requests, 1000);
   assert(!Object.prototype.hasOwnProperty.call(summary, 'summary'), 'JSON report should expose top-level usage fields, not a legacy summary wrapper');
-  assertEq(summary.usage_scorecard.product_surface_requests, 591);
+  assertEq(summary.usage_scorecard.product_surface_requests, 621);
   assertEq(summary.usage_scorecard.api_requests, 360);
   assertEq(summary.usage_scorecard.api_access_page_requests, 30);
   assertEq(summary.usage_scorecard.developer_docs_requests, 176);
   assertEq(summary.usage_scorecard.core_api_requests, 310);
   assertEq(summary.usage_scorecard.core_api_to_developer_docs_ratio, 1.76);
   assertEq(summary.usage_scorecard.discovery_entrypoint_requests, 181);
-  assertEq(summary.usage_scorecard.machine_artifact_requests, 166);
+  assertEq(summary.usage_scorecard.machine_artifact_requests, 196);
   assertEq(summary.usage_scorecard.identified_ai_requests, 60);
   assertEq(summary.usage_scorecard.synthetic_monitor_requests, 70);
   assertEq(summary.usage_scorecard.browser_like_requests, 600);
@@ -204,6 +204,7 @@ test('buildCloudflareUsageSummary derives product, AI discovery, and security re
   assert(summary.top_developer_docs_paths.some(item => item.path === '/index.json'), 'should report root machine index docs signal');
   assert(summary.top_developer_docs_paths.some(item => item.path === '/api-readiness.json'), 'should report API readiness docs signal');
   assert(summary.top_machine_artifacts.some(item => item.path === '/graph.json'), 'should report machine artifact signal');
+  assert(summary.top_machine_artifacts.some(item => item.path === '/api-access/'), 'should report API access policy machine artifact signal');
   assert(summary.top_machine_artifacts.some(item => item.path === '/index.json'), 'should report root machine index machine artifact signal');
   assert(summary.top_machine_artifacts.some(item => item.path === '/api-readiness.json'), 'should report API readiness machine artifact signal');
   assert(summary.security_probe_paths.some(item => item.path === '/wp-admin/install.php'), 'should report security probes');
