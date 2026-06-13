@@ -4,9 +4,9 @@ title: Automata Theory
 schema_type: TechArticle
 category: computer-science
 language: en
-confidence: high
-last_verified: '2026-05-25'
-created_date: '2026-05-22'
+confidence: medium
+last_verified: "2026-06-13"
+created_date: "2026-05-22"
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -15,115 +15,78 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-computer-science-001
+  - id: fact-automata-theory-1
     statement: >-
-      Automata theory studies abstract machines and the problems they can solve. Finite automata (regular languages) → Pushdown automata (context-free) → Turing machines (computable). Powers: regular
-      expressions, parsers, compilers, and the theoretical limits of computation.
-    source_title: ACM Digital Library
-    source_url: https://dl.acm.org/
+      Rabin and Scott's finite-automata work formalized finite-state machines as mathematical objects and studied decision problems about them.
+    source_title: Finite Automata and Their Decision Problems
+    source_url: https://doi.org/10.1147/rd.32.0114
     confidence: medium
-  - id: fact-computer-science-002
-    statement: 'Chomsky hierarchy: Type 3 (regular, regex, DFA/NFA), Type 2 (context-free, programming language syntax), Type 1 (context-sensitive), Type 0 (recursively enumerable, Turing-complete).'
-    source_title: ACM Digital Library
-    source_url: https://dl.acm.org/
+  - id: fact-automata-theory-2
+    statement: >-
+      Chomsky's formal-grammar work provided a foundation for classifying grammars and the formal languages they generate.
+    source_title: On certain formal properties of grammars
+    source_url: https://doi.org/10.1016/S0019-9958(59)90362-6
+    confidence: medium
+  - id: fact-automata-theory-3
+    statement: >-
+      Turing's computable-numbers paper introduced a formal model of computation using machines that manipulate symbols according to rules.
+    source_title: On Computable Numbers, with an Application to the Entscheidungsproblem
+    source_url: https://doi.org/10.1112/plms/s2-42.1.230
     confidence: medium
 completeness: 0.88
 known_gaps:
-  - Sources reconstructed during quality audit; primary source details were corrupted during batch generation
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
+  - This compact repair removes generic repository links, fabricated 2025 sources, and unrelated arXiv papers.
+  - The article summarizes foundational models only; detailed closure properties, decidability proofs, and complexity bounds are out of scope.
+disputed_statements: []
 primary_sources:
-  - title: ACM Digital Library
-    type: repository
-    year: 2026
-    url: https://dl.acm.org/
-    institution: ACM
-  - title: Introduction to Automata Theory, Languages, and Computation (4th Edition, 2025)
-    type: book
-    year: 2025
+  - title: Finite Automata and Their Decision Problems
+    type: journal_article
+    year: 1959
     authors:
-      - Hopcroft J.E.
-      - Motwani R.
-      - Ullman J.D.
-    institution: Pearson
-    url: https://www.pearson.com/automata/
-  - title: 'Formal Methods and Verification: A 2025 Survey of Industrial Practice'
-    type: survey_paper
-    year: 2025
+      - Rabin M. O.
+      - Scott D.
+    institution: IBM Journal of Research and Development
+    doi: 10.1147/rd.32.0114
+    url: https://doi.org/10.1147/rd.32.0114
+  - title: On certain formal properties of grammars
+    type: journal_article
+    year: 1959
     authors:
-      - multiple
-    institution: ACM Computing Surveys
-    url: https://doi.org/10.1145/acmcs.2025.formal
-  - title: 'Variational Approach to Quantum Field Theory: Gaussian Approximation and the Perturbative Expansion around It'
+      - Chomsky N.
+    institution: Information and Control
+    doi: 10.1016/S0019-9958(59)90362-6
+    url: https://doi.org/10.1016/S0019-9958(59)90362-6
+  - title: On Computable Numbers, with an Application to the Entscheidungsproblem
+    type: journal_article
+    year: 1937
     authors:
-      - Jae Hyung Yee
-    year: 1997
-    url: https://arxiv.org/abs/hep-th/9707234v2
-    type: academic_paper
-    institution: arXiv
-  - title: The Great Inequality In A Hamiltonian Planetary Theory
-    authors:
-      - F. Varadi
-      - M. Ghil
-      - W. M. Kaula
-      - Keywords
-      - ':'
-      - Hamiltonian systems
-      - planetary motion
-      - perturbation theory
-      - resonances
-    year: 1993
-    url: https://arxiv.org/abs/chao-dyn/9311011v2
-    type: academic_paper
-    institution: arXiv
-secondary_sources:
-  - title: ACM Digital Library
-    type: repository
-    year: 2026
-    url: https://dl.acm.org/
-    institution: ACM
-  - title: The C Programming Language (K&R, 2nd Ed)
-    type: textbook
-    year: 1988
-    url: https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html
-    institution: Prentice Hall
-  - title: Structure and Interpretation of Computer Programs (SICP)
-    type: textbook
-    year: 1996
-    url: https://mitpress.mit.edu/sites/default/files/sicp/
-    institution: MIT Press
-  - title: 'Automata Theory and Formal Languages: Modern Applications in Verification and AI (2025)'
-    type: article
-    year: 2025
-    authors:
-      - multiple
-    institution: Springer LNCS
-    url: https://doi.org/10.1007/lncs.2025.automata
-  - title: 'Formal Methods in Software Engineering: A 2025 Survey of Industrial Adoption'
-    type: survey_paper
-    year: 2025
-    authors:
-      - multiple
-    institution: ACM Computing Surveys
-    url: https://doi.org/10.1145/acmcs.2025.formal
+      - Turing A. M.
+    institution: Proceedings of the London Mathematical Society
+    doi: 10.1112/plms/s2-42.1.230
+    url: https://doi.org/10.1112/plms/s2-42.1.230
+secondary_sources: []
 ---
 
 ## TL;DR
 
-Automata theory studies abstract machines and the problems they can solve. Finite automata (regular languages) → Pushdown automata (context-free) → Turing machines (computable). Powers: regular expressions, parsers, compilers, and the theoretical limits of computation.
+Automata theory studies abstract machines and formal languages. Its core models include finite automata for finite-state recognition, grammar systems for generated languages, and Turing machines for general computability.
 
 ## Core Explanation
 
-Chomsky hierarchy: Type 3 (regular, regex, DFA/NFA), Type 2 (context-free, programming language syntax), Type 1 (context-sensitive), Type 0 (recursively enumerable, Turing-complete). Finite automaton: states + transitions + start state + accept states. NFA (nondeterministic) equivalent to DFA (deterministic) — subset construction converts NFA→DFA (exponential blowup possible).
+Finite automata model systems with a finite set of states and transitions. They are central to regular-language recognition and to practical tools such as lexical analysis and regular-expression engines.
+
+Formal grammars describe how strings in a language can be generated. Chomsky's grammar work underpins the hierarchy that separates regular, context-free, context-sensitive, and recursively enumerable language classes.
+
+Turing machines provide a more general model of computation. They help define what it means for a function or language problem to be computable, and they mark the boundary between mechanical procedures and undecidable problems.
 
 ## Further Reading
 
--
+- [Finite Automata and Their Decision Problems](https://doi.org/10.1147/rd.32.0114)
+- [On certain formal properties of grammars](https://doi.org/10.1016/S0019-9958(59)90362-6)
+- [On Computable Numbers, with an Application to the Entscheidungsproblem](https://doi.org/10.1112/plms/s2-42.1.230)
 
 ## Related Articles
 
-- [AI for Game Theory: Computational Game Playing, Nash Equilibrium, and Multi-Agent Strategy](../../ai/ai-for-gaming-theory.md)
-- [Music Theory Basics](../../arts/music-theory-basics.md)
-- [Game Theory: Nash Equilibrium, Zero-Sum Games, and Strategic Interaction](../../business/game-theory-nash-equilibrium-zero-sum-games-and-strategic-interaction.md)
+- [Regular Expressions](regular-expressions.md)
+- [Complexity Theory](complexity-theory.md)
+- [Interpreters and Compilers](interpreters-and-compilers-lexing-parsing-and-code-generation.md)

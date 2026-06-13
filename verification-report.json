@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-13T15:28:14.418Z",
+    "generated": "2026-06-13T15:35:13.151Z",
     "total_articles": 1628,
     "total_with_errors": 0,
     "average_sources_per_article": "2.6",
-    "overall_verification_rate": "92.3%",
-    "elapsed_ms": 2171,
-    "elapsed_sec": "2.2",
+    "overall_verification_rate": "92.4%",
+    "elapsed_ms": 2261,
+    "elapsed_sec": "2.3",
     "concurrency": 3
   },
   "articles": [
@@ -47841,74 +47841,65 @@
       "file": "content/computer-science/automata-theory.md",
       "article_id": "kb-2026-00196",
       "generation_method": "ai_structured",
-      "sources_total": 5,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "ACM Digital Library",
-          "source_type": "repository",
+          "source_title": "Finite Automata and Their Decision Problems",
+          "source_type": "journal_article",
           "results": [
             {
-              "method": "url",
-              "identifier": "https://dl.acm.org/",
-              "verified": false,
+              "method": "doi",
+              "identifier": "10.1147/rd.32.0114",
+              "verified": true,
               "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/"
+                "title": "Finite Automata and Their Decision Problems",
+                "publisher": "IBM",
+                "year": 2010
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Introduction to Automata Theory, Languages, and Computation (4th Edition, 2025)",
-          "source_type": "book",
+          "source_title": "On certain formal properties of grammars",
+          "source_type": "journal_article",
           "results": [
             {
-              "method": "url",
-              "identifier": "https://www.pearson.com/automata/",
-              "verified": false,
+              "method": "doi",
+              "identifier": "10.1016/S0019-9958(59)90362-6",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://www.pearson.com/automata/"
+                "title": "On certain formal properties of grammars",
+                "publisher": "Elsevier BV",
+                "year": 2004
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Formal Methods and Verification: A 2025 Survey of Industrial Practice",
-          "source_type": "survey_paper",
+          "source_title": "On Computable Numbers, with an Application to the Entscheidungsproblem",
+          "source_type": "journal_article",
           "results": [
             {
-              "method": "url",
-              "identifier": "https://doi.org/10.1145/acmcs.2025.formal",
-              "verified": false,
+              "method": "doi",
+              "identifier": "10.1112/plms/s2-42.1.230",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.formal"
+                "title": "On Computable Numbers, with an Application to the Entscheidungsproblem",
+                "publisher": "Wiley",
+                "year": 2007
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Variational Approach to Quantum Field Theory: Gaussian Approximation and the Perturbative Expansion around It",
-          "source_type": "academic_paper",
-          "results": [],
-          "all_verified": false
-        },
-        {
-          "source_title": "The Great Inequality In A Hamiltonian Planetary Theory",
-          "source_type": "academic_paper",
-          "results": [],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 3
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content/computer-science/binary-search-tree.md",
