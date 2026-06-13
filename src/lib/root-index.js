@@ -72,6 +72,7 @@ export function buildRootIndex({
       }
     ],
     discovery: {
+      root_alias: '/',
       root_index: '/index.json',
       api_index: '/api',
       api_access: '/api-access/',

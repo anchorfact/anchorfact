@@ -228,6 +228,7 @@ export async function main() {
     assertOk(results[route].status === 200, `${route} returned ${results[route].status}`, failures);
   }
 
+  const rootAlias = await readJsonRoute(baseUrl, '/', results);
   const rootIndex = await readJsonRoute(baseUrl, '/index.json', results);
   const agentProfile = await readJsonRoute(baseUrl, '/agent.json', results);
   const wellKnownAgentProfile = await readJsonRoute(baseUrl, '/.well-known/anchorfact.json', results);
@@ -302,6 +303,9 @@ export async function main() {
   assertOk(rootIndex.counts?.public_claims === claimCount, 'root index public claim count does not match claims.json', failures);
   assertOk(rootIndex.trust_policy?.public_only_entrypoints_exclude_drafts === true, 'root index trust policy does not exclude drafts', failures);
   assertOk(rootIndex.trust_policy?.default_answer_requires_can_answer_with_anchorfact === true, 'root index trust policy does not require answer policy checks', failures);
+  assertOk(rootAlias.schema_version === rootIndex.schema_version, 'root slash JSON alias schema does not match /index.json', failures);
+  assertOk(rootAlias.default_answer_path === rootIndex.default_answer_path, 'root slash JSON alias default answer path does not match /index.json', failures);
+  assertOk(rootAlias.counts?.public_articles === rootIndex.counts?.public_articles, 'root slash JSON alias public count does not match /index.json', failures);
   assertOk(agentProfile.schema_version === 'anchorfact.agent.v1', `agent schema_version expected anchorfact.agent.v1, got ${agentProfile.schema_version || '(missing)'}`, failures);
   assertOk(wellKnownAgentProfile.schema_version === agentProfile.schema_version, 'well-known agent profile schema does not match /agent.json', failures);
   assertOk(wellKnownAgentProfile.generated === agentProfile.generated, 'well-known agent profile generated timestamp does not match /agent.json', failures);
@@ -649,6 +653,8 @@ export async function main() {
   for (const header of REQUIRED_SECURITY_HEADERS) {
     headerIncludes(results[header.route], header.name, header.expected, failures);
   }
+  headerIncludes(results['/'], 'Access-Control-Allow-Origin', '*', failures);
+  headerIncludes(results['/'], 'Content-Type', 'application/json', failures);
   headerIncludes(results['/index.json'], 'Access-Control-Allow-Origin', '*', failures);
   headerIncludes(results['/agent.json'], 'Access-Control-Allow-Origin', '*', failures);
   headerIncludes(results['/.well-known/anchorfact.json'], 'Access-Control-Allow-Origin', '*', failures);
@@ -689,6 +695,7 @@ export async function main() {
   headerIncludes(results['/sources.json'], 'Access-Control-Allow-Origin', '*', failures);
   headerIncludes(results['/provenance.json'], 'Access-Control-Allow-Origin', '*', failures);
   for (const route of [
+    '/',
     '/index.json',
     '/agent.json',
     '/.well-known/anchorfact.json',

@@ -20,6 +20,7 @@ export const DEFAULT_AFTER_SMOKE_DELAY_MS = 5000;
 export const DEFAULT_AI_EVAL_RETRY_DELAY_MS = 15000;
 export const DEFAULT_AI_EVAL_ATTEMPTS = 2;
 export const SIGNED_MACHINE_ARTIFACT_PATHS = [
+  '/',
   '/index.json',
   '/graph.json',
   '/search-index.json',

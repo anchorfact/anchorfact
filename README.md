@@ -10,7 +10,7 @@ AnchorFact is moving from a scale-first knowledge base to a trust-first verified
 
 | Area | Policy |
 | --- | --- |
-| Public AI entrypoints | Only verified, non-placeholder articles appear in `llms.txt`, `sitemap.xml`, and the homepage public list. |
+| Public AI entrypoints | Only verified, non-placeholder articles appear in `llms.txt`, `sitemap.xml`, and machine discovery artifacts. |
 | Draft content | Drafts are retained and compiled, but excluded from AI entrypoints and marked `noindex`. |
 | Confidence | Estimated confidence can never be `high`; public entries must be based on `verified_sources`. |
 | Claims | Public atomic facts with evidence are exported to `/claims.json`. |
@@ -89,7 +89,7 @@ npm run verify:provenance
 npm run verify:provenance:signed
 ```
 
-The smoke test checks the homepage, `/index.json`, `/api-access/`, `/robots.txt`, `/sitemap.xml`, `/agent.json`, `/.well-known/anchorfact.json`, `/openapi.json`, `/artifact-summary.json`, `/artifact-shards.json`, `/api-readiness.json`, `/manifest.json`, `/llms.txt`, `/claims.json`, `/topics.json`, `/capabilities.json`, `/content-health.json`, `/coverage.json`, `/examples.json`, `/graph.json`, `/evals.json`, `/mcp.json`, `/api`, `/api/plan`, `/api/evidence`, `/api/context`, `/api/resolve`, `/api/resolve-batch`, `/api/search`, `/api/article`, `/api/claim`, `/api/cite`, `/api/source`, `/search-index.json`, `/sources.json`, `/provenance.json`, `/provenance.sig`, and `/drafts.html` against the live `https://anchorfact.org` deployment. Omit the expected-count environment variables when checking a future snapshot with different counts.
+The smoke test checks the root `/` machine JSON alias, `/index.json`, `/api-access/`, `/robots.txt`, `/sitemap.xml`, `/agent.json`, `/.well-known/anchorfact.json`, `/openapi.json`, `/artifact-summary.json`, `/artifact-shards.json`, `/api-readiness.json`, `/manifest.json`, `/llms.txt`, `/claims.json`, `/topics.json`, `/capabilities.json`, `/content-health.json`, `/coverage.json`, `/examples.json`, `/graph.json`, `/evals.json`, `/mcp.json`, `/api`, `/api/plan`, `/api/evidence`, `/api/context`, `/api/resolve`, `/api/resolve-batch`, `/api/search`, `/api/article`, `/api/claim`, `/api/cite`, `/api/source`, `/search-index.json`, `/sources.json`, `/provenance.json`, `/provenance.sig`, and `/drafts.html` against the live `https://anchorfact.org` deployment. Omit the expected-count environment variables when checking a future snapshot with different counts.
 
 The provenance verifier fetches `/provenance.json`, recomputes SHA-256 checksums for the core AI entrypoints, checks public/draft/claim counts, confirms official build identity, and verifies the source commit against GitHub.
 
@@ -163,6 +163,7 @@ Only public articles contribute publishable facts to `/claims.json`.
 
 | Output | Purpose |
 | --- | --- |
+| `/` | Root machine JSON alias serving the same compact directory payload as `/index.json`. |
 | `/robots.txt` | Public crawler discovery file advertising sitemap, LLM index, agent profile, OpenAPI, MCP, and provenance entrypoints. |
 | `/sitemap.xml` | Public-only sitemap for AI and search crawlers; draft routes are excluded. |
 | `/index.json` | Compact root machine directory with preferred API entrypoints, trust policy, artifact discovery, and signed provenance pointer. |

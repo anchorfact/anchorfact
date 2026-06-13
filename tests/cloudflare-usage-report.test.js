@@ -81,6 +81,7 @@ test('classifyUserAgent separates synthetic monitors, AI bots, search bots, scan
 });
 
 test('classifyPath identifies API, machine artifact, article artifact, and probe surfaces', () => {
+  assertEq(classifyPath('/'), 'machine_artifact');
   assertEq(classifyPath('/api/evidence'), 'api');
   assertEq(classifyPath('/api-access/'), 'developer_docs');
   assertEq(classifyPath('/index.json'), 'machine_artifact');

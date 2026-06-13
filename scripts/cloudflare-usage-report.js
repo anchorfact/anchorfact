@@ -13,6 +13,7 @@ const MAX_ADAPTIVE_LOOKBACK_MINUTES = 23 * 60 + 50;
 export const AI_ADOPTION_TARGET_RATIO = 0.2;
 
 const MACHINE_ARTIFACT_PATHS = new Set([
+  '/',
   '/index.json',
   '/agent.json',
   '/.well-known/anchorfact.json',
@@ -38,6 +39,7 @@ const MACHINE_ARTIFACT_PATHS = new Set([
 ]);
 
 const DISCOVERY_ENTRYPOINT_PATHS = new Set([
+  '/',
   '/robots.txt',
   '/llms.txt',
   '/index.json',
@@ -57,6 +59,7 @@ const API_ACCESS_PATHS = new Set([
 ]);
 
 const DEVELOPER_DOC_PATHS = new Set([
+  '/',
   '/api-access',
   '/api-access/',
   '/index.json',

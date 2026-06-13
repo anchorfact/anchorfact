@@ -37,16 +37,6 @@ function stringifyJson(data, { pretty = true } = {}) {
   return pretty ? JSON.stringify(data, null, 2) : JSON.stringify(data);
 }
 
-function articleLink(result) {
-  const slug = result._quality.canonicalSlug;
-  const confidence = result._confidence;
-  return `<span title="confidence: ${confidence.level} (${confidence.score}) [${confidence.inputs.based_on}]">` +
-    `<a href="/${slug}/">${escapeHtml(result.headline || slug)}</a></span>` +
-    ` &middot; <a href="/${slug}/index.json">JSON-LD</a>` +
-    ` &middot; <a href="/${slug}/index.txt">TXT</a>` +
-    ` &middot; <a href="/${slug}/index.ttl">TTL</a>`;
-}
-
 function writeManifest(distDir, results, publicResults, draftResults, claims, options = {}) {
   const manifest = buildManifest({
     results,
@@ -61,110 +51,6 @@ function writeManifest(distDir, results, publicResults, draftResults, claims, op
 
   writeFileSync(join(distDir, 'manifest.json'), stringifyJson(manifest, { pretty: false }));
   return manifest;
-}
-
-function writeRootIndex(distDir, results, publicResults, draftResults, claims) {
-  const publicDist = distribution(publicResults);
-  const rootHtml = `<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>AnchorFact - Verified claims for LLM citations</title>
-  <meta name="description" content="Machine-readable verified claims and articles for LLM citations.">
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <meta name="msvalidate.01" content="B9AA7B911CF59012FB84CBDD7470CBA4">
-  <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"WebSite","@id":"https://anchorfact.org","name":"AnchorFact","url":"https://anchorfact.org","description":"Machine-readable verified claims for LLM citations.","publisher":{"@type":"Organization","name":"AnchorFact"}}
-  </script>
-  <style>
-    body { font-family: system-ui, sans-serif; max-width: 920px; margin: 36px auto; padding: 0 20px; color: #1E293B; line-height: 1.6; }
-    h1 { color: #1D4ED8; font-size: 2rem; margin-bottom: 0.2em; }
-    .tagline { color: #475569; font-size: 1.08rem; margin-bottom: 1em; }
-    .card { border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 20px; margin: 12px 0; }
-    .primary a { display: inline-block; margin: 6px 12px 6px 0; font-weight: 700; }
-    details { margin-top: 10px; }
-    summary { cursor: pointer; color: #334155; font-weight: 700; }
-    .footer { color: #64748B; font-size: 0.85rem; margin-top: 3em; }
-    .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.8em; margin-right: 4px; }
-    .h { background: #DCFCE7; color: #166534; }
-    .m { background: #FEF9C3; color: #854D0E; }
-    .l { background: #FEE2E2; color: #991B1B; }
-    a { color: #2563EB; text-decoration: none; }
-  </style>
-</head>
-<body>
-  <h1>AnchorFact</h1>
-  <p class="tagline">Verified claims, evidence packs, and citation-ready context for AI agents.</p>
-  <div class="card" style="background:#F8FAFC;">
-    <strong>Live trust counts</strong><br>
-    <strong>${publicResults.length}</strong> public verified articles &middot;
-    <strong>${claims.length}</strong> public verified claims &middot;
-    <strong>${draftResults.length}</strong> drafts excluded from AI entrypoints.
-    <br><span style="font-size:0.9rem;color:#64748B;">Public articles require real source verification data and no placeholder content.</span>
-  </div>
-  <div class="card primary">
-    <strong>Default AI calls</strong><br>
-    <a href="/api/context?q=gaussian">/api/context</a>
-    <a href="/api/evidence?q=gaussian">/api/evidence</a>
-    <a href="/api/cite?id=f1">/api/cite</a>
-    <a href="/index.json">/index.json</a>
-    <a href="/agent.json">/agent.json</a>
-    <a href="/provenance.json">/provenance.json</a>
-    <a href="/api">/api</a>
-    <a href="/api-access/">/api-access</a>
-    <details>
-      <summary>Full machine artifact catalog</summary>
-      <p>
-        <a href="/artifact-summary.json">Artifact Summary</a> &middot;
-        <a href="/artifact-shards.json">Artifact Shards</a> &middot;
-        <a href="/api-readiness.json">API Readiness</a> &middot;
-        <a href="/openapi.json">OpenAPI</a> &middot;
-        <a href="/capabilities.json">Capabilities</a> &middot;
-        <a href="/api/plan?q=gaussian">Plan API</a> &middot;
-        <a href="/api/resolve?ref=f1">Resolve API</a> &middot;
-        <a href="/api/resolve-batch?ref=f1&amp;ref=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079">Resolve Batch API</a> &middot;
-        <a href="/api/search?q=gaussian">Search API</a> &middot;
-        <a href="/api/article?slug=ai/3d-generation-gaussian-splatting">Article API</a> &middot;
-        <a href="/api/claim?id=f1">Claim API</a> &middot;
-        <a href="/api/source?url=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079">Source API</a> &middot;
-        <a href="/llms.txt">llms.txt</a> &middot;
-        <a href="/manifest.json">Manifest</a> &middot;
-        <a href="/claims.json">Claims JSON</a> &middot;
-        <a href="/topics.json">Topics JSON</a> &middot;
-        <a href="/content-health.json">Content Health JSON</a> &middot;
-        <a href="/coverage.json">Coverage JSON</a> &middot;
-        <a href="/examples.json">Examples JSON</a> &middot;
-        <a href="/graph.json">Graph JSON</a> &middot;
-        <a href="/evals.json">Evals JSON</a> &middot;
-        <a href="/mcp.json">MCP JSON</a> &middot;
-        <a href="/search-index.json">Search Index</a> &middot;
-        <a href="/sources.json">Sources JSON</a> &middot;
-        <a href="/dashboard.html">Dashboard</a>
-      </p>
-    </details>
-  </div>
-  <div class="card">
-    <strong>Public Verified Articles (${publicResults.length})</strong><br>
-    <span class="badge h">high: ${publicDist.high}</span>
-    <span class="badge m">medium: ${publicDist.medium}</span>
-    <span class="badge l">low: ${publicDist.low}</span>
-    <br><br>
-    ${publicResults.length ? publicResults.map(articleLink).join('<br>\n    ') : '<em>No public verified articles yet. Run verification and promote validated articles.</em>'}
-  </div>
-  <div class="card">
-    <strong>Drafts</strong><br>
-    ${draftResults.length} articles are retained but excluded from llms.txt and sitemap until they pass verification.
-    <a href="/drafts.html">Review drafts</a>.
-  </div>
-  <div class="card">
-    <strong>Project</strong><br>
-    <a href="https://github.com/anchorfact/anchorfact">GitHub</a> &middot;
-    <a href="https://github.com/anchorfact/anchorfact/blob/main/DESIGN.md">Design</a>
-  </div>
-  <p class="footer">Content: CC-BY 4.0 &middot; Code: MIT &middot; Compiler: v0.3.0</p>
-</body>
-</html>`;
-  writeFileSync(join(distDir, 'index.html'), rootHtml);
 }
 
 function writeDrafts(distDir, draftResults) {
@@ -254,7 +140,7 @@ function writeApiAccessPage(distDir, publicResults, draftResults, claims) {
     <a href="/api-readiness.json">api-readiness.json</a> &middot;
     <a href="/content-health.json">content-health.json</a>
   </p>
-  <p><a href="/">Home</a></p>
+  <p><a href="/index.json">Root machine index</a></p>
 </body>
 </html>`;
   writeFileSync(join(apiAccessDir, 'index.html'), html);
@@ -417,6 +303,7 @@ Provenance: https://anchorfact.org/provenance.json
 
 function writeHeaders(distDir) {
   const revalidatedMachineArtifacts = [
+    ['/', 'application/json'],
     ['/index.json', 'application/json'],
     ['/agent.json', 'application/json'],
     ['/.well-known/anchorfact.json', 'application/json'],
@@ -514,7 +401,7 @@ function writeDashboard(distDir, results, publicResults, draftResults, claims, v
       <p>High: ${publicDist.high} &middot; Medium: ${publicDist.medium} &middot; Low: ${publicDist.low}</p>
       <p>Verification report: ${verificationTimestamp || 'not available'}</p>
     </div>
-    <p><a href="/">Home</a> &middot; <a href="/llms.txt">llms.txt</a> &middot; <a href="/agent.json">agent.json</a> &middot; <a href="/openapi.json">openapi.json</a> &middot; <a href="/manifest.json">manifest.json</a> &middot; <a href="/claims.json">claims.json</a> &middot; <a href="/topics.json">topics.json</a> &middot; <a href="/capabilities.json">capabilities.json</a> &middot; <a href="/content-health.json">content-health.json</a> &middot; <a href="/coverage.json">coverage.json</a> &middot; <a href="/examples.json">examples.json</a> &middot; <a href="/graph.json">graph.json</a> &middot; <a href="/evals.json">evals.json</a> &middot; <a href="/mcp.json">mcp.json</a> &middot; <a href="/search-index.json">search-index.json</a> &middot; <a href="/sources.json">sources.json</a> &middot; <a href="/provenance.json">provenance.json</a></p>
+    <p><a href="/index.json">Root machine index</a> &middot; <a href="/llms.txt">llms.txt</a> &middot; <a href="/agent.json">agent.json</a> &middot; <a href="/openapi.json">openapi.json</a> &middot; <a href="/manifest.json">manifest.json</a> &middot; <a href="/claims.json">claims.json</a> &middot; <a href="/topics.json">topics.json</a> &middot; <a href="/capabilities.json">capabilities.json</a> &middot; <a href="/content-health.json">content-health.json</a> &middot; <a href="/coverage.json">coverage.json</a> &middot; <a href="/examples.json">examples.json</a> &middot; <a href="/graph.json">graph.json</a> &middot; <a href="/evals.json">evals.json</a> &middot; <a href="/mcp.json">mcp.json</a> &middot; <a href="/search-index.json">search-index.json</a> &middot; <a href="/sources.json">sources.json</a> &middot; <a href="/provenance.json">provenance.json</a></p>
   </div>
 </body>
 </html>`;
@@ -530,7 +417,9 @@ function writeAgentProfile(distDir, profile) {
 }
 
 function writeRootMachineIndex(distDir, rootIndex) {
-  writeFileSync(join(distDir, 'index.json'), stringifyJson(rootIndex, { pretty: false }));
+  const rootIndexText = stringifyJson(rootIndex, { pretty: false });
+  writeFileSync(join(distDir, 'index.json'), rootIndexText);
+  writeFileSync(join(distDir, 'index.html'), rootIndexText);
 }
 
 function writeArtifactSummary(distDir, summary) {
@@ -741,7 +630,6 @@ export function writeStaticOutputs(distDir, results, options = {}) {
     draftResults,
     verificationTimestamp: options.verificationTimestamp
   }));
-  writeRootIndex(distDir, results, publicResults, draftResults, claims);
   writeDrafts(distDir, draftResults);
   writeApiAccessPage(distDir, publicResults, draftResults, claims);
   const llmsText = writeLlmsTxt(distDir, publicResults, claims, options.verificationTimestamp);

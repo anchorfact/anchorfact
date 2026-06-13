@@ -104,6 +104,7 @@ export function buildOpenApiContract({
     'x-generated': generated || null,
     'x-provenance-url': publicUrl(PROVENANCE_PATH, site),
     paths: {
+      '/': getJson('Root machine index alias for /index.json', 'RootIndex'),
       '/index.json': getJson('Root machine index for preferred entrypoints and signed artifact discovery', 'RootIndex'),
       '/agent.json': getJson('AI agent discovery profile', 'AgentProfile'),
       '/.well-known/anchorfact.json': getJson('Well-known alias for the AI agent discovery profile', 'AgentProfile'),

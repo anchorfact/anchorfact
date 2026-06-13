@@ -125,7 +125,7 @@ test('manifest contains structured article entries and status counts', () => {
 });
 
 test('public entrypoints exclude draft articles', () => {
-  const indexHtml = readFileSync(join(distDir, 'index.html'), 'utf-8');
+  const rootAlias = JSON.parse(readFileSync(join(distDir, 'index.html'), 'utf-8'));
   const rootIndex = JSON.parse(readFileSync(join(distDir, 'index.json'), 'utf-8'));
   const claimsJson = JSON.parse(readFileSync(join(distDir, 'claims.json'), 'utf-8'));
   const llmsTxt = readFileSync(join(distDir, 'llms.txt'), 'utf-8');
@@ -138,6 +138,7 @@ test('public entrypoints exclude draft articles', () => {
   assertEq(rootIndex.default_answer_path, '/api/context?q={query}');
   assert(rootIndex.preferred_machine_entrypoints.some(entry => entry.path === '/api/context?q={query}'), 'root index should prefer context API');
   assert(rootIndex.preferred_machine_entrypoints.some(entry => entry.path === '/api/evidence?q={query}'), 'root index should include evidence API');
+  assertEq(rootIndex.discovery.root_alias, '/');
   assertEq(rootIndex.discovery.openapi, '/openapi.json');
   assertEq(rootIndex.discovery.agent_profile, '/agent.json');
   assertEq(rootIndex.discovery.api_readiness, '/api-readiness.json');
@@ -149,36 +150,7 @@ test('public entrypoints exclude draft articles', () => {
   assert(rootIndex.static_artifacts.includes('/artifact-summary.json'), 'root index should advertise artifact summary');
   assert(rootIndex.static_artifacts.includes('/provenance.json'), 'root index should advertise provenance');
   assert(rootIndex.bulk_sync_policy.avoid_for_single_query.includes('/graph.json'), 'root index should steer single queries away from bulk graph downloads');
-  assert(indexHtml.includes('/index.json'), 'index should link to root machine index');
-  assert(indexHtml.includes('/agent.json'), 'index should link to agent profile');
-  assert(indexHtml.includes('/openapi.json'), 'index should link to OpenAPI contract');
-  assert(indexHtml.includes('/api'), 'index should link to API index');
-  assert(indexHtml.includes('/api-access/'), 'index should link to API access guide');
-  assert(indexHtml.includes('/artifact-summary.json'), 'index should link to artifact summary');
-  assert(indexHtml.includes('/artifact-shards.json'), 'index should link to artifact shard registry');
-  assert(indexHtml.includes('/api-readiness.json'), 'index should link to API readiness artifact');
-  assert(indexHtml.includes('Default AI calls'), 'index should put machine-first calls near the top');
-  assert(indexHtml.indexOf('/api/context?q=') < indexHtml.indexOf('Full machine artifact catalog'), 'index should show context before the full artifact catalog');
-  assert(indexHtml.indexOf('/api/evidence?q=') < indexHtml.indexOf('Full machine artifact catalog'), 'index should show evidence before the full artifact catalog');
-  assert(indexHtml.indexOf('/api/cite?id=') < indexHtml.indexOf('Full machine artifact catalog'), 'index should show citation before the full artifact catalog');
-  assert(indexHtml.includes('/capabilities.json'), 'index should link to capabilities router');
-  assert(indexHtml.includes('/content-health.json'), 'index should link to content health');
-  assert(indexHtml.includes('/coverage.json'), 'index should link to coverage guide');
-  assert(indexHtml.includes('/topics.json'), 'index should link to topics index');
-  assert(indexHtml.includes('/examples.json'), 'index should link to examples index');
-  assert(indexHtml.includes('/graph.json'), 'index should link to graph index');
-  assert(indexHtml.includes('/evals.json'), 'index should link to evals index');
-  assert(indexHtml.includes('/mcp.json'), 'index should link to MCP profile');
-  assert(indexHtml.includes('/search-index.json'), 'index should link to search index');
-  assert(indexHtml.includes('/api/plan?q='), 'index should link to plan API example');
-  assert(indexHtml.includes('/api/evidence?q='), 'index should link to evidence API example');
-  assert(indexHtml.includes('/api/context?q='), 'index should link to context API example');
-  assert(indexHtml.includes('/api/resolve?ref='), 'index should link to resolve API example');
-  assert(indexHtml.includes('/api/resolve-batch?ref='), 'index should link to resolve batch API example');
-  assert(indexHtml.includes('/api/article?slug='), 'index should link to article API example');
-  assert(indexHtml.includes('/api/cite?id='), 'index should link to citation API example');
-  assert(indexHtml.includes('/api/claim?id='), 'index should link to claim API example');
-  assert(indexHtml.includes('/api/source?url='), 'index should link to source API example');
+  assertEq(rootAlias, rootIndex, 'root slash alias should return the same machine JSON as /index.json');
   assert(llmsTxt.includes('Agent Profile'), 'llms.txt should include agent profile');
   assert(llmsTxt.includes('OpenAPI'), 'llms.txt should include OpenAPI contract');
   assert(llmsTxt.includes('API Index'), 'llms.txt should include API index');
@@ -263,8 +235,6 @@ test('public entrypoints exclude draft articles', () => {
   assert(apiAccessHtml.includes('/api/cite?id={claim_id}'), 'api access page should list cite');
   assert(apiAccessHtml.includes('/provenance.json'), 'api access page should include provenance verification');
   assert(!/stripe|checkout|subscribe now|pricing table/i.test(apiAccessHtml), 'api access page should not include paid checkout language');
-  assert(indexHtml.includes('Public Fixture'), 'index should include public article');
-  assert(!indexHtml.includes('Draft Fixture</a></span>'), 'index public list should exclude draft article');
   assert(llmsTxt.includes('Public Fixture'), 'llms.txt should include public article');
   assert(!llmsTxt.includes('Draft Fixture'), 'llms.txt should exclude draft article');
   assert(sitemap.includes('/public-fixture/'), 'sitemap should include public article');
@@ -310,6 +280,7 @@ test('agent profile describes the machine contract', () => {
   assertEq(agent.endpoints.mcp.url, 'https://anchorfact.org/mcp.json');
   assertEq(agent.endpoints.openapi.url, 'https://anchorfact.org/openapi.json');
   assertEq(agent.endpoints.root_index.url, 'https://anchorfact.org/index.json');
+  assertEq(agent.endpoints.root_alias.url, 'https://anchorfact.org/');
   assertEq(agent.endpoints.api_index.path, '/api');
   assertEq(agent.endpoints.api_access.path, '/api-access/');
   assertEq(agent.endpoints.artifact_summary.url, 'https://anchorfact.org/artifact-summary.json');
@@ -334,6 +305,7 @@ test('agent profile describes the machine contract', () => {
   assertEq(agent.quick_start.primary_api_conversion.target_ratio, 0.2);
   assert(agent.quick_start.primary_api_conversion.discovery_entrypoints.includes('/llms.txt'), 'agent profile should identify AI discovery entrypoints');
   assert(agent.quick_start.primary_api_conversion.discovery_entrypoints.includes('/index.json'), 'agent profile should identify root machine index discovery');
+  assert(agent.quick_start.primary_api_conversion.discovery_entrypoints.includes('/'), 'agent profile should identify root slash machine alias discovery');
   assert(agent.quick_start.primary_api_conversion.primary_entrypoints.includes('/api/evidence'), 'agent profile should identify primary API entrypoints');
   assert(agent.quick_start.primary_api_conversion.next_call_after_discovery.includes('/api/context'), 'agent profile should convert discovery to context');
   assert(agent.quick_start.example_calls.some(example => example.path === '/api/context?q=gaussian%20splatting&limit=3&format=markdown'), 'agent profile should expose an executable default context example');
@@ -394,6 +366,7 @@ test('openapi.json describes the static AI contract', () => {
   assertEq(openapi['x-provenance-url'], 'https://anchorfact.org/provenance.json');
   assertEq(openapi.servers[0].url, 'https://anchorfact.org');
   assert(openapi.paths['/agent.json'], 'OpenAPI should describe agent profile');
+  assert(openapi.paths['/'], 'OpenAPI should describe root slash machine index alias');
   assert(openapi.paths['/index.json'], 'OpenAPI should describe root machine index');
   assert(openapi.paths['/artifact-summary.json'], 'OpenAPI should describe artifact summary');
   assert(openapi.paths['/api-readiness.json'], 'OpenAPI should describe API readiness');
@@ -958,6 +931,7 @@ test('provenance.sig is generated when a signing key is configured', () => {
 test('_headers is generated for Cloudflare Pages static output', () => {
   const headers = readFileSync(join(distDir, '_headers'), 'utf-8');
   const revalidatedMachineArtifacts = [
+    '/',
     '/index.json',
     '/agent.json',
     '/.well-known/anchorfact.json',
@@ -982,6 +956,7 @@ test('_headers is generated for Cloudflare Pages static output', () => {
     '/provenance.sig'
   ];
   assert(headers.includes('/*\n  X-Content-Type-Options: nosniff'), '_headers should include global security headers');
+  assert(headers.includes('/\n  Access-Control-Allow-Origin: *'), '_headers should expose root slash machine JSON CORS');
   assert(headers.includes('/index.json\n  Access-Control-Allow-Origin: *'), '_headers should expose root machine index CORS');
   assert(headers.includes('/agent.json\n  Access-Control-Allow-Origin: *'), '_headers should expose agent profile CORS');
   assert(headers.includes('/.well-known/anchorfact.json\n  Access-Control-Allow-Origin: *'), '_headers should expose well-known agent profile CORS');
