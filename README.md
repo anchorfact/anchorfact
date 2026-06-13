@@ -184,7 +184,7 @@ Only public articles contribute publishable facts to `/claims.json`.
 | `/graph.json` | Signed public graph of topic, article, claim, and source relationships. |
 | `/evals.json` | Executable golden integration checks consumed by `npm run evals:prod` and the production integrity monitor. |
 | `/mcp.json` | Signed local MCP installation manifest and tool metadata. |
-| `/api` | Compact live API discovery endpoint for agents that need the smallest endpoint index before fetching OpenAPI. |
+| `/api` | Compact live API discovery endpoint for agents that need the smallest endpoint index, readiness gate policy, and call order before fetching OpenAPI. |
 | `/api-access/` | Machine-readable free API access policy with recommended call order, limits, and provenance verification steps. |
 | `/api/plan?q=...` | Read-only Cloudflare Pages Function that tells AI agents whether AnchorFact coverage is plausible, which endpoint to call next, or when to fall back to external sources. |
 | `/api/evidence?q=...` | Read-only Cloudflare Pages Function for one-call public evidence packs with search hits, article summaries, claims, sources, and citation exports. Add `format=markdown` for answer-ready text context. |

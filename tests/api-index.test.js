@@ -31,6 +31,11 @@ test('buildApiIndex publishes the machine API discovery contract', () => {
   assert(payload.ai_adoption_guidance.discovery_entrypoints.includes('/llms.txt'), 'AI adoption guidance should name crawler discovery entrypoints');
   assert(payload.ai_adoption_guidance.primary_api_entrypoints.includes('/api/evidence'), 'AI adoption guidance should name primary API entrypoints');
   assert(payload.ai_adoption_guidance.next_call_after_discovery.includes('/api/context'), 'AI adoption guidance should convert discovery to context');
+  assertEq(payload.readiness_guidance.status_endpoint, '/api-readiness.json');
+  assertEq(payload.readiness_guidance.default_access_until_ready, 'free_no_key_read_only');
+  assert(payload.readiness_guidance.subscription_ready_requires.includes('production_integrity_14_day'), 'readiness guidance should name production window gate');
+  assert(payload.readiness_guidance.subscription_ready_requires.includes('design_partners'), 'readiness guidance should name manual design partner gate');
+  assertEq(payload.readiness_guidance.report_only_until_gates_met, true);
   assert(payload.recommended_sequence[0].includes('/api/context'), 'sequence should start with default context guidance');
   assert(payload.recommended_sequence[1].includes('/api/evidence'), 'sequence should put evidence second');
   assert(payload.recommended_sequence[2].includes('/api/plan') && payload.recommended_sequence[2].includes('only when coverage is uncertain'), 'sequence should reserve planning for uncertainty');
@@ -79,6 +84,7 @@ test('Pages Function returns CORS JSON for /api discovery', async () => {
   assertEq(response.headers.get('Access-Control-Allow-Origin'), '*');
   assertEq(response.headers.get('Cache-Control'), 'public, max-age=300');
   assertEq(payload.schema_version, 'anchorfact.api-index.v1');
+  assertEq(payload.readiness_guidance.status_endpoint, '/api-readiness.json');
   assert(payload.endpoints.some(endpoint => endpoint.path === '/api/evidence'), 'payload should include evidence API');
 });
 

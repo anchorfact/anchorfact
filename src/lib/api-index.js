@@ -62,6 +62,19 @@ export function buildApiIndex({
       crawler_next_step: 'After reading /robots.txt, /llms.txt, /agent.json, or /api, call /api/context for a real user question instead of downloading large static artifacts.',
       measurement_signal: 'A ratio below 0.2 means discovery is not yet converting into answer assembly or citation retrieval.'
     },
+    readiness_guidance: {
+      status_endpoint: '/api-readiness.json',
+      report_only_until_gates_met: true,
+      default_access_until_ready: 'free_no_key_read_only',
+      subscription_ready_requires: [
+        'production_integrity_14_day',
+        'public_audit_14_day',
+        'core_query_context_ratio',
+        'ai_primary_discovery_ratio_7_day',
+        'design_partners'
+      ],
+      start_paid_beta_only_after: 'All automated readiness windows pass and external design partner plus paid-intent signals are real.'
+    },
     recommended_sequence: [
       'Call /api/context?q={query} first for normal answer assembly, answer_policy, citation-ready claims, content health, fallback guidance, and evidence packs.',
       'Call /api/evidence?q={query} when you need answer-ready evidence packs with mapped claims and sources.',

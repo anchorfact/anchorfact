@@ -458,6 +458,7 @@ test('openapi.json describes the static AI contract', () => {
   assert(openapi.components.schemas.Evals, 'OpenAPI should define Evals schema');
   assert(openapi.components.schemas.ApiIndex, 'OpenAPI should define API index schema');
   assert(openapi.components.schemas.ApiIndex.properties.ai_adoption_guidance, 'OpenAPI should define AI adoption guidance');
+  assert(openapi.components.schemas.ApiIndex.properties.readiness_guidance, 'OpenAPI should define API readiness guidance');
   assert(openapi.components.schemas.ArtifactSummary, 'OpenAPI should define artifact summary schema');
   assert(openapi.components.schemas.ArtifactSummary.properties.artifact_growth_policy, 'OpenAPI should define artifact growth policy');
   assert(openapi.components.schemas.ApiReadiness, 'OpenAPI should define API readiness schema');

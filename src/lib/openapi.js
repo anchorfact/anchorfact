@@ -589,6 +589,17 @@ export function buildOpenApiContract({
         ApiIndex: schemaVersioned('API index', API_INDEX_SCHEMA_VERSION, {
           read_only: { type: 'boolean' },
           ai_adoption_guidance: { type: 'object' },
+          readiness_guidance: {
+            type: 'object',
+            properties: {
+              status_endpoint: { const: '/api-readiness.json' },
+              report_only_until_gates_met: { type: 'boolean' },
+              default_access_until_ready: { type: 'string' },
+              subscription_ready_requires: { type: 'array', items: { type: 'string' } },
+              start_paid_beta_only_after: { type: 'string' }
+            },
+            additionalProperties: true
+          },
           recommended_sequence: { type: 'array', items: { type: 'string' } },
           primary_entrypoints: { type: 'array', items: { type: 'object' } },
           endpoints: { type: 'array', items: { type: 'object' } },
