@@ -1174,6 +1174,15 @@ export function textHygieneFailures(relativePath, text) {
     }
   }
 
+  if (relativePath === 'README.md') {
+    if (text.includes('The smoke test checks') && !/`\/404\.html`/.test(text)) {
+      failures.push('README.md smoke route documentation is missing /404.html.');
+    }
+    if (text.includes('## Build Outputs') && !/\|\s*`\/404\.html`\s*\|/.test(text)) {
+      failures.push('README.md build outputs table is missing /404.html.');
+    }
+  }
+
   return failures;
 }
 

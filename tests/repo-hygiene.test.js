@@ -304,5 +304,33 @@ test('textHygieneFailures catches stale AI benchmark case counts', () => {
   assert(failures.some(failure => failure.includes('stale launch metrics')), 'stale benchmark case count should fail hygiene');
 });
 
+test('textHygieneFailures catches README docs missing the machine JSON 404 artifact', () => {
+  const failures = textHygieneFailures(
+    'README.md',
+    [
+      'The smoke test checks `/index.json`, `/provenance.json`, and `/dashboard.html` against production.',
+      '## Build Outputs',
+      '| Output | Purpose |',
+      '| `/provenance.json` | Build identity. |'
+    ].join('\n')
+  );
+  assert(failures.some(failure => failure.includes('smoke route documentation')), 'README smoke docs should mention /404.html');
+  assert(failures.some(failure => failure.includes('build outputs table')), 'README build outputs should mention /404.html');
+});
+
+test('textHygieneFailures accepts README docs covering the machine JSON 404 artifact', () => {
+  const failures = textHygieneFailures(
+    'README.md',
+    [
+      'The smoke test checks `/index.json`, `/404.html`, `/provenance.json`, and `/dashboard.html` against production.',
+      '## Build Outputs',
+      '| Output | Purpose |',
+      '| `/404.html` | Machine-readable JSON 404 fallback. |',
+      '| `/provenance.json` | Build identity. |'
+    ].join('\n')
+  );
+  assertEq(failures, []);
+});
+
 console.log(`\n${passed} passed, ${failed} failed`);
 process.exit(failed > 0 ? 1 : 0);
