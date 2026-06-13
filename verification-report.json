@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-13T16:12:06.620Z",
+    "generated": "2026-06-13T16:18:31.218Z",
     "total_articles": 1628,
     "total_with_errors": 0,
     "average_sources_per_article": "2.6",
-    "overall_verification_rate": "92.9%",
-    "elapsed_ms": 1792,
-    "elapsed_sec": "1.8",
+    "overall_verification_rate": "93.0%",
+    "elapsed_ms": 1075,
+    "elapsed_sec": "1.1",
     "concurrency": 3
   },
   "articles": [
@@ -86113,56 +86113,68 @@
       "sources_unreachable": 0
     },
     {
-      "file": "content\\computer-science\\ddos-attack.md",
+      "file": "content/computer-science/ddos-attack.md",
       "article_id": "kb-2026-00118",
       "generation_method": "ai_structured",
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "ACM Digital Library",
-          "source_type": "repository",
+          "source_title": "Understanding Denial-of-Service Attacks",
+          "source_type": "government_guidance",
           "results": [
             {
               "method": "url",
-              "identifier": "https://dl.acm.org/",
-              "verified": false,
-              "metadata": {},
-              "match": false
+              "identifier": "https://www.cisa.gov/news-events/news/understanding-denial-service-attacks",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.cisa.gov/news-events/news/understanding-denial-service-attacks",
+                "http_method": "HEAD"
+              },
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Network Security: Private Communication in a Public World (4th Edition, 2025)",
-          "source_type": "book",
+          "source_title": "How AWS Shield and Shield Advanced work",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.pearson.com/netsec/",
-              "verified": false,
-              "metadata": {},
-              "match": false
+              "identifier": "https://docs.aws.amazon.com/waf/latest/developerguide/ddos-overview.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.aws.amazon.com/waf/latest/developerguide/ddos-overview.html",
+                "http_method": "HEAD"
+              },
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "DDoS Detection and Mitigation: A 2025 Comprehensive Survey",
-          "source_type": "survey_paper",
+          "source_title": "Automating application layer DDoS mitigation with Shield Advanced",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://doi.org/10.1145/acmcs.2025.ddos",
-              "verified": false,
-              "metadata": {},
-              "match": false
+              "identifier": "https://docs.aws.amazon.com/waf/latest/developerguide/ddos-automatic-app-layer-response.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.aws.amazon.com/waf/latest/developerguide/ddos-automatic-app-layer-response.html",
+                "http_method": "HEAD"
+              },
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 3
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\decorator-pattern.md",

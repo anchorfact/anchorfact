@@ -4,9 +4,9 @@ title: DDoS Attack
 schema_type: TechArticle
 category: computer-science
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+confidence: medium
+last_verified: '2026-06-14'
+created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -15,90 +15,96 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-computer-science-001
+  - id: fact-computer-science-ddos-001
     statement: >-
-      A Distributed Denial-of-Service (DDoS) attack overwhelms a target with traffic from multiple sources, making it unavailable to legitimate users. Types: volumetric (saturate bandwidth), protocol
-      (exploit TCP/SYN, DNS amplification), application-layer (HTTP flood, Slowloris). Defense: CDN scrubbing (Cloudflare, Akamai), rate limiting, anycast distrib
-    source_title: ACM Digital Library
-    source_url: https://dl.acm.org/
+      CISA describes a denial-of-service attack as a condition where legitimate users
+      cannot access information systems, devices, or network resources because malicious
+      traffic or activity makes the target unable to respond or causes it to crash.
+    source_title: Understanding Denial-of-Service Attacks
+    source_url: https://www.cisa.gov/news-events/news/understanding-denial-service-attacks
     confidence: medium
-  - id: fact-computer-science-002
-    statement: Cloud providers (AWS Shield, Google Cloud Armor) provide built-in DDoS protection.
-    source_title: ACM Digital Library
-    source_url: https://dl.acm.org/
+  - id: fact-computer-science-ddos-002
+    statement: >-
+      CISA describes a distributed denial-of-service attack as multiple machines operating
+      together against one target, often through a botnet of hijacked internet-connected
+      devices.
+    source_title: Understanding Denial-of-Service Attacks
+    source_url: https://www.cisa.gov/news-events/news/understanding-denial-service-attacks
     confidence: medium
-completeness: 0.88
+  - id: fact-computer-science-ddos-003
+    statement: >-
+      AWS Shield documentation groups detected DDoS attacks into network volumetric
+      attacks at layer 3, network protocol attacks at layer 4, and application layer
+      attacks at layer 7.
+    source_title: How AWS Shield and Shield Advanced work
+    source_url: https://docs.aws.amazon.com/waf/latest/developerguide/ddos-overview.html
+    confidence: medium
+  - id: fact-computer-science-ddos-004
+    statement: >-
+      AWS Shield Advanced documentation says automatic application-layer DDoS mitigation
+      can count or block web requests that are part of an attack by managing mitigation
+      rules in an associated AWS WAF web ACL.
+    source_title: Automating application layer DDoS mitigation with Shield Advanced
+    source_url: https://docs.aws.amazon.com/waf/latest/developerguide/ddos-automatic-app-layer-response.html
+    confidence: medium
+completeness: 0.82
 known_gaps:
-  - Sources reconstructed during quality audit; primary source details were corrupted during batch generation
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
+  - >-
+    Coverage is intentionally defensive and conceptual; it does not enumerate exploit
+    payloads, botnet operation, reflector abuse, or provider-specific configuration steps.
+disputed_statements: []
 primary_sources:
-  - title: ACM Digital Library
-    type: repository
+  - title: Understanding Denial-of-Service Attacks
+    type: government_guidance
     year: 2026
-    url: https://dl.acm.org/
-    institution: ACM
-  - title: "Network Security: Private Communication in a Public World (4th Edition, 2025)"
-    type: book
-    year: 2025
-    authors:
-      - Kaufman C.
-      - Perlman R.
-      - Speciner M.
-    institution: Pearson
-    url: https://www.pearson.com/netsec/
-  - title: "DDoS Detection and Mitigation: A 2025 Comprehensive Survey"
-    type: survey_paper
-    year: 2025
-    authors:
-      - multiple
-    institution: ACM Computing Surveys
-    url: https://doi.org/10.1145/acmcs.2025.ddos
-secondary_sources:
-  - title: ACM Digital Library
-    type: repository
+    url: https://www.cisa.gov/news-events/news/understanding-denial-service-attacks
+    institution: Cybersecurity and Infrastructure Security Agency
+  - title: How AWS Shield and Shield Advanced work
+    type: documentation
     year: 2026
-    url: https://dl.acm.org/
-    institution: ACM
-  - title: The C Programming Language (K&R, 2nd Ed)
-    type: textbook
-    year: 1988
-    url: https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html
-    institution: Prentice Hall
-  - title: Structure and Interpretation of Computer Programs (SICP)
-    type: textbook
-    year: 1996
-    url: https://mitpress.mit.edu/sites/default/files/sicp/
-    institution: MIT Press
-  - title: "DDoS Attack Detection and Mitigation: A 2025 Comprehensive Survey"
-    type: survey_paper
-    year: 2025
-    authors:
-      - multiple
-    institution: ACM Computing Surveys
-    url: https://doi.org/10.1145/acmcs.2025.ddos
-  - title: "Network Security in the Cloud Era: Threats, Detection, and Response (2025)"
-    type: article
-    year: 2025
-    authors:
-      - multiple
-    institution: IEEE Communications Surveys
-    url: https://doi.org/10.1109/comst.2025.netsec
+    url: https://docs.aws.amazon.com/waf/latest/developerguide/ddos-overview.html
+    institution: Amazon Web Services
+  - title: Automating application layer DDoS mitigation with Shield Advanced
+    type: documentation
+    year: 2026
+    url: https://docs.aws.amazon.com/waf/latest/developerguide/ddos-automatic-app-layer-response.html
+    institution: Amazon Web Services
+secondary_sources: []
+updated: '2026-06-14'
 ---
+
 ## TL;DR
 
-A Distributed Denial-of-Service (DDoS) attack overwhelms a target with traffic from multiple sources, making it unavailable to legitimate users. Types: volumetric (saturate bandwidth), protocol (exploit TCP/SYN, DNS amplification), application-layer (HTTP flood, Slowloris). Defense: CDN scrubbing (Cloudflare, Akamai), rate limiting, anycast distribution.
+A DDoS attack is an availability attack in which many machines direct traffic or requests
+at one target so legitimate users cannot use the service. Defensive analysis normally
+separates network volumetric, network protocol, and application-layer attacks, then routes
+mitigation through traffic filtering, provider protection services, web ACL rules, and
+recovery planning.
 
 ## Core Explanation
 
-SYN flood: attacker sends TCP SYN packets but never completes handshake, exhausting server's connection table. DNS amplification: attacker spoofs victim's IP, sends small queries to open DNS resolvers that reply with large responses. Mitigation: SYN cookies, connection rate limiting, IP reputation filtering. Cloud providers (AWS Shield, Google Cloud Armor) provide built-in DDoS protection.
+The repaired article narrows the topic to source-backed defensive facts. CISA frames a DoS
+condition as loss of access for legitimate users when malicious activity floods or crashes
+a target. CISA distinguishes DDoS by its distributed source: multiple machines, often
+coordinated through hijacked internet-connected devices, operate together against one
+target.
+
+AWS Shield documentation provides the layer-based taxonomy used here. Infrastructure attacks
+include network volumetric attacks at layer 3 and protocol attacks at layer 4, while
+application-layer attacks operate at layer 7 by flooding valid-looking application requests.
+For mitigation, AWS Shield Advanced can manage AWS WAF web ACL rules that count or block web
+requests identified as part of application-layer DDoS traffic. CISA also recommends
+preparing recovery plans and using DoS protection services that detect abnormal flows and
+filter traffic before clean traffic reaches the protected network.
 
 ## Further Reading
 
--
+- [Understanding Denial-of-Service Attacks](https://www.cisa.gov/news-events/news/understanding-denial-service-attacks)
+- [How AWS Shield and Shield Advanced work](https://docs.aws.amazon.com/waf/latest/developerguide/ddos-overview.html)
+- [Automating application layer DDoS mitigation with Shield Advanced](https://docs.aws.amazon.com/waf/latest/developerguide/ddos-automatic-app-layer-response.html)
 
 ## Related Articles
 
-- [AI for Network Security: Intelligent Firewalls, DDoS Mitigation, and Zero-Trust Architectures](../../ai/ai-for-network-security.md)
+- [Cybersecurity: Threats, Cryptography, and Defense](cybersecurity-fundamentals.md)
+- [Firewall](firewall.md)
+- [Content Delivery Network (CDN)](content-delivery-network-cdn.md)
