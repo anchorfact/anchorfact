@@ -1,4 +1,4 @@
-export const API_READINESS_SCHEMA_VERSION = 'anchorfact.api-readiness.v1';
+export { API_READINESS_SCHEMA_VERSION } from './build-metadata.js';
 
 export function renderApiReadinessMarkdown(report) {
   const lines = [];

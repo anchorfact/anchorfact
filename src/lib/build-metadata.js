@@ -10,6 +10,7 @@ export const AGENT_PROFILE_SCHEMA_VERSION = 'anchorfact.agent.v1';
 export const SOURCES_SCHEMA_VERSION = 'anchorfact.sources.v1';
 export const SEARCH_INDEX_SCHEMA_VERSION = 'anchorfact.search-index.v1';
 export const API_INDEX_SCHEMA_VERSION = 'anchorfact.api-index.v1';
+export const API_READINESS_SCHEMA_VERSION = 'anchorfact.api-readiness.v1';
 export const SEARCH_API_SCHEMA_VERSION = 'anchorfact.search-api.v1';
 export const PLAN_API_SCHEMA_VERSION = 'anchorfact.plan-api.v1';
 export const EVIDENCE_API_SCHEMA_VERSION = 'anchorfact.evidence-api.v1';
@@ -158,6 +159,7 @@ export function buildProvenance({ manifest, claimsPayload, distDir, generated, b
       mcp_json: artifactInfo(distDir, 'mcp.json'),
       artifact_summary_json: artifactInfo(distDir, 'artifact-summary.json'),
       artifact_shards_json: artifactInfo(distDir, 'artifact-shards.json'),
+      api_readiness_json: artifactInfo(distDir, 'api-readiness.json'),
       search_index_json: artifactInfo(distDir, 'search-index.json'),
       sources_json: artifactInfo(distDir, 'sources.json'),
       llms_txt: artifactInfo(distDir, 'llms.txt')

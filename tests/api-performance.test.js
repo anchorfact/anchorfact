@@ -115,6 +115,9 @@ test('default artifact budget includes versioned shard registry headroom', () =>
   const shardBudget = DEFAULT_ARTIFACT_SIZE_BUDGETS.find(item => item.path === 'artifact-shards.json');
   assert(shardBudget, 'default artifact budget should include artifact-shards.json');
   assertEq(shardBudget.max_bytes, 250000);
+  const readinessBudget = DEFAULT_ARTIFACT_SIZE_BUDGETS.find(item => item.path === 'api-readiness.json');
+  assert(readinessBudget, 'default artifact budget should include api-readiness.json');
+  assertEq(readinessBudget.max_bytes, 1200000);
 });
 
 test('artifact size budget fails an oversized fixture without affecting case reporting', () => {

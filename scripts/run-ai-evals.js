@@ -212,6 +212,21 @@ function evaluateJsonExpected(payload, expected, failures) {
     const passGate = String(payload?.query_benchmark?.pass_gate || '');
     check(passGate.includes(expected.query_benchmark_pass_gate_contains), failures, `query benchmark pass_gate should include ${expected.query_benchmark_pass_gate_contains}`);
   }
+  if (expected.report_only !== undefined) {
+    check(payload?.report_only === expected.report_only, failures, `report_only expected ${expected.report_only}`);
+  }
+  if (expected.subscription_ready !== undefined) {
+    check(payload?.subscription_ready === expected.subscription_ready, failures, `subscription_ready expected ${expected.subscription_ready}`);
+  }
+  if (Array.isArray(expected.status_in)) {
+    check(expected.status_in.includes(payload?.status), failures, `status expected one of ${expected.status_in.join(', ')}, got ${payload?.status || '(missing)'}`);
+  }
+  if (Array.isArray(expected.readiness_gate_ids)) {
+    const gateIds = new Set((payload?.readiness_gates || []).map(gate => gate?.id));
+    for (const gateId of expected.readiness_gate_ids) {
+      check(gateIds.has(gateId), failures, `readiness_gates should include ${gateId}`);
+    }
+  }
   if (expected.min_content_health_public_articles !== undefined) {
     const count = payload?.content_health?.snapshot?.public_articles ?? 0;
     check(count >= expected.min_content_health_public_articles, failures, `context content health public article count expected at least ${expected.min_content_health_public_articles}, got ${count}`);

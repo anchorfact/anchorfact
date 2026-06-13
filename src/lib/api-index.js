@@ -165,6 +165,7 @@ export function buildApiIndex({
       staticFallback(site, '/openapi.json', 'Full OpenAPI 3.1 machine contract.'),
       staticFallback(site, '/artifact-summary.json', 'Lightweight size, purpose, cache posture, and recommended alternatives for large static machine artifacts.'),
       staticFallback(site, '/artifact-shards.json', 'Signed registry of versioned shards for large static artifacts.'),
+      staticFallback(site, '/api-readiness.json', 'Subscription-readiness gates, core corpus scorecard, and API citation readiness report.'),
       staticFallback(site, '/capabilities.json', 'Task-to-endpoint routing guide.'),
       staticFallback(site, '/content-health.json', 'Signed corpus health summary for AI trust decisions.'),
       staticFallback(site, '/coverage.json', 'Coverage and limits guide for deciding when to fall back to external primary sources.'),

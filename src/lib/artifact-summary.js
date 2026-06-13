@@ -27,6 +27,12 @@ export const MAJOR_MACHINE_ARTIFACTS = [
     recommended_alternative: '/api/context?q={query}'
   },
   {
+    path: '/api-readiness.json',
+    category: 'readiness',
+    use_when: 'Inspect subscription-readiness gates, core corpus coverage, and API citation readiness.',
+    recommended_alternative: '/api/context?q={query}'
+  },
+  {
     path: '/manifest.json',
     category: 'catalog',
     use_when: 'Inspect every public and draft article record with verification metadata.',
@@ -143,7 +149,8 @@ export const ARTIFACT_GROWTH_BUDGETS = {
   '/openapi.json': 100000,
   '/agent.json': 40000,
   '/artifact-summary.json': 60000,
-  '/artifact-shards.json': 250000
+  '/artifact-shards.json': 250000,
+  '/api-readiness.json': 1200000
 };
 
 const NEAR_BUDGET_HEADROOM_RATIO = 0.05;

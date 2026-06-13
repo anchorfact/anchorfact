@@ -114,6 +114,7 @@ test('public machine entrypoints exclude drafts', () => {
   const graph = JSON.parse(readFileSync(join(distDir, 'graph.json'), 'utf-8'));
   const evals = JSON.parse(readFileSync(join(distDir, 'evals.json'), 'utf-8'));
   const mcp = JSON.parse(readFileSync(join(distDir, 'mcp.json'), 'utf-8'));
+  const apiReadiness = JSON.parse(readFileSync(join(distDir, 'api-readiness.json'), 'utf-8'));
   const search = JSON.parse(readFileSync(join(distDir, 'search-index.json'), 'utf-8'));
   const sources = JSON.parse(readFileSync(join(distDir, 'sources.json'), 'utf-8'));
   const llms = readFileSync(join(distDir, 'llms.txt'), 'utf-8');
@@ -140,6 +141,7 @@ test('public machine entrypoints exclude drafts', () => {
   assertEq(agent.endpoints.graph.url, 'https://anchorfact.org/graph.json');
   assertEq(agent.endpoints.evals.url, 'https://anchorfact.org/evals.json');
   assertEq(agent.endpoints.mcp.url, 'https://anchorfact.org/mcp.json');
+  assertEq(agent.endpoints.api_readiness.url, 'https://anchorfact.org/api-readiness.json');
   assertEq(agent.endpoints.search_index.url, 'https://anchorfact.org/search-index.json');
   assertEq(agent.endpoints.sources.url, 'https://anchorfact.org/sources.json');
   assertEq(agent.endpoints.article_jsonld_template.path_template, '/{canonical_slug}/index.json');
@@ -177,6 +179,7 @@ test('public machine entrypoints exclude drafts', () => {
   assert(openapi.paths['/graph.json'], 'OpenAPI should expose graph endpoint');
   assert(openapi.paths['/evals.json'], 'OpenAPI should expose evals endpoint');
   assert(openapi.paths['/mcp.json'], 'OpenAPI should expose MCP endpoint');
+  assert(openapi.paths['/api-readiness.json'], 'OpenAPI should expose API readiness endpoint');
   assert(openapi.paths['/search-index.json'], 'OpenAPI should expose search index endpoint');
   assertEq(topics.topic_count, 1);
   assert(topics.topics.some(topic => topic.id === 'ai'), 'topics index should include ai topic');
@@ -185,7 +188,10 @@ test('public machine entrypoints exclude drafts', () => {
   assert(examples.examples.some(example => example.id === 'one_call_evidence_pack'), 'examples index should include evidence pack workflow');
   assert(examples.examples.some(example => example.id === 'mixed_reference_resolution'), 'examples index should include mixed reference workflow');
   assert(examples.examples.some(example => example.id === 'static_fallback'), 'examples index should include static fallback workflow');
-  assertEq(evals.eval_count, 53);
+  assertEq(apiReadiness.schema_version, 'anchorfact.api-readiness.v1');
+  assertEq(apiReadiness.report_only, true);
+  assertEq(apiReadiness.subscription_ready, false);
+  assertEq(evals.eval_count, 54);
   assert(evals.evals.some(evalCase => evalCase.id === 'llms_txt_primary_entrypoints'), 'evals index should include llms.txt discovery contract check');
   assert(evals.evals.some(evalCase => evalCase.id === 'robots_txt_ai_entrypoints'), 'evals index should include robots.txt AI hint contract check');
   assert(evals.evals.some(evalCase => evalCase.id === 'openapi_context_contract'), 'evals index should include OpenAPI context contract check');
@@ -220,6 +226,7 @@ test('public machine entrypoints exclude drafts', () => {
   assert(evals.evals.some(evalCase => evalCase.id === 'citation_export'), 'evals index should include citation API check');
   assert(evals.evals.some(evalCase => evalCase.id === 'content_health_summary'), 'evals index should include content health check');
   assert(evals.evals.some(evalCase => evalCase.id === 'coverage_query_benchmark_catalog'), 'evals index should include query benchmark catalog check');
+  assert(evals.evals.some(evalCase => evalCase.id === 'api_readiness_summary'), 'evals index should include API readiness check');
   assert(evals.evals.some(evalCase => evalCase.id === 'mcp_tool_catalog'), 'evals index should include MCP tool catalog check');
   assert(evals.evals.some(evalCase => evalCase.id === 'signed_provenance_static_artifacts'), 'evals index should include provenance artifact check');
   assertEq(mcp.schema_version, 'anchorfact.mcp.v1');

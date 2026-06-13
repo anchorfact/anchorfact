@@ -1,5 +1,6 @@
 import {
   API_INDEX_SCHEMA_VERSION,
+  API_READINESS_SCHEMA_VERSION,
   CITE_API_SCHEMA_VERSION,
   CLAIM_API_SCHEMA_VERSION,
   CONTEXT_API_SCHEMA_VERSION,
@@ -253,7 +254,8 @@ export function buildEvalsIndex({
           '/api/evidence?q={query}',
           '/api/plan?q={query}',
           '/artifact-summary.json',
-          '/artifact-shards.json'
+          '/artifact-shards.json',
+          '/api-readiness.json'
         ]
       }
     },
@@ -268,7 +270,8 @@ export function buildEvalsIndex({
           'AI-Context',
           'AI-Evidence',
           'Artifact-Summary',
-          'Artifact-Shards'
+          'Artifact-Shards',
+          'API-Readiness'
         ]
       }
     },
@@ -540,6 +543,29 @@ export function buildEvalsIndex({
       }
     },
     {
+      id: 'api_readiness_summary',
+      intent: 'Confirm the signed readiness artifact exposes subscription gates and API citation scorecards without becoming a build blocker.',
+      call: call('/api-readiness.json', site),
+      expected: {
+        status: 200,
+        content_type: 'application/json',
+        schema_version: API_READINESS_SCHEMA_VERSION,
+        report_only: true,
+        subscription_ready: false,
+        status_in: [
+          'building_foundation',
+          'foundation_ready_pending_14_day_and_partner_signals'
+        ],
+        readiness_gate_ids: [
+          'production_integrity_14_day',
+          'public_audit_14_day',
+          'core_query_context_ratio',
+          'ai_primary_discovery_ratio_7_day',
+          'design_partners'
+        ]
+      }
+    },
+    {
       id: 'mcp_tool_catalog',
       intent: 'Confirm the signed MCP profile declares local tools needed for planning, prompt context, search, retrieval, resolution, and citation.',
       call: call('/mcp.json', site),
@@ -583,6 +609,7 @@ export function buildEvalsIndex({
           'mcp_json',
           'artifact_summary_json',
           'artifact_shards_json',
+          'api_readiness_json',
           'search_index_json',
           'sources_json',
           'llms_txt'

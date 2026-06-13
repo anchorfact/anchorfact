@@ -793,6 +793,7 @@ test('API scorecard checks context, evidence, cite, and unsupported fallback wit
     generatedAt: '2026-06-01T00:00:00.000Z'
   });
   assertEq(report.schema_version, API_READINESS_SCHEMA_VERSION);
+  assertEq(report.provenance_url, 'https://anchorfact.org/provenance.json');
   assertEq(report.report_only, true);
   assertEq(report.build_should_fail, false);
   assertEq(report.status, 'building_foundation');

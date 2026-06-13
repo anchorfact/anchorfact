@@ -29,7 +29,8 @@ export const DEFAULT_ARTIFACT_SIZE_BUDGETS = [
   { path: 'openapi.json', baseline_bytes: 61580, max_bytes: 100000, purpose: 'machine contract schema' },
   { path: 'agent.json', baseline_bytes: 17157, max_bytes: 40000, purpose: 'agent discovery profile' },
   { path: 'artifact-summary.json', baseline_bytes: 0, max_bytes: 60000, purpose: 'artifact size discovery layer' },
-  { path: 'artifact-shards.json', baseline_bytes: 0, max_bytes: 250000, purpose: 'versioned large artifact shard registry' }
+  { path: 'artifact-shards.json', baseline_bytes: 0, max_bytes: 250000, purpose: 'versioned large artifact shard registry' },
+  { path: 'api-readiness.json', baseline_bytes: 0, max_bytes: 1200000, purpose: 'machine readiness gates and API scorecard' }
 ];
 
 export const DEFAULT_CASES = [

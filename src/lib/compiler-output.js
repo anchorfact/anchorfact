@@ -3,6 +3,7 @@ import { join } from 'path';
 import { buildAgentProfile } from './agent-profile.js';
 import { buildArtifactSummary } from './artifact-summary.js';
 import { writeArtifactShardRegistry } from './artifact-shards.js';
+import { buildApiReadinessReport } from './api-readiness.js';
 import { publicClaims } from './claims.js';
 import { buildOpenApiContract } from './openapi.js';
 import { buildSearchIndex } from './search-index.js';
@@ -114,6 +115,7 @@ function writeRootIndex(distDir, results, publicResults, draftResults, claims) {
       <p>
         <a href="/artifact-summary.json">Artifact Summary</a> &middot;
         <a href="/artifact-shards.json">Artifact Shards</a> &middot;
+        <a href="/api-readiness.json">API Readiness</a> &middot;
         <a href="/openapi.json">OpenAPI</a> &middot;
         <a href="/capabilities.json">Capabilities</a> &middot;
         <a href="/api/plan?q=gaussian">Plan API</a> &middot;
@@ -247,6 +249,7 @@ function writeApiAccessPage(distDir, publicResults, draftResults, claims) {
     <a href="/examples.json">examples.json</a> &middot;
     <a href="/mcp.json">mcp.json</a> &middot;
     <a href="/artifact-summary.json">artifact-summary.json</a> &middot;
+    <a href="/api-readiness.json">api-readiness.json</a> &middot;
     <a href="/content-health.json">content-health.json</a>
   </p>
   <p><a href="/">Home</a></p>
@@ -276,6 +279,7 @@ function writeLlmsTxt(distDir, publicResults, claims, verificationTimestamp) {
 - Free API access guide: https://anchorfact.org/api-access/
 - Artifact sizes and lightweight alternatives: https://anchorfact.org/artifact-summary.json
 - Artifact Shards: https://anchorfact.org/artifact-shards.json
+- API readiness gates: https://anchorfact.org/api-readiness.json
 - Prefer /api/context or /api/evidence before downloading graph.json, search-index.json, claims.json, or the full article list in llms.txt.
 
 ## Direct Answer Examples
@@ -301,6 +305,7 @@ ${entries || '_No public verified entries yet._'}
 - [API Access](https://anchorfact.org/api-access/): Free API usage guide with recommended call order, examples, limits, and provenance verification.
 - [Artifact Summary](https://anchorfact.org/artifact-summary.json): Lightweight size and purpose map for large static machine artifacts.
 - [Artifact Shards](https://anchorfact.org/artifact-shards.json): Signed registry for versioned shards of large static artifacts.
+- [API Readiness](https://anchorfact.org/api-readiness.json): Machine-readable subscription-readiness gates, core corpus scorecard, and API citation readiness report.
 - [Capabilities](https://anchorfact.org/capabilities.json): AI task-to-endpoint routing guide with trust requirements and fallback artifacts.
 - [Content Health](https://anchorfact.org/content-health.json): Signed corpus health summary for AI trust decisions.
 - [Coverage](https://anchorfact.org/coverage.json): AI coverage and limits guide with topic, confidence, source tier, and verification distributions.
@@ -345,6 +350,7 @@ function writeSitemap(distDir, publicResults) {
     '<url><loc>https://anchorfact.org/api-access/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>',
     '<url><loc>https://anchorfact.org/artifact-summary.json</loc><changefreq>daily</changefreq><priority>0.9</priority></url>',
     '<url><loc>https://anchorfact.org/artifact-shards.json</loc><changefreq>daily</changefreq><priority>0.9</priority></url>',
+    '<url><loc>https://anchorfact.org/api-readiness.json</loc><changefreq>daily</changefreq><priority>0.9</priority></url>',
     '<url><loc>https://anchorfact.org/capabilities.json</loc><changefreq>daily</changefreq><priority>0.9</priority></url>',
     '<url><loc>https://anchorfact.org/content-health.json</loc><changefreq>daily</changefreq><priority>0.9</priority></url>',
     '<url><loc>https://anchorfact.org/coverage.json</loc><changefreq>daily</changefreq><priority>0.9</priority></url>',
@@ -395,6 +401,7 @@ AI-Plan-Use: coverage_uncertain_only
 Large-Artifact-Policy: prefer_api_context_or_evidence
 Artifact-Summary: https://anchorfact.org/artifact-summary.json
 Artifact-Shards: https://anchorfact.org/artifact-shards.json
+API-Readiness: https://anchorfact.org/api-readiness.json
 Health: https://anchorfact.org/content-health.json
 MCP: https://anchorfact.org/mcp.json
 Provenance: https://anchorfact.org/provenance.json
@@ -409,6 +416,7 @@ function writeHeaders(distDir) {
     ['/openapi.json', 'application/json'],
     ['/artifact-summary.json', 'application/json'],
     ['/artifact-shards.json', 'application/json'],
+    ['/api-readiness.json', 'application/json'],
     ['/manifest.json', 'application/json'],
     ['/llms.txt', 'text/plain'],
     ['/claims.json', 'application/json'],
@@ -679,6 +687,24 @@ export function writeStaticOutputs(distDir, results, options = {}) {
     join(distDir, 'content-health.json'),
     JSON.stringify(contentHealthPayload, null, 2)
   );
+  const apiReadinessPayload = buildApiReadinessReport({
+    generatedAt: generated,
+    site: build.canonical_site,
+    artifacts: {
+      manifest,
+      claimsPayload,
+      sourcesPayload,
+      searchIndex: searchIndexPayload,
+      topicsPayload,
+      coveragePayload,
+      capabilitiesPayload,
+      contentHealthPayload
+    }
+  });
+  writeFileSync(
+    join(distDir, 'api-readiness.json'),
+    stringifyJson(apiReadinessPayload, { pretty: false })
+  );
   writeAgentProfile(distDir, buildAgentProfile({
     generated,
     manifest,
@@ -692,6 +718,7 @@ export function writeStaticOutputs(distDir, results, options = {}) {
     graphPayload,
     evalsPayload,
     mcpPayload,
+    apiReadinessPayload,
     publicResults,
     draftResults,
     verificationTimestamp: options.verificationTimestamp

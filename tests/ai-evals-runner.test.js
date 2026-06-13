@@ -190,6 +190,26 @@ test('runAiEvals executes JSON, Markdown, MCP, and provenance eval expectations'
             }
           },
           {
+            id: 'api_readiness_summary',
+            call: { method: 'GET', path: '/api-readiness.json' },
+            expected: {
+              status: 200,
+              content_type: 'application/json',
+              schema_version: 'anchorfact.api-readiness.v1',
+              report_only: true,
+              subscription_ready: false,
+              status_in: [
+                'building_foundation',
+                'foundation_ready_pending_14_day_and_partner_signals'
+              ],
+              readiness_gate_ids: [
+                'production_integrity_14_day',
+                'core_query_context_ratio',
+                'ai_primary_discovery_ratio_7_day'
+              ]
+            }
+          },
+          {
             id: 'signed_provenance_static_artifacts',
             call: { method: 'GET', path: '/provenance.json' },
             expected: {
@@ -319,6 +339,17 @@ test('runAiEvals executes JSON, Markdown, MCP, and provenance eval expectations'
           ]
         }
       }),
+      '/api-readiness.json': jsonResponse({
+        schema_version: 'anchorfact.api-readiness.v1',
+        report_only: true,
+        subscription_ready: false,
+        status: 'building_foundation',
+        readiness_gates: [
+          { id: 'production_integrity_14_day', status: 'not_measured_in_this_report' },
+          { id: 'core_query_context_ratio', status: 'below_target' },
+          { id: 'ai_primary_discovery_ratio_7_day', status: 'not_measured_in_this_report' }
+        ]
+      }),
       '/provenance.json': jsonResponse({
         schema_version: 'anchorfact.provenance.v1',
         artifacts: {
@@ -331,8 +362,8 @@ test('runAiEvals executes JSON, Markdown, MCP, and provenance eval expectations'
 
   if (!report.ok) console.log(JSON.stringify(report, null, 2));
   assertEq(report.ok, true);
-  assertEq(report.eval_count, 12);
-  assertEq(report.passed, 12);
+  assertEq(report.eval_count, 13);
+  assertEq(report.passed, 13);
   assertEq(report.failed, 0);
   const markdown = renderAiEvalsMarkdown(report);
   assert(markdown.includes('AnchorFact AI Evals - PASS'), 'markdown should show pass');

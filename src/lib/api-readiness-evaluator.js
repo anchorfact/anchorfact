@@ -2,6 +2,7 @@ import { buildCiteApiPayload } from './cite-api.js';
 import { buildContextApiPayload } from './context-api.js';
 import { buildEvidenceApiPayload } from './evidence-api.js';
 import { API_READINESS_SCHEMA_VERSION } from './api-readiness-renderer.js';
+import { OFFICIAL_SITE, PROVENANCE_PATH, publicUrl } from './build-metadata.js';
 import {
   API_READINESS_TARGET_RATIO,
   CORE_CORPUS_QUERIES,
@@ -268,6 +269,7 @@ export function buildApiReadinessReport({
   artifacts,
   querySet = CORE_CORPUS_QUERIES,
   generatedAt = new Date().toISOString(),
+  site = OFFICIAL_SITE,
   apiPerformanceReport = null,
   adoptionScorecard = null,
   productionIntegrity = null,
@@ -296,6 +298,7 @@ export function buildApiReadinessReport({
   return {
     schema_version: API_READINESS_SCHEMA_VERSION,
     generated: generatedAt,
+    provenance_url: publicUrl(PROVENANCE_PATH, site),
     report_only: true,
     build_should_fail: false,
     target_ratio: targetRatio,

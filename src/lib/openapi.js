@@ -1,6 +1,7 @@
 import {
   AGENT_PROFILE_SCHEMA_VERSION,
   API_INDEX_SCHEMA_VERSION,
+  API_READINESS_SCHEMA_VERSION,
   ARTIFACT_SHARDS_SCHEMA_VERSION,
   ARTIFACT_SHARD_SCHEMA_VERSION,
   ARTIFACT_SUMMARY_SCHEMA_VERSION,
@@ -108,6 +109,7 @@ export function buildOpenApiContract({
       '/api': getJson('Compact live API discovery index', 'ApiIndex'),
       '/artifact-summary.json': getJson('Lightweight static artifact size and alternative-call summary', 'ArtifactSummary'),
       '/artifact-shards.json': getJson('Signed versioned shard registry for large static artifacts', 'ArtifactShards'),
+      '/api-readiness.json': getJson('Machine-readable API readiness gates and scorecard', 'ApiReadiness'),
       '/manifest.json': getJson('Public and draft article manifest', 'Manifest'),
       '/claims.json': getJson('Public verified atomic claims', 'Claims'),
       '/topics.json': getJson('Public topic coverage map', 'Topics'),
@@ -540,6 +542,19 @@ export function buildOpenApiContract({
           compatibility: { type: 'object' },
           large_artifact_strategy: { type: 'object' },
           artifacts: { type: 'array', items: { type: 'object' } }
+        }),
+        ApiReadiness: schemaVersioned('API readiness', API_READINESS_SCHEMA_VERSION, {
+          report_only: { type: 'boolean' },
+          build_should_fail: { type: 'boolean' },
+          target_ratio: { type: 'number' },
+          status: { type: 'string' },
+          subscription_ready: { type: 'boolean' },
+          readiness_gates: { type: 'array', items: { type: 'object' } },
+          core_corpus: { type: 'object' },
+          api_scorecard: { type: 'object' },
+          api_performance: { type: 'object' },
+          production_health: { type: 'object' },
+          adoption_signal: { type: 'object' }
         }),
         ArtifactShard: schemaVersioned('Artifact shard', ARTIFACT_SHARD_SCHEMA_VERSION, {
           artifact_id: { type: 'string' },
