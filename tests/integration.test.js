@@ -104,6 +104,7 @@ test('nested route JSON-LD exists and has verification layer', () => {
 });
 
 test('public machine entrypoints exclude drafts', () => {
+  const rootIndex = JSON.parse(readFileSync(join(distDir, 'index.json'), 'utf-8'));
   const agent = JSON.parse(readFileSync(join(distDir, 'agent.json'), 'utf-8'));
   const openapi = JSON.parse(readFileSync(join(distDir, 'openapi.json'), 'utf-8'));
   const capabilities = JSON.parse(readFileSync(join(distDir, 'capabilities.json'), 'utf-8'));
@@ -119,7 +120,15 @@ test('public machine entrypoints exclude drafts', () => {
   const sources = JSON.parse(readFileSync(join(distDir, 'sources.json'), 'utf-8'));
   const llms = readFileSync(join(distDir, 'llms.txt'), 'utf-8');
   const sitemap = readFileSync(join(distDir, 'sitemap.xml'), 'utf-8');
+  assertEq(rootIndex.schema_version, 'anchorfact.root-index.v1');
+  assertEq(rootIndex.default_answer_path, '/api/context?q={query}');
+  assertEq(rootIndex.discovery.openapi, '/openapi.json');
+  assertEq(rootIndex.discovery.provenance, '/provenance.json');
+  assertEq(rootIndex.counts.public_articles, 1);
+  assertEq(rootIndex.trust_policy.public_only_entrypoints_exclude_drafts, true);
+  assert(rootIndex.static_artifacts.includes('/artifact-summary.json'), 'root index should point to artifact summary');
   assertEq(agent.current_snapshot.public_articles, 1);
+  assertEq(agent.endpoints.root_index.url, 'https://anchorfact.org/index.json');
   assertEq(agent.endpoints.openapi.url, 'https://anchorfact.org/openapi.json');
   assertEq(agent.endpoints.api_access.path, '/api-access/');
   assertEq(agent.endpoints.capabilities.url, 'https://anchorfact.org/capabilities.json');
@@ -145,6 +154,7 @@ test('public machine entrypoints exclude drafts', () => {
   assertEq(agent.endpoints.search_index.url, 'https://anchorfact.org/search-index.json');
   assertEq(agent.endpoints.sources.url, 'https://anchorfact.org/sources.json');
   assertEq(agent.endpoints.article_jsonld_template.path_template, '/{canonical_slug}/index.json');
+  assert(openapi.paths['/index.json'], 'OpenAPI should expose root machine index');
   assert(openapi.paths['/{canonical_slug}/index.json'], 'OpenAPI should expose article JSON-LD template');
   assert(openapi.paths['/capabilities.json'], 'OpenAPI should expose capabilities endpoint');
   assert(openapi.paths['/content-health.json'], 'OpenAPI should expose content health endpoint');

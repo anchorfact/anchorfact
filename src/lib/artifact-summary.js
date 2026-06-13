@@ -9,6 +9,12 @@ import {
 
 export const MAJOR_MACHINE_ARTIFACTS = [
   {
+    path: '/index.json',
+    category: 'discovery',
+    use_when: 'Discover the preferred machine entrypoints, trust policy, and signed artifact map from the root URL.',
+    recommended_alternative: '/api/context?q={query}'
+  },
+  {
     path: '/agent.json',
     category: 'discovery',
     use_when: 'Discover the recommended AI workflow and endpoint catalog.',
@@ -147,6 +153,7 @@ export const ARTIFACT_GROWTH_BUDGETS = {
   '/manifest.json': 1180000,
   '/llms.txt': 450000,
   '/openapi.json': 100000,
+  '/index.json': 25000,
   '/agent.json': 40000,
   '/artifact-summary.json': 60000,
   '/artifact-shards.json': 250000,

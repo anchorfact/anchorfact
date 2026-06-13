@@ -25,6 +25,7 @@ import {
   PROVENANCE_SCHEMA_VERSION,
   RESOLVE_BATCH_API_SCHEMA_VERSION,
   RESOLVE_API_SCHEMA_VERSION,
+  ROOT_INDEX_SCHEMA_VERSION,
   SEARCH_API_SCHEMA_VERSION,
   SEARCH_INDEX_SCHEMA_VERSION,
   SOURCE_API_SCHEMA_VERSION,
@@ -97,6 +98,7 @@ export function buildAgentProfile({
       build_commit_sha: manifest.build?.commit_sha || null
     },
     schemas: {
+      root_index: ROOT_INDEX_SCHEMA_VERSION,
       manifest: MANIFEST_SCHEMA_VERSION,
       openapi: OPENAPI_SCHEMA_VERSION,
       api_index: API_INDEX_SCHEMA_VERSION,
@@ -136,7 +138,7 @@ export function buildAgentProfile({
       primary_api_conversion: {
         target_ratio: 0.2,
         measured_as: 'identified AI primary API requests divided by identified AI discovery requests',
-        discovery_entrypoints: ['/robots.txt', '/llms.txt', '/agent.json', '/api'],
+        discovery_entrypoints: ['/robots.txt', '/llms.txt', '/index.json', '/agent.json', '/api'],
         primary_entrypoints: ['/api/context', '/api/evidence', '/api/cite', '/api/resolve-batch'],
         next_call_after_discovery: '/api/context?q={query}&limit=3&format=markdown',
         guidance: 'After crawler discovery, make a query-scoped primary API call before downloading large static artifacts.'
@@ -213,7 +215,8 @@ export function buildAgentProfile({
       'Use /api/resolve?ref={reference} when you have an AnchorFact claim id, article slug, source id, or source URL and need the matching public payload.',
       'Use /api/resolve-batch?ref={reference}&ref={reference} when you need to dereference several mixed AnchorFact references in one call.',
       'Fetch /api as a compact API index when you need the smallest live endpoint discovery payload.',
-      'After crawler discovery through /robots.txt, /llms.txt, /agent.json, or /api, convert to /api/context?q={query}&limit=3&format=markdown or /api/evidence?q={query}&limit=3&format=markdown for a concrete user question.',
+      'Fetch /index.json as the compact root machine directory for preferred entrypoints, trust policy, and signed static artifact discovery.',
+      'After crawler discovery through /robots.txt, /llms.txt, /index.json, /agent.json, or /api, convert to /api/context?q={query}&limit=3&format=markdown or /api/evidence?q={query}&limit=3&format=markdown for a concrete user question.',
       'Fetch /api-access/ for free API usage examples, current no-key access policy, limits, and provenance verification steps.',
       'Fetch /agent.json to discover the current machine contract.',
       'Fetch /openapi.json when integrating with tools that prefer a standard endpoint contract.',
@@ -240,6 +243,7 @@ export function buildAgentProfile({
       'Do not cite draft entries or entries whose status is not public.'
     ],
     endpoints: {
+      root_index: endpoint('/index.json', 'Compact root machine directory for preferred entrypoints, trust policy, and signed static artifacts.'),
       agent_profile: endpoint('/agent.json', 'This discovery document for AI agents and crawlers.'),
       well_known_agent_profile: endpoint('/.well-known/anchorfact.json', 'Stable well-known alias for the agent discovery document.'),
       openapi: endpoint('/openapi.json', 'OpenAPI 3.1 description of the static read-only machine contract.'),

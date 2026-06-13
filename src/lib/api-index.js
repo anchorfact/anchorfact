@@ -160,6 +160,7 @@ export function buildApiIndex({
       ])
     ],
     static_fallbacks: [
+      staticFallback(site, '/index.json', 'Compact root machine directory for preferred entrypoints, trust policy, and signed artifacts.'),
       staticFallback(site, '/agent.json', 'Full AI agent discovery profile and recommended workflow.'),
       staticFallback(site, '/api-access/', 'Free API access guide with recommended call order, examples, limits, and provenance verification.'),
       staticFallback(site, '/openapi.json', 'Full OpenAPI 3.1 machine contract.'),

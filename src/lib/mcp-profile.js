@@ -225,6 +225,7 @@ export function buildMcpProfile({
       })
     ],
     related_public_artifacts: [
+      '/index.json',
       '/agent.json',
       '/openapi.json',
       '/capabilities.json',

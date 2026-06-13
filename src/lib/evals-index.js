@@ -253,6 +253,7 @@ export function buildEvalsIndex({
           '/api/context?q={query}',
           '/api/evidence?q={query}',
           '/api/plan?q={query}',
+          '/index.json',
           '/artifact-summary.json',
           '/artifact-shards.json',
           '/api-readiness.json'
@@ -269,6 +270,7 @@ export function buildEvalsIndex({
         contains_text: [
           'AI-Context',
           'AI-Evidence',
+          'Machine-Index',
           'Artifact-Summary',
           'Artifact-Shards',
           'API-Readiness'
@@ -595,6 +597,7 @@ export function buildEvalsIndex({
         content_type: 'application/json',
         schema_version: PROVENANCE_SCHEMA_VERSION,
         required_artifacts: [
+          'root_index_json',
           'agent_json',
           'openapi_json',
           'manifest_json',

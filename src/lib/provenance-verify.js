@@ -17,6 +17,7 @@ import {
   OPENAPI_SCHEMA_VERSION,
   PROVENANCE_PATH,
   PROVENANCE_SCHEMA_VERSION,
+  ROOT_INDEX_SCHEMA_VERSION,
   SEARCH_INDEX_SCHEMA_VERSION,
   TOPICS_SCHEMA_VERSION,
   publicUrl
@@ -27,7 +28,7 @@ import {
 } from './provenance-signature.js';
 import { fetchLiveText } from './live-http.js';
 
-const REQUIRED_ARTIFACTS = ['agent_json', 'openapi_json', 'manifest_json', 'claims_json', 'topics_json', 'capabilities_json', 'content_health_json', 'coverage_json', 'examples_json', 'graph_json', 'evals_json', 'mcp_json', 'artifact_summary_json', 'artifact_shards_json', 'api_readiness_json', 'search_index_json', 'sources_json', 'llms_txt'];
+const REQUIRED_ARTIFACTS = ['root_index_json', 'agent_json', 'openapi_json', 'manifest_json', 'claims_json', 'topics_json', 'capabilities_json', 'content_health_json', 'coverage_json', 'examples_json', 'graph_json', 'evals_json', 'mcp_json', 'artifact_summary_json', 'artifact_shards_json', 'api_readiness_json', 'search_index_json', 'sources_json', 'llms_txt'];
 const OFFICIAL_GITHUB_COMMIT_API = 'https://api.github.com/repos/anchorfact/anchorfact/commits/';
 const OFFICIAL_GITHUB_COMMIT_PAGE = 'https://github.com/anchorfact/anchorfact/commit/';
 
@@ -327,6 +328,9 @@ export async function verifyLiveProvenance({
   const mcp = artifacts.mcp_json?.text
     ? parseJson(artifacts.mcp_json.text, '/mcp.json', failures) || {}
     : {};
+  const rootIndex = artifacts.root_index_json?.text
+    ? parseJson(artifacts.root_index_json.text, '/index.json', failures) || {}
+    : {};
   const artifactSummary = artifacts.artifact_summary_json?.text
     ? parseJson(artifacts.artifact_summary_json.text, '/artifact-summary.json', failures) || {}
     : {};
@@ -343,6 +347,8 @@ export async function verifyLiveProvenance({
   checkEq(openapi.openapi, '3.1.0', 'OpenAPI version', failures);
   checkEq(openapi['x-anchorfact-schema-version'], OPENAPI_SCHEMA_VERSION, 'OpenAPI AnchorFact schema version', failures);
   checkEq(openapi['x-provenance-url'], publicUrl(PROVENANCE_PATH, normalizedBaseUrl), 'OpenAPI provenance url', failures);
+  checkEq(rootIndex.schema_version, ROOT_INDEX_SCHEMA_VERSION, 'root index schema_version', failures);
+  checkEq(rootIndex.default_answer_path, '/api/context?q={query}', 'root index default answer path', failures);
   checkEq(claims.schema_version, CLAIMS_SCHEMA_VERSION, 'claims schema_version', failures);
   checkEq(topics.schema_version, TOPICS_SCHEMA_VERSION, 'topics schema_version', failures);
   checkEq(capabilities.schema_version, CAPABILITIES_SCHEMA_VERSION, 'capabilities schema_version', failures);
@@ -366,6 +372,7 @@ export async function verifyLiveProvenance({
   checkEq(graph.provenance_url, publicUrl(PROVENANCE_PATH, normalizedBaseUrl), 'graph provenance_url', failures);
   checkEq(evals.provenance_url, publicUrl(PROVENANCE_PATH, normalizedBaseUrl), 'evals provenance_url', failures);
   checkEq(mcp.provenance_url, publicUrl(PROVENANCE_PATH, normalizedBaseUrl), 'mcp provenance_url', failures);
+  checkEq(rootIndex.provenance_url, publicUrl(PROVENANCE_PATH, normalizedBaseUrl), 'root index provenance_url', failures);
   checkEq(artifactSummary.provenance_url, publicUrl(PROVENANCE_PATH, normalizedBaseUrl), 'artifact summary provenance_url', failures);
   checkEq(artifactShards.provenance_url, publicUrl(PROVENANCE_PATH, normalizedBaseUrl), 'artifact shards provenance_url', failures);
   checkEq(apiReadiness.provenance_url, publicUrl(PROVENANCE_PATH, normalizedBaseUrl), 'API readiness provenance_url', failures);

@@ -20,6 +20,7 @@ export const DEFAULT_AFTER_SMOKE_DELAY_MS = 5000;
 export const DEFAULT_AI_EVAL_RETRY_DELAY_MS = 15000;
 export const DEFAULT_AI_EVAL_ATTEMPTS = 2;
 export const SIGNED_MACHINE_ARTIFACT_PATHS = [
+  '/index.json',
   '/graph.json',
   '/search-index.json',
   '/claims.json',
@@ -59,6 +60,7 @@ export const DEFAULT_EDGE_CACHE_DYNAMIC_CONCURRENCY = 4;
 export const DEFAULT_DISCOVERY_ROUTES = [
   '/robots.txt',
   '/llms.txt',
+  '/index.json',
   '/agent.json',
   '/api'
 ];

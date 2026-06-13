@@ -112,6 +112,9 @@ test('artifact size budget passes current baseline headroom', () => {
 });
 
 test('default artifact budget includes versioned shard registry headroom', () => {
+  const rootIndexBudget = DEFAULT_ARTIFACT_SIZE_BUDGETS.find(item => item.path === 'index.json');
+  assert(rootIndexBudget, 'default artifact budget should include index.json');
+  assertEq(rootIndexBudget.max_bytes, 25000);
   const shardBudget = DEFAULT_ARTIFACT_SIZE_BUDGETS.find(item => item.path === 'artifact-shards.json');
   assert(shardBudget, 'default artifact budget should include artifact-shards.json');
   assertEq(shardBudget.max_bytes, 250000);

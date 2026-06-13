@@ -16,6 +16,7 @@ import { buildExamplesIndex } from './examples-index.js';
 import { buildGraphIndex } from './graph-index.js';
 import { buildEvalsIndex } from './evals-index.js';
 import { buildMcpProfile } from './mcp-profile.js';
+import { buildRootIndex } from './root-index.js';
 import { escapeHtml } from './html.js';
 import { buildManifest, distribution } from './manifest.js';
 import {
@@ -106,6 +107,7 @@ function writeRootIndex(distDir, results, publicResults, draftResults, claims) {
     <a href="/api/context?q=gaussian">/api/context</a>
     <a href="/api/evidence?q=gaussian">/api/evidence</a>
     <a href="/api/cite?id=f1">/api/cite</a>
+    <a href="/index.json">/index.json</a>
     <a href="/agent.json">/agent.json</a>
     <a href="/provenance.json">/provenance.json</a>
     <a href="/api">/api</a>
@@ -276,6 +278,7 @@ function writeLlmsTxt(distDir, publicResults, claims, verificationTimestamp) {
 - Precise citation: https://anchorfact.org/api/cite?id={claim_id}
 - Discovery: https://anchorfact.org/api and https://anchorfact.org/agent.json
 - Trust: https://anchorfact.org/provenance.json and https://anchorfact.org/provenance.sig
+- Root machine index: https://anchorfact.org/index.json
 - Free API access guide: https://anchorfact.org/api-access/
 - Artifact sizes and lightweight alternatives: https://anchorfact.org/artifact-summary.json
 - Artifact Shards: https://anchorfact.org/artifact-shards.json
@@ -300,6 +303,7 @@ ${entries || '_No public verified entries yet._'}
 ## API
 
 - [Agent Profile](https://anchorfact.org/agent.json): Machine contract and recommended retrieval workflow.
+- [Root Machine Index](https://anchorfact.org/index.json): Compact directory for preferred machine entrypoints, trust policy, and signed static artifacts.
 - [OpenAPI](https://anchorfact.org/openapi.json): Static read-only endpoint contract for tools.
 - [API Index](https://anchorfact.org/api): Compact live API discovery endpoint for agents.
 - [API Access](https://anchorfact.org/api-access/): Free API usage guide with recommended call order, examples, limits, and provenance verification.
@@ -344,6 +348,7 @@ ${entries || '_No public verified entries yet._'}
 function writeSitemap(distDir, publicResults) {
   const urls = [
     '<url><loc>https://anchorfact.org/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>',
+    '<url><loc>https://anchorfact.org/index.json</loc><changefreq>daily</changefreq><priority>0.9</priority></url>',
     '<url><loc>https://anchorfact.org/agent.json</loc><changefreq>daily</changefreq><priority>0.9</priority></url>',
     '<url><loc>https://anchorfact.org/openapi.json</loc><changefreq>daily</changefreq><priority>0.9</priority></url>',
     '<url><loc>https://anchorfact.org/api</loc><changefreq>daily</changefreq><priority>0.9</priority></url>',
@@ -388,6 +393,7 @@ User-agent: *
 Allow: /
 
 Sitemap: https://anchorfact.org/sitemap.xml
+Machine-Index: https://anchorfact.org/index.json
 LLMs: https://anchorfact.org/llms.txt
 Agent: https://anchorfact.org/agent.json
 OpenAPI: https://anchorfact.org/openapi.json
@@ -411,6 +417,7 @@ Provenance: https://anchorfact.org/provenance.json
 
 function writeHeaders(distDir) {
   const revalidatedMachineArtifacts = [
+    ['/index.json', 'application/json'],
     ['/agent.json', 'application/json'],
     ['/.well-known/anchorfact.json', 'application/json'],
     ['/openapi.json', 'application/json'],
@@ -520,6 +527,10 @@ function writeAgentProfile(distDir, profile) {
   const wellKnownDir = join(distDir, '.well-known');
   mkdirSync(wellKnownDir, { recursive: true });
   writeFileSync(join(wellKnownDir, 'anchorfact.json'), agentText);
+}
+
+function writeRootMachineIndex(distDir, rootIndex) {
+  writeFileSync(join(distDir, 'index.json'), stringifyJson(rootIndex, { pretty: false }));
 }
 
 function writeArtifactSummary(distDir, summary) {
@@ -705,6 +716,13 @@ export function writeStaticOutputs(distDir, results, options = {}) {
     join(distDir, 'api-readiness.json'),
     stringifyJson(apiReadinessPayload, { pretty: false })
   );
+  writeRootMachineIndex(distDir, buildRootIndex({
+    generated,
+    site: build.canonical_site,
+    publicResults,
+    draftResults,
+    claims
+  }));
   writeAgentProfile(distDir, buildAgentProfile({
     generated,
     manifest,

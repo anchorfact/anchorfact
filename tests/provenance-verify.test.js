@@ -17,6 +17,7 @@ import {
   OFFICIAL_SOURCE_REPOSITORY,
   OPENAPI_SCHEMA_VERSION,
   PROVENANCE_SCHEMA_VERSION,
+  ROOT_INDEX_SCHEMA_VERSION,
   SEARCH_INDEX_SCHEMA_VERSION,
   TOPICS_SCHEMA_VERSION
 } from '../src/lib/build-metadata.js';
@@ -351,8 +352,42 @@ function buildFixture(overrides = {}) {
     api_scorecard: { count: 1, passed: 1, failed: 0, pass_ratio: 1, fallback: { ok: true }, failures: [] },
     next_actions: []
   };
+  const rootIndex = {
+    schema_version: ROOT_INDEX_SCHEMA_VERSION,
+    generated: '2026-05-29T00:00:00.000Z',
+    official_site: baseUrl,
+    provenance_url: `${baseUrl}/provenance.json`,
+    default_answer_path: '/api/context?q={query}',
+    preferred_machine_entrypoints: [
+      { id: 'context', method: 'GET', path: '/api/context?q={query}', use_when: 'default answer assembly' },
+      { id: 'evidence', method: 'GET', path: '/api/evidence?q={query}', use_when: 'source-grounded evidence packs' }
+    ],
+    discovery: {
+      agent_profile: '/agent.json',
+      openapi: '/openapi.json',
+      provenance: '/provenance.json',
+      api_readiness: '/api-readiness.json'
+    },
+    counts: {
+      public_articles: 2,
+      draft_articles: 1,
+      public_claims: 3
+    },
+    trust_policy: {
+      public_only_entrypoints_exclude_drafts: true,
+      default_answer_requires_can_answer_with_anchorfact: true,
+      unsupported_answer_mode: 'external_sources_required'
+    },
+    bulk_sync_policy: {
+      prefer_query_scoped_apis: true,
+      avoid_for_single_query: ['/graph.json'],
+      shard_registry: '/artifact-shards.json'
+    },
+    static_artifacts: ['/artifact-summary.json', '/provenance.json']
+  };
   const manifestText = JSON.stringify(manifest, null, 2);
   const claimsText = JSON.stringify(claims, null, 2);
+  const rootIndexText = JSON.stringify(rootIndex, null, 2);
   const agentText = JSON.stringify(agent, null, 2);
   const openapiText = JSON.stringify(openapi, null, 2);
   const topicsText = JSON.stringify(topics, null, 2);
@@ -392,6 +427,11 @@ function buildFixture(overrides = {}) {
       claims: 3
     },
     artifacts: {
+      root_index_json: {
+        path: '/index.json',
+        sha256: sha256Text(rootIndexText),
+        bytes: Buffer.byteLength(rootIndexText, 'utf8')
+      },
       agent_json: {
         path: '/agent.json',
         sha256: sha256Text(agentText),
@@ -508,6 +548,7 @@ function buildFixture(overrides = {}) {
     : null;
   const routes = {
     [`${baseUrl}/provenance.json`]: { body: provenanceText },
+    [`${baseUrl}/index.json`]: { body: rootIndexText },
     [`${baseUrl}/agent.json`]: { body: agentText },
     [`${baseUrl}/openapi.json`]: { body: openapiText },
     [`${baseUrl}/manifest.json`]: { body: manifestText },
@@ -555,6 +596,7 @@ test('verifyLiveProvenance accepts matching official live artifacts', async () =
   });
   assertEq(result.ok, true);
   assertEq(result.failures, []);
+  assertEq(result.artifacts.root_index_json.ok, true);
   assertEq(result.artifacts.manifest_json.ok, true);
   assertEq(result.artifacts.content_health_json.ok, true);
   assertEq(result.artifacts.artifact_summary_json.ok, true);
@@ -657,6 +699,24 @@ test('verifyLiveProvenance rejects artifact hash mismatches', async () => {
   });
   assertEq(result.ok, false);
   assert(result.failures.some(failure => failure.includes('claims_json sha256 mismatch')), 'claims hash mismatch should fail');
+});
+
+test('verifyLiveProvenance rejects root index artifact hash mismatches', async () => {
+  const fixture = buildFixture({
+    artifacts: {
+      root_index_json: {
+        path: '/index.json',
+        sha256: '0'.repeat(64),
+        bytes: 1
+      }
+    }
+  });
+  const result = await verifyLiveProvenance({
+    baseUrl: fixture.baseUrl,
+    fetchImpl: fixture.fetchImpl
+  });
+  assertEq(result.ok, false);
+  assert(result.failures.some(failure => failure.includes('root_index_json sha256 mismatch')), 'root index hash mismatch should fail');
 });
 
 test('verifyLiveProvenance rejects API readiness artifact hash mismatches', async () => {

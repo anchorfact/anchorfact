@@ -27,6 +27,7 @@ import {
   PROVENANCE_SCHEMA_VERSION,
   RESOLVE_BATCH_API_SCHEMA_VERSION,
   RESOLVE_API_SCHEMA_VERSION,
+  ROOT_INDEX_SCHEMA_VERSION,
   SEARCH_API_SCHEMA_VERSION,
   SEARCH_INDEX_SCHEMA_VERSION,
   SOURCE_API_SCHEMA_VERSION,
@@ -103,6 +104,7 @@ export function buildOpenApiContract({
     'x-generated': generated || null,
     'x-provenance-url': publicUrl(PROVENANCE_PATH, site),
     paths: {
+      '/index.json': getJson('Root machine index for preferred entrypoints and signed artifact discovery', 'RootIndex'),
       '/agent.json': getJson('AI agent discovery profile', 'AgentProfile'),
       '/.well-known/anchorfact.json': getJson('Well-known alias for the AI agent discovery profile', 'AgentProfile'),
       '/openapi.json': getJson('This OpenAPI machine contract', 'OpenApiContract'),
@@ -474,6 +476,24 @@ export function buildOpenApiContract({
           },
           additionalProperties: true
         },
+        RootIndex: schemaVersioned('Root machine index', ROOT_INDEX_SCHEMA_VERSION, {
+          official_site: { type: 'string', format: 'uri' },
+          default_answer_path: { const: '/api/context?q={query}' },
+          preferred_machine_entrypoints: { type: 'array', items: { type: 'object' } },
+          discovery: { type: 'object' },
+          counts: {
+            type: 'object',
+            properties: {
+              public_articles: { type: 'integer' },
+              draft_articles: { type: 'integer' },
+              public_claims: { type: 'integer' }
+            },
+            additionalProperties: true
+          },
+          trust_policy: { type: 'object' },
+          bulk_sync_policy: { type: 'object' },
+          static_artifacts: { type: 'array', items: { type: 'string' } }
+        }),
         AgentProfile: schemaVersioned('Agent profile', AGENT_PROFILE_SCHEMA_VERSION, {
           quick_start: { $ref: '#/components/schemas/AgentQuickStart' }
         }),

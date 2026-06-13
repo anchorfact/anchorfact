@@ -384,6 +384,7 @@ test('default edge cache controls keep signed provenance dynamic', () => {
   assert(DEFAULT_EDGE_CACHE_DYNAMIC_CONTROLS.includes('/api'), 'API discovery route should be checked with real GET semantics');
   assert(DEFAULT_EDGE_CACHE_DYNAMIC_CONTROLS.includes('/api/evidence?q=gaussian&limit=1'), 'evidence API route should be checked with real GET semantics');
   assert(DEFAULT_EDGE_CACHE_DYNAMIC_CONTROLS.includes('/api/plan?q=gaussian&limit=1'), 'plan API route should be checked with real GET semantics');
+  assert(DEFAULT_EDGE_CACHE_DYNAMIC_CONTROLS.includes('/index.json'), 'root machine index should not be edge cached without versioned URLs');
   assert(DEFAULT_EDGE_CACHE_DYNAMIC_CONTROLS.includes('/provenance.json'), 'provenance.json should not be edge cached');
   assert(DEFAULT_EDGE_CACHE_DYNAMIC_CONTROLS.includes('/provenance.sig'), 'provenance.sig should not be edge cached');
   assert(DEFAULT_EDGE_CACHE_DYNAMIC_CONTROLS.includes('/graph.json'), 'signed graph artifact should not be edge cached without versioned URLs');
