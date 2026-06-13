@@ -122,7 +122,7 @@ async def list_tools() -> list[Tool]:
         ),
         Tool(
             name="anchorfact_content_health",
-            description="Return local corpus health, public source coverage, trust boundaries, and the draft repair queue.",
+            description="Return local corpus health, public source coverage, trust boundaries, and source-ready versus source acquisition draft repair queues.",
             inputSchema={
                 "type": "object",
                 "properties": {

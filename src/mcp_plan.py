@@ -631,7 +631,7 @@ def _local_mcp_next_tools(status: str, query: str, limit: int, article_matches: 
             {
                 "tool": "anchorfact_content_health",
                 "arguments": {},
-                "purpose": "Inspect local corpus health and trust boundaries.",
+                "purpose": "Inspect local corpus health, trust boundaries, and source-ready/source acquisition repair queues.",
             }
         ]
         if re.search(r"\b(?:cite|citation|claim|claims|resolve)\b", normalized):

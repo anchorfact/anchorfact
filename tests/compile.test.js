@@ -316,6 +316,7 @@ test('agent profile describes the machine contract', () => {
   assertEq(agent.endpoints.topics.url, 'https://anchorfact.org/topics.json');
   assertEq(agent.endpoints.capabilities.url, 'https://anchorfact.org/capabilities.json');
   assertEq(agent.endpoints.content_health.url, 'https://anchorfact.org/content-health.json');
+  assert(agent.endpoints.content_health.description.includes('source-ready') && agent.endpoints.content_health.description.includes('source acquisition'), 'agent content-health endpoint should describe source-ready and source acquisition queues');
   assertEq(agent.endpoints.coverage.url, 'https://anchorfact.org/coverage.json');
   assertEq(agent.endpoints.examples.url, 'https://anchorfact.org/examples.json');
   assertEq(agent.endpoints.graph.url, 'https://anchorfact.org/graph.json');
@@ -368,6 +369,7 @@ test('agent profile describes the machine contract', () => {
   assert(agent.recommended_workflow.some(step => step.includes('/topics.json')), 'agent workflow should mention topics index');
   assert(agent.recommended_workflow.some(step => step.includes('/capabilities.json')), 'agent workflow should mention capabilities router');
   assert(agent.recommended_workflow.some(step => step.includes('/content-health.json')), 'agent workflow should mention content health');
+  assert(agent.recommended_workflow.some(step => step.includes('/content-health.json') && step.includes('source-ready') && step.includes('source acquisition')), 'agent workflow should mention source-ready and source acquisition repair queues');
   assert(agent.recommended_workflow.some(step => step.includes('/coverage.json')), 'agent workflow should mention coverage guide');
   assert(agent.recommended_workflow.some(step => step.includes('/examples.json')), 'agent workflow should mention examples index');
   assert(agent.recommended_workflow.some(step => step.includes('/graph.json')), 'agent workflow should mention graph index');
@@ -530,6 +532,9 @@ test('artifact-summary.json describes large machine artifacts and lightweight al
   assertEq(readiness.category, 'readiness');
   assertEq(readiness.recommended_alternative, '/api/context?q={query}');
   assert(readiness.budget_bytes > 0, 'readiness summary should expose its size budget');
+  const contentHealth = summary.artifacts.find(artifact => artifact.path === '/content-health.json');
+  assert(contentHealth, 'artifact summary should include content-health.json');
+  assert(contentHealth.use_when.includes('source-ready') && contentHealth.use_when.includes('source acquisition'), 'artifact summary should describe content-health repair queue phases');
   const rootIndex = summary.artifacts.find(artifact => artifact.path === '/index.json');
   assert(rootIndex, 'artifact summary should include root index');
   assertEq(rootIndex.category, 'discovery');
@@ -638,7 +643,9 @@ test('capabilities.json describes AI endpoint routing', () => {
   assert(planner, 'capabilities should include query planning workflow');
   assert(planner.local_mcp_tools.some(tool => tool.tool === 'anchorfact_plan_query'), 'plan capability should include local MCP planner mapping');
   assert(capabilities.capabilities.some(capability => capability.id === 'answer_with_evidence'), 'capabilities should include evidence workflow');
-  assert(capabilities.capabilities.some(capability => capability.id === 'inspect_corpus_health'), 'capabilities should include corpus health workflow');
+  const healthCapability = capabilities.capabilities.find(capability => capability.id === 'inspect_corpus_health');
+  assert(healthCapability, 'capabilities should include corpus health workflow');
+  assert(healthCapability.intent.includes('source-ready') && healthCapability.intent.includes('source acquisition'), 'corpus health capability should describe repair queue phases');
   assert(capabilities.capabilities.some(capability => capability.id === 'resolve_many_references'), 'capabilities should include batch resolver workflow');
   assert(capabilities.capabilities.some(capability => capability.id === 'verify_official_build'), 'capabilities should include provenance verification workflow');
   assert(capabilities.default_sequence.includes('verify_official_build'), 'capabilities should put provenance in the default sequence');

@@ -93,6 +93,10 @@ test('buildCapabilitiesIndex publishes AI endpoint selection rules', () => {
   assertEq(health.local_mcp_tools[0].tool, 'anchorfact_content_health');
   assert(health.fallback_artifacts.includes('/content-health.json'), 'health capability should name content-health fallback');
   assert(health.use_when.some(item => item.includes('draft repair queue')), 'health capability should mention repair queue use');
+  assert(health.intent.includes('source-ready') && health.intent.includes('source acquisition'), 'health capability should distinguish source-ready and source acquisition queues');
+  assert(health.use_when.some(item => item.includes('source-ready') && item.includes('source acquisition')), 'health capability should mention both repair queue phases');
+  assert(health.local_mcp_tools[0].purpose.includes('source-ready') && health.local_mcp_tools[0].purpose.includes('source acquisition'), 'health local MCP purpose should identify source-ready and source acquisition batches');
+  assert(health.trust_requirements.some(requirement => requirement.includes('source acquisition') && requirement.includes('source-ready')), 'health trust requirements should clarify source acquisition before repair');
 
   const batch = payload.capabilities.find(capability => capability.id === 'resolve_many_references');
   assertEq(batch.primary_call.path, '/api/resolve-batch?ref={reference}&ref={reference}');
@@ -123,6 +127,7 @@ test('buildCapabilitiesIndex publishes AI endpoint selection rules', () => {
   ]);
   assert(payload.selection_rules.some(rule => rule.use_capability === 'plan_query'), 'selection rules should include query planning');
   assert(payload.selection_rules.some(rule => rule.use_capability === 'inspect_corpus_health'), 'selection rules should include corpus health');
+  assert(payload.selection_rules.some(rule => rule.use_capability === 'inspect_corpus_health' && rule.when.includes('source acquisition')), 'selection rules should route source acquisition queue checks to corpus health');
   assert(payload.selection_rules.some(rule => rule.use_capability === 'assemble_prompt_context'), 'selection rules should include prompt context');
   assert(payload.selection_rules.some(rule => rule.use_capability === 'resolve_many_references'), 'selection rules should include batch resolution');
 });

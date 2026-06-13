@@ -65,6 +65,8 @@ test('buildMcpProfile publishes local MCP install and tool metadata', () => {
     'anchorfact_cite_claim',
     'anchorfact_list_categories'
   ]);
+  const healthTool = profile.tools.find(tool => tool.name === 'anchorfact_content_health');
+  assert(healthTool.description.includes('source-ready') && healthTool.description.includes('source acquisition'), 'content health MCP tool should describe source-ready and source acquisition queues');
   assert(profile.related_public_artifacts.includes('/evals.json'), 'profile should point agents to evals');
   assert(profile.related_public_artifacts.includes('/capabilities.json'), 'profile should point agents to capabilities');
   assert(profile.related_public_artifacts.includes('/coverage.json'), 'profile should point agents to coverage');

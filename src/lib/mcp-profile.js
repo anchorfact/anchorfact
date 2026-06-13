@@ -153,7 +153,7 @@ export function buildMcpProfile({
           }
         }
       }),
-      tool('anchorfact_content_health', 'Return local corpus health, public source coverage, trust boundaries, and the draft repair queue.', {
+      tool('anchorfact_content_health', 'Return local corpus health, public source coverage, trust boundaries, and source-ready versus source acquisition draft repair queues.', {
         type: 'object',
         properties: {
           format: {

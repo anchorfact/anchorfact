@@ -178,7 +178,7 @@ Only public articles contribute publishable facts to `/claims.json`.
 | `/claims.json` | Public verified atomic claims with evidence links. |
 | `/topics.json` | Compact public topic coverage map with article, claim, and source counts. |
 | `/capabilities.json` | AI task-to-endpoint routing guide with trust requirements, output formats, and fallback artifacts. |
-| `/content-health.json` | Signed corpus health summary with public/draft counts, source coverage, claim mapping, draft repair candidates, and trust boundaries. |
+| `/content-health.json` | Signed corpus health summary with public/draft counts, source coverage, claim mapping, source-ready/source acquisition draft repair queues, and trust boundaries. |
 | `/coverage.json` | AI coverage and limits guide with topic, confidence, source tier, verification distributions, and the representative query benchmark. |
 | `/examples.json` | Executable AI usage examples for dynamic API calls, local MCP workflows, and signed static fallback workflows. |
 | `/graph.json` | Signed public graph of topic, article, claim, and source relationships. |

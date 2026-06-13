@@ -65,7 +65,7 @@ export const MAJOR_MACHINE_ARTIFACTS = [
   {
     path: '/content-health.json',
     category: 'trust',
-    use_when: 'Inspect corpus health, draft risk, and trust boundaries.',
+    use_when: 'Inspect corpus health, draft risk, trust boundaries, and source-ready/source acquisition repair queues.',
     recommended_alternative: '/api/context?q={query}'
   },
   {
