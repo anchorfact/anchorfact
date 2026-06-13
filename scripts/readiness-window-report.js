@@ -21,6 +21,12 @@ function optionalFiniteNumber(value) {
   return Number.isFinite(number) ? number : null;
 }
 
+function measuredStatus(value, fallback = 'not_measured') {
+  const status = String(value || '').trim();
+  if (!status || status === 'not_provided' || status === 'not_measured_in_this_report') return fallback;
+  return status;
+}
+
 function generatedDate(value) {
   const date = new Date(value || Date.now());
   if (Number.isNaN(date.getTime())) return new Date().toISOString().slice(0, 10);
@@ -69,10 +75,10 @@ function currentAdoptionRatio(adoption = {}) {
 }
 
 function currentAdoptionStatus(adoption = {}) {
-  return adoption.identified_ai_primary_to_discovery_target_status
+  return measuredStatus(adoption.identified_ai_primary_to_discovery_target_status
     || adoption.identified_ai_primary_to_discovery_target?.status
     || adoption.status
-    || 'not_measured';
+    || 'not_measured');
 }
 
 function readinessGateById(apiReadiness = {}, id) {
@@ -86,9 +92,9 @@ function publicAuditActionableFromApiReadiness(apiReadiness = {}) {
 }
 
 function currentDesignPartnerStatus(apiReadiness = {}) {
-  return apiReadiness.design_partner_signal?.status
+  return measuredStatus(apiReadiness.design_partner_signal?.status
     || readinessGateById(apiReadiness, 'design_partners')?.status
-    || 'not_measured';
+    || 'not_measured');
 }
 
 function currentExternalDesignPartnerCount(apiReadiness = {}) {
@@ -111,13 +117,13 @@ export function normalizeReadinessSnapshot(input = {}) {
       generated,
       date: input.date || generatedDate(generated),
       source: input.source || 'history',
-      production_integrity_status: input.production_integrity_status || 'not_measured',
+      production_integrity_status: measuredStatus(input.production_integrity_status),
       public_audit_actionable_count: optionalFiniteNumber(input.public_audit_actionable_count),
       api_context_ratio: optionalFiniteNumber(input.api_context_ratio),
       api_scorecard_failures: optionalFiniteNumber(input.api_scorecard_failures),
       adoption_ratio: optionalFiniteNumber(input.adoption_ratio),
-      adoption_status: input.adoption_status || 'not_measured',
-      design_partner_status: input.design_partner_status || 'not_measured',
+      adoption_status: measuredStatus(input.adoption_status),
+      design_partner_status: measuredStatus(input.design_partner_status),
       external_design_partner_count: optionalFiniteNumber(input.external_design_partner_count),
       paid_intent_signal_count: optionalFiniteNumber(input.paid_intent_signal_count),
       content_next_focus: input.content_next_focus || null
@@ -135,7 +141,7 @@ export function normalizeReadinessSnapshot(input = {}) {
     generated,
     date: generatedDate(generated),
     source: input.source || 'current',
-    production_integrity_status: apiReadiness.production_health?.status || 'not_measured',
+    production_integrity_status: measuredStatus(apiReadiness.production_health?.status),
     public_audit_actionable_count: optionalFiniteNumber(
       contentHealth.public_audit?.actionable_count
         ?? contentHealth.project_readiness?.signals?.public_audit_actionable_count

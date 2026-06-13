@@ -91,6 +91,7 @@ test('normalizeReadinessSnapshot extracts public audit signal from API readiness
       production_health: { status: 'not_provided' },
       api_scorecard: { pass_ratio: 1, failures: [] },
       adoption_signal: { status: 'not_provided' },
+      design_partner_signal: { status: 'not_provided' },
       readiness_gates: [
         {
           id: 'public_audit_14_day',
@@ -101,7 +102,10 @@ test('normalizeReadinessSnapshot extracts public audit signal from API readiness
     }
   });
 
+  assertEq(normalized.production_integrity_status, 'not_measured');
   assertEq(normalized.public_audit_actionable_count, 0);
+  assertEq(normalized.adoption_status, 'not_measured');
+  assertEq(normalized.design_partner_status, 'not_measured');
 });
 
 test('buildReadinessWindowReport marks gates met across required consecutive windows', () => {
