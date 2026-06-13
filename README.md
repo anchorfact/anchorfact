@@ -256,7 +256,7 @@ npm run api:readiness -- --design-partners-json reports/design-partners.json
 
 The design-partner JSON is a manual validation input, not crawler analytics. The public `/api-readiness.json` artifact publishes only aggregate counts and status, such as external design-partner count and paid-intent signal count; do not publish raw partner names, private notes, or commercial terms.
 
-When API readiness is fed into `npm run readiness:history`, the readiness window report carries those aggregate design-partner counts under `Manual Gates` so paid-beta proof stays visible without treating it as an automated 7-day or 14-day window. The report's `paid_beta_ready` summary is true only when both the automated windows and manual design-partner gate are met.
+When API readiness is fed into `npm run readiness:history`, the readiness window report carries those aggregate design-partner counts under `Manual Gates` so paid-beta proof stays visible without treating it as an automated 7-day or 14-day window. The report's `paid_beta_ready` summary is true only when both the automated windows and manual design-partner gate are met, and `readiness_blockers` lists the remaining automated and manual gate IDs.
 
 When content health is excellent and API readiness is clean, do not repair or promote more draft content by default. Content work should resume only when public audit findings, API readiness failures, eval drift, query-routing misses, or production usage signals identify a concrete gap.
 

@@ -270,6 +270,12 @@ function gatesMet(gates) {
   return Object.values(gates).every(gate => gate.status === 'met');
 }
 
+function blockingGateIds(gates) {
+  return Object.entries(gates)
+    .filter(([, gate]) => gate.status !== 'met')
+    .map(([id]) => id);
+}
+
 export function buildReadinessWindowReport({
   snapshots = [],
   generatedAt = new Date().toISOString(),
@@ -307,6 +313,10 @@ export function buildReadinessWindowReport({
   };
   const automatedGatesMet = gatesMet(gates);
   const manualGatesMet = gatesMet(manualGates);
+  const readinessBlockers = {
+    automated_gate_ids: blockingGateIds(gates),
+    manual_gate_ids: blockingGateIds(manualGates)
+  };
 
   return {
     schema_version: READINESS_WINDOW_SCHEMA_VERSION,
@@ -325,6 +335,7 @@ export function buildReadinessWindowReport({
     automated_gates_met: automatedGatesMet,
     manual_gates_met: manualGatesMet,
     paid_beta_ready: automatedGatesMet && manualGatesMet,
+    readiness_blockers: readinessBlockers,
     content_change_policy: contentChangePolicy(current, apiTargetRatio),
     snapshots: normalized
   };
@@ -345,6 +356,14 @@ function manualGateCurrentText(gate) {
   return parts.length ? `; ${parts.join('; ')}` : '';
 }
 
+function readinessBlockerText(report) {
+  const blockerIds = [
+    ...(report.readiness_blockers?.automated_gate_ids || []),
+    ...(report.readiness_blockers?.manual_gate_ids || [])
+  ];
+  return blockerIds.join(', ') || 'none';
+}
+
 export function renderReadinessWindowMarkdown(report) {
   const lines = [];
   lines.push('# AnchorFact Readiness Window Report');
@@ -355,6 +374,7 @@ export function renderReadinessWindowMarkdown(report) {
   lines.push(`Automated gates met: ${report.automated_gates_met}`);
   lines.push(`Manual gates met: ${report.manual_gates_met}`);
   lines.push(`Paid beta ready: ${report.paid_beta_ready}`);
+  lines.push(`Readiness blockers: ${readinessBlockerText(report)}`);
   lines.push('');
   lines.push('## Readiness Gates');
   lines.push('');

@@ -117,6 +117,8 @@ test('buildReadinessWindowReport marks gates met across required consecutive win
   assertEq(report.automated_gates_met, true);
   assertEq(report.manual_gates_met, false);
   assertEq(report.paid_beta_ready, false);
+  assertEq(report.readiness_blockers.automated_gate_ids, []);
+  assertEq(report.readiness_blockers.manual_gate_ids, ['design_partners']);
   assertEq(report.content_change_policy.status, 'measure_first');
   assertEq(report.content_change_policy.should_repair_content_now, false);
 });
@@ -137,9 +139,12 @@ test('buildReadinessWindowReport surfaces manual design partner gate separately 
   assertEq(report.automated_gates_met, true);
   assertEq(report.manual_gates_met, true);
   assertEq(report.paid_beta_ready, true);
+  assertEq(report.readiness_blockers.automated_gate_ids, []);
+  assertEq(report.readiness_blockers.manual_gate_ids, []);
   assertEq(report.manual_gates.design_partners.status, 'met');
   assertEq(report.manual_gates.design_partners.current_partner_count, 3);
   assertEq(report.manual_gates.design_partners.current_paid_intent_count, 1);
+  assert(markdown.includes('Readiness blockers: none'), 'missing empty blocker summary');
   assert(markdown.includes('Paid beta ready: true'), 'missing paid beta readiness summary');
   assert(markdown.includes('## Manual Gates'), 'missing manual gates section');
   assert(markdown.includes('design_partners: met'), 'missing design partner manual gate');
@@ -163,7 +168,10 @@ test('buildReadinessWindowReport treats missing current metrics as not measured'
   assertEq(report.content_change_policy.triggers, []);
   assertEq(report.manual_gates_met, false);
   assertEq(report.paid_beta_ready, false);
+  assert(report.readiness_blockers.automated_gate_ids.includes('production_integrity_14_day'), 'missing production blocker');
+  assert(report.readiness_blockers.manual_gate_ids.includes('design_partners'), 'missing manual design partner blocker');
   assertEq(report.manual_gates.design_partners.status, 'not_measured');
+  assert(markdown.includes('Readiness blockers: production_integrity_14_day'), 'missing blocker summary');
   assert(markdown.includes('Paid beta ready: false'), 'missing false paid beta readiness summary');
   assert(markdown.includes('public_audit_actionable_count: not_measured'), 'missing not_measured public audit count');
   assert(markdown.includes('api_context_ratio: not_measured'), 'missing not_measured API ratio');
