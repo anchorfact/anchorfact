@@ -28,7 +28,28 @@ import {
 } from './provenance-signature.js';
 import { fetchLiveText } from './live-http.js';
 
-const REQUIRED_ARTIFACTS = ['root_index_json', 'agent_json', 'openapi_json', 'manifest_json', 'claims_json', 'topics_json', 'capabilities_json', 'content_health_json', 'coverage_json', 'examples_json', 'graph_json', 'evals_json', 'mcp_json', 'artifact_summary_json', 'artifact_shards_json', 'api_readiness_json', 'search_index_json', 'sources_json', 'llms_txt'];
+const REQUIRED_ARTIFACTS = [
+  'root_index_json',
+  'agent_json',
+  'openapi_json',
+  'manifest_json',
+  'claims_json',
+  'topics_json',
+  'capabilities_json',
+  'content_health_json',
+  'coverage_json',
+  'examples_json',
+  'graph_json',
+  'evals_json',
+  'mcp_json',
+  'artifact_summary_json',
+  'artifact_shards_json',
+  'api_readiness_json',
+  'not_found_html',
+  'search_index_json',
+  'sources_json',
+  'llms_txt'
+];
 const OFFICIAL_GITHUB_COMMIT_API = 'https://api.github.com/repos/anchorfact/anchorfact/commits/';
 const OFFICIAL_GITHUB_COMMIT_PAGE = 'https://github.com/anchorfact/anchorfact/commit/';
 

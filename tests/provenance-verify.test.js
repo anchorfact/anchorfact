@@ -140,8 +140,21 @@ function buildFixture(overrides = {}) {
       '/artifact-shards.json': {},
       '/search-index.json': {},
       '/sources.json': {},
+      '/404.html': {},
       '/provenance.json': {}
     }
+  };
+  const notFound = {
+    schema_version: 'anchorfact.not-found.v1',
+    generated: '2026-05-29T00:00:00.000Z',
+    status: 404,
+    error: {
+      code: 'not_found',
+      message: 'No AnchorFact machine artifact or API route exists at this path.'
+    },
+    fallback_policy: { no_spa_fallback: true },
+    machine_entrypoints: ['/index.json', '/api/context?q={query}'],
+    official_site: baseUrl
   };
   const sources = {
     schema_version: 'anchorfact.sources.v1',
@@ -390,6 +403,7 @@ function buildFixture(overrides = {}) {
   const rootIndexText = JSON.stringify(rootIndex, null, 2);
   const agentText = JSON.stringify(agent, null, 2);
   const openapiText = JSON.stringify(openapi, null, 2);
+  const notFoundText = JSON.stringify(notFound);
   const topicsText = JSON.stringify(topics, null, 2);
   const capabilitiesText = JSON.stringify(capabilities, null, 2);
   const contentHealthText = JSON.stringify(contentHealth, null, 2);
@@ -507,6 +521,11 @@ function buildFixture(overrides = {}) {
         sha256: sha256Text(apiReadinessText),
         bytes: Buffer.byteLength(apiReadinessText, 'utf8')
       },
+      not_found_html: {
+        path: '/404.html',
+        sha256: sha256Text(notFoundText),
+        bytes: Buffer.byteLength(notFoundText, 'utf8')
+      },
       search_index_json: {
         path: '/search-index.json',
         sha256: sha256Text(searchText),
@@ -564,6 +583,7 @@ function buildFixture(overrides = {}) {
     [`${baseUrl}/artifact-summary.json`]: { body: artifactSummaryText },
     [`${baseUrl}/artifact-shards.json`]: { body: artifactShardsText },
     [`${baseUrl}/api-readiness.json`]: { body: apiReadinessText },
+    [`${baseUrl}/404.html`]: { body: notFoundText },
     [`${baseUrl}/search-index.json`]: { body: searchText },
     [`${baseUrl}/sources.json`]: { body: sourcesText },
     [`${baseUrl}/llms.txt`]: { body: llms, contentType: 'text/plain; charset=utf-8' },
@@ -602,6 +622,7 @@ test('verifyLiveProvenance accepts matching official live artifacts', async () =
   assertEq(result.artifacts.artifact_summary_json.ok, true);
   assertEq(result.artifacts.artifact_shards_json.ok, true);
   assertEq(result.artifacts.api_readiness_json.ok, true);
+  assertEq(result.artifacts.not_found_html.ok, true);
   assertEq(result.commit.ok, true);
   assertEq(result.signature.skipped, true);
 });
@@ -735,6 +756,20 @@ test('verifyLiveProvenance rejects API readiness artifact hash mismatches', asyn
   });
   assertEq(result.ok, false);
   assert(result.failures.some(failure => failure.includes('api_readiness_json sha256 mismatch')), 'API readiness hash mismatch should fail');
+});
+
+test('verifyLiveProvenance rejects missing machine JSON 404 artifact coverage', async () => {
+  const fixture = buildFixture({
+    artifacts: {
+      not_found_html: undefined
+    }
+  });
+  const result = await verifyLiveProvenance({
+    baseUrl: fixture.baseUrl,
+    fetchImpl: fixture.fetchImpl
+  });
+  assertEq(result.ok, false);
+  assert(result.failures.some(failure => failure.includes('not_found_html artifact is missing')), 'missing machine 404 artifact should fail');
 });
 
 test('verifyLiveProvenance rejects unsafe artifact paths', async () => {
