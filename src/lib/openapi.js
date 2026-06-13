@@ -715,7 +715,45 @@ export function buildOpenApiContract({
         ContentHealth: schemaVersioned('Content health', CONTENT_HEALTH_SCHEMA_VERSION, {
           snapshot: { type: 'object' },
           public: { type: 'object' },
-          draft: { type: 'object' },
+          draft: {
+            type: 'object',
+            properties: {
+              repair_candidate_count: { type: 'integer' },
+              source_ready_repair_candidate_count: { type: 'integer' },
+              source_acquisition_candidate_count: { type: 'integer' },
+              repair_excluded_count: { type: 'integer' },
+              strict_review_candidate_count: { type: 'integer' },
+              repair_candidates: { type: 'array', items: { type: 'object' } },
+              source_ready_repair_candidates: { type: 'array', items: { type: 'object' } },
+              source_acquisition_candidates: { type: 'array', items: { type: 'object' } },
+              strict_review_candidates: { type: 'array', items: { type: 'object' } },
+              repair_queue: {
+                type: 'object',
+                properties: {
+                  candidate_count: { type: 'integer' },
+                  source_ready_candidate_count: { type: 'integer' },
+                  source_acquisition_candidate_count: { type: 'integer' },
+                  excluded_count: { type: 'integer' },
+                  strict_review_count: { type: 'integer' },
+                  next_batch_size: { type: 'integer' },
+                  next_batch: { type: 'array', items: { type: 'object' } },
+                  source_ready_next_batch_size: { type: 'integer' },
+                  source_ready_next_batch: { type: 'array', items: { type: 'object' } },
+                  source_acquisition_next_batch_size: { type: 'integer' },
+                  source_acquisition_next_batch: { type: 'array', items: { type: 'object' } },
+                  strict_review_next_batch: { type: 'array', items: { type: 'object' } },
+                  selection_policy: { type: 'array', items: { type: 'string' } },
+                  complexity_distribution: { type: 'array', items: { type: 'object' } },
+                  category_distribution: { type: 'array', items: { type: 'object' } },
+                  quality_reason_distribution: { type: 'array', items: { type: 'object' } },
+                  exclusion_reason_distribution: { type: 'array', items: { type: 'object' } },
+                  strict_review_reason_distribution: { type: 'array', items: { type: 'object' } }
+                },
+                additionalProperties: true
+              }
+            },
+            additionalProperties: true
+          },
           machine_guidance: { type: 'array', items: { type: 'string' } },
           trust_boundaries: { type: 'object' }
         }),

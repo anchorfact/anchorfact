@@ -457,6 +457,15 @@ test('openapi.json describes the static AI contract', () => {
   assert(openapi.components.schemas.Topics, 'OpenAPI should define Topics schema');
   assert(openapi.components.schemas.Capabilities, 'OpenAPI should define Capabilities schema');
   assert(openapi.components.schemas.ContentHealth, 'OpenAPI should define ContentHealth schema');
+  const contentHealthDraft = openapi.components.schemas.ContentHealth.properties.draft;
+  const contentHealthRepairQueue = contentHealthDraft.properties.repair_queue;
+  assert(contentHealthRepairQueue.properties.candidate_count, 'OpenAPI content health schema should define repair queue candidate count');
+  assert(contentHealthRepairQueue.properties.next_batch, 'OpenAPI content health schema should define repair queue next batch');
+  assert(contentHealthRepairQueue.properties.source_ready_candidate_count, 'OpenAPI content health schema should define source-ready repair count');
+  assert(contentHealthRepairQueue.properties.source_ready_next_batch, 'OpenAPI content health schema should define source-ready repair batch');
+  assert(contentHealthRepairQueue.properties.source_acquisition_candidate_count, 'OpenAPI content health schema should define source acquisition repair count');
+  assert(contentHealthRepairQueue.properties.source_acquisition_next_batch, 'OpenAPI content health schema should define source acquisition repair batch');
+  assert(contentHealthRepairQueue.properties.selection_policy, 'OpenAPI content health schema should define repair queue selection policy');
   assert(openapi.components.schemas.Coverage, 'OpenAPI should define Coverage schema');
   assert(openapi.components.schemas.Examples, 'OpenAPI should define Examples schema');
   assert(openapi.components.schemas.Graph, 'OpenAPI should define Graph schema');
