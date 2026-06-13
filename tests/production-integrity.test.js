@@ -139,6 +139,39 @@ test('buildIntegrityReport fails when production smoke fails', () => {
   assert(report.failures.includes('Production smoke failed'), 'smoke failure should be reported');
 });
 
+test('buildIntegrityReport fails when production deploy commit lags source commit', () => {
+  const sourceCommit = '1'.repeat(40);
+  const deployedCommit = '2'.repeat(40);
+  const report = buildIntegrityReport({
+    generatedAt: '2026-05-29T00:00:00.000Z',
+    baseUrl: 'https://anchorfact.org',
+    expectedCounts: DEFAULT_EXPECTED_COUNTS,
+    expectedSourceCommitSha: sourceCommit,
+    smoke: { ok: true, stdout: 'smoke ok', stderr: '' },
+    provenance: provenanceResult({
+      provenance: {
+        content_counts: { public: 1210, draft: 300, claims: 3790 },
+        build: { commit_sha: deployedCommit },
+        signature: {
+          key_id: 'ed25519:fixture',
+          public_key_sha256: 'f'.repeat(64)
+        }
+      }
+    }),
+    aiEvals: { ok: true, eval_count: 11, passed: 11, failed: 0, failures: [], results: [] },
+    edgeCache: { ok: true, failures: [], static_artifacts: [], dynamic_controls: [] },
+    discovery: { ok: true, failures: [], checks: [] }
+  });
+
+  assertEq(report.ok, false);
+  assertEq(report.source_commit_sha, sourceCommit);
+  assertEq(report.commit_sha, deployedCommit);
+  assert(report.failures.some(failure => failure.includes('Production deploy commit is stale')), 'stale deploy commit should fail integrity');
+  const markdown = renderIntegrityMarkdown(report);
+  assert(markdown.includes(`source commit: ${sourceCommit}`), 'markdown should show the source commit');
+  assert(markdown.includes(`deployed commit: ${deployedCommit}`), 'markdown should show the deployed commit');
+});
+
 test('renderIntegrityMarkdown includes production smoke failure diagnostics', () => {
   const report = buildIntegrityReport({
     generatedAt: '2026-05-29T00:00:00.000Z',
@@ -477,6 +510,7 @@ test('runProductionIntegrity wires smoke and signed verifier dependencies', asyn
     baseUrl: 'https://anchorfact.org',
     publicKeyPath: 'keys/provenance.pub.pem',
     generatedAt: '2026-05-29T00:00:00.000Z',
+    sourceCommitSha: '00e1bf052adcf0d5b396e0f77be0640810e557d7',
     sleepImpl: async (ms) => {
       delays.push(ms);
     },
@@ -518,6 +552,7 @@ test('runProductionIntegrity wires smoke and signed verifier dependencies', asyn
   assertEq(verifierArgs.requireSignature, true);
   assertEq(verifierArgs.requireTrustedSignature, true);
   assert(Array.isArray(verifierArgs.trustedPublicKeys), 'trusted public keys should be loaded');
+  assertEq(report.source_commit_sha, '00e1bf052adcf0d5b396e0f77be0640810e557d7');
 });
 
 test('runProductionIntegrity retries transient AI eval suite failures once', async () => {
@@ -527,6 +562,7 @@ test('runProductionIntegrity retries transient AI eval suite failures once', asy
     baseUrl: 'https://anchorfact.org',
     publicKeyPath: 'keys/provenance.pub.pem',
     generatedAt: '2026-05-29T00:00:00.000Z',
+    sourceCommitSha: '00e1bf052adcf0d5b396e0f77be0640810e557d7',
     sleepImpl: async (ms) => {
       delays.push(ms);
     },

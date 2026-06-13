@@ -103,6 +103,21 @@ function commandOutput(error, field) {
   return Buffer.isBuffer(value) ? value.toString('utf8') : String(value || '');
 }
 
+function resolveSourceCommitSha({ env = process.env, execFile = execFileSync } = {}) {
+  const envSha = env.ANCHORFACT_COMMIT_SHA || env.GITHUB_SHA || env.CF_PAGES_COMMIT_SHA;
+  if (/^[a-f0-9]{40}$/i.test(String(envSha || ''))) {
+    return envSha;
+  }
+
+  try {
+    const output = execFile('git', ['rev-parse', 'HEAD'], { encoding: 'utf8' });
+    const sha = String(output || '').trim();
+    return /^[a-f0-9]{40}$/i.test(sha) ? sha : null;
+  } catch {
+    return null;
+  }
+}
+
 function failedEvalResults(aiEvals) {
   return (aiEvals?.results || [])
     .filter(result => result && result.ok !== true)
@@ -394,6 +409,7 @@ export function buildIntegrityReport({
   generatedAt = isoNow(),
   baseUrl = OFFICIAL_SITE,
   expectedCounts = DEFAULT_EXPECTED_COUNTS,
+  expectedSourceCommitSha = null,
   smoke,
   provenance,
   aiEvals,
@@ -401,11 +417,15 @@ export function buildIntegrityReport({
   discovery
 }) {
   const failures = [];
+  const deployedCommitSha = provenance?.provenance?.build?.commit_sha || null;
   if (!smoke?.ok) failures.push('Production smoke failed');
   if (!provenance?.ok) failures.push('Signed provenance verification failed');
   if (!aiEvals?.ok) failures.push('AI evals failed');
   if (edgeCache?.ok === false) failures.push('Edge cache verification failed');
   if (discovery?.ok === false) failures.push('AI discovery verification failed');
+  if (expectedSourceCommitSha && deployedCommitSha && expectedSourceCommitSha !== deployedCommitSha) {
+    failures.push(`Production deploy commit is stale: deployed ${deployedCommitSha}, expected source ${expectedSourceCommitSha}`);
+  }
   for (const failure of provenance?.failures || []) failures.push(failure);
   for (const failure of aiEvals?.failures || []) failures.push(failure);
   for (const failure of edgeCache?.failures || []) failures.push(failure);
@@ -429,7 +449,8 @@ export function buildIntegrityReport({
       draft: provenance?.provenance?.content_counts?.draft ?? null,
       claims: provenance?.provenance?.content_counts?.claims ?? null
     },
-    commit_sha: provenance?.provenance?.build?.commit_sha || null,
+    commit_sha: deployedCommitSha,
+    source_commit_sha: expectedSourceCommitSha || null,
     signature: {
       status: provenance?.signature?.status || null,
       ok: provenance?.signature?.ok === true,
@@ -527,7 +548,8 @@ Base URL: ${report.base_url}
 ## Summary
 
 - status: ${report.ok ? 'pass' : 'fail'}
-- commit: ${report.commit_sha || '(missing)'}
+- deployed commit: ${report.commit_sha || '(missing)'}
+- source commit: ${report.source_commit_sha || '(not checked)'}
 - counts: ${report.counts.public} public / ${report.counts.draft} draft / ${report.counts.claims} claims
 - expected: ${report.expected_counts.public} public / ${report.expected_counts.draft} draft / ${report.expected_counts.claims} claims
 - signature: status=${report.signature.status || '(missing)'}, ok=${report.signature.ok}, trusted=${report.signature.trusted}
@@ -607,6 +629,7 @@ export async function runProductionIntegrity({
   baseUrl = OFFICIAL_SITE,
   publicKeyPath = DEFAULT_PUBLIC_KEY_PATH,
   expectedCounts = DEFAULT_EXPECTED_COUNTS,
+  sourceCommitSha = null,
   smokeRunner = runProductionSmoke,
   evalRunner = runAiEvals,
   evalOptions = DEFAULT_INTEGRITY_EVAL_OPTIONS,
@@ -617,8 +640,11 @@ export async function runProductionIntegrity({
   afterSmokeDelayMs = DEFAULT_AFTER_SMOKE_DELAY_MS,
   aiEvalRetryDelayMs = DEFAULT_AI_EVAL_RETRY_DELAY_MS,
   aiEvalAttempts = DEFAULT_AI_EVAL_ATTEMPTS,
-  sleepImpl = sleep
+  sleepImpl = sleep,
+  env = process.env,
+  execFile = execFileSync
 } = {}) {
+  const expectedSourceCommitSha = sourceCommitSha || resolveSourceCommitSha({ env, execFile });
   const smoke = smokeRunner({ baseUrl, expectedCounts });
   const edgeCache = await edgeCacheChecker({ baseUrl });
   const discovery = await discoveryChecker({ baseUrl });
@@ -648,6 +674,7 @@ export async function runProductionIntegrity({
     generatedAt,
     baseUrl,
     expectedCounts,
+    expectedSourceCommitSha,
     smoke,
     provenance,
     aiEvals,
