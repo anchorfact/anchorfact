@@ -517,6 +517,15 @@ export function buildOpenApiContract({
           static_artifacts: { type: 'array', items: { type: 'string' } }
         }),
         AgentProfile: schemaVersioned('Agent profile', AGENT_PROFILE_SCHEMA_VERSION, {
+          current_snapshot: {
+            type: 'object',
+            properties: {
+              api_readiness_blocker_ids: { type: 'array', items: { type: 'string' } },
+              api_readiness_automated_blocker_ids: { type: 'array', items: { type: 'string' } },
+              api_readiness_manual_blocker_ids: { type: 'array', items: { type: 'string' } }
+            },
+            additionalProperties: true
+          },
           quick_start: { $ref: '#/components/schemas/AgentQuickStart' }
         }),
         AgentQuickStart: {

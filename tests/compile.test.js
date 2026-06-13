@@ -297,6 +297,8 @@ test('agent profile describes the machine contract', () => {
   assertEq(agent.current_snapshot.api_readiness_subscription_ready, false);
   assertEq(agent.current_snapshot.api_readiness_core_query_ratio, 0);
   assertEq(agent.current_snapshot.api_readiness_context_ratio, 0);
+  assert(agent.current_snapshot.api_readiness_blocker_ids.includes('core_query_context_ratio'), 'agent profile should expose API readiness blockers');
+  assert(agent.current_snapshot.api_readiness_manual_blocker_ids.includes('design_partners'), 'agent profile should expose manual readiness blockers');
   assert(agent.current_snapshot.unique_sources >= 1, 'agent profile should expose source count');
   assertEq(agent.endpoints.claims.url, 'https://anchorfact.org/claims.json');
   assertEq(agent.schemas.root_index, 'anchorfact.root-index.v1');
@@ -431,6 +433,7 @@ test('openapi.json describes the static AI contract', () => {
   assert(openapi.paths['/sources.json'], 'OpenAPI should describe sources endpoint');
   assert(openapi.paths['/{canonical_slug}/index.json'], 'OpenAPI should describe article JSON-LD template');
   assert(openapi.paths['/{canonical_slug}/index.html'], 'OpenAPI should describe article JSON-LD HTML alias template');
+  assert(openapi.components.schemas.AgentProfile.properties.current_snapshot, 'OpenAPI should define agent current snapshot');
   assert(openapi.components.schemas.AgentProfile.properties.quick_start, 'OpenAPI should describe agent quick-start guidance');
   assert(openapi.components.schemas.RootIndex, 'OpenAPI should define root machine index schema');
   assert(openapi.components.schemas.ApiAccess, 'OpenAPI should define API access schema');
