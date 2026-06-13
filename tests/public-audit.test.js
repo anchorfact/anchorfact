@@ -40,7 +40,7 @@ function article(slug, overrides = {}) {
   return {
     id: `https://anchorfact.org/kb/${slug}`,
     canonical_slug: slug,
-    canonical_url: `https://anchorfact.org/${slug}/`,
+    canonical_url: `https://anchorfact.org/${slug}/index.json`,
     title: `Fixture ${slug}`,
     status: 'public',
     confidence_level: overrides.confidence_level ?? 'medium',
@@ -56,7 +56,7 @@ function article(slug, overrides = {}) {
 function claim(slug, i, capped = true) {
   return {
     id: `claim-${slug}-${i}`,
-    article: `https://anchorfact.org/${slug}/`,
+    article: `https://anchorfact.org/${slug}/index.json`,
     title: `Fixture ${slug}`,
     statement: `Claim ${i} for ${slug} has a complete statement.`,
     confidence: capped ? 'medium' : 'high',

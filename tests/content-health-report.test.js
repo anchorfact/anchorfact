@@ -33,7 +33,7 @@ function publicArticle(slug, overrides = {}) {
   return {
     id: `https://anchorfact.org/kb/${slug}`,
     canonical_slug: slug,
-    canonical_url: `https://anchorfact.org/${slug}/`,
+    canonical_url: `https://anchorfact.org/${slug}/index.json`,
     title: overrides.title || `Fixture ${slug}`,
     status: 'public',
     confidence_level: overrides.confidence_level || 'medium',
@@ -115,7 +115,7 @@ test('buildContentHealthReport summarizes public and draft health', () => {
     ]);
     const report = buildContentHealthReport({
       manifest,
-      claimsPayload: { claims: [{ article: 'https://anchorfact.org/ai/public-a/' }] },
+      claimsPayload: { claims: [{ article: 'https://anchorfact.org/ai/public-a/index.json' }] },
       verificationReport: {
         articles: [
           {
@@ -194,7 +194,7 @@ test('current production counts do not mark docs stale', () => {
         claim_count: 1,
         articles: [publicArticle('ai/public-a')]
       },
-      claimsPayload: { claims: [{ article: 'https://anchorfact.org/ai/public-a/' }] },
+      claimsPayload: { claims: [{ article: 'https://anchorfact.org/ai/public-a/index.json' }] },
       verificationReport: { articles: [] },
       contentBySlug: new Map([['ai/public-a', content('ai')]])
     }, { root, generatedAt: '2026-06-08T00:00:00.000Z' });

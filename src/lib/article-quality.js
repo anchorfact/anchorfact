@@ -147,7 +147,7 @@ export function evaluateArticleQuality({
 
   return {
     canonicalSlug,
-    canonicalUrl: `https://anchorfact.org/${canonicalSlug}/`,
+    canonicalUrl: `https://anchorfact.org/${canonicalSlug}/index.json`,
     status: publicEligible ? 'public' : 'draft',
     isDraft,
     publicEligible,

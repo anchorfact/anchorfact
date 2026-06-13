@@ -224,9 +224,8 @@ function writeSitemap(distDir, publicResults) {
     ...publicResults.flatMap(result => {
       const slug = result._quality.canonicalSlug;
       return [
-        `<url><loc>https://anchorfact.org/${slug}/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>`,
-        `<url><loc>https://anchorfact.org/${slug}/index.md</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>`,
-        `<url><loc>https://anchorfact.org/${slug}/index.json</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>`
+        `<url><loc>https://anchorfact.org/${slug}/index.json</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>`,
+        `<url><loc>https://anchorfact.org/${slug}/index.md</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>`
       ];
     })
   ];

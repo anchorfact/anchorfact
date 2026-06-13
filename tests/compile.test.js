@@ -268,7 +268,8 @@ test('public entrypoints exclude draft articles', () => {
   assert(!dashboardText.trimStart().startsWith('<'), 'dashboard endpoint should not emit HTML');
   assert(llmsTxt.includes('Public Fixture'), 'llms.txt should include public article');
   assert(!llmsTxt.includes('Draft Fixture'), 'llms.txt should exclude draft article');
-  assert(sitemap.includes('/public-fixture/'), 'sitemap should include public article');
+  assert(sitemap.includes('/public-fixture/index.json'), 'sitemap should include public article JSON-LD route');
+  assert(!sitemap.includes('/public-fixture/</loc>'), 'sitemap should not expose directory-style article pages');
   assert(!sitemap.includes('/draft-fixture/'), 'sitemap should exclude draft article');
   assert(!robotsTxt.includes('draft'), 'robots.txt should not expose draft routes');
 });
@@ -572,7 +573,10 @@ test('search-index.json exposes compact public retrieval records', () => {
   const record = search.records[0];
   assertEq(record.canonical_slug, 'public-fixture');
   assertEq(record.title, 'Public Fixture');
-  assertEq(record.url, 'https://anchorfact.org/public-fixture/');
+  assertEq(record.url, 'https://anchorfact.org/public-fixture/index.json');
+  assertEq(record.routes.jsonld, 'https://anchorfact.org/public-fixture/index.json');
+  assertEq(record.routes.html_alias, 'https://anchorfact.org/public-fixture/index.html');
+  assert(!Object.prototype.hasOwnProperty.call(record.routes, 'html'), 'search records should not expose directory-style html routes');
   assertEq(record.confidence_level, 'medium');
   assertEq(record.claim_count, 2);
   assertEq(record.source_count, 1);

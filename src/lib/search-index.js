@@ -74,9 +74,9 @@ function unique(values) {
 
 function routeSet(slug, site) {
   return {
-    html: publicUrl(`/${slug}/`, site),
-    markdown: publicUrl(`/${slug}/index.md`, site),
     jsonld: publicUrl(`/${slug}/index.json`, site),
+    html_alias: publicUrl(`/${slug}/index.html`, site),
+    markdown: publicUrl(`/${slug}/index.md`, site),
     text: publicUrl(`/${slug}/index.txt`, site),
     turtle: publicUrl(`/${slug}/index.ttl`, site)
   };
