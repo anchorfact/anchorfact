@@ -25,6 +25,7 @@ function parseArgs(argv) {
     writeJson: null,
     adoptionJson: null,
     productionIntegrityJson: null,
+    designPartnersJson: null,
     runs: DEFAULT_RUNS,
     warmups: DEFAULT_WARMUPS,
     skipPerformance: false
@@ -44,6 +45,8 @@ function parseArgs(argv) {
       options.adoptionJson = argv[++index] || null;
     } else if (arg === '--production-integrity-json') {
       options.productionIntegrityJson = argv[++index] || null;
+    } else if (arg === '--design-partners-json') {
+      options.designPartnersJson = argv[++index] || null;
     } else if (arg === '--runs') {
       options.runs = Number.parseInt(argv[++index], 10);
     } else if (arg === '--warmups') {
@@ -67,7 +70,7 @@ function parseArgs(argv) {
 }
 
 function usage() {
-  return `Usage: node scripts/api-readiness-report.js [--dist dist] [--json] [--write path] [--write-json path] [--adoption-json path] [--production-integrity-json path] [--runs n] [--warmups n] [--skip-performance]
+  return `Usage: node scripts/api-readiness-report.js [--dist dist] [--json] [--write path] [--write-json path] [--adoption-json path] [--production-integrity-json path] [--design-partners-json path] [--runs n] [--warmups n] [--skip-performance]
 
 Builds a report-only API subscription readiness scorecard. Low readiness does not fail CI; missing artifacts or invalid arguments still fail.
 `;
@@ -160,6 +163,69 @@ export function normalizeProductionIntegrity(payload) {
   };
 }
 
+function countExternalDesignPartners(signal = {}) {
+  if (!Array.isArray(signal.partners)) return null;
+  return signal.partners.filter(partner => partner && partner.external !== false && partner.disqualified !== true).length;
+}
+
+function countPaidIntentSignals(signal = {}) {
+  if (!Array.isArray(signal.paid_intent_signals)) return null;
+  return signal.paid_intent_signals.filter(item => item && item.disqualified !== true).length;
+}
+
+export function normalizeDesignPartnerSignal(payload) {
+  if (!payload || typeof payload !== 'object') return null;
+  const signal = payload.design_partner_signal && typeof payload.design_partner_signal === 'object'
+    ? payload.design_partner_signal
+    : payload.designPartnerSignal && typeof payload.designPartnerSignal === 'object'
+      ? payload.designPartnerSignal
+      : payload;
+  const requiredPartnerCount = Math.max(
+    3,
+    finiteNumber(
+      signal.required_external_design_partner_count
+        ?? signal.required_partner_count
+        ?? signal.target_partner_count,
+      3
+    )
+  );
+  const requiredPaidIntentCount = Math.max(
+    1,
+    finiteNumber(
+      signal.required_paid_intent_signal_count
+        ?? signal.required_paid_intent_count
+        ?? signal.target_paid_intent_count,
+      1
+    )
+  );
+  const externalDesignPartnerCount = finiteNumber(
+    signal.external_design_partner_count
+      ?? signal.external_design_partners
+      ?? signal.partner_count
+      ?? countExternalDesignPartners(signal)
+  );
+  const paidIntentSignalCount = finiteNumber(
+    signal.paid_intent_signal_count
+      ?? signal.paid_intent_signals_count
+      ?? signal.paid_intent_count
+      ?? countPaidIntentSignals(signal)
+  );
+  const countsMeetTarget = externalDesignPartnerCount >= requiredPartnerCount
+    && paidIntentSignalCount >= requiredPaidIntentCount;
+  const suppliedStatus = signal.status || null;
+  const status = suppliedStatus === 'met' && !countsMeetTarget
+    ? 'below_target'
+    : suppliedStatus || (countsMeetTarget ? 'met' : 'below_target');
+
+  return {
+    status,
+    external_design_partner_count: externalDesignPartnerCount,
+    required_external_design_partner_count: requiredPartnerCount,
+    paid_intent_signal_count: paidIntentSignalCount,
+    required_paid_intent_signal_count: requiredPaidIntentCount
+  };
+}
+
 export function buildLocalApiReadinessReport(options = {}) {
   const distDir = options.distDir || DEFAULT_DIST_DIR;
   const generatedAt = options.generatedAt || new Date().toISOString();
@@ -181,7 +247,8 @@ export function buildLocalApiReadinessReport(options = {}) {
     apiPerformanceReport,
     generatedAt,
     adoptionScorecard: options.adoptionScorecard || null,
-    productionIntegrity: options.productionIntegrity || null
+    productionIntegrity: options.productionIntegrity || null,
+    designPartnerSignal: options.designPartnerSignal || null
   });
 }
 
@@ -199,7 +266,10 @@ export function main(argv = process.argv.slice(2)) {
       : normalizeAdoptionScorecard(options.adoptionScorecard) || null,
     productionIntegrity: options.productionIntegrityJson
       ? normalizeProductionIntegrity(readOptionalRuntimeJson(options.productionIntegrityJson, 'production integrity'))
-      : normalizeProductionIntegrity(options.productionIntegrity) || null
+      : normalizeProductionIntegrity(options.productionIntegrity) || null,
+    designPartnerSignal: options.designPartnersJson
+      ? normalizeDesignPartnerSignal(readOptionalRuntimeJson(options.designPartnersJson, 'design partners'))
+      : normalizeDesignPartnerSignal(options.designPartnerSignal) || null
   });
   const json = `${JSON.stringify(report, null, 2)}\n`;
   const markdown = renderApiReadinessMarkdown(report);

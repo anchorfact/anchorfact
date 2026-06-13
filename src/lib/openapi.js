@@ -618,7 +618,8 @@ export function buildOpenApiContract({
           api_scorecard: { type: 'object' },
           api_performance: { type: 'object' },
           production_health: { type: 'object' },
-          adoption_signal: { type: 'object' }
+          adoption_signal: { type: 'object' },
+          design_partner_signal: { type: 'object' }
         }),
         ArtifactShard: schemaVersioned('Artifact shard', ARTIFACT_SHARD_SCHEMA_VERSION, {
           artifact_id: { type: 'string' },

@@ -4,6 +4,8 @@ function gateCurrentText(gate) {
   const parts = [];
   if (gate.current_ratio !== undefined && gate.current_ratio !== null) parts.push(`current=${gate.current_ratio}`);
   if (gate.current_actionable_count !== undefined && gate.current_actionable_count !== null) parts.push(`current_actionable=${gate.current_actionable_count}`);
+  if (gate.current_partner_count !== undefined && gate.current_partner_count !== null) parts.push(`current_partners=${gate.current_partner_count}`);
+  if (gate.current_paid_intent_count !== undefined && gate.current_paid_intent_count !== null) parts.push(`current_paid_intent=${gate.current_paid_intent_count}`);
   return parts.length ? `; ${parts.join('; ')}` : '';
 }
 
@@ -27,6 +29,7 @@ export function renderApiReadinessMarkdown(report) {
   lines.push(`- Artifact budget: ${report.api_performance.artifact_size_budget_ok ?? 'not_provided'}`);
   lines.push(`- Production health: ${report.production_health.status || 'not_provided'}`);
   lines.push(`- Adoption signal: ${report.adoption_signal.status || report.adoption_signal.identified_ai_primary_to_discovery_target_status || 'not_provided'}`);
+  lines.push(`- Design partner signal: ${report.design_partner_signal?.status || 'not_provided'}`);
   lines.push('');
   lines.push(`## Readiness Gates`);
   lines.push('');

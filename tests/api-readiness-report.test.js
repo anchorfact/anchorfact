@@ -15,6 +15,7 @@ import { evaluateContextReadiness as evaluateContextReadinessFromRunner } from '
 import { renderApiReadinessMarkdown as renderApiReadinessMarkdownFromRenderer } from '../src/lib/api-readiness-renderer.js';
 import {
   normalizeAdoptionScorecard,
+  normalizeDesignPartnerSignal,
   normalizeProductionIntegrity,
   readOptionalRuntimeJson
 } from '../scripts/api-readiness-report.js';
@@ -898,6 +899,56 @@ test('runtime scorecard inputs normalize Cloudflare adoption and production inte
   assert(markdown.includes('Production health: pass'), 'should render production integrity status');
   assert(markdown.includes('Adoption signal: below_target'), 'should render adoption status');
   assert(markdown.includes('current=0.05'), 'should render current adoption ratio');
+});
+
+test('design partner signal gates paid-beta readiness without leaking partner details', () => {
+  const designPartnerSignal = normalizeDesignPartnerSignal({
+    source: {
+      provider: 'manual_review',
+      reviewed_at: '2026-06-13'
+    },
+    design_partner_signal: {
+      partners: [
+        { name: 'Example Partner A', external: true, evidence: 'discovery_call' },
+        { name: 'Example Partner B', external: true, evidence: 'pilot_feedback' },
+        { name: 'Example Partner C', external: true, evidence: 'integration_request' }
+      ],
+      paid_intent_signals: [
+        { name: 'Example Partner A', evidence: 'budget_owner_confirmed' }
+      ]
+    }
+  });
+  const report = buildApiReadinessReport({
+    artifacts: fakeArtifacts(),
+    querySet: [{ id: 'rag', category: 'agent_rag', expected_slug: 'ai/rag', query: 'Retrieval-Augmented Generation (RAG)' }],
+    designPartnerSignal,
+    generatedAt: '2026-06-13T00:00:00.000Z'
+  });
+  const designPartnerGate = report.readiness_gates.find(gate => gate.id === 'design_partners');
+  const markdown = renderApiReadinessMarkdown(report);
+
+  assertEq(designPartnerSignal.status, 'met');
+  assertEq(designPartnerSignal.external_design_partner_count, 3);
+  assertEq(designPartnerSignal.paid_intent_signal_count, 1);
+  assertEq(designPartnerGate.status, 'met');
+  assertEq(designPartnerGate.current_partner_count, 3);
+  assertEq(designPartnerGate.current_paid_intent_count, 1);
+  assertEq(report.design_partner_signal.status, 'met');
+  assert(!JSON.stringify(report.design_partner_signal).includes('Example Partner'), 'public report should not leak raw partner names');
+  assert(!report.next_actions.some(action => action.includes('design partner and paid-intent')), 'met design signals should not ask for design partner proof');
+  assert(markdown.includes('Design partner signal: met'), 'should render design partner status');
+  assert(markdown.includes('current_partners=3'), 'should render current design partner count');
+  assert(markdown.includes('current_paid_intent=1'), 'should render current paid intent count');
+
+  const understatedTargets = normalizeDesignPartnerSignal({
+    required_partner_count: 1,
+    required_paid_intent_count: 0,
+    partners: [{ name: 'Example Partner A', external: true }],
+    paid_intent_signals: []
+  });
+  assertEq(understatedTargets.required_external_design_partner_count, 3);
+  assertEq(understatedTargets.required_paid_intent_signal_count, 1);
+  assertEq(understatedTargets.status, 'below_target');
 });
 
 test('optional runtime JSON inputs tolerate missing files but not invalid JSON', () => {

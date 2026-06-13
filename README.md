@@ -248,6 +248,14 @@ The scheduled `Readiness Scorecard` workflow combines the daily production integ
 npm run readiness:history -- --history-dir reports/readiness-history --api-readiness-json reports/api-readiness.json --content-health-json reports/content-health.json --save-current --write reports/readiness-window.md --write-json reports/readiness-window.json
 ```
 
+When real design-partner evidence exists, pass a local reviewed summary into the API readiness report:
+
+```bash
+npm run api:readiness -- --design-partners-json reports/design-partners.json
+```
+
+The design-partner JSON is a manual validation input, not crawler analytics. The public `/api-readiness.json` artifact publishes only aggregate counts and status, such as external design-partner count and paid-intent signal count; do not publish raw partner names, private notes, or commercial terms.
+
 When content health is excellent and API readiness is clean, do not repair or promote more draft content by default. Content work should resume only when public audit findings, API readiness failures, eval drift, query-routing misses, or production usage signals identify a concrete gap.
 
 ## MCP and Local API

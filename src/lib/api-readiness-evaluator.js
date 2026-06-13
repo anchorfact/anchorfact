@@ -283,6 +283,7 @@ function buildNextActions({
   contextScorecard,
   apiPerformanceReport,
   adoptionScorecard,
+  designPartnerSignal,
   targetRatio
 }) {
   const actions = [];
@@ -304,7 +305,9 @@ function buildNextActions({
     actions.push('Measure AI primary/discovery usage for a 7-day window before changing paid-beta scope.');
   }
   actions.push('Keep the free API and no-key public discovery surface until all readiness gates are met for the defined windows.');
-  actions.push('Start paid beta work only after design partner and paid-intent signals are real, not inferred from crawler traffic.');
+  if (designPartnerSignal?.status !== 'met') {
+    actions.push('Start paid beta work only after design partner and paid-intent signals are real, not inferred from crawler traffic.');
+  }
   return actions;
 }
 
@@ -316,6 +319,7 @@ export function buildApiReadinessReport({
   apiPerformanceReport = null,
   adoptionScorecard = null,
   productionIntegrity = null,
+  designPartnerSignal = null,
   targetRatio = API_READINESS_TARGET_RATIO
 } = {}) {
   const coreCorpus = evaluateCoreCorpus({
@@ -377,7 +381,13 @@ export function buildApiReadinessReport({
       {
         id: 'design_partners',
         target: '>=3 real external design partners and >=1 paid-intent signal',
-        status: 'manual_validation_required'
+        status: designPartnerSignal?.status || 'manual_validation_required',
+        ...(designPartnerSignal?.external_design_partner_count === undefined || designPartnerSignal?.external_design_partner_count === null
+          ? {}
+          : { current_partner_count: designPartnerSignal.external_design_partner_count }),
+        ...(designPartnerSignal?.paid_intent_signal_count === undefined || designPartnerSignal?.paid_intent_signal_count === null
+          ? {}
+          : { current_paid_intent_count: designPartnerSignal.paid_intent_signal_count })
       }
     ],
     core_corpus: coreCorpus,
@@ -394,11 +404,13 @@ export function buildApiReadinessReport({
       : { status: 'not_provided' },
     production_health: productionIntegrity || { status: 'not_provided' },
     adoption_signal: adoptionScorecard || { status: 'not_provided' },
+    design_partner_signal: designPartnerSignal || { status: 'not_provided' },
     next_actions: buildNextActions({
       coreCorpus,
       contextScorecard,
       apiPerformanceReport,
       adoptionScorecard,
+      designPartnerSignal,
       targetRatio
     })
   };
