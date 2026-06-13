@@ -95,6 +95,12 @@ function checkEq(actual, expected, label, failures) {
   }
 }
 
+function checkIncludes(values, expected, label, failures) {
+  if (!Array.isArray(values) || !values.includes(expected)) {
+    failures.push(`${label} should include ${expected}`);
+  }
+}
+
 function checkOfficialIdentity(provenance, failures) {
   checkEq(provenance.official_site, OFFICIAL_SITE, 'provenance official_site', failures);
   checkEq(provenance.official_source_repository, OFFICIAL_SOURCE_REPOSITORY, 'provenance official_source_repository', failures);
@@ -361,6 +367,9 @@ export async function verifyLiveProvenance({
   const apiReadiness = artifacts.api_readiness_json?.text
     ? parseJson(artifacts.api_readiness_json.text, '/api-readiness.json', failures) || {}
     : {};
+  const notFound = artifacts.not_found_html?.text
+    ? parseJson(artifacts.not_found_html.text, '/404.html', failures) || {}
+    : {};
   const searchIndex = artifacts.search_index_json?.text
     ? parseJson(artifacts.search_index_json.text, '/search-index.json', failures) || {}
     : {};
@@ -382,6 +391,13 @@ export async function verifyLiveProvenance({
   checkEq(artifactSummary.schema_version, ARTIFACT_SUMMARY_SCHEMA_VERSION, 'artifact summary schema_version', failures);
   checkEq(artifactShards.schema_version, ARTIFACT_SHARDS_SCHEMA_VERSION, 'artifact shards schema_version', failures);
   checkEq(apiReadiness.schema_version, API_READINESS_SCHEMA_VERSION, 'API readiness schema_version', failures);
+  checkEq(notFound.schema_version, 'anchorfact.not-found.v1', 'machine 404 schema_version', failures);
+  checkEq(notFound.status, 404, 'machine 404 status', failures);
+  checkEq(notFound.error?.code, 'not_found', 'machine 404 error code', failures);
+  checkEq(notFound.fallback_policy?.no_spa_fallback, true, 'machine 404 no_spa_fallback', failures);
+  checkIncludes(notFound.machine_entrypoints, '/index.json', 'machine 404 entrypoints', failures);
+  checkIncludes(notFound.machine_entrypoints, '/api/context?q={query}', 'machine 404 entrypoints', failures);
+  checkEq(notFound.official_site, normalizedBaseUrl, 'machine 404 official_site', failures);
   checkEq(searchIndex.schema_version, SEARCH_INDEX_SCHEMA_VERSION, 'search index schema_version', failures);
   checkEq(manifest.provenance_url, publicUrl(PROVENANCE_PATH, normalizedBaseUrl), 'manifest provenance_url', failures);
   checkEq(claims.provenance_url, publicUrl(PROVENANCE_PATH, normalizedBaseUrl), 'claims provenance_url', failures);

@@ -772,6 +772,42 @@ test('verifyLiveProvenance rejects missing machine JSON 404 artifact coverage', 
   assert(result.failures.some(failure => failure.includes('not_found_html artifact is missing')), 'missing machine 404 artifact should fail');
 });
 
+test('verifyLiveProvenance rejects machine JSON 404 contract drift', async () => {
+  const driftedNotFound = {
+    schema_version: 'anchorfact.not-found.v1',
+    generated: '2026-05-29T00:00:00.000Z',
+    status: 404,
+    error: {
+      code: 'fallback_html',
+      message: 'Unexpected fallback response.'
+    },
+    fallback_policy: { no_spa_fallback: false },
+    machine_entrypoints: ['/index.json'],
+    official_site: OFFICIAL_SITE
+  };
+  const driftedNotFoundText = JSON.stringify(driftedNotFound);
+  const fixture = buildFixture({
+    artifacts: {
+      not_found_html: {
+        path: '/404.html',
+        sha256: sha256Text(driftedNotFoundText),
+        bytes: Buffer.byteLength(driftedNotFoundText, 'utf8')
+      }
+    },
+    routes: {
+      [`${OFFICIAL_SITE}/404.html`]: { body: driftedNotFoundText }
+    }
+  });
+  const result = await verifyLiveProvenance({
+    baseUrl: fixture.baseUrl,
+    fetchImpl: fixture.fetchImpl
+  });
+  assertEq(result.ok, false);
+  assert(result.failures.some(failure => failure.includes('machine 404 error code')), 'machine 404 error code drift should fail');
+  assert(result.failures.some(failure => failure.includes('machine 404 no_spa_fallback')), 'machine 404 fallback policy drift should fail');
+  assert(result.failures.some(failure => failure.includes('machine 404 entrypoints')), 'machine 404 entrypoint drift should fail');
+});
+
 test('verifyLiveProvenance rejects unsafe artifact paths', async () => {
   const fixture = buildFixture({
     artifacts: {
