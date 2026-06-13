@@ -813,6 +813,7 @@ test('readiness next actions follow current gaps instead of defaulting to corpus
   assert(!report.next_actions.some(action => action.includes('Repair core corpus')), 'should not recommend corpus repair without corpus failures');
   assert(!report.next_actions.some(action => action.includes('tune article titles')), 'should not recommend API tuning without API failures');
   assert(report.next_actions.some(action => action.includes('production:integrity')), 'should recommend production integrity measurement');
+  assert(report.next_actions.some(action => action.includes('public audit')), 'should recommend public audit window measurement');
   assert(report.next_actions.some(action => action.includes('AI primary/discovery')), 'should recommend AI usage measurement');
 });
 

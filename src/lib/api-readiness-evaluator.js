@@ -286,6 +286,7 @@ function buildNextActions({
     actions.push('Review API performance failures before broadening API usage or promoting paid-beta commitments.');
   }
   actions.push('Continue production:integrity and evals until the 14-day readiness window has real passing history.');
+  actions.push('Continue public audit snapshots until the 14-day zero-actionable window has real passing history.');
   if (adoptionScorecard?.identified_ai_primary_to_discovery_target_status !== 'met') {
     actions.push('Measure AI primary/discovery usage for a 7-day window before changing paid-beta scope.');
   }
