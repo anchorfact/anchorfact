@@ -39,6 +39,12 @@ export const MAJOR_MACHINE_ARTIFACTS = [
     recommended_alternative: '/api/context?q={query}'
   },
   {
+    path: '/404.html',
+    category: 'routing_guard',
+    use_when: 'Confirm unknown machine routes return the signed JSON 404 contract instead of an HTML fallback.',
+    recommended_alternative: '/openapi.json'
+  },
+  {
     path: '/manifest.json',
     category: 'catalog',
     use_when: 'Inspect every public and draft article record with verification metadata.',
@@ -157,7 +163,8 @@ export const ARTIFACT_GROWTH_BUDGETS = {
   '/agent.json': 40000,
   '/artifact-summary.json': 60000,
   '/artifact-shards.json': 250000,
-  '/api-readiness.json': 1200000
+  '/api-readiness.json': 1200000,
+  '/404.html': 5000
 };
 
 const NEAR_BUDGET_HEADROOM_RATIO = 0.05;

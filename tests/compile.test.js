@@ -540,6 +540,10 @@ test('artifact-summary.json describes large machine artifacts and lightweight al
   assertEq(readiness.category, 'readiness');
   assertEq(readiness.recommended_alternative, '/api/context?q={query}');
   assert(readiness.budget_bytes > 0, 'readiness summary should expose its size budget');
+  const notFound = summary.artifacts.find(artifact => artifact.path === '/404.html');
+  assert(notFound, 'artifact summary should include machine JSON 404 fallback');
+  assertEq(notFound.category, 'routing_guard');
+  assertEq(notFound.recommended_alternative, '/openapi.json');
   const contentHealth = summary.artifacts.find(artifact => artifact.path === '/content-health.json');
   assert(contentHealth, 'artifact summary should include content-health.json');
   assert(contentHealth.use_when.includes('source-ready') && contentHealth.use_when.includes('source acquisition'), 'artifact summary should describe content-health repair queue phases');
