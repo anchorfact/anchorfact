@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-13T16:18:31.218Z",
+    "generated": "2026-06-13T16:25:03.342Z",
     "total_articles": 1628,
     "total_with_errors": 0,
     "average_sources_per_article": "2.6",
-    "overall_verification_rate": "93.0%",
-    "elapsed_ms": 1075,
-    "elapsed_sec": "1.1",
+    "overall_verification_rate": "93.1%",
+    "elapsed_ms": 1276,
+    "elapsed_sec": "1.3",
     "concurrency": 3
   },
   "articles": [
@@ -86177,56 +86177,68 @@
       "sources_unreachable": 0
     },
     {
-      "file": "content\\computer-science\\decorator-pattern.md",
+      "file": "content/computer-science/decorator-pattern.md",
       "article_id": "kb-2026-00145",
       "generation_method": "ai_structured",
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "ACM Digital Library",
-          "source_type": "repository",
+          "source_title": "SourceMaking - Decorator Design Pattern",
+          "source_type": "reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://dl.acm.org/",
-              "verified": false,
-              "metadata": {},
-              "match": false
+              "identifier": "https://sourcemaking.com/design_patterns/decorator",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://sourcemaking.com/design_patterns/decorator",
+                "http_method": "HEAD"
+              },
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Design Patterns in Modern Software: A 2025 Practitioner's Guide",
-          "source_type": "book",
+          "source_title": "Refactoring.Guru - Decorator",
+          "source_type": "reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.informit.com/design-patterns/",
-              "verified": false,
-              "metadata": {},
-              "match": false
+              "identifier": "https://refactoring.guru/design-patterns/decorator",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://refactoring.guru/design-patterns/decorator",
+                "http_method": "HEAD"
+              },
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Structural Design Patterns: A 2025 Systematic Review",
-          "source_type": "survey_paper",
+          "source_title": "Microsoft Learn - Design Patterns Decorator",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://doi.org/10.1145/acmcs.2025.structural",
-              "verified": false,
-              "metadata": {},
-              "match": false
+              "identifier": "https://learn.microsoft.com/en-us/shows/visual-studio-toolbox/design-patterns-decorator",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.microsoft.com/en-us/shows/visual-studio-toolbox/design-patterns-decorator",
+                "http_method": "HEAD"
+              },
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 3
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\dependency-injection.md",

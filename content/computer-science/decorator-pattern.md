@@ -4,9 +4,9 @@ title: Decorator Pattern
 schema_type: TechArticle
 category: computer-science
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+confidence: medium
+last_verified: '2026-06-14'
+created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -15,85 +15,100 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-computer-science-001
-    statement: Attaches additional responsibilities dynamically, providing flexible alternative to subclassing. Decorators conform to the same interface, enabling transparent stacking.
-    source_title: ACM Digital Library
-    source_url: https://dl.acm.org/
+  - id: fact-decorator-pattern-001
+    statement: >-
+      The Decorator pattern attaches additional responsibilities to an object dynamically
+      and is commonly presented as a flexible alternative to subclassing for extending
+      functionality.
+    source_title: SourceMaking - Decorator Design Pattern
+    source_url: https://sourcemaking.com/design_patterns/decorator
     confidence: medium
-  - id: fact-computer-science-002
-    statement: React HOC (Higher-Order Components) is a decorator pattern applied to components.
-    source_title: ACM Digital Library
-    source_url: https://dl.acm.org/
+  - id: fact-decorator-pattern-002
+    statement: >-
+      Refactoring.Guru describes Decorator as a structural pattern that adds behavior by
+      placing an object inside a wrapper object.
+    source_title: Refactoring.Guru - Decorator
+    source_url: https://refactoring.guru/design-patterns/decorator
     confidence: medium
-completeness: 0.88
+  - id: fact-decorator-pattern-003
+    statement: >-
+      In a typical Decorator implementation, the wrapper implements the same interface as
+      the wrapped object so client code can treat a decorated object like the original
+      component.
+    source_title: Refactoring.Guru - Decorator
+    source_url: https://refactoring.guru/design-patterns/decorator
+    confidence: medium
+  - id: fact-decorator-pattern-004
+    statement: >-
+      Microsoft Learn describes the Decorator pattern as allowing behavior to be added to
+      an individual object without affecting the behavior of other objects from the same
+      class.
+    source_title: Microsoft Learn - Design Patterns Decorator
+    source_url: https://learn.microsoft.com/en-us/shows/visual-studio-toolbox/design-patterns-decorator
+    confidence: medium
+completeness: 0.86
 known_gaps:
-  - Sources reconstructed during quality audit; primary source details were corrupted during batch generation
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
+  - >-
+    Coverage focuses on the object-oriented design pattern and does not evaluate language
+    decorator syntax, aspect-oriented programming frameworks, or specific UI library idioms.
+disputed_statements: []
 primary_sources:
-  - title: ACM Digital Library
-    type: repository
+  - title: SourceMaking - Decorator Design Pattern
+    type: reference
     year: 2026
-    url: https://dl.acm.org/
-    institution: ACM
-  - title: "Design Patterns in Modern Software: A 2025 Practitioner's Guide"
-    type: book
-    year: 2025
-    authors:
-      - multiple
-    institution: Addison-Wesley
-    url: https://www.informit.com/design-patterns/
-  - title: "Structural Design Patterns: A 2025 Systematic Review"
-    type: survey_paper
-    year: 2025
-    authors:
-      - multiple
-    institution: ACM Computing Surveys
-    url: https://doi.org/10.1145/acmcs.2025.structural
+    url: https://sourcemaking.com/design_patterns/decorator
+    institution: SourceMaking
+  - title: Refactoring.Guru - Decorator
+    type: reference
+    year: 2026
+    url: https://refactoring.guru/design-patterns/decorator
+    institution: Refactoring.Guru
+  - title: Microsoft Learn - Design Patterns Decorator
+    type: documentation
+    year: 2026
+    url: https://learn.microsoft.com/en-us/shows/visual-studio-toolbox/design-patterns-decorator
+    institution: Microsoft
 secondary_sources:
-  - title: ACM Digital Library
-    type: repository
-    year: 2026
-    url: https://dl.acm.org/
-    institution: ACM
-  - title: The C Programming Language (K&R, 2nd Ed)
-    type: textbook
-    year: 1988
-    url: https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html
-    institution: Prentice Hall
-  - title: Structure and Interpretation of Computer Programs (SICP)
-    type: textbook
-    year: 1996
-    url: https://mitpress.mit.edu/sites/default/files/sicp/
-    institution: MIT Press
-  - title: "Structural Design Patterns in Modern OOP: A 2025 Survey"
-    type: survey_paper
-    year: 2025
+  - title: "Design Patterns: Elements of Reusable Object-Oriented Software"
+    type: book
+    year: 1994
     authors:
-      - multiple
-    institution: ACM Computing Surveys
-    url: https://doi.org/10.1145/acmcs.2025.patterns
-  - title: Decorator, Proxy, and Aspect-Oriented Patterns in Cloud-Native Apps (2025)
-    type: article
-    year: 2025
-    authors:
-      - multiple
-    institution: IEEE Software
-    url: https://doi.org/10.1109/ms.2025.decorator
+      - Erich Gamma
+      - Richard Helm
+      - Ralph Johnson
+      - John Vlissides
+    institution: Addison-Wesley
+updated: '2026-06-14'
 ---
+
 ## TL;DR
 
-Attaches additional responsibilities dynamically, providing flexible alternative to subclassing. Decorators conform to the same interface, enabling transparent stacking.
+Decorator is a structural design pattern for adding responsibilities to one object without
+changing the object's class. A decorator wraps a component, exposes the same interface, and
+adds behavior before or after delegating to the wrapped object.
 
 ## Core Explanation
 
-Example: `new CompressedStream(new EncryptedStream(new FileStream()))`. Python @decorator syntax. ES7 decorators (Stage 3). React HOC (Higher-Order Components) is a decorator pattern applied to components. Middleware pattern (Express, Koa) is a variant.
+The pattern keeps extension logic outside the component being extended. Client code depends
+on a common component interface; the concrete component implements the base behavior; each
+decorator also implements that interface while holding a reference to another component.
+Because the decorator and the component share the same interface, decorators can be stacked
+and the final object can still be used where the original component was expected.
+
+Decorator is useful when behavior needs to vary per object at runtime. Subclassing extends
+an entire class hierarchy, while decorators can be composed around individual instances.
+That makes the tradeoff explicit: decorators provide flexible composition, but too many
+nested wrappers can make object construction and debugging harder to follow.
+
+Decorator is related to, but different from, Adapter and Proxy. Adapter changes an interface
+so incompatible code can collaborate. Proxy controls access to an object while preserving
+the same interface. Decorator preserves the interface while adding responsibilities.
 
 ## Further Reading
 
-- [Design Patterns (Gang of Four)](undefined)
+- [SourceMaking - Decorator Design Pattern](https://sourcemaking.com/design_patterns/decorator)
+- [Refactoring.Guru - Decorator](https://refactoring.guru/design-patterns/decorator)
+- [Microsoft Learn - Design Patterns Decorator](https://learn.microsoft.com/en-us/shows/visual-studio-toolbox/design-patterns-decorator)
 
 ## Related Articles
 
