@@ -5,6 +5,7 @@ import { tmpdir } from 'os';
 import { join } from 'path';
 import {
   collectFunctionEdgeImportFailures,
+  collectUnsafeCliEntrypointFailures,
   textHygieneFailures
 } from '../scripts/check-repo-hygiene.js';
 
@@ -65,6 +66,28 @@ test('CLI modules can be imported from inline module tools', () => {
   `;
   const output = execFileSync('node', ['--input-type=module', '-e', inlineScript], { encoding: 'utf8' });
   assert(output.includes('cli imports ok'), 'inline CLI module imports should complete');
+});
+
+test('collectUnsafeCliEntrypointFailures rejects unsafe process argv direct-run guards', () => {
+  const root = fixtureRoot('cli-entrypoint');
+  try {
+    mkdirSync(join(root, 'scripts'), { recursive: true });
+    writeFileSync(join(root, 'scripts', 'unsafe.js'), [
+      "import { pathToFileURL } from 'url';",
+      "if (import.meta.url === pathToFileURL(process.argv[1]).href) main();"
+    ].join('\n'));
+    writeFileSync(join(root, 'scripts', 'safe.js'), [
+      "import { isDirectRun } from '../src/lib/cli-entrypoint.js';",
+      "if (isDirectRun(import.meta.url)) main();"
+    ].join('\n'));
+
+    const failures = collectUnsafeCliEntrypointFailures({ rootDir: root });
+    assert(failures.length === 1, 'expected one unsafe CLI entrypoint failure');
+    assert(failures[0].includes('scripts/unsafe.js'), 'failure should include unsafe script path');
+    assert(failures[0].includes('isDirectRun(import.meta.url)'), 'failure should name the safe helper');
+  } finally {
+    rmSync(root, { recursive: true, force: true });
+  }
 });
 
 test('collectFunctionEdgeImportFailures accepts edge-safe function imports', () => {

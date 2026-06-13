@@ -3,6 +3,7 @@ import { execFileSync } from 'child_process';
 import { existsSync, readFileSync } from 'fs';
 import { delimiter, join, resolve } from 'path';
 import { fileURLToPath } from 'url';
+import { isDirectRun } from '../src/lib/cli-entrypoint.js';
 
 export const REQUIRED_DIST_FILES = [
   'manifest.json',
@@ -389,6 +390,6 @@ export function main(argv = process.argv.slice(2)) {
   process.exitCode = report.status === 'pass' ? 0 : 1;
 }
 
-if (process.argv[1] === fileURLToPath(import.meta.url)) {
+if (isDirectRun(import.meta.url)) {
   main();
 }

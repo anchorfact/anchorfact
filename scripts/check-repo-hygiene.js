@@ -1061,6 +1061,30 @@ export function collectFunctionEdgeImportFailures({ rootDir = '.', functionsDir 
   return failures;
 }
 
+export function collectUnsafeCliEntrypointFailures({ rootDir = '.' } = {}) {
+  const root = resolve(rootDir);
+  const failures = [];
+  const scanDirs = ['scripts', 'src']
+    .map(dir => join(root, dir))
+    .filter(dir => existsSync(dir) && statSync(dir).isDirectory());
+  const unsafePatterns = [
+    /pathToFileURL\s*\(\s*process\.argv\s*\[\s*1\s*\]\s*\)/,
+    /process\.argv\s*\[\s*1\s*\]\s*===\s*fileURLToPath\s*\(\s*import\.meta\.url\s*\)/
+  ];
+
+  for (const file of scanDirs.flatMap(dir => walk(dir))) {
+    const relativePath = normalizePath(relative(root, file));
+    if (!relativePath.endsWith('.js') || relativePath === 'src/lib/cli-entrypoint.js') continue;
+
+    const text = readFileSync(file, 'utf8');
+    if (unsafePatterns.some(pattern => pattern.test(text))) {
+      failures.push(`${relativePath} should use isDirectRun(import.meta.url) from src/lib/cli-entrypoint.js for CLI entrypoint guards.`);
+    }
+  }
+
+  return failures;
+}
+
 function trackedFiles() {
   return execFileSync('git', ['ls-files'], { encoding: 'utf8' })
     .split(/\r?\n/)
@@ -1143,6 +1167,10 @@ export function textHygieneFailures(relativePath, text) {
 
 function checkFunctionEdgeImports(failures) {
   failures.push(...collectFunctionEdgeImportFailures());
+}
+
+function checkCliEntrypointGuards(failures) {
+  failures.push(...collectUnsafeCliEntrypointFailures());
 }
 
 function checkProductionIntegrityWorkflow(failures) {
@@ -1262,6 +1290,7 @@ export function runRepoHygiene() {
   checkTrackedGeneratedFiles(failures);
   checkTextFiles(failures);
   checkFunctionEdgeImports(failures);
+  checkCliEntrypointGuards(failures);
   checkProductionIntegrityWorkflow(failures);
   checkAiAdoptionScorecardWorkflow(failures);
   checkReadinessScorecardWorkflow(failures);
