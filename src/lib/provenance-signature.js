@@ -23,7 +23,13 @@ export function sha256Hex(text) {
 }
 
 function normalizePem(value) {
-  return String(value || '').trim().replace(/\\n/g, '\n').trim();
+  return String(value || '')
+    .replace(/^\uFEFF/, '')
+    .trim()
+    .replace(/\\n/g, '\n')
+    .replace(/\r\n/g, '\n')
+    .replace(/\r/g, '\n')
+    .trim();
 }
 
 export function signingPrivateKeyFromEnv(env = process.env) {

@@ -93,5 +93,24 @@ test('signing key and trusted keys load from escaped PEM environment values', ()
   assertEq(publicKeyPemFromPrivateKey(privateKeyPem).trim(), publicKeyPem.trim());
 });
 
+test('public key trust matches PEMs across LF and CRLF line endings', () => {
+  const { privateKeyPem, publicKeyPem } = fixtureKeyPair();
+  const signingKey = {
+    privateKeyPem,
+    publicKeyPem,
+    keyId: publicKeyId(publicKeyPem),
+    publicKeySha256: publicKeyFingerprint(publicKeyPem)
+  };
+  const provenanceText = JSON.stringify({ schema_version: 'anchorfact.provenance.v1' }, null, 2);
+  const signature = signProvenanceText(provenanceText, signingKey, '2026-05-29T00:00:00.000Z');
+  const crlfPublicKeyPem = publicKeyPem.replace(/\n/g, '\r\n');
+
+  assertEq(publicKeyFingerprint(crlfPublicKeyPem), publicKeyFingerprint(publicKeyPem));
+
+  const verified = verifyProvenanceSignature(provenanceText, signature, [crlfPublicKeyPem]);
+  assertEq(verified.ok, true);
+  assertEq(verified.trusted, true);
+});
+
 console.log(`\n${passed} passed, ${failed} failed`);
 process.exit(failed > 0 ? 1 : 0);
