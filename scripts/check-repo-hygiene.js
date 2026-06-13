@@ -1216,6 +1216,46 @@ function checkAiAdoptionScorecardWorkflow(failures) {
   }
 }
 
+function checkReadinessScorecardWorkflow(failures) {
+  const path = '.github/workflows/readiness-scorecard.yml';
+  if (!existsSync(path)) {
+    failures.push(`${path} is required for readiness window measurement.`);
+    return;
+  }
+
+  const text = readFileSync(path, 'utf8');
+  const requiredPatterns = [
+    [/name:\s*Readiness Scorecard/, 'workflow name should be Readiness Scorecard'],
+    [/workflow_dispatch:/, 'workflow should support manual dispatch'],
+    [/cron:\s*'17 2 \* \* \*'/, 'workflow should run daily at the expected cron schedule'],
+    [/permissions:\s*\r?\n\s+contents:\s+read/, 'workflow should use read-only contents permission'],
+    [/actions\/cache@v4/, 'workflow should cache readiness history between runs'],
+    [/npm run build/, 'workflow should build static artifacts before scoring readiness'],
+    [/npm run content:health -- --json --write reports\/content-health\.json/, 'workflow should write a content health snapshot'],
+    [/- name:\s*Run production integrity snapshot[\s\S]*?continue-on-error:\s*true[\s\S]*?npm run production:integrity/, 'workflow should keep production integrity as an optional readiness input'],
+    [/- name:\s*Run AI adoption snapshot[\s\S]*?continue-on-error:\s*true[\s\S]*?npm run usage:adoption/, 'workflow should keep AI adoption as an optional readiness input'],
+    [/npm run api:readiness -- --adoption-json reports\/ai-adoption-scorecard\.json --production-integrity-json reports\/production-integrity\.json/, 'workflow should feed runtime signals into API readiness'],
+    [/npm run readiness:history[\s\S]*--save-current/, 'workflow should save the current readiness snapshot into cached history'],
+    [/actions\/upload-artifact@v4/, 'workflow should upload the readiness scorecard artifact']
+  ];
+
+  for (const [pattern, message] of requiredPatterns) {
+    if (!pattern.test(text)) failures.push(`${path}: ${message}.`);
+  }
+
+  const forbiddenPatterns = [
+    [/contents:\s+write/, 'must not request contents write permission'],
+    [/verify-full/, 'must not run verify-full'],
+    [/\bcf[a-z]{2}_[A-Za-z0-9_-]{20,}\b/, 'must not embed a Cloudflare API token'],
+    [/\bgithub_pat_[A-Za-z0-9_]{20,}\b/, 'must not embed a GitHub personal access token'],
+    [/wrangler/i, 'must not deploy or mutate Cloudflare state']
+  ];
+
+  for (const [pattern, message] of forbiddenPatterns) {
+    if (pattern.test(text)) failures.push(`${path}: ${message}.`);
+  }
+}
+
 export function runRepoHygiene() {
   const failures = [];
   checkRootTempFiles(failures);
@@ -1224,6 +1264,7 @@ export function runRepoHygiene() {
   checkFunctionEdgeImports(failures);
   checkProductionIntegrityWorkflow(failures);
   checkAiAdoptionScorecardWorkflow(failures);
+  checkReadinessScorecardWorkflow(failures);
   return failures;
 }
 

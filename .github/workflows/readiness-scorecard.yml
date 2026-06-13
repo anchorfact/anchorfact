@@ -52,6 +52,7 @@ jobs:
         run: npm run production:integrity -- --write reports/production-integrity.md --write-json reports/production-integrity.json
 
       - name: Run AI adoption snapshot
+        continue-on-error: true
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN || secrets.CLOUDFLARE_API }}
         run: npm run usage:adoption -- --lookback-minutes 1430 --write reports/ai-adoption-scorecard.md --write-json reports/ai-adoption-scorecard.json

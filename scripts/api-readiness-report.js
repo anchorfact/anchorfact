@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { mkdirSync, readFileSync, writeFileSync } from 'fs';
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'fs';
 import { dirname, resolve } from 'path';
 import { pathToFileURL } from 'url';
 import {
@@ -90,6 +90,11 @@ function readJsonFile(path, label) {
   } catch (error) {
     throw new Error(`Unable to read ${label} JSON from ${path}: ${error.message}`);
   }
+}
+
+export function readOptionalRuntimeJson(path, label) {
+  if (!path || !existsSync(resolve(path))) return null;
+  return readJsonFile(path, label);
 }
 
 export function normalizeAdoptionScorecard(payload) {
@@ -190,10 +195,10 @@ export function main(argv = process.argv.slice(2)) {
   const report = buildLocalApiReadinessReport({
     ...options,
     adoptionScorecard: options.adoptionJson
-      ? normalizeAdoptionScorecard(readJsonFile(options.adoptionJson, 'adoption scorecard'))
+      ? normalizeAdoptionScorecard(readOptionalRuntimeJson(options.adoptionJson, 'adoption scorecard'))
       : normalizeAdoptionScorecard(options.adoptionScorecard) || null,
     productionIntegrity: options.productionIntegrityJson
-      ? normalizeProductionIntegrity(readJsonFile(options.productionIntegrityJson, 'production integrity'))
+      ? normalizeProductionIntegrity(readOptionalRuntimeJson(options.productionIntegrityJson, 'production integrity'))
       : normalizeProductionIntegrity(options.productionIntegrity) || null
   });
   const json = `${JSON.stringify(report, null, 2)}\n`;

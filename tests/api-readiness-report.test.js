@@ -1,4 +1,7 @@
 #!/usr/bin/env node
+import { mkdtempSync, rmSync, writeFileSync } from 'fs';
+import { tmpdir } from 'os';
+import { join } from 'path';
 import {
   API_READINESS_SCHEMA_VERSION,
   CORE_CORPUS_QUERIES,
@@ -12,7 +15,8 @@ import { evaluateContextReadiness as evaluateContextReadinessFromRunner } from '
 import { renderApiReadinessMarkdown as renderApiReadinessMarkdownFromRenderer } from '../src/lib/api-readiness-renderer.js';
 import {
   normalizeAdoptionScorecard,
-  normalizeProductionIntegrity
+  normalizeProductionIntegrity,
+  readOptionalRuntimeJson
 } from '../scripts/api-readiness-report.js';
 
 let passed = 0, failed = 0;
@@ -894,6 +898,25 @@ test('runtime scorecard inputs normalize Cloudflare adoption and production inte
   assert(markdown.includes('Production health: pass'), 'should render production integrity status');
   assert(markdown.includes('Adoption signal: below_target'), 'should render adoption status');
   assert(markdown.includes('current=0.05'), 'should render current adoption ratio');
+});
+
+test('optional runtime JSON inputs tolerate missing files but not invalid JSON', () => {
+  const root = mkdtempSync(join(tmpdir(), 'anchorfact-api-readiness-'));
+  try {
+    assertEq(readOptionalRuntimeJson(join(root, 'missing.json'), 'adoption scorecard'), null);
+
+    const invalidPath = join(root, 'invalid.json');
+    writeFileSync(invalidPath, '{');
+    let errorMessage = '';
+    try {
+      readOptionalRuntimeJson(invalidPath, 'adoption scorecard');
+    } catch (error) {
+      errorMessage = error.message;
+    }
+    assert(errorMessage.includes('Unable to read adoption scorecard JSON'), 'invalid JSON should still fail loudly');
+  } finally {
+    rmSync(root, { recursive: true, force: true });
+  }
 });
 
 console.log(`\n${passed} passed, ${failed} failed`);
