@@ -9,7 +9,7 @@ import {
   renderIntegrityMarkdown,
   runProductionIntegrity
 } from '../scripts/production-integrity.js';
-import { REQUIRED_SECURITY_HEADERS, evalCallRoutes, exampleWorkflowRoutes, fetchRoute, fetchRoutes, hasCanonicalSlug, pagesRoutingGuardFailures, readJsonRoute, readinessDiscoveryFailures, repairQueueBatchFailures } from '../src/smoke-production.js';
+import { BASE_SMOKE_ROUTES, REQUIRED_SECURITY_HEADERS, evalCallRoutes, exampleWorkflowRoutes, fetchRoute, fetchRoutes, hasCanonicalSlug, machineNotFoundContractFailures, pagesRoutingGuardFailures, readJsonRoute, readinessDiscoveryFailures, repairQueueBatchFailures } from '../src/smoke-production.js';
 
 let passed = 0, failed = 0;
 const tests = [];
@@ -707,7 +707,8 @@ test('production smoke validates unknown machine routes return JSON 404', () => 
       schema_version: 'anchorfact.not-found.v1',
       status: 404,
       error: { code: 'not_found' },
-      fallback_policy: { no_spa_fallback: true }
+      fallback_policy: { no_spa_fallback: true },
+      machine_entrypoints: ['/index.json', '/api/context?q={query}']
     })
   });
   assertEq(validFailures, []);
@@ -722,6 +723,31 @@ test('production smoke validates unknown machine routes return JSON 404', () => 
   assert(htmlFallbackFailures.some(failure => failure.includes('returned 200')), 'status failure should be explicit');
   assert(htmlFallbackFailures.some(failure => failure.includes('content-type')), 'content-type failure should be explicit');
   assert(htmlFallbackFailures.some(failure => failure.includes('valid JSON')), 'HTML fallback should be reported as invalid JSON');
+});
+
+test('production smoke covers the direct machine JSON 404 artifact contract', () => {
+  assert(BASE_SMOKE_ROUTES.includes('/404.html'), 'base production smoke routes should fetch /404.html directly');
+
+  const validFailures = machineNotFoundContractFailures({
+    schema_version: 'anchorfact.not-found.v1',
+    status: 404,
+    error: { code: 'not_found' },
+    fallback_policy: { no_spa_fallback: true },
+    machine_entrypoints: ['/index.json', '/api/context?q={query}'],
+    official_site: 'https://anchorfact.org'
+  }, '/404.html', { expectedOfficialSite: 'https://anchorfact.org' });
+  assertEq(validFailures, []);
+
+  const driftFailures = machineNotFoundContractFailures({
+    schema_version: 'anchorfact.not-found.v1',
+    status: 404,
+    error: { code: 'not_found' },
+    fallback_policy: { no_spa_fallback: true },
+    machine_entrypoints: ['/index.json'],
+    official_site: 'https://example.com'
+  }, '/404.html', { expectedOfficialSite: 'https://anchorfact.org' });
+  assert(driftFailures.some(failure => failure.includes('machine_entrypoints')), 'entrypoint drift should fail');
+  assert(driftFailures.some(failure => failure.includes('official_site')), 'official site drift should fail');
 });
 
 test('production smoke retries transient 5xx route responses', async () => {

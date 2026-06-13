@@ -19,6 +19,53 @@ export const REQUIRED_SECURITY_HEADERS = [
   { route: '/', name: 'Permissions-Policy', expected: 'camera=()' }
 ];
 
+export const BASE_SMOKE_ROUTES = Object.freeze([
+  '/',
+  '/index.json',
+  '/api-access/',
+  '/robots.txt',
+  '/sitemap.xml',
+  '/agent.json',
+  '/.well-known/anchorfact.json',
+  '/openapi.json',
+  '/artifact-summary.json',
+  '/artifact-shards.json',
+  '/api-readiness.json',
+  '/manifest.json',
+  '/llms.txt',
+  '/claims.json',
+  '/topics.json',
+  '/capabilities.json',
+  '/content-health.json',
+  '/coverage.json',
+  '/examples.json',
+  '/graph.json',
+  '/evals.json',
+  '/mcp.json',
+  '/api',
+  '/api/plan?q=gaussian&limit=2',
+  '/api/evidence?q=gaussian&limit=2',
+  '/api/evidence?q=gaussian&limit=1&format=markdown',
+  '/api/context?q=gaussian&limit=2',
+  '/api/context?q=gaussian&limit=1&format=markdown',
+  '/api/resolve?ref=f1',
+  '/api/resolve-batch?ref=f1&ref=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079',
+  '/api/resolve-batch?ref=f1&ref=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079&format=markdown',
+  '/api/search?q=gaussian&limit=2',
+  '/api/article?slug=ai/3d-generation-gaussian-splatting',
+  '/api/claim?id=f1',
+  '/api/cite?id=f1',
+  '/api/cite?id=f1&format=markdown',
+  '/api/source?url=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079',
+  '/search-index.json',
+  '/sources.json',
+  '/404.html',
+  '/provenance.json',
+  '/provenance.sig',
+  '/drafts.html',
+  '/dashboard.html'
+]);
+
 function readExpectedInt(name) {
   if (!process.env[name]) {
     return null;
@@ -50,6 +97,10 @@ function countArticles(articles, predicate) {
 
 function sha256Text(text) {
   return createHash('sha256').update(Buffer.from(text, 'utf8')).digest('hex');
+}
+
+function normalizedSiteUrl(baseUrl) {
+  return new URL('/', baseUrl).href.replace(/\/+$/, '');
 }
 
 function sleep(ms) {
@@ -284,10 +335,21 @@ export function pagesRoutingGuardFailures(result, route = result?.route || ROUTI
     return failures;
   }
 
-  assertOk(payload.schema_version === 'anchorfact.not-found.v1', `${route} schema_version expected anchorfact.not-found.v1, got ${payload.schema_version || '(missing)'}`, failures);
-  assertOk(payload.status === 404, `${route} payload status expected 404, got ${payload.status ?? '(missing)'}`, failures);
-  assertOk(payload.error?.code === 'not_found', `${route} error code expected not_found, got ${payload.error?.code || '(missing)'}`, failures);
-  assertOk(payload.fallback_policy?.no_spa_fallback === true, `${route} fallback policy should disable SPA fallback`, failures);
+  failures.push(...machineNotFoundContractFailures(payload, route));
+  return failures;
+}
+
+export function machineNotFoundContractFailures(payload, route = '/404.html', { expectedOfficialSite = null } = {}) {
+  const failures = [];
+  assertOk(payload?.schema_version === 'anchorfact.not-found.v1', `${route} schema_version expected anchorfact.not-found.v1, got ${payload?.schema_version || '(missing)'}`, failures);
+  assertOk(payload?.status === 404, `${route} payload status expected 404, got ${payload?.status ?? '(missing)'}`, failures);
+  assertOk(payload?.error?.code === 'not_found', `${route} error code expected not_found, got ${payload?.error?.code || '(missing)'}`, failures);
+  assertOk(payload?.fallback_policy?.no_spa_fallback === true, `${route} fallback policy should disable SPA fallback`, failures);
+  assertOk(Array.isArray(payload?.machine_entrypoints) && payload.machine_entrypoints.includes('/index.json'), `${route} machine_entrypoints should include /index.json`, failures);
+  assertOk(Array.isArray(payload?.machine_entrypoints) && payload.machine_entrypoints.includes('/api/context?q={query}'), `${route} machine_entrypoints should include /api/context?q={query}`, failures);
+  if (expectedOfficialSite) {
+    assertOk(payload?.official_site === expectedOfficialSite, `${route} official_site expected ${expectedOfficialSite}, got ${payload?.official_site || '(missing)'}`, failures);
+  }
   return failures;
 }
 
@@ -343,7 +405,7 @@ export async function main() {
   const expectedDraft = readExpectedInt('EXPECTED_DRAFT_ARTICLES');
   const expectedClaims = readExpectedInt('EXPECTED_CLAIMS');
 
-  const routes = ['/', '/index.json', '/api-access/', '/robots.txt', '/sitemap.xml', '/agent.json', '/.well-known/anchorfact.json', '/openapi.json', '/artifact-summary.json', '/artifact-shards.json', '/api-readiness.json', '/manifest.json', '/llms.txt', '/claims.json', '/topics.json', '/capabilities.json', '/content-health.json', '/coverage.json', '/examples.json', '/graph.json', '/evals.json', '/mcp.json', '/api', '/api/plan?q=gaussian&limit=2', '/api/evidence?q=gaussian&limit=2', '/api/evidence?q=gaussian&limit=1&format=markdown', '/api/context?q=gaussian&limit=2', '/api/context?q=gaussian&limit=1&format=markdown', '/api/resolve?ref=f1', '/api/resolve-batch?ref=f1&ref=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079', '/api/resolve-batch?ref=f1&ref=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079&format=markdown', '/api/search?q=gaussian&limit=2', '/api/article?slug=ai/3d-generation-gaussian-splatting', '/api/claim?id=f1', '/api/cite?id=f1', '/api/cite?id=f1&format=markdown', '/api/source?url=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079', '/search-index.json', '/sources.json', '/provenance.json', '/provenance.sig', '/drafts.html', '/dashboard.html'];
+  const routes = BASE_SMOKE_ROUTES;
   const results = {};
 
   Object.assign(results, await fetchRoutes(baseUrl, routes));
@@ -388,6 +450,7 @@ export async function main() {
   const sourceApi = await readJsonRoute(baseUrl, '/api/source?url=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079', results);
   const searchIndex = await readJsonRoute(baseUrl, '/search-index.json', results);
   const sources = await readJsonRoute(baseUrl, '/sources.json', results);
+  const notFound = await readJsonRoute(baseUrl, '/404.html', results);
   const provenance = await readJsonRoute(baseUrl, '/provenance.json', results);
   const apiAccessPolicy = await readJsonRoute(baseUrl, '/api-access/', results);
   const draftsIndex = await readJsonRoute(baseUrl, '/drafts.html', results);
@@ -492,6 +555,7 @@ export async function main() {
   assertOk(openapi.paths?.['/api-readiness.json'], 'openapi is missing /api-readiness.json path', failures);
   assertOk(openapi.paths?.['/api'], 'openapi is missing /api path', failures);
   assertOk(openapi.paths?.['/search-index.json'], 'openapi is missing /search-index.json path', failures);
+  assertOk(openapi.paths?.['/404.html'], 'openapi is missing /404.html path', failures);
   assertOk(openapi.paths?.['/{canonical_slug}/index.json'], 'openapi is missing article JSON-LD path template', failures);
   assertOk(openapi.components?.schemas?.RootIndex, 'openapi is missing RootIndex schema', failures);
   assertOk(openapi.components?.schemas?.ContentHealth, 'openapi is missing ContentHealth schema', failures);
@@ -504,6 +568,8 @@ export async function main() {
   assertOk(Array.isArray(artifactSummary.artifacts) && artifactSummary.artifacts.some(artifact => artifact.path === '/graph.json'), '/artifact-summary.json is missing graph artifact', failures);
   assertOk(artifactSummary.artifacts.some(artifact => artifact.path === '/artifact-shards.json'), '/artifact-summary.json is missing artifact-shards artifact', failures);
   assertOk(artifactSummary.artifacts.some(artifact => artifact.path === '/api-readiness.json'), '/artifact-summary.json is missing api-readiness artifact', failures);
+  assertOk(artifactSummary.artifacts.some(artifact => artifact.path === '/404.html' && artifact.category === 'routing_guard'), '/artifact-summary.json is missing routing guard 404 artifact', failures);
+  assertOk(artifactSummary.artifacts.some(artifact => artifact.path === '/404.html' && artifact.recommended_alternative === '/openapi.json'), '/artifact-summary.json should direct 404 artifact consumers to OpenAPI', failures);
   assertOk(artifactSummary.artifacts.some(artifact => artifact.path === '/graph.json' && artifact.shard_registry_path === '/artifact-shards.json'), '/artifact-summary.json does not link graph to shard registry', failures);
   assertOk(artifactShards.schema_version === 'anchorfact.artifact-shards.v1', `artifact shards schema_version expected anchorfact.artifact-shards.v1, got ${artifactShards.schema_version || '(missing)'}`, failures);
   assertOk(artifactShards.provenance_url === new URL('/provenance.json', baseUrl).href, `artifact shards provenance_url expected ${new URL('/provenance.json', baseUrl).href}, got ${artifactShards.provenance_url || '(missing)'}`, failures);
@@ -765,6 +831,7 @@ export async function main() {
   assertOk(sources.public_article_count === manifest.public_article_count, 'sources public count does not match manifest', failures);
   assertOk(sources.public_claim_count === claimCount, 'sources claim count does not match claims.json', failures);
   assertOk(Array.isArray(sources.sources) && sources.sources.length > 0, '/sources.json has no sources', failures);
+  failures.push(...machineNotFoundContractFailures(notFound, '/404.html', { expectedOfficialSite: normalizedSiteUrl(baseUrl) }));
   assertOk(provenance.schema_version === 'anchorfact.provenance.v1', `provenance schema_version expected anchorfact.provenance.v1, got ${provenance.schema_version || '(missing)'}`, failures);
   assertOk(provenance.content_counts?.public === manifest.public_article_count, 'provenance public count does not match manifest', failures);
   assertOk(provenance.content_counts?.draft === manifest.draft_article_count, 'provenance draft count does not match manifest', failures);
@@ -787,6 +854,7 @@ export async function main() {
   assertOk(provenance.artifacts?.api_readiness_json?.sha256 === sha256Text(results['/api-readiness.json'].body), 'provenance API readiness hash does not match /api-readiness.json', failures);
   assertOk(provenance.artifacts?.search_index_json?.sha256 === sha256Text(results['/search-index.json'].body), 'provenance search index hash does not match /search-index.json', failures);
   assertOk(provenance.artifacts?.sources_json?.sha256 === sha256Text(results['/sources.json'].body), 'provenance sources hash does not match /sources.json', failures);
+  assertOk(provenance.artifacts?.not_found_html?.sha256 === sha256Text(results['/404.html'].body), 'provenance machine 404 hash does not match /404.html', failures);
   assertOk(provenance.artifacts?.llms_txt?.sha256 === sha256Text(results['/llms.txt'].body), 'provenance llms hash does not match /llms.txt', failures);
   assertOk(['signed', 'unsigned'].includes(provenance.signature?.status), `provenance signature status expected signed or unsigned, got ${provenance.signature?.status || '(missing)'}`, failures);
   assertOk(llmsText.trim().length > 0, '/llms.txt is empty', failures);
@@ -846,6 +914,9 @@ export async function main() {
   headerIncludes(results['/api/source?url=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079'], 'Access-Control-Allow-Origin', '*', failures);
   headerIncludes(results['/search-index.json'], 'Access-Control-Allow-Origin', '*', failures);
   headerIncludes(results['/sources.json'], 'Access-Control-Allow-Origin', '*', failures);
+  headerIncludes(results['/404.html'], 'Access-Control-Allow-Origin', '*', failures);
+  headerIncludes(results['/404.html'], 'Content-Type', 'application/json', failures);
+  headerIncludes(results['/404.html'], 'X-Robots-Tag', 'noindex', failures);
   headerIncludes(results['/provenance.json'], 'Access-Control-Allow-Origin', '*', failures);
   for (const route of [
     '/',
@@ -870,6 +941,7 @@ export async function main() {
     '/mcp.json',
     '/search-index.json',
     '/sources.json',
+    '/404.html',
     '/provenance.json',
     '/provenance.sig'
   ]) {
