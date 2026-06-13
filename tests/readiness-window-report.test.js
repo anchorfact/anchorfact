@@ -152,6 +152,31 @@ test('buildReadinessWindowReport surfaces manual design partner gate separately 
   assert(markdown.includes('current_paid_intent=1'), 'missing current paid intent count');
 });
 
+test('buildReadinessWindowReport requires design partner counts before marking paid beta ready', () => {
+  const snapshots = Array.from({ length: 14 }, (_, index) => snapshot(index + 1));
+  snapshots[13] = snapshot(14, {
+    design_partner_status: 'met',
+    external_design_partner_count: 2,
+    paid_intent_signal_count: 1
+  });
+  const report = buildReadinessWindowReport({
+    snapshots,
+    generatedAt: '2026-06-14T12:00:00.000Z'
+  });
+  const markdown = renderReadinessWindowMarkdown(report);
+
+  assertEq(report.automated_gates_met, true);
+  assertEq(report.manual_gates_met, false);
+  assertEq(report.paid_beta_ready, false);
+  assertEq(report.readiness_blockers.automated_gate_ids, []);
+  assertEq(report.readiness_blockers.manual_gate_ids, ['design_partners']);
+  assertEq(report.manual_gates.design_partners.status, 'below_target');
+  assertEq(report.manual_gates.design_partners.current_partner_count, 2);
+  assertEq(report.manual_gates.design_partners.current_paid_intent_count, 1);
+  assert(markdown.includes('design_partners: below_target'), 'missing below-target manual gate');
+  assert(markdown.includes('Paid beta ready: false'), 'paid beta should remain blocked');
+});
+
 test('buildReadinessWindowReport treats missing current metrics as not measured', () => {
   const report = buildReadinessWindowReport({
     snapshots: [],

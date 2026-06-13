@@ -258,9 +258,15 @@ function contentChangePolicy(current, apiTargetRatio) {
 function manualDesignPartnerGate(current) {
   const partnerCount = optionalFiniteNumber(current.external_design_partner_count);
   const paidIntentCount = optionalFiniteNumber(current.paid_intent_signal_count);
+  const meetsPartnerTarget = partnerCount !== null && partnerCount >= 3;
+  const meetsPaidIntentTarget = paidIntentCount !== null && paidIntentCount >= 1;
+  const reportedStatus = current.design_partner_status || 'not_measured';
+  const status = reportedStatus === 'met' && (!meetsPartnerTarget || !meetsPaidIntentTarget)
+    ? 'below_target'
+    : reportedStatus;
   return {
     target: '>=3 real external design partners and >=1 paid-intent signal',
-    status: current.design_partner_status || 'not_measured',
+    status,
     ...(partnerCount === null ? {} : { current_partner_count: partnerCount }),
     ...(paidIntentCount === null ? {} : { current_paid_intent_count: paidIntentCount })
   };
