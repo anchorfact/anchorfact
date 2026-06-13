@@ -4,9 +4,9 @@ title: Dependency Injection
 schema_type: TechArticle
 category: computer-science
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+confidence: medium
+last_verified: '2026-06-14'
+created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -15,91 +15,102 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-computer-science-001
+  - id: fact-dependency-injection-001
     statement: >-
-      Dependency Injection (DI) is a technique where objects receive their dependencies from outside rather than creating them internally. It enables loose coupling, testability (mock dependencies),
-      and centralized configuration.
-    source_title: ACM Digital Library
-    source_url: https://dl.acm.org/
+      Martin Fowler presents Dependency Injection as an inversion-of-control pattern for
+      separating a component from the code that assembles and supplies its collaborator
+      objects.
+    source_title: Inversion of Control Containers and the Dependency Injection Pattern
+    source_url: https://martinfowler.com/articles/injection.html
     confidence: medium
-  - id: fact-computer-science-001
+  - id: fact-dependency-injection-002
     statement: >-
-      Dependency Injection (DI) is a technique where objects receive their dependencies from outside rather than creating them internally. It enables loose coupling, testability (mock dependencies),
-      and centralized configuration.
-    source_title: ACM Digital Library
-    source_url: https://dl.acm.org/
+      The Angular documentation describes dependency injection as supplying dependencies
+      to a class instead of having that class create the dependencies inside itself.
+    source_title: Angular - Dependency Injection Overview
+    source_url: https://angular.dev/guide/di
     confidence: medium
-completeness: 0.88
+  - id: fact-dependency-injection-003
+    statement: >-
+      Spring Framework documentation identifies constructor-based dependency injection and
+      setter-based dependency injection as the two major variants of DI.
+    source_title: Spring Framework - Dependency Injection
+    source_url: https://docs.spring.io/spring-framework/reference/core/beans/dependencies/factory-collaborators.html
+    confidence: medium
+  - id: fact-dependency-injection-004
+    statement: >-
+      Microsoft Learn describes .NET dependency injection as injecting a registered service
+      into a constructor while the framework takes responsibility for creating and disposing
+      the dependency instance.
+    source_title: Microsoft Learn - Dependency injection in .NET
+    source_url: https://learn.microsoft.com/en-us/dotnet/core/extensions/dependency-injection/overview
+    confidence: medium
+completeness: 0.86
 known_gaps:
-  - Sources reconstructed during quality audit; primary source details were corrupted during batch generation
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
+  - >-
+    Coverage is conceptual and cross-framework; it does not benchmark containers, compare
+    every DI framework, or prescribe one lifetime policy for all applications.
+disputed_statements: []
 primary_sources:
-  - title: ACM Digital Library
-    type: repository
+  - title: Inversion of Control Containers and the Dependency Injection Pattern
+    type: reference_article
+    year: 2004
+    url: https://martinfowler.com/articles/injection.html
+    institution: MartinFowler.com
+  - title: Angular - Dependency Injection Overview
+    type: documentation
     year: 2026
-    url: https://dl.acm.org/
-    institution: ACM
-  - title: "Dependency Injection: Principles, Practices, and Patterns (2nd Edition, 2025)"
-    type: book
-    year: 2025
-    authors:
-      - Seemann M.
-      - Deursen S.
-    institution: Manning
-    url: https://www.manning.com/dependency-injection/
-  - title: "Inversion of Control Containers: A 2025 Comparative Analysis"
-    type: survey_paper
-    year: 2025
-    authors:
-      - multiple
-    institution: ACM Computing Surveys
-    url: https://doi.org/10.1145/acmcs.2025.ioc
-secondary_sources:
-  - title: ACM Digital Library
-    type: repository
+    url: https://angular.dev/guide/di
+    institution: Angular
+  - title: Spring Framework - Dependency Injection
+    type: documentation
     year: 2026
-    url: https://dl.acm.org/
-    institution: ACM
-  - title: The C Programming Language (K&R, 2nd Ed)
-    type: textbook
-    year: 1988
-    url: https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html
-    institution: Prentice Hall
-  - title: Structure and Interpretation of Computer Programs (SICP)
-    type: textbook
-    year: 1996
-    url: https://mitpress.mit.edu/sites/default/files/sicp/
-    institution: MIT Press
-  - title: "Dependency Injection in Modern Frameworks: A 2025 Comparative Analysis"
-    type: article
-    year: 2025
-    authors:
-      - multiple
-    institution: IEEE Software
-    url: https://doi.org/10.1109/ms.2025.di
-  - title: "Inversion of Control and DI Containers: Performance Benchmarks 2025"
-    type: article
-    year: 2025
-    authors:
-      - multiple
-    institution: ACM Computing Surveys
-    url: https://doi.org/10.1145/acmcs.2025.di
+    url: https://docs.spring.io/spring-framework/reference/core/beans/dependencies/factory-collaborators.html
+    institution: Spring
+  - title: Microsoft Learn - Dependency injection in .NET
+    type: documentation
+    year: 2026
+    url: https://learn.microsoft.com/en-us/dotnet/core/extensions/dependency-injection/overview
+    institution: Microsoft
+secondary_sources: []
+updated: '2026-06-14'
 ---
+
 ## TL;DR
 
-Dependency Injection (DI) is a technique where objects receive their dependencies from outside rather than creating them internally. It enables loose coupling, testability (mock dependencies), and centralized configuration.
+Dependency Injection is a design pattern for supplying an object's collaborators from the
+outside instead of letting the object construct or locate them itself. The goal is to keep
+the object's core behavior separate from configuration, wiring, lifecycle, and concrete
+implementation choices.
 
 ## Core Explanation
 
-Types: constructor injection (preferred — immutable dependencies), setter injection (optional dependencies), interface injection. DI containers: Spring (Java), Angular, NestJS. Inversion of Control (IoC): the framework calls your code, not vice versa. DI is an implementation of IoC.
+DI is a practical form of inversion of control. A class declares what it needs, usually as
+constructor parameters or writable properties. An assembler, framework, or container then
+chooses concrete implementations and supplies them. This keeps component code focused on
+its own behavior instead of on object creation and dependency lookup.
+
+Constructor injection is the common default when a dependency is required because the
+object can be created only when all mandatory collaborators are available. Setter injection
+is useful for optional or late-bound collaborators, but it requires clearer handling of
+partially configured objects. Framework containers such as Spring, Angular, and the .NET
+DI container add registration, resolution, and lifecycle rules around the same underlying
+idea.
+
+DI improves testability when code depends on interfaces or small abstractions: tests can
+provide substitute collaborators without changing production code. The tradeoff is that
+object wiring moves elsewhere, so configuration errors may appear at startup or resolution
+time rather than at the call site.
 
 ## Further Reading
 
-- [Inversion of Control Containers and the Dependency Injection pattern (Martin Fowler)](undefined)
+- [Inversion of Control Containers and the Dependency Injection Pattern](https://martinfowler.com/articles/injection.html)
+- [Angular - Dependency Injection Overview](https://angular.dev/guide/di)
+- [Spring Framework - Dependency Injection](https://docs.spring.io/spring-framework/reference/core/beans/dependencies/factory-collaborators.html)
+- [Microsoft Learn - Dependency injection in .NET](https://learn.microsoft.com/en-us/dotnet/core/extensions/dependency-injection/overview)
 
 ## Related Articles
 
-- [SQL Injection](../sql-injection.md)
+- [SOLID Principles](solid-principles.md)
+- [Factory Method Pattern](factory-method-pattern.md)
+- [Adapter Pattern](adapter-pattern.md)
