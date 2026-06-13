@@ -187,6 +187,9 @@ export function repairQueueBatchFailures(repairQueue = {}) {
   const candidateCount = repairQueue.candidate_count;
   const nextBatchSize = repairQueue.next_batch_size;
   const nextBatch = repairQueue.next_batch;
+  const sourceReadyCandidateCount = repairQueue.source_ready_candidate_count;
+  const sourceReadyNextBatchSize = repairQueue.source_ready_next_batch_size;
+  const sourceReadyNextBatch = repairQueue.source_ready_next_batch;
 
   if (!Number.isInteger(candidateCount) || candidateCount < 0) {
     failures.push('content-health repair queue candidate count is missing');
@@ -201,6 +204,21 @@ export function repairQueueBatchFailures(repairQueue = {}) {
   }
   if (Array.isArray(nextBatch) && Number.isInteger(nextBatchSize) && nextBatch.length !== nextBatchSize) {
     failures.push(`content-health repair queue next batch length expected ${nextBatchSize}, got ${nextBatch.length}`);
+  }
+
+  if (!Number.isInteger(sourceReadyCandidateCount) || sourceReadyCandidateCount < 0) {
+    failures.push('content-health source-ready repair queue candidate count is missing');
+  }
+  if (!Array.isArray(sourceReadyNextBatch)) {
+    failures.push('content-health source-ready repair queue next batch is missing');
+  }
+
+  const expectedSourceReadyBatchSize = Math.min(2, Math.max(0, Number.isInteger(sourceReadyCandidateCount) ? sourceReadyCandidateCount : 0));
+  if (!Number.isInteger(sourceReadyNextBatchSize) || sourceReadyNextBatchSize !== expectedSourceReadyBatchSize) {
+    failures.push(`content-health source-ready repair queue next batch size expected ${expectedSourceReadyBatchSize}, got ${sourceReadyNextBatchSize ?? '(missing)'}`);
+  }
+  if (Array.isArray(sourceReadyNextBatch) && Number.isInteger(sourceReadyNextBatchSize) && sourceReadyNextBatch.length !== sourceReadyNextBatchSize) {
+    failures.push(`content-health source-ready repair queue next batch length expected ${sourceReadyNextBatchSize}, got ${sourceReadyNextBatch.length}`);
   }
 
   return failures;

@@ -183,6 +183,19 @@ function evaluateJsonExpected(payload, expected, failures) {
       : 0;
     check(count >= expected.min_repair_queue_next_batch, failures, `draft repair queue next batch expected at least ${expected.min_repair_queue_next_batch}, got ${count}`);
   }
+  if (expected.repair_queue_source_ready_fields === true) {
+    const queue = payload?.draft?.repair_queue || {};
+    const sourceReadyCandidateCount = queue.source_ready_candidate_count;
+    const sourceReadyNextBatchSize = queue.source_ready_next_batch_size;
+    const sourceReadyNextBatch = queue.source_ready_next_batch;
+    check(Number.isInteger(sourceReadyCandidateCount) && sourceReadyCandidateCount >= 0, failures, `draft repair queue source-ready candidate count expected a non-negative integer, got ${sourceReadyCandidateCount ?? '(missing)'}`);
+    check(Array.isArray(sourceReadyNextBatch), failures, 'draft repair queue source-ready next batch should be an array');
+    const expectedBatchSize = Math.min(2, Math.max(0, Number.isInteger(sourceReadyCandidateCount) ? sourceReadyCandidateCount : 0));
+    check(sourceReadyNextBatchSize === expectedBatchSize, failures, `draft repair queue source-ready next batch size expected ${expectedBatchSize}, got ${sourceReadyNextBatchSize ?? '(missing)'}`);
+    if (Array.isArray(sourceReadyNextBatch) && Number.isInteger(sourceReadyNextBatchSize)) {
+      check(sourceReadyNextBatch.length === sourceReadyNextBatchSize, failures, `draft repair queue source-ready next batch length expected ${sourceReadyNextBatchSize}, got ${sourceReadyNextBatch.length}`);
+    }
+  }
   const repairQueuePolicyRequirements = Array.isArray(expected.repair_queue_policy_contains)
     ? expected.repair_queue_policy_contains
     : [expected.repair_queue_policy_contains].filter(Boolean);
