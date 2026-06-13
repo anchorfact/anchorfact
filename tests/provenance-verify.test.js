@@ -4,6 +4,7 @@ import {
   ARTIFACT_SHARDS_SCHEMA_VERSION,
   CLAIMS_SCHEMA_VERSION,
   ARTIFACT_SUMMARY_SCHEMA_VERSION,
+  API_READINESS_SCHEMA_VERSION,
   CAPABILITIES_SCHEMA_VERSION,
   CONTENT_HEALTH_SCHEMA_VERSION,
   COVERAGE_SCHEMA_VERSION,
@@ -336,6 +337,20 @@ function buildFixture(overrides = {}) {
       }
     ]
   };
+  const apiReadiness = {
+    schema_version: API_READINESS_SCHEMA_VERSION,
+    generated: '2026-05-29T00:00:00.000Z',
+    provenance_url: `${baseUrl}/provenance.json`,
+    report_only: true,
+    build_should_fail: false,
+    target_ratio: 0.9,
+    status: 'foundation_ready_pending_14_day_and_partner_signals',
+    subscription_ready: false,
+    readiness_gates: [{ id: 'core_query_context_ratio', status: 'met' }],
+    core_corpus: { count: 1, passed: 1, failed: 0, pass_ratio: 1 },
+    api_scorecard: { count: 1, passed: 1, failed: 0, pass_ratio: 1, fallback: { ok: true }, failures: [] },
+    next_actions: []
+  };
   const manifestText = JSON.stringify(manifest, null, 2);
   const claimsText = JSON.stringify(claims, null, 2);
   const agentText = JSON.stringify(agent, null, 2);
@@ -350,6 +365,7 @@ function buildFixture(overrides = {}) {
   const mcpText = JSON.stringify(mcp, null, 2);
   const artifactSummaryText = JSON.stringify(artifactSummary, null, 2);
   const artifactShardsText = JSON.stringify(artifactShards, null, 2);
+  const apiReadinessText = JSON.stringify(apiReadiness, null, 2);
   const searchText = JSON.stringify(search, null, 2);
   const sourcesText = JSON.stringify(sources, null, 2);
   const provenance = {
@@ -446,6 +462,11 @@ function buildFixture(overrides = {}) {
         sha256: sha256Text(artifactShardsText),
         bytes: Buffer.byteLength(artifactShardsText, 'utf8')
       },
+      api_readiness_json: {
+        path: '/api-readiness.json',
+        sha256: sha256Text(apiReadinessText),
+        bytes: Buffer.byteLength(apiReadinessText, 'utf8')
+      },
       search_index_json: {
         path: '/search-index.json',
         sha256: sha256Text(searchText),
@@ -501,6 +522,7 @@ function buildFixture(overrides = {}) {
     [`${baseUrl}/mcp.json`]: { body: mcpText },
     [`${baseUrl}/artifact-summary.json`]: { body: artifactSummaryText },
     [`${baseUrl}/artifact-shards.json`]: { body: artifactShardsText },
+    [`${baseUrl}/api-readiness.json`]: { body: apiReadinessText },
     [`${baseUrl}/search-index.json`]: { body: searchText },
     [`${baseUrl}/sources.json`]: { body: sourcesText },
     [`${baseUrl}/llms.txt`]: { body: llms, contentType: 'text/plain; charset=utf-8' },
@@ -537,6 +559,7 @@ test('verifyLiveProvenance accepts matching official live artifacts', async () =
   assertEq(result.artifacts.content_health_json.ok, true);
   assertEq(result.artifacts.artifact_summary_json.ok, true);
   assertEq(result.artifacts.artifact_shards_json.ok, true);
+  assertEq(result.artifacts.api_readiness_json.ok, true);
   assertEq(result.commit.ok, true);
   assertEq(result.signature.skipped, true);
 });
@@ -634,6 +657,24 @@ test('verifyLiveProvenance rejects artifact hash mismatches', async () => {
   });
   assertEq(result.ok, false);
   assert(result.failures.some(failure => failure.includes('claims_json sha256 mismatch')), 'claims hash mismatch should fail');
+});
+
+test('verifyLiveProvenance rejects API readiness artifact hash mismatches', async () => {
+  const fixture = buildFixture({
+    artifacts: {
+      api_readiness_json: {
+        path: '/api-readiness.json',
+        sha256: '0'.repeat(64),
+        bytes: 1
+      }
+    }
+  });
+  const result = await verifyLiveProvenance({
+    baseUrl: fixture.baseUrl,
+    fetchImpl: fixture.fetchImpl
+  });
+  assertEq(result.ok, false);
+  assert(result.failures.some(failure => failure.includes('api_readiness_json sha256 mismatch')), 'API readiness hash mismatch should fail');
 });
 
 test('verifyLiveProvenance rejects unsafe artifact paths', async () => {
