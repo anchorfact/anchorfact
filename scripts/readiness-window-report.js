@@ -255,6 +255,17 @@ function contentChangePolicy(current, apiTargetRatio) {
   };
 }
 
+function manualDesignPartnerGate(current) {
+  const partnerCount = optionalFiniteNumber(current.external_design_partner_count);
+  const paidIntentCount = optionalFiniteNumber(current.paid_intent_signal_count);
+  return {
+    target: '>=3 real external design partners and >=1 paid-intent signal',
+    status: current.design_partner_status || 'not_measured',
+    ...(partnerCount === null ? {} : { current_partner_count: partnerCount }),
+    ...(paidIntentCount === null ? {} : { current_paid_intent_count: paidIntentCount })
+  };
+}
+
 export function buildReadinessWindowReport({
   snapshots = [],
   generatedAt = new Date().toISOString(),
@@ -287,6 +298,9 @@ export function buildReadinessWindowReport({
       predicate: adoptionWindowPredicate(adoptionTargetRatio)
     })
   };
+  const manualGates = {
+    design_partners: manualDesignPartnerGate(current)
+  };
 
   return {
     schema_version: READINESS_WINDOW_SCHEMA_VERSION,
@@ -301,6 +315,7 @@ export function buildReadinessWindowReport({
     snapshot_count: normalized.length,
     current_snapshot: current,
     gates,
+    manual_gates: manualGates,
     automated_gates_met: Object.values(gates).every(gate => gate.status === 'met'),
     content_change_policy: contentChangePolicy(current, apiTargetRatio),
     snapshots: normalized
@@ -309,6 +324,17 @@ export function buildReadinessWindowReport({
 
 function signalText(value) {
   return value === null || value === undefined ? 'not_measured' : value;
+}
+
+function manualGateCurrentText(gate) {
+  const parts = [];
+  if (gate.current_partner_count !== undefined && gate.current_partner_count !== null) {
+    parts.push(`current_partners=${gate.current_partner_count}`);
+  }
+  if (gate.current_paid_intent_count !== undefined && gate.current_paid_intent_count !== null) {
+    parts.push(`current_paid_intent=${gate.current_paid_intent_count}`);
+  }
+  return parts.length ? `; ${parts.join('; ')}` : '';
 }
 
 export function renderReadinessWindowMarkdown(report) {
@@ -323,6 +349,12 @@ export function renderReadinessWindowMarkdown(report) {
   lines.push('');
   for (const [id, gate] of Object.entries(report.gates)) {
     lines.push(`- ${id}: ${gate.status} (${gate.observed_days}/${gate.required_days} days, latest=${gate.latest_date})`);
+  }
+  lines.push('');
+  lines.push('## Manual Gates');
+  lines.push('');
+  for (const [id, gate] of Object.entries(report.manual_gates || {})) {
+    lines.push(`- ${id}: ${gate.status} (${gate.target}${manualGateCurrentText(gate)})`);
   }
   lines.push('');
   lines.push('## Current Signals');

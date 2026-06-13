@@ -118,6 +118,29 @@ test('buildReadinessWindowReport marks gates met across required consecutive win
   assertEq(report.content_change_policy.should_repair_content_now, false);
 });
 
+test('buildReadinessWindowReport surfaces manual design partner gate separately from automated windows', () => {
+  const snapshots = Array.from({ length: 14 }, (_, index) => snapshot(index + 1));
+  snapshots[13] = snapshot(14, {
+    design_partner_status: 'met',
+    external_design_partner_count: 3,
+    paid_intent_signal_count: 1
+  });
+  const report = buildReadinessWindowReport({
+    snapshots,
+    generatedAt: '2026-06-14T12:00:00.000Z'
+  });
+  const markdown = renderReadinessWindowMarkdown(report);
+
+  assertEq(report.automated_gates_met, true);
+  assertEq(report.manual_gates.design_partners.status, 'met');
+  assertEq(report.manual_gates.design_partners.current_partner_count, 3);
+  assertEq(report.manual_gates.design_partners.current_paid_intent_count, 1);
+  assert(markdown.includes('## Manual Gates'), 'missing manual gates section');
+  assert(markdown.includes('design_partners: met'), 'missing design partner manual gate');
+  assert(markdown.includes('current_partners=3'), 'missing current partner count');
+  assert(markdown.includes('current_paid_intent=1'), 'missing current paid intent count');
+});
+
 test('buildReadinessWindowReport treats missing current metrics as not measured', () => {
   const report = buildReadinessWindowReport({
     snapshots: [],
@@ -132,6 +155,7 @@ test('buildReadinessWindowReport treats missing current metrics as not measured'
   assertEq(report.content_change_policy.status, 'measure_first');
   assertEq(report.content_change_policy.should_repair_content_now, false);
   assertEq(report.content_change_policy.triggers, []);
+  assertEq(report.manual_gates.design_partners.status, 'not_measured');
   assert(markdown.includes('public_audit_actionable_count: not_measured'), 'missing not_measured public audit count');
   assert(markdown.includes('api_context_ratio: not_measured'), 'missing not_measured API ratio');
   assert(markdown.includes('api_scorecard_failures: not_measured'), 'missing not_measured API failures');
