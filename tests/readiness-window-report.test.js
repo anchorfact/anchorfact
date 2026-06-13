@@ -76,6 +76,26 @@ test('normalizeReadinessSnapshot extracts API readiness and content health signa
   assertEq(normalized.adoption_status, 'met');
 });
 
+test('normalizeReadinessSnapshot extracts public audit signal from API readiness gate fallback', () => {
+  const normalized = normalizeReadinessSnapshot({
+    apiReadiness: {
+      generated: '2026-06-13T00:00:00.000Z',
+      production_health: { status: 'not_provided' },
+      api_scorecard: { pass_ratio: 1, failures: [] },
+      adoption_signal: { status: 'not_provided' },
+      readiness_gates: [
+        {
+          id: 'public_audit_14_day',
+          status: 'not_measured_in_this_report',
+          current_actionable_count: 0
+        }
+      ]
+    }
+  });
+
+  assertEq(normalized.public_audit_actionable_count, 0);
+});
+
 test('buildReadinessWindowReport marks gates met across required consecutive windows', () => {
   const snapshots = Array.from({ length: 14 }, (_, index) => snapshot(index + 1));
   const report = buildReadinessWindowReport({

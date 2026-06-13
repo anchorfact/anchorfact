@@ -75,6 +75,16 @@ function currentAdoptionStatus(adoption = {}) {
     || 'not_measured';
 }
 
+function readinessGateById(apiReadiness = {}, id) {
+  const gates = Array.isArray(apiReadiness.readiness_gates) ? apiReadiness.readiness_gates : [];
+  return gates.find(gate => gate?.id === id) || null;
+}
+
+function publicAuditActionableFromApiReadiness(apiReadiness = {}) {
+  const value = readinessGateById(apiReadiness, 'public_audit_14_day')?.current_actionable_count;
+  return value === null || value === undefined ? null : optionalFiniteNumber(value);
+}
+
 export function normalizeReadinessSnapshot(input = {}) {
   if (input.schema_version === READINESS_SNAPSHOT_SCHEMA_VERSION || input.production_integrity_status) {
     const generated = input.generated || new Date().toISOString();
@@ -108,6 +118,7 @@ export function normalizeReadinessSnapshot(input = {}) {
     public_audit_actionable_count: optionalFiniteNumber(
       contentHealth.public_audit?.actionable_count
         ?? contentHealth.project_readiness?.signals?.public_audit_actionable_count
+        ?? publicAuditActionableFromApiReadiness(apiReadiness)
     ),
     api_context_ratio: optionalFiniteNumber(apiScorecard.pass_ratio),
     api_scorecard_failures: Array.isArray(apiScorecard.failures)
