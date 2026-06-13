@@ -10,6 +10,7 @@ const DEFAULT_ROUTE_RETRY_DELAY_MS = 250;
 const DEFAULT_ROUTE_CONCURRENCY = 4;
 const DEFAULT_JSON_RETRIES = 2;
 const DEFAULT_JSON_RETRY_DELAY_MS = 250;
+const ROUTING_GUARD_ROUTE = '/__anchorfact-routing-guard-check.json';
 
 export const REQUIRED_SECURITY_HEADERS = [
   { route: '/', name: 'X-Content-Type-Options', expected: 'nosniff' },
@@ -151,6 +152,14 @@ function assertOk(condition, message, failures) {
   }
 }
 
+function responseHeader(result, name) {
+  const lowerName = name.toLowerCase();
+  if (result?.headers?.get) {
+    return result.headers.get(name) || result.headers.get(lowerName) || '';
+  }
+  return result?.headers?.[lowerName] || result?.headers?.[name] || '';
+}
+
 function assertExpected(actual, expected, label, failures) {
   if (expected === null) {
     return;
@@ -260,8 +269,30 @@ export function repairQueueBatchFailures(repairQueue = {}) {
   return failures;
 }
 
+export function pagesRoutingGuardFailures(result, route = result?.route || ROUTING_GUARD_ROUTE) {
+  const failures = [];
+  assertOk(result?.status === 404, `${route} returned ${result?.status ?? '(missing)'}, expected 404`, failures);
+
+  const contentType = result?.contentType || responseHeader(result, 'content-type');
+  assertOk(String(contentType).toLowerCase().includes('application/json'), `${route} content-type expected application/json, got ${contentType || '(missing)'}`, failures);
+
+  let payload = null;
+  try {
+    payload = JSON.parse(String(result?.body || ''));
+  } catch (error) {
+    failures.push(`${route} should return valid JSON 404 instead of an HTML fallback: ${error.message}`);
+    return failures;
+  }
+
+  assertOk(payload.schema_version === 'anchorfact.not-found.v1', `${route} schema_version expected anchorfact.not-found.v1, got ${payload.schema_version || '(missing)'}`, failures);
+  assertOk(payload.status === 404, `${route} payload status expected 404, got ${payload.status ?? '(missing)'}`, failures);
+  assertOk(payload.error?.code === 'not_found', `${route} error code expected not_found, got ${payload.error?.code || '(missing)'}`, failures);
+  assertOk(payload.fallback_policy?.no_spa_fallback === true, `${route} fallback policy should disable SPA fallback`, failures);
+  return failures;
+}
+
 function headerIncludes(result, name, expected, failures) {
-  const actual = result.headers[name.toLowerCase()] || '';
+  const actual = responseHeader(result, name);
   assertOk(actual.toLowerCase().includes(expected.toLowerCase()), `${result.route} header ${name} expected to include ${expected}, got ${actual || '(missing)'}`, failures);
 }
 
@@ -316,6 +347,8 @@ export async function main() {
   const results = {};
 
   Object.assign(results, await fetchRoutes(baseUrl, routes));
+  results[ROUTING_GUARD_ROUTE] = await fetchRoute(baseUrl, ROUTING_GUARD_ROUTE);
+  failures.push(...pagesRoutingGuardFailures(results[ROUTING_GUARD_ROUTE], ROUTING_GUARD_ROUTE));
   for (const route of routes) {
     assertOk(results[route].status === 200, `${route} returned ${results[route].status}`, failures);
   }

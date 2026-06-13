@@ -9,7 +9,7 @@ import {
   renderIntegrityMarkdown,
   runProductionIntegrity
 } from '../scripts/production-integrity.js';
-import { REQUIRED_SECURITY_HEADERS, evalCallRoutes, exampleWorkflowRoutes, fetchRoute, fetchRoutes, hasCanonicalSlug, readJsonRoute, readinessDiscoveryFailures, repairQueueBatchFailures } from '../src/smoke-production.js';
+import { REQUIRED_SECURITY_HEADERS, evalCallRoutes, exampleWorkflowRoutes, fetchRoute, fetchRoutes, hasCanonicalSlug, pagesRoutingGuardFailures, readJsonRoute, readinessDiscoveryFailures, repairQueueBatchFailures } from '../src/smoke-production.js';
 
 let passed = 0, failed = 0;
 const tests = [];
@@ -695,6 +695,33 @@ test('production smoke reports HTML fallback details for JSON routes', async () 
   } finally {
     globalThis.fetch = originalFetch;
   }
+});
+
+test('production smoke validates unknown machine routes return JSON 404', () => {
+  const validFailures = pagesRoutingGuardFailures({
+    route: '/__anchorfact-routing-guard-check.json',
+    status: 404,
+    contentType: 'application/json; charset=utf-8',
+    headers: { 'content-type': 'application/json; charset=utf-8' },
+    body: JSON.stringify({
+      schema_version: 'anchorfact.not-found.v1',
+      status: 404,
+      error: { code: 'not_found' },
+      fallback_policy: { no_spa_fallback: true }
+    })
+  });
+  assertEq(validFailures, []);
+
+  const htmlFallbackFailures = pagesRoutingGuardFailures({
+    route: '/__anchorfact-routing-guard-check.json',
+    status: 200,
+    contentType: 'text/html; charset=utf-8',
+    headers: { 'content-type': 'text/html; charset=utf-8' },
+    body: '<!DOCTYPE html><title>AnchorFact</title>'
+  });
+  assert(htmlFallbackFailures.some(failure => failure.includes('returned 200')), 'status failure should be explicit');
+  assert(htmlFallbackFailures.some(failure => failure.includes('content-type')), 'content-type failure should be explicit');
+  assert(htmlFallbackFailures.some(failure => failure.includes('valid JSON')), 'HTML fallback should be reported as invalid JSON');
 });
 
 test('production smoke retries transient 5xx route responses', async () => {
