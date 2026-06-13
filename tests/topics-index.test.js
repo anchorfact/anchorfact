@@ -30,7 +30,7 @@ const publicResults = [
     citation: [{ name: 'Attention Is All You Need' }],
     _quality: {
       canonicalSlug: 'ai/transformer-architecture',
-      canonicalUrl: 'https://anchorfact.org/ai/transformer-architecture/'
+      canonicalUrl: 'https://anchorfact.org/ai/transformer-architecture/index.json'
     },
     _confidence: { level: 'high', score: 0.91 }
   },
@@ -39,7 +39,7 @@ const publicResults = [
     citation: [{ name: '3D Gaussian Splatting' }],
     _quality: {
       canonicalSlug: 'ai/gaussian-splatting',
-      canonicalUrl: 'https://anchorfact.org/ai/gaussian-splatting/'
+      canonicalUrl: 'https://anchorfact.org/ai/gaussian-splatting/index.json'
     },
     _confidence: { level: 'medium', score: 0.82 }
   },
@@ -48,7 +48,7 @@ const publicResults = [
     citation: [{ name: 'Biology Textbook' }],
     _quality: {
       canonicalSlug: 'science/photosynthesis',
-      canonicalUrl: 'https://anchorfact.org/science/photosynthesis/'
+      canonicalUrl: 'https://anchorfact.org/science/photosynthesis/index.json'
     },
     _confidence: { level: 'medium', score: 0.76 }
   }

@@ -31,7 +31,7 @@ const fixtureManifest = {
     {
       id: 'https://anchorfact.org/kb/ai/gaussian-splatting',
       canonical_slug: 'ai/gaussian-splatting',
-      canonical_url: 'https://anchorfact.org/ai/gaussian-splatting/',
+      canonical_url: 'https://anchorfact.org/ai/gaussian-splatting/index.json',
       title: '3D Gaussian Splatting',
       status: 'public',
       confidence_level: 'medium',
@@ -45,7 +45,7 @@ const fixtureManifest = {
     {
       id: 'https://anchorfact.org/kb/ai/draft-only',
       canonical_slug: 'ai/draft-only',
-      canonical_url: 'https://anchorfact.org/ai/draft-only/',
+      canonical_url: 'https://anchorfact.org/ai/draft-only/index.json',
       title: 'Draft Only',
       status: 'draft',
       is_draft: true,
@@ -93,7 +93,7 @@ const fixtureSources = {
         {
           canonical_slug: 'ai/gaussian-splatting',
           title: '3D Gaussian Splatting',
-          url: 'https://anchorfact.org/ai/gaussian-splatting/'
+          url: 'https://anchorfact.org/ai/gaussian-splatting/index.json'
         }
       ]
     }
@@ -107,7 +107,7 @@ const fixtureSearchIndex = {
     {
       canonical_slug: 'ai/gaussian-splatting',
       title: '3D Gaussian Splatting',
-      url: 'https://anchorfact.org/ai/gaussian-splatting/',
+      url: 'https://anchorfact.org/ai/gaussian-splatting/index.json',
       description: 'Real-time neural scene rendering.',
       source_coverage: { verified: 3, total: 3, ratio: 1 },
       source_tiers: ['A'],

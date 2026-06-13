@@ -31,7 +31,7 @@ const fixtureManifest = {
     {
       id: 'https://anchorfact.org/kb/ai/gaussian-splatting',
       canonical_slug: 'ai/gaussian-splatting',
-      canonical_url: 'https://anchorfact.org/ai/gaussian-splatting/',
+      canonical_url: 'https://anchorfact.org/ai/gaussian-splatting/index.json',
       title: '3D Gaussian Splatting',
       description: 'Real-time neural scene rendering.',
       status: 'public',
@@ -46,7 +46,7 @@ const fixtureManifest = {
     {
       id: 'https://anchorfact.org/kb/ai/draft-only',
       canonical_slug: 'ai/draft-only',
-      canonical_url: 'https://anchorfact.org/ai/draft-only/',
+      canonical_url: 'https://anchorfact.org/ai/draft-only/index.json',
       title: 'Draft Only',
       description: 'Draft-only gaussian note.',
       status: 'draft',
@@ -104,7 +104,7 @@ const fixtureSources = {
         {
           canonical_slug: 'ai/gaussian-splatting',
           title: '3D Gaussian Splatting',
-          url: 'https://anchorfact.org/ai/gaussian-splatting/'
+          url: 'https://anchorfact.org/ai/gaussian-splatting/index.json'
         }
       ]
     },
@@ -120,7 +120,7 @@ const fixtureSources = {
         {
           canonical_slug: 'ai/draft-only',
           title: 'Draft Only',
-          url: 'https://anchorfact.org/ai/draft-only/'
+          url: 'https://anchorfact.org/ai/draft-only/index.json'
         }
       ]
     }
@@ -135,7 +135,7 @@ const fixtureSearchIndex = {
     {
       canonical_slug: 'ai/gaussian-splatting',
       title: '3D Gaussian Splatting',
-      url: 'https://anchorfact.org/ai/gaussian-splatting/',
+      url: 'https://anchorfact.org/ai/gaussian-splatting/index.json',
       description: 'Real-time neural scene rendering.',
       confidence_level: 'medium',
       source_coverage: { verified: 3, total: 3, ratio: 1 },
@@ -153,7 +153,7 @@ const fixtureSearchIndex = {
     {
       canonical_slug: 'ai/draft-only',
       title: 'Draft Only',
-      url: 'https://anchorfact.org/ai/draft-only/',
+      url: 'https://anchorfact.org/ai/draft-only/index.json',
       description: 'Draft-only gaussian note.',
       confidence_level: 'low',
       source_coverage: { verified: 0, total: 1, ratio: 0 },

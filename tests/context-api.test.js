@@ -30,7 +30,7 @@ const manifest = {
   articles: [
     {
       canonical_slug: 'ai/gaussian-splatting',
-      canonical_url: 'https://anchorfact.org/ai/gaussian-splatting/',
+      canonical_url: 'https://anchorfact.org/ai/gaussian-splatting/index.json',
       title: '3D Gaussian Splatting',
       description: 'Real-time neural scene rendering.',
       status: 'public',
@@ -49,7 +49,7 @@ const manifest = {
     {
       id: 'article:health/medication-safety',
       canonical_slug: 'health/medication-safety',
-      canonical_url: 'https://anchorfact.org/health/medication-safety/',
+      canonical_url: 'https://anchorfact.org/health/medication-safety/index.json',
       title: 'Medication Safety',
       description: 'Educational medication safety reference.',
       status: 'public',
@@ -62,7 +62,7 @@ const manifest = {
     {
       id: 'article:computer-science/sql-injection',
       canonical_slug: 'computer-science/sql-injection',
-      canonical_url: 'https://anchorfact.org/computer-science/sql-injection/',
+      canonical_url: 'https://anchorfact.org/computer-science/sql-injection/index.json',
       title: 'SQL Injection Prevention',
       description: 'Educational secure coding reference for SQL injection prevention.',
       status: 'public',
@@ -75,7 +75,7 @@ const manifest = {
     {
       id: 'article:ai/ai-for-weather-forecasting',
       canonical_slug: 'ai/ai-for-weather-forecasting',
-      canonical_url: 'https://anchorfact.org/ai/ai-for-weather-forecasting/',
+      canonical_url: 'https://anchorfact.org/ai/ai-for-weather-forecasting/index.json',
       title: 'AI for Weather Forecasting',
       description: 'Machine learning systems for meteorological forecasting.',
       status: 'public',
@@ -191,7 +191,7 @@ const searchIndex = {
     {
       canonical_slug: 'ai/gaussian-splatting',
       title: '3D Gaussian Splatting',
-      url: 'https://anchorfact.org/ai/gaussian-splatting/',
+      url: 'https://anchorfact.org/ai/gaussian-splatting/index.json',
       description: 'Real-time neural scene rendering.',
       confidence_level: 'medium',
       source_coverage: { verified: 1, total: 1, ratio: 1 },
@@ -204,7 +204,7 @@ const searchIndex = {
     {
       canonical_slug: 'ai/draft-only',
       title: 'Draft Only',
-      url: 'https://anchorfact.org/ai/draft-only/',
+      url: 'https://anchorfact.org/ai/draft-only/index.json',
       confidence_level: 'low',
       claim_ids: ['https://anchorfact.org/fact/draft'],
       claim_count: 1,
@@ -214,7 +214,7 @@ const searchIndex = {
     {
       canonical_slug: 'health/medication-safety',
       title: 'Medication Safety',
-      url: 'https://anchorfact.org/health/medication-safety/',
+      url: 'https://anchorfact.org/health/medication-safety/index.json',
       description: 'Educational medication safety reference.',
       confidence_level: 'medium',
       source_coverage: { verified: 1, total: 1, ratio: 1 },
@@ -226,7 +226,7 @@ const searchIndex = {
     {
       canonical_slug: 'computer-science/sql-injection',
       title: 'SQL Injection Prevention',
-      url: 'https://anchorfact.org/computer-science/sql-injection/',
+      url: 'https://anchorfact.org/computer-science/sql-injection/index.json',
       description: 'Educational secure coding reference for SQL injection prevention.',
       confidence_level: 'medium',
       source_coverage: { verified: 1, total: 1, ratio: 1 },
@@ -238,7 +238,7 @@ const searchIndex = {
     {
       canonical_slug: 'ai/ai-for-weather-forecasting',
       title: 'AI for Weather Forecasting',
-      url: 'https://anchorfact.org/ai/ai-for-weather-forecasting/',
+      url: 'https://anchorfact.org/ai/ai-for-weather-forecasting/index.json',
       description: 'Machine learning systems for meteorological forecasting.',
       confidence_level: 'medium',
       source_coverage: { verified: 1, total: 1, ratio: 1 },

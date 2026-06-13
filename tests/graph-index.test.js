@@ -31,7 +31,7 @@ const manifest = {
   articles: [
     {
       canonical_slug: 'ai/gaussian-splatting',
-      canonical_url: 'https://anchorfact.org/ai/gaussian-splatting/',
+      canonical_url: 'https://anchorfact.org/ai/gaussian-splatting/index.json',
       title: '3D Gaussian Splatting',
       status: 'public',
       is_draft: false,
@@ -41,7 +41,7 @@ const manifest = {
     },
     {
       canonical_slug: 'ai/draft-only',
-      canonical_url: 'https://anchorfact.org/ai/draft-only/',
+      canonical_url: 'https://anchorfact.org/ai/draft-only/index.json',
       title: 'Draft Only',
       status: 'draft',
       is_draft: true
@@ -83,7 +83,7 @@ const sourcesPayload = {
         {
           canonical_slug: 'ai/gaussian-splatting',
           title: '3D Gaussian Splatting',
-          url: 'https://anchorfact.org/ai/gaussian-splatting/'
+          url: 'https://anchorfact.org/ai/gaussian-splatting/index.json'
         }
       ]
     }

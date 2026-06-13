@@ -30,7 +30,7 @@ const fixtureManifest = {
   articles: [
     {
       canonical_slug: 'ai/gaussian-splatting',
-      canonical_url: 'https://anchorfact.org/ai/gaussian-splatting/',
+      canonical_url: 'https://anchorfact.org/ai/gaussian-splatting/index.json',
       title: '3D Gaussian Splatting',
       status: 'public',
       confidence_level: 'medium',
@@ -38,7 +38,7 @@ const fixtureManifest = {
     },
     {
       canonical_slug: 'ai/draft-only',
-      canonical_url: 'https://anchorfact.org/ai/draft-only/',
+      canonical_url: 'https://anchorfact.org/ai/draft-only/index.json',
       title: 'Draft Only',
       status: 'draft',
       is_draft: true
@@ -53,7 +53,7 @@ const fixtureClaims = {
   claims: [
     {
       id: 'https://anchorfact.org/fact/f1',
-      article: 'https://anchorfact.org/ai/gaussian-splatting/',
+      article: 'https://anchorfact.org/ai/gaussian-splatting/index.json',
       canonical_slug: 'ai/gaussian-splatting',
       title: '3D Gaussian Splatting',
       statement: '3D Gaussian Splatting represents scenes as anisotropic Gaussians.',
@@ -91,7 +91,7 @@ const fixtureSources = {
         {
           canonical_slug: 'ai/gaussian-splatting',
           title: '3D Gaussian Splatting',
-          url: 'https://anchorfact.org/ai/gaussian-splatting/'
+          url: 'https://anchorfact.org/ai/gaussian-splatting/index.json'
         }
       ]
     }

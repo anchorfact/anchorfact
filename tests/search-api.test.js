@@ -32,7 +32,7 @@ const fixtureIndex = {
     {
       canonical_slug: 'ai/gaussian-splatting',
       title: '3D Gaussian Splatting',
-      url: 'https://anchorfact.org/ai/gaussian-splatting/',
+      url: 'https://anchorfact.org/ai/gaussian-splatting/index.json',
       description: 'Real-time neural scene rendering.',
       confidence_level: 'medium',
       source_coverage: { verified: 3, total: 3, ratio: 1 },
@@ -45,7 +45,7 @@ const fixtureIndex = {
     {
       canonical_slug: 'science/statistics',
       title: 'Statistics Fundamentals',
-      url: 'https://anchorfact.org/science/statistics/',
+      url: 'https://anchorfact.org/science/statistics/index.json',
       description: 'Probability, inference, and uncertainty.',
       confidence_level: 'medium',
       source_coverage: { verified: 2, total: 3, ratio: 0.667 },
@@ -58,7 +58,7 @@ const fixtureIndex = {
     {
       canonical_slug: 'ai/neural-rendering',
       title: 'Neural Rendering',
-      url: 'https://anchorfact.org/ai/neural-rendering/',
+      url: 'https://anchorfact.org/ai/neural-rendering/index.json',
       description: 'Rendering with learned representations.',
       confidence_level: 'high',
       source_coverage: { verified: 4, total: 4, ratio: 1 },
@@ -97,7 +97,7 @@ test('rankSearchRecords favors exact title phrases over narrower title matches',
     {
       canonical_slug: 'ai/latent-diffusion-models',
       title: 'Latent Diffusion Models',
-      url: 'https://anchorfact.org/ai/latent-diffusion-models/',
+      url: 'https://anchorfact.org/ai/latent-diffusion-models/index.json',
       description: 'Diffusion models that operate in latent spaces.',
       confidence_level: 'medium',
       source_coverage: { verified: 3, total: 3, ratio: 1 },
@@ -110,7 +110,7 @@ test('rankSearchRecords favors exact title phrases over narrower title matches',
     {
       canonical_slug: 'ai/diffusion-models',
       title: 'Diffusion Models',
-      url: 'https://anchorfact.org/ai/diffusion-models/',
+      url: 'https://anchorfact.org/ai/diffusion-models/index.json',
       description: 'The general diffusion model family.',
       confidence_level: 'medium',
       source_coverage: { verified: 3, total: 3, ratio: 1 },
@@ -130,7 +130,7 @@ test('rankSearchRecords ignores generic question words and standalone years', ()
     {
       canonical_slug: 'sports/generic-history',
       title: 'Sports History',
-      url: 'https://anchorfact.org/sports/generic-history/',
+      url: 'https://anchorfact.org/sports/generic-history/index.json',
       description: 'A public sports reference.',
       confidence_level: 'medium',
       source_coverage: { verified: 1, total: 1, ratio: 1 },
@@ -150,7 +150,7 @@ test('rankSearchRecords does not match query tokens inside longer words', () => 
     {
       canonical_slug: 'health/human-anatomy',
       title: 'Human Anatomy',
-      url: 'https://anchorfact.org/health/human-anatomy/',
+      url: 'https://anchorfact.org/health/human-anatomy/index.json',
       description: 'Systems, organs, and body structure.',
       confidence_level: 'medium',
       source_coverage: { verified: 3, total: 3, ratio: 1 },
@@ -170,7 +170,7 @@ test('rankSearchRecords favors exact acronym matches over generic topical words'
     {
       canonical_slug: 'ai/neural-architecture-search',
       title: 'Neural Architecture Search',
-      url: 'https://anchorfact.org/ai/neural-architecture-search/',
+      url: 'https://anchorfact.org/ai/neural-architecture-search/index.json',
       description: 'Search methods for model architectures.',
       confidence_level: 'medium',
       source_coverage: { verified: 3, total: 3, ratio: 1 },
@@ -183,7 +183,7 @@ test('rankSearchRecords favors exact acronym matches over generic topical words'
     {
       canonical_slug: 'ai/convolutional-neural-networks-cnn',
       title: 'Convolutional Neural Networks (CNN)',
-      url: 'https://anchorfact.org/ai/convolutional-neural-networks-cnn/',
+      url: 'https://anchorfact.org/ai/convolutional-neural-networks-cnn/index.json',
       description: 'Convolutional neural networks for visual data.',
       confidence_level: 'medium',
       source_coverage: { verified: 3, total: 3, ratio: 1 },
@@ -203,7 +203,7 @@ test('rankSearchRecords uses canonical slugs as exact topic signals', () => {
     {
       canonical_slug: 'ai/object-detection',
       title: 'Object Detection: YOLO, R-CNN, and DETR',
-      url: 'https://anchorfact.org/ai/object-detection/',
+      url: 'https://anchorfact.org/ai/object-detection/index.json',
       description: 'Object detection systems often include R-CNN variants.',
       confidence_level: 'medium',
       source_coverage: { verified: 3, total: 3, ratio: 1 },
@@ -216,7 +216,7 @@ test('rankSearchRecords uses canonical slugs as exact topic signals', () => {
     {
       canonical_slug: 'ai/convolutional-neural-networks-cnn',
       title: 'Convolutional Neural Networks (CNN)',
-      url: 'https://anchorfact.org/ai/convolutional-neural-networks-cnn/',
+      url: 'https://anchorfact.org/ai/convolutional-neural-networks-cnn/index.json',
       description: 'Convolutional neural networks for visual data.',
       confidence_level: 'medium',
       source_coverage: { verified: 3, total: 3, ratio: 1 },
@@ -236,7 +236,7 @@ test('rankSearchRecords rejects weak-only matches for multi-token queries', () =
     {
       canonical_slug: 'computer-science/cap-theorem',
       title: 'CAP Theorem',
-      url: 'https://anchorfact.org/computer-science/cap-theorem/',
+      url: 'https://anchorfact.org/computer-science/cap-theorem/index.json',
       description: 'The CAP theorem describes distributed system trade-offs.',
       confidence_level: 'medium',
       source_coverage: { verified: 3, total: 3, ratio: 1 },
@@ -249,7 +249,7 @@ test('rankSearchRecords rejects weak-only matches for multi-token queries', () =
     {
       canonical_slug: 'ai/attention-mechanisms-deep-dive',
       title: 'Attention Mechanisms Deep Dive',
-      url: 'https://anchorfact.org/ai/attention-mechanisms-deep-dive/',
+      url: 'https://anchorfact.org/ai/attention-mechanisms-deep-dive/index.json',
       description: 'Attention mechanisms and action selection in neural systems.',
       confidence_level: 'medium',
       source_coverage: { verified: 3, total: 3, ratio: 1 },
@@ -262,7 +262,7 @@ test('rankSearchRecords rejects weak-only matches for multi-token queries', () =
     {
       canonical_slug: 'health/strength-training',
       title: 'Strength Training',
-      url: 'https://anchorfact.org/health/strength-training/',
+      url: 'https://anchorfact.org/health/strength-training/index.json',
       description: 'Progressive resistance training and adaptation.',
       confidence_level: 'medium',
       source_coverage: { verified: 3, total: 3, ratio: 1 },

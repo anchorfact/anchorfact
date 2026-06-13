@@ -30,14 +30,14 @@ function assertEq(actual, expected, ctx = '') {
 
 const article = {
   canonical_slug: 'ai/gaussian-splatting',
-  canonical_url: 'https://anchorfact.org/ai/gaussian-splatting/',
+  canonical_url: 'https://anchorfact.org/ai/gaussian-splatting/index.json',
   title: '3D Gaussian Splatting',
   confidence_level: 'medium'
 };
 
 const claim = {
   id: 'https://anchorfact.org/fact/f1?utm=x#part',
-  article: 'https://anchorfact.org/ai/gaussian-splatting/',
+  article: 'https://anchorfact.org/ai/gaussian-splatting/index.json',
   canonical_slug: 'ai/gaussian-splatting',
   title: '3D Gaussian Splatting',
   statement: '3D Gaussian Splatting represents scenes as anisotropic Gaussians.',
@@ -67,7 +67,7 @@ test('buildClaimCitationExport returns stable inline and markdown citation text'
   const citation = buildClaimCitationExport({ claim, article, source });
 
   assertEq(citation.claim_id, 'https://anchorfact.org/fact/f1');
-  assertEq(citation.article_url, 'https://anchorfact.org/ai/gaussian-splatting');
+  assertEq(citation.article_url, 'https://anchorfact.org/ai/gaussian-splatting/index.json');
   assertEq(citation.source_url, 'https://arxiv.org/abs/2308.04079');
   assertEq(citation.source_tier, 'A');
   assert(citation.inline.includes('AnchorFact: 3D Gaussian Splatting; medium confidence'), 'inline citation should include article and confidence');

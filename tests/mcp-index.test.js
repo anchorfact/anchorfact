@@ -38,7 +38,7 @@ writeFileSync(join(distDir, 'manifest.json'), JSON.stringify({
     {
       id: 'https://anchorfact.org/kb/ai/public-fixture',
       canonical_slug: 'ai/public-fixture',
-      canonical_url: 'https://anchorfact.org/ai/public-fixture/',
+      canonical_url: 'https://anchorfact.org/ai/public-fixture/index.json',
       title: 'Public Fixture',
       status: 'public',
       confidence_level: 'medium',
@@ -49,7 +49,7 @@ writeFileSync(join(distDir, 'manifest.json'), JSON.stringify({
     {
       id: 'https://anchorfact.org/kb/draft-fixture',
       canonical_slug: 'draft-fixture',
-      canonical_url: 'https://anchorfact.org/draft-fixture/',
+      canonical_url: 'https://anchorfact.org/draft-fixture/index.json',
       title: 'Draft Fixture',
       status: 'draft',
       confidence_level: 'low',
@@ -102,7 +102,7 @@ writeFileSync(join(distDir, 'search-index.json'), JSON.stringify({
     {
       canonical_slug: 'ai/public-fixture',
       title: 'Public Fixture Evidence',
-      url: 'https://anchorfact.org/ai/public-fixture/',
+      url: 'https://anchorfact.org/ai/public-fixture/index.json',
       description: 'Fixture evidence for local planner tests.',
       confidence_level: 'medium',
       source_coverage: { verified: 1, total: 1, ratio: 1 },
@@ -111,7 +111,7 @@ writeFileSync(join(distDir, 'search-index.json'), JSON.stringify({
       keywords: ['fixture', 'evidence', 'planner'],
       search_text: 'ai public fixture evidence local planner claim source',
       routes: {
-        html: 'https://anchorfact.org/ai/public-fixture/',
+        html_alias: 'https://anchorfact.org/ai/public-fixture/index.html',
         markdown: 'https://anchorfact.org/ai/public-fixture/index.md',
         jsonld: 'https://anchorfact.org/ai/public-fixture/index.json'
       }
@@ -200,7 +200,7 @@ writeFileSync(join(distDir, 'content-health.json'), JSON.stringify({
 writeFileSync(join(articleDir, 'index.json'), JSON.stringify({
   '@context': 'https://schema.org',
   '@id': 'https://anchorfact.org/kb/ai/public-fixture',
-  url: 'https://anchorfact.org/ai/public-fixture/',
+  url: 'https://anchorfact.org/ai/public-fixture/index.json',
   headline: 'Public Fixture',
   description: 'Public fixture summary.',
   'anchorfact:confidence': 'medium'

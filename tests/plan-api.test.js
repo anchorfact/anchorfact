@@ -31,7 +31,7 @@ const searchIndex = {
     {
       canonical_slug: 'ai/gaussian-splatting',
       title: '3D Gaussian Splatting',
-      url: 'https://anchorfact.org/ai/gaussian-splatting/',
+      url: 'https://anchorfact.org/ai/gaussian-splatting/index.json',
       description: 'Real-time neural scene rendering.',
       confidence_level: 'medium',
       source_coverage: { verified: 3, total: 3, ratio: 1 },
@@ -44,7 +44,7 @@ const searchIndex = {
     {
       canonical_slug: 'business/restaurant-technology',
       title: 'Restaurant Technology',
-      url: 'https://anchorfact.org/business/restaurant-technology/',
+      url: 'https://anchorfact.org/business/restaurant-technology/index.json',
       description: 'Digital systems used by restaurants.',
       confidence_level: 'medium',
       source_coverage: { verified: 1, total: 1, ratio: 1 },
@@ -57,7 +57,7 @@ const searchIndex = {
     {
       canonical_slug: 'ai/ai-for-weather-forecasting',
       title: 'AI for Weather Forecasting',
-      url: 'https://anchorfact.org/ai/ai-for-weather-forecasting/',
+      url: 'https://anchorfact.org/ai/ai-for-weather-forecasting/index.json',
       description: 'Machine learning systems for meteorological forecasting.',
       confidence_level: 'medium',
       source_coverage: { verified: 1, total: 1, ratio: 1 },
@@ -70,7 +70,7 @@ const searchIndex = {
     {
       canonical_slug: 'self-improvement/time-management',
       title: 'Time Management',
-      url: 'https://anchorfact.org/self-improvement/time-management/',
+      url: 'https://anchorfact.org/self-improvement/time-management/index.json',
       description: 'Static time-management methods for planning and prioritization.',
       confidence_level: 'medium',
       source_coverage: { verified: 1, total: 1, ratio: 1 },
@@ -83,7 +83,7 @@ const searchIndex = {
     {
       canonical_slug: 'health/medication-safety',
       title: 'Medication Safety',
-      url: 'https://anchorfact.org/health/medication-safety/',
+      url: 'https://anchorfact.org/health/medication-safety/index.json',
       description: 'Educational medication safety reference.',
       confidence_level: 'medium',
       source_coverage: { verified: 2, total: 2, ratio: 1 },
@@ -96,7 +96,7 @@ const searchIndex = {
     {
       canonical_slug: 'computer-science/sql-injection',
       title: 'SQL Injection Prevention',
-      url: 'https://anchorfact.org/computer-science/sql-injection/',
+      url: 'https://anchorfact.org/computer-science/sql-injection/index.json',
       description: 'Educational secure coding reference for SQL injection prevention.',
       confidence_level: 'medium',
       source_coverage: { verified: 2, total: 2, ratio: 1 },
@@ -109,7 +109,7 @@ const searchIndex = {
     {
       canonical_slug: 'computer-science/phishing-awareness',
       title: 'Phishing Awareness',
-      url: 'https://anchorfact.org/computer-science/phishing-awareness/',
+      url: 'https://anchorfact.org/computer-science/phishing-awareness/index.json',
       description: 'Educational reference for recognizing and preventing phishing.',
       confidence_level: 'medium',
       source_coverage: { verified: 2, total: 2, ratio: 1 },
@@ -122,7 +122,7 @@ const searchIndex = {
     {
       canonical_slug: 'science/statistics',
       title: 'Statistics Fundamentals',
-      url: 'https://anchorfact.org/science/statistics/',
+      url: 'https://anchorfact.org/science/statistics/index.json',
       description: 'Probability, inference, and uncertainty.',
       confidence_level: 'medium',
       source_coverage: { verified: 2, total: 3, ratio: 0.667 },
@@ -135,7 +135,7 @@ const searchIndex = {
     {
       canonical_slug: 'computer-science/api-rate-limiting',
       title: 'API Rate Limiting',
-      url: 'https://anchorfact.org/computer-science/api-rate-limiting/',
+      url: 'https://anchorfact.org/computer-science/api-rate-limiting/index.json',
       description: 'Stable API throttling and quota-control patterns.',
       confidence_level: 'medium',
       source_coverage: { verified: 2, total: 2, ratio: 1 },
@@ -148,7 +148,7 @@ const searchIndex = {
     {
       canonical_slug: 'computer-science/software-versioning',
       title: 'Software Versioning Basics',
-      url: 'https://anchorfact.org/computer-science/software-versioning/',
+      url: 'https://anchorfact.org/computer-science/software-versioning/index.json',
       description: 'Stable semantic versioning and release numbering concepts.',
       confidence_level: 'medium',
       source_coverage: { verified: 2, total: 2, ratio: 1 },
@@ -161,7 +161,7 @@ const searchIndex = {
     {
       canonical_slug: 'business/stock-market-basics',
       title: 'Stock Market Basics',
-      url: 'https://anchorfact.org/business/stock-market-basics/',
+      url: 'https://anchorfact.org/business/stock-market-basics/index.json',
       description: 'Foundational market structure and exchange concepts.',
       confidence_level: 'medium',
       source_coverage: { verified: 2, total: 2, ratio: 1 },
@@ -174,7 +174,7 @@ const searchIndex = {
     {
       canonical_slug: 'business/cryptocurrency',
       title: 'Cryptocurrency',
-      url: 'https://anchorfact.org/business/cryptocurrency/',
+      url: 'https://anchorfact.org/business/cryptocurrency/index.json',
       description: 'Foundational cryptocurrency concepts.',
       confidence_level: 'medium',
       source_coverage: { verified: 2, total: 2, ratio: 1 },
@@ -187,7 +187,7 @@ const searchIndex = {
     {
       canonical_slug: 'computer-science/nodejs',
       title: 'Node.js',
-      url: 'https://anchorfact.org/computer-science/nodejs/',
+      url: 'https://anchorfact.org/computer-science/nodejs/index.json',
       description: 'Stable Node.js runtime architecture concepts.',
       confidence_level: 'medium',
       source_coverage: { verified: 2, total: 2, ratio: 1 },

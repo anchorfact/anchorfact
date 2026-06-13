@@ -41,7 +41,7 @@ const fixtureSources = {
         {
           canonical_slug: 'ai/gaussian-splatting',
           title: '3D Gaussian Splatting',
-          url: 'https://anchorfact.org/ai/gaussian-splatting/'
+          url: 'https://anchorfact.org/ai/gaussian-splatting/index.json'
         }
       ]
     }

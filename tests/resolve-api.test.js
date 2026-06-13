@@ -36,7 +36,7 @@ const fixtureManifest = {
   articles: [
     {
       canonical_slug: 'ai/3d-generation-gaussian-splatting',
-      canonical_url: 'https://anchorfact.org/ai/3d-generation-gaussian-splatting/',
+      canonical_url: 'https://anchorfact.org/ai/3d-generation-gaussian-splatting/index.json',
       title: '3D Gaussian Splatting',
       status: 'public',
       is_draft: false,

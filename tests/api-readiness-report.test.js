@@ -42,7 +42,7 @@ function fakeArtifacts() {
   const article = {
     id: 'https://anchorfact.org/kb/ai/rag',
     canonical_slug: 'ai/rag',
-    canonical_url: 'https://anchorfact.org/ai/rag/',
+    canonical_url: 'https://anchorfact.org/ai/rag/index.json',
     title: 'Retrieval-Augmented Generation (RAG)',
     status: 'public',
     is_draft: false,
@@ -122,7 +122,7 @@ function fakeArtifacts() {
         {
           canonical_slug: 'ai/rag',
           title: 'Retrieval-Augmented Generation (RAG)',
-          url: 'https://anchorfact.org/ai/rag/',
+          url: 'https://anchorfact.org/ai/rag/index.json',
           description: 'Retrieval-Augmented Generation combines retrieval with language model generation.',
           confidence_level: 'high',
           source_coverage: { verified: 2, total: 2, ratio: 1 },

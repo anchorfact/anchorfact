@@ -32,7 +32,7 @@ function fixtureArtifacts() {
     {
       id: 'article:ai/rag',
       canonical_slug: 'ai/rag',
-      canonical_url: 'https://anchorfact.org/ai/rag/',
+      canonical_url: 'https://anchorfact.org/ai/rag/index.json',
       title: 'Retrieval Augmented Generation',
       description: 'RAG combines retrieval and generation.',
       status: 'public',
@@ -45,7 +45,7 @@ function fixtureArtifacts() {
     {
       id: 'article:business/stock-market-basics',
       canonical_slug: 'business/stock-market-basics',
-      canonical_url: 'https://anchorfact.org/business/stock-market-basics/',
+      canonical_url: 'https://anchorfact.org/business/stock-market-basics/index.json',
       title: 'Stock Market Basics',
       description: 'Stock market basics and indexes.',
       status: 'public',
@@ -130,7 +130,7 @@ function fixtureArtifacts() {
         {
           canonical_slug: 'ai/rag',
           title: 'Retrieval Augmented Generation',
-          url: 'https://anchorfact.org/ai/rag/',
+          url: 'https://anchorfact.org/ai/rag/index.json',
           description: 'Retrieval augmented generation and RAG systems.',
           confidence_level: 'medium',
           source_coverage: { verified: 2, total: 2, ratio: 1 },
@@ -142,7 +142,7 @@ function fixtureArtifacts() {
         {
           canonical_slug: 'business/stock-market-basics',
           title: 'Stock Market Basics',
-          url: 'https://anchorfact.org/business/stock-market-basics/',
+          url: 'https://anchorfact.org/business/stock-market-basics/index.json',
           description: 'Stock market basics and ownership shares.',
           confidence_level: 'low',
           source_coverage: { verified: 1, total: 1, ratio: 1 },
