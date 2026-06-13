@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-13T15:44:03.696Z",
+    "generated": "2026-06-13T15:50:15.533Z",
     "total_articles": 1628,
     "total_with_errors": 0,
     "average_sources_per_article": "2.6",
     "overall_verification_rate": "92.6%",
-    "elapsed_ms": 2972,
-    "elapsed_sec": "3.0",
+    "elapsed_ms": 1427,
+    "elapsed_sec": "1.4",
     "concurrency": 3
   },
   "articles": [
@@ -85553,56 +85553,86 @@
       "sources_unreachable": 1
     },
     {
-      "file": "content\\computer-science\\concurrency-models.md",
+      "file": "content/computer-science/concurrency-models.md",
       "article_id": "kb-2026-00202",
       "generation_method": "ai_structured",
-      "sources_total": 3,
+      "sources_total": 4,
       "verification_results": [
         {
-          "source_title": "ACM Digital Library",
-          "source_type": "repository",
+          "source_title": "Processes and Threads",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://dl.acm.org/",
-              "verified": false,
-              "metadata": {},
-              "match": false
+              "identifier": "https://docs.oracle.com/javase/tutorial/essential/concurrency/procthread.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.oracle.com/javase/tutorial/essential/concurrency/procthread.html",
+                "http_method": "HEAD"
+              },
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Java Concurrency in Practice (2nd Edition, 2025)",
-          "source_type": "book",
+          "source_title": "asyncio - Asynchronous I/O",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.informit.com/concurrency/",
-              "verified": false,
-              "metadata": {},
-              "match": false
+              "identifier": "https://docs.python.org/3/library/asyncio.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.python.org/3/library/asyncio.html",
+                "http_method": "HEAD"
+              },
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Concurrency Models in Modern Programming Languages: 2025 Survey",
-          "source_type": "survey_paper",
+          "source_title": "Processes",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://doi.org/10.1145/acmcs.2025.concurrency",
-              "verified": false,
-              "metadata": {},
-              "match": false
+              "identifier": "https://www.erlang.org/doc/system/ref_man_processes.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.erlang.org/doc/system/ref_man_processes.html",
+                "http_method": "HEAD"
+              },
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "Effective Go",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://go.dev/doc/effective_go",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://go.dev/doc/effective_go",
+                "http_method": "HEAD"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 3
+      "sources_verified": 4,
+      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\continuous-integration.md",

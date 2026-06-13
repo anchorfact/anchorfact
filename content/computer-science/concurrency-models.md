@@ -4,9 +4,9 @@ title: Concurrency Models
 schema_type: TechArticle
 category: computer-science
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+confidence: medium
+last_verified: '2026-06-13'
+created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -15,91 +15,91 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-computer-science-001
+  - id: fact-computer-science-concurrency-001
     statement: >-
-      Concurrency models handle multiple simultaneous computations. Threads (shared memory, mutexes), CSP/Actors (message passing, no shared state), async/await (cooperative multitasking), SIMD/GPU
-      (data-parallel). Key challenges: race conditions, deadlocks, livelocks, starvation. Amdahl's Law limits parallel speedup.
-    source_title: ACM Digital Library
-    source_url: https://dl.acm.org/
+      Oracle's Java concurrency tutorial describes threads as execution units inside a
+      process that share process resources, including memory and open files.
+    source_title: Processes and Threads
+    source_url: https://docs.oracle.com/javase/tutorial/essential/concurrency/procthread.html
     confidence: medium
-  - id: fact-computer-science-002
-    statement: "Mutex (mutual exclusion): only one thread in critical section."
-    source_title: ACM Digital Library
-    source_url: https://dl.acm.org/
+  - id: fact-computer-science-concurrency-002
+    statement: >-
+      Python documentation describes asyncio as a library for writing concurrent code
+      using async and await syntax.
+    source_title: asyncio - Asynchronous I/O
+    source_url: https://docs.python.org/3/library/asyncio.html
     confidence: medium
-completeness: 0.88
+  - id: fact-computer-science-concurrency-003
+    statement: >-
+      Erlang system documentation describes Erlang processes as lightweight units designed
+      for massive concurrency and documents asynchronous signals and message signals between
+      Erlang processes.
+    source_title: Processes
+    source_url: https://www.erlang.org/doc/system/ref_man_processes.html
+    confidence: medium
+  - id: fact-computer-science-concurrency-004
+    statement: >-
+      Effective Go describes a goroutine as a function executing concurrently with other
+      goroutines in the same address space and recommends passing shared values on channels.
+    source_title: Effective Go
+    source_url: https://go.dev/doc/effective_go
+    confidence: medium
+completeness: 0.82
 known_gaps:
-  - Sources reconstructed during quality audit; primary source details were corrupted during batch generation
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
+  - >-
+    Coverage is intentionally limited to representative concurrency models and does not
+    exhaustively cover GPU programming, transactional memory, or every language runtime.
+disputed_statements: []
 primary_sources:
-  - title: ACM Digital Library
-    type: repository
+  - title: Processes and Threads
+    type: documentation
+    year: 2024
+    url: https://docs.oracle.com/javase/tutorial/essential/concurrency/procthread.html
+    institution: Oracle
+  - title: asyncio - Asynchronous I/O
+    type: documentation
     year: 2026
-    url: https://dl.acm.org/
-    institution: ACM
-  - title: Java Concurrency in Practice (2nd Edition, 2025)
-    type: book
-    year: 2025
-    authors:
-      - Goetz B.
-      - Peierls T.
-    institution: Addison-Wesley
-    url: https://www.informit.com/concurrency/
-  - title: "Concurrency Models in Modern Programming Languages: 2025 Survey"
-    type: survey_paper
-    year: 2025
-    authors:
-      - multiple
-    institution: ACM Computing Surveys
-    url: https://doi.org/10.1145/acmcs.2025.concurrency
-secondary_sources:
-  - title: ACM Digital Library
-    type: repository
+    url: https://docs.python.org/3/library/asyncio.html
+    institution: Python Software Foundation
+  - title: Processes
+    type: documentation
     year: 2026
-    url: https://dl.acm.org/
-    institution: ACM
-  - title: The C Programming Language (K&R, 2nd Ed)
-    type: textbook
-    year: 1988
-    url: https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html
-    institution: Prentice Hall
-  - title: Structure and Interpretation of Computer Programs (SICP)
-    type: textbook
-    year: 1996
-    url: https://mitpress.mit.edu/sites/default/files/sicp/
-    institution: MIT Press
-  - title: "Concurrency Models in Modern Programming: A 2025 Comparative Survey"
-    type: survey_paper
-    year: 2025
-    authors:
-      - multiple
-    institution: ACM Computing Surveys
-    url: https://doi.org/10.1145/acmcs.2025.concurrency
-  - title: "Actor Model, CSP, and Async/Await: Concurrency Paradigms in Practice (2025)"
-    type: article
-    year: 2025
-    authors:
-      - multiple
-    institution: Communications of the ACM
-    url: https://doi.org/10.1145/cacm.2025.concurrency
+    url: https://www.erlang.org/doc/system/ref_man_processes.html
+    institution: Erlang/OTP
+  - title: Effective Go
+    type: documentation
+    year: 2026
+    url: https://go.dev/doc/effective_go
+    institution: Go Project
+secondary_sources: []
+updated: '2026-06-13'
 ---
+
 ## TL;DR
 
-Concurrency models handle multiple simultaneous computations. Threads (shared memory, mutexes), CSP/Actors (message passing, no shared state), async/await (cooperative multitasking), SIMD/GPU (data-parallel). Key challenges: race conditions, deadlocks, livelocks, starvation. Amdahl's Law limits parallel speedup.
+Concurrency models define how programs structure overlapping work. Shared-memory threads,
+async/await event-loop code, Erlang-style lightweight processes, and Go goroutines with
+channels are separate approaches with different communication and coordination tradeoffs.
 
 ## Core Explanation
 
-Mutex (mutual exclusion): only one thread in critical section. Semaphore: counting mutex. Deadlock: A waits for B, B waits for A — four conditions (mutual exclusion, hold-and-wait, no preemption, circular wait). Actor model (Erlang, Akka): independent actors communicate via messages, no shared state — eliminates data races. Go goroutines + channels implement CSP.
+The repaired article narrows the topic to source-backed representative models. Java's
+concurrency tutorial anchors the shared-memory thread model: threads run inside a process
+and share resources such as memory and open files. Python's `asyncio` documentation anchors
+the async/await model for concurrent code. Erlang documentation anchors the lightweight
+process model and its asynchronous signals and message queues. Effective Go anchors the
+goroutine-and-channel model, where concurrent functions communicate through channels instead
+of directly sharing mutable values.
 
 ## Further Reading
 
--
+- [Processes and Threads](https://docs.oracle.com/javase/tutorial/essential/concurrency/procthread.html)
+- [asyncio - Asynchronous I/O](https://docs.python.org/3/library/asyncio.html)
+- [Processes](https://www.erlang.org/doc/system/ref_man_processes.html)
+- [Effective Go](https://go.dev/doc/effective_go)
 
 ## Related Articles
 
-- [3D Human Modeling: Parametric Body Models, Mesh Recovery, and Digital Avatars](../../ai/3d-human-modeling.md)
-- [AI Art and Creativity: Generative Models and Authorship](../../ai/ai-art-and-creativity.md)
-- [AI Democratization: Open-Source Models, Low-Code AI, and Accessible Machine Learning](../../ai/ai-for-democratization.md)
+- [Go Programming Language](go-language.md)
+- [The Actor Model: Concurrency Through Message Passing](the-actor-model-concurrency-through-message-passing.md)
+- [Operating Systems Concepts](operating-systems-concepts.md)
