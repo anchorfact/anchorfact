@@ -8,7 +8,7 @@ import {
   renderIntegrityMarkdown,
   runProductionIntegrity
 } from '../scripts/production-integrity.js';
-import { REQUIRED_SECURITY_HEADERS, evalCallRoutes, exampleWorkflowRoutes, fetchRoute, fetchRoutes, hasCanonicalSlug, readJsonRoute, repairQueueBatchFailures } from '../src/smoke-production.js';
+import { REQUIRED_SECURITY_HEADERS, evalCallRoutes, exampleWorkflowRoutes, fetchRoute, fetchRoutes, hasCanonicalSlug, readJsonRoute, readinessDiscoveryFailures, repairQueueBatchFailures } from '../src/smoke-production.js';
 
 let passed = 0, failed = 0;
 const tests = [];
@@ -746,6 +746,62 @@ test('production smoke requires baseline security response headers', () => {
   assert(REQUIRED_SECURITY_HEADERS.some(header => header.name === 'X-Frame-Options' && header.expected === 'DENY'), 'should require frame protection');
   assert(REQUIRED_SECURITY_HEADERS.some(header => header.name === 'Referrer-Policy' && header.expected === 'strict-origin-when-cross-origin'), 'should require referrer policy');
   assert(REQUIRED_SECURITY_HEADERS.some(header => header.name === 'Permissions-Policy' && header.expected === 'camera=()'), 'should require permissions policy');
+});
+
+test('production smoke validates readiness discovery fields across machine entrypoints', () => {
+  const apiReadiness = {
+    status: 'foundation_ready_pending_14_day_and_partner_signals',
+    subscription_ready: false,
+    readiness_blockers: {
+      gate_ids: ['production_integrity_14_day', 'design_partners']
+    }
+  };
+  const valid = readinessDiscoveryFailures({
+    rootIndex: {
+      api_readiness_summary: {
+        path: '/api-readiness.json',
+        status: apiReadiness.status,
+        subscription_ready: false,
+        blocker_ids: ['production_integrity_14_day', 'design_partners']
+      }
+    },
+    apiReadiness,
+    apiAccessPolicy: {
+      readiness_policy: {
+        status_endpoint: '/api-readiness.json',
+        current_mode: 'free_no_key_read_only',
+        paid_beta_requires: ['production_integrity_14_day', 'design_partners']
+      }
+    },
+    apiIndex: {
+      readiness_guidance: {
+        status_endpoint: '/api-readiness.json',
+        default_access_until_ready: 'free_no_key_read_only',
+        subscription_ready_requires: ['production_integrity_14_day', 'design_partners']
+      }
+    },
+    openapi: {
+      components: {
+        schemas: {
+          RootIndex: { properties: { api_readiness_summary: {} } },
+          ApiIndex: { properties: { readiness_guidance: {} } },
+          ApiAccess: { properties: { readiness_policy: {} } }
+        }
+      }
+    }
+  });
+  assertEq(valid, []);
+
+  const missing = readinessDiscoveryFailures({
+    rootIndex: {},
+    apiReadiness,
+    apiAccessPolicy: {},
+    apiIndex: {},
+    openapi: { components: { schemas: {} } }
+  });
+  assert(missing.some(failure => failure.includes('root index readiness summary')), 'missing root readiness summary should fail smoke');
+  assert(missing.some(failure => failure.includes('/api-access/ readiness policy')), 'missing API access readiness policy should fail smoke');
+  assert(missing.some(failure => failure.includes('/api readiness guidance')), 'missing API readiness guidance should fail smoke');
 });
 
 test('production smoke treats missing canonical slug arrays as a failed assertion value', () => {

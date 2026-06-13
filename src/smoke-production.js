@@ -144,6 +144,44 @@ export function hasCanonicalSlug(items, slug) {
   return Array.isArray(items) && items.some(item => item?.canonical_slug === slug);
 }
 
+export function readinessDiscoveryFailures({
+  rootIndex = {},
+  apiReadiness = {},
+  apiAccessPolicy = {},
+  apiIndex = {},
+  openapi = {}
+} = {}) {
+  const failures = [];
+  const blockerIds = Array.isArray(apiReadiness.readiness_blockers?.gate_ids)
+    ? apiReadiness.readiness_blockers.gate_ids
+    : [];
+
+  assertOk(rootIndex.api_readiness_summary?.path === '/api-readiness.json', 'root index readiness summary path is missing', failures);
+  assertOk(rootIndex.api_readiness_summary?.status === apiReadiness.status, 'root index readiness summary status does not match api-readiness.json', failures);
+  assertOk(rootIndex.api_readiness_summary?.subscription_ready === apiReadiness.subscription_ready, 'root index readiness summary subscription flag does not match api-readiness.json', failures);
+  for (const gateId of blockerIds) {
+    assertOk(rootIndex.api_readiness_summary?.blocker_ids?.includes(gateId), `root index readiness summary is missing blocker ${gateId}`, failures);
+  }
+
+  assertOk(openapi.components?.schemas?.RootIndex?.properties?.api_readiness_summary, 'openapi RootIndex schema is missing readiness summary', failures);
+  assertOk(openapi.components?.schemas?.ApiIndex?.properties?.readiness_guidance, 'openapi ApiIndex schema is missing readiness guidance', failures);
+  assertOk(openapi.components?.schemas?.ApiAccess?.properties?.readiness_policy, 'openapi ApiAccess schema is missing readiness policy', failures);
+
+  assertOk(apiAccessPolicy.readiness_policy?.status_endpoint === '/api-readiness.json', '/api-access/ readiness policy status endpoint is missing', failures);
+  assertOk(apiAccessPolicy.readiness_policy?.current_mode === 'free_no_key_read_only', '/api-access/ readiness policy should preserve free no-key access mode', failures);
+  for (const gateId of ['production_integrity_14_day', 'design_partners']) {
+    assertOk(apiAccessPolicy.readiness_policy?.paid_beta_requires?.includes(gateId), `/api-access/ readiness policy is missing ${gateId}`, failures);
+  }
+
+  assertOk(apiIndex.readiness_guidance?.status_endpoint === '/api-readiness.json', '/api readiness guidance status endpoint is missing', failures);
+  assertOk(apiIndex.readiness_guidance?.default_access_until_ready === 'free_no_key_read_only', '/api readiness guidance should preserve free no-key access mode', failures);
+  for (const gateId of ['production_integrity_14_day', 'design_partners']) {
+    assertOk(apiIndex.readiness_guidance?.subscription_ready_requires?.includes(gateId), `/api readiness guidance is missing ${gateId}`, failures);
+  }
+
+  return failures;
+}
+
 export function repairQueueBatchFailures(repairQueue = {}) {
   const failures = [];
   const candidateCount = repairQueue.candidate_count;
@@ -402,6 +440,13 @@ export async function main() {
   assertOk(apiAccessPolicy.recommended_call_order?.some(call => call.path === '/api/evidence?q={query}'), '/api-access/ should list evidence API', failures);
   assertOk(apiAccessPolicy.recommended_call_order?.some(call => call.path === '/api/cite?id={claim_id}'), '/api-access/ should list citation API', failures);
   assertOk(apiAccessPolicy.trust_check?.path === '/provenance.json', '/api-access/ should include provenance verification', failures);
+  failures.push(...readinessDiscoveryFailures({
+    rootIndex,
+    apiReadiness,
+    apiAccessPolicy,
+    apiIndex,
+    openapi
+  }));
   assertOk(robotsText.includes('Sitemap: https://anchorfact.org/sitemap.xml'), '/robots.txt does not advertise sitemap.xml', failures);
   assertOk(robotsText.includes('Machine-Index: https://anchorfact.org/index.json'), '/robots.txt does not advertise index.json', failures);
   assertOk(robotsText.includes('LLMs: https://anchorfact.org/llms.txt'), '/robots.txt does not advertise llms.txt', failures);
