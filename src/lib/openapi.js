@@ -119,6 +119,7 @@ export function buildOpenApiContract({
       '/artifact-summary.json': getJson('Lightweight static artifact size and alternative-call summary', 'ArtifactSummary'),
       '/artifact-shards.json': getJson('Signed versioned shard registry for large static artifacts', 'ArtifactShards'),
       '/api-readiness.json': getJson('Machine-readable API readiness gates and scorecard', 'ApiReadiness'),
+      '/404.html': getJson('Machine-readable JSON 404 fallback for unknown routes', 'NotFoundResponse'),
       '/manifest.json': getJson('Public and draft article manifest', 'Manifest'),
       '/claims.json': getJson('Public verified atomic claims', 'Claims'),
       '/topics.json': getJson('Public topic coverage map', 'Topics'),
@@ -1008,6 +1009,37 @@ export function buildOpenApiContract({
               },
               additionalProperties: true
             }
+          },
+          additionalProperties: true
+        },
+        NotFoundResponse: {
+          type: 'object',
+          description: 'Machine-readable JSON 404 payload served by Cloudflare Pages for unknown routes.',
+          required: ['schema_version', 'status', 'error', 'fallback_policy', 'machine_entrypoints'],
+          properties: {
+            schema_version: { const: 'anchorfact.not-found.v1' },
+            generated: { type: 'string', format: 'date-time' },
+            status: { const: 404 },
+            error: {
+              type: 'object',
+              required: ['code', 'message'],
+              properties: {
+                code: { const: 'not_found' },
+                message: { type: 'string' }
+              },
+              additionalProperties: true
+            },
+            fallback_policy: {
+              type: 'object',
+              required: ['no_spa_fallback'],
+              properties: {
+                no_spa_fallback: { const: true },
+                reason: { type: 'string' }
+              },
+              additionalProperties: true
+            },
+            machine_entrypoints: { type: 'array', items: { type: 'string' } },
+            official_site: { type: 'string', format: 'uri' }
           },
           additionalProperties: true
         },

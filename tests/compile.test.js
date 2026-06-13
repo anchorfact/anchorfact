@@ -430,6 +430,7 @@ test('openapi.json describes the static AI contract', () => {
   assert(openapi.paths['/evals.json'], 'OpenAPI should describe evals endpoint');
   assert(openapi.paths['/mcp.json'], 'OpenAPI should describe MCP endpoint');
   assert(openapi.paths['/api'], 'OpenAPI should describe API index');
+  assert(openapi.paths['/404.html'], 'OpenAPI should describe the machine JSON 404 fallback');
   assert(openapi.paths['/api/plan'], 'OpenAPI should describe plan API');
   assert(openapi.paths['/api/evidence'], 'OpenAPI should describe evidence API');
   assert(openapi.paths['/api/context'], 'OpenAPI should describe context API');
@@ -474,6 +475,11 @@ test('openapi.json describes the static AI contract', () => {
   assert(openapi.components.schemas.Graph, 'OpenAPI should define Graph schema');
   assert(openapi.components.schemas.Evals, 'OpenAPI should define Evals schema');
   assert(openapi.components.schemas.ApiIndex, 'OpenAPI should define API index schema');
+  assert(openapi.components.schemas.NotFoundResponse, 'OpenAPI should define machine JSON 404 schema');
+  assertEq(openapi.components.schemas.NotFoundResponse.properties.schema_version.const, 'anchorfact.not-found.v1');
+  assertEq(openapi.components.schemas.NotFoundResponse.properties.status.const, 404);
+  assertEq(openapi.components.schemas.NotFoundResponse.properties.error.properties.code.const, 'not_found');
+  assertEq(openapi.components.schemas.NotFoundResponse.properties.fallback_policy.properties.no_spa_fallback.const, true);
   assert(openapi.components.schemas.ApiIndex.properties.ai_adoption_guidance, 'OpenAPI should define AI adoption guidance');
   assert(openapi.components.schemas.ApiIndex.properties.readiness_guidance, 'OpenAPI should define API readiness guidance');
   assert(openapi.components.schemas.ArtifactSummary, 'OpenAPI should define artifact summary schema');
