@@ -15,6 +15,12 @@ function finiteNumber(value, fallback = 0) {
   return Number.isFinite(number) ? number : fallback;
 }
 
+function optionalFiniteNumber(value) {
+  if (value === null || value === undefined || value === '') return null;
+  const number = Number(value);
+  return Number.isFinite(number) ? number : null;
+}
+
 function generatedDate(value) {
   const date = new Date(value || Date.now());
   if (Number.isNaN(date.getTime())) return new Date().toISOString().slice(0, 10);
@@ -41,7 +47,7 @@ function writeText(path, text) {
 }
 
 function currentAdoptionRatio(adoption = {}) {
-  return finiteNumber(
+  return optionalFiniteNumber(
     adoption.identified_ai_primary_to_discovery_current_ratio
       ?? adoption.identified_ai_primary_to_discovery_ratio
       ?? adoption.identified_ai_primary_to_discovery_target?.current_ratio
@@ -64,10 +70,10 @@ export function normalizeReadinessSnapshot(input = {}) {
       date: input.date || generatedDate(generated),
       source: input.source || 'history',
       production_integrity_status: input.production_integrity_status || 'not_measured',
-      public_audit_actionable_count: finiteNumber(input.public_audit_actionable_count),
-      api_context_ratio: finiteNumber(input.api_context_ratio),
-      api_scorecard_failures: finiteNumber(input.api_scorecard_failures),
-      adoption_ratio: finiteNumber(input.adoption_ratio),
+      public_audit_actionable_count: optionalFiniteNumber(input.public_audit_actionable_count),
+      api_context_ratio: optionalFiniteNumber(input.api_context_ratio),
+      api_scorecard_failures: optionalFiniteNumber(input.api_scorecard_failures),
+      adoption_ratio: optionalFiniteNumber(input.adoption_ratio),
       adoption_status: input.adoption_status || 'not_measured',
       content_next_focus: input.content_next_focus || null
     };
@@ -85,11 +91,11 @@ export function normalizeReadinessSnapshot(input = {}) {
     date: generatedDate(generated),
     source: input.source || 'current',
     production_integrity_status: apiReadiness.production_health?.status || 'not_measured',
-    public_audit_actionable_count: finiteNumber(contentHealth.public_audit?.actionable_count),
-    api_context_ratio: finiteNumber(apiScorecard.pass_ratio),
+    public_audit_actionable_count: optionalFiniteNumber(contentHealth.public_audit?.actionable_count),
+    api_context_ratio: optionalFiniteNumber(apiScorecard.pass_ratio),
     api_scorecard_failures: Array.isArray(apiScorecard.failures)
       ? apiScorecard.failures.length
-      : finiteNumber(apiScorecard.failed),
+      : optionalFiniteNumber(apiScorecard.failed),
     adoption_ratio: currentAdoptionRatio(adoption),
     adoption_status: currentAdoptionStatus(adoption),
     content_next_focus: contentHealth.project_readiness?.next_focus || null
@@ -147,14 +153,24 @@ function evaluateConsecutiveWindow({ snapshots, requiredDays, predicate, latestD
 }
 
 function adoptionWindowPredicate(targetRatio) {
-  return snapshot => snapshot.adoption_ratio >= targetRatio
-    && !['below_target', 'fail', 'not_measured'].includes(snapshot.adoption_status);
+  return snapshot => {
+    const adoptionRatio = optionalFiniteNumber(snapshot.adoption_ratio);
+    return adoptionRatio !== null
+      && adoptionRatio >= targetRatio
+      && !['below_target', 'fail', 'not_measured'].includes(snapshot.adoption_status);
+  };
 }
 
 function contentChangePolicy(current, apiTargetRatio) {
   const triggers = [];
-  if (finiteNumber(current.public_audit_actionable_count) > 0) triggers.push('public_audit_actionable');
-  if (finiteNumber(current.api_scorecard_failures) > 0 || finiteNumber(current.api_context_ratio) < apiTargetRatio) {
+  const publicAuditActionableCount = optionalFiniteNumber(current.public_audit_actionable_count);
+  if (publicAuditActionableCount !== null && publicAuditActionableCount > 0) {
+    triggers.push('public_audit_actionable');
+  }
+  const apiScorecardFailures = optionalFiniteNumber(current.api_scorecard_failures);
+  const apiContextRatio = optionalFiniteNumber(current.api_context_ratio);
+  if ((apiScorecardFailures !== null && apiScorecardFailures > 0)
+    || (apiContextRatio !== null && apiContextRatio < apiTargetRatio)) {
     triggers.push('api_scorecard_below_target');
   }
   if (current.content_next_focus === 'prioritize_draft_repair_queue') {
@@ -210,7 +226,7 @@ export function buildReadinessWindowReport({
       snapshots: normalized,
       requiredDays: publicAuditDays,
       latestDate,
-      predicate: snapshot => finiteNumber(snapshot.public_audit_actionable_count) === 0
+      predicate: snapshot => optionalFiniteNumber(snapshot.public_audit_actionable_count) === 0
     }),
     ai_primary_discovery_ratio_7_day: evaluateConsecutiveWindow({
       snapshots: normalized,
@@ -239,6 +255,10 @@ export function buildReadinessWindowReport({
   };
 }
 
+function signalText(value) {
+  return value === null || value === undefined ? 'not_measured' : value;
+}
+
 export function renderReadinessWindowMarkdown(report) {
   const lines = [];
   lines.push('# AnchorFact Readiness Window Report');
@@ -256,10 +276,10 @@ export function renderReadinessWindowMarkdown(report) {
   lines.push('## Current Signals');
   lines.push('');
   lines.push(`- production_integrity_status: ${report.current_snapshot.production_integrity_status}`);
-  lines.push(`- public_audit_actionable_count: ${report.current_snapshot.public_audit_actionable_count}`);
-  lines.push(`- api_context_ratio: ${report.current_snapshot.api_context_ratio}`);
-  lines.push(`- api_scorecard_failures: ${report.current_snapshot.api_scorecard_failures}`);
-  lines.push(`- adoption_ratio: ${report.current_snapshot.adoption_ratio}`);
+  lines.push(`- public_audit_actionable_count: ${signalText(report.current_snapshot.public_audit_actionable_count)}`);
+  lines.push(`- api_context_ratio: ${signalText(report.current_snapshot.api_context_ratio)}`);
+  lines.push(`- api_scorecard_failures: ${signalText(report.current_snapshot.api_scorecard_failures)}`);
+  lines.push(`- adoption_ratio: ${signalText(report.current_snapshot.adoption_ratio)}`);
   lines.push(`- adoption_status: ${report.current_snapshot.adoption_status}`);
   lines.push('');
   lines.push('## Content Change Policy');

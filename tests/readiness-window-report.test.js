@@ -86,6 +86,26 @@ test('buildReadinessWindowReport marks gates met across required consecutive win
   assertEq(report.content_change_policy.should_repair_content_now, false);
 });
 
+test('buildReadinessWindowReport treats missing current metrics as not measured', () => {
+  const report = buildReadinessWindowReport({
+    snapshots: [],
+    generatedAt: '2026-06-13T12:00:00.000Z'
+  });
+  const markdown = renderReadinessWindowMarkdown(report);
+
+  assertEq(report.current_snapshot.public_audit_actionable_count, null);
+  assertEq(report.current_snapshot.api_context_ratio, null);
+  assertEq(report.current_snapshot.api_scorecard_failures, null);
+  assertEq(report.current_snapshot.adoption_ratio, null);
+  assertEq(report.content_change_policy.status, 'measure_first');
+  assertEq(report.content_change_policy.should_repair_content_now, false);
+  assertEq(report.content_change_policy.triggers, []);
+  assert(markdown.includes('public_audit_actionable_count: not_measured'), 'missing not_measured public audit count');
+  assert(markdown.includes('api_context_ratio: not_measured'), 'missing not_measured API ratio');
+  assert(markdown.includes('api_scorecard_failures: not_measured'), 'missing not_measured API failures');
+  assert(markdown.includes('adoption_ratio: not_measured'), 'missing not_measured adoption ratio');
+});
+
 test('buildReadinessWindowReport blocks content expansion when audit or API signals fail', () => {
   const snapshots = Array.from({ length: 14 }, (_, index) => snapshot(index + 1));
   snapshots[13] = snapshot(14, {
