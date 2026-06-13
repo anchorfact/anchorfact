@@ -40,6 +40,7 @@ export const SIGNED_MACHINE_ARTIFACT_PATHS = [
   '/artifact-shards.json',
   '/api-readiness.json',
   '/sources.json',
+  '/404.html',
   '/llms.txt',
   '/provenance.json',
   '/provenance.sig'

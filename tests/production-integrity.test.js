@@ -452,6 +452,7 @@ test('default edge cache controls keep signed provenance dynamic', () => {
   assert(DEFAULT_EDGE_CACHE_DYNAMIC_CONTROLS.includes('/artifact-summary.json'), 'signed artifact summary should not be edge cached without versioned URLs');
   assert(DEFAULT_EDGE_CACHE_DYNAMIC_CONTROLS.includes('/artifact-shards.json'), 'signed artifact shard registry should not be edge cached without versioned URLs');
   assert(DEFAULT_EDGE_CACHE_DYNAMIC_CONTROLS.includes('/api-readiness.json'), 'signed API readiness artifact should not be edge cached without versioned URLs');
+  assert(DEFAULT_EDGE_CACHE_DYNAMIC_CONTROLS.includes('/404.html'), 'machine JSON 404 artifact should not be edge cached without versioned URLs');
 });
 
 test('checkProductionDiscovery verifies AI entrypoints with browser and AI user agents', async () => {
