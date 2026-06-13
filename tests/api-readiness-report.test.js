@@ -800,6 +800,22 @@ test('API scorecard checks context, evidence, cite, and unsupported fallback wit
   assert(report.api_scorecard.failures.length > 0, 'broken search index should produce API readiness failures');
 });
 
+test('readiness next actions follow current gaps instead of defaulting to corpus repair', () => {
+  const report = buildApiReadinessReport({
+    artifacts: fakeArtifacts(),
+    querySet: [{ id: 'rag', category: 'agent_rag', expected_slug: 'ai/rag', query: 'Retrieval-Augmented Generation (RAG)' }],
+    generatedAt: '2026-06-01T00:00:00.000Z'
+  });
+
+  assertEq(report.status, 'foundation_ready_pending_14_day_and_partner_signals');
+  assertEq(report.core_corpus.failures.length, 0);
+  assertEq(report.api_scorecard.failures.length, 0);
+  assert(!report.next_actions.some(action => action.includes('Repair core corpus')), 'should not recommend corpus repair without corpus failures');
+  assert(!report.next_actions.some(action => action.includes('tune article titles')), 'should not recommend API tuning without API failures');
+  assert(report.next_actions.some(action => action.includes('production:integrity')), 'should recommend production integrity measurement');
+  assert(report.next_actions.some(action => action.includes('AI primary/discovery')), 'should recommend AI usage measurement');
+});
+
 test('renderApiReadinessMarkdown exposes target, gap context, and report-only status', () => {
   const report = buildApiReadinessReport({
     artifacts: fakeArtifacts(),

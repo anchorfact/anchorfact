@@ -265,6 +265,35 @@ export function evaluateContextReadiness({
   };
 }
 
+function buildNextActions({
+  coreCorpus,
+  contextScorecard,
+  apiPerformanceReport,
+  adoptionScorecard,
+  targetRatio
+}) {
+  const actions = [];
+  if ((coreCorpus.failures || []).length > 0 || coreCorpus.pass_ratio < targetRatio) {
+    actions.push('Repair core corpus rows whose failures mention missing_public_article, low verified_sources, or low source_mapped_claims.');
+  }
+  if ((contextScorecard.failures || []).length > 0 || contextScorecard.pass_ratio < targetRatio) {
+    actions.push('For API rows below target, tune article titles/keywords only after confirming source-mapped claims are correct.');
+  }
+  if (contextScorecard.fallback?.ok !== true) {
+    actions.push('Restore unsupported-query fallback behavior so low-coverage answers require external sources instead of overclaiming AnchorFact coverage.');
+  }
+  if (apiPerformanceReport && apiPerformanceReport.ok !== true) {
+    actions.push('Review API performance failures before broadening API usage or promoting paid-beta commitments.');
+  }
+  actions.push('Continue production:integrity and evals until the 14-day readiness window has real passing history.');
+  if (adoptionScorecard?.identified_ai_primary_to_discovery_target_status !== 'met') {
+    actions.push('Measure AI primary/discovery usage for a 7-day window before changing paid-beta scope.');
+  }
+  actions.push('Keep the free API and no-key public discovery surface until all readiness gates are met for the defined windows.');
+  actions.push('Start paid beta work only after design partner and paid-intent signals are real, not inferred from crawler traffic.');
+  return actions;
+}
+
 export function buildApiReadinessReport({
   artifacts,
   querySet = CORE_CORPUS_QUERIES,
@@ -349,11 +378,12 @@ export function buildApiReadinessReport({
       : { status: 'not_provided' },
     production_health: productionIntegrity || { status: 'not_provided' },
     adoption_signal: adoptionScorecard || { status: 'not_provided' },
-    next_actions: [
-      'Repair core corpus rows whose failures mention missing_public_article, low verified_sources, or low source_mapped_claims.',
-      'For API rows below target, tune article titles/keywords only after confirming source-mapped claims are correct.',
-      'Keep the free API and no-key public discovery surface until all readiness gates are met for the defined windows.',
-      'Start paid beta work only after design partner and paid-intent signals are real, not inferred from crawler traffic.'
-    ]
+    next_actions: buildNextActions({
+      coreCorpus,
+      contextScorecard,
+      apiPerformanceReport,
+      adoptionScorecard,
+      targetRatio
+    })
   };
 }
