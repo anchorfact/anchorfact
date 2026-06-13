@@ -821,6 +821,11 @@ test('readiness next actions follow current gaps instead of defaulting to corpus
   assertEq(report.api_scorecard.failures.length, 0);
   const publicAuditGate = report.readiness_gates.find(gate => gate.id === 'public_audit_14_day');
   assertEq(publicAuditGate.current_actionable_count, 0);
+  assert(report.readiness_blockers.automated_gate_ids.includes('production_integrity_14_day'), 'should expose production integrity blocker');
+  assert(report.readiness_blockers.automated_gate_ids.includes('public_audit_14_day'), 'should expose public audit window blocker');
+  assert(report.readiness_blockers.automated_gate_ids.includes('ai_primary_discovery_ratio_7_day'), 'should expose AI adoption blocker');
+  assert(!report.readiness_blockers.automated_gate_ids.includes('core_query_context_ratio'), 'met core context gate should not block');
+  assertEq(report.readiness_blockers.manual_gate_ids, ['design_partners']);
   assert(!report.next_actions.some(action => action.includes('Repair core corpus')), 'should not recommend corpus repair without corpus failures');
   assert(!report.next_actions.some(action => action.includes('tune article titles')), 'should not recommend API tuning without API failures');
   assert(report.next_actions.some(action => action.includes('production:integrity')), 'should recommend production integrity measurement');
@@ -839,6 +844,7 @@ test('renderApiReadinessMarkdown exposes target, gap context, and report-only st
   assert(markdown.includes('Target ratio: 0.9'), 'should render target ratio');
   assert(markdown.includes('Report-only: true'), 'should render report-only status');
   assert(markdown.includes('Build should fail: false'), 'should state low readiness is not a build blocker');
+  assert(markdown.includes('Readiness blockers:'), 'should render readiness blocker summary');
   assert(markdown.includes('not_provided'), 'should show unprovided production/adoption inputs');
   assert(markdown.includes('current_actionable=0'), 'should render current public audit actionable count');
   assert(!markdown.includes('current=null'), 'should omit null current gate values');
@@ -933,6 +939,8 @@ test('design partner signal gates paid-beta readiness without leaking partner de
   assertEq(designPartnerGate.status, 'met');
   assertEq(designPartnerGate.current_partner_count, 3);
   assertEq(designPartnerGate.current_paid_intent_count, 1);
+  assertEq(report.readiness_blockers.manual_gate_ids, []);
+  assert(!report.readiness_blockers.gate_ids.includes('design_partners'), 'met design gate should not block readiness');
   assertEq(report.design_partner_signal.status, 'met');
   assert(!JSON.stringify(report.design_partner_signal).includes('Example Partner'), 'public report should not leak raw partner names');
   assert(!report.next_actions.some(action => action.includes('design partner and paid-intent')), 'met design signals should not ask for design partner proof');

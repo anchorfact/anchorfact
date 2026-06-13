@@ -311,6 +311,21 @@ function buildNextActions({
   return actions;
 }
 
+function readinessBlockers(readinessGates) {
+  const automatedGateIds = [];
+  const manualGateIds = [];
+  for (const gate of readinessGates) {
+    if (gate.status === 'met') continue;
+    if (gate.id === 'design_partners') manualGateIds.push(gate.id);
+    else automatedGateIds.push(gate.id);
+  }
+  return {
+    gate_ids: [...automatedGateIds, ...manualGateIds],
+    automated_gate_ids: automatedGateIds,
+    manual_gate_ids: manualGateIds
+  };
+}
+
 export function buildApiReadinessReport({
   artifacts,
   querySet = CORE_CORPUS_QUERIES,
@@ -342,6 +357,42 @@ export function buildApiReadinessReport({
     ? apiPerformanceReport.artifact_size_budget.ok === true
     : null;
   const publicAuditActionableCount = currentPublicAuditActionableCount(artifacts);
+  const readinessGates = [
+    {
+      id: 'production_integrity_14_day',
+      target: '14 consecutive days production:integrity passing and AI eval 100%',
+      status: productionIntegrity?.status || 'not_measured_in_this_report'
+    },
+    {
+      id: 'public_audit_14_day',
+      target: '14 consecutive days with 0 move_to_draft / repair_sources public audit findings',
+      status: 'not_measured_in_this_report',
+      ...(publicAuditActionableCount === null ? {} : { current_actionable_count: publicAuditActionableCount })
+    },
+    {
+      id: 'core_query_context_ratio',
+      target: `>=${targetRatio} /api/context citation-ready coverage`,
+      status: contextScorecard.pass_ratio >= targetRatio ? 'met' : 'below_target',
+      current_ratio: contextScorecard.pass_ratio
+    },
+    {
+      id: 'ai_primary_discovery_ratio_7_day',
+      target: '>=0.2 AI primary/discovery ratio for 7 consecutive days',
+      status: adoptionScorecard?.identified_ai_primary_to_discovery_target_status || 'not_measured_in_this_report',
+      current_ratio: adoptionScorecard?.identified_ai_primary_to_discovery_current_ratio ?? null
+    },
+    {
+      id: 'design_partners',
+      target: '>=3 real external design partners and >=1 paid-intent signal',
+      status: designPartnerSignal?.status || 'manual_validation_required',
+      ...(designPartnerSignal?.external_design_partner_count === undefined || designPartnerSignal?.external_design_partner_count === null
+        ? {}
+        : { current_partner_count: designPartnerSignal.external_design_partner_count }),
+      ...(designPartnerSignal?.paid_intent_signal_count === undefined || designPartnerSignal?.paid_intent_signal_count === null
+        ? {}
+        : { current_paid_intent_count: designPartnerSignal.paid_intent_signal_count })
+    }
+  ];
 
   return {
     schema_version: API_READINESS_SCHEMA_VERSION,
@@ -354,42 +405,8 @@ export function buildApiReadinessReport({
       ? 'foundation_ready_pending_14_day_and_partner_signals'
       : 'building_foundation',
     subscription_ready: false,
-    readiness_gates: [
-      {
-        id: 'production_integrity_14_day',
-        target: '14 consecutive days production:integrity passing and AI eval 100%',
-        status: productionIntegrity?.status || 'not_measured_in_this_report'
-      },
-      {
-        id: 'public_audit_14_day',
-        target: '14 consecutive days with 0 move_to_draft / repair_sources public audit findings',
-        status: 'not_measured_in_this_report',
-        ...(publicAuditActionableCount === null ? {} : { current_actionable_count: publicAuditActionableCount })
-      },
-      {
-        id: 'core_query_context_ratio',
-        target: `>=${targetRatio} /api/context citation-ready coverage`,
-        status: contextScorecard.pass_ratio >= targetRatio ? 'met' : 'below_target',
-        current_ratio: contextScorecard.pass_ratio
-      },
-      {
-        id: 'ai_primary_discovery_ratio_7_day',
-        target: '>=0.2 AI primary/discovery ratio for 7 consecutive days',
-        status: adoptionScorecard?.identified_ai_primary_to_discovery_target_status || 'not_measured_in_this_report',
-        current_ratio: adoptionScorecard?.identified_ai_primary_to_discovery_current_ratio ?? null
-      },
-      {
-        id: 'design_partners',
-        target: '>=3 real external design partners and >=1 paid-intent signal',
-        status: designPartnerSignal?.status || 'manual_validation_required',
-        ...(designPartnerSignal?.external_design_partner_count === undefined || designPartnerSignal?.external_design_partner_count === null
-          ? {}
-          : { current_partner_count: designPartnerSignal.external_design_partner_count }),
-        ...(designPartnerSignal?.paid_intent_signal_count === undefined || designPartnerSignal?.paid_intent_signal_count === null
-          ? {}
-          : { current_paid_intent_count: designPartnerSignal.paid_intent_signal_count })
-      }
-    ],
+    readiness_gates: readinessGates,
+    readiness_blockers: readinessBlockers(readinessGates),
     core_corpus: coreCorpus,
     api_scorecard: contextScorecard,
     api_performance: apiPerformanceReport

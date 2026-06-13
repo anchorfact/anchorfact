@@ -454,6 +454,7 @@ test('openapi.json describes the static AI contract', () => {
   assert(openapi.components.schemas.ArtifactSummary.properties.artifact_growth_policy, 'OpenAPI should define artifact growth policy');
   assert(openapi.components.schemas.ApiReadiness, 'OpenAPI should define API readiness schema');
   assert(openapi.components.schemas.ApiReadiness.properties.readiness_gates, 'OpenAPI should define API readiness gates');
+  assert(openapi.components.schemas.ApiReadiness.properties.readiness_blockers, 'OpenAPI should define API readiness blockers');
   assert(openapi.components.schemas.McpProfile, 'OpenAPI should define MCP schema');
   assert(openapi.components.schemas.SearchIndex, 'OpenAPI should define SearchIndex schema');
   assert(openapi.components.schemas.EvidenceApiResponse, 'OpenAPI should define EvidenceApiResponse schema');
@@ -530,6 +531,8 @@ test('api-readiness.json publishes machine-readable readiness gates', () => {
   assertEq(readiness.api_scorecard.fallback.ok, true);
   assert(readiness.readiness_gates.some(gate => gate.id === 'production_integrity_14_day'), 'readiness should include production integrity gate');
   assert(readiness.readiness_gates.some(gate => gate.id === 'core_query_context_ratio'), 'readiness should include context coverage gate');
+  assert(Array.isArray(readiness.readiness_blockers.gate_ids), 'readiness should publish blocker gate ids');
+  assert(readiness.readiness_blockers.gate_ids.includes('design_partners'), 'readiness should identify manual design partner blocker');
   assert(readiness.next_actions.some(action => action.includes('free API')), 'readiness should keep paid-beta work behind readiness gates');
 });
 

@@ -614,6 +614,14 @@ export function buildOpenApiContract({
           status: { type: 'string' },
           subscription_ready: { type: 'boolean' },
           readiness_gates: { type: 'array', items: { type: 'object' } },
+          readiness_blockers: {
+            type: 'object',
+            properties: {
+              gate_ids: { type: 'array', items: { type: 'string' } },
+              automated_gate_ids: { type: 'array', items: { type: 'string' } },
+              manual_gate_ids: { type: 'array', items: { type: 'string' } }
+            }
+          },
           core_corpus: { type: 'object' },
           api_scorecard: { type: 'object' },
           api_performance: { type: 'object' },

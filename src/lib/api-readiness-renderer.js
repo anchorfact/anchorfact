@@ -9,6 +9,10 @@ function gateCurrentText(gate) {
   return parts.length ? `; ${parts.join('; ')}` : '';
 }
 
+function readinessBlockerText(report) {
+  return (report.readiness_blockers?.gate_ids || []).join(', ') || 'none';
+}
+
 export function renderApiReadinessMarkdown(report) {
   const lines = [];
   lines.push(`# AnchorFact API Readiness Report`);
@@ -18,6 +22,7 @@ export function renderApiReadinessMarkdown(report) {
   lines.push(`Status: ${report.status}`);
   lines.push(`Report-only: ${report.report_only}`);
   lines.push(`Build should fail: ${report.build_should_fail}`);
+  lines.push(`Readiness blockers: ${readinessBlockerText(report)}`);
   lines.push('');
   lines.push(`## Scorecard`);
   lines.push('');
