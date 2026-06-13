@@ -512,6 +512,19 @@ export function buildOpenApiContract({
             },
             additionalProperties: true
           },
+          api_readiness_summary: {
+            type: 'object',
+            properties: {
+              path: { const: '/api-readiness.json' },
+              status: { type: ['string', 'null'] },
+              subscription_ready: { type: ['boolean', 'null'] },
+              report_only: { type: ['boolean', 'null'] },
+              blocker_ids: { type: 'array', items: { type: 'string' } },
+              automated_blocker_ids: { type: 'array', items: { type: 'string' } },
+              manual_blocker_ids: { type: 'array', items: { type: 'string' } }
+            },
+            additionalProperties: true
+          },
           trust_policy: { type: 'object' },
           bulk_sync_policy: { type: 'object' },
           static_artifacts: { type: 'array', items: { type: 'string' } }

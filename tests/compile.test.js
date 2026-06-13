@@ -147,6 +147,10 @@ test('public entrypoints exclude draft articles', () => {
   assertEq(rootIndex.discovery.openapi, '/openapi.json');
   assertEq(rootIndex.discovery.agent_profile, '/agent.json');
   assertEq(rootIndex.discovery.api_readiness, '/api-readiness.json');
+  assertEq(rootIndex.api_readiness_summary.status, 'building_foundation');
+  assertEq(rootIndex.api_readiness_summary.subscription_ready, false);
+  assertEq(rootIndex.api_readiness_summary.path, '/api-readiness.json');
+  assert(rootIndex.api_readiness_summary.blocker_ids.includes('core_query_context_ratio'), 'root index should expose API readiness blockers');
   assertEq(rootIndex.counts.public_articles, 1);
   assertEq(rootIndex.counts.draft_articles, 1);
   assertEq(rootIndex.counts.public_claims, claimsJson.claim_count);
@@ -433,6 +437,7 @@ test('openapi.json describes the static AI contract', () => {
   assert(openapi.paths['/sources.json'], 'OpenAPI should describe sources endpoint');
   assert(openapi.paths['/{canonical_slug}/index.json'], 'OpenAPI should describe article JSON-LD template');
   assert(openapi.paths['/{canonical_slug}/index.html'], 'OpenAPI should describe article JSON-LD HTML alias template');
+  assert(openapi.components.schemas.RootIndex.properties.api_readiness_summary, 'OpenAPI should define root readiness summary');
   assert(openapi.components.schemas.AgentProfile.properties.current_snapshot, 'OpenAPI should define agent current snapshot');
   assert(openapi.components.schemas.AgentProfile.properties.quick_start, 'OpenAPI should describe agent quick-start guidance');
   assert(openapi.components.schemas.RootIndex, 'OpenAPI should define root machine index schema');

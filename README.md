@@ -166,7 +166,7 @@ Only public articles contribute publishable facts to `/claims.json`.
 | `/` | Root machine JSON alias serving the same compact directory payload as `/index.json`. |
 | `/robots.txt` | Public crawler discovery file advertising sitemap, LLM index, agent profile, OpenAPI, MCP, and provenance entrypoints. |
 | `/sitemap.xml` | Public-only sitemap for AI and search crawlers; draft routes and directory-style article pages are excluded. |
-| `/index.json` | Compact root machine directory with preferred API entrypoints, trust policy, artifact discovery, and signed provenance pointer. |
+| `/index.json` | Compact root machine directory with preferred API entrypoints, trust policy, current readiness summary, artifact discovery, and signed provenance pointer. |
 | `/agent.json` | AI agent discovery profile with endpoint contracts, citation policy, quick-start answer path, current readiness blocker IDs, and recommended retrieval workflow. |
 | `/.well-known/anchorfact.json` | Stable well-known alias for `/agent.json`. |
 | `/openapi.json` | OpenAPI 3.1 description of the static read-only machine contract. |

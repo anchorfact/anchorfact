@@ -38,7 +38,8 @@ export function buildRootIndex({
   site = OFFICIAL_SITE,
   publicResults = [],
   draftResults = [],
-  claims = []
+  claims = [],
+  apiReadinessPayload = null
 } = {}) {
   return {
     schema_version: ROOT_INDEX_SCHEMA_VERSION,
@@ -92,6 +93,15 @@ export function buildRootIndex({
       public_articles: publicResults.length,
       draft_articles: draftResults.length,
       public_claims: claims.length
+    },
+    api_readiness_summary: {
+      path: '/api-readiness.json',
+      status: apiReadinessPayload?.status || null,
+      subscription_ready: apiReadinessPayload?.subscription_ready ?? null,
+      report_only: apiReadinessPayload?.report_only ?? null,
+      blocker_ids: apiReadinessPayload?.readiness_blockers?.gate_ids || [],
+      automated_blocker_ids: apiReadinessPayload?.readiness_blockers?.automated_gate_ids || [],
+      manual_blocker_ids: apiReadinessPayload?.readiness_blockers?.manual_gate_ids || []
     },
     trust_policy: {
       public_only_entrypoints_exclude_drafts: true,
