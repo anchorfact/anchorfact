@@ -285,6 +285,10 @@ function publicRecommendationSummary(rows) {
   return recommendations;
 }
 
+function sourceReadyRepairCandidates(candidates = []) {
+  return candidates.filter(candidate => Number(candidate.sources_verified || 0) > 0);
+}
+
 export function buildContentHealthReport(data, options = {}) {
   const manifest = data.manifest || {};
   const claimsPayload = data.claimsPayload || {};
@@ -376,6 +380,7 @@ export function buildContentHealthReport(data, options = {}) {
 
   draftCandidates.sort(compareDraftRepairCandidates);
   draftStrictReviewCandidates.sort(compareDraftRepairCandidates);
+  const sourceReadyDraftCandidates = sourceReadyRepairCandidates(draftCandidates);
   const staleDocs = scanStaleDocs(options.root || process.cwd());
   const publicClaimMapping = {
     total: byStatus.public.atomic_facts,
@@ -428,11 +433,13 @@ export function buildContentHealthReport(data, options = {}) {
       source_types: topEntries(byStatus.draft.source_types, 30),
       quality_reasons: topEntries(byStatus.draft.quality_reasons, 20),
       repair_candidate_count: draftCandidates.length,
+      source_ready_repair_candidate_count: sourceReadyDraftCandidates.length,
       repair_excluded_count: draftExcludedCount,
       strict_review_candidate_count: draftStrictReviewCandidates.length,
       repair_exclusion_reasons: topEntries(draftExclusionReasons, 30),
       strict_review_reasons: topEntries(draftStrictReviewReasons, 30),
       repair_candidates: draftCandidates.slice(0, options.candidateLimit || 25),
+      source_ready_repair_candidates: sourceReadyDraftCandidates.slice(0, options.candidateLimit || 25),
       strict_review_candidates: draftStrictReviewCandidates.slice(0, options.candidateLimit || 25)
     },
     stale_docs: staleDocs
@@ -515,6 +522,7 @@ ${listEntries(report.public.source_types.slice(0, 12))}
 - source tiers: ${JSON.stringify(report.draft.source_tiers)}
 - atomic facts mapped: ${report.draft.mapped_atomic_facts}/${report.draft.atomic_facts}
 - automatic repair exclusions: ${report.draft.repair_excluded_count || 0}
+- source-ready repair candidates: ${report.draft.source_ready_repair_candidate_count || 0}
 - strict review candidates: ${report.draft.strict_review_candidate_count || 0}
 
 Top draft reasons:

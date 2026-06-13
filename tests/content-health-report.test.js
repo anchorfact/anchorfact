@@ -92,7 +92,11 @@ test('buildContentHealthReport summarizes public and draft health', () => {
         publicArticle('ai/public-a', { confidence_level: 'high' }),
         publicArticle('science/public-b', { sources_verified: 1, sources_total: 2, quality_reasons: ['partial_source_verification'] }),
         draftArticle('ai/draft-a'),
-        draftArticle('business/brand-draft', { sources_total: 10 }),
+        draftArticle('business/brand-draft', {
+          sources_verified: 1,
+          sources_total: 10,
+          quality_reasons: ['partial_source_verification']
+        }),
         draftArticle('ai/ai-public-health', { sources_total: 4 }),
         draftArticle('ai/ai-for-fraud-prevention', { title: 'AI for Payment Fraud Prevention' }),
         draftArticle('ai/ai-warehouse-robotics', { title: 'AI for Warehouse Robotics: Autonomous Forklifts' }),
@@ -144,7 +148,7 @@ test('buildContentHealthReport summarizes public and draft health', () => {
     assertEq(report.snapshot.public, 2);
     assertEq(report.public.source_coverage.full, 1);
     assertEq(report.public.source_coverage.partial, 1);
-    assertEq(report.draft.source_coverage.zero, 5);
+    assertEq(report.draft.source_coverage.zero, 4);
     assertEq(report.public.source_tiers.A, 2);
     assertEq(report.draft.source_tiers.B, 5);
     assertEq(report.public_audit.rows, 2);
@@ -155,6 +159,8 @@ test('buildContentHealthReport summarizes public and draft health', () => {
     assertEq(report.draft.repair_candidates[0].canonical_slug, 'ai/draft-a');
     assertEq(report.draft.repair_candidates[0].repair_priority_area, 'core_ai');
     assert(report.draft.repair_candidates.findIndex(item => item.canonical_slug === 'ai/draft-a') < report.draft.repair_candidates.findIndex(item => item.canonical_slug === 'business/brand-draft'), 'AI utility draft should outrank a higher-source general draft');
+    assertEq(report.draft.source_ready_repair_candidate_count, 1);
+    assertEq(report.draft.source_ready_repair_candidates[0].canonical_slug, 'business/brand-draft');
     assert(!report.draft.repair_candidates.some(item => item.canonical_slug === 'ai/ai-public-health'), 'should not recommend high-stakes drafts for automatic repair');
     assert(report.draft.strict_review_candidates.some(item => item.canonical_slug === 'ai/ai-public-health'), 'should route high-stakes drafts to strict review');
     assert(!report.draft.repair_candidates.some(item => item.canonical_slug === 'ai/ai-for-fraud-prevention'), 'should not recommend financial-risk drafts for automatic repair');
@@ -248,6 +254,8 @@ test('renderContentHealthReport uses readable report sections', () => {
       mapped_atomic_facts: 0,
       quality_reasons: [],
       repair_candidates: [],
+      source_ready_repair_candidate_count: 0,
+      source_ready_repair_candidates: [],
       strict_review_candidate_count: 0,
       strict_review_candidates: [],
       strict_review_reasons: []
@@ -260,6 +268,7 @@ test('renderContentHealthReport uses readable report sections', () => {
   assert(text.includes('- score: 100/100 (excellent)'), 'missing readiness score');
   assert(text.includes('Snapshot: 1 public / 0 draft / 1 claims.'), 'missing snapshot');
   assert(text.includes('source coverage: full=1, partial=0, zero=0'), 'missing coverage summary');
+  assert(text.includes('- source-ready repair candidates: 0'), 'missing source-ready repair candidate summary');
 });
 
 console.log(`\n${passed} passed, ${failed} failed`);
