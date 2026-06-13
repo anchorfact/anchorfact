@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-13T15:09:03.714Z",
+    "generated": "2026-06-13T15:21:32.363Z",
     "total_articles": 1628,
     "total_with_errors": 0,
     "average_sources_per_article": "2.6",
-    "overall_verification_rate": "92.2%",
-    "elapsed_ms": 2077,
-    "elapsed_sec": "2.1",
+    "overall_verification_rate": "92.3%",
+    "elapsed_ms": 1594,
+    "elapsed_sec": "1.6",
     "concurrency": 3
   },
   "articles": [
@@ -18756,22 +18756,62 @@
       "file": "content/ai/ai-social-listening.md",
       "article_id": "ai-social-listening",
       "generation_method": "ai_structured",
-      "sources_total": 2,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "AI Social Listening and Consumer Intelligence: NLP, Sentiment Analysis, and Visual Recognition (2024-2025 Survey)",
+          "source_title": "VADER: A Parsimonious Rule-Based Model for Sentiment Analysis of Social Media Text",
           "source_type": "academic_paper",
-          "results": [],
-          "all_verified": false
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://ojs.aaai.org/index.php/ICWSM/article/view/14550",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://ojs.aaai.org/index.php/ICWSM/article/view/14550",
+                "http_method": "HEAD"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         },
         {
-          "source_title": "Computer Vision for Social Media Analytics: Logo Detection, Scene Understanding, and Visual Brand Tracking",
+          "source_title": "BERTweet: A pre-trained language model for English Tweets",
           "source_type": "academic_paper",
-          "results": [],
-          "all_verified": false
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://aclanthology.org/2020.emnlp-demos.2/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://aclanthology.org/2020.emnlp-demos.2/",
+                "http_method": "HEAD"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Large Scale Open-Set Deep Logo Detection",
+          "source_type": "academic_paper",
+          "results": [
+            {
+              "method": "arxiv",
+              "identifier": "1911.07440",
+              "verified": true,
+              "metadata": {
+                "title": "arXiv Query: search_query=&amp;id_list=1911.07440&amp;start=0&amp;max_results=1"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
+      "sources_verified": 3,
       "sources_unreachable": 0
     },
     {
