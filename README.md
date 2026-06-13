@@ -89,7 +89,7 @@ npm run verify:provenance
 npm run verify:provenance:signed
 ```
 
-The smoke test checks the root `/` machine JSON alias, `/index.json`, `/api-access/`, `/robots.txt`, `/sitemap.xml`, `/agent.json`, `/.well-known/anchorfact.json`, `/openapi.json`, `/artifact-summary.json`, `/artifact-shards.json`, `/api-readiness.json`, `/manifest.json`, `/llms.txt`, `/claims.json`, `/topics.json`, `/capabilities.json`, `/content-health.json`, `/coverage.json`, `/examples.json`, `/graph.json`, `/evals.json`, `/mcp.json`, `/api`, `/api/plan`, `/api/evidence`, `/api/context`, `/api/resolve`, `/api/resolve-batch`, `/api/search`, `/api/article`, `/api/claim`, `/api/cite`, `/api/source`, `/search-index.json`, `/sources.json`, `/provenance.json`, `/provenance.sig`, and `/drafts.html` against the live `https://anchorfact.org` deployment. Omit the expected-count environment variables when checking a future snapshot with different counts.
+The smoke test checks the root `/` machine JSON alias, `/index.json`, `/api-access/`, `/robots.txt`, `/sitemap.xml`, `/agent.json`, `/.well-known/anchorfact.json`, `/openapi.json`, `/artifact-summary.json`, `/artifact-shards.json`, `/api-readiness.json`, `/manifest.json`, `/llms.txt`, `/claims.json`, `/topics.json`, `/capabilities.json`, `/content-health.json`, `/coverage.json`, `/examples.json`, `/graph.json`, `/evals.json`, `/mcp.json`, `/api`, `/api/plan`, `/api/evidence`, `/api/context`, `/api/resolve`, `/api/resolve-batch`, `/api/search`, `/api/article`, `/api/claim`, `/api/cite`, `/api/source`, `/search-index.json`, `/sources.json`, `/provenance.json`, `/provenance.sig`, `/drafts.html`, and `/dashboard.html` against the live `https://anchorfact.org` deployment. Omit the expected-count environment variables when checking a future snapshot with different counts.
 
 The provenance verifier fetches `/provenance.json`, recomputes SHA-256 checksums for the core AI entrypoints, checks public/draft/claim counts, confirms official build identity, and verifies the source commit against GitHub.
 
@@ -200,7 +200,8 @@ Only public articles contribute publishable facts to `/claims.json`.
 | `/sources.json` | Deduplicated public source index with source tier, type, article reuse, and claim reuse. |
 | `/provenance.json` | Build identity, schema version, content counts, and artifact checksums. |
 | `/provenance.sig` | Optional detached Ed25519 signature for `/provenance.json`, emitted only when a signing key is configured. |
-| `/drafts.html` | Draft review index, marked `noindex`. |
+| `/drafts.html` | Noindex machine-readable draft status index. |
+| `/dashboard.html` | Noindex machine-readable build dashboard. |
 | `/{slug}/index.json` | JSON-LD article record with confidence and verification layer. |
 | `/{slug}/facts.json` | Per-article atomic facts, when present. |
 

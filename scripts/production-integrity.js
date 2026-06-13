@@ -50,9 +50,14 @@ export const DEFAULT_EDGE_CACHE_API_CONTROLS = [
   '/api/evidence?q=gaussian&limit=1',
   '/api/plan?q=gaussian&limit=1'
 ];
+export const DEFAULT_EDGE_CACHE_NOINDEX_MACHINE_CONTROLS = [
+  '/drafts.html',
+  '/dashboard.html'
+];
 export const DEFAULT_EDGE_CACHE_STATIC_ARTIFACTS = [];
 export const DEFAULT_EDGE_CACHE_DYNAMIC_CONTROLS = [
   ...DEFAULT_EDGE_CACHE_API_CONTROLS,
+  ...DEFAULT_EDGE_CACHE_NOINDEX_MACHINE_CONTROLS,
   ...SIGNED_MACHINE_ARTIFACT_PATHS
 ];
 export const DEFAULT_EDGE_CACHE_ROUTE_RETRIES = 4;

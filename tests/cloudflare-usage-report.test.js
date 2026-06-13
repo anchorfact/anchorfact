@@ -84,6 +84,9 @@ test('classifyPath identifies API, machine artifact, article artifact, and probe
   assertEq(classifyPath('/'), 'machine_artifact');
   assertEq(classifyPath('/api/evidence'), 'api');
   assertEq(classifyPath('/api-access/'), 'machine_artifact');
+  assertEq(classifyPath('/drafts'), 'machine_artifact');
+  assertEq(classifyPath('/drafts.html'), 'machine_artifact');
+  assertEq(classifyPath('/dashboard.html'), 'machine_artifact');
   assertEq(classifyPath('/index.json'), 'machine_artifact');
   assertEq(classifyPath('/artifact-summary.json'), 'machine_artifact');
   assertEq(classifyPath('/artifact-shards.json'), 'machine_artifact');

@@ -133,6 +133,10 @@ test('public entrypoints exclude draft articles', () => {
   const robotsTxt = readFileSync(join(distDir, 'robots.txt'), 'utf-8');
   const apiAccessText = readFileSync(join(distDir, 'api-access', 'index.html'), 'utf-8');
   const apiAccess = JSON.parse(apiAccessText);
+  const draftsText = readFileSync(join(distDir, 'drafts.html'), 'utf-8');
+  const draftsIndex = JSON.parse(draftsText);
+  const dashboardText = readFileSync(join(distDir, 'dashboard.html'), 'utf-8');
+  const dashboard = JSON.parse(dashboardText);
   assertEq(rootIndex.schema_version, 'anchorfact.root-index.v1');
   assertEq(rootIndex.official_site, 'https://anchorfact.org');
   assertEq(rootIndex.provenance_url, 'https://anchorfact.org/provenance.json');
@@ -248,6 +252,20 @@ test('public entrypoints exclude draft articles', () => {
   assertEq(apiAccess.answer_policy_path, '/api/context?q={query}');
   assertEq(apiAccess.unsupported_answer_mode, 'external_sources_required');
   assert(!apiAccessText.trimStart().startsWith('<'), 'api access machine endpoint should not emit HTML');
+  assertEq(draftsIndex.schema_version, 'anchorfact.drafts-index.v1');
+  assertEq(draftsIndex.indexing.noindex, true);
+  assertEq(draftsIndex.counts.draft_articles, 1);
+  assertEq(draftsIndex.drafts[0].canonical_slug, 'draft-fixture');
+  assert(draftsIndex.drafts[0].machine_artifacts.jsonld.endsWith('/draft-fixture/index.json'), 'draft index should point to draft JSON-LD artifact');
+  assert(!draftsText.trimStart().startsWith('<'), 'drafts endpoint should not emit HTML');
+  assertEq(dashboard.schema_version, 'anchorfact.dashboard.v1');
+  assertEq(dashboard.indexing.noindex, true);
+  assertEq(dashboard.counts.total_articles, 2);
+  assertEq(dashboard.counts.public_articles, 1);
+  assertEq(dashboard.counts.draft_articles, 1);
+  assertEq(dashboard.counts.public_claims, claimsJson.claim_count);
+  assertEq(dashboard.entrypoints.root_index, '/index.json');
+  assert(!dashboardText.trimStart().startsWith('<'), 'dashboard endpoint should not emit HTML');
   assert(llmsTxt.includes('Public Fixture'), 'llms.txt should include public article');
   assert(!llmsTxt.includes('Draft Fixture'), 'llms.txt should exclude draft article');
   assert(sitemap.includes('/public-fixture/'), 'sitemap should include public article');
@@ -384,6 +402,8 @@ test('openapi.json describes the static AI contract', () => {
   assert(openapi.paths['/'], 'OpenAPI should describe root slash machine index alias');
   assert(openapi.paths['/index.json'], 'OpenAPI should describe root machine index');
   assert(openapi.paths['/api-access/'], 'OpenAPI should describe API access policy');
+  assert(openapi.paths['/drafts.html'], 'OpenAPI should describe drafts machine index');
+  assert(openapi.paths['/dashboard.html'], 'OpenAPI should describe dashboard machine artifact');
   assert(openapi.paths['/artifact-summary.json'], 'OpenAPI should describe artifact summary');
   assert(openapi.paths['/api-readiness.json'], 'OpenAPI should describe API readiness');
   assert(openapi.paths['/claims.json'], 'OpenAPI should describe claims endpoint');
@@ -413,6 +433,8 @@ test('openapi.json describes the static AI contract', () => {
   assert(openapi.components.schemas.RootIndex, 'OpenAPI should define root machine index schema');
   assert(openapi.components.schemas.ApiAccess, 'OpenAPI should define API access schema');
   assert(openapi.components.schemas.ApiAccess.properties.access_policy, 'OpenAPI should define API access policy fields');
+  assert(openapi.components.schemas.DraftsIndex, 'OpenAPI should define drafts index schema');
+  assert(openapi.components.schemas.Dashboard, 'OpenAPI should define dashboard schema');
   assert(openapi.components.schemas.RootIndex.properties.default_answer_path, 'OpenAPI should define root default answer path');
   assert(openapi.components.schemas.AgentQuickStart.properties.default_answer_path, 'OpenAPI should define default answer path guidance');
   assert(openapi.components.schemas.AgentQuickStart.properties.primary_api_conversion, 'OpenAPI should define primary API conversion guidance');
@@ -1005,8 +1027,9 @@ test('_headers is generated for Cloudflare Pages static output', () => {
     assert(headers.includes(`${path}\n  Access-Control-Allow-Origin: *\n  Content-Type: ${path.endsWith('.txt') ? 'text/plain' : 'application/json'}; charset=utf-8\n  Cache-Control: public, max-age=0, must-revalidate`), `_headers should keep ${path} revalidated`);
   }
   assert(headers.includes('/*/index.json\n  Access-Control-Allow-Origin: *'), '_headers should expose article JSON-LD CORS');
-  assert(headers.includes('/drafts\n  X-Robots-Tag: noindex, nofollow'), '_headers should noindex extensionless drafts route');
-  assert(headers.includes('/drafts.html\n  X-Robots-Tag: noindex, nofollow'), '_headers should noindex drafts.html route');
+  for (const path of ['/drafts', '/drafts.html', '/dashboard.html']) {
+    assert(headers.includes(`${path}\n  Access-Control-Allow-Origin: *\n  Content-Type: application/json; charset=utf-8\n  Cache-Control: public, max-age=0, must-revalidate\n  X-Robots-Tag: noindex, nofollow`), `_headers should expose ${path} as noindex JSON`);
+  }
 });
 
 rmSync(root, { recursive: true, force: true });

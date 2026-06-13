@@ -220,7 +220,7 @@ export async function main() {
   const expectedDraft = readExpectedInt('EXPECTED_DRAFT_ARTICLES');
   const expectedClaims = readExpectedInt('EXPECTED_CLAIMS');
 
-  const routes = ['/', '/index.json', '/api-access/', '/robots.txt', '/sitemap.xml', '/agent.json', '/.well-known/anchorfact.json', '/openapi.json', '/artifact-summary.json', '/artifact-shards.json', '/api-readiness.json', '/manifest.json', '/llms.txt', '/claims.json', '/topics.json', '/capabilities.json', '/content-health.json', '/coverage.json', '/examples.json', '/graph.json', '/evals.json', '/mcp.json', '/api', '/api/plan?q=gaussian&limit=2', '/api/evidence?q=gaussian&limit=2', '/api/evidence?q=gaussian&limit=1&format=markdown', '/api/context?q=gaussian&limit=2', '/api/context?q=gaussian&limit=1&format=markdown', '/api/resolve?ref=f1', '/api/resolve-batch?ref=f1&ref=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079', '/api/resolve-batch?ref=f1&ref=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079&format=markdown', '/api/search?q=gaussian&limit=2', '/api/article?slug=ai/3d-generation-gaussian-splatting', '/api/claim?id=f1', '/api/cite?id=f1', '/api/cite?id=f1&format=markdown', '/api/source?url=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079', '/search-index.json', '/sources.json', '/provenance.json', '/provenance.sig', '/drafts.html'];
+  const routes = ['/', '/index.json', '/api-access/', '/robots.txt', '/sitemap.xml', '/agent.json', '/.well-known/anchorfact.json', '/openapi.json', '/artifact-summary.json', '/artifact-shards.json', '/api-readiness.json', '/manifest.json', '/llms.txt', '/claims.json', '/topics.json', '/capabilities.json', '/content-health.json', '/coverage.json', '/examples.json', '/graph.json', '/evals.json', '/mcp.json', '/api', '/api/plan?q=gaussian&limit=2', '/api/evidence?q=gaussian&limit=2', '/api/evidence?q=gaussian&limit=1&format=markdown', '/api/context?q=gaussian&limit=2', '/api/context?q=gaussian&limit=1&format=markdown', '/api/resolve?ref=f1', '/api/resolve-batch?ref=f1&ref=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079', '/api/resolve-batch?ref=f1&ref=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079&format=markdown', '/api/search?q=gaussian&limit=2', '/api/article?slug=ai/3d-generation-gaussian-splatting', '/api/claim?id=f1', '/api/cite?id=f1', '/api/cite?id=f1&format=markdown', '/api/source?url=https%3A%2F%2Farxiv.org%2Fabs%2F2308.04079', '/search-index.json', '/sources.json', '/provenance.json', '/provenance.sig', '/drafts.html', '/dashboard.html'];
   const results = {};
 
   Object.assign(results, await fetchRoutes(baseUrl, routes));
@@ -265,10 +265,11 @@ export async function main() {
   const sources = await readJsonRoute(baseUrl, '/sources.json', results);
   const provenance = await readJsonRoute(baseUrl, '/provenance.json', results);
   const apiAccessPolicy = await readJsonRoute(baseUrl, '/api-access/', results);
+  const draftsIndex = await readJsonRoute(baseUrl, '/drafts.html', results);
+  const dashboard = await readJsonRoute(baseUrl, '/dashboard.html', results);
   const robotsText = results['/robots.txt'].body;
   const sitemapText = results['/sitemap.xml'].body;
   const llmsText = results['/llms.txt'].body;
-  const draftsHtml = results['/drafts.html'].body;
   const exampleRoutes = exampleWorkflowRoutes(examples);
   assertOk(exampleRoutes.length >= 4, '/examples.json exposes too few executable workflow calls', failures);
   Object.assign(results, await fetchRoutes(baseUrl, exampleRoutes.filter(route => !results[route])));
@@ -654,7 +655,12 @@ export async function main() {
   assertOk(provenance.artifacts?.llms_txt?.sha256 === sha256Text(results['/llms.txt'].body), 'provenance llms hash does not match /llms.txt', failures);
   assertOk(['signed', 'unsigned'].includes(provenance.signature?.status), `provenance signature status expected signed or unsigned, got ${provenance.signature?.status || '(missing)'}`, failures);
   assertOk(llmsText.trim().length > 0, '/llms.txt is empty', failures);
-  assertOk(/noindex/i.test(draftsHtml), '/drafts.html is missing noindex', failures);
+  assertOk(draftsIndex.schema_version === 'anchorfact.drafts-index.v1', `drafts schema_version expected anchorfact.drafts-index.v1, got ${draftsIndex.schema_version || '(missing)'}`, failures);
+  assertOk(draftsIndex.indexing?.noindex === true, '/drafts.html is missing noindex policy', failures);
+  assertOk(Array.isArray(draftsIndex.drafts), '/drafts.html drafts list should be an array', failures);
+  assertOk(dashboard.schema_version === 'anchorfact.dashboard.v1', `dashboard schema_version expected anchorfact.dashboard.v1, got ${dashboard.schema_version || '(missing)'}`, failures);
+  assertOk(dashboard.indexing?.noindex === true, '/dashboard.html is missing noindex policy', failures);
+  assertOk(typeof dashboard.counts?.public_articles === 'number', '/dashboard.html should expose public article count', failures);
   for (const header of REQUIRED_SECURITY_HEADERS) {
     headerIncludes(results[header.route], header.name, header.expected, failures);
   }
@@ -666,6 +672,11 @@ export async function main() {
   headerIncludes(results['/openapi.json'], 'Access-Control-Allow-Origin', '*', failures);
   headerIncludes(results['/api-access/'], 'Access-Control-Allow-Origin', '*', failures);
   headerIncludes(results['/api-access/'], 'Content-Type', 'application/json', failures);
+  for (const route of ['/drafts.html', '/dashboard.html']) {
+    headerIncludes(results[route], 'Access-Control-Allow-Origin', '*', failures);
+    headerIncludes(results[route], 'Content-Type', 'application/json', failures);
+    headerIncludes(results[route], 'X-Robots-Tag', 'noindex', failures);
+  }
   headerIncludes(results['/manifest.json'], 'Access-Control-Allow-Origin', '*', failures);
   headerIncludes(results['/artifact-summary.json'], 'Access-Control-Allow-Origin', '*', failures);
   headerIncludes(results['/artifact-shards.json'], 'Access-Control-Allow-Origin', '*', failures);
@@ -729,8 +740,6 @@ export async function main() {
   ]) {
     headerIncludes(results[route], 'Cache-Control', 'max-age=0, must-revalidate', failures);
   }
-  headerIncludes(results['/drafts.html'], 'X-Robots-Tag', 'noindex', failures);
-
   const firstPublicArticle = Array.isArray(manifest.articles)
     ? manifest.articles.find(article => article.status === 'public' && article.is_draft === false && article.canonical_slug)
     : null;

@@ -160,6 +160,8 @@ test('public machine entrypoints exclude drafts', () => {
   assert(openapi.paths['/'], 'OpenAPI should expose root machine index alias');
   assert(openapi.paths['/index.json'], 'OpenAPI should expose root machine index');
   assert(openapi.paths['/api-access/'], 'OpenAPI should expose API access policy');
+  assert(openapi.paths['/drafts.html'], 'OpenAPI should expose drafts machine index');
+  assert(openapi.paths['/dashboard.html'], 'OpenAPI should expose dashboard machine artifact');
   assert(openapi.paths['/{canonical_slug}/index.json'], 'OpenAPI should expose article JSON-LD template');
   assert(openapi.paths['/capabilities.json'], 'OpenAPI should expose capabilities endpoint');
   assert(openapi.paths['/content-health.json'], 'OpenAPI should expose content health endpoint');

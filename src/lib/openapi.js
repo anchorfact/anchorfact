@@ -15,6 +15,8 @@ import {
   CONTEXT_API_SCHEMA_VERSION,
   CONTENT_HEALTH_SCHEMA_VERSION,
   COVERAGE_SCHEMA_VERSION,
+  DASHBOARD_SCHEMA_VERSION,
+  DRAFTS_INDEX_SCHEMA_VERSION,
   EVALS_SCHEMA_VERSION,
   EVIDENCE_API_SCHEMA_VERSION,
   EXAMPLES_SCHEMA_VERSION,
@@ -112,6 +114,8 @@ export function buildOpenApiContract({
       '/openapi.json': getJson('This OpenAPI machine contract', 'OpenApiContract'),
       '/api': getJson('Compact live API discovery index', 'ApiIndex'),
       '/api-access/': getJson('Machine-readable free API access policy and recommended call order', 'ApiAccess'),
+      '/drafts.html': getJson('Noindex machine-readable draft status index', 'DraftsIndex'),
+      '/dashboard.html': getJson('Noindex machine-readable build dashboard', 'Dashboard'),
       '/artifact-summary.json': getJson('Lightweight static artifact size and alternative-call summary', 'ArtifactSummary'),
       '/artifact-shards.json': getJson('Signed versioned shard registry for large static artifacts', 'ArtifactShards'),
       '/api-readiness.json': getJson('Machine-readable API readiness gates and scorecard', 'ApiReadiness'),
@@ -561,6 +565,19 @@ export function buildOpenApiContract({
           unsupported_answer_mode: { enum: ['external_sources_required'] },
           trust_check: { type: 'object' },
           related_machine_contracts: { type: 'array', items: { type: 'string' } }
+        }),
+        DraftsIndex: schemaVersioned('Draft status index', DRAFTS_INDEX_SCHEMA_VERSION, {
+          indexing: { type: 'object' },
+          counts: { type: 'object' },
+          status_policy: { type: 'object' },
+          drafts: { type: 'array', items: { type: 'object' } }
+        }),
+        Dashboard: schemaVersioned('Build dashboard', DASHBOARD_SCHEMA_VERSION, {
+          indexing: { type: 'object' },
+          counts: { type: 'object' },
+          public_confidence: { type: 'object' },
+          verification_report: { type: 'object' },
+          entrypoints: { type: 'object' }
         }),
         ArtifactSummary: schemaVersioned('Artifact summary', ARTIFACT_SUMMARY_SCHEMA_VERSION, {
           total_bytes: { type: 'integer' },

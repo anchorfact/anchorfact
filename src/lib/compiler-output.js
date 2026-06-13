@@ -18,10 +18,11 @@ import { buildGraphIndex } from './graph-index.js';
 import { buildEvalsIndex } from './evals-index.js';
 import { buildMcpProfile } from './mcp-profile.js';
 import { buildRootIndex } from './root-index.js';
-import { escapeHtml } from './html.js';
 import { buildManifest, distribution } from './manifest.js';
 import {
   CLAIMS_SCHEMA_VERSION,
+  DASHBOARD_SCHEMA_VERSION,
+  DRAFTS_INDEX_SCHEMA_VERSION,
   PROVENANCE_PATH,
   buildMetadataFromEnv,
   buildProvenance,
@@ -54,23 +55,55 @@ function writeManifest(distDir, results, publicResults, draftResults, claims, op
   return manifest;
 }
 
-function writeDrafts(distDir, draftResults) {
-  const html = `<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="robots" content="noindex, nofollow">
-  <title>AnchorFact Drafts</title>
-</head>
-<body>
-  <h1>Draft Articles</h1>
-  <p>Drafts are excluded from public AI entrypoints until they pass source verification and content completeness checks.</p>
-  <ul>
-    ${draftResults.map(result => `<li><a href="/${result._quality.canonicalSlug}/">${escapeHtml(result.headline)}</a> - ${result._quality.qualityReasons.map(escapeHtml).join(', ')}</li>`).join('\n    ')}
-  </ul>
-</body>
-</html>`;
-  writeFileSync(join(distDir, 'drafts.html'), html);
+function draftMachineRecord(result, site) {
+  const slug = result._quality?.canonicalSlug || result.slug || result.id;
+  return {
+    id: result.id || slug,
+    canonical_slug: slug,
+    headline: result.headline || slug,
+    status: 'draft',
+    excluded_from_public_ai_entrypoints: true,
+    confidence: result._confidence?.level || null,
+    quality: {
+      score: result._quality?.qualityScore ?? null,
+      reasons: result._quality?.qualityReasons || [],
+      missing_critical: result._quality?.missingCritical || []
+    },
+    verification: {
+      sources_total: result._verificationData?.sources_total ?? 0,
+      sources_verified: result._verificationData?.sources_verified ?? 0,
+      confidence_score: result._confidence?.score ?? null
+    },
+    machine_artifacts: {
+      jsonld: publicUrl(`/${slug}/index.json`, site),
+      markdown: publicUrl(`/${slug}/index.md`, site),
+      plain_text: publicUrl(`/${slug}/index.txt`, site),
+      turtle: publicUrl(`/${slug}/index.ttl`, site)
+    }
+  };
+}
+
+function writeDraftsIndex(distDir, draftResults, { generated, site }) {
+  const payload = {
+    schema_version: DRAFTS_INDEX_SCHEMA_VERSION,
+    generated,
+    provenance_url: publicUrl(PROVENANCE_PATH, site),
+    indexing: {
+      noindex: true,
+      nofollow: true,
+      reason: 'Draft status is exposed for machine QA only and is excluded from public AI retrieval entrypoints.'
+    },
+    status_policy: {
+      public_ai_entrypoints_exclude_drafts: true,
+      publish_requires_source_verification_and_content_completeness: true,
+      use_content_health_for_repair_queue: '/content-health.json'
+    },
+    counts: {
+      draft_articles: draftResults.length
+    },
+    drafts: draftResults.map(result => draftMachineRecord(result, site))
+  };
+  writeFileSync(join(distDir, 'drafts.html'), stringifyJson(payload, { pretty: false }));
 }
 
 function writeApiAccessPolicy(distDir, apiAccessPolicy) {
@@ -267,6 +300,18 @@ function writeHeaders(distDir) {
   Content-Type: ${contentType}; charset=utf-8
   Cache-Control: public, max-age=0, must-revalidate`)
     .join('\n\n');
+  const noindexMachineArtifacts = [
+    '/drafts',
+    '/drafts.html',
+    '/dashboard.html'
+  ];
+  const noindexMachineArtifactHeaders = noindexMachineArtifacts
+    .map(path => `${path}
+  Access-Control-Allow-Origin: *
+  Content-Type: application/json; charset=utf-8
+  Cache-Control: public, max-age=0, must-revalidate
+  X-Robots-Tag: noindex, nofollow`)
+    .join('\n\n');
 
   const headersFile = `# _headers - AnchorFact AI-optimized headers with security hardening
 /*
@@ -287,56 +332,51 @@ function writeHeaders(distDir) {
 
 ${machineArtifactHeaders}
 
+${noindexMachineArtifactHeaders}
+
 /artifacts/v1/*
   Access-Control-Allow-Origin: *
   Content-Type: application/json; charset=utf-8
   Cache-Control: public, max-age=31536000, immutable
-
-/drafts
-  X-Robots-Tag: noindex, nofollow
-
-/drafts.html
-  X-Robots-Tag: noindex, nofollow
 `;
   writeFileSync(join(distDir, '_headers'), headersFile);
 }
 
-function writeDashboard(distDir, results, publicResults, draftResults, claims, verificationTimestamp) {
+function writeDashboard(distDir, results, publicResults, draftResults, claims, verificationTimestamp, { generated, site }) {
   const publicDist = distribution(publicResults);
-  const dashHtml = `<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>AnchorFact Dashboard</title>
-  <style>
-    body{font-family:system-ui,sans-serif;background:#F8FAFC;color:#1E293B;line-height:1.6}
-    .container{max-width:960px;margin:0 auto;padding:24px 20px}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
-    .card{background:white;border:1px solid #E2E8F0;border-radius:8px;padding:20px}
-    .label{font-size:.8rem;color:#64748B;text-transform:uppercase}.value{font-size:2rem;font-weight:700}
-    a{color:#2563EB}
-  </style>
-</head>
-<body>
-  <div class="container">
-    <h1>AnchorFact Dashboard</h1>
-    <p>Machine-readable verified claims for LLM citations.</p>
-    <div class="grid">
-      <div class="card"><div class="label">Total Articles</div><div class="value">${results.length}</div></div>
-      <div class="card"><div class="label">Public Verified</div><div class="value">${publicResults.length}</div></div>
-      <div class="card"><div class="label">Drafts</div><div class="value">${draftResults.length}</div></div>
-      <div class="card"><div class="label">Public Claims</div><div class="value">${claims.length}</div></div>
-    </div>
-    <div class="card" style="margin-top:16px">
-      <h2>Public Confidence</h2>
-      <p>High: ${publicDist.high} &middot; Medium: ${publicDist.medium} &middot; Low: ${publicDist.low}</p>
-      <p>Verification report: ${verificationTimestamp || 'not available'}</p>
-    </div>
-    <p><a href="/index.json">Root machine index</a> &middot; <a href="/llms.txt">llms.txt</a> &middot; <a href="/agent.json">agent.json</a> &middot; <a href="/openapi.json">openapi.json</a> &middot; <a href="/manifest.json">manifest.json</a> &middot; <a href="/claims.json">claims.json</a> &middot; <a href="/topics.json">topics.json</a> &middot; <a href="/capabilities.json">capabilities.json</a> &middot; <a href="/content-health.json">content-health.json</a> &middot; <a href="/coverage.json">coverage.json</a> &middot; <a href="/examples.json">examples.json</a> &middot; <a href="/graph.json">graph.json</a> &middot; <a href="/evals.json">evals.json</a> &middot; <a href="/mcp.json">mcp.json</a> &middot; <a href="/search-index.json">search-index.json</a> &middot; <a href="/sources.json">sources.json</a> &middot; <a href="/provenance.json">provenance.json</a></p>
-  </div>
-</body>
-</html>`;
-  writeFileSync(join(distDir, 'dashboard.html'), dashHtml);
+  const payload = {
+    schema_version: DASHBOARD_SCHEMA_VERSION,
+    generated,
+    provenance_url: publicUrl(PROVENANCE_PATH, site),
+    indexing: {
+      noindex: true,
+      nofollow: true,
+      reason: 'Build dashboard is a machine QA artifact, not a human landing page.'
+    },
+    counts: {
+      total_articles: results.length,
+      public_articles: publicResults.length,
+      draft_articles: draftResults.length,
+      public_claims: claims.length
+    },
+    public_confidence: publicDist,
+    verification_report: {
+      generated: verificationTimestamp || null
+    },
+    entrypoints: {
+      root_index: '/index.json',
+      api_index: '/api',
+      agent_profile: '/agent.json',
+      openapi: '/openapi.json',
+      api_access_policy: '/api-access/',
+      manifest: '/manifest.json',
+      claims: '/claims.json',
+      content_health: '/content-health.json',
+      drafts_index: '/drafts.html',
+      provenance: PROVENANCE_PATH
+    }
+  };
+  writeFileSync(join(distDir, 'dashboard.html'), stringifyJson(payload, { pretty: false }));
 }
 
 function writeAgentProfile(distDir, profile) {
@@ -568,7 +608,10 @@ export function writeStaticOutputs(distDir, results, options = {}) {
     draftResults,
     claims
   }));
-  writeDrafts(distDir, draftResults);
+  writeDraftsIndex(distDir, draftResults, {
+    generated,
+    site: build.canonical_site
+  });
   const llmsText = writeLlmsTxt(distDir, publicResults, claims, options.verificationTimestamp);
   writeArtifactShardRegistry({
     distDir,
@@ -583,7 +626,10 @@ export function writeStaticOutputs(distDir, results, options = {}) {
   writeSitemap(distDir, publicResults);
   writeRobots(distDir);
   writeHeaders(distDir);
-  writeDashboard(distDir, results, publicResults, draftResults, claims, options.verificationTimestamp);
+  writeDashboard(distDir, results, publicResults, draftResults, claims, options.verificationTimestamp, {
+    generated,
+    site: build.canonical_site
+  });
   writeFavicon(distDir);
   writeArtifactSummary(distDir, buildArtifactSummary({
     generated,
