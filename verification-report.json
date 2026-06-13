@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-13T14:57:40.100Z",
+    "generated": "2026-06-13T15:09:03.714Z",
     "total_articles": 1628,
     "total_with_errors": 0,
     "average_sources_per_article": "2.6",
     "overall_verification_rate": "92.2%",
-    "elapsed_ms": 909,
-    "elapsed_sec": "0.9",
+    "elapsed_ms": 2077,
+    "elapsed_sec": "2.1",
     "concurrency": 3
   },
   "articles": [
@@ -85428,56 +85428,68 @@
       "sources_unreachable": 3
     },
     {
-      "file": "content\\computer-science\\command-pattern.md",
+      "file": "content/computer-science/command-pattern.md",
       "article_id": "kb-2026-00147",
       "generation_method": "ai_structured",
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "ACM Digital Library",
-          "source_type": "repository",
+          "source_title": "Refactoring.Guru - Command",
+          "source_type": "reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://dl.acm.org/",
-              "verified": false,
-              "metadata": {},
-              "match": false
+              "identifier": "https://refactoring.guru/design-patterns/command",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://refactoring.guru/design-patterns/command",
+                "http_method": "HEAD"
+              },
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Head First Design Patterns (2nd Edition Updated 2025)",
-          "source_type": "book",
+          "source_title": "SourceMaking - Command Design Pattern",
+          "source_type": "reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.oreilly.com/head-first-design-patterns/",
-              "verified": false,
-              "metadata": {},
-              "match": false
+              "identifier": "https://sourcemaking.com/design_patterns/command",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://sourcemaking.com/design_patterns/command",
+                "http_method": "HEAD"
+              },
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Behavioral Design Patterns in Cloud-Native Architectures (2025)",
-          "source_type": "survey_paper",
+          "source_title": "Martin Fowler - CQRS",
+          "source_type": "reference_article",
           "results": [
             {
               "method": "url",
-              "identifier": "https://doi.org/10.1145/acmcs.2025.patterns",
-              "verified": false,
-              "metadata": {},
-              "match": false
+              "identifier": "https://martinfowler.com/bliki/CQRS.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://martinfowler.com/bliki/CQRS.html",
+                "http_method": "HEAD"
+              },
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 3
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\complexity-theory.md",

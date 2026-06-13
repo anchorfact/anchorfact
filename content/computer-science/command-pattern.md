@@ -4,8 +4,8 @@ title: Command Pattern
 schema_type: TechArticle
 category: computer-science
 language: en
-confidence: high
-last_verified: "2026-05-24"
+confidence: medium
+last_verified: "2026-06-13"
 created_date: "2026-05-22"
 generation_method: ai_structured
 ai_models:
@@ -16,85 +16,70 @@ is_live_document: false
 data_period: static
 atomic_facts:
   - id: fact-computer-science-001
-    statement: Encapsulates a request as an object, enabling parameterization, queuing, logging, and undo/redo. Commands are first-class objects with execute() and undo() methods.
-    source_title: ACM Digital Library
-    source_url: https://dl.acm.org/
+    statement: >-
+      The Command pattern turns a request into a standalone object containing the information needed to execute it, which lets callers parameterize, queue, log, or defer requests.
+    source_title: Refactoring.Guru - Command
+    source_url: https://refactoring.guru/design-patterns/command
     confidence: medium
   - id: fact-computer-science-002
-    statement: CQRS (Command Query Responsibility Segregation) extends this to architecture level.
-    source_title: ACM Digital Library
-    source_url: https://dl.acm.org/
+    statement: >-
+      Command implementations commonly expose a shared execution method so an invoker can trigger a command without knowing the receiver's concrete operation.
+    source_title: SourceMaking - Command Design Pattern
+    source_url: https://sourcemaking.com/design_patterns/command
+    confidence: medium
+  - id: fact-computer-science-003
+    statement: >-
+      Command Query Responsibility Segregation separates operations that change state from operations that read state; it is related terminology but not the same as the object-level Command pattern.
+    source_title: Martin Fowler - CQRS
+    source_url: https://martinfowler.com/bliki/CQRS.html
     confidence: medium
 completeness: 0.88
-known_gaps:
-  - Sources reconstructed during quality audit; primary source details were corrupted during batch generation
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
+known_gaps: []
+disputed_statements: []
 primary_sources:
-  - title: ACM Digital Library
-    type: repository
+  - title: Refactoring.Guru - Command
+    type: reference
     year: 2026
-    url: https://dl.acm.org/
-    institution: ACM
-  - title: Head First Design Patterns (2nd Edition Updated 2025)
-    type: book
-    year: 2025
-    authors:
-      - Freeman E.
-      - Robson E.
-    institution: O'Reilly Media
-    url: https://www.oreilly.com/head-first-design-patterns/
-  - title: Behavioral Design Patterns in Cloud-Native Architectures (2025)
-    type: survey_paper
-    year: 2025
-    authors:
-      - multiple
-    institution: ACM Computing Surveys
-    url: https://doi.org/10.1145/acmcs.2025.patterns
+    url: https://refactoring.guru/design-patterns/command
+    institution: Refactoring.Guru
+  - title: SourceMaking - Command Design Pattern
+    type: reference
+    year: 2026
+    url: https://sourcemaking.com/design_patterns/command
+    institution: SourceMaking
+  - title: Martin Fowler - CQRS
+    type: reference_article
+    year: 2011
+    url: https://martinfowler.com/bliki/CQRS.html
+    institution: MartinFowler.com
 secondary_sources:
-  - title: ACM Digital Library
-    type: repository
-    year: 2026
-    url: https://dl.acm.org/
-    institution: ACM
-  - title: The C Programming Language (K&R, 2nd Ed)
-    type: textbook
-    year: 1988
-    url: https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html
-    institution: Prentice Hall
-  - title: Structure and Interpretation of Computer Programs (SICP)
-    type: textbook
-    year: 1996
-    url: https://mitpress.mit.edu/sites/default/files/sicp/
-    institution: MIT Press
-  - title: "Design Patterns in Modern Software Architecture: A 2025 Retrospective"
-    type: survey_paper
-    year: 2025
+  - title: "Design Patterns: Elements of Reusable Object-Oriented Software"
+    type: book
+    year: 1994
     authors:
-      - multiple
-    institution: ACM Computing Surveys
-    url: https://doi.org/10.1145/acmcs.2025.patterns
-  - title: Behavioral Design Patterns in Cloud-Native Microservices (2025)
-    type: article
-    year: 2025
-    authors:
-      - multiple
-    institution: IEEE Software
-    url: https://doi.org/10.1109/ms.2025.patterns
+      - Gamma E.
+      - Helm R.
+      - Johnson R.
+      - Vlissides J.
+    institution: Addison-Wesley
 ---
 ## TL;DR
 
-Encapsulates a request as an object, enabling parameterization, queuing, logging, and undo/redo. Commands are first-class objects with execute() and undo() methods.
+The Command pattern represents an operation as an object. That lets code pass, queue, store, retry, log, or undo work without tightly coupling the invoker to the object that performs the operation.
 
 ## Core Explanation
 
-Example: text editor with undo stack — each edit is a Command object pushed to history. Macro commands compose multiple commands. Used in: job queues, transactional systems, game input handling. CQRS (Command Query Responsibility Segregation) extends this to architecture level.
+A command object usually wraps a receiver and the arguments needed for one operation, then exposes a common execution method. The invoker only needs that common interface, so it can trigger a command without depending on the receiver's concrete API.
+
+This indirection is useful when requests need to be treated as data. Text editors can keep commands in an undo stack, job systems can enqueue commands for later execution, and UI controls can be configured with command objects instead of hard-coded callbacks.
+
+CQRS uses the word "command" at an architectural level: writes are separated from reads. That idea can coexist with Command pattern objects, but CQRS is not simply the same design pattern applied at a larger scale.
 
 ## Further Reading
 
-- [Design Patterns (Gang of Four)](undefined)
+- [Refactoring.Guru - Command](https://refactoring.guru/design-patterns/command)
+- [SourceMaking - Command Design Pattern](https://sourcemaking.com/design_patterns/command)
+- [Martin Fowler - CQRS](https://martinfowler.com/bliki/CQRS.html)
 
 ## Related Articles
 
