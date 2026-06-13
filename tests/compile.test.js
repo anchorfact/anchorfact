@@ -429,6 +429,7 @@ test('openapi.json describes the static AI contract', () => {
   assert(openapi.paths['/search-index.json'], 'OpenAPI should describe search index endpoint');
   assert(openapi.paths['/sources.json'], 'OpenAPI should describe sources endpoint');
   assert(openapi.paths['/{canonical_slug}/index.json'], 'OpenAPI should describe article JSON-LD template');
+  assert(openapi.paths['/{canonical_slug}/index.html'], 'OpenAPI should describe article JSON-LD HTML alias template');
   assert(openapi.components.schemas.AgentProfile.properties.quick_start, 'OpenAPI should describe agent quick-start guidance');
   assert(openapi.components.schemas.RootIndex, 'OpenAPI should define root machine index schema');
   assert(openapi.components.schemas.ApiAccess, 'OpenAPI should define API access schema');
@@ -865,10 +866,17 @@ test('sources.json describes deduplicated public evidence sources', () => {
   assertEq(fixtureSource.articles[0].canonical_slug, 'public-fixture');
 });
 
-test('draft page is generated with noindex and draft status', () => {
-  const draftHtml = readFileSync(join(distDir, 'draft-fixture', 'index.html'), 'utf-8');
+test('article index.html is generated as a machine JSON-LD alias', () => {
+  const publicHtmlAliasText = readFileSync(join(distDir, 'public-fixture', 'index.html'), 'utf-8');
+  const publicJson = JSON.parse(readFileSync(join(distDir, 'public-fixture', 'index.json'), 'utf-8'));
+  const publicHtmlAlias = JSON.parse(publicHtmlAliasText);
+  const draftHtmlAliasText = readFileSync(join(distDir, 'draft-fixture', 'index.html'), 'utf-8');
+  const draftHtmlAlias = JSON.parse(draftHtmlAliasText);
   const draftJson = JSON.parse(readFileSync(join(distDir, 'draft-fixture', 'index.json'), 'utf-8'));
-  assert(draftHtml.includes('noindex'), 'draft html should include noindex');
+  assertEq(publicHtmlAlias, publicJson, 'public index.html should alias index.json JSON-LD');
+  assert(!publicHtmlAliasText.trimStart().startsWith('<'), 'public index.html alias should not emit HTML');
+  assert(!draftHtmlAliasText.trimStart().startsWith('<'), 'draft index.html alias should not emit HTML');
+  assertEq(draftHtmlAlias, draftJson, 'draft index.html should alias draft index.json JSON-LD');
   assertEq(draftJson['anchorfact:status'], 'draft');
 });
 
@@ -1027,6 +1035,8 @@ test('_headers is generated for Cloudflare Pages static output', () => {
     assert(headers.includes(`${path}\n  Access-Control-Allow-Origin: *\n  Content-Type: ${path.endsWith('.txt') ? 'text/plain' : 'application/json'}; charset=utf-8\n  Cache-Control: public, max-age=0, must-revalidate`), `_headers should keep ${path} revalidated`);
   }
   assert(headers.includes('/*/index.json\n  Access-Control-Allow-Origin: *'), '_headers should expose article JSON-LD CORS');
+  assert(headers.includes('/*/index.html\n  Access-Control-Allow-Origin: *\n  Content-Type: application/ld+json; charset=utf-8\n  Cache-Control: public, max-age=86400'), '_headers should expose article index.html aliases as JSON-LD');
+  assert(headers.includes('/*/index.html\n  Access-Control-Allow-Origin: *\n  Content-Type: application/ld+json; charset=utf-8\n  Cache-Control: public, max-age=86400\n  X-Robots-Tag: noindex, nofollow'), '_headers should noindex article index.html aliases');
   for (const path of ['/drafts', '/drafts.html', '/dashboard.html']) {
     assert(headers.includes(`${path}\n  Access-Control-Allow-Origin: *\n  Content-Type: application/json; charset=utf-8\n  Cache-Control: public, max-age=0, must-revalidate\n  X-Robots-Tag: noindex, nofollow`), `_headers should expose ${path} as noindex JSON`);
   }

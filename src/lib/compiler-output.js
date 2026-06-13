@@ -325,6 +325,12 @@ function writeHeaders(distDir) {
   Content-Type: application/ld+json; charset=utf-8
   Cache-Control: public, max-age=86400
 
+/*/index.html
+  Access-Control-Allow-Origin: *
+  Content-Type: application/ld+json; charset=utf-8
+  Cache-Control: public, max-age=86400
+  X-Robots-Tag: noindex, nofollow
+
 /*/index.ttl
   Access-Control-Allow-Origin: *
   Content-Type: text/turtle; charset=utf-8

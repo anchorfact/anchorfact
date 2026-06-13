@@ -2,7 +2,7 @@
 
 > Machine-readable verified claims for LLM citations.
 
-AnchorFact is an open source knowledge registry for AI systems. Its core unit is not a long article, but a verifiable factual claim connected to traceable sources. Articles are still generated as Markdown, JSON-LD, Turtle, plain text, and HTML, but only entries with real source verification data are promoted into public AI entrypoints.
+AnchorFact is an open source knowledge registry for AI systems. Its core unit is not a long article, but a verifiable factual claim connected to traceable sources. Articles are generated as Markdown, JSON-LD, Turtle, and plain text; legacy `index.html` paths are JSON-LD aliases, not human pages. Only entries with real source verification data are promoted into public AI entrypoints.
 
 ## Current Direction
 
@@ -11,7 +11,7 @@ AnchorFact is moving from a scale-first knowledge base to a trust-first verified
 | Area | Policy |
 | --- | --- |
 | Public AI entrypoints | Only verified, non-placeholder articles appear in `llms.txt`, `sitemap.xml`, and machine discovery artifacts. |
-| Draft content | Drafts are retained and compiled, but excluded from AI entrypoints and marked `noindex`. |
+| Draft content | Drafts are retained and compiled, but excluded from public AI entrypoints; noindex status is published through machine headers and status artifacts. |
 | Confidence | Estimated confidence can never be `high`; public entries must be based on `verified_sources`. |
 | Claims | Public atomic facts with evidence are exported to `/claims.json`. |
 | AI routing | `/capabilities.json` maps common AI tasks to the smallest trustworthy endpoint, output format, and fallback artifacts. `/coverage.json` tells agents where AnchorFact coverage is strong, partial, or absent. |

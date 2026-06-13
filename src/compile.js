@@ -28,7 +28,7 @@ import {
   compilePlainText,
   compileTurtle
 } from './lib/compiler-records.js';
-import { compileHtml } from './lib/html.js';
+import { compileJsonLdAlias } from './lib/html.js';
 import { writeStaticOutputs } from './lib/compiler-output.js';
 
 let verificationMap = null;
@@ -90,7 +90,7 @@ function compileFile(mdPath, contentDir, distDir) {
   writeFileSync(join(outDir, 'index.txt'), compilePlainText(frontmatter, body, quality, confidence));
   writeFileSync(join(outDir, 'index.ttl'), compileTurtle(frontmatter, quality, confidence));
   writeFileSync(join(outDir, 'index.md'), mdContent);
-  writeFileSync(join(outDir, 'index.html'), compileHtml(frontmatter, body, quality, confidence, jsonLd));
+  writeFileSync(join(outDir, 'index.html'), compileJsonLdAlias(jsonLd));
   if (atomicFacts.length > 0) {
     writeFileSync(join(outDir, 'facts.json'), JSON.stringify(atomicFacts, null, 2));
   }

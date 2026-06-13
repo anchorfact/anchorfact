@@ -443,6 +443,21 @@ export function buildOpenApiContract({
           responses: { 200: jsonResponse('ArticleJsonLd') }
         }
       },
+      '/{canonical_slug}/index.html': {
+        get: {
+          summary: 'Legacy per-article path that aliases the JSON-LD record',
+          parameters: [
+            {
+              name: 'canonical_slug',
+              in: 'path',
+              required: true,
+              schema: { type: 'string' },
+              description: 'Canonical public article slug, such as ai/transformer.'
+            }
+          ],
+          responses: { 200: jsonResponse('ArticleJsonLd') }
+        }
+      },
       '/{canonical_slug}/index.md': {
         get: {
           summary: 'Per-article Markdown',

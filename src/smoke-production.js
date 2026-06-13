@@ -749,6 +749,15 @@ export async function main() {
     assertOk(results[articleRoute].status === 200, `${articleRoute} returned ${results[articleRoute].status}`, failures);
     headerIncludes(results[articleRoute], 'Access-Control-Allow-Origin', '*', failures);
     headerIncludes(results[articleRoute], 'Content-Type', 'application/ld+json', failures);
+    const articleHtmlAliasRoute = `/${firstPublicArticle.canonical_slug}/index.html`;
+    results[articleHtmlAliasRoute] = await fetchRoute(baseUrl, articleHtmlAliasRoute);
+    const articleJson = await readJsonRoute(baseUrl, articleRoute, results);
+    const articleHtmlAlias = await readJsonRoute(baseUrl, articleHtmlAliasRoute, results);
+    assertOk(results[articleHtmlAliasRoute].status === 200, `${articleHtmlAliasRoute} returned ${results[articleHtmlAliasRoute].status}`, failures);
+    assertOk(articleHtmlAlias['@id'] === articleJson['@id'], `${articleHtmlAliasRoute} should alias article JSON-LD`, failures);
+    headerIncludes(results[articleHtmlAliasRoute], 'Access-Control-Allow-Origin', '*', failures);
+    headerIncludes(results[articleHtmlAliasRoute], 'Content-Type', 'application/ld+json', failures);
+    headerIncludes(results[articleHtmlAliasRoute], 'X-Robots-Tag', 'noindex', failures);
   }
 
   assertExpected(manifest.public_article_count, expectedPublic, 'public_article_count', failures);
