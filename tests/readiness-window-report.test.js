@@ -154,6 +154,48 @@ test('main loads current dist readiness artifacts by default when present', () =
   }
 });
 
+test('main loads default readiness history directory when present', () => {
+  const root = mkdtempSync(join(tmpdir(), 'anchorfact-readiness-'));
+  const originalCwd = process.cwd();
+  const originalWrite = process.stdout.write;
+
+  mkdirSync(join(root, 'reports', 'readiness-history'), { recursive: true });
+  mkdirSync(join(root, 'dist'), { recursive: true });
+  writeFileSync(join(root, 'reports', 'readiness-history', '2026-06-12.json'), JSON.stringify(snapshot(12)));
+  writeFileSync(join(root, 'dist', 'api-readiness.json'), JSON.stringify({
+    generated: '2026-06-13T00:00:00.000Z',
+    production_health: { status: 'not_provided' },
+    api_scorecard: { pass_ratio: 1, failures: [] },
+    adoption_signal: { status: 'not_provided' }
+  }));
+  writeFileSync(join(root, 'dist', 'content-health.json'), JSON.stringify({
+    generated: '2026-06-13T00:00:00.000Z',
+    project_readiness: {
+      next_focus: 'maintain_and_measure_ai_usage',
+      signals: { public_audit_actionable_count: 0 }
+    }
+  }));
+
+  try {
+    process.chdir(root);
+    process.stdout.write = (chunk, encoding, callback) => {
+      if (typeof encoding === 'function') encoding();
+      if (typeof callback === 'function') callback();
+      return true;
+    };
+    const report = main([]);
+
+    assertEq(report.snapshot_count, 2);
+    assertEq(report.current_snapshot.date, '2026-06-13');
+    assertEq(report.gates.public_audit_14_day.observed_days, 2);
+    assert(report.snapshots.some(item => item.source.endsWith('reports/readiness-history/2026-06-12.json')), 'missing history snapshot source');
+  } finally {
+    process.stdout.write = originalWrite;
+    process.chdir(originalCwd);
+    rmSync(root, { recursive: true, force: true });
+  }
+});
+
 test('buildReadinessWindowReport blocks content expansion when audit or API signals fail', () => {
   const snapshots = Array.from({ length: 14 }, (_, index) => snapshot(index + 1));
   snapshots[13] = snapshot(14, {

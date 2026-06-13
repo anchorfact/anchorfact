@@ -55,6 +55,11 @@ function defaultCurrentInputPaths(root = process.cwd()) {
   };
 }
 
+function defaultHistoryDir(root = process.cwd()) {
+  const historyDir = resolve(root, 'reports/readiness-history');
+  return existsSync(historyDir) ? historyDir : null;
+}
+
 function currentAdoptionRatio(adoption = {}) {
   return optionalFiniteNumber(
     adoption.identified_ai_primary_to_discovery_current_ratio
@@ -342,6 +347,7 @@ function usage() {
 
 Builds a report-only readiness window summary from daily readiness snapshots.
 If no current snapshot or report paths are provided, dist/api-readiness.json and dist/content-health.json are used when present.
+If no history directory is provided, reports/readiness-history is used when present.
 `;
 }
 
@@ -352,7 +358,8 @@ export function main(argv = process.argv.slice(2)) {
     return null;
   }
 
-  const snapshots = options.historyDir ? loadReadinessSnapshotsFromDir(resolve(options.historyDir)) : [];
+  const activeHistoryDir = options.historyDir ? resolve(options.historyDir) : defaultHistoryDir();
+  const snapshots = activeHistoryDir ? loadReadinessSnapshotsFromDir(activeHistoryDir) : [];
   let current = null;
   if (options.snapshotJson) current = normalizeReadinessSnapshot(readJson(options.snapshotJson, 'readiness snapshot'));
   else if (options.apiReadinessJson || options.contentHealthJson) {
@@ -376,7 +383,7 @@ export function main(argv = process.argv.slice(2)) {
     snapshots.push(current);
     if (options.saveCurrent) {
       const savePath = options.saveCurrentPath
-        || join(options.historyDir || 'reports/readiness-history', `${current.date}.json`);
+        || join(activeHistoryDir || 'reports/readiness-history', `${current.date}.json`);
       writeText(savePath, `${JSON.stringify(current, null, 2)}\n`);
     }
   }
