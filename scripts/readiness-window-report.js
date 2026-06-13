@@ -266,6 +266,10 @@ function manualDesignPartnerGate(current) {
   };
 }
 
+function gatesMet(gates) {
+  return Object.values(gates).every(gate => gate.status === 'met');
+}
+
 export function buildReadinessWindowReport({
   snapshots = [],
   generatedAt = new Date().toISOString(),
@@ -301,6 +305,8 @@ export function buildReadinessWindowReport({
   const manualGates = {
     design_partners: manualDesignPartnerGate(current)
   };
+  const automatedGatesMet = gatesMet(gates);
+  const manualGatesMet = gatesMet(manualGates);
 
   return {
     schema_version: READINESS_WINDOW_SCHEMA_VERSION,
@@ -316,7 +322,9 @@ export function buildReadinessWindowReport({
     current_snapshot: current,
     gates,
     manual_gates: manualGates,
-    automated_gates_met: Object.values(gates).every(gate => gate.status === 'met'),
+    automated_gates_met: automatedGatesMet,
+    manual_gates_met: manualGatesMet,
+    paid_beta_ready: automatedGatesMet && manualGatesMet,
     content_change_policy: contentChangePolicy(current, apiTargetRatio),
     snapshots: normalized
   };
@@ -344,6 +352,9 @@ export function renderReadinessWindowMarkdown(report) {
   lines.push(`Generated: ${report.generated}`);
   lines.push(`Snapshots: ${report.snapshot_count}`);
   lines.push(`Current date: ${report.current_snapshot.date}`);
+  lines.push(`Automated gates met: ${report.automated_gates_met}`);
+  lines.push(`Manual gates met: ${report.manual_gates_met}`);
+  lines.push(`Paid beta ready: ${report.paid_beta_ready}`);
   lines.push('');
   lines.push('## Readiness Gates');
   lines.push('');
