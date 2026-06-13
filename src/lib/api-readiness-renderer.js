@@ -1,5 +1,12 @@
 export { API_READINESS_SCHEMA_VERSION } from './build-metadata.js';
 
+function gateCurrentText(gate) {
+  const parts = [];
+  if (gate.current_ratio !== undefined && gate.current_ratio !== null) parts.push(`current=${gate.current_ratio}`);
+  if (gate.current_actionable_count !== undefined && gate.current_actionable_count !== null) parts.push(`current_actionable=${gate.current_actionable_count}`);
+  return parts.length ? `; ${parts.join('; ')}` : '';
+}
+
 export function renderApiReadinessMarkdown(report) {
   const lines = [];
   lines.push(`# AnchorFact API Readiness Report`);
@@ -24,7 +31,7 @@ export function renderApiReadinessMarkdown(report) {
   lines.push(`## Readiness Gates`);
   lines.push('');
   for (const gate of report.readiness_gates) {
-    const current = gate.current_ratio === undefined ? '' : `; current=${gate.current_ratio}`;
+    const current = gateCurrentText(gate);
     lines.push(`- ${gate.id}: ${gate.status} (${gate.target}${current})`);
   }
   lines.push('');

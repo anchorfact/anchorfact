@@ -25,6 +25,19 @@ function ratio(part, total, digits = 4) {
   return Number((Number(part || 0) / Number(total || 0)).toFixed(digits));
 }
 
+function optionalFiniteNumber(value) {
+  const number = Number(value);
+  return Number.isFinite(number) ? number : null;
+}
+
+function currentPublicAuditActionableCount(artifacts) {
+  const contentHealth = artifacts?.contentHealthPayload || {};
+  return optionalFiniteNumber(
+    contentHealth.public_audit?.actionable_count
+      ?? contentHealth.project_readiness?.signals?.public_audit_actionable_count
+  );
+}
+
 function articleBySlug(manifest, slug) {
   return (manifest?.articles || []).find(article => article?.canonical_slug === slug) || null;
 }
@@ -324,6 +337,7 @@ export function buildApiReadinessReport({
   const artifactBudgetOk = apiPerformanceReport?.artifact_size_budget
     ? apiPerformanceReport.artifact_size_budget.ok === true
     : null;
+  const publicAuditActionableCount = currentPublicAuditActionableCount(artifacts);
 
   return {
     schema_version: API_READINESS_SCHEMA_VERSION,
@@ -345,7 +359,8 @@ export function buildApiReadinessReport({
       {
         id: 'public_audit_14_day',
         target: '14 consecutive days with 0 move_to_draft / repair_sources public audit findings',
-        status: 'not_measured_in_this_report'
+        status: 'not_measured_in_this_report',
+        ...(publicAuditActionableCount === null ? {} : { current_actionable_count: publicAuditActionableCount })
       },
       {
         id: 'core_query_context_ratio',

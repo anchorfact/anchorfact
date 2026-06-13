@@ -143,6 +143,10 @@ function fakeArtifacts() {
       schema_version: 'anchorfact.content-health.v1',
       generated: '2026-06-01T00:00:00.000Z',
       provenance_url: 'https://anchorfact.org/provenance.json',
+      public_audit: { actionable_count: 0 },
+      project_readiness: {
+        signals: { public_audit_actionable_count: 0 }
+      },
       snapshot: {
         public_articles: 1,
         draft_articles: 0,
@@ -810,6 +814,8 @@ test('readiness next actions follow current gaps instead of defaulting to corpus
   assertEq(report.status, 'foundation_ready_pending_14_day_and_partner_signals');
   assertEq(report.core_corpus.failures.length, 0);
   assertEq(report.api_scorecard.failures.length, 0);
+  const publicAuditGate = report.readiness_gates.find(gate => gate.id === 'public_audit_14_day');
+  assertEq(publicAuditGate.current_actionable_count, 0);
   assert(!report.next_actions.some(action => action.includes('Repair core corpus')), 'should not recommend corpus repair without corpus failures');
   assert(!report.next_actions.some(action => action.includes('tune article titles')), 'should not recommend API tuning without API failures');
   assert(report.next_actions.some(action => action.includes('production:integrity')), 'should recommend production integrity measurement');
@@ -829,6 +835,8 @@ test('renderApiReadinessMarkdown exposes target, gap context, and report-only st
   assert(markdown.includes('Report-only: true'), 'should render report-only status');
   assert(markdown.includes('Build should fail: false'), 'should state low readiness is not a build blocker');
   assert(markdown.includes('not_provided'), 'should show unprovided production/adoption inputs');
+  assert(markdown.includes('current_actionable=0'), 'should render current public audit actionable count');
+  assert(!markdown.includes('current=null'), 'should omit null current gate values');
 });
 
 test('runtime scorecard inputs normalize Cloudflare adoption and production integrity reports', () => {
