@@ -692,6 +692,8 @@ test('production smoke reports HTML fallback details for JSON routes', async () 
     assert(message.includes('content-type=text/html; charset=utf-8'), 'error should include content type');
     assert(message.includes('url=https://anchorfact.org/index.json'), 'error should include final URL');
     assert(message.includes('<!DOCTYPE html>'), 'error should include sanitized body prefix');
+    assert(message.includes('received an HTML fallback'), 'error should explain the HTML fallback mode');
+    assert(message.includes('root index artifact'), 'error should name the missing root index artifact');
   } finally {
     globalThis.fetch = originalFetch;
   }

@@ -125,6 +125,22 @@ function jsonRouteDiagnostic(result) {
   ].join(' ');
 }
 
+function htmlFallbackDiagnostic(route, result) {
+  const contentType = String(result?.contentType || result?.headers?.['content-type'] || '').toLowerCase();
+  const bodyPrefix = String(result?.body || '').trim().slice(0, 32).toLowerCase();
+  const looksLikeHtml = contentType.includes('text/html') || bodyPrefix.startsWith('<!doctype html') || bodyPrefix.startsWith('<html');
+  if (!looksLikeHtml) {
+    return '';
+  }
+
+  const artifact = {
+    '/': 'root machine JSON alias',
+    '/index.json': 'root index artifact',
+    '/404.html': 'machine-readable JSON 404 artifact'
+  }[route] || 'machine JSON artifact';
+  return `; received an HTML fallback where ${artifact} was expected. Check that the latest Cloudflare Pages deployment includes ${route}.`;
+}
+
 export async function fetchRoute(baseUrl, route, options = {}) {
   const url = new URL(route, baseUrl);
   const routeRetries = Number.isFinite(options.routeRetries) ? options.routeRetries : DEFAULT_ROUTE_RETRIES;
@@ -194,7 +210,8 @@ export async function readJsonRoute(baseUrl, route, results, options = {}) {
     }
   }
 
-  throw new Error(`${route} returned invalid JSON after ${maxAttempts} attempts: ${lastError?.message || String(lastError)} (${jsonRouteDiagnostic(results[route])})`);
+  const result = results[route];
+  throw new Error(`${route} returned invalid JSON after ${maxAttempts} attempts: ${lastError?.message || String(lastError)} (${jsonRouteDiagnostic(result)})${htmlFallbackDiagnostic(route, result)}`);
 }
 
 function assertOk(condition, message, failures) {
