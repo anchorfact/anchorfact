@@ -196,6 +196,19 @@ function evaluateJsonExpected(payload, expected, failures) {
       check(sourceReadyNextBatch.length === sourceReadyNextBatchSize, failures, `draft repair queue source-ready next batch length expected ${sourceReadyNextBatchSize}, got ${sourceReadyNextBatch.length}`);
     }
   }
+  if (expected.repair_queue_source_acquisition_fields === true) {
+    const queue = payload?.draft?.repair_queue || {};
+    const sourceAcquisitionCandidateCount = queue.source_acquisition_candidate_count;
+    const sourceAcquisitionNextBatchSize = queue.source_acquisition_next_batch_size;
+    const sourceAcquisitionNextBatch = queue.source_acquisition_next_batch;
+    check(Number.isInteger(sourceAcquisitionCandidateCount) && sourceAcquisitionCandidateCount >= 0, failures, `draft repair queue source acquisition candidate count expected a non-negative integer, got ${sourceAcquisitionCandidateCount ?? '(missing)'}`);
+    check(Array.isArray(sourceAcquisitionNextBatch), failures, 'draft repair queue source acquisition next batch should be an array');
+    const expectedBatchSize = Math.min(2, Math.max(0, Number.isInteger(sourceAcquisitionCandidateCount) ? sourceAcquisitionCandidateCount : 0));
+    check(sourceAcquisitionNextBatchSize === expectedBatchSize, failures, `draft repair queue source acquisition next batch size expected ${expectedBatchSize}, got ${sourceAcquisitionNextBatchSize ?? '(missing)'}`);
+    if (Array.isArray(sourceAcquisitionNextBatch) && Number.isInteger(sourceAcquisitionNextBatchSize)) {
+      check(sourceAcquisitionNextBatch.length === sourceAcquisitionNextBatchSize, failures, `draft repair queue source acquisition next batch length expected ${sourceAcquisitionNextBatchSize}, got ${sourceAcquisitionNextBatch.length}`);
+    }
+  }
   const repairQueuePolicyRequirements = Array.isArray(expected.repair_queue_policy_contains)
     ? expected.repair_queue_policy_contains
     : [expected.repair_queue_policy_contains].filter(Boolean);

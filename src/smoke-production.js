@@ -190,6 +190,9 @@ export function repairQueueBatchFailures(repairQueue = {}) {
   const sourceReadyCandidateCount = repairQueue.source_ready_candidate_count;
   const sourceReadyNextBatchSize = repairQueue.source_ready_next_batch_size;
   const sourceReadyNextBatch = repairQueue.source_ready_next_batch;
+  const sourceAcquisitionCandidateCount = repairQueue.source_acquisition_candidate_count;
+  const sourceAcquisitionNextBatchSize = repairQueue.source_acquisition_next_batch_size;
+  const sourceAcquisitionNextBatch = repairQueue.source_acquisition_next_batch;
 
   if (!Number.isInteger(candidateCount) || candidateCount < 0) {
     failures.push('content-health repair queue candidate count is missing');
@@ -219,6 +222,21 @@ export function repairQueueBatchFailures(repairQueue = {}) {
   }
   if (Array.isArray(sourceReadyNextBatch) && Number.isInteger(sourceReadyNextBatchSize) && sourceReadyNextBatch.length !== sourceReadyNextBatchSize) {
     failures.push(`content-health source-ready repair queue next batch length expected ${sourceReadyNextBatchSize}, got ${sourceReadyNextBatch.length}`);
+  }
+
+  if (!Number.isInteger(sourceAcquisitionCandidateCount) || sourceAcquisitionCandidateCount < 0) {
+    failures.push('content-health source acquisition repair queue candidate count is missing');
+  }
+  if (!Array.isArray(sourceAcquisitionNextBatch)) {
+    failures.push('content-health source acquisition repair queue next batch is missing');
+  }
+
+  const expectedSourceAcquisitionBatchSize = Math.min(2, Math.max(0, Number.isInteger(sourceAcquisitionCandidateCount) ? sourceAcquisitionCandidateCount : 0));
+  if (!Number.isInteger(sourceAcquisitionNextBatchSize) || sourceAcquisitionNextBatchSize !== expectedSourceAcquisitionBatchSize) {
+    failures.push(`content-health source acquisition repair queue next batch size expected ${expectedSourceAcquisitionBatchSize}, got ${sourceAcquisitionNextBatchSize ?? '(missing)'}`);
+  }
+  if (Array.isArray(sourceAcquisitionNextBatch) && Number.isInteger(sourceAcquisitionNextBatchSize) && sourceAcquisitionNextBatch.length !== sourceAcquisitionNextBatchSize) {
+    failures.push(`content-health source acquisition repair queue next batch length expected ${sourceAcquisitionNextBatchSize}, got ${sourceAcquisitionNextBatch.length}`);
   }
 
   return failures;

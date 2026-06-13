@@ -526,7 +526,8 @@ export function buildEvalsIndex({
         min_repair_queue_candidates: 1,
         min_repair_queue_next_batch: 1,
         repair_queue_source_ready_fields: true,
-        repair_queue_policy_contains: ['AI-agent utility', 'repair_complexity', 'source-ready'],
+        repair_queue_source_acquisition_fields: true,
+        repair_queue_policy_contains: ['AI-agent utility', 'repair_complexity', 'source-ready', 'source acquisition'],
         max_public_source_tier_c: sourceTierCount(sourcesPayload, 'C')
       }
     },

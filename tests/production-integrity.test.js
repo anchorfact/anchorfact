@@ -861,7 +861,10 @@ test('production smoke validates conservative content-health repair batches', ()
     next_batch: [{ canonical_slug: 'ai/a' }, { canonical_slug: 'ai/b' }],
     source_ready_candidate_count: 1,
     source_ready_next_batch_size: 1,
-    source_ready_next_batch: [{ canonical_slug: 'business/source-ready' }]
+    source_ready_next_batch: [{ canonical_slug: 'business/source-ready' }],
+    source_acquisition_candidate_count: 2,
+    source_acquisition_next_batch_size: 2,
+    source_acquisition_next_batch: [{ canonical_slug: 'ai/a' }, { canonical_slug: 'ai/b' }]
   }), []);
 
   const failures = repairQueueBatchFailures({
@@ -870,7 +873,10 @@ test('production smoke validates conservative content-health repair batches', ()
     next_batch: [{ canonical_slug: 'ai/a' }, { canonical_slug: 'ai/b' }, { canonical_slug: 'ai/c' }],
     source_ready_candidate_count: 1,
     source_ready_next_batch_size: 1,
-    source_ready_next_batch: [{ canonical_slug: 'business/source-ready' }]
+    source_ready_next_batch: [{ canonical_slug: 'business/source-ready' }],
+    source_acquisition_candidate_count: 2,
+    source_acquisition_next_batch_size: 2,
+    source_acquisition_next_batch: [{ canonical_slug: 'ai/a' }, { canonical_slug: 'ai/b' }]
   });
   assert(failures.some(failure => failure.includes('expected 2')), 'legacy 3+ repair batches should fail smoke');
 
@@ -884,16 +890,49 @@ test('production smoke validates conservative content-health repair batches', ()
       { canonical_slug: 'business/a' },
       { canonical_slug: 'business/b' },
       { canonical_slug: 'business/c' }
-    ]
+    ],
+    source_acquisition_candidate_count: 0,
+    source_acquisition_next_batch_size: 0,
+    source_acquisition_next_batch: []
   });
   assert(sourceReadyFailures.some(failure => failure.includes('source-ready repair queue next batch size expected 2')), 'source-ready repair batches should stay conservative');
+
+  const sourceAcquisitionFailures = repairQueueBatchFailures({
+    candidate_count: 0,
+    next_batch_size: 0,
+    next_batch: [],
+    source_ready_candidate_count: 0,
+    source_ready_next_batch_size: 0,
+    source_ready_next_batch: [],
+    source_acquisition_candidate_count: 3,
+    source_acquisition_next_batch_size: 3,
+    source_acquisition_next_batch: [
+      { canonical_slug: 'ai/a' },
+      { canonical_slug: 'ai/b' },
+      { canonical_slug: 'ai/c' }
+    ]
+  });
+  assert(sourceAcquisitionFailures.some(failure => failure.includes('source acquisition repair queue next batch size expected 2')), 'source acquisition repair batches should stay conservative');
 
   const missingSourceReadyFailures = repairQueueBatchFailures({
     candidate_count: 0,
     next_batch_size: 0,
-    next_batch: []
+    next_batch: [],
+    source_acquisition_candidate_count: 0,
+    source_acquisition_next_batch_size: 0,
+    source_acquisition_next_batch: []
   });
   assert(missingSourceReadyFailures.some(failure => failure.includes('source-ready repair queue candidate count is missing')), 'missing source-ready repair fields should fail smoke');
+
+  const missingSourceAcquisitionFailures = repairQueueBatchFailures({
+    candidate_count: 0,
+    next_batch_size: 0,
+    next_batch: [],
+    source_ready_candidate_count: 0,
+    source_ready_next_batch_size: 0,
+    source_ready_next_batch: []
+  });
+  assert(missingSourceAcquisitionFailures.some(failure => failure.includes('source acquisition repair queue candidate count is missing')), 'missing source acquisition repair fields should fail smoke');
 });
 
 for (const { name, fn } of tests) {
