@@ -18,6 +18,7 @@ const MACHINE_ARTIFACT_PATHS = new Set([
   '/openapi.json',
   '/artifact-summary.json',
   '/artifact-shards.json',
+  '/api-readiness.json',
   '/manifest.json',
   '/llms.txt',
   '/claims.json',
@@ -44,6 +45,7 @@ const DISCOVERY_ENTRYPOINT_PATHS = new Set([
   '/openapi.json',
   '/artifact-summary.json',
   '/artifact-shards.json',
+  '/api-readiness.json',
   '/mcp.json'
 ]);
 
@@ -64,6 +66,7 @@ const DEVELOPER_DOC_PATHS = new Set([
   '/llms.txt',
   '/artifact-summary.json',
   '/artifact-shards.json',
+  '/api-readiness.json',
   '/content-health.json',
   '/provenance.json'
 ]);
@@ -231,8 +234,8 @@ export function classifyPath(path = '') {
   if (/\/(?:wp-admin|wp-login|xmlrpc\.php)(?:\/|$)/i.test(normalized)) return 'security_probe';
   if (/\/(?:\.env|\.git|admin|phpmyadmin|config)(?:\/|$|[.?])/i.test(normalized)) return 'security_probe';
   if (API_ACCESS_PATHS.has(normalized)) return 'developer_docs';
-  if (normalized.startsWith('/api')) return 'api';
   if (MACHINE_ARTIFACT_PATHS.has(normalized)) return 'machine_artifact';
+  if (normalized.startsWith('/api')) return 'api';
   if (/\/index\.(?:json|txt|ttl)$/i.test(normalized)) return 'article_artifact';
   if (normalized === '/robots.txt' || normalized === '/sitemap.xml') return 'crawler_control';
   if (normalized === '/' || normalized.endsWith('/') || normalized.endsWith('.html')) return 'human_page';
