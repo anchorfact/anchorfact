@@ -55,6 +55,24 @@ function sleep(ms) {
   return ms > 0 ? new Promise(resolve => setTimeout(resolve, ms)) : Promise.resolve();
 }
 
+function jsonRouteDiagnostic(result) {
+  if (!result) {
+    return 'no response captured';
+  }
+
+  const bodyPrefix = String(result.body || '')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .slice(0, 160);
+
+  return [
+    `status=${result.status ?? 'unknown'}`,
+    `content-type=${result.contentType || result.headers?.['content-type'] || 'unknown'}`,
+    `url=${result.finalUrl || result.url || 'unknown'}`,
+    bodyPrefix ? `body_prefix=${JSON.stringify(bodyPrefix)}` : 'body_prefix=(empty)'
+  ].join(' ');
+}
+
 export async function fetchRoute(baseUrl, route, options = {}) {
   const url = new URL(route, baseUrl);
   const routeRetries = Number.isFinite(options.routeRetries) ? options.routeRetries : DEFAULT_ROUTE_RETRIES;
@@ -107,7 +125,7 @@ export async function readJsonRoute(baseUrl, route, results, options = {}) {
 
   for (let attempt = 1; attempt <= maxAttempts; attempt++) {
     if (attempt > 1 || !results[route]) {
-      results[route] = await fetchRoute(baseUrl, route);
+      results[route] = await fetchRoute(baseUrl, route, options);
     }
 
     try {
@@ -124,7 +142,7 @@ export async function readJsonRoute(baseUrl, route, results, options = {}) {
     }
   }
 
-  throw new Error(`${route} returned invalid JSON after ${maxAttempts} attempts: ${lastError?.message || String(lastError)}`);
+  throw new Error(`${route} returned invalid JSON after ${maxAttempts} attempts: ${lastError?.message || String(lastError)} (${jsonRouteDiagnostic(results[route])})`);
 }
 
 function assertOk(condition, message, failures) {

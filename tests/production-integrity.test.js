@@ -667,6 +667,36 @@ test('production smoke retries transient empty JSON route bodies', async () => {
   }
 });
 
+test('production smoke reports HTML fallback details for JSON routes', async () => {
+  const originalFetch = globalThis.fetch;
+  globalThis.fetch = async () => ({
+    status: 200,
+    ok: true,
+    url: 'https://anchorfact.org/index.json',
+    headers: new Map([['content-type', 'text/html; charset=utf-8']]),
+    async text() {
+      return '<!DOCTYPE html><title>AnchorFact</title>';
+    }
+  });
+
+  try {
+    const results = {};
+    let message = '';
+    try {
+      await readJsonRoute('https://anchorfact.org', '/index.json', results, { retries: 0 });
+    } catch (error) {
+      message = error.message;
+    }
+    assert(message.includes('/index.json returned invalid JSON'), 'error should name the failed JSON route');
+    assert(message.includes('status=200'), 'error should include HTTP status');
+    assert(message.includes('content-type=text/html; charset=utf-8'), 'error should include content type');
+    assert(message.includes('url=https://anchorfact.org/index.json'), 'error should include final URL');
+    assert(message.includes('<!DOCTYPE html>'), 'error should include sanitized body prefix');
+  } finally {
+    globalThis.fetch = originalFetch;
+  }
+});
+
 test('production smoke retries transient 5xx route responses', async () => {
   const originalFetch = globalThis.fetch;
   let calls = 0;
