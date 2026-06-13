@@ -627,6 +627,7 @@ export function buildEvalsIndex({
           'artifact_summary_json',
           'artifact_shards_json',
           'api_readiness_json',
+          'not_found_html',
           'search_index_json',
           'sources_json',
           'llms_txt'

@@ -869,6 +869,7 @@ test('evals.json describes executable AI integration checks', () => {
   assert(provenanceEval.expected.required_artifacts.includes('artifact_summary_json'), 'evals should require artifact summary hash in provenance');
   assert(provenanceEval.expected.required_artifacts.includes('artifact_shards_json'), 'evals should require artifact shards hash in provenance');
   assert(provenanceEval.expected.required_artifacts.includes('api_readiness_json'), 'evals should require API readiness hash in provenance');
+  assert(provenanceEval.expected.required_artifacts.includes('not_found_html'), 'evals should require machine 404 hash in provenance');
   assert(provenanceEval.expected.required_artifacts.includes('capabilities_json'), 'evals should require capabilities hash in provenance');
   assert(provenanceEval.expected.required_artifacts.includes('content_health_json'), 'evals should require content health hash in provenance');
   assert(provenanceEval.expected.required_artifacts.includes('coverage_json'), 'evals should require coverage hash in provenance');
@@ -983,6 +984,7 @@ test('provenance.json describes compiled artifacts', () => {
   assert(/^[a-f0-9]{64}$/.test(provenance.artifacts.artifact_summary_json.sha256), 'artifact summary checksum should be sha256 hex');
   assert(/^[a-f0-9]{64}$/.test(provenance.artifacts.artifact_shards_json.sha256), 'artifact shards checksum should be sha256 hex');
   assert(/^[a-f0-9]{64}$/.test(provenance.artifacts.api_readiness_json.sha256), 'API readiness checksum should be sha256 hex');
+  assert(/^[a-f0-9]{64}$/.test(provenance.artifacts.not_found_html.sha256), 'machine 404 checksum should be sha256 hex');
   assert(/^[a-f0-9]{64}$/.test(provenance.artifacts.search_index_json.sha256), 'search index checksum should be sha256 hex');
   assert(/^[a-f0-9]{64}$/.test(provenance.artifacts.sources_json.sha256), 'sources checksum should be sha256 hex');
   assert(/^[a-f0-9]{64}$/.test(provenance.artifacts.llms_txt.sha256), 'llms checksum should be sha256 hex');
@@ -1002,6 +1004,8 @@ test('provenance.json describes compiled artifacts', () => {
   assert(provenance.artifacts.artifact_summary_json.bytes > 0, 'artifact summary artifact should include byte size');
   assert(provenance.artifacts.artifact_shards_json.bytes > 0, 'artifact shards artifact should include byte size');
   assert(provenance.artifacts.api_readiness_json.bytes > 0, 'API readiness artifact should include byte size');
+  assertEq(provenance.artifacts.not_found_html.path, '/404.html');
+  assert(provenance.artifacts.not_found_html.bytes > 0, 'machine 404 artifact should include byte size');
   assert(provenance.artifacts.search_index_json.bytes > 0, 'search index artifact should include byte size');
   assert(provenance.artifacts.sources_json.bytes > 0, 'sources artifact should include byte size');
   assert(provenance.artifacts.llms_txt.bytes > 0, 'llms artifact should include byte size');

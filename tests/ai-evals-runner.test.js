@@ -229,7 +229,7 @@ test('runAiEvals executes JSON, Markdown, MCP, and provenance eval expectations'
               status: 200,
               content_type: 'application/json',
               schema_version: 'anchorfact.provenance.v1',
-              required_artifacts: ['evals_json', 'mcp_json']
+              required_artifacts: ['evals_json', 'mcp_json', 'not_found_html']
             }
           }
         ]
@@ -381,7 +381,8 @@ test('runAiEvals executes JSON, Markdown, MCP, and provenance eval expectations'
         schema_version: 'anchorfact.provenance.v1',
         artifacts: {
           evals_json: { sha256: 'a'.repeat(64) },
-          mcp_json: { sha256: 'b'.repeat(64) }
+          mcp_json: { sha256: 'b'.repeat(64) },
+          not_found_html: { sha256: 'c'.repeat(64) }
         }
       })
     })

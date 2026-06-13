@@ -165,6 +165,7 @@ export function buildProvenance({ manifest, claimsPayload, distDir, generated, b
       artifact_summary_json: artifactInfo(distDir, 'artifact-summary.json'),
       artifact_shards_json: artifactInfo(distDir, 'artifact-shards.json'),
       api_readiness_json: artifactInfo(distDir, 'api-readiness.json'),
+      not_found_html: artifactInfo(distDir, '404.html'),
       search_index_json: artifactInfo(distDir, 'search-index.json'),
       sources_json: artifactInfo(distDir, 'sources.json'),
       llms_txt: artifactInfo(distDir, 'llms.txt')

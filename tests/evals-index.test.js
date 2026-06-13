@@ -447,6 +447,7 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
   assert(provenanceEval.expected.required_artifacts.includes('artifact_summary_json'), 'provenance eval should require artifact summary hash');
   assert(provenanceEval.expected.required_artifacts.includes('artifact_shards_json'), 'provenance eval should require artifact shards hash');
   assert(provenanceEval.expected.required_artifacts.includes('api_readiness_json'), 'provenance eval should require API readiness hash');
+  assert(provenanceEval.expected.required_artifacts.includes('not_found_html'), 'provenance eval should require machine 404 hash');
 
   const mcpEval = payload.evals.find(evalCase => evalCase.id === 'mcp_tool_catalog');
   assertEq(mcpEval.call.path, '/mcp.json');
