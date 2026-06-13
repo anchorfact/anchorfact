@@ -59,6 +59,11 @@ test('normalizeReadinessSnapshot extracts API readiness and content health signa
         identified_ai_primary_to_discovery_current_ratio: 0.21,
         identified_ai_primary_to_discovery_target_status: 'met'
       },
+      design_partner_signal: {
+        status: 'met',
+        external_design_partner_count: 3,
+        paid_intent_signal_count: 1
+      },
       api_scorecard: { pass_ratio: 1, failures: [] }
     },
     contentHealth: {
@@ -74,6 +79,9 @@ test('normalizeReadinessSnapshot extracts API readiness and content health signa
   assertEq(normalized.api_context_ratio, 1);
   assertEq(normalized.adoption_ratio, 0.21);
   assertEq(normalized.adoption_status, 'met');
+  assertEq(normalized.design_partner_status, 'met');
+  assertEq(normalized.external_design_partner_count, 3);
+  assertEq(normalized.paid_intent_signal_count, 1);
 });
 
 test('normalizeReadinessSnapshot extracts public audit signal from API readiness gate fallback', () => {
@@ -128,6 +136,9 @@ test('buildReadinessWindowReport treats missing current metrics as not measured'
   assert(markdown.includes('api_context_ratio: not_measured'), 'missing not_measured API ratio');
   assert(markdown.includes('api_scorecard_failures: not_measured'), 'missing not_measured API failures');
   assert(markdown.includes('adoption_ratio: not_measured'), 'missing not_measured adoption ratio');
+  assert(markdown.includes('design_partner_status: not_measured'), 'missing not_measured design partner status');
+  assert(markdown.includes('external_design_partner_count: not_measured'), 'missing not_measured design partner count');
+  assert(markdown.includes('paid_intent_signal_count: not_measured'), 'missing not_measured paid intent count');
 });
 
 test('main loads current dist readiness artifacts by default when present', () => {

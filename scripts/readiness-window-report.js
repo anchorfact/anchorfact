@@ -85,6 +85,24 @@ function publicAuditActionableFromApiReadiness(apiReadiness = {}) {
   return value === null || value === undefined ? null : optionalFiniteNumber(value);
 }
 
+function currentDesignPartnerStatus(apiReadiness = {}) {
+  return apiReadiness.design_partner_signal?.status
+    || readinessGateById(apiReadiness, 'design_partners')?.status
+    || 'not_measured';
+}
+
+function currentExternalDesignPartnerCount(apiReadiness = {}) {
+  const value = apiReadiness.design_partner_signal?.external_design_partner_count
+    ?? readinessGateById(apiReadiness, 'design_partners')?.current_partner_count;
+  return value === null || value === undefined ? null : optionalFiniteNumber(value);
+}
+
+function currentPaidIntentSignalCount(apiReadiness = {}) {
+  const value = apiReadiness.design_partner_signal?.paid_intent_signal_count
+    ?? readinessGateById(apiReadiness, 'design_partners')?.current_paid_intent_count;
+  return value === null || value === undefined ? null : optionalFiniteNumber(value);
+}
+
 export function normalizeReadinessSnapshot(input = {}) {
   if (input.schema_version === READINESS_SNAPSHOT_SCHEMA_VERSION || input.production_integrity_status) {
     const generated = input.generated || new Date().toISOString();
@@ -99,6 +117,9 @@ export function normalizeReadinessSnapshot(input = {}) {
       api_scorecard_failures: optionalFiniteNumber(input.api_scorecard_failures),
       adoption_ratio: optionalFiniteNumber(input.adoption_ratio),
       adoption_status: input.adoption_status || 'not_measured',
+      design_partner_status: input.design_partner_status || 'not_measured',
+      external_design_partner_count: optionalFiniteNumber(input.external_design_partner_count),
+      paid_intent_signal_count: optionalFiniteNumber(input.paid_intent_signal_count),
       content_next_focus: input.content_next_focus || null
     };
   }
@@ -126,6 +147,9 @@ export function normalizeReadinessSnapshot(input = {}) {
       : optionalFiniteNumber(apiScorecard.failed),
     adoption_ratio: currentAdoptionRatio(adoption),
     adoption_status: currentAdoptionStatus(adoption),
+    design_partner_status: currentDesignPartnerStatus(apiReadiness),
+    external_design_partner_count: currentExternalDesignPartnerCount(apiReadiness),
+    paid_intent_signal_count: currentPaidIntentSignalCount(apiReadiness),
     content_next_focus: contentHealth.project_readiness?.next_focus || null
   };
 }
@@ -309,6 +333,9 @@ export function renderReadinessWindowMarkdown(report) {
   lines.push(`- api_scorecard_failures: ${signalText(report.current_snapshot.api_scorecard_failures)}`);
   lines.push(`- adoption_ratio: ${signalText(report.current_snapshot.adoption_ratio)}`);
   lines.push(`- adoption_status: ${report.current_snapshot.adoption_status}`);
+  lines.push(`- design_partner_status: ${report.current_snapshot.design_partner_status}`);
+  lines.push(`- external_design_partner_count: ${signalText(report.current_snapshot.external_design_partner_count)}`);
+  lines.push(`- paid_intent_signal_count: ${signalText(report.current_snapshot.paid_intent_signal_count)}`);
   lines.push('');
   lines.push('## Content Change Policy');
   lines.push('');
