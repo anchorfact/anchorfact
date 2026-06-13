@@ -4,9 +4,9 @@ title: Cross-Site Request Forgery (CSRF)
 schema_type: TechArticle
 category: computer-science
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+confidence: medium
+last_verified: '2026-06-13'
+created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
   - claude-opus
@@ -15,90 +15,89 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-computer-science-001
+  - id: fact-computer-science-csrf-001
     statement: >-
-      CSRF forces authenticated users to execute unwanted actions on a web application. The attacker tricks the victim's browser into sending a request that the application treats as legitimate
-      because it carries the user's session cookie. Prevention: anti-CSRF tokens, SameSite cookies, custom headers.
-    source_title: ACM Digital Library
-    source_url: https://dl.acm.org/
+      OWASP describes Cross-Site Request Forgery as an attack that causes an end
+      user to execute unwanted actions on a web application where the user is
+      currently authenticated.
+    source_title: Cross Site Request Forgery
+    source_url: https://owasp.org/www-community/attacks/csrf
     confidence: medium
-  - id: fact-computer-science-002
-    statement: "SameSite cookie attribute (2020+): `Strict` (never sent cross-site), `Lax` (default since Chrome 80, sent on top-level navigation GET), `None` (always sent, requires Secure)."
-    source_title: ACM Digital Library
-    source_url: https://dl.acm.org/
+  - id: fact-computer-science-csrf-002
+    statement: >-
+      OWASP explains that when a user is authenticated, the target site may be
+      unable to distinguish a forged request from a legitimate request because
+      authentication material such as cookies is sent by the browser.
+    source_title: Cross Site Request Forgery
+    source_url: https://owasp.org/www-community/attacks/csrf
     confidence: medium
-completeness: 0.88
+  - id: fact-computer-science-csrf-003
+    statement: >-
+      OWASP's CSRF Prevention Cheat Sheet recommends token-based mitigations such
+      as the synchronizer token pattern and lists custom request headers and
+      SameSite cookies as additional defensive techniques.
+    source_title: Cross-Site Request Forgery Prevention Cheat Sheet
+    source_url: https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html
+    confidence: medium
+  - id: fact-computer-science-csrf-004
+    statement: >-
+      MDN documents the SameSite cookie attribute as a control for whether cookies
+      are sent with cross-site requests, and states that SameSite=None requires
+      the Secure attribute.
+    source_title: Set-Cookie header
+    source_url: https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Set-Cookie
+    confidence: medium
+completeness: 0.84
 known_gaps:
-  - Sources reconstructed during quality audit; primary source details were corrupted during batch generation
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
+  - >-
+    Coverage is limited to defensive concepts and does not enumerate exploit
+    payload construction or framework-specific implementation details.
+disputed_statements: []
 primary_sources:
-  - title: ACM Digital Library
-    type: repository
+  - title: Cross Site Request Forgery
+    type: documentation
     year: 2026
-    url: https://dl.acm.org/
-    institution: ACM
-  - title: "Web Application Security: A Comprehensive Guide (2025)"
-    type: book
-    year: 2025
-    authors:
-      - multiple
-    institution: O'Reilly Media
-    url: https://www.oreilly.com/websec/
-  - title: "Browser Security: Threats and Countermeasures (2025 Survey)"
-    type: survey_paper
-    year: 2025
-    authors:
-      - multiple
-    institution: ACM Computing Surveys
-    url: https://doi.org/10.1145/acmcs.2025.browsersec
-secondary_sources:
-  - title: ACM Digital Library
-    type: repository
+    url: https://owasp.org/www-community/attacks/csrf
+    institution: OWASP
+  - title: Cross-Site Request Forgery Prevention Cheat Sheet
+    type: documentation
     year: 2026
-    url: https://dl.acm.org/
-    institution: ACM
-  - title: The C Programming Language (K&R, 2nd Ed)
-    type: textbook
-    year: 1988
-    url: https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html
-    institution: Prentice Hall
-  - title: Structure and Interpretation of Computer Programs (SICP)
-    type: textbook
-    year: 1996
-    url: https://mitpress.mit.edu/sites/default/files/sicp/
-    institution: MIT Press
-  - title: "Web Security: CSRF, XSS, and Injection Attacks — A 2025 Comprehensive Survey"
-    type: survey_paper
-    year: 2025
-    authors:
-      - multiple
-    institution: ACM Computing Surveys
-    url: https://doi.org/10.1145/acmcs.2025.websec
-  - title: "Browser Security Model: Same-Origin Policy, CORS, and CSP in 2025"
-    type: article
-    year: 2025
-    authors:
-      - multiple
-    institution: IEEE Security & Privacy
-    url: https://doi.org/10.1109/msp.2025.browser
+    url: https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html
+    institution: OWASP
+  - title: Set-Cookie header
+    type: documentation
+    year: 2026
+    url: https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Set-Cookie
+    institution: Mozilla
+secondary_sources: []
+updated: '2026-06-13'
 ---
+
 ## TL;DR
 
-CSRF forces authenticated users to execute unwanted actions on a web application. The attacker tricks the victim's browser into sending a request that the application treats as legitimate because it carries the user's session cookie. Prevention: anti-CSRF tokens, SameSite cookies, custom headers.
+Cross-Site Request Forgery tricks a browser that already has an authenticated
+session into sending an unwanted state-changing request. Defensive coverage should
+focus on request-specific CSRF tokens, browser cookie controls such as SameSite,
+and request validation patterns that make forged cross-site submissions fail.
 
 ## Core Explanation
 
-SameSite cookie attribute (2020+): `Strict` (never sent cross-site), `Lax` (default since Chrome 80, sent on top-level navigation GET), `None` (always sent, requires Secure). Modern frameworks (Laravel, Django, Rails) include CSRF protection by default. Double-submit cookie pattern: send token in both cookie and request header.
+OWASP frames CSRF as a confused-deputy problem around authenticated browsers:
+the browser can attach authentication material to a request even when the action
+was not intentionally initiated by the user. OWASP's prevention guidance treats
+tokens as the primary mitigation pattern for stateful applications and lists
+custom request headers and SameSite cookies as complementary defenses. MDN's
+Set-Cookie reference documents SameSite as the cookie attribute that controls
+cross-site sending behavior and requires `Secure` when `SameSite=None` is used.
 
 ## Further Reading
 
--
+- [Cross Site Request Forgery](https://owasp.org/www-community/attacks/csrf)
+- [Cross-Site Request Forgery Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html)
+- [Set-Cookie header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Set-Cookie)
 
 ## Related Articles
 
-- [Cross-Site Scripting (XSS)](../cross-site-scripting-xss.md)
-- [AI for Archaeology: Site Detection, Artifact Classification, and Digital Heritage Preservation](../../ai/ai-for-archaeology.md)
-- [AI for Location Intelligence: Geospatial Analytics, POI Recommendation, and Site Selection](../../ai/ai-location-intelligence.md)
+- [Cross-Site Scripting (XSS)](cross-site-scripting-xss.md)
+- [Same-Origin Policy](same-origin-policy.md)
+- [Content Security Policy (CSP)](content-security-policy-csp.md)

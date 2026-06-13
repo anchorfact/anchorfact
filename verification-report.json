@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-13T15:50:15.533Z",
+    "generated": "2026-06-13T15:55:25.668Z",
     "total_articles": 1628,
     "total_with_errors": 0,
     "average_sources_per_article": "2.6",
-    "overall_verification_rate": "92.6%",
-    "elapsed_ms": 1427,
-    "elapsed_sec": "1.4",
+    "overall_verification_rate": "92.7%",
+    "elapsed_ms": 1148,
+    "elapsed_sec": "1.1",
     "concurrency": 3
   },
   "articles": [
@@ -85683,56 +85683,68 @@
       "sources_unreachable": 1
     },
     {
-      "file": "content\\computer-science\\cross-site-request-forgery-csrf.md",
+      "file": "content/computer-science/cross-site-request-forgery-csrf.md",
       "article_id": "kb-2026-00114",
       "generation_method": "ai_structured",
       "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "ACM Digital Library",
-          "source_type": "repository",
+          "source_title": "Cross Site Request Forgery",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://dl.acm.org/",
-              "verified": false,
-              "metadata": {},
-              "match": false
+              "identifier": "https://owasp.org/www-community/attacks/csrf",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://owasp.org/www-community/attacks/csrf",
+                "http_method": "HEAD"
+              },
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Web Application Security: A Comprehensive Guide (2025)",
-          "source_type": "book",
+          "source_title": "Cross-Site Request Forgery Prevention Cheat Sheet",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.oreilly.com/websec/",
-              "verified": false,
-              "metadata": {},
-              "match": false
+              "identifier": "https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html",
+                "http_method": "HEAD"
+              },
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Browser Security: Threats and Countermeasures (2025 Survey)",
-          "source_type": "survey_paper",
+          "source_title": "Set-Cookie header",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://doi.org/10.1145/acmcs.2025.browsersec",
-              "verified": false,
-              "metadata": {},
-              "match": false
+              "identifier": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Set-Cookie",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Set-Cookie",
+                "http_method": "HEAD"
+              },
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 3
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\cross-site-scripting-xss.md",
