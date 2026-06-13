@@ -164,6 +164,14 @@ test('buildResolveApiPayload resolves article slugs and JSON-LD ids', () => {
   const jsonld = resolve('https://anchorfact.org/kb/ai/3d-generation-gaussian-splatting');
   assertEq(jsonld.payload.resolved_type, 'article');
   assertEq(jsonld.payload.result.canonical_slug, 'ai/3d-generation-gaussian-splatting');
+
+  const htmlAlias = resolve('https://anchorfact.org/ai/3d-generation-gaussian-splatting/index.html');
+  assertEq(htmlAlias.payload.resolved_type, 'article');
+  assertEq(htmlAlias.payload.result.canonical_slug, 'ai/3d-generation-gaussian-splatting');
+
+  const turtle = resolve('https://anchorfact.org/ai/3d-generation-gaussian-splatting/index.ttl');
+  assertEq(turtle.payload.resolved_type, 'article');
+  assertEq(turtle.payload.result.canonical_slug, 'ai/3d-generation-gaussian-splatting');
 });
 
 test('buildResolveApiPayload resolves public source ids and source URLs', () => {

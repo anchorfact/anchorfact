@@ -150,6 +150,8 @@ console.log('AnchorFact Article API Tests\n');
 test('normalizeArticleSlug accepts slugs, URLs, and article route files', () => {
   assertEq(normalizeArticleSlug(' /AI/Gaussian-Splatting/index.json '), 'ai/gaussian-splatting');
   assertEq(normalizeArticleSlug('https://anchorfact.org/ai/gaussian-splatting/index.md'), 'ai/gaussian-splatting');
+  assertEq(normalizeArticleSlug('https://anchorfact.org/ai/gaussian-splatting/index.html'), 'ai/gaussian-splatting');
+  assertEq(normalizeArticleSlug('https://anchorfact.org/ai/gaussian-splatting/index.ttl'), 'ai/gaussian-splatting');
   assertEq(normalizeArticleSlug('../secret'), null);
   assertEq(normalizeArticleSlug('bad slug'), null);
 });

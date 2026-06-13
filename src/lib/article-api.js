@@ -34,7 +34,7 @@ export function normalizeArticleSlug(value) {
   raw = raw
     .replace(/^\/+/, '')
     .replace(/\/+$/, '')
-    .replace(/\/index\.(json|md|txt|ttl)$/i, '')
+    .replace(/\/index\.(json|html|md|txt|ttl)$/i, '')
     .replace(/\/+$/, '')
     .toLowerCase();
 

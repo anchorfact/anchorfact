@@ -20,7 +20,7 @@ def _load_manifest(dist_dir: Path) -> dict:
 def _safe_slug(value: str) -> str | None:
     slug = str(value or "").strip().replace("\\", "/")
     slug = slug.removeprefix("/")
-    if slug.endswith("/index.json") or slug.endswith("/index.md") or slug.endswith("/index.txt"):
+    if slug.endswith(("/index.json", "/index.html", "/index.md", "/index.txt", "/index.ttl")):
         slug = slug.rsplit("/", 1)[0]
     slug = slug.strip("/")
     parts = [part for part in slug.split("/") if part]

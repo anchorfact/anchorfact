@@ -237,12 +237,12 @@ from pathlib import Path
 from mcp_index import load_article_detail
 dist = Path(r'''${pyPath(distDir)}''')
 values = []
-for ref in ['ai/public-fixture', 'https://anchorfact.org/ai/public-fixture/', 'https://anchorfact.org/kb/ai/public-fixture']:
+for ref in ['ai/public-fixture', 'https://anchorfact.org/ai/public-fixture/', 'https://anchorfact.org/ai/public-fixture/index.html', 'https://anchorfact.org/ai/public-fixture/index.ttl', 'https://anchorfact.org/kb/ai/public-fixture']:
     detail = load_article_detail(dist, ref)
     values.append(detail.get('headline') if detail else None)
 print(json.dumps(values))
 `);
-  assertEq(result, ['Public Fixture', 'Public Fixture', 'Public Fixture']);
+  assertEq(result, ['Public Fixture', 'Public Fixture', 'Public Fixture', 'Public Fixture', 'Public Fixture']);
 });
 
 test('shared BM25 search orders and filters MCP results consistently', () => {
