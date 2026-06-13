@@ -830,7 +830,8 @@ export async function main() {
   }
 }
 
-if (import.meta.url === pathToFileURL(process.argv[1]).href) {
+const isDirectRun = typeof process.argv[1] === 'string' && import.meta.url === pathToFileURL(process.argv[1]).href;
+if (isDirectRun) {
   main().catch((error) => {
     console.error(error);
     process.exitCode = 1;

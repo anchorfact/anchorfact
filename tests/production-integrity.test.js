@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import { execFileSync } from 'child_process';
 import {
   DEFAULT_EDGE_CACHE_DYNAMIC_CONTROLS,
   DEFAULT_EXPECTED_COUNTS,
@@ -746,6 +747,15 @@ test('production smoke requires baseline security response headers', () => {
   assert(REQUIRED_SECURITY_HEADERS.some(header => header.name === 'X-Frame-Options' && header.expected === 'DENY'), 'should require frame protection');
   assert(REQUIRED_SECURITY_HEADERS.some(header => header.name === 'Referrer-Policy' && header.expected === 'strict-origin-when-cross-origin'), 'should require referrer policy');
   assert(REQUIRED_SECURITY_HEADERS.some(header => header.name === 'Permissions-Policy' && header.expected === 'camera=()'), 'should require permissions policy');
+});
+
+test('production smoke module can be imported from inline module tools', () => {
+  const output = execFileSync('node', [
+    '--input-type=module',
+    '-e',
+    "await import('./src/smoke-production.js'); console.log('import ok');"
+  ], { encoding: 'utf8' });
+  assert(output.includes('import ok'), 'inline module import should complete');
 });
 
 test('production smoke validates readiness discovery fields across machine entrypoints', () => {
