@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-13T15:35:13.151Z",
+    "generated": "2026-06-13T15:44:03.696Z",
     "total_articles": 1628,
     "total_with_errors": 0,
     "average_sources_per_article": "2.6",
-    "overall_verification_rate": "92.4%",
-    "elapsed_ms": 2261,
-    "elapsed_sec": "2.3",
+    "overall_verification_rate": "92.6%",
+    "elapsed_ms": 2972,
+    "elapsed_sec": "3.0",
     "concurrency": 3
   },
   "articles": [
@@ -48013,105 +48013,69 @@
       "file": "content/computer-science/blockchain-technology.md",
       "article_id": "kb-2026-00256",
       "generation_method": "ai_structured",
-      "sources_total": 5,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "ACM Digital Library",
-          "source_type": "repository",
+          "source_title": "Blockchain Technology Overview",
+          "source_type": "government_report",
           "results": [
             {
               "method": "url",
-              "identifier": "https://dl.acm.org/",
-              "verified": false,
-              "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Blockchain and Web3: A Developer's Guide (2025 Edition)",
-          "source_type": "book",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://www.oreilly.com/blockchain/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.oreilly.com/blockchain/"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Blockchain Consensus and Applications: A 2025 Systematic Survey",
-          "source_type": "survey_paper",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://doi.org/10.1145/acmcs.2025.blockchain",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.blockchain"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Midterm Status Report of the ILC Technology Network Activities",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "arxiv",
-              "identifier": "2603.01172v1",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "The Rise of Blockchain Technology in Agriculture and Food Supply Chains",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "doi",
-              "identifier": "10.1016/j.tifs.2019.07.034",
+              "identifier": "https://nvlpubs.nist.gov/nistpubs/ir/2018/nist.ir.8202.pdf",
               "verified": true,
               "metadata": {
-                "title": "The rise of blockchain technology in agriculture and food supply chains",
-                "publisher": "Elsevier BV",
-                "year": 2019
+                "status": 200,
+                "final_url": "https://nvlpubs.nist.gov/nistpubs/ir/2018/nist.ir.8202.pdf",
+                "http_method": "GET",
+                "fallback_from": {
+                  "http_method": "HEAD",
+                  "status": 404
+                }
               },
               "match": true
-            },
-            {
-              "method": "arxiv",
-              "identifier": "1908.07391v1",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "Bitcoin: A Peer-to-Peer Electronic Cash System",
+          "source_type": "whitepaper",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://bitcoin.org/bitcoin.pdf",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://bitcoin.org/bitcoin.pdf",
+                "http_method": "HEAD"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Smart contracts",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://ethereum.org/en/developers/docs/smart-contracts/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://ethereum.org/developers/docs/smart-contracts/",
+                "http_method": "HEAD"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 4
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content/computer-science/broadcast-channel-api.md",
