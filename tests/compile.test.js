@@ -300,7 +300,7 @@ test('agent profile describes the machine contract', () => {
   assertEq(agent.current_snapshot.examples, 7);
   assert(agent.current_snapshot.graph_nodes >= 1, 'agent profile should expose graph node count');
   assert(agent.current_snapshot.graph_edges >= 1, 'agent profile should expose graph edge count');
-  assertEq(agent.current_snapshot.evals, 54);
+  assertEq(agent.current_snapshot.evals, 55);
   assertEq(agent.current_snapshot.mcp_tools, 9);
   assertEq(agent.current_snapshot.api_readiness_status, 'building_foundation');
   assertEq(agent.current_snapshot.api_readiness_subscription_ready, false);
@@ -735,7 +735,7 @@ test('evals.json describes executable AI integration checks', () => {
   const evals = JSON.parse(readFileSync(join(distDir, 'evals.json'), 'utf-8'));
   assertEq(evals.schema_version, 'anchorfact.evals.v1');
   assertEq(evals.provenance_url, 'https://anchorfact.org/provenance.json');
-  assertEq(evals.eval_count, 54);
+  assertEq(evals.eval_count, 55);
   assertEq(evals.evals.map(evalCase => evalCase.id), [
     'api_discovery',
     'llms_txt_primary_entrypoints',
@@ -789,6 +789,7 @@ test('evals.json describes executable AI integration checks', () => {
     'content_health_summary',
     'coverage_query_benchmark_catalog',
     'api_readiness_summary',
+    'not_found_json_guard',
     'mcp_tool_catalog',
     'signed_provenance_static_artifacts'
   ]);
@@ -845,6 +846,12 @@ test('evals.json describes executable AI integration checks', () => {
   assertEq(apiReadinessEval.call.path, '/api-readiness.json');
   assertEq(apiReadinessEval.expected.schema_version, 'anchorfact.api-readiness.v1');
   assert(apiReadinessEval.expected.readiness_gate_ids.includes('core_query_context_ratio'), 'evals should require readiness gate ids');
+  const notFoundEval = evals.evals.find(evalCase => evalCase.id === 'not_found_json_guard');
+  assertEq(notFoundEval.call.path, '/__anchorfact-routing-guard-check.json');
+  assertEq(notFoundEval.expected.status, 404);
+  assertEq(notFoundEval.expected.schema_version, 'anchorfact.not-found.v1');
+  assertEq(notFoundEval.expected.error_code, 'not_found');
+  assertEq(notFoundEval.expected.fallback_policy_no_spa_fallback, true);
   const mcpEval = evals.evals.find(evalCase => evalCase.id === 'mcp_tool_catalog');
   assert(mcpEval.expected.required_tools.includes('anchorfact_plan_query'), 'evals should include MCP planner metadata check');
   assert(mcpEval.expected.required_tools.includes('anchorfact_context'), 'evals should include MCP context metadata check');

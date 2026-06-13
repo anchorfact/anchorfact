@@ -104,7 +104,7 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
 
   assertEq(payload.schema_version, 'anchorfact.evals.v1');
   assertEq(payload.provenance_url, 'https://anchorfact.org/provenance.json');
-  assertEq(payload.eval_count, 54);
+  assertEq(payload.eval_count, 55);
   assertEq(payload.evals.map(evalCase => evalCase.id), [
     'api_discovery',
     'llms_txt_primary_entrypoints',
@@ -158,6 +158,7 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
     'content_health_summary',
     'coverage_query_benchmark_catalog',
     'api_readiness_summary',
+    'not_found_json_guard',
     'mcp_tool_catalog',
     'signed_provenance_static_artifacts'
   ]);
@@ -427,6 +428,14 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
   assertEq(readinessEval.expected.report_only, true);
   assertEq(readinessEval.expected.subscription_ready, false);
   assert(readinessEval.expected.readiness_gate_ids.includes('core_query_context_ratio'), 'readiness eval should require the context coverage gate');
+
+  const notFoundEval = payload.evals.find(evalCase => evalCase.id === 'not_found_json_guard');
+  assertEq(notFoundEval.call.path, '/__anchorfact-routing-guard-check.json');
+  assertEq(notFoundEval.expected.status, 404);
+  assertEq(notFoundEval.expected.content_type, 'application/json');
+  assertEq(notFoundEval.expected.schema_version, 'anchorfact.not-found.v1');
+  assertEq(notFoundEval.expected.error_code, 'not_found');
+  assertEq(notFoundEval.expected.fallback_policy_no_spa_fallback, true);
 
   const provenanceEval = payload.evals.find(evalCase => evalCase.id === 'signed_provenance_static_artifacts');
   assert(provenanceEval.expected.required_artifacts.includes('root_index_json'), 'provenance eval should require root index hash');

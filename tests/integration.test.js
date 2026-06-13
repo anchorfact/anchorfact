@@ -209,7 +209,7 @@ test('public machine entrypoints exclude drafts', () => {
   assertEq(apiReadiness.schema_version, 'anchorfact.api-readiness.v1');
   assertEq(apiReadiness.report_only, true);
   assertEq(apiReadiness.subscription_ready, false);
-  assertEq(evals.eval_count, 54);
+  assertEq(evals.eval_count, 55);
   assert(evals.evals.some(evalCase => evalCase.id === 'llms_txt_primary_entrypoints'), 'evals index should include llms.txt discovery contract check');
   assert(evals.evals.some(evalCase => evalCase.id === 'robots_txt_ai_entrypoints'), 'evals index should include robots.txt AI hint contract check');
   assert(evals.evals.some(evalCase => evalCase.id === 'openapi_context_contract'), 'evals index should include OpenAPI context contract check');
@@ -243,6 +243,7 @@ test('public machine entrypoints exclude drafts', () => {
   assert(evals.evals.some(evalCase => evalCase.id === 'batch_reference_resolver'), 'evals index should include resolve batch API check');
   assert(evals.evals.some(evalCase => evalCase.id === 'citation_export'), 'evals index should include citation API check');
   assert(evals.evals.some(evalCase => evalCase.id === 'content_health_summary'), 'evals index should include content health check');
+  assert(evals.evals.some(evalCase => evalCase.id === 'not_found_json_guard'), 'evals index should include machine JSON 404 guard');
   assert(evals.evals.some(evalCase => evalCase.id === 'coverage_query_benchmark_catalog'), 'evals index should include query benchmark catalog check');
   assert(evals.evals.some(evalCase => evalCase.id === 'api_readiness_summary'), 'evals index should include API readiness check');
   assert(evals.evals.some(evalCase => evalCase.id === 'mcp_tool_catalog'), 'evals index should include MCP tool catalog check');

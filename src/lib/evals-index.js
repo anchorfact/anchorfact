@@ -570,6 +570,18 @@ export function buildEvalsIndex({
       }
     },
     {
+      id: 'not_found_json_guard',
+      intent: 'Confirm unknown machine JSON routes fail explicitly with the machine-readable JSON 404 contract instead of an HTML fallback.',
+      call: call('/__anchorfact-routing-guard-check.json', site),
+      expected: {
+        status: 404,
+        content_type: 'application/json',
+        schema_version: 'anchorfact.not-found.v1',
+        error_code: 'not_found',
+        fallback_policy_no_spa_fallback: true
+      }
+    },
+    {
       id: 'mcp_tool_catalog',
       intent: 'Confirm the signed MCP profile declares local tools needed for planning, prompt context, search, retrieval, resolution, and citation.',
       call: call('/mcp.json', site),

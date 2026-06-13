@@ -212,6 +212,17 @@ test('runAiEvals executes JSON, Markdown, MCP, and provenance eval expectations'
             }
           },
           {
+            id: 'not_found_json_guard',
+            call: { method: 'GET', path: '/__anchorfact-routing-guard-check.json' },
+            expected: {
+              status: 404,
+              content_type: 'application/json',
+              schema_version: 'anchorfact.not-found.v1',
+              error_code: 'not_found',
+              fallback_policy_no_spa_fallback: true
+            }
+          },
+          {
             id: 'signed_provenance_static_artifacts',
             call: { method: 'GET', path: '/provenance.json' },
             expected: {
@@ -360,6 +371,12 @@ test('runAiEvals executes JSON, Markdown, MCP, and provenance eval expectations'
           { id: 'ai_primary_discovery_ratio_7_day', status: 'not_measured_in_this_report' }
         ]
       }),
+      '/__anchorfact-routing-guard-check.json': jsonResponse({
+        schema_version: 'anchorfact.not-found.v1',
+        status: 404,
+        error: { code: 'not_found' },
+        fallback_policy: { no_spa_fallback: true }
+      }, 'application/json; charset=utf-8', 404),
       '/provenance.json': jsonResponse({
         schema_version: 'anchorfact.provenance.v1',
         artifacts: {
@@ -372,11 +389,46 @@ test('runAiEvals executes JSON, Markdown, MCP, and provenance eval expectations'
 
   if (!report.ok) console.log(JSON.stringify(report, null, 2));
   assertEq(report.ok, true);
-  assertEq(report.eval_count, 13);
-  assertEq(report.passed, 13);
+  assertEq(report.eval_count, 14);
+  assertEq(report.passed, 14);
   assertEq(report.failed, 0);
   const markdown = renderAiEvalsMarkdown(report);
   assert(markdown.includes('AnchorFact AI Evals - PASS'), 'markdown should show pass');
+});
+
+test('runAiEvals reports JSON 404 contract drift', async () => {
+  const report = await runAiEvals({
+    baseUrl: 'https://anchorfact.org',
+    generatedAt: '2026-05-29T00:00:00.000Z',
+    fetchImpl: fetchFixture({
+      '/evals.json': jsonResponse({
+        evals: [
+          {
+            id: 'not_found_json_guard',
+            call: { method: 'GET', path: '/__anchorfact-routing-guard-check.json' },
+            expected: {
+              status: 404,
+              content_type: 'application/json',
+              schema_version: 'anchorfact.not-found.v1',
+              error_code: 'not_found',
+              fallback_policy_no_spa_fallback: true
+            }
+          }
+        ]
+      }),
+      '/__anchorfact-routing-guard-check.json': jsonResponse({
+        schema_version: 'anchorfact.not-found.v1',
+        status: 404,
+        error: { code: 'fallback_html' },
+        fallback_policy: { no_spa_fallback: false }
+      }, 'application/json; charset=utf-8', 404)
+    })
+  });
+
+  assertEq(report.ok, false);
+  assertEq(report.failed, 1);
+  assert(report.results[0].failures.some(failure => failure.includes('error.code')), 'error code drift should be reported');
+  assert(report.results[0].failures.some(failure => failure.includes('fallback_policy.no_spa_fallback')), 'fallback policy drift should be reported');
 });
 
 test('runAiEvals reports expectation failures', async () => {

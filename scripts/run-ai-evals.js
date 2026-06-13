@@ -54,6 +54,16 @@ function evaluateJsonExpected(payload, expected, failures) {
   if (expected.schema_version) {
     check(payload?.schema_version === expected.schema_version, failures, `schema_version expected ${expected.schema_version}, got ${payload?.schema_version || '(missing)'}`);
   }
+  if (expected.error_code) {
+    check(payload?.error?.code === expected.error_code, failures, `error.code expected ${expected.error_code}, got ${payload?.error?.code || '(missing)'}`);
+  }
+  if (expected.fallback_policy_no_spa_fallback !== undefined) {
+    check(
+      payload?.fallback_policy?.no_spa_fallback === expected.fallback_policy_no_spa_fallback,
+      failures,
+      `fallback_policy.no_spa_fallback expected ${expected.fallback_policy_no_spa_fallback}, got ${payload?.fallback_policy?.no_spa_fallback ?? '(missing)'}`
+    );
+  }
   if (expected.openapi_schema_version) {
     check(
       payload?.['x-anchorfact-schema-version'] === expected.openapi_schema_version,
