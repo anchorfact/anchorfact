@@ -4,7 +4,7 @@ title: "Greek Mythology"
 schema_type: "TechArticle"
 category: "arts"
 language: "en"
-confidence: "high"
+confidence: "low"
 last_verified: "2026-05-22"
 created_date: "2026-05-22"
 generation_method: "ai_assisted"
@@ -16,24 +16,20 @@ data_period: "static"
 
 atomic_facts:
   - id: "fact-arts-001"
-    statement: "Greek mythology is a vast collection of stories about gods, heroes, and the nature of the world. Olympians: Zeus (sky, king), Hera (marriage), Poseidon (sea), Hades (underworld), Athena (wisdom), Apollo (sun/arts), Artemis (hunt), Ares (war), Aphrodite (love), Hephaestus (forge), Hermes (messenger). Heroes: Heracles (12 labors), Odysseus (Odyssey),"
-    source_title: "Mythology: Timeless Tales of Gods and Heroes"
-    source_url: "https://www.hachettebookgroup.com/titles/edith-hamilton/mythology/9780316438520/"
-    confidence: "medium"
-  - id: "fact-arts-002"
-    statement: "Trojan War: golden apple ('for the fairest') → Paris chooses Aphrodite → Helen → war."
+    statement: "Hachette describes Edith Hamilton's Mythology as a bestselling classic on Greek, Roman, and Norse mythology."
     source_title: "Mythology (Edith Hamilton)"
     source_url: "https://www.hachettebookgroup.com/titles/edith-hamilton/mythology/9780316438520/"
-    confidence: "medium"
+    confidence: "low"
+  - id: "fact-arts-002"
+    statement: "The publisher says Hamilton's Mythology has been in print since 1942 and has sold millions of copies."
+    source_title: "Mythology (Edith Hamilton)"
+    source_url: "https://www.hachettebookgroup.com/titles/edith-hamilton/mythology/9780316438520/"
+    confidence: "low"
 
-completeness: 0.88
+completeness: 0.55
 
 known_gaps:
-  - "Statistics and data cited are from 1942 and earlier; more recent data may have become available since publication"
-  - "Certain sub-topics are covered at a general level; specialized edge cases and nuanced applications may not be fully addressed"
-
-disputed_statements:
-  - statement: "The definition of 'art' remains contested in aesthetics, particularly regarding conceptual art and readymades; institutional theories (art is what the artworld accepts) compete with formalist and expressionist accounts"
+  - "This compact repair only uses the verified publisher page for Hamilton's book; it does not summarize the full Greek mythological canon."
 
 primary_sources:
   - title: "Mythology (Edith Hamilton)"
@@ -42,29 +38,17 @@ primary_sources:
     url: "https://www.hachettebookgroup.com/titles/edith-hamilton/mythology/9780316438520/"
     institution: "Little, Brown"
 
-secondary_sources:
-  - title: "Mythology: Timeless Tales of Gods and Heroes"
-    type: "book"
-    year: 1942
-    url: "https://www.hachettebookgroup.com/titles/edith-hamilton/mythology/9780316438520/"
-    institution: "Edith Hamilton, Little, Brown"
-  - title: "The Story of Art (E.H. Gombrich)"
-    type: "textbook"
-    year: 1995
-    url: "https://www.phaidon.com/store/art/the-story-of-art-9780714832470/"
-    institution: "Phaidon Press"
+secondary_sources: []
 
 ---
 
-
-
 ## TL;DR
 
-Greek mythology is a vast collection of stories about gods, heroes, and the nature of the world. Olympians: Zeus (sky, king), Hera (marriage), Poseidon (sea), Hades (underworld), Athena (wisdom), Apollo (sun/arts), Artemis (hunt), Ares (war), Aphrodite (love), Hephaestus (forge), Hermes (messenger). Heroes: Heracles (12 labors), Odysseus (Odyssey), Perseus (Medusa), Theseus (Minotaur).
+Greek mythology is represented here through a narrow, source-mapped repair of Edith Hamilton's Mythology. The publisher describes the book as a classic anthology covering Greek, Roman, and Norse mythology, and notes that it has remained in print since its original 1942 publication.
 
 ## Core Explanation
 
-Creation: Chaos → Gaia (Earth) → Uranus (Sky) → Titans → Olympians (Titanomachy). Pandora's Box: all evils released, only Hope remained. Trojan War: golden apple ('for the fairest') → Paris chooses Aphrodite → Helen → war. Sisyphus: punished to roll boulder up hill eternally — absurdist hero (Camus). Oedipus: kills father, marries mother — fate inescapable. Myths explain natural phenomena and teach moral lessons.
+Hamilton's book is not used here as a complete encyclopedia of Greek mythology. This entry keeps only two low-risk claims that are directly supported by the verified publisher page: the book's subject scope and its long-running publication history. Broader claims about Olympian deities, heroic cycles, the Trojan War, creation myths, and later interpretations should be added only with direct source-mapped evidence.
 
 ## Further Reading
 

@@ -131,9 +131,17 @@ test('textHygieneFailures catches stale production claim metrics', () => {
 test('textHygieneFailures accepts current production claim metrics', () => {
   const failures = textHygieneFailures(
     'docs/LAUNCH_READINESS_2026-05-27.md',
-    'Snapshot: 1268 public / 300 draft / 3964 claims.'
+    'Snapshot: 1329 public / 299 draft / 4226 claims.'
   );
   assertEq(failures, []);
+});
+
+test('textHygieneFailures catches previous greek-mythology repair snapshot metrics', () => {
+  const failures = textHygieneFailures(
+    'docs/LAUNCH_READINESS_2026-05-27.md',
+    'Snapshot: 1328 public / 300 draft / 4224 claims.'
+  );
+  assert(failures.some(failure => failure.includes('stale launch metrics')), 'previous production snapshot should fail hygiene');
 });
 
 test('textHygieneFailures catches previous kubernetes-oauth-snowflake snapshot metrics', () => {
