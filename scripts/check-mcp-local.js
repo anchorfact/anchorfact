@@ -147,9 +147,11 @@ print(json.dumps({
     "health_schema_version": health_payload.get("schema_version"),
     "health_repair_queue_candidates": health_queue.get("candidate_count"),
     "health_source_ready_repair_queue_candidates": health_queue.get("source_ready_candidate_count"),
+    "health_source_acquisition_repair_queue_candidates": health_queue.get("source_acquisition_candidate_count"),
     "health_repair_queue_excluded_count": health_queue.get("excluded_count"),
     "health_repair_queue_next_batch": len(health_queue.get("next_batch") or []),
     "health_source_ready_repair_queue_next_batch": len(health_queue.get("source_ready_next_batch") or []),
+    "health_source_acquisition_repair_queue_next_batch": len(health_queue.get("source_acquisition_next_batch") or []),
     "cite_status": cite_status,
     "cite_schema_version": cite_payload.get("schema_version"),
     "resolve_status": resolve_status,
@@ -218,6 +220,11 @@ function checkPythonSummary(report, summary) {
     failures.push(message);
     addFailure(report, message);
   }
+  if (!Number.isFinite(summary.health_source_acquisition_repair_queue_candidates ?? null)) {
+    const message = valueLabel('health_source_acquisition_repair_queue_candidates', summary.health_source_acquisition_repair_queue_candidates, 'a number');
+    failures.push(message);
+    addFailure(report, message);
+  }
   if (!Number.isFinite(summary.health_repair_queue_excluded_count ?? null)) {
     const message = valueLabel('health_repair_queue_excluded_count', summary.health_repair_queue_excluded_count, 'a number');
     failures.push(message);
@@ -230,6 +237,11 @@ function checkPythonSummary(report, summary) {
   }
   if (!Number.isFinite(summary.health_source_ready_repair_queue_next_batch ?? null)) {
     const message = valueLabel('health_source_ready_repair_queue_next_batch', summary.health_source_ready_repair_queue_next_batch, 'a number');
+    failures.push(message);
+    addFailure(report, message);
+  }
+  if (!Number.isFinite(summary.health_source_acquisition_repair_queue_next_batch ?? null)) {
+    const message = valueLabel('health_source_acquisition_repair_queue_next_batch', summary.health_source_acquisition_repair_queue_next_batch, 'a number');
     failures.push(message);
     addFailure(report, message);
   }
@@ -250,8 +262,10 @@ function checkPythonSummary(report, summary) {
     dependencies: summary.dependencies || {},
     category_count: summary.category_count || 0,
     health_source_ready_repair_queue_candidates: summary.health_source_ready_repair_queue_candidates ?? null,
+    health_source_acquisition_repair_queue_candidates: summary.health_source_acquisition_repair_queue_candidates ?? null,
     health_repair_queue_excluded_count: summary.health_repair_queue_excluded_count ?? null,
     health_source_ready_repair_queue_next_batch: summary.health_source_ready_repair_queue_next_batch ?? null,
+    health_source_acquisition_repair_queue_next_batch: summary.health_source_acquisition_repair_queue_next_batch ?? null,
     failures
   };
 }
@@ -366,6 +380,8 @@ export function renderLocalMcpCheckMarkdown(report) {
     `- health repair exclusions: ${python.health_repair_queue_excluded_count ?? 'unknown'}`,
     `- health source-ready repair candidates: ${python.health_source_ready_repair_queue_candidates ?? 'unknown'}`,
     `- health source-ready next batch: ${python.health_source_ready_repair_queue_next_batch ?? 'unknown'}`,
+    `- health source acquisition candidates: ${python.health_source_acquisition_repair_queue_candidates ?? 'unknown'}`,
+    `- health source acquisition next batch: ${python.health_source_acquisition_repair_queue_next_batch ?? 'unknown'}`,
     '',
     '## MCP Tools',
     '',

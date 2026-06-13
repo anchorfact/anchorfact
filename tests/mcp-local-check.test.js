@@ -62,9 +62,11 @@ function writeFixture({ omitTool = null, snapshotPublic = 1 } = {}) {
       repair_queue: {
         candidate_count: 1,
         source_ready_candidate_count: 1,
+        source_acquisition_candidate_count: 1,
         excluded_count: 1,
         next_batch: [{ canonical_slug: 'ai/draft-a' }],
         source_ready_next_batch: [{ canonical_slug: 'business/source-ready-draft' }],
+        source_acquisition_next_batch: [{ canonical_slug: 'ai/draft-a' }],
         selection_policy: ['Prioritize lower repair_complexity values first.'],
         exclusion_reason_distribution: [{ name: 'placeholder_content', count: 1 }]
       }
@@ -110,9 +112,11 @@ function passingPythonSummary() {
     health_schema_version: 'anchorfact.content-health.v1',
     health_repair_queue_candidates: 1,
     health_source_ready_repair_queue_candidates: 1,
+    health_source_acquisition_repair_queue_candidates: 1,
     health_repair_queue_excluded_count: 1,
     health_repair_queue_next_batch: 1,
     health_source_ready_repair_queue_next_batch: 1,
+    health_source_acquisition_repair_queue_next_batch: 1,
     cite_status: 200,
     cite_schema_version: 'anchorfact.cite-api.v1',
     resolve_status: 200,
@@ -139,6 +143,8 @@ test('checkLocalMcp reports a passing local MCP contract', () => {
   assertEq(report.checks.python_modules.health_repair_queue_excluded_count, 1);
   assertEq(report.checks.python_modules.health_source_ready_repair_queue_candidates, 1);
   assertEq(report.checks.python_modules.health_source_ready_repair_queue_next_batch, 1);
+  assertEq(report.checks.python_modules.health_source_acquisition_repair_queue_candidates, 1);
+  assertEq(report.checks.python_modules.health_source_acquisition_repair_queue_next_batch, 1);
 
   const markdown = renderLocalMcpCheckMarkdown(report);
   assert(markdown.includes('# AnchorFact Local MCP Check - PASS'), 'markdown should include pass heading');
@@ -146,6 +152,8 @@ test('checkLocalMcp reports a passing local MCP contract', () => {
   assert(markdown.includes('health repair exclusions: 1'), 'markdown should include health exclusion count');
   assert(markdown.includes('health source-ready repair candidates: 1'), 'markdown should include source-ready repair count');
   assert(markdown.includes('health source-ready next batch: 1'), 'markdown should include source-ready next batch size');
+  assert(markdown.includes('health source acquisition candidates: 1'), 'markdown should include source acquisition count');
+  assert(markdown.includes('health source acquisition next batch: 1'), 'markdown should include source acquisition next batch size');
 });
 
 test('checkLocalMcp fails on MCP profile drift and Python failures', () => {
@@ -164,8 +172,10 @@ test('checkLocalMcp fails on MCP profile drift and Python failures', () => {
       health_status: 500,
       health_repair_queue_candidates: 0,
       health_source_ready_repair_queue_candidates: null,
+      health_source_acquisition_repair_queue_candidates: null,
       health_repair_queue_excluded_count: null,
       health_source_ready_repair_queue_next_batch: null,
+      health_source_acquisition_repair_queue_next_batch: null,
       cite_status: 404
     })
   });
