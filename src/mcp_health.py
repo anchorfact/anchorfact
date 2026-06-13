@@ -83,6 +83,8 @@ def render_health_markdown(payload: dict) -> str:
         f"- Candidate count: {queue.get('candidate_count') if queue.get('candidate_count') is not None else 0}",
         f"- Automatic repair exclusions: {queue.get('excluded_count') if queue.get('excluded_count') is not None else 0}",
         f"- Next batch size: {queue.get('next_batch_size') if queue.get('next_batch_size') is not None else len(queue.get('next_batch') or [])}",
+        f"- Source-ready candidates: {queue.get('source_ready_candidate_count') if queue.get('source_ready_candidate_count') is not None else 0}",
+        f"- Source-ready next batch size: {queue.get('source_ready_next_batch_size') if queue.get('source_ready_next_batch_size') is not None else len(queue.get('source_ready_next_batch') or [])}",
     ])
 
     for item in queue.get("next_batch") or []:
@@ -91,6 +93,17 @@ def render_health_markdown(payload: dict) -> str:
             f"- {item.get('canonical_slug')}: {item.get('title') or 'untitled'} "
             f"(complexity {item.get('repair_complexity')}, reasons: {reasons})"
         )
+    source_ready_batch = queue.get("source_ready_next_batch") or []
+    if source_ready_batch:
+        lines.extend(["", "Source-ready draft repairs:"])
+        for item in source_ready_batch:
+            reasons = ", ".join(item.get("quality_reasons") or []) or "unspecified"
+            verified = item.get("sources_verified") if item.get("sources_verified") is not None else 0
+            total = item.get("sources_total") if item.get("sources_total") is not None else 0
+            lines.append(
+                f"- {item.get('canonical_slug')}: {item.get('title') or 'untitled'} "
+                f"({verified}/{total} sources, complexity {item.get('repair_complexity')}, reasons: {reasons})"
+            )
     lines.append("")
 
     exclusion_reasons = queue.get("exclusion_reason_distribution") or []

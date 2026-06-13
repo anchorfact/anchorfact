@@ -171,6 +171,7 @@ writeFileSync(join(distDir, 'content-health.json'), JSON.stringify({
   draft: {
     repair_queue: {
       candidate_count: 1,
+      source_ready_candidate_count: 1,
       excluded_count: 1,
       next_batch_size: 1,
       next_batch: [
@@ -184,7 +185,22 @@ writeFileSync(join(distDir, 'content-health.json'), JSON.stringify({
           repair_complexity: 1
         }
       ],
-      selection_policy: ['Prioritize lower repair_complexity values first.'],
+      source_ready_next_batch_size: 1,
+      source_ready_next_batch: [
+        {
+          canonical_slug: 'business/source-ready-draft',
+          title: 'Source Ready Draft',
+          confidence_level: 'low',
+          sources_verified: 1,
+          sources_total: 3,
+          quality_reasons: ['partial_source_verification'],
+          repair_complexity: 1
+        }
+      ],
+      selection_policy: [
+        'Surface source-ready drafts separately; when none remain, acquire and verify sources before promoting more drafts.',
+        'Prioritize lower repair_complexity values first.'
+      ],
       exclusion_reason_distribution: [
         { name: 'placeholder_content', count: 1 }
       ]
@@ -417,11 +433,15 @@ print(json.dumps({
     "schema": payload.get("schema_version"),
     "public_articles": payload.get("snapshot", {}).get("public_articles"),
     "repair_candidate_count": payload.get("draft", {}).get("repair_queue", {}).get("candidate_count"),
+    "source_ready_candidate_count": payload.get("draft", {}).get("repair_queue", {}).get("source_ready_candidate_count"),
     "repair_excluded_count": payload.get("draft", {}).get("repair_queue", {}).get("excluded_count"),
     "next_slug": payload.get("draft", {}).get("repair_queue", {}).get("next_batch", [{}])[0].get("canonical_slug"),
+    "source_ready_next_slug": payload.get("draft", {}).get("repair_queue", {}).get("source_ready_next_batch", [{}])[0].get("canonical_slug"),
     "policy": payload.get("draft", {}).get("repair_queue", {}).get("selection_policy", []),
     "markdown_has_heading": "# AnchorFact Local Corpus Health" in markdown,
     "markdown_has_queue": "Draft Repair Queue" in markdown,
+    "markdown_has_source_ready": "Source-ready candidates: 1" in markdown,
+    "markdown_has_source_ready_slug": "business/source-ready-draft" in markdown,
     "markdown_has_exclusions": "Automatic repair exclusions: 1" in markdown,
     "markdown_has_exclusion_reason": "placeholder_content: 1" in markdown,
 }))
@@ -430,11 +450,16 @@ print(json.dumps({
   assertEq(result.schema, 'anchorfact.content-health.v1');
   assertEq(result.public_articles, 1);
   assertEq(result.repair_candidate_count, 1);
+  assertEq(result.source_ready_candidate_count, 1);
   assertEq(result.repair_excluded_count, 1);
   assertEq(result.next_slug, 'ai/draft-fixture');
+  assertEq(result.source_ready_next_slug, 'business/source-ready-draft');
   assertEq(result.policy.some(item => item.includes('repair_complexity')), true);
+  assertEq(result.policy.some(item => item.includes('source-ready')), true);
   assertEq(result.markdown_has_heading, true);
   assertEq(result.markdown_has_queue, true);
+  assertEq(result.markdown_has_source_ready, true);
+  assertEq(result.markdown_has_source_ready_slug, true);
   assertEq(result.markdown_has_exclusions, true);
   assertEq(result.markdown_has_exclusion_reason, true);
 });
@@ -456,10 +481,12 @@ print(json.dumps({
     "json_status": json_response.status_code,
     "json_schema": payload.get("schema_version"),
     "json_next_slug": payload.get("draft", {}).get("repair_queue", {}).get("next_batch", [{}])[0].get("canonical_slug"),
+    "json_source_ready_next_slug": payload.get("draft", {}).get("repair_queue", {}).get("source_ready_next_batch", [{}])[0].get("canonical_slug"),
     "json_excluded_count": payload.get("draft", {}).get("repair_queue", {}).get("excluded_count"),
     "markdown_status": markdown_response.status_code,
     "markdown_media_type": markdown_response.media_type,
     "markdown_has_queue": "Draft Repair Queue" in markdown,
+    "markdown_has_source_ready": "Source-ready candidates: 1" in markdown,
     "markdown_has_exclusions": "Automatic repair exclusions: 1" in markdown,
 }))
 `);
@@ -467,10 +494,12 @@ print(json.dumps({
   assertEq(result.json_status, 200);
   assertEq(result.json_schema, 'anchorfact.content-health.v1');
   assertEq(result.json_next_slug, 'ai/draft-fixture');
+  assertEq(result.json_source_ready_next_slug, 'business/source-ready-draft');
   assertEq(result.json_excluded_count, 1);
   assertEq(result.markdown_status, 200);
   assertEq(result.markdown_media_type, 'text/markdown');
   assertEq(result.markdown_has_queue, true);
+  assertEq(result.markdown_has_source_ready, true);
   assertEq(result.markdown_has_exclusions, true);
 });
 
