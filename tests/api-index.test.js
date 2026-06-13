@@ -70,7 +70,9 @@ test('buildApiIndex publishes the machine API discovery contract', () => {
   assert(payload.static_fallbacks.some(fallback => fallback.path === '/artifact-summary.json'), 'api index should point to artifact summary fallback');
   assert(payload.static_fallbacks.some(fallback => fallback.path === '/artifact-shards.json'), 'api index should point to artifact shard fallback');
   assert(payload.static_fallbacks.some(fallback => fallback.path === '/api-readiness.json'), 'api index should point to API readiness fallback');
-  assert(payload.static_fallbacks.some(fallback => fallback.path === '/content-health.json'), 'api index should point to content health fallback');
+  const contentHealthFallback = payload.static_fallbacks.find(fallback => fallback.path === '/content-health.json');
+  assert(contentHealthFallback, 'api index should point to content health fallback');
+  assert(contentHealthFallback.description.includes('source-ready') && contentHealthFallback.description.includes('source acquisition'), 'api index content health fallback should describe repair queue phases');
   assert(payload.static_fallbacks.some(fallback => fallback.path === '/provenance.json'), 'api index should point to provenance fallback');
 });
 

@@ -182,7 +182,7 @@ export function buildApiIndex({
       staticFallback(site, '/artifact-shards.json', 'Signed registry of versioned shards for large static artifacts.'),
       staticFallback(site, '/api-readiness.json', 'Subscription-readiness gates, core corpus scorecard, and API citation readiness report.'),
       staticFallback(site, '/capabilities.json', 'Task-to-endpoint routing guide.'),
-      staticFallback(site, '/content-health.json', 'Signed corpus health summary for AI trust decisions.'),
+      staticFallback(site, '/content-health.json', 'Signed corpus health summary for AI trust decisions and source-ready/source acquisition draft repair queues.'),
       staticFallback(site, '/coverage.json', 'Coverage and limits guide for deciding when to fall back to external primary sources.'),
       staticFallback(site, '/examples.json', 'Executable workflow examples.'),
       staticFallback(site, '/evals.json', 'Executable golden checks for this machine contract.'),

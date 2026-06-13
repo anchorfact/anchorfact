@@ -170,6 +170,7 @@ test('public entrypoints exclude draft articles', () => {
   assert(llmsTxt.includes('API Readiness'), 'llms.txt should include API readiness artifact');
   assert(llmsTxt.includes('Capabilities'), 'llms.txt should include capabilities router');
   assert(llmsTxt.includes('Content Health'), 'llms.txt should include content health');
+  assert(llmsTxt.includes('source-ready/source acquisition repair queues'), 'llms.txt should describe content health repair queue phases');
   assert(llmsTxt.includes('Coverage'), 'llms.txt should include coverage guide');
   assert(llmsTxt.includes('Topics'), 'llms.txt should include topics index');
   assert(llmsTxt.includes('Examples'), 'llms.txt should include examples index');

@@ -163,7 +163,7 @@ ${entries || '_No public verified entries yet._'}
 - [Artifact Shards](https://anchorfact.org/artifact-shards.json): Signed registry for versioned shards of large static artifacts.
 - [API Readiness](https://anchorfact.org/api-readiness.json): Machine-readable subscription-readiness gates, core corpus scorecard, and API citation readiness report.
 - [Capabilities](https://anchorfact.org/capabilities.json): AI task-to-endpoint routing guide with trust requirements and fallback artifacts.
-- [Content Health](https://anchorfact.org/content-health.json): Signed corpus health summary for AI trust decisions.
+- [Content Health](https://anchorfact.org/content-health.json): Signed corpus health summary for AI trust decisions and source-ready/source acquisition repair queues.
 - [Coverage](https://anchorfact.org/coverage.json): AI coverage and limits guide with topic, confidence, source tier, and verification distributions.
 - [Plan API](https://anchorfact.org/api/plan?q=gaussian): Read-only query planner that recommends AnchorFact next calls or external-source fallback.
 - [Evidence API](https://anchorfact.org/api/evidence?q=gaussian): One-call public evidence packs with search hits, article summaries, claims, and sources.
