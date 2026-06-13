@@ -242,6 +242,10 @@ test('public entrypoints exclude draft articles', () => {
   assertEq(apiAccess.access_policy.account_required, false);
   assertEq(apiAccess.access_policy.payment_required, false);
   assertEq(apiAccess.access_policy.read_only, true);
+  assertEq(apiAccess.readiness_policy.status_endpoint, '/api-readiness.json');
+  assertEq(apiAccess.readiness_policy.current_mode, 'free_no_key_read_only');
+  assert(apiAccess.readiness_policy.paid_beta_requires.includes('design_partners'), 'api access policy should list manual readiness gate');
+  assertEq(apiAccess.readiness_policy.report_only_until_gates_met, true);
   assertEq(apiAccess.counts.public_articles, 1);
   assertEq(apiAccess.counts.draft_articles, 1);
   assertEq(apiAccess.counts.public_claims, claimsJson.claim_count);
@@ -443,6 +447,7 @@ test('openapi.json describes the static AI contract', () => {
   assert(openapi.components.schemas.RootIndex, 'OpenAPI should define root machine index schema');
   assert(openapi.components.schemas.ApiAccess, 'OpenAPI should define API access schema');
   assert(openapi.components.schemas.ApiAccess.properties.access_policy, 'OpenAPI should define API access policy fields');
+  assert(openapi.components.schemas.ApiAccess.properties.readiness_policy, 'OpenAPI should define API access readiness policy');
   assert(openapi.components.schemas.DraftsIndex, 'OpenAPI should define drafts index schema');
   assert(openapi.components.schemas.Dashboard, 'OpenAPI should define dashboard schema');
   assert(openapi.components.schemas.RootIndex.properties.default_answer_path, 'OpenAPI should define root default answer path');

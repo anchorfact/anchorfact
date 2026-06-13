@@ -27,6 +27,20 @@ export function buildApiAccessPolicy({
       read_only: true,
       future_paid_beta_requires_readiness_gates: true
     },
+    readiness_policy: {
+      status_endpoint: '/api-readiness.json',
+      current_mode: 'free_no_key_read_only',
+      report_only_until_gates_met: true,
+      paid_beta_requires: [
+        'production_integrity_14_day',
+        'public_audit_14_day',
+        'core_query_context_ratio',
+        'ai_primary_discovery_ratio_7_day',
+        'design_partners'
+      ],
+      blocker_source: '/api-readiness.json readiness_blockers',
+      manual_validation_required: ['design_partners']
+    },
     counts: {
       public_articles: publicResults.length,
       draft_articles: draftResults.length,

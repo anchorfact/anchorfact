@@ -607,6 +607,18 @@ export function buildOpenApiContract({
         }),
         ApiAccess: schemaVersioned('API access policy', API_ACCESS_SCHEMA_VERSION, {
           access_policy: { type: 'object' },
+          readiness_policy: {
+            type: 'object',
+            properties: {
+              status_endpoint: { const: '/api-readiness.json' },
+              current_mode: { type: 'string' },
+              report_only_until_gates_met: { type: 'boolean' },
+              paid_beta_requires: { type: 'array', items: { type: 'string' } },
+              blocker_source: { type: 'string' },
+              manual_validation_required: { type: 'array', items: { type: 'string' } }
+            },
+            additionalProperties: true
+          },
           counts: { type: 'object' },
           recommended_call_order: { type: 'array', items: { type: 'object' } },
           answer_policy_path: { const: '/api/context?q={query}' },
