@@ -508,6 +508,15 @@ export function renderIntegrityMarkdown(report) {
         .map(result => `- ${result.user_agent_profile} ${result.route}: ${result.ok ? 'pass' : 'fail'} (${result.status})`)
         .join('\n')
     : '- none';
+  const smokeOutput = report.checks.smoke
+    ? ''
+    : [report.smoke_stderr, report.smoke_stdout]
+        .filter(text => String(text || '').trim())
+        .map(text => String(text).trim())
+        .join('\n\n');
+  const smokeDiagnostics = smokeOutput
+    ? `## Smoke Diagnostics\n\n${smokeOutput.split('\n').map(line => `    ${line}`).join('\n')}\n\n`
+    : '';
 
   return `# AnchorFact Production Integrity - ${report.ok ? 'PASS' : 'FAIL'}
 
@@ -555,6 +564,7 @@ ${discoveryLines}
 
 ${attemptLines}
 
+${smokeDiagnostics}
 ## Failures
 
 ${failures}

@@ -139,6 +139,27 @@ test('buildIntegrityReport fails when production smoke fails', () => {
   assert(report.failures.includes('Production smoke failed'), 'smoke failure should be reported');
 });
 
+test('renderIntegrityMarkdown includes production smoke failure diagnostics', () => {
+  const report = buildIntegrityReport({
+    generatedAt: '2026-05-29T00:00:00.000Z',
+    baseUrl: 'https://anchorfact.org',
+    expectedCounts: DEFAULT_EXPECTED_COUNTS,
+    smoke: {
+      ok: false,
+      stdout: 'smoke stdout',
+      stderr: 'received an HTML fallback where root machine JSON alias was expected'
+    },
+    provenance: provenanceResult(),
+    aiEvals: { ok: true, eval_count: 11, passed: 11, failed: 0, failures: [], results: [] },
+    edgeCache: { ok: true, failures: [], static_artifacts: [], dynamic_controls: [] },
+    discovery: { ok: true, failures: [], checks: [] }
+  });
+
+  const markdown = renderIntegrityMarkdown(report);
+  assert(markdown.includes('## Smoke Diagnostics'), 'markdown should include smoke diagnostics section');
+  assert(markdown.includes('received an HTML fallback'), 'markdown should include smoke stderr details');
+});
+
 test('buildIntegrityReport fails when signed provenance verification fails', () => {
   const report = buildIntegrityReport({
     generatedAt: '2026-05-29T00:00:00.000Z',
