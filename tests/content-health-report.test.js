@@ -161,6 +161,8 @@ test('buildContentHealthReport summarizes public and draft health', () => {
     assert(report.draft.repair_candidates.findIndex(item => item.canonical_slug === 'ai/draft-a') < report.draft.repair_candidates.findIndex(item => item.canonical_slug === 'business/brand-draft'), 'AI utility draft should outrank a higher-source general draft');
     assertEq(report.draft.source_ready_repair_candidate_count, 1);
     assertEq(report.draft.source_ready_repair_candidates[0].canonical_slug, 'business/brand-draft');
+    assertEq(report.draft.source_acquisition_candidate_count, 1);
+    assertEq(report.draft.source_acquisition_candidates[0].canonical_slug, 'ai/draft-a');
     assert(!report.draft.repair_candidates.some(item => item.canonical_slug === 'ai/ai-public-health'), 'should not recommend high-stakes drafts for automatic repair');
     assert(report.draft.strict_review_candidates.some(item => item.canonical_slug === 'ai/ai-public-health'), 'should route high-stakes drafts to strict review');
     assert(!report.draft.repair_candidates.some(item => item.canonical_slug === 'ai/ai-for-fraud-prevention'), 'should not recommend financial-risk drafts for automatic repair');
@@ -256,6 +258,8 @@ test('renderContentHealthReport uses readable report sections', () => {
       repair_candidates: [],
       source_ready_repair_candidate_count: 0,
       source_ready_repair_candidates: [],
+      source_acquisition_candidate_count: 0,
+      source_acquisition_candidates: [],
       strict_review_candidate_count: 0,
       strict_review_candidates: [],
       strict_review_reasons: []
@@ -269,6 +273,7 @@ test('renderContentHealthReport uses readable report sections', () => {
   assert(text.includes('Snapshot: 1 public / 0 draft / 1 claims.'), 'missing snapshot');
   assert(text.includes('source coverage: full=1, partial=0, zero=0'), 'missing coverage summary');
   assert(text.includes('- source-ready repair candidates: 0'), 'missing source-ready repair candidate summary');
+  assert(text.includes('- source acquisition candidates: 0'), 'missing source acquisition candidate summary');
 });
 
 console.log(`\n${passed} passed, ${failed} failed`);

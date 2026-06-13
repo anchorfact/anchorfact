@@ -130,6 +130,10 @@ function sourceReadyRepairCandidates(candidates = []) {
   return candidates.filter(candidate => Number(candidate.sources_verified || 0) > 0);
 }
 
+function sourceAcquisitionCandidates(candidates = []) {
+  return candidates.filter(candidate => Number(candidate.sources_verified || 0) <= 0);
+}
+
 function draftRepairExclusions(manifest) {
   const excluded = [];
   for (const article of manifest?.articles || []) {
@@ -176,6 +180,7 @@ function draftStrictReviewCandidates(manifest, limit = 25) {
 function draftRepairQueue(manifest) {
   const candidates = draftRepairCandidates(manifest, 100000);
   const sourceReady = sourceReadyRepairCandidates(candidates);
+  const sourceAcquisition = sourceAcquisitionCandidates(candidates);
   const excluded = draftRepairExclusions(manifest);
   const strictReview = draftStrictReviewCandidates(manifest, 100000);
   const complexity = {};
@@ -207,18 +212,22 @@ function draftRepairQueue(manifest) {
   return {
     candidate_count: candidates.length,
     source_ready_candidate_count: sourceReady.length,
+    source_acquisition_candidate_count: sourceAcquisition.length,
     excluded_count: excluded.length,
     strict_review_count: strictReview.length,
     next_batch_size: Math.min(2, candidates.length),
     next_batch: candidates.slice(0, 2),
     source_ready_next_batch_size: Math.min(2, sourceReady.length),
     source_ready_next_batch: sourceReady.slice(0, 2),
+    source_acquisition_next_batch_size: Math.min(2, sourceAcquisition.length),
+    source_acquisition_next_batch: sourceAcquisition.slice(0, 2),
     strict_review_next_batch: strictReview.slice(0, 5),
     selection_policy: [
       'Exclude placeholder and encoding-damaged drafts from automatic repair queues.',
       'Route encoding-damaged drafts to manual restoration or rewrite planning before source repair.',
       'Route high-stakes medical, crisis, safety, legal, civic, financial, and autonomy drafts to strict review before automatic repair.',
       'Surface source-ready drafts separately; when none remain, acquire and verify sources before promoting more drafts.',
+      'Track zero-source drafts as source acquisition candidates before they can become source-ready repair candidates.',
       'Keep automatic repair batches to one or two drafts so each change has measurable impact and reviewable scope.',
       'Prioritize AI-agent utility areas first: core AI, computer-science references, then science references.',
       'Prioritize lower repair_complexity values first.',
@@ -279,10 +288,12 @@ export function buildContentHealthIndex({
       ...byStatus.draft,
       repair_candidate_count: repairQueue.candidate_count,
       source_ready_repair_candidate_count: repairQueue.source_ready_candidate_count,
+      source_acquisition_candidate_count: repairQueue.source_acquisition_candidate_count,
       repair_excluded_count: repairQueue.excluded_count,
       strict_review_candidate_count: repairQueue.strict_review_count,
       repair_candidates: draftRepairCandidates(manifest || {}, 25),
       source_ready_repair_candidates: repairQueue.source_ready_next_batch,
+      source_acquisition_candidates: repairQueue.source_acquisition_next_batch,
       strict_review_candidates: draftStrictReviewCandidates(manifest || {}, 25),
       repair_queue: repairQueue
     },

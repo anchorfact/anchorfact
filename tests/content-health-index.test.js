@@ -177,8 +177,12 @@ test('buildContentHealthIndex publishes signed corpus health guidance', () => {
   assert(!payload.draft.repair_candidates.some(candidate => candidate.canonical_slug === 'game-development/encoding-damaged-draft'), 'encoding-damaged drafts should stay out of automatic repair candidates');
   assertEq(payload.draft.source_ready_repair_candidate_count, 1);
   assertEq(payload.draft.source_ready_repair_candidates[0].canonical_slug, 'business/brand-draft');
+  assertEq(payload.draft.source_acquisition_candidate_count, 2);
+  assertEq(payload.draft.source_acquisition_candidates[0].canonical_slug, 'ai/draft-a');
+  assertEq(payload.draft.source_acquisition_candidates[1].canonical_slug, 'computer-science/api-draft');
   assertEq(payload.draft.repair_queue.candidate_count, 3);
   assertEq(payload.draft.repair_queue.source_ready_candidate_count, 1);
+  assertEq(payload.draft.repair_queue.source_acquisition_candidate_count, 2);
   assertEq(payload.draft.repair_queue.excluded_count, 2);
   assertEq(payload.draft.repair_queue.strict_review_count, 3);
   assertEq(payload.draft.repair_queue.next_batch_size, 2);
@@ -187,6 +191,10 @@ test('buildContentHealthIndex publishes signed corpus health guidance', () => {
   assertEq(payload.draft.repair_queue.next_batch[1].canonical_slug, 'computer-science/api-draft');
   assert(!payload.draft.repair_queue.next_batch.some(candidate => candidate.canonical_slug === 'business/brand-draft'), 'general drafts should wait behind the measured 1-2 item batch');
   assertEq(payload.draft.repair_queue.source_ready_next_batch[0].canonical_slug, 'business/brand-draft');
+  assertEq(payload.draft.repair_queue.source_acquisition_next_batch_size, 2);
+  assertEq(payload.draft.repair_queue.source_acquisition_next_batch[0].canonical_slug, 'ai/draft-a');
+  assertEq(payload.draft.repair_queue.source_acquisition_next_batch[1].canonical_slug, 'computer-science/api-draft');
+  assert(!payload.draft.repair_queue.source_acquisition_next_batch.some(candidate => candidate.canonical_slug === 'business/brand-draft'), 'source acquisition queue should only include drafts with zero verified sources');
   assert(!payload.draft.repair_queue.next_batch.some(candidate => candidate.canonical_slug === 'ai/ai-public-health'), 'high-stakes drafts should stay out of automatic repair queues');
   assert(payload.draft.repair_queue.strict_review_next_batch.some(candidate => candidate.canonical_slug === 'ai/ai-public-health'), 'repair queue should expose strict-review drafts separately');
   assert(payload.draft.repair_queue.strict_review_next_batch.some(candidate => candidate.canonical_slug === 'ai/ai-for-fraud-prevention'), 'repair queue should expose financial-risk drafts separately');
@@ -198,6 +206,7 @@ test('buildContentHealthIndex publishes signed corpus health guidance', () => {
   assert(payload.draft.repair_queue.strict_review_reason_distribution.some(reason => reason.name === 'physical_safety_or_autonomy'), 'repair queue should summarize physical-safety strict-review reasons');
   assert(payload.draft.repair_queue.selection_policy.some(item => item.includes('encoding-damaged')), 'repair queue should explain encoding-damaged exclusions');
   assert(payload.draft.repair_queue.selection_policy.some(item => item.includes('high-stakes')), 'repair queue should explain high-stakes strict review routing');
+  assert(payload.draft.repair_queue.selection_policy.some(item => item.includes('source acquisition')), 'repair queue should explain source acquisition routing');
   assert(payload.draft.repair_queue.selection_policy.some(item => item.includes('one or two')), 'repair queue should explain conservative batch sizing');
   assert(payload.draft.repair_queue.selection_policy.some(item => item.includes('AI-agent utility')), 'repair queue should explain AI-first priority order');
   assert(payload.draft.repair_queue.selection_policy.some(item => item.includes('repair_complexity')), 'repair queue should explain priority order');
