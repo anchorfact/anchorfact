@@ -1015,6 +1015,26 @@ test('provenance.sig is generated when a signing key is configured', () => {
   assert(/^[a-f0-9]{64}$/.test(signature.payload_sha256), 'signature should include payload sha256');
 });
 
+test('Cloudflare Pages routing guard artifacts are generated', () => {
+  assert(existsSync(join(distDir, '_routes.json')), '_routes.json missing');
+  assert(existsSync(join(distDir, '404.html')), '404.html missing');
+
+  const routes = JSON.parse(readFileSync(join(distDir, '_routes.json'), 'utf-8'));
+  assertEq(routes.version, 1);
+  assertEq(routes.include, ['/api', '/api/*']);
+  assertEq(routes.exclude, []);
+
+  const notFoundText = readFileSync(join(distDir, '404.html'), 'utf-8');
+  const notFound = JSON.parse(notFoundText);
+  assertEq(notFound.schema_version, 'anchorfact.not-found.v1');
+  assertEq(notFound.status, 404);
+  assertEq(notFound.error.code, 'not_found');
+  assertEq(notFound.fallback_policy.no_spa_fallback, true);
+  assert(notFound.machine_entrypoints.includes('/index.json'), '404 payload should point machines to root index');
+  assert(notFound.machine_entrypoints.includes('/api/context?q={query}'), '404 payload should point machines to context API');
+  assert(!notFoundText.trimStart().startsWith('<'), '404 endpoint should not emit an HTML shell');
+});
+
 test('_headers is generated for Cloudflare Pages static output', () => {
   const headers = readFileSync(join(distDir, '_headers'), 'utf-8');
   const revalidatedMachineArtifacts = [
@@ -1079,6 +1099,7 @@ test('_headers is generated for Cloudflare Pages static output', () => {
   for (const path of ['/drafts', '/drafts.html', '/dashboard.html']) {
     assert(headers.includes(`${path}\n  Access-Control-Allow-Origin: *\n  Content-Type: application/json; charset=utf-8\n  Cache-Control: public, max-age=0, must-revalidate\n  X-Robots-Tag: noindex, nofollow`), `_headers should expose ${path} as noindex JSON`);
   }
+  assert(headers.includes('/404.html\n  Access-Control-Allow-Origin: *\n  Content-Type: application/json; charset=utf-8\n  Cache-Control: public, max-age=0, must-revalidate\n  X-Robots-Tag: noindex, nofollow'), '_headers should expose 404 as noindex JSON');
 });
 
 rmSync(root, { recursive: true, force: true });

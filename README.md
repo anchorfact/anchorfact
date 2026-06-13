@@ -48,6 +48,13 @@ Production branch: main
 Node.js version: 20 or newer
 ```
 
+The compiler writes two Cloudflare Pages routing guard artifacts into `dist/`:
+
+- `_routes.json` explicitly routes only `/api` and `/api/*` through Pages Functions, keeping static machine artifacts such as `/index.json`, `/agent.json`, and `/content-health.json` on static asset serving.
+- `404.html` is a machine-readable JSON 404. Its presence disables Pages' default single-page-app fallback behavior for unknown paths, so a missing machine route fails explicitly instead of returning the root alias.
+
+Cloudflare documents both behaviors in the Pages Functions routing guide and Pages serving guide: `https://developers.cloudflare.com/pages/functions/routing/` and `https://developers.cloudflare.com/pages/configuration/serving-pages/`.
+
 The canonical production project should also set:
 
 ```txt

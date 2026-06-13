@@ -266,6 +266,44 @@ Provenance: https://anchorfact.org/provenance.json
   writeFileSync(join(distDir, 'robots.txt'), robotsTxt);
 }
 
+function writeFunctionRoutes(distDir) {
+  const routes = {
+    version: 1,
+    include: ['/api', '/api/*'],
+    exclude: []
+  };
+  writeFileSync(join(distDir, '_routes.json'), JSON.stringify(routes, null, 2));
+}
+
+function writeNotFound(distDir, { generated, site }) {
+  const payload = {
+    schema_version: 'anchorfact.not-found.v1',
+    generated,
+    status: 404,
+    error: {
+      code: 'not_found',
+      message: 'No AnchorFact machine artifact or API route exists at this path.'
+    },
+    fallback_policy: {
+      no_spa_fallback: true,
+      reason: 'Unknown machine routes should fail explicitly instead of returning the root HTML alias.'
+    },
+    machine_entrypoints: [
+      '/index.json',
+      '/api',
+      '/api/context?q={query}',
+      '/api/evidence?q={query}',
+      '/api/plan?q={query}',
+      '/agent.json',
+      '/openapi.json',
+      '/content-health.json',
+      '/provenance.json'
+    ],
+    official_site: site
+  };
+  writeFileSync(join(distDir, '404.html'), stringifyJson(payload, { pretty: false }));
+}
+
 function writeHeaders(distDir) {
   const revalidatedMachineArtifacts = [
     ['/', 'application/json'],
@@ -300,6 +338,7 @@ function writeHeaders(distDir) {
   Cache-Control: public, max-age=0, must-revalidate`)
     .join('\n\n');
   const noindexMachineArtifacts = [
+    '/404.html',
     '/drafts',
     '/drafts.html',
     '/dashboard.html'
@@ -631,6 +670,11 @@ export function writeStaticOutputs(distDir, results, options = {}) {
   });
   writeSitemap(distDir, publicResults);
   writeRobots(distDir);
+  writeFunctionRoutes(distDir);
+  writeNotFound(distDir, {
+    generated,
+    site: build.canonical_site
+  });
   writeHeaders(distDir);
   writeDashboard(distDir, results, publicResults, draftResults, claims, options.verificationTimestamp, {
     generated,
