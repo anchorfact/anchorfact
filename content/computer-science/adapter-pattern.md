@@ -4,8 +4,8 @@ title: Adapter Pattern
 schema_type: TechArticle
 category: computer-science
 language: en
-confidence: high
-last_verified: '2026-05-25'
+confidence: medium
+last_verified: '2026-06-13'
 created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
@@ -15,108 +15,71 @@ conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-computer-science-001
-    statement: Converts interface of a class into another interface clients expect. Lets incompatible interfaces work together. Object adapter (composition) preferred over class adapter (inheritance).
-    source_title: ACM Digital Library
-    source_url: https://dl.acm.org/
+  - id: fact-adapter-pattern-001
+    statement: The Adapter pattern converts the interface of one object into another interface that client code expects, allowing otherwise incompatible objects to collaborate.
+    source_title: Refactoring.Guru - Adapter
+    source_url: https://refactoring.guru/design-patterns/adapter
     confidence: medium
-  - id: fact-computer-science-001
-    statement: Converts interface of a class into another interface clients expect. Lets incompatible interfaces work together. Object adapter (composition) preferred over class adapter (inheritance).
-    source_title: ACM Digital Library
-    source_url: https://dl.acm.org/
+  - id: fact-adapter-pattern-002
+    statement: Object adapters wrap an adaptee through composition, while class adapters rely on inheritance and require a language model that can inherit from both the target interface and adaptee.
+    source_title: Refactoring.Guru - Adapter
+    source_url: https://refactoring.guru/design-patterns/adapter
     confidence: medium
-completeness: 0.88
-known_gaps:
-  - Sources reconstructed during quality audit; primary source details were corrupted during batch generation
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
+  - id: fact-adapter-pattern-003
+    statement: >-
+      The adapter pattern is commonly contrasted with Facade: an adapter changes an existing interface to fit a client, while a facade provides a simplified interface to a subsystem.
+    source_title: SourceMaking - Adapter Design Pattern
+    source_url: https://sourcemaking.com/design_patterns/adapter
+    confidence: medium
+completeness: 0.9
+known_gaps: []
+disputed_statements: []
 primary_sources:
-  - title: ACM Digital Library
-    type: repository
-    year: 2026
-    url: https://dl.acm.org/
-    institution: ACM
-  - title: 'Design Patterns: Elements of Reusable Object-Oriented Software (30th Anniversary Edition, 2025)'
+  - title: Refactoring.Guru - Adapter
+    type: reference
+    url: https://refactoring.guru/design-patterns/adapter
+    institution: Refactoring.Guru
+  - title: SourceMaking - Adapter Design Pattern
+    type: reference
+    url: https://sourcemaking.com/design_patterns/adapter
+    institution: SourceMaking
+  - title: Head First Design Patterns, 2nd Edition
     type: book
-    year: 2025
+    year: 2020
     authors:
-      - Gamma E.
-      - Helm R.
-      - Johnson R.
-      - Vlissides J.
-    institution: Addison-Wesley
-    url: https://www.informit.com/design-patterns/
-  - title: 'Software Architecture Patterns in 2025: Microservices to Modular Monoliths'
-    type: survey_paper
-    year: 2025
-    authors:
-      - multiple
-    institution: ACM Computing Surveys
-    url: https://doi.org/10.1145/acmcs.2025.arch
-  - title: Residual Feature Pyramid Network for Enhancement of Vascular Patterns
-    authors:
-      - Ketan Kotwal
-      - Sebastien Marcel
-    year: 2023
-    doi: 10.1109/CVPRW56347.2022.00165
-    url: https://arxiv.org/abs/2306.17200v1
-    type: academic_paper
-    institution: arXiv
-  - title: 'ERANNs: Efficient Residual Audio Neural Networks for Audio Pattern Recognition'
-    authors:
-      - Sergey Verbitskiy
-      - Vladimir Berikov
-      - Viacheslav Vyshegorodtsev
-    year: 2021
-    doi: 10.1016/j.patrec.2022.07.012
-    url: https://arxiv.org/abs/2106.01621v7
-    type: academic_paper
-    institution: arXiv
+      - Eric Freeman
+      - Elisabeth Robson
+    institution: "O'Reilly Media"
+    url: https://www.oreilly.com/library/view/head-first-design/9781492077992/
 secondary_sources:
-  - title: ACM Digital Library
-    type: repository
-    year: 2026
-    url: https://dl.acm.org/
-    institution: ACM
-  - title: The C Programming Language (K&R, 2nd Ed)
-    type: textbook
-    year: 1988
-    url: https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html
-    institution: Prentice Hall
-  - title: Structure and Interpretation of Computer Programs (SICP)
-    type: textbook
-    year: 1996
-    url: https://mitpress.mit.edu/sites/default/files/sicp/
-    institution: MIT Press
-  - title: 'Design Patterns in Modern Software Architecture: A 2025 Retrospective'
-    type: survey_paper
-    year: 2025
+  - title: Design Patterns - Elements of Reusable Object-Oriented Software
+    type: book
+    year: 1994
     authors:
-      - multiple
-    institution: ACM Computing Surveys
-    url: https://doi.org/10.1145/acmcs.2025.patterns
-  - title: 'Microservices Design Patterns: From Theory to Cloud-Native Practice (2025)'
-    type: article
-    year: 2025
-    authors:
-      - multiple
-    institution: IEEE Software
-    url: https://doi.org/10.1109/ms.2025.microservices
+      - Erich Gamma
+      - Richard Helm
+      - Ralph Johnson
+      - John Vlissides
+    institution: Addison-Wesley
 ---
 
 ## TL;DR
 
-Converts interface of a class into another interface clients expect. Lets incompatible interfaces work together. Object adapter (composition) preferred over class adapter (inheritance).
+Adapter is a structural design pattern that lets code written for one interface use an object that exposes a different interface. It is most useful at integration boundaries: legacy APIs, third-party libraries, platform abstractions, and code that needs a stable domain interface while an underlying dependency varies.
 
 ## Core Explanation
 
-Example: wrapping a third-party logging library behind your application's Logger interface, enabling easy replacement. Adapter vs. Facade: Adapter changes interface; Facade simplifies a complex subsystem with a new unified interface. Bridge pattern separates abstraction from implementation.
+An adapter sits between client code and an adaptee. The client calls the target interface it already understands; the adapter translates that call into the adaptee's interface and returns a compatible result. This keeps the translation logic localized instead of spreading dependency-specific calls throughout the codebase.
+
+There are two common forms. An object adapter uses composition: it stores a reference to the adaptee and delegates translated calls to it. A class adapter uses inheritance, so it is only practical in languages and designs that support the needed inheritance shape. Object adapters are usually easier to compose, test, and replace.
+
+Adapter is related to, but different from, Facade and Bridge. Adapter makes an existing interface usable by a client. Facade offers a simpler interface over a subsystem. Bridge separates an abstraction from its implementation so both can vary independently.
 
 ## Further Reading
 
-- [Design Patterns (Gang of Four)](undefined)
+- [Refactoring.Guru - Adapter](https://refactoring.guru/design-patterns/adapter)
+- [SourceMaking - Adapter Design Pattern](https://sourcemaking.com/design_patterns/adapter)
+- [Head First Design Patterns, 2nd Edition](https://www.oreilly.com/library/view/head-first-design/9781492077992/)
 
 ## Related Articles
 

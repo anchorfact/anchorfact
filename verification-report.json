@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-11T15:43:34.590Z",
+    "generated": "2026-06-13T14:57:40.100Z",
     "total_articles": 1628,
     "total_with_errors": 0,
     "average_sources_per_article": "2.6",
-    "overall_verification_rate": "92.0%",
-    "elapsed_ms": 396182,
-    "elapsed_sec": "396.2",
+    "overall_verification_rate": "92.2%",
+    "elapsed_ms": 909,
+    "elapsed_sec": "0.9",
     "concurrency": 3
   },
   "articles": [
@@ -42418,116 +42418,65 @@
       "file": "content/computer-science/adapter-pattern.md",
       "article_id": "kb-2026-00146",
       "generation_method": "ai_structured",
-      "sources_total": 5,
+      "sources_total": 3,
       "verification_results": [
         {
-          "source_title": "ACM Digital Library",
-          "source_type": "repository",
+          "source_title": "Refactoring.Guru - Adapter",
+          "source_type": "reference",
           "results": [
             {
               "method": "url",
-              "identifier": "https://dl.acm.org/",
-              "verified": false,
+              "identifier": "https://refactoring.guru/design-patterns/adapter",
+              "verified": true,
               "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/"
+                "status": 200,
+                "final_url": "https://refactoring.guru/design-patterns/adapter",
+                "http_method": "HEAD"
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Design Patterns: Elements of Reusable Object-Oriented Software (30th Anniversary Edition, 2025)",
+          "source_title": "SourceMaking - Adapter Design Pattern",
+          "source_type": "reference",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://sourcemaking.com/design_patterns/adapter",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://sourcemaking.com/design_patterns/adapter",
+                "http_method": "HEAD"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Head First Design Patterns, 2nd Edition",
           "source_type": "book",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.informit.com/design-patterns/",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://www.informit.com/404.aspx?aspxerrorpath=/design-patterns"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Software Architecture Patterns in 2025: Microservices to Modular Monoliths",
-          "source_type": "survey_paper",
-          "results": [
-            {
-              "method": "url",
-              "identifier": "https://doi.org/10.1145/acmcs.2025.arch",
-              "verified": false,
-              "metadata": {
-                "status": 404,
-                "final_url": "https://doi.org/10.1145/acmcs.2025.arch"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
-        },
-        {
-          "source_title": "Residual Feature Pyramid Network for Enhancement of Vascular Patterns",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "doi",
-              "identifier": "10.1109/CVPRW56347.2022.00165",
+              "identifier": "https://www.oreilly.com/library/view/head-first-design/9781492077992/",
               "verified": true,
               "metadata": {
-                "title": "Residual Feature Pyramid Network for Enhancement of Vascular Patterns",
-                "publisher": "IEEE",
-                "year": 2022
+                "status": 200,
+                "final_url": "https://www.oreilly.com/library/view/head-first-design/9781492077992/",
+                "http_method": "HEAD"
               },
               "match": true
-            },
-            {
-              "method": "arxiv",
-              "identifier": "2306.17200v1",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
             }
           ],
-          "all_verified": false
-        },
-        {
-          "source_title": "ERANNs: Efficient Residual Audio Neural Networks for Audio Pattern Recognition",
-          "source_type": "academic_paper",
-          "results": [
-            {
-              "method": "doi",
-              "identifier": "10.1016/j.patrec.2022.07.012",
-              "verified": true,
-              "metadata": {
-                "title": "ERANNs: Efficient residual audio neural networks for audio pattern recognition",
-                "publisher": "Elsevier BV",
-                "year": 2022
-              },
-              "match": true
-            },
-            {
-              "method": "arxiv",
-              "identifier": "2106.01621v7",
-              "verified": false,
-              "metadata": {
-                "error": "arXiv returned 429"
-              },
-              "match": false
-            }
-          ],
-          "all_verified": false
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 3
+      "sources_verified": 3,
+      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\agile-methodology.md",
