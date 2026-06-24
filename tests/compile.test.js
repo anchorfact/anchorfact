@@ -266,6 +266,7 @@ test('public entrypoints exclude draft articles', () => {
   assert(robotsTxt.includes('AI-Minimum-Valid-Resolve-Batch: https://anchorfact.org/api/resolve-batch?ref={claim_id}&ref={source_id}&format=markdown'), 'robots.txt should expose a minimum valid batch resolver call');
   assert(robotsTxt.includes('AI-Do-Not-Call-Bare: /api/evidence,/api/source,/api/resolve-batch'), 'robots.txt should warn against bare primary API calls');
   assert(robotsTxt.includes('AI-Recoverable-400-Field: machine_recovery'), 'robots.txt should name the recovery field for recoverable API 400s');
+  assert(robotsTxt.includes('AI-Recovery-Guide: https://anchorfact.org/api'), 'robots.txt should point AI crawlers to API recovery guidance');
   assert(robotsTxt.includes('AI-Cite: https://anchorfact.org/api/cite?id={claim_id}'), 'robots.txt should advertise AI citation hint');
   assertEq(apiAccess.schema_version, 'anchorfact.api-access.v1');
   assertEq(apiAccess.provenance_url, 'https://anchorfact.org/provenance.json');
@@ -1192,12 +1193,13 @@ test('_headers is generated for Cloudflare Pages static output', () => {
     assert(headers.includes(`${path}\n  Access-Control-Allow-Origin: *\n  Content-Type: ${path.endsWith('.txt') ? 'text/plain' : 'application/json'}; charset=utf-8\n  Cache-Control: public, max-age=0, must-revalidate`), `_headers should keep ${path} revalidated`);
   }
   assert(headers.includes('/*/index.json\n  Access-Control-Allow-Origin: *'), '_headers should expose article JSON-LD CORS');
-  assert(headers.includes('/*/index.html\n  Access-Control-Allow-Origin: *\n  Content-Type: application/ld+json; charset=utf-8\n  Cache-Control: public, max-age=86400'), '_headers should expose article index.html aliases as JSON-LD');
-  assert(headers.includes('/*/index.html\n  Access-Control-Allow-Origin: *\n  Content-Type: application/ld+json; charset=utf-8\n  Cache-Control: public, max-age=86400\n  X-Robots-Tag: noindex, nofollow'), '_headers should noindex article index.html aliases');
-  for (const path of ['/drafts', '/drafts.html', '/dashboard.html']) {
+  for (const path of ['/*/index.html', '/*/index', '/*/*/']) {
+    assert(headers.includes(`${path}\n  Access-Control-Allow-Origin: *\n  Content-Type: application/ld+json; charset=utf-8\n  Cache-Control: public, max-age=86400`), `_headers should expose article ${path} aliases as JSON-LD`);
+    assert(headers.includes(`${path}\n  Access-Control-Allow-Origin: *\n  Content-Type: application/ld+json; charset=utf-8\n  Cache-Control: public, max-age=86400\n  X-Robots-Tag: noindex, nofollow`), `_headers should noindex article ${path} aliases`);
+  }
+  for (const path of ['/drafts', '/drafts.html', '/dashboard', '/dashboard.html', '/404', '/404.html', '/__anchorfact-routing-guard-check.json']) {
     assert(headers.includes(`${path}\n  Access-Control-Allow-Origin: *\n  Content-Type: application/json; charset=utf-8\n  Cache-Control: public, max-age=0, must-revalidate\n  X-Robots-Tag: noindex, nofollow`), `_headers should expose ${path} as noindex JSON`);
   }
-  assert(headers.includes('/404.html\n  Access-Control-Allow-Origin: *\n  Content-Type: application/json; charset=utf-8\n  Cache-Control: public, max-age=0, must-revalidate\n  X-Robots-Tag: noindex, nofollow'), '_headers should expose 404 as noindex JSON');
 });
 
 rmSync(root, { recursive: true, force: true });

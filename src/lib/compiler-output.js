@@ -266,6 +266,7 @@ AI-Minimum-Valid-Evidence: https://anchorfact.org/api/evidence?q={query}&limit=3
 AI-Minimum-Valid-Resolve-Batch: https://anchorfact.org/api/resolve-batch?ref={claim_id}&ref={source_id}&format=markdown
 AI-Do-Not-Call-Bare: /api/evidence,/api/source,/api/resolve-batch
 AI-Recoverable-400-Field: machine_recovery
+AI-Recovery-Guide: https://anchorfact.org/api
 Large-Artifact-Policy: prefer_api_context_or_evidence
 Artifact-Summary: https://anchorfact.org/artifact-summary.json
 Artifact-Shards: https://anchorfact.org/artifact-shards.json
@@ -349,10 +350,13 @@ function writeHeaders(distDir) {
   Cache-Control: public, max-age=0, must-revalidate`)
     .join('\n\n');
   const noindexMachineArtifacts = [
+    '/404',
     '/404.html',
     '/drafts',
     '/drafts.html',
-    '/dashboard.html'
+    '/dashboard',
+    '/dashboard.html',
+    '/__anchorfact-routing-guard-check.json'
   ];
   const noindexMachineArtifactHeaders = noindexMachineArtifacts
     .map(path => `${path}
@@ -383,6 +387,18 @@ function writeHeaders(distDir) {
   Cache-Control: public, max-age=86400
 
 /*/index.html
+  Access-Control-Allow-Origin: *
+  Content-Type: application/ld+json; charset=utf-8
+  Cache-Control: public, max-age=86400
+  X-Robots-Tag: noindex, nofollow
+
+/*/index
+  Access-Control-Allow-Origin: *
+  Content-Type: application/ld+json; charset=utf-8
+  Cache-Control: public, max-age=86400
+  X-Robots-Tag: noindex, nofollow
+
+/*/*/
   Access-Control-Allow-Origin: *
   Content-Type: application/ld+json; charset=utf-8
   Cache-Control: public, max-age=86400
