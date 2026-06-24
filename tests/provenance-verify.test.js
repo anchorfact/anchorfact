@@ -451,6 +451,11 @@ function buildFixture(overrides = {}) {
         sha256: sha256Text(agentText),
         bytes: Buffer.byteLength(agentText, 'utf8')
       },
+      well_known_agent_json: {
+        path: '/.well-known/anchorfact.json',
+        sha256: sha256Text(agentText),
+        bytes: Buffer.byteLength(agentText, 'utf8')
+      },
       manifest_json: {
         path: '/manifest.json',
         sha256: sha256Text(manifestText),
@@ -569,6 +574,7 @@ function buildFixture(overrides = {}) {
     [`${baseUrl}/provenance.json`]: { body: provenanceText },
     [`${baseUrl}/index.json`]: { body: rootIndexText },
     [`${baseUrl}/agent.json`]: { body: agentText },
+    [`${baseUrl}/.well-known/anchorfact.json`]: { body: agentText },
     [`${baseUrl}/openapi.json`]: { body: openapiText },
     [`${baseUrl}/manifest.json`]: { body: manifestText },
     [`${baseUrl}/claims.json`]: { body: claimsText },
@@ -617,6 +623,7 @@ test('verifyLiveProvenance accepts matching official live artifacts', async () =
   assertEq(result.ok, true);
   assertEq(result.failures, []);
   assertEq(result.artifacts.root_index_json.ok, true);
+  assertEq(result.artifacts.well_known_agent_json.ok, true);
   assertEq(result.artifacts.manifest_json.ok, true);
   assertEq(result.artifacts.content_health_json.ok, true);
   assertEq(result.artifacts.artifact_summary_json.ok, true);

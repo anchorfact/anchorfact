@@ -31,6 +31,7 @@ import { fetchLiveText } from './live-http.js';
 const REQUIRED_ARTIFACTS = [
   'root_index_json',
   'agent_json',
+  'well_known_agent_json',
   'openapi_json',
   'manifest_json',
   'claims_json',

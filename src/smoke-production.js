@@ -926,6 +926,7 @@ export async function main() {
   assertOk(provenance.content_counts?.draft === manifest.draft_article_count, 'provenance draft count does not match manifest', failures);
   assertOk(provenance.content_counts?.claims === claimCount, 'provenance claim count does not match claims.json', failures);
   assertOk(provenance.artifacts?.agent_json?.sha256 === sha256Text(results['/agent.json'].body), 'provenance agent hash does not match /agent.json', failures);
+  assertOk(provenance.artifacts?.well_known_agent_json?.sha256 === sha256Text(results['/.well-known/anchorfact.json'].body), 'provenance well-known agent hash does not match /.well-known/anchorfact.json', failures);
   assertOk(provenance.artifacts?.openapi_json?.sha256 === sha256Text(results['/openapi.json'].body), 'provenance OpenAPI hash does not match /openapi.json', failures);
   assertOk(provenance.artifacts?.manifest_json?.sha256 === sha256Text(results['/manifest.json'].body), 'provenance manifest hash does not match /manifest.json', failures);
   assertOk(provenance.artifacts?.claims_json?.sha256 === sha256Text(results['/claims.json'].body), 'provenance claims hash does not match /claims.json', failures);

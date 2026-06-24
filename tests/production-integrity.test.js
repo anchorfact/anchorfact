@@ -1,8 +1,10 @@
 #!/usr/bin/env node
 import { execFileSync } from 'child_process';
 import {
+  DEFAULT_DISCOVERY_ROUTES,
   DEFAULT_EDGE_CACHE_DYNAMIC_CONTROLS,
   DEFAULT_EXPECTED_COUNTS,
+  SIGNED_MACHINE_ARTIFACT_PATHS,
   buildIntegrityReport,
   checkProductionDiscovery,
   checkProductionEdgeCache,
@@ -457,10 +459,16 @@ test('default edge cache controls keep signed provenance dynamic', () => {
   assert(DEFAULT_EDGE_CACHE_DYNAMIC_CONTROLS.includes('/graph.json'), 'signed graph artifact should not be edge cached without versioned URLs');
   assert(DEFAULT_EDGE_CACHE_DYNAMIC_CONTROLS.includes('/search-index.json'), 'signed search artifact should not be edge cached without versioned URLs');
   assert(DEFAULT_EDGE_CACHE_DYNAMIC_CONTROLS.includes('/claims.json'), 'signed claims artifact should not be edge cached without versioned URLs');
+  assert(DEFAULT_EDGE_CACHE_DYNAMIC_CONTROLS.includes('/.well-known/anchorfact.json'), 'well-known agent alias should not be edge cached without versioned URLs');
   assert(DEFAULT_EDGE_CACHE_DYNAMIC_CONTROLS.includes('/artifact-summary.json'), 'signed artifact summary should not be edge cached without versioned URLs');
   assert(DEFAULT_EDGE_CACHE_DYNAMIC_CONTROLS.includes('/artifact-shards.json'), 'signed artifact shard registry should not be edge cached without versioned URLs');
   assert(DEFAULT_EDGE_CACHE_DYNAMIC_CONTROLS.includes('/api-readiness.json'), 'signed API readiness artifact should not be edge cached without versioned URLs');
   assert(DEFAULT_EDGE_CACHE_DYNAMIC_CONTROLS.includes('/404.html'), 'machine JSON 404 artifact should not be edge cached without versioned URLs');
+});
+
+test('default discovery routes include the well-known agent alias', () => {
+  assert(DEFAULT_DISCOVERY_ROUTES.includes('/.well-known/anchorfact.json'), 'AI discovery should check the well-known agent alias');
+  assert(SIGNED_MACHINE_ARTIFACT_PATHS.includes('/.well-known/anchorfact.json'), 'signed machine artifact cache controls should include the well-known agent alias');
 });
 
 test('checkProductionDiscovery verifies AI entrypoints with browser and AI user agents', async () => {

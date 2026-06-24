@@ -970,6 +970,7 @@ test('evals.json describes executable AI integration checks', () => {
   assert(mcpEval.expected.required_tools.includes('anchorfact_content_health'), 'evals should include MCP corpus health metadata check');
   const provenanceEval = evals.evals.find(evalCase => evalCase.id === 'signed_provenance_static_artifacts');
   assert(provenanceEval.expected.required_artifacts.includes('root_index_json'), 'evals should require root index hash in provenance');
+  assert(provenanceEval.expected.required_artifacts.includes('well_known_agent_json'), 'evals should require well-known agent hash in provenance');
   assert(provenanceEval.expected.required_artifacts.includes('evals_json'), 'evals should require self hash in provenance');
   assert(provenanceEval.expected.required_artifacts.includes('mcp_json'), 'evals should require MCP hash in provenance');
   assert(provenanceEval.expected.required_artifacts.includes('artifact_summary_json'), 'evals should require artifact summary hash in provenance');
@@ -1089,6 +1090,7 @@ test('provenance.json describes compiled artifacts', () => {
   assert(/^[a-f0-9]{64}$/.test(provenance.artifacts.root_index_json.sha256), 'root index checksum should be sha256 hex');
   assert(/^[a-f0-9]{64}$/.test(provenance.artifacts.manifest_json.sha256), 'manifest checksum should be sha256 hex');
   assert(/^[a-f0-9]{64}$/.test(provenance.artifacts.agent_json.sha256), 'agent checksum should be sha256 hex');
+  assert(/^[a-f0-9]{64}$/.test(provenance.artifacts.well_known_agent_json.sha256), 'well-known agent checksum should be sha256 hex');
   assert(/^[a-f0-9]{64}$/.test(provenance.artifacts.openapi_json.sha256), 'OpenAPI checksum should be sha256 hex');
   assert(/^[a-f0-9]{64}$/.test(provenance.artifacts.claims_json.sha256), 'claims checksum should be sha256 hex');
   assert(/^[a-f0-9]{64}$/.test(provenance.artifacts.topics_json.sha256), 'topics checksum should be sha256 hex');
@@ -1109,6 +1111,8 @@ test('provenance.json describes compiled artifacts', () => {
   assert(provenance.artifacts.root_index_json.bytes > 0, 'root index artifact should include byte size');
   assert(provenance.artifacts.manifest_json.bytes > 0, 'manifest artifact should include byte size');
   assert(provenance.artifacts.agent_json.bytes > 0, 'agent artifact should include byte size');
+  assertEq(provenance.artifacts.well_known_agent_json.path, '/.well-known/anchorfact.json');
+  assert(provenance.artifacts.well_known_agent_json.bytes > 0, 'well-known agent artifact should include byte size');
   assert(provenance.artifacts.openapi_json.bytes > 0, 'OpenAPI artifact should include byte size');
   assert(provenance.artifacts.claims_json.bytes > 0, 'claims artifact should include byte size');
   assert(provenance.artifacts.topics_json.bytes > 0, 'topics artifact should include byte size');

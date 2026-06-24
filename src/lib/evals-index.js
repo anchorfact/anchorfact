@@ -647,6 +647,7 @@ export function buildEvalsIndex({
         required_artifacts: [
           'root_index_json',
           'agent_json',
+          'well_known_agent_json',
           'openapi_json',
           'manifest_json',
           'claims_json',

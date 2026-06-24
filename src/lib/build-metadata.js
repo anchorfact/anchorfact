@@ -187,6 +187,7 @@ export function buildProvenance({ manifest, claimsPayload, distDir, generated, b
     artifacts: {
       root_index_json: artifactInfo(distDir, 'index.json'),
       agent_json: artifactInfo(distDir, 'agent.json'),
+      well_known_agent_json: artifactInfo(distDir, '.well-known/anchorfact.json'),
       openapi_json: artifactInfo(distDir, 'openapi.json'),
       manifest_json: artifactInfo(distDir, 'manifest.json'),
       claims_json: artifactInfo(distDir, 'claims.json'),

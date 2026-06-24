@@ -26,6 +26,7 @@ export const SIGNED_MACHINE_ARTIFACT_PATHS = [
   '/search-index.json',
   '/claims.json',
   '/agent.json',
+  '/.well-known/anchorfact.json',
   '/openapi.json',
   '/api-access/',
   '/manifest.json',
@@ -70,6 +71,7 @@ export const DEFAULT_DISCOVERY_ROUTES = [
   '/llms.txt',
   '/index.json',
   '/agent.json',
+  '/.well-known/anchorfact.json',
   '/api'
 ];
 export const DEFAULT_DISCOVERY_USER_AGENT_PROFILES = [
