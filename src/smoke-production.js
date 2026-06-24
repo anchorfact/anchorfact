@@ -276,6 +276,7 @@ export function readinessDiscoveryFailures({
   rootIndex = {},
   apiReadiness = {},
   agentProfile = {},
+  wellKnownAgentProfile = {},
   apiAccessPolicy = {},
   apiIndex = {},
   openapi = {}
@@ -293,6 +294,7 @@ export function readinessDiscoveryFailures({
   }
   runtimeSignalSummaryFailures(rootIndex.api_readiness_summary?.runtime_signal_contract, apiReadiness.runtime_signal_contract, 'root index readiness summary', failures);
   runtimeSignalSummaryFailures(agentProfile.readiness_runtime_signals, apiReadiness.runtime_signal_contract, 'agent profile runtime signal summary', failures);
+  runtimeSignalSummaryFailures(wellKnownAgentProfile.readiness_runtime_signals, apiReadiness.runtime_signal_contract, 'well-known agent profile runtime signal summary', failures);
 
   assertOk(openapi.components?.schemas?.RootIndex?.properties?.api_readiness_summary, 'openapi RootIndex schema is missing readiness summary', failures);
   assertOk(openapi.components?.schemas?.RootIndex?.properties?.api_readiness_summary?.properties?.runtime_signal_contract, 'openapi RootIndex schema is missing runtime signal summary', failures);
@@ -667,6 +669,7 @@ export async function main() {
     rootIndex,
     apiReadiness,
     agentProfile,
+    wellKnownAgentProfile,
     apiAccessPolicy,
     apiIndex,
     openapi

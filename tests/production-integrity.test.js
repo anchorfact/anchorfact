@@ -977,6 +977,16 @@ test('production smoke validates readiness discovery fields across machine entry
         preferred_adoption_scope: 'interactive_ai'
       }
     },
+    wellKnownAgentProfile: {
+      readiness_runtime_signals: {
+        static_artifact: true,
+        missing_runtime_status: 'not_provided',
+        workflow: '.github/workflows/readiness-scorecard.yml',
+        scorecard_command: 'npm run api:readiness -- --adoption-json reports/ai-adoption-scorecard.json',
+        runtime_input_ids: ['production_integrity', 'ai_adoption', 'design_partners'],
+        preferred_adoption_scope: 'interactive_ai'
+      }
+    },
     apiAccessPolicy: {
       readiness_policy: {
         status_endpoint: '/api-readiness.json',
@@ -1024,12 +1034,14 @@ test('production smoke validates readiness discovery fields across machine entry
     rootIndex: {},
     apiReadiness,
     agentProfile: {},
+    wellKnownAgentProfile: {},
     apiAccessPolicy: {},
     apiIndex: {},
     openapi: { components: { schemas: {} } }
   });
   assert(missing.some(failure => failure.includes('root index readiness summary')), 'missing root readiness summary should fail smoke');
   assert(missing.some(failure => failure.includes('agent profile runtime signal')), 'missing agent runtime signal summary should fail smoke');
+  assert(missing.some(failure => failure.includes('well-known agent profile runtime signal')), 'missing well-known agent runtime signal summary should fail smoke');
   assert(missing.some(failure => failure.includes('/api-access/ readiness policy')), 'missing API access readiness policy should fail smoke');
   assert(missing.some(failure => failure.includes('/api readiness guidance')), 'missing API readiness guidance should fail smoke');
   assert(missing.some(failure => failure.includes('runtime signal')), 'missing runtime signal summaries should fail smoke');
