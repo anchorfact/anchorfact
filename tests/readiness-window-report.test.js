@@ -123,6 +123,10 @@ test('buildReadinessWindowReport marks gates met across required consecutive win
   assertEq(report.paid_beta_ready, false);
   assertEq(report.readiness_blockers.automated_gate_ids, []);
   assertEq(report.readiness_blockers.manual_gate_ids, ['design_partners']);
+  const designRequirement = report.readiness_blockers.evidence_requirements.find(item => item.id === 'design_partners');
+  assertEq(designRequirement.gate_type, 'manual_validation');
+  assertEq(designRequirement.manual_validation, true);
+  assert(designRequirement.required_fields.includes('paid_intent_signal_count'), 'design blocker should publish paid-intent evidence requirement');
   assertEq(report.content_change_policy.status, 'measure_first');
   assertEq(report.content_change_policy.should_repair_content_now, false);
 });
@@ -216,8 +220,17 @@ test('buildReadinessWindowReport treats missing current metrics as not measured'
   assertEq(report.paid_beta_ready, false);
   assert(report.readiness_blockers.automated_gate_ids.includes('production_integrity_14_day'), 'missing production blocker');
   assert(report.readiness_blockers.manual_gate_ids.includes('design_partners'), 'missing manual design partner blocker');
+  const productionRequirement = report.readiness_blockers.evidence_requirements.find(item => item.id === 'production_integrity_14_day');
+  assert(productionRequirement.command.includes('production:integrity'), 'production blocker should publish evidence command');
+  assertEq(productionRequirement.required_days, 14);
+  const adoptionRequirement = report.readiness_blockers.evidence_requirements.find(item => item.id === 'ai_primary_discovery_ratio_7_day');
+  assertEq(adoptionRequirement.runtime_input_id, 'ai_adoption');
+  assertEq(adoptionRequirement.preferred_measurement_scope, 'interactive_ai');
   assertEq(report.manual_gates.design_partners.status, 'not_measured');
   assert(markdown.includes('Readiness blockers: production_integrity_14_day'), 'missing blocker summary');
+  assert(markdown.includes('## Blocker Evidence'), 'missing blocker evidence section');
+  assert(markdown.includes('production_integrity_14_day: npm run production:integrity'), 'missing production evidence command');
+  assert(markdown.includes('design_partners: npm run api:readiness'), 'missing design evidence command');
   assert(markdown.includes('Paid beta ready: false'), 'missing false paid beta readiness summary');
   assert(markdown.includes('public_audit_actionable_count: not_measured'), 'missing not_measured public audit count');
   assert(markdown.includes('api_context_ratio: not_measured'), 'missing not_measured API ratio');

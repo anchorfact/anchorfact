@@ -2,6 +2,10 @@
 import { existsSync, mkdirSync, readFileSync, readdirSync, statSync, writeFileSync } from 'fs';
 import { dirname, join, resolve } from 'path';
 import { isDirectRun } from '../src/lib/cli-entrypoint.js';
+import {
+  buildReadinessBlockerEvidenceRequirements,
+  buildReadinessRuntimeSignalContract
+} from '../src/lib/readiness-runtime-signals.js';
 
 export const READINESS_SNAPSHOT_SCHEMA_VERSION = 'anchorfact.readiness-snapshot.v1';
 export const READINESS_WINDOW_SCHEMA_VERSION = 'anchorfact.readiness-window.v1';
@@ -282,10 +286,10 @@ function gatesMet(gates) {
   return Object.values(gates).every(gate => gate.status === 'met');
 }
 
-function blockingGateIds(gates) {
+function blockingGateRecords(gates) {
   return Object.entries(gates)
     .filter(([, gate]) => gate.status !== 'met')
-    .map(([id]) => id);
+    .map(([id, gate]) => ({ id, ...gate }));
 }
 
 export function buildReadinessWindowReport({
@@ -325,9 +329,17 @@ export function buildReadinessWindowReport({
   };
   const automatedGatesMet = gatesMet(gates);
   const manualGatesMet = gatesMet(manualGates);
+  const runtimeSignalContract = buildReadinessRuntimeSignalContract();
+  const automatedBlockingGates = blockingGateRecords(gates);
+  const manualBlockingGates = blockingGateRecords(manualGates);
   const readinessBlockers = {
-    automated_gate_ids: blockingGateIds(gates),
-    manual_gate_ids: blockingGateIds(manualGates)
+    gate_ids: [...automatedBlockingGates, ...manualBlockingGates].map(gate => gate.id),
+    automated_gate_ids: automatedBlockingGates.map(gate => gate.id),
+    manual_gate_ids: manualBlockingGates.map(gate => gate.id),
+    evidence_requirements: buildReadinessBlockerEvidenceRequirements({
+      gates: [...automatedBlockingGates, ...manualBlockingGates],
+      runtimeSignalContract
+    })
   };
 
   return {
@@ -369,11 +381,23 @@ function manualGateCurrentText(gate) {
 }
 
 function readinessBlockerText(report) {
-  const blockerIds = [
+  const blockerIds = report.readiness_blockers?.gate_ids || [
     ...(report.readiness_blockers?.automated_gate_ids || []),
     ...(report.readiness_blockers?.manual_gate_ids || [])
   ];
   return blockerIds.join(', ') || 'none';
+}
+
+function blockerRequirementText(requirement) {
+  const details = [];
+  if (requirement.required_days) details.push(`days=${requirement.required_days}`);
+  if (requirement.runtime_input_id) details.push(`input=${requirement.runtime_input_id}`);
+  if (requirement.preferred_measurement_scope) details.push(`scope=${requirement.preferred_measurement_scope}`);
+  if (Array.isArray(requirement.required_fields) && requirement.required_fields.length) {
+    details.push(`fields=${requirement.required_fields.join(',')}`);
+  }
+  const suffix = details.length ? ` (${details.join('; ')})` : '';
+  return `- ${requirement.id}: ${requirement.command || 'manual evidence required'}${suffix}`;
 }
 
 export function renderReadinessWindowMarkdown(report) {
@@ -398,6 +422,15 @@ export function renderReadinessWindowMarkdown(report) {
   lines.push('');
   for (const [id, gate] of Object.entries(report.manual_gates || {})) {
     lines.push(`- ${id}: ${gate.status} (${gate.target}${manualGateCurrentText(gate)})`);
+  }
+  lines.push('');
+  lines.push('## Blocker Evidence');
+  lines.push('');
+  const blockerRequirements = report.readiness_blockers?.evidence_requirements || [];
+  if (blockerRequirements.length === 0) {
+    lines.push('- None.');
+  } else {
+    for (const requirement of blockerRequirements) lines.push(blockerRequirementText(requirement));
   }
   lines.push('');
   lines.push('## Current Signals');

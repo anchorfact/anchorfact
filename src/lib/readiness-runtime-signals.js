@@ -40,11 +40,69 @@ const READINESS_RUNTIME_INPUTS = [
   }
 ];
 
+const BLOCKER_EVIDENCE_DEFAULTS = {
+  production_integrity_14_day: {
+    gate_type: 'automated_window',
+    target: '14 consecutive days production:integrity passing and AI eval 100%',
+    required_days: 14,
+    runtime_input_id: 'production_integrity'
+  },
+  public_audit_14_day: {
+    gate_type: 'automated_window',
+    target: '14 consecutive days with 0 move_to_draft / repair_sources public audit findings',
+    required_days: 14,
+    runtime_input_id: 'content_health',
+    command: 'npm run content:health -- --json --write reports/content-health.json'
+  },
+  ai_primary_discovery_ratio_7_day: {
+    gate_type: 'automated_window',
+    target: '>=0.2 primary/discovery ratio for 7 consecutive days',
+    required_days: 7,
+    runtime_input_id: 'ai_adoption'
+  },
+  design_partners: {
+    gate_type: 'manual_validation',
+    target: '>=3 real external design partners and >=1 paid-intent signal',
+    runtime_input_id: 'design_partners'
+  }
+};
+
 function cloneRuntimeInput(input) {
   return {
     ...input,
     required_fields: [...(input.required_fields || [])]
   };
+}
+
+function definedObject(input) {
+  return Object.fromEntries(
+    Object.entries(input).filter(([, value]) => value !== undefined && value !== null)
+  );
+}
+
+function blockerEvidenceRequirement(gate, runtimeSignalContract) {
+  const defaults = BLOCKER_EVIDENCE_DEFAULTS[gate.id] || { gate_type: 'automated_window' };
+  const runtimeInput = (runtimeSignalContract.runtime_inputs || [])
+    .find(input => input?.id === defaults.runtime_input_id) || null;
+
+  return definedObject({
+    id: gate.id,
+    gate_type: defaults.gate_type,
+    status: gate.status,
+    target: gate.target || defaults.target,
+    required_days: gate.required_days ?? defaults.required_days,
+    runtime_input_id: defaults.runtime_input_id,
+    report_field: runtimeInput?.report_field,
+    json_flag: runtimeInput?.json_flag,
+    command: runtimeInput?.command || defaults.command,
+    history_command: runtimeSignalContract.history_command,
+    status_when_missing: runtimeInput?.status_when_missing,
+    preferred_measurement_scope: runtimeInput?.preferred_measurement_scope,
+    manual_validation: runtimeInput?.manual_validation,
+    required_fields: runtimeInput?.required_fields
+      ? [...runtimeInput.required_fields]
+      : undefined
+  });
 }
 
 export function buildReadinessRuntimeSignalContract({ site = OFFICIAL_SITE } = {}) {
@@ -58,6 +116,15 @@ export function buildReadinessRuntimeSignalContract({ site = OFFICIAL_SITE } = {
     published_static_artifact: publicUrl('/api-readiness.json', site),
     runtime_inputs: READINESS_RUNTIME_INPUTS.map(cloneRuntimeInput)
   };
+}
+
+export function buildReadinessBlockerEvidenceRequirements({
+  gates = [],
+  runtimeSignalContract = null,
+  site = OFFICIAL_SITE
+} = {}) {
+  const contract = runtimeSignalContract || buildReadinessRuntimeSignalContract({ site });
+  return gates.map(gate => blockerEvidenceRequirement(gate, contract));
 }
 
 export function buildReadinessRuntimeSignalSummary({
