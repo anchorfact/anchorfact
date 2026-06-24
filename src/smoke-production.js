@@ -275,6 +275,7 @@ function runtimeSignalSummaryFailures(summary, contract, label, failures) {
 export function readinessDiscoveryFailures({
   rootIndex = {},
   apiReadiness = {},
+  agentProfile = {},
   apiAccessPolicy = {},
   apiIndex = {},
   openapi = {}
@@ -291,9 +292,11 @@ export function readinessDiscoveryFailures({
     assertOk(rootIndex.api_readiness_summary?.blocker_ids?.includes(gateId), `root index readiness summary is missing blocker ${gateId}`, failures);
   }
   runtimeSignalSummaryFailures(rootIndex.api_readiness_summary?.runtime_signal_contract, apiReadiness.runtime_signal_contract, 'root index readiness summary', failures);
+  runtimeSignalSummaryFailures(agentProfile.readiness_runtime_signals, apiReadiness.runtime_signal_contract, 'agent profile runtime signal summary', failures);
 
   assertOk(openapi.components?.schemas?.RootIndex?.properties?.api_readiness_summary, 'openapi RootIndex schema is missing readiness summary', failures);
   assertOk(openapi.components?.schemas?.RootIndex?.properties?.api_readiness_summary?.properties?.runtime_signal_contract, 'openapi RootIndex schema is missing runtime signal summary', failures);
+  assertOk(openapi.components?.schemas?.AgentProfile?.properties?.readiness_runtime_signals, 'openapi AgentProfile schema is missing runtime signal summary', failures);
   assertOk(openapi.components?.schemas?.ApiIndex?.properties?.readiness_guidance, 'openapi ApiIndex schema is missing readiness guidance', failures);
   assertOk(openapi.components?.schemas?.ApiIndex?.properties?.readiness_guidance?.properties?.runtime_signal_contract, 'openapi ApiIndex schema is missing runtime signal guidance', failures);
   assertOk(openapi.components?.schemas?.ApiAccess?.properties?.readiness_policy, 'openapi ApiAccess schema is missing readiness policy', failures);
@@ -663,6 +666,7 @@ export async function main() {
   failures.push(...readinessDiscoveryFailures({
     rootIndex,
     apiReadiness,
+    agentProfile,
     apiAccessPolicy,
     apiIndex,
     openapi
