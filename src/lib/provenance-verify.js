@@ -322,6 +322,14 @@ export async function verifyLiveProvenance({
       failures
     });
   }
+  if (artifacts.agent_json?.text && artifacts.well_known_agent_json?.text) {
+    checkEq(
+      sha256Text(artifacts.well_known_agent_json.text),
+      sha256Text(artifacts.agent_json.text),
+      'well-known agent alias body sha256',
+      failures
+    );
+  }
 
   const manifest = artifacts.manifest_json?.text
     ? parseJson(artifacts.manifest_json.text, '/manifest.json', failures) || {}

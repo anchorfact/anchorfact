@@ -634,6 +634,34 @@ test('verifyLiveProvenance accepts matching official live artifacts', async () =
   assertEq(result.signature.skipped, true);
 });
 
+test('verifyLiveProvenance rejects well-known agent alias body drift', async () => {
+  const aliasText = JSON.stringify({
+    schema_version: 'anchorfact.agent.v1',
+    generated: '2026-05-29T00:00:00.000Z',
+    name: 'AnchorFact alias drift fixture'
+  }, null, 2);
+  const fixture = buildFixture({
+    artifacts: {
+      well_known_agent_json: {
+        path: '/.well-known/anchorfact.json',
+        sha256: sha256Text(aliasText),
+        bytes: Buffer.byteLength(aliasText, 'utf8')
+      }
+    },
+    routes: {
+      'https://anchorfact.org/.well-known/anchorfact.json': { body: aliasText }
+    }
+  });
+
+  const result = await verifyLiveProvenance({
+    baseUrl: fixture.baseUrl,
+    fetchImpl: fixture.fetchImpl
+  });
+
+  assertEq(result.ok, false);
+  assert(result.failures.some(failure => failure.includes('well-known agent alias body')), 'well-known alias body drift should fail verification');
+});
+
 test('verifyLiveProvenance sends CI-friendly live fetch headers', async () => {
   const fixture = buildFixture();
   const result = await verifyLiveProvenance({
