@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-24T08:31:13.930Z",
+    "generated": "2026-06-24T08:47:27.234Z",
     "total_articles": 1628,
     "total_with_errors": 0,
     "average_sources_per_article": "2.6",
-    "overall_verification_rate": "93.2%",
-    "elapsed_ms": 1186,
-    "elapsed_sec": "1.2",
+    "overall_verification_rate": "93.3%",
+    "elapsed_ms": 1469,
+    "elapsed_sec": "1.5",
     "concurrency": 3
   },
   "articles": [
@@ -86948,59 +86948,86 @@
       "sources_unreachable": 3
     },
     {
-      "file": "content\\computer-science\\grpc.md",
+      "file": "content/computer-science/grpc.md",
       "article_id": "kb-2026-00189",
       "generation_method": "ai_structured",
-      "sources_total": 3,
+      "sources_total": 4,
       "verification_results": [
         {
-          "source_title": "ACM Digital Library",
-          "source_type": "repository",
+          "source_title": "gRPC Introduction",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://dl.acm.org/",
-              "verified": false,
+              "identifier": "https://grpc.io/docs/what-is-grpc/introduction/",
+              "verified": true,
               "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/"
+                "status": 200,
+                "final_url": "https://grpc.io/docs/what-is-grpc/introduction/",
+                "http_method": "HEAD"
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "gRPC: Up and Running (2nd Edition, 2025)",
-          "source_type": "book",
+          "source_title": "gRPC Core Concepts",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.oreilly.com/grpc/",
-              "verified": false,
-              "metadata": {},
-              "match": false
+              "identifier": "https://grpc.io/docs/what-is-grpc/core-concepts/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://grpc.io/docs/what-is-grpc/core-concepts/",
+                "http_method": "HEAD"
+              },
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Modern API Protocols: REST, GraphQL, and gRPC — Performance Benchmarks 2025",
-          "source_type": "survey_paper",
+          "source_title": "Protocol Buffers Overview",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://doi.org/10.1145/acmcs.2025.protocols",
-              "verified": false,
-              "metadata": {},
-              "match": false
+              "identifier": "https://protobuf.dev/overview/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://protobuf.dev/overview/",
+                "http_method": "HEAD"
+              },
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "Protocol Buffers Proto3 Guide",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://protobuf.dev/programming-guides/proto3/",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://protobuf.dev/programming-guides/proto3/",
+                "http_method": "HEAD"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 3
+      "sources_verified": 4,
+      "sources_unreachable": 0
     },
     {
       "file": "content/computer-science/hash-table.md",

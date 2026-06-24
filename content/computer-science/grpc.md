@@ -4,83 +4,111 @@ title: gRPC
 schema_type: TechArticle
 category: computer-science
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+confidence: medium
+last_verified: '2026-06-24'
+created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
-  - claude-opus
+  - gpt-5-codex
 derived_from_human_seed: true
 conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-computer-science-01
-    statement: gRPC is a high-performance RPC framework developed by Google
-    source_title: ACM Digital Library
-    source_url: https://dl.acm.org/
+  - id: fact-grpc-001
+    statement: >-
+      gRPC documentation describes gRPC as a modern, open source, high-performance remote procedure call framework that can run in any environment.
+    source_title: gRPC Introduction
+    source_url: https://grpc.io/docs/what-is-grpc/introduction/
     confidence: medium
-  - id: fact-computer-science-02
-    statement: "Compared to REST: faster , strongly typed, but harder to debug"
-    source_title: ACM Digital Library
-    source_url: https://dl.acm.org/
+  - id: fact-grpc-002
+    statement: >-
+      gRPC lets a client application call a method on a server application on another machine as if it were a local object.
+    source_title: gRPC Introduction
+    source_url: https://grpc.io/docs/what-is-grpc/introduction/
     confidence: medium
-completeness: 0.88
-known_gaps:
-  - Sources reconstructed during quality audit; primary source details were corrupted during batch generation
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
+  - id: fact-grpc-003
+    statement: >-
+      gRPC service definitions specify remotely callable methods with their parameters and return types.
+    source_title: gRPC Core Concepts
+    source_url: https://grpc.io/docs/what-is-grpc/core-concepts/
+    confidence: medium
+  - id: fact-grpc-004
+    statement: >-
+      gRPC supports unary RPC, server streaming RPC, client streaming RPC, and bidirectional streaming RPC.
+    source_title: gRPC Core Concepts
+    source_url: https://grpc.io/docs/what-is-grpc/core-concepts/
+    confidence: medium
+  - id: fact-grpc-005
+    statement: >-
+      gRPC uses Protocol Buffers as its default interface definition language and message interchange format.
+    source_title: gRPC Core Concepts
+    source_url: https://grpc.io/docs/what-is-grpc/core-concepts/
+    confidence: medium
+  - id: fact-grpc-006
+    statement: >-
+      Protocol Buffers documentation describes protobuf as a language-neutral, platform-neutral, extensible mechanism for serializing structured data.
+    source_title: Protocol Buffers Overview
+    source_url: https://protobuf.dev/overview/
+    confidence: medium
+completeness: 0.9
+known_gaps: []
+disputed_statements: []
 primary_sources:
-  - title: ACM Digital Library
-    type: repository
+  - title: gRPC Introduction
+    type: documentation
     year: 2026
-    url: https://dl.acm.org/
-    institution: ACM
-  - title: "gRPC: Up and Running (2nd Edition, 2025)"
-    type: book
-    year: 2025
-    authors:
-      - multiple
-    institution: O'Reilly Media
-    url: https://www.oreilly.com/grpc/
-  - title: "Modern API Protocols: REST, GraphQL, and gRPC — Performance Benchmarks 2025"
-    type: survey_paper
-    year: 2025
-    authors:
-      - multiple
-    institution: ACM Computing Surveys
-    url: https://doi.org/10.1145/acmcs.2025.protocols
-secondary_sources:
-  - title: ACM Digital Library
-    type: repository
+    url: https://grpc.io/docs/what-is-grpc/introduction/
+    institution: gRPC
+  - title: gRPC Core Concepts
+    type: documentation
     year: 2026
-    url: https://dl.acm.org/
-    institution: ACM
-  - title: The C Programming Language (K&R, 2nd Ed)
-    type: textbook
-    year: 1988
-    url: https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html
-    institution: Prentice Hall
-  - title: Structure and Interpretation of Computer Programs (SICP)
-    type: textbook
-    year: 1996
-    url: https://mitpress.mit.edu/sites/default/files/sicp/
-    institution: MIT Press
+    url: https://grpc.io/docs/what-is-grpc/core-concepts/
+    institution: gRPC
+  - title: Protocol Buffers Overview
+    type: documentation
+    year: 2026
+    url: https://protobuf.dev/overview/
+    institution: Protocol Buffers
+  - title: Protocol Buffers Proto3 Guide
+    type: documentation
+    year: 2026
+    url: https://protobuf.dev/programming-guides/proto3/
+    institution: Protocol Buffers
+secondary_sources: []
+updated: '2026-06-24'
 ---
+
 ## TL;DR
 
-gRPC is a high-performance RPC framework developed by Google (2015, graduated CNCF). It uses Protocol Buffers (protobuf) for binary serialization and HTTP/2 for transport, supporting unary, server-streaming, client-streaming, and bidirectional streaming. gRPC inter-service communication is the backbone of microservices at Google, Netflix, and Square.
+gRPC is an open-source remote procedure call framework for typed service-to-service APIs. A service contract defines callable methods and message types, and generated clients can invoke those methods across machines as if they were local methods.
 
 ## Core Explanation
 
-Protobuf `.proto` files define service and message types. gRPC generates client/server code in 12+ languages. Streaming modes: unary (single request/response), server streaming, client streaming, bidirectional. Compared to REST: faster (binary, no JSON parsing), strongly typed, but harder to debug (needs grpcurl). gRPC-Web bridges gRPC to browsers.
+gRPC is organized around service definitions. A `.proto` file describes messages and service methods; tooling then generates client and server code for supported languages. That contract-first workflow makes gRPC useful for internal APIs, microservices, and systems where both sides need a precise method and message shape.
+
+The framework supports four call shapes: unary request/response, server streaming, client streaming, and bidirectional streaming. Unary calls are closest to a conventional request-response API. Streaming calls are useful when a service needs to send or receive a sequence of messages without opening a separate logical request for each item.
+
+Protocol Buffers are gRPC's default interface definition language and message format. They give teams a compact schema for structured messages, but they also require compatibility discipline when fields, method names, or service contracts change.
+
+## Source-Mapped Facts
+
+- gRPC documentation describes gRPC as a modern, open source, high-performance remote procedure call framework that can run in any environment. ([source](https://grpc.io/docs/what-is-grpc/introduction/))
+- gRPC lets a client application call a method on a server application on another machine as if it were a local object. ([source](https://grpc.io/docs/what-is-grpc/introduction/))
+- gRPC service definitions specify remotely callable methods with their parameters and return types. ([source](https://grpc.io/docs/what-is-grpc/core-concepts/))
+- gRPC supports unary RPC, server streaming RPC, client streaming RPC, and bidirectional streaming RPC. ([source](https://grpc.io/docs/what-is-grpc/core-concepts/))
+- gRPC uses Protocol Buffers as its default interface definition language and message interchange format. ([source](https://grpc.io/docs/what-is-grpc/core-concepts/))
+- Protocol Buffers documentation describes protobuf as a language-neutral, platform-neutral, extensible mechanism for serializing structured data. ([source](https://protobuf.dev/overview/))
 
 ## Further Reading
 
--
+- [gRPC Introduction](https://grpc.io/docs/what-is-grpc/introduction/)
+- [gRPC Core Concepts](https://grpc.io/docs/what-is-grpc/core-concepts/)
+- [Protocol Buffers Overview](https://protobuf.dev/overview/)
+- [Protocol Buffers Proto3 Guide](https://protobuf.dev/programming-guides/proto3/)
 
 ## Related Articles
 
-- [gRPC: Protocol Buffers, HTTP/2 Streaming, and Service Contracts](../grpc-protocol-buffers-http-2-streaming-and-service-contracts.md)
+- [API gRPC Reflection and Protobuf Schemas](api-grpc-reflection-and-protobuf-schemas.md)
+- [API gRPC Deadlines and Cancellation](api-grpc-deadlines-and-cancellation.md)
+- [API gRPC Status Codes and Error Details](api-grpc-status-codes-and-error-details.md)
