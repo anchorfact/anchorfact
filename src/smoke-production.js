@@ -321,6 +321,19 @@ export function readinessDiscoveryFailures({
   return failures;
 }
 
+export function agentAliasFailures({
+  agentProfile = {},
+  wellKnownAgentProfile = {},
+  agentText = '',
+  wellKnownText = ''
+} = {}) {
+  const failures = [];
+  assertOk(wellKnownAgentProfile.schema_version === agentProfile.schema_version, 'well-known agent profile schema does not match /agent.json', failures);
+  assertOk(wellKnownAgentProfile.generated === agentProfile.generated, 'well-known agent profile generated timestamp does not match /agent.json', failures);
+  assertOk(String(wellKnownText) === String(agentText), 'well-known agent profile body does not match /agent.json', failures);
+  return failures;
+}
+
 export function repairQueueBatchFailures(repairQueue = {}) {
   const failures = [];
   const candidateCount = repairQueue.candidate_count;
@@ -561,8 +574,12 @@ export async function main() {
   assertOk(rootAlias.default_answer_path === rootIndex.default_answer_path, 'root slash JSON alias default answer path does not match /index.json', failures);
   assertOk(rootAlias.counts?.public_articles === rootIndex.counts?.public_articles, 'root slash JSON alias public count does not match /index.json', failures);
   assertOk(agentProfile.schema_version === 'anchorfact.agent.v1', `agent schema_version expected anchorfact.agent.v1, got ${agentProfile.schema_version || '(missing)'}`, failures);
-  assertOk(wellKnownAgentProfile.schema_version === agentProfile.schema_version, 'well-known agent profile schema does not match /agent.json', failures);
-  assertOk(wellKnownAgentProfile.generated === agentProfile.generated, 'well-known agent profile generated timestamp does not match /agent.json', failures);
+  failures.push(...agentAliasFailures({
+    agentProfile,
+    wellKnownAgentProfile,
+    agentText: results['/agent.json'].body,
+    wellKnownText: results['/.well-known/anchorfact.json'].body
+  }));
   assertOk(agentProfile.endpoints?.root_index?.url === new URL('/index.json', baseUrl).href, 'agent profile root index endpoint does not match base URL', failures);
   assertOk(agentProfile.endpoints?.openapi?.url === new URL('/openapi.json', baseUrl).href, 'agent profile OpenAPI endpoint does not match base URL', failures);
   assertOk(agentProfile.endpoints?.api_access?.url === new URL('/api-access/', baseUrl).href, 'agent profile API access endpoint does not match base URL', failures);

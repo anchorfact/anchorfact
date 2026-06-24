@@ -11,7 +11,7 @@ import {
   renderIntegrityMarkdown,
   runProductionIntegrity
 } from '../scripts/production-integrity.js';
-import { BASE_SMOKE_ROUTES, REQUIRED_SECURITY_HEADERS, evalCallRoutes, exampleWorkflowRoutes, fetchRoute, fetchRoutes, hasCanonicalSlug, headerMaxAgeAtMost, machineNotFoundContractFailures, pagesRoutingGuardFailures, readJsonRoute, readinessDiscoveryFailures, repairQueueBatchFailures } from '../src/smoke-production.js';
+import { BASE_SMOKE_ROUTES, REQUIRED_SECURITY_HEADERS, agentAliasFailures, evalCallRoutes, exampleWorkflowRoutes, fetchRoute, fetchRoutes, hasCanonicalSlug, headerMaxAgeAtMost, machineNotFoundContractFailures, pagesRoutingGuardFailures, readJsonRoute, readinessDiscoveryFailures, repairQueueBatchFailures } from '../src/smoke-production.js';
 
 let passed = 0, failed = 0;
 const tests = [];
@@ -1053,6 +1053,24 @@ test('production smoke validates readiness discovery fields across machine entry
   assert(missing.some(failure => failure.includes('/api-access/ readiness policy')), 'missing API access readiness policy should fail smoke');
   assert(missing.some(failure => failure.includes('/api readiness guidance')), 'missing API readiness guidance should fail smoke');
   assert(missing.some(failure => failure.includes('runtime signal')), 'missing runtime signal summaries should fail smoke');
+});
+
+test('production smoke validates the well-known agent alias body matches agent.json', () => {
+  const valid = agentAliasFailures({
+    agentProfile: { schema_version: 'anchorfact.agent.v1', generated: '2026-06-24T00:00:00.000Z' },
+    wellKnownAgentProfile: { schema_version: 'anchorfact.agent.v1', generated: '2026-06-24T00:00:00.000Z' },
+    agentText: '{"schema_version":"anchorfact.agent.v1","generated":"2026-06-24T00:00:00.000Z"}',
+    wellKnownText: '{"schema_version":"anchorfact.agent.v1","generated":"2026-06-24T00:00:00.000Z"}'
+  });
+  assertEq(valid, []);
+
+  const mismatchedBody = agentAliasFailures({
+    agentProfile: { schema_version: 'anchorfact.agent.v1', generated: '2026-06-24T00:00:00.000Z' },
+    wellKnownAgentProfile: { schema_version: 'anchorfact.agent.v1', generated: '2026-06-24T00:00:00.000Z' },
+    agentText: '{"schema_version":"anchorfact.agent.v1","generated":"2026-06-24T00:00:00.000Z","a":1}',
+    wellKnownText: '{"schema_version":"anchorfact.agent.v1","generated":"2026-06-24T00:00:00.000Z","a":2}'
+  });
+  assert(mismatchedBody.some(failure => failure.includes('body does not match')), 'body mismatch should fail smoke');
 });
 
 test('production smoke treats missing canonical slug arrays as a failed assertion value', () => {
