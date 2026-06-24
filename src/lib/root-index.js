@@ -48,6 +48,56 @@ export function buildRootIndex({
     official_site: OFFICIAL_SITE,
     provenance_url: publicUrl(PROVENANCE_PATH, site),
     default_answer_path: ROOT_INDEX_DEFAULT_ANSWER_PATH,
+    quick_start: {
+      purpose: 'Smallest root-level contract for AI consumers that reached / or /index.json and need the next query-scoped API call.',
+      default_answer_path: ROOT_INDEX_DEFAULT_ANSWER_PATH,
+      default_answer_mode: 'answer_with_citations',
+      citation_path: '/api/cite?id={claim_id}',
+      primary_api_conversion: {
+        target_ratio: 0.2,
+        measured_as: 'identified AI primary API requests divided by identified AI discovery requests',
+        discovery_entrypoints: ['/', '/robots.txt', '/llms.txt', '/index.json', '/agent.json', '/api'],
+        primary_entrypoints: ['/api/context', '/api/evidence', '/api/cite', '/api/resolve-batch'],
+        next_call_after_discovery: '/api/context?q={query}&limit=3&format=markdown',
+        minimum_valid_primary_calls: [
+          { id: 'context', path: '/api/context?q={query}&limit=3&format=markdown', required_parameter: 'q' },
+          { id: 'evidence', path: '/api/evidence?q={query}&limit=3&format=markdown', required_parameter: 'q' },
+          { id: 'cite', path: '/api/cite?id={claim_id}&format=markdown', required_parameter: 'id' },
+          { id: 'resolve_batch', path: '/api/resolve-batch?ref={claim_id}&ref={source_id}&format=markdown', required_parameter: 'ref' }
+        ],
+        parameter_error_prevention: {
+          bare_primary_paths_return_recoverable_400: true,
+          do_not_call_bare_paths: ['/api/context', '/api/evidence', '/api/cite', '/api/source', '/api/resolve-batch'],
+          copy_minimum_valid_primary_calls_first: true,
+          recovery_field_on_400: 'machine_recovery'
+        }
+      },
+      example_calls: [
+        {
+          purpose: 'default_prompt_context',
+          method: 'GET',
+          path: '/api/context?q=gaussian%20splatting&limit=3&format=markdown'
+        },
+        {
+          purpose: 'raw_evidence_pack',
+          method: 'GET',
+          path: '/api/evidence?q=RLHF&limit=3&format=markdown'
+        }
+      ],
+      trust_check: {
+        path: PROVENANCE_PATH,
+        signature_path: '/provenance.sig',
+        require_trusted_signature: true
+      },
+      fallback_policy: {
+        unsupported_answer_mode: 'external_sources_required',
+        use_external_sources_when: [
+          'answer_policy.can_answer_with_anchorfact is false',
+          'coverage_status is unsupported',
+          'the query asks for live, local, personalized, or time-sensitive facts'
+        ]
+      }
+    },
     preferred_machine_entrypoints: [
       {
         id: 'context',

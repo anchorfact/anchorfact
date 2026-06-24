@@ -143,6 +143,11 @@ test('public entrypoints exclude draft articles', () => {
   assertEq(rootIndex.default_answer_path, '/api/context?q={query}');
   assert(rootIndex.preferred_machine_entrypoints.some(entry => entry.path === '/api/context?q={query}'), 'root index should prefer context API');
   assert(rootIndex.preferred_machine_entrypoints.some(entry => entry.path === '/api/evidence?q={query}'), 'root index should include evidence API');
+  assertEq(rootIndex.quick_start.default_answer_path, '/api/context?q={query}');
+  assertEq(rootIndex.quick_start.primary_api_conversion.next_call_after_discovery, '/api/context?q={query}&limit=3&format=markdown');
+  assert(rootIndex.quick_start.primary_api_conversion.minimum_valid_primary_calls.some(call => call.path === '/api/context?q={query}&limit=3&format=markdown'), 'root quick start should expose copyable context call');
+  assert(rootIndex.quick_start.primary_api_conversion.minimum_valid_primary_calls.some(call => call.path === '/api/evidence?q={query}&limit=3&format=markdown'), 'root quick start should expose copyable evidence call');
+  assert(rootIndex.quick_start.example_calls.some(call => call.path === '/api/context?q=gaussian%20splatting&limit=3&format=markdown'), 'root quick start should include executable context example');
   assertEq(rootIndex.discovery.root_alias, '/');
   assertEq(rootIndex.discovery.openapi, '/openapi.json');
   assertEq(rootIndex.discovery.agent_profile, '/agent.json');
