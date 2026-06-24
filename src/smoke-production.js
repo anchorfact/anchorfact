@@ -695,6 +695,7 @@ export async function main() {
   assertOk(robotsText.includes('Machine-Index: https://anchorfact.org/index.json'), '/robots.txt does not advertise index.json', failures);
   assertOk(robotsText.includes('LLMs: https://anchorfact.org/llms.txt'), '/robots.txt does not advertise llms.txt', failures);
   assertOk(robotsText.includes('Agent: https://anchorfact.org/agent.json'), '/robots.txt does not advertise agent.json', failures);
+  assertOk(robotsText.includes('Well-Known-Agent: https://anchorfact.org/.well-known/anchorfact.json'), '/robots.txt does not advertise /.well-known/anchorfact.json', failures);
   assertOk(robotsText.includes('OpenAPI: https://anchorfact.org/openapi.json'), '/robots.txt does not advertise openapi.json', failures);
   assertOk(robotsText.includes('API: https://anchorfact.org/api'), '/robots.txt does not advertise API index', failures);
   assertOk(robotsText.includes('API-Access: https://anchorfact.org/api-access/'), '/robots.txt does not advertise /api-access/', failures);
@@ -717,6 +718,7 @@ export async function main() {
   assertOk(llmsText.includes('AI primary/discovery conversion target'), '/llms.txt does not advertise AI primary/discovery conversion target', failures);
   assertOk(sitemapText.includes('https://anchorfact.org/index.json'), '/sitemap.xml does not include index.json', failures);
   assertOk(sitemapText.includes('https://anchorfact.org/agent.json'), '/sitemap.xml does not include agent.json', failures);
+  assertOk(sitemapText.includes('https://anchorfact.org/.well-known/anchorfact.json'), '/sitemap.xml does not include /.well-known/anchorfact.json', failures);
   assertOk(sitemapText.includes('https://anchorfact.org/llms.txt'), '/sitemap.xml does not include llms.txt', failures);
   assertOk(sitemapText.includes('https://anchorfact.org/api'), '/sitemap.xml does not include API index', failures);
   assertOk(sitemapText.includes('https://anchorfact.org/api-access/'), '/sitemap.xml does not include /api-access/', failures);

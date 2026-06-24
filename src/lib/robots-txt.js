@@ -18,6 +18,7 @@ Sitemap: ${publicUrl('/sitemap.xml', site)}
 Machine-Index: ${publicUrl('/index.json', site)}
 LLMs: ${publicUrl('/llms.txt', site)}
 Agent: ${publicUrl('/agent.json', site)}
+Well-Known-Agent: ${publicUrl('/.well-known/anchorfact.json', site)}
 OpenAPI: ${publicUrl('/openapi.json', site)}
 API: ${publicUrl('/api', site)}
 API-Access: ${publicUrl('/api-access/', site)}

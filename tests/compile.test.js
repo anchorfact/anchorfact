@@ -235,6 +235,7 @@ test('public entrypoints exclude draft articles', () => {
   assert(llmsTxt.includes('GET https://anchorfact.org/api/evidence?q=RLHF&limit=3&format=markdown'), 'llms.txt should give AI crawlers an executable evidence example');
   assert(llmsTxt.indexOf('## Recommended AI Entry Points') < llmsTxt.indexOf('## Public Knowledge Base'), 'llms.txt should show recommended AI entry points before the article index');
   assert(sitemap.includes('/agent.json'), 'sitemap should include agent profile');
+  assert(sitemap.includes('/.well-known/anchorfact.json'), 'sitemap should include well-known agent profile alias');
   assert(sitemap.includes('/index.json'), 'sitemap should include root machine index');
   assert(sitemap.includes('/openapi.json'), 'sitemap should include OpenAPI contract');
   assert(sitemap.includes('/api'), 'sitemap should include API index');
@@ -255,6 +256,7 @@ test('public entrypoints exclude draft articles', () => {
   assert(robotsTxt.includes('Machine-Index: https://anchorfact.org/index.json'), 'robots.txt should advertise root machine index');
   assert(robotsTxt.includes('LLMs: https://anchorfact.org/llms.txt'), 'robots.txt should advertise llms.txt');
   assert(robotsTxt.includes('Agent: https://anchorfact.org/agent.json'), 'robots.txt should advertise agent profile');
+  assert(robotsTxt.includes('Well-Known-Agent: https://anchorfact.org/.well-known/anchorfact.json'), 'robots.txt should advertise well-known agent profile alias');
   assert(robotsTxt.includes('OpenAPI: https://anchorfact.org/openapi.json'), 'robots.txt should advertise OpenAPI contract');
   assert(robotsTxt.includes('API: https://anchorfact.org/api'), 'robots.txt should advertise API index');
   assert(robotsTxt.includes('API-Access: https://anchorfact.org/api-access/'), 'robots.txt should advertise API access policy');
