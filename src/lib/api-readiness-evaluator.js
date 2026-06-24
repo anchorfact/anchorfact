@@ -301,8 +301,13 @@ function buildNextActions({
   }
   actions.push('Continue production:integrity and evals until the 14-day readiness window has real passing history.');
   actions.push('Continue public audit snapshots until the 14-day zero-actionable window has real passing history.');
-  if (adoptionScorecard?.identified_ai_primary_to_discovery_target_status !== 'met') {
-    actions.push('Measure AI primary/discovery usage for a 7-day window before changing paid-beta scope.');
+  const adoptionReadinessStatus = adoptionScorecard?.readiness_ai_primary_to_discovery_target_status
+    || adoptionScorecard?.identified_ai_primary_to_discovery_target_status;
+  if (adoptionReadinessStatus !== 'met') {
+    const measurementScope = adoptionScorecard?.readiness_ai_adoption_scope;
+    actions.push(measurementScope === 'interactive_ai'
+      ? 'Measure interactive AI primary/discovery usage for a 7-day window before changing paid-beta scope.'
+      : 'Measure AI primary/discovery usage for a 7-day window before changing paid-beta scope.');
   }
   actions.push('Keep the free API and no-key public discovery surface until all readiness gates are met for the defined windows.');
   if (designPartnerSignal?.status !== 'met') {
@@ -357,6 +362,13 @@ export function buildApiReadinessReport({
     ? apiPerformanceReport.artifact_size_budget.ok === true
     : null;
   const publicAuditActionableCount = currentPublicAuditActionableCount(artifacts);
+  const adoptionReadinessScope = adoptionScorecard?.readiness_ai_adoption_scope || 'identified_ai';
+  const adoptionReadinessStatus = adoptionScorecard?.readiness_ai_primary_to_discovery_target_status
+    || adoptionScorecard?.identified_ai_primary_to_discovery_target_status
+    || 'not_measured_in_this_report';
+  const adoptionReadinessRatio = adoptionScorecard?.readiness_ai_primary_to_discovery_current_ratio
+    ?? adoptionScorecard?.identified_ai_primary_to_discovery_current_ratio
+    ?? null;
   const readinessGates = [
     {
       id: 'production_integrity_14_day',
@@ -377,9 +389,13 @@ export function buildApiReadinessReport({
     },
     {
       id: 'ai_primary_discovery_ratio_7_day',
-      target: '>=0.2 AI primary/discovery ratio for 7 consecutive days',
-      status: adoptionScorecard?.identified_ai_primary_to_discovery_target_status || 'not_measured_in_this_report',
-      current_ratio: adoptionScorecard?.identified_ai_primary_to_discovery_current_ratio ?? null
+      target: '>=0.2 primary/discovery ratio for 7 consecutive days',
+      status: adoptionReadinessStatus,
+      measurement_scope: adoptionScorecard ? adoptionReadinessScope : null,
+      current_ratio: adoptionReadinessRatio,
+      current_identified_ratio: adoptionScorecard?.identified_ai_primary_to_discovery_current_ratio ?? null,
+      current_interactive_ratio: adoptionScorecard?.interactive_ai_primary_to_discovery_current_ratio ?? null,
+      current_crawler_ratio: adoptionScorecard?.crawler_ai_primary_to_discovery_ratio ?? null
     },
     {
       id: 'design_partners',

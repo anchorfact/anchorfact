@@ -907,6 +907,49 @@ test('runtime scorecard inputs normalize Cloudflare adoption and production inte
   assert(markdown.includes('current=0.05'), 'should render current adoption ratio');
 });
 
+test('readiness gate prefers interactive AI adoption while preserving crawler context', () => {
+  const adoption = normalizeAdoptionScorecard({
+    adoption_scorecard: {
+      discovery_entrypoint_requests: 1081,
+      primary_api_requests: 1290,
+      identified_ai_requests: 86,
+      identified_ai_discovery_requests: 47,
+      identified_ai_primary_api_requests: 3,
+      identified_ai_primary_to_discovery_ratio: 0.06,
+      identified_ai_primary_to_discovery_target_status: 'below_target',
+      interactive_ai_discovery_requests: 12,
+      interactive_ai_primary_api_requests: 3,
+      interactive_ai_primary_to_discovery_ratio: 0.25,
+      interactive_ai_primary_to_discovery_target_status: 'met',
+      crawler_ai_discovery_requests: 35,
+      crawler_ai_primary_api_requests: 1,
+      crawler_ai_primary_to_discovery_ratio: 0.03
+    }
+  });
+  const report = buildApiReadinessReport({
+    artifacts: fakeArtifacts(),
+    querySet: [{ id: 'rag', category: 'agent_rag', expected_slug: 'ai/rag', query: 'Retrieval-Augmented Generation (RAG)' }],
+    adoptionScorecard: adoption,
+    generatedAt: '2026-06-24T00:00:00.000Z'
+  });
+  const adoptionGate = report.readiness_gates.find(gate => gate.id === 'ai_primary_discovery_ratio_7_day');
+  const markdown = renderApiReadinessMarkdown(report);
+
+  assertEq(adoption.interactive_ai_primary_to_discovery_current_ratio, 0.25);
+  assertEq(adoption.interactive_ai_primary_to_discovery_target.status, 'met');
+  assertEq(adoptionGate.status, 'met');
+  assertEq(adoptionGate.measurement_scope, 'interactive_ai');
+  assertEq(adoptionGate.current_ratio, 0.25);
+  assertEq(adoptionGate.current_identified_ratio, 0.06);
+  assertEq(adoptionGate.current_interactive_ratio, 0.25);
+  assertEq(adoptionGate.current_crawler_ratio, 0.03);
+  assert(!report.readiness_blockers.automated_gate_ids.includes('ai_primary_discovery_ratio_7_day'), 'met interactive AI adoption should clear the adoption blocker');
+  assert(!report.next_actions.some(action => action.includes('Measure AI primary/discovery')), 'met interactive adoption should not request more generic AI adoption measurement');
+  assert(markdown.includes('scope=interactive_ai'), 'should render adoption measurement scope');
+  assert(markdown.includes('interactive=0.25'), 'should render interactive ratio context');
+  assert(markdown.includes('crawler=0.03'), 'should render crawler ratio context');
+});
+
 test('design partner signal gates paid-beta readiness without leaking partner details', () => {
   const designPartnerSignal = normalizeDesignPartnerSignal({
     source: {

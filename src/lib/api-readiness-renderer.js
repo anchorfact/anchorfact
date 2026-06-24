@@ -2,7 +2,11 @@ export { API_READINESS_SCHEMA_VERSION } from './build-metadata.js';
 
 function gateCurrentText(gate) {
   const parts = [];
+  if (gate.measurement_scope) parts.push(`scope=${gate.measurement_scope}`);
   if (gate.current_ratio !== undefined && gate.current_ratio !== null) parts.push(`current=${gate.current_ratio}`);
+  if (gate.current_identified_ratio !== undefined && gate.current_identified_ratio !== null) parts.push(`identified=${gate.current_identified_ratio}`);
+  if (gate.current_interactive_ratio !== undefined && gate.current_interactive_ratio !== null) parts.push(`interactive=${gate.current_interactive_ratio}`);
+  if (gate.current_crawler_ratio !== undefined && gate.current_crawler_ratio !== null) parts.push(`crawler=${gate.current_crawler_ratio}`);
   if (gate.current_actionable_count !== undefined && gate.current_actionable_count !== null) parts.push(`current_actionable=${gate.current_actionable_count}`);
   if (gate.current_partner_count !== undefined && gate.current_partner_count !== null) parts.push(`current_partners=${gate.current_partner_count}`);
   if (gate.current_paid_intent_count !== undefined && gate.current_paid_intent_count !== null) parts.push(`current_paid_intent=${gate.current_paid_intent_count}`);
@@ -33,7 +37,7 @@ export function renderApiReadinessMarkdown(report) {
   lines.push(`- API performance: ${report.api_performance.status || (report.api_performance.ok ? 'pass' : 'fail')}`);
   lines.push(`- Artifact budget: ${report.api_performance.artifact_size_budget_ok ?? 'not_provided'}`);
   lines.push(`- Production health: ${report.production_health.status || 'not_provided'}`);
-  lines.push(`- Adoption signal: ${report.adoption_signal.status || report.adoption_signal.identified_ai_primary_to_discovery_target_status || 'not_provided'}`);
+  lines.push(`- Adoption signal: ${report.adoption_signal.readiness_ai_primary_to_discovery_target_status || report.adoption_signal.status || report.adoption_signal.identified_ai_primary_to_discovery_target_status || 'not_provided'}`);
   lines.push(`- Design partner signal: ${report.design_partner_signal?.status || 'not_provided'}`);
   lines.push('');
   lines.push(`## Readiness Gates`);

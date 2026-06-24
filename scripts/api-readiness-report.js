@@ -87,6 +87,12 @@ function finiteNumber(value, fallback = 0) {
   return Number.isFinite(number) ? number : fallback;
 }
 
+function adoptionTargetStatus({ suppliedStatus, discoveryRequests, currentRatio, targetRatio }) {
+  if (suppliedStatus) return suppliedStatus;
+  if (Number(discoveryRequests || 0) === 0) return 'no_ai_discovery';
+  return Number(currentRatio || 0) >= Number(targetRatio || 0) ? 'met' : 'below_target';
+}
+
 function readJsonFile(path, label) {
   try {
     return JSON.parse(readFileSync(resolve(path), 'utf-8'));
@@ -124,6 +130,41 @@ export function normalizeAdoptionScorecard(payload) {
   const status = scorecard.identified_ai_primary_to_discovery_target_status
     || target.status
     || 'not_measured_in_this_report';
+  const interactiveTarget = scorecard.interactive_ai_primary_to_discovery_target || {};
+  const interactiveAiDiscoveryRequests = finiteNumber(scorecard.interactive_ai_discovery_requests);
+  const interactiveAiPrimaryApiRequests = finiteNumber(scorecard.interactive_ai_primary_api_requests);
+  const interactiveCurrentRatio = finiteNumber(
+    scorecard.interactive_ai_primary_to_discovery_current_ratio
+      ?? scorecard.interactive_ai_primary_to_discovery_ratio
+      ?? interactiveTarget.current_ratio
+  );
+  const interactiveTargetRatio = finiteNumber(
+    scorecard.interactive_ai_primary_to_discovery_target_ratio
+      ?? interactiveTarget.target_ratio,
+    targetRatio
+  );
+  const interactiveGapToTarget = finiteNumber(
+    scorecard.interactive_ai_primary_to_discovery_gap_to_target
+      ?? interactiveTarget.gap_to_target,
+    Math.max(0, interactiveTargetRatio - interactiveCurrentRatio)
+  );
+  const hasInteractiveAiSignal = interactiveAiDiscoveryRequests > 0
+    || interactiveAiPrimaryApiRequests > 0
+    || scorecard.interactive_ai_primary_to_discovery_ratio !== undefined
+    || scorecard.interactive_ai_primary_to_discovery_current_ratio !== undefined
+    || interactiveTarget.status !== undefined;
+  const interactiveStatus = adoptionTargetStatus({
+    suppliedStatus: scorecard.interactive_ai_primary_to_discovery_target_status || interactiveTarget.status,
+    discoveryRequests: interactiveAiDiscoveryRequests,
+    currentRatio: interactiveCurrentRatio,
+    targetRatio: interactiveTargetRatio
+  });
+  const crawlerAiDiscoveryRequests = finiteNumber(scorecard.crawler_ai_discovery_requests);
+  const crawlerAiPrimaryApiRequests = finiteNumber(scorecard.crawler_ai_primary_api_requests);
+  const crawlerCurrentRatio = finiteNumber(scorecard.crawler_ai_primary_to_discovery_ratio);
+  const readinessScope = hasInteractiveAiSignal ? 'interactive_ai' : 'identified_ai';
+  const readinessCurrentRatio = hasInteractiveAiSignal ? interactiveCurrentRatio : currentRatio;
+  const readinessStatus = hasInteractiveAiSignal ? interactiveStatus : status;
 
   return {
     ...scorecard,
@@ -149,6 +190,30 @@ export function normalizeAdoptionScorecard(payload) {
       gap_to_target: gapToTarget,
       status
     },
+    interactive_ai_discovery_requests: interactiveAiDiscoveryRequests,
+    interactive_ai_primary_api_requests: interactiveAiPrimaryApiRequests,
+    interactive_ai_api_access_page_requests: finiteNumber(scorecard.interactive_ai_api_access_page_requests),
+    interactive_ai_developer_docs_requests: finiteNumber(scorecard.interactive_ai_developer_docs_requests),
+    interactive_ai_core_api_requests: finiteNumber(scorecard.interactive_ai_core_api_requests),
+    interactive_ai_primary_to_discovery_ratio: interactiveCurrentRatio,
+    interactive_ai_primary_to_discovery_target_ratio: interactiveTargetRatio,
+    interactive_ai_primary_to_discovery_current_ratio: interactiveCurrentRatio,
+    interactive_ai_primary_to_discovery_gap_to_target: interactiveGapToTarget,
+    interactive_ai_primary_to_discovery_target_status: interactiveStatus,
+    interactive_ai_primary_to_discovery_target: {
+      target_ratio: interactiveTargetRatio,
+      current_ratio: interactiveCurrentRatio,
+      gap_to_target: interactiveGapToTarget,
+      status: interactiveStatus
+    },
+    crawler_ai_discovery_requests: crawlerAiDiscoveryRequests,
+    crawler_ai_primary_api_requests: crawlerAiPrimaryApiRequests,
+    crawler_ai_developer_docs_requests: finiteNumber(scorecard.crawler_ai_developer_docs_requests),
+    crawler_ai_core_api_requests: finiteNumber(scorecard.crawler_ai_core_api_requests),
+    crawler_ai_primary_to_discovery_ratio: crawlerCurrentRatio,
+    readiness_ai_adoption_scope: readinessScope,
+    readiness_ai_primary_to_discovery_current_ratio: readinessCurrentRatio,
+    readiness_ai_primary_to_discovery_target_status: readinessStatus,
     bot_route_5xx_or_522_requests: finiteNumber(scorecard.bot_route_5xx_or_522_requests),
     scanner_or_probe_requests: finiteNumber(scorecard.scanner_or_probe_requests),
     scanner_or_probe_share: finiteNumber(scorecard.scanner_or_probe_share)
