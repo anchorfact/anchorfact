@@ -105,6 +105,15 @@ function blockerEvidenceRequirement(gate, runtimeSignalContract) {
   });
 }
 
+function cloneBlockerEvidenceRequirement(requirement) {
+  return {
+    ...requirement,
+    required_fields: Array.isArray(requirement.required_fields)
+      ? [...requirement.required_fields]
+      : undefined
+  };
+}
+
 export function buildReadinessRuntimeSignalContract({ site = OFFICIAL_SITE } = {}) {
   return {
     static_artifact: true,
@@ -125,6 +134,13 @@ export function buildReadinessBlockerEvidenceRequirements({
 } = {}) {
   const contract = runtimeSignalContract || buildReadinessRuntimeSignalContract({ site });
   return gates.map(gate => blockerEvidenceRequirement(gate, contract));
+}
+
+export function copyReadinessBlockerEvidenceRequirements(readinessBlockers = {}) {
+  const requirements = Array.isArray(readinessBlockers?.evidence_requirements)
+    ? readinessBlockers.evidence_requirements
+    : [];
+  return requirements.map(cloneBlockerEvidenceRequirement);
 }
 
 export function buildReadinessRuntimeSignalSummary({

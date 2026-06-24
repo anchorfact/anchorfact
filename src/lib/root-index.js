@@ -5,7 +5,10 @@ import {
   publicUrl
 } from './build-metadata.js';
 import { buildErrorRecoveryDiscoveryGuidance } from './api-machine-guidance.js';
-import { buildReadinessRuntimeSignalSummary } from './readiness-runtime-signals.js';
+import {
+  buildReadinessRuntimeSignalSummary,
+  copyReadinessBlockerEvidenceRequirements
+} from './readiness-runtime-signals.js';
 
 export const ROOT_INDEX_DEFAULT_ANSWER_PATH = '/api/context?q={query}';
 
@@ -154,6 +157,9 @@ export function buildRootIndex({
       blocker_ids: apiReadinessPayload?.readiness_blockers?.gate_ids || [],
       automated_blocker_ids: apiReadinessPayload?.readiness_blockers?.automated_gate_ids || [],
       manual_blocker_ids: apiReadinessPayload?.readiness_blockers?.manual_gate_ids || [],
+      blocker_evidence_requirements: copyReadinessBlockerEvidenceRequirements(
+        apiReadinessPayload?.readiness_blockers
+      ),
       runtime_signal_contract: buildReadinessRuntimeSignalSummary({
         contract: apiReadinessPayload?.runtime_signal_contract,
         site

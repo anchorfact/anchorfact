@@ -34,7 +34,10 @@ import {
   TOPICS_SCHEMA_VERSION,
   publicUrl
 } from './build-metadata.js';
-import { buildReadinessRuntimeSignalSummary } from './readiness-runtime-signals.js';
+import {
+  buildReadinessRuntimeSignalSummary,
+  copyReadinessBlockerEvidenceRequirements
+} from './readiness-runtime-signals.js';
 
 function endpoint(path, description, mediaType = 'application/json') {
   return {
@@ -97,6 +100,9 @@ export function buildAgentProfile({
       api_readiness_blocker_ids: apiReadinessPayload?.readiness_blockers?.gate_ids || [],
       api_readiness_automated_blocker_ids: apiReadinessPayload?.readiness_blockers?.automated_gate_ids || [],
       api_readiness_manual_blocker_ids: apiReadinessPayload?.readiness_blockers?.manual_gate_ids || [],
+      api_readiness_blocker_evidence_requirements: copyReadinessBlockerEvidenceRequirements(
+        apiReadinessPayload?.readiness_blockers
+      ),
       searchable_records: searchIndexPayload?.article_count ?? null,
       unique_sources: sourcesPayload?.source_count ?? null,
       verification_report: verificationTimestamp || null,

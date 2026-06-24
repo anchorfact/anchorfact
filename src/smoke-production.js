@@ -273,6 +273,27 @@ function runtimeSignalSummaryFailures(summary, contract, label, failures) {
   }
 }
 
+function blockerEvidenceSummaryFailures(summaryRequirements, expectedRequirements, label, failures) {
+  const summary = Array.isArray(summaryRequirements) ? summaryRequirements : [];
+  const expected = Array.isArray(expectedRequirements) ? expectedRequirements : [];
+  for (const requirement of expected) {
+    const summaryRequirement = summary.find(item => item?.id === requirement?.id);
+    assertOk(summaryRequirement, `${label} is missing blocker evidence ${requirement?.id}`, failures);
+    if (!summaryRequirement) continue;
+    if (requirement.command) {
+      assertOk(summaryRequirement.command === requirement.command, `${label} blocker evidence ${requirement.id} command does not match api-readiness.json`, failures);
+    }
+    const requiredFields = Array.isArray(requirement.required_fields) ? requirement.required_fields : [];
+    for (const field of requiredFields) {
+      assertOk(
+        summaryRequirement.required_fields?.includes(field),
+        `${label} blocker evidence ${requirement.id} is missing required field ${field}`,
+        failures
+      );
+    }
+  }
+}
+
 export function readinessDiscoveryFailures({
   rootIndex = {},
   apiReadiness = {},
@@ -286,6 +307,9 @@ export function readinessDiscoveryFailures({
   const blockerIds = Array.isArray(apiReadiness.readiness_blockers?.gate_ids)
     ? apiReadiness.readiness_blockers.gate_ids
     : [];
+  const blockerEvidenceRequirements = Array.isArray(apiReadiness.readiness_blockers?.evidence_requirements)
+    ? apiReadiness.readiness_blockers.evidence_requirements
+    : [];
 
   assertOk(rootIndex.api_readiness_summary?.path === '/api-readiness.json', 'root index readiness summary path is missing', failures);
   assertOk(rootIndex.api_readiness_summary?.status === apiReadiness.status, 'root index readiness summary status does not match api-readiness.json', failures);
@@ -293,6 +317,24 @@ export function readinessDiscoveryFailures({
   for (const gateId of blockerIds) {
     assertOk(rootIndex.api_readiness_summary?.blocker_ids?.includes(gateId), `root index readiness summary is missing blocker ${gateId}`, failures);
   }
+  blockerEvidenceSummaryFailures(
+    rootIndex.api_readiness_summary?.blocker_evidence_requirements,
+    blockerEvidenceRequirements,
+    'root index readiness summary',
+    failures
+  );
+  blockerEvidenceSummaryFailures(
+    agentProfile.current_snapshot?.api_readiness_blocker_evidence_requirements,
+    blockerEvidenceRequirements,
+    'agent profile current snapshot',
+    failures
+  );
+  blockerEvidenceSummaryFailures(
+    wellKnownAgentProfile.current_snapshot?.api_readiness_blocker_evidence_requirements,
+    blockerEvidenceRequirements,
+    'well-known agent profile current snapshot',
+    failures
+  );
   runtimeSignalSummaryFailures(rootIndex.api_readiness_summary?.runtime_signal_contract, apiReadiness.runtime_signal_contract, 'root index readiness summary', failures);
   runtimeSignalSummaryFailures(agentProfile.readiness_runtime_signals, apiReadiness.runtime_signal_contract, 'agent profile runtime signal summary', failures);
   runtimeSignalSummaryFailures(wellKnownAgentProfile.readiness_runtime_signals, apiReadiness.runtime_signal_contract, 'well-known agent profile runtime signal summary', failures);
@@ -304,17 +346,26 @@ export function readinessDiscoveryFailures({
 
   assertOk(openapi.components?.schemas?.RootIndex?.properties?.api_readiness_summary, 'openapi RootIndex schema is missing readiness summary', failures);
   assertOk(openapi.components?.schemas?.RootIndex?.properties?.api_readiness_summary?.properties?.runtime_signal_contract, 'openapi RootIndex schema is missing runtime signal summary', failures);
+  assertOk(openapi.components?.schemas?.RootIndex?.properties?.api_readiness_summary?.properties?.blocker_evidence_requirements, 'openapi RootIndex schema is missing blocker evidence requirements', failures);
   assertOk(openapi.components?.schemas?.AgentProfile?.properties?.readiness_runtime_signals, 'openapi AgentProfile schema is missing runtime signal summary', failures);
+  assertOk(openapi.components?.schemas?.AgentProfile?.properties?.current_snapshot?.properties?.api_readiness_blocker_evidence_requirements, 'openapi AgentProfile schema is missing blocker evidence requirements', failures);
   assertOk(openapi.components?.schemas?.ApiIndex?.properties?.readiness_guidance, 'openapi ApiIndex schema is missing readiness guidance', failures);
   assertOk(openapi.components?.schemas?.ApiIndex?.properties?.readiness_guidance?.properties?.runtime_signal_contract, 'openapi ApiIndex schema is missing runtime signal guidance', failures);
   assertOk(openapi.components?.schemas?.ApiAccess?.properties?.readiness_policy, 'openapi ApiAccess schema is missing readiness policy', failures);
   assertOk(openapi.components?.schemas?.ApiAccess?.properties?.readiness_policy?.properties?.runtime_signal_contract, 'openapi ApiAccess schema is missing runtime signal guidance', failures);
+  assertOk(openapi.components?.schemas?.ApiAccess?.properties?.readiness_policy?.properties?.blocker_evidence_requirements, 'openapi ApiAccess schema is missing blocker evidence requirements', failures);
 
   assertOk(apiAccessPolicy.readiness_policy?.status_endpoint === '/api-readiness.json', '/api-access/ readiness policy status endpoint is missing', failures);
   assertOk(apiAccessPolicy.readiness_policy?.current_mode === 'free_no_key_read_only', '/api-access/ readiness policy should preserve free no-key access mode', failures);
   for (const gateId of ['production_integrity_14_day', 'design_partners']) {
     assertOk(apiAccessPolicy.readiness_policy?.paid_beta_requires?.includes(gateId), `/api-access/ readiness policy is missing ${gateId}`, failures);
   }
+  blockerEvidenceSummaryFailures(
+    apiAccessPolicy.readiness_policy?.blocker_evidence_requirements,
+    blockerEvidenceRequirements,
+    '/api-access/ readiness policy',
+    failures
+  );
   runtimeSignalSummaryFailures(apiAccessPolicy.readiness_policy?.runtime_signal_contract, apiReadiness.runtime_signal_contract, '/api-access/ readiness policy', failures);
 
   assertOk(apiIndex.readiness_guidance?.status_endpoint === '/api-readiness.json', '/api readiness guidance status endpoint is missing', failures);

@@ -157,6 +157,10 @@ test('public entrypoints exclude draft articles', () => {
   assertEq(rootIndex.api_readiness_summary.subscription_ready, false);
   assertEq(rootIndex.api_readiness_summary.path, '/api-readiness.json');
   assert(rootIndex.api_readiness_summary.blocker_ids.includes('core_query_context_ratio'), 'root index should expose API readiness blockers');
+  assert(rootIndex.api_readiness_summary.blocker_evidence_requirements.some(item =>
+    item.id === 'production_integrity_14_day'
+    && item.required_fields.includes('commit_sha')
+  ), 'root index should expose production blocker evidence requirements');
   assertEq(rootIndex.api_readiness_summary.runtime_signal_contract.static_artifact, true);
   assertEq(rootIndex.api_readiness_summary.runtime_signal_contract.missing_runtime_status, 'not_provided');
   assert(rootIndex.api_readiness_summary.runtime_signal_contract.workflow.includes('readiness-scorecard.yml'), 'root index should expose readiness runtime workflow');
@@ -291,6 +295,10 @@ test('public entrypoints exclude draft articles', () => {
   assertEq(apiAccess.readiness_policy.status_endpoint, '/api-readiness.json');
   assertEq(apiAccess.readiness_policy.current_mode, 'free_no_key_read_only');
   assert(apiAccess.readiness_policy.paid_beta_requires.includes('design_partners'), 'api access policy should list manual readiness gate');
+  assert(apiAccess.readiness_policy.blocker_evidence_requirements.some(item =>
+    item.id === 'design_partners'
+    && item.required_fields.includes('paid_intent_signal_count')
+  ), 'api access policy should expose manual blocker evidence requirements');
   assertEq(apiAccess.readiness_policy.report_only_until_gates_met, true);
   assertEq(apiAccess.readiness_policy.runtime_signal_contract.static_artifact, true);
   assert(apiAccess.readiness_policy.runtime_signal_contract.scorecard_command.includes('--adoption-json'), 'api access policy should expose runtime scorecard command');
@@ -361,6 +369,10 @@ test('agent profile describes the machine contract', () => {
   assertEq(agent.current_snapshot.api_readiness_context_ratio, 0);
   assert(agent.current_snapshot.api_readiness_blocker_ids.includes('core_query_context_ratio'), 'agent profile should expose API readiness blockers');
   assert(agent.current_snapshot.api_readiness_manual_blocker_ids.includes('design_partners'), 'agent profile should expose manual readiness blockers');
+  assert(agent.current_snapshot.api_readiness_blocker_evidence_requirements.some(item =>
+    item.id === 'production_integrity_14_day'
+    && item.required_fields.includes('source_commit_sha')
+  ), 'agent profile should expose readiness blocker evidence requirements');
   assertEq(agent.readiness_runtime_signals.static_artifact, true);
   assertEq(agent.readiness_runtime_signals.missing_runtime_status, 'not_provided');
   assert(agent.readiness_runtime_signals.runtime_input_ids.includes('production_integrity'), 'agent profile should expose runtime production input id');
@@ -512,13 +524,16 @@ test('openapi.json describes the static AI contract', () => {
   assert(openapi.paths['/{canonical_slug}/index.json'], 'OpenAPI should describe article JSON-LD template');
   assert(openapi.paths['/{canonical_slug}/index.html'], 'OpenAPI should describe article JSON-LD HTML alias template');
   assert(openapi.components.schemas.RootIndex.properties.api_readiness_summary, 'OpenAPI should define root readiness summary');
+  assert(openapi.components.schemas.RootIndex.properties.api_readiness_summary.properties.blocker_evidence_requirements, 'OpenAPI should define root blocker evidence requirements');
   assert(openapi.components.schemas.RootIndex.properties.error_recovery_guidance, 'OpenAPI should define root error recovery guidance');
   assert(openapi.components.schemas.AgentProfile.properties.current_snapshot, 'OpenAPI should define agent current snapshot');
+  assert(openapi.components.schemas.AgentProfile.properties.current_snapshot.properties.api_readiness_blocker_evidence_requirements, 'OpenAPI should define agent blocker evidence requirements');
   assert(openapi.components.schemas.AgentProfile.properties.quick_start, 'OpenAPI should describe agent quick-start guidance');
   assert(openapi.components.schemas.RootIndex, 'OpenAPI should define root machine index schema');
   assert(openapi.components.schemas.ApiAccess, 'OpenAPI should define API access schema');
   assert(openapi.components.schemas.ApiAccess.properties.access_policy, 'OpenAPI should define API access policy fields');
   assert(openapi.components.schemas.ApiAccess.properties.readiness_policy, 'OpenAPI should define API access readiness policy');
+  assert(openapi.components.schemas.ApiAccess.properties.readiness_policy.properties.blocker_evidence_requirements, 'OpenAPI should define API access blocker evidence requirements');
   assert(openapi.components.schemas.DraftsIndex, 'OpenAPI should define drafts index schema');
   assert(openapi.components.schemas.Dashboard, 'OpenAPI should define dashboard schema');
   assert(openapi.components.schemas.RootIndex.properties.default_answer_path, 'OpenAPI should define root default answer path');

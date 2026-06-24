@@ -540,6 +540,7 @@ export function buildOpenApiContract({
               blocker_ids: { type: 'array', items: { type: 'string' } },
               automated_blocker_ids: { type: 'array', items: { type: 'string' } },
               manual_blocker_ids: { type: 'array', items: { type: 'string' } },
+              blocker_evidence_requirements: { type: 'array', items: { type: 'object' } },
               runtime_signal_contract: { $ref: '#/components/schemas/ReadinessRuntimeSignalContractSummary' }
             },
             additionalProperties: true
@@ -555,7 +556,8 @@ export function buildOpenApiContract({
             properties: {
               api_readiness_blocker_ids: { type: 'array', items: { type: 'string' } },
               api_readiness_automated_blocker_ids: { type: 'array', items: { type: 'string' } },
-              api_readiness_manual_blocker_ids: { type: 'array', items: { type: 'string' } }
+              api_readiness_manual_blocker_ids: { type: 'array', items: { type: 'string' } },
+              api_readiness_blocker_evidence_requirements: { type: 'array', items: { type: 'object' } }
             },
             additionalProperties: true
           },
@@ -733,6 +735,7 @@ export function buildOpenApiContract({
               report_only_until_gates_met: { type: 'boolean' },
               paid_beta_requires: { type: 'array', items: { type: 'string' } },
               blocker_source: { type: 'string' },
+              blocker_evidence_requirements: { type: 'array', items: { type: 'object' } },
               manual_validation_required: { type: 'array', items: { type: 'string' } },
               runtime_signal_contract: { $ref: '#/components/schemas/ReadinessRuntimeSignalContractSummary' }
             },

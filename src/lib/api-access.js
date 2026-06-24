@@ -5,7 +5,10 @@ import {
   publicUrl
 } from './build-metadata.js';
 import { API_CALL_GUIDANCE } from './artifact-summary.js';
-import { buildReadinessRuntimeSignalSummary } from './readiness-runtime-signals.js';
+import {
+  buildReadinessRuntimeSignalSummary,
+  copyReadinessBlockerEvidenceRequirements
+} from './readiness-runtime-signals.js';
 
 function publicApiCall(call, site) {
   return {
@@ -53,6 +56,9 @@ export function buildApiAccessPolicy({
         'design_partners'
       ],
       blocker_source: '/api-readiness.json readiness_blockers',
+      blocker_evidence_requirements: copyReadinessBlockerEvidenceRequirements(
+        apiReadinessPayload?.readiness_blockers
+      ),
       manual_validation_required: ['design_partners'],
       runtime_signal_contract: buildReadinessRuntimeSignalSummary({
         contract: apiReadinessPayload?.runtime_signal_contract,
