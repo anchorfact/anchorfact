@@ -96,6 +96,14 @@ function discoveryResponse(body, status = 200) {
 
 console.log('AnchorFact Production Integrity Tests\n');
 
+test('default expected counts match the current trusted compiled corpus', () => {
+  assertEq(DEFAULT_EXPECTED_COUNTS, {
+    public: 1343,
+    draft: 285,
+    claims: 4277
+  });
+});
+
 test('buildIntegrityReport summarizes a passing production check', () => {
   const report = buildIntegrityReport({
     generatedAt: '2026-05-29T00:00:00.000Z',

@@ -186,11 +186,11 @@ test('current production counts do not mark docs stale', () => {
   mkdirSync(join(root, 'docs'), { recursive: true });
   writeFileSync(
     join(root, 'README.md'),
-    'EXPECTED_PUBLIC_ARTICLES=1329 EXPECTED_DRAFT_ARTICLES=299 EXPECTED_CLAIMS=4226'
+    'EXPECTED_PUBLIC_ARTICLES=1343 EXPECTED_DRAFT_ARTICLES=285 EXPECTED_CLAIMS=4277'
   );
   writeFileSync(
     join(root, 'docs', 'LAUNCH_READINESS.md'),
-    'Current trusted counts: 1329 public / 299 draft / 4226 claims.'
+    'Current trusted counts: 1343 public / 285 draft / 4277 claims and 3265 public sources.'
   );
 
   try {
@@ -208,6 +208,34 @@ test('current production counts do not mark docs stale', () => {
     }, { root, generatedAt: '2026-06-08T00:00:00.000Z' });
 
     assertEq(report.stale_docs, []);
+  } finally {
+    rmSync(root, { recursive: true, force: true });
+  }
+});
+
+test('previous public source count marks docs stale', () => {
+  const root = mkdtempSync(join(tmpdir(), 'anchorfact-health-'));
+  mkdirSync(join(root, 'docs'), { recursive: true });
+  writeFileSync(
+    join(root, 'docs', 'SITE_MODULE_QUALITY_AUDIT.md'),
+    'Current trusted counts: 1343 public / 285 draft / 4277 claims and 3221 public sources.'
+  );
+
+  try {
+    const report = buildContentHealthReport({
+      manifest: {
+        article_count: 1,
+        public_article_count: 1,
+        draft_article_count: 0,
+        claim_count: 1,
+        articles: [publicArticle('ai/public-a')]
+      },
+      claimsPayload: { claims: [{ article: 'https://anchorfact.org/ai/public-a/index.json' }] },
+      verificationReport: { articles: [] },
+      contentBySlug: new Map([['ai/public-a', content('ai')]])
+    }, { root, generatedAt: '2026-06-08T00:00:00.000Z' });
+
+    assert(report.stale_docs.some(item => item.path === 'docs/SITE_MODULE_QUALITY_AUDIT.md'), 'should report stale source-count docs');
   } finally {
     rmSync(root, { recursive: true, force: true });
   }

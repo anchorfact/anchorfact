@@ -131,9 +131,25 @@ test('textHygieneFailures catches stale production claim metrics', () => {
 test('textHygieneFailures accepts current production claim metrics', () => {
   const failures = textHygieneFailures(
     'docs/LAUNCH_READINESS_2026-05-27.md',
-    'Snapshot: 1329 public / 299 draft / 4226 claims.'
+    'Snapshot: 1343 public / 285 draft / 4277 claims.'
   );
   assertEq(failures, []);
+});
+
+test('textHygieneFailures catches previous production snapshot metrics', () => {
+  const failures = textHygieneFailures(
+    'docs/LAUNCH_READINESS_2026-05-27.md',
+    'Snapshot: 1329 public / 299 draft / 4226 claims.'
+  );
+  assert(failures.some(failure => failure.includes('stale launch metrics')), 'previous production snapshot should fail hygiene');
+});
+
+test('textHygieneFailures catches previous production source-count metrics', () => {
+  const failures = textHygieneFailures(
+    'docs/SITE_MODULE_QUALITY_AUDIT_2026-05-28.md',
+    'The signed artifact reports 3221 public sources.'
+  );
+  assert(failures.some(failure => failure.includes('stale launch metrics')), 'previous production source count should fail hygiene');
 });
 
 test('textHygieneFailures catches previous greek-mythology repair snapshot metrics', () => {
