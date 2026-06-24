@@ -294,6 +294,17 @@ function blockerEvidenceSummaryFailures(summaryRequirements, expectedRequirement
   }
 }
 
+function blockerIdSummaryFailures(summaryIds, expectedIds, label, failures) {
+  const summary = Array.isArray(summaryIds) ? summaryIds : [];
+  const expected = Array.isArray(expectedIds) ? expectedIds : [];
+  for (const gateId of expected) {
+    assertOk(summary.includes(gateId), `${label} is missing blocker ${gateId}`, failures);
+  }
+  for (const gateId of summary) {
+    assertOk(expected.includes(gateId), `${label} has unexpected blocker ${gateId}`, failures);
+  }
+}
+
 export function readinessDiscoveryFailures({
   rootIndex = {},
   apiReadiness = {},
@@ -314,9 +325,7 @@ export function readinessDiscoveryFailures({
   assertOk(rootIndex.api_readiness_summary?.path === '/api-readiness.json', 'root index readiness summary path is missing', failures);
   assertOk(rootIndex.api_readiness_summary?.status === apiReadiness.status, 'root index readiness summary status does not match api-readiness.json', failures);
   assertOk(rootIndex.api_readiness_summary?.subscription_ready === apiReadiness.subscription_ready, 'root index readiness summary subscription flag does not match api-readiness.json', failures);
-  for (const gateId of blockerIds) {
-    assertOk(rootIndex.api_readiness_summary?.blocker_ids?.includes(gateId), `root index readiness summary is missing blocker ${gateId}`, failures);
-  }
+  blockerIdSummaryFailures(rootIndex.api_readiness_summary?.blocker_ids, blockerIds, 'root index readiness summary', failures);
   blockerEvidenceSummaryFailures(
     rootIndex.api_readiness_summary?.blocker_evidence_requirements,
     blockerEvidenceRequirements,
@@ -358,9 +367,7 @@ export function readinessDiscoveryFailures({
 
   assertOk(apiAccessPolicy.readiness_policy?.status_endpoint === '/api-readiness.json', '/api-access/ readiness policy status endpoint is missing', failures);
   assertOk(apiAccessPolicy.readiness_policy?.current_mode === 'free_no_key_read_only', '/api-access/ readiness policy should preserve free no-key access mode', failures);
-  for (const gateId of ['production_integrity_14_day', 'design_partners']) {
-    assertOk(apiAccessPolicy.readiness_policy?.paid_beta_requires?.includes(gateId), `/api-access/ readiness policy is missing ${gateId}`, failures);
-  }
+  blockerIdSummaryFailures(apiAccessPolicy.readiness_policy?.paid_beta_requires, blockerIds, '/api-access/ readiness policy', failures);
   blockerEvidenceSummaryFailures(
     apiAccessPolicy.readiness_policy?.blocker_evidence_requirements,
     blockerEvidenceRequirements,
@@ -371,9 +378,7 @@ export function readinessDiscoveryFailures({
 
   assertOk(apiIndex.readiness_guidance?.status_endpoint === '/api-readiness.json', '/api readiness guidance status endpoint is missing', failures);
   assertOk(apiIndex.readiness_guidance?.default_access_until_ready === 'free_no_key_read_only', '/api readiness guidance should preserve free no-key access mode', failures);
-  for (const gateId of ['production_integrity_14_day', 'design_partners']) {
-    assertOk(apiIndex.readiness_guidance?.subscription_ready_requires?.includes(gateId), `/api readiness guidance is missing ${gateId}`, failures);
-  }
+  blockerIdSummaryFailures(apiIndex.readiness_guidance?.subscription_ready_requires, blockerIds, '/api readiness guidance', failures);
   blockerEvidenceSummaryFailures(
     apiIndex.readiness_guidance?.blocker_evidence_requirements,
     blockerEvidenceRequirements,

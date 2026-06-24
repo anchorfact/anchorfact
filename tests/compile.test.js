@@ -4,6 +4,7 @@ import { generateKeyPairSync } from 'crypto';
 import { existsSync, mkdirSync, readFileSync, rmSync, statSync, writeFileSync } from 'fs';
 import { join, resolve } from 'path';
 import { DEFAULT_ARTIFACT_SIZE_BUDGETS } from '../scripts/check-api-performance.js';
+import { buildApiAccessPolicy } from '../src/lib/api-access.js';
 
 let passed = 0, failed = 0;
 
@@ -612,6 +613,41 @@ test('openapi.json describes the static AI contract', () => {
   assert(openapi.components.schemas.CiteApiResponse, 'OpenAPI should define CiteApiResponse schema');
   assert(openapi.components.schemas.ClaimApiResponse, 'OpenAPI should define ClaimApiResponse schema');
   assert(openapi.components.schemas.SourceApiResponse, 'OpenAPI should define SourceApiResponse schema');
+});
+
+test('API access policy uses current readiness blocker ids', () => {
+  const apiReadinessPayload = {
+    runtime_signal_contract: {
+      static_artifact: true,
+      status_when_missing: 'not_provided',
+      runtime_inputs: [{ id: 'design_partners' }]
+    },
+    readiness_blockers: {
+      gate_ids: [
+        'production_integrity_14_day',
+        'public_audit_14_day',
+        'ai_primary_discovery_ratio_7_day',
+        'design_partners'
+      ],
+      manual_gate_ids: ['design_partners'],
+      evidence_requirements: [
+        {
+          id: 'design_partners',
+          required_fields: ['external_design_partner_count', 'paid_intent_signal_count']
+        }
+      ]
+    }
+  };
+
+  const policy = buildApiAccessPolicy({ apiReadinessPayload });
+
+  assertEq(policy.readiness_policy.paid_beta_requires, apiReadinessPayload.readiness_blockers.gate_ids);
+  assert(!policy.readiness_policy.paid_beta_requires.includes('core_query_context_ratio'), 'API access policy should not publish stale resolved blockers');
+  assertEq(policy.readiness_policy.manual_validation_required, apiReadinessPayload.readiness_blockers.manual_gate_ids);
+  assert(policy.readiness_policy.blocker_evidence_requirements.some(item =>
+    item.id === 'design_partners'
+    && item.required_fields.includes('paid_intent_signal_count')
+  ), 'API access policy should expose blocker evidence requirements from API readiness');
 });
 
 test('artifact-summary.json describes large machine artifacts and lightweight alternatives', () => {

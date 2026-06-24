@@ -10,6 +10,14 @@ import {
   copyReadinessBlockerEvidenceRequirements
 } from './readiness-runtime-signals.js';
 
+const FALLBACK_PAID_BETA_REQUIREMENTS = [
+  'production_integrity_14_day',
+  'public_audit_14_day',
+  'ai_primary_discovery_ratio_7_day',
+  'design_partners'
+];
+const FALLBACK_MANUAL_VALIDATION_REQUIRED = ['design_partners'];
+
 function publicApiCall(call, site) {
   return {
     ...call,
@@ -28,6 +36,12 @@ export function buildApiAccessPolicy({
 } = {}) {
   const minimumValidPrimaryCalls = API_CALL_GUIDANCE.minimum_valid_primary_calls.map(call => publicApiCall(call, site));
   const byId = new Map(minimumValidPrimaryCalls.map(call => [call.id, call]));
+  const paidBetaRequires = Array.isArray(apiReadinessPayload?.readiness_blockers?.gate_ids)
+    ? [...apiReadinessPayload.readiness_blockers.gate_ids]
+    : [...FALLBACK_PAID_BETA_REQUIREMENTS];
+  const manualValidationRequired = Array.isArray(apiReadinessPayload?.readiness_blockers?.manual_gate_ids)
+    ? [...apiReadinessPayload.readiness_blockers.manual_gate_ids]
+    : [...FALLBACK_MANUAL_VALIDATION_REQUIRED];
 
   return {
     schema_version: API_ACCESS_SCHEMA_VERSION,
@@ -48,18 +62,12 @@ export function buildApiAccessPolicy({
       status_endpoint: '/api-readiness.json',
       current_mode: 'free_no_key_read_only',
       report_only_until_gates_met: true,
-      paid_beta_requires: [
-        'production_integrity_14_day',
-        'public_audit_14_day',
-        'core_query_context_ratio',
-        'ai_primary_discovery_ratio_7_day',
-        'design_partners'
-      ],
+      paid_beta_requires: paidBetaRequires,
       blocker_source: '/api-readiness.json readiness_blockers',
       blocker_evidence_requirements: copyReadinessBlockerEvidenceRequirements(
         apiReadinessPayload?.readiness_blockers
       ),
-      manual_validation_required: ['design_partners'],
+      manual_validation_required: manualValidationRequired,
       runtime_signal_contract: buildReadinessRuntimeSignalSummary({
         contract: apiReadinessPayload?.runtime_signal_contract,
         site
