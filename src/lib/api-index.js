@@ -1,4 +1,7 @@
-import { buildErrorRecoveryDiscoveryGuidance } from './api-machine-guidance.js';
+import {
+  API_CALL_GUIDANCE,
+  buildErrorRecoveryDiscoveryGuidance
+} from './api-machine-guidance.js';
 
 export const API_INDEX_SCHEMA_VERSION = 'anchorfact.api-index.v1';
 
@@ -45,10 +48,21 @@ function primaryEntrypoint(site, id, path, bestFor, useWhen, formatOptions = ['j
   };
 }
 
+function publicApiCall(call, site) {
+  return {
+    ...call,
+    method: 'GET',
+    url: publicUrl(call.path, site)
+  };
+}
+
 export function buildApiIndex({
   generated = new Date().toISOString(),
   site = OFFICIAL_SITE
 } = {}) {
+  const minimumValidPrimaryCalls = API_CALL_GUIDANCE.minimum_valid_primary_calls.map(call => publicApiCall(call, site));
+  const nextRequestAfterDiscovery = minimumValidPrimaryCalls.find(call => call.id === 'context') || minimumValidPrimaryCalls[0] || null;
+
   return {
     schema_version: API_INDEX_SCHEMA_VERSION,
     generated,
@@ -56,23 +70,29 @@ export function buildApiIndex({
     name: 'AnchorFact Machine API Index',
     description: 'Compact read-only API discovery for AI agents that need the smallest live endpoint before fetching the full OpenAPI contract.',
     read_only: true,
+    quick_start: {
+      purpose: 'Copy one valid primary API request before trying bare endpoint paths.',
+      default_answer_path: '/api/context?q={query}',
+      next_request_after_discovery: nextRequestAfterDiscovery,
+      minimum_valid_primary_calls: minimumValidPrimaryCalls,
+      parameter_error_prevention: {
+        ...API_CALL_GUIDANCE.parameter_error_prevention
+      },
+      example_calls: [
+        publicApiCall({ id: 'context_example', path: '/api/context?q=gaussian%20splatting&limit=3&format=markdown', required_parameter: 'q' }, site),
+        publicApiCall({ id: 'evidence_example', path: '/api/evidence?q=RLHF&limit=3&format=markdown', required_parameter: 'q' }, site)
+      ]
+    },
     ai_adoption_guidance: {
       primary_api_conversion_target: 0.2,
       measured_as: 'identified AI primary API requests divided by identified AI discovery requests',
       discovery_entrypoints: ['/robots.txt', '/llms.txt', '/agent.json', '/api'],
       primary_api_entrypoints: ['/api/context', '/api/evidence', '/api/cite', '/api/resolve-batch'],
       next_call_after_discovery: '/api/context?q={query}&limit=3&format=markdown',
-      minimum_valid_primary_calls: [
-        { id: 'context', path: '/api/context?q={query}&limit=3&format=markdown', required_parameter: 'q' },
-        { id: 'evidence', path: '/api/evidence?q={query}&limit=3&format=markdown', required_parameter: 'q' },
-        { id: 'cite', path: '/api/cite?id={claim_id}&format=markdown', required_parameter: 'id' },
-        { id: 'resolve_batch', path: '/api/resolve-batch?ref={claim_id}&ref={source_id}&format=markdown', required_parameter: 'ref' }
-      ],
+      next_request_after_discovery: nextRequestAfterDiscovery,
+      minimum_valid_primary_calls: minimumValidPrimaryCalls,
       parameter_error_prevention: {
-        bare_primary_paths_return_recoverable_400: true,
-        do_not_call_bare_paths: ['/api/context', '/api/evidence', '/api/cite', '/api/source', '/api/resolve-batch'],
-        copy_minimum_valid_primary_calls_first: true,
-        recovery_field_on_400: 'machine_recovery'
+        ...API_CALL_GUIDANCE.parameter_error_prevention
       },
       evidence_query_template: '/api/evidence?q={query}&limit=3&format=markdown',
       citation_template: '/api/cite?id={claim_id}&format=markdown',

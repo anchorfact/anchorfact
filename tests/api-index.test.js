@@ -27,11 +27,16 @@ test('buildApiIndex publishes the machine API discovery contract', () => {
   assertEq(payload.schema_version, 'anchorfact.api-index.v1');
   assertEq(payload.provenance_url, 'https://anchorfact.org/provenance.json');
   assertEq(payload.read_only, true);
+  assertEq(payload.quick_start.default_answer_path, '/api/context?q={query}');
+  assertEq(payload.quick_start.next_request_after_discovery.path, '/api/context?q={query}&limit=3&format=markdown');
+  assertEq(payload.quick_start.next_request_after_discovery.url, 'https://anchorfact.org/api/context?q={query}&limit=3&format=markdown');
+  assert(payload.quick_start.minimum_valid_primary_calls.every(call => call.method === 'GET' && call.url.startsWith('https://anchorfact.org/')), 'quick start should expose copyable absolute GET calls');
   assertEq(payload.ai_adoption_guidance.primary_api_conversion_target, 0.2);
   assert(payload.ai_adoption_guidance.discovery_entrypoints.includes('/llms.txt'), 'AI adoption guidance should name crawler discovery entrypoints');
   assert(payload.ai_adoption_guidance.primary_api_entrypoints.includes('/api/evidence'), 'AI adoption guidance should name primary API entrypoints');
   assert(payload.ai_adoption_guidance.next_call_after_discovery.includes('/api/context'), 'AI adoption guidance should convert discovery to context');
   assert(payload.ai_adoption_guidance.minimum_valid_primary_calls.some(call => call.path === '/api/evidence?q={query}&limit=3&format=markdown'), 'AI adoption guidance should expose copyable evidence calls');
+  assert(payload.ai_adoption_guidance.minimum_valid_primary_calls.every(call => call.method === 'GET' && call.url), 'AI adoption guidance should expose absolute GET calls');
   assert(payload.ai_adoption_guidance.parameter_error_prevention.bare_primary_paths_return_recoverable_400, 'AI adoption guidance should explain bare primary API 400s');
   assert(payload.ai_adoption_guidance.parameter_error_prevention.do_not_call_bare_paths.includes('/api/source'), 'AI adoption guidance should warn against bare source calls');
   assertEq(payload.error_recovery_guidance.recoverable_400_field, 'machine_recovery');
