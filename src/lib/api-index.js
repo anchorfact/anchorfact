@@ -10,14 +10,15 @@ function publicUrl(path, site = OFFICIAL_SITE) {
   return `${String(site || OFFICIAL_SITE).replace(/\/+$/, '')}${normalizedPath}`;
 }
 
-function endpoint(site, id, path, description, query = []) {
+function endpoint(site, id, path, description, query = [], options = {}) {
   return {
     id,
     method: 'GET',
     path,
     url: publicUrl(path, site),
     query,
-    description
+    description,
+    ...options
   };
 }
 
@@ -30,12 +31,14 @@ function staticFallback(site, path, description, mediaType = 'application/json')
   };
 }
 
-function primaryEntrypoint(site, id, path, bestFor, useWhen, formatOptions = ['json']) {
+function primaryEntrypoint(site, id, path, bestFor, useWhen, formatOptions = ['json'], minimumValidPath = null) {
   return {
     id,
     method: 'GET',
     path,
     url: publicUrl(path, site),
+    minimum_valid_path: minimumValidPath,
+    minimum_valid_url: minimumValidPath ? publicUrl(minimumValidPath, site) : null,
     best_for: bestFor,
     use_when: useWhen,
     format_options: formatOptions
@@ -59,6 +62,18 @@ export function buildApiIndex({
       discovery_entrypoints: ['/robots.txt', '/llms.txt', '/agent.json', '/api'],
       primary_api_entrypoints: ['/api/context', '/api/evidence', '/api/cite', '/api/resolve-batch'],
       next_call_after_discovery: '/api/context?q={query}&limit=3&format=markdown',
+      minimum_valid_primary_calls: [
+        { id: 'context', path: '/api/context?q={query}&limit=3&format=markdown', required_parameter: 'q' },
+        { id: 'evidence', path: '/api/evidence?q={query}&limit=3&format=markdown', required_parameter: 'q' },
+        { id: 'cite', path: '/api/cite?id={claim_id}&format=markdown', required_parameter: 'id' },
+        { id: 'resolve_batch', path: '/api/resolve-batch?ref={claim_id}&ref={source_id}&format=markdown', required_parameter: 'ref' }
+      ],
+      parameter_error_prevention: {
+        bare_primary_paths_return_recoverable_400: true,
+        do_not_call_bare_paths: ['/api/context', '/api/evidence', '/api/cite', '/api/source', '/api/resolve-batch'],
+        copy_minimum_valid_primary_calls_first: true,
+        recovery_field_on_400: 'machine_recovery'
+      },
       evidence_query_template: '/api/evidence?q={query}&limit=3&format=markdown',
       citation_template: '/api/cite?id={claim_id}&format=markdown',
       crawler_next_step: 'After reading /robots.txt, /llms.txt, /agent.json, or /api, call /api/context for a real user question instead of downloading large static artifacts.',
@@ -102,7 +117,8 @@ export function buildApiIndex({
           'You need one prompt-ready context pack before drafting an answer.',
           'You need an explicit answer_policy.can_answer_with_anchorfact decision.'
         ],
-        ['json', 'markdown']
+        ['json', 'markdown'],
+        '/api/context?q={query}&limit=3&format=markdown'
       ),
       primaryEntrypoint(
         site,
@@ -117,7 +133,8 @@ export function buildApiIndex({
           'You already have a factual query and need source-grounded evidence.',
           'You want search hits, claims, sources, and citation exports in one call.'
         ],
-        ['json', 'markdown']
+        ['json', 'markdown'],
+        '/api/evidence?q={query}&limit=3&format=markdown'
       ),
       primaryEntrypoint(
         site,
@@ -132,49 +149,80 @@ export function buildApiIndex({
           'You are not sure AnchorFact covers the topic.',
           'The query may be live, local, personalized, or time-sensitive.'
         ],
-        ['json']
+        ['json'],
+        '/api/plan?q={query}&limit=3'
       )
     ],
     endpoints: [
       endpoint(site, 'plan', '/api/plan', 'Decide whether AnchorFact coverage is plausible and which endpoint to call next.', [
         { name: 'q', required: true, description: 'Natural-language query.' },
         { name: 'limit', required: false, description: 'Maximum article match count; default 3.' }
-      ]),
+      ], {
+        minimum_valid_paths: ['/api/plan?q={query}&limit=3'],
+        bare_path_returns_recoverable_400: true
+      }),
       endpoint(site, 'evidence', '/api/evidence', 'Return one-call public evidence packs with article summaries, claims, sources, and citation exports.', [
         { name: 'q', required: true, description: 'Natural-language query.' },
         { name: 'limit', required: false, description: 'Maximum evidence pack count; default 5.' },
         { name: 'format', required: false, description: 'json, markdown, or md.' }
-      ]),
+      ], {
+        minimum_valid_paths: ['/api/evidence?q={query}&limit=3&format=markdown'],
+        bare_path_returns_recoverable_400: true
+      }),
       endpoint(site, 'context', '/api/context', 'Combine answer policy, citation-ready claims, coverage planning, corpus health, fallback guidance, and public evidence packs for prompt assembly.', [
         { name: 'q', required: true, description: 'Natural-language query.' },
         { name: 'limit', required: false, description: 'Maximum evidence pack count; default 3.' },
         { name: 'format', required: false, description: 'json, markdown, or md.' }
-      ]),
+      ], {
+        minimum_valid_paths: ['/api/context?q={query}&limit=3&format=markdown'],
+        bare_path_returns_recoverable_400: true
+      }),
       endpoint(site, 'search', '/api/search', 'Search compact public records by query.', [
         { name: 'q', required: true, description: 'Natural-language query.' },
         { name: 'limit', required: false, description: 'Maximum result count; default 5.' }
-      ]),
+      ], {
+        minimum_valid_paths: ['/api/search?q={query}&limit=5'],
+        bare_path_returns_recoverable_400: true
+      }),
       endpoint(site, 'article', '/api/article', 'Fetch one public article evidence bundle with claims, sources, and citation exports.', [
         { name: 'slug', required: true, description: 'Canonical public article slug.' }
-      ]),
+      ], {
+        minimum_valid_paths: ['/api/article?slug={canonical_slug}'],
+        bare_path_returns_recoverable_400: true
+      }),
       endpoint(site, 'claim', '/api/claim', 'Dereference one public atomic claim with article and source context.', [
         { name: 'id', required: true, description: 'Public claim id or shorthand id such as f1.' }
-      ]),
+      ], {
+        minimum_valid_paths: ['/api/claim?id={claim_id}'],
+        bare_path_returns_recoverable_400: true
+      }),
       endpoint(site, 'cite', '/api/cite', 'Return a citation-ready public atomic claim.', [
         { name: 'id', required: true, description: 'Public claim id or shorthand id such as f1.' },
         { name: 'format', required: false, description: 'json, markdown, or md.' }
-      ]),
+      ], {
+        minimum_valid_paths: ['/api/cite?id={claim_id}&format=markdown'],
+        bare_path_returns_recoverable_400: true
+      }),
       endpoint(site, 'source', '/api/source', 'Inspect a public source and mapped claims by source id or original URL.', [
         { name: 'id', required: false, description: 'Source id from /sources.json.' },
         { name: 'url', required: false, description: 'Original source URL.' }
-      ]),
+      ], {
+        minimum_valid_paths: ['/api/source?id={source_id}', '/api/source?url={source_url}'],
+        bare_path_returns_recoverable_400: true
+      }),
       endpoint(site, 'resolve', '/api/resolve', 'Resolve one mixed public reference to its matching public payload.', [
         { name: 'ref', required: true, description: 'Claim id, article slug, source id, AnchorFact URL, or original source URL.' }
-      ]),
+      ], {
+        minimum_valid_paths: ['/api/resolve?ref={claim_id}'],
+        bare_path_returns_recoverable_400: true
+      }),
       endpoint(site, 'resolve_batch', '/api/resolve-batch', 'Resolve up to 20 mixed public references in one request.', [
         { name: 'ref', required: true, description: 'Repeat for each reference.' },
         { name: 'format', required: false, description: 'json, markdown, or md.' }
-      ])
+      ], {
+        minimum_valid_paths: ['/api/resolve-batch?ref={claim_id}&ref={source_id}', '/api/resolve-batch?ref={claim_id}&ref={source_id}&format=markdown'],
+        bare_path_returns_recoverable_400: true
+      })
     ],
     static_fallbacks: [
       staticFallback(site, '/index.json', 'Compact root machine directory for preferred entrypoints, trust policy, and signed artifacts.'),

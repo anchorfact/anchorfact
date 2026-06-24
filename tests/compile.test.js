@@ -492,6 +492,11 @@ test('openapi.json describes the static AI contract', () => {
   assertEq(openapi.components.schemas.NotFoundResponse.properties.error.properties.code.const, 'not_found');
   assertEq(openapi.components.schemas.NotFoundResponse.properties.fallback_policy.properties.no_spa_fallback.const, true);
   assert(openapi.components.schemas.ApiIndex.properties.ai_adoption_guidance, 'OpenAPI should define AI adoption guidance');
+  assert(openapi.components.schemas.ApiIndex.properties.ai_adoption_guidance.properties.minimum_valid_primary_calls, 'OpenAPI should define minimum valid primary calls');
+  assert(openapi.components.schemas.ApiIndex.properties.ai_adoption_guidance.properties.parameter_error_prevention, 'OpenAPI should define parameter error prevention guidance');
+  assert(openapi.components.schemas.ApiIndex.properties.primary_entrypoints.items.properties.minimum_valid_path, 'OpenAPI should define primary entrypoint minimum valid path');
+  assert(openapi.components.schemas.ApiIndex.properties.endpoints.items.properties.minimum_valid_paths, 'OpenAPI should define endpoint minimum valid paths');
+  assert(openapi.components.schemas.ApiIndex.properties.endpoints.items.properties.bare_path_returns_recoverable_400, 'OpenAPI should define bare-path 400 recovery marker');
   assert(openapi.components.schemas.ApiIndex.properties.error_recovery_guidance, 'OpenAPI should define API error recovery guidance');
   assert(openapi.components.schemas.ApiIndex.properties.readiness_guidance, 'OpenAPI should define API readiness guidance');
   assert(openapi.components.schemas.ArtifactSummary, 'OpenAPI should define artifact summary schema');

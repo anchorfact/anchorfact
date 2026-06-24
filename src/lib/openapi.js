@@ -590,7 +590,39 @@ export function buildOpenApiContract({
         },
         ApiIndex: schemaVersioned('API index', API_INDEX_SCHEMA_VERSION, {
           read_only: { type: 'boolean' },
-          ai_adoption_guidance: { type: 'object' },
+          ai_adoption_guidance: {
+            type: 'object',
+            properties: {
+              primary_api_conversion_target: { type: 'number' },
+              measured_as: { type: 'string' },
+              discovery_entrypoints: { type: 'array', items: { type: 'string' } },
+              primary_api_entrypoints: { type: 'array', items: { type: 'string' } },
+              next_call_after_discovery: { type: 'string' },
+              minimum_valid_primary_calls: {
+                type: 'array',
+                items: {
+                  type: 'object',
+                  properties: {
+                    id: { type: 'string' },
+                    path: { type: 'string' },
+                    required_parameter: { type: 'string' }
+                  },
+                  additionalProperties: true
+                }
+              },
+              parameter_error_prevention: {
+                type: 'object',
+                properties: {
+                  bare_primary_paths_return_recoverable_400: { type: 'boolean' },
+                  do_not_call_bare_paths: { type: 'array', items: { type: 'string' } },
+                  copy_minimum_valid_primary_calls_first: { type: 'boolean' },
+                  recovery_field_on_400: { type: 'string' }
+                },
+                additionalProperties: true
+              }
+            },
+            additionalProperties: true
+          },
           error_recovery_guidance: {
             type: 'object',
             properties: {
@@ -615,8 +647,38 @@ export function buildOpenApiContract({
             additionalProperties: true
           },
           recommended_sequence: { type: 'array', items: { type: 'string' } },
-          primary_entrypoints: { type: 'array', items: { type: 'object' } },
-          endpoints: { type: 'array', items: { type: 'object' } },
+          primary_entrypoints: {
+            type: 'array',
+            items: {
+              type: 'object',
+              properties: {
+                id: { type: 'string' },
+                method: { type: 'string' },
+                path: { type: 'string' },
+                url: { type: 'string' },
+                minimum_valid_path: { type: 'string' },
+                minimum_valid_url: { type: 'string' },
+                format_options: { type: 'array', items: { type: 'string' } }
+              },
+              additionalProperties: true
+            }
+          },
+          endpoints: {
+            type: 'array',
+            items: {
+              type: 'object',
+              properties: {
+                id: { type: 'string' },
+                method: { type: 'string' },
+                path: { type: 'string' },
+                url: { type: 'string' },
+                query: { type: 'array', items: { type: 'object' } },
+                minimum_valid_paths: { type: 'array', items: { type: 'string' } },
+                bare_path_returns_recoverable_400: { type: 'boolean' }
+              },
+              additionalProperties: true
+            }
+          },
           static_fallbacks: { type: 'array', items: { type: 'object' } }
         }),
         ApiAccess: schemaVersioned('API access policy', API_ACCESS_SCHEMA_VERSION, {

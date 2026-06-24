@@ -31,6 +31,9 @@ test('buildApiIndex publishes the machine API discovery contract', () => {
   assert(payload.ai_adoption_guidance.discovery_entrypoints.includes('/llms.txt'), 'AI adoption guidance should name crawler discovery entrypoints');
   assert(payload.ai_adoption_guidance.primary_api_entrypoints.includes('/api/evidence'), 'AI adoption guidance should name primary API entrypoints');
   assert(payload.ai_adoption_guidance.next_call_after_discovery.includes('/api/context'), 'AI adoption guidance should convert discovery to context');
+  assert(payload.ai_adoption_guidance.minimum_valid_primary_calls.some(call => call.path === '/api/evidence?q={query}&limit=3&format=markdown'), 'AI adoption guidance should expose copyable evidence calls');
+  assert(payload.ai_adoption_guidance.parameter_error_prevention.bare_primary_paths_return_recoverable_400, 'AI adoption guidance should explain bare primary API 400s');
+  assert(payload.ai_adoption_guidance.parameter_error_prevention.do_not_call_bare_paths.includes('/api/source'), 'AI adoption guidance should warn against bare source calls');
   assertEq(payload.error_recovery_guidance.recoverable_400_field, 'machine_recovery');
   assertEq(payload.error_recovery_guidance.default_recovery_path, '/api/context?q={query}&limit=3');
   assert(payload.error_recovery_guidance.observed_recoverable_endpoints.includes('/api/evidence'), 'error recovery guidance should name observed recoverable evidence errors');
@@ -48,8 +51,10 @@ test('buildApiIndex publishes the machine API discovery contract', () => {
   assert(payload.recommended_sequence.some(step => step.includes('/llms.txt') && step.includes('/api/context')), 'sequence should tell crawlers the next primary API call');
   assertEq(payload.primary_entrypoints.map(entrypoint => entrypoint.id), ['context', 'evidence', 'plan']);
   assertEq(payload.primary_entrypoints[0].path, '/api/context');
+  assertEq(payload.primary_entrypoints[0].minimum_valid_path, '/api/context?q={query}&limit=3&format=markdown');
   assert(payload.primary_entrypoints[0].best_for.some(item => item.includes('one-call prompt')), 'context should be the default prompt path');
   assert(payload.primary_entrypoints[1].format_options.includes('markdown'), 'evidence should advertise markdown output');
+  assertEq(payload.primary_entrypoints[1].minimum_valid_path, '/api/evidence?q={query}&limit=3&format=markdown');
   assert(payload.primary_entrypoints[2].use_when.some(item => item.includes('not sure')), 'plan should remain the uncertainty preflight');
 
   const endpointPaths = payload.endpoints.map(endpoint => endpoint.path);
@@ -80,6 +85,12 @@ test('buildApiIndex publishes the machine API discovery contract', () => {
   assert(contentHealthFallback, 'api index should point to content health fallback');
   assert(contentHealthFallback.description.includes('source-ready') && contentHealthFallback.description.includes('source acquisition'), 'api index content health fallback should describe repair queue phases');
   assert(payload.static_fallbacks.some(fallback => fallback.path === '/provenance.json'), 'api index should point to provenance fallback');
+
+  const sourceEndpoint = payload.endpoints.find(endpoint => endpoint.path === '/api/source');
+  assertEq(sourceEndpoint.minimum_valid_paths[0], '/api/source?id={source_id}');
+  assert(sourceEndpoint.bare_path_returns_recoverable_400, 'source endpoint should explain bare-path recovery');
+  const resolveBatchEndpoint = payload.endpoints.find(endpoint => endpoint.path === '/api/resolve-batch');
+  assert(resolveBatchEndpoint.minimum_valid_paths.includes('/api/resolve-batch?ref={claim_id}&ref={source_id}'), 'batch resolver should include repeated ref example');
 });
 
 test('Pages Function returns CORS JSON for /api discovery', async () => {
