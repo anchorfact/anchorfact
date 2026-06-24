@@ -168,6 +168,7 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
   assertEq(apiDiscoveryEval.expected.schema_version, 'anchorfact.api-index.v1');
   assert(apiDiscoveryEval.expected.required_paths.includes('/api/evidence'), 'API discovery eval should require evidence endpoint');
   assert(apiDiscoveryEval.expected.required_paths.includes('/api/resolve-batch'), 'API discovery eval should require batch resolver endpoint');
+  assert(apiDiscoveryEval.expected.required_top_level_fields.includes('error_recovery_guidance'), 'API discovery eval should require error recovery guidance');
   assertEq(apiDiscoveryEval.expected.required_primary_entrypoint_ids, ['context', 'evidence', 'plan']);
 
   const llmsDiscoveryEval = payload.evals.find(evalCase => evalCase.id === 'llms_txt_primary_entrypoints');

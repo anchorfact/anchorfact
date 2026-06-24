@@ -485,6 +485,7 @@ test('openapi.json describes the static AI contract', () => {
   assertEq(openapi.components.schemas.NotFoundResponse.properties.error.properties.code.const, 'not_found');
   assertEq(openapi.components.schemas.NotFoundResponse.properties.fallback_policy.properties.no_spa_fallback.const, true);
   assert(openapi.components.schemas.ApiIndex.properties.ai_adoption_guidance, 'OpenAPI should define AI adoption guidance');
+  assert(openapi.components.schemas.ApiIndex.properties.error_recovery_guidance, 'OpenAPI should define API error recovery guidance');
   assert(openapi.components.schemas.ApiIndex.properties.readiness_guidance, 'OpenAPI should define API readiness guidance');
   assert(openapi.components.schemas.ArtifactSummary, 'OpenAPI should define artifact summary schema');
   assert(openapi.components.schemas.ArtifactSummary.properties.artifact_growth_policy, 'OpenAPI should define artifact growth policy');
@@ -813,6 +814,8 @@ test('evals.json describes executable AI integration checks', () => {
     'signed_provenance_static_artifacts'
   ]);
   assert(evals.evals.some(evalCase => evalCase.call.path === '/api'), 'evals should include API discovery checks');
+  const apiDiscoveryEval = evals.evals.find(evalCase => evalCase.id === 'api_discovery');
+  assert(apiDiscoveryEval.expected.required_top_level_fields.includes('error_recovery_guidance'), 'API discovery eval should require error recovery guidance');
   const llmsDiscoveryEval = evals.evals.find(evalCase => evalCase.id === 'llms_txt_primary_entrypoints');
   assertEq(llmsDiscoveryEval.call.path, '/llms.txt');
   assert(llmsDiscoveryEval.expected.contains_text.includes('/api/context?q={query}'), 'llms discovery eval should require context entrypoint');

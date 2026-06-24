@@ -590,6 +590,18 @@ export function buildOpenApiContract({
         ApiIndex: schemaVersioned('API index', API_INDEX_SCHEMA_VERSION, {
           read_only: { type: 'boolean' },
           ai_adoption_guidance: { type: 'object' },
+          error_recovery_guidance: {
+            type: 'object',
+            properties: {
+              recoverable_400_field: { const: 'machine_recovery' },
+              default_recovery_path: { const: '/api/context?q={query}&limit=3' },
+              default_recovery_url: { type: 'string' },
+              observed_recoverable_endpoints: { type: 'array', items: { type: 'string' } },
+              retry_example_paths: { type: 'array', items: { type: 'string' } },
+              policy: { type: 'string' }
+            },
+            additionalProperties: true
+          },
           readiness_guidance: {
             type: 'object',
             properties: {

@@ -54,6 +54,7 @@ test('runAiEvals executes JSON, Markdown, MCP, and provenance eval expectations'
               status: 200,
               content_type: 'application/json',
               schema_version: 'anchorfact.api-index.v1',
+              required_top_level_fields: ['error_recovery_guidance'],
               required_paths: ['/api/plan', '/api/evidence', '/api/context'],
               required_primary_entrypoint_ids: ['context', 'evidence', 'plan']
             }
@@ -236,6 +237,9 @@ test('runAiEvals executes JSON, Markdown, MCP, and provenance eval expectations'
       }),
       '/api': jsonResponse({
         schema_version: 'anchorfact.api-index.v1',
+        error_recovery_guidance: {
+          recoverable_400_field: 'machine_recovery'
+        },
         primary_entrypoints: [
           { id: 'context' },
           { id: 'evidence' },
@@ -577,6 +581,35 @@ test('runAiEvals reports missing primary API entrypoints', async () => {
 
   assertEq(report.ok, false);
   assert(report.results[0].failures.some(failure => failure.includes('primary entrypoint plan')), 'failure should name the missing primary entrypoint');
+});
+
+test('runAiEvals reports missing required top-level fields', async () => {
+  const report = await runAiEvals({
+    baseUrl: 'https://anchorfact.org',
+    generatedAt: '2026-05-29T00:00:00.000Z',
+    fetchImpl: fetchFixture({
+      '/evals.json': jsonResponse({
+        evals: [
+          {
+            id: 'api_discovery',
+            call: { method: 'GET', path: '/api' },
+            expected: {
+              status: 200,
+              content_type: 'application/json',
+              schema_version: 'anchorfact.api-index.v1',
+              required_top_level_fields: ['error_recovery_guidance']
+            }
+          }
+        ]
+      }),
+      '/api': jsonResponse({
+        schema_version: 'anchorfact.api-index.v1'
+      })
+    })
+  });
+
+  assertEq(report.ok, false);
+  assert(report.results[0].failures.some(failure => failure.includes('top-level field error_recovery_guidance')), 'failure should name the missing top-level field');
 });
 
 test('runAiEvals reports top-ranked canonical slug drift for query routing evals', async () => {

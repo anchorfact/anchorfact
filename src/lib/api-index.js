@@ -62,6 +62,22 @@ export function buildApiIndex({
       crawler_next_step: 'After reading /robots.txt, /llms.txt, /agent.json, or /api, call /api/context for a real user question instead of downloading large static artifacts.',
       measurement_signal: 'A ratio below 0.2 means discovery is not yet converting into answer assembly or citation retrieval.'
     },
+    error_recovery_guidance: {
+      recoverable_400_field: 'machine_recovery',
+      default_recovery_path: '/api/context?q={query}&limit=3',
+      default_recovery_url: publicUrl('/api/context?q={query}&limit=3', site),
+      observed_recoverable_endpoints: [
+        '/api/evidence',
+        '/api/source',
+        '/api/resolve-batch'
+      ],
+      retry_example_paths: [
+        '/api/evidence?q={query}&limit=3',
+        '/api/source?id={source_id}',
+        '/api/resolve-batch?ref={claim_id}&ref={source_id}'
+      ],
+      policy: 'If an API request returns a recoverable 400, inspect machine_recovery.next_request first, then use retry_examples for endpoint-specific parameters.'
+    },
     readiness_guidance: {
       status_endpoint: '/api-readiness.json',
       report_only_until_gates_met: true,

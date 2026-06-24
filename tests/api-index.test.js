@@ -31,6 +31,12 @@ test('buildApiIndex publishes the machine API discovery contract', () => {
   assert(payload.ai_adoption_guidance.discovery_entrypoints.includes('/llms.txt'), 'AI adoption guidance should name crawler discovery entrypoints');
   assert(payload.ai_adoption_guidance.primary_api_entrypoints.includes('/api/evidence'), 'AI adoption guidance should name primary API entrypoints');
   assert(payload.ai_adoption_guidance.next_call_after_discovery.includes('/api/context'), 'AI adoption guidance should convert discovery to context');
+  assertEq(payload.error_recovery_guidance.recoverable_400_field, 'machine_recovery');
+  assertEq(payload.error_recovery_guidance.default_recovery_path, '/api/context?q={query}&limit=3');
+  assert(payload.error_recovery_guidance.observed_recoverable_endpoints.includes('/api/evidence'), 'error recovery guidance should name observed recoverable evidence errors');
+  assert(payload.error_recovery_guidance.observed_recoverable_endpoints.includes('/api/source'), 'error recovery guidance should name observed recoverable source errors');
+  assert(payload.error_recovery_guidance.observed_recoverable_endpoints.includes('/api/resolve-batch'), 'error recovery guidance should name observed recoverable batch resolver errors');
+  assert(payload.error_recovery_guidance.retry_example_paths.some(path => path.includes('/api/evidence?q=')), 'error recovery guidance should include an evidence retry template');
   assertEq(payload.readiness_guidance.status_endpoint, '/api-readiness.json');
   assertEq(payload.readiness_guidance.default_access_until_ready, 'free_no_key_read_only');
   assert(payload.readiness_guidance.subscription_ready_requires.includes('production_integrity_14_day'), 'readiness guidance should name production window gate');
@@ -87,6 +93,7 @@ test('Pages Function returns CORS JSON for /api discovery', async () => {
   assertEq(response.headers.get('Cache-Control'), 'public, max-age=300');
   assertEq(payload.schema_version, 'anchorfact.api-index.v1');
   assertEq(payload.readiness_guidance.status_endpoint, '/api-readiness.json');
+  assertEq(payload.error_recovery_guidance.recoverable_400_field, 'machine_recovery');
   assert(payload.endpoints.some(endpoint => endpoint.path === '/api/evidence'), 'payload should include evidence API');
 });
 

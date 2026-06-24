@@ -54,6 +54,15 @@ function evaluateJsonExpected(payload, expected, failures) {
   if (expected.schema_version) {
     check(payload?.schema_version === expected.schema_version, failures, `schema_version expected ${expected.schema_version}, got ${payload?.schema_version || '(missing)'}`);
   }
+  if (Array.isArray(expected.required_top_level_fields)) {
+    for (const field of expected.required_top_level_fields) {
+      check(
+        Object.prototype.hasOwnProperty.call(payload || {}, field),
+        failures,
+        `top-level field ${field} should be present`
+      );
+    }
+  }
   if (expected.error_code) {
     check(payload?.error?.code === expected.error_code, failures, `error.code expected ${expected.error_code}, got ${payload?.error?.code || '(missing)'}`);
   }

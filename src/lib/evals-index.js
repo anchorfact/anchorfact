@@ -238,6 +238,9 @@ export function buildEvalsIndex({
           '/api/resolve',
           '/api/resolve-batch'
         ],
+        required_top_level_fields: [
+          'error_recovery_guidance'
+        ],
         required_primary_entrypoint_ids: ['context', 'evidence', 'plan']
       }
     },
