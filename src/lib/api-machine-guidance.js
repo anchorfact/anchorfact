@@ -96,6 +96,18 @@ export function buildMachineRecoveryGuidance({
     };
   }
 
+  if (currentEndpoint === 'context') {
+    return {
+      ...common,
+      valid_parameters: ['q', 'query', 'limit', 'format'],
+      retry_examples: [
+        apiCall('context_json', contextPath, 'Return the default prompt context with answer policy and citation-ready claims.', site),
+        apiCall('context_markdown', `${contextPath}&format=markdown`, 'Return prompt context as Markdown for direct answer assembly.', site),
+        apiCall('evidence', evidencePath, 'Return source-mapped evidence packs for the query.', site)
+      ]
+    };
+  }
+
   if (currentEndpoint === 'source') {
     return {
       ...common,
@@ -145,11 +157,13 @@ export function buildErrorRecoveryDiscoveryGuidance({ site = OFFICIAL_SITE } = {
     default_recovery_path: '/api/context?q={query}&limit=3',
     default_recovery_url: publicUrl('/api/context?q={query}&limit=3', site),
     observed_recoverable_endpoints: [
+      '/api/context',
       '/api/evidence',
       '/api/source',
       '/api/resolve-batch'
     ],
     retry_example_paths: [
+      '/api/context?q={query}&limit=3',
       '/api/evidence?q={query}&limit=3',
       '/api/source?id={source_id}',
       '/api/resolve-batch?ref={claim_id}&ref={source_id}'

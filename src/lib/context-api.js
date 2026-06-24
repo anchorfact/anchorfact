@@ -2,7 +2,10 @@ import {
   buildEvidenceApiPayload,
   renderEvidenceMarkdown
 } from './evidence-api.js';
-import { buildMachineConsumptionGuidance } from './api-machine-guidance.js';
+import {
+  buildMachineConsumptionGuidance,
+  buildMachineRecoveryGuidance
+} from './api-machine-guidance.js';
 import { buildPlanApiPayload } from './plan-api.js';
 
 export const CONTEXT_API_SCHEMA_VERSION = 'anchorfact.context-api.v1';
@@ -13,11 +16,22 @@ const DEFAULT_LIMIT = 3;
 const MAX_LIMIT = 20;
 const MAX_CITATION_READY_CLAIMS = 6;
 
-function errorPayload(code, message) {
+function errorPayload(code, message, extra = {}) {
   return {
     schema_version: CONTEXT_API_SCHEMA_VERSION,
-    error: { code, message }
+    error: { code, message },
+    ...extra
   };
+}
+
+function recoverableErrorPayload(code, message, extra = {}) {
+  return errorPayload(code, message, {
+    machine_recovery: buildMachineRecoveryGuidance({
+      currentEndpoint: 'context',
+      reason: code
+    }),
+    ...extra
+  });
 }
 
 function clampLimit(value) {
@@ -47,7 +61,7 @@ export function parseContextParams(url) {
     return {
       ok: false,
       status: 400,
-      payload: errorPayload(
+      payload: recoverableErrorPayload(
         'missing_or_invalid_query',
         'Provide a natural-language query with ?q=... or ?query=....'
       )
@@ -93,7 +107,7 @@ export function buildContextApiPayload({
     return {
       ok: false,
       status: 400,
-      payload: errorPayload(
+      payload: recoverableErrorPayload(
         'missing_or_invalid_query',
         'Provide a natural-language query with ?q=... or ?query=....'
       )

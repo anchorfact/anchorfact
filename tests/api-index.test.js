@@ -36,6 +36,7 @@ test('buildApiIndex publishes the machine API discovery contract', () => {
   assert(payload.ai_adoption_guidance.parameter_error_prevention.do_not_call_bare_paths.includes('/api/source'), 'AI adoption guidance should warn against bare source calls');
   assertEq(payload.error_recovery_guidance.recoverable_400_field, 'machine_recovery');
   assertEq(payload.error_recovery_guidance.default_recovery_path, '/api/context?q={query}&limit=3');
+  assert(payload.error_recovery_guidance.observed_recoverable_endpoints.includes('/api/context'), 'error recovery guidance should name observed recoverable context errors');
   assert(payload.error_recovery_guidance.observed_recoverable_endpoints.includes('/api/evidence'), 'error recovery guidance should name observed recoverable evidence errors');
   assert(payload.error_recovery_guidance.observed_recoverable_endpoints.includes('/api/source'), 'error recovery guidance should name observed recoverable source errors');
   assert(payload.error_recovery_guidance.observed_recoverable_endpoints.includes('/api/resolve-batch'), 'error recovery guidance should name observed recoverable batch resolver errors');

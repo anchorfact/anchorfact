@@ -362,6 +362,9 @@ test('parseContextParams validates query, limit, and format', () => {
   assertEq(missing.ok, false);
   assertEq(missing.status, 400);
   assertEq(missing.payload.error.code, 'missing_or_invalid_query');
+  assertEq(missing.payload.machine_recovery.recoverable, true);
+  assertEq(missing.payload.machine_recovery.current_endpoint, 'context');
+  assert(missing.payload.machine_recovery.retry_examples.some(call => call.path.includes('/api/context?q=')), 'context missing query guidance should include a context retry example');
 });
 
 test('buildContextApiPayload combines planning and public evidence packs', () => {
@@ -577,6 +580,8 @@ test('Pages Function rejects bad requests and supports OPTIONS', async () => {
   const payload = await response.json();
   assertEq(response.status, 400);
   assertEq(payload.error.code, 'missing_or_invalid_query');
+  assertEq(payload.machine_recovery.current_endpoint, 'context');
+  assert(payload.machine_recovery.next_request.url.includes('/api/context?q='), 'function 400 should include executable context recovery');
 
   const options = onRequestOptions();
   assertEq(options.status, 204);

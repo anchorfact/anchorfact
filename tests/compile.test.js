@@ -154,6 +154,7 @@ test('public entrypoints exclude draft articles', () => {
   assertEq(rootIndex.error_recovery_guidance.recoverable_400_field, 'machine_recovery');
   assertEq(rootIndex.error_recovery_guidance.default_recovery_path, '/api/context?q={query}&limit=3');
   assertEq(rootIndex.error_recovery_guidance.default_recovery_url, 'https://anchorfact.org/api/context?q={query}&limit=3');
+  assert(rootIndex.error_recovery_guidance.observed_recoverable_endpoints.includes('/api/context'), 'root index should expose context recovery guidance');
   assert(rootIndex.error_recovery_guidance.observed_recoverable_endpoints.includes('/api/evidence'), 'root index should expose evidence recovery guidance');
   assert(rootIndex.error_recovery_guidance.observed_recoverable_endpoints.includes('/api/source'), 'root index should expose source recovery guidance');
   assert(rootIndex.error_recovery_guidance.observed_recoverable_endpoints.includes('/api/resolve-batch'), 'root index should expose batch resolver recovery guidance');
