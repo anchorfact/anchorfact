@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-24T09:01:49.225Z",
+    "generated": "2026-06-24T09:15:43.516Z",
     "total_articles": 1628,
     "total_with_errors": 0,
     "average_sources_per_article": "2.6",
     "overall_verification_rate": "93.4%",
-    "elapsed_ms": 1641,
-    "elapsed_sec": "1.6",
+    "elapsed_ms": 1131,
+    "elapsed_sec": "1.1",
     "concurrency": 3
   },
   "articles": [
@@ -86650,56 +86650,86 @@
       "sources_unreachable": 1
     },
     {
-      "file": "content\\computer-science\\event-sourcing.md",
+      "file": "content/computer-science/event-sourcing.md",
       "article_id": "kb-2026-00253",
       "generation_method": "ai_structured",
-      "sources_total": 3,
+      "sources_total": 4,
       "verification_results": [
         {
-          "source_title": "ACM Digital Library",
-          "source_type": "repository",
+          "source_title": "Event Sourcing pattern",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://dl.acm.org/",
-              "verified": false,
-              "metadata": {},
-              "match": false
+              "identifier": "https://learn.microsoft.com/en-us/azure/architecture/patterns/event-sourcing",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/event-sourcing",
+                "http_method": "HEAD"
+              },
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Event-Driven Architecture in Practice (2025 Edition)",
-          "source_type": "book",
+          "source_title": "Event sourcing pattern - AWS Prescriptive Guidance",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.oreilly.com/eda/",
-              "verified": false,
-              "metadata": {},
-              "match": false
+              "identifier": "https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/event-sourcing.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/event-sourcing.html",
+                "http_method": "HEAD"
+              },
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Event Sourcing and CQRS: A 2025 Systematic Mapping",
-          "source_type": "survey_paper",
+          "source_title": "Command Query Responsibility Segregation pattern",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://doi.org/10.1145/acmcs.2025.es",
-              "verified": false,
-              "metadata": {},
-              "match": false
+              "identifier": "https://learn.microsoft.com/en-us/azure/architecture/patterns/cqrs",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/cqrs",
+                "http_method": "HEAD"
+              },
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "Event Sourcing",
+          "source_type": "reference_article",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://martinfowler.com/eaaDev/EventSourcing.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://martinfowler.com/eaaDev/EventSourcing.html",
+                "http_method": "HEAD"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 3
+      "sources_verified": 4,
+      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\factory-method-pattern.md",
