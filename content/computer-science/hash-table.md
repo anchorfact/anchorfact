@@ -4,88 +4,99 @@ title: Hash Table
 schema_type: TechArticle
 category: computer-science
 language: en
-confidence: high
-last_verified: "2026-05-24"
-created_date: "2026-05-22"
+confidence: medium
+last_verified: '2026-06-24'
+created_date: '2026-05-22'
 generation_method: ai_structured
 ai_models:
-  - claude-opus
+  - gpt-5-codex
 derived_from_human_seed: true
 conflict_of_interest: none_declared
 is_live_document: false
 data_period: static
 atomic_facts:
-  - id: fact-computer-science-001
+  - id: fact-hash-table-001
     statement: >-
-      A hash table maps keys to values with average O(1) operations. Powers JavaScript Objects, Python dicts, database indexes. Collision resolution: chaining (linked lists) or open addressing
-      (probing). Rehashing triggers at ~75% load factor.
-    source_title: ACM Digital Library
-    source_url: https://dl.acm.org/
+      Hashing stores and retrieves records by search key, and a well-tuned hash system can support insert, delete, and search operations in constant time.
+    source_title: OpenDSA - Introduction to Hashing
+    source_url: https://opendsa-server.cs.vt.edu/ODSA/Books/Everything/html/HashIntro.html
     confidence: medium
-  - id: fact-computer-science-001
+  - id: fact-hash-table-002
     statement: >-
-      A hash table maps keys to values with average O(1) operations. Powers JavaScript Objects, Python dicts, database indexes. Collision resolution: chaining (linked lists) or open addressing
-      (probing). Rehashing triggers at ~75% load factor.
-    source_title: ACM Digital Library
-    source_url: https://dl.acm.org/
+      Hash tables need a collision resolution policy because collisions are unavoidable in practical hash functions.
+    source_title: OpenDSA - Open Hashing
+    source_url: https://opendsa-server.cs.vt.edu/ODSA/Books/Everything/html/OpenHash.html
     confidence: medium
-completeness: 0.88
-known_gaps:
-  - Sources reconstructed during quality audit; primary source details were corrupted during batch generation
-disputed_statements:
-  - statement: >-
-      The interpretation and significance of key findings in this area are subject to ongoing scholarly debate, with multiple schools of thought offering competing frameworks for understanding the
-      available evidence
+  - id: fact-hash-table-003
+    statement: >-
+      Separate chaining stores colliding records outside the main table by treating each hash-table slot as the head of a linked list.
+    source_title: OpenDSA - Open Hashing
+    source_url: https://opendsa-server.cs.vt.edu/ODSA/Books/Everything/html/OpenHash.html
+    confidence: medium
+  - id: fact-hash-table-004
+    statement: >-
+      Closed hashing stores records directly in the table and uses the same collision resolution policy during insertion and search.
+    source_title: OpenDSA - Bucket Hashing
+    source_url: https://opendsa-server.cs.vt.edu/ODSA/Books/Everything/html/BucketHash.html
+    confidence: medium
+  - id: fact-hash-table-005
+    statement: >-
+      Probe-based closed hashing searches a sequence of candidate slots when a record's home position is already occupied.
+    source_title: OpenDSA - Collision Resolution
+    source_url: https://opendsa-server.cs.vt.edu/ODSA/Books/Everything/html/HashCSimple.html
+    confidence: medium
+completeness: 0.9
+known_gaps: []
+disputed_statements: []
 primary_sources:
-  - title: ACM Digital Library
-    type: repository
-    year: 2026
-    url: https://dl.acm.org/
-    institution: ACM
-  - title: Data Structures and Algorithm Analysis (5th Edition, 2025)
-    type: book
-    year: 2025
-    authors:
-      - Weiss M.A.
-    institution: Pearson
-    url: https://www.pearson.com/dsaa/
-  - title: "Hash-Based Data Structures: From Basic Tables to Learned Indexes (2025)"
-    type: survey_paper
-    year: 2025
-    authors:
-      - multiple
-    institution: ACM Computing Surveys
-    url: https://doi.org/10.1145/acmcs.2025.hash
-secondary_sources:
-  - title: ACM Digital Library
-    type: repository
-    year: 2026
-    url: https://dl.acm.org/
-    institution: ACM
-  - title: The C Programming Language (K&R, 2nd Ed)
-    type: textbook
-    year: 1988
-    url: https://www.pearson.com/us/higher-education/program/Kernighan-C-Programming-Language-2nd-Edition/PGM54486.html
-    institution: Prentice Hall
-  - title: Structure and Interpretation of Computer Programs (SICP)
-    type: textbook
-    year: 1996
-    url: https://mitpress.mit.edu/sites/default/files/sicp/
-    institution: MIT Press
+  - title: OpenDSA - Introduction to Hashing
+    type: open_textbook_chapter
+    url: https://opendsa-server.cs.vt.edu/ODSA/Books/Everything/html/HashIntro.html
+    institution: OpenDSA Project
+  - title: OpenDSA - Open Hashing
+    type: open_textbook_chapter
+    url: https://opendsa-server.cs.vt.edu/ODSA/Books/Everything/html/OpenHash.html
+    institution: OpenDSA Project
+  - title: OpenDSA - Bucket Hashing
+    type: open_textbook_chapter
+    url: https://opendsa-server.cs.vt.edu/ODSA/Books/Everything/html/BucketHash.html
+    institution: OpenDSA Project
+  - title: OpenDSA - Collision Resolution
+    type: open_textbook_chapter
+    url: https://opendsa-server.cs.vt.edu/ODSA/Books/Everything/html/HashCSimple.html
+    institution: OpenDSA Project
+secondary_sources: []
+updated: '2026-06-24'
 ---
+
 ## TL;DR
 
-A hash table maps keys to values with average O(1) operations. Powers JavaScript Objects, Python dicts, database indexes. Collision resolution: chaining (linked lists) or open addressing (probing). Rehashing triggers at ~75% load factor.
+A hash table stores records by computing a table position from each record's search key. When the hash function and collision policy are well matched to the workload, lookup, insert, and delete operations can run in expected constant time.
 
 ## Core Explanation
 
-Hash function: maps key to integer index. Good hash functions minimize collisions and are fast (non-cryptographic: MurmurHash, xxHash). Cryptographic hashes (SHA) are unnecessary and slow for hash tables. Separate chaining is simpler but uses more memory; open addressing is cache-friendly but degrades at high load.
+The core idea is to replace ordered search with direct addressing through a hash function. The hash function maps a key to a home position in an array of slots. If no other record occupies that position, the operation is straightforward.
+
+Collisions happen when two keys map to the same table position, so every practical hash table needs a collision policy. Separate chaining keeps colliding records outside the main array, commonly by making each slot the head of a linked list. Closed hashing, also called open addressing, keeps records in the table and follows a probe sequence when the home slot is occupied.
+
+Hash tables are best for exact-key lookup where ordering is not the main requirement. They are less suitable when the application needs sorted traversal, range queries, or predictable worst-case latency without additional controls.
+
+## Source-Mapped Facts
+
+- Hashing stores and retrieves records by search key, and a well-tuned hash system can support insert, delete, and search operations in constant time. ([source](https://opendsa-server.cs.vt.edu/ODSA/Books/Everything/html/HashIntro.html))
+- Hash tables need a collision resolution policy because collisions are unavoidable in practical hash functions. ([source](https://opendsa-server.cs.vt.edu/ODSA/Books/Everything/html/OpenHash.html))
+- Separate chaining stores colliding records outside the main table by treating each hash-table slot as the head of a linked list. ([source](https://opendsa-server.cs.vt.edu/ODSA/Books/Everything/html/OpenHash.html))
+- Closed hashing stores records directly in the table and uses the same collision resolution policy during insertion and search. ([source](https://opendsa-server.cs.vt.edu/ODSA/Books/Everything/html/BucketHash.html))
+- Probe-based closed hashing searches a sequence of candidate slots when a record's home position is already occupied. ([source](https://opendsa-server.cs.vt.edu/ODSA/Books/Everything/html/HashCSimple.html))
 
 ## Further Reading
 
-- [Introduction to Algorithms (CLRS)](undefined)
+- [OpenDSA - Introduction to Hashing](https://opendsa-server.cs.vt.edu/ODSA/Books/Everything/html/HashIntro.html)
+- [OpenDSA - Open Hashing](https://opendsa-server.cs.vt.edu/ODSA/Books/Everything/html/OpenHash.html)
+- [OpenDSA - Collision Resolution](https://opendsa-server.cs.vt.edu/ODSA/Books/Everything/html/HashCSimple.html)
 
 ## Related Articles
 
-- [Database Indexing: B-Trees, Hash Indexes, and Query Optimization](../database-indexing-b-trees-hash-indexes-and-query-optimization.md)
-- [Periodic Table](../../science/periodic-table.md)
+- [Database Indexing: B-Trees, Hash Indexes, and Query Optimization](database-indexing-b-trees-hash-indexes-and-query-optimization.md)
+- [Hashing Algorithms](hashing-algorithms.md)
+- [Time Complexity (Big O)](time-complexity-big-o.md)

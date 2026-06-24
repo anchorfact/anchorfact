@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-13T16:52:57.892Z",
+    "generated": "2026-06-24T08:31:13.930Z",
     "total_articles": 1628,
     "total_with_errors": 0,
     "average_sources_per_article": "2.6",
-    "overall_verification_rate": "93.1%",
-    "elapsed_ms": 1144,
-    "elapsed_sec": "1.1",
+    "overall_verification_rate": "93.2%",
+    "elapsed_ms": 1186,
+    "elapsed_sec": "1.2",
     "concurrency": 3
   },
   "articles": [
@@ -87003,62 +87003,86 @@
       "sources_unreachable": 3
     },
     {
-      "file": "content\\computer-science\\hash-table.md",
+      "file": "content/computer-science/hash-table.md",
       "article_id": "kb-2026-00128",
       "generation_method": "ai_structured",
-      "sources_total": 3,
+      "sources_total": 4,
       "verification_results": [
         {
-          "source_title": "ACM Digital Library",
-          "source_type": "repository",
+          "source_title": "OpenDSA - Introduction to Hashing",
+          "source_type": "open_textbook_chapter",
           "results": [
             {
               "method": "url",
-              "identifier": "https://dl.acm.org/",
-              "verified": false,
+              "identifier": "https://opendsa-server.cs.vt.edu/ODSA/Books/Everything/html/HashIntro.html",
+              "verified": true,
               "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/"
+                "status": 200,
+                "final_url": "https://opendsa-server.cs.vt.edu/ODSA/Books/Everything/html/HashIntro.html",
+                "http_method": "HEAD"
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Data Structures and Algorithm Analysis (5th Edition, 2025)",
-          "source_type": "book",
+          "source_title": "OpenDSA - Open Hashing",
+          "source_type": "open_textbook_chapter",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.pearson.com/dsaa/",
-              "verified": false,
+              "identifier": "https://opendsa-server.cs.vt.edu/ODSA/Books/Everything/html/OpenHash.html",
+              "verified": true,
               "metadata": {
-                "status": 404,
-                "final_url": "https://www.pearson.com/dsaa/"
+                "status": 200,
+                "final_url": "https://opendsa-server.cs.vt.edu/ODSA/Books/Everything/html/OpenHash.html",
+                "http_method": "HEAD"
               },
-              "match": false
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Hash-Based Data Structures: From Basic Tables to Learned Indexes (2025)",
-          "source_type": "survey_paper",
+          "source_title": "OpenDSA - Bucket Hashing",
+          "source_type": "open_textbook_chapter",
           "results": [
             {
               "method": "url",
-              "identifier": "https://doi.org/10.1145/acmcs.2025.hash",
-              "verified": false,
-              "metadata": {},
-              "match": false
+              "identifier": "https://opendsa-server.cs.vt.edu/ODSA/Books/Everything/html/BucketHash.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://opendsa-server.cs.vt.edu/ODSA/Books/Everything/html/BucketHash.html",
+                "http_method": "HEAD"
+              },
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "OpenDSA - Collision Resolution",
+          "source_type": "open_textbook_chapter",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://opendsa-server.cs.vt.edu/ODSA/Books/Everything/html/HashCSimple.html",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://opendsa-server.cs.vt.edu/ODSA/Books/Everything/html/HashCSimple.html",
+                "http_method": "HEAD"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 3
+      "sources_verified": 4,
+      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\hashing-algorithms.md",
