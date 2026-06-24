@@ -496,6 +496,11 @@ test('openapi.json describes the static AI contract', () => {
   assert(openapi.components.schemas.EvidenceApiResponse, 'OpenAPI should define EvidenceApiResponse schema');
   assert(openapi.components.schemas.ContextApiResponse, 'OpenAPI should define ContextApiResponse schema');
   assert(openapi.components.schemas.MachineConsumptionGuidance, 'OpenAPI should define MachineConsumptionGuidance schema');
+  assert(openapi.components.schemas.MachineRecoveryGuidance, 'OpenAPI should define MachineRecoveryGuidance schema');
+  assert(openapi.components.schemas.ApiError.properties.machine_recovery, 'OpenAPI API errors should describe machine recovery guidance');
+  assertEq(openapi.components.schemas.ApiError.properties.machine_recovery.$ref, '#/components/schemas/MachineRecoveryGuidance');
+  assert(openapi.components.schemas.MachineRecoveryGuidance.properties.next_request, 'OpenAPI machine recovery should define the next request');
+  assert(openapi.components.schemas.MachineRecoveryGuidance.properties.retry_examples, 'OpenAPI machine recovery should define retry examples');
   assert(openapi.components.schemas.EvidenceApiResponse.properties.machine_consumption, 'OpenAPI evidence schema should include machine consumption guidance');
   assert(openapi.components.schemas.ContextApiResponse.properties.content_health, 'OpenAPI context schema should include content health summary');
   assert(openapi.components.schemas.ContextApiContentHealth.properties.draft_repair_queue, 'OpenAPI context content health schema should define draft repair queue summary');
@@ -831,6 +836,8 @@ test('evals.json describes executable AI integration checks', () => {
   assert(openapiEval.expected.required_schema_properties.ContextApiResponse.includes('machine_consumption'), 'OpenAPI eval should require context machine guidance');
   assert(openapiEval.expected.required_schema_properties.EvidenceApiResponse.includes('machine_consumption'), 'OpenAPI eval should require evidence machine guidance');
   assert(openapiEval.expected.required_schema_properties.MachineConsumptionGuidance.includes('preferred_query_scoped_apis'), 'OpenAPI eval should require query-scoped machine guidance');
+  assert(openapiEval.expected.required_schema_properties.ApiError.includes('machine_recovery'), 'OpenAPI eval should require machine-recoverable API errors');
+  assert(openapiEval.expected.required_schema_properties.MachineRecoveryGuidance.includes('retry_examples'), 'OpenAPI eval should require recovery retry examples');
   assert(evals.evals.some(evalCase => evalCase.id === 'ai_query_routing_rlhf'), 'evals should include high-intent AI query routing checks');
   assert(evals.evals.some(evalCase => evalCase.id === 'query_routing_climate_change'), 'evals should include cross-domain query routing checks');
   assert(evals.evals.some(evalCase => evalCase.id === 'unsupported_medical_personal_advice'), 'evals should include high-stakes personal advice refusal checks');

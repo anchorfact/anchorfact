@@ -1,3 +1,5 @@
+import { buildMachineRecoveryGuidance } from './api-machine-guidance.js';
+
 export const SOURCE_API_SCHEMA_VERSION = 'anchorfact.source-api.v1';
 
 function errorPayload(code, message, extra = {}) {
@@ -9,6 +11,16 @@ function errorPayload(code, message, extra = {}) {
     },
     ...extra
   };
+}
+
+function recoverableErrorPayload(code, message, extra = {}) {
+  return errorPayload(code, message, {
+    machine_recovery: buildMachineRecoveryGuidance({
+      currentEndpoint: 'source',
+      reason: code
+    }),
+    ...extra
+  });
 }
 
 export function normalizeSourceId(value) {
@@ -40,7 +52,7 @@ export function parseSourceParams(url) {
     return {
       ok: false,
       status: 400,
-      payload: errorPayload(
+      payload: recoverableErrorPayload(
         'missing_or_invalid_source_lookup',
         'Provide a source id with ?id=source:{id} or a source URL with ?url=https://example.com/source.'
       )
@@ -92,7 +104,7 @@ export function buildSourceApiPayload({
     return {
       ok: false,
       status: 400,
-      payload: errorPayload(
+      payload: recoverableErrorPayload(
         'missing_or_invalid_source_lookup',
         'Provide a source id with ?id=source:{id} or a source URL with ?url=https://example.com/source.'
       )

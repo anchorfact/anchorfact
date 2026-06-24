@@ -142,6 +142,9 @@ test('parseResolveParams accepts the generic ref parameter', () => {
   const missing = parseResolveParams(new URL('https://anchorfact.org/api/resolve'));
   assertEq(missing.ok, false);
   assertEq(missing.status, 400);
+  assertEq(missing.payload.machine_recovery.recoverable, true);
+  assertEq(missing.payload.machine_recovery.current_endpoint, 'resolve');
+  assert(missing.payload.machine_recovery.retry_examples.some(call => call.path.includes('/api/resolve?ref=')), 'resolve guidance should include a ref retry example');
 });
 
 test('buildResolveApiPayload resolves claim shorthand to the claim API payload', () => {
@@ -194,6 +197,10 @@ test('parseResolveBatchParams accepts repeated ref parameters and validates limi
   const missing = parseResolveBatchParams(new URL('https://anchorfact.org/api/resolve-batch'));
   assertEq(missing.ok, false);
   assertEq(missing.status, 400);
+  assertEq(missing.payload.machine_recovery.recoverable, true);
+  assertEq(missing.payload.machine_recovery.current_endpoint, 'resolve-batch');
+  assert(missing.payload.machine_recovery.next_request.path.includes('/api/context?q='), 'batch guidance should start from context discovery');
+  assert(missing.payload.machine_recovery.retry_examples.some(call => call.path.includes('/api/resolve-batch?ref=')), 'batch guidance should include repeated ref retry example');
 
   const tooManyUrl = new URL('https://anchorfact.org/api/resolve-batch');
   for (let i = 0; i < 21; i++) tooManyUrl.searchParams.append('ref', `f${i}`);
@@ -274,7 +281,9 @@ test('Pages Function rejects missing refs and asset failures', async () => {
     request: new Request('https://anchorfact.org/api/resolve'),
     env: assetEnv()
   });
+  const missingPayload = await missing.json();
   assertEq(missing.status, 400);
+  assertEq(missingPayload.machine_recovery.current_endpoint, 'resolve');
 
   const assetFailure = await onRequestGet({
     request: new Request('https://anchorfact.org/api/resolve?ref=f1'),

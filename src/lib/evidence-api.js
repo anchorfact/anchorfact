@@ -1,5 +1,8 @@
 import { CITATION_CONTRACT, buildClaimCitationExports } from './citation-export.js';
-import { buildMachineConsumptionGuidance } from './api-machine-guidance.js';
+import {
+  buildMachineConsumptionGuidance,
+  buildMachineRecoveryGuidance
+} from './api-machine-guidance.js';
 import { parseSearchParams, rankSearchRecords } from './search-api.js';
 
 export const EVIDENCE_API_SCHEMA_VERSION = 'anchorfact.evidence-api.v1';
@@ -15,13 +18,23 @@ function errorPayload(code, message, extra = {}) {
   };
 }
 
+function recoverableErrorPayload(code, message, extra = {}) {
+  return errorPayload(code, message, {
+    machine_recovery: buildMachineRecoveryGuidance({
+      currentEndpoint: 'evidence',
+      reason: code
+    }),
+    ...extra
+  });
+}
+
 export function parseEvidenceParams(url) {
   const parsed = parseSearchParams(url);
   if (!parsed.ok) {
     return {
       ok: false,
       status: 400,
-      payload: errorPayload(
+      payload: recoverableErrorPayload(
         'missing_or_invalid_query',
         'Provide a natural-language query with ?q=... or ?query=....'
       )
@@ -129,7 +142,7 @@ export function buildEvidenceApiPayload({
     return {
       ok: false,
       status: 400,
-      payload: errorPayload(
+      payload: recoverableErrorPayload(
         'missing_or_invalid_query',
         'Provide a natural-language query with ?q=... or ?query=....'
       )

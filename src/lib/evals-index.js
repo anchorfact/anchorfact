@@ -307,6 +307,14 @@ export function buildEvalsIndex({
             'avoid_for_single_query',
             'bulk_sync_policy'
           ],
+          ApiError: [
+            'machine_recovery'
+          ],
+          MachineRecoveryGuidance: [
+            'recoverable',
+            'next_request',
+            'retry_examples'
+          ],
           AnswerPolicy: [
             'can_answer_with_anchorfact',
             'answer_mode',

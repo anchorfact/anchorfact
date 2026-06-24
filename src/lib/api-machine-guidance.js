@@ -22,6 +22,17 @@ function apiCall(id, path, purpose, site) {
   };
 }
 
+function templatedApiCall(id, path, purpose, site) {
+  return {
+    id,
+    method: 'GET',
+    path,
+    url: publicUrl(path, site),
+    templated: true,
+    purpose
+  };
+}
+
 export function buildMachineConsumptionGuidance({
   query,
   limit,
@@ -49,5 +60,81 @@ export function buildMachineConsumptionGuidance({
       '/llms.txt'
     ],
     bulk_sync_policy: 'Use /artifact-shards.json versioned shard URLs when a full graph, search, claims, or llms sync is required.'
+  };
+}
+
+export function buildMachineRecoveryGuidance({
+  currentEndpoint,
+  reason = 'missing_required_parameters',
+  exampleQuery = 'retrieval augmented generation',
+  limit = 3,
+  site = OFFICIAL_SITE
+} = {}) {
+  const contextPath = queryPath('/api/context', exampleQuery, limit);
+  const evidencePath = queryPath('/api/evidence', exampleQuery, limit);
+  const common = {
+    recoverable: true,
+    current_endpoint: currentEndpoint || null,
+    reason,
+    first_step: 'Call /api/context with a natural-language q value to discover matching public claims, source ids, and resolvable references.',
+    next_request: apiCall(
+      'context_discovery',
+      contextPath,
+      'Executable recovery call for agents that reached an API endpoint without enough parameters.',
+      site
+    )
+  };
+
+  if (currentEndpoint === 'evidence') {
+    return {
+      ...common,
+      valid_parameters: ['q', 'query', 'limit', 'format'],
+      retry_examples: [
+        apiCall('evidence_json', evidencePath, 'Return source-mapped evidence packs for the query.', site),
+        apiCall('evidence_markdown', `${evidencePath}&format=markdown`, 'Return answer-ready evidence packs as Markdown.', site)
+      ]
+    };
+  }
+
+  if (currentEndpoint === 'source') {
+    return {
+      ...common,
+      valid_parameters: ['id', 'source_id', 'url', 'source_url'],
+      retry_examples: [
+        templatedApiCall('source_by_id', '/api/source?id={source_id}', 'Look up a source id returned by /api/context or /api/evidence.', site),
+        templatedApiCall('source_by_url', '/api/source?url={source_url}', 'Look up a normalized http(s) source URL.', site)
+      ]
+    };
+  }
+
+  if (currentEndpoint === 'resolve-batch') {
+    return {
+      ...common,
+      valid_parameters: ['ref', 'id', 'url', 'claim_id', 'source_id', 'slug', 'refs', 'ids', 'urls', 'format'],
+      retry_examples: [
+        templatedApiCall('resolve_batch_refs', '/api/resolve-batch?ref={claim_id}&ref={source_id}', 'Resolve repeated claim/source/article references in one request.', site),
+        templatedApiCall('resolve_batch_markdown', '/api/resolve-batch?ref={claim_id}&format=markdown', 'Return batch resolution as Markdown.', site)
+      ]
+    };
+  }
+
+  if (currentEndpoint === 'resolve') {
+    return {
+      ...common,
+      valid_parameters: ['ref', 'id', 'url', 'claim_id', 'source_id', 'slug'],
+      retry_examples: [
+        templatedApiCall('resolve_ref', '/api/resolve?ref={claim_id_or_slug_or_source_id}', 'Resolve one public AnchorFact reference.', site),
+        templatedApiCall('resolve_url', '/api/resolve?url={source_url}', 'Resolve a source URL to its public AnchorFact source bundle when available.', site)
+      ]
+    };
+  }
+
+  return {
+    ...common,
+    valid_parameters: ['q', 'query', 'limit'],
+    retry_examples: [
+      apiCall('context', contextPath, 'Default recovery call for query-scoped context.', site),
+      apiCall('evidence', evidencePath, 'Source-mapped evidence packs for the query.', site)
+    ]
   };
 }

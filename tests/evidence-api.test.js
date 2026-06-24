@@ -200,6 +200,9 @@ test('parseEvidenceParams validates query and clamps limit', () => {
   assertEq(missing.ok, false);
   assertEq(missing.status, 400);
   assertEq(missing.payload.error.code, 'missing_or_invalid_query');
+  assertEq(missing.payload.machine_recovery.recoverable, true);
+  assert(missing.payload.machine_recovery.next_request.path.includes('/api/context?q='), 'missing query guidance should point agents to context discovery');
+  assert(missing.payload.machine_recovery.retry_examples.some(call => call.path.includes('/api/evidence?q=')), 'missing query guidance should include evidence retry example');
 
   const markdown = parseEvidenceParams(new URL('https://anchorfact.org/api/evidence?q=gaussian&format=md'));
   assertEq(markdown.ok, true);
@@ -321,6 +324,8 @@ test('Pages Function rejects missing queries and asset failures', async () => {
   const missingPayload = await missingQuery.json();
   assertEq(missingQuery.status, 400);
   assertEq(missingPayload.error.code, 'missing_or_invalid_query');
+  assertEq(missingPayload.machine_recovery.current_endpoint, 'evidence');
+  assert(missingPayload.machine_recovery.next_request.url.includes('/api/context?q='), 'function 400 should include executable next request');
 
   const assetFailure = await onRequestGet({
     request: new Request('https://anchorfact.org/api/evidence?q=gaussian'),

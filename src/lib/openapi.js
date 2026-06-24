@@ -893,6 +893,28 @@ export function buildOpenApiContract({
           },
           additionalProperties: false
         },
+        MachineRecoveryGuidance: {
+          type: 'object',
+          description: 'Machine-readable recovery hint returned with recoverable 400 errors so agents can retry with valid parameters.',
+          required: [
+            'recoverable',
+            'current_endpoint',
+            'reason',
+            'first_step',
+            'next_request',
+            'retry_examples'
+          ],
+          properties: {
+            recoverable: { const: true },
+            current_endpoint: { type: ['string', 'null'] },
+            reason: { type: 'string' },
+            first_step: { type: 'string' },
+            next_request: { type: 'object' },
+            valid_parameters: { type: 'array', items: { type: 'string' } },
+            retry_examples: { type: 'array', items: { type: 'object' } }
+          },
+          additionalProperties: false
+        },
         AnswerPolicy: {
           type: 'object',
           description: 'Machine decision telling agents whether AnchorFact can support a cited answer for the current query.',
@@ -1008,7 +1030,8 @@ export function buildOpenApiContract({
                 message: { type: 'string' }
               },
               additionalProperties: true
-            }
+            },
+            machine_recovery: { $ref: '#/components/schemas/MachineRecoveryGuidance' }
           },
           additionalProperties: true
         },

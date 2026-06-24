@@ -201,6 +201,9 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
   assert(openapiEval.expected.required_schema_properties.EvidenceApiResponse.includes('machine_consumption'), 'OpenAPI eval should require evidence machine guidance');
   assert(openapiEval.expected.required_schema_properties.MachineConsumptionGuidance.includes('preferred_query_scoped_apis'), 'OpenAPI eval should require query-scoped machine guidance');
   assert(openapiEval.expected.required_schema_properties.MachineConsumptionGuidance.includes('static_discovery'), 'OpenAPI eval should require static discovery guidance');
+  assert(openapiEval.expected.required_schema_properties.ApiError.includes('machine_recovery'), 'OpenAPI eval should require machine-recoverable error guidance');
+  assert(openapiEval.expected.required_schema_properties.MachineRecoveryGuidance.includes('next_request'), 'OpenAPI eval should require recovery next request');
+  assert(openapiEval.expected.required_schema_properties.MachineRecoveryGuidance.includes('retry_examples'), 'OpenAPI eval should require recovery retry examples');
   assert(openapiEval.expected.required_schema_properties.AnswerPolicy.includes('can_answer_with_anchorfact'), 'OpenAPI eval should require answer policy fields');
   assert(openapiEval.expected.required_schema_properties.CitationReadyClaim.includes('cite_api_path'), 'OpenAPI eval should require citation claim fields');
 

@@ -113,6 +113,10 @@ test('parseSourceParams validates id or url inputs', () => {
   const missing = parseSourceParams(new URL('https://anchorfact.org/api/source'));
   assertEq(missing.ok, false);
   assertEq(missing.status, 400);
+  assertEq(missing.payload.machine_recovery.recoverable, true);
+  assertEq(missing.payload.machine_recovery.current_endpoint, 'source');
+  assert(missing.payload.machine_recovery.next_request.path.includes('/api/context?q='), 'source lookup guidance should send agents to context discovery first');
+  assert(missing.payload.machine_recovery.retry_examples.some(call => call.path.includes('/api/source?id=')), 'source guidance should include id retry example');
 });
 
 test('buildSourceApiPayload returns source and mapped public claims', () => {
@@ -167,7 +171,9 @@ test('Pages Function rejects bad lookups, unknown sources, and asset failures', 
     request: new Request('https://anchorfact.org/api/source'),
     env: assetEnv()
   });
+  const badLookupPayload = await badLookup.json();
   assertEq(badLookup.status, 400);
+  assertEq(badLookupPayload.machine_recovery.current_endpoint, 'source');
 
   const missingSource = await onRequestGet({
     request: new Request('https://anchorfact.org/api/source?id=source:nope'),

@@ -11,6 +11,7 @@ import {
   normalizeSourceId,
   normalizeSourceUrl
 } from './source-api.js';
+import { buildMachineRecoveryGuidance } from './api-machine-guidance.js';
 
 export const RESOLVE_API_SCHEMA_VERSION = 'anchorfact.resolve-api.v1';
 export const RESOLVE_BATCH_API_SCHEMA_VERSION = 'anchorfact.resolve-batch-api.v1';
@@ -41,6 +42,26 @@ function batchErrorPayload(code, message, extra = {}) {
   };
 }
 
+function recoverableErrorPayload(code, message, extra = {}) {
+  return errorPayload(code, message, {
+    machine_recovery: buildMachineRecoveryGuidance({
+      currentEndpoint: 'resolve',
+      reason: code
+    }),
+    ...extra
+  });
+}
+
+function recoverableBatchErrorPayload(code, message, extra = {}) {
+  return batchErrorPayload(code, message, {
+    machine_recovery: buildMachineRecoveryGuidance({
+      currentEndpoint: 'resolve-batch',
+      reason: code
+    }),
+    ...extra
+  });
+}
+
 function rawResolveRef(url) {
   return url.searchParams.get('ref')
     || url.searchParams.get('id')
@@ -57,7 +78,7 @@ export function parseResolveParams(url) {
     return {
       ok: false,
       status: 400,
-      payload: errorPayload(
+      payload: recoverableErrorPayload(
         'missing_or_invalid_reference',
         'Provide a public AnchorFact reference with ?ref={claim_id|canonical_slug|source_id|source_url}.'
       )
@@ -92,7 +113,7 @@ export function parseResolveBatchParams(url) {
     return {
       ok: false,
       status: 400,
-      payload: batchErrorPayload(
+      payload: recoverableBatchErrorPayload(
         'missing_or_invalid_references',
         'Provide one or more public AnchorFact references with repeated ?ref=... parameters.'
       )
