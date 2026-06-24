@@ -11,6 +11,7 @@ const DEFAULT_ROUTE_CONCURRENCY = 4;
 const DEFAULT_JSON_RETRIES = 2;
 const DEFAULT_JSON_RETRY_DELAY_MS = 250;
 const ROUTING_GUARD_ROUTE = '/__anchorfact-routing-guard-check.json';
+const WELL_KNOWN_AGENT_ALIAS_PATH = '/.well-known/anchorfact.json';
 
 export const REQUIRED_SECURITY_HEADERS = [
   { route: '/', name: 'X-Content-Type-Options', expected: 'nosniff' },
@@ -295,6 +296,11 @@ export function readinessDiscoveryFailures({
   runtimeSignalSummaryFailures(rootIndex.api_readiness_summary?.runtime_signal_contract, apiReadiness.runtime_signal_contract, 'root index readiness summary', failures);
   runtimeSignalSummaryFailures(agentProfile.readiness_runtime_signals, apiReadiness.runtime_signal_contract, 'agent profile runtime signal summary', failures);
   runtimeSignalSummaryFailures(wellKnownAgentProfile.readiness_runtime_signals, apiReadiness.runtime_signal_contract, 'well-known agent profile runtime signal summary', failures);
+  assertOk(rootIndex.quick_start?.primary_api_conversion?.discovery_entrypoints?.includes(WELL_KNOWN_AGENT_ALIAS_PATH), 'root index primary API conversion is missing well-known agent alias discovery', failures);
+  assertOk(agentProfile.quick_start?.primary_api_conversion?.discovery_entrypoints?.includes(WELL_KNOWN_AGENT_ALIAS_PATH), 'agent profile primary API conversion is missing well-known agent alias discovery', failures);
+  assertOk(wellKnownAgentProfile.quick_start?.primary_api_conversion?.discovery_entrypoints?.includes(WELL_KNOWN_AGENT_ALIAS_PATH), 'well-known agent profile primary API conversion is missing well-known agent alias discovery', failures);
+  assertOk(agentProfile.recommended_workflow?.some(step => step.includes(WELL_KNOWN_AGENT_ALIAS_PATH) && step.includes('/api/context')), 'agent profile workflow does not convert well-known agent alias discovery to /api/context', failures);
+  assertOk(wellKnownAgentProfile.recommended_workflow?.some(step => step.includes(WELL_KNOWN_AGENT_ALIAS_PATH) && step.includes('/api/context')), 'well-known agent profile workflow does not convert alias discovery to /api/context', failures);
 
   assertOk(openapi.components?.schemas?.RootIndex?.properties?.api_readiness_summary, 'openapi RootIndex schema is missing readiness summary', failures);
   assertOk(openapi.components?.schemas?.RootIndex?.properties?.api_readiness_summary?.properties?.runtime_signal_contract, 'openapi RootIndex schema is missing runtime signal summary', failures);
@@ -317,6 +323,9 @@ export function readinessDiscoveryFailures({
     assertOk(apiIndex.readiness_guidance?.subscription_ready_requires?.includes(gateId), `/api readiness guidance is missing ${gateId}`, failures);
   }
   runtimeSignalSummaryFailures(apiIndex.readiness_guidance?.runtime_signal_contract, apiReadiness.runtime_signal_contract, '/api readiness guidance', failures);
+  assertOk(apiIndex.ai_adoption_guidance?.discovery_entrypoints?.includes(WELL_KNOWN_AGENT_ALIAS_PATH), '/api AI adoption guidance is missing well-known agent alias discovery', failures);
+  assertOk(apiIndex.ai_adoption_guidance?.crawler_next_step?.includes(WELL_KNOWN_AGENT_ALIAS_PATH) && apiIndex.ai_adoption_guidance?.crawler_next_step?.includes('/api/context'), '/api crawler next step does not convert well-known agent alias discovery to /api/context', failures);
+  assertOk(apiIndex.recommended_sequence?.some(step => step.includes(WELL_KNOWN_AGENT_ALIAS_PATH) && step.includes('/api/context')), '/api recommended sequence does not convert well-known agent alias discovery to /api/context', failures);
 
   return failures;
 }

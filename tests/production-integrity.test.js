@@ -972,6 +972,11 @@ test('production smoke validates readiness discovery fields across machine entry
           runtime_input_ids: ['production_integrity', 'ai_adoption', 'design_partners'],
           preferred_adoption_scope: 'interactive_ai'
         }
+      },
+      quick_start: {
+        primary_api_conversion: {
+          discovery_entrypoints: ['/', '/robots.txt', '/llms.txt', '/index.json', '/agent.json', '/.well-known/anchorfact.json', '/api']
+        }
       }
     },
     apiReadiness,
@@ -983,7 +988,15 @@ test('production smoke validates readiness discovery fields across machine entry
         scorecard_command: 'npm run api:readiness -- --adoption-json reports/ai-adoption-scorecard.json',
         runtime_input_ids: ['production_integrity', 'ai_adoption', 'design_partners'],
         preferred_adoption_scope: 'interactive_ai'
-      }
+      },
+      quick_start: {
+        primary_api_conversion: {
+          discovery_entrypoints: ['/', '/robots.txt', '/llms.txt', '/index.json', '/agent.json', '/.well-known/anchorfact.json', '/api']
+        }
+      },
+      recommended_workflow: [
+        'After crawler discovery through /.well-known/anchorfact.json, convert to /api/context?q={query}&limit=3&format=markdown.'
+      ]
     },
     wellKnownAgentProfile: {
       readiness_runtime_signals: {
@@ -993,7 +1006,15 @@ test('production smoke validates readiness discovery fields across machine entry
         scorecard_command: 'npm run api:readiness -- --adoption-json reports/ai-adoption-scorecard.json',
         runtime_input_ids: ['production_integrity', 'ai_adoption', 'design_partners'],
         preferred_adoption_scope: 'interactive_ai'
-      }
+      },
+      quick_start: {
+        primary_api_conversion: {
+          discovery_entrypoints: ['/', '/robots.txt', '/llms.txt', '/index.json', '/agent.json', '/.well-known/anchorfact.json', '/api']
+        }
+      },
+      recommended_workflow: [
+        'After crawler discovery through /.well-known/anchorfact.json, convert to /api/context?q={query}&limit=3&format=markdown.'
+      ]
     },
     apiAccessPolicy: {
       readiness_policy: {
@@ -1023,7 +1044,14 @@ test('production smoke validates readiness discovery fields across machine entry
           runtime_input_ids: ['production_integrity', 'ai_adoption', 'design_partners'],
           preferred_adoption_scope: 'interactive_ai'
         }
-      }
+      },
+      ai_adoption_guidance: {
+        discovery_entrypoints: ['/robots.txt', '/llms.txt', '/agent.json', '/.well-known/anchorfact.json', '/api'],
+        crawler_next_step: 'After reading /.well-known/anchorfact.json, call /api/context for a real user question.'
+      },
+      recommended_sequence: [
+        'If you reached /api from /.well-known/anchorfact.json, make the next request /api/context?q={query}&limit=3&format=markdown.'
+      ]
     },
     openapi: {
       components: {
@@ -1053,6 +1081,95 @@ test('production smoke validates readiness discovery fields across machine entry
   assert(missing.some(failure => failure.includes('/api-access/ readiness policy')), 'missing API access readiness policy should fail smoke');
   assert(missing.some(failure => failure.includes('/api readiness guidance')), 'missing API readiness guidance should fail smoke');
   assert(missing.some(failure => failure.includes('runtime signal')), 'missing runtime signal summaries should fail smoke');
+});
+
+test('production smoke validates well-known alias discovery guidance across machine entrypoints', () => {
+  const apiReadiness = {
+    status: 'foundation_ready_pending_14_day_and_partner_signals',
+    subscription_ready: false,
+    runtime_signal_contract: {
+      static_artifact: true,
+      status_when_missing: 'not_provided',
+      workflow: '.github/workflows/readiness-scorecard.yml',
+      runtime_inputs: []
+    },
+    readiness_blockers: {
+      gate_ids: []
+    }
+  };
+  const runtimeSignalSummary = {
+    static_artifact: true,
+    missing_runtime_status: 'not_provided',
+    workflow: '.github/workflows/readiness-scorecard.yml',
+    runtime_input_ids: []
+  };
+  const openapi = {
+    components: {
+      schemas: {
+        RootIndex: { properties: { api_readiness_summary: { properties: { runtime_signal_contract: {} } } } },
+        AgentProfile: { properties: { readiness_runtime_signals: {} } },
+        ApiIndex: { properties: { readiness_guidance: { properties: { runtime_signal_contract: {} } } } },
+        ApiAccess: { properties: { readiness_policy: { properties: { runtime_signal_contract: {} } } } }
+      }
+    }
+  };
+  const failures = readinessDiscoveryFailures({
+    rootIndex: {
+      api_readiness_summary: {
+        path: '/api-readiness.json',
+        status: apiReadiness.status,
+        subscription_ready: false,
+        blocker_ids: [],
+        runtime_signal_contract: runtimeSignalSummary
+      },
+      quick_start: {
+        primary_api_conversion: {
+          discovery_entrypoints: ['/', '/robots.txt', '/llms.txt', '/index.json', '/agent.json', '/api']
+        }
+      }
+    },
+    apiReadiness,
+    agentProfile: {
+      readiness_runtime_signals: runtimeSignalSummary,
+      quick_start: {
+        primary_api_conversion: {
+          discovery_entrypoints: ['/', '/robots.txt', '/llms.txt', '/index.json', '/agent.json', '/api']
+        }
+      },
+      recommended_workflow: [
+        'After crawler discovery through /agent.json or /api, convert to /api/context?q={query}&limit=3&format=markdown.'
+      ]
+    },
+    wellKnownAgentProfile: {
+      readiness_runtime_signals: runtimeSignalSummary
+    },
+    apiAccessPolicy: {
+      readiness_policy: {
+        status_endpoint: '/api-readiness.json',
+        current_mode: 'free_no_key_read_only',
+        paid_beta_requires: ['production_integrity_14_day', 'design_partners'],
+        runtime_signal_contract: runtimeSignalSummary
+      }
+    },
+    apiIndex: {
+      readiness_guidance: {
+        status_endpoint: '/api-readiness.json',
+        default_access_until_ready: 'free_no_key_read_only',
+        subscription_ready_requires: ['production_integrity_14_day', 'design_partners'],
+        runtime_signal_contract: runtimeSignalSummary
+      },
+      ai_adoption_guidance: {
+        discovery_entrypoints: ['/robots.txt', '/llms.txt', '/agent.json', '/api'],
+        crawler_next_step: 'After reading /agent.json or /api, call /api/context for a real user question.'
+      },
+      recommended_sequence: [
+        'If you reached /api from /agent.json, make the next request /api/context?q={query}&limit=3&format=markdown.'
+      ]
+    },
+    openapi
+  });
+
+  assert(failures.some(failure => failure.includes('well-known agent alias discovery')), 'missing well-known alias guidance should fail smoke');
 });
 
 test('production smoke validates the well-known agent alias body matches agent.json', () => {
