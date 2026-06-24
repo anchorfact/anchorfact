@@ -81,7 +81,14 @@ test('parseSearchParams validates query and clamps limit', () => {
 
   const missing = parseSearchParams(new URL('https://anchorfact.org/api/search'));
   assertEq(missing.ok, false);
-  assert(missing.error.includes('q'), 'missing query should mention q');
+  assertEq(missing.status, 400);
+  assertEq(missing.payload.error.code, 'missing_or_invalid_query');
+  assertEq(missing.payload.machine_recovery.recoverable, true);
+  assertEq(missing.payload.machine_recovery.current_endpoint, 'search');
+  assert(
+    missing.payload.machine_recovery.retry_examples.some(example => example.path.includes('/api/search?q=')),
+    'missing search query response should include an executable search retry example'
+  );
 });
 
 test('rankSearchRecords ranks exact title and keyword matches first', () => {
@@ -327,7 +334,12 @@ test('Pages Function rejects empty queries and supports OPTIONS', async () => {
   });
   const payload = await response.json();
   assertEq(response.status, 400);
-  assert(payload.error.includes('q'), 'empty query error should mention q');
+  assertEq(payload.error.code, 'missing_or_invalid_query');
+  assertEq(payload.machine_recovery.current_endpoint, 'search');
+  assert(
+    payload.machine_recovery.next_request.path.includes('/api/context?q='),
+    'empty search request should route machines to default context recovery'
+  );
 
   const options = onRequestOptions();
   assertEq(options.status, 204);

@@ -4,12 +4,35 @@ import {
   queryTokens,
   textTokens
 } from './query-text.js';
+import { buildMachineRecoveryGuidance } from './api-machine-guidance.js';
 
 export const SEARCH_API_SCHEMA_VERSION = 'anchorfact.search-api.v1';
 const MIN_LIMIT = 1;
 const DEFAULT_LIMIT = 5;
 const MAX_LIMIT = 20;
 const SHORT_TOKEN_BOOST_SKIP = new Set(['ai']);
+
+function errorPayload(code, message, extra = {}) {
+  return {
+    schema_version: SEARCH_API_SCHEMA_VERSION,
+    error: {
+      code,
+      message
+    },
+    ...extra
+  };
+}
+
+function recoverableErrorPayload(code, message, extra = {}) {
+  return errorPayload(code, message, {
+    machine_recovery: buildMachineRecoveryGuidance({
+      currentEndpoint: 'search',
+      reason: code,
+      limit: DEFAULT_LIMIT
+    }),
+    ...extra
+  });
+}
 
 function clampLimit(value) {
   const parsed = Number.parseInt(value, 10);
@@ -23,7 +46,10 @@ export function parseSearchParams(url) {
     return {
       ok: false,
       status: 400,
-      error: 'Missing required q query parameter.'
+      payload: recoverableErrorPayload(
+        'missing_or_invalid_query',
+        'Provide a natural-language query with ?q=... or ?query=....'
+      )
     };
   }
   return {

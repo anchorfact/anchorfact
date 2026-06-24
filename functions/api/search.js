@@ -40,10 +40,7 @@ export async function onRequestGet(context) {
   const url = new URL(context.request.url);
   const parsed = parseSearchParams(url);
   if (!parsed.ok) {
-    return jsonResponse({
-      schema_version: 'anchorfact.search-api.v1',
-      error: parsed.error
-    }, parsed.status, 'no-store');
+    return jsonResponse(parsed.payload, parsed.status, 'no-store');
   }
 
   try {

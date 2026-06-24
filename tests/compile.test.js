@@ -163,8 +163,10 @@ test('public entrypoints exclude draft articles', () => {
   assert(rootIndex.error_recovery_guidance.observed_recoverable_endpoints.includes('/api/article'), 'root index should expose article recovery guidance');
   assert(rootIndex.error_recovery_guidance.observed_recoverable_endpoints.includes('/api/claim'), 'root index should expose claim recovery guidance');
   assert(rootIndex.error_recovery_guidance.observed_recoverable_endpoints.includes('/api/resolve'), 'root index should expose resolver recovery guidance');
+  assert(rootIndex.error_recovery_guidance.observed_recoverable_endpoints.includes('/api/search'), 'root index should expose search recovery guidance');
   assert(rootIndex.error_recovery_guidance.retry_example_paths.includes('/api/cite?id={claim_id}'), 'root index should expose citation retry guidance');
   assert(rootIndex.error_recovery_guidance.retry_example_paths.includes('/api/plan?q={query}&limit=3'), 'root index should expose plan retry guidance');
+  assert(rootIndex.error_recovery_guidance.retry_example_paths.includes('/api/search?q={query}&limit=5'), 'root index should expose search retry guidance');
   assert(rootIndex.error_recovery_guidance.retry_example_paths.includes('/api/article?slug={canonical_slug}'), 'root index should expose article retry guidance');
   assert(rootIndex.error_recovery_guidance.retry_example_paths.includes('/api/claim?id={claim_id}'), 'root index should expose claim retry guidance');
   assert(rootIndex.error_recovery_guidance.retry_example_paths.includes('/api/resolve?ref={claim_id_or_slug_or_source_id}'), 'root index should expose resolver retry guidance');

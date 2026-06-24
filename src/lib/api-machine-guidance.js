@@ -120,6 +120,19 @@ export function buildMachineRecoveryGuidance({
     };
   }
 
+  if (currentEndpoint === 'search') {
+    const searchPath = queryPath('/api/search', exampleQuery, limit);
+    return {
+      ...common,
+      valid_parameters: ['q', 'query', 'limit'],
+      retry_examples: [
+        apiCall('search_json', searchPath, 'Return compact public search hits for the query.', site),
+        apiCall('context', contextPath, 'Return answer-ready context when the query should be answered from AnchorFact.', site),
+        apiCall('evidence', evidencePath, 'Return source-mapped evidence packs for the query.', site)
+      ]
+    };
+  }
+
   if (currentEndpoint === 'article') {
     return {
       ...common,
@@ -208,6 +221,7 @@ export function buildErrorRecoveryDiscoveryGuidance({ site = OFFICIAL_SITE } = {
       '/api/context',
       '/api/evidence',
       '/api/plan',
+      '/api/search',
       '/api/article',
       '/api/claim',
       '/api/source',
@@ -219,6 +233,7 @@ export function buildErrorRecoveryDiscoveryGuidance({ site = OFFICIAL_SITE } = {
       '/api/context?q={query}&limit=3',
       '/api/evidence?q={query}&limit=3',
       '/api/plan?q={query}&limit=3',
+      '/api/search?q={query}&limit=5',
       '/api/article?slug={canonical_slug}',
       '/api/claim?id={claim_id}',
       '/api/source?id={source_id}',

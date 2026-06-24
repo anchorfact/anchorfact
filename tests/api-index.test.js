@@ -46,8 +46,10 @@ test('buildApiIndex publishes the machine API discovery contract', () => {
   assert(payload.error_recovery_guidance.observed_recoverable_endpoints.includes('/api/claim'), 'error recovery guidance should name observed recoverable claim errors');
   assert(payload.error_recovery_guidance.retry_example_paths.some(path => path.includes('/api/evidence?q=')), 'error recovery guidance should include an evidence retry template');
   assert(payload.error_recovery_guidance.observed_recoverable_endpoints.includes('/api/resolve'), 'error recovery guidance should name observed recoverable resolver errors');
+  assert(payload.error_recovery_guidance.observed_recoverable_endpoints.includes('/api/search'), 'error recovery guidance should name observed recoverable search errors');
   assert(payload.error_recovery_guidance.retry_example_paths.some(path => path.includes('/api/cite?id=')), 'error recovery guidance should include a citation retry template');
   assert(payload.error_recovery_guidance.retry_example_paths.some(path => path.includes('/api/plan?q=')), 'error recovery guidance should include a plan retry template');
+  assert(payload.error_recovery_guidance.retry_example_paths.includes('/api/search?q={query}&limit=5'), 'error recovery guidance should include a search retry template');
   assert(payload.error_recovery_guidance.retry_example_paths.includes('/api/article?slug={canonical_slug}'), 'error recovery guidance should include an article retry template');
   assert(payload.error_recovery_guidance.retry_example_paths.includes('/api/claim?id={claim_id}'), 'error recovery guidance should include a claim retry template');
   assert(payload.error_recovery_guidance.retry_example_paths.includes('/api/resolve?ref={claim_id_or_slug_or_source_id}'), 'error recovery guidance should include a resolver retry template');
