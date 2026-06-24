@@ -63,13 +63,16 @@ test('loadJsonAsset caches parsed JSON per ASSETS binding', async () => {
   assertEq(second.fetchCount(), 1, 'different binding should keep an isolated cache');
 });
 
-test('robots Pages Function returns crawler discovery with short cache headers', async () => {
+test('robots Pages Function returns crawler discovery with no-store cache headers', async () => {
   const response = await onRequestRobotsGet();
   const text = await response.text();
 
   assertEq(response.status, 200);
   assert(response.headers.get('Content-Type').includes('text/plain'), 'robots should be text/plain');
-  assert(response.headers.get('Cache-Control').includes('max-age=3600'), 'robots should keep a short cache');
+  assert(response.headers.get('Cache-Control').includes('no-store'), 'robots should avoid browser caching');
+  assert(response.headers.get('Cache-Control').includes('max-age=0'), 'robots should be immediately stale downstream');
+  assertEq(response.headers.get('CDN-Cache-Control'), 'no-store');
+  assertEq(response.headers.get('Cloudflare-CDN-Cache-Control'), 'no-store');
   assert(text.includes('AI-Recovery-Guide: https://anchorfact.org/api'), 'robots should link API recovery guidance');
 
   const options = onRequestRobotsOptions();

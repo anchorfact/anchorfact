@@ -5,7 +5,9 @@ const TEXT_HEADERS = {
   'Access-Control-Allow-Methods': 'GET, OPTIONS',
   'Access-Control-Allow-Headers': 'Content-Type',
   'Content-Type': 'text/plain; charset=utf-8',
-  'Cache-Control': 'public, max-age=3600, stale-while-revalidate=86400'
+  'Cache-Control': 'no-store, max-age=0, must-revalidate',
+  'CDN-Cache-Control': 'no-store',
+  'Cloudflare-CDN-Cache-Control': 'no-store'
 };
 
 export function onRequestOptions() {

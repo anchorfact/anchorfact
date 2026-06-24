@@ -1185,7 +1185,7 @@ test('_headers is generated for Cloudflare Pages static output', () => {
   assert(headers.includes('/sources.json\n  Access-Control-Allow-Origin: *'), '_headers should expose sources CORS');
   assert(headers.includes('/provenance.json\n  Access-Control-Allow-Origin: *'), '_headers should expose provenance CORS');
   assert(headers.includes('/provenance.sig\n  Access-Control-Allow-Origin: *'), '_headers should expose provenance signature CORS');
-  assert(headers.includes('/robots.txt\n  Content-Type: text/plain; charset=utf-8\n  Cache-Control: public, max-age=3600, stale-while-revalidate=86400'), '_headers should short-cache robots.txt for bot discovery reliability');
+  assert(headers.includes('/robots.txt\n  Content-Type: text/plain; charset=utf-8\n  Cache-Control: no-store, max-age=0, must-revalidate\n  CDN-Cache-Control: no-store\n  Cloudflare-CDN-Cache-Control: no-store'), '_headers should keep robots.txt uncached for bot discovery reliability');
   assert(headers.includes('/sitemap.xml\n  Content-Type: application/xml; charset=utf-8\n  Cache-Control: public, max-age=3600, stale-while-revalidate=86400'), '_headers should short-cache sitemap.xml for bot discovery reliability');
   for (const path of revalidatedMachineArtifacts) {
     assert(headers.includes(`${path}\n  Access-Control-Allow-Origin: *`), `_headers should expose ${path} CORS`);

@@ -907,6 +907,7 @@ test('production smoke accepts bounded robots cache max-age values', () => {
   });
 
   let failures = [];
+  headerMaxAgeAtMost(result('no-store, max-age=0, must-revalidate'), 14400, failures);
   headerMaxAgeAtMost(result('public, max-age=3600, stale-while-revalidate=86400'), 14400, failures);
   headerMaxAgeAtMost(result('public, max-age=14400, stale-while-revalidate=86400'), 14400, failures);
   assertEq(failures, []);
