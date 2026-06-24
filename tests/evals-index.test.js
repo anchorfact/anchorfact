@@ -201,6 +201,9 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
   assert(robotsDiscoveryEval.expected.contains_text.includes('Artifact-Summary'), 'robots discovery eval should require artifact summary hint');
   assert(robotsDiscoveryEval.expected.contains_text.includes('Artifact-Shards'), 'robots discovery eval should require artifact shard hint');
   assert(robotsDiscoveryEval.expected.contains_text.includes('API-Readiness'), 'robots discovery eval should require API readiness hint');
+  assert(robotsDiscoveryEval.expected.contains_text.includes('AI-Minimum-Valid-Context'), 'robots discovery eval should require minimum valid context hint');
+  assert(robotsDiscoveryEval.expected.contains_text.includes('AI-Do-Not-Call-Bare'), 'robots discovery eval should require bare API prevention hint');
+  assert(robotsDiscoveryEval.expected.contains_text.includes('AI-Recoverable-400-Field'), 'robots discovery eval should require recoverable 400 field hint');
 
   const openapiEval = payload.evals.find(evalCase => evalCase.id === 'openapi_context_contract');
   assertEq(openapiEval.call.path, '/openapi.json');

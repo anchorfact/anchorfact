@@ -296,7 +296,10 @@ export function buildEvalsIndex({
           'Machine-Index',
           'Artifact-Summary',
           'Artifact-Shards',
-          'API-Readiness'
+          'API-Readiness',
+          'AI-Minimum-Valid-Context',
+          'AI-Do-Not-Call-Bare',
+          'AI-Recoverable-400-Field'
         ]
       }
     },

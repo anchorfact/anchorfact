@@ -261,6 +261,11 @@ AI-Plan: https://anchorfact.org/api/plan?q={query}
 AI-Plan-Use: coverage_uncertain_only
 AI-Next-After-Discovery: https://anchorfact.org/api/context?q={query}&limit=3&format=markdown
 AI-Primary-Conversion-Target: 0.2
+AI-Minimum-Valid-Context: https://anchorfact.org/api/context?q={query}&limit=3&format=markdown
+AI-Minimum-Valid-Evidence: https://anchorfact.org/api/evidence?q={query}&limit=3&format=markdown
+AI-Minimum-Valid-Resolve-Batch: https://anchorfact.org/api/resolve-batch?ref={claim_id}&ref={source_id}&format=markdown
+AI-Do-Not-Call-Bare: /api/evidence,/api/source,/api/resolve-batch
+AI-Recoverable-400-Field: machine_recovery
 Large-Artifact-Policy: prefer_api_context_or_evidence
 Artifact-Summary: https://anchorfact.org/artifact-summary.json
 Artifact-Shards: https://anchorfact.org/artifact-shards.json

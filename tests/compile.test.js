@@ -248,6 +248,11 @@ test('public entrypoints exclude draft articles', () => {
   assert(robotsTxt.includes('AI-Plan-Use: coverage_uncertain_only'), 'robots.txt should reserve planning for uncertain coverage');
   assert(robotsTxt.includes('AI-Next-After-Discovery: https://anchorfact.org/api/context?q={query}&limit=3&format=markdown'), 'robots.txt should tell AI crawlers the next primary API request after discovery');
   assert(robotsTxt.includes('AI-Primary-Conversion-Target: 0.2'), 'robots.txt should expose the measured AI primary/discovery target');
+  assert(robotsTxt.includes('AI-Minimum-Valid-Context: https://anchorfact.org/api/context?q={query}&limit=3&format=markdown'), 'robots.txt should expose a minimum valid context call');
+  assert(robotsTxt.includes('AI-Minimum-Valid-Evidence: https://anchorfact.org/api/evidence?q={query}&limit=3&format=markdown'), 'robots.txt should expose a minimum valid evidence call');
+  assert(robotsTxt.includes('AI-Minimum-Valid-Resolve-Batch: https://anchorfact.org/api/resolve-batch?ref={claim_id}&ref={source_id}&format=markdown'), 'robots.txt should expose a minimum valid batch resolver call');
+  assert(robotsTxt.includes('AI-Do-Not-Call-Bare: /api/evidence,/api/source,/api/resolve-batch'), 'robots.txt should warn against bare primary API calls');
+  assert(robotsTxt.includes('AI-Recoverable-400-Field: machine_recovery'), 'robots.txt should name the recovery field for recoverable API 400s');
   assert(robotsTxt.includes('AI-Cite: https://anchorfact.org/api/cite?id={claim_id}'), 'robots.txt should advertise AI citation hint');
   assertEq(apiAccess.schema_version, 'anchorfact.api-access.v1');
   assertEq(apiAccess.provenance_url, 'https://anchorfact.org/provenance.json');

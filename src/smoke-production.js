@@ -634,6 +634,11 @@ export async function main() {
   assertOk(robotsText.includes('Large-Artifact-Policy: prefer_api_context_or_evidence'), '/robots.txt does not advertise large artifact API preference', failures);
   assertOk(robotsText.includes('AI-Next-After-Discovery: https://anchorfact.org/api/context?q={query}&limit=3&format=markdown'), '/robots.txt does not advertise AI next request after discovery', failures);
   assertOk(robotsText.includes('AI-Primary-Conversion-Target: 0.2'), '/robots.txt does not advertise AI primary/discovery conversion target', failures);
+  assertOk(robotsText.includes('AI-Minimum-Valid-Context: https://anchorfact.org/api/context?q={query}&limit=3&format=markdown'), '/robots.txt does not advertise minimum valid context call', failures);
+  assertOk(robotsText.includes('AI-Minimum-Valid-Evidence: https://anchorfact.org/api/evidence?q={query}&limit=3&format=markdown'), '/robots.txt does not advertise minimum valid evidence call', failures);
+  assertOk(robotsText.includes('AI-Minimum-Valid-Resolve-Batch: https://anchorfact.org/api/resolve-batch?ref={claim_id}&ref={source_id}&format=markdown'), '/robots.txt does not advertise minimum valid batch resolver call', failures);
+  assertOk(robotsText.includes('AI-Do-Not-Call-Bare: /api/evidence,/api/source,/api/resolve-batch'), '/robots.txt does not warn against bare primary API calls', failures);
+  assertOk(robotsText.includes('AI-Recoverable-400-Field: machine_recovery'), '/robots.txt does not name recoverable API 400 guidance field', failures);
   assertOk(robotsText.includes('MCP: https://anchorfact.org/mcp.json'), '/robots.txt does not advertise mcp.json', failures);
   assertOk(robotsText.includes('Provenance: https://anchorfact.org/provenance.json'), '/robots.txt does not advertise provenance.json', failures);
   assertOk(robotsText.includes('Health: https://anchorfact.org/content-health.json'), '/robots.txt does not advertise content-health.json', failures);
