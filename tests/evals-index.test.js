@@ -176,6 +176,7 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
   assert(llmsDiscoveryEval.expected.contains_text.includes('/api/context?q={query}'), 'llms discovery eval should require context entrypoint');
   assert(llmsDiscoveryEval.expected.contains_text.includes('/api/evidence?q={query}'), 'llms discovery eval should require evidence entrypoint');
   assert(llmsDiscoveryEval.expected.contains_text.includes('/api/plan?q={query}'), 'llms discovery eval should require plan entrypoint');
+  assert(llmsDiscoveryEval.expected.contains_text.includes('After reading this discovery file'), 'llms discovery eval should require discovery-to-context conversion text');
   assert(llmsDiscoveryEval.expected.contains_text.includes('/index.json'), 'llms discovery eval should require root machine index');
   assert(llmsDiscoveryEval.expected.contains_text.includes('/artifact-summary.json'), 'llms discovery eval should require artifact summary');
   assert(llmsDiscoveryEval.expected.contains_text.includes('/artifact-shards.json'), 'llms discovery eval should require artifact shard registry');
@@ -186,6 +187,7 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
   assertEq(robotsDiscoveryEval.expected.content_type, 'text/plain');
   assert(robotsDiscoveryEval.expected.contains_text.includes('AI-Context'), 'robots discovery eval should require AI context hint');
   assert(robotsDiscoveryEval.expected.contains_text.includes('AI-Evidence'), 'robots discovery eval should require AI evidence hint');
+  assert(robotsDiscoveryEval.expected.contains_text.includes('AI-Next-After-Discovery'), 'robots discovery eval should require discovery-to-context conversion hint');
   assert(robotsDiscoveryEval.expected.contains_text.includes('Machine-Index'), 'robots discovery eval should require root machine index hint');
   assert(robotsDiscoveryEval.expected.contains_text.includes('Artifact-Summary'), 'robots discovery eval should require artifact summary hint');
   assert(robotsDiscoveryEval.expected.contains_text.includes('Artifact-Shards'), 'robots discovery eval should require artifact shard hint');

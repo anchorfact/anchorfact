@@ -135,6 +135,8 @@ function writeLlmsTxt(distDir, publicResults, claims, verificationTimestamp) {
 - Artifact sizes and lightweight alternatives: https://anchorfact.org/artifact-summary.json
 - Artifact Shards: https://anchorfact.org/artifact-shards.json
 - API readiness gates: https://anchorfact.org/api-readiness.json
+- After reading this discovery file, make the next request: GET https://anchorfact.org/api/context?q={query}&limit=3&format=markdown
+- AI primary/discovery conversion target: identified AI primary API requests divided by identified AI discovery requests >= 0.2
 - Prefer /api/context or /api/evidence before downloading graph.json, search-index.json, claims.json, or the full article list in llms.txt.
 
 ## Direct Answer Examples
@@ -255,6 +257,8 @@ AI-Evidence: https://anchorfact.org/api/evidence?q={query}
 AI-Cite: https://anchorfact.org/api/cite?id={claim_id}
 AI-Plan: https://anchorfact.org/api/plan?q={query}
 AI-Plan-Use: coverage_uncertain_only
+AI-Next-After-Discovery: https://anchorfact.org/api/context?q={query}&limit=3&format=markdown
+AI-Primary-Conversion-Target: 0.2
 Large-Artifact-Policy: prefer_api_context_or_evidence
 Artifact-Summary: https://anchorfact.org/artifact-summary.json
 Artifact-Shards: https://anchorfact.org/artifact-shards.json

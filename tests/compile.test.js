@@ -197,6 +197,8 @@ test('public entrypoints exclude draft articles', () => {
   assert(llmsTxt.includes('/artifact-summary.json'), 'llms.txt should advertise artifact summary');
   assert(llmsTxt.includes('/artifact-shards.json'), 'llms.txt should advertise artifact shards');
   assert(llmsTxt.includes('/api-readiness.json'), 'llms.txt should advertise API readiness');
+  assert(llmsTxt.includes('After reading this discovery file, make the next request: GET https://anchorfact.org/api/context?q={query}&limit=3&format=markdown'), 'llms.txt should convert discovery readers to the primary context API');
+  assert(llmsTxt.includes('AI primary/discovery conversion target'), 'llms.txt should expose the AI primary/discovery conversion target');
   assert(llmsTxt.includes('Prefer /api/context'), 'llms.txt should steer crawlers toward query-scoped APIs before large artifacts');
   assert(llmsTxt.includes('GET https://anchorfact.org/api/context?q=gaussian%20splatting&limit=3&format=markdown'), 'llms.txt should give AI crawlers an executable default context example');
   assert(llmsTxt.includes('GET https://anchorfact.org/api/evidence?q=RLHF&limit=3&format=markdown'), 'llms.txt should give AI crawlers an executable evidence example');
@@ -236,6 +238,8 @@ test('public entrypoints exclude draft articles', () => {
   assert(robotsTxt.includes('AI-Evidence: https://anchorfact.org/api/evidence?q={query}'), 'robots.txt should advertise AI evidence hint');
   assert(robotsTxt.includes('AI-Plan: https://anchorfact.org/api/plan?q={query}'), 'robots.txt should advertise AI planning hint');
   assert(robotsTxt.includes('AI-Plan-Use: coverage_uncertain_only'), 'robots.txt should reserve planning for uncertain coverage');
+  assert(robotsTxt.includes('AI-Next-After-Discovery: https://anchorfact.org/api/context?q={query}&limit=3&format=markdown'), 'robots.txt should tell AI crawlers the next primary API request after discovery');
+  assert(robotsTxt.includes('AI-Primary-Conversion-Target: 0.2'), 'robots.txt should expose the measured AI primary/discovery target');
   assert(robotsTxt.includes('AI-Cite: https://anchorfact.org/api/cite?id={claim_id}'), 'robots.txt should advertise AI citation hint');
   assertEq(apiAccess.schema_version, 'anchorfact.api-access.v1');
   assertEq(apiAccess.provenance_url, 'https://anchorfact.org/provenance.json');
@@ -817,6 +821,7 @@ test('evals.json describes executable AI integration checks', () => {
   assertEq(robotsDiscoveryEval.call.path, '/robots.txt');
   assert(robotsDiscoveryEval.expected.contains_text.includes('AI-Context'), 'robots discovery eval should require AI context hint');
   assert(robotsDiscoveryEval.expected.contains_text.includes('AI-Evidence'), 'robots discovery eval should require AI evidence hint');
+  assert(robotsDiscoveryEval.expected.contains_text.includes('AI-Next-After-Discovery'), 'robots discovery eval should require discovery-to-context conversion hint');
   assert(robotsDiscoveryEval.expected.contains_text.includes('Machine-Index'), 'robots discovery eval should require root machine index hint');
   assert(robotsDiscoveryEval.expected.contains_text.includes('Artifact-Summary'), 'robots discovery eval should require artifact summary hint');
   assert(robotsDiscoveryEval.expected.contains_text.includes('Artifact-Shards'), 'robots discovery eval should require artifact shard hint');

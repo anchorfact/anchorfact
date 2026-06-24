@@ -628,9 +628,13 @@ export async function main() {
   assertOk(robotsText.includes('Artifact-Shards: https://anchorfact.org/artifact-shards.json'), '/robots.txt does not advertise artifact-shards.json', failures);
   assertOk(robotsText.includes('API-Readiness: https://anchorfact.org/api-readiness.json'), '/robots.txt does not advertise api-readiness.json', failures);
   assertOk(robotsText.includes('Large-Artifact-Policy: prefer_api_context_or_evidence'), '/robots.txt does not advertise large artifact API preference', failures);
+  assertOk(robotsText.includes('AI-Next-After-Discovery: https://anchorfact.org/api/context?q={query}&limit=3&format=markdown'), '/robots.txt does not advertise AI next request after discovery', failures);
+  assertOk(robotsText.includes('AI-Primary-Conversion-Target: 0.2'), '/robots.txt does not advertise AI primary/discovery conversion target', failures);
   assertOk(robotsText.includes('MCP: https://anchorfact.org/mcp.json'), '/robots.txt does not advertise mcp.json', failures);
   assertOk(robotsText.includes('Provenance: https://anchorfact.org/provenance.json'), '/robots.txt does not advertise provenance.json', failures);
   assertOk(robotsText.includes('Health: https://anchorfact.org/content-health.json'), '/robots.txt does not advertise content-health.json', failures);
+  assertOk(llmsText.includes('After reading this discovery file, make the next request: GET https://anchorfact.org/api/context?q={query}&limit=3&format=markdown'), '/llms.txt does not convert discovery readers to the primary context API', failures);
+  assertOk(llmsText.includes('AI primary/discovery conversion target'), '/llms.txt does not advertise AI primary/discovery conversion target', failures);
   assertOk(sitemapText.includes('https://anchorfact.org/index.json'), '/sitemap.xml does not include index.json', failures);
   assertOk(sitemapText.includes('https://anchorfact.org/agent.json'), '/sitemap.xml does not include agent.json', failures);
   assertOk(sitemapText.includes('https://anchorfact.org/llms.txt'), '/sitemap.xml does not include llms.txt', failures);

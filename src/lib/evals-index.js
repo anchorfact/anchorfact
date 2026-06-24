@@ -253,6 +253,7 @@ export function buildEvalsIndex({
           '/api/context?q={query}',
           '/api/evidence?q={query}',
           '/api/plan?q={query}',
+          'After reading this discovery file',
           '/index.json',
           '/artifact-summary.json',
           '/artifact-shards.json',
@@ -270,6 +271,7 @@ export function buildEvalsIndex({
         contains_text: [
           'AI-Context',
           'AI-Evidence',
+          'AI-Next-After-Discovery',
           'Machine-Index',
           'Artifact-Summary',
           'Artifact-Shards',
