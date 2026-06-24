@@ -796,7 +796,30 @@ export function buildOpenApiContract({
             properties: {
               gate_ids: { type: 'array', items: { type: 'string' } },
               automated_gate_ids: { type: 'array', items: { type: 'string' } },
-              manual_gate_ids: { type: 'array', items: { type: 'string' } }
+              manual_gate_ids: { type: 'array', items: { type: 'string' } },
+              evidence_requirements: {
+                type: 'array',
+                items: {
+                  type: 'object',
+                  properties: {
+                    id: { type: 'string' },
+                    gate_type: { enum: ['automated_window', 'manual_validation'] },
+                    status: { type: 'string' },
+                    target: { type: 'string' },
+                    required_days: { type: 'integer' },
+                    runtime_input_id: { type: 'string' },
+                    report_field: { type: 'string' },
+                    json_flag: { type: 'string' },
+                    command: { type: 'string' },
+                    history_command: { type: 'string' },
+                    status_when_missing: { type: 'string' },
+                    preferred_measurement_scope: { type: 'string' },
+                    manual_validation: { type: 'boolean' },
+                    required_fields: { type: 'array', items: { type: 'string' } }
+                  },
+                  additionalProperties: true
+                }
+              }
             }
           },
           core_corpus: { type: 'object' },

@@ -826,6 +826,17 @@ test('readiness next actions follow current gaps instead of defaulting to corpus
   assert(report.readiness_blockers.automated_gate_ids.includes('ai_primary_discovery_ratio_7_day'), 'should expose AI adoption blocker');
   assert(!report.readiness_blockers.automated_gate_ids.includes('core_query_context_ratio'), 'met core context gate should not block');
   assertEq(report.readiness_blockers.manual_gate_ids, ['design_partners']);
+  const productionRequirement = report.readiness_blockers.evidence_requirements.find(item => item.id === 'production_integrity_14_day');
+  assert(productionRequirement.command.includes('production:integrity'), 'production blocker should publish the required evidence command');
+  assertEq(productionRequirement.gate_type, 'automated_window');
+  assertEq(productionRequirement.required_days, 14);
+  const adoptionRequirement = report.readiness_blockers.evidence_requirements.find(item => item.id === 'ai_primary_discovery_ratio_7_day');
+  assertEq(adoptionRequirement.runtime_input_id, 'ai_adoption');
+  assertEq(adoptionRequirement.preferred_measurement_scope, 'interactive_ai');
+  const designRequirement = report.readiness_blockers.evidence_requirements.find(item => item.id === 'design_partners');
+  assertEq(designRequirement.gate_type, 'manual_validation');
+  assertEq(designRequirement.manual_validation, true);
+  assert(designRequirement.required_fields.includes('external_design_partner_count'), 'design blocker should name partner-count evidence');
   assert(!report.next_actions.some(action => action.includes('Repair core corpus')), 'should not recommend corpus repair without corpus failures');
   assert(!report.next_actions.some(action => action.includes('tune article titles')), 'should not recommend API tuning without API failures');
   assert(report.next_actions.some(action => action.includes('production:integrity')), 'should recommend production integrity measurement');
@@ -845,6 +856,9 @@ test('renderApiReadinessMarkdown exposes target, gap context, and report-only st
   assert(markdown.includes('Report-only: true'), 'should render report-only status');
   assert(markdown.includes('Build should fail: false'), 'should state low readiness is not a build blocker');
   assert(markdown.includes('Readiness blockers:'), 'should render readiness blocker summary');
+  assert(markdown.includes('## Blocker Evidence'), 'should render blocker evidence section');
+  assert(markdown.includes('production_integrity_14_day: npm run production:integrity'), 'should render production evidence command');
+  assert(markdown.includes('design_partners: npm run api:readiness'), 'should render manual evidence command');
   assert(markdown.includes('not_provided'), 'should show unprovided production/adoption inputs');
   assert(markdown.includes('current_actionable=0'), 'should render current public audit actionable count');
   assert(!markdown.includes('current=null'), 'should omit null current gate values');

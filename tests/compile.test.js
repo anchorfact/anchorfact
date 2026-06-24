@@ -568,6 +568,7 @@ test('openapi.json describes the static AI contract', () => {
   assert(openapi.components.schemas.ApiReadiness, 'OpenAPI should define API readiness schema');
   assert(openapi.components.schemas.ApiReadiness.properties.readiness_gates, 'OpenAPI should define API readiness gates');
   assert(openapi.components.schemas.ApiReadiness.properties.readiness_blockers, 'OpenAPI should define API readiness blockers');
+  assert(openapi.components.schemas.ApiReadiness.properties.readiness_blockers.properties.evidence_requirements, 'OpenAPI should define blocker evidence requirements');
   assert(openapi.components.schemas.ApiReadiness.properties.runtime_signal_contract, 'OpenAPI should define API readiness runtime signal contract');
   assert(openapi.components.schemas.RootIndex.properties.api_readiness_summary.properties.runtime_signal_contract, 'OpenAPI should define root readiness runtime signal summary');
   assert(openapi.components.schemas.AgentProfile.properties.readiness_runtime_signals, 'OpenAPI should define agent readiness runtime signals');
@@ -666,6 +667,16 @@ test('api-readiness.json publishes machine-readable readiness gates', () => {
   assert(readiness.readiness_gates.some(gate => gate.id === 'core_query_context_ratio'), 'readiness should include context coverage gate');
   assert(Array.isArray(readiness.readiness_blockers.gate_ids), 'readiness should publish blocker gate ids');
   assert(readiness.readiness_blockers.gate_ids.includes('design_partners'), 'readiness should identify manual design partner blocker');
+  assert(readiness.readiness_blockers.evidence_requirements.some(item =>
+    item.id === 'production_integrity_14_day'
+    && item.command.includes('production:integrity')
+    && item.required_days === 14
+  ), 'readiness should publish production blocker evidence requirements');
+  assert(readiness.readiness_blockers.evidence_requirements.some(item =>
+    item.id === 'design_partners'
+    && item.manual_validation === true
+    && item.required_fields.includes('paid_intent_signal_count')
+  ), 'readiness should publish manual design partner evidence requirements');
   assertEq(readiness.runtime_signal_contract.static_artifact, true);
   assertEq(readiness.runtime_signal_contract.status_when_missing, 'not_provided');
   assert(readiness.runtime_signal_contract.scorecard_command.includes('--adoption-json'), 'readiness should explain runtime adoption input command');

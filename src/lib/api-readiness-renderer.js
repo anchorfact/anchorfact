@@ -17,6 +17,18 @@ function readinessBlockerText(report) {
   return (report.readiness_blockers?.gate_ids || []).join(', ') || 'none';
 }
 
+function blockerRequirementText(requirement) {
+  const details = [];
+  if (requirement.required_days) details.push(`days=${requirement.required_days}`);
+  if (requirement.runtime_input_id) details.push(`input=${requirement.runtime_input_id}`);
+  if (requirement.preferred_measurement_scope) details.push(`scope=${requirement.preferred_measurement_scope}`);
+  if (Array.isArray(requirement.required_fields) && requirement.required_fields.length) {
+    details.push(`fields=${requirement.required_fields.join(',')}`);
+  }
+  const suffix = details.length ? ` (${details.join('; ')})` : '';
+  return `- ${requirement.id}: ${requirement.command || 'manual evidence required'}${suffix}`;
+}
+
 export function renderApiReadinessMarkdown(report) {
   const lines = [];
   lines.push(`# AnchorFact API Readiness Report`);
@@ -45,6 +57,15 @@ export function renderApiReadinessMarkdown(report) {
   for (const gate of report.readiness_gates) {
     const current = gateCurrentText(gate);
     lines.push(`- ${gate.id}: ${gate.status} (${gate.target}${current})`);
+  }
+  lines.push('');
+  lines.push(`## Blocker Evidence`);
+  lines.push('');
+  const blockerRequirements = report.readiness_blockers?.evidence_requirements || [];
+  if (blockerRequirements.length === 0) {
+    lines.push('- None.');
+  } else {
+    for (const requirement of blockerRequirements) lines.push(blockerRequirementText(requirement));
   }
   lines.push('');
   if (report.runtime_signal_contract) {

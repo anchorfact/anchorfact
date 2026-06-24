@@ -317,18 +317,75 @@ function buildNextActions({
   return actions;
 }
 
-function readinessBlockers(readinessGates) {
+const BLOCKER_EVIDENCE_DEFAULTS = {
+  production_integrity_14_day: {
+    gate_type: 'automated_window',
+    required_days: 14,
+    runtime_input_id: 'production_integrity'
+  },
+  public_audit_14_day: {
+    gate_type: 'automated_window',
+    required_days: 14,
+    runtime_input_id: 'content_health',
+    command: 'npm run content:health -- --json --write reports/content-health.json'
+  },
+  ai_primary_discovery_ratio_7_day: {
+    gate_type: 'automated_window',
+    required_days: 7,
+    runtime_input_id: 'ai_adoption'
+  },
+  design_partners: {
+    gate_type: 'manual_validation',
+    runtime_input_id: 'design_partners'
+  }
+};
+
+function definedObject(input) {
+  return Object.fromEntries(
+    Object.entries(input).filter(([, value]) => value !== undefined && value !== null)
+  );
+}
+
+function blockerEvidenceRequirement(gate, runtimeSignalContract) {
+  const defaults = BLOCKER_EVIDENCE_DEFAULTS[gate.id] || { gate_type: 'automated_window' };
+  const runtimeInput = (runtimeSignalContract.runtime_inputs || [])
+    .find(input => input?.id === defaults.runtime_input_id) || null;
+
+  return definedObject({
+    id: gate.id,
+    gate_type: defaults.gate_type,
+    status: gate.status,
+    target: gate.target,
+    required_days: defaults.required_days,
+    runtime_input_id: defaults.runtime_input_id,
+    report_field: runtimeInput?.report_field,
+    json_flag: runtimeInput?.json_flag,
+    command: runtimeInput?.command || defaults.command,
+    history_command: runtimeSignalContract.history_command,
+    status_when_missing: runtimeInput?.status_when_missing,
+    preferred_measurement_scope: runtimeInput?.preferred_measurement_scope,
+    manual_validation: runtimeInput?.manual_validation,
+    required_fields: runtimeInput?.required_fields
+  });
+}
+
+function readinessBlockers(readinessGates, runtimeSignalContract) {
   const automatedGateIds = [];
   const manualGateIds = [];
+  const blockingGates = [];
   for (const gate of readinessGates) {
     if (gate.status === 'met') continue;
+    blockingGates.push(gate);
     if (gate.id === 'design_partners') manualGateIds.push(gate.id);
     else automatedGateIds.push(gate.id);
   }
   return {
     gate_ids: [...automatedGateIds, ...manualGateIds],
     automated_gate_ids: automatedGateIds,
-    manual_gate_ids: manualGateIds
+    manual_gate_ids: manualGateIds,
+    evidence_requirements: blockingGates.map(gate =>
+      blockerEvidenceRequirement(gate, runtimeSignalContract)
+    )
   };
 }
 
@@ -411,6 +468,8 @@ export function buildApiReadinessReport({
     }
   ];
 
+  const runtimeSignalContract = buildReadinessRuntimeSignalContract({ site });
+
   return {
     schema_version: API_READINESS_SCHEMA_VERSION,
     generated: generatedAt,
@@ -423,8 +482,8 @@ export function buildApiReadinessReport({
       : 'building_foundation',
     subscription_ready: false,
     readiness_gates: readinessGates,
-    readiness_blockers: readinessBlockers(readinessGates),
-    runtime_signal_contract: buildReadinessRuntimeSignalContract({ site }),
+    readiness_blockers: readinessBlockers(readinessGates, runtimeSignalContract),
+    runtime_signal_contract: runtimeSignalContract,
     core_corpus: coreCorpus,
     api_scorecard: contextScorecard,
     api_performance: apiPerformanceReport
