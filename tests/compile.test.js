@@ -1193,7 +1193,7 @@ test('_headers is generated for Cloudflare Pages static output', () => {
     assert(headers.includes(`${path}\n  Access-Control-Allow-Origin: *\n  Content-Type: ${path.endsWith('.txt') ? 'text/plain' : 'application/json'}; charset=utf-8\n  Cache-Control: public, max-age=0, must-revalidate`), `_headers should keep ${path} revalidated`);
   }
   assert(headers.includes('/*/index.json\n  Access-Control-Allow-Origin: *'), '_headers should expose article JSON-LD CORS');
-  for (const path of ['/*/index.html', '/*/index', '/*/*/']) {
+  for (const path of ['/*/index.html', '/*/index', '/:category/:article/']) {
     assert(headers.includes(`${path}\n  Access-Control-Allow-Origin: *\n  Content-Type: application/ld+json; charset=utf-8\n  Cache-Control: public, max-age=86400`), `_headers should expose article ${path} aliases as JSON-LD`);
     assert(headers.includes(`${path}\n  Access-Control-Allow-Origin: *\n  Content-Type: application/ld+json; charset=utf-8\n  Cache-Control: public, max-age=86400\n  X-Robots-Tag: noindex, nofollow`), `_headers should noindex article ${path} aliases`);
   }

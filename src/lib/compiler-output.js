@@ -398,7 +398,7 @@ function writeHeaders(distDir) {
   Cache-Control: public, max-age=86400
   X-Robots-Tag: noindex, nofollow
 
-/*/*/
+/:category/:article/
   Access-Control-Allow-Origin: *
   Content-Type: application/ld+json; charset=utf-8
   Cache-Control: public, max-age=86400
