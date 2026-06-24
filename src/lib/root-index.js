@@ -4,6 +4,7 @@ import {
   ROOT_INDEX_SCHEMA_VERSION,
   publicUrl
 } from './build-metadata.js';
+import { buildErrorRecoveryDiscoveryGuidance } from './api-machine-guidance.js';
 
 export const ROOT_INDEX_DEFAULT_ANSWER_PATH = '/api/context?q={query}';
 
@@ -103,6 +104,7 @@ export function buildRootIndex({
       automated_blocker_ids: apiReadinessPayload?.readiness_blockers?.automated_gate_ids || [],
       manual_blocker_ids: apiReadinessPayload?.readiness_blockers?.manual_gate_ids || []
     },
+    error_recovery_guidance: buildErrorRecoveryDiscoveryGuidance({ site }),
     trust_policy: {
       public_only_entrypoints_exclude_drafts: true,
       default_answer_requires_can_answer_with_anchorfact: true,

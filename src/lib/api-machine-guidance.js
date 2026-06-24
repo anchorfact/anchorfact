@@ -138,3 +138,22 @@ export function buildMachineRecoveryGuidance({
     ]
   };
 }
+
+export function buildErrorRecoveryDiscoveryGuidance({ site = OFFICIAL_SITE } = {}) {
+  return {
+    recoverable_400_field: 'machine_recovery',
+    default_recovery_path: '/api/context?q={query}&limit=3',
+    default_recovery_url: publicUrl('/api/context?q={query}&limit=3', site),
+    observed_recoverable_endpoints: [
+      '/api/evidence',
+      '/api/source',
+      '/api/resolve-batch'
+    ],
+    retry_example_paths: [
+      '/api/evidence?q={query}&limit=3',
+      '/api/source?id={source_id}',
+      '/api/resolve-batch?ref={claim_id}&ref={source_id}'
+    ],
+    policy: 'If an API request returns a recoverable 400, inspect machine_recovery.next_request first, then use retry_examples for endpoint-specific parameters.'
+  };
+}

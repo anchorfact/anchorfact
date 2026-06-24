@@ -526,6 +526,7 @@ export function buildOpenApiContract({
             },
             additionalProperties: true
           },
+          error_recovery_guidance: { type: 'object' },
           trust_policy: { type: 'object' },
           bulk_sync_policy: { type: 'object' },
           static_artifacts: { type: 'array', items: { type: 'string' } }

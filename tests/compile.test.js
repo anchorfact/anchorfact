@@ -151,6 +151,12 @@ test('public entrypoints exclude draft articles', () => {
   assertEq(rootIndex.api_readiness_summary.subscription_ready, false);
   assertEq(rootIndex.api_readiness_summary.path, '/api-readiness.json');
   assert(rootIndex.api_readiness_summary.blocker_ids.includes('core_query_context_ratio'), 'root index should expose API readiness blockers');
+  assertEq(rootIndex.error_recovery_guidance.recoverable_400_field, 'machine_recovery');
+  assertEq(rootIndex.error_recovery_guidance.default_recovery_path, '/api/context?q={query}&limit=3');
+  assertEq(rootIndex.error_recovery_guidance.default_recovery_url, 'https://anchorfact.org/api/context?q={query}&limit=3');
+  assert(rootIndex.error_recovery_guidance.observed_recoverable_endpoints.includes('/api/evidence'), 'root index should expose evidence recovery guidance');
+  assert(rootIndex.error_recovery_guidance.observed_recoverable_endpoints.includes('/api/source'), 'root index should expose source recovery guidance');
+  assert(rootIndex.error_recovery_guidance.observed_recoverable_endpoints.includes('/api/resolve-batch'), 'root index should expose batch resolver recovery guidance');
   assertEq(rootIndex.counts.public_articles, 1);
   assertEq(rootIndex.counts.draft_articles, 1);
   assertEq(rootIndex.counts.public_claims, claimsJson.claim_count);
@@ -304,7 +310,7 @@ test('agent profile describes the machine contract', () => {
   assertEq(agent.current_snapshot.examples, 7);
   assert(agent.current_snapshot.graph_nodes >= 1, 'agent profile should expose graph node count');
   assert(agent.current_snapshot.graph_edges >= 1, 'agent profile should expose graph edge count');
-  assertEq(agent.current_snapshot.evals, 55);
+  assertEq(agent.current_snapshot.evals, 56);
   assertEq(agent.current_snapshot.mcp_tools, 9);
   assertEq(agent.current_snapshot.api_readiness_status, 'building_foundation');
   assertEq(agent.current_snapshot.api_readiness_subscription_ready, false);
@@ -450,6 +456,7 @@ test('openapi.json describes the static AI contract', () => {
   assert(openapi.paths['/{canonical_slug}/index.json'], 'OpenAPI should describe article JSON-LD template');
   assert(openapi.paths['/{canonical_slug}/index.html'], 'OpenAPI should describe article JSON-LD HTML alias template');
   assert(openapi.components.schemas.RootIndex.properties.api_readiness_summary, 'OpenAPI should define root readiness summary');
+  assert(openapi.components.schemas.RootIndex.properties.error_recovery_guidance, 'OpenAPI should define root error recovery guidance');
   assert(openapi.components.schemas.AgentProfile.properties.current_snapshot, 'OpenAPI should define agent current snapshot');
   assert(openapi.components.schemas.AgentProfile.properties.quick_start, 'OpenAPI should describe agent quick-start guidance');
   assert(openapi.components.schemas.RootIndex, 'OpenAPI should define root machine index schema');
@@ -755,8 +762,9 @@ test('evals.json describes executable AI integration checks', () => {
   const evals = JSON.parse(readFileSync(join(distDir, 'evals.json'), 'utf-8'));
   assertEq(evals.schema_version, 'anchorfact.evals.v1');
   assertEq(evals.provenance_url, 'https://anchorfact.org/provenance.json');
-  assertEq(evals.eval_count, 55);
+  assertEq(evals.eval_count, 56);
   assertEq(evals.evals.map(evalCase => evalCase.id), [
+    'root_machine_index',
     'api_discovery',
     'llms_txt_primary_entrypoints',
     'robots_txt_ai_entrypoints',
@@ -813,6 +821,9 @@ test('evals.json describes executable AI integration checks', () => {
     'mcp_tool_catalog',
     'signed_provenance_static_artifacts'
   ]);
+  const rootIndexEval = evals.evals.find(evalCase => evalCase.id === 'root_machine_index');
+  assertEq(rootIndexEval.call.path, '/index.json');
+  assert(rootIndexEval.expected.required_top_level_fields.includes('error_recovery_guidance'), 'root index eval should require error recovery guidance');
   assert(evals.evals.some(evalCase => evalCase.call.path === '/api'), 'evals should include API discovery checks');
   const apiDiscoveryEval = evals.evals.find(evalCase => evalCase.id === 'api_discovery');
   assert(apiDiscoveryEval.expected.required_top_level_fields.includes('error_recovery_guidance'), 'API discovery eval should require error recovery guidance');

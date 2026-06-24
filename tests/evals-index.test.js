@@ -104,8 +104,9 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
 
   assertEq(payload.schema_version, 'anchorfact.evals.v1');
   assertEq(payload.provenance_url, 'https://anchorfact.org/provenance.json');
-  assertEq(payload.eval_count, 55);
+  assertEq(payload.eval_count, 56);
   assertEq(payload.evals.map(evalCase => evalCase.id), [
+    'root_machine_index',
     'api_discovery',
     'llms_txt_primary_entrypoints',
     'robots_txt_ai_entrypoints',
@@ -162,6 +163,11 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
     'mcp_tool_catalog',
     'signed_provenance_static_artifacts'
   ]);
+
+  const rootIndexEval = payload.evals.find(evalCase => evalCase.id === 'root_machine_index');
+  assertEq(rootIndexEval.call.path, '/index.json');
+  assertEq(rootIndexEval.expected.schema_version, 'anchorfact.root-index.v1');
+  assert(rootIndexEval.expected.required_top_level_fields.includes('error_recovery_guidance'), 'root index eval should require error recovery guidance');
 
   const apiDiscoveryEval = payload.evals.find(evalCase => evalCase.id === 'api_discovery');
   assertEq(apiDiscoveryEval.call.path, '/api');

@@ -125,6 +125,8 @@ test('public machine entrypoints exclude drafts', () => {
   assertEq(rootIndex.discovery.root_alias, '/');
   assertEq(rootIndex.discovery.openapi, '/openapi.json');
   assertEq(rootIndex.discovery.provenance, '/provenance.json');
+  assertEq(rootIndex.error_recovery_guidance.recoverable_400_field, 'machine_recovery');
+  assertEq(rootIndex.error_recovery_guidance.default_recovery_path, '/api/context?q={query}&limit=3');
   assertEq(rootIndex.counts.public_articles, 1);
   assertEq(rootIndex.trust_policy.public_only_entrypoints_exclude_drafts, true);
   assert(rootIndex.static_artifacts.includes('/artifact-summary.json'), 'root index should point to artifact summary');
@@ -209,7 +211,7 @@ test('public machine entrypoints exclude drafts', () => {
   assertEq(apiReadiness.schema_version, 'anchorfact.api-readiness.v1');
   assertEq(apiReadiness.report_only, true);
   assertEq(apiReadiness.subscription_ready, false);
-  assertEq(evals.eval_count, 55);
+  assertEq(evals.eval_count, 56);
   assert(evals.evals.some(evalCase => evalCase.id === 'llms_txt_primary_entrypoints'), 'evals index should include llms.txt discovery contract check');
   assert(evals.evals.some(evalCase => evalCase.id === 'robots_txt_ai_entrypoints'), 'evals index should include robots.txt AI hint contract check');
   assert(evals.evals.some(evalCase => evalCase.id === 'openapi_context_contract'), 'evals index should include OpenAPI context contract check');

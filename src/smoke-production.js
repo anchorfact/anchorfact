@@ -504,6 +504,10 @@ export async function main() {
   assertOk(Array.isArray(rootIndex.preferred_machine_entrypoints) && rootIndex.preferred_machine_entrypoints.some(entry => entry.path === '/api/context?q={query}'), 'root index is missing default context entrypoint', failures);
   assertOk(rootIndex.discovery?.openapi === '/openapi.json', 'root index is missing OpenAPI discovery path', failures);
   assertOk(rootIndex.discovery?.api_readiness === '/api-readiness.json', 'root index is missing API readiness discovery path', failures);
+  assertOk(rootIndex.error_recovery_guidance?.recoverable_400_field === 'machine_recovery', 'root index is missing machine recovery field guidance', failures);
+  assertOk(rootIndex.error_recovery_guidance?.default_recovery_path === '/api/context?q={query}&limit=3', 'root index recovery guidance default path is missing', failures);
+  assertOk(rootIndex.error_recovery_guidance?.default_recovery_url === new URL('/api/context?q={query}&limit=3', baseUrl).href, 'root index recovery guidance default URL is missing', failures);
+  assertOk(Array.isArray(rootIndex.error_recovery_guidance?.observed_recoverable_endpoints) && rootIndex.error_recovery_guidance.observed_recoverable_endpoints.includes('/api/evidence'), 'root index recovery guidance is missing evidence endpoint', failures);
   assertOk(rootIndex.counts?.public_articles === publicArticles, 'root index public article count does not match manifest', failures);
   assertOk(rootIndex.counts?.draft_articles === draftArticles, 'root index draft article count does not match manifest', failures);
   assertOk(rootIndex.counts?.public_claims === claimCount, 'root index public claim count does not match claims.json', failures);

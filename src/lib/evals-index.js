@@ -17,6 +17,7 @@ import {
   PROVENANCE_SCHEMA_VERSION,
   RESOLVE_BATCH_API_SCHEMA_VERSION,
   RESOLVE_API_SCHEMA_VERSION,
+  ROOT_INDEX_SCHEMA_VERSION,
   SOURCE_API_SCHEMA_VERSION,
   publicUrl
 } from './build-metadata.js';
@@ -218,6 +219,21 @@ export function buildEvalsIndex({
   const citePath = queryPath('/api/cite', { id: claimLookupId });
 
   const evals = [
+    {
+      id: 'root_machine_index',
+      intent: 'Confirm the compact root machine index sends discovery readers to query-scoped APIs and recoverable API error guidance.',
+      call: call('/index.json', site),
+      expected: {
+        status: 200,
+        content_type: 'application/json',
+        schema_version: ROOT_INDEX_SCHEMA_VERSION,
+        required_top_level_fields: [
+          'default_answer_path',
+          'preferred_machine_entrypoints',
+          'error_recovery_guidance'
+        ]
+      }
+    },
     {
       id: 'api_discovery',
       intent: 'Confirm the compact live API index tells AI agents which read-only endpoints are available.',
