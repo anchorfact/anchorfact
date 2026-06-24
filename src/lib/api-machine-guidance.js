@@ -211,6 +211,7 @@ export function buildErrorRecoveryDiscoveryGuidance({ site = OFFICIAL_SITE } = {
       '/api/article',
       '/api/claim',
       '/api/source',
+      '/api/resolve',
       '/api/resolve-batch',
       '/api/cite'
     ],
@@ -221,6 +222,7 @@ export function buildErrorRecoveryDiscoveryGuidance({ site = OFFICIAL_SITE } = {
       '/api/article?slug={canonical_slug}',
       '/api/claim?id={claim_id}',
       '/api/source?id={source_id}',
+      '/api/resolve?ref={claim_id_or_slug_or_source_id}',
       '/api/resolve-batch?ref={claim_id}&ref={source_id}',
       '/api/cite?id={claim_id}'
     ],
