@@ -1,5 +1,9 @@
 #!/usr/bin/env node
 import { loadJsonAsset } from '../functions/_lib/assets.js';
+import {
+  onRequestGet as onRequestRobotsGet,
+  onRequestOptions as onRequestRobotsOptions
+} from '../functions/robots.txt.js';
 
 let passed = 0, failed = 0;
 const tests = [];
@@ -57,6 +61,20 @@ test('loadJsonAsset caches parsed JSON per ASSETS binding', async () => {
   const secondPayload = await loadJsonAsset(second.context, '/manifest.json');
   assertEq(secondPayload.fixture, 'second');
   assertEq(second.fetchCount(), 1, 'different binding should keep an isolated cache');
+});
+
+test('robots Pages Function returns crawler discovery with short cache headers', async () => {
+  const response = await onRequestRobotsGet();
+  const text = await response.text();
+
+  assertEq(response.status, 200);
+  assert(response.headers.get('Content-Type').includes('text/plain'), 'robots should be text/plain');
+  assert(response.headers.get('Cache-Control').includes('max-age=3600'), 'robots should keep a short cache');
+  assert(text.includes('AI-Recovery-Guide: https://anchorfact.org/api'), 'robots should link API recovery guidance');
+
+  const options = onRequestRobotsOptions();
+  assertEq(options.status, 204);
+  assert(options.headers.get('Access-Control-Allow-Origin') === '*', 'robots OPTIONS should allow CORS');
 });
 
 for (const { name, fn } of tests) {

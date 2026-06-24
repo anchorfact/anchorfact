@@ -18,6 +18,7 @@ import { buildGraphIndex } from './graph-index.js';
 import { buildEvalsIndex } from './evals-index.js';
 import { buildMcpProfile } from './mcp-profile.js';
 import { buildRootIndex } from './root-index.js';
+import { buildRobotsTxt } from './robots-txt.js';
 import { buildManifest, distribution } from './manifest.js';
 import {
   CLAIMS_SCHEMA_VERSION,
@@ -243,45 +244,14 @@ function writeSitemap(distDir, publicResults) {
 }
 
 function writeRobots(distDir) {
-  const robotsTxt = `# robots.txt - AnchorFact
-User-agent: *
-Allow: /
-
-Sitemap: https://anchorfact.org/sitemap.xml
-Machine-Index: https://anchorfact.org/index.json
-LLMs: https://anchorfact.org/llms.txt
-Agent: https://anchorfact.org/agent.json
-OpenAPI: https://anchorfact.org/openapi.json
-API: https://anchorfact.org/api
-API-Access: https://anchorfact.org/api-access/
-AI-Context: https://anchorfact.org/api/context?q={query}
-AI-Evidence: https://anchorfact.org/api/evidence?q={query}
-AI-Cite: https://anchorfact.org/api/cite?id={claim_id}
-AI-Plan: https://anchorfact.org/api/plan?q={query}
-AI-Plan-Use: coverage_uncertain_only
-AI-Next-After-Discovery: https://anchorfact.org/api/context?q={query}&limit=3&format=markdown
-AI-Primary-Conversion-Target: 0.2
-AI-Minimum-Valid-Context: https://anchorfact.org/api/context?q={query}&limit=3&format=markdown
-AI-Minimum-Valid-Evidence: https://anchorfact.org/api/evidence?q={query}&limit=3&format=markdown
-AI-Minimum-Valid-Resolve-Batch: https://anchorfact.org/api/resolve-batch?ref={claim_id}&ref={source_id}&format=markdown
-AI-Do-Not-Call-Bare: /api/evidence,/api/source,/api/resolve-batch
-AI-Recoverable-400-Field: machine_recovery
-AI-Recovery-Guide: https://anchorfact.org/api
-Large-Artifact-Policy: prefer_api_context_or_evidence
-Artifact-Summary: https://anchorfact.org/artifact-summary.json
-Artifact-Shards: https://anchorfact.org/artifact-shards.json
-API-Readiness: https://anchorfact.org/api-readiness.json
-Health: https://anchorfact.org/content-health.json
-MCP: https://anchorfact.org/mcp.json
-Provenance: https://anchorfact.org/provenance.json
-`;
+  const robotsTxt = buildRobotsTxt();
   writeFileSync(join(distDir, 'robots.txt'), robotsTxt);
 }
 
 function writeFunctionRoutes(distDir) {
   const routes = {
     version: 1,
-    include: ['/api', '/api/*'],
+    include: ['/api', '/api/*', '/robots.txt'],
     exclude: []
   };
   writeFileSync(join(distDir, '_routes.json'), JSON.stringify(routes, null, 2));

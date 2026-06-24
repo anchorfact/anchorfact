@@ -1118,7 +1118,7 @@ test('Cloudflare Pages routing guard artifacts are generated', () => {
 
   const routes = JSON.parse(readFileSync(join(distDir, '_routes.json'), 'utf-8'));
   assertEq(routes.version, 1);
-  assertEq(routes.include, ['/api', '/api/*']);
+  assertEq(routes.include, ['/api', '/api/*', '/robots.txt']);
   assertEq(routes.exclude, []);
 
   const notFoundText = readFileSync(join(distDir, '404.html'), 'utf-8');
