@@ -33,6 +33,7 @@ test('buildApiIndex publishes the machine API discovery contract', () => {
   assert(payload.quick_start.minimum_valid_primary_calls.every(call => call.method === 'GET' && call.url.startsWith('https://anchorfact.org/')), 'quick start should expose copyable absolute GET calls');
   assertEq(payload.ai_adoption_guidance.primary_api_conversion_target, 0.2);
   assert(payload.ai_adoption_guidance.discovery_entrypoints.includes('/llms.txt'), 'AI adoption guidance should name crawler discovery entrypoints');
+  assert(payload.ai_adoption_guidance.discovery_entrypoints.includes('/.well-known/anchorfact.json'), 'AI adoption guidance should name well-known agent alias discovery');
   assert(payload.ai_adoption_guidance.primary_api_entrypoints.includes('/api/evidence'), 'AI adoption guidance should name primary API entrypoints');
   assert(payload.ai_adoption_guidance.next_call_after_discovery.includes('/api/context'), 'AI adoption guidance should convert discovery to context');
   assert(payload.ai_adoption_guidance.minimum_valid_primary_calls.some(call => call.path === '/api/evidence?q={query}&limit=3&format=markdown'), 'AI adoption guidance should expose copyable evidence calls');
@@ -73,6 +74,7 @@ test('buildApiIndex publishes the machine API discovery contract', () => {
   assert(payload.recommended_sequence[1].includes('/api/evidence'), 'sequence should put evidence second');
   assert(payload.recommended_sequence[2].includes('/api/plan') && payload.recommended_sequence[2].includes('only when coverage is uncertain'), 'sequence should reserve planning for uncertainty');
   assert(payload.recommended_sequence.some(step => step.includes('/llms.txt') && step.includes('/api/context')), 'sequence should tell crawlers the next primary API call');
+  assert(payload.recommended_sequence.some(step => step.includes('/.well-known/anchorfact.json') && step.includes('/api/context')), 'sequence should include well-known agent alias discovery');
   assertEq(payload.primary_entrypoints.map(entrypoint => entrypoint.id), ['context', 'evidence', 'plan']);
   assertEq(payload.primary_entrypoints[0].path, '/api/context');
   assertEq(payload.primary_entrypoints[0].minimum_valid_path, '/api/context?q={query}&limit=3&format=markdown');

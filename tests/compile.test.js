@@ -164,6 +164,7 @@ test('public entrypoints exclude draft articles', () => {
   assertEq(rootIndex.error_recovery_guidance.recoverable_400_field, 'machine_recovery');
   assertEq(rootIndex.error_recovery_guidance.default_recovery_path, '/api/context?q={query}&limit=3');
   assertEq(rootIndex.error_recovery_guidance.default_recovery_url, 'https://anchorfact.org/api/context?q={query}&limit=3');
+  assert(rootIndex.quick_start.primary_api_conversion.discovery_entrypoints.includes('/.well-known/anchorfact.json'), 'root index should identify well-known agent alias discovery');
   assert(rootIndex.error_recovery_guidance.observed_recoverable_endpoints.includes('/api/context'), 'root index should expose context recovery guidance');
   assert(rootIndex.error_recovery_guidance.observed_recoverable_endpoints.includes('/api/evidence'), 'root index should expose evidence recovery guidance');
   assert(rootIndex.error_recovery_guidance.observed_recoverable_endpoints.includes('/api/source'), 'root index should expose source recovery guidance');
@@ -407,6 +408,7 @@ test('agent profile describes the machine contract', () => {
   assert(agent.quick_start.primary_api_conversion.discovery_entrypoints.includes('/llms.txt'), 'agent profile should identify AI discovery entrypoints');
   assert(agent.quick_start.primary_api_conversion.discovery_entrypoints.includes('/index.json'), 'agent profile should identify root machine index discovery');
   assert(agent.quick_start.primary_api_conversion.discovery_entrypoints.includes('/'), 'agent profile should identify root slash machine alias discovery');
+  assert(agent.quick_start.primary_api_conversion.discovery_entrypoints.includes('/.well-known/anchorfact.json'), 'agent profile should identify well-known agent alias discovery');
   assert(agent.quick_start.primary_api_conversion.primary_entrypoints.includes('/api/evidence'), 'agent profile should identify primary API entrypoints');
   assert(agent.quick_start.primary_api_conversion.next_call_after_discovery.includes('/api/context'), 'agent profile should convert discovery to context');
   assert(agent.quick_start.primary_api_conversion.minimum_valid_primary_calls.some(call => call.path === '/api/evidence?q={query}&limit=3&format=markdown'), 'agent profile should expose copyable minimum evidence calls');
@@ -422,6 +424,7 @@ test('agent profile describes the machine contract', () => {
   assert(agent.recommended_workflow.some(step => step.includes('/openapi.json')), 'agent workflow should mention OpenAPI');
   assert(agent.recommended_workflow.some(step => step.includes('/api-access/') && step.includes('policy')), 'agent workflow should mention API access policy');
   assert(agent.recommended_workflow.some(step => step.includes('/index.json')), 'agent workflow should mention root machine index');
+  assert(agent.recommended_workflow.some(step => step.includes('/.well-known/anchorfact.json') && step.includes('/api/context')), 'agent workflow should convert well-known agent discovery to primary API calls');
   assert(agent.recommended_workflow.some(step => step.includes('/artifact-summary.json')), 'agent workflow should mention artifact summary');
   assert(agent.recommended_workflow.some(step => step.includes('/api-readiness.json')), 'agent workflow should mention API readiness');
   assert(agent.recommended_workflow.some(step => step.includes('/provenance.json')), 'agent workflow should mention provenance');

@@ -147,7 +147,7 @@ export function buildAgentProfile({
       primary_api_conversion: {
         target_ratio: 0.2,
         measured_as: 'identified AI primary API requests divided by identified AI discovery requests',
-        discovery_entrypoints: ['/', '/robots.txt', '/llms.txt', '/index.json', '/agent.json', '/api'],
+        discovery_entrypoints: ['/', '/robots.txt', '/llms.txt', '/index.json', '/agent.json', '/.well-known/anchorfact.json', '/api'],
         primary_entrypoints: ['/api/context', '/api/evidence', '/api/cite', '/api/resolve-batch'],
         next_call_after_discovery: '/api/context?q={query}&limit=3&format=markdown',
         minimum_valid_primary_calls: [
@@ -237,7 +237,7 @@ export function buildAgentProfile({
       'Use /api/resolve-batch?ref={reference}&ref={reference} when you need to dereference several mixed AnchorFact references in one call.',
       'Fetch /api as a compact API index when you need the smallest live endpoint discovery payload.',
       'Fetch /index.json as the compact root machine directory for preferred entrypoints, trust policy, and signed static artifact discovery.',
-      'After crawler discovery through /, /robots.txt, /llms.txt, /index.json, /agent.json, or /api, convert to /api/context?q={query}&limit=3&format=markdown or /api/evidence?q={query}&limit=3&format=markdown for a concrete user question.',
+      'After crawler discovery through /, /robots.txt, /llms.txt, /index.json, /agent.json, /.well-known/anchorfact.json, or /api, convert to /api/context?q={query}&limit=3&format=markdown or /api/evidence?q={query}&limit=3&format=markdown for a concrete user question.',
       'Fetch /api-access/ for the machine-readable free API access policy, current no-key access state, limits, and provenance verification steps.',
       'Fetch /agent.json to discover the current machine contract.',
       'Fetch /openapi.json when integrating with tools that prefer a standard endpoint contract.',

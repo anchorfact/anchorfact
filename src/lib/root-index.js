@@ -57,7 +57,7 @@ export function buildRootIndex({
       primary_api_conversion: {
         target_ratio: 0.2,
         measured_as: 'identified AI primary API requests divided by identified AI discovery requests',
-        discovery_entrypoints: ['/', '/robots.txt', '/llms.txt', '/index.json', '/agent.json', '/api'],
+        discovery_entrypoints: ['/', '/robots.txt', '/llms.txt', '/index.json', '/agent.json', '/.well-known/anchorfact.json', '/api'],
         primary_entrypoints: ['/api/context', '/api/evidence', '/api/cite', '/api/resolve-batch'],
         next_call_after_discovery: '/api/context?q={query}&limit=3&format=markdown',
         minimum_valid_primary_calls: [
