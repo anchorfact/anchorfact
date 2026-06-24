@@ -131,7 +131,7 @@ test('textHygieneFailures catches stale production claim metrics', () => {
 test('textHygieneFailures accepts current production claim metrics', () => {
   const failures = textHygieneFailures(
     'docs/LAUNCH_READINESS_2026-05-27.md',
-    'Snapshot: 1345 public / 283 draft / 4288 claims.'
+    'Snapshot: 1346 public / 282 draft / 4293 claims.'
   );
   assertEq(failures, []);
 });

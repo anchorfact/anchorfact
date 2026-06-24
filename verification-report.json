@@ -1,12 +1,12 @@
 {
   "summary": {
-    "generated": "2026-06-24T08:47:27.234Z",
+    "generated": "2026-06-24T09:01:49.225Z",
     "total_articles": 1628,
     "total_with_errors": 0,
     "average_sources_per_article": "2.6",
-    "overall_verification_rate": "93.3%",
-    "elapsed_ms": 1469,
-    "elapsed_sec": "1.5",
+    "overall_verification_rate": "93.4%",
+    "elapsed_ms": 1641,
+    "elapsed_sec": "1.6",
     "concurrency": 3
   },
   "articles": [
@@ -86523,59 +86523,104 @@
       "sources_unreachable": 1
     },
     {
-      "file": "content\\computer-science\\entity-relationship-model.md",
+      "file": "content/computer-science/entity-relationship-model.md",
       "article_id": "kb-2026-00250",
       "generation_method": "ai_structured",
-      "sources_total": 3,
+      "sources_total": 5,
       "verification_results": [
         {
-          "source_title": "ACM Digital Library",
-          "source_type": "repository",
+          "source_title": "The entity-relationship model - toward a unified view of data",
+          "source_type": "academic_paper",
           "results": [
             {
-              "method": "url",
-              "identifier": "https://dl.acm.org/",
-              "verified": false,
+              "method": "doi",
+              "identifier": "10.1145/320434.320440",
+              "verified": true,
               "metadata": {
-                "status": 403,
-                "final_url": "https://dl.acm.org/"
+                "title": "The entity-relationship model—toward a unified view of data",
+                "publisher": "Association for Computing Machinery (ACM)",
+                "year": 2002
               },
               "match": false
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Database Design for Mere Mortals (5th Edition, 2025)",
-          "source_type": "book",
+          "source_title": "Overview of the entity-relationship data model",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://www.informit.com/db-design/",
-              "verified": false,
-              "metadata": {},
-              "match": false
+              "identifier": "https://www.ibm.com/docs/en/SSGU8G_12.1.0/com.ibm.ddi.doc/ids_ddi_163.htm",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.ibm.com/docs/en/informix-servers/12.10.0?topic=SSGU8G_12.1.0/com.ibm.ddi.doc/ids_ddi_163.html",
+                "http_method": "HEAD"
+              },
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
         },
         {
-          "source_title": "Conceptual Modeling: From ER to Knowledge Graphs (2025)",
-          "source_type": "survey_paper",
+          "source_title": "Logical database design using entity-relationship modeling",
+          "source_type": "documentation",
           "results": [
             {
               "method": "url",
-              "identifier": "https://doi.org/10.1145/acmcs.2025.modeling",
-              "verified": false,
-              "metadata": {},
-              "match": false
+              "identifier": "https://www.ibm.com/docs/en/db2-for-zos/12.0.0?topic=relationships-logical-database-design-using-entity-relationship-modeling",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.ibm.com/docs/en/db2-for-zos/12.0.0?topic=relationships-logical-database-design-using-entity-relationship-modeling",
+                "http_method": "HEAD"
+              },
+              "match": true
             }
           ],
-          "all_verified": false
+          "all_verified": true
+        },
+        {
+          "source_title": "Entities for different types of relationships",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://www.ibm.com/docs/en/db2-for-zos/12.0.0?topic=modeling-entities-different-types-relationships",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://www.ibm.com/docs/en/db2-for-zos/12.0.0?topic=modeling-entities-different-types-relationships",
+                "http_method": "HEAD"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
+        },
+        {
+          "source_title": "Data Modeler Concepts and Usage",
+          "source_type": "documentation",
+          "results": [
+            {
+              "method": "url",
+              "identifier": "https://docs.oracle.com/database/sql-developer-data-modeler-17.4/DMDUG/data-modeler-concepts-usage.htm",
+              "verified": true,
+              "metadata": {
+                "status": 200,
+                "final_url": "https://docs.oracle.com/database/sql-developer-data-modeler-17.4/DMDUG/data-modeler-concepts-usage.htm",
+                "http_method": "HEAD"
+              },
+              "match": true
+            }
+          ],
+          "all_verified": true
         }
       ],
-      "sources_verified": 0,
-      "sources_unreachable": 3
+      "sources_verified": 5,
+      "sources_unreachable": 0
     },
     {
       "file": "content\\computer-science\\error-correction-codes-hamming-reed-solomon-and-ldpc.md",
