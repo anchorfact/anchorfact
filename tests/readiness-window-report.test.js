@@ -223,6 +223,10 @@ test('buildReadinessWindowReport treats missing current metrics as not measured'
   const productionRequirement = report.readiness_blockers.evidence_requirements.find(item => item.id === 'production_integrity_14_day');
   assert(productionRequirement.command.includes('production:integrity'), 'production blocker should publish evidence command');
   assertEq(productionRequirement.required_days, 14);
+  assert(productionRequirement.required_fields.includes('ok'), 'production blocker should require production integrity ok field');
+  assert(productionRequirement.required_fields.includes('commit_sha'), 'production blocker should require deployed commit_sha field');
+  assert(productionRequirement.required_fields.includes('source_commit_sha'), 'production blocker should require source_commit_sha field');
+  assert(!productionRequirement.required_fields.includes('deployed_commit'), 'production blocker should not require stale deployed_commit field');
   const adoptionRequirement = report.readiness_blockers.evidence_requirements.find(item => item.id === 'ai_primary_discovery_ratio_7_day');
   assertEq(adoptionRequirement.runtime_input_id, 'ai_adoption');
   assertEq(adoptionRequirement.preferred_measurement_scope, 'interactive_ai');

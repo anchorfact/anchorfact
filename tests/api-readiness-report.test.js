@@ -830,6 +830,10 @@ test('readiness next actions follow current gaps instead of defaulting to corpus
   assert(productionRequirement.command.includes('production:integrity'), 'production blocker should publish the required evidence command');
   assertEq(productionRequirement.gate_type, 'automated_window');
   assertEq(productionRequirement.required_days, 14);
+  assert(productionRequirement.required_fields.includes('ok'), 'production blocker should require the production integrity ok field');
+  assert(productionRequirement.required_fields.includes('commit_sha'), 'production blocker should require the deployed commit_sha field');
+  assert(productionRequirement.required_fields.includes('source_commit_sha'), 'production blocker should require the source_commit_sha field');
+  assert(!productionRequirement.required_fields.includes('deployed_commit'), 'production blocker should not require stale deployed_commit field');
   const adoptionRequirement = report.readiness_blockers.evidence_requirements.find(item => item.id === 'ai_primary_discovery_ratio_7_day');
   assertEq(adoptionRequirement.runtime_input_id, 'ai_adoption');
   assertEq(adoptionRequirement.preferred_measurement_scope, 'interactive_ai');
@@ -871,6 +875,7 @@ test('api readiness publishes a runtime signal contract for static builds', () =
     generatedAt: '2026-06-01T00:00:00.000Z'
   });
   const contract = report.runtime_signal_contract;
+  const productionInput = contract.runtime_inputs.find(input => input.id === 'production_integrity');
   const adoptionInput = contract.runtime_inputs.find(input => input.id === 'ai_adoption');
   const markdown = renderApiReadinessMarkdown(report);
 
@@ -879,6 +884,10 @@ test('api readiness publishes a runtime signal contract for static builds', () =
   assert(contract.workflow.includes('.github/workflows/readiness-scorecard.yml'), 'contract should point at the readiness workflow');
   assert(contract.scorecard_command.includes('--adoption-json'), 'contract should describe the runtime scorecard command');
   assert(contract.history_command.includes('--save-current'), 'contract should describe readiness history persistence');
+  assert(productionInput.required_fields.includes('ok'), 'contract should require production integrity ok result');
+  assert(productionInput.required_fields.includes('commit_sha'), 'contract should require deployed commit_sha');
+  assert(productionInput.required_fields.includes('source_commit_sha'), 'contract should require source_commit_sha');
+  assert(!productionInput.required_fields.includes('deployed_commit'), 'contract should not require stale deployed_commit');
   assertEq(adoptionInput.preferred_measurement_scope, 'interactive_ai');
   assert(adoptionInput.required_fields.includes('interactive_ai_primary_to_discovery_ratio'), 'contract should require interactive AI ratio');
   assert(adoptionInput.required_fields.includes('crawler_ai_primary_to_discovery_ratio'), 'contract should preserve crawler context');

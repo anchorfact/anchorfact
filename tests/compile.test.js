@@ -671,6 +671,10 @@ test('api-readiness.json publishes machine-readable readiness gates', () => {
     item.id === 'production_integrity_14_day'
     && item.command.includes('production:integrity')
     && item.required_days === 14
+    && item.required_fields.includes('ok')
+    && item.required_fields.includes('commit_sha')
+    && item.required_fields.includes('source_commit_sha')
+    && !item.required_fields.includes('deployed_commit')
   ), 'readiness should publish production blocker evidence requirements');
   assert(readiness.readiness_blockers.evidence_requirements.some(item =>
     item.id === 'design_partners'

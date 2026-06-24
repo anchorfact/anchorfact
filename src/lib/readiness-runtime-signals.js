@@ -12,7 +12,7 @@ const READINESS_RUNTIME_INPUTS = [
     json_flag: '--production-integrity-json',
     command: 'npm run production:integrity -- --write-json reports/production-integrity.json',
     status_when_missing: 'not_provided',
-    required_fields: ['status', 'checks', 'deployed_commit', 'source_commit']
+    required_fields: ['ok', 'checks', 'commit_sha', 'source_commit_sha']
   },
   {
     id: 'ai_adoption',
