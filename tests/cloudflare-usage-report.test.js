@@ -329,6 +329,56 @@ test('buildCloudflareUsageSummary reports below-target AI adoption without faili
   assertEq(summary.adoption_scorecard.identified_ai_primary_to_discovery_target_status, 'below_target');
 });
 
+test('buildCloudflareUsageSummary segments interactive AI callers from crawler discovery traffic', () => {
+  const chatgptUser = 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); ChatGPT-User/1.0';
+  const searchBot = 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; OAI-SearchBot/1.0; +https://openai.com/searchbot)';
+  const summary = buildCloudflareUsageSummary({
+    zone: {
+      totals: [{ count: 100, sum: { edgeResponseBytes: 2048 } }],
+      topPaths: [
+        pathRow('/', 6),
+        pathRow('/api', 2),
+        pathRow('/api/context', 4),
+        pathRow('/robots.txt', 20),
+        pathRow('/llms.txt', 5)
+      ],
+      topUAs: [
+        uaRow(chatgptUser, 12),
+        uaRow(searchBot, 25)
+      ],
+      pathUa: [
+        pathUaRow('/', chatgptUser, 6),
+        pathUaRow('/api', chatgptUser, 2),
+        pathUaRow('/api/context', chatgptUser, 4),
+        pathUaRow('/robots.txt', searchBot, 20),
+        pathUaRow('/llms.txt', searchBot, 5)
+      ],
+      pathStatus: [pathStatusRow('/api/context', 200, 4)]
+    },
+    window: { since: '2026-06-23T00:00:00.000Z', until: '2026-06-24T00:00:00.000Z' }
+  }, { generatedAt: '2026-06-24T00:00:00.000Z' });
+
+  assertEq(summary.discovery_adoption.observed_ai_discovery_requests, 33);
+  assertEq(summary.discovery_adoption.observed_ai_primary_api_requests, 4);
+  assertEq(summary.discovery_adoption.observed_ai_primary_to_discovery_ratio, 0.12);
+  assertEq(summary.discovery_adoption.observed_interactive_ai_discovery_requests, 8);
+  assertEq(summary.discovery_adoption.observed_interactive_ai_primary_api_requests, 4);
+  assertEq(summary.discovery_adoption.observed_interactive_ai_primary_to_discovery_ratio, 0.5);
+  assertEq(summary.discovery_adoption.observed_interactive_ai_primary_to_discovery_target.status, 'met');
+  assertEq(summary.discovery_adoption.observed_crawler_ai_discovery_requests, 25);
+  assertEq(summary.discovery_adoption.observed_crawler_ai_primary_api_requests, 0);
+  assertEq(summary.discovery_adoption.observed_crawler_ai_primary_to_discovery_ratio, 0);
+  assert(summary.discovery_adoption.top_interactive_ai_primary_api_paths.some(item => item.path === '/api/context'), 'should report interactive AI primary API paths');
+  assert(summary.discovery_adoption.top_crawler_ai_discovery_paths.some(item => item.path === '/robots.txt'), 'should report crawler AI discovery paths');
+  assertEq(summary.adoption_scorecard.interactive_ai_primary_to_discovery_ratio, 0.5);
+  assertEq(summary.adoption_scorecard.interactive_ai_primary_to_discovery_target_status, 'met');
+  assertEq(summary.adoption_scorecard.crawler_ai_discovery_requests, 25);
+
+  const markdown = renderCloudflareAdoptionScorecard(summary);
+  assert(markdown.includes('Interactive AI primary/discovery ratio: 0.5'), 'scorecard should render interactive adoption ratio');
+  assert(markdown.includes('Crawler AI discovery requests: 25'), 'scorecard should render crawler discovery volume');
+});
+
 test('buildCloudflareUsageSummary prefers targeted route rows for low-frequency reliability signals', () => {
   const summary = buildCloudflareUsageSummary({
     zone: {

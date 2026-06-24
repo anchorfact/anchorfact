@@ -110,6 +110,18 @@ const AI_USER_AGENT_RULES = [
   ['google_vertex_bot', /Google-CloudVertexBot/i]
 ];
 
+const INTERACTIVE_AI_AGENT_LABELS = new Set([
+  'openai_chatgpt_user',
+  'google_vertex_bot'
+]);
+
+const CRAWLER_AI_AGENT_LABELS = new Set([
+  'openai_gptbot',
+  'openai_searchbot',
+  'anthropic_claudebot',
+  'perplexity_bot'
+]);
+
 const SEARCH_BOT_RULES = [
   ['googlebot', /Googlebot/i],
   ['googleother', /GoogleOther/i],
@@ -242,6 +254,16 @@ export function classifyUserAgent(userAgent = '') {
   if (/Mozilla\/5\.0/i.test(ua)) return { category: 'browser', label: 'browser_like' };
   if (!ua) return { category: 'unknown', label: 'missing_user_agent' };
   return { category: 'other', label: 'other' };
+}
+
+function aiAgentModeForLabel(label = '') {
+  if (INTERACTIVE_AI_AGENT_LABELS.has(label)) return 'interactive';
+  if (CRAWLER_AI_AGENT_LABELS.has(label)) return 'crawler';
+  return 'unknown';
+}
+
+function aiAgentModeForUserAgent(userAgent = '') {
+  return aiAgentModeForLabel(classifyUserAgent(userAgent).label);
 }
 
 export function classifyPath(path = '') {
@@ -421,6 +443,8 @@ export function buildCloudflareUsageSummary(data, options = {}) {
   const coreApiRequests = sumRows(topPaths, row => isCoreApiPath(row.dimensions?.clientRequestPath));
   const productSurfaceRequests = apiRequests + machineArtifactRequests + articleArtifactRequests + crawlerControlRequests + apiAccessPageRequests;
   const aiPathRows = targetedPathUa.filter(row => classifyUserAgent(row.dimensions?.userAgent).category === 'ai_bot');
+  const interactiveAiPathRows = aiPathRows.filter(row => aiAgentModeForUserAgent(row.dimensions?.userAgent) === 'interactive');
+  const crawlerAiPathRows = aiPathRows.filter(row => aiAgentModeForUserAgent(row.dimensions?.userAgent) === 'crawler');
   const observedAiDiscoveryRequests = sumRows(aiPathRows, row => isDiscoveryEntrypoint(row.dimensions?.clientRequestPath));
   const observedAiPrimaryApiRequests = sumRows(aiPathRows, row => isPrimaryApiPath(row.dimensions?.clientRequestPath));
   const observedAiApiAccessRequests = sumRows(aiPathRows, row => isApiAccessPath(row.dimensions?.clientRequestPath));
@@ -432,6 +456,21 @@ export function buildCloudflareUsageSummary(data, options = {}) {
     observedAiDiscoveryRequests
   );
   const observedAiArticleArtifactRequests = sumRows(aiPathRows, row => classifyPath(row.dimensions?.clientRequestPath) === 'article_artifact');
+  const observedInteractiveAiDiscoveryRequests = sumRows(interactiveAiPathRows, row => isDiscoveryEntrypoint(row.dimensions?.clientRequestPath));
+  const observedInteractiveAiPrimaryApiRequests = sumRows(interactiveAiPathRows, row => isPrimaryApiPath(row.dimensions?.clientRequestPath));
+  const observedInteractiveAiApiAccessRequests = sumRows(interactiveAiPathRows, row => isApiAccessPath(row.dimensions?.clientRequestPath));
+  const observedInteractiveAiDeveloperDocsRequests = sumRows(interactiveAiPathRows, row => isDeveloperDocsPath(row.dimensions?.clientRequestPath));
+  const observedInteractiveAiCoreApiRequests = sumRows(interactiveAiPathRows, row => isCoreApiPath(row.dimensions?.clientRequestPath));
+  const observedInteractiveAiPrimaryToDiscoveryRatio = ratio(observedInteractiveAiPrimaryApiRequests, observedInteractiveAiDiscoveryRequests, 2);
+  const observedInteractiveAiPrimaryToDiscoveryTarget = adoptionTargetScore(
+    observedInteractiveAiPrimaryToDiscoveryRatio,
+    observedInteractiveAiDiscoveryRequests
+  );
+  const observedCrawlerAiDiscoveryRequests = sumRows(crawlerAiPathRows, row => isDiscoveryEntrypoint(row.dimensions?.clientRequestPath));
+  const observedCrawlerAiPrimaryApiRequests = sumRows(crawlerAiPathRows, row => isPrimaryApiPath(row.dimensions?.clientRequestPath));
+  const observedCrawlerAiDeveloperDocsRequests = sumRows(crawlerAiPathRows, row => isDeveloperDocsPath(row.dimensions?.clientRequestPath));
+  const observedCrawlerAiCoreApiRequests = sumRows(crawlerAiPathRows, row => isCoreApiPath(row.dimensions?.clientRequestPath));
+  const observedCrawlerAiPrimaryToDiscoveryRatio = ratio(observedCrawlerAiPrimaryApiRequests, observedCrawlerAiDiscoveryRequests, 2);
   const primaryApiStatusRows = targetedPathStatus.filter(row => isPrimaryApiPath(row.dimensions?.clientRequestPath));
   const primaryApiStatusRequests = sumRows(primaryApiStatusRows, () => true);
   const primaryApiSuccessRequests = sumRows(primaryApiStatusRows, row => isSuccessStatus(row.dimensions?.edgeResponseStatus));
@@ -482,7 +521,9 @@ export function buildCloudflareUsageSummary(data, options = {}) {
     decision_signal: adoptionHealthOk
       ? primaryApiOnlyRecoverableClientErrors
         ? 'Primary API is reachable; treat parameter-only recoverable 4xx as adoption traffic and improve machine recovery conversion.'
-        : 'Measure AI discovery-to-primary adoption before changing product surface.'
+        : observedInteractiveAiDiscoveryRequests > 0
+          ? 'Measure interactive AI discovery-to-primary adoption separately from crawler discovery before changing product surface.'
+          : 'Measure AI discovery-to-primary adoption before changing product surface.'
       : 'Fix production route reliability before interpreting adoption volume.'
   }, data.window || {});
 
@@ -496,7 +537,9 @@ export function buildCloudflareUsageSummary(data, options = {}) {
   if (aiRequests > 0 && aiRequests < apiRequests) {
     recommendations.push('Treat AI crawler discovery as present but early; improve agent-facing discovery before broad content expansion.');
   }
-  if (observedAiDiscoveryRequests > 0) {
+  if (observedInteractiveAiDiscoveryRequests > 0) {
+    recommendations.push('Track interactive AI discovery-to-primary-API adoption separately from crawler discovery over 24-48 hour windows before changing the agent entrypoint contract again.');
+  } else if (observedAiDiscoveryRequests > 0) {
     recommendations.push('Track discovery-to-primary-API adoption over 24-48 hour windows before changing the agent entrypoint contract again.');
   }
   if (apiAccessPageRequests > 0 || developerDocsRequests > 0) {
@@ -559,6 +602,22 @@ export function buildCloudflareUsageSummary(data, options = {}) {
       identified_ai_primary_to_discovery_gap_to_target: observedAiPrimaryToDiscoveryTarget.gap_to_target,
       identified_ai_primary_to_discovery_target_status: observedAiPrimaryToDiscoveryTarget.status,
       identified_ai_primary_to_discovery_target: observedAiPrimaryToDiscoveryTarget,
+      interactive_ai_discovery_requests: observedInteractiveAiDiscoveryRequests,
+      interactive_ai_primary_api_requests: observedInteractiveAiPrimaryApiRequests,
+      interactive_ai_api_access_page_requests: observedInteractiveAiApiAccessRequests,
+      interactive_ai_developer_docs_requests: observedInteractiveAiDeveloperDocsRequests,
+      interactive_ai_core_api_requests: observedInteractiveAiCoreApiRequests,
+      interactive_ai_primary_to_discovery_ratio: observedInteractiveAiPrimaryToDiscoveryRatio,
+      interactive_ai_primary_to_discovery_target_ratio: observedInteractiveAiPrimaryToDiscoveryTarget.target_ratio,
+      interactive_ai_primary_to_discovery_current_ratio: observedInteractiveAiPrimaryToDiscoveryTarget.current_ratio,
+      interactive_ai_primary_to_discovery_gap_to_target: observedInteractiveAiPrimaryToDiscoveryTarget.gap_to_target,
+      interactive_ai_primary_to_discovery_target_status: observedInteractiveAiPrimaryToDiscoveryTarget.status,
+      interactive_ai_primary_to_discovery_target: observedInteractiveAiPrimaryToDiscoveryTarget,
+      crawler_ai_discovery_requests: observedCrawlerAiDiscoveryRequests,
+      crawler_ai_primary_api_requests: observedCrawlerAiPrimaryApiRequests,
+      crawler_ai_developer_docs_requests: observedCrawlerAiDeveloperDocsRequests,
+      crawler_ai_core_api_requests: observedCrawlerAiCoreApiRequests,
+      crawler_ai_primary_to_discovery_ratio: observedCrawlerAiPrimaryToDiscoveryRatio,
       bot_route_5xx_or_522_requests: botRouteServerErrorRequests,
       scanner_or_probe_requests: scannerRequests,
       scanner_or_probe_share: ratio(scannerRequests, totalRequests)
@@ -582,11 +641,31 @@ export function buildCloudflareUsageSummary(data, options = {}) {
       observed_ai_article_artifact_requests: observedAiArticleArtifactRequests,
       observed_ai_primary_to_discovery_ratio: observedAiPrimaryToDiscoveryRatio,
       observed_ai_primary_to_discovery_target: observedAiPrimaryToDiscoveryTarget,
+      observed_interactive_ai_discovery_requests: observedInteractiveAiDiscoveryRequests,
+      observed_interactive_ai_primary_api_requests: observedInteractiveAiPrimaryApiRequests,
+      observed_interactive_ai_api_access_page_requests: observedInteractiveAiApiAccessRequests,
+      observed_interactive_ai_developer_docs_requests: observedInteractiveAiDeveloperDocsRequests,
+      observed_interactive_ai_core_api_requests: observedInteractiveAiCoreApiRequests,
+      observed_interactive_ai_core_api_to_developer_docs_ratio: ratio(observedInteractiveAiCoreApiRequests, observedInteractiveAiDeveloperDocsRequests, 2),
+      observed_interactive_ai_primary_to_discovery_ratio: observedInteractiveAiPrimaryToDiscoveryRatio,
+      observed_interactive_ai_primary_to_discovery_target: observedInteractiveAiPrimaryToDiscoveryTarget,
+      observed_crawler_ai_discovery_requests: observedCrawlerAiDiscoveryRequests,
+      observed_crawler_ai_primary_api_requests: observedCrawlerAiPrimaryApiRequests,
+      observed_crawler_ai_developer_docs_requests: observedCrawlerAiDeveloperDocsRequests,
+      observed_crawler_ai_core_api_requests: observedCrawlerAiCoreApiRequests,
+      observed_crawler_ai_core_api_to_developer_docs_ratio: ratio(observedCrawlerAiCoreApiRequests, observedCrawlerAiDeveloperDocsRequests, 2),
+      observed_crawler_ai_primary_to_discovery_ratio: observedCrawlerAiPrimaryToDiscoveryRatio,
       top_ai_discovery_paths: topObservedPaths(aiPathRows, row => isDiscoveryEntrypoint(row.dimensions?.clientRequestPath), 8),
       top_ai_primary_api_paths: topObservedPaths(aiPathRows, row => isPrimaryApiPath(row.dimensions?.clientRequestPath), 8),
       top_ai_developer_docs_paths: topObservedPaths(aiPathRows, row => isDeveloperDocsPath(row.dimensions?.clientRequestPath), 8),
       top_ai_core_api_paths: topObservedPaths(aiPathRows, row => isCoreApiPath(row.dimensions?.clientRequestPath), 8),
-      top_ai_article_artifact_paths: topObservedPaths(aiPathRows, row => classifyPath(row.dimensions?.clientRequestPath) === 'article_artifact', 8)
+      top_ai_article_artifact_paths: topObservedPaths(aiPathRows, row => classifyPath(row.dimensions?.clientRequestPath) === 'article_artifact', 8),
+      top_interactive_ai_discovery_paths: topObservedPaths(interactiveAiPathRows, row => isDiscoveryEntrypoint(row.dimensions?.clientRequestPath), 8),
+      top_interactive_ai_primary_api_paths: topObservedPaths(interactiveAiPathRows, row => isPrimaryApiPath(row.dimensions?.clientRequestPath), 8),
+      top_interactive_ai_developer_docs_paths: topObservedPaths(interactiveAiPathRows, row => isDeveloperDocsPath(row.dimensions?.clientRequestPath), 8),
+      top_crawler_ai_discovery_paths: topObservedPaths(crawlerAiPathRows, row => isDiscoveryEntrypoint(row.dimensions?.clientRequestPath), 8),
+      top_crawler_ai_primary_api_paths: topObservedPaths(crawlerAiPathRows, row => isPrimaryApiPath(row.dimensions?.clientRequestPath), 8),
+      top_crawler_ai_developer_docs_paths: topObservedPaths(crawlerAiPathRows, row => isDeveloperDocsPath(row.dimensions?.clientRequestPath), 8)
     },
     observed_top_path_categories: topEntries(pathCategories, 20),
     observed_top_user_agent_categories: topEntries(userAgentCategories, 20),
@@ -697,6 +776,13 @@ export function renderCloudflareUsageReport(report) {
   lines.push(`- Report-only target ratio: ${report.discovery_adoption.observed_ai_primary_to_discovery_target?.target_ratio ?? 'n/a'}`);
   lines.push(`- Gap to target: ${report.discovery_adoption.observed_ai_primary_to_discovery_target?.gap_to_target ?? 'n/a'}`);
   lines.push(`- Target status: ${report.discovery_adoption.observed_ai_primary_to_discovery_target?.status || 'n/a'}`);
+  lines.push(`- Interactive AI discovery requests: ${report.discovery_adoption.observed_interactive_ai_discovery_requests}`);
+  lines.push(`- Interactive AI primary API requests: ${report.discovery_adoption.observed_interactive_ai_primary_api_requests}`);
+  lines.push(`- Interactive AI primary/discovery ratio: ${report.discovery_adoption.observed_interactive_ai_primary_to_discovery_ratio}`);
+  lines.push(`- Interactive AI target status: ${report.discovery_adoption.observed_interactive_ai_primary_to_discovery_target?.status || 'n/a'}`);
+  lines.push(`- Crawler AI discovery requests: ${report.discovery_adoption.observed_crawler_ai_discovery_requests}`);
+  lines.push(`- Crawler AI primary API requests: ${report.discovery_adoption.observed_crawler_ai_primary_api_requests}`);
+  lines.push(`- Crawler AI primary/discovery ratio: ${report.discovery_adoption.observed_crawler_ai_primary_to_discovery_ratio}`);
   if (report.discovery_adoption.top_ai_discovery_paths.length > 0) {
     lines.push('');
     lines.push('Top identified AI discovery paths:');
@@ -711,6 +797,16 @@ export function renderCloudflareUsageReport(report) {
     lines.push('');
     lines.push('Top identified AI developer docs paths:');
     for (const item of report.discovery_adoption.top_ai_developer_docs_paths) lines.push(`- ${item.path}: ${item.requests}`);
+  }
+  if (report.discovery_adoption.top_interactive_ai_primary_api_paths.length > 0) {
+    lines.push('');
+    lines.push('Top interactive AI primary API paths:');
+    for (const item of report.discovery_adoption.top_interactive_ai_primary_api_paths) lines.push(`- ${item.path}: ${item.requests}`);
+  }
+  if (report.discovery_adoption.top_crawler_ai_discovery_paths.length > 0) {
+    lines.push('');
+    lines.push('Top crawler AI discovery paths:');
+    for (const item of report.discovery_adoption.top_crawler_ai_discovery_paths) lines.push(`- ${item.path}: ${item.requests}`);
   }
   lines.push('');
   lines.push(`## AI Discovery`);
@@ -767,6 +863,13 @@ export function renderCloudflareAdoptionScorecard(report) {
   lines.push(`- Report-only target ratio: ${report.adoption_scorecard.identified_ai_primary_to_discovery_target_ratio}`);
   lines.push(`- Gap to target: ${report.adoption_scorecard.identified_ai_primary_to_discovery_gap_to_target}`);
   lines.push(`- Target status: ${report.adoption_scorecard.identified_ai_primary_to_discovery_target_status}`);
+  lines.push(`- Interactive AI discovery requests: ${report.adoption_scorecard.interactive_ai_discovery_requests}`);
+  lines.push(`- Interactive AI primary API requests: ${report.adoption_scorecard.interactive_ai_primary_api_requests}`);
+  lines.push(`- Interactive AI primary/discovery ratio: ${report.adoption_scorecard.interactive_ai_primary_to_discovery_ratio}`);
+  lines.push(`- Interactive AI target status: ${report.adoption_scorecard.interactive_ai_primary_to_discovery_target_status}`);
+  lines.push(`- Crawler AI discovery requests: ${report.adoption_scorecard.crawler_ai_discovery_requests}`);
+  lines.push(`- Crawler AI primary API requests: ${report.adoption_scorecard.crawler_ai_primary_api_requests}`);
+  lines.push(`- Crawler AI primary/discovery ratio: ${report.adoption_scorecard.crawler_ai_primary_to_discovery_ratio}`);
   lines.push(`- Bot route 5xx/522 requests: ${report.adoption_scorecard.bot_route_5xx_or_522_requests}`);
   lines.push(`- Scanner/probe requests: ${report.adoption_scorecard.scanner_or_probe_requests} (${(report.adoption_scorecard.scanner_or_probe_share * 100).toFixed(1)}%)`);
   lines.push('');
