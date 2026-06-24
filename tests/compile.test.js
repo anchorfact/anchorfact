@@ -1053,6 +1053,12 @@ test('provenance.json describes compiled artifacts', () => {
     draft: 1,
     claims: 2
   });
+  assertEq(provenance.verification_success_next_request.path, '/api/context?q={query}&limit=3&format=markdown');
+  assertEq(provenance.verification_success_next_request.url, 'https://anchorfact.org/api/context?q={query}&limit=3&format=markdown');
+  assertEq(provenance.primary_api_conversion.next_call_after_verification, '/api/context?q={query}&limit=3&format=markdown');
+  assertEq(provenance.primary_api_conversion.next_call_after_discovery, '/api/context?q={query}&limit=3&format=markdown');
+  assert(provenance.primary_api_conversion.minimum_valid_primary_calls.some(call => call.path === '/api/evidence?q={query}&limit=3&format=markdown'), 'provenance should expose copyable evidence calls after verification');
+  assert(provenance.primary_api_conversion.parameter_error_prevention.do_not_call_bare_paths.includes('/api/source'), 'provenance should warn against bare source calls');
   assert(/^[a-f0-9]{64}$/.test(provenance.artifacts.root_index_json.sha256), 'root index checksum should be sha256 hex');
   assert(/^[a-f0-9]{64}$/.test(provenance.artifacts.manifest_json.sha256), 'manifest checksum should be sha256 hex');
   assert(/^[a-f0-9]{64}$/.test(provenance.artifacts.agent_json.sha256), 'agent checksum should be sha256 hex');

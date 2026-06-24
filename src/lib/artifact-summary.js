@@ -6,6 +6,9 @@ import {
   PROVENANCE_PATH,
   publicUrl
 } from './build-metadata.js';
+import { API_CALL_GUIDANCE } from './api-machine-guidance.js';
+
+export { API_CALL_GUIDANCE };
 
 export const MAJOR_MACHINE_ARTIFACTS = [
   {
@@ -142,21 +145,6 @@ export const RECOMMENDED_DEFAULT_CALLS = [
     use_when: 'Signed build identity, counts, and artifact hashes.'
   }
 ];
-
-export const API_CALL_GUIDANCE = {
-  minimum_valid_primary_calls: [
-    { id: 'context', path: '/api/context?q={query}&limit=3&format=markdown', required_parameter: 'q' },
-    { id: 'evidence', path: '/api/evidence?q={query}&limit=3&format=markdown', required_parameter: 'q' },
-    { id: 'cite', path: '/api/cite?id={claim_id}&format=markdown', required_parameter: 'id' },
-    { id: 'resolve_batch', path: '/api/resolve-batch?ref={claim_id}&ref={source_id}&format=markdown', required_parameter: 'ref' }
-  ],
-  parameter_error_prevention: {
-    bare_primary_paths_return_recoverable_400: true,
-    do_not_call_bare_paths: ['/api/context', '/api/evidence', '/api/cite', '/api/source', '/api/resolve-batch'],
-    copy_minimum_valid_primary_calls_first: true,
-    recovery_field_on_400: 'machine_recovery'
-  }
-};
 
 export const LARGE_ARTIFACT_THRESHOLD_BYTES = 1024 * 1024;
 export const SHARDED_ARTIFACT_PATHS = new Set([

@@ -1,5 +1,20 @@
 const OFFICIAL_SITE = 'https://anchorfact.org';
 
+export const API_CALL_GUIDANCE = {
+  minimum_valid_primary_calls: [
+    { id: 'context', path: '/api/context?q={query}&limit=3&format=markdown', required_parameter: 'q' },
+    { id: 'evidence', path: '/api/evidence?q={query}&limit=3&format=markdown', required_parameter: 'q' },
+    { id: 'cite', path: '/api/cite?id={claim_id}&format=markdown', required_parameter: 'id' },
+    { id: 'resolve_batch', path: '/api/resolve-batch?ref={claim_id}&ref={source_id}&format=markdown', required_parameter: 'ref' }
+  ],
+  parameter_error_prevention: {
+    bare_primary_paths_return_recoverable_400: true,
+    do_not_call_bare_paths: ['/api/context', '/api/evidence', '/api/cite', '/api/source', '/api/resolve-batch'],
+    copy_minimum_valid_primary_calls_first: true,
+    recovery_field_on_400: 'machine_recovery'
+  }
+};
+
 function publicUrl(path, site = OFFICIAL_SITE) {
   const normalizedPath = path.startsWith('/') ? path : `/${path}`;
   return `${String(site || OFFICIAL_SITE).replace(/\/+$/, '')}${normalizedPath}`;

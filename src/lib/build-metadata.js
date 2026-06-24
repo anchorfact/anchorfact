@@ -1,6 +1,7 @@
 import { createHash } from 'crypto';
 import { readFileSync, statSync } from 'fs';
 import { join } from 'path';
+import { API_CALL_GUIDANCE } from './api-machine-guidance.js';
 
 export const COMPILER_VERSION = '0.3.0';
 export const MANIFEST_SCHEMA_VERSION = 'anchorfact.manifest.v1';
@@ -133,7 +134,40 @@ export function artifactInfo(distDir, relativePath) {
   };
 }
 
+function publicApiCall(call, site) {
+  return {
+    ...call,
+    method: 'GET',
+    url: publicUrl(call.path, site)
+  };
+}
+
+function buildPrimaryApiConversionGuidance(site) {
+  const minimumValidPrimaryCalls = API_CALL_GUIDANCE.minimum_valid_primary_calls.map(call => publicApiCall(call, site));
+  const contextCall = minimumValidPrimaryCalls.find(call => call.id === 'context') || minimumValidPrimaryCalls[0] || null;
+
+  return {
+    target_ratio: 0.2,
+    measured_as: 'identified AI primary API requests divided by identified AI discovery requests',
+    verification_entrypoint: '/provenance.json',
+    primary_entrypoints: ['/api/context', '/api/evidence', '/api/cite', '/api/resolve-batch'],
+    next_call_after_verification: contextCall?.path || '/api/context?q={query}&limit=3&format=markdown',
+    next_call_after_discovery: contextCall?.path || '/api/context?q={query}&limit=3&format=markdown',
+    minimum_valid_primary_calls: minimumValidPrimaryCalls,
+    parameter_error_prevention: {
+      ...API_CALL_GUIDANCE.parameter_error_prevention
+    },
+    guidance: 'After verifying signed provenance and artifact hashes, make a query-scoped primary API call before downloading large static artifacts.'
+  };
+}
+
 export function buildProvenance({ manifest, claimsPayload, distDir, generated, build, signature }) {
+  const primaryApiConversion = buildPrimaryApiConversionGuidance(build?.canonical_site || OFFICIAL_SITE);
+  const verificationSuccessNextRequest = {
+    ...(primaryApiConversion.minimum_valid_primary_calls.find(call => call.id === 'context') || {}),
+    purpose: 'Default next request after signed provenance verification succeeds.'
+  };
+
   return {
     schema_version: PROVENANCE_SCHEMA_VERSION,
     generated,
@@ -148,6 +182,8 @@ export function buildProvenance({ manifest, claimsPayload, distDir, generated, b
       draft: manifest.draft_article_count,
       claims: claimsPayload.claim_count
     },
+    verification_success_next_request: verificationSuccessNextRequest,
+    primary_api_conversion: primaryApiConversion,
     artifacts: {
       root_index_json: artifactInfo(distDir, 'index.json'),
       agent_json: artifactInfo(distDir, 'agent.json'),
