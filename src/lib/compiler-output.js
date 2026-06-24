@@ -369,6 +369,14 @@ function writeHeaders(distDir) {
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: camera=(), microphone=(), geolocation=(), interest-cohort=()
 
+/robots.txt
+  Content-Type: text/plain; charset=utf-8
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+/sitemap.xml
+  Content-Type: application/xml; charset=utf-8
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
 /*/index.json
   Access-Control-Allow-Origin: *
   Content-Type: application/ld+json; charset=utf-8

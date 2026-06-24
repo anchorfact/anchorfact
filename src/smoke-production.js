@@ -917,6 +917,8 @@ export async function main() {
   headerIncludes(results['/openapi.json'], 'Access-Control-Allow-Origin', '*', failures);
   headerIncludes(results['/api-access/'], 'Access-Control-Allow-Origin', '*', failures);
   headerIncludes(results['/api-access/'], 'Content-Type', 'application/json', failures);
+  headerIncludes(results['/robots.txt'], 'Cache-Control', 'max-age=3600', failures);
+  headerIncludes(results['/sitemap.xml'], 'Cache-Control', 'max-age=3600', failures);
   for (const route of ['/drafts.html', '/dashboard.html']) {
     headerIncludes(results[route], 'Access-Control-Allow-Origin', '*', failures);
     headerIncludes(results[route], 'Content-Type', 'application/json', failures);
