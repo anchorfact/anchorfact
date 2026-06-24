@@ -47,6 +47,22 @@ export function renderApiReadinessMarkdown(report) {
     lines.push(`- ${gate.id}: ${gate.status} (${gate.target}${current})`);
   }
   lines.push('');
+  if (report.runtime_signal_contract) {
+    lines.push(`## Runtime Signals`);
+    lines.push('');
+    lines.push(`- Static artifact: ${report.runtime_signal_contract.static_artifact ? 'yes' : 'no'}`);
+    lines.push(`- Missing runtime status: ${report.runtime_signal_contract.status_when_missing}`);
+    lines.push(`- Workflow: ${report.runtime_signal_contract.workflow}`);
+    lines.push(`- Scorecard command: ${report.runtime_signal_contract.scorecard_command}`);
+    lines.push(`- History command: ${report.runtime_signal_contract.history_command}`);
+    for (const input of report.runtime_signal_contract.runtime_inputs || []) {
+      const preferredScope = input.preferred_measurement_scope
+        ? `, preferred scope: ${input.preferred_measurement_scope}`
+        : '';
+      lines.push(`- ${input.id}: ${input.report_field} via ${input.json_flag}${preferredScope}`);
+    }
+    lines.push('');
+  }
   lines.push(`## Core Corpus Failures`);
   lines.push('');
   const coreFailures = report.core_corpus.failures.slice(0, 20);

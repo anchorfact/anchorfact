@@ -850,6 +850,29 @@ test('renderApiReadinessMarkdown exposes target, gap context, and report-only st
   assert(!markdown.includes('current=null'), 'should omit null current gate values');
 });
 
+test('api readiness publishes a runtime signal contract for static builds', () => {
+  const report = buildApiReadinessReport({
+    artifacts: fakeArtifacts(),
+    querySet: [{ id: 'rag', category: 'agent_rag', expected_slug: 'ai/rag', query: 'Retrieval-Augmented Generation (RAG)' }],
+    generatedAt: '2026-06-01T00:00:00.000Z'
+  });
+  const contract = report.runtime_signal_contract;
+  const adoptionInput = contract.runtime_inputs.find(input => input.id === 'ai_adoption');
+  const markdown = renderApiReadinessMarkdown(report);
+
+  assertEq(contract.static_artifact, true);
+  assertEq(contract.status_when_missing, 'not_provided');
+  assert(contract.workflow.includes('.github/workflows/readiness-scorecard.yml'), 'contract should point at the readiness workflow');
+  assert(contract.scorecard_command.includes('--adoption-json'), 'contract should describe the runtime scorecard command');
+  assert(contract.history_command.includes('--save-current'), 'contract should describe readiness history persistence');
+  assertEq(adoptionInput.preferred_measurement_scope, 'interactive_ai');
+  assert(adoptionInput.required_fields.includes('interactive_ai_primary_to_discovery_ratio'), 'contract should require interactive AI ratio');
+  assert(adoptionInput.required_fields.includes('crawler_ai_primary_to_discovery_ratio'), 'contract should preserve crawler context');
+  assert(markdown.includes('## Runtime Signals'), 'markdown should render runtime signal contract');
+  assert(markdown.includes('preferred scope: interactive_ai'), 'markdown should render preferred adoption scope');
+  assert(markdown.includes('readiness-scorecard.yml'), 'markdown should render workflow path');
+});
+
 test('runtime scorecard inputs normalize Cloudflare adoption and production integrity reports', () => {
   const adoption = normalizeAdoptionScorecard({
     window: {

@@ -544,6 +544,7 @@ test('openapi.json describes the static AI contract', () => {
   assert(openapi.components.schemas.ApiReadiness, 'OpenAPI should define API readiness schema');
   assert(openapi.components.schemas.ApiReadiness.properties.readiness_gates, 'OpenAPI should define API readiness gates');
   assert(openapi.components.schemas.ApiReadiness.properties.readiness_blockers, 'OpenAPI should define API readiness blockers');
+  assert(openapi.components.schemas.ApiReadiness.properties.runtime_signal_contract, 'OpenAPI should define API readiness runtime signal contract');
   assert(openapi.components.schemas.McpProfile, 'OpenAPI should define MCP schema');
   assert(openapi.components.schemas.SearchIndex, 'OpenAPI should define SearchIndex schema');
   assert(openapi.components.schemas.EvidenceApiResponse, 'OpenAPI should define EvidenceApiResponse schema');
@@ -639,6 +640,16 @@ test('api-readiness.json publishes machine-readable readiness gates', () => {
   assert(readiness.readiness_gates.some(gate => gate.id === 'core_query_context_ratio'), 'readiness should include context coverage gate');
   assert(Array.isArray(readiness.readiness_blockers.gate_ids), 'readiness should publish blocker gate ids');
   assert(readiness.readiness_blockers.gate_ids.includes('design_partners'), 'readiness should identify manual design partner blocker');
+  assertEq(readiness.runtime_signal_contract.static_artifact, true);
+  assertEq(readiness.runtime_signal_contract.status_when_missing, 'not_provided');
+  assert(readiness.runtime_signal_contract.scorecard_command.includes('--adoption-json'), 'readiness should explain runtime adoption input command');
+  assert(readiness.runtime_signal_contract.workflow.includes('readiness-scorecard.yml'), 'readiness should point to the scorecard workflow');
+  assert(readiness.runtime_signal_contract.runtime_inputs.some(input =>
+    input.id === 'ai_adoption'
+    && input.preferred_measurement_scope === 'interactive_ai'
+    && input.required_fields.includes('interactive_ai_primary_to_discovery_ratio')
+    && input.required_fields.includes('crawler_ai_primary_to_discovery_ratio')
+  ), 'readiness should publish interactive/crawler AI runtime input requirements');
   assert(readiness.next_actions.some(action => action.includes('free API')), 'readiness should keep paid-beta work behind readiness gates');
 });
 

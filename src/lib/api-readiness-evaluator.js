@@ -331,6 +331,52 @@ function readinessBlockers(readinessGates) {
   };
 }
 
+function runtimeSignalContract(site) {
+  return {
+    static_artifact: true,
+    status_when_missing: 'not_provided',
+    purpose: 'Static /api-readiness.json publishes corpus and API readiness. Production integrity, traffic adoption, and design partner signals require runtime JSON inputs.',
+    workflow: '.github/workflows/readiness-scorecard.yml',
+    scorecard_command: 'npm run api:readiness -- --adoption-json reports/ai-adoption-scorecard.json --production-integrity-json reports/production-integrity.json --write reports/api-readiness.md --write-json reports/api-readiness.json',
+    history_command: 'npm run readiness:history -- --history-dir reports/readiness-history --api-readiness-json reports/api-readiness.json --content-health-json reports/content-health.json --save-current --write reports/readiness-window.md --write-json reports/readiness-window.json',
+    published_static_artifact: publicUrl('/api-readiness.json', site),
+    runtime_inputs: [
+      {
+        id: 'production_integrity',
+        report_field: 'production_health',
+        json_flag: '--production-integrity-json',
+        command: 'npm run production:integrity -- --write-json reports/production-integrity.json',
+        status_when_missing: 'not_provided',
+        required_fields: ['status', 'checks', 'deployed_commit', 'source_commit']
+      },
+      {
+        id: 'ai_adoption',
+        report_field: 'adoption_signal',
+        json_flag: '--adoption-json',
+        command: 'npm run usage:adoption -- --lookback-minutes 1430 --write-json reports/ai-adoption-scorecard.json',
+        status_when_missing: 'not_provided',
+        preferred_measurement_scope: 'interactive_ai',
+        required_fields: [
+          'identified_ai_primary_to_discovery_ratio',
+          'identified_ai_primary_to_discovery_target_status',
+          'interactive_ai_primary_to_discovery_ratio',
+          'interactive_ai_primary_to_discovery_target_status',
+          'crawler_ai_primary_to_discovery_ratio'
+        ]
+      },
+      {
+        id: 'design_partners',
+        report_field: 'design_partner_signal',
+        json_flag: '--design-partners-json',
+        command: 'npm run api:readiness -- --design-partners-json reports/design-partners.json',
+        status_when_missing: 'manual_validation_required',
+        manual_validation: true,
+        required_fields: ['external_design_partner_count', 'paid_intent_signal_count']
+      }
+    ]
+  };
+}
+
 export function buildApiReadinessReport({
   artifacts,
   querySet = CORE_CORPUS_QUERIES,
@@ -423,6 +469,7 @@ export function buildApiReadinessReport({
     subscription_ready: false,
     readiness_gates: readinessGates,
     readiness_blockers: readinessBlockers(readinessGates),
+    runtime_signal_contract: runtimeSignalContract(site),
     core_corpus: coreCorpus,
     api_scorecard: contextScorecard,
     api_performance: apiPerformanceReport

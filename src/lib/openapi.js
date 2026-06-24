@@ -783,7 +783,19 @@ export function buildOpenApiContract({
           api_performance: { type: 'object' },
           production_health: { type: 'object' },
           adoption_signal: { type: 'object' },
-          design_partner_signal: { type: 'object' }
+          design_partner_signal: { type: 'object' },
+          runtime_signal_contract: {
+            type: 'object',
+            properties: {
+              static_artifact: { type: 'boolean' },
+              status_when_missing: { const: 'not_provided' },
+              workflow: { type: 'string' },
+              scorecard_command: { type: 'string' },
+              history_command: { type: 'string' },
+              runtime_inputs: { type: 'array', items: { type: 'object' } }
+            },
+            additionalProperties: true
+          }
         }),
         ArtifactShard: schemaVersioned('Artifact shard', ARTIFACT_SHARD_SCHEMA_VERSION, {
           artifact_id: { type: 'string' },
