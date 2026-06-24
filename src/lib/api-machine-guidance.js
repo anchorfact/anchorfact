@@ -108,6 +108,18 @@ export function buildMachineRecoveryGuidance({
     };
   }
 
+  if (currentEndpoint === 'plan') {
+    return {
+      ...common,
+      valid_parameters: ['q', 'query', 'limit'],
+      retry_examples: [
+        apiCall('plan_json', queryPath('/api/plan', exampleQuery, limit), 'Return coverage and fallback preflight guidance for the query.', site),
+        apiCall('context', contextPath, 'Return the default answer-ready context when coverage is likely known.', site),
+        apiCall('evidence', evidencePath, 'Return source-mapped evidence packs for the query.', site)
+      ]
+    };
+  }
+
   if (currentEndpoint === 'source') {
     return {
       ...common,
@@ -170,6 +182,7 @@ export function buildErrorRecoveryDiscoveryGuidance({ site = OFFICIAL_SITE } = {
     observed_recoverable_endpoints: [
       '/api/context',
       '/api/evidence',
+      '/api/plan',
       '/api/source',
       '/api/resolve-batch',
       '/api/cite'
@@ -177,6 +190,7 @@ export function buildErrorRecoveryDiscoveryGuidance({ site = OFFICIAL_SITE } = {
     retry_example_paths: [
       '/api/context?q={query}&limit=3',
       '/api/evidence?q={query}&limit=3',
+      '/api/plan?q={query}&limit=3',
       '/api/source?id={source_id}',
       '/api/resolve-batch?ref={claim_id}&ref={source_id}',
       '/api/cite?id={claim_id}'

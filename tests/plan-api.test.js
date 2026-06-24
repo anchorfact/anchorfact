@@ -272,6 +272,12 @@ test('parsePlanParams validates query and clamps limit', () => {
   assertEq(missing.ok, false);
   assertEq(missing.status, 400);
   assertEq(missing.payload.error.code, 'missing_or_invalid_query');
+  assertEq(missing.payload.machine_recovery.recoverable, true);
+  assertEq(missing.payload.machine_recovery.current_endpoint, 'plan');
+  assert(
+    missing.payload.machine_recovery.retry_examples.some(example => example.path.includes('/api/plan?q=')),
+    'missing plan query response should include an executable plan retry example'
+  );
 });
 
 test('buildPlanApiPayload recommends AnchorFact calls for supported queries', () => {
@@ -551,6 +557,11 @@ test('Pages Function rejects empty queries and supports OPTIONS', async () => {
   const payload = await response.json();
   assertEq(response.status, 400);
   assertEq(payload.error.code, 'missing_or_invalid_query');
+  assertEq(payload.machine_recovery.current_endpoint, 'plan');
+  assert(
+    payload.machine_recovery.next_request.url.includes('/api/context?q='),
+    'empty plan query response should route machines to default context recovery'
+  );
 
   const options = onRequestOptions();
   assertEq(options.status, 204);

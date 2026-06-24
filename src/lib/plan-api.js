@@ -5,6 +5,7 @@ import {
   queryTokens,
   textTokens
 } from './query-text.js';
+import { buildMachineRecoveryGuidance } from './api-machine-guidance.js';
 
 export const PLAN_API_SCHEMA_VERSION = 'anchorfact.plan-api.v1';
 
@@ -44,11 +45,13 @@ function call(path, purpose, site) {
   };
 }
 
-function errorPayload(code, message) {
-  return {
+function errorPayload(code, message, machineRecovery = null) {
+  const payload = {
     schema_version: PLAN_API_SCHEMA_VERSION,
     error: { code, message }
   };
+  if (machineRecovery) payload.machine_recovery = machineRecovery;
+  return payload;
 }
 
 export function parsePlanParams(url) {
@@ -59,7 +62,11 @@ export function parsePlanParams(url) {
       status: 400,
       payload: errorPayload(
         'missing_or_invalid_query',
-        'Provide a natural-language query with ?q=... or ?query=....'
+        'Provide a natural-language query with ?q=... or ?query=....',
+        buildMachineRecoveryGuidance({
+          currentEndpoint: 'plan',
+          reason: 'missing_required_query'
+        })
       )
     };
   }
