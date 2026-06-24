@@ -158,6 +158,8 @@ test('public entrypoints exclude draft articles', () => {
   assert(rootIndex.error_recovery_guidance.observed_recoverable_endpoints.includes('/api/evidence'), 'root index should expose evidence recovery guidance');
   assert(rootIndex.error_recovery_guidance.observed_recoverable_endpoints.includes('/api/source'), 'root index should expose source recovery guidance');
   assert(rootIndex.error_recovery_guidance.observed_recoverable_endpoints.includes('/api/resolve-batch'), 'root index should expose batch resolver recovery guidance');
+  assert(rootIndex.error_recovery_guidance.observed_recoverable_endpoints.includes('/api/cite'), 'root index should expose citation recovery guidance');
+  assert(rootIndex.error_recovery_guidance.retry_example_paths.includes('/api/cite?id={claim_id}'), 'root index should expose citation retry guidance');
   assertEq(rootIndex.counts.public_articles, 1);
   assertEq(rootIndex.counts.draft_articles, 1);
   assertEq(rootIndex.counts.public_claims, claimsJson.claim_count);

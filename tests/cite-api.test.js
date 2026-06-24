@@ -110,6 +110,12 @@ test('parseCiteParams validates claim id and markdown format', () => {
   const missing = parseCiteParams(new URL('https://anchorfact.org/api/cite'));
   assertEq(missing.ok, false);
   assertEq(missing.status, 400);
+  assertEq(missing.payload.machine_recovery.recoverable, true);
+  assertEq(missing.payload.machine_recovery.current_endpoint, 'cite');
+  assert(
+    missing.payload.machine_recovery.retry_examples.some(call => call.path === '/api/cite?id={claim_id}'),
+    'missing id guidance should include a citation retry template'
+  );
 });
 
 test('buildCiteApiPayload returns a compact citation response', () => {
@@ -171,7 +177,13 @@ test('Pages Function rejects missing ids and asset failures', async () => {
     request: new Request('https://anchorfact.org/api/cite'),
     env: assetEnv()
   });
+  const missingPayload = await missing.json();
   assertEq(missing.status, 400);
+  assertEq(missingPayload.machine_recovery.current_endpoint, 'cite');
+  assert(
+    missingPayload.machine_recovery.next_request.url.includes('/api/context?q='),
+    'missing id function response should include a context recovery call'
+  );
 
   const assetFailure = await onRequestGet({
     request: new Request('https://anchorfact.org/api/cite?id=f1'),

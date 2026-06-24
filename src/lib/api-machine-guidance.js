@@ -119,6 +119,17 @@ export function buildMachineRecoveryGuidance({
     };
   }
 
+  if (currentEndpoint === 'cite') {
+    return {
+      ...common,
+      valid_parameters: ['id', 'claim_id', 'claim', 'format'],
+      retry_examples: [
+        templatedApiCall('cite_by_claim_id', '/api/cite?id={claim_id}', 'Return citation-ready JSON for one public AnchorFact claim.', site),
+        templatedApiCall('cite_markdown', '/api/cite?id={claim_id}&format=markdown', 'Return citation-ready Markdown for one public AnchorFact claim.', site)
+      ]
+    };
+  }
+
   if (currentEndpoint === 'resolve-batch') {
     return {
       ...common,
@@ -160,13 +171,15 @@ export function buildErrorRecoveryDiscoveryGuidance({ site = OFFICIAL_SITE } = {
       '/api/context',
       '/api/evidence',
       '/api/source',
-      '/api/resolve-batch'
+      '/api/resolve-batch',
+      '/api/cite'
     ],
     retry_example_paths: [
       '/api/context?q={query}&limit=3',
       '/api/evidence?q={query}&limit=3',
       '/api/source?id={source_id}',
-      '/api/resolve-batch?ref={claim_id}&ref={source_id}'
+      '/api/resolve-batch?ref={claim_id}&ref={source_id}',
+      '/api/cite?id={claim_id}'
     ],
     policy: 'If an API request returns a recoverable 400, inspect machine_recovery.next_request first, then use retry_examples for endpoint-specific parameters.'
   };

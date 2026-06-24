@@ -1,4 +1,5 @@
 import { CITATION_CONTRACT } from './citation-export.js';
+import { buildMachineRecoveryGuidance } from './api-machine-guidance.js';
 import { buildClaimApiPayload, normalizeClaimId } from './claim-api.js';
 
 export const CITE_API_SCHEMA_VERSION = 'anchorfact.cite-api.v1';
@@ -14,6 +15,16 @@ function errorPayload(code, message, extra = {}) {
   };
 }
 
+function recoverableErrorPayload(code, message, extra = {}) {
+  return errorPayload(code, message, {
+    machine_recovery: buildMachineRecoveryGuidance({
+      currentEndpoint: 'cite',
+      reason: code
+    }),
+    ...extra
+  });
+}
+
 export function parseCiteParams(url) {
   const claimId = normalizeClaimId(
     url.searchParams.get('id')
@@ -25,7 +36,7 @@ export function parseCiteParams(url) {
     return {
       ok: false,
       status: 400,
-      payload: errorPayload(
+      payload: recoverableErrorPayload(
         'missing_or_invalid_claim_id',
         'Provide a public claim id with ?id=https://anchorfact.org/fact/{id}.'
       )

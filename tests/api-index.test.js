@@ -40,7 +40,9 @@ test('buildApiIndex publishes the machine API discovery contract', () => {
   assert(payload.error_recovery_guidance.observed_recoverable_endpoints.includes('/api/evidence'), 'error recovery guidance should name observed recoverable evidence errors');
   assert(payload.error_recovery_guidance.observed_recoverable_endpoints.includes('/api/source'), 'error recovery guidance should name observed recoverable source errors');
   assert(payload.error_recovery_guidance.observed_recoverable_endpoints.includes('/api/resolve-batch'), 'error recovery guidance should name observed recoverable batch resolver errors');
+  assert(payload.error_recovery_guidance.observed_recoverable_endpoints.includes('/api/cite'), 'error recovery guidance should name observed recoverable citation errors');
   assert(payload.error_recovery_guidance.retry_example_paths.some(path => path.includes('/api/evidence?q=')), 'error recovery guidance should include an evidence retry template');
+  assert(payload.error_recovery_guidance.retry_example_paths.some(path => path.includes('/api/cite?id=')), 'error recovery guidance should include a citation retry template');
   assertEq(payload.readiness_guidance.status_endpoint, '/api-readiness.json');
   assertEq(payload.readiness_guidance.default_access_until_ready, 'free_no_key_read_only');
   assert(payload.readiness_guidance.subscription_ready_requires.includes('production_integrity_14_day'), 'readiness guidance should name production window gate');
