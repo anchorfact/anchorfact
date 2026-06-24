@@ -1,0 +1,86 @@
+const OFFICIAL_SITE = 'https://anchorfact.org';
+
+function publicUrl(path, site = OFFICIAL_SITE) {
+  const normalizedPath = path.startsWith('/') ? path : `/${path}`;
+  return `${String(site || OFFICIAL_SITE).replace(/\/+$/, '')}${normalizedPath}`;
+}
+
+const READINESS_RUNTIME_INPUTS = [
+  {
+    id: 'production_integrity',
+    report_field: 'production_health',
+    json_flag: '--production-integrity-json',
+    command: 'npm run production:integrity -- --write-json reports/production-integrity.json',
+    status_when_missing: 'not_provided',
+    required_fields: ['status', 'checks', 'deployed_commit', 'source_commit']
+  },
+  {
+    id: 'ai_adoption',
+    report_field: 'adoption_signal',
+    json_flag: '--adoption-json',
+    command: 'npm run usage:adoption -- --lookback-minutes 1430 --write-json reports/ai-adoption-scorecard.json',
+    status_when_missing: 'not_provided',
+    preferred_measurement_scope: 'interactive_ai',
+    required_fields: [
+      'identified_ai_primary_to_discovery_ratio',
+      'identified_ai_primary_to_discovery_target_status',
+      'interactive_ai_primary_to_discovery_ratio',
+      'interactive_ai_primary_to_discovery_target_status',
+      'crawler_ai_primary_to_discovery_ratio'
+    ]
+  },
+  {
+    id: 'design_partners',
+    report_field: 'design_partner_signal',
+    json_flag: '--design-partners-json',
+    command: 'npm run api:readiness -- --design-partners-json reports/design-partners.json',
+    status_when_missing: 'manual_validation_required',
+    manual_validation: true,
+    required_fields: ['external_design_partner_count', 'paid_intent_signal_count']
+  }
+];
+
+function cloneRuntimeInput(input) {
+  return {
+    ...input,
+    required_fields: [...(input.required_fields || [])]
+  };
+}
+
+export function buildReadinessRuntimeSignalContract({ site = OFFICIAL_SITE } = {}) {
+  return {
+    static_artifact: true,
+    status_when_missing: 'not_provided',
+    purpose: 'Static /api-readiness.json publishes corpus and API readiness. Production integrity, traffic adoption, and design partner signals require runtime JSON inputs.',
+    workflow: '.github/workflows/readiness-scorecard.yml',
+    scorecard_command: 'npm run api:readiness -- --adoption-json reports/ai-adoption-scorecard.json --production-integrity-json reports/production-integrity.json --write reports/api-readiness.md --write-json reports/api-readiness.json',
+    history_command: 'npm run readiness:history -- --history-dir reports/readiness-history --api-readiness-json reports/api-readiness.json --content-health-json reports/content-health.json --save-current --write reports/readiness-window.md --write-json reports/readiness-window.json',
+    published_static_artifact: publicUrl('/api-readiness.json', site),
+    runtime_inputs: READINESS_RUNTIME_INPUTS.map(cloneRuntimeInput)
+  };
+}
+
+export function buildReadinessRuntimeSignalSummary({
+  contract = null,
+  site = OFFICIAL_SITE
+} = {}) {
+  const runtimeContract = contract || buildReadinessRuntimeSignalContract({ site });
+  const runtimeInputs = Array.isArray(runtimeContract.runtime_inputs)
+    ? runtimeContract.runtime_inputs
+    : [];
+  const adoptionInput = runtimeInputs.find(input => input?.id === 'ai_adoption') || null;
+  return {
+    status_endpoint: '/api-readiness.json',
+    static_artifact: runtimeContract.static_artifact === true,
+    missing_runtime_status: runtimeContract.status_when_missing || 'not_provided',
+    workflow: runtimeContract.workflow || '.github/workflows/readiness-scorecard.yml',
+    scorecard_command: runtimeContract.scorecard_command || null,
+    history_command: runtimeContract.history_command || null,
+    published_static_artifact: runtimeContract.published_static_artifact || publicUrl('/api-readiness.json', site),
+    runtime_input_ids: runtimeInputs.map(input => input?.id).filter(Boolean),
+    preferred_adoption_scope: adoptionInput?.preferred_measurement_scope || null,
+    manual_validation_required: runtimeInputs
+      .filter(input => input?.manual_validation)
+      .map(input => input.id)
+  };
+}

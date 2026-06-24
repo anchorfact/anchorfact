@@ -5,6 +5,7 @@ import {
   publicUrl
 } from './build-metadata.js';
 import { API_CALL_GUIDANCE } from './artifact-summary.js';
+import { buildReadinessRuntimeSignalSummary } from './readiness-runtime-signals.js';
 
 function publicApiCall(call, site) {
   return {
@@ -19,7 +20,8 @@ export function buildApiAccessPolicy({
   site = OFFICIAL_SITE,
   publicResults = [],
   draftResults = [],
-  claims = []
+  claims = [],
+  apiReadinessPayload = null
 } = {}) {
   const minimumValidPrimaryCalls = API_CALL_GUIDANCE.minimum_valid_primary_calls.map(call => publicApiCall(call, site));
   const byId = new Map(minimumValidPrimaryCalls.map(call => [call.id, call]));
@@ -51,7 +53,11 @@ export function buildApiAccessPolicy({
         'design_partners'
       ],
       blocker_source: '/api-readiness.json readiness_blockers',
-      manual_validation_required: ['design_partners']
+      manual_validation_required: ['design_partners'],
+      runtime_signal_contract: buildReadinessRuntimeSignalSummary({
+        contract: apiReadinessPayload?.runtime_signal_contract,
+        site
+      })
     },
     counts: {
       public_articles: publicResults.length,

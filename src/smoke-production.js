@@ -252,6 +252,26 @@ export function hasCanonicalSlug(items, slug) {
   return Array.isArray(items) && items.some(item => item?.canonical_slug === slug);
 }
 
+function runtimeSignalSummaryFailures(summary, contract, label, failures) {
+  if (!contract?.runtime_inputs) {
+    return;
+  }
+  assertOk(summary?.static_artifact === contract.static_artifact, `${label} runtime signal static artifact does not match api-readiness.json`, failures);
+  assertOk(summary?.missing_runtime_status === contract.status_when_missing, `${label} runtime signal missing status does not match api-readiness.json`, failures);
+  assertOk(summary?.workflow === contract.workflow, `${label} runtime signal workflow does not match api-readiness.json`, failures);
+  if (contract.scorecard_command) {
+    assertOk(summary?.scorecard_command === contract.scorecard_command, `${label} runtime signal scorecard command does not match api-readiness.json`, failures);
+  }
+  const inputIds = contract.runtime_inputs.map(input => input?.id).filter(Boolean);
+  for (const inputId of inputIds) {
+    assertOk(summary?.runtime_input_ids?.includes(inputId), `${label} runtime signal contract is missing input ${inputId}`, failures);
+  }
+  const preferredScope = contract.runtime_inputs.find(input => input?.id === 'ai_adoption')?.preferred_measurement_scope || null;
+  if (preferredScope) {
+    assertOk(summary?.preferred_adoption_scope === preferredScope, `${label} runtime signal preferred adoption scope does not match api-readiness.json`, failures);
+  }
+}
+
 export function readinessDiscoveryFailures({
   rootIndex = {},
   apiReadiness = {},
@@ -270,22 +290,28 @@ export function readinessDiscoveryFailures({
   for (const gateId of blockerIds) {
     assertOk(rootIndex.api_readiness_summary?.blocker_ids?.includes(gateId), `root index readiness summary is missing blocker ${gateId}`, failures);
   }
+  runtimeSignalSummaryFailures(rootIndex.api_readiness_summary?.runtime_signal_contract, apiReadiness.runtime_signal_contract, 'root index readiness summary', failures);
 
   assertOk(openapi.components?.schemas?.RootIndex?.properties?.api_readiness_summary, 'openapi RootIndex schema is missing readiness summary', failures);
+  assertOk(openapi.components?.schemas?.RootIndex?.properties?.api_readiness_summary?.properties?.runtime_signal_contract, 'openapi RootIndex schema is missing runtime signal summary', failures);
   assertOk(openapi.components?.schemas?.ApiIndex?.properties?.readiness_guidance, 'openapi ApiIndex schema is missing readiness guidance', failures);
+  assertOk(openapi.components?.schemas?.ApiIndex?.properties?.readiness_guidance?.properties?.runtime_signal_contract, 'openapi ApiIndex schema is missing runtime signal guidance', failures);
   assertOk(openapi.components?.schemas?.ApiAccess?.properties?.readiness_policy, 'openapi ApiAccess schema is missing readiness policy', failures);
+  assertOk(openapi.components?.schemas?.ApiAccess?.properties?.readiness_policy?.properties?.runtime_signal_contract, 'openapi ApiAccess schema is missing runtime signal guidance', failures);
 
   assertOk(apiAccessPolicy.readiness_policy?.status_endpoint === '/api-readiness.json', '/api-access/ readiness policy status endpoint is missing', failures);
   assertOk(apiAccessPolicy.readiness_policy?.current_mode === 'free_no_key_read_only', '/api-access/ readiness policy should preserve free no-key access mode', failures);
   for (const gateId of ['production_integrity_14_day', 'design_partners']) {
     assertOk(apiAccessPolicy.readiness_policy?.paid_beta_requires?.includes(gateId), `/api-access/ readiness policy is missing ${gateId}`, failures);
   }
+  runtimeSignalSummaryFailures(apiAccessPolicy.readiness_policy?.runtime_signal_contract, apiReadiness.runtime_signal_contract, '/api-access/ readiness policy', failures);
 
   assertOk(apiIndex.readiness_guidance?.status_endpoint === '/api-readiness.json', '/api readiness guidance status endpoint is missing', failures);
   assertOk(apiIndex.readiness_guidance?.default_access_until_ready === 'free_no_key_read_only', '/api readiness guidance should preserve free no-key access mode', failures);
   for (const gateId of ['production_integrity_14_day', 'design_partners']) {
     assertOk(apiIndex.readiness_guidance?.subscription_ready_requires?.includes(gateId), `/api readiness guidance is missing ${gateId}`, failures);
   }
+  runtimeSignalSummaryFailures(apiIndex.readiness_guidance?.runtime_signal_contract, apiReadiness.runtime_signal_contract, '/api readiness guidance', failures);
 
   return failures;
 }

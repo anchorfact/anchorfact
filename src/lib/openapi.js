@@ -499,6 +499,23 @@ export function buildOpenApiContract({
           },
           additionalProperties: true
         },
+        ReadinessRuntimeSignalContractSummary: {
+          type: 'object',
+          description: 'Compact discovery summary for runtime JSON inputs required to turn static API readiness into measured readiness windows.',
+          properties: {
+            status_endpoint: { const: '/api-readiness.json' },
+            static_artifact: { type: 'boolean' },
+            missing_runtime_status: { type: 'string' },
+            workflow: { type: 'string' },
+            scorecard_command: { type: ['string', 'null'] },
+            history_command: { type: ['string', 'null'] },
+            published_static_artifact: { type: 'string', format: 'uri' },
+            runtime_input_ids: { type: 'array', items: { type: 'string' } },
+            preferred_adoption_scope: { type: ['string', 'null'] },
+            manual_validation_required: { type: 'array', items: { type: 'string' } }
+          },
+          additionalProperties: true
+        },
         RootIndex: schemaVersioned('Root machine index', ROOT_INDEX_SCHEMA_VERSION, {
           official_site: { type: 'string', format: 'uri' },
           default_answer_path: { const: '/api/context?q={query}' },
@@ -522,7 +539,8 @@ export function buildOpenApiContract({
               report_only: { type: ['boolean', 'null'] },
               blocker_ids: { type: 'array', items: { type: 'string' } },
               automated_blocker_ids: { type: 'array', items: { type: 'string' } },
-              manual_blocker_ids: { type: 'array', items: { type: 'string' } }
+              manual_blocker_ids: { type: 'array', items: { type: 'string' } },
+              runtime_signal_contract: { $ref: '#/components/schemas/ReadinessRuntimeSignalContractSummary' }
             },
             additionalProperties: true
           },
@@ -541,6 +559,7 @@ export function buildOpenApiContract({
             },
             additionalProperties: true
           },
+          readiness_runtime_signals: { $ref: '#/components/schemas/ReadinessRuntimeSignalContractSummary' },
           quick_start: { $ref: '#/components/schemas/AgentQuickStart' }
         }),
         AgentQuickStart: {
@@ -664,7 +683,8 @@ export function buildOpenApiContract({
               report_only_until_gates_met: { type: 'boolean' },
               default_access_until_ready: { type: 'string' },
               subscription_ready_requires: { type: 'array', items: { type: 'string' } },
-              start_paid_beta_only_after: { type: 'string' }
+              start_paid_beta_only_after: { type: 'string' },
+              runtime_signal_contract: { $ref: '#/components/schemas/ReadinessRuntimeSignalContractSummary' }
             },
             additionalProperties: true
           },
@@ -713,7 +733,8 @@ export function buildOpenApiContract({
               report_only_until_gates_met: { type: 'boolean' },
               paid_beta_requires: { type: 'array', items: { type: 'string' } },
               blocker_source: { type: 'string' },
-              manual_validation_required: { type: 'array', items: { type: 'string' } }
+              manual_validation_required: { type: 'array', items: { type: 'string' } },
+              runtime_signal_contract: { $ref: '#/components/schemas/ReadinessRuntimeSignalContractSummary' }
             },
             additionalProperties: true
           },

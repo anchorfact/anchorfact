@@ -156,6 +156,11 @@ test('public entrypoints exclude draft articles', () => {
   assertEq(rootIndex.api_readiness_summary.subscription_ready, false);
   assertEq(rootIndex.api_readiness_summary.path, '/api-readiness.json');
   assert(rootIndex.api_readiness_summary.blocker_ids.includes('core_query_context_ratio'), 'root index should expose API readiness blockers');
+  assertEq(rootIndex.api_readiness_summary.runtime_signal_contract.static_artifact, true);
+  assertEq(rootIndex.api_readiness_summary.runtime_signal_contract.missing_runtime_status, 'not_provided');
+  assert(rootIndex.api_readiness_summary.runtime_signal_contract.workflow.includes('readiness-scorecard.yml'), 'root index should expose readiness runtime workflow');
+  assert(rootIndex.api_readiness_summary.runtime_signal_contract.runtime_input_ids.includes('ai_adoption'), 'root index should expose runtime adoption input id');
+  assertEq(rootIndex.api_readiness_summary.runtime_signal_contract.preferred_adoption_scope, 'interactive_ai');
   assertEq(rootIndex.error_recovery_guidance.recoverable_400_field, 'machine_recovery');
   assertEq(rootIndex.error_recovery_guidance.default_recovery_path, '/api/context?q={query}&limit=3');
   assertEq(rootIndex.error_recovery_guidance.default_recovery_url, 'https://anchorfact.org/api/context?q={query}&limit=3');
@@ -283,6 +288,9 @@ test('public entrypoints exclude draft articles', () => {
   assertEq(apiAccess.readiness_policy.current_mode, 'free_no_key_read_only');
   assert(apiAccess.readiness_policy.paid_beta_requires.includes('design_partners'), 'api access policy should list manual readiness gate');
   assertEq(apiAccess.readiness_policy.report_only_until_gates_met, true);
+  assertEq(apiAccess.readiness_policy.runtime_signal_contract.static_artifact, true);
+  assert(apiAccess.readiness_policy.runtime_signal_contract.scorecard_command.includes('--adoption-json'), 'api access policy should expose runtime scorecard command');
+  assert(apiAccess.readiness_policy.runtime_signal_contract.runtime_input_ids.includes('design_partners'), 'api access policy should expose design partner runtime input id');
   assertEq(apiAccess.counts.public_articles, 1);
   assertEq(apiAccess.counts.draft_articles, 1);
   assertEq(apiAccess.counts.public_claims, claimsJson.claim_count);
@@ -349,6 +357,10 @@ test('agent profile describes the machine contract', () => {
   assertEq(agent.current_snapshot.api_readiness_context_ratio, 0);
   assert(agent.current_snapshot.api_readiness_blocker_ids.includes('core_query_context_ratio'), 'agent profile should expose API readiness blockers');
   assert(agent.current_snapshot.api_readiness_manual_blocker_ids.includes('design_partners'), 'agent profile should expose manual readiness blockers');
+  assertEq(agent.readiness_runtime_signals.static_artifact, true);
+  assertEq(agent.readiness_runtime_signals.missing_runtime_status, 'not_provided');
+  assert(agent.readiness_runtime_signals.runtime_input_ids.includes('production_integrity'), 'agent profile should expose runtime production input id');
+  assertEq(agent.readiness_runtime_signals.preferred_adoption_scope, 'interactive_ai');
   assert(agent.current_snapshot.unique_sources >= 1, 'agent profile should expose source count');
   assertEq(agent.endpoints.claims.url, 'https://anchorfact.org/claims.json');
   assertEq(agent.schemas.root_index, 'anchorfact.root-index.v1');
@@ -535,7 +547,9 @@ test('openapi.json describes the static AI contract', () => {
   assert(openapi.components.schemas.ApiIndex.properties.endpoints.items.properties.bare_path_returns_recoverable_400, 'OpenAPI should define bare-path 400 recovery marker');
   assert(openapi.components.schemas.ApiIndex.properties.error_recovery_guidance, 'OpenAPI should define API error recovery guidance');
   assert(openapi.components.schemas.ApiIndex.properties.readiness_guidance, 'OpenAPI should define API readiness guidance');
+  assert(openapi.components.schemas.ApiIndex.properties.readiness_guidance.properties.runtime_signal_contract, 'OpenAPI should define API runtime signal guidance');
   assert(openapi.components.schemas.ApiAccess.properties.primary_api_conversion, 'OpenAPI should define API access conversion guidance');
+  assert(openapi.components.schemas.ApiAccess.properties.readiness_policy.properties.runtime_signal_contract, 'OpenAPI should define API access runtime signal guidance');
   assert(openapi.components.schemas.ApiAccess.properties.primary_api_conversion.properties.next_request_after_policy, 'OpenAPI should define the API access next request');
   assert(openapi.components.schemas.ArtifactSummary, 'OpenAPI should define artifact summary schema');
   assert(openapi.components.schemas.ArtifactSummary.properties.artifact_growth_policy, 'OpenAPI should define artifact growth policy');
@@ -545,6 +559,8 @@ test('openapi.json describes the static AI contract', () => {
   assert(openapi.components.schemas.ApiReadiness.properties.readiness_gates, 'OpenAPI should define API readiness gates');
   assert(openapi.components.schemas.ApiReadiness.properties.readiness_blockers, 'OpenAPI should define API readiness blockers');
   assert(openapi.components.schemas.ApiReadiness.properties.runtime_signal_contract, 'OpenAPI should define API readiness runtime signal contract');
+  assert(openapi.components.schemas.RootIndex.properties.api_readiness_summary.properties.runtime_signal_contract, 'OpenAPI should define root readiness runtime signal summary');
+  assert(openapi.components.schemas.AgentProfile.properties.readiness_runtime_signals, 'OpenAPI should define agent readiness runtime signals');
   assert(openapi.components.schemas.McpProfile, 'OpenAPI should define MCP schema');
   assert(openapi.components.schemas.SearchIndex, 'OpenAPI should define SearchIndex schema');
   assert(openapi.components.schemas.EvidenceApiResponse, 'OpenAPI should define EvidenceApiResponse schema');

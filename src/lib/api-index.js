@@ -2,6 +2,7 @@ import {
   API_CALL_GUIDANCE,
   buildErrorRecoveryDiscoveryGuidance
 } from './api-machine-guidance.js';
+import { buildReadinessRuntimeSignalSummary } from './readiness-runtime-signals.js';
 
 export const API_INDEX_SCHEMA_VERSION = 'anchorfact.api-index.v1';
 
@@ -111,7 +112,8 @@ export function buildApiIndex({
         'ai_primary_discovery_ratio_7_day',
         'design_partners'
       ],
-      start_paid_beta_only_after: 'All automated readiness windows pass and external design partner plus paid-intent signals are real.'
+      start_paid_beta_only_after: 'All automated readiness windows pass and external design partner plus paid-intent signals are real.',
+      runtime_signal_contract: buildReadinessRuntimeSignalSummary({ site })
     },
     recommended_sequence: [
       'Call /api/context?q={query} first for normal answer assembly, answer_policy, citation-ready claims, content health, fallback guidance, and evidence packs.',

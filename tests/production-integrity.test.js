@@ -934,6 +934,17 @@ test('production smoke validates readiness discovery fields across machine entry
   const apiReadiness = {
     status: 'foundation_ready_pending_14_day_and_partner_signals',
     subscription_ready: false,
+    runtime_signal_contract: {
+      static_artifact: true,
+      status_when_missing: 'not_provided',
+      workflow: '.github/workflows/readiness-scorecard.yml',
+      scorecard_command: 'npm run api:readiness -- --adoption-json reports/ai-adoption-scorecard.json',
+      runtime_inputs: [
+        { id: 'production_integrity' },
+        { id: 'ai_adoption', preferred_measurement_scope: 'interactive_ai' },
+        { id: 'design_partners' }
+      ]
+    },
     readiness_blockers: {
       gate_ids: ['production_integrity_14_day', 'design_partners']
     }
@@ -944,7 +955,15 @@ test('production smoke validates readiness discovery fields across machine entry
         path: '/api-readiness.json',
         status: apiReadiness.status,
         subscription_ready: false,
-        blocker_ids: ['production_integrity_14_day', 'design_partners']
+        blocker_ids: ['production_integrity_14_day', 'design_partners'],
+        runtime_signal_contract: {
+          static_artifact: true,
+          missing_runtime_status: 'not_provided',
+          workflow: '.github/workflows/readiness-scorecard.yml',
+          scorecard_command: 'npm run api:readiness -- --adoption-json reports/ai-adoption-scorecard.json',
+          runtime_input_ids: ['production_integrity', 'ai_adoption', 'design_partners'],
+          preferred_adoption_scope: 'interactive_ai'
+        }
       }
     },
     apiReadiness,
@@ -952,22 +971,38 @@ test('production smoke validates readiness discovery fields across machine entry
       readiness_policy: {
         status_endpoint: '/api-readiness.json',
         current_mode: 'free_no_key_read_only',
-        paid_beta_requires: ['production_integrity_14_day', 'design_partners']
+        paid_beta_requires: ['production_integrity_14_day', 'design_partners'],
+        runtime_signal_contract: {
+          static_artifact: true,
+          missing_runtime_status: 'not_provided',
+          workflow: '.github/workflows/readiness-scorecard.yml',
+          scorecard_command: 'npm run api:readiness -- --adoption-json reports/ai-adoption-scorecard.json',
+          runtime_input_ids: ['production_integrity', 'ai_adoption', 'design_partners'],
+          preferred_adoption_scope: 'interactive_ai'
+        }
       }
     },
     apiIndex: {
       readiness_guidance: {
         status_endpoint: '/api-readiness.json',
         default_access_until_ready: 'free_no_key_read_only',
-        subscription_ready_requires: ['production_integrity_14_day', 'design_partners']
+        subscription_ready_requires: ['production_integrity_14_day', 'design_partners'],
+        runtime_signal_contract: {
+          static_artifact: true,
+          missing_runtime_status: 'not_provided',
+          workflow: '.github/workflows/readiness-scorecard.yml',
+          scorecard_command: 'npm run api:readiness -- --adoption-json reports/ai-adoption-scorecard.json',
+          runtime_input_ids: ['production_integrity', 'ai_adoption', 'design_partners'],
+          preferred_adoption_scope: 'interactive_ai'
+        }
       }
     },
     openapi: {
       components: {
         schemas: {
-          RootIndex: { properties: { api_readiness_summary: {} } },
-          ApiIndex: { properties: { readiness_guidance: {} } },
-          ApiAccess: { properties: { readiness_policy: {} } }
+          RootIndex: { properties: { api_readiness_summary: { properties: { runtime_signal_contract: {} } } } },
+          ApiIndex: { properties: { readiness_guidance: { properties: { runtime_signal_contract: {} } } } },
+          ApiAccess: { properties: { readiness_policy: { properties: { runtime_signal_contract: {} } } } }
         }
       }
     }
@@ -984,6 +1019,7 @@ test('production smoke validates readiness discovery fields across machine entry
   assert(missing.some(failure => failure.includes('root index readiness summary')), 'missing root readiness summary should fail smoke');
   assert(missing.some(failure => failure.includes('/api-access/ readiness policy')), 'missing API access readiness policy should fail smoke');
   assert(missing.some(failure => failure.includes('/api readiness guidance')), 'missing API readiness guidance should fail smoke');
+  assert(missing.some(failure => failure.includes('runtime signal')), 'missing runtime signal summaries should fail smoke');
 });
 
 test('production smoke treats missing canonical slug arrays as a failed assertion value', () => {

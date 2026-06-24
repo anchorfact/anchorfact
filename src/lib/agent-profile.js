@@ -34,6 +34,7 @@ import {
   TOPICS_SCHEMA_VERSION,
   publicUrl
 } from './build-metadata.js';
+import { buildReadinessRuntimeSignalSummary } from './readiness-runtime-signals.js';
 
 function endpoint(path, description, mediaType = 'application/json') {
   return {
@@ -101,6 +102,9 @@ export function buildAgentProfile({
       verification_report: verificationTimestamp || null,
       build_commit_sha: manifest.build?.commit_sha || null
     },
+    readiness_runtime_signals: buildReadinessRuntimeSignalSummary({
+      contract: apiReadinessPayload?.runtime_signal_contract
+    }),
     schemas: {
       root_index: ROOT_INDEX_SCHEMA_VERSION,
       api_access: API_ACCESS_SCHEMA_VERSION,

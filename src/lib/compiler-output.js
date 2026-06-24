@@ -658,7 +658,8 @@ export function writeStaticOutputs(distDir, results, options = {}) {
     site: build.canonical_site,
     publicResults,
     draftResults,
-    claims
+    claims,
+    apiReadinessPayload
   }));
   writeDraftsIndex(distDir, draftResults, {
     generated,

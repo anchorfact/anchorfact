@@ -63,6 +63,12 @@ test('buildApiIndex publishes the machine API discovery contract', () => {
   assert(payload.readiness_guidance.subscription_ready_requires.includes('production_integrity_14_day'), 'readiness guidance should name production window gate');
   assert(payload.readiness_guidance.subscription_ready_requires.includes('design_partners'), 'readiness guidance should name manual design partner gate');
   assertEq(payload.readiness_guidance.report_only_until_gates_met, true);
+  assertEq(payload.readiness_guidance.runtime_signal_contract.static_artifact, true);
+  assertEq(payload.readiness_guidance.runtime_signal_contract.missing_runtime_status, 'not_provided');
+  assert(payload.readiness_guidance.runtime_signal_contract.workflow.includes('readiness-scorecard.yml'), 'readiness guidance should expose runtime scorecard workflow');
+  assert(payload.readiness_guidance.runtime_signal_contract.scorecard_command.includes('--adoption-json'), 'readiness guidance should expose adoption JSON scorecard command');
+  assert(payload.readiness_guidance.runtime_signal_contract.runtime_input_ids.includes('ai_adoption'), 'readiness guidance should expose AI adoption runtime input');
+  assertEq(payload.readiness_guidance.runtime_signal_contract.preferred_adoption_scope, 'interactive_ai');
   assert(payload.recommended_sequence[0].includes('/api/context'), 'sequence should start with default context guidance');
   assert(payload.recommended_sequence[1].includes('/api/evidence'), 'sequence should put evidence second');
   assert(payload.recommended_sequence[2].includes('/api/plan') && payload.recommended_sequence[2].includes('only when coverage is uncertain'), 'sequence should reserve planning for uncertainty');
@@ -122,6 +128,7 @@ test('Pages Function returns CORS JSON for /api discovery', async () => {
   assertEq(response.headers.get('Cache-Control'), 'public, max-age=300');
   assertEq(payload.schema_version, 'anchorfact.api-index.v1');
   assertEq(payload.readiness_guidance.status_endpoint, '/api-readiness.json');
+  assert(payload.readiness_guidance.runtime_signal_contract.runtime_input_ids.includes('ai_adoption'), 'function payload should expose readiness runtime inputs');
   assertEq(payload.error_recovery_guidance.recoverable_400_field, 'machine_recovery');
   assert(payload.endpoints.some(endpoint => endpoint.path === '/api/evidence'), 'payload should include evidence API');
 });
