@@ -165,6 +165,12 @@ test('parseArticleParams validates slug-like inputs', () => {
   assertEq(missing.ok, false);
   assertEq(missing.status, 400);
   assertEq(missing.payload.error.code, 'missing_or_invalid_slug');
+  assertEq(missing.payload.machine_recovery.recoverable, true);
+  assertEq(missing.payload.machine_recovery.current_endpoint, 'article');
+  assert(
+    missing.payload.machine_recovery.retry_examples.some(example => example.path === '/api/article?slug={canonical_slug}'),
+    'missing article slug response should include a templated article retry example'
+  );
 });
 
 test('buildArticleApiPayload returns public article claims and sources', () => {
@@ -223,6 +229,12 @@ test('Pages Function rejects missing slugs, missing public articles, and asset f
     env: assetEnv()
   });
   assertEq(missingSlug.status, 400);
+  const missingSlugPayload = await missingSlug.json();
+  assertEq(missingSlugPayload.machine_recovery.current_endpoint, 'article');
+  assert(
+    missingSlugPayload.machine_recovery.next_request.path.includes('/api/context?q='),
+    'empty article request should route machines to default context recovery'
+  );
 
   const missingArticle = await onRequestGet({
     request: new Request('https://anchorfact.org/api/article?slug=ai/nope'),

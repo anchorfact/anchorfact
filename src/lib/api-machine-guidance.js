@@ -120,6 +120,18 @@ export function buildMachineRecoveryGuidance({
     };
   }
 
+  if (currentEndpoint === 'article') {
+    return {
+      ...common,
+      valid_parameters: ['slug', 'canonical_slug', 'url'],
+      retry_examples: [
+        templatedApiCall('article_by_slug', '/api/article?slug={canonical_slug}', 'Fetch one public article evidence bundle after discovering its canonical slug.', site),
+        templatedApiCall('resolve_article', '/api/resolve?ref={canonical_slug}', 'Resolve an article slug or AnchorFact article URL before fetching the article bundle.', site),
+        apiCall('context_discovery', contextPath, 'Discover matching public article slugs from a natural-language query.', site)
+      ]
+    };
+  }
+
   if (currentEndpoint === 'source') {
     return {
       ...common,
@@ -183,6 +195,7 @@ export function buildErrorRecoveryDiscoveryGuidance({ site = OFFICIAL_SITE } = {
       '/api/context',
       '/api/evidence',
       '/api/plan',
+      '/api/article',
       '/api/source',
       '/api/resolve-batch',
       '/api/cite'
@@ -191,6 +204,7 @@ export function buildErrorRecoveryDiscoveryGuidance({ site = OFFICIAL_SITE } = {
       '/api/context?q={query}&limit=3',
       '/api/evidence?q={query}&limit=3',
       '/api/plan?q={query}&limit=3',
+      '/api/article?slug={canonical_slug}',
       '/api/source?id={source_id}',
       '/api/resolve-batch?ref={claim_id}&ref={source_id}',
       '/api/cite?id={claim_id}'

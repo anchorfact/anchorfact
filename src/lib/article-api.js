@@ -1,4 +1,5 @@
 import { CITATION_CONTRACT, buildClaimCitationExports } from './citation-export.js';
+import { buildMachineRecoveryGuidance } from './api-machine-guidance.js';
 
 export const ARTICLE_API_SCHEMA_VERSION = 'anchorfact.article-api.v1';
 
@@ -11,6 +12,16 @@ function errorPayload(code, message, extra = {}) {
     },
     ...extra
   };
+}
+
+function recoverableErrorPayload(code, message, extra = {}) {
+  return errorPayload(code, message, {
+    machine_recovery: buildMachineRecoveryGuidance({
+      currentEndpoint: 'article',
+      reason: code
+    }),
+    ...extra
+  });
 }
 
 export function normalizeArticleSlug(value) {
@@ -62,7 +73,7 @@ export function parseArticleParams(url) {
     return {
       ok: false,
       status: 400,
-      payload: errorPayload(
+      payload: recoverableErrorPayload(
         'missing_or_invalid_slug',
         'Provide a public canonical article slug with ?slug=category/article-slug.'
       )
@@ -122,7 +133,7 @@ export function buildArticleApiPayload({
     return {
       ok: false,
       status: 400,
-      payload: errorPayload(
+      payload: recoverableErrorPayload(
         'missing_or_invalid_slug',
         'Provide a public canonical article slug with ?slug=category/article-slug.'
       )
