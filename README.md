@@ -140,7 +140,7 @@ npm run production:integrity
 
 `npm run usage:cloudflare` reads Cloudflare GraphQL analytics and emits a short report that separates product API usage, signed machine artifact reads, AI crawler discovery, synthetic monitor traffic, and security probe noise. It is read-only and requires a local `CLOUDFLARE_API_TOKEN` with `Zone:Read` and `Analytics:Read`; do not commit tokens or generated reports unless a report is intentionally being published for review.
 
-The scheduled `AI Adoption Scorecard` workflow runs daily and can also be started manually from GitHub Actions. It uploads a 1430-minute adoption artifact focused on discovery-to-primary-API adoption, identified AI agents, bot route 5xx/522 failures, top API/machine paths, and scanner noise. Low adoption volume is a product signal, not a CI failure; the workflow fails only on a short-window reliability alert, such as current bot discovery paths returning 5xx/522 or all observed primary API status samples failing.
+The scheduled `AI Adoption Scorecard` workflow runs daily and can also be started manually from GitHub Actions. It uploads a 1430-minute adoption artifact focused on discovery-to-primary-API adoption, identified AI agents, bot route 5xx/522 failures, top API/machine paths, recoverable primary-API 400s, and scanner noise. Low adoption volume and parameter-only API 400s are product signals, not CI failures; the workflow fails only on a short-window reliability alert, such as current bot discovery paths returning 5xx/522 or all observed primary API status samples failing with server errors or unrecoverable client errors.
 
 For the same local read-only scorecard, run:
 

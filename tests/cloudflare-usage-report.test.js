@@ -271,6 +271,41 @@ test('buildCloudflareUsageSummary marks bot route 5xx and primary API all-failed
   assert(summary.adoption_health.bot_route_5xx_or_522_paths.some(item => item.path === '/robots.txt' && item.status === '522'), 'should list failing bot route path');
 });
 
+test('buildCloudflareUsageSummary treats parameter-only primary API 400s as recoverable adoption traffic', () => {
+  const summary = buildCloudflareUsageSummary({
+    zone: {
+      totals: [{ count: 60, sum: { edgeResponseBytes: 4096 } }],
+      topPaths: [
+        pathRow('/api/evidence', 10),
+        pathRow('/api/source', 10),
+        pathRow('/api/resolve-batch', 10),
+        pathRow('/robots.txt', 10)
+      ],
+      topUAs: [
+        uaRow('Google-CloudVertexBot/1.0', 20)
+      ],
+      pathUa: [
+        pathUaRow('/api/evidence', 'Google-CloudVertexBot/1.0', 10, 400),
+        pathUaRow('/api/source', 'Google-CloudVertexBot/1.0', 5, 400),
+        pathUaRow('/api/resolve-batch', 'Google-CloudVertexBot/1.0', 5, 400)
+      ],
+      pathStatus: [
+        pathStatusRow('/api/evidence', 400, 10),
+        pathStatusRow('/api/source', 400, 5),
+        pathStatusRow('/api/resolve-batch', 400, 5)
+      ]
+    },
+    window: { since: '2026-06-23T22:00:00.000Z', until: '2026-06-24T00:00:00.000Z' }
+  }, { generatedAt: '2026-06-24T00:00:00.000Z' });
+
+  assertEq(summary.adoption_health.status, 'pass');
+  assertEq(summary.adoption_health.primary_api_all_failed, false);
+  assertEq(summary.adoption_health.primary_api_recoverable_4xx_requests, 20);
+  assertEq(summary.adoption_health.primary_api_unrecoverable_4xx_requests, 0);
+  assertEq(summary.adoption_health.failure_reasons, []);
+  assert(summary.adoption_health.decision_signal.includes('recoverable 4xx'), 'decision signal should preserve the adoption interpretation');
+});
+
 test('buildCloudflareUsageSummary reports below-target AI adoption without failing health', () => {
   const summary = buildCloudflareUsageSummary({
     zone: {

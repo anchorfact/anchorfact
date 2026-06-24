@@ -207,6 +207,10 @@ function isClientErrorStatus(status) {
   return value >= 400 && value < 500;
 }
 
+function isRecoverablePrimaryApiClientErrorStatus(status) {
+  return Number(status) === 400;
+}
+
 function isServerErrorStatus(status) {
   const value = Number(status);
   return value >= 500 || value === 522;
@@ -432,8 +436,17 @@ export function buildCloudflareUsageSummary(data, options = {}) {
   const primaryApiStatusRequests = sumRows(primaryApiStatusRows, () => true);
   const primaryApiSuccessRequests = sumRows(primaryApiStatusRows, row => isSuccessStatus(row.dimensions?.edgeResponseStatus));
   const primaryApiClientErrorRequests = sumRows(primaryApiStatusRows, row => isClientErrorStatus(row.dimensions?.edgeResponseStatus));
+  const primaryApiRecoverableClientErrorRequests = sumRows(primaryApiStatusRows, row => isRecoverablePrimaryApiClientErrorStatus(row.dimensions?.edgeResponseStatus));
+  const primaryApiUnrecoverableClientErrorRequests = Math.max(0, primaryApiClientErrorRequests - primaryApiRecoverableClientErrorRequests);
   const primaryApiServerErrorRequests = sumRows(primaryApiStatusRows, row => isServerErrorStatus(row.dimensions?.edgeResponseStatus));
-  const primaryApiAllFailed = primaryApiStatusRequests > 0 && primaryApiSuccessRequests === 0;
+  const primaryApiOnlyRecoverableClientErrors = (
+    primaryApiStatusRequests > 0
+    && primaryApiSuccessRequests === 0
+    && primaryApiRecoverableClientErrorRequests > 0
+    && primaryApiUnrecoverableClientErrorRequests === 0
+    && primaryApiServerErrorRequests === 0
+  );
+  const primaryApiAllFailed = primaryApiStatusRequests > 0 && primaryApiSuccessRequests === 0 && !primaryApiOnlyRecoverableClientErrors;
   const botRouteErrorRows = targetedPathUa.filter(row => (
     isBotLikeUserAgent(row.dimensions?.userAgent)
     && (isDiscoveryEntrypoint(row.dimensions?.clientRequestPath) || isPrimaryApiPath(row.dimensions?.clientRequestPath))
@@ -459,12 +472,17 @@ export function buildCloudflareUsageSummary(data, options = {}) {
     primary_api_status_requests: primaryApiStatusRequests,
     primary_api_success_requests: primaryApiSuccessRequests,
     primary_api_4xx_requests: primaryApiClientErrorRequests,
+    primary_api_recoverable_4xx_requests: primaryApiRecoverableClientErrorRequests,
+    primary_api_unrecoverable_4xx_requests: primaryApiUnrecoverableClientErrorRequests,
     primary_api_5xx_or_522_requests: primaryApiServerErrorRequests,
     primary_api_all_failed: primaryApiAllFailed,
+    primary_api_only_recoverable_4xx: primaryApiOnlyRecoverableClientErrors,
     top_primary_api_statuses: topObservedPathStatuses(primaryApiStatusRows, () => true, 10),
     scanner_or_probe_share: ratio(scannerRequests, totalRequests),
     decision_signal: adoptionHealthOk
-      ? 'Measure AI discovery-to-primary adoption before changing product surface.'
+      ? primaryApiOnlyRecoverableClientErrors
+        ? 'Primary API is reachable; treat parameter-only recoverable 4xx as adoption traffic and improve machine recovery conversion.'
+        : 'Measure AI discovery-to-primary adoption before changing product surface.'
       : 'Fix production route reliability before interpreting adoption volume.'
   }, data.window || {});
 
@@ -763,7 +781,10 @@ export function renderCloudflareAdoptionScorecard(report) {
   lines.push(`- Primary API observed status requests: ${currentHealth.primary_api_status_requests}`);
   lines.push(`- Primary API success requests: ${currentHealth.primary_api_success_requests}`);
   lines.push(`- Primary API 4xx requests: ${currentHealth.primary_api_4xx_requests}`);
+  lines.push(`- Primary API recoverable 4xx requests: ${currentHealth.primary_api_recoverable_4xx_requests ?? 0}`);
+  lines.push(`- Primary API unrecoverable 4xx requests: ${currentHealth.primary_api_unrecoverable_4xx_requests ?? 0}`);
   lines.push(`- Primary API 5xx/522 requests: ${currentHealth.primary_api_5xx_or_522_requests}`);
+  lines.push(`- Primary API only recoverable 4xx: ${currentHealth.primary_api_only_recoverable_4xx ? 'yes' : 'no'}`);
   if (currentHealth.bot_route_5xx_or_522_paths.length > 0) {
     lines.push('');
     lines.push('Bot route 5xx/522 paths:');
