@@ -482,10 +482,10 @@ export function writeStaticOutputs(distDir, results, options = {}) {
   );
   writeFileSync(
     join(distDir, 'openapi.json'),
-    JSON.stringify(buildOpenApiContract({
+    stringifyJson(buildOpenApiContract({
       generated,
       site: build.canonical_site
-    }), null, 2)
+    }), { pretty: false })
   );
   const searchIndexPayload = buildSearchIndex({
     generated,

@@ -1,8 +1,9 @@
 #!/usr/bin/env node
 import { execFileSync } from 'child_process';
 import { generateKeyPairSync } from 'crypto';
-import { existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'fs';
+import { existsSync, mkdirSync, readFileSync, rmSync, statSync, writeFileSync } from 'fs';
 import { join, resolve } from 'path';
+import { DEFAULT_ARTIFACT_SIZE_BUDGETS } from '../scripts/check-api-performance.js';
 
 let passed = 0, failed = 0;
 
@@ -466,8 +467,12 @@ test('agent profile describes the machine contract', () => {
 });
 
 test('openapi.json describes the static AI contract', () => {
-  assert(existsSync(join(distDir, 'openapi.json')), 'openapi.json missing');
-  const openapi = JSON.parse(readFileSync(join(distDir, 'openapi.json'), 'utf-8'));
+  const openapiPath = join(distDir, 'openapi.json');
+  assert(existsSync(openapiPath), 'openapi.json missing');
+  const openapiBudget = DEFAULT_ARTIFACT_SIZE_BUDGETS.find(item => item.path === 'openapi.json');
+  assert(openapiBudget, 'OpenAPI artifact budget missing');
+  assert(statSync(openapiPath).size <= openapiBudget.max_bytes, 'OpenAPI contract should stay within the machine artifact size budget');
+  const openapi = JSON.parse(readFileSync(openapiPath, 'utf-8'));
   assertEq(openapi.openapi, '3.1.0');
   assertEq(openapi.info.title, 'AnchorFact Machine API');
   assertEq(openapi['x-anchorfact-schema-version'], 'anchorfact.openapi.v1');
