@@ -186,11 +186,11 @@ test('current production counts do not mark docs stale', () => {
   mkdirSync(join(root, 'docs'), { recursive: true });
   writeFileSync(
     join(root, 'README.md'),
-    'EXPECTED_PUBLIC_ARTICLES=1343 EXPECTED_DRAFT_ARTICLES=285 EXPECTED_CLAIMS=4277'
+    'EXPECTED_PUBLIC_ARTICLES=1344 EXPECTED_DRAFT_ARTICLES=284 EXPECTED_CLAIMS=4282'
   );
   writeFileSync(
     join(root, 'docs', 'LAUNCH_READINESS.md'),
-    'Current trusted counts: 1343 public / 285 draft / 4277 claims and 3265 public sources.'
+    'Current trusted counts: 1344 public / 284 draft / 4282 claims and 3269 public sources.'
   );
 
   try {
@@ -218,7 +218,7 @@ test('previous public source count marks docs stale', () => {
   mkdirSync(join(root, 'docs'), { recursive: true });
   writeFileSync(
     join(root, 'docs', 'SITE_MODULE_QUALITY_AUDIT.md'),
-    'Current trusted counts: 1343 public / 285 draft / 4277 claims and 3221 public sources.'
+    'Current trusted counts: 1344 public / 284 draft / 4282 claims and 3221 public sources.'
   );
 
   try {

@@ -100,9 +100,9 @@ console.log('AnchorFact Production Integrity Tests\n');
 
 test('default expected counts match the current trusted compiled corpus', () => {
   assertEq(DEFAULT_EXPECTED_COUNTS, {
-    public: 1343,
-    draft: 285,
-    claims: 4277
+    public: 1344,
+    draft: 284,
+    claims: 4282
   });
 });
 
