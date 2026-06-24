@@ -617,6 +617,9 @@ export async function main() {
   assertOk(Array.isArray(apiAccessPolicy.recommended_call_order) && apiAccessPolicy.recommended_call_order[0]?.path === '/api/context?q={query}', '/api-access/ should put context first', failures);
   assertOk(apiAccessPolicy.recommended_call_order?.some(call => call.path === '/api/evidence?q={query}'), '/api-access/ should list evidence API', failures);
   assertOk(apiAccessPolicy.recommended_call_order?.some(call => call.path === '/api/cite?id={claim_id}'), '/api-access/ should list citation API', failures);
+  assertOk(apiAccessPolicy.primary_api_conversion?.target_ratio === 0.2, '/api-access/ should expose the primary API conversion target', failures);
+  assertOk(apiAccessPolicy.primary_api_conversion?.next_request_after_policy?.path === '/api/context?q={query}&limit=3&format=markdown', '/api-access/ should expose the next primary API request after reading policy', failures);
+  assertOk(apiAccessPolicy.primary_api_conversion?.minimum_valid_primary_calls?.some(call => call.path === '/api/evidence?q={query}&limit=3&format=markdown'), '/api-access/ should expose minimum valid primary API calls', failures);
   assertOk(apiAccessPolicy.trust_check?.path === '/provenance.json', '/api-access/ should include provenance verification', failures);
   failures.push(...readinessDiscoveryFailures({
     rootIndex,

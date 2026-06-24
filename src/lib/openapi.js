@@ -719,6 +719,18 @@ export function buildOpenApiContract({
           },
           counts: { type: 'object' },
           recommended_call_order: { type: 'array', items: { type: 'object' } },
+          primary_api_conversion: {
+            type: 'object',
+            properties: {
+              target_ratio: { type: 'number' },
+              measured_as: { type: 'string' },
+              developer_docs_signal: { type: 'string' },
+              next_request_after_policy: { type: 'object' },
+              minimum_valid_primary_calls: { type: 'array', items: { type: 'object' } },
+              parameter_error_prevention: { type: 'object' }
+            },
+            additionalProperties: true
+          },
           answer_policy_path: { const: '/api/context?q={query}' },
           unsupported_answer_mode: { enum: ['external_sources_required'] },
           trust_check: { type: 'object' },

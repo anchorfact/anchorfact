@@ -4,6 +4,15 @@ import {
   PROVENANCE_PATH,
   publicUrl
 } from './build-metadata.js';
+import { API_CALL_GUIDANCE } from './artifact-summary.js';
+
+function publicApiCall(call, site) {
+  return {
+    ...call,
+    method: 'GET',
+    url: publicUrl(call.path, site)
+  };
+}
 
 export function buildApiAccessPolicy({
   generated = new Date().toISOString(),
@@ -12,6 +21,9 @@ export function buildApiAccessPolicy({
   draftResults = [],
   claims = []
 } = {}) {
+  const minimumValidPrimaryCalls = API_CALL_GUIDANCE.minimum_valid_primary_calls.map(call => publicApiCall(call, site));
+  const byId = new Map(minimumValidPrimaryCalls.map(call => [call.id, call]));
+
   return {
     schema_version: API_ACCESS_SCHEMA_VERSION,
     generated,
@@ -76,6 +88,16 @@ export function buildApiAccessPolicy({
         use_when: 'Coverage and fallback preflight only when AnchorFact coverage is uncertain.'
       }
     ],
+    primary_api_conversion: {
+      target_ratio: 0.2,
+      measured_as: 'identified AI primary API requests divided by identified AI discovery requests',
+      developer_docs_signal: 'Use this policy page as a bridge to the next query-scoped primary API request, not as the terminal artifact.',
+      next_request_after_policy: byId.get('context'),
+      minimum_valid_primary_calls: minimumValidPrimaryCalls,
+      parameter_error_prevention: {
+        ...API_CALL_GUIDANCE.parameter_error_prevention
+      }
+    },
     answer_policy_path: '/api/context?q={query}',
     unsupported_answer_mode: 'external_sources_required',
     trust_check: {

@@ -276,6 +276,11 @@ test('public entrypoints exclude draft articles', () => {
     '/api/cite?id={claim_id}',
     '/api/plan?q={query}'
   ]);
+  assertEq(apiAccess.primary_api_conversion.target_ratio, 0.2);
+  assertEq(apiAccess.primary_api_conversion.next_request_after_policy.path, '/api/context?q={query}&limit=3&format=markdown');
+  assertEq(apiAccess.primary_api_conversion.next_request_after_policy.url, 'https://anchorfact.org/api/context?q={query}&limit=3&format=markdown');
+  assert(apiAccess.primary_api_conversion.minimum_valid_primary_calls.some(call => call.path === '/api/evidence?q={query}&limit=3&format=markdown'), 'api access policy should expose minimum valid evidence calls');
+  assert(apiAccess.primary_api_conversion.parameter_error_prevention.copy_minimum_valid_primary_calls_first, 'api access policy should tell agents to copy minimum valid calls');
   assertEq(apiAccess.trust_check.path, '/provenance.json');
   assertEq(apiAccess.trust_check.signature_path, '/provenance.sig');
   assertEq(apiAccess.answer_policy_path, '/api/context?q={query}');
@@ -514,6 +519,8 @@ test('openapi.json describes the static AI contract', () => {
   assert(openapi.components.schemas.ApiIndex.properties.endpoints.items.properties.bare_path_returns_recoverable_400, 'OpenAPI should define bare-path 400 recovery marker');
   assert(openapi.components.schemas.ApiIndex.properties.error_recovery_guidance, 'OpenAPI should define API error recovery guidance');
   assert(openapi.components.schemas.ApiIndex.properties.readiness_guidance, 'OpenAPI should define API readiness guidance');
+  assert(openapi.components.schemas.ApiAccess.properties.primary_api_conversion, 'OpenAPI should define API access conversion guidance');
+  assert(openapi.components.schemas.ApiAccess.properties.primary_api_conversion.properties.next_request_after_policy, 'OpenAPI should define the API access next request');
   assert(openapi.components.schemas.ArtifactSummary, 'OpenAPI should define artifact summary schema');
   assert(openapi.components.schemas.ArtifactSummary.properties.artifact_growth_policy, 'OpenAPI should define artifact growth policy');
   assert(openapi.components.schemas.ArtifactSummary.properties.api_call_guidance, 'OpenAPI should define artifact summary API call guidance');
