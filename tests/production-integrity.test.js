@@ -9,7 +9,7 @@ import {
   renderIntegrityMarkdown,
   runProductionIntegrity
 } from '../scripts/production-integrity.js';
-import { BASE_SMOKE_ROUTES, REQUIRED_SECURITY_HEADERS, evalCallRoutes, exampleWorkflowRoutes, fetchRoute, fetchRoutes, hasCanonicalSlug, machineNotFoundContractFailures, pagesRoutingGuardFailures, readJsonRoute, readinessDiscoveryFailures, repairQueueBatchFailures } from '../src/smoke-production.js';
+import { BASE_SMOKE_ROUTES, REQUIRED_SECURITY_HEADERS, evalCallRoutes, exampleWorkflowRoutes, fetchRoute, fetchRoutes, hasCanonicalSlug, headerMaxAgeAtMost, machineNotFoundContractFailures, pagesRoutingGuardFailures, readJsonRoute, readinessDiscoveryFailures, repairQueueBatchFailures } from '../src/smoke-production.js';
 
 let passed = 0, failed = 0;
 const tests = [];
@@ -898,6 +898,26 @@ test('production smoke requires baseline security response headers', () => {
   assert(REQUIRED_SECURITY_HEADERS.some(header => header.name === 'X-Frame-Options' && header.expected === 'DENY'), 'should require frame protection');
   assert(REQUIRED_SECURITY_HEADERS.some(header => header.name === 'Referrer-Policy' && header.expected === 'strict-origin-when-cross-origin'), 'should require referrer policy');
   assert(REQUIRED_SECURITY_HEADERS.some(header => header.name === 'Permissions-Policy' && header.expected === 'camera=()'), 'should require permissions policy');
+});
+
+test('production smoke accepts bounded robots cache max-age values', () => {
+  const result = (cacheControl) => ({
+    route: '/robots.txt',
+    headers: { 'cache-control': cacheControl }
+  });
+
+  let failures = [];
+  headerMaxAgeAtMost(result('public, max-age=3600, stale-while-revalidate=86400'), 14400, failures);
+  headerMaxAgeAtMost(result('public, max-age=14400, stale-while-revalidate=86400'), 14400, failures);
+  assertEq(failures, []);
+
+  failures = [];
+  headerMaxAgeAtMost(result('public, max-age=86400'), 14400, failures);
+  assert(failures.some(failure => failure.includes('expected max-age <= 14400')), 'should reject long browser TTLs');
+
+  failures = [];
+  headerMaxAgeAtMost(result('public, stale-while-revalidate=86400'), 14400, failures);
+  assert(failures.some(failure => failure.includes('expected max-age <= 14400')), 'should require an explicit max-age');
 });
 
 test('production smoke module can be imported from inline module tools', () => {

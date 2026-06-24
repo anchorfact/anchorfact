@@ -228,6 +228,19 @@ function responseHeader(result, name) {
   return result?.headers?.[lowerName] || result?.headers?.[name] || '';
 }
 
+export function headerMaxAgeAtMost(result, maxSeconds, failures, name = 'Cache-Control') {
+  const actual = responseHeader(result, name);
+  const route = result?.route || '(unknown route)';
+  const match = /(?:^|,)\s*max-age=(\d+)\b/i.exec(actual);
+  if (!match) {
+    failures.push(`${route} header ${name} expected max-age <= ${maxSeconds}, got ${actual || '(missing)'}`);
+    return;
+  }
+
+  const seconds = Number.parseInt(match[1], 10);
+  assertOk(seconds <= maxSeconds, `${route} header ${name} expected max-age <= ${maxSeconds}, got ${actual}`, failures);
+}
+
 function assertExpected(actual, expected, label, failures) {
   if (expected === null) {
     return;
@@ -646,6 +659,7 @@ export async function main() {
   assertOk(robotsText.includes('AI-Minimum-Valid-Resolve-Batch: https://anchorfact.org/api/resolve-batch?ref={claim_id}&ref={source_id}&format=markdown'), '/robots.txt does not advertise minimum valid batch resolver call', failures);
   assertOk(robotsText.includes('AI-Do-Not-Call-Bare: /api/evidence,/api/source,/api/resolve-batch'), '/robots.txt does not warn against bare primary API calls', failures);
   assertOk(robotsText.includes('AI-Recoverable-400-Field: machine_recovery'), '/robots.txt does not name recoverable API 400 guidance field', failures);
+  assertOk(robotsText.includes('AI-Recovery-Guide: https://anchorfact.org/api'), '/robots.txt does not advertise API recovery guidance', failures);
   assertOk(robotsText.includes('MCP: https://anchorfact.org/mcp.json'), '/robots.txt does not advertise mcp.json', failures);
   assertOk(robotsText.includes('Provenance: https://anchorfact.org/provenance.json'), '/robots.txt does not advertise provenance.json', failures);
   assertOk(robotsText.includes('Health: https://anchorfact.org/content-health.json'), '/robots.txt does not advertise content-health.json', failures);
@@ -917,7 +931,8 @@ export async function main() {
   headerIncludes(results['/openapi.json'], 'Access-Control-Allow-Origin', '*', failures);
   headerIncludes(results['/api-access/'], 'Access-Control-Allow-Origin', '*', failures);
   headerIncludes(results['/api-access/'], 'Content-Type', 'application/json', failures);
-  headerIncludes(results['/robots.txt'], 'Cache-Control', 'max-age=3600', failures);
+  headerMaxAgeAtMost(results['/robots.txt'], 14400, failures);
+  headerIncludes(results['/robots.txt'], 'Access-Control-Allow-Methods', 'GET, OPTIONS', failures);
   headerIncludes(results['/sitemap.xml'], 'Cache-Control', 'max-age=3600', failures);
   for (const route of ['/drafts.html', '/dashboard.html']) {
     headerIncludes(results[route], 'Access-Control-Allow-Origin', '*', failures);
