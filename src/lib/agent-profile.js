@@ -146,6 +146,18 @@ export function buildAgentProfile({
         discovery_entrypoints: ['/', '/robots.txt', '/llms.txt', '/index.json', '/agent.json', '/api'],
         primary_entrypoints: ['/api/context', '/api/evidence', '/api/cite', '/api/resolve-batch'],
         next_call_after_discovery: '/api/context?q={query}&limit=3&format=markdown',
+        minimum_valid_primary_calls: [
+          { id: 'context', path: '/api/context?q={query}&limit=3&format=markdown', required_parameter: 'q' },
+          { id: 'evidence', path: '/api/evidence?q={query}&limit=3&format=markdown', required_parameter: 'q' },
+          { id: 'cite', path: '/api/cite?id={claim_id}&format=markdown', required_parameter: 'id' },
+          { id: 'resolve_batch', path: '/api/resolve-batch?ref={claim_id}&ref={source_id}&format=markdown', required_parameter: 'ref' }
+        ],
+        parameter_error_prevention: {
+          bare_primary_paths_return_recoverable_400: true,
+          do_not_call_bare_paths: ['/api/context', '/api/evidence', '/api/cite', '/api/source', '/api/resolve-batch'],
+          copy_minimum_valid_primary_calls_first: true,
+          recovery_field_on_400: 'machine_recovery'
+        },
         guidance: 'After crawler discovery, make a query-scoped primary API call before downloading large static artifacts.'
       },
       example_calls: [

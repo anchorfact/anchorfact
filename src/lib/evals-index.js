@@ -273,6 +273,8 @@ export function buildEvalsIndex({
           '/api/evidence?q={query}',
           '/api/plan?q={query}',
           'After reading this discovery file',
+          'Do not copy bare primary API paths',
+          'Copy minimum valid calls with required parameters first',
           '/index.json',
           '/artifact-summary.json',
           '/artifact-shards.json',

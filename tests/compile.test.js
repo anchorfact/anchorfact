@@ -206,6 +206,8 @@ test('public entrypoints exclude draft articles', () => {
   assert(llmsTxt.includes('After reading this discovery file, make the next request: GET https://anchorfact.org/api/context?q={query}&limit=3&format=markdown'), 'llms.txt should convert discovery readers to the primary context API');
   assert(llmsTxt.includes('AI primary/discovery conversion target'), 'llms.txt should expose the AI primary/discovery conversion target');
   assert(llmsTxt.includes('Prefer /api/context'), 'llms.txt should steer crawlers toward query-scoped APIs before large artifacts');
+  assert(llmsTxt.includes('Do not copy bare primary API paths such as /api/evidence, /api/source, or /api/resolve-batch'), 'llms.txt should prevent parameter-only primary API 400s');
+  assert(llmsTxt.includes('Copy minimum valid calls with required parameters first'), 'llms.txt should tell agents to copy valid parameterized calls');
   assert(llmsTxt.includes('GET https://anchorfact.org/api/context?q=gaussian%20splatting&limit=3&format=markdown'), 'llms.txt should give AI crawlers an executable default context example');
   assert(llmsTxt.includes('GET https://anchorfact.org/api/evidence?q=RLHF&limit=3&format=markdown'), 'llms.txt should give AI crawlers an executable evidence example');
   assert(llmsTxt.indexOf('## Recommended AI Entry Points') < llmsTxt.indexOf('## Public Knowledge Base'), 'llms.txt should show recommended AI entry points before the article index');
@@ -364,6 +366,9 @@ test('agent profile describes the machine contract', () => {
   assert(agent.quick_start.primary_api_conversion.discovery_entrypoints.includes('/'), 'agent profile should identify root slash machine alias discovery');
   assert(agent.quick_start.primary_api_conversion.primary_entrypoints.includes('/api/evidence'), 'agent profile should identify primary API entrypoints');
   assert(agent.quick_start.primary_api_conversion.next_call_after_discovery.includes('/api/context'), 'agent profile should convert discovery to context');
+  assert(agent.quick_start.primary_api_conversion.minimum_valid_primary_calls.some(call => call.path === '/api/evidence?q={query}&limit=3&format=markdown'), 'agent profile should expose copyable minimum evidence calls');
+  assert(agent.quick_start.primary_api_conversion.parameter_error_prevention.bare_primary_paths_return_recoverable_400, 'agent profile should explain bare primary API 400s');
+  assert(agent.quick_start.primary_api_conversion.parameter_error_prevention.do_not_call_bare_paths.includes('/api/resolve-batch'), 'agent profile should warn against bare batch resolver calls');
   assert(agent.quick_start.example_calls.some(example => example.path === '/api/context?q=gaussian%20splatting&limit=3&format=markdown'), 'agent profile should expose an executable default context example');
   assert(agent.quick_start.example_calls.some(example => example.path === '/api/evidence?q=RLHF&limit=3&format=markdown'), 'agent profile should expose an executable evidence example');
   assertEq(agent.quick_start.trust_check.path, '/provenance.json');
@@ -468,6 +473,8 @@ test('openapi.json describes the static AI contract', () => {
   assert(openapi.components.schemas.RootIndex.properties.default_answer_path, 'OpenAPI should define root default answer path');
   assert(openapi.components.schemas.AgentQuickStart.properties.default_answer_path, 'OpenAPI should define default answer path guidance');
   assert(openapi.components.schemas.AgentQuickStart.properties.primary_api_conversion, 'OpenAPI should define primary API conversion guidance');
+  assert(openapi.components.schemas.AgentQuickStart.properties.primary_api_conversion.properties.minimum_valid_primary_calls, 'OpenAPI should define agent minimum valid primary calls');
+  assert(openapi.components.schemas.AgentQuickStart.properties.primary_api_conversion.properties.parameter_error_prevention, 'OpenAPI should define agent parameter error prevention');
   assert(openapi.components.schemas.AgentQuickStart.properties.fallback_policy, 'OpenAPI should define fallback policy guidance');
   assert(openapi.components.schemas.Topics, 'OpenAPI should define Topics schema');
   assert(openapi.components.schemas.Capabilities, 'OpenAPI should define Capabilities schema');

@@ -138,6 +138,8 @@ function writeLlmsTxt(distDir, publicResults, claims, verificationTimestamp) {
 - After reading this discovery file, make the next request: GET https://anchorfact.org/api/context?q={query}&limit=3&format=markdown
 - AI primary/discovery conversion target: identified AI primary API requests divided by identified AI discovery requests >= 0.2
 - Prefer /api/context or /api/evidence before downloading graph.json, search-index.json, claims.json, or the full article list in llms.txt.
+- Do not copy bare primary API paths such as /api/evidence, /api/source, or /api/resolve-batch; they require q, id/url, or repeated ref parameters and return recoverable 400 guidance.
+- Copy minimum valid calls with required parameters first: /api/context?q={query}&limit=3&format=markdown, /api/evidence?q={query}&limit=3&format=markdown, /api/resolve-batch?ref={claim_id}&ref={source_id}&format=markdown.
 
 ## Direct Answer Examples
 

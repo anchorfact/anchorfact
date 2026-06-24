@@ -184,6 +184,8 @@ test('buildEvalsIndex produces executable AI integration checks', () => {
   assert(llmsDiscoveryEval.expected.contains_text.includes('/api/evidence?q={query}'), 'llms discovery eval should require evidence entrypoint');
   assert(llmsDiscoveryEval.expected.contains_text.includes('/api/plan?q={query}'), 'llms discovery eval should require plan entrypoint');
   assert(llmsDiscoveryEval.expected.contains_text.includes('After reading this discovery file'), 'llms discovery eval should require discovery-to-context conversion text');
+  assert(llmsDiscoveryEval.expected.contains_text.includes('Do not copy bare primary API paths'), 'llms discovery eval should require bare-path prevention text');
+  assert(llmsDiscoveryEval.expected.contains_text.includes('Copy minimum valid calls with required parameters first'), 'llms discovery eval should require copyable valid call text');
   assert(llmsDiscoveryEval.expected.contains_text.includes('/index.json'), 'llms discovery eval should require root machine index');
   assert(llmsDiscoveryEval.expected.contains_text.includes('/artifact-summary.json'), 'llms discovery eval should require artifact summary');
   assert(llmsDiscoveryEval.expected.contains_text.includes('/artifact-shards.json'), 'llms discovery eval should require artifact shard registry');

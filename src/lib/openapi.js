@@ -561,6 +561,28 @@ export function buildOpenApiContract({
                 discovery_entrypoints: { type: 'array', items: { type: 'string' } },
                 primary_entrypoints: { type: 'array', items: { type: 'string' } },
                 next_call_after_discovery: { type: 'string' },
+                minimum_valid_primary_calls: {
+                  type: 'array',
+                  items: {
+                    type: 'object',
+                    properties: {
+                      id: { type: 'string' },
+                      path: { type: 'string' },
+                      required_parameter: { type: 'string' }
+                    },
+                    additionalProperties: true
+                  }
+                },
+                parameter_error_prevention: {
+                  type: 'object',
+                  properties: {
+                    bare_primary_paths_return_recoverable_400: { type: 'boolean' },
+                    do_not_call_bare_paths: { type: 'array', items: { type: 'string' } },
+                    copy_minimum_valid_primary_calls_first: { type: 'boolean' },
+                    recovery_field_on_400: { type: 'string' }
+                  },
+                  additionalProperties: true
+                },
                 guidance: { type: 'string' }
               },
               additionalProperties: true
