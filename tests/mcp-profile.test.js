@@ -54,6 +54,12 @@ test('buildMcpProfile publishes local MCP install and tool metadata', () => {
   assertEq(profile.installation.local_http_wrapper.endpoints.resolve, 'http://127.0.0.1:8000/resolve?ref={reference}');
   assertEq(profile.installation.local_http_wrapper.endpoints.resolve_batch, 'http://127.0.0.1:8000/resolve-batch?ref={reference}&ref={reference}');
   assertEq(profile.installation.local_http_wrapper.endpoints.cite, 'http://127.0.0.1:8000/cite?id={claim_id}');
+  assertEq(profile.public_http_api_guidance.access_policy_path, '/api-access/');
+  assertEq(profile.public_http_api_guidance.next_request_after_discovery.url, 'https://anchorfact.org/api/context?q={query}&limit=3&format=markdown');
+  assert(profile.public_http_api_guidance.minimum_valid_primary_calls.some(call => call.url === 'https://anchorfact.org/api/evidence?q={query}&limit=3&format=markdown'), 'MCP profile should expose minimum valid evidence API calls');
+  assert(profile.public_http_api_guidance.parameter_error_prevention.do_not_call_bare_paths.includes('/api/source'), 'MCP profile should warn against bare source API calls');
+  assertEq(profile.public_http_api_guidance.parameter_error_prevention.recovery_field_on_400, 'machine_recovery');
+  assert(profile.public_http_api_guidance.local_to_public_tool_mapping.some(mapping => mapping.tool === 'anchorfact_context' && mapping.public_path === '/api/context?q={query}&limit=3&format=markdown'), 'MCP profile should map the local context tool to the public context API');
   assertEq(profile.tools.map(tool => tool.name), [
     'anchorfact_plan_query',
     'anchorfact_search',

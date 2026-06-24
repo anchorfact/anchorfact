@@ -769,6 +769,11 @@ export async function main() {
   assertOk(mcp.schema_version === 'anchorfact.mcp.v1', `mcp schema_version expected anchorfact.mcp.v1, got ${mcp.schema_version || '(missing)'}`, failures);
   assertOk(mcp.provenance_url === new URL('/provenance.json', baseUrl).href, `mcp provenance_url expected ${new URL('/provenance.json', baseUrl).href}, got ${mcp.provenance_url || '(missing)'}`, failures);
   assertOk(mcp.installation?.stdio?.config_snippet?.mcpServers?.anchorfact?.command === 'python', '/mcp.json is missing stdio MCP config snippet', failures);
+  assertOk(mcp.public_http_api_guidance?.access_policy_path === '/api-access/', '/mcp.json is missing public API access policy path', failures);
+  assertOk(mcp.public_http_api_guidance?.next_request_after_discovery?.url === new URL('/api/context?q={query}&limit=3&format=markdown', baseUrl).href, '/mcp.json is missing public API next request guidance', failures);
+  assertOk(Array.isArray(mcp.public_http_api_guidance?.minimum_valid_primary_calls) && mcp.public_http_api_guidance.minimum_valid_primary_calls.some(call => call.url === new URL('/api/evidence?q={query}&limit=3&format=markdown', baseUrl).href), '/mcp.json is missing minimum valid evidence API guidance', failures);
+  assertOk(mcp.public_http_api_guidance?.parameter_error_prevention?.do_not_call_bare_paths?.includes('/api/source'), '/mcp.json does not warn against bare source API calls', failures);
+  assertOk(mcp.public_http_api_guidance?.parameter_error_prevention?.recovery_field_on_400 === 'machine_recovery', '/mcp.json does not name machine recovery guidance field', failures);
   assertOk(Array.isArray(mcp.tools) && mcp.tools.some(tool => tool.name === 'anchorfact_plan_query'), '/mcp.json is missing anchorfact_plan_query tool metadata', failures);
   assertOk(Array.isArray(mcp.tools) && mcp.tools.some(tool => tool.name === 'anchorfact_search'), '/mcp.json is missing anchorfact_search tool metadata', failures);
   assertOk(Array.isArray(mcp.tools) && mcp.tools.some(tool => tool.name === 'anchorfact_content_health'), '/mcp.json is missing anchorfact_content_health tool metadata', failures);

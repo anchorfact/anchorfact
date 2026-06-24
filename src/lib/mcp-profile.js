@@ -5,6 +5,7 @@ import {
   PROVENANCE_PATH,
   publicUrl
 } from './build-metadata.js';
+import { API_CALL_GUIDANCE } from './artifact-summary.js';
 
 const MCP_SERVER_NAME = 'anchorfact';
 
@@ -24,6 +25,53 @@ function tool(name, description, inputSchema) {
     name,
     description,
     input_schema: inputSchema
+  };
+}
+
+function publicApiCall(call, site) {
+  return {
+    ...call,
+    method: 'GET',
+    url: publicUrl(call.path, site)
+  };
+}
+
+function buildPublicHttpApiGuidance(site) {
+  const minimumValidPrimaryCalls = API_CALL_GUIDANCE.minimum_valid_primary_calls.map(call => publicApiCall(call, site));
+  const byId = new Map(minimumValidPrimaryCalls.map(call => [call.id, call]));
+
+  return {
+    use_when: 'Use the public no-key HTTP API when a local MCP server is not installed, or immediately after reading this MCP discovery profile.',
+    no_api_key_required: true,
+    access_policy_path: '/api-access/',
+    access_policy_url: publicUrl('/api-access/', site),
+    next_request_after_discovery: byId.get('context'),
+    minimum_valid_primary_calls: minimumValidPrimaryCalls,
+    parameter_error_prevention: {
+      ...API_CALL_GUIDANCE.parameter_error_prevention
+    },
+    local_to_public_tool_mapping: [
+      {
+        tool: 'anchorfact_context',
+        public_path: '/api/context?q={query}&limit=3&format=markdown',
+        public_url: publicUrl('/api/context?q={query}&limit=3&format=markdown', site)
+      },
+      {
+        tool: 'anchorfact_plan_query',
+        public_path: '/api/plan?q={query}&limit=3',
+        public_url: publicUrl('/api/plan?q={query}&limit=3', site)
+      },
+      {
+        tool: 'anchorfact_cite_claim',
+        public_path: '/api/cite?id={claim_id}&format=markdown',
+        public_url: publicUrl('/api/cite?id={claim_id}&format=markdown', site)
+      },
+      {
+        tool: 'anchorfact_resolve_references',
+        public_path: '/api/resolve-batch?ref={claim_id}&ref={source_id}&format=markdown',
+        public_url: publicUrl('/api/resolve-batch?ref={claim_id}&ref={source_id}&format=markdown', site)
+      }
+    ]
   };
 }
 
@@ -59,6 +107,7 @@ export function buildMcpProfile({
       draft_entries_excluded: true,
       provenance_url: publicUrl(PROVENANCE_PATH, site)
     },
+    public_http_api_guidance: buildPublicHttpApiGuidance(site),
     installation: {
       requirements: [
         'npm install',

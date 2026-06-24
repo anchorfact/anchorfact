@@ -514,6 +514,7 @@ test('openapi.json describes the static AI contract', () => {
   assert(openapi.components.schemas.ArtifactSummary, 'OpenAPI should define artifact summary schema');
   assert(openapi.components.schemas.ArtifactSummary.properties.artifact_growth_policy, 'OpenAPI should define artifact growth policy');
   assert(openapi.components.schemas.ArtifactSummary.properties.api_call_guidance, 'OpenAPI should define artifact summary API call guidance');
+  assert(openapi.components.schemas.McpProfile.properties.public_http_api_guidance, 'OpenAPI should define MCP public HTTP API guidance');
   assert(openapi.components.schemas.ApiReadiness, 'OpenAPI should define API readiness schema');
   assert(openapi.components.schemas.ApiReadiness.properties.readiness_gates, 'OpenAPI should define API readiness gates');
   assert(openapi.components.schemas.ApiReadiness.properties.readiness_blockers, 'OpenAPI should define API readiness blockers');
@@ -935,6 +936,12 @@ test('mcp.json describes local MCP installation and tools', () => {
   assertEq(mcp.installation.stdio.config_snippet.mcpServers.anchorfact.command, 'python');
   assertEq(mcp.installation.stdio.config_snippet.mcpServers.anchorfact.args, ['src/mcp_server.py']);
   assertEq(mcp.installation.local_http_wrapper.endpoints.corpus_health, 'http://127.0.0.1:8000/corpus-health');
+  assertEq(mcp.public_http_api_guidance.access_policy_path, '/api-access/');
+  assertEq(mcp.public_http_api_guidance.next_request_after_discovery.path, '/api/context?q={query}&limit=3&format=markdown');
+  assert(mcp.public_http_api_guidance.minimum_valid_primary_calls.some(call => call.url === 'https://anchorfact.org/api/evidence?q={query}&limit=3&format=markdown'), 'MCP profile should expose minimum valid evidence API calls');
+  assert(mcp.public_http_api_guidance.parameter_error_prevention.do_not_call_bare_paths.includes('/api/source'), 'MCP profile should warn against bare source calls');
+  assertEq(mcp.public_http_api_guidance.parameter_error_prevention.recovery_field_on_400, 'machine_recovery');
+  assert(mcp.public_http_api_guidance.local_to_public_tool_mapping.some(mapping => mapping.tool === 'anchorfact_context' && mapping.public_path === '/api/context?q={query}&limit=3&format=markdown'), 'MCP profile should map local context tool to public API');
   assertEq(mcp.tools.map(tool => tool.name), [
     'anchorfact_plan_query',
     'anchorfact_search',

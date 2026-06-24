@@ -876,6 +876,7 @@ export function buildOpenApiContract({
         }),
         McpProfile: schemaVersioned('MCP profile', MCP_SCHEMA_VERSION, {
           name: { type: 'string' },
+          public_http_api_guidance: { type: 'object' },
           installation: { type: 'object' },
           tools: { type: 'array', items: { type: 'object' } }
         }),
