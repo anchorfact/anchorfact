@@ -740,6 +740,7 @@ export function buildOpenApiContract({
         ArtifactSummary: schemaVersioned('Artifact summary', ARTIFACT_SUMMARY_SCHEMA_VERSION, {
           total_bytes: { type: 'integer' },
           artifact_growth_policy: { type: 'object' },
+          api_call_guidance: { type: 'object' },
           recommended_default_calls: { type: 'array', items: { type: 'object' } },
           artifacts: { type: 'array', items: { type: 'object' } }
         }),

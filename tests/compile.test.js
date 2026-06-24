@@ -513,6 +513,7 @@ test('openapi.json describes the static AI contract', () => {
   assert(openapi.components.schemas.ApiIndex.properties.readiness_guidance, 'OpenAPI should define API readiness guidance');
   assert(openapi.components.schemas.ArtifactSummary, 'OpenAPI should define artifact summary schema');
   assert(openapi.components.schemas.ArtifactSummary.properties.artifact_growth_policy, 'OpenAPI should define artifact growth policy');
+  assert(openapi.components.schemas.ArtifactSummary.properties.api_call_guidance, 'OpenAPI should define artifact summary API call guidance');
   assert(openapi.components.schemas.ApiReadiness, 'OpenAPI should define API readiness schema');
   assert(openapi.components.schemas.ApiReadiness.properties.readiness_gates, 'OpenAPI should define API readiness gates');
   assert(openapi.components.schemas.ApiReadiness.properties.readiness_blockers, 'OpenAPI should define API readiness blockers');
@@ -551,6 +552,10 @@ test('artifact-summary.json describes large machine artifacts and lightweight al
   assertEq(summary.artifact_growth_policy.default_for_agents, '/api/context?q={query}');
   assertEq(summary.artifact_growth_policy.prefer_primary_apis, true);
   assertEq(summary.artifact_growth_policy.large_artifact_threshold_bytes, 1048576);
+  assert(summary.api_call_guidance.minimum_valid_primary_calls.some(call => call.path === '/api/context?q={query}&limit=3&format=markdown'), 'artifact summary should expose minimum valid context calls');
+  assert(summary.api_call_guidance.minimum_valid_primary_calls.some(call => call.path === '/api/evidence?q={query}&limit=3&format=markdown'), 'artifact summary should expose minimum valid evidence calls');
+  assert(summary.api_call_guidance.parameter_error_prevention.do_not_call_bare_paths.includes('/api/source'), 'artifact summary should warn against bare source calls');
+  assertEq(summary.api_call_guidance.parameter_error_prevention.recovery_field_on_400, 'machine_recovery');
   assert(summary.recommended_default_calls.some(call => call.path === '/api/context?q={query}'), 'artifact summary should recommend context first');
   assert(summary.recommended_default_calls.some(call => call.path === '/api/evidence?q={query}'), 'artifact summary should recommend evidence second');
   const graph = summary.artifacts.find(artifact => artifact.path === '/graph.json');
