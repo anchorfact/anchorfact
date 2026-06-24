@@ -573,6 +573,7 @@ test('openapi.json describes the static AI contract', () => {
   assert(openapi.components.schemas.ApiIndex.properties.error_recovery_guidance, 'OpenAPI should define API error recovery guidance');
   assert(openapi.components.schemas.ApiIndex.properties.readiness_guidance, 'OpenAPI should define API readiness guidance');
   assert(openapi.components.schemas.ApiIndex.properties.readiness_guidance.properties.runtime_signal_contract, 'OpenAPI should define API runtime signal guidance');
+  assert(openapi.components.schemas.ApiIndex.properties.readiness_guidance.properties.blocker_evidence_requirements, 'OpenAPI should define API blocker evidence requirements');
   assert(openapi.components.schemas.ApiAccess.properties.primary_api_conversion, 'OpenAPI should define API access conversion guidance');
   assert(openapi.components.schemas.ApiAccess.properties.readiness_policy.properties.runtime_signal_contract, 'OpenAPI should define API access runtime signal guidance');
   assert(openapi.components.schemas.ApiAccess.properties.primary_api_conversion.properties.next_request_after_policy, 'OpenAPI should define the API access next request');

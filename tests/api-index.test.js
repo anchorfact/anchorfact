@@ -21,8 +21,45 @@ function assertEq(actual, expected, ctx = '') {
 
 console.log('AnchorFact API Index Tests\n');
 
+const apiReadinessPayload = {
+  runtime_signal_contract: {
+    static_artifact: true,
+    status_when_missing: 'not_provided',
+    workflow: '.github/workflows/readiness-scorecard.yml',
+    scorecard_command: 'npm run api:readiness -- --adoption-json reports/ai-adoption-scorecard.json',
+    runtime_inputs: [
+      { id: 'production_integrity' },
+      { id: 'ai_adoption', preferred_measurement_scope: 'interactive_ai' },
+      { id: 'design_partners' }
+    ]
+  },
+  readiness_blockers: {
+    gate_ids: [
+      'production_integrity_14_day',
+      'public_audit_14_day',
+      'ai_primary_discovery_ratio_7_day',
+      'design_partners'
+    ],
+    evidence_requirements: [
+      {
+        id: 'production_integrity_14_day',
+        command: 'npm run production:integrity -- --write-json reports/production-integrity.json',
+        required_fields: ['ok', 'checks', 'commit_sha', 'source_commit_sha']
+      },
+      {
+        id: 'design_partners',
+        command: 'npm run api:readiness -- --design-partners-json reports/design-partners.json',
+        required_fields: ['external_design_partner_count', 'paid_intent_signal_count']
+      }
+    ]
+  }
+};
+
 test('buildApiIndex publishes the machine API discovery contract', () => {
-  const payload = buildApiIndex({ generated: '2026-05-29T00:00:00.000Z' });
+  const payload = buildApiIndex({
+    generated: '2026-05-29T00:00:00.000Z',
+    apiReadinessPayload
+  });
 
   assertEq(payload.schema_version, 'anchorfact.api-index.v1');
   assertEq(payload.provenance_url, 'https://anchorfact.org/provenance.json');
@@ -61,8 +98,16 @@ test('buildApiIndex publishes the machine API discovery contract', () => {
   assert(payload.error_recovery_guidance.retry_example_paths.includes('/api/resolve?ref={claim_id_or_slug_or_source_id}'), 'error recovery guidance should include a resolver retry template');
   assertEq(payload.readiness_guidance.status_endpoint, '/api-readiness.json');
   assertEq(payload.readiness_guidance.default_access_until_ready, 'free_no_key_read_only');
-  assert(payload.readiness_guidance.subscription_ready_requires.includes('production_integrity_14_day'), 'readiness guidance should name production window gate');
-  assert(payload.readiness_guidance.subscription_ready_requires.includes('design_partners'), 'readiness guidance should name manual design partner gate');
+  assertEq(payload.readiness_guidance.subscription_ready_requires, apiReadinessPayload.readiness_blockers.gate_ids);
+  assert(!payload.readiness_guidance.subscription_ready_requires.includes('core_query_context_ratio'), 'readiness guidance should not publish stale resolved blockers');
+  assert(payload.readiness_guidance.blocker_evidence_requirements.some(item =>
+    item.id === 'production_integrity_14_day'
+    && item.required_fields.includes('source_commit_sha')
+  ), 'readiness guidance should expose production blocker evidence requirements');
+  assert(payload.readiness_guidance.blocker_evidence_requirements.some(item =>
+    item.id === 'design_partners'
+    && item.required_fields.includes('paid_intent_signal_count')
+  ), 'readiness guidance should expose manual blocker evidence requirements');
   assertEq(payload.readiness_guidance.report_only_until_gates_met, true);
   assertEq(payload.readiness_guidance.runtime_signal_contract.static_artifact, true);
   assertEq(payload.readiness_guidance.runtime_signal_contract.missing_runtime_status, 'not_provided');
@@ -121,7 +166,18 @@ test('buildApiIndex publishes the machine API discovery contract', () => {
 
 test('Pages Function returns CORS JSON for /api discovery', async () => {
   const response = await onRequestGet({
-    request: new Request('https://anchorfact.org/api')
+    request: new Request('https://anchorfact.org/api'),
+    env: {
+      ASSETS: {
+        fetch: async (url) => {
+          assertEq(new URL(url).pathname, '/api-readiness.json');
+          return new Response(JSON.stringify(apiReadinessPayload), {
+            status: 200,
+            headers: { 'Content-Type': 'application/json' }
+          });
+        }
+      }
+    }
   });
   const payload = await response.json();
 
@@ -130,6 +186,8 @@ test('Pages Function returns CORS JSON for /api discovery', async () => {
   assertEq(response.headers.get('Cache-Control'), 'public, max-age=300');
   assertEq(payload.schema_version, 'anchorfact.api-index.v1');
   assertEq(payload.readiness_guidance.status_endpoint, '/api-readiness.json');
+  assertEq(payload.readiness_guidance.subscription_ready_requires, apiReadinessPayload.readiness_blockers.gate_ids);
+  assert(payload.readiness_guidance.blocker_evidence_requirements.some(item => item.id === 'design_partners'), 'function payload should expose blocker evidence from api-readiness.json');
   assert(payload.readiness_guidance.runtime_signal_contract.runtime_input_ids.includes('ai_adoption'), 'function payload should expose readiness runtime inputs');
   assertEq(payload.error_recovery_guidance.recoverable_400_field, 'machine_recovery');
   assert(payload.endpoints.some(endpoint => endpoint.path === '/api/evidence'), 'payload should include evidence API');

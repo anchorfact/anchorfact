@@ -685,6 +685,7 @@ export function buildOpenApiContract({
               report_only_until_gates_met: { type: 'boolean' },
               default_access_until_ready: { type: 'string' },
               subscription_ready_requires: { type: 'array', items: { type: 'string' } },
+              blocker_evidence_requirements: { type: 'array', items: { type: 'object' } },
               start_paid_beta_only_after: { type: 'string' },
               runtime_signal_contract: { $ref: '#/components/schemas/ReadinessRuntimeSignalContractSummary' }
             },

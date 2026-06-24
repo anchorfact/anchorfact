@@ -2,6 +2,7 @@ import {
   API_INDEX_SCHEMA_VERSION,
   buildApiIndex
 } from '../../src/lib/api-index.js';
+import { loadJsonAsset } from '../_lib/assets.js';
 
 const JSON_HEADERS = {
   'Access-Control-Allow-Origin': '*',
@@ -27,9 +28,15 @@ export function onRequestOptions() {
   });
 }
 
-export function onRequestGet() {
+async function loadApiReadinessPayload(context) {
+  if (!context?.env?.ASSETS) return null;
+  return loadJsonAsset(context, '/api-readiness.json');
+}
+
+export async function onRequestGet(context = {}) {
   try {
-    return jsonResponse(buildApiIndex());
+    const apiReadinessPayload = await loadApiReadinessPayload(context);
+    return jsonResponse(buildApiIndex({ apiReadinessPayload }));
   } catch (error) {
     return jsonResponse({
       schema_version: API_INDEX_SCHEMA_VERSION,

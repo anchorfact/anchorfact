@@ -351,6 +351,7 @@ export function readinessDiscoveryFailures({
   assertOk(openapi.components?.schemas?.AgentProfile?.properties?.current_snapshot?.properties?.api_readiness_blocker_evidence_requirements, 'openapi AgentProfile schema is missing blocker evidence requirements', failures);
   assertOk(openapi.components?.schemas?.ApiIndex?.properties?.readiness_guidance, 'openapi ApiIndex schema is missing readiness guidance', failures);
   assertOk(openapi.components?.schemas?.ApiIndex?.properties?.readiness_guidance?.properties?.runtime_signal_contract, 'openapi ApiIndex schema is missing runtime signal guidance', failures);
+  assertOk(openapi.components?.schemas?.ApiIndex?.properties?.readiness_guidance?.properties?.blocker_evidence_requirements, 'openapi ApiIndex schema is missing blocker evidence requirements', failures);
   assertOk(openapi.components?.schemas?.ApiAccess?.properties?.readiness_policy, 'openapi ApiAccess schema is missing readiness policy', failures);
   assertOk(openapi.components?.schemas?.ApiAccess?.properties?.readiness_policy?.properties?.runtime_signal_contract, 'openapi ApiAccess schema is missing runtime signal guidance', failures);
   assertOk(openapi.components?.schemas?.ApiAccess?.properties?.readiness_policy?.properties?.blocker_evidence_requirements, 'openapi ApiAccess schema is missing blocker evidence requirements', failures);
@@ -373,6 +374,12 @@ export function readinessDiscoveryFailures({
   for (const gateId of ['production_integrity_14_day', 'design_partners']) {
     assertOk(apiIndex.readiness_guidance?.subscription_ready_requires?.includes(gateId), `/api readiness guidance is missing ${gateId}`, failures);
   }
+  blockerEvidenceSummaryFailures(
+    apiIndex.readiness_guidance?.blocker_evidence_requirements,
+    blockerEvidenceRequirements,
+    '/api readiness guidance',
+    failures
+  );
   runtimeSignalSummaryFailures(apiIndex.readiness_guidance?.runtime_signal_contract, apiReadiness.runtime_signal_contract, '/api readiness guidance', failures);
   assertOk(apiIndex.ai_adoption_guidance?.discovery_entrypoints?.includes(WELL_KNOWN_AGENT_ALIAS_PATH), '/api AI adoption guidance is missing well-known agent alias discovery', failures);
   assertOk(apiIndex.ai_adoption_guidance?.crawler_next_step?.includes(WELL_KNOWN_AGENT_ALIAS_PATH) && apiIndex.ai_adoption_guidance?.crawler_next_step?.includes('/api/context'), '/api crawler next step does not convert well-known agent alias discovery to /api/context', failures);

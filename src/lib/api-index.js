@@ -2,12 +2,21 @@ import {
   API_CALL_GUIDANCE,
   buildErrorRecoveryDiscoveryGuidance
 } from './api-machine-guidance.js';
-import { buildReadinessRuntimeSignalSummary } from './readiness-runtime-signals.js';
+import {
+  buildReadinessRuntimeSignalSummary,
+  copyReadinessBlockerEvidenceRequirements
+} from './readiness-runtime-signals.js';
 
 export const API_INDEX_SCHEMA_VERSION = 'anchorfact.api-index.v1';
 
 const OFFICIAL_SITE = 'https://anchorfact.org';
 const PROVENANCE_PATH = '/provenance.json';
+const FALLBACK_SUBSCRIPTION_READY_REQUIREMENTS = [
+  'production_integrity_14_day',
+  'public_audit_14_day',
+  'ai_primary_discovery_ratio_7_day',
+  'design_partners'
+];
 
 function publicUrl(path, site = OFFICIAL_SITE) {
   const normalizedPath = path.startsWith('/') ? path : `/${path}`;
@@ -59,10 +68,17 @@ function publicApiCall(call, site) {
 
 export function buildApiIndex({
   generated = new Date().toISOString(),
-  site = OFFICIAL_SITE
+  site = OFFICIAL_SITE,
+  apiReadinessPayload = null
 } = {}) {
   const minimumValidPrimaryCalls = API_CALL_GUIDANCE.minimum_valid_primary_calls.map(call => publicApiCall(call, site));
   const nextRequestAfterDiscovery = minimumValidPrimaryCalls.find(call => call.id === 'context') || minimumValidPrimaryCalls[0] || null;
+  const subscriptionReadyRequires = Array.isArray(apiReadinessPayload?.readiness_blockers?.gate_ids)
+    ? [...apiReadinessPayload.readiness_blockers.gate_ids]
+    : [...FALLBACK_SUBSCRIPTION_READY_REQUIREMENTS];
+  const blockerEvidenceRequirements = copyReadinessBlockerEvidenceRequirements(
+    apiReadinessPayload?.readiness_blockers
+  );
 
   return {
     schema_version: API_INDEX_SCHEMA_VERSION,
@@ -105,15 +121,13 @@ export function buildApiIndex({
       status_endpoint: '/api-readiness.json',
       report_only_until_gates_met: true,
       default_access_until_ready: 'free_no_key_read_only',
-      subscription_ready_requires: [
-        'production_integrity_14_day',
-        'public_audit_14_day',
-        'core_query_context_ratio',
-        'ai_primary_discovery_ratio_7_day',
-        'design_partners'
-      ],
+      subscription_ready_requires: subscriptionReadyRequires,
+      blocker_evidence_requirements: blockerEvidenceRequirements,
       start_paid_beta_only_after: 'All automated readiness windows pass and external design partner plus paid-intent signals are real.',
-      runtime_signal_contract: buildReadinessRuntimeSignalSummary({ site })
+      runtime_signal_contract: buildReadinessRuntimeSignalSummary({
+        contract: apiReadinessPayload?.runtime_signal_contract,
+        site
+      })
     },
     recommended_sequence: [
       'Call /api/context?q={query} first for normal answer assembly, answer_policy, citation-ready claims, content health, fallback guidance, and evidence packs.',
