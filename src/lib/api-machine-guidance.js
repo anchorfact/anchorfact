@@ -132,6 +132,19 @@ export function buildMachineRecoveryGuidance({
     };
   }
 
+  if (currentEndpoint === 'claim') {
+    return {
+      ...common,
+      valid_parameters: ['id', 'claim_id', 'claim'],
+      retry_examples: [
+        templatedApiCall('claim_by_id', '/api/claim?id={claim_id}', 'Dereference one public claim id with article and source context.', site),
+        templatedApiCall('cite_by_claim_id', '/api/cite?id={claim_id}', 'Return citation-ready JSON for one public AnchorFact claim.', site),
+        templatedApiCall('resolve_claim', '/api/resolve?ref={claim_id}', 'Resolve a claim id before fetching claim or citation payloads.', site),
+        apiCall('context_discovery', contextPath, 'Discover matching public claim ids from a natural-language query.', site)
+      ]
+    };
+  }
+
   if (currentEndpoint === 'source') {
     return {
       ...common,
@@ -196,6 +209,7 @@ export function buildErrorRecoveryDiscoveryGuidance({ site = OFFICIAL_SITE } = {
       '/api/evidence',
       '/api/plan',
       '/api/article',
+      '/api/claim',
       '/api/source',
       '/api/resolve-batch',
       '/api/cite'
@@ -205,6 +219,7 @@ export function buildErrorRecoveryDiscoveryGuidance({ site = OFFICIAL_SITE } = {
       '/api/evidence?q={query}&limit=3',
       '/api/plan?q={query}&limit=3',
       '/api/article?slug={canonical_slug}',
+      '/api/claim?id={claim_id}',
       '/api/source?id={source_id}',
       '/api/resolve-batch?ref={claim_id}&ref={source_id}',
       '/api/cite?id={claim_id}'

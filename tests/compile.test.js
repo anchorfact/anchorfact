@@ -161,9 +161,11 @@ test('public entrypoints exclude draft articles', () => {
   assert(rootIndex.error_recovery_guidance.observed_recoverable_endpoints.includes('/api/cite'), 'root index should expose citation recovery guidance');
   assert(rootIndex.error_recovery_guidance.observed_recoverable_endpoints.includes('/api/plan'), 'root index should expose plan recovery guidance');
   assert(rootIndex.error_recovery_guidance.observed_recoverable_endpoints.includes('/api/article'), 'root index should expose article recovery guidance');
+  assert(rootIndex.error_recovery_guidance.observed_recoverable_endpoints.includes('/api/claim'), 'root index should expose claim recovery guidance');
   assert(rootIndex.error_recovery_guidance.retry_example_paths.includes('/api/cite?id={claim_id}'), 'root index should expose citation retry guidance');
   assert(rootIndex.error_recovery_guidance.retry_example_paths.includes('/api/plan?q={query}&limit=3'), 'root index should expose plan retry guidance');
   assert(rootIndex.error_recovery_guidance.retry_example_paths.includes('/api/article?slug={canonical_slug}'), 'root index should expose article retry guidance');
+  assert(rootIndex.error_recovery_guidance.retry_example_paths.includes('/api/claim?id={claim_id}'), 'root index should expose claim retry guidance');
   assertEq(rootIndex.counts.public_articles, 1);
   assertEq(rootIndex.counts.draft_articles, 1);
   assertEq(rootIndex.counts.public_claims, claimsJson.claim_count);

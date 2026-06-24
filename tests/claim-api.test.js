@@ -138,6 +138,12 @@ test('parseClaimParams validates id-like inputs', () => {
   assertEq(missing.ok, false);
   assertEq(missing.status, 400);
   assertEq(missing.payload.error.code, 'missing_or_invalid_claim_id');
+  assertEq(missing.payload.machine_recovery.recoverable, true);
+  assertEq(missing.payload.machine_recovery.current_endpoint, 'claim');
+  assert(
+    missing.payload.machine_recovery.retry_examples.some(example => example.path === '/api/claim?id={claim_id}'),
+    'missing claim id response should include a templated claim retry example'
+  );
 });
 
 test('buildClaimApiPayload returns a public claim with article and matching sources', () => {
@@ -193,6 +199,12 @@ test('Pages Function rejects missing ids, unknown claims, and asset failures', a
     env: assetEnv()
   });
   assertEq(missingId.status, 400);
+  const missingIdPayload = await missingId.json();
+  assertEq(missingIdPayload.machine_recovery.current_endpoint, 'claim');
+  assert(
+    missingIdPayload.machine_recovery.next_request.path.includes('/api/context?q='),
+    'empty claim request should route machines to default context recovery'
+  );
 
   const missingClaim = await onRequestGet({
     request: new Request('https://anchorfact.org/api/claim?id=nope'),
